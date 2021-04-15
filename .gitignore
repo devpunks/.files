@@ -7,4 +7,10 @@
 .eclipse
 .gem
 .gist
-
+.irb_history
+.mutagen
+.node_repl_history
+.npm
+.nvm
+.rbenv
+.ssh
