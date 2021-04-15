@@ -1,0 +1,45 @@
+#!/bin/bash
+
+declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres}
+declare -xr EXEC=/usr/local/Cellar/postgresql/13.2_1/bin/pg
+declare -xr COMMAND=$1
+declare -xr OPERATION=$2
+declare -xr LOG=`pwd`/PG.log
+declare -xr AUTH=--auth-local # --auth-host
+declare -xr USERNAME=devpunks
+declare -xr HOST=localhost
+declare -xr PORT=5432
+# declare -xr PID=${PGDATA}/postmaster.pid
+
+
+echo $PGDATA
+echo $EXEC
+echo $LOG
+echo $AUTH
+echo $COMMAND
+
+function status {
+  ${EXEC}_ctl status --pgdata=$PGDATA
+}
+
+# REMOVE ME!
+# pg_ctl stop -D $PGDATA -l $LOG -s -m fast
+# ls $PGDATA
+# rm -rf $PGDATA
+# pg_ctl init -D $PGDATA -l $LOG
+
+
+# Run ls -al /usr/local/bin | grep pg_ for Postgres commands
+# pg_dump[all]
+# pg_verifybackup
+# pg_upgrade
+# pg_restore
+# pg_isready
+
+
+status
+
+${EXEC}_${COMMAND} ${OPERATION} --pgdata=$PGDATA --log=$LOG -s -m fast
+#pg_ctl -l $LOG -D $PGDATA $COMMAND -s -m fast
+
+status
