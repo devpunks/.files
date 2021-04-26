@@ -7,9 +7,6 @@
 [submodule ".vim/pack/devpunks/start/jellybeans.vim"]
 	path = .vim/pack/devpunks/start/jellybeans.vim
 	url = https://github.com/vim-scripts/jellybeans.vim
-[submodule ".vim/pack/devpunks/start/syntastic"]
-	path = .vim/pack/devpunks/start/syntastic
-	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/pack/devpunks/start/vim-closetag"]
 	path = .vim/pack/devpunks/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag
@@ -19,3 +16,6 @@
 [submodule ".vim/pack/devpunks/start/vim-endwise"]
 	path = .vim/pack/devpunks/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
+[submodule ".vim/pack/devpunks/start/pear-tree"]
+	path = .vim/pack/devpunks/start/pear-tree
+	url = https://github.com/tmsvg/pear-tree
