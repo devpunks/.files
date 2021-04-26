@@ -19,3 +19,6 @@
 [submodule ".vim/pack/devpunks/start/vim-closetag"]
 	path = .vim/pack/devpunks/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag
+[submodule ".vim/pack/devpunks/start/vim-gitgutter"]
+	path = .vim/pack/devpunks/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
