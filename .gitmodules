@@ -22,3 +22,6 @@
 [submodule ".vim/pack/devpunks/start/vim-gitgutter"]
 	path = .vim/pack/devpunks/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "ZoomWin"]
+	path = ZoomWin
+	url = ./.vim/pack/devpunks/start/ZoomWin/
