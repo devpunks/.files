@@ -19,3 +19,6 @@
 [submodule ".vim/pack/devpunks/start/pear-tree"]
 	path = .vim/pack/devpunks/start/pear-tree
 	url = https://github.com/tmsvg/pear-tree
+[submodule ".vim/pack/devpunks/start/syntastic"]
+	path = .vim/pack/devpunks/start/syntastic
+	url = https://github.com/scrooloose/syntastic
