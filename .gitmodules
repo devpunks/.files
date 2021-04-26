@@ -19,3 +19,6 @@
 [submodule ".vim/pack/devpunks/start/syntastic"]
 	path = .vim/pack/devpunks/start/syntastic
 	url = https://github.com/scrooloose/syntastic
+[submodule ".vim/pack/devpunks/start/vim-closetag"]
+	path = .vim/pack/devpunks/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag
