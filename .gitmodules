@@ -7,9 +7,6 @@
 [submodule ".vim/pack/devpunks/start/jellybeans.vim"]
 	path = .vim/pack/devpunks/start/jellybeans.vim
 	url = https://github.com/vim-scripts/jellybeans.vim
-[submodule ".vim/pack/devpunks/start/vim-gitgutter"]
-	path = .vim/pack/devpunks/start/vim-gitgutter
-  url = https://github.com/airblade/vim-gitgutter
 [submodule ".vim/pack/devpunks/start/vim-endwise"]
 	path = .vim/pack/devpunks/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
