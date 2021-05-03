@@ -49,13 +49,13 @@ nnoremap , :ZoomWin<cr>
 let g:closetag_filetypes = 'svg,html,xhtml,phtml,eruby,*.vue'
 
 " These are the file extensions where this plugin is enabled.
-"let g:closetag_filenames = '*.svg,*.html,*.xhtml,*.phtml,*.html.erb'
+let g:closetag_filenames = '*.svg,*.html,*.xhtml,*.phtml,*.html.erb,*.vue'
 
 " This will make the list of non-closing tags self-closing in the specified files.
 "let g:closetag_xhtml_filetypes = 'xhtml,jsx'
 
 " This will make the list of non-closing tags self-closing in the specified files.
-"let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
 
 " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
 "let g:closetag_emptyTags_caseSensitive = 1
