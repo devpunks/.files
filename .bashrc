@@ -11,8 +11,10 @@ shopt -s histappend
 stty -ixon columns 500
 
 export EDITOR=vi
-
 export TERM=xterm-256color
+export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
+# https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
+export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
 # Slightly modified from: https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 # # https://misc.flogisoft.com/bash/tip_colors_and_formatting
