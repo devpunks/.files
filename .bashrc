@@ -4,6 +4,7 @@
 
 # ********************************************************************************
 
+source ~/git-completion.bash
 
 # enable control-s and control-q in VIM
 stty -ixon columns 500
