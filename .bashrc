@@ -23,17 +23,13 @@ git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (🐙 \1)/'
 }
 
-export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
-
-# https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
-export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
-shopt -s histappend
-
-
 export PATH="/usr/local/sbin:$PATH"
 ### Added by the Heroku Toolbelt CLI
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="~/Library/Python/2.7/bin:$PATH"
+export PATH="/usr/local/opt/node@16/bin:$PATH" # Homebrew
+export PATH="/usr/local/opt/postgresql@15/bin:$PATH" # Homebrew
+# /usr/local/opt/postgresql@15/bin/postgres -D /usr/local/var/postgresql@15]
 
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
