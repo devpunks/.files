@@ -6,6 +6,7 @@
 
 source ~/git-completion.bash
 
+shopt -s histappend
 # enable control-s and control-q in VIM
 stty -ixon columns 500
 
