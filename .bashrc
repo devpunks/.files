@@ -10,10 +10,6 @@ shopt -s histappend
 # enable control-s and control-q in VIM
 stty -ixon columns 500
 
-source ~/git-completion.bash
-
-eval "$(rbenv init -)"
-
 export EDITOR=vi
 
 export TERM=xterm-256color
