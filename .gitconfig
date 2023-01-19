@@ -164,8 +164,8 @@
 [color "status"]
   changed = 178
   added = bold 150
-  untracked = dim italic 240
-  header = dim italic 132
+  untracked = italic 240
+  header = italic 132
   nobranch = reverse 9
   deleted = dim italic 196
   branch = bold 13
