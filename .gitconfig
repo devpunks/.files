@@ -187,3 +187,5 @@
   branch = bold 132
   remoteBranch = dim italic 145
   tag = reverse 13
+[init]
+  defaultBranch = main
