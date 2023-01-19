@@ -167,7 +167,7 @@
   untracked = italic 240
   header = italic 132
   nobranch = reverse 9
-  deleted = dim italic 196
+  deleted = italic 196
   branch = bold 13
 
 # color.interactive.<slot>
