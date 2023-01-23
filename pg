@@ -1,7 +1,9 @@
 #!/bin/bash
 
-declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres}
-declare -xr EXEC=/usr/local/Cellar/postgresql/13.2_1/bin/pg
+declare -xr PGVERSION=15
+declare -xr PGBIN=/usr/local/Cellar/postgresql@${PGVERSION}/15.0_1/bin
+declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres@15}
+declare -xr EXEC=${PGBIN}/pg
 declare -xr COMMAND=$1
 declare -xr OPERATION=$2
 declare -xr LOG=`pwd`/PG.log
