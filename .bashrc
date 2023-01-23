@@ -28,8 +28,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="~/Library/Python/2.7/bin:$PATH"
 
-export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s $NVM_DIR/bash_completion ] && source $NVM_DIR/bash_completion
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 echo "Bash RC"
