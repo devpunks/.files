@@ -27,9 +27,6 @@ export PATH="/usr/local/sbin:$PATH"
 ### Added by the Heroku Toolbelt CLI
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="~/Library/Python/2.7/bin:$PATH"
-export PATH="/usr/local/opt/node@16/bin:$PATH" # Homebrew
-export PATH="/usr/local/opt/postgresql@15/bin:$PATH" # Homebrew
-# /usr/local/opt/postgresql@15/bin/postgres -D /usr/local/var/postgresql@15]
 
 export NVM_DIR=~/.nvm
 [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
