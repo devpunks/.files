@@ -4,8 +4,6 @@
 
 # ********************************************************************************
 
-source ~/git-completion.bash
-
 shopt -s histappend
 # enable control-s and control-q in VIM
 stty -ixon columns 500
@@ -23,16 +21,7 @@ git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (🐙 \1)/'
 }
 
-export PATH="/usr/local/sbin:$PATH"
-### Added by the Heroku Toolbelt CLI
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="~/Library/Python/2.7/bin:$PATH"
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export PATH="/usr/local/sbin:$PATH"
+# export PATH="~/Library/Python/2.7/bin:$PATH"
 
 echo "Bash RC"
