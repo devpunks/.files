@@ -8,6 +8,7 @@ echo
 
 shopt -s histappend
 export TERM=xterm-256color
+
 # enable control-s and control-q in VIM
 stty -ixon columns 500
 export EDITOR=vi
