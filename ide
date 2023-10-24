@@ -28,8 +28,8 @@ tmux split-window -t 0 -h -p 30
 tmux select-pane -t 1
 # tmux send-keys "git status" C-m # watch/styles
 
-tmux split-window -t 1 -v -p 30 -c "$(pwd)"
-tmux select-pane -t 2
+# tmux split-window -t 1 -v -p 30 -c "$(pwd)"
+# tmux select-pane -t 2
 # tmux send-keys "pwd" C-m # watch/templates
 
 # tmux split-window -t 1 -h -p 40 -c "$(pwd)"
@@ -40,4 +40,4 @@ tmux select-pane -t 2
 # tmux select-pane -t 4
 # tmux send-keys "pwd" C-m # watch/browser
 
-tmux -2 attach -t $session
+tmux -2 attach -t $SESSION
