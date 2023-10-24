@@ -23,7 +23,8 @@ tmux new-session -d -s $SESSION -n '🕶️ devPunks'
 #tmux split-window -t 0 -v -p 70 -c "$(pwd)"
 
 # Split pane 1 vertically by 70%
-tmux split-window -t 0 -h -p 30 -c "$(pwd)"
+# tmux split-window -t 0 -h -p 30 -c "$(pwd)"
+tmux split-window -t 0 -h -p 30
 tmux select-pane -t 1
 tmux send-keys "git status" C-m # watch/styles
 
