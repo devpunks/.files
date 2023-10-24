@@ -4,9 +4,6 @@
 
 # ********************************************************************************
 
-
-[ -r ~/.bashrc ] && source ~/.bashrc
-
 alias cl=clear
 alias b="bundle exec"
 alias spec='docker-compose exec api bundle exec rspec'
