@@ -4,13 +4,19 @@
 
 # ********************************************************************************
 
+echo 😈devPunks
+echo
+
 shopt -s histappend
+export TERM=xterm-256color
 # enable control-s and control-q in VIM
 stty -ixon columns 500
-
 export EDITOR=vi
-export TERM=xterm-256color
-export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
+export LESSHISTFILE=-
+export HISTSIZE=1000
+export HISTFILESIZE=1000
+export HISTCONTROL=ignoredups
+# # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
 export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
