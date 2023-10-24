@@ -13,7 +13,6 @@ export TERM=xterm-256color
 stty -ixon columns 500
 
 export EDITOR=vi
-export LESSHISTFILE=-
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTCONTROL=ignoredups
