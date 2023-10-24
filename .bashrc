@@ -33,4 +33,3 @@ git_branch() {
 # export PATH="~/Library/Python/2.7/bin:$PATH"
 
 echo "Bash RC"
-source ~/.bash_profile
