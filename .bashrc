@@ -16,6 +16,7 @@ export EDITOR=vi
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTCONTROL=ignoredups
+export LESSHISTFILE=-
 # # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
 export PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
