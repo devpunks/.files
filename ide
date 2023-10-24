@@ -14,7 +14,7 @@ declare -rx SESSION=MAC
 tmux start-server
 
 # create a new tmux session, starting vim from a saved session in the new window
-tmux new-session -d -s $session -n '🕶️ devPunks'
+tmux new-session -d -s $SESSION -n '🕶️ devPunks'
 
 # # Select pane 1 run vim
 #tmux select-pane -t :0
