@@ -3,6 +3,7 @@ pkg update
 pkg install termux-api
 termux-setup-storage
 pkg install man
+pkg install openssh
 pkg install git
 pkg install tmux
 pkg install wget
