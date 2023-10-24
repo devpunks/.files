@@ -9,9 +9,6 @@ declare -rx SESSION=MAC
 # pane 3 is split vertically at 25% and 50% horizontally running `npm run watch/scripts`
 # pane 3 is split vertically at 10% and 50% horizontally running `npm run watch/templates`
 # pane 4 is split vertically at 10% and 50% horizontally running `npm run watch/browser`
-# note: `api` aliased to `cd ~/path/to/work`
-
-session=MAC
 
 # set up tmux
 tmux start-server
