@@ -26,7 +26,7 @@ tmux new-session -d -s $SESSION -n '🕶️ devPunks'
 # tmux split-window -t 0 -h -p 30 -c "$(pwd)"
 tmux split-window -t 0 -h -p 30
 tmux select-pane -t 1
-tmux send-keys "git status" C-m # watch/styles
+# tmux send-keys "git status" C-m # watch/styles
 
 tmux split-window -t 1 -v -p 30 -c "$(pwd)"
 tmux select-pane -t 2
