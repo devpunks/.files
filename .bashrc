@@ -31,4 +31,4 @@ git_branch() {
 # export PATH="/usr/local/sbin:$PATH"
 # export PATH="~/Library/Python/2.7/bin:$PATH"
 
-echo "Bash RC"
+echo Bash RC
