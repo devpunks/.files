@@ -5,8 +5,8 @@
 # ********************************************************************************
 
 alias cl=clear
-alias b="bundle exec"
-alias spec='docker-compose exec api bundle exec rspec'
+alias b='bundle exec'
+alias spec='bundle exec rspec'
 
 # ----------------------
 # Git Aliases
