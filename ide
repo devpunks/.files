@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Setup a work space called `WEBRTC` with 5 windows 1-2-2
+declare -rx SESSION=MAC
+
+# Setup a work space called `$SESSION
 # first window has 1 pane.
 # The first pane set at 65%, split vertically, set to root and running vim
 # pane 2 is split vertically at 25% and 50% horizontally running `npm run watch/styles`
