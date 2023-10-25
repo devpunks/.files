@@ -41,4 +41,4 @@ tmux send-keys "git status" C-m # watch/styles
 # tmux select-pane -t 4
 # tmux send-keys "pwd" C-m # watch/browser
 
-tmux -2 attach -t $SESSION
+tmux -2 attach -t $session
