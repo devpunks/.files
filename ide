@@ -1,6 +1,6 @@
 #!/bin/bash
 
-declare -rx SESSION=MAC
+session=MAC
 
 # Setup a work space called `$SESSION
 # first window has 1 pane.
