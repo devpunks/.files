@@ -42,3 +42,12 @@ pkg install exa
 
 echo
 source ~/.bashrc
+echo
+
+echo Cloning home directory...
+git clone https://github.com/devpunks/-..git .
+git status
+# Submodules - https://github.blog/2016-02-01-working-with-submodules/
+echo Cloning submodules...
+git submodule
+git submodule update --init
