@@ -47,7 +47,7 @@ source ~/.bashrc
 echo
 
 echo Cloning home directory...
-git clone https://github.com/devpunks/-..git .
+# git clone https://github.com/devpunks/-..git .
 git status
 # Submodules - https://github.blog/2016-02-01-working-with-submodules/
 echo Cloning submodules...
