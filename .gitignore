@@ -4,9 +4,8 @@
 .config
 .docker
 .eclipse
-.gem
 .gist
-.irb_history
+.local
 .mutagen
 .node_repl_history
 .npm
