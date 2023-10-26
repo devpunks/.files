@@ -10,6 +10,12 @@
 .NERDTREEBookmarks
 .ssh
 .viminfo
+
+# termux
+.termux
+storage
+
+# OSX
 Applications
 Desktop
 Downloads
