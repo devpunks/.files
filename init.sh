@@ -3,6 +3,8 @@ pkg update
 pkg install termux-api
 termux-setup-storage
 pkg install man
+pkg install whois
+pkg install which
 pkg install tree
 pkg install openssh
 pkg install git
