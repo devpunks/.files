@@ -39,5 +39,6 @@ vim --version
 ffmpeg -version
 tmux -V
 pkg install exa
+
 echo
 source ~/.bashrc
