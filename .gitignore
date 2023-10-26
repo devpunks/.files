@@ -21,3 +21,20 @@ Desktop
 Downloads
 Library
 Music
+
+# node
+.gemrc
+.npm
+.npmrc
+.nvm
+.node_repl_history
+node_modules
+
+# ruby
+.gem
+.irb_history
+.rbenv
+
+# python
+.cache
+.python_history
