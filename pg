@@ -1,5 +1,13 @@
 #!/bin/bash
 
+########################################################
+# TERMUX - https://wiki.termux.com/wiki/Postgresql
+#
+########################################################
+
+
+declare -xr FIXPRE=${PREFIX:-/shazaam}
+
 declare -xr PGVERSION=15
 declare -xr PGBIN=/usr/local/Cellar/postgresql@${PGVERSION}/15.0_1/bin
 declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres@15}
