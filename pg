@@ -21,16 +21,21 @@ declare -xr HOST=localhost
 declare -xr PORT=5432
 # declare -xr PID=${PGDATA}/postmaster.pid
 
-
-echo $PGDATA
-echo $EXEC
-echo $LOG
-echo $AUTH
-echo $COMMAND
-
 function status {
   ${EXEC}_ctl status --pgdata=$PGDATA
 }
+
+echo FIXPRE 👉 $FIXPRE
+echo PGVERSION 👉 $PGVERSION
+echo PGDATA 👉 $PGDATA
+echo EXEC 👉 $EXEC
+echo LOG 👉 $LOG
+echo AUTH 👉 $AUTH
+echo COMMAND 👉 $COMMAND
+
+status
+
+exit 0
 
 # REMOVE ME!
 # pg_ctl stop -D $PGDATA -l $LOG -s -m fast
