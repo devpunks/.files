@@ -27,6 +27,8 @@ pkg install python-numpy
 pip list
 pkg install asciinema
 pkg install sqlite
+pkg install postgresql
+pkg install postgis
 pkg install vim
 gem update --system
 gem help env
