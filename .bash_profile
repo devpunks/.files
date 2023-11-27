@@ -6,6 +6,14 @@
 # [ -r ~/.bashrc ] && source ~/.bashrc
 
 
+# ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
+# AKA FUNCTIONS
+
+weigh() {
+  # do things with parameters like $1 such as.
+  du -hxd1 "$1"
+}
+
 alias cl=clear
 alias b='bundle exec'
 alias spec='bundle exec rspec'
