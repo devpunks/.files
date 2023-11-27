@@ -30,6 +30,8 @@ pkg install sqlite
 pkg install postgresql
 pkg install postgis
 pkg install vim
+pkg install zopfli
+pkg install brotli
 gem update --system
 gem help env
 ruby --version
