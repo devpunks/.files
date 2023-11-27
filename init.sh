@@ -5,6 +5,7 @@ termux-setup-storage
 pkg install man
 pkg install whois
 pkg install which
+pkg install htop
 pkg install tree
 pkg install openssh
 pkg install git
