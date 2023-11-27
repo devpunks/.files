@@ -24,6 +24,7 @@ pkg install jq
 pkg install python
 pip install pytest
 pkg install python-numpy
+pip list
 pkg install asciinema
 pkg install sqlite
 pkg install vim
