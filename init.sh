@@ -23,7 +23,6 @@ pkg install htop
 pkg install jq
 pkg install python
 pip install pytest
-pip list
 pkg install python-numpy
 pkg install asciinema
 pkg install sqlite
