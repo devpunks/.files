@@ -13,7 +13,10 @@ weigh() { # https://www.redhat.com/sysadmin/du-command-options
   #local FLAGS="--summarize --total --human-readable --time"
   local FLAGS="--total --all --human-readable --time --max-depth=1"
   # do things with parameters like $1 such as.
-  du -hxd1 "$1"
+  echo LOCATION "$1"
+  echo FLAGS 👉 $FLAGS
+
+  du $FLAGS -- "$1"
 }
 
 alias cl=clear
