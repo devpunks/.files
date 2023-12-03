@@ -20,8 +20,14 @@ weigh() { # https://www.redhat.com/sysadmin/du-command-options
 }
 
 alias cl=clear
-alias b='bundle exec'
-alias spec='bundle exec rspec'
+alias lsg='ls -AhlFG --group-directories-first'
+alias list='exa -FGxahl --group-directories-first'
+
+# ----------------------
+# Ruby
+# ----------------------
+
+alias be='bundle exec'
 
 # ----------------------
 # Git Aliases
