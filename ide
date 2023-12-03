@@ -31,7 +31,7 @@ tmux split-window -v -l 1
 tmux send-keys "clear && pwd" C-m
 
 # Select pane 2
-tmux select-pane -t 2
+tmux select-pane -t 3
 
 # attach to new session
 tmux -2 attach -t $session
