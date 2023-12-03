@@ -21,7 +21,7 @@ weigh() { # https://www.redhat.com/sysadmin/du-command-options
 
 alias cl=clear
 alias lsg='ls -AhlFG --group-directories-first'
-alias list='exa -FGxahl --git --group-directories-first'
+alias list='exa -FGxahl --git --icons --group-directories-first'
 
 # ----------------------
 # Ruby
