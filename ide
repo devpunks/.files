@@ -9,19 +9,10 @@ session=`whoami`
 # start server
 tmux start-server
 
-# create a new tmux session, starting vim from a saved session in the new window
-tmux new-session -d -s $session # -n "🕶️ devPunks"
+# create new session
+tmux new-session -d -s $session -n "🕶️ devPunks"
 
-# # Select pane 1 run vim
-#tmux select-pane -t :0
-#tmux send-keys "pwd; vim -c 'NERDTree'" C-m
-# tmux send-keys "vim" C-m
-#tmux split-window -t 0 -v -p 70 -c "$(pwd)"
-
-# Split pane 1 vertically by 70%
-# tmux split-window -t 0 -h -p 30 -c "$(pwd)"
-tmux split-window -t 0 -h -p 30
-# tmux select-pane -t 1
+# Select pane 0 run vim
 tmux select-pane -t 0
 tmux send-keys "git status" C-m # watch/styles
 
