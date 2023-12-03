@@ -33,4 +33,5 @@ tmux split-window -v -l 2
 # Select pane 2
 tmux select-pane -t 2
 
+# attach to new session
 tmux -2 attach -t $session
