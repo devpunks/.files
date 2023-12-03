@@ -16,9 +16,9 @@ tmux new-session -d -s $session -n "🕶️ devPunks"
 tmux select-pane -t 0
 tmux send-keys "vim" C-m
 
-# tmux split-window -t 1 -v -p 30 -c "$(pwd)"
-# tmux select-pane -t 2
-# tmux send-keys "pwd" C-m # watch/templates
+# Split pane 1 vertically by 30%
+tmux split-window -h -l 30
+tmux send-keys "git status" C-m
 
 # tmux split-window -t 1 -h -p 40 -c "$(pwd)"
 # tmux select-pane -t 3
