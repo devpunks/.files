@@ -27,7 +27,8 @@ tmux split-window -v -l 5 -c "$(pwd)"
 tmux select-pane -t 0
 
 # Split pane 1 horizontally
-tmux split-window -v -l 2
+tmux split-window -v -l 1
+tmux send-keys "clear && pwd" C-m
 
 # Select pane 2
 tmux select-pane -t 2
