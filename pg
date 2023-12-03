@@ -11,9 +11,8 @@ declare -xr PGVERSION=15
 
 declare -xr FIXPRE=${PREFIX:-/shazaam}
 
-declare -xr PGVERSION=15
-declare -xr PGBIN=/usr/local/Cellar/postgresql@${PGVERSION}/15.0_1/bin
-declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres@15}
+# declare -xr PGBIN=/usr/local/Cellar/postgresql@${PGVERSION}/${PGVERSION}.0_1/bin
+declare -xr PGBIN=${FIXPRE}/bin
 declare -xr EXEC=${PGBIN}/pg
 declare -xr COMMAND=$1
 declare -xr OPERATION=$2
