@@ -6,7 +6,7 @@ session=`whoami`
 # first window has 1 pane.
 # Pane #1 -  split vertically 70%, set to root and running vim
 
-# set up tmux
+# start server
 tmux start-server
 
 # create a new tmux session, starting vim from a saved session in the new window
