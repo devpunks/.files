@@ -1,5 +1,6 @@
 set encoding=utf-8
 
+" ********************************************************************************
 " Author: Ahmid-Ra (github.com/snuggs)
 
 " Screencasts: http://vimcasts.org
