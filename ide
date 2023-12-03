@@ -24,8 +24,13 @@ tmux send-keys "git status" C-m
 tmux split-window -v -l 5 -c "$(pwd)"
 tmux send-keys "pwd" C-m
 
-# tmux split-window -t 2 -h -p 40 -c "$(pwd)"
-# tmux select-pane -t 4
-# tmux send-keys "pwd" C-m # watch/browser
+# Select pane 0
+tmux select-pane -t 0
+
+# Split pane 1 horizontally
+tmux split-window -v -l 2
+
+# Select pane 2
+tmux select-pane -t 2
 
 tmux -2 attach -t $session
