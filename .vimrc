@@ -77,16 +77,19 @@ nnoremap ; :
 " --------------------------------------------------------------------------------
 nnoremap , :ZoomWin<cr>
 
+" --------------------------------------------------------------------------------
+" NERDTree
+" --------------------------------------------------------------------------------
 
-let NERDTreeShowHidden=1                   " Show hidden files
-let NERDTreeDirArrowExpandable  = '📁'     " Expandable directory
-let NERDTreeDirArrowCollapsible = '📂'     " Collapsible directory
-" let g:NERDTreeDirArrowExpandable  = ‘▸’
-" let g:NERDTreeDirArrowCollapsible = ‘▾’
+let NERDTreeShowHidden=1                  " Show hidden files
+let g:NERDTreeDirArrowExpandable  = '📁'  " Expandable directory
+let g:NERDTreeDirArrowCollapsible = '📂'  " Collapsible directory
 
 " [ENTER] Opens Nerdtree
-nmap <cr> :NERDTreeToggle<cr>
+nnoremap <cr> :NERDTreeToggle<cr>
+
 " Open NerdTree on VimEnter startup
-" | Selects `p`revious buffer to remove tree focus
+"   | Selects `p`revious buffer to remove tree focus
 autocmd VimEnter * NERDTreeToggle | wincmd p
+
 
