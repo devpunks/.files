@@ -4,11 +4,7 @@ session=`whoami`
 
 # Setup a work space called `$SESSION
 # first window has 1 pane.
-# The first pane set at 65%, split vertically, set to root and running vim
-# pane 2 is split vertically at 25% and 50% horizontally running `npm run watch/styles`
-# pane 3 is split vertically at 25% and 50% horizontally running `npm run watch/scripts`
-# pane 3 is split vertically at 10% and 50% horizontally running `npm run watch/templates`
-# pane 4 is split vertically at 10% and 50% horizontally running `npm run watch/browser`
+# Pane #1 -  split vertically 70%, set to root and running vim
 
 # set up tmux
 tmux start-server
