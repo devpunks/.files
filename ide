@@ -1,6 +1,6 @@
 #!/bin/bash
 
-session=MAC
+session=`whoami`
 
 # Setup a work space called `$SESSION
 # first window has 1 pane.
