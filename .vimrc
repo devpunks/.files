@@ -378,9 +378,11 @@ nnoremap , :ZoomWin<cr>
 " NERDTree
 " --------------------------------------------------------------------------------
 
-let NERDTreeShowHidden=1                  " Show hidden files (I)
-let g:NERDTreeDirArrowExpandable  = '📁'  " Expandable directory
-let g:NERDTreeDirArrowCollapsible = '📂'  " Collapsible directory
+let g:NERDTreeBookmarksFile="$HOME/.vim/.NERDTreeBookmarks"
+let g:NERDTreeShowHidden=1    " Show hidden files (I)
+let g:NERDTreeShowBookmarks=1 " Show hidden files (I)
+let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
+let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
 
 " [ENTER] Opens Nerdtree
 nnoremap <cr> :NERDTreeToggle<cr>
