@@ -440,7 +440,6 @@ highlight Pmenu ctermfg=132 ctermbg=235
 highlight LineNr ctermfg=240 ctermbg=234
 highlight VertSplit ctermfg=132 ctermbg=232
 highlight PmenuThumb ctermfg=red ctermbg=132
-highlight CursorLineNr ctermfg=132 ctermbg=234
 highlight Scrollbar ctermfg=red ctermbg=blue
 highlight! link SpellBad Error
 highlight! link ErrorMsg Error
