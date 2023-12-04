@@ -117,7 +117,6 @@ set number
 set numberwidth=4 " gutter columns
 set ruler " set cursor coordinates
 set rulerformat=📍%P⏬%l⏩%c " overridden by statusline
-set showtabline=2 " :help setting-tabline
 
 if has('signs')
   " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
