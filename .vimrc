@@ -38,6 +38,7 @@ autocmd VimLeave * echom "PEAAAACE"
 " Settings ***********************************************************************
 " ********************************************************************************
 
+" - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
 set path+=$PWD/**
 
 syntax on " turns syntax highlighting on
