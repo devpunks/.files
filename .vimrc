@@ -300,6 +300,7 @@ autocmd BufNewFile,BufRead *.sass,*.scss set filetype=css
 
 " --------------------------------------------------------------------------------
 " Javascript
+"   - https://www.simplified.guide/vim/auto-complete-javascript
 " --------------------------------------------------------------------------------
 autocmd BufNewFile,BufRead *.es   set filetype=javascript
 autocmd BufNewFile,BufRead *.mjs  set filetype=javascript
