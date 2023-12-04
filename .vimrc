@@ -192,7 +192,7 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 
 " <CTRL+h> Focus on pane to right
-"" nmap <C-l> <C-w>l
+nmap <C-l> <C-w>l
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
