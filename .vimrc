@@ -146,6 +146,7 @@ set list " view hidden characters
 set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
 
 " - Clipboard ------------------------------------
+"   - https://github.com/termux/termux-packages/issues/2308
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
 "   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
 set history=1000  " Increase undo limit
