@@ -337,7 +337,7 @@ set statusline+=%-10F
 set statusline+=%=
 
 " cursor column position
-set statusline+=\ 📜\ %2c\ ⋈\ %-l
+set statusline+=\ 📜\ ⏩%2c\ ⋈\ ⏬%-l
 
 " cursor line, total lines
 set statusline+=\ of\ %L\ LOC
