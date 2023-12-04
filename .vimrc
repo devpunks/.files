@@ -23,7 +23,8 @@ if executable('termux-info')
 endif
 
 " Buffers ---------------------------
-set nohidden " possibly overridden by ZoomWin
+set nohidden " possibly overridden by ZoomWinhttps://vimtricks.com/p/what-is-set-hidden/
+command Flush :up | %bd | e#
 
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://vimtricks.com/p/saving-session-state/
