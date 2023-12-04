@@ -289,6 +289,7 @@ nnoremap <esc> :nohlsearch<cr>
 " ********************************************************************************
 " Files **************************************************************************
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
+"   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " ********************************************************************************
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
