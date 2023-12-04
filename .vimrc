@@ -448,6 +448,8 @@ highlight Search term=reverse ctermfg=black ctermbg=13
 highlight PmenuSbar ctermfg=green ctermbg=black
 highlight PmenuSel ctermfg=magenta ctermbg=black
 highlight SignColumn ctermbg=darkgrey guibg=darkgrey
+highlight CursorColumn ctermbg=3
+highlight CursorLineNr ctermfg=132 ctermbg=234
 highlight Cursor guifg=black ctermfg=black guibg=white ctermbg=white
 highlight iCursor guifg=white ctermfg=black guibg=steelblue ctermbg=white
 highlight StatusFileName ctermbg=234 guibg=black ctermfg=magenta guifg=magenta
