@@ -313,7 +313,7 @@ nnoremap , :ZoomWin<cr>
 " NERDTree
 " --------------------------------------------------------------------------------
 
-let NERDTreeShowHidden=1                  " Show hidden files
+let NERDTreeShowHidden=1                  " Show hidden files (I)
 let g:NERDTreeDirArrowExpandable  = '📁'  " Expandable directory
 let g:NERDTreeDirArrowCollapsible = '📂'  " Collapsible directory
 
