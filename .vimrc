@@ -43,7 +43,7 @@ endif
 set complete-=i
 set nomodeline "Ignore file mode lines
 "set shell " The shell used to execute commands
-set showcmd      " display incomplete command in lower right
+set showcmd " show current command prompt suffix
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 
 " increment formats - https://www.reddit.com/r/vim/comments/p18418/til_that_ctrlactrlx_can_incrementdecrement_a/
