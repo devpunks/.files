@@ -26,6 +26,7 @@ endif
 set viminfofile=$HOME/.vim/.viminfo
 set viminfo="" " disable .viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
+autocmd VimLeave * echom "PEAAAACE"
 
 finish
 
