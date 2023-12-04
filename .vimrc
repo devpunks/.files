@@ -73,8 +73,9 @@ autocmd VimLeave * echom "PEAAAACE"
 " Settings ***********************************************************************
 " ********************************************************************************
 
+" - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
-set path+=$PWD/**
+" set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
 
 syntax on " turns syntax highlighting on
 
@@ -118,6 +119,7 @@ set showmatch matchtime=3 " jump to matching brace
 set backup " keep a backup file (nobackup for inverse)
 " Undo location
 " set nobackup
+" set nowritebackup
 " set noswapfile
 " set noundofile
 
