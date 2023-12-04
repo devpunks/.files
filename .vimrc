@@ -378,19 +378,19 @@ nnoremap , :ZoomWin<cr>
 " NERDTree
 " --------------------------------------------------------------------------------
 
-let g:NERDTreeShowHidden=1 " Show hidden files (I)
-let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
-let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
-let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
-let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
-
 if exists('*NERDTree')
+  let g:NERDTreeShowHidden=1 " Show hidden files (I)
+  let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
+  let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
+  let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
+  let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
+
   " [ENTER] Opens Nerdtree
   nnoremap <cr> :NERDTreeToggle<cr>
 
-" Open NerdTree on VimEnter startup
-"   | Selects `p`revious buffer to remove tree focus
-autocmd VimEnter * NERDTreeToggle | wincmd p
+  " Open NerdTree on VimEnter startup
+  "   | Selects `p`revious buffer to remove tree focus
+  autocmd VimEnter * NERDTreeToggle | wincmd p
 end
 
 
