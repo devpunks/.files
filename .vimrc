@@ -82,8 +82,6 @@ set smartcase " Automatically search case-sensitive
 set visualbell " Flash the screen instead of beeping errors
 set showmatch matchtime=3 " jump to matching brace
 
-finish
-
 " - Backups ------------------------------------
 "   - https://groups.google.com/g/vim_use/c/K2Utwkh5f30?pli=1
 "   - https://alvinalexander.com/linux-unix/vi-vim-swap-backup-tilde-temporary-files-directory-move/
