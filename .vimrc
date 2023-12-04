@@ -302,10 +302,8 @@ autocmd BufNewFile,BufRead *.sass,*.scss set filetype=css
 " Javascript
 "   - https://www.simplified.guide/vim/auto-complete-javascript
 " --------------------------------------------------------------------------------
-autocmd BufNewFile,BufRead *.es   set filetype=javascript
-autocmd BufNewFile,BufRead *.mjs  set filetype=javascript
-autocmd BufNewFile,BufRead *.test set filetype=javascript
-autocmd BufNewFile,BufRead *.json set filetype=javascript
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test set filetype=javascript
 
 " --------------------------------------------------------------------------------
 " Ruby
