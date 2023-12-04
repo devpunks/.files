@@ -25,6 +25,7 @@ endif
 set nohidden " possibly overridden by ZoomWin
 
 " Views, Sessions, Viminfo ------------------------------------
+"   - https://vimtricks.com/p/saving-session-state/
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 set viewoptions+=localoptions
 set viewdir=$HOME/.vim/view
