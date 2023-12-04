@@ -23,6 +23,11 @@ endif
 
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
+set viewoptions+=localoptions
+set viewdir=$HOME/.vim/view
+
+set sessionoptions+=resize,winpos
+
 set viminfofile=$HOME/.vim/.viminfo
 set viminfo="" " disable .viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
