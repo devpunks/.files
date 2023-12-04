@@ -10,6 +10,7 @@
 .mutagen
 .ssh
 .viminfo
+.NERDTreeBookmarks
 
 # termux
 .termux
