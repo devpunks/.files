@@ -350,7 +350,6 @@ set statusline+=\ (%p%%)
 " FONTS, COLORS & HIGHLIGHTS - https://jonasjacek.github.io/colors ***************
 " ********************************************************************************
 
-" colorscheme
 set background=dark
 colorscheme jellybeans " Set color scheme
 let scheme = get(g:, 'colors_name', 'NONE')
