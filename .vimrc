@@ -309,6 +309,7 @@ autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test set filetype=javascript
 " Ruby
 "   - https://stackoverflow.com/questions/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
 " --------------------------------------------------------------------------------
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
 autocmd BufNewFile,BufRead *.html.erb set filetype=eruby
 
