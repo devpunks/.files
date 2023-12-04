@@ -184,7 +184,7 @@ nnoremap <C-n> :tabnext<cr>
 nnoremap <C-p> :tabprevious<cr>
 
 " <CTRL+h> Focus on pane to left
-"" nmap <C-h> <C-w>h
+nmap <C-h> <C-w>h
 " <CTRL+h> Focus on pane down
 "" nmap <C-j> <C-w>j
 
