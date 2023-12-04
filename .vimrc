@@ -351,9 +351,12 @@ set statusline+=\ (%p%%)
 " ********************************************************************************
 
 set background=dark
-colorscheme jellybeans " Set color scheme
-let scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ \ \ 🎨\ %{scheme}\ 
+try
+  colorscheme jellybeans " Set color scheme
+catch | endtry
+
+let s:scheme = get(g:, 'colors_name', 'NONE')
+set statusline+=\ \ \ \ 🎨\ %{s:scheme}\ 
 
 " Italic Font ???
 " https://stackoverflow.com/a/30937851/173208
