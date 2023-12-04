@@ -47,8 +47,6 @@ set path+=$PWD/**
 
 syntax on " turns syntax highlighting on
 
-finish
-
 if &compatible
   set nocompatible " = https://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
 endif
