@@ -57,7 +57,9 @@ set nomodeline "Ignore file mode lines
 set showcmd " show current command prompt suffix
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 
-" increment formats - https://www.reddit.com/r/vim/comments/p18418/til_that_ctrlactrlx_can_incrementdecrement_a/
+" increment formats
+"   - https://vimtricks.com/p/vimtrick-increment-numbers/
+"   - https://www.reddit.com/r/vim/comments/p18418/til_that_ctrlactrlx_can_incrementdecrement_a/
 set nrformats-=octal
 set nrformats+=alpha
 
