@@ -135,6 +135,8 @@ set numberwidth=4 " gutter columns
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 
+finish
+
 if has('signs')
   " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
   " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
