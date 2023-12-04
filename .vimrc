@@ -287,3 +287,173 @@ nnoremap <cr> :NERDTreeToggle<cr>
 autocmd VimEnter * NERDTreeToggle | wincmd p
 
 
+" ********************************************************************************
+" Status Message *****************************************************************
+" ********************************************************************************
+
+set laststatus=2 " Always show status line
+" set statusline=[fo=%{&fo}]
+
+" clear out status line
+set statusline=
+
+" file type
+set statusline+=💻[%Y]
+
+set statusline+=%{(mode()=='n')?'\ 📃\ ':''}
+set statusline+=%{(mode()=='i')?'\ 📝\ ':''}
+set statusline+=%{(mode()=='R')?'\ REPLACE\ ':''}
+set statusline+=%{(mode()=='v')?'\ 🔎\ ':''}
+set statusline+=%{(mode()=='V')?'\ 🔎\ ':''}
+
+" read only mode
+set statusline+=%r
+
+" full file name
+set statusline+=%-10F
+
+" right justify everything after this line
+set statusline+=%=
+
+" cursor column position
+set statusline+=\ 📜\ %2c\ ⋈\ %-l
+
+" cursor line, total lines
+set statusline+=\ of\ %L\ lines
+
+" percentage
+set statusline+=\ (%p%%)
+
+
+" ********************************************************************************
+" FONTS, COLORS & HIGHLIGHTS - https://jonasjacek.github.io/colors ***************
+" ********************************************************************************
+
+" colorscheme
+set background=dark
+colorscheme jellybeans " Set color scheme
+let scheme = get(g:, 'colors_name', 'NONE')
+set statusline+=\ \ \ \ 🎨\ %{scheme}\ 
+
+" Italic Font ???
+" https://stackoverflow.com/a/30937851/173208
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+set t_Co=256 " enable 256 colors
+
+
+
+
+
+
+
+" http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+" http://www.bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
+" * can use hexidecimal values for gui (e.g. guibg=#000000)
+" gui / cterm display modes (none,(i)talic,(b)old,(s)tandout, (u)nderline, under(c)url)
+"hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+
+" Custom Color Groups
+highlight WhiteSpace ctermbg=NONE ctermfg=244
+
+highlight Braces ctermfg=249
+highlight Error ctermbg=13 ctermfg=black
+highlight VisualColor ctermbg=132 ctermfg=234
+highlight NormalColor ctermbg=234 ctermfg=magenta
+highlight InsertColor ctermbg=magenta ctermfg=234
+highlight ReplaceColor guifg=Black guibg=maroon ctermbg=165 ctermfg=0
+
+highlight TabColorNC ctermbg=black ctermfg=132 cterm=bold
+
+
+" Native Color Groups
+" https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
+highlight Directory ctermfg=13
+highlight String cterm=italic ctermfg=117
+highlight! link TabColor NormalColor
+highlight! link TabLine TabColorNC
+highlight! link TabLineSel TabColor
+highlight! link TabLineFill TabLine
+highlight! link NonText WhiteSpace
+highlight! link SpecialKey WhiteSpace
+highlight! link  PreProc String
+highlight StringDelimiter cterm=bold ctermfg=132
+highlight Title cterm=bold ctermfg=159
+highlight Special cterm=bold ctermfg=183
+highlight! link Constant Special
+highlight Statement ctermfg=132
+highlight! link Function Statement
+highlight! link StorageClass Statement
+highlight! link Type Identifier
+highlight! link StatusLine NormalColor
+highlight! link StatusLineTerm StatusLine
+highlight StatusLineNC ctermfg=249
+highlight! link StatusLineTermNC StatusLineNC
+highlight Pmenu ctermfg=132 ctermbg=235
+highlight LineNr ctermfg=240 ctermbg=234
+highlight VertSplit ctermfg=132 ctermbg=232
+highlight PmenuThumb ctermfg=red ctermbg=132
+highlight CursorLineNr ctermfg=132 ctermbg=234
+highlight Scrollbar ctermfg=red ctermbg=blue
+highlight! link SpellBad Error
+highlight! link ErrorMsg Error
+highlight! link WarningMsg Error
+highlight Search term=reverse ctermfg=black ctermbg=13
+highlight PmenuSbar ctermfg=green ctermbg=black
+highlight PmenuSel ctermfg=magenta ctermbg=black
+highlight SignColumn ctermbg=darkgrey guibg=darkgrey
+highlight Cursor guifg=black ctermfg=black guibg=white ctermbg=white
+highlight iCursor guifg=white ctermfg=black guibg=steelblue ctermbg=white
+highlight StatusFileName ctermbg=234 guibg=black ctermfg=magenta guifg=magenta
+
+" Overrides
+highlight vimOper ctermfg=13
+highlight! link vimEcho vimOper
+highlight! link vimMapLhs vimOper
+highlight! link vimCmdSep vimOper
+highlight! link vimHiBang vimOper
+highlight! link vimUserCmd vimOper
+highlight! link vimHiKeyList vimOper
+highlight! link vimFunction String
+highlight! link vimUserFunc vimFunction
+highlight! link vimIsCommand Statement
+highlight! link vimVar vimIsCommand
+highlight! link vimAutoCmdSfxList vimOper
+highlight! link vimAutoEventList Delimiter
+highlight! link shQuote String
+highlight! link shQuote String
+highlight! link vimMapRhs Identifier
+highlight! link vimSetEqual vimOper
+highlight! link vimSet vimSetEqual
+highlight! link vimHiCtermColor String
+highlight! link vimHiGroup Special
+highlight! link vimGroup vimHiGroup
+highlight! link vimNumber String
+highlight! link vimHiNmbr vimNumber
+highlight! link NERDTreeDir Directory
+highlight NERDTreeCWD ctermfg=13  cterm=reverse
+highlight! link NERDTreeFile Statement
+highlight! link NERDTreeExecFile Statement
+highlight! link cssBraces Braces
+highlight! link rubyParentheses Braces
+highlight! link rubyCurlyBlockDelimiter Braces
+highlight rubyMethodBlock ctermfg=132
+highlight! link javaScriptBraces Braces
+highlight! link javaScriptParens Braces
+highlight htmlTagName cterm=bold ctermfg=134
+highlight! link htmlTagN htmlTagName
+highlight! link htmlSpecialTagName htmlTagName
+highlight! link cssTagName htmlTagName
+highlight! link cssSelectorOp Statement
+highlight! default link cssIdentifier Identifier
+
+" --Interactive Status -----------------------------
+autocmd InsertEnter * highlight! link StatusLine InsertColor
+autocmd InsertLeave * highlight! link StatusLine NormalColor
+
+
+" ********************************************************************************
+" Functions **********************************************************************
+" ********************************************************************************
