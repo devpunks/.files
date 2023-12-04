@@ -69,7 +69,8 @@ set nrformats+=alpha
 " https://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks#answer-810866
 " 200
 :set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
-set colorcolumn=72,75,100 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
+" https://vimtricks.com/p/vim-line-length-marker/
+set colorcolumn=-8,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 highlight ColorColumn ctermbg=233
 
 set hlsearch " Highlight found search results
