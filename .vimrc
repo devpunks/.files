@@ -148,7 +148,7 @@ set guicursor+=n-v-c:blinkwait10
 set guicursor+=i:ver100-iCursor
 set guicursor+=i:blinkwait90
 
-" - Chrome ===================================
+" - Chrome -----------------------------------
 set title " File currently being edited
 set showtabline=2 " :help setting-tabline
 
