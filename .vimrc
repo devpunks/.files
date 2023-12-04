@@ -221,7 +221,7 @@ nmap <C-l> <C-w>l
 nnoremap = <C-w>=
 
 " normal mode: save
-" nnoremap <c-s> :w<cr>
+nnoremap <c-s> :w<cr>
 
 " insert mode: escape to normal and save
 "" inoremap <c-s> <esc>:w<cr>
