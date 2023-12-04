@@ -8,6 +8,7 @@ highlight DiffChange ctermfg=yellow guifg=yellow
 highlight LineNr ctermbg=234 guibg=darkgray
 
 function s:get_color(group, attr)
+  " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
   return synIDattr( synIDtrans( hlID(a:group)), a:attr)
 endfunction
 let s:gutter_bg=s:get_color('LineNr', 'bg#')
