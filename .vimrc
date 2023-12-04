@@ -434,7 +434,8 @@ set statusline+=\ (%p%%)
 
 " ********************************************************************************
 " FONTS, COLORS & HIGHLIGHTS
-"   - https://jonasjacek.github.io/colors ***************
+"   - https://jonasjacek.github.io/colors
+"   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
 " ********************************************************************************
 
