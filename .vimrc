@@ -332,6 +332,13 @@ autocmd FileType python set omnifunc=syntaxcomplete#Complete
 filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 " --------------------------------------------------------------------------------
+" Omni-Complete
+"   - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
+"   - https://vim.fandom.com/wiki/Omni_completion
+" --------------------------------------------------------------------------------
+set omnifunc=syntaxcomplete#Complete " Default Completion
+
+" --------------------------------------------------------------------------------
 " ZoomWin
 " --------------------------------------------------------------------------------
 nnoremap , :ZoomWin<cr>
