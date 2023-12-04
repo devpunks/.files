@@ -29,7 +29,7 @@ set viewdir=$HOME/.vim/view
 set sessionoptions+=resize,winpos
 
 set viminfofile=$HOME/.vim/.viminfo
-set viminfo="" " disable .viminfo
+set viminfo="NONE" " disable .viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
 autocmd VimLeave * echom "PEAAAACE"
 
