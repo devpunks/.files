@@ -165,7 +165,7 @@ set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 
 finish
 
-if has('signs')
+if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
   " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
   " - https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
