@@ -98,6 +98,8 @@ set backupdir=$TMPDIR " backup location
 set viewoptions-=options
 set sessionoptions-=options
 
+" disable sessions
+
 " - Cursor ------------------------------------
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
 set mouse=a " Enable mouse use in all modes
