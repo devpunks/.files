@@ -125,11 +125,6 @@ if has('signs')
   " set signcolumn=number " show sign instead of line number
 endif
 
-if has("gui_running")
-  " remove ugly toolbar :-)
-  set guioptions=egmrt
-endif
-
 " - Menus ------------------------------------
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 " - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
