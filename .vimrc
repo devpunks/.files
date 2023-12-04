@@ -319,7 +319,7 @@ set statusline+=%=
 set statusline+=\ 📜\ %2c\ ⋈\ %-l
 
 " cursor line, total lines
-set statusline+=\ of\ %L\ lines
+set statusline+=\ of\ %L\ LOC
 
 " percentage
 set statusline+=\ (%p%%)
