@@ -280,7 +280,7 @@ set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) nex
 
 " --------------------------------------------------------------------------------
 " Markdown
-" http://vimcasts.org/episodes/hard-wrapping-text/
+"   - http://vimcasts.org/episodes/hard-wrapping-text/
 " --------------------------------------------------------------------------------
 "" autocmd BufNewFile,BufRead *.md set formatoptions-=t formatoptions+=n
 "" autocmd BufNewFile,BufRead README set formatoptions-=t formatoptions+=n
