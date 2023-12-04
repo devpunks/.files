@@ -15,8 +15,8 @@ let s:gutter_bg=s:get_color('LineNr', 'bg#')
 
 echom "Gutter bg: ".s:gutter_bg
 
-execute "hi CursorLineNr ctermbg=".s:gutter_bg
-execute "hi SignColumn guibg=darkgray ctermbg=".s:gutter_bg
+execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
+execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
 
 verbose hi LineNr
 verbose hi CursorLineNr
