@@ -499,7 +499,6 @@ highlight! link StatusLineTerm StatusLine
 highlight StatusLineNC ctermfg=249
 highlight! link StatusLineTermNC StatusLineNC
 highlight Pmenu ctermfg=132 ctermbg=235
-highlight LineNr ctermfg=240 ctermbg=234
 highlight VertSplit ctermfg=132 ctermbg=232
 highlight PmenuThumb ctermfg=red ctermbg=132
 highlight Scrollbar ctermfg=red ctermbg=blue
@@ -509,9 +508,10 @@ highlight! link WarningMsg Error
 highlight Search term=reverse ctermfg=black ctermbg=13
 highlight PmenuSbar ctermfg=green ctermbg=black
 highlight PmenuSel ctermfg=magenta ctermbg=black
-highlight SignColumn ctermbg=darkgrey guibg=darkgrey
+highlight LineNr ctermfg=darkgrey ctermbg=234
+highlight SignColumn ctermbg=234 guibg=darkgrey
 highlight CursorColumn ctermbg=3
-highlight CursorLineNr ctermfg=132 ctermbg=234
+highlight CursorLineNr ctermfg=magenta ctermbg=234
 highlight Cursor guifg=black ctermfg=black guibg=white ctermbg=white
 highlight iCursor guifg=white ctermfg=black guibg=steelblue ctermbg=white
 highlight StatusFileName ctermbg=234 guibg=black ctermfg=magenta guifg=magenta
