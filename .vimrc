@@ -10,6 +10,16 @@ set encoding=utf-8
 " Tutorial: http://learnvimscriptthehardway.stevelosh.com
 
 " ********************************************************************************
+" - Notes ----------------------------
+"   - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
+"   - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
+if executable('termux-info')
+  echo "SHAZAMMM IN TERMUX"
+  call system('termux-info')
+endif
+
+finish
+" ------------------------------------
 
 "let skip_defaults_vim=1
 " disable .viminfo
