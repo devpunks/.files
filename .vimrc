@@ -21,6 +21,9 @@ if executable('termux-info')
 " call system('termux-info')
 endif
 
+" Buffers ---------------------------
+set nohidden " possibly overridden by ZoomWin
+
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 set viewoptions+=localoptions
