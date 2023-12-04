@@ -379,7 +379,7 @@ nnoremap , :ZoomWin<cr>
 " --------------------------------------------------------------------------------
 
 let g:NERDTreeShowHidden=1 " Show hidden files (I)
-let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
+let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
 let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
 let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
 let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
