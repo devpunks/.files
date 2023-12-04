@@ -377,13 +377,9 @@ nnoremap , :ZoomWin<cr>
 " --------------------------------------------------------------------------------
 " NERDTree
 " --------------------------------------------------------------------------------
-autocmd VimEnter * call Setu()
+autocmd VimEnter * if exists('g:NERDTree') | call Drawer() | endif
 
-function Setu()
-  if !exists('g:NERDTree')
-    return
-  endif
-
+function Drawer()
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
   let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
   let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
