@@ -216,6 +216,51 @@ nnoremap ; :
 
 
 " ********************************************************************************
+" Files **************************************************************************
+" ********************************************************************************
+
+set title " File currently being edited
+
+set autoindent
+filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+
+set lines=27
+set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
+set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
+
+" formatoptions table - https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
+set formatoptions+=n " Format numbers
+set formatoptions+=c " autowrap `c`omments
+set formatoptions+=q " autowrap comments with gq
+set formatoptions+=t " autowrap using `t`extwidth
+set formatoptions+=j " Delete comment from joining lines
+set formatoptions+=o " Preserve comments when pressing o/O
+
+set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
+
+" --------------------------------------------------------------------------------
+" Markdown
+" http://vimcasts.org/episodes/hard-wrapping-text/
+" --------------------------------------------------------------------------------
+"" autocmd BufNewFile,BufRead *.md set formatoptions-=t formatoptions+=n
+"" autocmd BufNewFile,BufRead README set formatoptions-=t formatoptions+=n
+
+" --------------------------------------------------------------------------------
+" Javascript
+" --------------------------------------------------------------------------------
+autocmd BufNewFile,BufRead *.es   set filetype=javascript
+autocmd BufNewFile,BufRead *.mjs  set filetype=javascript
+autocmd BufNewFile,BufRead *.test set filetype=javascript
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+
+" --------------------------------------------------------------------------------
+" Ruby
+" --------------------------------------------------------------------------------
+autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead *.html.erb set filetype=eruby
+
+
+" ********************************************************************************
 " Plugins ************************************************************************
 " ********************************************************************************
 
