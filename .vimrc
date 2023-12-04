@@ -378,7 +378,7 @@ nnoremap , :ZoomWin<cr>
 " NERDTree
 " --------------------------------------------------------------------------------
 
-let g:NERDTreeBookmarksFile="$HOME/.vim/.NERDTreeBookmarks"
+let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
 let g:NERDTreeShowHidden=1    " Show hidden files (I)
 let g:NERDTreeShowBookmarks=1 " Show hidden files (I)
 let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
