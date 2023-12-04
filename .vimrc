@@ -311,7 +311,7 @@ autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test set filetype=javascript
 " --------------------------------------------------------------------------------
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
-autocmd BufNewFile,BufRead *.html.erb set filetype=eruby
+autocmd BufNewFile,BufRead *.erb set filetype=eruby
 
 
 " ********************************************************************************
