@@ -282,8 +282,21 @@ set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) nex
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
 " --------------------------------------------------------------------------------
-"" autocmd BufNewFile,BufRead *.md set formatoptions-=t formatoptions+=n
-"" autocmd BufNewFile,BufRead README set formatoptions-=t formatoptions+=n
+autocmd BufNewFile,BufRead *.md set formatoptions-=t formatoptions+=n
+autocmd BufNewFile,BufRead README set formatoptions-=t formatoptions+=n
+
+" --------------------------------------------------------------------------------
+" HTML
+"   - https://vimtricks.com/p/vim-autocomplete-html-tags/
+" --------------------------------------------------------------------------------
+autocmd FileType html,eruby set omnifunc=htmlcomplete#CompleteTags
+
+" --------------------------------------------------------------------------------
+" CSS
+"   - https://www.simplified.guide/vim/auto-complete-css
+" --------------------------------------------------------------------------------
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd BufNewFile,BufRead *.sass,*.scss set filetype=css
 
 " --------------------------------------------------------------------------------
 " Javascript
