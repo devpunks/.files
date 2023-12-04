@@ -347,7 +347,9 @@ set statusline+=\ (%p%%)
 
 
 " ********************************************************************************
-" FONTS, COLORS & HIGHLIGHTS - https://jonasjacek.github.io/colors ***************
+" FONTS, COLORS & HIGHLIGHTS
+"   - https://jonasjacek.github.io/colors ***************
+"   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
 " ********************************************************************************
 
 set background=dark
