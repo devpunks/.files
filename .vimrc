@@ -33,8 +33,6 @@ set viminfo="NONE" " disable .viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
 autocmd VimLeave * echom "PEAAAACE"
 
-finish
-
 
 " ********************************************************************************
 " Settings ***********************************************************************
