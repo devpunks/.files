@@ -162,6 +162,17 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
+" termux -----
+" https://ibnishak.github.io/blog/post/copy-to-termux-clip/
+if executable('*termux-clipboard-set')
+  echo "SHAZAAAM FOUND CLIPBOARD"
+else
+  echo "Termux clipboard not found"
+endif
+" vnoremap <C-x> :!termux-clipboard-set<CR>
+" vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
+" inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
+
 set wrap
 " backspace will delete CRLF at beginning of line
 " space key will wrap to next line at end of line
