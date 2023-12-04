@@ -25,7 +25,7 @@ finish
 " disable .viminfo
 set viminfo=
 set viminfofile=$HOME/.vim/.viminfo
-autocmd VimLeave * call delete('~/.viminfo')
+" autocmd VimLeave * call delete('~/.viminfo')
 
 
 " ********************************************************************************
