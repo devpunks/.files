@@ -235,7 +235,7 @@ nnoremap ; :
 
 " https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
 " MAJOR MOUSE PROBLEMS
-"" nnoremap <esc> :nohlsearch<cr>
+nnoremap <esc> :nohlsearch<cr>
 
 
 " ********************************************************************************
