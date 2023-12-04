@@ -21,12 +21,8 @@ if executable('termux-info')
 " call system('termux-info')
 endif
 
-finish
-" ------------------------------------
-
-"let skip_defaults_vim=1
-" disable .viminfo
-set viminfo=
+" Views, Sessions, Viminfo ------------------------------------
+"   - https://learnvim.irian.to/basics/views_sessions_viminfo
 set viminfofile=$HOME/.vim/.viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
 
