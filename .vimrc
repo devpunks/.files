@@ -384,12 +384,14 @@ let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
 let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
 let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
 
-" [ENTER] Opens Nerdtree
-nnoremap <cr> :NERDTreeToggle<cr>
+if exists('*NERDTree')
+  " [ENTER] Opens Nerdtree
+  nnoremap <cr> :NERDTreeToggle<cr>
 
 " Open NerdTree on VimEnter startup
 "   | Selects `p`revious buffer to remove tree focus
 autocmd VimEnter * NERDTreeToggle | wincmd p
+end
 
 
 finish
