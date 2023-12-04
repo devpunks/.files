@@ -264,7 +264,6 @@ nnoremap <esc> :nohlsearch<cr>
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 set autoindent
-filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 set lines=27
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
