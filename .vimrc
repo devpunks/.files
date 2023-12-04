@@ -242,8 +242,6 @@ nnoremap <esc> :nohlsearch<cr>
 " Files **************************************************************************
 " ********************************************************************************
 
-set title " File currently being edited
-
 set autoindent
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
