@@ -163,8 +163,6 @@ set numberwidth=4 " gutter columns
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 
-finish
-
 if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
   " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
@@ -212,9 +210,9 @@ imap <C-v> <ESC>"+pa
 " termux -----
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
 if executable('*termux-clipboard-set')
-  echo "SHAZAAAM FOUND CLIPBOARD"
+  echom "SHAZAAAM FOUND CLIPBOARD"
 else
-  echo "Termux clipboard not found"
+  echom "Termux clipboard not found"
 endif
 " vnoremap <C-x> :!termux-clipboard-set<CR>
 " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
@@ -385,6 +383,9 @@ nnoremap <cr> :NERDTreeToggle<cr>
 " Open NerdTree on VimEnter startup
 "   | Selects `p`revious buffer to remove tree focus
 autocmd VimEnter * NERDTreeToggle | wincmd p
+
+
+finish
 
 
 " ********************************************************************************
