@@ -18,6 +18,61 @@ set viminfofile=$HOME/.vim/.viminfo
 autocmd VimLeave * call delete('~/.viminfo')
 
 
+" ********************************************************************************
+" Settings ***********************************************************************
+" ********************************************************************************
+
+set path+=$PWD/**
+
+syntax on " turns syntax highlighting on
+
+if &compatible
+  set nocompatible " = https://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
+endif
+
+set complete-=i
+set nomodeline "Ignore file mode lines
+"set shell " The shell used to execute commands
+set showcmd      " display incomplete command in lower right
+set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
+
+" increment formats - https://www.reddit.com/r/vim/comments/p18418/til_that_ctrlactrlx_can_incrementdecrement_a/
+set nrformats-=octal
+set nrformats+=alpha
+
+
+" (Hopefully) Stop VIM from crashing
+" https://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks#answer-810866
+" 200
+:set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
+set colorcolumn=72,75,100 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
+highlight ColorColumn ctermbg=233
+
+set hlsearch " Highlight found search results
+set incsearch " show partial search matches
+set cursorline " highlight current cursor line
+set cursorcolumn " highlight current cursor column
+set noerrorbells " Display beep on errors
+set autoread " re-read files if unmodified
+set smartcase " Automatically search case-sensitive
+set visualbell " Flash the screen instead of beeping errors
+
+" - Backups ------------------------------------
+"   - https://groups.google.com/g/vim_use/c/K2Utwkh5f30?pli=1
+"   - https://alvinalexander.com/linux-unix/vi-vim-swap-backup-tilde-temporary-files-directory-move/
+set backup " keep a backup file (nobackup for inverse)
+" Undo location
+" set nobackup
+" set noswapfile
+" set noundofile
+
+set undodir=$TMPDIR " undo location
+set directory=$TMPDIR " swap location
+set backupdir=$TMPDIR " backup location
+
+" disable sessions
+set viewoptions-=options
+set sessionoptions-=options
 
 
 
