@@ -22,3 +22,6 @@
 [submodule "ZoomWin"]
 	path = ZoomWin
 	url = ./.vim/pack/devpunks/start/ZoomWin/
+[submodule ".vim/pack/devpunks/start/nerdtree"]
+	path = .vim/pack/devpunks/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
