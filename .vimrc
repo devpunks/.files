@@ -276,7 +276,6 @@ set formatoptions+=q " autowrap comments with gq
 set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=o " Preserve comments when pressing o/O
-
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
 
 " --------------------------------------------------------------------------------
