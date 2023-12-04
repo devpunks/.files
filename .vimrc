@@ -377,8 +377,13 @@ nnoremap , :ZoomWin<cr>
 " --------------------------------------------------------------------------------
 " NERDTree
 " --------------------------------------------------------------------------------
+autocmd VimEnter * call Setu()
 
-if exists('*NERDTree')
+function Setu()
+  if !exists('g:NERDTree')
+    return
+  endif
+
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
   let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
   let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
@@ -389,9 +394,10 @@ if exists('*NERDTree')
   nnoremap <cr> :NERDTreeToggle<cr>
 
   " Open NerdTree on VimEnter startup
-  "   | Selects `p`revious buffer to remove tree focus
-  autocmd VimEnter * NERDTreeToggle | wincmd p
-end
+  NERDTree
+  " Selects `p`revious buffer to remove tree focus
+  wincmd p
+endfunction
 
 
 finish
