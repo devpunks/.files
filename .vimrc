@@ -189,7 +189,7 @@ nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 
 " <CTRL+h> Focus on pane up
-"" nmap <C-k> <C-w>k
+nmap <C-k> <C-w>k
 
 " <CTRL+h> Focus on pane to right
 "" nmap <C-l> <C-w>l
