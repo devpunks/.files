@@ -17,8 +17,8 @@ let g:skip_defaults_vim=1
 "   - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
 "   - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
 if executable('termux-info')
-  echo "SHAZAMMM IN TERMUX"
-  call system('termux-info')
+  echom "SHAZAMMM IN TERMUX"
+" call system('termux-info')
 endif
 
 finish
