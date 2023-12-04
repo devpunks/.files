@@ -74,6 +74,97 @@ set backupdir=$TMPDIR " backup location
 set viewoptions-=options
 set sessionoptions-=options
 
+" ********************************************************************************
+" Cursor ************************************************************************
+" ********************************************************************************
+" http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
+set mouse=a " Enable mouse use in all modes
+set ttyfast " Send more characters for redraws
+set lazyredraw " Don't update during macro script execution
+
+if has('mouse_sgr')
+  " Must be one of: sgr, xterm, xterm2, netterm, dec, jsbterm, pterm
+  " Set this to the name of your terminal that supports mouse codes.
+  set ttymouse=sgr
+else
+  set ttymouse=xterm2
+endif
+
+set guicursor=n-v-c:block-Cursor
+set guicursor+=n-v-c:blinkwait10
+set guicursor+=i:ver100-iCursor
+set guicursor+=i:blinkwait90
+
+
+" - Gutter ------------------------------------
+set number
+set numberwidth=4 " gutter columns
+set ruler " set cursor coordinates
+set rulerformat=📍%P⏬%l⏩%c " overridden by statusline
+set showtabline=2 " :help setting-tabline
+
+if has('signs')
+  " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
+  " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
+  " - https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
+  " set signcolumn=number " show sign instead of line number
+endif
+
+if has("gui_running")
+  " remove ugly toolbar :-)
+  set guioptions=egmrt
+endif
+
+" - Menus ------------------------------------
+" - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
+" - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
+set wildmenu
+set wildmode=list:longest,full
+
+" - Whitespace ------------------------------------
+retab " update tab format
+set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
+set pastetoggle=<F2> " Allow toggle of code indentation
+set smarttab
+set expandtab "turn tabs into whitespace
+"ensure aligned  autoindents - https://vimtricks.com/p/ensuring-aligned-indentation/
+set shiftround
+set shiftwidth=2
+set tabstop=2 "set tab character to 2 characters
+set softtabstop=2
+set list " view hidden characters
+set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
+
+" - Clipboard ------------------------------------
+"   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
+"   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
+set history=1000  " Increase undo limit
+set tabpagemax=50 " Maximum number of tab pages
+vnoremap <c-c> "*y<cr>
+inoremap <c-v> “*p<cr>
+set clipboard=unnamedplus
+
+" copy and paste
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+set wrap
+" backspace will delete CRLF at beginning of line
+" space key will wrap to next line at end of line
+" left and right arrow will wrap to previous and next lines at end of line
+" (in normal mode & insertion mode)
+set whichwrap=b,s,<,>,[,]
+set linebreak   " Avoid wrapping line in middle of word
+set backspace=2 " character deletion prior to insertion mode
+set scrolloff=2 " Lines of offset when jump scrolling
+set sidescroll=10 " scroll amount when a word is outside of view
+set display+=lastline " Always show paragraph last line
+
+set foldenable
+set foldmethod=indent "Enable indent folding
+nnoremap <space> za
 
 
 " ********************************************************************************
