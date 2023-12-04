@@ -34,9 +34,10 @@ endfor
 
 " Screencasts: http://vimcasts.org
 
-" Gist: https://gist.github.com/snuggs/612093
+" Gist - https://gist.github.com/snuggs/612093
 
-" Tutorial: http://learnvimscriptthehardway.stevelosh.com
+" Tutorial - http://learnvimscriptthehardway.stevelosh.com
+" Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
 
 " ********************************************************************************
 
