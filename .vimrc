@@ -95,7 +95,6 @@ set undodir=$TMPDIR " undo location
 set directory=$TMPDIR " swap location
 set backupdir=$TMPDIR " backup location
 
-" disable sessions
 set viewoptions-=options
 set sessionoptions-=options
 
