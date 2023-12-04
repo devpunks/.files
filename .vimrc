@@ -378,6 +378,8 @@ nnoremap , :ZoomWin<cr>
 " NERDTree
 " --------------------------------------------------------------------------------
 
+let g:NERDTreeShowHidden=1 " Show hidden files (I)
+let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
 let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
 let g:NERDTreeShowHidden=1    " Show hidden files (I)
 let g:NERDTreeShowBookmarks=1 " Show hidden files (I)
