@@ -63,7 +63,6 @@ set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 set nrformats-=octal
 set nrformats+=alpha
 
-
 " (Hopefully) Stop VIM from crashing
 " https://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks#answer-810866
 " 200
