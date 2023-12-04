@@ -169,6 +169,7 @@ nnoremap <space> za
 
 " ********************************************************************************
 " Mappings ***********************************************************************
+" - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 " - https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
 " - https://vi.stackexchange.com/questions/2089/what-are-the-differences-between-the-map-noremap-abbrev-and-noreabbrev-command
 " ********************************************************************************
