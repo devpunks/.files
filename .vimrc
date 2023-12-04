@@ -224,7 +224,7 @@ nnoremap = <C-w>=
 nnoremap <c-s> :w<cr>
 
 " insert mode: escape to normal and save
-"" inoremap <c-s> <esc>:w<cr>
+inoremap <c-s> <esc>:w<cr>
 
 " visual mode: escape to normal and save
 "" vnoremap <c-s> <esc>:w<cr>
