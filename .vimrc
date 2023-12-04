@@ -227,7 +227,7 @@ nnoremap <c-s> :w<cr>
 inoremap <c-s> <esc>:w<cr>
 
 " visual mode: escape to normal and save
-"" vnoremap <c-s> <esc>:w<cr>
+vnoremap <c-s> <esc>:w<cr>
 
 
 " Map semi-colon to colon (no need to press <SHIFT>
