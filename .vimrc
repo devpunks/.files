@@ -24,6 +24,7 @@ endif
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 set viminfofile=$HOME/.vim/.viminfo
+set viminfo="" " disable .viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
 
 
