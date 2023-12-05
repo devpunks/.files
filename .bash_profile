@@ -6,6 +6,16 @@
 # [ -r ~/.bashrc ] && source ~/.bashrc
 
 
+# ----------------------
+# shell
+# ----------------------
+
+alias cl=clear
+alias ..='cd ..'
+alias lsg='ls -AhlFG --group-directories-first'
+alias list='exa -FahlT --git --grid --icons --group-directories-first --level=2'
+alias tre='tree -CDFah --du -L 2 --dirsfirst --gitignore'
+
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # AKA FUNCTIONS
 
