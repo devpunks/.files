@@ -29,11 +29,6 @@ weigh() { # https://www.redhat.com/sysadmin/du-command-options
   du $FLAGS -- "$1"
 }
 
-alias cl=clear
-alias lsg='ls -AhlFG --group-directories-first'
-alias list='exa -FahlT --git --grid --icons --group-directories-first --level=2'
-alias tre='tree -CDFah --du -L 2 --dirsfirst --gitignore'
-
 # ----------------------
 # Ruby
 # ----------------------
