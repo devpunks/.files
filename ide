@@ -12,9 +12,8 @@ tmux start-server
 # create new session
 tmux new-session -d -s $SESSION -n "🕶️ devPunks"
 
-# Select pane 0 run vim
-tmux select-pane -t 0
-tmux send-keys "vim" C-m
+tmux select-pane -T "DAMNNNN"
+# tmux send-keys "vi" C-m
 
 # Split pane 1 vertically by 30%
 tmux split-window -h -l 30
