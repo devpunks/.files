@@ -10,7 +10,7 @@ SESSION=`whoami`
 tmux start-server
 
 # create new session
-tmux new-session -d -s $session -n "🕶️ devPunks"
+tmux new-session -d -s $SESSION -n "🕶️ devPunks"
 
 # Select pane 0 run vim
 tmux select-pane -t 0
