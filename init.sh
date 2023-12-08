@@ -2,6 +2,10 @@ pkg upgrade
 pkg update
 pkg install termux-api
 termux-setup-storage
+
+pkg install jq
+pkg install exa
+pkg install git
 pkg install man
 pkg install most
 pkg install whois
