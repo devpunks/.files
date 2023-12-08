@@ -29,10 +29,11 @@ pkg install python-numpy
 pkg install sqlite
 pkg install postgresql
 pkg install postgis
-pkg install vim
 pkg install zopfli
 pkg install brotli
-gem update --system
+pkg install asciinema
+
+pip list
 gem help env
 ruby --version
 gem --version
@@ -45,7 +46,6 @@ git --version
 vim --version
 ffmpeg -version
 tmux -V
-pkg install exa
 
 echo
 source ~/.bashrc
