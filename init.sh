@@ -10,9 +10,6 @@ pkg install man
 pkg install vim
 pkg install most
 pkg install htop
-pkg install tree
-pkg install openssh
-pkg install git
 pkg install tmux
 pkg install wget
 pkg install golang
