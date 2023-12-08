@@ -34,4 +34,4 @@ tmux send-keys "clear" Enter
 tmux select-pane -T "FOO"
 
 # attach to new session
-tmux -2 attach -t $session
+tmux -v -2 attach -t $SESSION
