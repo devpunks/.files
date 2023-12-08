@@ -20,13 +20,9 @@ pkg install ncurses
 pkg install vlc && vlc --version
 pkg install youtubedr
 pkg install ffmpeg
-pkg install vlc
-vlc --version
-pkg install ruby
-pkg install nodejs-lts
-npm install -g npm
-pkg install htop
-pkg install jq
+pkg install ruby && gem update --system
+pkg install golang
+pkg install nodejs-lts && npm install -g npm
 pkg install python
 pip install pytest
 pkg install python-numpy
