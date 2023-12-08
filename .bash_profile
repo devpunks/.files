@@ -17,11 +17,15 @@ alias reload='(
 )'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
-  colors
-  tput colors
-  infocomp
-  toe
-  spectrum
+  clear
+  echo Size: $(stty size | tr " " "x")
+  echo Colors: $(tput colors)
+  echo && colors
+  echo && echo "stty $(stty -g)" && stty -a
+  echo && stty -a
+  echo && infocmp
+  echo && toe
+  echo && spectrum
 )'
 alias mo='most +u -s -t2'
 alias cl=clear
