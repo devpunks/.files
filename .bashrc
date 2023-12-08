@@ -46,6 +46,8 @@ export HISTTIMEFORMAT="%d/%m/%y %T - "
 export HISTFILE="$HOME/.bash_history"
 export HISTCONTROL=ignoredups:erasedups
 
+export PROMPT_COMMAND="history -a; history -c; history -r;"
+
 # more, less, most - https://askubuntu.com/questions/1191862/what-is-the-difference-between-more-and-less-commands
 #   - https://linux.die.net/man/1/lesskey
 #   - https://manpages.ubuntu.com/manpages/bionic/en/man1/most.1.html
