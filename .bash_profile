@@ -10,7 +10,11 @@
 # shell
 # ----------------------
 
-alias reload="termux-reload-settings && cl"
+alias reload='(
+  termux-reload-settings
+  stty sane
+  clear
+)'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
   colors
