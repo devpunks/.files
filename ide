@@ -17,7 +17,8 @@ tmux select-pane -T "DAMNNNN"
 
 # Split pane 0 vertically by 30%
 tmux split-window -h -l 30
-tmux send-keys "git status" C-m
+tmux send-keys "git status" Enter
+tmux select-pane -T "GIT"
 
 # Split pane 1 horizontally
 tmux split-window -v -l 5 -c "$(pwd)"
