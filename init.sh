@@ -9,8 +9,6 @@ pkg install git
 pkg install man
 pkg install vim
 pkg install most
-pkg install whois
-pkg install which
 pkg install htop
 pkg install tree
 pkg install openssh
