@@ -60,9 +60,9 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 # - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x264.html
 # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 #PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
+#export PS1="\[\u@\h:\w \]"
+#export PS1=""
 
-# https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
-export PROMPT_COMMAND="history -a;"
 
 
 # FUNCTIONS -------------------------------------
