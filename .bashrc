@@ -3,6 +3,9 @@
 
 # Gist: https://gist.github.com/snuggs/d4df3a974c482fe3473de361bb949b23
 #
+#   - GNU `coreutils`
+#     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
+#     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 #   - https://stackoverflow.com/questions/9953005/should-the-bashrc-in-the-home-directory-load-automatically/9954208#9954208
 # ******************************************************
 
