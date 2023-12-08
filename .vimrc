@@ -38,6 +38,7 @@ endfor
 
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
+" VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
 
 " ********************************************************************************
 
