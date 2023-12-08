@@ -21,6 +21,8 @@ export CURSES_LDFLAGS="-L/data/data/com.termux/files/usr/lib -lncurses"
 # https://unix.stackexchange.com/questions/198794/where-does-the-term-environment-variable-default-get-set
 # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
 export TERM=xterm-256color
+# - tty  - https://www.linusakesson.net/programming/tty/
+# - stty - https://www.computerhope.com/unix/ustty.htm
 #stty -ixon columns 500 # enable control-s and control-q in VIM
 stty -ixon columns 111 # enable control-s and control-q in VIM
 
