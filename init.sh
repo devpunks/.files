@@ -13,7 +13,11 @@ pkg install htop
 pkg install tmux
 pkg install tree
 pkg install wget
-pkg install golang
+pkg install whois
+pkg install which
+pkg install openssh
+pkg install ncurses
+pkg install vlc && vlc --version
 pkg install youtubedr
 pkg install ffmpeg
 pkg install vlc
