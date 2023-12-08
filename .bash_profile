@@ -10,6 +10,16 @@
 # shell
 # ----------------------
 
+alias reload="termux-reload-settings && cl"
+# https://invisible-island.net/ncurses/man/toe.1m.html
+alias term='(
+  colors
+  tput colors
+  infocomp
+  toe
+  spectrum
+)'
+alias mo='most +u -s -t2'
 alias cl=clear
 alias ..='cd ..'
 alias lsg='ls -AhlFG --group-directories-first'
@@ -62,5 +72,33 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+
+colors() {
+  # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+  for i in {0..255} ; do
+      printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
+      if (( i == 15 )) || (( i > 15 )) && (( (i-15) % 6 == 0 )); then
+          printf "\n";
+      fi
+  done
+}
+spectrum() {
+  # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
+  awk -v term_cols="${width:-$(tput cols || echo 80)}" -v term_lines="${height:-$(tput lines || echo 1)}" 'BEGIN{
+      s="/\\";
+      total_cols=term_cols*term_lines;
+      for (colnum = 0; colnum<total_cols; colnum++) {
+          r = 255-(colnum*255/total_cols);
+          g = (colnum*510/total_cols);
+          b = (colnum*255/total_cols);
+          if (g>255) g = 510-g;
+          printf "\033[48;2;%d;%d;%dm", r,g,b;
+          printf "\033[38;2;%d;%d;%dm", 255-r,255-g,255-b;
+          printf "%s\033[0m", substr(s,colnum%2+1,1);
+          if (colnum%term_cols==term_cols) printf "\n";
+      }
+      printf "\n";
+  }'
+}
 
 echo "Bash Profile"
