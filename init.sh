@@ -7,6 +7,7 @@ pkg install jq
 pkg install exa
 pkg install git
 pkg install man
+pkg install vim
 pkg install most
 pkg install whois
 pkg install which
