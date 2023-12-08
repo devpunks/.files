@@ -15,7 +15,7 @@ tmux new-session -d -s $SESSION -n "🕶️ devPunks"
 tmux select-pane -T "DAMNNNN"
 # tmux send-keys "vi" C-m
 
-# Split pane 1 vertically by 30%
+# Split pane 0 vertically by 30%
 tmux split-window -h -l 30
 tmux send-keys "git status" C-m
 
