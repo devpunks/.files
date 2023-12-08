@@ -11,6 +11,7 @@ pkg install vim
 pkg install most
 pkg install htop
 pkg install tmux
+pkg install tree
 pkg install wget
 pkg install golang
 pkg install youtubedr
