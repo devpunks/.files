@@ -1,0 +1,84 @@
+##################################
+Android Accessibility
+
+** Ensure FN + Android (W)
+
+<OS> = alt/cmd
+<leader> = [CTRL]+<OS>
+<OS> + U # Accessibility Settings
+<OS> + / # Accessibility Keys
+<OS> + [TAB] # Recent Apps
+
+##################################
+- [ESC] # Abort
+- [ALT] # Start Menu
+- [ALT] + [TAB] # Open Apps
+- [ALT] + A # Apps
+- [SHIFT] + [SPACE] # Change language
+- [CTRL] + [SPACE] # Change language
+- [HAMBURGER]
+  - (F5) # Context Menu (Right Click)
+  - (F5) # (Chrome) Context Menu
+- <OS> + B # Browser
+- <OS> + C # Contacts
+- <OS> + E # Email
+- <OS> + F # Search
+- <OS> + H # Voice Activation
+- <OS> + I # Bixby
+- <OS> + J # Tips
+- <OS> + K # Calendar
+- <OS> + L # Lock Screen
+- <OS> + M # Maps
+- <OS> + N # Notifications
+- <OS> + Q # Quick Panel
+- <OS> + R # Files
+- <OS> + S # Messages
+- <OS> + U # Accessibility Settings
+- <OS> + W # Start/Stop DEX
+- <OS> + V # Volume
+- <OS> + Y # Smart view
+- <OS> + Z # Settings
+- <OS> + [ENTER] # Home
+- <OS> + [DEL] # Back
+
+- [F4] - [F12] - (Check keyboard layout)
+- [FN]+[F4] - [FN]+[F12] - (Check keyboard layout)
+
+# Mail ------------------------------------
+- [CTRL]+N # New message
+
+# Chrome ------------------------------------
+- [ALT]+E # Open menu
+- [CTRL][SHIFT]+B # Bookmarks
+- [CTRL]+= # Larger size
+- [CTRL]+- # Smaller size
+- [CTRL]+0 # Default size
+- [CTRL]+D # Bookmark current page
+- [CTRL]+F # Find
+- [CTRL]+H # History
+- [CTRL]+L # Address bar
+- [CTRL]+N # New tab
+- [CTRL]+P # Print
+- [CTRL]+R # Reload
+- [CTRL][SHIFT]+R # Reload (with cache busting)
+- [CTRL]+W # Close current tab
+- [CTRL][SHIFT]+N # New incognito tab
+- [CTRL][SHIFT]+T # Reopen last closed tab
+- [CTRL][TAB] # Next tab
+- [CTRL][SHIFT][TAB] # Prev tab
+
+# DEX ------------------------------------
+- <OS> + [UP]
+  - Maximize floating window to fullscreen
+- <OS> + [DOWN]
+  - Minimize fullscreen to floating window
+  - Minimize floating window to taskbar.
+- <OS> + [RIGHT]
+  - Centers floating window from left sticky
+  - Right sticky from floating window
+  - Left floating window ffrom right sticky
+- <OS> + [LEFT]
+  - Centers floating window from right sticky
+  - Left sticky from floating window
+  - Right floating window ffrom left sticky
+
