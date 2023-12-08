@@ -21,7 +21,9 @@ tmux send-keys "git status" Enter
 tmux select-pane -T "GIT"
 
 # Split pane 1 horizontally
-tmux split-window -v -l 5 -c "$(pwd)"
+tmux split-window -v -l 5
+tmux send-keys "pwd" Enter
+tmux select-pane -T "PWD"
 
 # Select pane 0
 tmux select-pane -t 0
