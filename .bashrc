@@ -18,7 +18,8 @@ export EDITOR=vi
 # https://unix.stackexchange.com/questions/198794/where-does-the-term-environment-variable-default-get-set
 # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
 export TERM=xterm-256color
-stty -ixon columns 500 # enable control-s and control-q in VIM
+#stty -ixon columns 500 # enable control-s and control-q in VIM
+stty -ixon columns 111 # enable control-s and control-q in VIM
 
 # export PATH="/usr/local/sbin:$PATH"
 # export PATH="~/Library/Python/2.7/bin:$PATH"
