@@ -142,7 +142,7 @@ alias header='curl -I'
 alias wget='wget -c' # resume downloads
 
 # ----------------------
-# Ruby
+# tmux
 # ----------------------
 
 alias be='bundle exec'
