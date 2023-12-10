@@ -217,7 +217,10 @@ color () {
 }
 spectrum () {
   # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
-  awk -v term_cols="${width:-$(tput cols || echo 80)}" -v term_lines="${height:-$(tput lines || echo 1)}" 'BEGIN{
+  awk \
+    -v term_cols="${width:-$(tput cols || echo 80)}" \
+    -v term_lines="${height:-$(tput lines || echo 1)}" \
+    'BEGIN{
       s="/\\";
       total_cols=term_cols*term_lines;
       for (colnum = 0; colnum<total_cols; colnum++) {
