@@ -54,7 +54,9 @@ echo
 echo Cloning home directory...
 # git clone https://github.com/devpunks/-..git .
 git status
-# Submodules - https://github.blog/2016-02-01-working-with-submodules/
+# Submodules
+#   - https://github.blog/2016-02-01-working-with-submodules/
+#   - https://stackoverflow.com/questions/10666085/how-do-i-get-git-clone-recursive-to-recreate-submodules-remotes-and-branche
 echo Cloning submodules...
 git submodule
 git submodule update --init
