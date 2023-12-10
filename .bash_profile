@@ -112,8 +112,7 @@ alias list='exa -FahlT --git --grid --icons --group-directories-first --level=2'
 # https://unix.stackexchange.com/questions/282648/using-grep-with-the-exclude-dir-flag-to-exclude-multiple-directories
 alias ls='ls -AhlFG --color=auto --hyperlink=auto -k --group-directories-first --hide="{.git,log,node_modules,storage}"'
 
-# ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
-# AKA FUNCTIONS
+alias echo='echo -e' # https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
 
 weigh() { # https://www.redhat.com/sysadmin/du-command-options
   #local FLAGS="--summarize --total --human-readable --time"
