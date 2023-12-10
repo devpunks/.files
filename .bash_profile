@@ -116,8 +116,30 @@ alias echo='echo -e' # https://stackoverflow.com/questions/8467424/echo-newline-
 
 alias diff='diff --color=auto'
 
-  du $FLAGS -- "$1"
-}
+GREP_OPTS='-in --color=auto --exclude-dir="{.git,log,node_modules,storage}"'
+alias egrep='grep -E $GREP_OPTS'
+alias fgrep='LC_ALL=C grep -F $GREP_OPTS'
+alias grep='grep $GREP_OPTS' # https://linuxcommand.org/lc3_man_pages/grep1.html
+
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias rm='rm -I --preserve-root'
+
+alias now='date +"%T"'
+alias ping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+alias mount='mount |column -t'
+alias path='echo -e ${PATH//:/\\n}'
+
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+alias top=htop
+alias ps='ps auxf'
+alias header='curl -I'
+alias wget='wget -c' # resume downloads
 
 # ----------------------
 # Ruby
