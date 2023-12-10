@@ -108,7 +108,9 @@ alias most='most +u -s -t2'
 # https://unix.stackexchange.com/a/82358
 alias tree='tree -ahACDFR --du -L 3 --dirsfirst --gitignore'
 alias list='exa -FahlT --git --grid --icons --group-directories-first --level=2'
-alias tre='tree -CDFah --du -L 2 --dirsfirst --gitignore'
+# https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
+# https://unix.stackexchange.com/questions/282648/using-grep-with-the-exclude-dir-flag-to-exclude-multiple-directories
+alias ls='ls -AhlFG --color=auto --hyperlink=auto -k --group-directories-first --hide="{.git,log,node_modules,storage}"'
 
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # AKA FUNCTIONS
