@@ -78,7 +78,7 @@ export HISTFILE="$HOME/.bash_history"
 # https://unix.stackexchange.com/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history
 export HISTCONTROL=ignoredups:erasedups
 
-export PROMPT_COMMAND="history -a; history -c; history -r;"
+export PROMPT_COMMAND="history -n; history -w; history -c; history -r;"
 
 # more, less, most - https://askubuntu.com/questions/1191862/what-is-the-difference-between-more-and-less-commands
 #   - https://linux.die.net/man/1/lesskey
