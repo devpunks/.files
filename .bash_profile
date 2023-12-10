@@ -114,12 +114,7 @@ alias ls='ls -AhlFG --color=auto --hyperlink=auto -k --group-directories-first -
 
 alias echo='echo -e' # https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
 
-weigh() { # https://www.redhat.com/sysadmin/du-command-options
-  #local FLAGS="--summarize --total --human-readable --time"
-  local FLAGS="--total --all --human-readable --time --max-depth=1"
-  # do things with parameters like $1 such as.
-  echo LOCATION "$1"
-  echo FLAGS 👉 $FLAGS
+alias diff='diff --color=auto'
 
   du $FLAGS -- "$1"
 }
