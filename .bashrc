@@ -14,6 +14,14 @@ echo
 
 export EDITOR=vi
 
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_COLLATE=en_US.UTF-8
+
+#https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
+export LINES=$(tput lines)
+export COLUMNS=$(tput columns)
+
 # Terminal ---------------------------------------------
 # https://stackoverflow.com/questions/76148896/how-install-curses-1-06-module-in-termux
 export CURSES_CFLAGS="-I/data/data/com.termux/files/usr/include"
