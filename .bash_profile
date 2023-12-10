@@ -55,7 +55,6 @@ echo "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 # ----------------------
 # shell
 # ----------------------
-
 alias reload='(
   termux-reload-settings
   stty sane
