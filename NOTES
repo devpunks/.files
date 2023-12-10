@@ -82,3 +82,8 @@ Android Accessibility
   - Left sticky from floating window
   - Right floating window ffrom left sticky
 
+
+
+# BASH ---------------------------------
+#   - Special Parameters - https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
+#   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
