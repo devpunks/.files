@@ -161,7 +161,6 @@ alias be='bundle exec'
 # ----------------------
 # Git Aliases
 # ----------------------
-
 alias ga='git add -p'
 alias gb='git branch'
 alias gbd='git branch --delete '
