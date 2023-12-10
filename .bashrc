@@ -49,6 +49,21 @@ if [ -n "${PREFIX}" ]; then
   export PATH="$HOME:$PREFIX/bin"
 fi
 
+# https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
+# https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
+# https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
+# shopt –s xpg_echo
+shopt -s dotglob # https://unix.stackexchange.com/questions/40662/what-is-the-setting-in-bash-for-globbing-to-control-whether-matches-dot-files
+shopt -s mailwarn # last access on login
+shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
+shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
+shopt -s direxpand # https://stackoverflow.com/questions/6438341/what-does-shopt-s-dirspell-do
+shopt -s checkjobs # on exit
+shopt -s nocaseglob # 
+shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion/
+# https://unix.stackexchange.com/questions/700199/why-is-the-bash-double-star-globstar-operator-often-disabled-by-default
+shopt -s globstar # https://www.linuxjournal.com/content/globstar-new-bash-globbing-option
+
 # History
 # - https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
