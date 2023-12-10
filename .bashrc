@@ -69,6 +69,7 @@ shopt -s globstar # https://www.linuxjournal.com/content/globstar-new-bash-globb
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
 #   - Reverse Search - https://codeburst.io/use-reverse-i-search-to-quickly-navigate-through-your-history-917f4d7ffd37
 shopt -s histappend
+shopt -s histverify
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTIGNORE="cd:ls:pwd"
