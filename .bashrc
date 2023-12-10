@@ -28,6 +28,7 @@ export COLUMNS=$(tput columns)
 #   - tput - https://linuxcommand.org/lc3_adv_tput.php
 export CURSES_CFLAGS="-I/data/data/com.termux/files/usr/include"
 export CURSES_LDFLAGS="-L/data/data/com.termux/files/usr/lib -lncurses"
+
 # https://unix.stackexchange.com/questions/198794/where-does-the-term-environment-variable-default-get-set
 # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
 export TERM=xterm-256color
