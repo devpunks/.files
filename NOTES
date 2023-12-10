@@ -88,3 +88,10 @@ Android Accessibility
 #   - Shell Check - https://www.shellcheck.net
 #   - Explain Shell - https://explainshell.com/
 #   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
+#   - Special Parameters - https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
+#
+#   - Reverse Search
+#     - https://www.gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
+#     - https://www.gnu.org/software/bash/manual/html_node/Commands-For-History.html
+#     - https://superuser.com/questions/472846/how-to-reverse-i-search-back-and-forth
+#     - https://codeburst.io/use-reverse-i-search-to-quickly-navigate-through-your-history-917f4d7ffd37
