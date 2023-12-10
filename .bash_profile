@@ -95,7 +95,18 @@ alias environment='(
 )'
 alias cl=clear
 alias ..='cd ..'
-alias lsg='ls -AhlFG --group-directories-first'
+alias pop='popd'
+alias push='pushd'
+
+alias dirs='dirs -p'
+alias mkdir='mkdir -pv'
+alias dir='(
+  dir -ailsAFR --time --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"
+)'
+
+alias most='most +u -s -t2'
+# https://unix.stackexchange.com/a/82358
+alias tree='tree -ahACDFR --du -L 3 --dirsfirst --gitignore'
 alias list='exa -FahlT --git --grid --icons --group-directories-first --level=2'
 alias tre='tree -CDFah --du -L 2 --dirsfirst --gitignore'
 
