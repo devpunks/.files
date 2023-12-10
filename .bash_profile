@@ -185,7 +185,28 @@ alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
 
-colors() {
+
+
+# ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
+# AKA FUNCTIONS
+
+monitor () {
+  htop
+  ps
+}
+
+weigh () { # https://www.redhat.com/sysadmin/du-command-options
+  #local FLAGS="--summarize --total --human-readable --time"
+  local FLAGS="--all --total --time --human-readable  --max-depth=2"
+  # do things with parameters like $1 such as.
+  echo LOCATION "$1"
+  echo FLAGS 👉 $FLAGS
+
+  du $FLAGS -- "$1"
+}
+
+colors () { color && spectrum ; }
+color () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
   for i in {0..255} ; do
       printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
