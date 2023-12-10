@@ -55,6 +55,10 @@ echo -e "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 # ----------------------
 # shell
 # ----------------------
+# https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
+# exec $SHELL --login
+# exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
+# exec $SHELL --login
 alias reload='(
   termux-reload-settings
   stty sane
