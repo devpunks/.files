@@ -4,7 +4,7 @@
 # Gist: https://gist.github.com/snuggs/d4df3a974c482fe3473de361bb949b23
 # *********************************************************************
 
-# [ -r ~/.bashrc ] && source ~/.bashrc
+# [ -r ~/.bashrc ] &bashrc
 
 
 # ----------------------
