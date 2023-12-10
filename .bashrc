@@ -89,6 +89,7 @@ export LESSHISTFILE=- # /dev/null
 export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 
 
+# - https://bash-prompt-generator.org
 # - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x264.html
 # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 #PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
