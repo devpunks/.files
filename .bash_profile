@@ -93,7 +93,6 @@ alias environment='(
   echo && echo Declarations:
   declare -p | cut -d " " -f 3
 )'
-alias mo='most +u -s -t2'
 alias cl=clear
 alias ..='cd ..'
 alias lsg='ls -AhlFG --group-directories-first'
