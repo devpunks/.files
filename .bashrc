@@ -37,7 +37,9 @@ export COLORTERM=truecolor
 # - tty  - https://www.linusakesson.net/programming/tty/
 # - stty - https://www.computerhope.com/unix/ustty.htm
 #stty -ixon columns 500 # enable control-s and control-q in VIM
-stty -ixon columns 111 # enable control-s and control-q in VIM
+stty -ixon columns 110 # enable control-s and control-q in VIM
+
+shopt -s checkwinsize
 
 # export PATH="/usr/local/sbin:$PATH"
 # export PATH="~/Library/Python/2.7/bin:$PATH"
