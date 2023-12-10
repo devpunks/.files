@@ -6,6 +6,51 @@
 
 # [ -r ~/.bashrc ] &bashrc
 
+# colors.sh ***********************************************************
+#   - https://misc.flogisoft.com/bash/tip_colors_and_formatting
+#   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+#
+#   Note: Some control escape sequences, like \e for ESC, are not guaranteed to work in all languages and compilers. It is recommended to use the decimal 27, octal \033, or hex \x1B representation as escape code.
+# ----------------------------------------------------------
+# 256 ansi colors # Where N is a color code {0-256}
+# \e[38;5;Nm # foreground
+# \e[48;5;Nm # background
+# resets ----
+NC=$(tput sgr0) # No Color
+DEFAULT=$(tput setaf 9) # Default
+# format ----
+BOLD=$(tput bold)
+DIM='\e[2m'
+REVERSE=$(tput rev)
+UNDERLINE=$(tput smul)
+# colors ----
+BLACK=$(tput setaf 0)
+GRAY='\033[1;30m'
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+GREEN_LIGHT='\033[1;32m'
+YELLOW=$(tput setaf 3)
+BROWN='\033[0;33m'
+BLUE=$(tput setaf 4)
+BLUE_LIGHT='\033[1;34m'
+MAGENTA=$(tput setaf 5)
+MAGENTA_LIGHT='\033[0;95m'
+CYAN=$(tput setaf 6)
+CYAN_LIGHT='\033[1;36m'
+WHITE=$(tput setaf 7)
+GRAY_LIGHT='\033[0;37m'
+# background ----
+BG_BLACK=$(tput setab 0)
+BG_RED=$(tput setab 1)
+BG_GREEN=$(tput setab 2)
+BG_YELLOW=$(tput setab 3)
+BG_BLUE=$(tput setab 4)
+BG_MAGENTA=$(tput setab 5)
+BG_CYAN=$(tput setab 6)
+BG_WHITE=$(tput setab 7)
+
+echo "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
+# *********************************************************************
 
 # ----------------------
 # shell
