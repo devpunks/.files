@@ -12,6 +12,10 @@ tmux start-server
 # create new session
 tmux new-session -d -s $SESSION -n "🕶️ devPunks"
 
+# attach to new session
+tmux -v -2 attach -t $SESSION
+exit
+
 tmux select-pane -T "DAMNNNN"
 # tmux send-keys "vi" C-m
 
