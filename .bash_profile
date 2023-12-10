@@ -68,10 +68,30 @@ alias term='(
   echo $(tty) Colors: $(tput colors) Size: $(stty size | tr " " "x")
   echo && tput -V && toe
   echo && echo "stty $(stty -g)" && stty -a
-  echo && stty -a
-  echo && infocmp
-  echo && toe
-  echo && spectrum
+  echo && infocmp -L
+  echo && dircolors --print-ls-colors
+  echo && colors
+)'
+alias environment='(
+  clear
+  echo && echo Var Names:
+  compgen -v
+  echo && echo Aliases:
+  compgen -a
+  echo && echo Bash Built-ins:
+  compgen -b
+  echo && echo Commands:
+  compgen -c
+  echo && echo Functions:
+  compgen -A function
+  echo && echo Env Var Names:
+  compgen -k
+  echo && echo Env Vars:
+  env
+  echo && echo Shell Vars:
+  (set -o posix; set; set +o posix)
+  echo && echo Declarations:
+  declare -p | cut -d " " -f 3
 )'
 alias mo='most +u -s -t2'
 alias cl=clear
