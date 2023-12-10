@@ -144,6 +144,14 @@ alias wget='wget -c' # resume downloads
 # ----------------------
 # tmux
 # ----------------------
+alias tmux.config='(
+  echo && echo Server Options:
+  tmux show-options -s
+  echo && echo Global Options:
+  tmux show-options -g
+  echo && echo Global Window Options:
+  tmux show-window-options -g
+)'
 
 alias be='bundle exec'
 
