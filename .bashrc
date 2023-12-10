@@ -113,7 +113,7 @@ PS1_HOST='\001$(tput setaf 2)\002\H'"$PS1_RESET"
 PS1_COLON='\001$(tput sgr0)\002:'"$PS1_RESET"
 PS1_PATH='\001$(tput setaf 3)\002\w'"$PS1_RESET"
 # PS1_GIT='$(__git_ps1 " (%s)")'"$PS1_RESET"
-PS1_PROMPT='\[\033[0;47m💲\e[0;0m\]'
+PS1_PROMPT='\[\033[0;45m💲\e[0;0m\]'
 
 export PS1=$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT
 
