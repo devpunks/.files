@@ -23,7 +23,9 @@ export LINES=$(tput lines)
 export COLUMNS=$(tput columns)
 
 # Terminal ---------------------------------------------
-# https://stackoverflow.com/questions/76148896/how-install-curses-1-06-module-in-termux
+# ncurses
+#   - https://stackoverflow.com/questions/76148896/how-install-curses-1-06-module-in-termux
+#   - tput - https://linuxcommand.org/lc3_adv_tput.php
 export CURSES_CFLAGS="-I/data/data/com.termux/files/usr/include"
 export CURSES_LDFLAGS="-L/data/data/com.termux/files/usr/lib -lncurses"
 # https://unix.stackexchange.com/questions/198794/where-does-the-term-environment-variable-default-get-set
