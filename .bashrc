@@ -75,6 +75,7 @@ export HISTFILESIZE=1000
 export HISTIGNORE="cd:ls:pwd"
 export HISTTIMEFORMAT="%d/%m/%y %T - "
 export HISTFILE="$HOME/.bash_history"
+# https://unix.stackexchange.com/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history
 export HISTCONTROL=ignoredups:erasedups
 
 export PROMPT_COMMAND="history -a; history -c; history -r;"
