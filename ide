@@ -36,6 +36,3 @@ tmux select-pane -t 0
 tmux split-window -v -l 1
 tmux send-keys "clear" Enter
 tmux select-pane -T "FOO"
-
-# attach to new session
-tmux -v -2 attach -t $SESSION
