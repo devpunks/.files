@@ -58,7 +58,9 @@ echo "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 alias reload='(
   termux-reload-settings
   stty sane
-  clear
+  tput reset
+  export LINES=$(tput lines)
+  export COLUMNS=$(tput columns)
 )'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
