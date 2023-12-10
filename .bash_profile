@@ -65,9 +65,8 @@ alias reload='(
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
   clear
-  echo Size: $(stty size | tr " " "x")
-  echo Colors: $(tput colors)
-  echo && colors
+  echo $(tty) Colors: $(tput colors) Size: $(stty size | tr " " "x")
+  echo && tput -V && toe
   echo && echo "stty $(stty -g)" && stty -a
   echo && stty -a
   echo && infocmp
