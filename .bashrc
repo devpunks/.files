@@ -134,8 +134,9 @@ export PS1="\[$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\]
 
 # https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
 GREP_COLOR='1;4;38;5;13;48;5;235'
-export GREP_COLORS="ms=${GREP_COLOR}:mc=${GREP_COLOR}:ln=33"
+export GREP_COLORS="ln=${GREP_COLOR}:ms=${GREP_COLOR}:mc=${GREP_COLOR}:"
 
+# https://gist.github.com/thomd/7667642
 # https://github.com/trapd00r/LS_COLORS?tab=readme-ov-file
 # http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors
 # https://unix.stackexchange.com/questions/94299/dircolors-modify-color-settings-globaly
