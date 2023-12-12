@@ -266,8 +266,9 @@ function trash {
 #       return tree -L 1 $TMPDIR
 
 
-  echo "🚮  Sending to trash \n 🗑 ${1}"
-  [[ -f  "$1" ]] && mv -i --no-clobber --strip-trailing-slashes "$1" $TMPDIR
+  [[ -f  "$1" ]] \
+    && echo "🚮  Sending to trash \n 🗑 ${1}" \
+    && mv -i --no-clobber --strip-trailing-slashes "$1" $TMPDIR
 
   tree -L 1 $TMPDIR
 }
