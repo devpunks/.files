@@ -139,8 +139,8 @@ alias echo='echo -e' # https://stackoverflow.com/questions/8467424/echo-newline-
 
 alias diff='diff --color=auto'
 
-GREP_OPTS='-in --color=auto --exclude-dir="{.git,log,node_modules,storage}"'
-alias egrep='grep -E $GREP_OPTS'
+GREP_OPTIONS='-in --color=auto --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
+alias grep='grep $GREP_OPTIONS' # https://linuxcommand.org/lc3_man_pages/grep1.html
 alias fgrep='LC_ALL=C grep -F $GREP_OPTS'
 alias grep='grep $GREP_OPTS' # https://linuxcommand.org/lc3_man_pages/grep1.html
 
