@@ -70,7 +70,11 @@ alias reload='(
   termux-info
   termux-reload-settings
   echo "\n\n$SHELL\n$BASHOPTS"
-  echo && echo "Lines: $LINES x Columns: $COLUMNS" && echo
+  echo && echo "PATH: $PATH"
+  export LINES=$( tput lines )
+  export COLUMNS=$( tput columns )
+  echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
+  ps
 )'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
