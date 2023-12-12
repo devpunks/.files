@@ -149,6 +149,7 @@ alias egrep='grep -E $GREP_OPTS'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
+alias fc='fc -e vi' # https://www.geeksforgeeks.org/fc-command-linux-examples/amp/
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or /bin/rm instead."'
 alias delete='/bin/rm -dIrv --preserve-root'
