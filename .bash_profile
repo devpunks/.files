@@ -273,6 +273,11 @@ function trash {
   tree -L 1 $TMPDIR
 }
 
+# stream protocol
+function stream {
+ yes "$1"
+}
+
 monitor () {
   htop
   ps
