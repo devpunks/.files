@@ -260,7 +260,7 @@ weigh () { # https://www.redhat.com/sysadmin/du-command-options
   echo LOCATION "$1"
   echo FLAGS 👉 $FLAGS
 
-  df -h
+  df -ah -- "$1" # - https://www.geeksforgeeks.org/df-command-in-linux-with-examples/amp/
   echo && echo
   du $FLAGS -- "$1"
 }
