@@ -262,7 +262,7 @@ weigh () { # https://www.redhat.com/sysadmin/du-command-options
 
   df -ah -- "$1" # - https://www.geeksforgeeks.org/df-command-in-linux-with-examples/amp/
   echo && echo
-  du $FLAGS -- "$1"
+  du --time --max-depth=2 $FLAGS -- "$1"
 }
 
 colors () { color && echo && spectrum ; }
