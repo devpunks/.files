@@ -105,6 +105,7 @@ alias environment='(
 )'
 
 alias cl=clear
+
 alias ..='cd ..'
 alias pop='popd'
 alias push='pushd'
