@@ -255,6 +255,7 @@ monitor () {
 
 weigh () { # https://www.redhat.com/sysadmin/du-command-options
   local FLAGS="--all --total --time --human-readable  --max-depth=2"
+
   # do things with parameters like $1 such as.
   echo LOCATION "$1"
   echo FLAGS 👉 $FLAGS
