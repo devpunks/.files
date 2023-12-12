@@ -136,7 +136,13 @@ alias grep='grep $GREP_OPTS' # https://linuxcommand.org/lc3_man_pages/grep1.html
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
-alias rm='rm -I --preserve-root'
+# - https://en.m.wikipedia.org/wiki/Rm_(Unix)
+alias rm='echo "rm is disabled, use delete, destroy, or /bin/rm instead."'
+alias delete='/bin/rm -dIrv --preserve-root'
+# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
+# - https://www.computerhope.com/unix/shred.htm
+# - https://www.geeksforgeeks.org/shred-command-in-linux-with-examples/amp/
+alias destroy='shred --force --zero --iterations=5 --remove'
 
 alias now='date +"%T"'
 alias ping='ping -c 100 -s.2'
