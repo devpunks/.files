@@ -70,7 +70,6 @@ alias reload='(
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
   clear
-  echo && echo $BASH_OPTS
   echo & echo $(tty) Colors: $(tput colors) Size: $(stty size | tr " " "x")
   echo && tput -V && toe
   echo && echo "stty $(stty -g)" && stty -a
@@ -80,6 +79,8 @@ alias term='(
 )'
 alias environment='(
   clear
+  echo && echo BASH OPTIONS:
+  echo $BASHOPTS
   echo && echo Var Names:
   compgen -v
   echo && echo Aliases:
