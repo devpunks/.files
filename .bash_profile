@@ -57,6 +57,8 @@ echo -e "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 # ----------------------
 # https://bash.cyberciti.biz/guide/Reset_command
 # https://bash.cyberciti.biz/guide/Console_management
+# https://unix.stackexchange.com/questions/335648/why-does-the-reset-command-include-a-delay
+# https://unix.stackexchange.com/questions/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
 # https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
 # exec $SHELL --login
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
