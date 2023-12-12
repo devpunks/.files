@@ -196,6 +196,10 @@ alias gsts='git stash save'
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # AKA FUNCTIONS
 
+vie () {
+  termux-open-url "$1"
+  # am start -a android.intent.action.VIEW -d "$1" > /dev/null
+}
 monitor () {
   htop
   ps
