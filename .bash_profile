@@ -168,7 +168,7 @@ alias chgrp='chgrp --preserve-root'
 alias top=htop
 alias ps='ps auxf'
 alias header='curl -I'
-alias wget='wget -c' # resume downloads
+alias wget='wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 alias log='logcat'
 
 # ----------------------
