@@ -64,6 +64,7 @@ echo -e "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
 # exec $SHELL --login
 alias reload='(
+  echo -e "\033c"
   clear
   reset
   stty sane
