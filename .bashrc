@@ -120,7 +120,7 @@ tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrappi
 PS1_RESET='\001$(tput sgr0)\002'
 # PS1_ERROR='$(code=${?##0};echo ${code:+\001$(tput setaf 1)\002[${code}]\ })'"$PS1_RESET"
 
-PS1_DATE='\001$(tput setaf 5)\002\D{%Y-%m-%d %H:%M:%S} '"$PS1_RESET"
+PS1_DATE='\001$(tput setaf 5)\002\D{%H:%M:%S} '"$PS1_RESET"
 PS1_USER='\001$(tput setaf 6)\002\u'"$PS1_RESET"
 PS1_AT='\001$(tput sgr0)\002@'"$PS1_RESET"
 PS1_HOST='\001$(tput setaf 2)\002\H'"$PS1_RESET"
