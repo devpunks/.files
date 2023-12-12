@@ -146,7 +146,7 @@ alias echo='echo -e' # - https://stackoverflow.com/questions/8467424/echo-newlin
 alias diff='diff --color=auto' # - https://www.geeksforgeeks.org/diff-command-linux-examples/amp/
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
-GREP_OPTIONS='-iIn --color=auto --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
+GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
 alias grep='grep $GREP_OPTIONS' # https://linuxcommand.org/lc3_man_pages/grep1.html
 alias fgrep='LC_ALL=C grep -F $GREP_OPTS'
 alias egrep='grep -E $GREP_OPTS'
