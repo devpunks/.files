@@ -80,7 +80,7 @@ alias reload='(
 alias term='(
   clear
   echo & echo $(tty) Colors: $(tput colors) Size: $(stty size | tr " " "x")
-  echo && tput -V && toe
+  echo && echo "TERM=$TERM $( tput -V )" && toe
   echo && echo "stty $(stty -g)" && stty -a
   echo && infocmp -L
   echo && dircolors --print-ls-colors
