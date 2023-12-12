@@ -164,6 +164,7 @@ alias top=htop
 alias ps='ps auxf'
 alias header='curl -I'
 alias wget='wget -c' # resume downloads
+alias log='logcat'
 
 # ----------------------
 # tmux
