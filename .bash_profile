@@ -66,8 +66,7 @@ alias reload='(
   reset
   stty sane
   tput reset
-  export LINES=$(tput lines)
-  export COLUMNS=$(tput columns)
+  tput cup 0 0
   termux-info
   echo "\n\n$SHELL\n$BASHOPTS"
   echo && echo "Lines: $LINES x Columns: $COLUMNS" && echo
