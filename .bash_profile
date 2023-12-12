@@ -55,6 +55,8 @@ echo -e "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 # ----------------------
 # shell
 # ----------------------
+# https://bash.cyberciti.biz/guide/Reset_command
+# https://bash.cyberciti.biz/guide/Console_management
 # https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
 # exec $SHELL --login
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
