@@ -102,20 +102,23 @@ alias environment='(
 # compgen -v
   echo && echo Aliases:
   compgen -a
-  echo && echo Bash Built-ins:
-  compgen -b
-  echo && echo Commands:
-  compgen -c
-  echo && echo Functions:
-  compgen -A function
-  echo && echo Env Var Names:
-  compgen -k
-  echo && echo Env Vars:
-  env
-  echo && echo Shell Vars:
-  (set -o posix; set; set +o posix)
-  echo && echo Declarations:
-  declare -p | cut -d " " -f 3
+  echo && echo
+  alias -p
+
+# echo && echo Bash Built-ins:
+# compgen -b
+# echo && echo Commands:
+# compgen -c
+# echo && echo Functions:
+# compgen -A function
+# echo && echo Env Var Names:
+# compgen -k
+# echo && echo Env Vars:
+# env
+# echo && echo Shell Vars:
+# (set -o posix; set; set +o posix)
+# echo && echo Declarations:
+# declare -p | cut -d " " -f 3
 )'
 
 alias cl=clear
