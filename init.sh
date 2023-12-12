@@ -2,6 +2,7 @@ pkg upgrade
 pkg update
 pkg install termux-api
 termux-setup-storage
+termux-info
 
 pkg install jq
 pkg install exa
