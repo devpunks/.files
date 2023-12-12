@@ -98,8 +98,8 @@ alias environment='(
   clear
   echo && echo BASH OPTIONS:
   echo $BASHOPTS
-  echo && echo Var Names:
-  compgen -v
+# echo && echo Var Names:
+# compgen -v
   echo && echo Aliases:
   compgen -a
   echo && echo Bash Built-ins:
