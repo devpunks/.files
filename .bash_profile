@@ -260,7 +260,7 @@ vie () {
 # Trash
 #   - https://www.ramendik.ru/docs/trashspec.html
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
-tras () {
+function trash {
 #   [ -f "$1" ] || \
 #     [ -d "$1" ]  \
 #       return tree -L 1 $TMPDIR
