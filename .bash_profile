@@ -256,6 +256,22 @@ vie () {
   termux-open-url "$1"
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 }
+
+# Trash
+#   - https://www.ramendik.ru/docs/trashspec.html
+#   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
+tras () {
+#   [ -f "$1" ] || \
+#     [ -d "$1" ]  \
+#       return tree -L 1 $TMPDIR
+
+
+  echo "🚮  Sending to trash \n 🗑 ${1}"
+# mv -i --no-clobber --strip-trailing-slashes "$1" $TMPDIR
+
+  tree -L 1 $TMPDIR
+}
+
 monitor () {
   htop
   ps
