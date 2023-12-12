@@ -280,7 +280,7 @@ function trash {
 
 # stream protocol
 function stream {
- yes "$1"
+  yes "$1"
 }
 
 monitor () {
