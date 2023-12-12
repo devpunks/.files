@@ -11,7 +11,9 @@
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 #   - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 #
-#   Note: Some control escape sequences, like \e for ESC, are not guaranteed to work in all languages and compilers. It is recommended to use the decimal 27, octal \033, or hex \x1B representation as escape code.
+#   Note: Some control escape sequences, like \e for ESC, are not guaranteed
+#   to work in all languages and compilers. It is recommended to use
+#   the decimal 27, octal \033, or hex \x1B representation as escape code.
 # ----------------------------------------------------------
 # 256 ansi colors # Where N is a color code {0-256}
 # \e[38;5;Nm # foreground
