@@ -219,7 +219,7 @@ weigh () { # https://www.redhat.com/sysadmin/du-command-options
   du $FLAGS -- "$1"
 }
 
-colors () { color && spectrum ; }
+colors () { color && echo && spectrum ; }
 color () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
   for i in {0..255} ; do
