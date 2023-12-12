@@ -9,6 +9,13 @@
 #   - https://stackoverflow.com/questions/9953005/should-the-bashrc-in-the-home-directory-load-automatically/9954208#9954208
 # ******************************************************
 
+# for rc in ~in `find ~/*.{ba}sh -maxdepth 1 -type f`; do
+#   # (r)un (c)omm(ands)
+#   #   - https://superuser.com/questions/144339/vimrc-screenrc-bashrc-kshrc-etc-what-does-the-rc-mean
+#   echo Sourcing ~/.bash run commands \(where available\)
+#   source $rc
+# done
+
 echo 😈devPunks
 echo
 
