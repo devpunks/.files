@@ -63,7 +63,7 @@ echo -e "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
 # exec $SHELL --login
 alias reload='(
   clear
-  termux-reload-settings
+  reset
   stty sane
   tput reset
   export LINES=$(tput lines)
