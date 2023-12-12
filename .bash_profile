@@ -172,7 +172,7 @@ alias top=htop
 alias ps='ps auxf'
 alias header='curl -I'
 alias wget='wget --continue --no-hsts' # resume downloads & prevent writing HSTs
-alias log='logcat'
+alias log='logcat' # - https://www.cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 
 # SSH(d)------------------------------------------------------------------
 #   - https://github.com/termux/termux-packages/issues/3620
