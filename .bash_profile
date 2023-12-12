@@ -252,6 +252,11 @@ alias gsts='git stash save'
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # AKA FUNCTIONS
 
+# - syslog() - https://stackify.com/syslog-101/
+# - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
+# - https://www.cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
+function log () {
+  logcat
 vie () {
   termux-open-url "$1"
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
