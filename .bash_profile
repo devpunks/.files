@@ -296,6 +296,7 @@ weigh () { # https://www.redhat.com/sysadmin/du-command-options
   echo FLAGS 👉 $FLAGS
 
   clear
+  # - https://dev.yorhel.nl/ncdu/man
   ncdu -e --color dark-bg --exclude "{.git,log,node_modules,storage}" -- "$1"
   echo
   df -ah -- "$1" # - https://www.geeksforgeeks.org/df-command-in-linux-with-examples/amp/
