@@ -66,6 +66,9 @@ alias reload='(
   tput reset
   export LINES=$(tput lines)
   export COLUMNS=$(tput columns)
+  termux-info
+  echo "\n\n$SHELL\n$BASHOPTS"
+  echo && echo "Lines: $LINES x Columns: $COLUMNS" && echo
 )'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
