@@ -337,6 +337,6 @@ spectrum () {
 #     - $HOME/.termux.conf
 #     - $HOME/.termux/termux.properties
 
-alias shortcuts='bind -p'
+alias shortcuts='bind -P'
 
 echo "Bash Profile"
