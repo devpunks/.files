@@ -68,6 +68,7 @@ alias reload='(
   tput reset
   tput cup 0 0
   termux-info
+  termux-reload-settings
   echo "\n\n$SHELL\n$BASHOPTS"
   echo && echo "Lines: $LINES x Columns: $COLUMNS" && echo
 )'
