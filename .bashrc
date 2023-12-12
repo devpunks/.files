@@ -90,7 +90,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T - "
 export HISTIGNORE="bg:fg:exit:cd:ls:pwd"
 # https://www.google.com/amp/s/www.geeksforgeeks.org/histcontrol-command-in-linux-with-examples/amp/
 # https://unix.stackexchange.com/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history
-export HISTCONTROL=ignoredups:erasedups
+export HISTCONTROL=ignoredups:ignorespace:erasedups # ignoreboth
 
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r;"
 
