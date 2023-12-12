@@ -33,6 +33,7 @@ export CURSES_LDFLAGS="-L/data/data/com.termux/files/usr/lib -lncurses"
 # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
 export TERM=xterm-256color
 export COLORTERM=truecolor
+tput init # https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
 
 # - tty  - https://www.linusakesson.net/programming/tty/
 # - stty - https://www.computerhope.com/unix/ustty.htm
