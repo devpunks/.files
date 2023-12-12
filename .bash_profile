@@ -152,7 +152,7 @@ alias ln='ln -i'
 alias fc='fc -e vi' # https://www.geeksforgeeks.org/fc-command-linux-examples/amp/
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or /bin/rm instead."'
-alias delete='/bin/rm -dIrv --preserve-root'
+alias delete='command rm -dIrv --preserve-root'
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
 # - https://www.computerhope.com/unix/shred.htm
 # - https://www.geeksforgeeks.org/shred-command-in-linux-with-examples/amp/
