@@ -10,7 +10,6 @@
 .local
 .ssh
 .viminfo
-.NERDTreeBookmarks
 
 # termux
 storage
