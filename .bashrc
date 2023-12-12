@@ -7,6 +7,10 @@
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
 #     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 #   - https://stackoverflow.com/questions/9953005/should-the-bashrc-in-the-home-directory-load-automatically/9954208#9954208
+#   - Common environment variables
+#     - https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html
+#     - https://www.gnu.org/software/grep/manual/html_node/Environment-Variables.html
+#     - https://www.cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
 # ******************************************************
 
 # for rc in ~in `find ~/*.{ba}sh -maxdepth 1 -type f`; do
