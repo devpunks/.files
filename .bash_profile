@@ -77,7 +77,8 @@ alias reload='(
   tput cup 0 0
   termux-info
   termux-reload-settings
-  echo "\n\n$SHELL\n$BASHOPTS"
+  echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
+  echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
   echo && echo "PATH: $PATH"
   export LINES=$( tput lines )
   export COLUMNS=$( tput columns )
@@ -96,8 +97,8 @@ alias term='(
 )'
 alias environment='(
   clear
-  echo && echo BASH OPTIONS:
-  echo $BASHOPTS
+  echo "\n\n\n\$BASH: $BASH\nOptions:\n$BASHOPTS"
+  echo "\n\$SHELL: $SHELL\nOptions:\n$SHELLOPTS"
 # echo && echo Var Names:
 # compgen -v
   echo && echo Aliases:
