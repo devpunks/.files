@@ -257,6 +257,7 @@ alias gsts='git stash save'
 # - https://www.cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 function log () {
   logcat
+}
 vie () {
   termux-open-url "$1"
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
