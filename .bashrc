@@ -86,6 +86,9 @@ shopt -s histverify
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTFILE="$HOME/.bash_history"
+export HISTTIMEFORMAT="%d/%m/%y %T - "
+export HISTIGNORE="bg:fg:exit:cd:ls:pwd"
+# https://www.google.com/amp/s/www.geeksforgeeks.org/histcontrol-command-in-linux-with-examples/amp/
 # https://unix.stackexchange.com/questions/18212/bash-history-ignoredups-and-erasedups-setting-conflict-with-common-history
 export HISTCONTROL=ignoredups:erasedups
 
