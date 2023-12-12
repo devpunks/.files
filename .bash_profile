@@ -174,6 +174,27 @@ alias header='curl -I'
 alias wget='wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 alias log='logcat'
 
+# SSH(d)------------------------------------------------------------------
+#   - https://github.com/termux/termux-packages/issues/3620
+#
+# -d - debug level
+# -c - for host_certificate_file
+# -f - /data/data/com.termux/files/usr/etc/ssh/sshd_config
+# -T - test mode
+# check
+# ~/.ssh/rc
+# ~/.ssh/environment
+# ~/.ssh/known_hosts
+# /data/data/com.termux/files/usr/etc/ssh/ssh_known_hosts
+# ~/.ssh/authorized_keys
+#   - id_rsa.pub
+# SEE ALSO
+#   scp(1), sftp(1), ssh(1), ssh-add(1), ssh-agent(1), ssh-keygen(1), ssh-
+#   keyscan(1), chroot(2), login.conf(5), moduli(5), sshd_config(5),
+#   inetd(8), sftp-server(8)
+# alias ss='sshd -DdddT -p22'
+alias ss='sshd -Dddd -p22'
+
 # ----------------------
 # tmux
 # ----------------------
