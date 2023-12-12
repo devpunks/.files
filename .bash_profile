@@ -321,4 +321,14 @@ spectrum () {
     }'
 }
 
+
+# -----------------------------------------------------------------------
+# Bindings
+#   - https://www.google.com/amp/s/www.geeksforgeeks.org/bind-command-in-linux-with-examples/amp/
+# -----------------------------------------------------------------------
+#   See to avoid potential conflicts:
+#     - $HOME/.vimrc
+#     - $HOME/.termux.conf
+#     - $HOME/.termux/termux.properties
+
 echo "Bash Profile"
