@@ -295,6 +295,9 @@ weigh () { # https://www.redhat.com/sysadmin/du-command-options
   echo LOCATION "$1"
   echo FLAGS 👉 $FLAGS
 
+  clear
+  ncdu -e --color dark-bg --exclude "{.git,log,node_modules,storage}" -- "$1"
+  echo
   df -ah -- "$1" # - https://www.geeksforgeeks.org/df-command-in-linux-with-examples/amp/
   echo && echo
   du --time --max-depth=2 $FLAGS -- "$1"
