@@ -183,6 +183,7 @@ alias archive='command tar cvf --' # - https://www.geeksforgeeks.org/tar-command
 alias zipper='command zip -r --' # - https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/amp/
 
 # SSH(d)------------------------------------------------------------------
+#   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://github.com/termux/termux-packages/issues/3620
 #
 # -d - debug level
