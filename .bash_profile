@@ -252,6 +252,7 @@ alias gsts='git stash save'
 
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # AKA FUNCTIONS
+#   - MISC. - https://github.com/RobertAudi/.dotfiles/tree/master/common/.local/bin
 
 # - syslog() - https://stackify.com/syslog-101/
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
