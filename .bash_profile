@@ -201,7 +201,7 @@ alias zipper='command zip -r --' # - https://www.geeksforgeeks.org/zip-command-i
 #   keyscan(1), chroot(2), login.conf(5), moduli(5), sshd_config(5),
 #   inetd(8), sftp-server(8)
 # alias ss='sshd -DdddT -p22'
-alias ss='sshd -Dddd -p22'
+alias ss='sshd -Dddd -p8022'
 
 # ----------------------
 # tmux
