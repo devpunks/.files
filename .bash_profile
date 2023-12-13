@@ -257,7 +257,7 @@ alias gsts='git stash save'
 # - https://www.cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 alias log.sshd="command logcat -s 'sshd:*'"
 function log () {
-  logcat
+  command logcat
 }
 vie () {
   termux-open-url "$1"
