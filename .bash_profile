@@ -7,6 +7,8 @@
 # [ -r ~/.bashrc ] &bashrc
 
 # colors.sh ***********************************************************
+#   - https://www.ditig.com/256-colors-cheat-sheet
+#   - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 #   - https://misc.flogisoft.com/bash/tip_colors_and_formatting
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 #   - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
