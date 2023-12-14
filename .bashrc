@@ -30,8 +30,8 @@ export LANGUAGE=en_US.UTF-8
 export LC_COLLATE=en_US.UTF-8
 
 #https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
-export LINES=$(tput lines)
-export COLUMNS=$(tput columns)
+LINES=$(tput lines)
+COLUMNS=$(tput columns)
 
 # Terminal ---------------------------------------------
 # ncurses
