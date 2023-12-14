@@ -289,6 +289,23 @@ function stream {
   yes "$1"
 }
 
+# https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
+# https://digitalocean.com/community/tutorials/nohup-command-in-linux
+function hold () {
+  command nohup --version # https://en.m.wikipedia.org/wiki/Nohup
+  # Redirect to stderror AND file
+  # tee - https://en.m.wikipedia.org/wiki/Tee_(command)
+  # nohup ./foo.sh > out.txt >2&1
+}
+
+# Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
+function git_clean () {
+  # https://stackoverflow.com/questions/5613345/how-to-shrink-the-git-folder
+  git repack -a -d --depth=250 --window=250
+  # https://web.archive.org/web/20190207210108/http://stevelorek.com/how-to-shrink-a-git-repository.html
+  # time git gc --aggressive --prune
+}
+
 monitor () {
   htop
   ps
