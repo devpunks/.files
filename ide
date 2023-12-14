@@ -15,7 +15,7 @@ tmux start-server
 tmux new-session -d -s $SESSION -n "🕶️ devPunks"
 
 # attach to new session
-tmux -v -2 attach -t $SESSION
+tmux -v -u2 attach -t $SESSION
 exit
 
 tmux select-pane -T "DAMNNNN"
