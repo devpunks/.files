@@ -74,6 +74,7 @@ alias reload='(
   reset
   stty sane
   tput reset
+  setterm --initialize
   tput cup 0 0
   termux-info
   termux-reload-settings
