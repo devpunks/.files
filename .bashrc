@@ -25,14 +25,13 @@ export EDITOR=vi
 #   source $rc
 # done
 
-echo 😈devPunks
-echo
-
-export EDITOR=vi
-
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-export LC_COLLATE=en_US.UTF-8
+# export PATH="/usr/local/sbin:$PATH"
+# export PATH="~/Library/Python/2.7/bin:$PATH"
+if [ -n "${PREFIX}" ]; then
+  echo "FOUND $PREFIX ON TERMUX"
+  unset PATH
+  export PATH="$HOME:$PREFIX/bin"
+fi
 
 #https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
 LINES=$(tput lines)
