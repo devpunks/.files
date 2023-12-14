@@ -16,6 +16,8 @@ echo
 #     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
 # ******************************************************
 
+export EDITOR=vi
+
 # for rc in ~in `find ~/*.{ba}sh -maxdepth 1 -type f`; do
 #   # (r)un (c)omm(ands)
 #   #   - https://superuser.com/questions/144339/vimrc-screenrc-bashrc-kshrc-etc-what-does-the-rc-mean
