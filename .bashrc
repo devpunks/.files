@@ -69,15 +69,14 @@ tput init # https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
 #stty -ixon columns 500 # enable control-s and control-q in VIM
 stty -ixon columns 110 # enable control-s and control-q in VIM
 
+shopt checkwinsize
+echo "$(tput lines) $(tput columns)"
+echo "$(stty size)"
 shopt -s checkwinsize
 
-# export PATH="/usr/local/sbin:$PATH"
-# export PATH="~/Library/Python/2.7/bin:$PATH"
-if [ -n "${PREFIX}" ]; then
-  echo "FOUND $PREFIX ON TERMUX"
-  unset PATH
-  export PATH="$HOME:$PREFIX/bin"
-fi
+#https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
+LINES=$(tput lines)
+COLUMNS=$(tput columns)
 
 # https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
@@ -95,7 +94,8 @@ shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion
 # https://unix.stackexchange.com/questions/700199/why-is-the-bash-double-star-globstar-operator-often-disabled-by-default
 shopt -s globstar # https://www.linuxjournal.com/content/globstar-new-bash-globbing-option
 
-# History
+
+# History ******************************************************
 # - https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
 # - Reverse Search
@@ -125,6 +125,7 @@ export LESSHISTFILE=- # /dev/null
 export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 
 
+# Prompt ******************************************************
 # - https://bash-prompt-generator.org
 # - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x264.html
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
@@ -149,16 +150,17 @@ PS1_RESET='\001$(tput sgr0)\002'
 PS1_DATE='$(tput dim)$(tput setaf 5)\D{%H:%M:%S}'"$PS1_RESET"
 PS1_USER='$(tput setaf 6)\u'"$PS1_RESET"
 PS1_AT='$(tput sgr0)@'"$PS1_RESET"
-PS1_HOST='$(tput setaf 2)\H'"$PS1_RESET"
+PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
 PS1_COLON='$(tput sgr0):'"$PS1_RESET"
 PS1_PATH='$(tput setaf 3)\w'"$PS1_RESET"
 
 # PS1_GIT='$(__git_ps1 " (%s)")'"$PS1_RESET"
 PS1_PROMPT='$(tput setab 13)💲'"$PS1_RESET"
 
-export PS1="\[\n$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\]"
+#export PS1="\001\n$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\002"
 
 
+# COLORS ******************************************************
 # https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
 GREP_COLOR='1;4;38;5;13;48;5;235'
 export GREP_COLORS="ln=1;4;38;5;241:ms=${GREP_COLOR}:"
