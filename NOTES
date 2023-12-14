@@ -8,6 +8,7 @@ Android Accessibility
 <OS> + U # Accessibility Settings
 <OS> + / # Accessibility Keys
 <OS> + [TAB] # Recent Apps
+[CTRL][ALT] + Z # Toggle Accessibility Talkback
 
 ##################################
 - [ESC] # Abort
@@ -42,7 +43,9 @@ Android Accessibility
 - <OS> + [DEL] # Back
 
 - [F4] - [F12] - (Check keyboard layout)
+- [FN][F1] # Keyboard Shortcuts menu
 - [FN]+[F4] - [FN]+[F12] - (Check keyboard layout)
+- [FN][DEL] # (ios) Toggle desktop / (android) screenshot
 
 # Mail ------------------------------------
 - [CTRL]+N # New message
@@ -82,7 +85,21 @@ Android Accessibility
   - Left sticky from floating window
   - Right floating window ffrom left sticky
 
-
+# TERMUX  ------------------------------------
+- [CTRL][ALT] + -   # Reduce text size
+- [CTRL][ALT] + =   # Increase text size
+- [CTRL][ALT] + {N} # Switch to Session N (0-9)
+- [CTRL][ALT] + →   # Drawer
+- [CTRL][ALT] + ←   # Close Drawer
+- [CTRL][ALT] + C   # New Session
+- [CTRL][ALT] + M   # Context Menu (Right Click)
+- [CTRL][ALT] + N   # Next Session
+- [CTRL][ALT] + ↑   # Next Session
+- [CTRL][ALT] + P   # Previous Session
+- [CTRL][ALT] + ↓   # Previous Session
+- [CTRL][ALT] + R   # Rename Session
+- [CTRL][ALT] + U   # URL List
+- [CTRL][ALT] + V   # Paste
 
 # BASH ---------------------------------
 #   - Shell Check - https://www.shellcheck.net
