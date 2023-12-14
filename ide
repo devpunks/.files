@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e
+
 SESSION=`whoami`
 
 # Setup a work space called `$SESSION
