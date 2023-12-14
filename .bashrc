@@ -72,7 +72,6 @@ stty -ixon columns 110 # enable control-s and control-q in VIM
 shopt checkwinsize
 echo "$(tput lines) $(tput columns)"
 echo "$(stty size)"
-shopt -s checkwinsize
 
 #https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
 LINES=$(tput lines)
