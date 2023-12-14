@@ -52,7 +52,7 @@ BG_MAGENTA=$(tput setab 5)
 BG_CYAN=$(tput setab 6)
 BG_WHITE=$(tput setab 7)
 
-echo -e "I ${REVERSE}${MAGENTA}love${NC} ${WHITE}devPunks\n"
+echo -e "I ${REVERSE}${MAGENTA}love${NC} ${NC}devPunks\n"
 # *********************************************************************
 
 # ----------------------
