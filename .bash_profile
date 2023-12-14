@@ -258,8 +258,8 @@ alias gsts='git stash save'
 # - syslog() - https://stackify.com/syslog-101/
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
 # - https://www.cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
-alias log.sshd="command logcat -s 'sshd:*'"
-function log () {
+alias logs.sshd="command logcat -s 'sshd:*'"
+function logs () {
   command logcat
 }
 vie () {
