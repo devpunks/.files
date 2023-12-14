@@ -33,9 +33,6 @@ if [ -n "${PREFIX}" ]; then
   export PATH="$HOME:$PREFIX/bin"
 fi
 
-#https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
-LINES=$(tput lines)
-COLUMNS=$(tput columns)
 
 # Terminal ---------------------------------------------
 # ncurses
