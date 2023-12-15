@@ -12,7 +12,7 @@ SESSION=`whoami`
 tmux start-server
 
 # create new session
-tmux new-session -d -s $SESSION -n "🕶️ devPunks"
+tmux new-session -d -s $SESSION -n "🤘😈🤘 devPunks"
 
 # attach to new session
 tmux -v -u2 attach -t $SESSION
