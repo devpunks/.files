@@ -50,6 +50,15 @@ Android Accessibility
 # Mail ------------------------------------
 - [CTRL]+N # New message
 
+# Youtube -----------------------------------
+- C # Toggle Closed Captions
+- [CTRL] # Keyboard Shortcut Menu
+- [SPACE] # Play / Pause
+- → # Seek Forward
+- ← # Seek Backwards
+- [ALT] + → # Next Chapter
+- [ALT] + ← # Previous Chaper
+
 # Chrome ------------------------------------
 - [ALT]+E # Open menu
 - [CTRL][SHIFT]+B # Bookmarks
