@@ -250,6 +250,7 @@ alias gstd='git stash drop'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gsts='git stash save'
+alias gt='git log --oneline --since=$( date '+%Y-%m-%d' ) | wc -l'
 
 
 
