@@ -156,7 +156,7 @@ PS1_PATH='$(tput setaf 3)\w'"$PS1_RESET"
 # PS1_GIT='$(__git_ps1 " (%s)")'"$PS1_RESET"
 PS1_PROMPT='$(tput setab 13)💲'"$PS1_RESET"
 
-#export PS1="\001\n$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\002"
+export PS1="\001\n$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\002"
 
 
 # COLORS ******************************************************
