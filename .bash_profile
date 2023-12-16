@@ -346,8 +346,8 @@ weigh () {
   echo && echo # https://redhat.com/sysadmin/linux-df-command
   df -ah -- "$location"
 
-  # https://www.geeksforgeeks.org/du-command-linux/
-  echo && echo # https://www.redhat.com/sysadmin/du-command-options
+  # https://geeksforgeeks.org/du-command-linux/
+  echo && echo # https://redhat.com/sysadmin/du-command-options
   du --summarize --total --time \
     --human-readable $hide \
   -- "$location"
