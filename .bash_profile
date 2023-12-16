@@ -37,7 +37,6 @@ UNDERLINE=$(tput smul)
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
-GREEN_LIGHT='\033[1;32m'
 YELLOW=$(tput setaf 3)
 BROWN='\033[0;33m'
 BLUE=$(tput setaf 4)
