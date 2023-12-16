@@ -325,8 +325,10 @@ monitor () {
   ps
 }
 
-weigh () { # https://www.redhat.com/sysadmin/du-command-options
-  local FLAGS="--all --total --human-readable"
+weigh () {
+  clear
+  local location=`realpath ${1:-.}`
+  local hide="--exclude={.git,log,node_modules,storage}"
 
   # do things with parameters like $1 such as.
   echo LOCATION "$1"
