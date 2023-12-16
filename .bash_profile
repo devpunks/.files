@@ -388,7 +388,7 @@ spectrum () {
 
 # -----------------------------------------------------------------------
 # Bindings
-#   - https://www.google.com/amp/s/www.geeksforgeeks.org/bind-command-in-linux-with-examples/amp/
+#   - https://geeksforgeeks.org/bind-command-in-linux-with-examples
 # -----------------------------------------------------------------------
 #   See to avoid potential conflicts:
 #     - $HOME/.vimrc
