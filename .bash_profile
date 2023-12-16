@@ -41,7 +41,6 @@ YELLOW=$(tput setaf 3)
 BLUE=$(tput setaf 4)
 PURPLE=$(tput setaf 5)
 CYAN=$(tput setaf 6)
-CYAN_LIGHT='\033[1;36m'
 WHITE=$(tput setaf 7)
 GRAY_LIGHT='\033[0;37m'
 # background ----
