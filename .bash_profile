@@ -32,6 +32,7 @@ BOLD=$(tput bold)
 DIM=$(tput dim)
 REVERSE=$(tput rev)
 UNDERLINE=$(tput smul)
+
 # colors ----
 BLACK=$(tput setaf 0)
 GRAY='\033[1;30m'
