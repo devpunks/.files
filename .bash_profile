@@ -26,7 +26,7 @@
 # \e[48;5;Nm # background
 # resets ----
 NC=$(tput sgr0) # No Color
-DEFAULT=$(tput setaf 9) # Default
+
 # format ----
 BOLD=$(tput bold)
 DIM=$(tput dim)
