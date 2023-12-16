@@ -235,14 +235,12 @@ alias gl='git log --graph --oneline --decorate --all --pretty=format:"%h %ad %s"
 alias gp='git push'
 alias gr='git rebase -i'
 alias gs='git status'
-alias gss='git status --short'
-alias gst='git stash'
-alias gsta='git stash apply'
-alias gstd='git stash drop'
-alias gstl='git stash list'
-alias gstp='git stash pop'
-alias gsts='git stash save'
-alias gt='git log --since=12AM && git log --since=12AM | wc -l'
+alias gt="(
+  # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+  git log --graph --since='1 day ago' --pretty=format:'%h %ad %an (%ar) \"%s\"'
+  echo && echo Total:
+  git log --since='1 day ago' | wc -l
+)"
 
 
 
