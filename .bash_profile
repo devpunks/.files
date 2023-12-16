@@ -38,7 +38,6 @@ BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
-BROWN='\033[0;33m'
 BLUE=$(tput setaf 4)
 BLUE_LIGHT='\033[1;34m'
 MAGENTA=$(tput setaf 5)
