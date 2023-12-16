@@ -280,8 +280,8 @@ function zip {
 
 # Destroy
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
-# - https://www.computerhope.com/unix/shred.htm
-# - https://www.geeksforgeeks.org/shred-command-in-linux-with-examples/amp/
+# - https://computerhope.com/unix/shred.htm
+# - https://geeksforgeeks.org/shred-command-in-linux-with-examples
 function destroy {
   [ ! -e "$1" ] && return
 
