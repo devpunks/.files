@@ -96,7 +96,7 @@ alias term='(
   echo & echo $(tty) Colors: $(tput colors) Size: $(stty size | tr " " "x")
   echo && echo "TERM=$TERM $( tput -V )" && toe
   echo && echo "stty $(stty -g)" && stty -a
-  echo && infocmp -L
+  echo && infocmp -l
   echo && dircolors --print-ls-colors
   echo && colors
 )'
