@@ -13,6 +13,7 @@
 #   - https://misc.flogisoft.com/bash/tip_colors_and_formatting
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 #   - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
+#   - https://unix.stackexchange.com/questions/274453/is-there-any-objective-benefit-to-escape-sequences-over-tput
 #
 #   Note: Some control escape sequences, like \e for ESC, are not guaranteed
 #   to work in all languages and compilers. It is recommended to use
