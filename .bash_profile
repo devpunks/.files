@@ -254,6 +254,35 @@ vie () {
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 }
 
+
+# Zipper
+#   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
+function zipper {
+  clear
+  local file=$1
+  local contents=${@:2}
+
+  echo file: $file
+  echo contents: $contents
+
+  command zip -rv $file $contents # -u for update only
+
+  test -e "$file" \
+   && command view $file \
+    && command zipinfo $file
+}
+
+# Destroy
+# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
+# - https://www.computerhope.com/unix/shred.htm
+# - https://www.geeksforgeeks.org/shred-command-in-linux-with-examples/amp/
+function destroy {
+  [ ! -e "$1" ] && return
+
+  shred --force --zero --iterations=5 --remove $1
+  echo "💣 destroyed 💥 $1"
+}
+
 # Trash
 #   - https://www.ramendik.ru/docs/trashspec.html
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
