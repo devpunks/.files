@@ -33,7 +33,7 @@ DIM=$(tput dim)
 REVERSE=$(tput rev)
 UNDERLINE=$(tput smul)
 
-# colors ----
+# colors ------------
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
