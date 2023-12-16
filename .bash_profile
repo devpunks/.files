@@ -290,7 +290,6 @@ function destroy {
 }
 
 # Trash
-#   - https://www.ramendik.ru/docs/trashspec.html
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
 function trash {
   #   [ -f "$1" ] || \
