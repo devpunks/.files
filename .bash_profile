@@ -43,6 +43,7 @@ PURPLE=$(tput setaf 5)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
 
+# IBM Colors --------------
 BLACK_LIGHT=$(tput setaf 8)
 RED_LIGHT=$(tput setaf 9)
 GREEN_LIGHT=$(tput setaf 10)
