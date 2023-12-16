@@ -179,8 +179,6 @@ alias header='curl -I'
 alias wget='wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
 alias archive='command tar cvf --' # - https://www.geeksforgeeks.org/tar-command-linux-examples/amp/
-alias zipper='command zip -r --' # - https://www.geeksforgeeks.org/zip-command-in-linux-with-examples/amp/
-
 # SSH(d)------------------------------------------------------------------
 #   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://github.com/termux/termux-packages/issues/3620
