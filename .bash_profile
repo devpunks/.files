@@ -101,6 +101,7 @@ alias term='(
   echo && colors
 )'
 alias environment='(
+  # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
   clear
   echo "\n\n\n\$BASH: $BASH\nOptions:\n$BASHOPTS"
   echo "\n\$SHELL: $SHELL\nOptions:\n$SHELLOPTS"
