@@ -162,10 +162,6 @@ alias fc='fc -e vi' # https://www.geeksforgeeks.org/fc-command-linux-examples/am
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
 alias delete='command rm -dIrv --preserve-root'
-# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
-# - https://www.computerhope.com/unix/shred.htm
-# - https://www.geeksforgeeks.org/shred-command-in-linux-with-examples/amp/
-alias destroy='shred --force --zero --iterations=5 --remove'
 
 alias now='date +"%T"'
 alias ping='ping -c 100 -s.2'
