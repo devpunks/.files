@@ -342,8 +342,8 @@ weigh () {
   [[ -d $location ]] && \
     ncdu -2 -e --color=dark-bg $hide -- "$location"
 
-  # https://www.geeksforgeeks.org/df-command-in-linux-with-examples
-  echo && echo # https://www.redhat.com/sysadmin/linux-df-command
+  # https://geeksforgeeks.org/df-command-in-linux-with-examples
+  echo && echo # https://redhat.com/sysadmin/linux-df-command
   df -ah -- "$location"
 
   # https://www.geeksforgeeks.org/du-command-linux/
