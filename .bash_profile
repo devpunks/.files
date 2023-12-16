@@ -330,17 +330,22 @@ weigh () {
   local location=`realpath ${1:-.}`
   local hide="--exclude={.git,log,node_modules,storage}"
 
-  # do things with parameters like $1 such as.
-  echo LOCATION "$1"
-  echo FLAGS 👉 $FLAGS
+  echo location 👉 $location
+  echo hide 👉 $hide
 
-  clear
-  # - https://dev.yorhel.nl/ncdu/man
-  ncdu -e --color dark-bg --exclude "{.git,log,node_modules,storage}" -- "$1"
-  echo
-  df -ah -- "$1" # - https://www.geeksforgeeks.org/df-command-in-linux-with-examples/amp/
-  echo && echo
-  du --time --max-depth=2 $FLAGS -- "$1"
+  echo && echo # - https://dev.yorhel.nl/ncdu/man
+  [[ -d $location ]] && \
+    ncdu -2 -e --color=dark-bg $hide -- "$location"
+
+  # https://www.geeksforgeeks.org/df-command-in-linux-with-examples
+  echo && echo # https://www.redhat.com/sysadmin/linux-df-command
+  df -ah -- "$location"
+
+  # https://www.geeksforgeeks.org/du-command-linux/
+  echo && echo # https://www.redhat.com/sysadmin/du-command-options
+  du --summarize --total --time \
+    --human-readable $hide \
+  -- "$location"
 }
 
 colors () { color && echo && spectrum ; }
