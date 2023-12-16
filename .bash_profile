@@ -382,13 +382,9 @@ color () {
 
     echo "$(tput setab $n)$n$reset "
 
-  for i in {0..255} ; do
-    printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
-    # TERM - 
-    # IBM - 
-    if (( i == 7 )) \
-      || (( i == 15 )) \
-      || (( ( i > 15 ) && (i-15) % $columns == 0 ))
+    if (( n == 7 )) \
+      || (( n == 15 )) \
+      || (( ( n > 15 ) && (n-15) % $columns == 0 ))
         then printf "\n";
     fi
   done
