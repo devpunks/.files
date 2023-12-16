@@ -27,7 +27,7 @@ NC=$(tput sgr0) # No Color
 DEFAULT=$(tput setaf 9) # Default
 # format ----
 BOLD=$(tput bold)
-DIM='\e[2m'
+DIM=$(tput dim)
 REVERSE=$(tput rev)
 UNDERLINE=$(tput smul)
 # colors ----
