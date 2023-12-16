@@ -366,6 +366,21 @@ colors () { color && echo && spectrum ; }
 color () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
   local columns=6
+  local reset=`tput sgr0 `
+
+  printf '    %12s %12s\n' Foreground Background
+  for n in $(seq 0 15)
+  do
+      F=$(tput setaf $n | cat -v)
+      B=$(tput setab $n | cat -v)
+      printf '%2d  %12s %12s\n' $n "$F" "$B"
+  done
+
+  for n in {0..255} ; do
+#   printf " \001%s %3d%s\002" \
+#     "`tput setab $n `" "$n" $reset
+
+    echo "$(tput setab $n)$n$reset "
 
   for i in {0..255} ; do
     printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
