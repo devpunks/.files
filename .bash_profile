@@ -42,7 +42,17 @@ BLUE=$(tput setaf 4)
 PURPLE=$(tput setaf 5)
 CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
-GRAY_LIGHT='\033[0;37m'
+
+BLACK_LIGHT=$(tput setaf 8)
+RED_LIGHT=$(tput setaf 9)
+GREEN_LIGHT=$(tput setaf 10)
+YELLOW_LIGHT=$(tput setaf 11)
+BLUE_LIGHT=$(tput setaf 12)
+PURPLE_LIGHT=$(tput setaf 13) # MAGENTA
+CYAN_LIGHT=$(tput setaf 14)
+WHITE_LIGHT=$(tput setaf 15)
+MAGENTA=$PURPLE_LIGHT
+
 # background ----
 BG_BLACK=$(tput setab 0)
 BG_RED=$(tput setab 1)
