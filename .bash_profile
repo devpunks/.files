@@ -261,8 +261,6 @@ vie () {
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 }
 
-# https://geeksforgeeks.org/paste-command-in-linux-with-examples
-alias zipper=''
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
 function zip {
