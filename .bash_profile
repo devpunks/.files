@@ -363,6 +363,8 @@ weigh () {
 colors () { color && echo && spectrum ; }
 color () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+  local columns=6
+
   for i in {0..255} ; do
       printf "\x1b[48;5;%sm%3d\e[0m " "$i" "$i"
       if (( i == 15 )) || (( i > 15 )) && (( (i-15) % 6 == 0 )); then
