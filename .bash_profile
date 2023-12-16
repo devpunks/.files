@@ -12,6 +12,7 @@
 #   - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 #   - https://misc.flogisoft.com/bash/tip_colors_and_formatting
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+#   - ANSI Escape Codes - https://en.m.wikipedia.org/wiki/ANSI_escape_code
 #   - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 #   - https://unix.stackexchange.com/questions/274453/is-there-any-objective-benefit-to-escape-sequences-over-tput
 #
