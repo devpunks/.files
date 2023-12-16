@@ -15,6 +15,7 @@
 #   - ANSI Escape Codes - https://en.m.wikipedia.org/wiki/ANSI_escape_code
 #   - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 #   - https://unix.stackexchange.com/questions/274453/is-there-any-objective-benefit-to-escape-sequences-over-tput
+#   - https://stackoverflow.com/questions/27159322/rgb-values-of-the-colors-in-the-ansi-extended-colors-index-17-255
 #
 #   Note: Some control escape sequences, like \e for ESC, are not guaranteed
 #   to work in all languages and compilers. It is recommended to use
