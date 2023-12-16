@@ -152,7 +152,7 @@ alias ls='ls -AhlFG --color=auto --hyperlink=auto -k --group-directories-first -
 
 alias echo='echo -e' # - https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
 
-alias diff='diff --color=auto' # - https://www.geeksforgeeks.org/diff-command-linux-examples/amp/
+alias diff='diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
