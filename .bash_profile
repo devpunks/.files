@@ -263,7 +263,7 @@ vie () {
 alias zipper=''
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
-function zipper {
+function zip {
   clear
   local file=$1
   local contents=${@:2}
