@@ -198,7 +198,11 @@ alias ps='command ps auxf'
 alias header='command curl -I'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
-alias archive='command tar cvf --' # - https://geeksforgeeks.org/tar-command-linux-examples
+alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
+
+# https://superuser.com/questions/168578/why-must-a-folder-be-executable
+# https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
+alias permit='chmod -v 755'
 # SSH(d)------------------------------------------------------------------
 #   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://github.com/termux/termux-packages/issues/3620
