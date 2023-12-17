@@ -182,7 +182,6 @@ alias fc='fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
 alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
 alias delete='command rm -dIrv --preserve-root'
 # https://geeksforgeeks.org/paste-command-in-linux-with-examples
-alias zipper='paste'
 
 alias now='date +"%T"'
 alias ping='ping -c 100 -s.2'
