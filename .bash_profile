@@ -383,9 +383,10 @@ color () {
       "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
   done
 
-    if (( n == 7 )) \
-      || (( n == 15 )) \
-      || (( ( n > 15 ) && (n-15) % $columns == 0 ))
+  echo && echo ' (extended) TrueColor'
+  for n in {16..255} ; do
+    printf " ${bg}%sm%3d\e[0m" "$n" "$n"
+    if (( ( n > 15 ) && (n-15) % $columns == 0 ))
         then printf "\n";
     fi
   done
