@@ -477,7 +477,6 @@ spectrum () {
 #     - $HOME/.termux.conf
 #     - $HOME/.termux/termux.properties
 
-alias shortcuts='bind -P'
 #
 # Case insensitive tab completion in Bash
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
