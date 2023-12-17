@@ -369,9 +369,12 @@ color () {
   local fg="\e[38;5;"
   local columns=6
 
-  for n in {0..255} ; do
-#   printf " \001%s %3d%s\002" \
-#     "`tput setab $n `" "$n" $reset
+  echo && echo ' TERM 8bit'
+  printf "  #  %-12s  %-12s\n" Foreground Background
+  for n in {0..7} ; do
+    printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
+      "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
+  done
 
     echo "$(tput setab $n)$n$reset "
 
