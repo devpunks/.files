@@ -464,7 +464,7 @@ spectrum () {
           if (colnum%term_cols==term_cols) printf "\n";
       }
       printf "\n";
-    }'
+    }' # BEGIN
 }
 
 
