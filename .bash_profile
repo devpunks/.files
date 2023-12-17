@@ -400,7 +400,8 @@ weigh () {
 
   echo && echo # - https://dev.yorhel.nl/ncdu/man
   [[ -d $location ]] && \
-    ncdu -2 -e --color=dark-bg $hide -- "$location"
+    ncdu -2 -e --color=dark-bg \
+      $hide -- "$location"
 
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
   echo && echo # https://redhat.com/sysadmin/linux-df-command
