@@ -313,8 +313,29 @@ function zip {
   command zip -rv $file $contents # -u for update only
 
   test -e "$file" \
-   && command view $file \
-    && command zipinfo $file
+    && command view "$file" \
+    && echo && command zipinfo "$file" \
+    && echo && command unzip -lv "$file"
+}
+
+# https://linuxhandbook.com/unzip-command
+# https://linuxhandbook.com/gzip-directory
+function unpack {
+  clear
+  local file=$1
+  local destination=$2
+
+  echo file: $file
+  echo contents: $contents
+
+  echo "Reading contents"
+  test -e "$file" \
+    && command view "$file" \
+    && echo && command zipinfo "$file" \
+    && echo && command unzip -lv "$file"
+
+  echo 'Unpack using `unzip` or `tar`'
+#  command unzip "$file" "$destination"
 }
 
 # Destroy
