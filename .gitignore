@@ -10,6 +10,7 @@
 .local
 .ssh
 .viminfo
+log
 
 # termux
 storage
