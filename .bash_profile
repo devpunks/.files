@@ -365,6 +365,8 @@ weigh () {
 colors () { color && echo && spectrum ; }
 color () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+  local bg="\e[48;5;"
+  local fg="\e[38;5;"
   local columns=6
   local reset=`tput sgr0 `
 
