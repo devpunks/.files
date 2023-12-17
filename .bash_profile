@@ -272,6 +272,11 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 function logs () {
   command logcat
 }
+
+# FUNCTIONS -------------------------------------
+#   - https://tldp.org/LDP/abs/html/functions.html
+#   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
+# ------------------------------------------------
 vie () {
   termux-open-url "$1"
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
