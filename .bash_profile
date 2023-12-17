@@ -480,7 +480,8 @@ spectrum () {
 #
 # Case insensitive tab completion in Bash
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
-# bind "set completion-ignore-case on"
+alias shortcuts='bind -P'
+
 # bind "set show-all-if-ambiguous on"
 
 echo "Bash Profile"
