@@ -282,6 +282,24 @@ vie () {
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 }
 
+# Archive
+# - https://geeksforgeeks.org/tar-command-linux-examples
+function archive {
+  clear
+  local file=$1
+  local contents=${@:2}
+
+  echo file: $file
+  echo contents: $contents
+
+  command zip -rv $file $contents # -u for update only
+  command tar cvzf $file $contents # -u for update only
+
+  test -e "$file" \
+   && command view $file \
+    && command zipinfo $file
+}
+
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
 function zip {
