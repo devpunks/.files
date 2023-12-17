@@ -202,8 +202,22 @@ alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-
 
 # https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/questions/168578/why-must-a-folder-be-executable
-# https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
-alias permit='chmod -v 755'
+# https://askubuntu.com/questions/44542/what-is-umask-and-how-does-it-work
+# https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
+# https://askubuntu.com/questions/932713/what-is-the-difference-between-chmod-x-and-chmod-755
+function permit {
+  echo umask: `umask`
+  echo umask -S: `umask -S`
+
+  test ! -e "$1" \
+    && echo "Does not exist!" \
+    && return
+
+  ls $1
+
+# chmod -v 755 $1
+}
+
 # SSH(d)------------------------------------------------------------------
 #   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://github.com/termux/termux-packages/issues/3620
