@@ -387,8 +387,7 @@ function git_clean () {
 }
 
 monitor () {
-  htop
-  ps
+  htop && ps
 }
 
 weigh () {
