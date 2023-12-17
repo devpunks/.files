@@ -368,15 +368,6 @@ color () {
   local bg="\e[48;5;"
   local fg="\e[38;5;"
   local columns=6
-  local reset=`tput sgr0 `
-
-  printf '    %12s %12s\n' Foreground Background
-  for n in $(seq 0 15)
-  do
-      F=$(tput setaf $n | cat -v)
-      B=$(tput setab $n | cat -v)
-      printf '%2d  %12s %12s\n' $n "$F" "$B"
-  done
 
   for n in {0..255} ; do
 #   printf " \001%s %3d%s\002" \
