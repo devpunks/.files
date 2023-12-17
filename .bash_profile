@@ -194,9 +194,9 @@ alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
 alias top=htop
-alias ps='ps auxf'
-alias header='curl -I'
-alias wget='wget --continue --no-hsts' # resume downloads & prevent writing HSTs
+alias ps='command ps auxf'
+alias header='command curl -I'
+alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
 alias archive='command tar cvf --' # - https://geeksforgeeks.org/tar-command-linux-examples
 # SSH(d)------------------------------------------------------------------
