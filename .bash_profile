@@ -483,5 +483,6 @@ spectrum () {
 alias shortcuts='bind -P'
 
 # bind "set show-all-if-ambiguous on"
+# bind "set completion-ignore-case on"
 
 echo "Bash Profile"
