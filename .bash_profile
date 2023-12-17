@@ -376,7 +376,12 @@ color () {
       "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
   done
 
-    echo "$(tput setab $n)$n$reset "
+  echo && echo ' IBM 16bit'
+  printf "  #  %-12s  %-12s\n" Foreground Background
+  for n in {8..15} ; do
+    printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
+      "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
+  done
 
     if (( n == 7 )) \
       || (( n == 15 )) \
