@@ -443,6 +443,7 @@ color () {
     fi
   done
 }
+
 spectrum () {
   # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
   echo
