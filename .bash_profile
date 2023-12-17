@@ -162,7 +162,7 @@ alias ls='command ls -AhklFG --color=auto --hyperlink=auto --group-directories-f
 alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
 
 # https://unix.stackexchange.com/a/82358
-alias tree='command tree -ahACDF --du -L 3 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
+alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 
 alias echo='echo -e' # - https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
 
