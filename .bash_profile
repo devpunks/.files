@@ -200,6 +200,7 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
+# https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/questions/168578/why-must-a-folder-be-executable
 # https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
 alias permit='chmod -v 755'
