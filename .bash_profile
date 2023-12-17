@@ -157,7 +157,12 @@ alias most='most +u -s -t2'
 
 # https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
 # https://unix.stackexchange.com/questions/282648/using-grep-with-the-exclude-dir-flag-to-exclude-multiple-directories
-alias ls='ls -AhlFG --color=auto --hyperlink=auto -k --group-directories-first --hide="{.git,log,node_modules,storage}"'
+alias ls='command ls -AhklFG --color=auto --hyperlink=auto --group-directories-first'
+
+alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
+
+# https://unix.stackexchange.com/a/82358
+alias tree='command tree -ahACDF --du -L 3 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 
 alias echo='echo -e' # - https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
 
