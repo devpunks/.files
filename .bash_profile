@@ -65,8 +65,6 @@ BG_MAGENTA=$(tput setab 5)
 BG_CYAN=$(tput setab 6)
 BG_WHITE=$(tput setab 7)
 
-export EXA_COLORS="${LS_COLORS}:hd=1;4;38;5;7:sb=38;5;13:sn=38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;38;5;2:.*=2;3;18;38;5;8:"
-
 echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 # *********************************************************************
 
