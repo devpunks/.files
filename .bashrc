@@ -176,6 +176,8 @@ export LS_COLORS='*.7z=38;5;40:*.WARC=38;5;40:*.a=38;5;40:*.arj=38;5;40:*.br=38;
 export CLICOLOR=1
 export LS_COLORS="*LS_COLORS=48;5;89;38;5;197;1;3;4;7:no=1;38;5;11;48;5;9:di=1;4;38;5;13;48;5;235:fi=0;38;5;250:ln=2;3;38;5;250:ex=1;4;38;5;5:so=1;4;5;38;5;9:or=1;38;5;11;48;5;9:"
 
+export EXA_COLORS="${LS_COLORS}:hd=1;4;38;5;13;48;5;8:sb=38;5;13:sn=38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;38;5;2:.*=2;3;18;38;5;8:"
+
 # FUNCTIONS -------------------------------------
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
