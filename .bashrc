@@ -76,9 +76,8 @@ tput init # https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
 
 # - tty  - https://www.linusakesson.net/programming/tty/
 # - stty - https://www.computerhope.com/unix/ustty.htm
-#stty -ixon columns 500 # enable control-s and control-q in VIM
-stty -ixon columns 110 # enable control-s and control-q in VIM
-
+# - https://www.mkssoftware.com/docs/man1/stty.1.asp
+# - tty  - https://www.linusakesson.net/programming/tty/
 shopt checkwinsize
 echo "$(tput lines) $(tput columns)"
 echo "$(stty size)"
