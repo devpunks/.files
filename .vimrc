@@ -365,19 +365,18 @@ function Drawer()
   " Selects `p`revious buffer to remove tree focus
   wincmd p
 endfunction
-
+}}}
 
 finish
 
 
-" ********************************************************************************
-" Status Message *****************************************************************
+" STATUS ------------------------------------------------
 " Word Count
 "   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " ********************************************************************************
-
 set laststatus=2 " Always show status line
+set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 " set statusline=[fo=%{&fo}]
 
 " clear out status line
