@@ -48,7 +48,7 @@ endif
 set nohidden " possibly overridden by ZoomWinhttps://vimtricks.com/p/what-is-set-hidden/
 command Flush :up | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 
-" Views, Sessions, Viminfo ------------------------------------
+" Uiews, Sessions, Viminfo ------------------------------------
 "   - https://vimtricks.com/p/saving-session-state/
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 set viewoptions+=localoptions
