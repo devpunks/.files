@@ -97,13 +97,14 @@ set colorcolumn=-8,-3 " vertical ruler - https://www.baeldung.com/linux/vim-rule
 highlight ColorColumn ctermbg=233
 
 set hlsearch " Highlight found search results
-set incsearch " show partial search matches
-set cursorline " highlight current cursor line
-set cursorcolumn " highlight current cursor column
-set noerrorbells " Display beep on errors
 set autoread " re-read files if unmodified
 set smartcase " Automatically search case-sensitive
+set incsearch " show partial search matches
 set visualbell " Flash the screen instead of beeping errors
+set noerrorbells " Display beep on errors
+set cursorline " highlight current cursor line
+set cursorcolumn " highlight current cursor column
+set cursorlineopt=number " Only underline numbet
 set showmatch matchtime=3 " jump to matching brace
 
 " - Backups ------------------------------------
