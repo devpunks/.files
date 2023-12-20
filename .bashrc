@@ -74,7 +74,6 @@ export TERM=xterm-256color
 export COLORTERM=truecolor
 tput init # https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
 
-# - tty  - https://www.linusakesson.net/programming/tty/
 # - stty - https://www.computerhope.com/unix/ustty.htm
 # - https://www.mkssoftware.com/docs/man1/stty.1.asp
 # - tty  - https://www.linusakesson.net/programming/tty/
