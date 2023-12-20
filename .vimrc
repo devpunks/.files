@@ -68,7 +68,7 @@ autocmd VimLeave * echom "PEAAAACE"
 " ********************************************************************************
 " Settings ***********************************************************************
 " ********************************************************************************
-
+{{{
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
 " set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
@@ -163,20 +163,6 @@ endif
 set wildmenu
 set wildmode=list:longest,full
 
-" - Whitespace ------------------------------------
-retab " update tab format
-set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
-set pastetoggle=<F2> " Allow toggle of code indentation
-set smarttab
-set expandtab "turn tabs into whitespace
-"ensure aligned  autoindents - https://vimtricks.com/p/ensuring-aligned-indentation/
-set shiftround
-set shiftwidth=2
-set tabstop=2 "set tab character to 2 characters
-set softtabstop=2
-set list " view hidden characters
-set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
-
 " - Clipboard ------------------------------------
 "   - https://github.com/termux/termux-packages/issues/2308
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
@@ -209,6 +195,7 @@ set foldenable
 set foldcolumn=2
 set foldmethod=indent "Enable indent folding
 nnoremap <space> za
+}}}
 
 
 " ********************************************************************************
@@ -370,14 +357,14 @@ function Drawer()
 endfunction
 }}}
 
-finish
 
-
+" ********************************************************************************
 " STATUS ------------------------------------------------
 " Word Count
 "   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " ********************************************************************************
+{{{
 set laststatus=2 " Always show status line
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 " set statusline=[fo=%{&fo}]
@@ -411,6 +398,7 @@ set statusline+=\ of\ %L\ LOC
 
 " percentage
 set statusline+=\ (%p%%)
+}}}
 
 
 " ********************************************************************************
@@ -420,7 +408,23 @@ set statusline+=\ (%p%%)
 "   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
 " ********************************************************************************
-set wrap "word
+{{{
+" - Whitespace ------------------------------------
+retab " update tab format
+set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
+set pastetoggle=<F2> " Allow toggle of code indentation
+set smarttab
+set expandtab "turn tabs into whitespace
+"ensure aligned  autoindents - https://vimtricks.com/p/ensuring-aligned-indentation/
+set shiftround
+set shiftwidth=2
+set tabstop=2 "set tab character to 2 characters
+set softtabstop=2
+set list " view hidden characters
+set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
+
+
+set wrap " word
 set ruler " set cursor coordinates
 " backspace will delete CRLF at beginning of line
 " space key will wrap to next line at end of line
