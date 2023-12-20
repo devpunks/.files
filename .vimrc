@@ -17,6 +17,8 @@
 "     ######    .........
 "                 .....
 "                   .
+" CLICKING LINE NUMBERS
+"  - https://www.reddit.com/r/vim/comments/86pjx4/does_vim_currently_have_a_way_to_handle_clicks_on/
 set encoding=utf-8
 
 " https://github.com/airblade/vim-gitgutter/commit/8db2fc5
