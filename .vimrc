@@ -20,36 +20,6 @@
 " CLICKING LINE NUMBERS
 "  - https://www.reddit.com/r/vim/comments/86pjx4/does_vim_currently_have_a_way_to_handle_clicks_on/
 set encoding=utf-8
-
-" https://github.com/airblade/vim-gitgutter/commit/8db2fc5
-" https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
-highlight DiffAdd ctermfg=green guifg=green
-highlight DiffDelete ctermfg=red guifg=red
-highlight DiffChange ctermfg=yellow guifg=yellow
-highlight LineNr ctermbg=234 guibg=darkgray
-
-function s:get_color(group, attr)
-  " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
-  return synIDattr( synIDtrans( hlID(a:group)), a:attr)
-endfunction
-let s:gutter_bg=s:get_color('LineNr', 'bg#')
-
-echom "Gutter bg: ".s:gutter_bg
-
-execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
-execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
-
-verbose hi LineNr
-verbose hi CursorLineNr
-verbose hi SignColumn
-for type in ["Add", "Delete", "Change"]
-  echom "GitGutter".type." - ".hlexists("GitGutter".type)
-
-  execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
-  execute "verbose hi GitGutter".type
-endfor
-
-
 " ********************************************************************************
 " Author: Ahmid-Ra (github.com/snuggs)
 
