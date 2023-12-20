@@ -76,11 +76,11 @@ if &compatible
   set nocompatible " = https://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
 endif
 
-set complete-=i
-set nomodeline "Ignore file mode lines
 "set shell " The shell used to execute commands
-set showcmd " show current command prompt suffix
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
+set showcmd " show current command prompt suffix
+set nomodeline "Ignore file mode lines
+set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
 
 " increment formats
 "   - https://vimtricks.com/p/vimtrick-increment-numbers/
