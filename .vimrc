@@ -411,39 +411,91 @@ set statusline+=\ (%p%%)
 
 
 " ********************************************************************************
-" FONTS, COLORS & HIGHLIGHTS
+" TYPOGRAPHY.vimrc
 "   - https://jonasjacek.github.io/colors
+"   - https://www.vim.org/scripts/script.php?script_id=335
 "   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
 " ********************************************************************************
+set wrap "word
+set ruler " set cursor coordinates
+" backspace will delete CRLF at beginning of line
+" space key will wrap to next line at end of line
+" left and right arrow will wrap to previous and next lines at end of line
+" (in normal mode & insertion mode)
+set whichwrap=b,s,<,>,[,]
+set linebreak   " Avoid wrapping line in middle of word
+set backspace=2 " character deletion prior to insertion mode
+set scrolloff=2 " Lines of offset when jump scrolling
+set sidescroll=10 " scroll amount when a word is outside of view
+set display+=lastline " Always show paragraph last line
 
-set background=dark
-try
-  colorscheme jellybeans " Set color scheme
-catch | endtry
-
-let s:scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ \ \ 🎨\ %{s:scheme}\ 
-
+" FONTS ------------------------------------------------
 " Italic Font ???
 " https://stackoverflow.com/a/30937851/173208
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 let &t_Cs = "\e[4:3m"
 let &t_Ce = "\e[4:0m"
-set t_Co=256 " enable 256 colors
+let &t_EI = "\e[1 q" " Steady block
+let &t_SI = "\e[5 q" " Blinking  bar
+let &t_SR = "\e[5 q" " Blinking  bar
 
+let s:scheme = get(g:, 'colors_name', 'NONE')
+set statusline+=\ \ \ \ 🎨\ %{s:scheme}\ 
 
+" GUTTER ------------------------------------------------
+" https://github.com/airblade/vim-gitgutter/commit/8db2fc5
+" https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
+highlight DiffAdd ctermfg=green guifg=green
+highlight DiffDelete ctermfg=red guifg=red
+highlight DiffChange ctermfg=yellow guifg=yellow
+highlight LineNr ctermbg=234 guibg=darkgray
 
+set number
+set numberwidth=4 " gutter columns
 
+if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
+  " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
+  " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
+  " - https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
+  " set signcolumn=number " show sign instead of line number
+endif
 
+function s:get_color(group, attr)
+  " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
+  return synIDattr( synIDtrans( hlID(a:group)), a:attr)
+endfunction
+let s:gutter_bg=s:get_color('LineNr', 'bg#')
 
+echom "Gutter bg: ".s:gutter_bg
 
+execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
+execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
+
+verbose hi LineNr
+verbose hi CursorLineNr
+verbose hi SignColumn
+for type in ["Add", "Delete", "Change"]
+  echom "GitGutter".type." - ".hlexists("GitGutter".type)
+
+  execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
+  execute "verbose hi GitGutter".type
+endfor
+
+" COLORSCHEME ------------------------------------------------
+{{{
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " http://www.bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
 " * can use hexidecimal values for gui (e.g. guibg=#000000)
 " gui / cterm display modes (none,(i)talic,(b)old,(s)tandout, (u)nderline, under(c)url)
 "hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+
+set t_Co=256 " enablf 256 colors
+set background=dark
+try
+  colorscheme jellybeans " Set color scheme
+catch | endtry
 
 " Custom Color Groups
 highlight WhiteSpace ctermbg=NONE ctermfg=244
@@ -539,8 +591,9 @@ highlight! link htmlSpecialTagName htmlTagName
 highlight! link cssTagName htmlTagName
 highlight! link cssSelectorOp Statement
 highlight! default link cssIdentifier Identifier
+}}}
 
-" --Interactive Status -----------------------------
+" Interactive Status -----------------------------
 autocmd InsertEnter * highlight! link StatusLine InsertColor
 autocmd InsertLeave * highlight! link StatusLine NormalColor
 
