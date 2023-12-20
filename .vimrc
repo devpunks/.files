@@ -74,7 +74,7 @@ autocmd VimLeave * echom "PEAAAACE"
 " ********************************************************************************
 " Settings ***********************************************************************
 " ********************************************************************************
-{{{
+" {{{
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
 " set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
@@ -201,7 +201,7 @@ set foldenable
 set foldcolumn=2
 set foldmethod=indent "Enable indent folding
 nnoremap <space> za
-}}}
+" }}}
 
 
 " ********************************************************************************
