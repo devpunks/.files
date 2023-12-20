@@ -214,7 +214,7 @@ nnoremap <space> za
 " - https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
 " - https://vi.stackexchange.com/questions/2089/what-are-the-differences-between-the-map-noremap-abbrev-and-noreabbrev-command
 " ********************************************************************************
-
+{{{
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
 cmap <c-r> :source ~/.vimrc<CR>
@@ -254,6 +254,7 @@ nnoremap ; :
 " https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
 " MAJOR MOUSE PROBLEMS
 nnoremap <esc> :nohlsearch<cr>
+}}}
 
 
 " ********************************************************************************
@@ -261,6 +262,7 @@ nnoremap <esc> :nohlsearch<cr>
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " ********************************************************************************
+{{{
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 set autoindent
