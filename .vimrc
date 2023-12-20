@@ -154,19 +154,6 @@ if has("gui_running")
   set guioptions=egmrt
 endif
 
-" - Gutter ------------------------------------
-set number
-set numberwidth=4 " gutter columns
-set ruler " set cursor coordinates
-set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
-
-if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
-  " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
-  " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
-  " - https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
-  " set signcolumn=number " show sign instead of line number
-endif
-
 " - Menus ------------------------------------
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 " - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
