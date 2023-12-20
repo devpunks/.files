@@ -40,14 +40,16 @@ let g:skip_defaults_vim=1
 "  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
 "  - https://superuser.com/questions/935574/get-rid-of-null-character-in-vim-variable
 "if executable('termux-info')
-  echom "SHAZAMMM IN TERMUX: ".$TERMUX_VERSION
-" call system('termux-info')
-endif
+" if exists( '$TMUX' )
 
-if len( $TMUX )
-  call system('tmux -v')
-  echom "SHAZAMMM IN TMUX: ".$TMUX
-endif
+let version_termux = $TERMUX_VERSION
+let version_tmux = system('echo -n $(tmux -V)')
+let version_bash = system('echo -n $BASH_VERSION')
+
+echom "VIM: ".v:version
+echom "BASH: ".version_bash
+echom "TMUX: ".version_tmux
+echom "TERMUX: ".version_termux
 
 finish
 
