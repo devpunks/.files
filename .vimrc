@@ -45,6 +45,8 @@ if len( $TERMUX_VERSION )
 " call system('termux-info')
 endif
 
+finish
+
 " Buffers ---------------------------
 set nohidden " possibly overridden by ZoomWinhttps://vimtricks.com/p/what-is-set-hidden/
 command Flush :up | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
