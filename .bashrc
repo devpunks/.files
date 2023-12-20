@@ -18,6 +18,16 @@ echo
 
 export EDITOR=vi
 
+# Software Flow Control
+#   - https://unix.stackexchange.com/questions/12107
+#   - https://en.m.wikipedia.org/wiki/Software_flow_control
+#   - UART - https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
+stty stop " " # C-s from halting. (C-q to resume)
+# (dis-)able XON/XOFF flow control
+#stty -ixon columns 500 # enable control-s and control-q in VIM
+#stty -ixon columns 110 # enable control-s and control-q in VIM
+
+
 # for rc in ~in `find ~/*.{ba}sh -maxdepth 1 -type f`; do
 #   # (r)un (c)omm(ands)
 #   #   - https://superuser.com/questions/144339/vimrc-screenrc-bashrc-kshrc-etc-what-does-the-rc-mean
