@@ -35,11 +35,10 @@ set encoding=utf-8
 
 let g:skip_defaults_vim=1
 
-" - Notes ----------------------------
-"   - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
-"   - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
-
-if len( $TERMUX_VERSION )
+" NOTES -------------------------------------------------------------------
+"  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
+"  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
+"  - https://superuser.com/questions/935574/get-rid-of-null-character-in-vim-variable
 "if executable('termux-info')
   echom "SHAZAMMM IN TERMUX: ".$TERMUX_VERSION
 " call system('termux-info')
