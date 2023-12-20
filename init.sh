@@ -21,6 +21,7 @@ pkg install whois
 pkg install which
 pkg install openssh
 pkg install ncurses
+pkg install iproute2
 pkg install vlc && vlc --version
 pkg install youtubedr
 pkg install ffmpeg
