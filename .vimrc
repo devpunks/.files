@@ -202,19 +202,8 @@ endif
 " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
 " inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
 
-set wrap
-" backspace will delete CRLF at beginning of line
-" space key will wrap to next line at end of line
-" left and right arrow will wrap to previous and next lines at end of line
-" (in normal mode & insertion mode)
-set whichwrap=b,s,<,>,[,]
-set linebreak   " Avoid wrapping line in middle of word
-set backspace=2 " character deletion prior to insertion mode
-set scrolloff=2 " Lines of offset when jump scrolling
-set sidescroll=10 " scroll amount when a word is outside of view
-set display+=lastline " Always show paragraph last line
-
 set foldenable
+set foldcolumn=2
 set foldmethod=indent "Enable indent folding
 nnoremap <space> za
 
