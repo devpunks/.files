@@ -45,6 +45,11 @@ if len( $TERMUX_VERSION )
 " call system('termux-info')
 endif
 
+if len( $TMUX )
+  call system('tmux -v')
+  echom "SHAZAMMM IN TMUX: ".$TMUX
+endif
+
 finish
 
 " Buffers ---------------------------
