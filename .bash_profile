@@ -187,13 +187,14 @@ alias ports='netstat -tulanp'
 alias mount='mount |column -t'
 alias path='echo -e ${PATH//:/\\n}'
 
+alias who=whoami
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
-alias top=htop
 alias ps='command ps auxf'
 alias header='command curl -I'
+alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
