@@ -17,23 +17,26 @@
 "     ######    .........
 "                 .....
 "                   .
-" CLICKING LINE NUMBERS
-"  - https://www.reddit.com/r/vim/comments/86pjx4/does_vim_currently_have_a_way_to_handle_clicks_on/
-set encoding=utf-8
-" ********************************************************************************
 " Author: Ahmid-Ra (github.com/snuggs)
 
 " Screencasts: http://vimcasts.org
 
 " Gist - https://gist.github.com/snuggs/612093
 
+" Cheatsheet - https://vim.rtorr.com/
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
+" CLICKING LINE NUMBERS
+"  - https://www.reddit.com/r/vim/comments/86pjx4/does_vim_currently_have_a_way_to_handle_clicks_on/
 
 " ********************************************************************************
 
+set encoding=utf-8
+
 let g:skip_defaults_vim=1
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
 
 " NOTES -------------------------------------------------------------------
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
@@ -51,35 +54,25 @@ echom "BASH: ".version_bash
 echom "TMUX: ".version_tmux
 echom "TERMUX: ".version_termux
 
-finish
-
-" Buffers ---------------------------
-set nohidden " possibly overridden by ZoomWinhttps://vimtricks.com/p/what-is-set-hidden/
-command Flush :up | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
-
-" Views, Sessions, Viminfo ------------------------------------
-"   - https://vimtricks.com/p/saving-session-state/
-"   - https://learnvim.irian.to/basics/views_sessions_viminfo
-set viewoptions+=localoptions
-set viewdir=$HOME/.vim/view
-
-set sessionoptions+=resize,winpos
-
-set viminfofile=$HOME/.vim/.viminfo
-set viminfo="NONE" " disable .viminfo
-" autocmd VimLeave * call delete('~/.viminfo')
-autocmd VimLeave * echom "PEAAAACE"
-
-
 " ********************************************************************************
-" Settings ***********************************************************************
+" {{{ Settings *******************************************************************
 " ********************************************************************************
-" {{{
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
 " set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
 
+" (Hopefully) Stop VIM from crashing
+" https://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks#answer-810866
+" 200
 syntax on " turns syntax highlighting on
+set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
+
+set foldenable
+set foldcolumn=2
+set foldmethod=indent "Enable indent folding
+
+finish
+autocmd VimLeave * echom "PEAAAACE"
 
 if &compatible
   set nocompatible " = https://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
@@ -97,10 +90,6 @@ set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03
 set nrformats-=octal
 set nrformats+=alpha
 
-" (Hopefully) Stop VIM from crashing
-" https://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks#answer-810866
-" 200
-set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
 " https://vimtricks.com/p/vim-line-length-marker/
 set colorcolumn=-8,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 highlight ColorColumn ctermbg=233
@@ -115,6 +104,26 @@ set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set cursorlineopt=number " Only underline numbet
 set showmatch matchtime=3 " jump to matching brace
+
+" Buffers ---------------------------
+set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
+command Flush :up | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
+
+" Views, Sessions, Viminfo ------------------------------------
+"   - https://vimtricks.com/p/saving-session-state/
+"   - https://learnvim.irian.to/basics/views_sessions_viminfo
+
+" disable sessions
+
+set viewoptions+=localoptions
+
+set viewdir=$HOME/.vim/view
+
+set sessionoptions+=resize,winpos
+
+set viminfofile=$HOME/.vim/.viminfo
+set viminfo="NONE" " disable .viminfo
+" autocmd VimLeave * call delete('~/.viminfo')
 
 " - Backups ------------------------------------
 "   - https://groups.google.com/g/vim_use/c/K2Utwkh5f30?pli=1
@@ -132,8 +141,6 @@ set backupdir=$TMPDIR " backup location
 
 set viewoptions-=options
 set sessionoptions-=options
-
-" disable sessions
 
 " - Cursor ------------------------------------
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
@@ -196,69 +203,60 @@ endif
 " vnoremap <C-x> :!termux-clipboard-set<CR>
 " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
 " inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
-
-set foldenable
-set foldcolumn=2
-set foldmethod=indent "Enable indent folding
-nnoremap <space> za
 " }}}
 
-
 " ********************************************************************************
-" Mappings ***********************************************************************
+" {{{ Mappings *******************************************************************
+" - https://stackoverflow.com/questions/3776117
+" - https://vi.stackexchange.com/questions/2089
 " - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
-" - https://stackoverflow.com/questions/3776117/what-is-the-difference-between-the-remap-noremap-nnoremap-and-vnoremap-mapping
-" - https://vi.stackexchange.com/questions/2089/what-are-the-differences-between-the-map-noremap-abbrev-and-noreabbrev-command
+" - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
+let mapleader = ','
 " ********************************************************************************
-{{{
-" Reload .vimrc configuration
-" nnoremap <Leader>R :source ~/.vimrc
-cmap <c-r> :source ~/.vimrc<CR>
+" Map semi-colon to colon (no need to press <SHIFT>)
+nnoremap ; :
+nnoremap <space> za
 
 " tabs
 nnoremap <C-t> :tabnew<cr>
 nnoremap <C-n> :tabnext<cr>
 nnoremap <C-p> :tabprevious<cr>
 
-" <CTRL+h> Focus on pane to left
-nmap <C-h> <C-w>h
-" <CTRL+h> Focus on pane down
-nmap <C-j> <C-w>j
-
-" <CTRL+h> Focus on pane up
-nmap <C-k> <C-w>k
-
-" <CTRL+h> Focus on pane to right
-nmap <C-l> <C-w>l
-
 " <=> Equal sized panes
 nnoremap = <C-w>=
 
+" <CTRL+k> Focus on pane up
+nmap <C-k> <C-w>k
+" <CTRL+j> Focus on pane down
+nmap <C-j> <C-w>j
+" <CTRL+h> Focus on pane to left
+nmap <C-h> <C-w>h
+" <CTRL+l> Focus on pane to right
+nmap <C-l> <C-w>l
+
 " normal mode: save
 nnoremap <c-s> :w<cr>
-
 " insert mode: escape to normal and save
 inoremap <c-s> <esc>:w<cr>
-
 " visual mode: escape to normal and save
 vnoremap <c-s> <esc>:w<cr>
-
-
-" Map semi-colon to colon (no need to press <SHIFT>
-nnoremap ; :
 
 " https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
 " MAJOR MOUSE PROBLEMS
 nnoremap <esc> :nohlsearch<cr>
-}}}
 
+" Reload .vimrc configuration
+" nnoremap <Leader>R :source ~/.vimrc
+cmap <c-r> :source ~/.vimrc<CR>
+
+" }}}
 
 " ********************************************************************************
-" Files **************************************************************************
+" {{{ Files **************************************************************************
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " ********************************************************************************
-{{{
+
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 set autoindent
@@ -322,9 +320,10 @@ autocmd FileType python set omnifunc=python3complete#Complete
 "   - https://www.simplified.guide/vim/auto-complete-ruby
 " --------------------------------------------------------------------------------
 autocmd FileType python set omnifunc=syntaxcomplete#Complete
+" }}}
 
 " ********************************************************************************
-" Plugins ************************************************************************
+" {{{ Plugins ********************************************************************
 " ********************************************************************************
 
 filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
@@ -361,16 +360,42 @@ function Drawer()
   " Selects `p`revious buffer to remove tree focus
   wincmd p
 endfunction
-}}}
 
+" --------------------------------------------------------------------------------
+" Closetag - https://github.com/alvan/vim-closetag
+" --------------------------------------------------------------------------------
+
+" These are the file types where this plugin is enabled.
+let g:closetag_filetypes = 'svg,html,xhtml,phtml,eruby,*.vue'
+
+" These are the file extensions where this plugin is enabled.
+let g:closetag_filenames = '*.svg,*.html,*.xhtml,*.phtml,*.html.erb,*.vue'
+
+" This will make the list of non-closing tags self-closing in the specified files.
+"let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" This will make the list of non-closing tags self-closing in the specified files.
+let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
+
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"let g:closetag_emptyTags_caseSensitive = 1
+
+" --------------------------------------------------------------------------------
+" Vim-Ruby-Miinitest - https://github.com/sunaku/vim-ruby-minitest
+" --------------------------------------------------------------------------------
+
+"set completefunc=syntaxcomplete#Complete
+
+
+" }}}
 
 " ********************************************************************************
-" STATUS ------------------------------------------------
+" {{{ STATUS ------------------------------------------------
 " Word Count
 "   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " ********************************************************************************
-{{{
+
 set laststatus=2 " Always show status line
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 " set statusline=[fo=%{&fo}]
@@ -404,60 +429,14 @@ set statusline+=\ of\ %L\ LOC
 
 " percentage
 set statusline+=\ (%p%%)
+
+" Interactive Status -----------------------------
+autocmd InsertEnter * highlight! link StatusLine InsertColor
+autocmd InsertLeave * highlight! link StatusLine NormalColor
+
 }}}
 
-
-" ********************************************************************************
-" TYPOGRAPHY.vimrc
-"   - https://jonasjacek.github.io/colors
-"   - https://www.vim.org/scripts/script.php?script_id=335
-"   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
-"   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
-" ********************************************************************************
-{{{
-" - Whitespace ------------------------------------
-retab " update tab format
-set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
-set pastetoggle=<F2> " Allow toggle of code indentation
-set smarttab
-set expandtab "turn tabs into whitespace
-"ensure aligned  autoindents - https://vimtricks.com/p/ensuring-aligned-indentation/
-set shiftround
-set shiftwidth=2
-set tabstop=2 "set tab character to 2 characters
-set softtabstop=2
-set list " view hidden characters
-set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
-
-
-set wrap " word
-set ruler " set cursor coordinates
-" backspace will delete CRLF at beginning of line
-" space key will wrap to next line at end of line
-" left and right arrow will wrap to previous and next lines at end of line
-" (in normal mode & insertion mode)
-set whichwrap=b,s,<,>,[,]
-set linebreak   " Avoid wrapping line in middle of word
-set backspace=2 " character deletion prior to insertion mode
-set scrolloff=2 " Lines of offset when jump scrolling
-set sidescroll=10 " scroll amount when a word is outside of view
-set display+=lastline " Always show paragraph last line
-
-" FONTS ------------------------------------------------
-" Italic Font ???
-" https://stackoverflow.com/a/30937851/173208
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
-let &t_Cs = "\e[4:3m"
-let &t_Ce = "\e[4:0m"
-let &t_EI = "\e[1 q" " Steady block
-let &t_SI = "\e[5 q" " Blinking  bar
-let &t_SR = "\e[5 q" " Blinking  bar
-
-let s:scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ \ \ 🎨\ %{s:scheme}\ 
-
-" GUTTER ------------------------------------------------
+" {{{ GUTTER ------------------------------------------------
 " https://github.com/airblade/vim-gitgutter/commit/8db2fc5
 " https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
 highlight DiffAdd ctermfg=green guifg=green
@@ -495,9 +474,66 @@ for type in ["Add", "Delete", "Change"]
   execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
   execute "verbose hi GitGutter".type
 endfor
+" }}}
 
-" COLORSCHEME ------------------------------------------------
-{{{
+" ********************************************************************************
+" {{{ TYPOGRAPHY.vimrc
+" ********************************************************************************
+"
+" - Whitespace ------------------------------------
+retab " update tab format
+set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
+set pastetoggle=<F2> " Allow toggle of code indentation
+set smarttab
+set expandtab "turn tabs into whitespace
+"ensure aligned  autoindents - https://vimtricks.com/p/ensuring-aligned-indentation/
+set shiftround
+set shiftwidth=2
+set tabstop=2 "set tab character to 2 characters
+set softtabstop=2
+set list " view hidden characters
+set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
+
+
+set wrap " word
+set ruler " set cursor coordinates
+" backspace will delete CRLF at beginning of line
+" space key will wrap to next line at end of line
+" left and right arrow will wrap to previous and next lines at end of line
+" (in normal mode & insertion mode)
+set whichwrap=b,s,<,>,[,]
+set linebreak   " Avoid wrapping line in middle of word
+set backspace=2 " character deletion prior to insertion mode
+set scrolloff=2 " Lines of offset when jump scrolling
+set sidescroll=10 " scroll amount when a word is outside of view
+" https://stackoverflow.com/questions/4621798
+" https://stackoverflow.com/questions/15124386
+" set display+=lastline " Always show paragraph last line
+set display=lastline " Always show paragraph last line
+
+" FONTS ------------------------------------------------
+" Italic Font ???
+" https://stackoverflow.com/a/30937851/173208
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+let &t_EI = "\e[1 q" " Steady block
+let &t_SI = "\e[5 q" " Blinking  bar
+let &t_SR = "\e[5 q" " Blinking  bar
+
+"}}}
+
+" {{{ COLORSCHEME ------------------------------------------------
+"   - https://jonasjacek.github.io/colors
+"   - https://www.vim.org/scripts/script.php?script_id=335
+"   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+"   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
+"
+
+let s:scheme = get(g:, 'colors_name', 'NONE')
+set statusline+=\ \ \ \ 🎨\ %{s:scheme}\ 
+
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " http://www.bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
 " * can use hexidecimal values for gui (e.g. guibg=#000000)
@@ -604,13 +640,37 @@ highlight! link htmlSpecialTagName htmlTagName
 highlight! link cssTagName htmlTagName
 highlight! link cssSelectorOp Statement
 highlight! default link cssIdentifier Identifier
-}}}
-
-" Interactive Status -----------------------------
-autocmd InsertEnter * highlight! link StatusLine InsertColor
-autocmd InsertLeave * highlight! link StatusLine NormalColor
-
+" }}}
 
 " ********************************************************************************
-" Functions **********************************************************************
+" {{{ Functions **********************************************************************
 " ********************************************************************************
+
+" --------------------------------------------------------------------------------
+" (:hi)ghlight group under cursor
+" --------------------------------------------------------------------------------
+" https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
+function! HighlightGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+command! Colors call HighlightGroup()
+
+" --------------------------------------------------------------------------------
+" Zoom / Restore window.
+" --------------------------------------------------------------------------------
+function! s:ZoomToggle() abort
+    if exists('t:zoomed') && t:zoomed
+        execute t:zoom_winrestcmd
+        let t:zoomed = 0
+    else
+        let t:zoom_winrestcmd = winrestcmd()
+        resize
+        vertical resize
+        let t:zoomed = 1
+    endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+nnoremap <silent> + :ZoomToggle<cr>
+
+# }}}
