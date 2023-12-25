@@ -22,7 +22,8 @@ export EDITOR=vi
 #   - https://unix.stackexchange.com/questions/12107
 #   - https://en.m.wikipedia.org/wiki/Software_flow_control
 #   - UART - https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
-stty stop " " # C-s from halting. (C-q to resume)
+#   - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/cmds/aixcmds5/stty.htm
+# stty stop " " # C-s from halting. (C-q to resume)
 # (dis-)able XON/XOFF flow control
 #stty -ixon columns 500 # enable control-s and control-q in VIM
 #stty -ixon columns 110 # enable control-s and control-q in VIM
