@@ -485,9 +485,10 @@ spectrum () {
     }' # BEGIN
 }
 
+# }}}
 
 # -----------------------------------------------------------------------
-# Bindings
+# {{{ Bindings
 #   - https://geeksforgeeks.org/bind-command-in-linux-with-examples
 # -----------------------------------------------------------------------
 #   See to avoid potential conflicts:
@@ -502,5 +503,7 @@ alias shortcuts='bind -P'
 
 # bind "set show-all-if-ambiguous on"
 # bind "set completion-ignore-case on"
+
+# }}}
 
 echo "Bash Profile"
