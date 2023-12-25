@@ -405,7 +405,7 @@ function git_clean () {
 }
 
 monitor () {
-  htop && ps
+  htop && ps && uptime
 }
 
 weigh () {
