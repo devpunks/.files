@@ -1,7 +1,6 @@
-*.bak
+# dotfiles
 .less
 .lesskey
-.bash_history
 .bundle
 .config
 .docker
@@ -10,7 +9,15 @@
 .local
 .ssh
 .viminfo
+
+# history
 log
+logs
+.bash_history
+.tmux_history
+
+# backups
+*.bak
 
 # termux
 storage
