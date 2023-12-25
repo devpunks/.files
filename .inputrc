@@ -1,76 +1,60 @@
 #!/bin/bash
-echo .inputrc && echo↴
+
 # ******************************************************↴
 #  ~/.inputrc
 #    - https://tldp.org/LDP/lfs/LFS-BOOK-6.1.1-HTML/chapter07/inputrc.html
 #    - https://github.com/termux/termux-packages/blob/master/packages/readline/inputrc
 #    - https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
 # ******************************************************↴
-# vi mode
-#   - https://unix.stackexchange.com/questions/112406
-#   - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
-#   - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
-set keymap vi
-set editing-mode vi
-set show-mode-in-prompt on
-"k": history-search-backward
-"j": history-search-forward
-# PS1 prompt prefix
-set vi-cmd-mode-string '(vi CMD)'
-set vi-ins-mode-string '(vi INS)'
-set vi-ins-mode-string \1\e[6 q\2
-set vi-cmd-mode-string \1\e[2 q\2
-# switch to block cursor before executing a command
-set keymap vi-insert
-RETURN: "\e\n"
+# Use Alt/Meta + Delete to delete the preceding word
+# "\e[3;3~": kill-word
+
+# Use the text that has already been typed as the prefix for searching through
+# commands (i.e. more intelligent Up/Down behavior)
+# "\e[B": history-search-forward
+# "\e[A": history-search-backward
+
+# ctrl left, ctrl right for moving on the readline by word
+# "\e[1;5C": forward-word
+# "\e[1;5D": backward-word
+
+# Allow UTF-8 input and output, instead of $'\0123\0456'
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# Use `LS_COLORS` & readline-colored-completion-prefix
+set colored-completion-prefix on
+set colored-stats on
 
 # arrow keys
 set enable-keypad on
-# add fiile type to name (e.g. *,/,@)
+# Show extra file information when completing, `ls -F` (e.g. *,/,@)
 set visible-stats on
 set history-size 1000
 # audible (default), visible, none
 set bell-style visible
 set blink-matching-paren on
 
-# Use `LS_COLORS` & readline-colored-completion-prefix
-set colored-completion-prefix on
-set colored-stats on
-
-# one autocompletion per line
-set completion-display-width 0
-# ellipsis
-set completion-prefix-display-length 10
-# Make Tab autocomplete regardless of filename case
-set completion-ignore-case on
-
-# List all matches in case multiple possible completions are possible
-set show-all-if-ambiguous on
-
 # Immediately add a trailing slash when autocompleting symlinks & directories
 set mark-directories on
 set mark-symlinked-directories on
 
-# Use the text that has already been typed as the prefix for searching through
-# commands (i.e. more intelligent Up/Down behavior)
-"\e[B": history-search-forward
-"\e[A": history-search-backward
-
-# ctrl left, ctrl right for moving on the readline by word
-"\e[1;5C": forward-word
-"\e[1;5D": backward-word
-
-# Do not autocomplete hidden files unless the pattern explicitly begins with a dot
-set match-hidden-files on
-
-# Show all autocomplete results at once
+# Disable <Tab>-Autocompletion paging.
 set page-completions off
-
-# If there are more than 200 possible completions for a word, ask to show them all
+# <Tab>-Autocompletion for (.)dot files.
+set match-hidden-files on
+# All <Tab>-Autocompletion ambiguous matches.
+set show-all-if-ambiguous on
+# Case insensitive <Tab>-Autocomplete matches.
+set completion-ignore-case on
+# Maximum <Tab>-Autocompletion display results.
 set completion-query-items 200
+# <Tab>-Autocompletion results in single column.
+set completion-display-width 0
+# Display ellipsis for long <Tab>-Autocompletion results.
+set completion-prefix-display-length 10
 
-# Show extra file information when completing, like `ls -F` does
-set visible-stats on
 
 # Be more intelligent when autocompleting by also looking at the text after
 # the cursor. For example, when the current line is "cd ~/src/mozil", and
@@ -79,10 +63,22 @@ set visible-stats on
 # Readline used by Bash 4.)
 set skip-completed-text on
 
-# Allow UTF-8 input and output, instead of showing stuff like $'\0123\0456'
-set input-meta on
-set output-meta on
-set convert-meta off
+# vi mode
+#   - https://unix.stackexchange.com/questions/112406
+#   - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
+#   - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
+# set keymap vi
+# set editing-mode vi
+# set show-mode-in-prompt on
+# https://unix.stackexchange.com/questions/529385/i-key-is-not-functional-in-bash
+# "k": history-search-backward
+# "j": history-search-forward
+# PS1 prompt prefix
+# set vi-cmd-mode-string '(vi CMD)'
+# set vi-ins-mode-string '(vi INS)'
+# set vi-ins-mode-string \1\e[6 q\2
+# set vi-cmd-mode-string \1\e[2 q\2
+# switch to block cursor before executing a command
+# set keymap vi-insert
+# RETURN: "\e\n"
 
-# Use Alt/Meta + Delete to delete the preceding word
-"\e[3;3~": kill-word
