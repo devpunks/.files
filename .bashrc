@@ -42,6 +42,8 @@ if [ -n "${PREFIX}" ]; then
   echo "FOUND $PREFIX ON TERMUX"
   unset PATH
   export PATH="$HOME:$PREFIX/bin"
+  # uptime/htop - https://github.com/termux/termux-app/issues/819
+  # export LD_LIBRARY_PATH="/system/bin/uptime"
 fi
 
 
