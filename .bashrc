@@ -94,6 +94,17 @@ echo "$(stty size)"
 LINES=$(tput lines)
 COLUMNS=$(tput columns)
 
+set -o nolog
+set -o notify
+
+# https://man7.org/linux/man-pages/man1/setterm.1.html
+#setterm --bold on
+#setterm --blink on
+#setterm --half-bright on
+#setterm --reverse on
+setterm --resize
+
+# https://unix.stackexchange.com/questions/32409/set-and-shopt-why-two/32446
 # https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
 # https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
