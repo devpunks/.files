@@ -19,14 +19,19 @@ echo
 export EDITOR=vi
 
 # Software Flow Control
+#   - https://unix.stackexchange.com/questions/515252
 #   - https://unix.stackexchange.com/questions/12107
 #   - https://en.m.wikipedia.org/wiki/Software_flow_control
 #   - UART - https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
 #   - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/cmds/aixcmds5/stty.htm
-# stty stop " " # C-s from halting. (C-q to resume)
-# (dis-)able XON/XOFF flow control
-#stty -ixon columns 500 # enable control-s and control-q in VIM
-#stty -ixon columns 110 # enable control-s and control-q in VIM
+# prevent C-s. (C-q to resume) - https://catonmat.net/annoying-keypress-in-linux
+stty -ixon # Disable XON/XOFF output control
+stty -ixoff # Disable sending START/STOP characters
+stty stop undef # Undefine STOP character
+stty start undef # Undefine START character
+#stty ixany # Enable any key to resume (not just START)
+#stty columns 500 # enable control-s and control-q in VIM
+#stty columns 110 # enable control-s and control-q in VIM
 
 
 # for rc in ~in `find ~/*.{ba}sh -maxdepth 1 -type f`; do
