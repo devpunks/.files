@@ -503,12 +503,11 @@ spectrum () {
 #     - $HOME/.termux/termux.properties
 
 #
-# Case insensitive tab completion in Bash
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 alias shortcuts='bind -P'
-
-# bind "set show-all-if-ambiguous on"
-# bind "set completion-ignore-case on"
+# Case insensitive tab completion in Bash
+# bind "set show-all-if-ambiguous on" # SEE ~/.inputrc
+# bind "set completion-ignore-case on" # SEE ~/.inputrc
 
 # }}}
 
