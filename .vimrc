@@ -128,6 +128,8 @@ command Flush :up | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 
 " disable sessions
+set viewoptions-=options
+set sessionoptions-=options
 
 set viewoptions+=localoptions
 
