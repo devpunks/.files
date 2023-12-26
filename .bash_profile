@@ -85,22 +85,23 @@ echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
 # exec $SHELL --login
 alias reload='(
-  echo -e "\033c"
+# echo -e "\033c"
   clear
-  reset
-  stty sane
-  tput reset
-  setterm --initialize
-  tput cup 0 0
-  termux-info
-  termux-reload-settings
-  echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
-  echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
-  echo && echo "PATH: $PATH"
-  export LINES=$( tput lines )
-  export COLUMNS=$( tput columns )
-  echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
-  ps
+  echo here
+# reset
+# stty sane
+# tput reset
+# setterm --initialize
+# tput cup 0 0
+# termux-info
+# termux-reload-settings
+# echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
+# echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
+# echo && echo "PATH: $PATH"
+# export LINES=$( tput lines )
+# export COLUMNS=$( tput columns )
+# echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
+# ps
 )'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
