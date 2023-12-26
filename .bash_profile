@@ -85,31 +85,36 @@ echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
 # exec $SHELL --login
 alias reload='(
-# echo -e "\033c"
+  termux-reload-settings
   clear
+# reset # slowwwwww
+  tput reset
+  stty sane
   echo here
-# reset
-# stty sane
-# tput reset
-# setterm --initialize
-# tput cup 0 0
-# termux-info
-# termux-reload-settings
-# echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
-# echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
-# echo && echo "PATH: $PATH"
-# export LINES=$( tput lines )
-# export COLUMNS=$( tput columns )
-# echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
-# ps
+  setterm --initialize
+  setterm --resize
+  tput cup 0 0
+  echo && environment
+  echo && termux-info
+  echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
+  echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
+  echo && echo "PATH: $PATH"
+  export LINES=$( tput lines )
+  export COLUMNS=$( tput columns )
+  echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
 )'
 # https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
   clear
-  echo & echo $(tty) Colors: $(tput colors) Size: $(stty size | tr " " "x")
-  echo && echo "TERM=$TERM $( tput -V )" && toe
-  echo && echo "stty $(stty -g)" && stty -a
+  echo "\033[7m"
+  echo && echo "$(tty) Colors: $(tput colors)"
+  echo "\nSize \033[3mROWS\033[23mX\033[3mCOLUMNS\033[23m: $(stty size | tr " " "x")"
+  echo && [[ -n $TMUX ]] && echo "TMUX INFO:" && tmux info
+  echo && echo "TERM=${TERM} $( tput -V )" && toe
+  echo && echo "Bindings \033[3m( see ~/.inputrc )\033[23m :" && shortcuts
+  echo && echo "stty: $(stty -g)" && stty -a
   echo && infocmp -l
+  echo "\033[27m"
   echo && dircolors --print-ls-colors
   echo && colors
 )'
