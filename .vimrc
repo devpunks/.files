@@ -38,6 +38,18 @@ let g:skip_defaults_vim=1
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
+" xterm-focus-event - https://github.com/vim/vim/issues/9296
+let &t_fe = "\<Esc>[?1004h"
+let &t_fd = "\<Esc>[?1004l"
+" https://groups.google.com/g/vim_use/c/VyQSx90uaPE
+execute "set <FocusGained>=\<Esc>[I"
+execute "set <FocusLost>=\<Esc>[O"
+" Enable modified arrow keys, see :help arrow_modifiers
+execute "set <xUp>=\<Esc>[@;*A"
+execute "set <xDown>=\<Esc>[@;*B"
+execute "set <xRight>=\<Esc>[@;*C"
+execute "set <xLeft>=\<Esc>[@;*D"
+
 " NOTES -------------------------------------------------------------------
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
 "  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
