@@ -79,6 +79,7 @@ endif
 " 200
 syntax on " turns syntax highlighting on
 set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
+set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
 
 set foldenable
 set foldcolumn=2
