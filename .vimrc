@@ -60,8 +60,12 @@ let version_bash = system('echo -n $BASH_VERSION')
 
 echom "VIM: ".v:version
 echom "BASH: ".version_bash
-echom "TMUX: ".version_tmux
-echom "TERMUX: ".version_termux
+if exists( '$TMUX' )
+  echom "TMUX: ".version_tmux
+endif
+if executable('termux-info')
+  echom "TERMUX: ".version_termux
+endif
 
 " ********************************************************************************
 " {{{ Settings *******************************************************************
