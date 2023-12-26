@@ -81,4 +81,3 @@ set skip-completed-text on
 # switch to block cursor before executing a command
 # set keymap vi-insert
 # RETURN: "\e\n"
-
