@@ -11,6 +11,7 @@
 #    - https://wiki.termux.com/wiki/Termux:Styling
 #    - https://github.com/termux/termux-styling/issues/20
 #    - https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#tldr
+#    - https://stackoverflow.com/questions/32443522/triangular-background-for-bash-ps1-prompt
 #
 # colors.sh ***********************************************************
 #   - Benchmark - https://imgur.com/xIyuaYt
