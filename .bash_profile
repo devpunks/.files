@@ -103,7 +103,8 @@ alias reload='(
   export COLUMNS=$( tput columns )
   echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
 )'
-# https://invisible-island.net/ncurses/man/toe.1m.html
+# TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html?m=1
+# - https://invisible-island.net/ncurses/man/toe.1m.html
 alias term='(
   clear
   echo "\033[7m"
