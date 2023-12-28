@@ -3,6 +3,7 @@
 # https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e
 
 SESSION=`whoami`
+SOCKET="devpunks" # See tmux -L|S <socket|file> flag
 
 # Setup a work space called `$SESSION
 # first window has 1 pane.
