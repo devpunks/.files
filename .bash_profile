@@ -7,7 +7,7 @@
 # [ -r ~/.bashrc ] &bashrc
 
 # fonts.sh ***********************************************************
-#  POWERLINE:
+#  NERDFONT:
 #    - https://wiki.termux.com/wiki/Termux:Styling
 #    - https://github.com/termux/termux-styling/issues/20
 #    - https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#tldr
