@@ -98,10 +98,6 @@ set -o nolog
 set -o notify
 
 # https://man7.org/linux/man-pages/man1/setterm.1.html
-#setterm --bold on
-#setterm --blink on
-#setterm --half-bright on
-#setterm --reverse on
 setterm --resize
 
 # https://unix.stackexchange.com/questions/32409/set-and-shopt-why-two/32446
