@@ -6,14 +6,13 @@ SESSION=`whoami`
 SOCKET="devpunks" # See tmux -L|S <socket|file> flag
 
 # Setup a work space called `$SESSION
-# first window has 1 pane.
 # Pane #1 -  split vertically 70%, set to root and running vim
 
 # start server
 tmux start-server
 
 # create new session
-tmux new-session -AdP -s $SESSION -n " devPunks🤘😈🤘studio"
+tmux new-session -AdP -s $SESSION -n " devPunks🤘😈🤘studio" -x $COLUMNS -y $LINES
 
 # attach to new session
 tmux -v -u2 attach -t $SESSION
