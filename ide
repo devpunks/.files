@@ -5,8 +5,6 @@
 SESSION=`whoami`
 SOCKET="devpunks" # See tmux -L|S <socket|file> flag
 
-# Setup a work space called `$SESSION
-# Pane #1 -  split vertically 70%, set to root and running vim
 
 # start server
 tmux start-server
