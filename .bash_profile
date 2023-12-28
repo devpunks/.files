@@ -6,6 +6,12 @@
 
 # [ -r ~/.bashrc ] &bashrc
 
+# fonts.sh ***********************************************************
+#  POWERLINE:
+#    - https://wiki.termux.com/wiki/Termux:Styling
+#    - https://github.com/termux/termux-styling/issues/20
+#    - https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#tldr
+#
 # colors.sh ***********************************************************
 #   - Benchmark - https://imgur.com/xIyuaYt
 #   - https://ditig.com/256-colors-cheat-sheet
