@@ -2,7 +2,8 @@
 
 # https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e
 
-SESSION=`whoami`
+USER=`whoami`
+SESSION='devPunks😈studio'
 SOCKET="devpunks" # See tmux -L|S <socket|file> flag
 
 # start server
