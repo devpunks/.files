@@ -142,6 +142,36 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
+function environment {
+  # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
+  clear
+  echo "\n\n\n\$BASH: $BASH\n👇Options👇\n$BASHOPTS"
+  echo "\n\$SHELL: $SHELL\n👇Options👇\n$SHELLOPTS"
+
+  # echo && echo Commands:
+  # compgen -c
+  # echo && echo Var Names:
+  # compgen -v
+
+  echo && echo 👇Exports👇
+  echo $( compgen -e )
+  echo && echo 👇Aliases👇
+  echo $( compgen -a ) # alias -p # for declaration
+  echo && echo 👇Built-ins👇
+  echo $( compgen -b )
+
+  # echo && echo Functions:
+  # compgen -A function
+  # echo && echo Env Var Names:
+  # compgen -k
+  # echo && echo Env Vars:
+  # env
+  # echo && echo Shell Vars:
+  # (set -o posix; set; set +o posix)
+  # echo && echo Declarations:
+  # declare -p | cut -d " " -f 3
+}
+
 # https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/questions/168578/why-must-a-folder-be-executable
 # https://askubuntu.com/questions/44542/what-is-umask-and-how-does-it-work
