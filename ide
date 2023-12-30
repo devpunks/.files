@@ -10,7 +10,7 @@ SOCKET="devpunks" # See tmux -L|S <socket|file> flag
 tmux start-server
 
 # Setup a session work space called `$SESSION
-tmux new-session -AdP -s $SESSION -n " devPunks🤘😈🤘studio" -x $COLUMNS -y $LINES
+tmux new-session -AdP -s $SESSION -n "Vi" -x $COLUMNS -y $LINES
 
 # attach to new session
 tmux -v -u2 attach -t $SESSION
