@@ -13,8 +13,7 @@ tmux start-server
 tmux new-session -AdP -s $SESSION -n "Vi" -x $COLUMNS -y $LINES
 
 # attach to new session
-tmux -v -u2 attach -t $SESSION
-exit
+tmux -v -u2 attach
 
 tmux select-pane -T "DAMNNNN"
 # tmux send-keys "vi" C-m
