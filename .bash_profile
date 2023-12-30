@@ -240,6 +240,7 @@ function term {
 
 
 # SSH(d)------------------------------------------------------------------
+#   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
 #   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://github.com/termux/termux-packages/issues/3620
 #
