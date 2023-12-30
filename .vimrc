@@ -361,10 +361,12 @@ nnoremap , :ZoomWin<cr>
 autocmd VimEnter * call NerdDrawer()
 
 function! NerdDrawer()
-  if ! exists('g:NERDTree') | return | endif
+  echom "before if"
+  if exists('g:NERDTree') | return | endif
 
-  echo "I made it"
+  echom "I made it"
   " [ENTER] Opens Nerdtree
+nnoremap , :ZoomWin<cr>
   nnoremap <CR> :NERDTreeToggle<CR>
 
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
