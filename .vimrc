@@ -85,7 +85,8 @@ set foldenable
 set foldcolumn=2
 set foldmethod=indent "Enable indent folding
 
-finish
+nnoremap , :ZoomWin<cr>
+nnoremap <CR> :NERDTreeToggle<CR>
 autocmd VimLeave * echom "PEAAAACE"
 
 if &compatible
