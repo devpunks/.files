@@ -31,4 +31,3 @@ tmux select-pane -t 0
 # Split pane 0 horizontally
 tmux split-window -v -l 1
 tmux send-keys "clear" Enter
-tmux select-pane -T "FOO"
