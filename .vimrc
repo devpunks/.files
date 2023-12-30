@@ -88,6 +88,7 @@ set foldmethod=indent "Enable indent folding
 nnoremap , :ZoomWin<cr>
 nnoremap <CR> :NERDTreeToggle<CR>
 autocmd VimLeave * echom "PEAAAACE"
+finish
 
 if &compatible
   set nocompatible " = https://stackoverflow.com/questions/5845557/in-a-vimrc-is-set-nocompatible-completely-useless
