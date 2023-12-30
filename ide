@@ -15,8 +15,7 @@ tmux new-session -AdP -s $SESSION -n "Vi" -x $COLUMNS -y $LINES
 # attach to new session
 tmux -v -u2 attach
 
-tmux select-pane -T "DAMNNNN"
-# tmux send-keys "vi" C-m
+tmux send-keys 'vi' C-m
 
 # Split pane 0 vertically by 30%
 tmux split-window -h -l 30
