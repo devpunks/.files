@@ -358,7 +358,10 @@ nnoremap , :ZoomWin<cr>
 " --------------------------------------------------------------------------------
 autocmd VimEnter * if exists('g:NERDTree') | call Drawer() | endif
 
-function Drawer()
+function NerdDrawer()
+  " [ENTER] Opens Nerdtree
+  nnoremap <CR> :NERDTreeToggle<CR>
+
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
   let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
   let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
