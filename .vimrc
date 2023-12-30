@@ -363,18 +363,12 @@ function NerdDrawer()
   nnoremap <CR> :NERDTreeToggle<CR>
 
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
-  let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B) - https://www.tumblr.com/dailyvim/51238147680/nerdtree-bookmarks
-  let g:NERDTreeBookmarksFile=".vim/.NERDTreeBookmarks"
+  let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
+  let g:NERDTreeBookmarksFile=".bookmarks"
   let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
   let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
 
-  " [ENTER] Opens Nerdtree
-  nnoremap <cr> :NERDTreeToggle<cr>
-
-  " Open NerdTree on VimEnter startup
-  NERDTree
-  " Selects `p`revious buffer to remove tree focus
-  wincmd p
+  NERDTree | wincmd p " Open Drawer & focus on `p`revious buffer
 endfunction
 
 " --------------------------------------------------------------------------------
