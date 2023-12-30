@@ -189,6 +189,55 @@ function permit {
 
 # chmod -v 755 $1
 }
+# https://bash.cyberciti.biz/guide/Reset_command
+# https://bash.cyberciti.biz/guide/Console_management
+# https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
+# https://invisible-island.net/ncurses/man/tset.1.html#h2-HISTORY
+# https://unix.stackexchange.com/questions/335648/why-does-the-reset-command-include-a-delay
+# https://unix.stackexchange.com/questions/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
+# https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
+# exec $SHELL --login
+# exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
+# exec $SHELL --login
+function reload {
+  termux-reload-settings
+  [[ -n ${TMUX} ]] && tmux source "$HOME/.tmux.conf"
+  clear
+# reset # slowwwwww
+  tput reset
+  stty sane
+  echo here
+  setterm --initialize
+  setterm --resize
+  tput cup 0 0
+  [ -n ${TMUX} ] && echo && echo tmux -V
+  echo && environment
+  echo && termux-info
+  echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
+  echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
+  echo && echo "PATH: $PATH"
+  export LINES=$( tput lines )
+  export COLUMNS=$( tput columns )
+  echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
+}
+
+# TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html?m=1
+# - https://invisible-island.net/ncurses/man/toe.1m.html
+function term {
+  clear
+  echo "\033[7m"
+  echo && echo "$(tty) Colors: $(tput colors)"
+  echo "\nSize \033[3mROWS\033[23mX\033[3mCOLUMNS\033[23m: $(stty size | tr " " "x")"
+  echo && [[ -n $TMUX ]] && echo "TMUX INFO:" && tmux info
+  echo && echo "TERM=${TERM} $( tput -V )" && toe
+  echo && echo "Bindings \033[3m( see ~/.inputrc )\033[23m :" && shortcuts
+  echo && echo "stty: $(stty -g)" && stty -a
+  echo && infocmp -l
+  echo "\033[27m"
+  echo && dircolors --print-ls-colors
+  echo && colors
+}
+
 
 # SSH(d)------------------------------------------------------------------
 #   - https://wiki.termux.com/wiki/Remote_Access
