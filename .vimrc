@@ -238,6 +238,7 @@ finish
 " {{{ Mappings
 " - https://stackoverflow.com/questions/3776117
 " - https://vi.stackexchange.com/questions/2089
+" - https://vi.stackexchange.com/questions/7722/how-to-debug-a-mapping
 " - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 " - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
 let mapleader = ',' " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
