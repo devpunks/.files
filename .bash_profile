@@ -526,5 +526,3 @@ alias shortcuts='bind -P'
 # bind "set completion-ignore-case on" # SEE ~/.inputrc
 
 # }}}
-
-echo "Bash Profile"
