@@ -262,7 +262,7 @@ nnoremap <C-k> <C-w>k
 " <CTRL+j> Focus on pane down
 nnoremap <C-j> <C-w>j
 " <CTRL+h> Focus on pane to left
-nmap <C-h> <C-w>h
+nnoremap <C-h> <C-w>h
 " <CTRL+l> Focus on pane to right
 nmap <C-l> <C-w>l
 
