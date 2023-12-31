@@ -273,6 +273,7 @@ cmap <c-r> :source ~/.vimrc<CR>
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " ********************************************************************************
 
+autocmd FocusLost * :w " save on focus lost
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 set autoindent
