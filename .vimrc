@@ -402,9 +402,6 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
 " Vim-Ruby-Miinitest - https://github.com/sunaku/vim-ruby-minitest
 " --------------------------------------------------------------------------------
 
-"set completefunc=syntaxcomplete#Complete
-
-
 " }}}
 
 " ********************************************************************************
