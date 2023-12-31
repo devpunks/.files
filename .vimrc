@@ -161,6 +161,7 @@ set backupdir=$TMPDIR " backup location
 " http://vim.wikia.com/wiki/Using_the_mouse_for_Vim_in_an_xterm
 set mouse=a " Enable mouse use in all modes
 set ttyfast " Send more characters for redraws
+set ttyscroll=3 " number of characters for redraws
 set lazyredraw " Don't update during macro script execution
 
 if has('mouse_sgr')
