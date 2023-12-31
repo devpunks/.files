@@ -80,6 +80,7 @@ syntax on " turns syntax highlighting on
 set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
 set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
 
+" https://vim.fandom.com/wiki/Folding
 set foldenable
 set foldcolumn=2
 set foldmethod=indent "Enable indent folding
