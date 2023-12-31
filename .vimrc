@@ -264,7 +264,7 @@ nnoremap <C-j> <C-w>j
 " <CTRL+h> Focus on pane to left
 nnoremap <C-h> <C-w>h
 " <CTRL+l> Focus on pane to right
-nmap <C-l> <C-w>l
+nnoremap <C-l> <C-w>l
 
 " normal mode: save
 nnoremap <c-s> :w<cr>
