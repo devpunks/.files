@@ -115,8 +115,9 @@ highlight ColorColumn ctermbg=233
 
 set hlsearch " Highlight found search results
 set autoread " re-read files if unmodified
-set smartcase " Automatically search case-sensitive
-set incsearch " show partial search matches
+set ignorecase " Case in-sensitive search
+set smartcase " Capitalization case-sensitive search
+set incsearch " highlight search matches
 set visualbell " Flash the screen instead of beeping errors
 set noerrorbells " Display beep on errors
 set cursorline " highlight current cursor line
