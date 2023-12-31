@@ -200,11 +200,14 @@ set completepopup+=align:menu,border:on,highlight:Pmenu
 "   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
 set history=1000  " Increase undo limit
 
-" copy and paste
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <ESC>"+pa
+" copy 🍝 pasta 
+" vnoremap <C-c> "+yi
+" vnoremap <C-c> "*y<CR>
+" vnoremap <C-v> c<ESC>"+p
+" vnoremap <C-x> "+c
+" inoremap <c-v> “*p<CR>
+" inoremap <C-v> <ESC>"+pa
+set clipboard=unnamedplus
 
 " termux -----
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
