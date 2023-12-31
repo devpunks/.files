@@ -516,7 +516,10 @@ endfor
 " ********************************************************************************
 " {{{ TYPOGRAPHY.vimrc
 " ********************************************************************************
-"
+" - Meta-chars ------------------------------------
+set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
+set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
+
 " - Whitespace ------------------------------------
 retab " update tab format
 set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
