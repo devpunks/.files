@@ -258,7 +258,7 @@ nnoremap <C-w>T :tab split<cr>
 nnoremap = <C-w>=
 
 " <CTRL+k> Focus on pane up
-nmap <C-k> <C-w>k
+nnoremap <C-k> <C-w>k
 " <CTRL+j> Focus on pane down
 nmap <C-j> <C-w>j
 " <CTRL+h> Focus on pane to left
