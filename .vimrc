@@ -195,6 +195,14 @@ set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03
 set completeopt+=menu,menuone,noinsert,popup,preview
 set completepopup+=align:menu,border:on,highlight:Pmenu
 
+hi InfoPopUp ctermbg=green
+nnoremap , :ZoomWin<cr>
+nnoremap <CR> :NERDTreeToggle<CR>
+autocmd VimLeave * echom "PEAAAACE"
+set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
+set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
+finish
+
 " - Clipboard ------------------------------------
 "   - https://github.com/termux/termux-packages/issues/2308
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
