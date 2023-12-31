@@ -120,6 +120,7 @@ set smartcase " Capitalization case-sensitive search
 set incsearch " highlight search matches
 set visualbell " Flash the screen instead of beeping errors
 set noerrorbells " Display beep on errors
+set belloff+=ctrlg  " Turn off insert completion bell
 set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set cursorlineopt=number " Only underline numbet
