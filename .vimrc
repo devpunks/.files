@@ -93,7 +93,11 @@ set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 set showcmd " show current command prompt suffix
 set nomodeline "Ignore file mode lines
 set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
+set completepopup+=align:menu,border:on,highlight:Pmenu
+set completeopt+=menu,menuone,noinsert,popup,preview
+set shortmess+=c,n,r,w,x,t,T
 
+hi InfoPopUp ctermbg=green
 nnoremap , :ZoomWin<cr>
 nnoremap <CR> :NERDTreeToggle<CR>
 autocmd VimLeave * echom "PEAAAACE"
