@@ -118,7 +118,7 @@ set showmatch matchtime=3 " jump to matching brace
 
 " Buffers ---------------------------
 set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
-command Flush :up | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
+command Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://vimtricks.com/p/saving-session-state/
