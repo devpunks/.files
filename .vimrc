@@ -589,6 +589,8 @@ catch | endtry
 " Custom Color Groups
 highlight WhiteSpace ctermbg=NONE ctermfg=244
 
+highlight ColorColumn ctermbg=red
+
 highlight Braces ctermfg=249
 highlight Error ctermbg=13 ctermfg=black
 highlight VisualColor ctermbg=132 ctermfg=234
