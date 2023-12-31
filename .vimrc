@@ -284,6 +284,7 @@ filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 set autoindent
 
 set lines=27
+let &showbreak = '⥹'
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
 
