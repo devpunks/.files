@@ -189,6 +189,9 @@ endif
 " - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
 set wildmenu
 set wildmode=list:longest,full
+set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
+set completeopt+=menu,menuone,noinsert,popup,preview
+set completepopup+=align:menu,border:on,highlight:Pmenu
 
 " - Clipboard ------------------------------------
 "   - https://github.com/termux/termux-packages/issues/2308
