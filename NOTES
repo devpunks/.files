@@ -111,6 +111,10 @@ Android Accessibility
 - [CTRL][ALT] + U   # URL List
 - [CTRL][ALT] + V   # Paste
 
+
+# TMUX ---------------------------------
+# Bind(ed) Keys - tmux list-keys
+# Shortcut mappings - <prefix>+?
 # BASH ---------------------------------
 #   - Shell Check - https://www.shellcheck.net
 #   - Explain Shell - https://explainshell.com/
