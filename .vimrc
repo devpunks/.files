@@ -55,8 +55,8 @@ execute "set <xLeft>=\<Esc>[@;*D"
 "  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
 "  - https://superuser.com/questions/935574/get-rid-of-null-character-in-vim-variable
 let version_termux = $TERMUX_VERSION
-let version_tmux = system('echo -n $(tmux -V)')
-let version_bash = system('echo -n $BASH_VERSION')
+let version_tmux   = system('echo -n $(tmux -V)')
+let version_bash   = system('echo -n $BASH_VERSION')
 
 echom "VIM: ".v:version
 echom "BASH: ".version_bash
