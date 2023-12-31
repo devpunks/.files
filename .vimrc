@@ -217,6 +217,21 @@ if executable('*termux-clipboard-set')
 " vnoremap <C-x> :!termux-clipboard-set<CR>
 " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
 " inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
+else
+  echom "Termux clipboard not found"
+endif
+
+" Reload .vimrc configuration
+" nnoremap <Leader>R :source ~/.vimrc
+cmap <c-r> :source ~/.vimrc<CR>
+hi InfoPopUp ctermbg=green
+nnoremap , :ZoomWin<cr>
+nnoremap <CR> :NERDTreeToggle<CR>
+autocmd VimLeave * echom "PEAAAACE"
+set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
+set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
+finish
+
 " }}}
 
 " ********************************************************************************
