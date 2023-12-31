@@ -17,12 +17,12 @@
 "     ######    .........
 "                 .....
 "                   .
+" Gist: https://gist.github.com/snuggs/612093
 " Author: Ahmid-Ra (github.com/snuggs)
 
 " Screencasts: http://vimcasts.org
-
-" Gist - https://gist.github.com/snuggs/612093
-
+"
+"
 " Cheatsheet - https://vim.rtorr.com/
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
