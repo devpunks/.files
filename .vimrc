@@ -527,7 +527,7 @@ set ruler " set cursor coordinates
 " (in normal mode & insertion mode)
 set whichwrap=b,s,<,>,[,]
 set linebreak   " Avoid wrapping line in middle of word
-set backspace=2 " character deletion prior to insertion mode
+# TODO: set backspace+=nostop " [2] character deletion prior to insertion mode
 set scrolloff=2 " Lines of offset when jump scrolling
 set sidescroll=10 " scroll amount when a word is outside of view
 " https://stackoverflow.com/questions/4621798
