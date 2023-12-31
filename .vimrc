@@ -165,7 +165,7 @@ if has('mouse_sgr')
   " Set this to the name of your terminal that supports mouse codes.
   set ttymouse=sgr
 else
-  set ttymouse=xterm2
+  set ttymouse=xterm
 endif
 
 set guicursor=n-v-c:block-Cursor
