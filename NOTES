@@ -111,10 +111,13 @@ Android Accessibility
 - [CTRL][ALT] + U   # URL List
 - [CTRL][ALT] + V   # Paste
 
-
 # TMUX ---------------------------------
 # Bind(ed) Keys - tmux list-keys
 # Shortcut mappings - <prefix>+?
+
+# VIM ---------------------------------
+# :verbose map - All keyboard mappings - https://vi.stackexchange.com/questions/7722
+
 # BASH ---------------------------------
 #   - Shell Check - https://www.shellcheck.net
 #   - Explain Shell - https://explainshell.com/
