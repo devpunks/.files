@@ -75,8 +75,7 @@ endif
 " set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
 
 " (Hopefully) Stop VIM from crashing
-" https://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks#answer-810866
-" 200
+" https://superuser.com/questions/810622
 syntax on " turns syntax highlighting on
 set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
 set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
