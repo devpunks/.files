@@ -34,8 +34,8 @@
 
 set encoding=utf-8
 
-let g:skip_defaults_vim=1
 unlet! skip_defaults_vim
+let g:skip_defaults_vim=0
 source $VIMRUNTIME/defaults.vim
 
 " xterm-focus-event - https://github.com/vim/vim/issues/9296
