@@ -235,7 +235,7 @@ finish
 " }}}
 
 " ********************************************************************************
-" {{{ Mappings *******************************************************************
+" {{{ Mappings
 " - https://stackoverflow.com/questions/3776117
 " - https://vi.stackexchange.com/questions/2089
 " - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
