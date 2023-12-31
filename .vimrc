@@ -200,7 +200,7 @@ set completepopup+=align:menu,border:on,highlight:Pmenu
 "   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
 set history=1000  " Increase undo limit
 
-" copy 🍝 pasta 
+" copy 🍝 pasta
 " vnoremap <C-c> "+yi
 " vnoremap <C-c> "*y<CR>
 " vnoremap <C-v> c<ESC>"+p
