@@ -176,7 +176,6 @@ set guicursor+=i:blinkwait90
 " - Chrome -----------------------------------
 set title " Turn on title
 set titlestring="%<%F%=%l/%L-%P"  " Title String format
-set tabpagemax=10 " Maximum number of tab pages
 set showtabline=2 " :help setting-tabline
 
 if has("gui_running")
