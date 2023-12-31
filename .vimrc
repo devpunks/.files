@@ -224,10 +224,6 @@ imap <C-v> <ESC>"+pa
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
 if executable('*termux-clipboard-set')
   echom "SHAZAAAM FOUND CLIPBOARD"
-
-" vnoremap <C-x> :!termux-clipboard-set<CR>
-" vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
-" inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
 else
   echom "Termux clipboard not found"
 endif
