@@ -1,11 +1,14 @@
 # .bash_profile ************************************************************
+#
+# Author: Ahmid-Ra (github.com/snuggs)
+#
+# INVOCATION - https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+
+# [ -r $HOME/.bashrc ] && source $HOME/.bashrc
+
 echo 'devPunks😈studio .bash_profile'
 echo
 
-# Author: Ahmid-Ra (github.com/snuggs)
-
-# [ -r $HOME/.bashrc ] && source $HOME/.bashrc
-#
 # *********************************************************************
 
 # fonts.sh ***********************************************************
