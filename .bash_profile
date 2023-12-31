@@ -478,6 +478,8 @@ function reload {
   clear
 # reset # slowwwwww
   tput reset
+  tput sgro # reset attributes
+  tput op # reset colors
   stty sane
   echo here
   setterm --initialize
