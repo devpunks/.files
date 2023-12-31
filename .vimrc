@@ -251,6 +251,8 @@ nnoremap <space> za
 nnoremap <C-t> :tabnew<cr>
 nnoremap <C-n> :tabnext<cr>
 nnoremap <C-p> :tabprevious<cr>
+" simulate break pane in TMUX
+nnoremap <C-w>T :tab split<cr>
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
