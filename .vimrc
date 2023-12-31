@@ -357,7 +357,7 @@ autocmd FileType python set omnifunc=syntaxcomplete#Complete
 " }}}
 
 " ********************************************************************************
-" {{{ Plugins ********************************************************************
+" {{{ Plugins
 " ********************************************************************************
 
 filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
