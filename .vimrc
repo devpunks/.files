@@ -214,6 +214,12 @@ vnoremap <c-c> "*y<cr>
 inoremap <c-v> “*p<cr>
 set clipboard=unnamedplus
 
+" copy and paste
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
 " termux -----
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
 if executable('*termux-clipboard-set')
