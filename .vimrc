@@ -414,6 +414,7 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
 " ********************************************************************************
 
 set laststatus=2 " Always show status line
+# https://stackoverflow.com/questions/17376257/vim-hyphen-in-ruler-column-value
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 " set statusline=[fo=%{&fo}]
 
