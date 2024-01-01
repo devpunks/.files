@@ -197,6 +197,21 @@ set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03
 set completeopt+=menu,menuone,noinsert,popup,preview
 set completepopup+=align:menu,border:on,highlight:Pmenu
 
+" - Clipboard ------------------------------------
+"   - https://github.com/termux/termux-packages/issues/2308
+"   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
+"   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
+"   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
+" vnoremap <c-c> "*y<cr>
+" inoremap <c-v> “*p<cr>
+" set clipboard=unnamedplus
+" 
+"  copy and paste
+" vmap <C-c> "+yi
+" vmap <C-x> "+c
+" vmap <C-v> c<ESC>"+p
+" imap <C-v> <ESC>"+pa
+
 hi InfoPopUp ctermbg=green
 nnoremap , :ZoomWin<cr>
 nnoremap <CR> :NERDTreeToggle<CR>
