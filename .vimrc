@@ -556,7 +556,6 @@ try
 catch | endtry
 
 " Custom Color Groups
-highlight WhiteSpace ctermbg=NONE ctermfg=244
 
 highlight ColorColumn ctermbg=red
 
