@@ -539,10 +539,6 @@ set whichwrap+=[,] " [ left and right ] arrow wrap to prev. and next line
 "}}}
 
 
-hi InfoPopUp ctermbg=green
-finish
-
-
 " {{{ COLORSCHEME ------------------------------------------------
 "   - https://jonasjacek.github.io/colors
 "   - https://www.vim.org/scripts/script.php?script_id=335
