@@ -224,14 +224,6 @@ else
 endif
 " }}}
 
-hi InfoPopUp ctermbg=green
-nnoremap , :ZoomWin<cr>
-nnoremap <CR> :NERDTreeToggle<CR>
-autocmd VimLeave * echom "PEAAAACE"
-set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
-set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
-finish
-
 " ********************************************************************************
 " {{{ Mappings
 " - https://stackoverflow.com/questions/3776117
@@ -239,7 +231,7 @@ finish
 " - https://vi.stackexchange.com/questions/7722/how-to-debug-a-mapping
 " - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 " - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
-let mapleader = ',' " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
+" let mapleader = ',' " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
 " ********************************************************************************
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
