@@ -128,7 +128,7 @@ shopt -s globstar # https://www.linuxjournal.com/content/globstar-new-bash-globb
 
 # }}}
 
-# History ******************************************************
+# {{{ History ******************************************************
 # - https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
 # - Reverse Search
