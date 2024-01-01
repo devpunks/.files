@@ -318,7 +318,6 @@ set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=o " Preserve comments when pressing o/O
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
 " - Meta-chars ------------------------------------
-let &showbreak = '⥹'
 set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:‖
 set fillchars+=stl:△,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:*
 
