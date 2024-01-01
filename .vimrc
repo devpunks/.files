@@ -519,17 +519,6 @@ set pastetoggle=<F2> " Allow toggle of code indentation
 set list " view hidden characters
 set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
 
-
-set wrap " word
-set ruler " set cursor coordinates
-" backspace will delete CRLF at beginning of line
-" space key will wrap to next line at end of line
-" left and right arrow will wrap to previous and next lines at end of line
-" (in normal mode & insertion mode)
-set whichwrap=b,s,<,>,[,] " backspace, space, left, right
-
-set linebreak   " Avoid wrapping line in middle of word
-# TODO: set backspace+=nostop " [2] character deletion prior to insertion mode
 set scrolloff=2 " Lines of offset when jump scrolling
 set sidescroll=10 " scroll amount when a word is outside of view
 " https://stackoverflow.com/questions/4621798
