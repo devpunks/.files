@@ -185,12 +185,13 @@ let &t_EI = "\e[2;0;0 q" " Steady block
 let &t_SI = "\e[5;0;0 q" " Insert mode Bar cursor
 let &t_SR = "\e[3;0;0 q" " Replace mode  underline
 
-autocmd VimEnter * silent !echo -ne "\e[2;0;0 q"
-
-set guicursor=n-v-c:block-Cursor
-set guicursor+=n-v-c:blinkwait10
-set guicursor+=i:ver100-iCursor
-set guicursor+=i:blinkwait90
+if has('gui_running')
+  " https://vim.fandom.com/wiki/Configuring_the_cursor
+  set guicursor=n-v-c:block-Cursor
+  set guicursor+=n-v-c:blinkwait10
+  set guicursor+=i:ver100-iCursor
+  set guicursor+=i:blinkwait90
+endif
 
 " - Chrome -----------------------------------
 set title " Turn on title
