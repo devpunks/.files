@@ -126,6 +126,7 @@ shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion
 # https://unix.stackexchange.com/questions/700199/why-is-the-bash-double-star-globstar-operator-often-disabled-by-default
 shopt -s globstar # https://www.linuxjournal.com/content/globstar-new-bash-globbing-option
 
+# }}}
 
 # History ******************************************************
 # - https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
