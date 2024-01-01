@@ -375,7 +375,6 @@ autocmd VimEnter * call NerdDrawer()
 function! NerdDrawer()
   if ! exists('g:NERDTree') | return | endif
 
-  echom "I made it"
   " [ENTER] Opens Nerdtree
 nnoremap , :ZoomWin<cr>
   nnoremap <CR> :NERDTreeToggle<CR>
