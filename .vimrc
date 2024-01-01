@@ -426,8 +426,6 @@ set shortmess+=ac
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 " set statusline=[fo=%{&fo}]
 
-set shortmess+=c,n,r,w,x,t,T
-
 " clear out status line
 set statusline=
 
