@@ -5,7 +5,7 @@
 
 USER=`whoami`
 SESSION='devPunks😈studio'
-SOCKET="devpunks" # See tmux -L|S <socket|file> flag
+SOCKET='devpunks' # See tmux -L|S <socket|file> flag
 
 # start server
 tmux start-server
