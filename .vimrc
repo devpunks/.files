@@ -119,7 +119,7 @@ set cursorlineopt=number " Only underline number
 set showmatch matchtime=3 " jump to matching brace
 
 " Buffers ---------------------------
-set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
+set hidden " set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
 set history=1000  " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
 command Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
