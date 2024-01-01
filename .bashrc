@@ -159,7 +159,21 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 
 # }}}
 
-# Prompt ******************************************************
+# {{{ Prompt ******************************************************
+# cursor ------------------------------------------
+# 0 Default
+# 1 Block (blinking)
+# 2 Block (steady)
+# 3 Underline (blinking)
+# 4 Underline (steady)
+# 5 Bar (blinking)
+# 6 Bar (steady)
+# https://linuxgazette.net/137/anonymous.html
+# https://www.baeldung.com/linux/console-cursor-features
+echo -ne '\e[5 q'
+echo -ne '\e]12;#FF00FF\a'
+
+# prompt ------------------------------------------
 #tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 
 # - https://bash-prompt-generator.org
