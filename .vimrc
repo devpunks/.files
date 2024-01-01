@@ -515,13 +515,7 @@ set wrap " word
 set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting
 set linebreak " Avoid wrapping line in middle of word
 set pastetoggle=<F2> " Allow toggle of code indentation
-set smarttab
-set expandtab "turn tabs into whitespace
-"ensure aligned  autoindents - https://vimtricks.com/p/ensuring-aligned-indentation/
-set shiftround
-set shiftwidth=2
-set tabstop=2 "set tab character to 2 characters
-set softtabstop=2
+
 set list " view hidden characters
 set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
 
