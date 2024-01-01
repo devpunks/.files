@@ -631,7 +631,7 @@ highlight Search term=reverse ctermfg=black ctermbg=13
 highlight PmenuSbar ctermfg=green ctermbg=black
 highlight PmenuSel ctermfg=magenta ctermbg=black
 highlight LineNr ctermfg=darkgrey ctermbg=234
-highlight SignColumn ctermbg=234 guibg=darkgrey
+highlight SignColumn ctermbg=234
 highlight CursorColumn ctermbg=3
 highlight CursorLineNr ctermfg=magenta ctermbg=234
 highlight Cursor guifg=black ctermfg=black guibg=white ctermbg=white
