@@ -40,9 +40,9 @@ unlet! skip_defaults_vim
 let g:skip_defaults_vim=0
 source $VIMRUNTIME/defaults.vim
 
-" xterm-focus-event - https://github.com/vim/vim/issues/9296
-let &t_fe = "\<Esc>[?1004h"
-let &t_fd = "\<Esc>[?1004l"
+" xterm-focus-event tracking - https://github.com/vim/vim/issues/9296
+let &t_fe = "\<Esc>[?1004h" " enable focus-event tracking
+let &t_fd = "\<Esc>[?1004l" " disable focus-event tracking
 " https://groups.google.com/g/vim_use/c/VyQSx90uaPE
 execute "set <FocusGained>=\<Esc>[I"
 execute "set <FocusLost>=\<Esc>[O"
