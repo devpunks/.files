@@ -495,10 +495,6 @@ if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   set signcolumn=yes " [auto|no|yes|number]
 endif
 
-
-hi InfoPopUp ctermbg=green
-finish
-
 " }}}
 
 " ********************************************************************************
