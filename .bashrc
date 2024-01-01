@@ -78,7 +78,7 @@ export LC_ALL=$LANG
 
 # }}}
 
-# Terminal ******************************************************
+# {{{ Terminal ******************************************************
 # ncurses
 #   - https://stackoverflow.com/questions/76148896/how-install-curses-1-06-module-in-termux
 #   - tput - https://linuxcommand.org/lc3_adv_tput.php
