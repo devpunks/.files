@@ -546,9 +546,6 @@ set whichwrap+=[,] " [ left and right ] arrow wrap to prev. and next line
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
 "
 
-let s:scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ \ \ 🎨\ %{s:scheme}\ 
-
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " http://www.bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
 " * can use hexidecimal values for gui (e.g. guibg=#000000)
