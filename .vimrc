@@ -494,28 +494,6 @@ endif
 hi InfoPopUp ctermbg=green
 finish
 
-
-function s:get_color(group, attr)
-  " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
-  return synIDattr( synIDtrans( hlID(a:group)), a:attr)
-endfunction
-let s:gutter_bg=s:get_color('LineNr', 'bg#')
-
-echom "Gutter bg: ".s:gutter_bg
-
-execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
-execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
-
-verbose hi LineNr
-verbose hi CursorLineNr
-verbose hi SignColumn
-for type in ["Add", "Delete", "Change"]
-  echom "GitGutter".type." - ".hlexists("GitGutter".type)
-
-  execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
-  execute "verbose hi GitGutter".type
-endfor
-
 " }}}
 
 " ********************************************************************************
