@@ -303,8 +303,8 @@ set fillchars+=stl:△,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:*
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
 " --------------------------------------------------------------------------------
-autocmd BufNewFile,BufRead *.md set formatoptions-=t formatoptions+=n
-autocmd BufNewFile,BufRead README set formatoptions-=t formatoptions+=n
+autocmd BufNewFile,BufRead *.md setlocal formatoptions-=t formatoptions+=n
+autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
 
 " --------------------------------------------------------------------------------
 " HTML
