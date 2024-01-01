@@ -191,9 +191,9 @@ endif
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 " - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
 set wildmenu
+set wildoptions=pum
 set wildmode=list:longest,full
 set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
-
 set completeopt+=menu,menuone,noinsert,popup,preview
 set completepopup+=align:menu,border:on,highlight:Pmenu
 
