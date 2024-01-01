@@ -552,7 +552,7 @@ set statusline+=\ \ \ \ 🎨\ %{s:scheme}\
 set t_Co=256 " enablf 256 colors
 set background=dark
 try
-  colorscheme jellybeans " Set color scheme
+"  colorscheme jellybeans " Set color scheme
 catch | endtry
 
 " Custom Color Groups
