@@ -166,6 +166,8 @@ set backupdir=$TMPDIR " backup location
 
 " - Cursor ------------------------------------
 set ttyfast " Send more characters for redraws
+set ttimeout
+set ttimeoutlen=1
 set ttyscroll=3 " number of characters for redraws
 set lazyredraw " Don't update during macro script execution
 
