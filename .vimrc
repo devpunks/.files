@@ -386,7 +386,7 @@ nnoremap , :ZoomWin<cr>
 " --------------------------------------------------------------------------------
 " NERDTree
 " --------------------------------------------------------------------------------
-autocmd VimEnter * call NerdDrawer()
+autocmd VimEnter * call s:NerdDrawer()
 
 function! s:NerdDrawer() abort
   if ! exists('g:NERDTree') | return | endif
