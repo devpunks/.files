@@ -157,6 +157,7 @@ export LESSHISTSIZE=0
 export LESSHISTFILE=- # /dev/null
 export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 
+# }}}
 
 # Prompt ******************************************************
 #tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
