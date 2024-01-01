@@ -252,26 +252,20 @@ nnoremap <C-w>T :tab split<cr>
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
-
-" <CTRL+k> Focus on pane up
-nnoremap <C-k> <C-w>k
-" <CTRL+j> Focus on pane down
-nnoremap <C-j> <C-w>j
 " <CTRL+h> Focus on pane to left
 nnoremap <C-h> <C-w>h
+" <CTRL+j> Focus on pane down
+nnoremap <C-j> <C-w>j
+" <CTRL+k> Focus on pane up
+nnoremap <C-k> <C-w>k
 " <CTRL+l> Focus on pane to right
 nnoremap <C-l> <C-w>l
-
 " normal mode: save
 nnoremap <c-s> :w<cr>
 " insert mode: escape to normal and save
 inoremap <c-s> <esc>:w<cr>
 " visual mode: escape to normal and save
 vnoremap <c-s> <esc>:w<cr>
-
-" https://stackoverflow.com/questions/657447/vim-clear-last-search-highlighting
-" MAJOR MOUSE PROBLEMS
-nnoremap <esc> :nohlsearch<cr>
 
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
