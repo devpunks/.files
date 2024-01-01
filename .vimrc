@@ -479,6 +479,11 @@ if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   " set signcolumn=number " show sign instead of line number
 endif
 
+
+hi InfoPopUp ctermbg=green
+finish
+
+
 function s:get_color(group, attr)
   " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
   return synIDattr( synIDtrans( hlID(a:group)), a:attr)
