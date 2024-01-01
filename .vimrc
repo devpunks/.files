@@ -525,6 +525,15 @@ set sidescroll=10 " scroll amount when a word is outside of view
 " https://stackoverflow.com/questions/15124386
 set display=lastline " Always show paragraph last line
 
+    " (NORMAL MODE)
+    " backspace wrap EOL & BOL
+"
+" space key wrap to next line at end of line
+" left and right arrow wrap to previous and next line at end of line
+set whichwrap=b,s,<,>,[,]
+" (INSERT MODE)
+set backspace=indent,eol,nostop " Insert mode <BS> deletion
+
 "}}}
 
 " {{{ COLORSCHEME ------------------------------------------------
