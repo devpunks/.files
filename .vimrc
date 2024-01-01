@@ -344,7 +344,8 @@ autocmd FileType python setlocal omnifunc=python3complete#Complete
 " Go
 "   - https://www.simplified.guide/vim/auto-complete-ruby
 " --------------------------------------------------------------------------------
-autocmd FileType python set omnifunc=syntaxcomplete#Complete
+autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
+
 " }}}
 
 " ********************************************************************************
