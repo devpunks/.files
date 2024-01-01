@@ -306,6 +306,9 @@ set smartindent " indent based off current line
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
 
+filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+autocmd FocusLost * :w " save on focus lost
+
 " formatoptions table - https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
 set formatoptions+=n " Format numbers
 set formatoptions+=c " autowrap `c`omments
