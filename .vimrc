@@ -539,7 +539,8 @@ set ruler " set cursor coordinates
 " space key will wrap to next line at end of line
 " left and right arrow will wrap to previous and next lines at end of line
 " (in normal mode & insertion mode)
-set whichwrap=b,s,<,>,[,]
+set whichwrap=b,s,<,>,[,] " backspace, space, left, right
+
 set linebreak   " Avoid wrapping line in middle of word
 # TODO: set backspace+=nostop " [2] character deletion prior to insertion mode
 set scrolloff=2 " Lines of offset when jump scrolling
