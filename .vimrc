@@ -557,7 +557,28 @@ catch | endtry
 
 " Custom Color Groups
 
-highlight ColorColumn ctermbg=red
+" gutter --------------------------------------------------------------
+" https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
+verbose hi LineNr
+verbose hi CursorLineNr
+verbose hi SignColumn
+let s:gutter_bg=s:GetColor('LineNr', 'bg#')
+echom "Gutter bg: ".s:gutter_bg
+execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
+execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
+for type in ["Add", "Delete", "Change"]
+  echom "GitGutter".type." - ".hlexists("GitGutter".type)
+
+  execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
+  execute "verbose hi GitGutter".type
+endfor
+" https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
+highlight DiffAdd ctermfg=green guifg=green
+highlight DiffDelete ctermfg=red guifg=red
+highlight DiffChange ctermfg=yellow guifg=yellow
+
+" ---------------------------------------------------------------------
+
 
 highlight Braces ctermfg=249
 highlight Error ctermbg=13 ctermfg=black
