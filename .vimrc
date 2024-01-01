@@ -449,8 +449,8 @@ set shortmess+=ac
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
 
-" clear out status line
-set statusline=
+" set statusline=[fo=%{&fo}]
+set statusline= " clear out status line
 
 " file type
 set statusline+=💻[%Y]
