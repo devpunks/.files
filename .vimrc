@@ -581,6 +581,7 @@ highlight DiffChange ctermfg=yellow guifg=yellow
 
 
 highlight Braces ctermfg=249
+highlight ColorColumn ctermbg=red
 highlight Error ctermbg=13 ctermfg=black
 highlight VisualColor ctermbg=132 ctermfg=234
 highlight NormalColor ctermbg=234 ctermfg=magenta
