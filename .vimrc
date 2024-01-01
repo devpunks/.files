@@ -184,7 +184,6 @@ endif
 let &t_EI = "\e[2;0;0 q" " Steady block
 let &t_SI = "\e[5;0;0 q" " Insert mode Bar cursor
 let &t_SR = "\e[3;0;0 q" " Replace mode  underline
-" reset the cursor on start (for older versions of vim, usually not required)
 
 autocmd VimEnter * silent !echo -ne "\e[2;0;0 q"
 
