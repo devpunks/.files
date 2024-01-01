@@ -513,6 +513,7 @@ retab! " (Force!) update tab format
 set wrap " word
 set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting
 set linebreak " Avoid wrapping line in middle of word
+let &showbreak = '⥹' " Character used for wrapped line
 set pastetoggle=<F2> " Allow toggle of code indentation
 
 set list " view hidden characters
