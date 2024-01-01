@@ -300,10 +300,9 @@ cmap <c-r> :source ~/.vimrc<CR>
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " ********************************************************************************
 
-set autoindent
-filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
-autocmd FocusLost * :w " save on focus lost
-
+set smarttab " 'tab' insertion
+set autoindent " auto(matically smart)indent
+set smartindent " indent based off current line
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
 
