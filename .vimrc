@@ -501,8 +501,19 @@ endif
 " {{{ TYPOGRAPHY.vimrc
 " ********************************************************************************
 " - Whitespace ------------------------------------
-retab " update tab format
-set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting/
+let s:TABSIZE=2
+
+set expandtab "turn tabs into (tabstop) spaces
+set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
+let &tabstop=s:TABSIZE "set tab character to 2 characters
+let &shiftwidth=s:TABSIZE " Shift-indent size - http://vimcasts.org/episodes/tabs-and-spaces
+let &softtabstop=s:TABSIZE " https://vi.stackexchange.com/questions/4244
+
+retab! " (Force!) update tab format
+
+set wrap " word
+set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting
+set linebreak " Avoid wrapping line in middle of word
 set pastetoggle=<F2> " Allow toggle of code indentation
 set smarttab
 set expandtab "turn tabs into whitespace
