@@ -113,8 +113,10 @@ set nrformats+=alpha
 " https://vimtricks.com/p/vim-line-length-marker/
 set colorcolumn=-8,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 
-set hlsearch " Highlight found search results
-set autoread " re-read files if unmodified
+set hlsearch " results
+set autoread " re-read files
+set noautowrite " do not autowrite
+set noautowriteall " do not autowrite (all)
 set ignorecase " Case in-sensitive search
 set smartcase " Capitalization case-sensitive search
 set incsearch " highlight search matches
