@@ -558,8 +558,13 @@ try
 "  colorscheme jellybeans " Set color scheme
 catch | endtry
 
-" Custom Color Groups
 
+hi InfoPopUp ctermbg=green
+finish
+
+
+
+" Custom Color Groups
 " gutter --------------------------------------------------------------
 " https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
 verbose hi LineNr
