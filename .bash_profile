@@ -498,6 +498,7 @@ function reload {
 
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
 # SIGWINCH - https://www.rkoucha.fr/tech_corner/sigwinch.html
+# TERMINFO - https://bbs.archlinux.org/viewtopic.php?id=163103
 # TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html?m=1
 function term {
   clear
