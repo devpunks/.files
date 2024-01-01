@@ -448,7 +448,6 @@ set shortmess+=ac
 
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
-" set statusline=[fo=%{&fo}]
 
 " clear out status line
 set statusline=
