@@ -310,7 +310,7 @@ autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
 " HTML
 "   - https://vimtricks.com/p/vim-autocomplete-html-tags/
 " --------------------------------------------------------------------------------
-autocmd FileType html,eruby set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 
 " --------------------------------------------------------------------------------
 " CSS
