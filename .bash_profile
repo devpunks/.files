@@ -202,7 +202,8 @@ alias gr='git rebase -i'
 alias gs='git status'
 alias gt="(
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
-  git log --graph --since='1 day ago' --pretty=format:'%h %ad %an (%ar) \"%s\"'
+  GIT_PAGER=cat \
+    git log --graph --since='1 day ago' --pretty=format:'%h %ad %an (%ar) \"%s\"'
   echo && echo Total: \
     && git log --since='1 day ago' | wc -l
   echo
