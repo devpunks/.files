@@ -212,17 +212,9 @@ set completepopup+=align:menu,border:on,highlight:Pmenu
 " vmap <C-v> c<ESC>"+p
 " imap <C-v> <ESC>"+pa
 
-hi InfoPopUp ctermbg=green
-nnoremap , :ZoomWin<cr>
-nnoremap <CR> :NERDTreeToggle<CR>
-autocmd VimLeave * echom "PEAAAACE"
-set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
-set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
-finish
-
 " termux -----
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
-if executable('*termux-clipboard-set')
+if executable('termux-clipboard-set')
   echom "SHAZAAAM FOUND CLIPBOARD"
 else
   echom "Termux clipboard not found"
@@ -231,6 +223,14 @@ endif
 " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
 " inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
 " }}}
+
+hi InfoPopUp ctermbg=green
+nnoremap , :ZoomWin<cr>
+nnoremap <CR> :NERDTreeToggle<CR>
+autocmd VimLeave * echom "PEAAAACE"
+set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
+set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
+finish
 
 " ********************************************************************************
 " {{{ Mappings
