@@ -12,6 +12,7 @@ echo 'devPunks😈studio .bash_profile'
 echo
 
 # *********************************************************************
+export CDPATH=".:$HOME" # https://www.theunixschool.com/2012/04/what-is-cdpath.html
 
 # fonts.sh ***********************************************************
 #  NERDFONT:
