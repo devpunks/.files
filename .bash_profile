@@ -363,7 +363,13 @@ weigh () {
   -- "$location"
 }
 
-colors () { color && echo && spectrum && echo ; }
+colors () {
+  echo && echo "$(tty) Colors: $(tput colors)"
+  echo && color
+  echo && spectrum
+  echo
+}
+
 color () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
   local bg="\e[48;5;"
