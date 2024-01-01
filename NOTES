@@ -116,7 +116,9 @@ Android Accessibility
 # Shortcut mappings - <prefix>+?
 
 # VIM ---------------------------------
-# :verbose map - All keyboard mappings - https://vi.stackexchange.com/questions/7722
+# :h index - All keyboard mappings
+# <C-v> (<C-q> on Windows) Then type escape command
+# :verbose map - Keyboard mappings - https://vi.stackexchange.com/questions/7722
 
 # BASH ---------------------------------
 #   - Shell Check - https://www.shellcheck.net
