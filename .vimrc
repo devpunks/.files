@@ -467,7 +467,7 @@ autocmd InsertLeave * highlight! link StatusLine NormalColor
 highlight DiffAdd ctermfg=green guifg=green
 highlight DiffDelete ctermfg=red guifg=red
 highlight DiffChange ctermfg=yellow guifg=yellow
-highlight LineNr ctermbg=234 guibg=darkgray
+highlight LineNr ctermbg=black guibg=darkgray
 
 set number
 set numberwidth=4 " gutter columns
