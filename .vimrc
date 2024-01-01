@@ -472,6 +472,9 @@ highlight LineNr ctermbg=234 guibg=darkgray
 set number
 set numberwidth=4 " gutter columns
 
+hi InfoPopUp ctermbg=green
+finish
+
 if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
   " - https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
