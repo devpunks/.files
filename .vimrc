@@ -634,9 +634,9 @@ highlight LineNr ctermfg=darkgrey ctermbg=234
 highlight SignColumn ctermbg=234
 highlight CursorColumn ctermbg=3
 highlight CursorLineNr ctermfg=magenta ctermbg=234
-highlight Cursor guifg=black ctermfg=black guibg=white ctermbg=white
-highlight iCursor guifg=white ctermfg=black guibg=steelblue ctermbg=white
-highlight StatusFileName ctermbg=234 guibg=black ctermfg=magenta guifg=magenta
+highlight Cursor ctermfg=blacke ctermbg=white
+highlight iCursor ctermfg=black ctermbg=white
+highlight StatusFileName ctermbg=234 ctermfg=magenta
 
 " Overrides
 highlight vimOper ctermfg=13
