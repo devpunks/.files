@@ -558,17 +558,6 @@ set sidescroll=10 " scroll amount when a word is outside of view
 " set display+=lastline " Always show paragraph last line
 set display=lastline " Always show paragraph last line
 
-" FONTS ------------------------------------------------
-" Italic Font ???
-" https://stackoverflow.com/a/30937851/173208
-let &t_ZH="\e[3m"
-let &t_ZR="\e[23m"
-let &t_Cs = "\e[4:3m"
-let &t_Ce = "\e[4:0m"
-let &t_EI = "\e[1 q" " Steady block
-let &t_SI = "\e[5 q" " Blinking  bar
-let &t_SR = "\e[5 q" " Blinking  bar
-
 "}}}
 
 " {{{ COLORSCHEME ------------------------------------------------
