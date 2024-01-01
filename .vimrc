@@ -459,7 +459,7 @@ set statusline+=\ (%p%%)\
 autocmd InsertEnter * highlight! link StatusLine InsertColor
 autocmd InsertLeave * highlight! link StatusLine NormalColor
 
-}}}
+" }}}
 
 " {{{ GUTTER ------------------------------------------------
 " https://github.com/airblade/vim-gitgutter/commit/8db2fc5
