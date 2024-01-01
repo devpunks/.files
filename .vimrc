@@ -372,7 +372,7 @@ nnoremap , :ZoomWin<cr>
 " --------------------------------------------------------------------------------
 autocmd VimEnter * call NerdDrawer()
 
-function! NerdDrawer()
+function! s:NerdDrawer() abort
   if ! exists('g:NERDTree') | return | endif
 
   " [ENTER] Opens Nerdtree
