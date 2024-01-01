@@ -376,7 +376,6 @@ function! NerdDrawer()
   if ! exists('g:NERDTree') | return | endif
 
   " [ENTER] Opens Nerdtree
-nnoremap , :ZoomWin<cr>
   nnoremap <CR> :NERDTreeToggle<CR>
 
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
