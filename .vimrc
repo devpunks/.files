@@ -453,7 +453,7 @@ set statusline+=\ 📜\ %2c✖%-l
 set statusline+=\ of\ %L\ LOC
 
 " percentage
-set statusline+=\ (%p%%)
+set statusline+=\ (%p%%)\ 
 
 " Interactive Status -----------------------------
 autocmd InsertEnter * highlight! link StatusLine InsertColor
