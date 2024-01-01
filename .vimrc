@@ -679,6 +679,13 @@ highlight! default link cssIdentifier Identifier
 " {{{ Functions
 " ********************************************************************************
 " --------------------------------------------------------------------------------
+" :call GetColor (group attribute)
+" --------------------------------------------------------------------------------
+" https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
+function s:GetColor(group, attr)
+  return synIDattr( synIDtrans( hlID(a:group)), a:attr)
+endfunction
+" --------------------------------------------------------------------------------
 " (:hi)ghlight group under cursor
 " --------------------------------------------------------------------------------
 " https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
