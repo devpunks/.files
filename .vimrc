@@ -481,12 +481,6 @@ autocmd InsertLeave * highlight! link StatusLine NormalColor
 
 " {{{ GUTTER ------------------------------------------------
 " https://github.com/airblade/vim-gitgutter/commit/8db2fc5
-" https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
-highlight DiffAdd ctermfg=green guifg=green
-highlight DiffDelete ctermfg=red guifg=red
-highlight DiffChange ctermfg=yellow guifg=yellow
-highlight LineNr ctermbg=black guibg=darkgray
-
 set number
 set numberwidth=4 " gutter columns
 
