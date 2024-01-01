@@ -236,6 +236,12 @@ endif
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
 nnoremap <space> za
+nnoremap <esc> :nohlsearch<cr>
+
+" tags (:h tagstack)
+" <C-]> jump to & push tag (:tag)
+" <C-t> pop tag (:pop)
+"   - https://stackoverflow.com/questions/17783539/tag-navigation-in-vim
 
 " tabs
 nnoremap <C-t> :tabnew<cr>
