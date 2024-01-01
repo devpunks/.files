@@ -76,6 +76,7 @@ export LC_ALL=$LANG
   # LC_MONETARY
   # LC_MESSAGES # Overridden by `LANGUAGE`
 
+# }}}
 
 # Terminal ******************************************************
 # ncurses
