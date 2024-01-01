@@ -523,7 +523,6 @@ set scrolloff=2 " Lines of offset when jump scrolling
 set sidescroll=10 " scroll amount when a word is outside of view
 " https://stackoverflow.com/questions/4621798
 " https://stackoverflow.com/questions/15124386
-" set display+=lastline " Always show paragraph last line
 set display=lastline " Always show paragraph last line
 
 "}}}
