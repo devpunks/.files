@@ -349,11 +349,6 @@ autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
 
 " }}}
 
-nnoremap , :ZoomWin<cr>
-nnoremap <CR> :NERDTreeToggle<CR>
-hi InfoPopUp ctermbg=green
-finish
-
 " ********************************************************************************
 " {{{ Plugins
 " ********************************************************************************
