@@ -220,21 +220,6 @@ set fillchars+=fold:Z,foldopen:-,foldclose:+,foldsep:‖
 set fillchars+=stl:⚊,stlnc:=,vert:‖,diff:-,eob:⊖,lastline:*
 finish
 
-" - Clipboard ------------------------------------
-"   - https://github.com/termux/termux-packages/issues/2308
-"   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
-"   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
-"   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
-vnoremap <c-c> "*y<cr>
-inoremap <c-v> “*p<cr>
-set clipboard=unnamedplus
-
-" copy and paste
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <ESC>"+pa
-
 " termux -----
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
 if executable('*termux-clipboard-set')
