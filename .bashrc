@@ -60,7 +60,7 @@ if [ -n "${PREFIX}" ]; then
 fi
 
 
-# Locale ******************************************************
+# {{{ Locale ******************************************************
 #  - https://superuser.com/a/1779369
 #  - https://github.com/termux/termux-packages/issues/3009
 #  - https://github.com/termux/termux-packages/issues/2796#issuecomment-424589888
