@@ -678,32 +678,14 @@ highlight! default link cssIdentifier Identifier
 " ********************************************************************************
 " {{{ Functions
 " ********************************************************************************
-
 " --------------------------------------------------------------------------------
 " (:hi)ghlight group under cursor
 " --------------------------------------------------------------------------------
 " https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
-function! HighlightGroup()
+function! s:HighlightGroup()
     let l:s = synID(line('.'), col('.'), 1)
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfun
 command! Colors call HighlightGroup()
-
-" --------------------------------------------------------------------------------
-" Zoom / Restore window.
-" --------------------------------------------------------------------------------
-function! s:ZoomToggle() abort
-    if exists('t:zoomed') && t:zoomed
-        execute t:zoom_winrestcmd
-        let t:zoomed = 0
-    else
-        let t:zoom_winrestcmd = winrestcmd()
-        resize
-        vertical resize
-        let t:zoomed = 1
-    endif
-endfunction
-command! ZoomToggle call s:ZoomToggle()
-nnoremap <silent> + :ZoomToggle<cr>
 
 # }}}
