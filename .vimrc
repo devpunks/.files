@@ -244,7 +244,8 @@ nnoremap <esc> :nohlsearch<cr>
 "   - https://stackoverflow.com/questions/17783539/tag-navigation-in-vim
 
 " tabs
-nnoremap <C-t> :tabnew<cr>
+" TODO: <C-t> conflicts with :tab pop
+"nnoremap <C-t> :tabnew<cr>
 nnoremap <C-n> :tabnext<cr>
 nnoremap <C-p> :tabprevious<cr>
 " simulate break pane in TMUX
