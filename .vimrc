@@ -205,7 +205,7 @@ set completepopup+=align:menu,border:on,highlight:Pmenu
 " vnoremap <c-c> "*y<cr>
 " inoremap <c-v> “*p<cr>
 " set clipboard=unnamedplus
-" 
+"
 "  copy and paste
 " vmap <C-c> "+yi
 " vmap <C-x> "+c
