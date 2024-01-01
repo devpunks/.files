@@ -52,6 +52,14 @@ execute "set <xDown>=\<Esc>[@;*B"
 execute "set <xRight>=\<Esc>[@;*C"
 execute "set <xLeft>=\<Esc>[@;*D"
 
+" typography.vim FONTS ------------------------------------------------
+" Italic Font ???
+" https://stackoverflow.com/a/30937851/173208
+let &t_ZH="\e[3m" " italics start
+let &t_ZR="\e[23m" " italics  end
+let &t_Cs = "\e[4:3m" " Undercurl start
+let &t_Ce = "\e[4:0m" " Undercurl end
+
 " NOTES -------------------------------------------------------------------
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
 "  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
