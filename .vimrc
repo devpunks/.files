@@ -504,6 +504,7 @@ for type in ["Add", "Delete", "Change"]
   execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
   execute "verbose hi GitGutter".type
 endfor
+
 " }}}
 
 " ********************************************************************************
