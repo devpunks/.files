@@ -20,7 +20,7 @@ tmux send-keys 'vi' C-m
 
 # Split pane 0 vertically by 30%
 tmux split-window -h -l 30
-tmux send-keys "git status" Enter
+tmux send-keys 'git status' Enter
 
 # Split pane 1 horizontally
 tmux split-window -v -l 5
