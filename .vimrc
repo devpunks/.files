@@ -88,7 +88,7 @@ set foldcolumn=2
 set foldmethod=indent "Enable indent folding
 
 if &compatible
-  set nocompatible " = https://stackoverflow.com/questions/5845557
+  set nocompatible " https://stackoverflow.com/questions/5845557
 endif
 
 "set shell " The shell used to execute commands
