@@ -593,8 +593,7 @@ highlight WhiteSpace ctermbg=NONE ctermfg=244
 highlight VisualColor ctermbg=132 ctermfg=234
 highlight NormalColor ctermbg=234 ctermfg=magenta
 highlight InsertColor ctermbg=magenta ctermfg=234
-highlight ReplaceColor guifg=Black guibg=maroon ctermbg=165 ctermfg=0
-
+highlight ReplaceColorn ctermbg=165 ctermfg=0
 highlight TabColorNC ctermbg=black ctermfg=132 cterm=bold
 
 
