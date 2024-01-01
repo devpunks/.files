@@ -210,8 +210,6 @@ finish
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
 "   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
 "   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
-set history=1000  " Increase undo limit
-set tabpagemax=50 " Maximum number of tab pages
 vnoremap <c-c> "*y<cr>
 inoremap <c-v> “*p<cr>
 set clipboard=unnamedplus
