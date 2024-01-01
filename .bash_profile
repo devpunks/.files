@@ -202,6 +202,7 @@ alias gr='git rebase -i'
 alias gs='git status'
 alias gt="(
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+  # https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   GIT_PAGER=cat \
     git log --graph --since='1 day ago' --pretty=format:'%h %ad %an (%ar) \"%s\"'
   echo && echo Total: \
