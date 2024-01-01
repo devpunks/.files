@@ -230,7 +230,9 @@ export LS_COLORS="*LS_COLORS=48;5;89;38;5;197;1;3;4;7:readline-colored-completio
 # https://the.exa.website/docs/colour-themes
 export EXA_COLORS="${LS_COLORS}:hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:sn=1;4;38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;4;38;5;2:.*=2;3;18;38;5;8:"
 
-# FUNCTIONS -------------------------------------
+# }}}
+
+# {{{ FUNCTIONS -------------------------------------
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # ------------------------------------------------
