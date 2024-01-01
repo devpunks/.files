@@ -581,13 +581,11 @@ for type in ["Add", "Delete", "Change"]
   execute "verbose hi GitGutter".type
 endfor
 " https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
-highlight DiffAdd ctermfg=green guifg=green
-highlight DiffDelete ctermfg=red guifg=red
-highlight DiffChange ctermfg=yellow guifg=yellow
+highlight DiffAdd ctermfg=green
+highlight DiffDelete ctermfg=red
+highlight DiffChange ctermfg=yellow
 
 " ---------------------------------------------------------------------
-
-
 highlight Braces ctermfg=249
 highlight ColorColumn ctermbg=red
 highlight Error ctermbg=13 ctermfg=black
