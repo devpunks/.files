@@ -511,6 +511,7 @@ function term {
   echo && echo "Bindings \033[3m( see ~/.inputrc )\033[23m :" && shortcuts
   echo && echo "stty: $(stty -g)" && stty -a
   echo && infocmp -l
+  echo && infocmp -lCr
   echo "\033[27m"
   echo && dircolors --print-ls-colors
   echo && colors
