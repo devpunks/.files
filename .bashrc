@@ -242,3 +242,5 @@ export EXA_COLORS="${LS_COLORS}:hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:sn=1;4;38;5
 git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (🐙 \1)/'
 }
+
+# }}}
