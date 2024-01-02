@@ -489,10 +489,6 @@ set statusline+=\ (%p%%)\
 let scheme = get(g:, 'colors_name', 'NONE')
 set statusline+=\ \ \ \ 🎨\ %{scheme}\ 
 
-" Interactive Status -----------------------------
-autocmd InsertEnter * highlight! link StatusLine InsertColor
-autocmd InsertLeave * highlight! link StatusLine NormalColor
-
 " }}}
 
 " {{{ GUTTER ------------------------------------------------
