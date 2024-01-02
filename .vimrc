@@ -573,7 +573,6 @@ hi InfoPopUp ctermbg=green
 finish
 
 
-
 " Custom Color Groups
 " gutter --------------------------------------------------------------
 " https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
