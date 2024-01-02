@@ -677,6 +677,13 @@ highlight CursorLineNr ctermfg=magenta ctermbg=234
 highlight StatusFileName ctermbg=234 ctermfg=magenta
 highlight Search term=reverse ctermfg=black ctermbg=13
 
+" Popups
+highlight InfoPopUp ctermbg=green
+highlight Pmenu ctermfg=132 ctermbg=235
+highlight PmenuThumb ctermfg=red ctermbg=132
+highlight PmenuSbar ctermfg=green ctermbg=black
+highlight PmenuSel ctermfg=magenta ctermbg=black
+highlight Scrollbar ctermfg=red ctermbg=blue
 
 hi InfoPopUp ctermbg=green
 finish
