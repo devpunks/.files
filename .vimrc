@@ -589,6 +589,9 @@ endfor
 highlight DiffAdd ctermfg=green
 highlight DiffDelete ctermfg=red
 highlight DiffChange ctermfg=yellow
+" Interactive Status -----------------------------
+autocmd InsertEnter * highlight! link StatusLine InsertColor
+autocmd InsertLeave * highlight! link StatusLine NormalColor
 " ---------------------------------------------------------------------
 highlight Braces ctermfg=249
 highlight ColorColumn ctermbg=red
