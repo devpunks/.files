@@ -598,7 +598,6 @@ highlight DiffChange ctermfg=yellow
 
 highlight NERDTreeCWD ctermfg=5  cterm=italic
 
-" https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 highlight ColorColumn ctermbg=red
 highlight NormalColor cterm=NONE ctermbg=234 ctermfg=darkmagenta
   highlight! link StatusLine NormalColor
