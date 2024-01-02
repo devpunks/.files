@@ -571,8 +571,8 @@ catch | endtry
 let s:gutter_bg='cyan'
 echom "Gutter bg: ".s:gutter_bg
 
-execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
-execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
+execute "highlight SignColumn ctermbg=".s:gutter_bg
+execute "highlight CursorLineNr ctermbg=".s:gutter_bg
 
 for type in ["Add", "Delete", "Change"]
   if ! hlexists("GitGutter".type) | break | endif
