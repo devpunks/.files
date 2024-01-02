@@ -216,6 +216,7 @@ endif
 set wildmenu
 set infercase
 set wildoptions=pum
+set wildignore+=*.DS_STORE " etc.
 set wildmode=list:longest,full
 set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
 set completeopt+=menu,menuone,noinsert,popup,preview
