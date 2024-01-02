@@ -582,15 +582,16 @@ echom "Gutter bg: ".s:gutter_bg
 execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
 execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
 
-hi InfoPopUp ctermbg=green
-finish
-
 for type in ["Add", "Delete", "Change"]
   echom "GitGutter".type." - ".hlexists("GitGutter".type)
 
   execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
   execute "verbose hi GitGutter".type
 endfor
+
+hi InfoPopUp ctermbg=green
+finish
+
 " https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
 highlight DiffAdd ctermfg=green
 highlight DiffDelete ctermfg=red
