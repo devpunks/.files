@@ -584,8 +584,6 @@ execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
 hi InfoPopUp ctermbg=green
 finish
 
-execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
-execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
 for type in ["Add", "Delete", "Change"]
   echom "GitGutter".type." - ".hlexists("GitGutter".type)
 
