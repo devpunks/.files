@@ -115,6 +115,7 @@ export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manua
 # https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
 # https://gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 shopt -s dotglob # https://unix.stackexchange.com/questions/40662/what-is-the-setting-in-bash-for-globbing-to-control-whether-matches-dot-files
+# shopt –s xpg_echo # https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
 shopt -s mailwarn # last access on login
 shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
