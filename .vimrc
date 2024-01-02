@@ -575,6 +575,8 @@ execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
 execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
 
 for type in ["Add", "Delete", "Change"]
+  if ! hlexists("GitGutter".type) | break | endif
+
   echom "GitGutter".type." - ".hlexists("GitGutter".type)
 
   execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
