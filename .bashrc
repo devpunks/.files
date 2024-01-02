@@ -176,6 +176,9 @@ echo -ne '\e[5 q'
 echo -ne '\e]12;#FF00FF\a'
 
 # prompt ------------------------------------------
+# https://askubuntu.com/questions/409599/how-to-reduce-the-command-line-prefix-length-in-bash
+# https://stackoverflow.com/questions/5687446/how-can-i-shortern-my-command-line-prompts-current-directory
+export PROMPT_DIRTRIM=3
 #tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 
 # - https://bash-prompt-generator.org
