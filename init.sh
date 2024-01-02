@@ -19,7 +19,7 @@ pkg install tree
 pkg install wget
 pkg install whois
 pkg install which
-pkg install openssh
+pkg install strace
 pkg install ncurses
 pkg install iproute2
 pkg install vlc && vlc --version
