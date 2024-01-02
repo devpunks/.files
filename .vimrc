@@ -586,9 +586,6 @@ for type in ["Add", "Delete", "Change"]
 endfor
 
 " https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
-highlight DiffAdd ctermfg=green
-highlight DiffDelete ctermfg=red
-highlight DiffChange ctermfg=yellow
 " Interactive Status -----------------------------
 autocmd InsertEnter * highlight! link StatusLine InsertColor
 autocmd InsertLeave * highlight! link StatusLine NormalColor
