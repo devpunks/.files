@@ -670,7 +670,6 @@ highlight TabColorNC ctermbg=black ctermfg=5 cterm=bold
 " Overrides
 highlight SignColumn ctermbg=234
 highlight CursorColumn ctermbg=3
-highlight CursorLineNr ctermfg=magenta ctermbg=234
 highlight Cursor ctermfg=black ctermbg=white
 highlight iCursor ctermfg=black ctermbg=white
 highlight StatusFileName ctermbg=234 ctermfg=magenta
