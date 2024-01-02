@@ -129,6 +129,7 @@ set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set cursorlineopt=both " [number,line,both,screenline]
 set showmatch matchtime=3 " jump to matching brace
+set splitbelow splitright " new windows
 
 " Buffers ---------------------------
 set hidden " set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
