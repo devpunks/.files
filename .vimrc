@@ -567,10 +567,6 @@ catch | endtry
 
 " Custom Color Groups
 " gutter --------------------------------------------------------------
-" https://stackoverflow.com/questions/15277241/changing-vim-gutter-color
-verbose hi LineNr
-verbose hi CursorLineNr
-verbose hi SignColumn
 " let s:gutter_bg=s:GetColor('LineNr', 'bg#')
 let s:gutter_bg='red'
 echom "Gutter bg: ".s:gutter_bg
