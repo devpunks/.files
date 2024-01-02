@@ -36,9 +36,11 @@
 
 set encoding=utf-8
 
-unlet! skip_defaults_vim
-let g:skip_defaults_vim=0
-source $VIMRUNTIME/defaults.vim
+if !exists("g:pluginname_setting")
+  unlet! skip_defaults_vim
+  let g:skip_defaults_vim=0
+  source $VIMRUNTIME/defaults.vim
+endif
 
 " xterm-focus-event tracking - https://github.com/vim/vim/issues/9296
 let &t_fe = "\<Esc>[?1004h" " enable focus-event tracking
