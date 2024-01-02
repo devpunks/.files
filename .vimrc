@@ -675,6 +675,7 @@ highlight Cursor ctermfg=black ctermbg=white
 highlight LineNr ctermfg=darkgrey ctermbg=234
 highlight CursorLineNr ctermfg=magenta ctermbg=234
 highlight StatusFileName ctermbg=234 ctermfg=magenta
+highlight Search term=reverse ctermfg=black ctermbg=13
 
 
 hi InfoPopUp ctermbg=green
