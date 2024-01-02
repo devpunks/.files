@@ -609,10 +609,6 @@ highlight ReplaceColorn ctermbg=165 ctermfg=0
 highlight TabColorNC ctermbg=black ctermfg=132 cterm=bold
 
 
-hi InfoPopUp ctermbg=green
-finish
-
-
 " Native Color Groups
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 highlight Directory ctermfg=13
