@@ -307,6 +307,7 @@ cmap <c-r> :source ~/.vimrc<CR>
 
 set smarttab " 'tab' insertion
 set autoindent " auto(matically smart)indent
+set copyindent " copy previous line indentation
 set smartindent " indent based off current line
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
