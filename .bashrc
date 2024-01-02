@@ -218,7 +218,7 @@ export GREP_COLORS="ln=1;4;38;5;241:ms=${GREP_COLOR}:"
 
 # https://gist.github.com/thomd/7667642
 # https://github.com/trapd00r/LS_COLORS?tab=readme-ov-file
-# http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors
+# http://bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors
 # https://unix.stackexchange.com/questions/94299/dircolors-modify-color-settings-globaly
 # https://github.com/RobertAudi/.dotfiles/blob/master/docs/cheat-sheets/ls-colors-cheat-sheet.txt
 # https://stackoverflow.com/questions/41849875/how-to-format-the-output-of-tree-in-linux-so-the-colour-scheme-still-applies
