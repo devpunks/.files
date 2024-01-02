@@ -568,7 +568,7 @@ catch | endtry
 " Custom Color Groups
 " gutter --------------------------------------------------------------
 " let s:gutter_bg=s:GetColor('LineNr', 'bg#')
-let s:gutter_bg='red'
+let s:gutter_bg='cyan'
 echom "Gutter bg: ".s:gutter_bg
 
 execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
