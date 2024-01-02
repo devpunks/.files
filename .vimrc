@@ -575,6 +575,9 @@ catch | endtry
 verbose hi LineNr
 verbose hi CursorLineNr
 verbose hi SignColumn
+" let s:gutter_bg=s:GetColor('LineNr', 'bg#')
+let s:gutter_bg='red'
+echom "Gutter bg: ".s:gutter_bg
 
 hi InfoPopUp ctermbg=green
 finish
