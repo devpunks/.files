@@ -625,9 +625,6 @@ highlight Statement ctermfg=132
 highlight! link Function Statement
 highlight! link StorageClass Statement
 highlight! link Type Identifier
-" Interactive Status -----------------------------
-autocmd InsertEnter * highlight! link StatusLine InsertColor
-autocmd InsertLeave * highlight! link StatusLine NormalColor
 highlight! link StatusLine NormalColor
 highlight! link StatusLineTerm StatusLine
 highlight StatusLineNC ctermfg=249
