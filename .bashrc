@@ -64,8 +64,8 @@ fi
 #  - https://superuser.com/a/1779369
 #  - https://github.com/termux/termux-packages/issues/3009
 #  - https://github.com/termux/termux-packages/issues/2796#issuecomment-424589888
-#  - https://www.gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html
-#  - https://www.gnu.org/software/gettext/manual/html_node/Setting-the-POSIX-Locale.html
+#  - https://gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html
+#  - https://gnu.org/software/gettext/manual/html_node/Setting-the-POSIX-Locale.html
 export LANGUAGE=en:fr:de  # LC_MESSAGES Override
 export LANG=en_US.UTF-8   # Locale override (from "C")
 export LC_ALL=$LANG
