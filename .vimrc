@@ -578,6 +578,8 @@ verbose hi SignColumn
 " let s:gutter_bg=s:GetColor('LineNr', 'bg#')
 let s:gutter_bg='red'
 echom "Gutter bg: ".s:gutter_bg
+execute "hi SignColumn guibg=NONE ctermbg=".s:gutter_bg
+execute "hi CursorLineNr guibg=NONE ctermbg=".s:gutter_bg
 
 hi InfoPopUp ctermbg=green
 finish
