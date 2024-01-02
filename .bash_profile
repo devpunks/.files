@@ -133,6 +133,8 @@ alias delete='command rm -dIrv --preserve-root'
 # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
 alias now='date +"%T"'
+alias rand='echo $RANDOM'
+alias random='echo $SRANDOM'
 alias ping='ping -c 100 -s.2'
 alias ports='netstat -tulanp'
 alias mount='mount |column -t'
