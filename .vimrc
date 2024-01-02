@@ -596,14 +596,20 @@ highlight DiffAdd ctermfg=green
 highlight DiffDelete ctermfg=red
 highlight DiffChange ctermfg=yellow
 
+highlight Normal cterm=NONE ctermbg=NONE ctermfg=red
+" highlight! link StatusLine NormalColor
+"   highlight! link StatusLineTerm StatusLine
+" highlight! link StatusLineNC NormalColor
+"   highlight! link StatusLineTermNC StatusLineNC
+
+
+finish
+
+
+
 highlight NERDTreeCWD ctermfg=5  cterm=italic
 
 highlight ColorColumn ctermbg=red
-highlight NormalColor cterm=NONE ctermbg=234 ctermfg=darkmagenta
-  highlight! link StatusLine NormalColor
-    highlight! link StatusLineTerm StatusLine
-  highlight! link StatusLineNC NormalColor
-    highlight! link StatusLineTermNC StatusLineNC
 highlight InsertColor cterm=reverse ctermbg=234 ctermfg=darkmagenta
   highlight! link TabColor NormalColor
     highlight! link TabLineSel TabColor
