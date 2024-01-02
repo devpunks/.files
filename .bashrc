@@ -24,6 +24,7 @@ TZ='Etc/UTC'
 # ******************************************************
 
 export EDITOR=vi
+export INPUTRC="$HOME/.inputrc"
 
 # Software Flow Control
 #  - https://unix.stackexchange.com/questions/515252
