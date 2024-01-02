@@ -469,7 +469,7 @@ function permit {
     && echo "Does not exist!" \
     && return
 
-  ls $1
+  chmod -v 755 $1
 
 # chmod -v 755 $1
 }
