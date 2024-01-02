@@ -643,23 +643,31 @@ highlight Directory ctermfg=magenta
   highlight! link NERDTreeDir Directory
 highlight Title cterm=bold ctermfg=159
 highlight Special cterm=bold ctermfg=183
-highlight! link Constant Special
-highlight Statement ctermfg=132
-highlight! link Function Statement
-highlight! link StorageClass Statement
-highlight! link Type Identifier
-highlight! link StatusLine NormalColor
-highlight! link StatusLineTerm StatusLine
-highlight StatusLineNC ctermfg=249
-highlight! link StatusLineTermNC StatusLineNC
-highlight Pmenu ctermfg=132 ctermbg=235
-highlight VertSplit ctermfg=132 ctermbg=232
-highlight PmenuThumb ctermfg=red ctermbg=132
-highlight Scrollbar ctermfg=red ctermbg=blue
-highlight Search term=reverse ctermfg=black ctermbg=13
-highlight PmenuSbar ctermfg=green ctermbg=black
-highlight PmenuSel ctermfg=magenta ctermbg=black
-highlight LineNr ctermfg=darkgrey ctermbg=234
+  highlight! link vimAutoEventList Special
+  highlight! link vimHiGroup Special
+    highlight! link vimGroup vimHiGroup
+  highlight! link Constant Special
+highlight String cterm=italic ctermfg=cyan
+  highlight! link vimHiCtermColor String
+  highlight! link shQuote String
+  highlight! link shQuote String
+  highlight! link vimNumber String
+    highlight! link vimHiNmbr vimNumber
+  highlight! link vimFunction String
+    highlight! link vimUserFunc vimFunction
+highlight StringDelimiter cterm=bold ctermfg=132
+  highlight! link PreProc String
+highlight WhiteSpace ctermbg=NONE ctermfg=8
+  highlight! link NonText WhiteSpace
+  highlight! link SpecialKey WhiteSpace
+highlight VisualColor ctermbg=132 ctermfg=234
+highlight VertSplit ctermfg=darkgrey ctermbg=NONE
+highlight ReplaceColorn ctermbg=165 ctermfg=0
+highlight TabColorNC ctermbg=black ctermfg=5 cterm=bold
+  highlight! link TabLine TabColorNC
+    highlight! link TabLineFill TabLine
+
+" Overrides
 highlight SignColumn ctermbg=234
 highlight CursorColumn ctermbg=3
 highlight CursorLineNr ctermfg=magenta ctermbg=234
