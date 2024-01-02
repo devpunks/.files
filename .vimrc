@@ -579,7 +579,9 @@ for type in ["Add", "Delete", "Change"]
 
   echom "GitGutter".type." - ".hlexists("GitGutter".type)
 
-  execute "hi GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
+  execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
+  execute "verbose hi GitGutter".type
+  execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
   execute "verbose hi GitGutter".type
 endfor
 
