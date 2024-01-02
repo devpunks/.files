@@ -183,6 +183,7 @@ export PROMPT_DIRTRIM=3
 
 # - https://bash-prompt-generator.org
 # - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x264.html
+# - https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
 # - https://unix.stackexchange.com/questions/105958/terminal-prompt-not-wrapping-correctly
 # - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 # - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
