@@ -634,9 +634,6 @@ highlight Pmenu ctermfg=132 ctermbg=235
 highlight VertSplit ctermfg=132 ctermbg=232
 highlight PmenuThumb ctermfg=red ctermbg=132
 highlight Scrollbar ctermfg=red ctermbg=blue
-highlight! link SpellBad Error
-highlight! link ErrorMsg Error
-highlight! link WarningMsg Error
 highlight Search term=reverse ctermfg=black ctermbg=13
 highlight PmenuSbar ctermfg=green ctermbg=black
 highlight PmenuSel ctermfg=magenta ctermbg=black
