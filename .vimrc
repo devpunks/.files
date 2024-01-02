@@ -560,7 +560,7 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 "hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 
 set t_Co=256 " enablf 256 colors
-set background=dark
+set background= " [dark|light]
 try
 "  colorscheme jellybeans " Set color scheme
 catch | endtry
