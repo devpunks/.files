@@ -708,4 +708,4 @@ function! s:HighlightGroup()
 endfun
 command! Colors call HighlightGroup()
 
-# }}}
+" }}}
