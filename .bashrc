@@ -130,7 +130,7 @@ shopt -s globstar # https://linuxjournal.com/content/globstar-new-bash-globbing-
 # }}}
 
 # {{{ History ******************************************************
-# - https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
+# - https://gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
 # https://superuser.com/questions/788428/how-to-port-my-current-bash-history-over-when-opening-a-tmux-session
 # - Reverse Search
 #   - https://www.gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
