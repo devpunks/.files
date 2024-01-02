@@ -593,10 +593,6 @@ endfor
 highlight DiffAdd ctermfg=green
 highlight DiffDelete ctermfg=red
 highlight DiffChange ctermfg=yellow
-
-hi InfoPopUp ctermbg=green
-finish
-
 " ---------------------------------------------------------------------
 highlight Braces ctermfg=249
 highlight ColorColumn ctermbg=red
