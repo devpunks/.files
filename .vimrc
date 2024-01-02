@@ -685,50 +685,6 @@ highlight PmenuSbar ctermfg=green ctermbg=black
 highlight PmenuSel ctermfg=magenta ctermbg=black
 highlight Scrollbar ctermfg=red ctermbg=blue
 
-hi InfoPopUp ctermbg=green
-finish
-
-
-" Overrides
-highlight vimOper ctermfg=13
-highlight! link vimEcho vimOper
-highlight! link vimMapLhs vimOper
-highlight! link vimCmdSep vimOper
-highlight! link vimHiBang vimOper
-highlight! link vimUserCmd vimOper
-highlight! link vimHiKeyList vimOper
-highlight! link vimFunction String
-highlight! link vimUserFunc vimFunction
-highlight! link vimIsCommand Statement
-highlight! link vimVar vimIsCommand
-highlight! link vimAutoCmdSfxList vimOper
-highlight! link vimAutoEventList Delimiter
-highlight! link shQuote String
-highlight! link shQuote String
-highlight! link vimMapRhs Identifier
-highlight! link vimSetEqual vimOper
-highlight! link vimSet vimSetEqual
-highlight! link vimHiCtermColor String
-highlight! link vimHiGroup Special
-highlight! link vimGroup vimHiGroup
-highlight! link vimNumber String
-highlight! link vimHiNmbr vimNumber
-highlight! link NERDTreeDir Directory
-highlight NERDTreeCWD ctermfg=13  cterm=reverse
-highlight! link NERDTreeFile Statement
-highlight! link NERDTreeExecFile Statement
-highlight! link cssBraces Braces
-highlight! link rubyParentheses Braces
-highlight! link rubyCurlyBlockDelimiter Braces
-highlight rubyMethodBlock ctermfg=132
-highlight! link javaScriptBraces Braces
-highlight! link javaScriptParens Braces
-highlight htmlTagName cterm=bold ctermfg=134
-highlight! link htmlTagN htmlTagName
-highlight! link htmlSpecialTagName htmlTagName
-highlight! link cssTagName htmlTagName
-highlight! link cssSelectorOp Statement
-highlight! default link cssIdentifier Identifier
 " }}}
 
 " ********************************************************************************
