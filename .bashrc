@@ -180,7 +180,7 @@ echo -ne '\e]12;#FF00FF\a'
 # - https://bash-prompt-generator.org
 # - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x264.html
 # - https://unix.stackexchange.com/questions/105958/terminal-prompt-not-wrapping-correctly
-# - https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
+# - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 # - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
 # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 #PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
