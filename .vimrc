@@ -610,8 +610,6 @@ highlight TabColorNC ctermbg=black ctermfg=132 cterm=bold
 highlight! link SpellBad Error
 highlight! link ErrorMsg Error
 highlight! link WarningMsg Error
-highlight Directory ctermfg=13
-highlight String cterm=italic ctermfg=117
 highlight! link TabColor NormalColor
 highlight! link TabLine TabColorNC
 highlight! link TabLineSel TabColor
