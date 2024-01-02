@@ -606,6 +606,9 @@ highlight TabColorNC ctermbg=black ctermfg=132 cterm=bold
 
 " Native Color Groups
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
+highlight! link SpellBad Error
+highlight! link ErrorMsg Error
+highlight! link WarningMsg Error
 highlight Directory ctermfg=13
 highlight String cterm=italic ctermfg=117
 highlight! link TabColor NormalColor
