@@ -569,7 +569,6 @@ try
 "  colorscheme jellybeans " Set color scheme
 catch | endtry
 
-
 hi InfoPopUp ctermbg=green
 finish
 
