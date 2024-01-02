@@ -471,7 +471,7 @@ function permit {
 
   chmod -v 755 $1
 
-# chmod -v 755 $1
+  ls $1
 }
 
 # https://bash.cyberciti.biz/guide/Reset_command
