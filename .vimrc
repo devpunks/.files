@@ -393,6 +393,7 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " ZoomWin
 " --------------------------------------------------------------------------------
 nnoremap , :ZoomWin<cr>
+nnoremap <leader>z :ZoomWin<cr>
 
 " --------------------------------------------------------------------------------
 " NERDTree
