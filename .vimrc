@@ -598,17 +598,49 @@ highlight DiffChange ctermfg=yellow
 highlight NERDTreeCWD ctermfg=5  cterm=italic
 
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
-highlight! link SpellBad Error
-highlight! link ErrorMsg Error
-highlight! link WarningMsg Error
-highlight! link TabColor NormalColor
-highlight! link TabLine TabColorNC
-highlight! link TabLineSel TabColor
-highlight! link TabLineFill TabLine
-highlight! link NonText WhiteSpace
-highlight! link SpecialKey WhiteSpace
-highlight! link  PreProc String
-highlight StringDelimiter cterm=bold ctermfg=132
+highlight ColorColumn ctermbg=red
+highlight NormalColor cterm=NONE ctermbg=234 ctermfg=darkmagenta
+  highlight! link StatusLine NormalColor
+    highlight! link StatusLineTerm StatusLine
+  highlight! link StatusLineNC NormalColor
+    highlight! link StatusLineTermNC StatusLineNC
+highlight InsertColor cterm=reverse ctermbg=234 ctermfg=darkmagenta
+  highlight! link TabColor NormalColor
+    highlight! link TabLineSel TabColor
+
+highlight Operator ctermfg=13
+  highlight! link vimEcho vimOper
+  highlight! link vimMapLhs vimOper
+  highlight! link vimCmdSep vimOper
+  highlight! link vimHiBang vimOper
+  highlight! link vimUserCmd vimOper
+  highlight! link vimSetEqual vimOper
+    highlight! link vimSet vimSetEqual
+  highlight! link vimHiKeyList vimOper
+  highlight! link vimAutoCmdSfxList vimOper
+highlight Braces ctermfg=white
+  highlight! link cssBraces Braces
+  highlight! link rubyParentheses Braces
+  highlight! link rubyCurlyBlockDelimiter Braces
+  highlight! link javaScriptBraces Braces
+  highlight! link javaScriptParens Braces
+highlight Identifier cterm=underline ctermfg=fg
+  highlight! link Type Identifier
+  highlight! link vimMapRhs Identifier
+  highlight! default link cssIdentifier Identifier
+highlight Error cterm=reverse,underline ctermfg=darkred
+  highlight! link ErrorMsg Error
+  highlight! link WarningMsg Error
+highlight Statement ctermfg=132
+  highlight! link NERDTreeFile Statement
+  highlight! link NERDTreeExecFile Statement
+  highlight! link cssSelectorOp Statement
+  highlight! link Function Statement
+  highlight! link StorageClass Statement
+  highlight! link vimIsCommand Statement
+    highlight! link vimVar vimIsCommand
+highlight Directory ctermfg=magenta
+  highlight! link NERDTreeDir Directory
 highlight Title cterm=bold ctermfg=159
 highlight Special cterm=bold ctermfg=183
 highlight! link Constant Special
