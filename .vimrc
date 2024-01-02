@@ -597,6 +597,7 @@ highlight Braces ctermfg=249
 highlight Directory ctermfg=13
 highlight ColorColumn ctermbg=red
 highlight Error ctermbg=13 ctermfg=black
+highlight String cterm=italic ctermfg=117
 highlight WhiteSpace ctermbg=NONE ctermfg=244
 highlight VisualColor ctermbg=132 ctermfg=234
 highlight NormalColor ctermbg=234 ctermfg=magenta
