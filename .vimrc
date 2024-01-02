@@ -127,7 +127,7 @@ set noerrorbells " Unset display beep on errors
 set belloff+=ctrlg  " Turn off insert completion bell
 set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
-set cursorlineopt=number,line " [number,line,both,screenline]
+set cursorlineopt=both " [number,line,both,screenline]
 set showmatch matchtime=3 " jump to matching brace
 
 " Buffers ---------------------------
