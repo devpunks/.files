@@ -645,6 +645,11 @@ highlight Cursor ctermfg=blacke ctermbg=white
 highlight iCursor ctermfg=black ctermbg=white
 highlight StatusFileName ctermbg=234 ctermfg=magenta
 
+
+hi InfoPopUp ctermbg=green
+finish
+
+
 " Overrides
 highlight vimOper ctermfg=13
 highlight! link vimEcho vimOper
