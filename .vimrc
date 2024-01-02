@@ -594,6 +594,7 @@ autocmd InsertEnter * highlight! link StatusLine InsertColor
 autocmd InsertLeave * highlight! link StatusLine NormalColor
 " ---------------------------------------------------------------------
 highlight Braces ctermfg=249
+highlight Directory ctermfg=13
 highlight ColorColumn ctermbg=red
 highlight Error ctermbg=13 ctermfg=black
 highlight WhiteSpace ctermbg=NONE ctermfg=244
