@@ -11,6 +11,7 @@ let g:colors_name="devPunks😈Mono"
 
 " TODO: Foo
 
+highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 highlight! SignColumn   cterm=standout ctermbg=0
 highlight! LineNr       cterm=NONE      ctermfg=8
