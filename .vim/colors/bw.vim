@@ -32,9 +32,6 @@ highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NON
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
 
-
-highlight! ErrorMsg       cterm=standout       ctermfg=NONE
-
 highlight! Title          cterm=bold           ctermfg=NONE
 highlight! Visual         cterm=reverse        ctermfg=NONE
 
