@@ -432,7 +432,7 @@ function environment {
   echo "\n\n\n\$BASH: $BASH\n👇Options👇\n$BASHOPTS"
   echo "\n\$SHELL: $SHELL\n👇Options👇\n$SHELLOPTS"
 
-  # echo && echo Commands:
+  echo && echo 👇Commands:👇
   compgen -c | column
   # echo && echo Var Names:
   compgen -v | column
