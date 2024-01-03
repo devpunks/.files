@@ -60,6 +60,5 @@ highlight! Special        cterm=bold           ctermfg=NONE
   highlight! link PreProc Special
 highlight! Comment        cterm=italic        ctermfg=8
 highlight! Constant       cterm=italic,underline        ctermfg=7
-" highlight! String       cterm=underline      ctermfg=red
 highlight! Statement      cterm=NONE           ctermfg=NONE
 highlight! Underlined     cterm=underline      ctermfg=NONE
