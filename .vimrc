@@ -655,9 +655,9 @@ highlight Directory ctermfg=magenta
   highlight! link NERDTreeDir Directory
 highlight Title cterm=bold ctermfg=159
 highlight Special cterm=bold ctermfg=183
-  highlight! link vimAutoEventList Special
-  highlight! link vimHiGroup Special
-    highlight! link vimGroup vimHiGroup
+" highlight! link vimAutoEventList Special
+" highlight! link vimHiGroup Special
+"   highlight! link vimGroup vimHiGroup
   highlight! link Constant Special
 highlight String cterm=italic ctermfg=cyan
   highlight! link vimHiCtermColor String
