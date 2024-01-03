@@ -440,7 +440,6 @@ function environment {
   echo $( compgen -e ) | column
   echo && echo 👇Built-ins:👇
   echo $( compgen -b ) | column
-
   echo && echo Functions:
   compgen -A function | column
   echo && echo Env Var Names:
