@@ -31,7 +31,6 @@ highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NON
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
 
-highlight! VertSplit      cterm=reverse        ctermfg=NONE
 
 highlight! ErrorMsg       cterm=standout       ctermfg=NONE
 highlight! SpecialKey     cterm=bold           ctermfg=NONE
