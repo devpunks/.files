@@ -491,7 +491,7 @@ set statusline+=\ \ \ \ 🎨\ %{scheme}\
 
 " }}}
 
-" {{{ GUTTER ------------------------------------------------
+" {{{ GUTTER
 " https://github.com/airblade/vim-gitgutter/commit/8db2fc5
 set number
 set numberwidth=4 " gutter columns
