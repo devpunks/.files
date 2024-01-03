@@ -433,7 +433,7 @@ function environment {
   echo "\n\$SHELL: $SHELL\n👇Options👇\n$SHELLOPTS"
 
   # echo && echo Commands:
-  # compgen -c
+  compgen -c | column
   # echo && echo Var Names:
   # compgen -v
 
