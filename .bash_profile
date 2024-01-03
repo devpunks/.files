@@ -438,7 +438,7 @@ function environment {
   compgen -v | column
 
   echo && echo 👇Exports👇
-  echo $( compgen -e )
+  echo $( compgen -e ) | column
   echo && echo 👇Aliases👇
   echo $( compgen -a ) # alias -p # for declaration
   echo && echo 👇Built-ins👇
