@@ -15,7 +15,7 @@ highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 highlight! SignColumn   cterm=NONE ctermbg=NONE ctermfg=NONE
 highlight! LineNr       cterm=NONE      ctermfg=8
-highlight! CursorLineNr cterm=standout ctermfg=7
+highlight! CursorLineNr cterm=standout ctermfg=darkgrey
 highlight! CursorColumn cterm=bold ctermfg=7 ctermbg=8
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=cyan
 
