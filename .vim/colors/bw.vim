@@ -17,8 +17,7 @@ highlight! FoldColumn     cterm=standout       ctermfg=NONE
 highlight! Folded         cterm=standout       ctermfg=NONE
 
 highlight! Todo           cterm=standout       ctermfg=NONE
-highlight! Error          cterm=reverse        ctermfg=NONE
-highlight! LineNr         cterm=underline      ctermfg=NONE
+highlight! Error          cterm=standout       ctermfg=blue
 highlight! NonText        cterm=bold           ctermfg=NONE
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
