@@ -435,7 +435,7 @@ function environment {
   # echo && echo Commands:
   compgen -c | column
   # echo && echo Var Names:
-  # compgen -v
+  compgen -v | column
 
   echo && echo 👇Exports👇
   echo $( compgen -e )
