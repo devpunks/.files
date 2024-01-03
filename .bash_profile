@@ -449,7 +449,7 @@ function environment {
   compgen -k | column
   echo && echo 👇Env Vars:👇
   env
-  echo && echo Shell Vars:
+  echo && echo 👇Shell Vars:👇
   (set -o posix; set; set +o posix)
   echo && echo Declarations:
   declare -p | cut -d " " -f 3
