@@ -597,9 +597,9 @@ autocmd InsertLeave * highlight! link StatusLine NormalColor
 " ---------------------------------------------------------------------
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 " Gutter
-highlight DiffAdd ctermfg=green
-highlight DiffDelete ctermfg=red
-highlight DiffChange ctermfg=yellow
+" highlight DiffAdd ctermfg=green
+" highlight DiffDelete ctermfg=red
+" highlight DiffChange ctermfg=yellow
 
 highlight Normal cterm=NONE ctermbg=NONE ctermfg=red
 " highlight! link StatusLine NormalColor
