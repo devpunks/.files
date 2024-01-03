@@ -605,6 +605,11 @@ highlight Normal cterm=NONE ctermbg=NONE ctermfg=red
 "   highlight! link StatusLineTermNC StatusLineNC
 
 
+function! s:HighlightGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+command! Color call s:HighlightGroup()
 finish
 
 
