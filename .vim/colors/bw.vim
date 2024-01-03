@@ -46,7 +46,9 @@ highlight! DiffChange     cterm=bold           ctermfg=NONE
 highlight! DiffDelete     cterm=bold           ctermfg=NONE
 highlight! DiffText       cterm=reverse        ctermfg=NONE
 
-highlight! Type           cterm=underline      ctermfg=NONE
+highlight! Type           cterm=reverse,bold,underline ctermfg=grey
+highlight! Identifier     cterm=bold           ctermfg=grey
+
 highlight! Ignore         cterm=bold           ctermfg=NONE
 highlight! Special        cterm=bold           ctermfg=NONE
 highlight! PreProc        cterm=underline      ctermfg=NONE
