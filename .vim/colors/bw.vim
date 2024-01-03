@@ -56,6 +56,5 @@ highlight! Special        cterm=bold           ctermfg=NONE
 highlight! Comment        cterm=italic        ctermfg=8
 highlight! Constant       cterm=italic,underline        ctermfg=7
 " highlight! String       cterm=underline      ctermfg=red
-highlight! Statement      cterm=bold           ctermfg=NONE
-highlight! Identifier     cterm=underline      ctermfg=NONE
+highlight! Statement      cterm=NONE           ctermfg=NONE
 highlight! Underlined     cterm=underline      ctermfg=NONE
