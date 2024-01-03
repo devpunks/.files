@@ -447,7 +447,7 @@ function environment {
 
   echo && echo 👇Reserved Words:👇
   compgen -k | column
-  echo && echo Env Vars:
+  echo && echo 👇Env Vars:👇
   env
   echo && echo Shell Vars:
   (set -o posix; set; set +o posix)
