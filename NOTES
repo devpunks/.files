@@ -112,7 +112,11 @@ Android Accessibility
 - [CTRL][ALT] + V   # Paste
 
 # TMUX ---------------------------------
-# Bind(ed) Keys - tmux list-keys
+# Bind(ed) Keys
+#   - tmux list-keys
+#   - tmux list-keys -a
+#   - tmux list-keys -N(ame)
+#   - tmux list-keys -T(able)
 # Shortcut mappings - <prefix>+?
 
 # VIM ---------------------------------
