@@ -631,11 +631,11 @@ highlight Operator ctermfg=13
 " highlight! link vimHiKeyList vimOper
 " highlight! link vimAutoCmdSfxList vimOper
 highlight Braces ctermfg=white
-  highlight! link cssBraces Braces
-  highlight! link rubyParentheses Braces
-  highlight! link rubyCurlyBlockDelimiter Braces
-  highlight! link javaScriptBraces Braces
-  highlight! link javaScriptParens Braces
+" highlight! link cssBraces Braces
+" highlight! link rubyParentheses Braces
+" highlight! link rubyCurlyBlockDelimiter Braces
+" highlight! link javaScriptBraces Braces
+" highlight! link javaScriptParens Braces
 highlight Identifier cterm=underline ctermfg=fg
   highlight! link Type Identifier
   highlight! link vimMapRhs Identifier
