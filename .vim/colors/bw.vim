@@ -1,0 +1,52 @@
+" devPunks😈Mono (Black & White)
+
+" Maintainer:   Ahmid-Ra <https://github.com/snuggs>
+
+highlight clear
+if exists("syntax_on") | syntax reset | endif
+
+let g:colors_name="devPunks😈Mono"
+" TODO: Foo
+highlight! Todo           cterm=standout       ctermfg=NONE
+highlight! Error          cterm=reverse        ctermfg=NONE
+highlight! LineNr         cterm=underline      ctermfg=NONE
+highlight! NonText        cterm=bold           ctermfg=NONE
+highlight! Question       cterm=standout       ctermfg=NONE
+highlight! Directory      cterm=bold           ctermfg=NONE
+
+highlight! Folded         cterm=standout       ctermfg=NONE
+highlight! FoldColumn     cterm=standout       ctermfg=NONE
+highlight! VertSplit      cterm=reverse        ctermfg=NONE
+
+highlight! ErrorMsg       cterm=standout       ctermfg=NONE
+highlight! SpecialKey     cterm=bold           ctermfg=NONE
+
+highlight! Title          cterm=bold           ctermfg=NONE
+highlight! Visual         cterm=reverse        ctermfg=NONE
+highlight! StatusLine     cterm=bold,reverse   ctermfg=NONE
+highlight! StatusLineNC   cterm=reverse        ctermfg=NONE
+
+highlight! Search         cterm=reverse        ctermfg=NONE
+highlight! IncSearch      cterm=reverse        ctermfg=NONE
+highlight! MoreMsg        cterm=bold           ctermfg=NONE
+highlight! ModeMsg        cterm=bold           ctermfg=NONE
+highlight! WildMenu       cterm=standout       ctermfg=NONE
+highlight! WarningMsg     cterm=standout       ctermfg=NONE
+
+highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
+
+highlight! DiffAdd        cterm=bold           ctermfg=NONE
+highlight! DiffChange     cterm=bold           ctermfg=NONE
+highlight! DiffDelete     cterm=bold           ctermfg=NONE
+highlight! DiffText       cterm=reverse        ctermfg=NONE
+
+highlight! Type           cterm=underline      ctermfg=NONE
+highlight! Ignore         cterm=bold           ctermfg=NONE
+highlight! Special        cterm=bold           ctermfg=NONE
+highlight! PreProc        cterm=underline      ctermfg=NONE
+highlight! Comment        cterm=bold           ctermfg=NONE
+" highlight! Constant       cterm=underline      ctermfg=red
+" highlight! String       cterm=underline      ctermfg=red
+highlight! Statement      cterm=bold           ctermfg=NONE
+highlight! Identifier     cterm=underline      ctermfg=NONE
+highlight! Underlined     cterm=underline      ctermfg=NONE
