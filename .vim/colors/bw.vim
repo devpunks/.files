@@ -2,8 +2,8 @@
 
 " Maintainer:   Ahmid-Ra <https://github.com/snuggs>
 
-highlight clear
-syntax reset
+"highlight clear
+"syntax reset
 
 " if exists("syntax_on") | syntax reset | endif
 
