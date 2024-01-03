@@ -28,6 +28,7 @@ highlight! EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=NONE
 
 highlight! Todo   cterm=standout,bold,underline ctermbg=NONE ctermfg=8
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
+  highlight! link ErrorMsg Error
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
 
