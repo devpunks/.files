@@ -8,6 +8,14 @@ if exists("syntax_on") | syntax reset | endif
 let g:colors_name="devPunks😈Mono"
 
 " TODO: Foo
+
+
+highlight! SignColumn   cterm=standout ctermbg=0
+highlight! LineNr       cterm=NONE      ctermfg=8
+highlight! CursorLineNr cterm=standout ctermfg=7
+highlight! FoldColumn     cterm=standout       ctermfg=NONE
+highlight! Folded         cterm=standout       ctermfg=NONE
+
 highlight! Todo           cterm=standout       ctermfg=NONE
 highlight! Error          cterm=reverse        ctermfg=NONE
 highlight! LineNr         cterm=underline      ctermfg=NONE
