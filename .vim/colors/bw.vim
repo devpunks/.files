@@ -36,8 +36,6 @@ highlight! ErrorMsg       cterm=standout       ctermfg=NONE
 
 highlight! Title          cterm=bold           ctermfg=NONE
 highlight! Visual         cterm=reverse        ctermfg=NONE
-highlight! StatusLine     cterm=bold,reverse   ctermfg=NONE
-highlight! StatusLineNC   cterm=reverse        ctermfg=NONE
 
 highlight! Search         cterm=reverse        ctermfg=NONE
 highlight! IncSearch      cterm=reverse        ctermfg=NONE
