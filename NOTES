@@ -133,6 +133,7 @@ Android Accessibility
 #   - Shell Check - https://www.shellcheck.net
 #   - Explain Shell - https://explainshell.com/
 #   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
+#   - POSIX SHELL - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 #   - Special Parameters - https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
 #
 #   - Reverse Search
