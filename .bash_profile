@@ -442,18 +442,18 @@ function environment {
   echo && echo 👇Aliases👇
   echo $( compgen -a ) | column # alias -p # for declaration
   echo && echo 👇Built-ins👇
-  echo $( compgen -b )
+  echo $( compgen -b ) | column
 
-  # echo && echo Functions:
-  # compgen -A function
-  # echo && echo Env Var Names:
-  # compgen -k
-  # echo && echo Env Vars:
-  # env
-  # echo && echo Shell Vars:
-  # (set -o posix; set; set +o posix)
-  # echo && echo Declarations:
-  # declare -p | cut -d " " -f 3
+  echo && echo Functions:
+  compgen -A function | column
+  echo && echo Env Var Names:
+  compgen -k | column
+  echo && echo Env Vars:
+  env
+  echo && echo Shell Vars:
+  (set -o posix; set; set +o posix)
+  echo && echo Declarations:
+  declare -p | cut -d " " -f 3
 }
 
 # https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x#1075089
