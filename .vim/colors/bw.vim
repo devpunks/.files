@@ -51,9 +51,10 @@ highlight! Identifier     cterm=bold           ctermfg=grey
 
 highlight! Ignore         cterm=bold           ctermfg=NONE
 highlight! Special        cterm=bold           ctermfg=NONE
-highlight! PreProc        cterm=underline      ctermfg=NONE
-highlight! Comment        cterm=bold           ctermfg=NONE
-" highlight! Constant       cterm=underline      ctermfg=red
+  highlight! link Delimiter Special
+  highlight! link PreProc Special
+highlight! Comment        cterm=italic        ctermfg=8
+highlight! Constant       cterm=italic,underline        ctermfg=7
 " highlight! String       cterm=underline      ctermfg=red
 highlight! Statement      cterm=bold           ctermfg=NONE
 highlight! Identifier     cterm=underline      ctermfg=NONE
