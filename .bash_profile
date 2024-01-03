@@ -451,7 +451,7 @@ function environment {
   env
   echo && echo 👇Shell Vars:👇
   (set -o posix; set; set +o posix)
-  echo && echo Declarations:
+  echo && echo 👇Declarations:👇
   declare -p | cut -d " " -f 3
 }
 
