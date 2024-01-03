@@ -33,7 +33,6 @@ highlight! Directory      cterm=bold           ctermfg=NONE
 
 
 highlight! ErrorMsg       cterm=standout       ctermfg=NONE
-highlight! SpecialKey     cterm=bold           ctermfg=NONE
 
 highlight! Title          cterm=bold           ctermfg=NONE
 highlight! Visual         cterm=reverse        ctermfg=NONE
