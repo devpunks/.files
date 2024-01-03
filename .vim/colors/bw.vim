@@ -46,10 +46,10 @@ highlight! WarningMsg     cterm=standout       ctermfg=NONE
 
 highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
 
-highlight! DiffAdd        cterm=bold           ctermfg=NONE
-highlight! DiffChange     cterm=bold           ctermfg=NONE
-highlight! DiffDelete     cterm=bold           ctermfg=NONE
-highlight! DiffText       cterm=reverse        ctermfg=NONE
+highlight DiffAdd    ctermfg=7
+highlight DiffDelete ctermfg=7
+highlight DiffChange ctermfg=8
+highlight DiffText   ctermfg=NONE
 
 highlight! Type           cterm=reverse,bold,underline ctermfg=grey
 highlight! Identifier     cterm=bold           ctermfg=grey
