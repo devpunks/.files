@@ -601,7 +601,7 @@ autocmd InsertLeave * highlight! link StatusLine NormalColor
 " highlight DiffDelete ctermfg=red
 " highlight DiffChange ctermfg=yellow
 
-highlight Normal cterm=NONE ctermbg=NONE ctermfg=red
+"highlight Normal cterm=NONE ctermbg=NONE ctermfg=red
 " highlight! link StatusLine NormalColor
 "   highlight! link StatusLineTerm StatusLine
 " highlight! link StatusLineNC NormalColor
