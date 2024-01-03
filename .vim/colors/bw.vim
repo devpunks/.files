@@ -15,7 +15,10 @@ let g:colors_name="devPunks😈Mono"
 highlight! SignColumn   cterm=standout ctermbg=0
 highlight! LineNr       cterm=NONE      ctermfg=8
 highlight! CursorLineNr cterm=standout ctermfg=7
-highlight! FoldColumn     cterm=standout       ctermfg=NONE
+highlight! CursorColumn cterm=bold ctermfg=7 ctermbg=8
+highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=cyan
+
+verbose highlight! default FoldColumn
 highlight! Folded         cterm=standout       ctermfg=NONE
 
 highlight! Todo           cterm=standout       ctermfg=NONE
