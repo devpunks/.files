@@ -19,8 +19,12 @@ highlight! CursorLineNr cterm=standout ctermfg=darkgrey
 highlight! CursorColumn cterm=bold ctermfg=7 ctermbg=8
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
 
-verbose highlight! default FoldColumn
-highlight! Folded         cterm=standout       ctermfg=NONE
+highlight! Folded     cterm=bold,underline ctermfg=NONE ctermbg=NONE
+highlight! FoldColumn cterm=bold   ctermfg=NONE ctermbg=NONE
+highlight! VertSplit      cterm=reverse        ctermfg=NONE
+highlight! StatusLine     cterm=bold,reverse   ctermfg=7
+highlight! StatusLineNC   cterm=reverse        ctermfg=8
+highlight! EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=NONE
 
 verbose highlight! Todo   cterm=standout,bold,underline ctermbg=NONE
 highlight! Error          cterm=standout,bold,underline  ctermbg=NONE ctermfg=7
