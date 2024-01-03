@@ -22,8 +22,8 @@ highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
 highlight! Folded     cterm=bold,underline ctermfg=NONE ctermbg=NONE
 highlight! FoldColumn cterm=bold   ctermfg=NONE ctermbg=NONE
 highlight! VertSplit      cterm=reverse        ctermfg=NONE
-highlight! StatusLine     cterm=bold,reverse   ctermfg=8
-highlight! StatusLineNC   cterm=reverse        ctermfg=grey
+highlight! StatusLine     cterm=bold,reverse   ctermfg=grey
+highlight! StatusLineNC   cterm=reverse        ctermfg=8
 highlight! EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=NONE
 
 highlight! Todo   cterm=standout,bold,underline ctermbg=NONE ctermfg=8
