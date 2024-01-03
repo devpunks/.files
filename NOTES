@@ -120,6 +120,10 @@ Android Accessibility
 # Shortcut mappings - <prefix>+?
 
 # VIM ---------------------------------
+# cool help screens
+# :he group-name
+# :he highlight-groups
+# :he cterm-colors
 # :h index - All keyboard mappings
 # <C-v> (<C-q> on Windows) Then type escape command
 # :verbose map - Keyboard mappings - https://vi.stackexchange.com/questions/7722
