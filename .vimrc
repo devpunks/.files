@@ -621,15 +621,15 @@ highlight InsertColor cterm=reverse ctermbg=234 ctermfg=darkmagenta
     highlight! link TabLineSel TabColor
 
 highlight Operator ctermfg=13
-  highlight! link vimEcho vimOper
-  highlight! link vimMapLhs vimOper
-  highlight! link vimCmdSep vimOper
-  highlight! link vimHiBang vimOper
-  highlight! link vimUserCmd vimOper
-  highlight! link vimSetEqual vimOper
-    highlight! link vimSet vimSetEqual
-  highlight! link vimHiKeyList vimOper
-  highlight! link vimAutoCmdSfxList vimOper
+" highlight! link vimEcho vimOper
+" highlight! link vimMapLhs vimOper
+" highlight! link vimCmdSep vimOper
+" highlight! link vimHiBang vimOper
+" highlight! link vimUserCmd vimOper
+" highlight! link vimSetEqual vimOper
+"   highlight! link vimSet vimSetEqual
+" highlight! link vimHiKeyList vimOper
+" highlight! link vimAutoCmdSfxList vimOper
 highlight Braces ctermfg=white
   highlight! link cssBraces Braces
   highlight! link rubyParentheses Braces
