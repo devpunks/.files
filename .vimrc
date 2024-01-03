@@ -98,6 +98,7 @@ set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/
 " https://vim.fandom.com/wiki/Folding
 set foldenable
 set foldcolumn=2
+set foldclose=all
 set foldmethod=indent "Enable indent folding
 
 if &compatible
