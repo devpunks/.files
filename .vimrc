@@ -546,7 +546,9 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 "}}}
 
 
-" {{{ COLORSCHEME ------------------------------------------------
+" ********************************************************************************
+" {{{ COLORSCHEME
+" ********************************************************************************
 "   - https://jonasjacek.github.io/colors
 "   - https://www.vim.org/scripts/script.php?script_id=335
 "   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
