@@ -55,6 +55,10 @@ highlight! Type           cterm=reverse,bold,underline ctermfg=grey
 highlight! Identifier     cterm=bold           ctermfg=grey
 
 highlight! Ignore         cterm=bold           ctermfg=NONE
+
+highlight! SpecialKey     cterm=bold ctermfg=NONE  ctermbg=NONE
+highlight! SpecialKey     cterm=bold ctermfg=NONE  ctermbg=NONE
+  highlight! link NonText SpecialKey
 highlight! Special        cterm=bold           ctermfg=NONE
   highlight! link Delimiter Special
   highlight! link PreProc Special
