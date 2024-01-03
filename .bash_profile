@@ -442,7 +442,10 @@ function environment {
   echo $( compgen -b ) | column
   echo && echo Functions:
   compgen -A function | column
-  echo && echo Env Var Names:
+  echo && echo 👇Aliases:👇
+  echo $( compgen -a ) | column # alias -p # for declaration
+
+  echo && echo 👇Reserved Words:👇
   compgen -k | column
   echo && echo Env Vars:
   env
