@@ -638,8 +638,8 @@ highlight Braces ctermfg=white
 " highlight! link javaScriptParens Braces
 highlight Identifier cterm=underline ctermfg=fg
   highlight! link Type Identifier
-  highlight! link vimMapRhs Identifier
-  highlight! default link cssIdentifier Identifier
+" highlight! link vimMapRhs Identifier
+" highlight! default link cssIdentifier Identifier
 highlight Error cterm=reverse,underline ctermfg=darkred
   highlight! link ErrorMsg Error
   highlight! link WarningMsg Error
