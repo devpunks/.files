@@ -21,8 +21,8 @@ highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=cyan
 verbose highlight! default FoldColumn
 highlight! Folded         cterm=standout       ctermfg=NONE
 
-highlight! Todo           cterm=standout       ctermfg=NONE
-highlight! Error          cterm=standout       ctermfg=blue
+verbose highlight! Todo   cterm=standout,bold,underline ctermbg=NONE
+highlight! Error          cterm=standout,bold,underline  ctermbg=NONE ctermfg=7
 highlight! NonText        cterm=bold           ctermfg=NONE
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
