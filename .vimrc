@@ -660,13 +660,13 @@ highlight Special cterm=bold ctermfg=183
 "   highlight! link vimGroup vimHiGroup
   highlight! link Constant Special
 highlight String cterm=italic ctermfg=cyan
-  highlight! link vimHiCtermColor String
-  highlight! link shQuote String
-  highlight! link shQuote String
-  highlight! link vimNumber String
-    highlight! link vimHiNmbr vimNumber
-  highlight! link vimFunction String
-    highlight! link vimUserFunc vimFunction
+" highlight! link vimHiCtermColor String
+" highlight! link shQuote String
+" highlight! link shQuote String
+" highlight! link vimNumber String
+"   highlight! link vimHiNmbr vimNumber
+" highlight! link vimFunction String
+"   highlight! link vimUserFunc vimFunction
 highlight StringDelimiter cterm=bold ctermfg=132
   highlight! link PreProc String
 highlight WhiteSpace ctermbg=NONE ctermfg=8
