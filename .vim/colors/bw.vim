@@ -3,7 +3,9 @@
 " Maintainer:   Ahmid-Ra <https://github.com/snuggs>
 
 highlight clear
-if exists("syntax_on") | syntax reset | endif
+syntax reset
+
+" if exists("syntax_on") | syntax reset | endif
 
 let g:colors_name="devPunks😈Mono"
 
