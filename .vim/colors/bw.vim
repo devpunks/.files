@@ -22,8 +22,6 @@ highlight! NonText        cterm=bold           ctermfg=NONE
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
 
-highlight! Folded         cterm=standout       ctermfg=NONE
-highlight! FoldColumn     cterm=standout       ctermfg=NONE
 highlight! VertSplit      cterm=reverse        ctermfg=NONE
 
 highlight! ErrorMsg       cterm=standout       ctermfg=NONE
