@@ -646,11 +646,11 @@ highlight Error cterm=reverse,underline ctermfg=darkred
 highlight Statement ctermfg=132
   highlight! link NERDTreeFile Statement
   highlight! link NERDTreeExecFile Statement
-  highlight! link cssSelectorOp Statement
-  highlight! link Function Statement
-  highlight! link StorageClass Statement
-  highlight! link vimIsCommand Statement
-    highlight! link vimVar vimIsCommand
+" highlight! link cssSelectorOp Statement
+" highlight! link Function Statement
+" highlight! link StorageClass Statement
+" highlight! link vimIsCommand Statement
+"   highlight! link vimVar vimIsCommand
 highlight Directory ctermfg=magenta
   highlight! link NERDTreeDir Directory
 highlight Title cterm=bold ctermfg=159
