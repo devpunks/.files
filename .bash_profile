@@ -440,7 +440,7 @@ function environment {
   echo && echo 👇Exports👇
   echo $( compgen -e ) | column
   echo && echo 👇Aliases👇
-  echo $( compgen -a ) # alias -p # for declaration
+  echo $( compgen -a ) | column # alias -p # for declaration
   echo && echo 👇Built-ins👇
   echo $( compgen -b )
 
