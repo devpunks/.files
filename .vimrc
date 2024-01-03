@@ -592,8 +592,10 @@ endfor
 
 " https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
 " Interactive Status -----------------------------
-autocmd InsertEnter * highlight! link StatusLine InsertColor
-autocmd InsertLeave * highlight! link StatusLine NormalColor
+highlight! StatusLineInsert cterm=reverse,bold ctermfg=NONE
+
+autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
+autocmd InsertLeave * highlight! link StatusLine NONE
 " ---------------------------------------------------------------------
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 " Gutter
