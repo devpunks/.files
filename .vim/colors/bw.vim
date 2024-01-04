@@ -19,15 +19,15 @@ highlight! DiffChange ctermfg=8
 highlight! DiffText   ctermfg=NONE
 
 " Popups
-highlight Pmenu NONE
-highlight PmenuSel NONE
-highlight PmenuKind NONE
-highlight PmenuKindSel NONE
-highlight PmenuExtra NONE
-highlight PmenuExtraSel NONE
-highlight PmenuThumb NONE
-highlight PmenuSbar NONE
-highlight PmenuThumb NONE
+highlight! Pmenu NONE
+highlight! PmenuSel NONE
+highlight! PmenuKind NONE
+highlight! PmenuKindSel NONE
+highlight! PmenuExtra NONE
+highlight! PmenuExtraSel NONE
+highlight! PmenuThumb NONE
+highlight! PmenuSbar NONE
+highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 
 " Tabs
 highlight TabLine cterm=reverse,italic,underline ctermfg=NONE ctermfg=NONE ctermbg=NONE
