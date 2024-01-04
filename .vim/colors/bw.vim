@@ -61,7 +61,6 @@ highlight! WarningMsg     cterm=standout       ctermfg=NONE
 
 highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
 
-highlight! Type           cterm=reverse,bold,underline ctermfg=NONE
 highlight! Identifier     cterm=bold           ctermfg=grey
 
 highlight! Ignore         cterm=bold           ctermfg=NONE
