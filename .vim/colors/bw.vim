@@ -18,7 +18,16 @@ highlight! DiffDelete ctermfg=7
 highlight! DiffChange ctermfg=8
 highlight! DiffText   ctermfg=NONE
 
-highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
+" Popups
+highlight Pmenu NONE
+highlight PmenuSel NONE
+highlight PmenuKind NONE
+highlight PmenuKindSel NONE
+highlight PmenuExtra NONE
+highlight PmenuExtraSel NONE
+highlight PmenuThumb NONE
+highlight PmenuSbar NONE
+highlight PmenuThumb NONE
 
 " TODO: Foo
 highlight! Todo cterm=standout,bold,underline ctermbg=NONE ctermfg=8
