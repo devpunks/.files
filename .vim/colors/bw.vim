@@ -44,6 +44,7 @@ highlight! Todo cterm=standout,bold,underline ctermfg=8 ctermbg=NONE
 " Error Warnings
 highlight! WarningMsg cterm=standout ctermfg=NONE
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
+  highlight! link ErrorMsg Error
 highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
    highlight! link SpellCap SpellBad
    highlight! link SpellRare SpellBad
