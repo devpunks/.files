@@ -128,6 +128,7 @@ set noautowriteall " do not autowrite (all)
 " set ignorecase " Case in-sensitive search
 set smartcase " Capitalization case-sensitive search
 set incsearch " highlight search matches
+set wrapscan " Search respects wrapping
 set visualbell " TODO: t_vb= Flash the screen instead of beeping errors
 set noerrorbells " Unset display beep on errors
 set belloff+=ctrlg  " Turn off insert completion bell
