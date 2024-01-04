@@ -54,7 +54,7 @@ highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
 highlight! LineNr cterm=NONE ctermfg=8
 highlight! CursorLineNr cterm=standout ctermfg=darkgrey ctermbg=NONE
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
-
+highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
 highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
 highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
 highlight! StatusLine cterm=bold,reverse ctermfg=grey
