@@ -79,7 +79,7 @@ highlight! Search cterm=reverse ctermfg=NONE ctermbg=NONE
 highlight! IncSearch cterm=reverse
 highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
   highlight! link MoreMsg ModeMsg
-highlight! Identifier cterm=bold ctermfg=grey
+highlight! Identifier cterm=bold,underline ctermfg=NONE
 
 highlight! Ignore ctermfg=NONE
 highlight! Conceal ctermfg=NONE ctermbg=NONE
