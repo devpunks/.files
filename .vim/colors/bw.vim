@@ -39,7 +39,6 @@ highlight! FoldColumn cterm=bold   ctermfg=NONE ctermbg=NONE
 highlight! VertSplit cterm=NONE ctermfg=8
 highlight! StatusLine     cterm=bold,reverse   ctermfg=grey
 highlight! StatusLineNC   cterm=reverse        ctermfg=8
-highlight! EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=NONE
 
 highlight! Todo   cterm=standout,bold,underline ctermbg=NONE ctermfg=8
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
