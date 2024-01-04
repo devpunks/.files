@@ -38,6 +38,10 @@ highlight! Special cterm=bold ctermfg=NONE
   highlight! link SpecialKey Special
   highlight! link NonText Special
 
+" TODO: Foo
+highlight! Todo cterm=standout,bold,underline ctermfg=8 ctermbg=NONE
+
+" Error Warnings
 highlight! WarningMsg cterm=standout ctermfg=NONE
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
 highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
