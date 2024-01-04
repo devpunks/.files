@@ -54,11 +54,6 @@ highlight! WarningMsg     cterm=standout       ctermfg=NONE
 
 highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
 
-highlight! DiffAdd       ctermfg=7
-highlight! DiffDelete    ctermfg=7
-highlight! DiffChange    ctermfg=8
-highlight! DiffText      ctermfg=NONE
-
 highlight! Type           cterm=reverse,bold,underline ctermfg=NONE
 highlight! Identifier     cterm=bold           ctermfg=grey
 
