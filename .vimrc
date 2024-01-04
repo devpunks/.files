@@ -593,8 +593,12 @@ endfor
 " Interactive Status -----------------------------
 highlight! StatusLineInsert cterm=reverse,bold ctermfg=NONE
 
-autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
-autocmd InsertLeave * highlight! link StatusLine NONE
+augroup status
+  autocmd!
+  autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
+  autocmd InsertLeave * highlight! link StatusLine NONE
+augroup END
+
 " ---------------------------------------------------------------------
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 " Gutter
