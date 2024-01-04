@@ -50,6 +50,7 @@ highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
   highlight! link SpellRare SpellBad
   highlight! link SpellLocal SpellBad
 
+" Gutter
 highlight! LineNr cterm=NONE ctermfg=8
 highlight! SignColumn cterm=NONE ctermbg=NONE ctermfg=NONE
 highlight! CursorLineNr cterm=standout ctermfg=darkgrey ctermbg=NONE
