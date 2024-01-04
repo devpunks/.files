@@ -81,7 +81,6 @@ highlight! IncSearch cterm=reverse
 highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
   highlight! link MoreMsg ModeMsg
 
-
 highlight! Ignore ctermfg=NONE
 highlight! Conceal ctermfg=NONE ctermbg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
