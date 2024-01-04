@@ -490,7 +490,7 @@ set statusline+=\ 📜⇧%2c✖%-l⇩
 " percentage
 set statusline+=(%p%%)⇳
 " cursor line, total lines
-set statusline+=\ of\ %L\ LOC
+set statusline+=\ of\ %L☰LOC
 
 let scheme = get(g:, 'colors_name', 'NONE')
 set statusline+=\ \ \ 🎨\ %{scheme}\ 
