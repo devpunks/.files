@@ -553,7 +553,6 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 "   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
 "
-
 " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 " http://www.bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
 " * can use hexidecimal values for gui (e.g. guibg=#000000)
