@@ -70,6 +70,7 @@ highlight! StatusLine cterm=bold,reverse ctermfg=grey
 highlight! StatusLineNC cterm=reverse ctermfg=8
 highlight! VertSplit cterm=NONE ctermfg=8
 
+" Navigation
 highlight! Title cterm=bold ctermfg=NONE
 highlight! Directory cterm=bold ctermfg=NONE
 highlight! Visual cterm=reverse ctermbg=NONE
