@@ -91,4 +91,3 @@ highlight! PreProc cterm=underline ctermfg=NONE
 highlight! Type cterm=reverse,bold ctermfg=NONE
 highlight! Underlined cterm=underline ctermfg=NONE
 highlight! Constant cterm=italic,underline ctermfg=NONE
-highlight! Identifier cterm=bold,underline ctermfg=NONE
