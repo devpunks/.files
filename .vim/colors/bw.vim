@@ -2,11 +2,6 @@
 
 " Maintainer:   Ahmid-Ra <https://github.com/snuggs>
 
-syntax clear
-syntax reset
-syntax enable
-syntax on
-" if exists("syntax_on") | syntax reset | endif
 highlight clear
 
 let g:colors_name="devPunks😈Mono"
