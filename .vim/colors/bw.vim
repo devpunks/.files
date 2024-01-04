@@ -6,6 +6,7 @@ syntax clear
 syntax reset
 syntax enable
 syntax on
+" if exists("syntax_on") | syntax reset | endif
 highlight clear
 
 " if exists("syntax_on") | syntax reset | endif
