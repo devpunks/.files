@@ -9,7 +9,6 @@ syntax on
 " if exists("syntax_on") | syntax reset | endif
 highlight clear
 
-
 let g:colors_name="devPunks😈Mono"
 
 " TODO: Foo
