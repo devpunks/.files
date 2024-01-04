@@ -29,6 +29,11 @@ highlight PmenuThumb NONE
 highlight PmenuSbar NONE
 highlight PmenuThumb NONE
 
+" Tabs
+highlight TabLine cterm=reverse,italic,underline ctermfg=NONE ctermfg=NONE ctermbg=NONE
+highlight TabLineSel cterm=bold ctermfg=NONE ctermbg=NONE
+highlight TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
+
 " TODO: Foo
 highlight! Todo cterm=standout,bold,underline ctermbg=NONE ctermfg=8
 
