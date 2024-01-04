@@ -52,9 +52,7 @@ highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
 
 " Gutter
 highlight! LineNr cterm=NONE ctermfg=8
-highlight! SignColumn cterm=NONE ctermbg=NONE ctermfg=NONE
 highlight! CursorLineNr cterm=standout ctermfg=darkgrey ctermbg=NONE
-highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
 
 highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
