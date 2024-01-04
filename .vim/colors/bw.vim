@@ -40,9 +40,6 @@ highlight! VertSplit cterm=NONE ctermfg=8
 highlight! StatusLine     cterm=bold,reverse   ctermfg=grey
 highlight! StatusLineNC   cterm=reverse        ctermfg=8
 
-highlight! Todo   cterm=standout,bold,underline ctermbg=NONE ctermfg=8
-highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
-  highlight! link ErrorMsg Error
 highlight! Question       cterm=standout       ctermfg=NONE
 highlight! Directory      cterm=bold           ctermfg=NONE
 highlight! Title          cterm=bold           ctermfg=NONE
