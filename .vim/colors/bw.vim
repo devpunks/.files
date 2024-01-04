@@ -66,13 +66,6 @@ highlight! Type           cterm=reverse,bold,underline ctermfg=NONE
 
 highlight! Ignore         cterm=bold           ctermfg=NONE
 
-highlight! SpecialKey     cterm=bold ctermfg=NONE  ctermbg=NONE
-  highlight! link NonText SpecialKey
-highlight! Special        cterm=bold           ctermfg=NONE
-  highlight! link Delimiter Special
-  highlight! link PreProc Special
-highlight! EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=NONE
-
 highlight! Conceal cterm=NONE ctermfg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
 highlight! Constant cterm=italic,underline ctermfg=NONE
