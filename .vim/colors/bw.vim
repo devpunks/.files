@@ -11,6 +11,12 @@ if exists("syntax_on")
   syntax on
 endif
 
+if 'dark' == &background " Convert to ternary
+  echo 'dark'
+elseif 'light' == &background
+  echo 'light'
+endif
+
 let g:colors_name="devPunks😈Mono"
 
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
