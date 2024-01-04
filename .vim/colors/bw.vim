@@ -30,12 +30,9 @@ highlight! PmenuSbar NONE
 highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 
 " Tabs
-highlight TabLine cterm=reverse,italic,underline ctermfg=NONE ctermfg=NONE ctermbg=NONE
-highlight TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
-highlight TabLineSel cterm=bold ctermfg=NONE ctermbg=NONE
-
-" TODO: Foo
-highlight! Todo cterm=standout,bold,underline ctermbg=NONE ctermfg=8
+highlight! TabLine cterm=reverse,italic,underline ctermfg=NONE ctermfg=NONE ctermbg=NONE
+highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
+highlight! TabLineSel cterm=bold ctermfg=NONE ctermbg=NONE
 
 highlight! Special cterm=bold ctermfg=NONE
   highlight! link Delimiter Special
