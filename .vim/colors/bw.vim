@@ -35,11 +35,8 @@ highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
 highlight! TabLineSel cterm=bold ctermfg=NONE ctermbg=NONE
 
 highlight! Special cterm=bold ctermfg=NONE
-  highlight! link Delimiter Special
-  highlight! link PreProc Special
-highlight! EndOfBuffer cterm=NONE ctermbg=NONE ctermfg=NONE
-highlight! SpecialKey     cterm=bold ctermfg=NONE  ctermbg=NONE
-  highlight! link NonText SpecialKey
+  highlight! link SpecialKey Special
+  highlight! link NonText Special
 
 highlight! WarningMsg cterm=standout ctermfg=NONE
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
