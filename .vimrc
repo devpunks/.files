@@ -477,7 +477,6 @@ set statusline+=%{(mode()=='v')?'\ 🔎\ ':''}
 set statusline+=%{(mode()=='V')?'\ 🔍\ ':''}
 " read only mode
 set statusline+=%r
-
 " full file name
 set statusline+=%-10F
 
