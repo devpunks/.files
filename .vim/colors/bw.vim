@@ -79,7 +79,6 @@ highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
 
 highlight! Identifier     cterm=bold           ctermfg=grey
 
-highlight! Ignore         cterm=bold           ctermfg=NONE
 
 highlight! Conceal cterm=NONE ctermfg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
