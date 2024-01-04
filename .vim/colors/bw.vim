@@ -11,7 +11,7 @@ highlight clear
 
 let g:colors_name="devPunks😈Mono"
 
-highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
+highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 highlight! DiffAdd    ctermfg=7
 highlight! DiffDelete ctermfg=7
