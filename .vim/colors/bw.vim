@@ -14,6 +14,11 @@ let g:colors_name="devPunks😈Mono"
 
 " TODO: Foo
 
+highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
+  highlight link SpellCap
+  highlight link SpellRare
+  highlight link SpellLocal
+
 highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 highlight! SignColumn   cterm=NONE ctermbg=NONE ctermfg=NONE
