@@ -11,12 +11,10 @@ highlight clear
 
 let g:colors_name="devPunks😈Mono"
 
-" TODO: Foo
-
-highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
-  highlight link SpellCap
-  highlight link SpellRare
-  highlight link SpellLocal
+highlight! DiffAdd       ctermfg=7
+highlight! DiffDelete    ctermfg=7
+highlight! DiffChange    ctermfg=8
+highlight! DiffText      ctermfg=NONE
 
 highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
