@@ -31,7 +31,6 @@ highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 
 " Tabs
 highlight TabLine cterm=reverse,italic,underline ctermfg=NONE ctermfg=NONE ctermbg=NONE
-highlight TabLineSel cterm=bold ctermfg=NONE ctermbg=NONE
 highlight TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
 
 " TODO: Foo
