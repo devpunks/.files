@@ -123,7 +123,9 @@ set hlsearch " results
 set autoread " re-read files
 set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
-set ignorecase " Case in-sensitive search
+" https://vim.fandom.com/wiki/Searching#Case_sensitivity
+" Problematic for conditionals "A"=="a"
+" set ignorecase " Case in-sensitive search
 set smartcase " Capitalization case-sensitive search
 set incsearch " highlight search matches
 set visualbell " TODO: t_vb= Flash the screen instead of beeping errors
