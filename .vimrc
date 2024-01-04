@@ -565,6 +565,9 @@ try
 "  colorscheme jellybeans " Set color scheme
 catch | endtry
 
+" *******************************************************************************
+" {{{ typography.vimrc
+" *******************************************************************************
 " Custom Color Groups
 " gutter --------------------------------------------------------------
 " let s:gutter_bg=s:GetColor('LineNr', 'bg#')
