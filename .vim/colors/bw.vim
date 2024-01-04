@@ -49,6 +49,8 @@ highlight! StatusLineNC   cterm=reverse        ctermfg=8
 
 highlight! Title          cterm=bold           ctermfg=NONE
 highlight! Visual         cterm=reverse        ctermfg=NONE
+highlight! Question       cterm=standout       ctermfg=NONE
+highlight! Directory      cterm=bold           ctermfg=NONE
 
 highlight! Search         cterm=reverse        ctermfg=NONE
 highlight! IncSearch      cterm=reverse        ctermfg=NONE
