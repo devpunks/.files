@@ -493,7 +493,7 @@ set statusline+=(%p%%)
 set statusline+=\ of\ %L\ LOC
 
 let scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ \ \ 🎨\ %{scheme}\ 
+set statusline+=\ \ \ 🎨\ %{scheme}\ 
 
 " }}}
 
