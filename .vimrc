@@ -467,7 +467,7 @@ set statusline= " clear out status line
 " file type
 set statusline+=💻[%Y]%{mode()}
 
-set statusline+=%{(mode()=='n')?'\ 📃\ ':''}
+set statusline+=%{(mode()=='n')?'\ 📄\ ':''}
 set statusline+=%{(mode()=='i')?'\ 📝\ ':''}
 set statusline+=%{(mode()=='R')?'\ REPLACE\ ':''}
 set statusline+=%{(mode()=='v')?'\ 🔎\ ':''}
