@@ -62,6 +62,7 @@ highlight! Special        cterm=bold           ctermfg=NONE
   highlight! link Delimiter Special
   highlight! link PreProc Special
 
+highlight! Conceal cterm=NONE ctermfg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
 highlight! Constant cterm=italic,underline ctermfg=NONE
 highlight! Statement cterm=NONE ctermfg=NONE
