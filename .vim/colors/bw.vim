@@ -75,6 +75,7 @@ highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
   highlight! link MoreMsg ModeMsg
 highlight! Identifier     cterm=bold           ctermfg=grey
 
+highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
 
 highlight! Conceal cterm=NONE ctermfg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
