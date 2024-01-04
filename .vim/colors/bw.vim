@@ -73,11 +73,6 @@ highlight! Search         cterm=reverse        ctermfg=NONE
 highlight! IncSearch      cterm=reverse        ctermfg=NONE
 highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
   highlight! link MoreMsg ModeMsg
-highlight! WildMenu       cterm=standout       ctermfg=NONE
-highlight! WarningMsg     cterm=standout       ctermfg=NONE
-
-highlight! VisualNOS      cterm=bold,underline ctermfg=NONE
-
 highlight! Identifier     cterm=bold           ctermfg=grey
 
 
