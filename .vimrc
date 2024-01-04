@@ -469,7 +469,7 @@ set statusline+=💻[%Y]%{mode()}
 
 set statusline+=%{(mode()=='n')?'\ 📄\ ':''}
 set statusline+=%{(mode()=='i')?'\ 📝\ ':''}
-set statusline+=%{(mode()=='R')?'\ REPLACE\ ':''}
+set statusline+=%{(mode()=='R')?'\ 📃\ ':''}
 set statusline+=%{(mode()=='v')?'\ 🔎\ ':''}
 set statusline+=%{(mode()=='V')?'\ 🔎\ ':''}
 
