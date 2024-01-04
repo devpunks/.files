@@ -18,6 +18,16 @@ highlight! DiffText      ctermfg=NONE
 
 highlight Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
+" TODO: Foo
+highlight! Todo cterm=standout,bold,underline ctermbg=NONE ctermfg=8
+
+highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
+  highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
+    highlight link SpellCap
+    highlight link SpellRare
+    highlight link SpellLocal
+  highlight! link ErrorMsg Error
+
 highlight! SignColumn   cterm=NONE ctermbg=NONE ctermfg=NONE
 highlight! LineNr       cterm=NONE      ctermfg=8
 highlight! CursorLineNr cterm=standout ctermfg=darkgrey
