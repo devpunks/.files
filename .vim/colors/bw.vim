@@ -88,6 +88,7 @@ highlight! Conceal ctermfg=NONE ctermbg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
 highlight! Statement cterm=NONE ctermfg=NONE
 highlight! PreProc cterm=underline ctermfg=NONE
+highlight! Type cterm=reverse,bold ctermfg=NONE
 highlight! Underlined cterm=underline ctermfg=NONE
 highlight! Constant cterm=italic,underline ctermfg=NONE
 highlight! Type cterm=reverse,bold ctermfg=NONE
