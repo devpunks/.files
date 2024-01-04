@@ -47,10 +47,10 @@ highlight! SpecialKey     cterm=bold ctermfg=NONE  ctermbg=NONE
 highlight! WarningMsg cterm=standout ctermfg=NONE
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
 highlight SpellBad cterm=reverse,underline ctermfg=magenta ctermbg=NONE
-    highlight! link SpellCap SpellBad
-    highlight! link SpellRare SpellBad
-    highlight! link SpellLocal SpellBad
-  highlight! link ErrorMsg Error
+   highlight! link SpellCap SpellBad
+   highlight! link SpellRare SpellBad
+   highlight! link SpellLocal SpellBad
+ highlight! link ErrorMsg Error
 
 highlight! LineNr cterm=NONE ctermfg=8
 highlight! SignColumn cterm=NONE ctermbg=NONE ctermfg=NONE
