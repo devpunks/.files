@@ -479,7 +479,6 @@ set statusline+=%{(mode()=='V')?'\ 🔍\ ':''}
 set statusline+=%r
 " full file name
 set statusline+=%-10F
-
 " right justify everything after this line
 set statusline+=%=
 
