@@ -481,7 +481,6 @@ set statusline+=%r
 set statusline+=%-10F
 " right justify everything after this line
 set statusline+=%=
-
 " cursor column position
 set statusline+=\ 📜⇧%2c✖%-l⇩
 " percentage
