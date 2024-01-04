@@ -58,8 +58,10 @@ highlight! CursorLineNr cterm=standout ctermfg=darkgrey ctermbg=NONE
 highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
 
-highlight! Folded     cterm=bold,underline ctermfg=NONE ctermbg=NONE
-highlight! FoldColumn cterm=bold   ctermfg=NONE ctermbg=NONE
+highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
+highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
+highlight! StatusLine cterm=bold,reverse ctermfg=grey
+highlight! StatusLineNC cterm=reverse ctermfg=8
 highlight! VertSplit cterm=NONE ctermfg=8
 highlight! StatusLine     cterm=bold,reverse   ctermfg=grey
 highlight! StatusLineNC   cterm=reverse        ctermfg=8
