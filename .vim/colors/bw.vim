@@ -3,6 +3,13 @@
 " Maintainer:   Ahmid-Ra <https://github.com/snuggs>
 
 highlight clear
+if exists("syntax_on")
+  syntax reset
+  syntax clear
+  syntax reset
+  syntax enable
+  syntax on
+endif
 
 let g:colors_name="devPunks😈Mono"
 
