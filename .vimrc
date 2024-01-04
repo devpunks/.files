@@ -125,6 +125,7 @@ set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
 " Problematic for conditionals "A"=="a"
 " https://vi.stackexchange.com/questions/11236
+" https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
 " set ignorecase " Case in-sensitive search
 set smartcase " Capitalization case-sensitive search
 set incsearch " highlight search matches
