@@ -13,17 +13,17 @@ tmux start-server
 tmux new-session -AdP -s $SESSION -n 'Vi' -x $COLUMNS -y $LINES
 
 # attach to new session
-tmux -v -u2 attach
+# tmux -v -u2 attach
 
-tmux send-keys 'vi' C-m
+# tmux send-keys 'vi' C-m
 
 # Split pane 0 vertically by 30%
-tmux split-window -h -l 30
-tmux send-keys 'git status' Enter
+# tmux split-window -h -l 30
+# tmux send-keys 'git status' Enter
 
 # Split pane 1 horizontally
-tmux split-window -v -l 5
-tmux send-keys 'pwd' Enter
+# tmux split-window -v -l 5
+# tmux send-keys 'pwd' Enter
 
 # Select pane 0
 tmux select-pane -t 0
