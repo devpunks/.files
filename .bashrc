@@ -21,6 +21,9 @@ TZ='Etc/UTC'
 #     - https://gnu.org/software/bash/manual/html_node/Bash-Variables.html
 #     - https://gnu.org/software/grep/manual/html_node/Environment-Variables.html
 #     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+#
+#   - OSC 52 base64 remote clipboard
+#     - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh
 # ******************************************************
 
 export EDITOR=vi
