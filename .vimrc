@@ -49,12 +49,6 @@ let &t_fd = "\<Esc>[?1004l" " disable focus-event tracking
 execute "set <FocusGained>=\<Esc>[I"
 execute "set <FocusLost>=\<Esc>[O"
 
-" Enable modified arrow keys, see :help arrow_modifiers
-execute "set <xUp>=\<Esc>[@;*A"
-execute "set <xDown>=\<Esc>[@;*B"
-execute "set <xRight>=\<Esc>[@;*C"
-execute "set <xLeft>=\<Esc>[@;*D"
-
 " typography.vim FONTS ------------------------------------------------
 " Italic Font ???
 " https://stackoverflow.com/a/30937851/173208
