@@ -173,8 +173,8 @@ alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-
 #   scp(1), sftp(1), ssh(1), ssh-add(1), ssh-agent(1), ssh-keygen(1), ssh-
 #   keyscan(1), chroot(2), login.conf(5), moduli(5), sshd_config(5),
 #   inetd(8), sftp-server(8)
-# alias ss='sshd -DdddT -p22'
-alias ss='sshd -Dddd -p8022'
+# -X flag for Enable X11 forwarding
+alias ss='sshd -X -Dddd -p8022'
 
 # ----------------------
 # tmux
