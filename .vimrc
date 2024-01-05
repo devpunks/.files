@@ -228,6 +228,8 @@ set completepopup+=align:menu,border:on,highlight:Pmenu
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
 "   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
 "   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
+"   - OSC52 Escape to system clipboard - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.vim
+
 " vnoremap <c-c> "*y<cr>
 " inoremap <c-v> “*p<cr>
 " set clipboard=unnamedplus
