@@ -153,7 +153,6 @@ command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffe
 " disable sessions
 set viewoptions-=options
 set viewoptions+=localoptions
-
 set viewdir=$HOME/.vim/view
 
 set sessionoptions+=resize,winpos
