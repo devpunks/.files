@@ -8,7 +8,6 @@ declare -xr PGVERSION=15
 
 ########################################################
 
-
 declare -xr FIXPRE=${PREFIX:-/shazaam}
 
 # declare -xr PGBIN=/usr/local/Cellar/postgresql@${PGVERSION}/${PGVERSION}.0_1/bin
