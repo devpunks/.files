@@ -155,6 +155,7 @@ alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-
 # SSH(d)------------------------------------------------------------------
 #   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
 #   - https://wiki.termux.com/wiki/Remote_Access
+#   - https://www.man7.org/linux/man-pages/man1/ssh.1.html
 #   - https://github.com/termux/termux-packages/issues/3620
 #
 # -d - debug level
