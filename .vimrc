@@ -294,12 +294,6 @@ inoremap <c-s> <esc>:w<cr>
 " visual mode: escape to normal and save
 vnoremap <c-s> <esc>:w<cr>
 
-" Enable modified arrow keys, see :help arrow_modifiers
-execute "set <xUp>=\<Esc>[@;*A"
-execute "set <xDown>=\<Esc>[@;*B"
-execute "set <xRight>=\<Esc>[@;*C"
-execute "set <xLeft>=\<Esc>[@;*D"
-
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
 cmap <c-r> :source ~/.vimrc<CR>
