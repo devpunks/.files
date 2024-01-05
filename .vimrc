@@ -155,6 +155,7 @@ set viewoptions-=options
 set viewoptions+=localoptions
 set viewdir=$HOME/.vim/view
 
+set sessionoptions-=options
 set sessionoptions+=resize,winpos
 
 set viminfofile=$HOME/.vim/.viminfo
