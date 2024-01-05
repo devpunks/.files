@@ -26,8 +26,8 @@ tmux new-session -AdP -s $SESSION -n 'Vi' -x $COLUMNS -y $LINES
 # tmux send-keys 'pwd' Enter
 
 # Select pane 0
-tmux select-pane -t 0
+# tmux select-pane -t 0
 
 # Split pane 0 horizontally
-tmux split-window -v -l 1
-tmux send-keys 'clear' Enter
+# tmux split-window -v -l 1
+# umux send-keys 'clear' Enter
