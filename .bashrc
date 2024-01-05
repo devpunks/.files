@@ -104,6 +104,10 @@ shopt checkwinsize
 export LINES=$(tput lines)
 export COLUMNS=$(tput columns)
 
+echo "$LINES X $COLUMNS"
+echo "$(stty size)"
+
+# https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 set -o nolog
 set -o notify
 
