@@ -7,7 +7,6 @@ USER=`whoami`
 SESSION='devPunks😈studio'
 SOCKET='devpunks' # See tmux -L|S <socket|file> flag
 
-# start server
 tmux start-server
 
 # Setup a session work space called `$SESSION
