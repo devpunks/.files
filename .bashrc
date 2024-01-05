@@ -99,8 +99,6 @@ export COLORTERM=truecolor
 # - https://mkssoftware.com/docs/man1/stty.1.asp
 # - tty  - https://linusakesson.net/programming/tty/
 shopt checkwinsize
-echo "$(tput lines) $(tput columns)"
-echo "$(stty size)"
 
 #https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
 LINES=$(tput lines)
