@@ -48,6 +48,7 @@ let &t_fd = "\<Esc>[?1004l" " disable focus-event tracking
 " https://groups.google.com/g/vim_use/c/VyQSx90uaPE
 execute "set <FocusGained>=\<Esc>[I"
 execute "set <FocusLost>=\<Esc>[O"
+
 " Enable modified arrow keys, see :help arrow_modifiers
 execute "set <xUp>=\<Esc>[@;*A"
 execute "set <xDown>=\<Esc>[@;*B"
@@ -151,8 +152,6 @@ command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffe
 
 " disable sessions
 set viewoptions-=options
-set sessionoptions-=options
-
 set viewoptions+=localoptions
 
 set viewdir=$HOME/.vim/view
