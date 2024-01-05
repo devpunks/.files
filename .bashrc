@@ -101,8 +101,8 @@ export COLORTERM=truecolor
 shopt checkwinsize
 
 #https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
-LINES=$(tput lines)
-COLUMNS=$(tput columns)
+export LINES=$(tput lines)
+export COLUMNS=$(tput columns)
 
 set -o nolog
 set -o notify
