@@ -22,6 +22,10 @@ let g:colors_name="devPunks😈Mono"
 " Base Default
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
+" TODO: Foo
+highlight! Todo cterm=standout,bold,underline ctermfg=8 ctermbg=NONE
+
+" Diff
 highlight! DiffAdd    ctermfg=7
 highlight! DiffDelete ctermfg=7
 highlight! DiffChange ctermfg=8
