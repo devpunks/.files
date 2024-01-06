@@ -59,6 +59,7 @@ highlight SpellBad cterm=strikethrough ctermbg=NONE
   highlight! link SpellLocal SpellBad
 
 " Gutter
+highlight! Cursor cterm=NONE ctermfg=7
 highlight! LineNr cterm=NONE ctermfg=8
 highlight! CursorLineNr cterm=standout ctermfg=darkgrey ctermbg=NONE
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
