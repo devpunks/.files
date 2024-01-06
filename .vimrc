@@ -601,12 +601,6 @@ augroup END
 " highlight DiffDelete ctermfg=red
 " highlight DiffChange ctermfg=yellow
 
-"highlight Normal cterm=NONE ctermbg=NONE ctermfg=red
-" highlight! link StatusLine NormalColor
-"   highlight! link StatusLineTerm StatusLine
-" highlight! link StatusLineNC NormalColor
-"   highlight! link StatusLineTermNC StatusLineNC
-
 
 function! s:HighlightGroup()
     let l:s = synID(line('.'), col('.'), 1)
