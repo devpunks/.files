@@ -595,7 +595,6 @@ augroup status
 augroup END
 
 " ---------------------------------------------------------------------
-" https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 " Gutter
 
 function! s:HighlightGroup()
