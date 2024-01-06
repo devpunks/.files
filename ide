@@ -15,14 +15,10 @@ echo LINES $LINES
 # Setup a session work space called `$SESSION
 tmux new-session -d -s $SESSION -x - -y -
 
-# attach to new session
-# tmux -v -u2 attach
-
-# tmux send-keys 'vi' C-m
-
-# Split pane 0 vertically by 30%
-# tmux split-window -h -l 30
-# tmux send-keys 'git status' Enter
+# Split pane vertically by 30%
+tmux split-window -h -l 40%
+sleep $DELAY
+tmux send-keys 'git status' Enter
 
 # Split pane 1 horizontally
 # tmux split-window -v -l 5
