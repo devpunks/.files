@@ -42,17 +42,11 @@ highlight! PmenuThumb NONE
 highlight! PmenuSbar NONE
 highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 
-" Tabs
-highlight! TabLine cterm=reverse,italic,underline ctermfg=NONE ctermfg=NONE ctermbg=NONE
-highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
-highlight! TabLineSel cterm=bold ctermfg=NONE ctermbg=NONE
-
-highlight! Special cterm=bold ctermfg=NONE
-  highlight! link SpecialKey Special
-  highlight! link NonText Special
-
-" TODO: Foo
-highlight! Todo cterm=standout,bold,underline ctermfg=8 ctermbg=NONE
+" Search
+highlight! Search cterm=reverse ctermfg=NONE ctermbg=NONE
+highlight! IncSearch cterm=reverse
+highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
+  highlight! link MoreMsg ModeMsg
 
 " Error Warnings
 highlight! WarningMsg cterm=standout ctermfg=NONE
