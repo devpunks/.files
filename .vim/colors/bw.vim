@@ -69,6 +69,11 @@ highlight! StatusLine cterm=bold,reverse ctermfg=grey
 highlight! StatusLineNC cterm=reverse ctermfg=8
 highlight! VertSplit cterm=NONE ctermfg=8
 
+" Tabs
+highlight! TabLine cterm=reverse,italic ctermfg=NONE ctermfg=NONE ctermbg=NONE
+highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
+highlight! TabLineSel cterm=bold,underline ctermfg=NONE ctermbg=NONE
+
 " Navigation
 highlight! Title cterm=bold ctermfg=NONE
 highlight! Directory cterm=bold ctermfg=NONE
