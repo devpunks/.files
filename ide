@@ -35,6 +35,5 @@ tmux select-pane -t 1
 sleep $DELAY
 tmux send-keys 'vi' Enter
 
-# Split pane 0 horizontally
-# tmux split-window -v -l 1
-# umux send-keys 'clear' Enter
+# attach to new session
+tmux -v -u2 attach -t $SESSION
