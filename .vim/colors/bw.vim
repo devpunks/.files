@@ -83,6 +83,7 @@ highlight! Visual cterm=reverse ctermbg=NONE
 highlight! Question cterm=standout ctermfg=NONE
 
 " Syntax
+" https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
 highlight! Special cterm=bold ctermfg=NONE
   highlight! link SpecialKey Special " nbsp|tab|trail
   highlight! link NonText Special " eol|extends
