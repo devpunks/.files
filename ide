@@ -3,7 +3,9 @@
 # https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e
 # fullscreen split - https://unix.stackexchange.com/questions/124310
 
-USER=`whoami`
+# Use PIPES for race conditions in pane creation commands
+#   - https://www.manniwood.com/2021_08_02/fun_with_tmux.html
+DELAY=0.5
 SESSION='devPunks😈studio'
 SOCKET='devpunks' # See tmux -L|S <socket|file> flag
 
