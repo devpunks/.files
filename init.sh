@@ -1,5 +1,6 @@
 pkg upgrade
 pkg update
+pkg install termux-services
 pkg install termux-api
 termux-setup-storage
 termux-info
