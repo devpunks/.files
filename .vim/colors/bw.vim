@@ -19,6 +19,7 @@ endif
 
 let g:colors_name="devPunks😈Mono"
 
+" Base Default
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 highlight! DiffAdd    ctermfg=7
