@@ -21,8 +21,15 @@ sleep $DELAY
 tmux send-keys 'git status' Enter
 
 # Split pane 1 horizontally
-# tmux split-window -v -l 5
-# tmux send-keys 'pwd' Enter
+tmux split-window -v -l 30%
+sleep $DELAY
+tmux send-keys 'pwd' Enter
+
+# Split first pane horizontally
+tmux select-pane -t 1
+tmux split-window -t 1 -v -l 20%
+sleep $DELAY
+tmux send-keys 'clear' Enter
 
 # Select pane 0
 # tmux select-pane -t 0
