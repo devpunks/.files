@@ -31,8 +31,9 @@ tmux split-window -t 1 -v -l 20%
 sleep $DELAY
 tmux send-keys 'clear' Enter
 
-# Select pane 0
-# tmux select-pane -t 0
+tmux select-pane -t 1
+sleep $DELAY
+tmux send-keys 'vi' Enter
 
 # Split pane 0 horizontally
 # tmux split-window -v -l 1
