@@ -80,11 +80,10 @@ highlight! Directory cterm=bold ctermfg=NONE
 highlight! Visual cterm=reverse ctermbg=NONE
 highlight! Question cterm=standout ctermfg=NONE
 
-highlight! Search cterm=reverse ctermfg=NONE ctermbg=NONE
-highlight! IncSearch cterm=reverse
-highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
-  highlight! link MoreMsg ModeMsg
-
+" Syntax
+highlight! Special cterm=bold ctermfg=NONE
+  highlight! link SpecialKey Special
+  highlight! link NonText Special
 highlight! Ignore ctermfg=NONE
 highlight! Conceal ctermfg=NONE ctermbg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
