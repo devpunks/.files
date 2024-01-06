@@ -85,7 +85,7 @@ highlight! Question cterm=standout ctermfg=NONE
 " Syntax
 highlight! Special cterm=bold ctermfg=NONE
   highlight! link SpecialKey Special
-  highlight! link NonText Special
+  highlight! link NonText Special " eol|extends
 highlight! Ignore ctermfg=NONE
 highlight! Conceal ctermfg=NONE ctermbg=NONE
 highlight! Comment cterm=italic ctermfg=NONE
