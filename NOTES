@@ -95,6 +95,7 @@ Android Accessibility
   - Right floating window ffrom left sticky
 
 # TERMUX  ------------------------------------
+#   - https://wiki.termux.com/wiki/Termux-services
 #   - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
 - [CTRL][ALT] + -   # Reduce text size
 - [CTRL][ALT] + =   # Increase text size
