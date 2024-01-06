@@ -9,7 +9,8 @@ DELAY=0.5
 SESSION='devPunks😈studio'
 SOCKET='devpunks' # See tmux -L|S <socket|file> flag
 
-tmux start-server
+echo COLUMNS $COLUMNS
+echo LINES $LINES
 
 # Setup a session work space called `$SESSION
 tmux new-session -AdP -s $SESSION -n 'Vi' -x $COLUMNS -y $LINES
