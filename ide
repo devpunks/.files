@@ -13,7 +13,7 @@ echo COLUMNS $COLUMNS
 echo LINES $LINES
 
 # Setup a session work space called `$SESSION
-tmux new-session -AdP -s $SESSION -n 'Vi' -x $COLUMNS -y $LINES
+tmux new-session -d -s $SESSION -x - -y -
 
 # attach to new session
 # tmux -v -u2 attach
