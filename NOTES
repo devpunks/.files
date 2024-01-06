@@ -123,9 +123,9 @@ Android Accessibility
 
 # VIM ---------------------------------
 # cool help screens
-# :he group-name
-# :he highlight-groups
-# :he cterm-colors
+# :h group-name
+# :h highlight-groups
+# :h cterm-colors
 # :h index - All keyboard mappings
 # <C-v> (<C-q> on Windows) Then type escape command
 # :verbose map - Keyboard mappings - https://vi.stackexchange.com/questions/7722
