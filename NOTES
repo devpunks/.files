@@ -97,6 +97,7 @@ Android Accessibility
 # TERMUX  ------------------------------------
 #   - https://wiki.termux.com/wiki/Termux-services
 #   - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
+
 - [CTRL][ALT] + -   # Reduce text size
 - [CTRL][ALT] + =   # Increase text size
 - [CTRL][ALT] + {N} # Switch to Session N (0-9)
