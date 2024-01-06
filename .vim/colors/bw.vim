@@ -52,7 +52,7 @@ highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
 highlight! WarningMsg cterm=standout ctermfg=NONE
 highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
   highlight! link ErrorMsg Error
-highlight SpellBad cterm=standout,strikethrough ctermbg=NONE
+highlight SpellBad cterm=strikethrough ctermbg=NONE
   highlight! link SpellCap SpellBad
   highlight! link SpellRare SpellBad
   highlight! link SpellLocal SpellBad
