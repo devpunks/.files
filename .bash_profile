@@ -321,7 +321,7 @@ function trash {
 
   [[ -f  "$1" ]] \
     && echo "🚮  Sending to trash \n 🗑 ${1}" \
-    && mv -i --strip-trailing-slashes "$1" $TMPDIR
+    && mv -i --strip-trailing-slashes "${1}" $TMPDIR
 
   tree -L 1 $TMPDIR
 }
