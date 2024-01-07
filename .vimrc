@@ -576,7 +576,6 @@ highlight CursorLineNr ctermfg=magenta ctermbg=234
 highlight StatusFileName ctermbg=234 ctermfg=magenta
 
 " Popups
-highlight InfoPopUp
 highlight Pmenu
 highlight PmenuSel
 highlight PmenuKind
