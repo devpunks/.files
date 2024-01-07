@@ -544,7 +544,9 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 
 " ********************************************************************************
 " {{{ COLORSCHEME
-" ********************************************************************************
+"   - ./vim/colors/default.vim
+"   - ./vim/colors/devpunks.vim
+"
 "   - https://jonasjacek.github.io/colors
 "   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
