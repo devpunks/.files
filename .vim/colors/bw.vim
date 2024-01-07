@@ -88,7 +88,7 @@ highlight! Special cterm=bold ctermfg=NONE
   highlight! link SpecialKey Special " nbsp|tab|trail
   highlight! link NonText Special " eol|extends
 highlight! Ignore ctermfg=NONE
-highlight! Conceal ctermfg=NONE ctermbg=red
+highlight! Conceal ctermfg=NONE ctermbg=cyan
 highlight! Comment cterm=italic ctermfg=NONE
 highlight! Statement cterm=bold ctermfg=NONE
 highlight! PreProc cterm=underline,italic ctermfg=NONE
