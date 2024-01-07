@@ -605,7 +605,7 @@ echom "Gutter bg: ".s:gutter_bg
 for type in ["Add", "Delete", "Change"]
   if ! hlexists("GitGutter".type) | break | endif
 
-" echom "GitGutter".type." - ".hlexists("GitGutter".type)
+  echom "GitGutter".type." - ".hlexists("GitGutter".type)
 
 " execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
 " execute "verbose hi GitGutter".type
