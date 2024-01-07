@@ -587,9 +587,33 @@ highlight PmenuThumb
 highlight PmenuSbar
 highlight PmenuThumb
 
-" -----------------------------------------------------
-"  }}}
-" -----------------------------------------------------
+augroup status
+  autocmd!
+" Interactive Status -----------------------------
+  highlight! StatusLineInsert cterm=reverse,bold
+  autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
+  autocmd InsertLeave * highlight! link StatusLine NONE
+augroup END
+
+" Custom Color Groups
+" gutter --------------------------------------------------------------
+" let s:gutter_bg=s:GetColor('LineNr', 'bg#')
+let s:gutter_bg=0
+echom "Gutter bg: ".s:gutter_bg
+
+" execute "highlight SignColumn ctermbg=".s:gutter_bg
+" execute "highlight CursorLineNr ctermbg=".s:gutter_bg
+
+for type in ["Add", "Delete", "Change"]
+  if ! hlexists("GitGutter".type) | break | endif
+
+" echom "GitGutter".type." - ".hlexists("GitGutter".type)
+
+" execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
+" execute "verbose hi GitGutter".type
+" execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
+" execute "verbose hi GitGutter".type
+endfor
 
 " }}}
 
