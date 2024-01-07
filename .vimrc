@@ -562,47 +562,11 @@ try
   colorscheme bw " jellybeans
 catch | endtry
 
-" *******************************************************************************
-" {{{ typography.vimrc
-" *******************************************************************************
-" Custom Color Groups
-" gutter --------------------------------------------------------------
-" let s:gutter_bg=s:GetColor('LineNr', 'bg#')
-let s:gutter_bg=0
-echom "Gutter bg: ".s:gutter_bg
-
-" execute "highlight SignColumn ctermbg=".s:gutter_bg
-" execute "highlight CursorLineNr ctermbg=".s:gutter_bg
-
-for type in ["Add", "Delete", "Change"]
-  if ! hlexists("GitGutter".type) | break | endif
-
-" echom "GitGutter".type." - ".hlexists("GitGutter".type)
-
-" execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
-" execute "verbose hi GitGutter".type
-" execute "highlight GitGutter".type." guibg=NONE ctermbg=".s:gutter_bg
-" execute "verbose hi GitGutter".type
-endfor
-
-" https://vi.stackexchange.com/questions/10897/how-do-i-customize-vimdiff-colors
-" Interactive Status -----------------------------
-highlight! StatusLineInsert cterm=reverse,bold ctermfg=NONE
-
-augroup status
-  autocmd!
-  autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
-  autocmd InsertLeave * highlight! link StatusLine NONE
-augroup END
-
-" ---------------------------------------------------------------------
-" Gutter
-
-function! s:HighlightGroup()
-    let l:s = synID(line('.'), col('.'), 1)
-    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
-endfun
-command! Color call s:HighlightGroup()
+" NerdTree
+highlight NERDTreeCWD cterm=italic
+highlight! link NERDTreeFile Statement
+highlight! link NERDTreeExecFile Statement
+highlight! link NERDTreeDir Directory
 
 syntax match Conceal /lambda/ conceal cchar=λ
 set conceallevel=2
