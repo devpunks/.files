@@ -302,8 +302,8 @@ function unpack {
 function destroy {
   [ ! -e "$1" ] && return
 
-  shred --force --zero --iterations=5 --remove $1
-  echo "💣 destroyed 💥 $1"
+  shred --force --zero --iterations=5 --remove "${1}"
+  echo "💣 destroyed 💥 ${1}"
 }
 
 function recycle {
