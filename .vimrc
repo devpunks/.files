@@ -627,6 +627,7 @@ endfor
 function! s:GetColor(group, attr)
   return synIDattr( synIDtrans( hlID(a:group)), a:attr)
 endfunction
+
 " --------------------------------------------------------------------------------
 " (:hi)ghlight group under cursor
 " --------------------------------------------------------------------------------
