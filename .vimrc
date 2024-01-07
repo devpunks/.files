@@ -602,6 +602,10 @@ function! s:HighlightGroup()
     echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
 endfun
 command! Color call s:HighlightGroup()
+
+syntax match Conceal /lambda/ conceal cchar=λ
+set conceallevel=2
+" lambda
 finish
 
 
