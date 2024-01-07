@@ -727,3 +727,6 @@ endfun
 command! Colors call HighlightGroup()
 
 " }}}
+
+# au VimEnter * syntax match Conceal /lambda/ conceal cchar=λ
+# au VimEnter * set conceallevel=2
