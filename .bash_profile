@@ -307,6 +307,9 @@ function destroy {
 }
 
 function recycle {
+  echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
+
+  destroy "${TMPDIR}/*.*"
 }
 
 # Trash
