@@ -306,6 +306,9 @@ function destroy {
   echo "💣 destroyed 💥 $1"
 }
 
+function recycle {
+}
+
 # Trash
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
 function trash {
