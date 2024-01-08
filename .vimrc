@@ -643,6 +643,7 @@ command! Colors call HighlightGroup()
 set conceallevel=2
 
 syntax match Conceal /import/ conceal cchar=⬅
+syntax match Conceal '@import' conceal cchar=⬅
 syntax match Conceal /fn/ conceal cchar=𝑓
 syntax match Conceal /def/ conceal cchar=𝑓
 syntax match Conceal /function/ conceal cchar=𝑓
