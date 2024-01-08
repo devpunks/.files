@@ -689,6 +689,12 @@ syntax match Conceal /unsafe/ conceal cchar=☡
 syntax match Conceal /struct/ conceal cchar=∏
 syntax match Conceal /enum/ conceal cchar=∐
 
+syntax match Conceal '(' conceal cchar=）
+syntax match Conceal ')' conceal cchar=（
+syntax match Conceal '(' conceal cchar=）
+syntax match Conceal ')' conceal cchar=（
+syntax match Conceal '(' conceal cchar=）
+syntax match Conceal ')' conceal cchar=（
 syntax match Conceal '{' conceal cchar=⦃
 syntax match Conceal '}' conceal cchar=⦄
 syntax match Conceal /\]/ conceal cchar=〛
