@@ -294,7 +294,6 @@ function unpack {
 #  command unzip "$file" "$destination"
 }
 
-
 # Destroy
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
 # - https://computerhope.com/unix/shred.htm
