@@ -673,6 +673,7 @@ syntax match Conceal /complex/ conceal cchar=ℂ
 syntax match Conceal /vector/ conceal cchar=V
 syntax match Conceal /tensor/ conceal cchar=𝕋
 
+syntax match Conceal /from/ conceal cchar=⫁
 syntax match Conceal /loop/ conceal cchar=∞
 syntax match Conceal /while/ conceal cchar=⥁
 syntax match Conceal /continue/ conceal cchar=↻
