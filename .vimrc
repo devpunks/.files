@@ -668,4 +668,6 @@ syntax match Conceal /complex/ conceal cchar=ℂ
 syntax match Conceal /vector/ conceal cchar=V
 syntax match Conceal /tensor/ conceal cchar=𝕋
 
+syntax match Conceal /loop/ conceal cchar=∞
+
 set conceallevel=2
