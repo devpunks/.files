@@ -706,7 +706,7 @@ syntax match Conceal 'END' conceal cchar=︸
 
 
 syntax match /sum/ conceal cchar=∑
-syntax match hsNiceOperator /union/ conceal cchar=⨄
+syntax match /union/ conceal cchar=⨄
 syntax match hsNiceOperator /sqrt/ conceal cchar=√
 syntax match hsNiceOperator /pi/ conceal cchar=π
 
