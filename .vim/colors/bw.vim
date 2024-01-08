@@ -12,7 +12,7 @@ if exists("syntax_on")
 endif
 
 if 'dark' == &background " Convert to ternary
-  echo 'dark'
+  echom 'dark'
 elseif 'light' == &background
   echo 'light'
 endif
