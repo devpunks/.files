@@ -667,5 +667,4 @@ syntax match Conceal /float/ conceal cchar=ℝ
 syntax match Conceal /complex/ conceal cchar=ℂ
 syntax match Conceal /vector/ conceal cchar=V
 
-
 set conceallevel=2
