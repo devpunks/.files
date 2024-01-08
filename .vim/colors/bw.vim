@@ -81,7 +81,7 @@ highlight! TabLineSel cterm=bold,underline ctermfg=NONE ctermbg=NONE
 highlight! Title cterm=bold ctermfg=NONE
 highlight! Directory cterm=bold ctermfg=NONE
 highlight! Visual cterm=standout,bold,underline,underdouble,italic ctermbg=NONE
-highlight! Conceal cterm=standout,bold,underline,undercurl,underdouble,underdotted ctermfg=cyan ctermbg=NONE
+highlight! Conceal cterm=standout,bold,underline,underdouble ctermfg=cyan ctermbg=NONE
 highlight! Question cterm=standout ctermfg=NONE
 
 " Syntax
