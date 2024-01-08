@@ -639,6 +639,7 @@ command! Colors call HighlightGroup()
 
 " }}}
 
-" --------------------------------------------------------------------------------
-syntax match Conceal /function/ conceal cchar=λ
+" conceal.vim --------------------------------------------------------------------
+syntax match Conceal /function/ conceal cchar=≝
+syntax match Conceal /==/ conceal cchar=λ
 set conceallevel=2
