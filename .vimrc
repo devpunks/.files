@@ -708,7 +708,7 @@ syntax match Conceal 'END' conceal cchar=︸
 syntax match /sum/ conceal cchar=∑
 syntax match /union/ conceal cchar=⨄
 syntax match /sqrt/ conceal cchar=√
-syntax match hsNiceOperator /pi/ conceal cchar=π
+syntax match /pi/ conceal cchar=π
 
 syntax match Conceal 'https://' conceal cchar=⛓
 
