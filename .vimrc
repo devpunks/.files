@@ -662,6 +662,7 @@ syntax match Conceal /char/ conceal cchar=∁
 syntax match Conceal /string/ conceal cchar=𝐒
 syntax match Conceal /str/ conceal cchar=𝐒
 syntax match Conceal /unsigned/ conceal cchar=ℕ
+syntax match Conceal /int/ conceal cchar=ℤ
 
 
 set conceallevel=2
