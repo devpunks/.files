@@ -710,6 +710,4 @@ syntax match Conceal /union/ conceal cchar=⨄
 syntax match Conceal /sqrt/ conceal cchar=√
 syntax match Conceal /pi/ conceal cchar=π
 
-syntax match Conceal 'https://' conceal cchar=⛓
-
 set conceallevel=2
