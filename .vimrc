@@ -648,4 +648,5 @@ syntax match Conceal /=>/ conceal cchar=≥
 syntax match Conceal /&&/ conceal cchar=∧
 syntax match Conceal /||/ conceal cchar=∨
 syntax match Conceal /!/ conceal cchar=¬
+syntax match Conceal /true/ conceal cchar=⊤
 set conceallevel=2
