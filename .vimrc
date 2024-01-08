@@ -715,6 +715,8 @@ syntax match Conceal '}' conceal cchar=⦄
 syntax match Conceal 'BEGIN' conceal cchar=︷
 syntax match Conceal 'END' conceal cchar=︸
 
+syntax match Conceal /exists/ conceal cchar=∃
+syntax match Conceal /pow/ conceal cchar=⌃
 syntax match Conceal /sum/ conceal cchar=∑
 syntax match Conceal /union/ conceal cchar=⨄
 syntax match Conceal /sqrt/ conceal cchar=√
