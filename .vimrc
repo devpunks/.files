@@ -644,4 +644,5 @@ syntax match Conceal /function/ conceal cchar=≝
 syntax match Conceal /==/ conceal cchar=λ
 syntax match Conceal /!=/ conceal cchar=≠
 syntax match Conceal /<=/ conceal cchar=≤
+syntax match Conceal /=>/ conceal cchar=≥
 set conceallevel=2
