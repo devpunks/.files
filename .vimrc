@@ -658,5 +658,6 @@ syntax match Conceal /->/ conceal cchar=→
 syntax match Conceal /assert/ conceal cchar=‼
 
 syntax match Conceal /bool/ conceal cchar=𝔹
+syntax match Conceal /char/ conceal cchar=∁
 
 set conceallevel=2
