@@ -684,4 +684,6 @@ syntax match Conceal /unsafe/ conceal cchar=☡
 syntax match Conceal /struct/ conceal cchar=∏
 syntax match Conceal /enum/ conceal cchar=∐
 
+syntax match hsNiceOperator /sum/ conceal cchar=∑
+
 set conceallevel=2
