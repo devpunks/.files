@@ -664,5 +664,6 @@ syntax match Conceal /str/ conceal cchar=𝐒
 syntax match Conceal /unsigned/ conceal cchar=ℕ
 syntax match Conceal /int/ conceal cchar=ℤ
 syntax match Conceal /float/ conceal cchar=ℝ
+syntax match Conceal /complex/ conceal cchar=ℂ
 
 set conceallevel=2
