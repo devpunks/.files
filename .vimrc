@@ -678,5 +678,4 @@ syntax match Conceal /else/ conceal cchar=▪
 syntax match Conceal /break/ conceal cchar=◁
 syntax match Conceal /return/ conceal cchar=◀
 
-
 set conceallevel=2
