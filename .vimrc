@@ -686,5 +686,6 @@ syntax match Conceal /enum/ conceal cchar=∐
 
 syntax match hsNiceOperator /sum/ conceal cchar=∑
 syntax match hsNiceOperator /sqrt/ conceal cchar=√
+syntax match hsNiceOperator /pi/ conceal cchar=π
 
 set conceallevel=2
