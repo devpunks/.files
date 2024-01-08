@@ -666,5 +666,6 @@ syntax match Conceal /int/ conceal cchar=ℤ
 syntax match Conceal /float/ conceal cchar=ℝ
 syntax match Conceal /complex/ conceal cchar=ℂ
 syntax match Conceal /vector/ conceal cchar=V
+syntax match Conceal /tensor/ conceal cchar=𝕋
 
 set conceallevel=2
