@@ -672,6 +672,7 @@ syntax match Conceal /loop/ conceal cchar=∞
 syntax match Conceal /while/ conceal cchar=⥁
 syntax match Conceal /continue/ conceal cchar=↻
 syntax match Conceal /match/ conceal cchar=▸
+syntax match Conceal /if/ conceal cchar=▸
 
 
 set conceallevel=2
