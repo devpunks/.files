@@ -14,7 +14,7 @@ endif
 if 'dark' == &background " Convert to ternary
   echom 'dark'
 elseif 'light' == &background
-  echo 'light'
+  echom 'light'
 endif
 
 let g:colors_name="devPunks😈Mono"
