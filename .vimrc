@@ -648,6 +648,7 @@ syntax match Conceal /!=/ conceal cchar=≠
 syntax match /\/=/ conceal cchar=≠
 syntax match Conceal /<=/ conceal cchar=≤
 syntax match Conceal /=>/ conceal cchar=≥
+syntax match Conceal />>/ conceal cchar=»
 syntax match Conceal /&&/ conceal cchar=∧
 syntax match Conceal /||/ conceal cchar=∨
 syntax match Conceal /!/ conceal cchar=¬
