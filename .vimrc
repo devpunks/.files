@@ -676,6 +676,7 @@ syntax match Conceal /if/ conceal cchar=▸
 syntax match Conceal /elif/ conceal cchar=▹
 syntax match Conceal /else/ conceal cchar=▪
 syntax match Conceal /break/ conceal cchar=◁
+syntax match Conceal /return/ conceal cchar=◀
 
 
 set conceallevel=2
