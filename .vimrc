@@ -705,10 +705,10 @@ syntax match Conceal 'BEGIN' conceal cchar=︷
 syntax match Conceal 'END' conceal cchar=︸
 
 
-syntax match /sum/ conceal cchar=∑
-syntax match /union/ conceal cchar=⨄
-syntax match /sqrt/ conceal cchar=√
-syntax match /pi/ conceal cchar=π
+syntax match Conceal /sum/ conceal cchar=∑
+syntax match Conceal /union/ conceal cchar=⨄
+syntax match Conceal /sqrt/ conceal cchar=√
+syntax match Conceal /pi/ conceal cchar=π
 
 syntax match Conceal 'https://' conceal cchar=⛓
 
