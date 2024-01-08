@@ -645,6 +645,7 @@ syntax match Conceal /def/ conceal cchar=※
 syntax match Conceal /function/ conceal cchar=λ
 syntax match Conceal /==/ conceal cchar=≡
 syntax match Conceal /!=/ conceal cchar=≠
+syntax match /\/=/ conceal cchar=≠
 syntax match Conceal /<=/ conceal cchar=≤
 syntax match Conceal /=>/ conceal cchar=≥
 syntax match Conceal /&&/ conceal cchar=∧
