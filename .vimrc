@@ -710,4 +710,6 @@ syntax match hsNiceOperator /union/ conceal cchar=⨄
 syntax match hsNiceOperator /sqrt/ conceal cchar=√
 syntax match hsNiceOperator /pi/ conceal cchar=π
 
+syntax match Conceal 'https://' conceal cchar=⛓
+
 set conceallevel=2
