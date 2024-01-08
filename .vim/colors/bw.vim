@@ -12,6 +12,7 @@ if exists("syntax_on")
 endif
 
 if 'dark' == &background " Convert to ternary
+  " Auto-Dark Mode https://arslan.io/2021/02/15/automatic-dark-mode-for-terminal-applications
   echom 'dark'
 elseif 'light' == &background
   echom 'light'
