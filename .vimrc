@@ -643,6 +643,7 @@ command! Colors call HighlightGroup()
 syntax match Conceal /fn/ conceal cchar=≝
 syntax match Conceal /def/ conceal cchar=※
 syntax match Conceal /function/ conceal cchar=λ
+syntax match Conceal /lambda/ conceal cchar=λ
 syntax match Conceal /==/ conceal cchar=≡
 syntax match Conceal /!=/ conceal cchar=≠
 syntax match Conceal /\/=/ conceal cchar=≠
