@@ -429,64 +429,6 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
 
 " }}}
 
-" ****************************************************************************
-" {{{ STATUS
-" Word Count
-"   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
-"   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
-" ****************************************************************************
-set showmode " Vi (not Vim)
-set laststatus=2 " Always show status line
-set shortmess+=ac
-" https://stackoverflow.com/questions/17376257/vim-hyphen-in-ruler-column-value
-
-set ruler " set cursor coordinates
-set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
-
-" set statusline=[fo=%{&fo}]
-set statusline= " clear out status line
-
-" file type
-set statusline+=%#Statement#[\ 💻%Y
-" mode
-set statusline+=%{(mode()=='c')?'\ 💲':''}
-set statusline+=%{(mode()=='i')?'\ 📝':''}
-set statusline+=%{(mode()=='n')?'\ 📄':''}
-set statusline+=%{(mode()=='R')?'\ 📃':''}
-set statusline+=%{(mode()=='v')?'\ 🔍':''}
-set statusline+=%{(mode()=='V')?'\ 🔎':''}
-" read only mode
-set statusline+=%r
-" full file name
-set statusline+=%-10F
-set statusline+=\]%#StatusLine# " change to default highlight
-" cursor column position
-set statusline+=\ 📜⇨%2c✖%-l⇩
-" percentage
-set statusline+=(%p%%)⇳
-" cursor line, total lines
-set statusline+=\ of\ %L☰LOC
-" right justify everything after this line
-set statusline+=%=
-
-let scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ %#Normal#\ 🎨\ %{scheme}\ 
-
-" }}}
-
-" {{{ GUTTER
-" https://github.com/airblade/vim-gitgutter/commit/8db2fc5
-set number
-set numberwidth=4 " gutter columns
-
-if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
-  " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
-  " https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
-  set signcolumn=yes " [auto|no|yes|number]
-endif
-
-" }}}
-
 " ********************************************************************************
 " {{{ typography.vimrc
 " ********************************************************************************
