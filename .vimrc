@@ -481,6 +481,8 @@ set statusline+=\ 📜⇨%2c✖%-l⇩
 set statusline+=(%p%%)⇳
 " cursor line, total lines
 set statusline+=\ of\ %L☰LOC
+" right justify everything after this line
+set statusline+=%=
 
 let scheme = get(g:, 'colors_name', 'NONE')
 set statusline+=\ \ \ 🎨\ %{scheme}\ 
