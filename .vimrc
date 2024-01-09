@@ -81,9 +81,8 @@ set foldcolumn=2
 set foldclose=all
 set foldmethod=indent "Enable indent folding
 
-if &compatible
-  set nocompatible " https://stackoverflow.com/questions/5845557
-endif
+" https://stackoverflow.com/questions/5845557
+if &compatible | set nocompatible | endif
 
 "set shell " The shell used to execute commands
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
