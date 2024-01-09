@@ -22,7 +22,6 @@
 
 " Screencasts: http://vimcasts.org
 "
-"
 " Cheatsheet - https://vim.rtorr.com/
 " TERM - https://vimhelp.org/term.txt.html
 " Popups - https://vimhelp.org/popup.txt.html
