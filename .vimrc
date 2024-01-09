@@ -103,8 +103,8 @@ set smartcase " Capitalization case-sensitive search
 set incsearch " highlight search matches
 set wrapscan " Search respects wrapping
 set visualbell " TODO: t_vb= Flash the screen instead of beeping errors
-set noerrorbells " Unset display beep on errors
-set belloff+=ctrlg  " Turn off insert completion bell
+set errorbells " Unset display beep on errors
+set belloff+=wildmode " Turn off insert completion bell
 set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set cursorlineopt=both " [number,line,both,screenline]
