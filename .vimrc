@@ -563,7 +563,7 @@ try
 catch | endtry
 
 " NerdTree
-highlight NERDTreeCWD cterm=italic
+highlight NERDTreeCWD cterm=underline,italic
 highlight! link NERDTreeFile Statement
 highlight! link NERDTreeExecFile Statement
 highlight! link NERDTreeDir Directory
