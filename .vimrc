@@ -50,15 +50,6 @@ execute "set <FocusGained>=\<Esc>[I"
 execute "set <FocusLost>=\<Esc>[O"
 
 " typography.vim FONTS ------------------------------------------------
-" Italic Font ???
-" https://stackoverflow.com/a/30937851/173208
-let &t_ZH="\e[3m" " italics start
-let &t_ZR="\e[23m" " italics  end
-let &t_Cs = "\e[4:3m" " UnderCurl start
-let &t_Ce = "\e[4:0m" " Reset
-let &t_Us = "\e[4:2m" " UnderDouble
-let &t_ds = "\e[4:4m" " UnderDotted
-let &t_Ds = "\e[4:5m" " UnderDashed
 
 " NOTES -------------------------------------------------------------------
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
