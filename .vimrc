@@ -569,9 +569,6 @@ highlight! link NERDTreeExecFile Statement
 highlight! link NERDTreeDir Directory
 
 " Gutter Overrides
-highlight SignColumn ctermbg=234
-highlight CursorColumn term=reverse ctermfg=magenta
-highlight CursorLineNr ctermfg=magenta
 highlight StatusFileName ctermbg=234 ctermfg=magenta
 
 " Popups
