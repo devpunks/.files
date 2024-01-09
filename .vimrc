@@ -49,8 +49,6 @@ let &t_fd = "\<Esc>[?1004l" " disable focus-event tracking
 execute "set <FocusGained>=\<Esc>[I"
 execute "set <FocusLost>=\<Esc>[O"
 
-" typography.vim FONTS ------------------------------------------------
-
 " NOTES -------------------------------------------------------------------
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
 "  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
