@@ -198,7 +198,7 @@ set wildignore+=*.DS_STORE " etc.
 set wildmode=list:longest,full
 set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
 set completeopt+=menu,menuone,noinsert,popup,preview
-set completepopup+=align:menu,border:on,highlight:Pmenu
+set completepopup+=align:item,border:on,highlight:Pmenu
 
 " - Clipboard Registers ------------------------------------
 "   - https://github.com/termux/termux-packages/issues/2308
