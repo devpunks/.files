@@ -71,7 +71,6 @@ endif
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
 " set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
 
-" (Hopefully) Stop VIM from crashing
 " https://superuser.com/questions/810622
 syntax on " turns syntax highlighting on
 set synmaxcol=256 " https://github.com/tpope/vim-sensible/issues/142
