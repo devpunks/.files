@@ -33,14 +33,10 @@ highlight! DiffChange ctermfg=8
 highlight! DiffText   ctermfg=NONE
 
 " Popups
-highlight! Pmenu NONE
-highlight! PmenuSel NONE
-highlight! PmenuKind NONE
-highlight! PmenuKindSel NONE
-highlight! PmenuExtra NONE
-highlight! PmenuExtraSel NONE
-highlight! PmenuThumb NONE
-highlight! PmenuSbar NONE
+highlight! PmenuSbar cterm=NONE ctermbg=NONE
+highlight! PmenuSel ctermfg=NONE ctermbg=NONE
+highlight! Pmenu cterm=standout ctermfg=NONE ctermbg=NONE
+highlight! link PmenuThumb Pmenu
 highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 
 " Search
