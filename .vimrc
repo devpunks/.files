@@ -474,6 +474,7 @@ set statusline+=%{(mode()=='V')?'\ 🔍':''}
 set statusline+=%r
 " full file name
 set statusline+=%-10F
+set statusline+=\|%#StatusLine# " change to default highlight
 " right justify everything after this line
 set statusline+=%=
 " cursor column position
