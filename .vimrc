@@ -474,7 +474,7 @@ set statusline+=%{(mode()=='V')?'\ 🔎':''}
 set statusline+=%r
 " full file name
 set statusline+=%-10F
-set statusline+=\|%#StatusLine# " change to default highlight
+set statusline+=\]%#StatusLine# " change to default highlight
 " cursor column position
 set statusline+=\ 📜⇨%2c✖%-l⇩
 " percentage
