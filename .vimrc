@@ -108,7 +108,8 @@ set belloff+=wildmode " Turn off insert completion bell
 set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set cursorlineopt=both " [number,line,both,screenline]
-set showmatch matchtime=3 " jump to matching brace
+set showmatch " jump to matching brace
+set matchtime=6 "in 1/10ths of second"
 set splitbelow splitright " new windows
 
 " Buffers ---------------------------
