@@ -571,17 +571,6 @@ highlight! link NERDTreeDir Directory
 " Gutter Overrides
 highlight StatusFileName ctermbg=234 ctermfg=magenta
 
-" Popups
-highlight Pmenu
-highlight PmenuSel
-highlight PmenuKind
-highlight PmenuKindSel
-highlight PmenuExtra
-highlight PmenuExtraSel
-highlight PmenuThumb
-highlight PmenuSbar
-highlight PmenuThumb
-
 augroup status
   autocmd!
 " Interactive Status -----------------------------
