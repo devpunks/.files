@@ -476,7 +476,7 @@ set statusline+=%r
 set statusline+=%-10F
 set statusline+=\|%#StatusLine# " change to default highlight
 " cursor column position
-set statusline+=\ 📜⇧%2c✖%-l⇩
+set statusline+=\ 📜⇨%2c✖%-l⇩
 " percentage
 set statusline+=(%p%%)⇳
 " cursor line, total lines
