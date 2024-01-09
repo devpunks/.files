@@ -566,7 +566,6 @@ catch | endtry
 highlight NERDTreeCWD cterm=underline,italic
 highlight! link NERDTreeFile Statement
 highlight! link NERDTreeExecFile Statement
-highlight! link NERDTreeDir Directory
 
 " Gutter Overrides
 highlight StatusFileName ctermbg=234 ctermfg=magenta
