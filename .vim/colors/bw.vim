@@ -58,7 +58,7 @@ highlight SpellBad cterm=strikethrough ctermbg=NONE
 " Gutter
 highlight! Cursor cterm=NONE ctermfg=7
 highlight! LineNr cterm=NONE ctermfg=8
-highlight! CursorLineNr cterm=standout ctermfg=darkgrey ctermbg=NONE
+highlight! CursorLineNr cterm=standout,bold ctermfg=NONE
 highlight! ColorColumn  cterm=strikethrough ctermbg=NONE ctermfg=8
 highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
 highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
