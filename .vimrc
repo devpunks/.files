@@ -91,9 +91,6 @@ set modeline " Head & tail file mode lines ( :help modeline )
 set nrformats-=octal
 set nrformats+=alpha
 
-" https://vimtricks.com/p/vim-line-length-marker/
-set colorcolumn=-8,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
-
 set hlsearch " results
 set autoread " re-read files
 set noautowrite " do not autowrite
