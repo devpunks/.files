@@ -83,14 +83,11 @@ set foldmethod=indent " [manual|indent|expr|marker|syntax|diff|]
 " https://stackoverflow.com/questions/5845557
 if &compatible | set nocompatible | endif
 
-"set shell " The shell used to execute commands
-set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
-set showcmd " show current command prompt suffix
-set nomodeline "Ignore file mode lines
+set spell    " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
+set showcmd  " show current command prompt suffix
+set modeline " Head & tail file mode lines ( :help modeline )
 
-" increment formats
-"   - https://vimtricks.com/p/vimtrick-increment-numbers/
-"   - https://www.reddit.com/r/vim/comments/p18418/til_that_ctrlactrlx_can_incrementdecrement_a/
+" increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
 set nrformats-=octal
 set nrformats+=alpha
 
