@@ -562,11 +562,6 @@ try
   colorscheme bw " jellybeans
 catch | endtry
 
-" NerdTree
-highlight NERDTreeCWD cterm=underline,italic
-highlight! link NERDTreeFile Statement
-highlight! link NERDTreeExecFile Statement
-
 " Gutter Overrides
 highlight StatusFileName ctermbg=234 ctermfg=magenta
 
