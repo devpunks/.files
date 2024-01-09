@@ -121,7 +121,6 @@ command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffe
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://vimtricks.com/p/saving-session-state/
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
-
 " disable sessions
 set viewoptions-=options
 set viewoptions+=localoptions
