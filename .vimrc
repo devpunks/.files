@@ -78,7 +78,7 @@ set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/
 set foldenable
 set foldcolumn=2
 set foldclose=all
-set foldmethod=indent "Enable indent folding
+set foldmethod=indent " [manual|indent|expr|marker|syntax|diff|]
 
 " https://stackoverflow.com/questions/5845557
 if &compatible | set nocompatible | endif
