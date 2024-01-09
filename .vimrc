@@ -451,6 +451,7 @@ set statusline+=%#Statement#[\ 💻%Y
 " mode
 set statusline+=%{(mode()=='c')?'\ 💲':''}
 set statusline+=%{(mode()=='i')?'\ 📝':''}
+set statusline+=%{(mode()=='n')?'\ 📄':''}
 set statusline+=%{(mode()=='R')?'\ 📃':''}
 set statusline+=%{(mode()=='v')?'\ 🔍':''}
 set statusline+=%{(mode()=='V')?'\ 🔎':''}
