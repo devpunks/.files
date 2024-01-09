@@ -465,11 +465,11 @@ set statusline= " clear out status line
 " file type
 set statusline+=%#Normal#[💻%Y]
 " mode
-set statusline+=%{(mode()=='n')?'\ 📄\ ':''}
-set statusline+=%{(mode()=='i')?'\ 📝\ ':''}
-set statusline+=%{(mode()=='R')?'\ 📃\ ':''}
-set statusline+=%{(mode()=='v')?'\ 🔎\ ':''}
-set statusline+=%{(mode()=='V')?'\ 🔍\ ':''}
+set statusline+=%{(mode()=='n')?'\ 📄':''}
+set statusline+=%{(mode()=='i')?'\ 📝':''}
+set statusline+=%{(mode()=='R')?'\ 📃':''}
+set statusline+=%{(mode()=='v')?'\ 🔎':''}
+set statusline+=%{(mode()=='V')?'\ 🔍':''}
 " read only mode
 set statusline+=%r
 " full file name
