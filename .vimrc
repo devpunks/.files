@@ -49,8 +49,8 @@ endif
 execute 'set <FocusLost>=\<Esc>[O'
 execute 'set <FocusGained>=\<Esc>[I'
 " xterm-focus-event tracking - https://github.com/vim/vim/issues/9296
-let &t_fe = "\<Esc>[?1004h" " enable focus-event tracking
-let &t_fd = "\<Esc>[?1004l" " disable focus-event tracking
+let &t_fe = '\<Esc>[?1004h' " enable focus-event tracking
+let &t_fd = '\<Esc>[?1004l' " disable focus-event tracking
 " https://groups.google.com/g/vim_use/c/VyQSx90uaPE
 
 " NOTES -------------------------------------------------------------------
