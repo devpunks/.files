@@ -464,7 +464,7 @@ set sidescroll=10 " scroll amount when a word is outside of view
 " https://stackoverflow.com/questions/15124386
 set display=lastline " Always show paragraph last line
 
-" (NORMAL MODE)
+" (NORMAL/VISUAL MODE)
 " (b)ackspace wrap EOL & BOL
 " (s)pace key wrap to next line at end of line
 set whichwrap=b,s,<,>,[,] " < left and right > arrow wrap to prev. and next line
