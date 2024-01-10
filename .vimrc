@@ -624,8 +624,9 @@ function! Tabline()
     let bufmodified = getbufvar( bufnr, '&mod' )
 
     let s .= '%' . tab . 'T'
-    let s .= (tab == tabpagenr() ? '%#TabLineSel# ▼' : '%#TabLine#')
-    let s .= ' ' . tab .'✎'
+    let s .= (tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
+    let s .= ( bufs > 1 ? '⧉'.bufs : '' )
+    let s .= '✎'
     let s .= (bufname != '' ? fnamemodify (bufname, ':t' )  : '[No Name]' )
 
     let s .= ( bufmodified==0 ? ' ' : '[+] ' )
