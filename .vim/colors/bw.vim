@@ -52,7 +52,7 @@ highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 " Search
 highlight! Search cterm=reverse ctermfg=NONE ctermbg=NONE
   highlight! link IncSearch Search
-highlight! CurSearch cterm=standout,underline ctermfg=red ctermbg=NONE
+highlight! CurSearch cterm=standout,underline ctermfg=NONE ctermbg=NONE
 highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
   highlight! link MoreMsg ModeMsg
 
