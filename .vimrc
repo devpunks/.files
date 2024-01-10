@@ -633,8 +633,8 @@ function! Tabline()
     let line .= ( tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
 
-  let s .= '%#TabLineFill#%T'
-  let s .= '%=%999X%#TabLineSel#[❌]'
+  let line .= '%#TabLineFill#%T'
+  let line .= '%=%999X%#TabLineSel#[❌]'
 
   return s
 endfunction
