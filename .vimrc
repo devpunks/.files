@@ -537,7 +537,7 @@ endfor
 set showmode " Vi (not Vim)
 set laststatus=2 " Always show status line
 set shortmess+=ac
-" https://stackoverflow.com/questions/17376257/vim-hyphen-in-ruler-column-value
+if has('win32') | set shortname=on | end
 
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
