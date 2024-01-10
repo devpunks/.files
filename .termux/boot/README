@@ -7,5 +7,7 @@
     - benefits - http://smarden.org/runit/benefits.html
   - https://github.com/termux/termux-services
   - https://wiki.termux.com/wiki/Termux-services
-  - Logs - $PREFIX/var/log/sv/<service>/current
+  - Logs
+    - $PREFIX/var/log/sv/<service>/current
+    - http://smarden.org/runit/svlogd.8.html
   - Services - $PREFIX/var/service/<service>/**
