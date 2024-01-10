@@ -23,6 +23,7 @@ pkg install whois
 pkg install which
 pkg install strace
 pkg install ncurses
+pkg install cmatrix
 pkg install openssh
 pkg install iproute2
 pkg install vlc && vlc --version
