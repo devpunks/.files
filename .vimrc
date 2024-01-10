@@ -178,7 +178,12 @@ let &t_SI ="\e[5 q" "SI = INSERT mode
 let &t_SR ="\e[3 q" "SR = REPLACE mode
 let &t_EI ="\e[2 q" "EI = NORMAL mode (ELSE)
 
-if has('gui_running')
+let &t_SI = "\<Esc>\]12;purple\x7"
+let &t_SR = "\<Esc>\]]2;red\x7"
+let &t_ER = "\<Esc>\]]2;cyan\x7"
+
+
+if has('gui_running')n
   " https://vim.fandom.com/wiki/Configuring_the_cursor
   set guicursor=n-v-c:block-Cursor
   set guicursor+=n-v-c:blinkwait10
