@@ -34,7 +34,7 @@ let &t_Ds = "\e[4:5m" " UnderDashed
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 " TODO: Foo
-highlight! Todo cterm=standout,italic,underline ctermfg=8 ctermbg=NONE
+highlight! Todo cterm=standout,italic,underline ctermfg=NONE ctermbg=NONE
 
 " Diff
 highlight! DiffAdd    ctermfg=7
