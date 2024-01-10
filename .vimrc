@@ -363,10 +363,10 @@ autocmd BufNewFile,BufRead *.erb setlocal filetype=eruby
 " -------------------------------------------------------------------------
 autocmd FileType python setlocal omnifunc=python3complete#Complete
 
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " Go
 "   - https://www.simplified.guide/vim/auto-complete-ruby
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
 
 " }}}
