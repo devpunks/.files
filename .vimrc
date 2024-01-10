@@ -322,10 +322,10 @@ set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) nex
 set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:↯
 set fillchars+=stl:△,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
 
-" =========================================================================
+" -------------------------------------------------------------------------
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
-" =========================================================================
+" -------------------------------------------------------------------------
 autocmd BufNewFile,BufRead *.md setlocal formatoptions-=t formatoptions+=n
 autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
 
