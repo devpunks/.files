@@ -636,7 +636,7 @@ function! Tabline()
   let line .= '%#TabLineFill#%T'
   let line .= '%=%999X%#TabLineSel#[❌]'
 
-  return s
+  return line
 endfunction
 set tabline=%!Tabline()
 
