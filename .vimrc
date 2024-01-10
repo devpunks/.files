@@ -149,6 +149,7 @@ set backup " keep a backup file (nobackup for inverse)
 " set noswapfile
 " set noundofile
 
+set tags+=./tag,tag
 set undodir=$TMPDIR " undo location
 set directory=$TMPDIR " swap location
 set backupdir=$TMPDIR " backup location
