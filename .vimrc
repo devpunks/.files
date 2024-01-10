@@ -189,6 +189,8 @@ if has('gui_running')
   set guicursor+=n-v-c:blinkwait10
   set guicursor+=i:ver100-iCursor
   set guicursor+=i:blinkwait90
+  " remove ugly toolbar :-)
+  set guioptions=egmrt
 endif
 
 " - Chrome -----------------------------------
