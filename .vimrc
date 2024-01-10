@@ -629,7 +629,8 @@ function! Tabline()
     let s .= '✎'
     let s .= (bufname != '' ? fnamemodify (bufname, ':t' )  : '[No Name]' )
 
-    let s .= ( bufmodified==0 ? ' ' : '[+] ' )
+    let s .= ( bufmodified==0 ? '' : '[+]' )
+    let s .= ( tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
 
   let s .= '%#TabLineFill#'
