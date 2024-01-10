@@ -374,7 +374,6 @@ autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
 " =========================================================================
 " {{{ Plugins
 " =========================================================================
-
 filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 " --------------------------------------------------------------------------------
