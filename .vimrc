@@ -198,11 +198,6 @@ set title " Turn on title
 set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Title String format
 set showtabline=2 " :help setting-tabline
 
-if has("gui_running")
-  " remove ugly toolbar :-)
-  set guioptions=egmrt
-endif
-
 " - Menus ------------------------------------
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 " - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
