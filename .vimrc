@@ -551,7 +551,7 @@ set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 " set statusline=[fo=%{&fo}]
 set statusline= " clear out status line
 " file type
-set statusline+=%#Statement#[%(%l%n%k%b%S%)\ 💻%y%r%h%m\ 
+set statusline+=%#Statement#[%(%n%k%b%S%)\ 💻%Y
 " mode
 set statusline+=%{(mode()=='c')?'\ 💲':''}
 set statusline+=%{(mode()=='i')?'\ 📝':''}
