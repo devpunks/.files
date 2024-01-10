@@ -558,8 +558,6 @@ set statusline+=%{(mode()=='n')?'\ 📄':''}
 set statusline+=%{(mode()=='R')?'\ 📃':''}
 set statusline+=%{(mode()=='v')?'\ 🔍':''}
 set statusline+=%{(mode()=='V')?'\ 🔎':''}
-" read only mode
-set statusline+=%r
 " full file name
 set statusline+=%-10F
 set statusline+=\]%#StatusLine# " change to default highlight
