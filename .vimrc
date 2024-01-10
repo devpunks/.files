@@ -615,9 +615,9 @@ function! Tabline()
   let line = ''
 
   for page in range( tabpagenr('$') )
-    let tab = page + 1
-    let l:window = tabpagewinnr( tab )
-    let l:buffers = tabpagebuflist( tab )
+    let l:tab = page + 1
+    let l:window = tabpagewinnr( l:tab )
+    let l:buffers = tabpagebuflist( l:tab )
     let l:index = l:buffers[ l:window - 1 ]
     let l:count = len( l:buffers )
     let l:name = bufname( l:index )
