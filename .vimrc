@@ -52,8 +52,6 @@ execute "set <FocusGained>=\<Esc>[I"
 let &t_fe = "\<Esc>[?1004h" " enable focus-event tracking
 let &t_fd = "\<Esc>[?1004l" " disable focus-event tracking
 " https://groups.google.com/g/vim_use/c/VyQSx90uaPE
-execute "set <FocusGained>=\<Esc>[I"
-execute "set <FocusLost>=\<Esc>[O"
 
 " NOTES -------------------------------------------------------------------
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
