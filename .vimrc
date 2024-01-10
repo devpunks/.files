@@ -633,10 +633,9 @@ function! Tabline()
     let s .= ( tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
 
-  let s .= '%#TabLineFill#'
-" if (exists("g:tablineclosebutton"))
-    let s .= '%=%999XX'
-" endif
+  let s .= '%#TabLineFill#%T'
+  let s .= '%=%999X%#TabLineSel#[❌]'
+
   return s
 endfunction
 set tabline=%!Tabline()
