@@ -107,6 +107,8 @@ set incsearch " highlight search matches
 set visualbell " TODO: t_vb= Flash the screen instead of beeping errors
 set errorbells " Unset display beep on errors
 set belloff+=wildmode " Turn off insert completion bell
+let &t_vb = '\<C-G>\e|50f' " Set termcap(ability) for visual bell
+
 set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set cursorlineopt=both " [number,line,both,screenline]
