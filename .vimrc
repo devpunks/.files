@@ -734,3 +734,6 @@ syntax match Conceal /sqrt/ conceal cchar=√
 syntax match Conceal /pi/ conceal cchar=π
 
 " }}}
+
+
+" vim: foldmethod=marker
