@@ -33,7 +33,6 @@ export INPUTRC="$HOME/.inputrc"
 #  - https://unix.stackexchange.com/questions/12107
 #  - https://en.m.wikipedia.org/wiki/Software_flow_control
 #  - https://bugs.launchpad.net/ubuntu/+source/bash/+bug/80635
-#  - UART - https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
 #  - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/cmds/aixcmds5/stty.htm
 # prevent C-s. (C-q to resume) - https://catonmat.net/annoying-keypress-in-linux
 stty -ixon # Disable XON/XOFF output control
