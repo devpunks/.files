@@ -179,9 +179,9 @@ endif
 " let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
 " let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
 
-let &t_SI = "\<Esc>12;purple\x7"
-let &t_SR = "\<Esc>]2;red\x7"
-let &t_ER = "\<Esc>]2;cyan\x7"
+let &t_SI = '\<Esc>12;purple\x7'
+let &t_SR = '\<Esc>]2;red\x7'
+let &t_ER = '\<Esc>]2;cyan\x7'
 
 let &t_SI ='\e[5 q' "SI = INSERT mode
 let &t_SR ='\e[3 q' "SR = REPLACE mode
