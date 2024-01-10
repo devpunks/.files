@@ -5,3 +5,4 @@
   - https://github.com/termux/termux-services
   - https://wiki.termux.com/wiki/Termux-services
   - Logs - $PREFIX/var/log/sv/<service>/current
+  - Services - $PREFIX/var/service/<service>/**
