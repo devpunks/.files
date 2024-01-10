@@ -620,7 +620,6 @@ function! Tabline()
     let l:window = tabpagewinnr( l:tab )
     let l:buffers = tabpagebuflist( l:tab )
     let l:index = l:buffers[ l:window - 1 ]
-    let l:count = tabpagewinnr(tab,'$')
     let l:name = bufname( l:index )
     let l:modified = getbufvar( l:index, '&mod' )
 
