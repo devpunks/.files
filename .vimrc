@@ -630,7 +630,7 @@ function! Tabline()
     let line .= ( l:name != '' ? fnamemodify (l:name, ':t' )  : '[No Name]' )
 
     let line .= ( l:modified==0 ? '' : '[+]' )
-    let line .= ( tab == tabpagenr() ? ' ▼ ' : ' ' )
+    let line .= ( l:tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
 
   let line .= '%#TabLineFill#%T'
