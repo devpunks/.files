@@ -618,7 +618,7 @@ command! Colors call HighlightGroup()
 function! Tabline()
   if ! exists('+showtabline') | return '' | endif
 
-  let line = ''
+  let line = '' " status
 
   for page in range( tabpagenr('$') )
     let l:tab = page + 1
