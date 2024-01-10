@@ -414,7 +414,6 @@ endfunction
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
 " -------------------------------------------------------------------------
-
 " These are the file types where this plugin is enabled.
 let g:closetag_filetypes = 'svg,html,xhtml,phtml,eruby,*.vue'
 
