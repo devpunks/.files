@@ -195,7 +195,7 @@ endif
 
 " - Chrome -----------------------------------
 set title " Turn on title
-set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Title String format
+set titlestring='VIM TITLE %<%F%=%l/%L-%P'  " Title String format
 set showtabline=2 " :help setting-tabline
 
 " - Menus ------------------------------------
