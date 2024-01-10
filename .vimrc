@@ -101,7 +101,6 @@ set nrformats+=alpha
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
 " set ignorecase " Case in-sensitive search
 set smartcase " Capitalization case-sensitive search
-set incsearch " highlight search matches
 set wrapscan " Search respects wrapping
 set visualbell " TODO: t_vb= Flash the screen instead of beeping errors
 set errorbells " Unset display beep on errors
