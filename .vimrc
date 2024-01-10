@@ -389,9 +389,9 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 nnoremap , :ZoomWin<cr>
 nnoremap <leader>z :ZoomWin<cr>
 
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " NERDTree
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 autocmd VimEnter * call s:NerdDrawer()
 
 function! s:NerdDrawer() abort
