@@ -150,6 +150,8 @@ set backup " keep a backup file (nobackup for inverse)
 " set noundofile
 
 set tags+=./tag,tag
+" https://github.com/vim/vim/issues/1611
+set thesaurus= " https://stackoverflow.com/questions/33453468
 set undodir=$TMPDIR " undo location
 set directory=$TMPDIR " swap location
 set backupdir=$TMPDIR " backup location
