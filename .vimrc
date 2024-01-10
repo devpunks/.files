@@ -38,7 +38,6 @@
 
 " =========================================================================
 set encoding=utf-8
-set scriptencoding=utf-8
 
 if ! exists('g:pluginname_setting')
   unlet! skip_defaults_vim
