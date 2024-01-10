@@ -183,9 +183,9 @@ let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
 " let &t_SR ='\e[3 q' "SR = REPLACE mode
 " let &t_EI ='\e[2 q' "EI = NORMAL mode (ELSE)
 
-let &t_SI ='\e[5 q' "SI = INSERT mode
-let &t_SR ='\e[3 q' "SR = REPLACE mode
-let &t_EI ='\e[2 q' "EI = NORMAL mode (ELSE)
+" let &t_SR = '\<Esc>12;red\x7'
+" let &t_EI = '\<Esc>12;cyan\x7'
+" let &t_SI = '\<Esc>12;purple\x7'
 
 
 if has('gui_running')
