@@ -623,8 +623,8 @@ function! Tabline()
     let l:name = bufname( l:index )
     let l:modified = getbufvar( l:index, '&mod' )
 
-    let line .= '%' . tab . 'T'
-    let line .= (tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
+    let line .= '%' . l:tab . 'T'
+    let line .= (l:tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
     let line .= ( l:count > 1 ? '⧉'.l:count : '' )
     let line .= '✎'
     let line .= ( l:name != '' ? fnamemodify (l:name, ':t' )  : '[No Name]' )
