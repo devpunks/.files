@@ -357,10 +357,10 @@ autocmd FileType ruby set omnifunc=rubycomplete#Complete
 autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
 autocmd BufNewFile,BufRead *.erb setlocal filetype=eruby
 
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " Python
 "   - https://www.simplified.guide/vim/auto-complete-ruby
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 autocmd FileType python setlocal omnifunc=python3complete#Complete
 
 " --------------------------------------------------------------------------------
