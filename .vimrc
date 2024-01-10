@@ -17,7 +17,9 @@
 "     ######    .........
 "                 .....
 "                   .
-" Gist: https://gist.github.com/snuggs/612093
+" -------------------------------------------------------------------------
+" File: .vimrc
+" Description: Vim(rc) configuration file.
 " Author: Ahmid-Ra (github.com/snuggs)
 
 " Screencasts: http://vimcasts.org
