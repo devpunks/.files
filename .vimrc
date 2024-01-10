@@ -290,6 +290,11 @@ cmap <c-r> :source ~/.vimrc<CR>
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " ********************************************************************************
 
+
+set autoread " re-read files
+set noautowrite " do not autowrite
+set noautowriteall " do not autowrite (all)
+
 set smarttab " 'tab' insertion
 set autoindent " auto(matically smart)indent
 set copyindent " copy previous line indentation
