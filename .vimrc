@@ -582,7 +582,6 @@ set number
 set numberwidth=4 " gutter columns
 
 if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
-  " - https://www.reddit.com/r/neovim/comments/neaeej/only_just_discovered_set_signcolumnnumber_i_like/
   " https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
   set signcolumn=yes " [auto|no|yes|number]
 endif
