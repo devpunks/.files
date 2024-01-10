@@ -2,6 +2,9 @@
   - https://wiki.termux.com/wiki/Termux:Boot
 
 ## SERVICES
+  - RUNIT - (pkg install runit) http://smarden.org/runit
+      runsv, runsvdir, sv, syslogd
+    - benefits - http://smarden.org/runit/benefits.html
   - https://github.com/termux/termux-services
   - https://wiki.termux.com/wiki/Termux-services
   - Logs - $PREFIX/var/log/sv/<service>/current
