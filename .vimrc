@@ -202,7 +202,6 @@ endif
 set title " Turn on title
 set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Title String format
 set showtabline=2 " :help setting-tabline
-set tabline=
 
 " - Menus ------------------------------------
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
