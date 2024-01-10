@@ -619,6 +619,7 @@ function! Tabline()
     let winnr = tabpagewinnr( tab )
     let buflist = tabpagebuflist( tab )
     let bufnr = buflist[ winnr - 1 ]
+    let bufs = len( buflist )
     let bufname = bufname( bufnr )
     let bufmodified = getbufvar( bufnr, '&mod' )
 
