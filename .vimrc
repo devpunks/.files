@@ -235,7 +235,7 @@ if executable('termux-clipboard-set')
   " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
   " inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
 else
-  echom "Termux clipboard not found"
+  echom 'Termux clipboard not found'
 endif
 " }}}
 
