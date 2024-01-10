@@ -467,7 +467,7 @@ set display=lastline " Always show paragraph last line
 " (NORMAL/VISUAL MODE)
 " (b)ackspace wrap EOL & BOL
 " (s)pace key wrap to next line at end of line
-set whichwrap=b,s,<,>,[,] " < left and right > arrow wrap to prev. and next line
+set whichwrap=b,s,<,> " < left and right > arrow wrap to prev. and next line
 set nostartofline " respect cursor column position
 
 " (INSERT MODE)
