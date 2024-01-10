@@ -541,7 +541,7 @@ if has('win32') | set shortname=on | end
 
 " https://stackoverflow.com/questions/17376257/vim-hyphen-in-ruler-column-value
 set ruler " set cursor coordinates
-set rulerformat=📏%P⏬%l⏩%c " overridden by statusline
+set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 " set statusline=[fo=%{&fo}]
 set statusline= " clear out status line
