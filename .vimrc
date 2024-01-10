@@ -66,7 +66,7 @@ echom "BASH: ".version_bash
 if exists( '$TMUX' )
   echom "TMUX: ".version_tmux
 endif
-if executable('termux-info')
+if executable( 'termux-info' )
   echom "TERMUX: ".version_termux
 endif
 
