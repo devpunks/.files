@@ -1,4 +1,4 @@
-# .bashrc ************************************************************
+# .bashrc =================================================================
 #
 # Author: Ahmid-Ra (github.com/snuggs)
 #
@@ -24,7 +24,7 @@ TZ='Etc/UTC'
 #
 #   - OSC 52 base64 remote clipboard
 #     - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh
-# ******************************************************
+# =========================================================================
 
 export EDITOR=vi
 export INPUTRC="$HOME/.inputrc"
