@@ -21,6 +21,9 @@
 " File: .vimrc
 " Description: Vim(rc) configuration file.
 " Author: Ahmid-Ra (github.com/snuggs)
+" Source: https://github.com/devpunks
+" Gist: https://gist.github.com/snuggs/612093
+" -------------------------------------------------------------------------
 
 " Screencasts: http://vimcasts.org
 "
