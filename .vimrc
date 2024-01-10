@@ -342,10 +342,10 @@ autocmd FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd BufNewFile,BufRead *.sass,*.scss setlocal filetype=css
 
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " Javascript
 "   - https://www.simplified.guide/vim/auto-complete-javascript
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test setlocal filetype=javascript
 
