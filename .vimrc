@@ -183,7 +183,7 @@ let &t_SR = "\<Esc>]2;red\x7"
 let &t_ER = "\<Esc>]2;cyan\x7"
 
 
-if has('gui_running')n
+if has('gui_running')
   " https://vim.fandom.com/wiki/Configuring_the_cursor
   set guicursor=n-v-c:block-Cursor
   set guicursor+=n-v-c:blinkwait10
