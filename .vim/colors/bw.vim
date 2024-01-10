@@ -76,7 +76,7 @@ highlight! SignColumn cterm=NONE ctermbg=NONE ctermfg=NONE
 highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
 highlight! StatusLine cterm=bold,reverse ctermfg=grey
 highlight! StatusLineNC cterm=reverse ctermfg=8
-highlight! VertSplit cterm=NONE ctermfg=8
+highlight! VertSplit cterm=NONE ctermfg=NONE
 
 " Tabs
 highlight! TabLine cterm=reverse,italic ctermfg=NONE ctermfg=NONE ctermbg=NONE
