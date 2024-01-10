@@ -733,8 +733,8 @@ syntax match Conceal /all/ conceal cchar=∀
 syntax match Conceal /any/ conceal cchar=∃
 syntax match Conceal /union/ conceal cchar=⨄
 syntax match Conceal /sqrt/ conceal cchar=√
-syntax match Conceal /pi/ conceal cchar=π
 syntax match Conceal "\<\%(math\.\)\?sqrt\>" conceal cchar=√
+syntax match Conceal /pi/ conceal cchar=π
 
 " }}}
 
