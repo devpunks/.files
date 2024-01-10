@@ -612,25 +612,25 @@ endfun
 command! Colors call HighlightGroup()
 
 function! Tabline()
-  let s = ''
+  let line = ''
 
-  for i in range( tabpagenr('$') )
-    let tab = i + 1
-    let winnr = tabpagewinnr( tab )
-    let buflist = tabpagebuflist( tab )
-    let bufnr = buflist[ winnr - 1 ]
-    let bufs = len( buflist )
-    let bufname = bufname( bufnr )
-    let bufmodified = getbufvar( bufnr, '&mod' )
+  for page in range( tabpagenr('$') )
+    let tab = page + 1
+    let l:window = tabpagewinnr( tab )
+    let l:buffers = tabpagebuflist( tab )
+    let l:index = l:buffers[ l:window - 1 ]
+    let l:count = len( l:buffers )
+    let l:name = bufname( l:index )
+    let l:modified = getbufvar( l:index, '&mod' )
 
-    let s .= '%' . tab . 'T'
-    let s .= (tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
-    let s .= ( bufs > 1 ? '⧉'.bufs : '' )
-    let s .= '✎'
-    let s .= (bufname != '' ? fnamemodify (bufname, ':t' )  : '[No Name]' )
+    let line .= '%' . tab . 'T'
+    let line .= (tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
+    let line .= ( l:count > 1 ? '⧉'.l:count : '' )
+    let line .= '✎'
+    let line .= ( l:name != '' ? fnamemodify (l:name, ':t' )  : '[No Name]' )
 
-    let s .= ( bufmodified==0 ? '' : '[+]' )
-    let s .= ( tab == tabpagenr() ? ' ▼ ' : ' ' )
+    let line .= ( l:modified==0 ? '' : '[+]' )
+    let line .= ( tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
 
   let s .= '%#TabLineFill#%T'
