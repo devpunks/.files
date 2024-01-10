@@ -507,8 +507,7 @@ augroup status
   autocmd InsertLeave * highlight! link StatusLine NONE
 augroup END
 
-" Custom Color Groups
-" gutter --------------------------------------------------------------
+" Gutter -----------------------------
 " let s:gutter_bg=s:GetColor('LineNr', 'bg#')
 let s:gutter_bg=0
 echom "Gutter bg: ".s:gutter_bg
