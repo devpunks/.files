@@ -559,8 +559,8 @@ set statusline+=%{(mode()=='n')?'\ 📄':''}
 set statusline+=%{(mode()=='R')?'\ 📃':''}
 set statusline+=%{(mode()=='v')?'\ 🔍':''}
 set statusline+=%{(mode()=='V')?'\ 🔎':''}
-" full file name
-set statusline+=%-10F
+set statusline+=%-10F " full file name
+set statusline+=%r%h%m " flags
 set statusline+=\]%#StatusLine# " change to default highlight
 " cursor column position
 set statusline+=\ 📜⇨%c%V✖%-l⇩
