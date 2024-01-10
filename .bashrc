@@ -5,14 +5,13 @@
 # INVOCATION
 #   - https://unix.stackexchange.com/questions/43953
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+#   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html#BASHRC
 
 echo 'devPunks😈studio .bashrc'
 echo
 
 TZ='Etc/UTC'
 
-# Author: Ahmid-Ra (github.com/snuggs)
-#
 #   - GNU `coreutils`
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
 #     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
