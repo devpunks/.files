@@ -329,10 +329,10 @@ set fillchars+=stl:△,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
 autocmd BufNewFile,BufRead *.md setlocal formatoptions-=t formatoptions+=n
 autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
 
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " HTML
 "   - https://vimtricks.com/p/vim-autocomplete-html-tags/
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 autocmd FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 
 " --------------------------------------------------------------------------------
