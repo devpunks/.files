@@ -96,11 +96,6 @@ set modeline " Head & tail file mode lines ( :help modeline )
 " increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
 set nrformats-=octal
 set nrformats+=alpha
-
-set hlsearch " results
-set autoread " re-read files
-set noautowrite " do not autowrite
-set noautowriteall " do not autowrite (all)
 " Problematic for conditionals "A"=="a"
 " https://vi.stackexchange.com/questions/11236
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
