@@ -46,7 +46,6 @@ stty -ixoff # Disable sending START/STOP characters
 stty -ixany # Disable any key to resume (not just START)
 
 if [ -n "${PREFIX}" ]; then
-  echo "FOUND $PREFIX ON TERMUX"
   unset PATH
   export PATH="$HOME:$PREFIX/bin"
   # uptime/htop - https://github.com/termux/termux-app/issues/819
