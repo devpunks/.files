@@ -9,6 +9,8 @@
 
 # [ -r $HOME/.bashrc ] && source $HOME/.bashrc
 
+# Hyperlinks
+#   - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
 # =========================================================================
 # colors.sh
 #   - Benchmark - https://imgur.com/xIyuaYt
@@ -26,7 +28,7 @@
 #   Note: Some control escape sequences, like \e for ESC, are not guaranteed
 #   to work in all languages and compilers. It is recommended to use
 #   the decimal 27, octal \033, or hex \x1B representation as escape code.
-# ----------------------------------------------------------
+# -------------------------------------------------------------------------
 # https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
 [ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
 
