@@ -39,21 +39,11 @@ export INPUTRC="$HOME/.inputrc"
 #  - https://bugs.launchpad.net/ubuntu/+source/bash/+bug/80635
 #  - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/cmds/aixcmds5/stty.htm
 # prevent C-s. (C-q to resume) - https://catonmat.net/annoying-keypress-in-linux
-stty -ixon # Disable XON/XOFF output control
-stty -ixoff # Disable sending START/STOP characters
 stty stop undef # Undefine STOP character
 stty start undef # Undefine START character
-#stty ixany # Enable any key to resume (not just START)
-#stty columns 500 # enable control-s and control-q in VIM
-#stty columns 110 # enable control-s and control-q in VIM
-
-
-# for rc in ~in `find ~/*.{ba}sh -maxdepth 1 -type f`; do
-#   # (r)un (c)omm(ands)
-#   #   - https://superuser.com/questions/144339/vimrc-screenrc-bashrc-kshrc-etc-what-does-the-rc-mean
-#   echo Sourcing ~/.bash run commands \(where available\)
-#   source $rc
-# done
+stty -ixon # Disable XON/XOFF output control
+stty -ixoff # Disable sending START/STOP characters
+stty -ixany # Disable any key to resume (not just START)
 
 # export PATH="/usr/local/sbin:$PATH"
 # export PATH="~/Library/Python/2.7/bin:$PATH"
