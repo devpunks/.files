@@ -123,6 +123,7 @@ GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_
 shopt -s dotglob # https://unix.stackexchange.com/questions/40662
 # shopt –s xpg_echo # https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
 shopt -s mailwarn # last access on login
+shopt -s extglob # Extended glob pattern matching
 shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s direxpand # https://stackoverflow.com/questions/6438341/what-does-shopt-s-dirspell-do
