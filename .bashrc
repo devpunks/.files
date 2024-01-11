@@ -128,6 +128,7 @@ shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s direxpand # https://stackoverflow.com/questions/6438341/what-does-shopt-s-dirspell-do
 shopt -s checkjobs # on exit
+shopt -s checkhash # command exists in hashtable first
 shopt -s nocaseglob # https://stackoverflow.com/questions/25331100/bash-match-string-with-regex
 shopt -s nocasematch # https://baeldung.com/linux/shell-case-insensitive-matching
 shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion
