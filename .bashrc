@@ -82,15 +82,21 @@ export LC_ALL=$LANG
 
 # }}}
 
-# {{{ Terminal ******************************************************
-# ncurses
-#   - https://stackoverflow.com/questions/76148896/how-install-curses-1-06-module-in-termux
-#   - tput - https://linuxcommand.org/lc3_adv_tput.php
-export CURSES_CFLAGS="-I/data/data/com.termux/files/usr/include"
-export CURSES_LDFLAGS="-L/data/data/com.termux/files/usr/lib -lncurses"
+# =========================================================================
+# {{{ Terminal
+#  stty - https://computerhope.com/unix/ustty.htm
+#  tty  - https://linusakesson.net/programming/tty/
+#  setterm
+#    - setterm --reverse on # reverse terminal coloring
+#    - https://man7.org/linux/man-pages/man1/setterm.1.html
+#  tput
+#    - https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
+#    - tput - https://linuxcommand.org/lc3_adv_tput.php
+#  ncurses
+# =========================================================================
 
-# https://unix.stackexchange.com/questions/198794/where-does-the-term-environment-variable-default-get-set
-# https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+# https://unix.stackexchange.com/questions/198794
+# https://unix.stackexchange.com/questions/9957
 export TERM=xterm-256color
 export COLORTERM=truecolor
 # tput init # https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
