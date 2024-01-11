@@ -153,6 +153,7 @@ alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
 alias ps='command ps auxf'
+alias jobs='command jobs -l'
 alias header='command curl -I'
 alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
