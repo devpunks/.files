@@ -62,12 +62,14 @@ export HOSTFILE="$HOME/.hosts"
 # https://www.cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
 export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 
-# {{{ Locale ******************************************************
+# =========================================================================
+# {{{ Locale
 #  - https://superuser.com/a/1779369
 #  - https://github.com/termux/termux-packages/issues/3009
 #  - https://github.com/termux/termux-packages/issues/2796#issuecomment-424589888
 #  - https://gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html
 #  - https://gnu.org/software/gettext/manual/html_node/Setting-the-POSIX-Locale.html
+# =========================================================================
 export LANGUAGE=en:fr:de  # LC_MESSAGES Override
 export LANG=en_US.UTF-8   # Locale override (from "C")
 export LC_ALL=$LANG
