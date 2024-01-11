@@ -42,7 +42,7 @@ let &t_Us = "\e[4:2m" " UnderDouble
 let &t_ds = "\e[4:4m" " UnderDotted
 let &t_Ds = "\e[4:5m" " UnderDashed
 
-" Base Default
+" Base Default - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 " TODO: Foo
