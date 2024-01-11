@@ -89,9 +89,7 @@ alias push='pushd'
 
 alias dirs='dirs -p'
 alias mkdir='mkdir -pv'
-alias dir='(
-  dir -ailsAFR --time --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"
-)'
+alias dir='dir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"'
 alias most='most +u -s -t2'
 # https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
 # https://unix.stackexchange.com/questions/282648/using-grep-with-the-exclude-dir-flag-to-exclude-multiple-directories
