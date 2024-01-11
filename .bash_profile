@@ -144,6 +144,7 @@ alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
+# https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
 alias ps='command ps auxf'
 alias jobs='command jobs -l'
 alias header='command curl -I'
