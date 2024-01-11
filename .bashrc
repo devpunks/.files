@@ -45,8 +45,6 @@ stty -ixon # Disable XON/XOFF output control
 stty -ixoff # Disable sending START/STOP characters
 stty -ixany # Disable any key to resume (not just START)
 
-# export PATH="/usr/local/sbin:$PATH"
-# export PATH="~/Library/Python/2.7/bin:$PATH"
 if [ -n "${PREFIX}" ]; then
   echo "FOUND $PREFIX ON TERMUX"
   unset PATH
