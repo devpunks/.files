@@ -30,7 +30,7 @@ pkg install openssh
 pkg install iproute2
 pkg install logrotate
 pkg install youtubedr
-pkg install ffmpeg
+pkg install vlc && vlc --version
 pkg install ruby && gem update --system
 pkg install golang
 pkg install nodejs-lts && npm install -g npm
