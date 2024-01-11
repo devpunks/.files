@@ -482,26 +482,26 @@ function environment {
   echo "\n\$SHELL: $SHELL\n👇Options👇\n$SHELLOPTS"
 
   echo && echo 👇Commands:👇
-  compgen -c | column
+  compgen -c | sort | column --fillrows
   echo && echo 👇Shell Variables:👇
-  compgen -v | column
+  compgen -v | sort | column --fillrows
   echo && echo 👇Exports:👇
-  echo $( compgen -e ) | column
+  echo $( compgen -e ) | sort | column --fillrows
   echo && echo 👇Built-ins:👇
-  echo $( compgen -b ) | column
+  echo $( compgen -b ) | sort | column --fillrows
   echo && echo Functions:
-  compgen -A function | column
+  compgen -A function | sort | column --fillrows
   echo && echo 👇Aliases:👇
-  echo $( compgen -a ) | column # alias -p # for declaration
+  echo $( compgen -a ) | sort | column --fillrows # alias -p # for declaration
 
   echo && echo 👇Reserved Words:👇
-  compgen -k | column
+  compgen -k | sort | column --fillrows
   echo && echo 👇Env Vars:👇
-  env
+  env | sort | column --fillrows
   echo && echo 👇Shell Vars:👇
-  (set -o posix; set; set +o posix)
-  echo && echo 👇Declarations:👇
-  declare -p | cut -d " " -f 3
+  command echo -e "(set -o posix; set; set +o posix)" | sort | column --fillrows
+  echo && command echo 👇Declarations:👇
+  declare -p | cut -d " " -f 3 | sort | column --fillrows
 }
 
 # https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x#1075089
