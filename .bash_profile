@@ -184,9 +184,10 @@ alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-
 # -X flag for Enable X11 forwarding
 alias ss='sshd -X -Dddd -p8022'
 
-# ----------------------
-# tmux
-# ----------------------
+# Server ------------------------------------------------------------------
+alias serve='python -m http.server'
+
+# TMUX ----------------------
 alias tmux.config='(
   echo && echo Server Options:
   tmux show-options -s
