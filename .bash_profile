@@ -20,6 +20,7 @@
 #    - https://stackoverflow.com/questions/32443522/triangular-background-for-bash-ps1-prompt
 #
 # colors.sh ***********************************************************
+#   - TERM COLOR DISCUSSION - https://news.ycombinator.com/item?id=30483899
 #   - Benchmark - https://imgur.com/xIyuaYt
 #   - https://ditig.com/256-colors-cheat-sheet
 #   - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
