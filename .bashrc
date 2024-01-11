@@ -24,6 +24,11 @@ export CRON_TZ=$TZ
 #   - OSC 52 base64 remote clipboard
 #     - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh
 # =========================================================================
+# for rc in ~in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
+#   # (r)un (c)omm(ands) - https://superuser.com/questions/144339
+#   echo Sourcing ~/.bash run commands \(where available\)
+#   source $rc
+# done
 
 export EDITOR=vi
 export INPUTRC="$HOME/.inputrc"
