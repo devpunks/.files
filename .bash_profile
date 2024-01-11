@@ -264,6 +264,12 @@ function archive {
   command zip -rv $file $contents # -u for update only
   command tar cvzf $file $contents # -u for update only
 
+  # Creates an archive (*.tar.gz) from given directory.
+  # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
+
+  # Create a ZIP archive of a file or folder.
+  # zip -r "${1%%/}.zip" "$1"
+
   test -e "$file" \
    && command view $file \
     && command zipinfo $file
