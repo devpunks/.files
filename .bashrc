@@ -99,7 +99,9 @@ export LC_ALL=$LANG
 # https://unix.stackexchange.com/questions/9957
 export TERM=xterm-256color
 export COLORTERM=truecolor
-# tput init # https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
+# TERMUX nCurses- https://stackoverflow.com/questions/76148896
+export CURSES_CFLAGS="-I${PREFIX}/include"
+export CURSES_LDFLAGS="-L${PREFIX}/lib -lncurses"
 
 # - stty - https://computerhope.com/unix/ustty.htm
 # - https://mkssoftware.com/docs/man1/stty.1.asp
