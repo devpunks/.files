@@ -28,7 +28,7 @@ pkg install ncurses
 pkg install cmatrix
 pkg install openssh
 pkg install iproute2
-pkg install vlc && vlc --version
+pkg install logrotate
 pkg install youtubedr
 pkg install ffmpeg
 pkg install ruby && gem update --system
