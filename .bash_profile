@@ -8,9 +8,6 @@
 
 # [ -r $HOME/.bashrc ] && source $HOME/.bashrc
 
-echo 'devPunks😈studio .bash_profile'
-echo
-
 # *********************************************************************
 export CDPATH=".:$HOME" # https://www.theunixschool.com/2012/04/what-is-cdpath.html
 
@@ -595,3 +592,6 @@ alias shortcuts='bind -P'
 # bind "set completion-ignore-case on" # SEE ~/.inputrc
 
 # }}}
+
+echo 'devPunks😈studio .bash_profile'
+echo
