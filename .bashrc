@@ -257,10 +257,11 @@ export EXA_COLORS="${LS_COLORS}:hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:sn=1;4;38;5
 
 # }}}
 
-# {{{ FUNCTIONS -------------------------------------
+# =========================================================================
+# {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
-# ------------------------------------------------
+# =========================================================================
 # Slightly modified from: https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
 # # https://misc.flogisoft.com/bash/tip_colors_and_formatting
 # Show current git branch in command line
