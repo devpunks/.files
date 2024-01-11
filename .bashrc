@@ -117,7 +117,7 @@ set -o ignoreeof
 set -o noclobber
 
 GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_node/Filename-Expansion.html
-
+# https://gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
 # https://unix.stackexchange.com/questions/32409/set-and-shopt-why-two/32446
 # https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
 # https://gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
