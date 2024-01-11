@@ -1,4 +1,5 @@
-# .bash_profile ************************************************************
+# =========================================================================
+# .bash_profile
 #
 # Author: Ahmid-Ra (github.com/snuggs)
 #
@@ -8,18 +9,8 @@
 
 # [ -r $HOME/.bashrc ] && source $HOME/.bashrc
 
-# *********************************************************************
-# fonts.sh ***********************************************************
-#  EMOJI:
-#    - https://gist.github.com/nicolasdao/8f0220d050f585be1b56cc615ef6c12e
-#  NERDFONT:
-#    - https://wiki.termux.com/wiki/Termux:Styling
-#    - https://github.com/termux/termux-styling/issues/20
-#    - https://yalneb.blogspot.com/2018/01/fancy-bash-promt.html
-#    - https://github.com/ryanoasis/nerd-fonts/wiki/FAQ-and-Troubleshooting#tldr
-#    - https://stackoverflow.com/questions/32443522/triangular-background-for-bash-ps1-prompt
-#
-# colors.sh ***********************************************************
+# =========================================================================
+# colors.sh
 #   - TERM COLOR DISCUSSION - https://news.ycombinator.com/item?id=30483899
 #   - Benchmark - https://imgur.com/xIyuaYt
 #   - https://ditig.com/256-colors-cheat-sheet
