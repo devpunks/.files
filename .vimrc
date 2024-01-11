@@ -499,7 +499,7 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 set t_Co=256 " enable 256 colors
 set background=dark " [dark|light]
 try
-  colorscheme bw " jellybeans
+  colorscheme devpunks " jellybeans
 catch | endtry
 
 " https://vimtricks.com/p/vim-line-length-marker/
