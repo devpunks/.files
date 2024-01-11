@@ -16,7 +16,6 @@ export CRON_TZ=$TZ
 #   - GNU `coreutils`
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
 #     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
-#   - https://stackoverflow.com/questions/9953005/should-the-bashrc-in-the-home-directory-load-automatically/9954208#9954208
 #   - Common environment variables
 #     - https://gnu.org/software/bash/manual/html_node/Bash-Variables.html
 #     - https://gnu.org/software/grep/manual/html_node/Environment-Variables.html
