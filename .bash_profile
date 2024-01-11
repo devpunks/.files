@@ -144,6 +144,8 @@ alias ping='ping -c 100 -s.2'
 alias ports='netstat -tulanp'
 alias mount='mount |column -t'
 alias path='echo -e ${PATH//:/\\n}'
+alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
+
 
 alias who=whoami
 alias chown='chown --preserve-root'
