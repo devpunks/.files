@@ -82,6 +82,7 @@ echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 # shell
 # ----------------------
 alias cl=clear
+alias echo='command echo -e' # for escape characters
 alias matrix='command cmatrix -bas -C magenta'
 
 alias ..='cd ..'
