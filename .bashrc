@@ -31,9 +31,8 @@ export CRON_TZ=$TZ
 # done
 
 export EDITOR=vi
-export INPUTRC="$HOME/.inputrc"
-
 # Software Flow Control
+export INPUTRC="$HOME/.inputrc"
 #  - https://unix.stackexchange.com/questions/515252
 #  - https://unix.stackexchange.com/questions/12107
 #  - https://en.m.wikipedia.org/wiki/Software_flow_control
