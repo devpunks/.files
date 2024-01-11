@@ -9,10 +9,9 @@
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
 
-echo 'devPunks😈studio .bashrc'
-echo
-
-TZ='Etc/UTC'
+tput init
+export TZ='Etc/UTC'
+export CRON_TZ=$TZ
 
 #   - GNU `coreutils`
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
