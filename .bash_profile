@@ -26,6 +26,7 @@
 #   - https://misc.flogisoft.com/bash/tip_colors_and_formatting
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 #   - ANSI Escape Codes - https://en.m.wikipedia.org/wiki/ANSI_escape_code
+#   - https://tuxthink.blogspot.com/2012/02/changing-font-and-background-of.html?m=1
 #   - https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences
 #   - https://unix.stackexchange.com/questions/274453/is-there-any-objective-benefit-to-escape-sequences-over-tput
 #   - https://stackoverflow.com/questions/27159322/rgb-values-of-the-colors-in-the-ansi-extended-colors-index-17-255
