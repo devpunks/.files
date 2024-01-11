@@ -47,9 +47,14 @@ stty -ixany # Disable any key to resume (not just START)
 
 if [ -n "${PREFIX}" ]; then
   unset PATH
-  export PATH="$HOME:$PREFIX/bin"
+  unset LD_LIBRARY_PATH
+  echo "FOUND $PREFIX ON TERMUX"
+  # https://askubuntu.com/questions/386629
+  export PATH="${HOME}:${PREFIX}/bin:."
+  # https://wiki.termux.com/wiki/Differences_from_Linux
   # uptime/htop - https://github.com/termux/termux-app/issues/819
-  # export LD_LIBRARY_PATH="/system/bin/uptime"
+  # Prior to Android 7
+  # export LD_LIBRARY_PATH="/system/bin/uptime:$PREFIX/bin/uptime"
 fi
 
 
