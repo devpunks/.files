@@ -32,7 +32,6 @@ pkg install logrotate
 pkg install youtubedr
 pkg install vlc && vlc --version
 pkg install ruby && gem update --system
-pkg install golang
 pkg install nodejs-lts && npm install -g npm
 pkg install python
 pip install pytest
