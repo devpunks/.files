@@ -103,7 +103,7 @@ alias diff='diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-
 
 alias echo='echo -e' # - https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
 alias which='type -a'
-alias find='find . -type f -iname '*'"$1"'*' -ls'
+alias find='command find . -type f -iname '*'"$1"'*' -ls'
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
