@@ -10,6 +10,8 @@
 
 # *********************************************************************
 # fonts.sh ***********************************************************
+#  EMOJI:
+#    - https://gist.github.com/nicolasdao/8f0220d050f585be1b56cc615ef6c12e
 #  NERDFONT:
 #    - https://wiki.termux.com/wiki/Termux:Styling
 #    - https://github.com/termux/termux-styling/issues/20
