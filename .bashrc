@@ -113,10 +113,8 @@ echo "$( stty size | tr ' ' 'x' )"
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 set -o nolog
 set -o notify
-
-# https://man7.org/linux/man-pages/man1/setterm.1.html
-# setterm --reverse on # reverse terminal coloring
-setterm --resize
+set -o ignoreeof
+set -o noclobber
 
 GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_node/Filename-Expansion.html
 
