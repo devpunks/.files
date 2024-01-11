@@ -103,12 +103,9 @@ export COLORTERM=truecolor
 export CURSES_CFLAGS="-I${PREFIX}/include"
 export CURSES_LDFLAGS="-L${PREFIX}/lib -lncurses"
 
-# - stty - https://computerhope.com/unix/ustty.htm
-# - https://mkssoftware.com/docs/man1/stty.1.asp
-# - tty  - https://linusakesson.net/programming/tty/
-shopt checkwinsize
-
-#https://stackoverflow.com/questions/1780483/lines-and-columns-environmental-variables-lost-in-a-script
+setterm --resize
+shopt -s checkwinsize
+# https://stackoverflow.com/questions/1780483
 export LINES=$(tput lines)
 export COLUMNS=$(tput columns)
 
