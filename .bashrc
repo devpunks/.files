@@ -131,6 +131,7 @@ shopt -s checkjobs # on exit
 shopt -s checkhash # command exists in hashtable first
 shopt -s nocaseglob # https://stackoverflow.com/questions/25331100/bash-match-string-with-regex
 shopt -s nocasematch # https://baeldung.com/linux/shell-case-insensitive-matching
+shopt -s cdable_vars # Change directory with shell vars
 shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion
 # https://unix.stackexchange.com/questions/700199/why-is-the-bash-double-star-globstar-operator-often-disabled-by-default
 shopt -s globstar # https://linuxjournal.com/content/globstar-new-bash-globbing-option
