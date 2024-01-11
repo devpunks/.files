@@ -494,8 +494,6 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 "   - http://bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
 "   - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 "   - https://vi.stackexchange.com/questions/8751/how-to-completely-turn-off-colorscheme
-" * can use hexidecimal values for gui (e.g. guibg=#000000)
-" gui / cterm display modes (none,(i)talic,(b)old,(s)tandout, (u)nderline, under(c)url)
 "hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 " =========================================================================
 set t_Co=256 " enable 256 colors
