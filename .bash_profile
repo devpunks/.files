@@ -517,7 +517,8 @@ function permit {
     && echo "Does not exist!" \
     && return
 
-  chmod -v 755 $1
+  # chmod -v 755 $1
+  chmod -R u=rwX,g=rX,o= "$@"
 
   ls $1
 }
