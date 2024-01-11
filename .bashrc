@@ -56,6 +56,7 @@ if [ -n "${PREFIX}" ]; then
   # Prior to Android 7
   # export LD_LIBRARY_PATH="/system/bin/uptime:$PREFIX/bin/uptime"
 fi
+export CDPATH=".:$HOME" # https://www.theunixschool.com/2012/04/what-is-cdpath.html
 
 export HOSTFILE="$HOME/.hosts"
 # https://www.baeldung.com/linux/bash-calculate-time-elapsed

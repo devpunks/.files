@@ -9,8 +9,6 @@
 # [ -r $HOME/.bashrc ] && source $HOME/.bashrc
 
 # *********************************************************************
-export CDPATH=".:$HOME" # https://www.theunixschool.com/2012/04/what-is-cdpath.html
-
 # fonts.sh ***********************************************************
 #  NERDFONT:
 #    - https://wiki.termux.com/wiki/Termux:Styling
