@@ -189,17 +189,21 @@ echo -ne '\e[5 q'
 echo -ne '\e]12;#FF00FF\a'
 
 # prompt ------------------------------------------
-# https://askubuntu.com/questions/409599/how-to-reduce-the-command-line-prefix-length-in-bash
-# https://stackoverflow.com/questions/5687446/how-can-i-shortern-my-command-line-prompts-current-directory
-export PROMPT_DIRTRIM=3
-#tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
+# Shell Prompt - for many examples, see:
+#  - https://bash-prompt-generator.org
+#  - https://github.com/nojhan/liquidprompt
+#  - https://askubuntu.com/questions/409599
+#  - http://tldp.org/HOWTO/Bash-Prompt-HOWTO
+#  - http://www.debian-administration.org/articles/205
+#  - http://www.askapache.com/linux/bash-power-prompt.html
+#  - https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
+#  - https://unix.stackexchange.com/questions/105958/terminal-prompt-not-wrapping-correctly
+#  - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
+#  - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
+# -------------------------------------------------------------------------
+export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
+tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 
-# - https://bash-prompt-generator.org
-# - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x264.html
-# - https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
-# - https://unix.stackexchange.com/questions/105958/terminal-prompt-not-wrapping-correctly
-# - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
-# - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
 # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 #PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
 # export PS1="\[\u@\h:\w \]"
