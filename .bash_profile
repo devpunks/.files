@@ -85,16 +85,15 @@ alias cl=clear
 alias echo='command echo -e' # for escape characters
 alias matrix='command cmatrix -bas -C magenta'
 
-alias ..='cd ..'
-alias pop='popd'
-alias push='pushd'
-
-alias dirs='dirs -p'
-alias mkdir='mkdir -pv'
-alias dir='command dir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"'
-alias most='most +u -s -t2'
-# https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
-# https://unix.stackexchange.com/questions/282648/using-grep-with-the-exclude-dir-flag-to-exclude-multiple-directories
+alias ..='command cd ..'
+alias pop='command popd'
+alias push='command pushd'
+alias dirs='command dirs -p'
+alias which='command type -a'
+alias mkdir='command mkdir -pv'
+alias most='command most +u -s -t2'
+alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
+alias find='command find -type f -ls . -iname '*'"$1"'*''
 alias ls='command ls -AhklFG --color=auto --hyperlink=auto --group-directories-first'
 alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
 # https://unix.stackexchange.com/a/82358
