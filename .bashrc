@@ -57,6 +57,10 @@ if [ -n "${PREFIX}" ]; then
   # export LD_LIBRARY_PATH="/system/bin/uptime:$PREFIX/bin/uptime"
 fi
 
+export HOSTFILE="$HOME/.hosts"
+# https://www.baeldung.com/linux/bash-calculate-time-elapsed
+# https://www.cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
+export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 
 # {{{ Locale ******************************************************
 #  - https://superuser.com/a/1779369
