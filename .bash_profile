@@ -241,9 +241,13 @@ function logs () {
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # ------------------------------------------------
 open () {
+  # apk
   [[ -f $1 ]] && [[ -x $1 ]] && termux-open $1
 
-# termux-open-url "$1"
+  # url
+  [[ $1 == http* ]] && termux-open-url "$1"
+
+  # android
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 }
 
