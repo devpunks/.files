@@ -53,7 +53,7 @@ CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
 
 # IBM Colors --------------
-# https://retrocomputing.stackexchange.com/questions/20043/why-did-old-ibm-pc-compatible-computers-only-have-16-colors-available
+# https://retrocomputing.stackexchange.com/questions/20043
 BLACK_LIGHT=$(tput setaf 8)
 RED_LIGHT=$(tput setaf 9)
 GREEN_LIGHT=$(tput setaf 10)
