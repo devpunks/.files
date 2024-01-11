@@ -1,4 +1,4 @@
-" devPunks😈Mono (Black & White)
+" devPunks😈deFault
 
 " Maintainer:   Ahmid-Ra <https://github.com/snuggs>
 
