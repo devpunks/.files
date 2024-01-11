@@ -94,6 +94,9 @@ Android Accessibility
   - Left sticky from floating window
   - Right floating window ffrom left sticky
 
+# LINUX ------------------------------------
+  - Directory Structure
+    - https://unix.stackexchange.com/questions/679569
 # TERMUX  ------------------------------------
 #   - https://wiki.termux.com/wiki/Termux-services
 #   - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
