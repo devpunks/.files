@@ -95,14 +95,9 @@ alias most='command most +u -s -t2'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 alias find='command find -type f -ls . -iname '*'"$1"'*''
 alias ls='command ls -AhklFG --color=auto --hyperlink=auto --group-directories-first'
-alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
-# https://unix.stackexchange.com/a/82358
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
-alias diff='diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
-
-alias echo='echo -e' # - https://stackoverflow.com/questions/8467424/echo-newline-in-bash-prints-literal-n
-alias which='type -a'
-alias find='command find . -type f -iname '*'"$1"'*' -ls'
+alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
+alias dir='command dir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"'
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
