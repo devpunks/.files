@@ -536,8 +536,6 @@ function reload {
   echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
   echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
   echo && echo "PATH: $PATH"
-  export LINES=$( tput lines )
-  export COLUMNS=$( tput columns )
   echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
 }
 
