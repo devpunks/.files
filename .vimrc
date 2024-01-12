@@ -342,7 +342,7 @@ function OverflowMargin () abort
 
   if ! &tw | return | endif
 
-  let l:columns = join( [ &tw, -3 ], ',' )
+  let l:columns = join( [ -1, (&tw +1) ], ',' )
 
   " call matchadd('ColorColumn', '\%>75v')
   call matchadd('ColorColumn', '\%>' .. &tw .. 'v')
