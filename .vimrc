@@ -532,7 +532,6 @@ augroup END
 
 " Gutter -----------------------------
 let s:gutter_bg=GetColor('LineNr', 'bg#')
-echom "Gutter bg: ".s:gutter_bg
 
 " execute 'highlight SignColumn ctermbg='.s:gutter_bg
 " execute 'highlight CursorLineNr ctermbg='.s:gutter_bg
