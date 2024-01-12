@@ -572,7 +572,7 @@ set statusline+=\ of\ %L☰LOC
 set statusline+=%=
 " set colorscheme on statusline
 let scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ \ %#Normal#\ 🎨\ %{scheme}\ 
+set statusline+=\ %#Normal#\ 🎨\ %{scheme}\ 
 
 " }}}
 
