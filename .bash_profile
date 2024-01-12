@@ -521,6 +521,7 @@ function reload {
   termux-reload-settings
   [[ -n ${TMUX} ]] && tmux source "$HOME/.tmux.conf"
   clear
+  source .bashrc && source .bash_profile
 # reset # slowwwwww
   tput reset
   tput sgro # reset attributes
