@@ -533,9 +533,6 @@ augroup END
 " Gutter -----------------------------
 let s:gutter_bg=GetColor('LineNr', 'bg#')
 
-" execute 'highlight SignColumn ctermbg='.s:gutter_bg
-" execute 'highlight CursorLineNr ctermbg='.s:gutter_bg
-
 for type in ["Add", "Delete", "Change"]
   if ! hlexists("GitGutter".type) | break | endif
 
