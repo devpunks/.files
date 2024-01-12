@@ -132,9 +132,10 @@ alias random='echo $SRANDOM'
 alias ports='netstat -tulanp'
 
 alias who=whoami
-alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
+alias ping='command ping -c 100 -s.2'
+alias chown='command chown --preserve-root'
+alias chmod='command chmod --preserve-root'
+alias chgrp='command chgrp --preserve-root'
 
 # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
 alias ps='command ps auxf'
