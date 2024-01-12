@@ -522,9 +522,9 @@ try
   colorscheme devpunks
 catch | endtry
 
-augroup status
-  autocmd!
 " Interactive Status -----------------------------
+augroup Status
+  autocmd!
   highlight! StatusLineInsert cterm=reverse,bold
   autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
   autocmd InsertLeave * highlight! link StatusLine NONE
