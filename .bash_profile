@@ -100,9 +100,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias mount='command mount | column -t'
 alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
 alias echo='command echo -e' # for escape characters
-alias matrix='command cmatrix -bas -C magenta'
 
-alias ..='command cd ..'
 alias pop='command popd'
 alias push='command pushd'
 alias dirs='command dirs -p'
