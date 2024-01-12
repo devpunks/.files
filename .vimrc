@@ -507,9 +507,6 @@ try
   colorscheme devpunks " jellybeans
 catch | endtry
 
-" https://vimtricks.com/p/vim-line-length-marker/
-set colorcolumn=-8,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
-
 augroup status
   autocmd!
 " Interactive Status -----------------------------
