@@ -328,6 +328,28 @@ set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) nex
 set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:↯
 set fillchars+=stl:△,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
 
+augroup FileDefaults
+  autocmd!
+  autocmd FocusLost * :w " save on focus lost
+  " Double triggers event. (https://vi.stackexchange.com/a/15995)
+  " autocmd winEnter,BufEnter * call OverflowMargin ()
+  autocmd BufEnter * call OverflowMargin ()
+augroup END
+
+function OverflowMargin () abort
+  set colorcolumn=0
+  call clearmatches()
+
+  if ! &tw | return | endif
+
+  let l:columns = join( [ &tw, -3 ], ',' )
+
+  " call matchadd('ColorColumn', '\%>75v')
+  call matchadd('ColorColumn', '\%>' .. &tw .. 'v')
+  " https://www.baeldung.com/linux/vim-ruler-on-specific-column
+  execute "set colorcolumn=" . l:columns
+endfunction
+
 " -------------------------------------------------------------------------
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
