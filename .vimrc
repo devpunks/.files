@@ -531,8 +531,8 @@ augroup status
 augroup END
 
 " Gutter -----------------------------
-" let s:gutter_bg=s:GetColor('LineNr', 'bg#')
-let s:gutter_bg=0
+let s:gutter_bg=GetColor('LineNr', 'bg#')
+" let s:gutter_bg=0
 echom "Gutter bg: ".s:gutter_bg
 
 " execute 'highlight SignColumn ctermbg='.s:gutter_bg
