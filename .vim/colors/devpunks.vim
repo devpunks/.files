@@ -81,7 +81,7 @@ highlight SpellBad cterm=strikethrough ctermbg=NONE
 highlight! Cursor cterm=NONE ctermfg=7
 highlight! LineNr cterm=NONE ctermfg=NONE
 highlight! CursorLineNr cterm=standout,bold ctermfg=NONE
-highlight! ColorColumn  cterm=strikethrough,italic ctermbg=NONE ctermfg=8
+highlight! ColorColumn cterm=strikethrough,italic ctermbg=NONE ctermfg=8
 highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
 highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
 highlight! SignColumn cterm=NONE ctermbg=NONE ctermfg=NONE
