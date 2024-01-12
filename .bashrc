@@ -33,17 +33,6 @@ export TZ='Etc/UTC'
 export CRON_TZ=$TZ
 
 export INPUTRC="$HOME/.inputrc"
-#  - https://unix.stackexchange.com/questions/515252
-#  - https://unix.stackexchange.com/questions/12107
-#  - https://en.m.wikipedia.org/wiki/Software_flow_control
-#  - https://bugs.launchpad.net/ubuntu/+source/bash/+bug/80635
-#  - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/cmds/aixcmds5/stty.htm
-# prevent C-s. (C-q to resume) - https://catonmat.net/annoying-keypress-in-linux
-stty stop undef # Undefine STOP character
-stty start undef # Undefine START character
-stty -ixon # Disable XON/XOFF output control
-stty -ixoff # Disable sending START/STOP characters
-stty -ixany # Disable any key to resume (not just START)
 
 if [ -n "${PREFIX}" ]; then
   unset PATH
