@@ -437,7 +437,7 @@ color () {
   done
 }
 
-spectrum () {
+spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
   # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
   echo
   awk \
