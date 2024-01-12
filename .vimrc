@@ -560,6 +560,8 @@ set statusline+=%{(mode()=='V')?'\ 🔎':''}
 set statusline+=%-10F " full file name
 set statusline+=%r%h%m " flags
 set statusline+=\]%#StatusLine# " change to default highlight
+" formatoptions
+set statusline+=\ [%{&fo}]
 " cursor column position
 set statusline+=\ 📜⇨%c%V✖%-l⇩
 " percentage
