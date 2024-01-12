@@ -535,8 +535,8 @@ augroup END
 let s:gutter_bg=0
 echom "Gutter bg: ".s:gutter_bg
 
-" execute "highlight SignColumn ctermbg=".s:gutter_bg
-" execute "highlight CursorLineNr ctermbg=".s:gutter_bg
+" execute 'highlight SignColumn ctermbg='.s:gutter_bg
+" execute 'highlight CursorLineNr ctermbg='.s:gutter_bg
 
 for type in ["Add", "Delete", "Change"]
   if ! hlexists("GitGutter".type) | break | endif
