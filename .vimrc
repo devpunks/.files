@@ -519,7 +519,7 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 set t_Co=256 " enable 256 colors
 set background=dark " [dark|light]
 try
-  colorscheme devpunks " jellybeans
+  colorscheme devpunks
 catch | endtry
 
 augroup status
