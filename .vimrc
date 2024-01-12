@@ -315,8 +315,7 @@ set noautowriteall " do not autowrite (all)
 set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
-set smartindent  " indent based off current line
-set wrapmargin=0 " wrap based on terminal size (0 = disabled)
+set smartindent  " indent based off current line on load
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 " https://vimtricks.com/p/vim-line-length-marker/
 set colorcolumn=75,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
