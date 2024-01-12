@@ -325,6 +325,7 @@ set colorcolumn=75,-3 " vertical ruler - https://www.baeldung.com/linux/vim-rule
 set formatoptions+=n " Format numbered lists
 set formatoptions+=l " preserve existing lines
 set formatoptions+=t " autowrap using `t`extwidth
+set formatoptions+=c " autowrap `c`omments (with leader)
 set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=o " Preserve comments when pressing o/O
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
