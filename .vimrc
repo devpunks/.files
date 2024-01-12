@@ -649,7 +649,6 @@ function! Tabline()
 
   return line
 endfunction
-set tabline=%!Tabline()
 
 " }}}
 
