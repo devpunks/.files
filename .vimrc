@@ -191,13 +191,12 @@ let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
 
 
 if has('gui_running')
+  set guioptions=egmrt " remove ugly toolbar :-)
   " https://vim.fandom.com/wiki/Configuring_the_cursor
-  set guicursor=n-v-c:block-Cursor
-  set guicursor+=n-v-c:blinkwait10
+  set guicursor=i:blinkwait90
   set guicursor+=i:ver100-iCursor
-  set guicursor+=i:blinkwait90
-  " remove ugly toolbar :-)
-  set guioptions=egmrt
+  set guicursor+=n-v-c:blinkwait10
+  set guicursor+=n-v-c:block-Cursor
 endif
 
 " - Chrome -----------------------------------
