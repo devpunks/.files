@@ -119,6 +119,9 @@ alias egrep='command grep -E $GREP_OPTS'
 alias grep='command grep $GREP_OPTIONS'
 alias fgrep='LC_ALL=C command grep -F $GREP_OPTS'
 
+alias delete='command rm -dIrv --preserve-root'
+# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
+alias watch='command watch -n 2 $1'
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
 alias delete='command rm -dIrv --preserve-root'
