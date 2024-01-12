@@ -117,13 +117,7 @@ alias dir='command dir -alAF --author --human-readable --group-directories-first
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 alias egrep='command grep -E $GREP_OPTS'
 alias grep='command grep $GREP_OPTIONS'
-alias fgrep='LC_ALL=C grep -F $GREP_OPTS'
-export GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
-
-alias mv='mv -i'
-alias cp='cp -i'
-alias ln='ln -i'
-alias fc='fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
+alias fgrep='LC_ALL=C command grep -F $GREP_OPTS'
 
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
