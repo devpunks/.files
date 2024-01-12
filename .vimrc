@@ -315,7 +315,8 @@ set copyindent   " copy previous line indentation
 set smartindent  " indent based off current line
 set wrapmargin=0 " wrap based on terminal size (0 = disabled)
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
-set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
+" https://vimtricks.com/p/vim-line-length-marker/
+set colorcolumn=75,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 autocmd FocusLost * :w " save on focus lost
