@@ -88,6 +88,17 @@ echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
 alias cl=clear
+alias mv='command mv -i'
+alias cp='command cp -i'
+alias ln='command ln -i'
+alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
+
+alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
+alias jobs='command jobs -l'
+
+alias path='echo -e ${PATH//:/\\n}'
+alias mount='command mount | column -t'
+alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
 alias echo='command echo -e' # for escape characters
 alias matrix='command cmatrix -bas -C magenta'
 
