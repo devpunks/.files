@@ -300,7 +300,10 @@ cmap <c-r> :source ~/.vimrc<CR>
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " =========================================================================
-
+augroup TooLong
+    autocmd!
+    autocmd winEnter,BufEnter * call clearmatches() | call matchadd('ColorColumn', '\%>75v', 100)
+augroup END
 
 set autoread " re-read files
 set noautowrite " do not autowrite
@@ -310,6 +313,7 @@ set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
 set smartindent  " indent based off current line
+set wrapmargin=0 " wrap based on terminal size (0 = disabled)
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " controls when to wrap based on terminal size (0 = disabled)
 
