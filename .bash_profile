@@ -115,7 +115,7 @@ alias list='exa -ahlFT --git --grid --icons --level=2 --group-directories-first 
 alias dir='command dir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"'
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
-alias egrep='grep -E $GREP_OPTS'
+alias egrep='command grep -E $GREP_OPTS'
 alias grep='command grep $GREP_OPTIONS'
 alias fgrep='LC_ALL=C grep -F $GREP_OPTS'
 export GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
