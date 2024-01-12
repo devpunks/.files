@@ -201,6 +201,10 @@ if has('gui_running')
 endif
 
 " - Chrome -----------------------------------
+" tabs
+set tabline=%!Tabline()
+set showtabline=2 " :help setting-tabline
+" shell window
 set title " Turn on title
 set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Title String format
 set showtabline=2 " :help setting-tabline
