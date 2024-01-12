@@ -530,16 +530,6 @@ augroup Status
   autocmd InsertLeave * highlight! link StatusLine NONE
 augroup END
 
-" Gutter -----------------------------
-let s:gutter_bg=GetColor('LineNr', 'bg#')
-
-for type in ["Add", "Delete", "Change"]
-  if ! hlexists("GitGutter".type) | break | endif
-
-  execute 'highlight GitGutter'.type.' guibg=NONE ctermbg='.s:gutter_bg
-  execute 'verbose hi GitGutter'.type
-endfor
-
 " }}}
 
 " =========================================================================
