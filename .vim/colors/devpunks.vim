@@ -80,8 +80,8 @@ highlight SpellBad cterm=strikethrough ctermbg=NONE
 " Gutter
 highlight! Cursor cterm=NONE ctermfg=7
 highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE
+  highlight! link SignColumn LineNr
 highlight! CursorLineNr cterm=standout,bold ctermfg=NONE
-highlight! link SignColumn LineNr
 highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
 highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
 highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
