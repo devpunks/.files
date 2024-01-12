@@ -215,9 +215,12 @@ set wildmenu
 set infercase
 set wildoptions=pum
 set wildmode=list:longest,full
-set complete-=i,t " w,b,u,-i,-t - https://www.mail-archive.com/vim@vim.org/msg03963.html
-set completeopt+=menu,menuone,noinsert,popup,preview
-set completepopup+=align:item,border:on,highlight:Pmenu
+set wildignore+=*.DS_STORE,.git/**,.npm/**,.ssh/**,.cache/** " etc.
+
+" https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+set complete=w,b,u,i " -t - https://www.mail-archive.com/vim@vim.org/msg03963.html
+set completepopup+=align:item,border:on
+set completeopt+=menu,menuone,noinsert,popup
 
 " - Clipboard Registers ------------------------------------
 "   - https://github.com/termux/termux-packages/issues/2308
