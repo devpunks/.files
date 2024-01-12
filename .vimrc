@@ -94,7 +94,6 @@ set modeline " https://vim.fandom.com/wiki/Modeline_magic
 set modelines=1 " Head & tail file mode lines ( :help modeline )
 
 " increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
-set nrformats-=octal
 set nrformats+=alpha
 
 set tagcase=followscs " Follow smartcase & ignorecase
