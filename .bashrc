@@ -300,3 +300,5 @@ git_branch() {
 
 echo 'devPunks😈studio .bashrc'
 echo
+
+" vim: foldmethod=marker
