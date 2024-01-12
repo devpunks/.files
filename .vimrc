@@ -302,12 +302,6 @@ cmap <c-r> :source ~/.vimrc<CR>
 " =========================================================================
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
-augroup FileDefaults
-  autocmd!
-  autocmd FocusLost * :w " save on focus lost
-  autocmd winEnter,BufEnter * call clearmatches() | call matchadd('ColorColumn', '\%>75v', 100)
-augroup END
-
 set autoread " re-read files
 set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
