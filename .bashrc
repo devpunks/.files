@@ -34,7 +34,7 @@ export CRON_TZ=$TZ
 
 export INPUTRC="$HOME/.inputrc"
 
-if [ -n "${PREFIX}" ]; then
+if [ -n "${PREFIX}" ]; then # TERMUX
   unset PATH
   unset LD_LIBRARY_PATH
   echo "FOUND $PREFIX ON TERMUX"
