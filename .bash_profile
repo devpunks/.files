@@ -137,9 +137,6 @@ alias chown='command chown --preserve-root'
 alias chmod='command chmod --preserve-root'
 alias chgrp='command chgrp --preserve-root'
 
-# https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
-alias ps='command ps auxf'
-alias jobs='command jobs -l'
 alias header='command curl -I'
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
 alias watch='command watch -n 2 $1'
