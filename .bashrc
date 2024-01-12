@@ -58,6 +58,8 @@ export GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binar
 # https://www.cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
 export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 
+# }}}
+
 # =========================================================================
 # {{{ Locale
 #  - https://superuser.com/a/1779369
