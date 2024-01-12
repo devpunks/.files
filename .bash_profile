@@ -138,8 +138,6 @@ alias chmod='command chmod --preserve-root'
 alias chgrp='command chgrp --preserve-root'
 
 alias header='command curl -I'
-# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
-alias watch='command watch -n 2 $1'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 
