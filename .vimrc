@@ -540,8 +540,6 @@ for type in ["Add", "Delete", "Change"]
 
   execute 'highlight GitGutter'.type.' guibg=NONE ctermbg='.s:gutter_bg
   execute 'verbose hi GitGutter'.type
-  execute 'highlight GitGutter'.type.' guibg=NONE ctermbg='.s:gutter_bg
-  execute 'verbose hi GitGutter'.type
 endfor
 
 " }}}
