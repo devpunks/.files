@@ -322,9 +322,8 @@ set wrapmargin=0 " Newline insertion based on terminal width (0 = disabled)
 set colorcolumn=75,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 
 " formatoptions table - https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
-set formatoptions+=n " Format numbers
-set formatoptions+=c " autowrap `c`omments
-set formatoptions+=q " autowrap comments with gq
+set formatoptions+=n " Format numbered lists
+set formatoptions+=l " preserve existing lines
 set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=o " Preserve comments when pressing o/O
