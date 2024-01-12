@@ -741,5 +741,4 @@ syntax match Conceal "\<\%(math\.\|\)floor\>" conceal cchar=⌊
 
 " }}}
 
-
 " vim: foldmethod=marker
