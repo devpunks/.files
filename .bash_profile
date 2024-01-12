@@ -77,6 +77,10 @@ BG_CYAN=$(tput setab 6)
 BG_WHITE=$(tput setab 7)
 
 echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
+
+# }}}
+
+# https://geeksforgeeks.org/paste-command-in-linux-with-examples
 # =========================================================================
 # ----------------------
 # shell
