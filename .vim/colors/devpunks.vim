@@ -83,7 +83,7 @@ highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE
   highlight! link SignColumn LineNr
 highlight! CursorLineNr cterm=standout,bold ctermfg=NONE
 highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
-highlight! Folded cterm=bold,underline ctermfg=NONE ctermbg=NONE
+highlight! Folded cterm=bold,underline,italic ctermfg=NONE ctermbg=NONE
 highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
 highlight! ColorColumn cterm=strikethrough,italic ctermbg=NONE ctermfg=8
 highlight! StatusLine cterm=bold,reverse ctermfg=grey
