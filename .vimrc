@@ -249,6 +249,7 @@ if executable('termux-clipboard-set')
 else
   echom 'Termux clipboard not found'
 endif
+
 " }}}
 
 " =========================================================================
