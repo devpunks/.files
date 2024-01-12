@@ -169,7 +169,6 @@ set ttyscroll=3 " number of characters for redraws
 set lazyredraw " Don't update during macro script execution
 
 set mouse=a " Enable mouse use in all modes
-
 if has('mouse_sgr')
   " Must be one of: sgr, xterm, xterm2, netterm, dec, jsbterm, pterm
   " Set this to the name of your terminal that supports mouse codes.
