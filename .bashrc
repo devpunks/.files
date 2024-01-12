@@ -126,12 +126,7 @@ if [[ "$(tic -V)" == *"ncurses"* ]]; then
   shopt -s checkwinsize # https://www.reddit.com/r/bash/comments/88tt7i
 fi
 
-setterm --resize
-shopt -s checkwinsize
-# https://stackoverflow.com/questions/1780483
-export LINES=$(tput lines)
-export COLUMNS=$(tput columns)
-echo "$( stty size | tr ' ' 'x' )"
+# }}}
 
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 set -o nolog
