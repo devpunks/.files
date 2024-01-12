@@ -28,7 +28,10 @@
 # done
 
 export EDITOR=vi
-# Software Flow Control
+
+export TZ='Etc/UTC'
+export CRON_TZ=$TZ
+
 export INPUTRC="$HOME/.inputrc"
 #  - https://unix.stackexchange.com/questions/515252
 #  - https://unix.stackexchange.com/questions/12107
