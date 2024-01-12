@@ -321,9 +321,6 @@ set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 " https://vimtricks.com/p/vim-line-length-marker/
 set colorcolumn=75,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 
-filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
-autocmd FocusLost * :w " save on focus lost
-
 " formatoptions table - https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
 set formatoptions+=n " Format numbers
 set formatoptions+=c " autowrap `c`omments
