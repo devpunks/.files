@@ -12,7 +12,7 @@
 # Hyperlinks
 #   - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
 # =========================================================================
-# colors.sh
+# {{{ colors.sh
 #   - Benchmark - https://imgur.com/xIyuaYt
 #   - https://ditig.com/256-colors-cheat-sheet
 #   - https://stackoverflow.com/questions/4842424
