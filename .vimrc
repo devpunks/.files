@@ -613,7 +613,6 @@ function! HighlightGroup()
 endfun
 command! Colors call HighlightGroup()
 
-
 " --------------------------------------------------------------------------------
 " Tabline () :h(elp) setting-tablines
 " --------------------------------------------------------------------------------
