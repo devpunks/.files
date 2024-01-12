@@ -342,12 +342,10 @@ function OverflowMargin () abort
 
   if ! &tw | return | endif
 
-  let l:columns = join( [ -1, (&tw +1) ], ',' )
-
   " call matchadd('ColorColumn', '\%>75v')
   call matchadd('ColorColumn', '\%>' .. &tw .. 'v')
   " https://www.baeldung.com/linux/vim-ruler-on-specific-column
-  execute "set colorcolumn=" . l:columns
+  execute "set colorcolumn=" . (&tw +1)
 endfunction
 
 " -------------------------------------------------------------------------
