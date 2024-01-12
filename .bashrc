@@ -111,11 +111,20 @@ stty -ixon # Disable XON/XOFF output control
 stty -ixoff # Disable sending START/STOP characters
 stty -ixany # Disable any key to resume (not just START)
 # https://unix.stackexchange.com/questions/9957
-export TERM=xterm-256color
-export COLORTERM=truecolor
-# TERMUX nCurses- https://stackoverflow.com/questions/76148896
-export CURSES_CFLAGS="-I${PREFIX}/include"
-export CURSES_LDFLAGS="-L${PREFIX}/lib -lncurses"
+# https://unix.stackexchange.com/questions/198794
+
+export TERM='xterm-256color'
+
+if [[ "$(tic -V)" == *"ncurses"* ]]; then
+  # TERMUX nCurses- https://stackoverflow.com/questions/76148896
+  export CURSES_CFLAGS="-I${PREFIX}/include"
+  export CURSES_LDFLAGS="-L${PREFIX}/lib -lncurses"
+  # https://stackoverflow.com/questions/1780483
+  export LINES=$(tput lines)
+  export COLUMNS=$(tput columns)
+  echo "$( stty size | tr ' ' 'x' )"
+  shopt -s checkwinsize # https://www.reddit.com/r/bash/comments/88tt7i
+fi
 
 setterm --resize
 shopt -s checkwinsize
