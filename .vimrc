@@ -313,7 +313,6 @@ set smartindent  " indent based off current line on load
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " Newline insertion based on terminal width (0 = disabled)
 " https://vimtricks.com/p/vim-line-length-marker/
-set colorcolumn=75,-3 " vertical ruler - https://www.baeldung.com/linux/vim-ruler-on-specific-column
 
 " formatoptions table - https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
 set formatoptions+=n " Format numbered lists
