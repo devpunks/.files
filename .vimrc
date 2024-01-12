@@ -95,6 +95,7 @@ set modelines=1 " Head & tail file mode lines ( :help modeline )
 
 " increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
 set nrformats+=alpha
+set nrformats-=octal
 
 set tagcase=followscs " Follow smartcase & ignorecase
 " Problematic for conditionals "A"=="a"
