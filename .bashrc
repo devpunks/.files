@@ -258,6 +258,11 @@ PS1_PROMPT='$(tput setab 13)💲'"$PS1_RESET"
 # {{{ COLORS
 #   - https://github.com/termstandard/colors
 # =========================================================================
+# https://github.com/microsoft/terminal/issues/11057
+export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
+# Truecolor test
+printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
+
 # https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
 GREP_COLOR='1;4;38;5;13;48;5;235'
 export GREP_COLORS="ln=1;4;38;5;241:ms=${GREP_COLOR}:"
