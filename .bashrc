@@ -256,6 +256,7 @@ PS1_PROMPT='$(tput setab 13)💲'"$PS1_RESET"
 
 # =========================================================================
 # {{{ COLORS
+#   - https://github.com/termstandard/colors
 # =========================================================================
 # https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
 GREP_COLOR='1;4;38;5;13;48;5;235'
