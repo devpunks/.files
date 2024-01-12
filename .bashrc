@@ -91,6 +91,8 @@ export LC_ALL=$LANG
 #    - https://manpages.ubuntu.com/manpages/jammy/man1/tput.1.html
 #    - tput - https://linuxcommand.org/lc3_adv_tput.php
 #  ncurses
+#    - https://en.m.wikipedia.org/wiki/Ncurses
+#    - https://en.m.wikipedia.org/wiki/Curses_(programming_library)
 # =========================================================================
 
 # https://unix.stackexchange.com/questions/198794
