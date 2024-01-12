@@ -106,6 +106,7 @@ set smartcase " Capitalization case-sensitive search
 set wrapscan " Search respects wrapping
 set hlsearch " result highlight grouping
 set incsearch " highlight search matches
+
 set visualbell " Set the window bell to flash
 set errorbells " Unset display beep on errors
 set belloff+=wildmode " Turn off insert completion bell
