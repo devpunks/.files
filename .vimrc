@@ -491,9 +491,9 @@ set sidescroll=10 " scroll amount when a word is outside of view
 set display=lastline " Always show paragraph last line
 
 " (NORMAL/VISUAL MODE)
-" (b)ackspace wrap EOL & BOL
-" (s)pace key wrap to next line at end of line
-set whichwrap=b,s,<,> " < left and right > arrow wrap to prev. and next line
+set whichwrap=h,l " 'h' & 'l' wrap EOL & BOL
+set whichwrap+=b,s " (b)ackspace & (s)pace wrap EOL & BOL
+set whichwrap+=<,> " < left and right > arrow wrap to prev. and next line
 " (INSERT/REPLACE MODE)
 set whichwrap+=[,] " [ left and right ] arrow wrap to prev. and next line
 set backspace=indent,eol,nostop " Insert mode <BS> deletion
