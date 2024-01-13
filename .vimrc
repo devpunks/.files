@@ -492,6 +492,7 @@ set list " view hidden characters
 set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
 
 set sidescroll=10 " scroll amount when a word is outside of view
+set scrolloff=999 " Line jump scrolling offset (999=centered)
 " https://stackoverflow.com/questions/4621798
 " https://stackoverflow.com/questions/15124386
 set display=lastline " Always show paragraph last line
