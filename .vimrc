@@ -491,7 +491,6 @@ set pastetoggle=<leader>p " Allow toggle of (paste) insert indentation
 set list " view hidden characters
 set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
 
-set scrolloff=999 " Lines of offset when jump scrolling
 set sidescroll=10 " scroll amount when a word is outside of view
 " https://stackoverflow.com/questions/4621798
 " https://stackoverflow.com/questions/15124386
