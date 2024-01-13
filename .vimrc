@@ -274,10 +274,10 @@ nnoremap <esc> :nohlsearch<cr>
 " tabs
 " TODO: <C-t> conflicts with :tab pop
 "nnoremap <C-t> :tabnew<cr>
-nnoremap <C-n> :tabnext<cr>
-nnoremap <C-p> :tabprevious<cr>
+nnoremap <C-n> :tabnext<CR>
+nnoremap <C-p> :tabprevious<CR>
 " simulate break pane in TMUX
-nnoremap <C-w>T :tab split<cr>
+nnoremap <C-w>T :tab split<CR>
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
