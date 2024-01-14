@@ -62,6 +62,7 @@ export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 
 # GIT ----------------------------------------------------------------------
 export GIT_EDITOR=vi
+export GIT_PAGER=most
 
 # }}}
 
