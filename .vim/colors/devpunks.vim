@@ -51,7 +51,7 @@ highlight! Todo cterm=standout,italic,underline ctermfg=NONE ctermbg=NONE
 " Diff
 highlight! DiffAdd    ctermfg=3
 highlight! DiffDelete ctermfg=1
-highlight! DiffChange ctermfg=8
+highlight! DiffChange ctermfg=2
 highlight! DiffText   ctermfg=NONE
 
 " Popups
