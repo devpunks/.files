@@ -431,8 +431,8 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
-nnoremap , :ZoomWin<cr>
-nnoremap <leader>z :ZoomWin<cr>
+nnoremap <CR> :ZoomWin<cr>
+nnoremap <leader>z :ZoomWin<cr> " TMUX dexterity clone
 
 " -------------------------------------------------------------------------
 " NERDTree
