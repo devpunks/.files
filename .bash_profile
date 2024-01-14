@@ -584,4 +584,4 @@ alias shortcuts='bind -P'
 echo 'devPunks😈studio .bash_profile'
 echo
 
-" vim: foldmethod=marker
+# vim: foldmethod=marker
