@@ -566,17 +566,7 @@ set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline= " clear out status line
 " file type
-set statusline+=%#Statement#[\ 💻%Y\|%S\|
-" mode
-set statusline+=%{(mode()=='c')?'\ 💲':''}
-set statusline+=%{(mode()=='i')?'\ 📝':''}
-set statusline+=%{(mode()=='n')?'\ 📄':''}
-set statusline+=%{(mode()=='R')?'\ 📃':''}
-set statusline+=%{(mode()=='v')?'\ 🔍':''}
-set statusline+=%{(mode()=='V')?'\ 🔎':''}
-set statusline+=%-10F " full file name
-set statusline+=%r%h%m " flags
-set statusline+=\]%#StatusLine# " change to default highlight
+set statusline+=%#Statement#💻%Y
 " formatoptions
 set statusline+=\ [%{&fo}]
 " cursor column position
