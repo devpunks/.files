@@ -92,6 +92,7 @@ if &compatible | set nocompatible | endif
 
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 set showcmd " show current command prompt suffix
+set cmdheight=2 " set height for ex command prompt
 set showcmdloc=statusline " Add current command to status
 set modeline " https://vim.fandom.com/wiki/Modeline_magic
 set modelines=1 " Head & tail file mode lines ( :help modeline )
