@@ -30,6 +30,7 @@
 export EDITOR=vi
 export VISUAL=$EDITOR
 
+# https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html
 export TZ='Etc/UTC'
 export CRON_TZ=$TZ
 
