@@ -28,6 +28,7 @@
 # done
 
 export EDITOR=vi
+export VISUAL=$EDITOR
 
 export TZ='Etc/UTC'
 export CRON_TZ=$TZ
