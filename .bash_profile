@@ -488,7 +488,7 @@ function environment {
   echo && echo Functions:
   compgen -A function | sort | column --fillrows
   echo && echo 👇Aliases:👇
-  echo $( compgen -a ) | sort | column --fillrows # alias -p # for declaration
+  echo $( compgen -a ) | sort | column --fillrows # alias -p
 
   echo && echo 👇Reserved Words:👇
   compgen -k | sort | column --fillrows
