@@ -49,7 +49,7 @@ highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 highlight! Todo cterm=standout,italic,underline ctermfg=NONE ctermbg=NONE
 
 " Diff
-highlight! DiffAdd    ctermfg=7
+highlight! DiffAdd    ctermfg=3
 highlight! DiffDelete ctermfg=7
 highlight! DiffChange ctermfg=8
 highlight! DiffText   ctermfg=NONE
