@@ -97,6 +97,7 @@ highlight! TabLine cterm=reverse,italic ctermfg=NONE ctermfg=NONE ctermbg=NONE
 
 " Navigation
 highlight! Title cterm=bold ctermfg=NONE
+highlight! Question cterm=standout ctermfg=NONE
 highlight! Directory cterm=bold,underline ctermfg=NONE
 highlight! Visual cterm=standout,bold,underline,italic ctermbg=NONE
 highlight! Conceal cterm=standout,bold,underline,ctermfg=cyan ctermbg=NONE
