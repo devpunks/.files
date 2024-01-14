@@ -234,6 +234,7 @@ set completepopup+=align:item,border:on
 set completeopt+=menu,menuone,noinsert,popup
 
 " - Clipboard Registers ------------------------------------
+"   - https://stackoverflow.com/questions/11489428
 "   - https://github.com/termux/termux-packages/issues/2308
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
 "   - https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard
