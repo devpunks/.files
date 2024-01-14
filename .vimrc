@@ -228,7 +228,8 @@ set wildignore+=*.DS_STORE,.git/**,.npm/**,.ssh/**,.cache/** " etc.
 " https://github.com/prabirshrestha/vim-lsp
 " https://linuxhandbook.com/vim-auto-complete
 " https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
-set complete=w,b,u,i " -t - https://www.mail-archive.com/vim@vim.org/msg03963.html
+" https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
+set complete=.,w,b,u,i " -t - https://www.mail-archive.com/vim@vim.org/msg03963.html
 set completepopup+=align:item,border:on
 set completeopt+=menu,menuone,noinsert,popup
 
