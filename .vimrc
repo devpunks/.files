@@ -273,7 +273,9 @@ endif
 " =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
-nnoremap <space> za
+nnoremap <Space> za
+" Tab completion
+inoremap <Tab> <C-p>
 nnoremap <esc> :nohlsearch<cr>
 
 " tags (:h tagstack)
