@@ -442,8 +442,8 @@ autocmd VimEnter * call s:NerdDrawer()
 function! s:NerdDrawer() abort
   if ! exists('g:NERDTree') | return | endif
 
-  " [ENTER] Opens Nerdtree
-  nnoremap <CR> :NERDTreeToggle<CR>
+  " [TAB] Opens Nerdtree
+nnoremap <Tab> :NERDTreeToggle<CR>
 
   let NERDTreeIgnore=[] " ignored files
   let NERDTreeHighlightCursorLine=1 " current line
