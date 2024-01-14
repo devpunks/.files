@@ -93,6 +93,7 @@ highlight! VertSplit cterm=NONE ctermfg=NONE
 " Tabs
 highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
 highlight! TabLineSel cterm=bold,underline ctermfg=NONE ctermbg=NONE
+highlight! TabLine cterm=reverse,italic ctermfg=NONE ctermfg=NONE ctermbg=NONE
 
 " Navigation
 highlight! Title cterm=bold ctermfg=NONE
