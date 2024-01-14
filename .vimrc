@@ -250,7 +250,7 @@ if has('unnamedplus') | set clipboard=unnamed,unnamedplus | endif
 " vmap <C-v> c<ESC>"+p
 " imap <C-v> <ESC>"+pa
 
-" termux -----
+" - Termux ------------------------------------
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
 if executable('termux-clipboard-set')
   echom 'SHAZAAAM FOUND CLIPBOARD'
