@@ -91,7 +91,6 @@ highlight! StatusLineNC cterm=reverse ctermfg=8
 highlight! VertSplit cterm=NONE ctermfg=NONE
 
 " Tabs
-highlight! TabLine cterm=reverse,italic ctermfg=NONE ctermfg=NONE ctermbg=NONE
 highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
 highlight! TabLineSel cterm=bold,underline ctermfg=NONE ctermbg=NONE
 
