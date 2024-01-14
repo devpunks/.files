@@ -569,6 +569,20 @@ set statusline= " clear out status line
 set statusline+=%#Statement#💻%Y
 " formatoptions
 set statusline+=\ [%{&fo}]
+" Show Command
+set statusline+=\ \|%1.5S\|
+set statusline+=\ %r%h%m\  " flags
+" mode
+set statusline+=%{(mode()=~'^c')?'💲':''}
+set statusline+=%{(mode()=~'^i')?'📝':''}
+set statusline+=%{(mode()=~'^n')?'📄':''}
+set statusline+=%{(mode()=~'^R')?'📃':''}
+set statusline+=%{(mode()=~'^v')?'🔍':''}
+set statusline+=%{(mode()=~'^V')?'🔎':''}
+set statusline+=%{(mode()=='')?'🔎':''}
+set statusline+=%{mode()}%{len(mode())}
+set statusline+=%#StatusLine# " change to default highlight
+set statusline+=%-10F " full file name
 " cursor column position
 set statusline+=\ 📜⇨%c%V✖%-l⇩
 " percentage
