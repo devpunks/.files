@@ -58,7 +58,7 @@ highlight! DiffText   ctermfg=NONE
 highlight! PmenuSbar cterm=NONE ctermbg=NONE
 highlight! PmenuSel ctermfg=NONE ctermbg=NONE
 highlight! Pmenu cterm=standout ctermfg=NONE ctermbg=NONE
-highlight! link PmenuThumb Pmenu
+  highlight! link PmenuThumb Pmenu
 highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
 
 " Search
