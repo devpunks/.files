@@ -127,8 +127,6 @@ alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
 
-alias ..='command cd ..'
-alias now='date +"%T"'
 alias rand='echo $RANDOM'
 alias random='echo $SRANDOM'
 alias ports='netstat -tulanp'
