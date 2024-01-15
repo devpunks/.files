@@ -182,7 +182,7 @@ alias be='bundle exec'
 # -X flag for Enable X11 forwarding
 alias ss='sshd -X -Dddd -p8022'
 
-# Server ------------------------------------------------------------------
+# HTTP(s) ------------------------------------------------------------------
 alias serve='python -m http.server'
 
 # TMUX ----------------------
