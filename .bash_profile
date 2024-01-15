@@ -225,7 +225,7 @@ alias g#="(
   GIT_PAGER=cat \
     gl --since='1 day ago'
   echo && echo Total: \
-    && git log --since='1 day ago' | wc -l
+    && gl --since='1 day ago' | wc -l
   echo
 )"
 
