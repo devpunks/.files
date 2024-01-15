@@ -235,7 +235,7 @@ alias g#="(
 # {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
-# ------------------------------------------------
+# =========================================================================
 open () {
   # apk
   [[ -f $1 ]] && [[ -x $1 ]] && termux-open $1
