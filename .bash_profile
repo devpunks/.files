@@ -203,10 +203,7 @@ alias tmux.config='(
   tmux show-window-options -g
 )'
 
-# ----------------------
-# Ruby
-# ----------------------
-alias be='bundle exec'
+# }}}
 
 # ----------------------
 # Git Aliases
