@@ -148,6 +148,16 @@ alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
+# ----------------------
+# Ruby
+# ----------------------
+alias be='bundle exec'
+
+# }}}
+
+# =========================================================================
+# {{{ Server(s)
+# ==========================================================================
 # SSH(d) ------------------------------------------------------------------
 #   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
 #   - https://wiki.termux.com/wiki/Remote_Access
