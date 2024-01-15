@@ -185,6 +185,14 @@ alias ss='sshd -X -Dddd -p8022'
 # HTTP(s) ------------------------------------------------------------------
 alias serve='python -m http.server'
 
+# - syslog() - https://stackify.com/syslog-101/
+# - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
+# - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
+alias logs.sshd="command logcat -s 'sshd:*'"
+function logs () {
+  command logcat
+}
+
 # TMUX ----------------------
 alias tmux.config='(
   echo && echo Server Options:
