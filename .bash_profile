@@ -130,6 +130,11 @@ alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
 alias rand='echo $RANDOM'
 alias random='echo $SRANDOM'
 alias ports='netstat -tulanp'
+alias calendar='command cal -1 --iso --color=auto'
+# https://www.gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
+alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
+# https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
+alias now='command date +"%T - %::z %Z (${TZ})"'
 
 alias who=whoami
 alias ping='command ping -c 100 -s.2'
