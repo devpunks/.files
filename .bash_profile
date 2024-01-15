@@ -217,8 +217,9 @@ alias gl='git log --since=1.week --graph --decorate --all'
 alias gll='git log -L'
 alias gp='git push && git push --tags'
 alias gr='git rebase -i'
-alias gs='git status'
-alias gt="(
+alias gs='git status --column --verbose'
+alias gt='git tag -a'
+alias g#="(
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
   # https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   GIT_PAGER=cat \
