@@ -205,9 +205,9 @@ alias tmux.config='(
 
 # }}}
 
-# ----------------------
-# Git Aliases
-# ----------------------
+# =========================================================================
+# {{{ Git Aliases
+# https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
 alias ga='git add -p'
 alias gb='git branch'
 alias gc='git commit --message '
