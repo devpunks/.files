@@ -9,8 +9,10 @@
 
 # [ -r $HOME/.bashrc ] && source $HOME/.bashrc
 
-# Hyperlinks
-#   - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
+# ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
+# Paste - https://geeksforgeeks.org/paste-command-in-linux-with-examples
+# Hyperlinks - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
+
 # =========================================================================
 # {{{ colors.sh
 #   - Benchmark - https://imgur.com/xIyuaYt
