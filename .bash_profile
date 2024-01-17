@@ -88,6 +88,7 @@ echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
 alias cl=clear
+alias ..='command cd ..'
 alias mv='command mv -i'
 alias cp='command cp -i'
 alias ln='command ln -i'
