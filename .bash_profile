@@ -82,7 +82,6 @@ echo "I ${REVERSE}${MAGENTA}love${NC} devPunks"
 
 # }}}
 
-# https://geeksforgeeks.org/paste-command-in-linux-with-examples
 # =========================================================================
 # ----------------------
 # shell
