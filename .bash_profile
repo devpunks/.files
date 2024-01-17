@@ -493,7 +493,8 @@ function environment {
   echo && echo 👇Reserved Words:👇
   compgen -k | sort | column --fillrows
   echo && echo 👇Env Vars:👇
-  env | sort | column --fillrows
+  # https://unix.stackexchange.com/questions/123473
+  env | sort | column --fillrows # printenv | export -p
   echo && echo 👇Shell Vars:👇
   command echo -e "(set -o posix; set; set +o posix)" | sort | column --fillrows
   echo && command echo 👇Declarations:👇
