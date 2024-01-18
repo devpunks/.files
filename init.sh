@@ -6,6 +6,7 @@ termux-open $HOME/.termux/Termux_Boot_0.7.apk
 termux-setup-storage
 termux-info
 
+pkg install bc
 pkg install jq
 pkg install exa
 pkg install git
