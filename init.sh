@@ -13,6 +13,9 @@ pkg install git
 pkg install tar
 pkg install man
 pkg install vim
+pkg install zip
+pkg install unzip
+pkg install lynx
 pkg install most
 pkg install htop
 pkg install tmux
