@@ -11,8 +11,6 @@ pkg install jq
 pkg install exa
 pkg install git
 pkg install tar
-pkg install zip
-pkg install unzip
 pkg install man
 pkg install vim
 pkg install most
