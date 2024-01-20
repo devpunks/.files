@@ -654,10 +654,6 @@ function! Tabline()
 
     let line .= '%' . l:tab . 'T'
     let line .= (l:tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
-    let line .= ( l:count > 1 ? '⧉'.l:count : '' )
-    let line .= '✎'
-    let line .= ( l:name != '' ? fnamemodify (l:name, ':t' )  : '[No Name]' )
-
     let line .= ( l:modified==0 ? '' : '[+]' )
     let line .= ( l:tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
