@@ -28,6 +28,7 @@
 # done
 
 export EDITOR=vi
+export PAGER=most
 export VISUAL=$EDITOR
 
 # https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html
