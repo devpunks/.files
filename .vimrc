@@ -101,7 +101,10 @@ set modelines=1 " Head & tail file mode lines ( :help modeline )
 set nrformats+=alpha
 set nrformats-=octal
 
-set tagcase=followscs " Follow smartcase & ignorecase
+set wrapscan " Search respects wrapping
+set hlsearch " result highlight grouping
+set incsearch " highlight search matches
+set smartcase " Capitalization case-sensitive search
 " Problematic for conditionals "A"=="a"
 " https://vi.stackexchange.com/questions/11236
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
