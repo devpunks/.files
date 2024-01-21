@@ -547,8 +547,8 @@ endtry
 augroup Status
   autocmd!
   highlight! StatusLineInsert cterm=reverse,bold
-  autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
   autocmd InsertLeave * highlight! link StatusLine NONE
+  autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
 augroup END
 
 " }}}
