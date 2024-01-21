@@ -109,10 +109,7 @@ set smartcase " Capitalization case-sensitive search
 " https://vi.stackexchange.com/questions/11236
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
 " set ignorecase " Case in-sensitive search
-set smartcase " Capitalization case-sensitive search
-set wrapscan " Search respects wrapping
-set hlsearch " result highlight grouping
-set incsearch " highlight search matches
+set tagcase=followscs " Follow smartcase & ignorecase
 
 set visualbell " Set the window bell to flash
 set errorbells " Unset display beep on errors
