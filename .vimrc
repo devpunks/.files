@@ -26,8 +26,7 @@
 " -------------------------------------------------------------------------
 
 " Screencasts: http://vimcasts.org
-"
-" Cheatsheet
+" Cheatsheets:
 "   - https://vim.rtorr.com/
 "   - https://devhints.io/vimscript
 " TERM - https://vimhelp.org/term.txt.html
