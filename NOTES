@@ -135,7 +135,7 @@ Android Accessibility
 # :verbose map - Keyboard mappings - https://vi.stackexchange.com/questions/7722
 # FULL LIST OF SHORTCUTS - https://gist.github.com/tuxfight3r/0dca25825d9f2608714b
 
-# BASH ---------------------------------
+# BASH --------------------------------------------------------------------
 #   - Shell Check - https://www.shellcheck.net
 #   - Explain Shell - https://explainshell.com/
 #   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
