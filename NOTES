@@ -128,7 +128,6 @@ Android Accessibility
 # gq - Automatic formatting
 # cool help screens
 # :h group-name
-# :h highlight-groups
 # :h cterm-colors
 # :h index - All keyboard mappings
 # <C-v> (<C-q> on Windows) Then type escape command
