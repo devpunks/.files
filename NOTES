@@ -78,7 +78,7 @@ Android Accessibility
 - [CTRL][TAB] # Next tab
 - [CTRL][SHIFT][TAB] # Prev tab
 
-# DEX ------------------------------------
+# DEX ---------------------------------------------------------------------
 - <OS> + [UP]
   - Maximize floating window to fullscreen
 - <OS> + [DOWN]
