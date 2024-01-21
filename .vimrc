@@ -329,6 +329,7 @@ set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
 set smartindent  " indent based off current line on load
+" https://vimtricks.com/p/vim-line-length-marker
 set textwidth=75 " http://blog.ezyang.com/2010/03/vim-textwidth
 set wrapmargin=0 " Newline insertion based on terminal width (0 = disabled)
 " https://vimtricks.com/p/vim-line-length-marker/
