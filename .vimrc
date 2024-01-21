@@ -179,7 +179,7 @@ if has('mouse_sgr')
   " Set this to the name of your terminal that supports mouse codes.
   set ttymouse=sgr
 else
-  set ttymouse=xterm
+  set ttymouse=xterm2
 endif
 
 " https://stackoverflow.com/questions/6488683
