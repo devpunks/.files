@@ -46,7 +46,8 @@ let &t_Ds = "\e[4:5m" " UnderDashed
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 " TODO: Foo
-highlight! Todo cterm=standout,italic,underline ctermfg=NONE ctermbg=NONE
+highlight! Todo term=bold,italic,underline cterm=bold,italic,underline ctermfg=NONE ctermbg=NONE gui=bold,italic,underline guifg=NONE guibg=NONE
+  highlight! link PreProc Todo
 
 " Diff
 highlight! DiffAdd    ctermfg=3
