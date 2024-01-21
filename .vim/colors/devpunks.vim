@@ -107,7 +107,7 @@ highlight! Conceal cterm=standout,bold,underline ctermfg=cyan ctermbg=NONE
 
 " Syntax
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
-highlight! Special cterm=bold ctermfg=NONE
+highlight! Special term=bold cterm=bold ctermfg=8 gui=bold guifg=DarkGrey
   highlight! link SpecialKey Special " nbsp|tab|trail
   highlight! link NonText Special " eol|extends
 highlight! Ignore ctermfg=NONE
