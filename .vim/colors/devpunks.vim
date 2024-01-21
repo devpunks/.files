@@ -44,10 +44,6 @@ let &t_Ds = "\e[4:5m" " UnderDashed
 " Base Default - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
-" TODO: Foo
-highlight! Todo term=bold,italic,underline cterm=bold,italic,underline ctermfg=NONE ctermbg=NONE gui=bold,italic,underline guifg=NONE guibg=NONE
-  highlight! link PreProc Todo
-
 " Diff
 highlight! DiffAdd    ctermfg=3
 highlight! DiffDelete ctermfg=1
