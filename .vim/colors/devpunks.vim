@@ -81,11 +81,13 @@ highlight SpellBad cterm=strikethrough ctermbg=NONE
 highlight! Cursor cterm=NONE ctermfg=NONE
 highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
   highlight! link SignColumn LineNr
-highlight! CursorLineNr cterm=standout,bold ctermfg=NONE
-highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
-highlight! Folded cterm=bold,underline,italic ctermfg=NONE ctermbg=NONE
-highlight! CursorColumn cterm=underline ctermfg=NONE ctermbg=NONE
-highlight! ColorColumn cterm=strikethrough,italic ctermbg=NONE ctermfg=8
+highlight! CursorLine term=underline cterm=underline gui=underline ctermbg=NONE guibg=NONE
+highlight! CursorLineNr cterm=bold,reverse ctermfg=NONE gui=bold guifg=NONE
+highlight! FoldColumn term=bold cterm=bold ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
+highlight! Folded term=bold cterm=bold,underline,italic ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
+highlight! CursorColumn cterm=underline gui=underline ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
+highlight! ColorColumn cterm=strikethrough,italic ctermbg=NONE ctermfg=8 guibg=NONE
+
 highlight! StatusLine cterm=bold,reverse ctermfg=grey
 highlight! StatusLineNC cterm=reverse ctermfg=8
 highlight! VertSplit cterm=NONE ctermfg=NONE
