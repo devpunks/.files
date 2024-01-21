@@ -20,6 +20,8 @@
 " -------------------------------------------------------------------------
 " File: .vimrc
 " Source: https://github.com/devpunks
+" Author: devPunks (github.com/devpunks)
+" Description: Vim(rc) configuration file.
 " Gist: https://gist.github.com/snuggs/612093
 " -------------------------------------------------------------------------
 
