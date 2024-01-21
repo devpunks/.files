@@ -101,7 +101,10 @@ highlight! Visual cterm=standout,bold,underline,italic ctermbg=NONE
 highlight! Conceal cterm=standout,bold,underline ctermfg=cyan ctermbg=NONE gui=standout,bold,underline guifg=cyan guibg=NONE
 
 " Syntax
-" https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
+" TODO: Foo
+highlight! Todo term=bold,italic,underline cterm=bold,italic,underline ctermfg=NONE ctermbg=NONE gui=bold,italic,underline guifg=NONE guibg=NONE
+  highlight! link PreProc Todo
+" https://stackoverflow.com/questions/24232354
 highlight! Special term=bold cterm=bold ctermfg=8 gui=bold guifg=DarkGrey
   highlight! link SpecialKey Special " nbsp|tab|trail
   highlight! link NonText Special " eol|extends
