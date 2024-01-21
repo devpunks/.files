@@ -102,7 +102,7 @@ highlight! Title cterm=bold ctermfg=NONE
 highlight! Question cterm=standout ctermfg=NONE
 highlight! Directory cterm=bold,underline ctermfg=NONE
 highlight! Visual cterm=standout,bold,underline,italic ctermbg=NONE
-highlight! Conceal cterm=standout,bold,underline ctermfg=cyan ctermbg=NONE cterm=standout,bold,underline guifg=cyan guibg=NONE
+highlight! Conceal cterm=standout,bold,underline ctermfg=cyan ctermbg=NONE gui=standout,bold,underline guifg=cyan guibg=NONE
 
 " Syntax
 " https://stackoverflow.com/questions/24232354/vim-set-color-for-listchars-tabs-and-spaces
