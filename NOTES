@@ -9,8 +9,7 @@ Android Accessibility
 <OS> + / # Accessibility Keys
 <OS> + [TAB] # Recent Apps
 [CTRL][ALT] + Z # Toggle Accessibility Talkback
-
-##################################
+###########################################################################
 - [ESC] # Abort
 - [ALT] # Start Menu
 - [ALT] + [TAB] # Open Apps
