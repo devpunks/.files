@@ -129,6 +129,7 @@ Android Accessibility
 # cool help screens
 # :h group-name
 # :h cterm-colors
+# :h highlight-groups
 # :h index - All keyboard mappings
 # <C-v> (<C-q> on Windows) Then type escape command
 # :verbose map - Keyboard mappings - https://vi.stackexchange.com/questions/7722
