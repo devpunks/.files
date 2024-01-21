@@ -105,7 +105,7 @@ highlight! Conceal cterm=standout,bold,underline ctermfg=cyan ctermbg=NONE gui=s
 highlight! Todo term=bold,italic,underline cterm=bold,italic,underline ctermfg=NONE ctermbg=NONE gui=bold,italic,underline guifg=NONE guibg=NONE
   highlight! link PreProc Todo
 " https://stackoverflow.com/questions/24232354
-highlight! Special term=bold cterm=bold ctermfg=8 gui=bold guifg=DarkGrey
+highlight! Special term=bold cterm=bold ctermfg=NONE gui=bold guifg=NONE
   highlight! link SpecialKey Special " nbsp|tab|trail
   highlight! link NonText Special " eol|extends
 highlight! Ignore ctermfg=NONE
