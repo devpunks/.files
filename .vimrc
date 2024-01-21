@@ -534,7 +534,7 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 "hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 " =========================================================================
 set t_Co=256 " enable 256 colors
-set termguicolors
+set termguicolors " 24bit gui(fg|bg)
 set background=dark " [dark|light]
 try
   colorscheme devpunks
