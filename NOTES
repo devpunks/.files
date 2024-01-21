@@ -116,7 +116,7 @@ Android Accessibility
 - [CTRL][ALT] + U   # URL List
 - [CTRL][ALT] + V   # Paste
 
-# TMUX ---------------------------------
+# TMUX --------------------------------------------------------------------
 # Bind(ed) Keys
 #   - tmux list-keys
 #   - tmux list-keys -a
