@@ -124,7 +124,7 @@ Android Accessibility
 #   - tmux list-keys -T(able)
 # Shortcut mappings - <prefix>+?
 
-# VIM ---------------------------------
+# VIM ---------------------------------------------------------------------
 # gq - Automatic formatting
 # cool help screens
 # :h group-name
