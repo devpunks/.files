@@ -542,10 +542,6 @@ endtry
 " https://groups.google.com/g/vim_dev/c/wsC205JQpDo
 " let &t_8f = '\<Esc>[38:2:%lu:%lu:%lum'
 " let &t_8b = '\<Esc>[48:2:%lu:%lu:%lum'
-set background=dark " [dark|light]
-try
-  colorscheme devpunks
-catch | endtry
 
 " Interactive Status -----------------------------
 augroup Status
