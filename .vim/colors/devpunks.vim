@@ -87,7 +87,7 @@ highlight! CursorLineNr cterm=bold,reverse ctermfg=NONE gui=bold guifg=NONE
 highlight! FoldColumn term=bold cterm=bold ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
 highlight! Folded term=bold cterm=bold,underline,italic ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
 highlight! CursorColumn cterm=underline gui=underline ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
-highlight! ColorColumn cterm=strikethrough,italic ctermbg=NONE ctermfg=8 guibg=NONE
+highlight! ColorColumn term=strikethrough,italic cterm=strikethrough,italic ctermbg=NONE ctermfg=8 gui=strikethrough,italic guifg=DarkGrey guibg=NONE
 
 highlight! StatusLine cterm=bold,reverse ctermfg=grey
 highlight! StatusLineNC cterm=reverse ctermfg=8
