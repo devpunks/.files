@@ -79,7 +79,7 @@ highlight SpellBad cterm=strikethrough ctermbg=NONE
 
 " Gutter
 highlight! Cursor cterm=NONE ctermfg=NONE
-highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE
+highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
   highlight! link SignColumn LineNr
 highlight! CursorLineNr cterm=standout,bold ctermfg=NONE
 highlight! FoldColumn cterm=bold ctermfg=NONE ctermbg=NONE
