@@ -125,6 +125,7 @@ Android Accessibility
 # Shortcut mappings - <prefix>+?
 
 # VIM ---------------------------------
+# gq - Automatic formatting
 # cool help screens
 # :h group-name
 # :h highlight-groups
