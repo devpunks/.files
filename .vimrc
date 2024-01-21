@@ -350,7 +350,8 @@ set fillchars+=stl:△,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
 augroup FileDefaults
   autocmd!
   autocmd FocusLost * :w " save on focus lost
-  " autocmd winEnter,BufEnter Double triggers event. (https://vi.stackexchange.com/a/15995)
+  " (https://vi.stackexchange.com/a/15995)
+  " autocmd winEnter,BufEnter Double triggers event.
   autocmd BufEnter * call OverflowMargin ()
 augroup END
 
