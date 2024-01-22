@@ -84,8 +84,8 @@ highlight! Folded term=bold cterm=bold,underline,italic ctermfg=NONE ctermbg=NON
 highlight! CursorColumn cterm=underline gui=underline ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
 highlight! ColorColumn term=strikethrough,italic cterm=strikethrough,italic ctermbg=NONE ctermfg=NONE gui=strikethrough,italic guifg=NONE guibg=NONE
 
-highlight! StatusLine cterm=bold,reverse ctermfg=grey
-highlight! StatusLineNC cterm=reverse ctermfg=8
+highlight! StatusLine cterm=bold,reverse ctermfg=2 guifg=grey
+highlight! StatusLineNC cterm=reverse ctermfg=1 guifg=red
 highlight! VertSplit cterm=NONE ctermfg=NONE
 
 " Tabs
