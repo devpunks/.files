@@ -160,7 +160,6 @@ set backupdir=$TMPDIR " backup location
 " - Cursor ------------------------------------
 set ttyfast " Send more characters for redraws
 set timeout
-set timeoutlen=3000
 set ttimeout
 set ttimeoutlen=1
 set ttyscroll=3 " number of characters for redraws
