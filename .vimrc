@@ -164,7 +164,12 @@ set ttimeout
 set ttimeoutlen=1
 set timeoutlen=3000
 set ttyscroll=3 " number of characters for redraws
-set lazyredraw " Don't update during macro script execution
+set lazyredraw " Prevent macro script execution update
+
+set cursorline " highlight current cursor line
+set cursorcolumn " highlight current cursor column
+set nostartofline " respect cursor column position
+set cursorlineopt=both " [number,line,both,screenline]
 
 set mouse=a " Enable mouse use in all modes
 if has('mouse_sgr')
