@@ -431,7 +431,9 @@ augroup END
 " =========================================================================
 " {{{ Plugins
 " =========================================================================
-filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+augroup FileDefaults
+  filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+augroup END
 
 " -------------------------------------------------------------------------
 " Omni-Complete
