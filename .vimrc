@@ -386,8 +386,10 @@ augroup END
 " CSS
 "   - https://www.simplified.guide/vim/auto-complete-css
 " -------------------------------------------------------------------------
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd BufNewFile,BufRead *.sass,*.scss setlocal filetype=css
+augroup FileDefaults
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd BufNewFile,BufRead *.sass,*.scss setlocal filetype=css
+augroup END
 
 " -------------------------------------------------------------------------
 " Javascript
