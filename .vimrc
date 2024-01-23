@@ -404,9 +404,11 @@ augroup END
 " Ruby
 "   - https://stackoverflow.com/questions/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
 " -------------------------------------------------------------------------
-autocmd FileType ruby set omnifunc=rubycomplete#Complete
-autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
-autocmd BufNewFile,BufRead *.erb setlocal filetype=eruby
+augroup FileDefaults
+  autocmd FileType ruby set omnifunc=rubycomplete#Complete
+  autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
+  autocmd BufNewFile,BufRead *.erb setlocal filetype=eruby
+augroup END
 
 " -------------------------------------------------------------------------
 " Python
