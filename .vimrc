@@ -129,7 +129,6 @@ set history=1000  " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
 set splitbelow splitright " new buffer locations
 command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
-autocmd CursorMoved
 
 " Views, Sessions, Viminfo ------------------------------------
 "   - https://vimtricks.com/p/saving-session-state/
