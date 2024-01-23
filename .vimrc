@@ -115,11 +115,6 @@ set errorbells " Unset display beep on errors
 set belloff+=wildmode " Turn off insert completion bell
 let &t_vb = '\<C-G>\e|50f' " Set termcap(ability) for visual bell
 
-set cursorline " highlight current cursor line
-set cursorcolumn " highlight current cursor column
-set nostartofline " respect cursor column position
-set cursorlineopt=both " [number,line,both,screenline]
-
 set showmatch " jump to matching brace
 set matchtime=6 "in 1/10ths of second"
 
