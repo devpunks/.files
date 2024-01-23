@@ -451,7 +451,9 @@ nnoremap <leader>z :ZoomWin<cr> " TMUX dexterity clone
 " -------------------------------------------------------------------------
 " NERDTree
 " -------------------------------------------------------------------------
-autocmd VimEnter * call s:NerdDrawer()
+augroup FileDefaults
+  autocmd VimEnter * call s:NerdDrawer()
+augroup END
 
 function! s:NerdDrawer() abort
   if ! exists('g:NERDTree') | return | endif
