@@ -369,8 +369,10 @@ endfunction
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
 " -------------------------------------------------------------------------
-autocmd BufNewFile,BufRead *.md setlocal formatoptions-=t formatoptions+=n
-autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
+augroup FileDefaults
+  autocmd BufNewFile,BufRead *.md setlocal formatoptions-=t formatoptions+=n
+  autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
+augroup END
 
 " -------------------------------------------------------------------------
 " HTML
