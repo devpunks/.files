@@ -159,10 +159,10 @@ set backupdir=$TMPDIR " backup location
 
 " - Cursor ------------------------------------
 set ttyfast " Send more characters for redraws
-set timeout
-set ttimeout
-set ttimeoutlen=1
-set timeoutlen=3000
+set timeout " on mappings
+set ttimeout " on keycodes
+set ttimeoutlen=1 " mappings
+set timeoutlen=3000 " keykodes
 set ttyscroll=3 " number of characters for redraws
 set lazyredraw " Prevent macro script execution update
 
