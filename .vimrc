@@ -504,9 +504,7 @@ set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whi
 
 set sidescroll=10 " scroll amount when a word is outside of view
 set scrolloff=999 " Line jump scrolling offset (999=centered)
-" https://stackoverflow.com/questions/4621798
-" https://stackoverflow.com/questions/15124386
-set display=lastline " Always show paragraph last line
+set display=lastline " Show Special chars for long last line
 
 " (NORMAL/VISUAL MODE)
 set whichwrap=h,l " 'h' & 'l' wrap EOL & BOL
