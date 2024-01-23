@@ -395,8 +395,10 @@ augroup END
 " Javascript
 "   - https://www.simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test setlocal filetype=javascript
+augroup FileDefaults
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test setlocal filetype=javascript
+augroup END
 
 " -------------------------------------------------------------------------
 " Ruby
