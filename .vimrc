@@ -422,7 +422,9 @@ augroup END
 " Go
 "   - https://www.simplified.guide/vim/auto-complete-ruby
 " -------------------------------------------------------------------------
-autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
+augroup FileDefaults
+  autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
+augroup END
 
 " }}}
 
