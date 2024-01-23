@@ -520,6 +520,7 @@ set list " view hidden characters
 set listchars=tab:▢\ ,extends:⇨,precedes:⇦,nbsp:·,trail:■,eol:↴ " whitepsace replacement characters
 
 set sidescroll=10 " scroll amount when a word is outside of view
+" https://vim.fandom.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
 set scrolloff=999 " Line jump scrolling offset (999=centered)
 set display=lastline " Show Special chars for long last line
 
