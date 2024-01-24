@@ -658,7 +658,7 @@ command! Colors call HighlightGroup()
 " --------------------------------------------------------------------------------
 " TabLine () :h(elp) setting-tablines
 " --------------------------------------------------------------------------------
-function! Tabline()
+function! TabLine()
   if ! exists('+showtabline') | return '' | endif
 
   let line = '' " status
