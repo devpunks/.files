@@ -205,7 +205,7 @@ endif
 
 " - Chrome -----------------------------------
 " tabs
-set tabline=%!Tabline()
+set tabline=%!TabLine()
 set showtabline=2 " :help setting-tabline
 " shell window
 set title " Turn on title
