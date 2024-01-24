@@ -656,7 +656,7 @@ endfun
 command! Colors call HighlightGroup()
 
 " --------------------------------------------------------------------------------
-" Tabline () :h(elp) setting-tablines
+" TabLine () :h(elp) setting-tablines
 " --------------------------------------------------------------------------------
 function! Tabline()
   if ! exists('+showtabline') | return '' | endif
