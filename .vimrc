@@ -465,8 +465,8 @@ function! s:NerdDrawer() abort
   " [TAB] Opens Nerdtree
 nnoremap <Tab> :NERDTreeToggle<CR>
 
-  let NERDTreeIgnore=[] " ignored files
-  let NERDTreeHighlightCursorLine=1 " current line
+  let g:NERDTreeIgnore=[] " ignored files
+  let g:NERDTreeFileLines=1 " LOC number in files
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
   let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
   let g:NERDTreeBookmarksFile=".bookmarks"
