@@ -21,8 +21,7 @@ if exists('g:colors_name') | unlet g:colors_name | endif
 if exists('syntax_on')
   syntax clear
   syntax reset
-  syntax enable
-  syntax on
+  syntax enable " on"
 endif
 
 if 'dark' == &background " Convert to ternary
