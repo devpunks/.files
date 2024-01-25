@@ -338,7 +338,8 @@ set formatoptions+=l " preserve existing lines
 set formatoptions+=n " Format numbered lists
 set formatoptions+=o " Preserve comments pressing o/O in Normal mode
 set formatoptions+=q " autowrap comments with gq program
-set formatoptions+=o " Preserve comments when pressing o/O in Normal mode
+set formatoptions+=r " Preserve comment on <Enter>
+set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
 " - Meta-chars ------------------------------------
