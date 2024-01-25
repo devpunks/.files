@@ -331,9 +331,7 @@ set textwidth=75 " https://vimtricks.com/p/vim-line-length-marker
 set wrapmargin=0 " Newline insertion based on terminal width (0 = disabled)
 
 " https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
-set formatoptions+=n " Format numbered lists
-set formatoptions+=l " preserve existing lines
-set formatoptions+=t " autowrap using `t`extwidth
+set formatoptions=   " reset
 set formatoptions+=c " autowrap `c`omments (with leader)
 set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=q " autowrap comments with gq program
