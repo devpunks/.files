@@ -588,8 +588,9 @@ set statusline= " clear out status line
 " file type
 set statusline+=%#Statement#💻%Y
 " Show Command
-set statusline+=\ \|%1.5S\|
-set statusline+=\ %r%h%m\  " flags
+set statusline+=\ \|%k\|%n\|%1.5S\|
+" flags
+set statusline+=\ %r%h%m\ 
 " mode
 set statusline+=%{(mode()=~'^c')?'💲':''}
 set statusline+=%{(mode()=~'^i')?'📝':''}
