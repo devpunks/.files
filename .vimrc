@@ -612,7 +612,7 @@ set statusline+=%=%=\ ⇨%c%V✖%-l⇩
 " percentage
 set statusline+=(%p%%)⇳
 " cursor line, total lines
-set statusline+=\ of\ %L☰LOC
+set statusline+=\ %L☰LOC
 
 " right justify everything after this line
 set statusline+=%=%#Normal#
