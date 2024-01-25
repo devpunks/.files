@@ -1,5 +1,6 @@
 " =========================================================================
 " devPunks😈deFault
+"         "A cyberPunk, dark color scheme for Vim."
 
 " Maintainer: devPunks <https://github.com/devpunks>
 
