@@ -132,6 +132,7 @@ Android Accessibility
 # :h index - All keyboard mappings
 # <C-k> extended unicode digraphs (:h digraphs)
 # <C-v> (<C-q> on Windows) Then type escape command
+# :buffers, :files, :ls, :sbuffer :bdelete, :badd {1} {2} {3}
 # :verbose map - Keyboard mappings - https://vi.stackexchange.com/questions/7722
 # :verbose autocmd [event]
 # FULL LIST OF SHORTCUTS - https://gist.github.com/tuxfight3r/0dca25825d9f2608714b
