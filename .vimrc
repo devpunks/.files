@@ -679,7 +679,6 @@ function! TabLine()
     let line .= ( l:modified==0 ? '' : '' )
     let line .= (l:tab == tabpagenr() ? '✎' : '')
     let line .= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
-[＋]
     let line .= ( l:count > 1 ? ' ⊞'.l:count : '' )
 
     let line .= ( l:tab == tabpagenr() ? ' ▼ ' : ' ' )
