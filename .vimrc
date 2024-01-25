@@ -120,7 +120,9 @@ set matchtime=6 "in 1/10ths of second"
 
 " Buffers ---------------------------
 set hidden " set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
-set history=1000  " Increase undo limit
+set bufhidden=unload " [hide|unload|delete]
+
+set history=1000 " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
 set splitbelow splitright " new buffer locations
 command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
