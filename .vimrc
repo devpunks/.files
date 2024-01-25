@@ -609,18 +609,12 @@ set statusline+=%{mode()}%{len(mode())}
 set statusline+=%-4.15F\ \  " full file name
 
 set statusline+=%#StatusLine# " change to default highlight
-" cursor column position
-set statusline+=\ ⇨%c%V✖%-l⇩
-" percentage
-set statusline+=(%p%%)⇳
-" cursor line, total lines
-set statusline+=%L☰LOC
+set statusline+=\ ⇨%c%V✖%-l⇩ " cursor column position
+set statusline+=(%p%%)⇳ " percentage
+set statusline+=%L☰LOC " cursor line, total lines
 
-" right justify everything after this line
-set statusline+=%=%#Normal#
-" formatoptions
-set statusline+=\ 📜\ %{&fo}
-" show colorscheme on statusline
+set statusline+=%=%#Normal# " right justify everything after this line
+set statusline+=\ 📜\ %{&fo} " formatoptions
 let scheme = get(g:, 'colors_name', 'NONE')
 set statusline+=\ 🎨\ %{scheme}\ 
 
