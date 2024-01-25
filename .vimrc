@@ -608,7 +608,7 @@ set statusline+=%{(mode()=~'')?'🔎':''} " Visual Line
 set statusline+=%-4.10F\  " full file name
 set statusline+=%#StatusLine# " change to default highlight
 " cursor column position
-set statusline+=%=%=\ ⇨%c%V✖%-l⇩
+set statusline+=\ ⇨%c%V✖%-l⇩
 " percentage
 set statusline+=(%p%%)⇳
 " cursor line, total lines
