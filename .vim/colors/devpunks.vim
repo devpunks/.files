@@ -17,6 +17,7 @@
 " =========================================================================
 
 highlight clear
+if exists('g:colors_name') | unlet g:colors_name | endif
 if exists('syntax_on')
   syntax clear
   syntax reset
