@@ -615,9 +615,7 @@ set statusline+=%=%#Normal#
 set statusline+=\ ⚙\ %{&fo}
 " show colorscheme on statusline
 let scheme = get(g:, 'colors_name', 'NONE')
-set statusline+=\ %#Normal#\ 🎨\ %{scheme}\ 
-" formatoptions
-set statusline+=\ [%{&fo}]
+set statusline+=\ 🎨\ %{scheme}\ 
 
 " }}}
 
