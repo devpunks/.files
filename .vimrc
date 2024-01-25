@@ -700,7 +700,6 @@ function! TabLine()
   endfor
 
   let line .= '%T%#TabLineFill#'
-"  let line .= '%=%999X%#TabLineSel#[X]'
 
   return line
 endfunction
