@@ -2,6 +2,8 @@
 " devPunks😈deFault
 "         "A cyberPunk, dark color scheme for Vim."
 
+" Version:    0.1
+" File:       devpunks.vim
 " Maintainer: devPunks <https://github.com/devpunks>
 
 " EMOJI:
