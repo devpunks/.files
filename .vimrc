@@ -562,9 +562,8 @@ endtry
 " Interactive Status -----------------------------
 augroup Status
   autocmd!
-  highlight! StatusLineInsert term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=NONE
-  autocmd InsertLeave * highlight! link StatusLine NONE
-  autocmd InsertEnter * highlight! link StatusLine StatusLineInsert
+  autocmd InsertLeave * highlight! StatusLine term=reverse cterm=reverse gui=reverse
+  autocmd InsertEnter * highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
 augroup END
 
 " }}}
