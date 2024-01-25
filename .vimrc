@@ -687,6 +687,10 @@ function! TabLine()
     let line .= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
     let line .= ( l:modified ? '➕' : '' )
     let line .= ( l:count > 1 ? ' ⊞'.l:count : '' )
+
+
+    let l:others = ( len( l:tabs ) > 1 )
+    let l:current = ( l:tab == tabpagenr() )
     " Close button
     let line .= ( ( len( l:tabs ) > 1 ) && l:tab == tabpagenr() ? '%' .. (l:tab) .. 'X ❌%X' : '' )
     " Closing gliph
