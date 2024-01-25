@@ -608,6 +608,7 @@ set statusline+=\ 📜⇨%c%V✖%-l⇩
 set statusline+=(%p%%)⇳
 " cursor line, total lines
 set statusline+=\ of\ %L☰LOC
+
 " right justify everything after this line
 set statusline+=%=
 " show colorscheme on statusline
