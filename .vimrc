@@ -334,6 +334,9 @@ set wrapmargin=0 " Newline insertion based on terminal width (0 = disabled)
 set formatoptions=   " reset
 set formatoptions+=c " autowrap `c`omments (with leader)
 set formatoptions+=j " Delete comment from joining lines
+set formatoptions+=l " preserve existing lines
+set formatoptions+=n " Format numbered lists
+set formatoptions+=o " Preserve comments pressing o/O in Normal mode
 set formatoptions+=q " autowrap comments with gq program
 set formatoptions+=o " Preserve comments when pressing o/O in Normal mode
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
