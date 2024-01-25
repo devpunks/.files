@@ -21,7 +21,7 @@ if exists('g:colors_name') | unlet g:colors_name | endif
 if exists('syntax_on')
   syntax clear
   syntax reset
-  syntax enable " on"
+  syntax enable " on
 endif
 "let g:colors_name='devPunks😈Mono'
 let g:colors_name='devpunks'
