@@ -31,7 +31,8 @@ elseif 'light' == &background
   echom 'light'
 endif
 
-let g:colors_name='devPunks😈Mono'
+"let g:colors_name='devPunks😈Mono'
+let g:colors_name='devpunks'
 
 " Italic Font ???
 " https://stackoverflow.com/a/30937851/173208
