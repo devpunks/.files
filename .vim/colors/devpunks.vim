@@ -118,3 +118,6 @@ highlight! Type cterm=reverse,bold ctermfg=NONE
 highlight! Underlined cterm=underline ctermfg=NONE
 highlight! Constant cterm=underline,italic ctermfg=NONE
 highlight! Identifier cterm=bold,underline ctermfg=NONE
+
+
+echom 'Loaded devPunks😈Mono colorscheme!'
