@@ -680,8 +680,7 @@ function! TabLine()
     " set tab page number (for mouse clicks)
     let line ..='%' .. (l:tab) .. 'T'
     let line .= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
-    "   let line .= ( l:modified==0 ? '' : '[＋]' )
-        let line .= ( l:modified ? ' [+]' : '' )
+    let line .= ( l:modified ? '➕' : '' )
     let line .= ( l:count > 1 ? ' ⊞'.l:count : '' )
     " Close button
     let line .= ( ( len( l:tabs ) > 1 ) && l:tab == tabpagenr() ? '%' .. (l:tab) .. 'X [ X ]%X' : '' )
