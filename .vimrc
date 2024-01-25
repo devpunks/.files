@@ -593,14 +593,15 @@ set statusline+=\ \|%k\|%n\|%1.5S\|
 " flags
 set statusline+=\ %r%h%m\ 
 " mode
-set statusline+=%{(mode()=~'^c')?'💲':''}
-set statusline+=%{(mode()=~'^i')?'📝':''}
-set statusline+=%{(mode()=~'^n')?'📄':''}
-set statusline+=%{(mode()=~'^R')?'📃':''}
-set statusline+=%{(mode()=~'^v')?'🔍':''}
-set statusline+=%{(mode()=~'^V')?'🔎':''}
-set statusline+=%{(mode()=='')?'🔎':''}
-set statusline+=%{mode()}%{len(mode())}
+set statusline+=%{(mode()=~'^c')?'💲':''} " Command
+set statusline+=%{(mode()=~'^i')?'📝':''} " Insert
+set statusline+=%{(mode()=~'^n')?'📄':''} " Normal
+set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
+set statusline+=%{(mode()=~'^v')?'🔍':''} " Visual
+set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
+set statusline+=%{(mode()=~'')?'🔎':''} " Visual Block
+"set statusline+=%{(mode()=~'/[[:cntrl:]]/')?'🔎':''}
+" set statusline+=%{mode()}%{len(mode())}
 set statusline+=%#StatusLine# " change to default highlight
 set statusline+=%-10F " full file name
 " cursor column position
