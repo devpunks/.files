@@ -18,7 +18,6 @@
 
 highlight clear
 if exists('syntax_on')
-  syntax reset
   syntax clear
   syntax reset
   syntax enable
