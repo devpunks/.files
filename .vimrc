@@ -604,6 +604,7 @@ set statusline+=%{(mode()=~'^v')?'🔍':''} " Visual
 set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
 set statusline+=%{(mode()=~'')?'🔎':''} " Visual Line
 " set statusline+=%{(mode()=~'/[[:cntrl:]]/')?'🔎':''}
+
 set statusline+=%{mode()}%{len(mode())}
 set statusline+=%-4.10F\ \  " full file name
 set statusline+=%#StatusLine# " change to default highlight
