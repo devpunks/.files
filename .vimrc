@@ -617,7 +617,7 @@ set statusline+=\ %L☰LOC
 " right justify everything after this line
 set statusline+=%=%#Normal#
 " formatoptions
-set statusline+=\ ⚙\ %{&fo}
+set statusline+=\ 📜\ %{&fo}
 " show colorscheme on statusline
 let scheme = get(g:, 'colors_name', 'NONE')
 set statusline+=\ 🎨\ %{scheme}\ 
