@@ -181,6 +181,7 @@ alias be='bundle exec'
 #   inetd(8), sftp-server(8)
 # -X flag for Enable X11 forwarding
 alias ss='sshd -X -Dddd -p8022'
+alias ssh.add='echo adding ssh'
 
 # HTTP(s) ------------------------------------------------------------------
 alias serve='python -m http.server'
