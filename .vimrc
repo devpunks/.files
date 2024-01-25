@@ -688,11 +688,10 @@ function! TabLine()
     " Closing gliph
     let line .= (l:tab == tabpagenr() ? ' ▼ ' : ' ' )
 
-    let line .= ( l:tab == tabpagenr() ? ' ▼ ' : ' ' )
   endfor
 
-  let line .= '%#TabLineFill#%T'
-  let line .= '%=%999X%#TabLineSel#[❌]'
+  let line .= '%T%#TabLineFill#'
+"  let line .= '%=%999X%#TabLineSel#[X]'
 
   return line
 endfunction
