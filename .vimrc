@@ -606,7 +606,8 @@ set statusline+=%{(mode()=~'')?'🔎':''} " Visual Line
 " set statusline+=%{(mode()=~'/[[:cntrl:]]/')?'🔎':''}
 
 set statusline+=%{mode()}%{len(mode())}
-set statusline+=%-4.10F\ \  " full file name
+set statusline+=%-4.15F\ \  " full file name
+
 set statusline+=%#StatusLine# " change to default highlight
 " cursor column position
 set statusline+=\ ⇨%c%V✖%-l⇩
