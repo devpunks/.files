@@ -23,6 +23,8 @@ if exists('syntax_on')
   syntax reset
   syntax enable " on"
 endif
+"let g:colors_name='devPunks😈Mono'
+let g:colors_name='devpunks'
 
 if 'dark' == &background " Convert to ternary
   " Auto-Dark Mode https://arslan.io/2021/02/15/automatic-dark-mode-for-terminal-applications
