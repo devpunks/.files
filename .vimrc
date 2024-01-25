@@ -665,8 +665,9 @@ function! TabLine()
 
   let line = 'devPunks😈 %T' " status
 
-  for page in range( tabpagenr('$') )
-    let l:tab = page + 1
+  let l:tabs = range( tabpagenr('$') )
+  for index in l:tabs
+    let l:tab = index + 1
     let l:count = tabpagewinnr(tab,'$')
     let l:window = tabpagewinnr( l:tab )
     let l:buffers = tabpagebuflist( l:tab )
