@@ -137,7 +137,7 @@ alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 alias now='command date +"%T - %::z %Z (${TZ})"'
 
 alias who='id && (
-  id | tr " " "\n" | tr "groups=" "\n\nGroups:" | tr "," "\n"
+  id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:"
 )'
 alias ping='command ping -c 100 -s.2'
 alias chown='command chown --preserve-root'
