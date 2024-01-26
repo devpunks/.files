@@ -647,7 +647,7 @@ set statusline+=\ %<
 
 set statusline+=%L☰LOC " cursor line, total lines
 " cursor column position
-set statusline+=⇨%c%V✖%-l⇩
+set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 
 " Show Command
 set statusline+=\|%k\|%b⌨\\x%B\|%1.5S\|
