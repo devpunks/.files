@@ -285,6 +285,8 @@ endif
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
 nnoremap <Space> za
+" current buffer in new (t)ab
+nnoremap <leader>t <C-w>t
 " Tab completion
 inoremap <Tab> <C-n>
 nnoremap <Esc> :nohlsearch<cr>
