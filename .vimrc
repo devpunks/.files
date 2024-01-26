@@ -613,6 +613,7 @@ set statusline+=%{(mode()=~'^n')?'📄':''} " Normal
 set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
 set statusline+=%{(mode()=~'^v')?'🔍':''} " Visual
 set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
+set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
 
 set statusline+=%-4.15F\ \  " full file name
 
