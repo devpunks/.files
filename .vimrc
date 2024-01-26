@@ -463,6 +463,24 @@ augroup END
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
+" Vim (Git) Gutter
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call s:GitGutter()
+augroup END
+
+function! s:GitGutter() abort
+  if exists('g:loaded_gitgutter') && has('signs') && &cp
+    sign define GitGutterLineAdded text=➕
+    sign define GitGutterLineRemoved text=➖
+    sign define GitGutterLineRemovedFirstLine text=➖
+    sign define GitGutterLineRemovedAboveAndBelow text=➖
+    sign define GitGutterLineModified text=～
+    sign define GitGutterLineModifiedRemoved text=～
+  endif
+endfunction
+
+" -------------------------------------------------------------------------
 " Scrollbar
 " -------------------------------------------------------------------------
 augroup FileDefaults
