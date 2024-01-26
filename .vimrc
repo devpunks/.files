@@ -287,6 +287,8 @@ nnoremap <Space> za
 nnoremap <C-z> <C-w>_ <C-w>|
 " (insert) Tab completion
 inoremap <Tab> <C-n>
+" (normal) [TAB] Next Tab
+nnoremap <Tab> :tabnext<CR>
 nnoremap <Esc> :nohlsearch<CR>
 
 " tags (:h tagstack)
