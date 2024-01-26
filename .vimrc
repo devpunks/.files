@@ -635,7 +635,6 @@ set statusline+=\ %r%h%m\
 set statusline+=\ 💻%Y
 " change to default highlight
 set statusline+=\ %#StatusLine#\ 
-
 " percentage
 set statusline+=%-7((%p%%)⇳%)
 
