@@ -221,6 +221,7 @@ set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Title String format
 " - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
 set wildmenu
 set infercase
+set wildchar=<Tab>
 set wildoptions=pum
 set wildmode=list:longest,full
 set wildignore+=*.DS_STORE,.git/**,.npm/**,.ssh/**,.cache/** " etc.
