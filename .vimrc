@@ -609,13 +609,9 @@ if has('win32') | set shortname=on | end
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
-set statusline= " clear out status line
-" buffer number file type
-set statusline+=\ %#Statement#﹟%n💻%Y
-" Show Command
-set statusline+=\ \|%k\|%b⌨\\x%B\|%1.5S\|
-" flags
-set statusline+=\ %r%h%m\ 
+set statusline=%#Statement#\  " initialize
+" buffer number
+set statusline+=﹟%n\ 
 " mode
 set statusline+=%{(mode()=~'^c')?'💲':''} " Command
 set statusline+=%{(mode()=~'^i')?'📝':''} " Insert
