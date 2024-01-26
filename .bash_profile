@@ -136,7 +136,9 @@ alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 alias now='command date +"%T - %::z %Z (${TZ})"'
 
-alias who=whoami
+alias who='id && (
+  id | tr " " "\n" | tr "groups=" "\n\nGroups:" | tr "," "\n"
+)'
 alias ping='command ping -c 100 -s.2'
 alias chown='command chown --preserve-root'
 alias chmod='command chmod --preserve-root'
