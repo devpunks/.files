@@ -469,8 +469,8 @@ augroup FileDefaults
   autocmd VimEnter,BufEnter * call g:GitGutter()
 augroup END
 
-function! s:GitGutter() abort
-  if exists('g:loaded_gitgutter') && has('signs') && &cp
+function! g:GitGutter() abort
+  if exists('g:loaded_gitgutter') && has('signs')
     sign define GitGutterLineAdded text=➕
     sign define GitGutterLineRemoved text=➖
     sign define GitGutterLineRemovedFirstLine text=➖
