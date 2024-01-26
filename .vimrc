@@ -650,7 +650,11 @@ set statusline+=%L☰LOC " cursor line, total lines
 set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 
 " Show Command
-set statusline+=\|%k\|%b⌨\\x%B\|%1.5S\|
+set statusline+=\|%k\|
+" Show Cursor Character Value (Decimal & Hexidecimal)
+set statusline+=%-6.(\\d%b%)%-6.(\\x%B%)
+" Show Control Character Value
+set statusline+=\|%1.5S\|
 
 
 set statusline+=%=%#Normal# " right justify everything after this line
