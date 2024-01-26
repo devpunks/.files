@@ -473,8 +473,6 @@ function! g:GitGutter() abort
   if exists('g:loaded_gitgutter') && has('signs')
     sign define GitGutterLineAdded text=➕
     sign define GitGutterLineRemoved text=➖
-    sign define GitGutterLineRemovedFirstLine text=➖
-    sign define GitGutterLineRemovedAboveAndBelow text=➖
     sign define GitGutterLineModified text=～
     sign define GitGutterLineModifiedRemoved text=～
 
