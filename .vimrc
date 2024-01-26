@@ -738,8 +738,6 @@ function! TabLine()
     let l:name = bufname( l:index )
     let l:modified = getbufvar( l:index, '&mod' )
 
-    let line .= (l:tab == tabpagenr() ? '%#TabLineSel# ▼ ' : '%#TabLine# ')
-    let line .= (l:tab == tabpagenr() ? '✎' : '')
     " set tab page number (for mouse clicks)
     let line ..='%' .. (l:tab) .. 'T'
     let line .= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
