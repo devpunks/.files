@@ -652,7 +652,6 @@ set statusline+=\ %6(\\d%-4b%)⌨%-7(\\x%-5B%)
 " Show Command
 set statusline+=\|%-2(%k%)\|
 set statusline+=%#Normal# " set highlight
-
 " formatoptions
 set statusline+=\ 📜\ %{&fo}
 
