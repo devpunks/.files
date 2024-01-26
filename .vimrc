@@ -289,7 +289,7 @@ nnoremap <Space> za
 nnoremap <leader>t <C-w>t
 " Tab completion
 inoremap <Tab> <C-n>
-nnoremap <Esc> :nohlsearch<cr>
+nnoremap <Esc> :nohlsearch<CR>
 
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
