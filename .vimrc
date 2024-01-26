@@ -460,6 +460,13 @@ augroup END
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
+" Scrollbar
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  " autocmd VimEnter * call sclow#update()
+augroup END
+
+" -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
 nnoremap <CR> :ZoomWin<cr>
