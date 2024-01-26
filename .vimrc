@@ -190,10 +190,15 @@ set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
 set nostartofline " respect cursor column position
 set cursorlineopt=both " [number,line,both,screenline]
+
 " https://stackoverflow.com/questions/6488683
-let &t_EI = '\e[2;0;0 q' " Normal mode block cursor
-let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
-let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
+" reset cursor escapes
+let &t_EI = ''
+let &t_SI = ''
+let &t_SR = ''
+" let &t_EI = '\e[2;0;0 q' " Normal mode block cursor
+" let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
+" let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
 
 " let &t_SI ='\e[5 q' "SI = INSERT mode
 " let &t_SR ='\e[3 q' "SR = REPLACE mode
