@@ -651,8 +651,10 @@ set statusline+=\|%k\|%b⌨\\x%B\|%1.5S\|
 
 
 set statusline+=%=%#Normal# " right justify everything after this line
-set statusline+=\ 📜\ %{&fo} " formatoptions
-set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ " show colorscheme on statusline
+" formatoptions
+set statusline+=\ 📜\ %{&fo}
+" show colorscheme on statusline
+set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 
 " }}}
 
