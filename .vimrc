@@ -609,7 +609,7 @@ set statusline+=\ %#Statement#\ 💻%Y
 " buffer number
 set statusline+=\ \#%n
 " Show Command
-set statusline+=\ \|%k\|%n\|%1.5S\|
+set statusline+=\ \|%k\|%b⌨\\x%B\|%1.5S\|
 " flags
 set statusline+=\ %r%h%m\ 
 " mode
