@@ -665,6 +665,7 @@ set statusline+=%=%#Normal# " right justify everything after this line
 
 " formatoptions
 set statusline+=\ 📜\ %{&fo}
+
 " show colorscheme on statusline
 set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 
