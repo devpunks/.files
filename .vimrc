@@ -294,7 +294,7 @@ nnoremap <Esc> :nohlsearch<CR>
 " <C-t> pop tag (:pop)
 "   - https://stackoverflow.com/questions/17783539/tag-navigation-in-vim
 
-" tabs
+" tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
 "nnoremap <C-t> :tabnew<cr>
 nnoremap <C-n> :tabnext<CR>
