@@ -643,7 +643,6 @@ set statusline+=%<
 set statusline+=%L☰LOC
 " cursor column position
 set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
-
 " align right
 set statusline+=%=
 
