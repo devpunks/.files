@@ -24,7 +24,7 @@
 " Description: Vim(rc) configuration file.
 " Gist: https://gist.github.com/snuggs/612093
 " -------------------------------------------------------------------------
-
+"
 " Screencasts: http://vimcasts.org
 " Cheatsheets:
 "   - https://vim.rtorr.com/
