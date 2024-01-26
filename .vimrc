@@ -662,6 +662,7 @@ set statusline+=\ %6(\\d%-4b%)⌨%-7(\\x%-5B%)
 set statusline+=\|%-2(%k%)\|
 
 set statusline+=%=%#Normal# " right justify everything after this line
+
 " formatoptions
 set statusline+=\ 📜\ %{&fo}
 " show colorscheme on statusline
