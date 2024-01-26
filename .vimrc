@@ -643,6 +643,12 @@ set statusline+=(%p%%)⇳
 set statusline+=\ %<
 
 set statusline+=%L☰LOC " cursor line, total lines
+" cursor column position
+set statusline+=⇨%c%V✖%-l⇩
+
+" Show Command
+set statusline+=\|%k\|%b⌨\\x%B\|%1.5S\|
+
 
 set statusline+=%=%#Normal# " right justify everything after this line
 set statusline+=\ 📜\ %{&fo} " formatoptions
