@@ -615,6 +615,7 @@ set statusline=%#Statement#\  " initialize
 
 " buffer number
 set statusline+=﹟%n\ 
+
 " mode
 set statusline+=%{(mode()=~'^c')?'💲':''} " Command
 set statusline+=%{(mode()=~'^i')?'📝':''} " Insert
