@@ -507,8 +507,8 @@ augroup END
 function! s:NerdDrawer() abort
   if ! exists('g:NERDTree') | return | endif
 
-  " [TAB] Opens Nerdtree
-nnoremap <Tab> :NERDTreeToggle<CR>
+  " [SHIFT]+[TAB] Opens Nerdtree
+  nnoremap <S-Tab> :NERDTreeToggle<CR>
 
   let g:NERDTreeIgnore=[] " ignored files
   let g:NERDTreeFileLines=1 " LOC number in files
