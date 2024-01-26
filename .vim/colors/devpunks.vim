@@ -52,10 +52,13 @@ let &t_Ds = "\e[4:5m" " UnderDashed
 highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 
 " Diff
-highlight! DiffAdd    ctermfg=3
-highlight! DiffDelete ctermfg=1
-highlight! DiffChange ctermfg=2
-highlight! DiffText   ctermfg=NONE
+" highlight! DiffAdd    ctermfg=3
+" highlight! DiffDelete ctermfg=1
+" highlight! DiffChange ctermfg=2
+highlight! DiffAdd    term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=green
+highlight! DiffDelete term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=red
+highlight! DiffChange term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=yellow
+highlight! DiffText   term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=NONE
 
 " Popups
 highlight! PmenuSbar cterm=NONE ctermbg=NONE
