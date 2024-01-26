@@ -285,8 +285,8 @@ endif
 nnoremap ; :
 nnoremap <Space> za
 " Tab completion
-inoremap <Tab> <C-p>
-nnoremap <esc> :nohlsearch<cr>
+inoremap <Tab> <C-n>
+nnoremap <Esc> :nohlsearch<cr>
 
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
