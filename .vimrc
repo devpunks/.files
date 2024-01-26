@@ -466,7 +466,7 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " Vim (Git) Gutter
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd VimEnter * call s:GitGutter()
+  autocmd VimEnter,BufEnter * call g:GitGutter()
 augroup END
 
 function! s:GitGutter() abort
