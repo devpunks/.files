@@ -302,7 +302,7 @@ nnoremap <C-p> :tabprevious<CR>
 " simulate break pane in TMUX
 nnoremap <C-w>t :tab split<CR>
 " All buffers into tabs
-nnoremap <C-w>T :bufdo tab split<CR>
+nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
 " current buffer in new (t)ab
 nnoremap <leader>t <C-w>t
 
