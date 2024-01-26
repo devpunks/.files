@@ -653,7 +653,7 @@ set statusline+=%L☰LOC
 set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 
 " Show Control Character Value
-set statusline+=\|%1.5S\|
+set statusline+=\|%-2(%S%)\|
 
 
 set statusline+=%=%#Normal# " right justify everything after this line
