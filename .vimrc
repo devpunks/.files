@@ -652,10 +652,6 @@ set statusline+=%L☰LOC
 " cursor column position
 set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 
-" Show Command
-set statusline+=\|%k\|
-" Show Cursor Character Value (Decimal & Hexidecimal)
-set statusline+=%-6.(\\d%b%)%-6.(\\x%B%)
 " Show Control Character Value
 set statusline+=\|%1.5S\|
 
