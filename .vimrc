@@ -602,7 +602,6 @@ augroup END
 "   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " =========================================================================
-
 set showmode " in status Vi (not Vim)
 set shortmess= " Verbose command messaging
 set laststatus=2 " Always show status line
