@@ -713,7 +713,8 @@ function! TabLine()
 
   endfor
 
-  let line .= '%T%#TabLineFill#'
+  let line .= '%<' " Overflow breakpoint
+  let line .= '%T%#TabLineFill#' " Tablist breakpoint
 
   return line
 endfunction
