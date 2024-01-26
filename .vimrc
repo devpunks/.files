@@ -250,8 +250,8 @@ set completeopt+=menu,menuone,noinsert,popup
 "   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
 "   - OSC52 Escape to system clipboard - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.vim
 
-" vnoremap <c-c> "*y<cr>
-" inoremap <c-v> “*p<cr>
+" vnoremap <C-c> "*y<cr>
+" inoremap <C-v> “*p<cr>
 if has('unnamedplus') | set clipboard=unnamed,unnamedplus | endif
 "
 "  copy and paste
