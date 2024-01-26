@@ -119,7 +119,7 @@ let &t_vb = '\<C-G>\e|50f' " Set termcap(ability) for visual bell
 set showmatch " jump to matching brace
 set matchtime=6 "in 1/10ths of second"
 
-" Buffers ---------------------------
+" Buffers -----------------------------------------------------------------
 " set nohidden possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
 set hidden
 set confirm "  on persistence
