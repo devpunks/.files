@@ -629,10 +629,8 @@ set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
 set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
 " full file name
 set statusline+=%-4.15F
-
 " flags
 set statusline+=\ %r%h%m\ 
-
 " file type
 set statusline+=\ 💻%Y
 
