@@ -612,6 +612,7 @@ set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline=%#Statement#\  " initialize
+
 " buffer number
 set statusline+=﹟%n\ 
 " mode
