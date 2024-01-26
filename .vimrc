@@ -300,7 +300,11 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <C-n> :tabnext<CR>
 nnoremap <C-p> :tabprevious<CR>
 " simulate break pane in TMUX
-nnoremap <C-w>T :tab split<CR>
+nnoremap <C-w>t :tab split<CR>
+" All buffers into tabs
+nnoremap <C-w>T :bufdo tab split<CR>
+" current buffer in new (t)ab
+nnoremap <leader>t <C-w>t
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
