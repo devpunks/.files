@@ -2,10 +2,14 @@
 " devPunks😈deFault
 "         "A cyberPunk, dark color scheme for Vim."
 
-" Version:    0.1
-" File:       devpunks.vim
+" -------------------------------------------------------------------------
+" Version: 0.1
+" File: devpunks.vim
+" Source: https://github.com/devpunks
+" Author: devPunks (github.com/devpunks)
 " Maintainer: devPunks <https://github.com/devpunks>
-
+" Description: Default terminal colorscheme and typography
+" -------------------------------------------------------------------------
 " EMOJI:
 "   - https://gist.github.com/nicolasdao/8f0220d050f585be1b56cc615ef6c12e
 " NERDFONT:
