@@ -600,6 +600,7 @@ set laststatus=2 " Always show status line
 if has('win32') | set shortname=on | end
 
 " https://vi.stackexchange.com/a/27508
+set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline= " clear out status line
