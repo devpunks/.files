@@ -477,6 +477,11 @@ function! g:GitGutter() abort
     sign define GitGutterLineRemovedAboveAndBelow text=➖
     sign define GitGutterLineModified text=～
     sign define GitGutterLineModifiedRemoved text=～
+
+    " Link Diff highlight groups
+    highlight! link GitGutterAdd DiffAdd
+    highlight! link GitGutterDelete DiffDelete
+    highlight! link GitGutterChange DiffChange
   endif
 endfunction
 
