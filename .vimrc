@@ -601,7 +601,7 @@ set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline= " clear out status line
 " file type
-set statusline+=%#Statement#💻%Y
+set statusline+=\ %#Statement#\ 💻%Y
 " Show Command
 set statusline+=\ \|%k\|%n\|%1.5S\|
 " flags
