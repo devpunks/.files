@@ -314,7 +314,7 @@ nnoremap <C-l> <C-w>l
 " normal mode: save
 nnoremap <C-s> :w<CR>
 " insert mode: escape to normal and save
-inoremap <c-s> <esc>:w<cr>
+inoremap <C-s> <esc>:w<CR>
 " visual mode: escape to normal and save
 vnoremap <c-s> <esc>:w<cr>
 
