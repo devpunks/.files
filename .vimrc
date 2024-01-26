@@ -681,7 +681,8 @@ command! Colors call HighlightGroup()
 function! TabLine()
   if ! exists('+showtabline') | return '' | endif
 
-  let line = '%#Normal# devPunks😈 %T' " status
+  let line = '' " Initialize
+  let line .= '%#TabLine#  devPunks😈👉 ' " logo
 
   let l:tabs = range( tabpagenr('$') )
   for index in l:tabs
