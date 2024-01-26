@@ -641,7 +641,7 @@ set statusline+=\ 💻%Y
 set statusline+=\ %#StatusLine#\ 
 
 " percentage
-set statusline+=(%p%%)⇳
+set statusline+=%-7((%p%%)⇳%)
 
 " breakpoint
 set statusline+=\ %<
