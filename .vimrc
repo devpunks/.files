@@ -633,7 +633,6 @@ set statusline+=%-4.15F
 set statusline+=\ %r%h%m\ 
 " file type
 set statusline+=\ 💻%Y
-
 " change to default highlight
 set statusline+=\ %#StatusLine#\ 
 
