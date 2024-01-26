@@ -320,7 +320,7 @@ vnoremap <C-s> <esc>:w<CR>
 
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
-cnoremap <c-r> :source ~/.vimrc<CR>
+cnoremap <C-r> :source ~/.vimrc<CR>
 
 " }}}
 
