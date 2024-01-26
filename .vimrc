@@ -285,7 +285,7 @@ endif
 nnoremap ; :
 nnoremap <Space> za
 nnoremap <C-z> <C-w>_ <C-w>|
-" Tab completion
+" (insert) Tab completion
 inoremap <Tab> <C-n>
 nnoremap <Esc> :nohlsearch<CR>
 
