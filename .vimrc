@@ -214,7 +214,7 @@ if has('gui_running')
   set guicursor+=n-v-c:block-Cursor
 endif
 
-" - Chrome -----------------------------------
+" Chrome ------------------------------------------------------------------
 " tabs
 set tabline=%!TabLine()
 set showtabline=2 " :help setting-tabline
