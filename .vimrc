@@ -151,7 +151,7 @@ set viminfo="NONE" " disable .viminfo
 set viminfofile=$HOME/.vim/.viminfo
 " autocmd VimLeave * call delete('~/.viminfo')
 
-" - Backups ------------------------------------
+" Backups -----------------------------------------------------------------
 "   - https://groups.google.com/g/vim_use/c/K2Utwkh5f30?pli=1
 "   - https://alvinalexander.com/linux-unix/vi-vim-swap-backup-tilde-temporary-files-directory-move/
 set backup " keep a backup file (nobackup for inverse)
