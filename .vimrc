@@ -580,6 +580,7 @@ augroup END
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " =========================================================================
 set showmode " Vi (not Vim)
+set shortmess+= " Show command messaging
 set laststatus=2 " Always show status line
 set shortmess+=ac
 if has('win32') | set shortname=on | end
