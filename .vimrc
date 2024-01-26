@@ -662,7 +662,7 @@ function! GetColor(group, attr) " GetColor('LineNr', 'bg#')"
   return color ? color : 'NONE'
 endfunction
 
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " :call HighlightGroup () under cursor
 " --------------------------------------------------------------------------------
 " https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
