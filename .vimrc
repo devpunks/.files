@@ -641,7 +641,6 @@ set statusline+=%-7((%p%%)⇳%)
 set statusline+=%<
 " cursor line, total lines
 set statusline+=%L☰LOC
-
 " cursor column position
 set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 
