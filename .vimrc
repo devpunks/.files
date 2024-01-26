@@ -652,7 +652,7 @@ endif
 " =========================================================================
 " -------------------------------------------------------------------------
 " :call GetColor (group attribute)
-" --------------------------------------------------------------------------------
+" -------------------------------------------------------------------------
 " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
 function! GetColor(group, attr) " GetColor('LineNr', 'bg#')"
   let color = synIDattr( synIDtrans( hlID(a:group)), a:attr)
