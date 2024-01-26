@@ -125,6 +125,8 @@ set confirm "  on persistence
 set autowrite " on lost focus
 set bufhidden=unload " [hide|unload|delete]
 
+set winheight=1 " initial height
+set winminheight=0 " minimum height
 set history=1000 " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
 set splitbelow splitright " new buffer locations
