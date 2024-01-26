@@ -233,7 +233,7 @@ set wildcharm=<C-Z> " macros
 set wildmode=list:longest,full
 set wildignore+=*.DS_STORE,.git/**,.npm/**,.ssh/**,.cache/** " etc.
 
-" - Completion / LSPs ------------------------------------
+" Completion / LSPs -------------------------------------------------------
 " https://github.com/neoclide/coc.nvim
 " https://github.com/jayli/vim-easycomplete
 " https://github.com/prabirshrestha/vim-lsp
