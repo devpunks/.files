@@ -644,7 +644,7 @@ set statusline+=\ %#StatusLine#\
 set statusline+=%-7((%p%%)⇳%)
 
 " breakpoint
-set statusline+=\ %<
+set statusline+=%<
 
 " cursor line, total lines
 set statusline+=%L☰LOC
