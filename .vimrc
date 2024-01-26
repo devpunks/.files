@@ -624,7 +624,23 @@ set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
 " https://stackoverflow.com/questions/29426372
 set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
 
-set statusline+=%-4.15F\  " full file name
+" full file name
+set statusline+=%-4.15F
+
+" flags
+set statusline+=\ %r%h%m\ 
+
+" file type
+set statusline+=\ 💻%Y
+
+" change to default highlight
+set statusline+=\ %#StatusLine#\ 
+
+" percentage
+set statusline+=(%p%%)⇳
+
+" breakpoint
+set statusline+=\ %<
 
 set statusline+=%#StatusLine# " change to default highlight
 set statusline+=\ %<⇨%c%V✖%-l⇩ " cursor column position
