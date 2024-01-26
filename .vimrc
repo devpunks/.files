@@ -125,6 +125,7 @@ set confirm "  on persistence
 set autowrite " on lost focus
 set bufhidden=unload " [hide|unload|delete]
 
+set equalalways " on load
 set winwidth=1 " initial width
 set winheight=1 " initial height
 set winminwidth=0 " minimum width
