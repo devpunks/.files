@@ -607,9 +607,6 @@ set statusline+=\ \|%k\|%n\|%1.5S\|
 " flags
 set statusline+=\ %r%h%m\ 
 " mode
-set statusline+=%{(mode()=~'')?'🔎':''} " Visual Line
-" set statusline+=%{(mode()=~'/[[:cntrl:]]/')?'🔎':''}
-set statusline+=%{mode()}%{len(mode())}
 set statusline+=%{(mode()=~'^c')?'💲':''} " Command
 set statusline+=%{(mode()=~'^i')?'📝':''} " Insert
 set statusline+=%{(mode()=~'^n')?'📄':''} " Normal
