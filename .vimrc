@@ -582,7 +582,6 @@ augroup END
 set showmode " Vi (not Vim)
 set shortmess+= " Show command messaging
 set laststatus=2 " Always show status line
-set shortmess+=ac
 if has('win32') | set shortname=on | end
 
 " https://vi.stackexchange.com/a/27508
