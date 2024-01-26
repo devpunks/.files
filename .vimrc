@@ -647,7 +647,6 @@ set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 set statusline+=%=
 " Show Control Character Value
 set statusline+=\|%-2(%S%)\|
-
 " Show Cursor Character Value (Decimal & Hexidecimal)
 set statusline+=\ %6(\\d%-4b%)⌨%-7(\\x%-5B%)
 
