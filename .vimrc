@@ -316,7 +316,7 @@ nnoremap <C-s> :w<CR>
 " insert mode: escape to normal and save
 inoremap <C-s> <esc>:w<CR>
 " visual mode: escape to normal and save
-vnoremap <c-s> <esc>:w<cr>
+vnoremap <C-s> <esc>:w<CR>
 
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
