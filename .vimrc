@@ -604,10 +604,8 @@ set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline= " clear out status line
-" file type
-set statusline+=\ %#Statement#\ 💻%Y
-" buffer number
-set statusline+=\ \#%n
+" buffer number file type
+set statusline+=\ %#Statement#﹟%n💻%Y
 " Show Command
 set statusline+=\ \|%k\|%b⌨\\x%B\|%1.5S\|
 " flags
