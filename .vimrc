@@ -208,6 +208,9 @@ let &t_SR = ''
 " let &t_EI = '\<Esc>12;cyan\x7'
 " let &t_SI = '\<Esc>12;purple\x7'
 
+" let &t_SI = "\]12;yellow\x7"
+" let &t_SR = "\]12;red\x7"
+" let &t_EI = "\]12;blue\x7"
 
 if has('gui_running')
   set guioptions=egmrt " remove ugly toolbar :-)
