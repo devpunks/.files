@@ -627,7 +627,6 @@ set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
 " https://stackoverflow.com/questions/1176904
 " https://stackoverflow.com/questions/29426372
 set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
-
 " full file name
 set statusline+=%-4.15F
 
