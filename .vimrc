@@ -119,7 +119,10 @@ set showmatch " jump to matching brace
 set matchtime=6 "in 1/10ths of second"
 
 " Buffers ---------------------------
-set hidden " set nohidden " possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
+" set nohidden possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
+set hidden
+set confirm "  on persistence
+set autowrite " on lost focus
 set bufhidden=unload " [hide|unload|delete]
 
 set history=1000 " Increase undo limit
