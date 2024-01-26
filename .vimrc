@@ -614,8 +614,8 @@ set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
 set statusline+=%{(mode()=~'^v')?'🔍':''} " Visual
 set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
 " https://stackoverflow.com/a/75030219
-" set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
-set statusline+=%{(mode()=~'\%x16')?'🔎':''} " Visual Block ()
+" https://stackoverflow.com/questions/1176904
+set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
 
 set statusline+=%-4.15F\ \  " full file name
 
