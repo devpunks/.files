@@ -127,6 +127,7 @@ set bufhidden=unload " [hide|unload|delete]
 
 set winwidth=1 " initial width
 set winheight=1 " initial height
+set winminwidth=0 " minimum width
 set winminheight=0 " minimum height
 set history=1000 " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
