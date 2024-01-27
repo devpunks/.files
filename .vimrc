@@ -192,6 +192,8 @@ set nostartofline " respect cursor column position
 set cursorlineopt=both " [number,line,both,screenline]
 
 " https://stackoverflow.com/questions/6488683
+" https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
+" printf '\033]12;red\033\\'
 " reset cursor escapes
 let &t_EI = ''
 let &t_SI = ''
