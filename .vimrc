@@ -204,13 +204,21 @@ let &t_SR = ''
 " let &t_SR ='\e[3 q' "SR = REPLACE mode
 " let &t_EI ='\e[2 q' "EI = NORMAL mode (ELSE)
 
-" let &t_SR = '\<Esc>12;red\x7'
-" let &t_EI = '\<Esc>12;cyan\x7'
-" let &t_SI = '\<Esc>12;purple\x7'
-
 " let &t_SI = "\]12;yellow\x7"
 " let &t_SR = "\]12;red\x7"
 " let &t_EI = "\]12;blue\x7"
+
+" use an orange cursor in insert mode
+" INSERT = red cursor
+let &t_SI = "\<Esc>]12;red\x7"
+" NORMAL = green cursor
+let &t_EI = "\<Esc>]12;green\x7"
+" REPLACE = blue cursor
+let &t_SR = "\<Esc>]12;blue\x7"
+" !echo -ne "\033]12;red\007"
+" reset cursor when vim exits
+" autocmd VimLeave * silent !echo -ne "\033]112\007"
+" use \003]12;gray\007 for gnome-terminal
 
 if has('gui_running')
   set guioptions=egmrt " remove ugly toolbar :-)
