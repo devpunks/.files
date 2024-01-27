@@ -332,8 +332,6 @@ set statusline+=\ 💻%Y
 set statusline+=\ %#StatusLine#\ 
 " percentage
 set statusline+=%-7((%p%%)⇳%)
-" breakpoint
-set statusline+=%<
 " cursor line, total lines
 set statusline+=%L☰LOC
 " cursor column position
