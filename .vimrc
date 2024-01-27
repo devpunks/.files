@@ -209,9 +209,9 @@ let &t_SR = "\<Esc>]12;blue\x7"
 " !echo -ne "'\033]12;red\033\\'"
 " autocmd VimLeave * silent !echo -ne "\033]112\007"
 
-let &t_SI..='\e[5 q' "SI = INSERT mode
-let &t_SR..='\e[3 q' "SR = REPLACE mode
-let &t_EI..='\e[2 q' "EI = NORMAL mode (ELSE)
+let &t_SI..='\<Esc>[6 q' "SI = INSERT mode
+let &t_SR..='\<Esc>[4 q' "SR = REPLACE mode
+let &t_EI..='\<Esc>[2 q' "EI = NORMAL mode (ELSE)
 " let &t_EI = '\e[2;0;0 q' " Normal mode block cursor
 " let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
 " let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
