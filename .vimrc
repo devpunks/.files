@@ -297,15 +297,10 @@ endif
 "   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " =========================================================================
-" Map semi-colon to colon (no need to press <SHIFT>)
-nnoremap ; :
-nnoremap <Space> za
-nnoremap <C-z> <C-w>_ <C-w>|
-" (insert) Tab completion
-inoremap <Tab> <C-n>
-" (normal) [TAB] Next Tab
-nnoremap <Tab> :tabnext<CR>
-nnoremap <Esc> :nohlsearch<CR>
+set showmode " in status Vi (not Vim)
+set shortmess= " Verbose command messaging
+set laststatus=2 " Always show status line
+if has('win32') | set shortname=on | end
 
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
