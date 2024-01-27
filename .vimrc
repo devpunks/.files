@@ -198,15 +198,6 @@ set cursorlineopt=both " [number,line,both,screenline]
 let &t_EI = ''
 let &t_SI = ''
 let &t_SR = ''
-" let &t_EI = '\e[2;0;0 q' " Normal mode block cursor
-" let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
-" let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
-
-" let &t_SI ='\e[5 q' "SI = INSERT mode
-" let &t_SR ='\e[3 q' "SR = REPLACE mode
-" let &t_EI ='\e[2 q' "EI = NORMAL mode (ELSE)
-
-" printf '\033]12;red\033\\'
 
 " let &t_SI = "\]12;yellow\x7"
 " let &t_SR = "\]12;red\x7"
