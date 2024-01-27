@@ -721,8 +721,41 @@ endif
 "   - :help ga
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
 " -------------------------------------------------------------------------
-" https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
-function! GetColor(group, attr) " GetColor('LineNr', 'bg#')"
+function! CursorCharacter() abort " DecimalToOctal(27)"
+" let character = strpart(getline('.'), col('.') -1, 1, 1 )
+  let char = strpart(getline('.'), col('.')-1, 1, 1 )
+  let character = ' ⌨ '..char..' |'
+  let index = char2nr( char )
+  let decimal = printf( '\0d%d', index )
+  let hexadecimal = printf( '\0x%X', index )
+  let octal = printf( '\0o%o', index )
+
+  return join( [ character, decimal, hexadecimal, octal ], ' ' )
+
+  " Octal -----------------------------------------------------------------
+  let base = 8
+  let numbers = []
+  let number = a:value
+
+  while number >= base
+    call add( numbers, float2nr( fmod( number, base ) ) )
+    let number = number / base 
+  endwhile
+
+  call add( numbers, number )
+
+  " Decimal ---------------------------------------------------------------
+
+  " Hexadecimal -----------------------------------------------------------
+
+  return join( reverse( numbers ), '' )
+endfunction
+
+" -------------------------------------------------------------------------
+" :call GetColor (group, attribute)
+"   - https://www.reddit.com/r/neovim/comments/oxddk9
+" -------------------------------------------------------------------------
+function! GetColor(group, attr) abort " GetColor('LineNr', 'bg#')"
   let color = synIDattr( synIDtrans( hlID(a:group)), a:attr)
 
   echom "THE COLOR".color
