@@ -216,7 +216,7 @@ let &t_SI = "\e]12;red\x7"
 " NORMAL = green cursor
 let &t_EI = "\e]12;green\x7"
 " REPLACE = blue cursor
-let &t_SR = "\<Esc>]12;blue\x7"
+let &t_SR = "\e]12;blue\x7"
 " !echo -ne "\033]12;red\007"
 " reset cursor when vim exits
 " autocmd VimLeave * silent !echo -ne "\033]112\007"
