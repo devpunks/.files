@@ -199,11 +199,6 @@ let &t_EI = ''
 let &t_SI = ''
 let &t_SR = ''
 
-" let &t_SI = "\]12;yellow\x7"
-" let &t_SR = "\]12;red\x7"
-" let &t_EI = "\]12;blue\x7"
-" 
-" use an orange cursor in insert mode
 " INSERT = red cursor
 let &t_SI = "\e[12;red\x7"
 " NORMAL = green cursor
