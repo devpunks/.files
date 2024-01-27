@@ -717,7 +717,9 @@ endif
 " {{{ Functions
 " =========================================================================
 " -------------------------------------------------------------------------
-" :call GetColor (group attribute)
+" :call CursorCharacter ( value = 0 )
+"   - :help ga
+"   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
 " -------------------------------------------------------------------------
 " https://www.reddit.com/r/neovim/comments/oxddk9/how_do_i_get_the_value_from_a_highlight_group/
 function! GetColor(group, attr) " GetColor('LineNr', 'bg#')"
