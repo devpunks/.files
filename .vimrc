@@ -685,6 +685,8 @@ set statusline+=%L☰LOC
 set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 " align right
 set statusline+=%=
+" Show Command
+set statusline+=\|%-2(%k%)
 " Show Control Character Value
 set statusline+=\|%-2(%S%)\|
 " Show Cursor Character Value (Decimal & Hexidecimal)
