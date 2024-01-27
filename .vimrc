@@ -200,7 +200,7 @@ let &t_SI = ''
 let &t_SR = ''
 
 " INSERT = red cursor
-let &t_SI = "\e[12;red\x7"
+let &t_SI = "\<Esc>]12;red\x7"
 " NORMAL = green cursor
 let &t_EI = "\e]12;green\x7"
 " REPLACE = blue cursor
