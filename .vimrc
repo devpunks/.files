@@ -311,9 +311,62 @@ set statusline=%#Statement#\  " initialize
 " buffer number
 set statusline+=﹟%n\ 
 
-" Reload .vimrc configuration
-" nnoremap <Leader>R :source ~/.vimrc
-cnoremap <C-r> :source ~/.vimrc<CR>
+" mode
+set statusline+=%{(mode()=~'^c')?'💲':''} " Command
+set statusline+=%{(mode()=~'^i')?'📝':''} " Insert
+set statusline+=%{(mode()=~'^n')?'📄':''} " Normal
+set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
+set statusline+=%{(mode()=~'^v')?'🔍':''} " Visual
+set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
+" https://stackoverflow.com/a/75030219
+" https://stackoverflow.com/questions/1176904
+" https://stackoverflow.com/questions/29426372
+set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
+" full file name
+set statusline+=%-4.15F
+" flags
+set statusline+=\ %r%h%m\ 
+" file type
+set statusline+=\ 💻%Y
+" change to default highlight
+set statusline+=\ %#StatusLine#\ 
+" percentage
+set statusline+=%-7((%p%%)⇳%)
+" breakpoint
+set statusline+=%<
+" cursor line, total lines
+set statusline+=%L☰LOC
+" cursor column position
+set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
+" align right
+set statusline+=%=
+" Show Command
+set statusline+=\|%-2(%k%)
+" Show Control Character Value
+set statusline+=\|%-2(%S%)\|
+" Show Cursor Character Octal Value
+set statusline+=%-35{CursorCharacter()}
+" breakpoint
+set statusline+=%<
+set statusline+=%#Normal# " set highlight
+" formatoptions
+set statusline+=\ 📜\ %{&fo}
+" show colorscheme on statusline
+set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
+
+" }}}
+
+" =========================================================================
+" {{{ GUTTER
+" https://github.com/airblade/vim-gitgutter/commit/8db2fc5
+" =========================================================================
+set number
+set numberwidth=4 " gutter columns
+
+if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
+  " https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
+  set signcolumn=yes " [auto|no|yes|number]
+endif
 
 " }}}
 
