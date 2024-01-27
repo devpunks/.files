@@ -731,24 +731,6 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   let octal = printf( '\0o%o', index )
 
   return join( [ character, decimal, hexadecimal, octal ], ' ' )
-
-  " Octal -----------------------------------------------------------------
-  let base = 8
-  let numbers = []
-  let number = a:value
-
-  while number >= base
-    call add( numbers, float2nr( fmod( number, base ) ) )
-    let number = number / base 
-  endwhile
-
-  call add( numbers, number )
-
-  " Decimal ---------------------------------------------------------------
-
-  " Hexadecimal -----------------------------------------------------------
-
-  return join( reverse( numbers ), '' )
 endfunction
 
 " -------------------------------------------------------------------------
