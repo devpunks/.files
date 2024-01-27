@@ -651,6 +651,160 @@ endfunction
 " }}}
 
 " =========================================================================
+" {{{ Mappings
+" - https://vi.stackexchange.com/questions/2089
+" - https://vi.stackexchange.com/questions/7722/how-to-debug-a-mapping
+" - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
+" - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
+" let mapleader = ',' " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
+" =========================================================================
+" Map semi-colon to colon (no need to press <SHIFT>)
+nnoremap ; :
+nnoremap <Space> za
+nnoremap <C-z> <C-w>_ <C-w>|
+" (insert) Tab completion
+inoremap <Tab> <C-n>
+" (normal) [TAB] Next Tab
+nnoremap <Tab> :tabnext<CR>
+nnoremap <Esc> :nohlsearch<CR>
+
+" tags (:h tagstack)
+" <C-]> jump to & push tag (:tag)
+" <C-t> pop tag (:pop)
+"   - https://stackoverflow.com/questions/17783539/tag-navigation-in-vim
+
+" tabs - https://gist.github.com/Starefossen/5957088
+" TODO: <C-t> conflicts with :tab pop
+"nnoremap <C-t> :tabnew<cr>
+nnoremap <C-n> :tabnext<CR>
+nnoremap <C-p> :tabprevious<CR>
+" simulate break pane in TMUX
+nnoremap <C-w>t :tab split<CR>
+" All buffers into tabs
+nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
+" current buffer in new (t)ab
+nnoremap <leader>t <C-w>t
+
+" <=> Equal sized panes
+nnoremap = <C-w>=
+" <CTRL+h> Focus on pane to left
+nnoremap <C-h> <C-w>h
+" <CTRL+j> Focus on pane down
+nnoremap <C-j> <C-w>j
+" <CTRL+k> Focus on pane up
+nnoremap <C-k> <C-w>k
+" <CTRL+l> Focus on pane to right
+nnoremap <C-l> <C-w>l
+" normal mode: save
+nnoremap <C-s> :w<CR>
+" insert mode: escape to normal and save
+inoremap <C-s> <esc>:w<CR>
+" visual mode: escape to normal and save
+vnoremap <C-s> <esc>:w<CR>
+
+" Reload .vimrc configuration
+" nnoremap <Leader>R :source ~/.vimrc
+cnoremap <C-r> :source ~/.vimrc<CR>
+
+" }}}
+
+" =========================================================================
+" {{{ Plugins
+" =========================================================================
+augroup FileDefaults
+  filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+augroup END
+
+" -------------------------------------------------------------------------
+" Omni-Complete
+"   - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
+"   - https://vim.fandom.com/wiki/Omni_completion
+" -------------------------------------------------------------------------
+set omnifunc=syntaxcomplete#Complete " Default Completion
+
+" -------------------------------------------------------------------------
+" Vim (Git) Gutter
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter,BufEnter * call g:GitGutter()
+augroup END
+
+function! g:GitGutter() abort
+  if exists('g:loaded_gitgutter') && has('signs')
+    sign define GitGutterLineAdded text=➕
+    sign define GitGutterLineRemoved text=➖
+    sign define GitGutterLineModified text=～
+
+    " Link Diff highlight groups
+    highlight! link GitGutterAdd DiffAdd
+    highlight! link GitGutterDelete DiffDelete
+    highlight! link GitGutterChange DiffChange
+  endif
+endfunction
+
+" -------------------------------------------------------------------------
+" Scrollbar
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  " autocmd VimEnter * call sclow#update()
+augroup END
+
+" -------------------------------------------------------------------------
+" ZoomWin
+" -------------------------------------------------------------------------
+nnoremap <Enter> :ZoomWin<CR>
+nnoremap <leader>z :ZoomWin<CR> " TMUX dexterity clone
+
+" -------------------------------------------------------------------------
+" NERDTree
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call s:NerdDrawer()
+augroup END
+
+function! s:NerdDrawer() abort
+  if ! exists('g:NERDTree') | return | endif
+
+  " [SHIFT]+[TAB] Opens Nerdtree
+  nnoremap <S-Tab> :NERDTreeToggle<CR>
+
+  let g:NERDTreeIgnore=[] " ignored files
+  let g:NERDTreeFileLines=1 " LOC number in files
+  let g:NERDTreeShowHidden=1 " Show hidden files (I)
+  let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
+  let g:NERDTreeBookmarksFile='.bookmarks' " location
+  let g:NERDTreeHighlightCursorLine=1 " highlight current line
+  let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
+  let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
+
+  NERDTree | wincmd p " Open Drawer & focus on `p`revious buffer
+endfunction
+
+" -------------------------------------------------------------------------
+" Closetag - https://github.com/alvan/vim-closetag
+" -------------------------------------------------------------------------
+" These are the file types where this plugin is enabled.
+let g:closetag_filetypes = 'svg,html,xhtml,phtml,eruby,*.vue'
+
+" These are the file extensions where this plugin is enabled.
+let g:closetag_filenames = '*.svg,*.html,*.xhtml,*.phtml,*.html.erb,*.vue'
+
+" This will make the list of non-closing tags self-closing in the specified files.
+"let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" This will make the list of non-closing tags self-closing in the specified files.
+let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
+
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"let g:closetag_emptyTags_caseSensitive = 1
+
+" -------------------------------------------------------------------------
+" Vim-Ruby-Miinitest - https://github.com/sunaku/vim-ruby-minitest
+" -------------------------------------------------------------------------
+
+" }}}
+
+" =========================================================================
 " {{{ conceal.vim
 " =========================================================================
 set conceallevel=2
