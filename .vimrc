@@ -346,6 +346,10 @@ set statusline+=\|%-2(%k%)
 set statusline+=\|%-2(%S%)
 " Show Cursor Character Values
 set statusline+=%-35{CursorCharacter()}
+
+set statusline+=%< " breakpoint
+set statusline+=%#Normal# " set highlight
+
 " formatoptions
 set statusline+=\ 📜\ %{&fo}
 " show colorscheme on statusline
