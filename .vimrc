@@ -581,7 +581,7 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   let hexadecimal = printf( '\0x%-5X', index )
   let octal = printf( '\0o%-6o', index )
 
-  return join( [ character, decimal, hexadecimal, octal ], ' ' )
+  return character..join( [ decimal, hexadecimal, octal ], ' ' )
 endfunction
 
 " -------------------------------------------------------------------------
