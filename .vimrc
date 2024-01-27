@@ -572,7 +572,6 @@ augroup END
 function! CursorCharacter() abort " DecimalToOctal(27)"
 " let character = strpart(getline('.'), col('.') -1, 1, 1 )
   let char = strpart(getline('.'), col('.')-1, 1, 1 )
-  let character = ' ⌨ '..char..' |'
   let index = char2nr( char )
   let decimal = printf( '\0d%d', index )
   let hexadecimal = printf( '\0x%X', index )
