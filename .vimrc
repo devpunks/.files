@@ -306,17 +306,7 @@ if has('win32') | set shortname=on | end
 set ruler " set cursor coordinates
 set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
-" tabs - https://gist.github.com/Starefossen/5957088
-" TODO: <C-t> conflicts with :tab pop
-"nnoremap <C-t> :tabnew<cr>
-nnoremap <C-n> :tabnext<CR>
-nnoremap <C-p> :tabprevious<CR>
-" simulate break pane in TMUX
-nnoremap <C-w>t :tab split<CR>
-" All buffers into tabs
-nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
-" current buffer in new (t)ab
-nnoremap <leader>t <C-w>t
+set statusline=%#Statement#\  " initialize
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
