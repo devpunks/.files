@@ -689,10 +689,8 @@ set statusline+=%=
 set statusline+=\|%-2(%k%)
 " Show Control Character Value
 set statusline+=\|%-2(%S%)\|
-" Show Cursor Character Value (Decimal & Hexidecimal)
-set statusline+=\ %6(\\d%-4b%)⌨%-7(\\x%-5B%)
-" Show Command
-set statusline+=\|%-2(%k%)\|
+" Show Cursor Character Octal Value
+set statusline+=%-35{CursorCharacter()}
 " breakpoint
 set statusline+=%<
 set statusline+=%#Normal# " set highlight
