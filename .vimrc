@@ -95,6 +95,7 @@ set foldenable
 set foldlevel=1
 set foldcolumn=2
 set foldclose=all
+set foldlevelstart=0
 set foldmethod=indent " [manual|indent|expr|marker|syntax|diff]
 
 " https://stackoverflow.com/questions/5845557
