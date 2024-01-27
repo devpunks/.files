@@ -777,7 +777,7 @@ command! Colors call HighlightGroup()
 " -------------------------------------------------------------------------
 " TODO: TabLine () :h(elp) setting-tablines
 " -------------------------------------------------------------------------
-function! TabLine()
+function! TabLine() abort
   if ! exists('+showtabline') | return '' | endif
 
   let line = '' " Initialize
