@@ -302,10 +302,9 @@ set shortmess= " Verbose command messaging
 set laststatus=2 " Always show status line
 if has('win32') | set shortname=on | end
 
-" tags (:h tagstack)
-" <C-]> jump to & push tag (:tag)
-" <C-t> pop tag (:pop)
-"   - https://stackoverflow.com/questions/17783539/tag-navigation-in-vim
+" https://vi.stackexchange.com/a/27508
+set ruler " set cursor coordinates
+set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
