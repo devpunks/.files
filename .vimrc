@@ -337,7 +337,7 @@ set statusline+=%L☰LOC
 " breakpoint
 set statusline+=\ %<
 " cursor column position
-set statusline+=\ %5(%4l⇩%)✖%-8.(⇨%-c%-V%)
+set statusline+=%5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 " align right
 set statusline+=%=
 " Show Command
