@@ -491,9 +491,13 @@ augroup END
 " =========================================================================
 " {{{ typography.vimrc
 " =========================================================================
-" - Whitespace ------------------------------------
+" - Line Length -----------------------------------------------------------
+syntax on " turns syntax highlighting on
+set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
+set textwidth=75 " before wrap https://vimtricks.com/p/vim-line-length-marker
+set synmaxcol=256 " Prevent slow loading https://github.com/tpope/vim-sensible/issues/142
+" - Whitespace ------------------------------------------------------------
 let s:TABSIZE=2
-
 set expandtab "turn tabs into (tabstop) spaces
 set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
 let &tabstop=s:TABSIZE "set tab character to 2 characters
