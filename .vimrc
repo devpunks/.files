@@ -801,7 +801,6 @@ function! TabLine() abort
     let line .= ( l:modified ? '➕' : '' )
     let line .= ( l:count > 1 ? ' ⊞'.l:count : '' )
 
-
     let l:others = ( len( l:tabs ) > 1 )
     let l:current = ( l:tab == tabpagenr() )
     " Close button
