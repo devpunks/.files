@@ -308,22 +308,8 @@ set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline=%#Statement#\  " initialize
 
-" <=> Equal sized panes
-nnoremap = <C-w>=
-" <CTRL+h> Focus on pane to left
-nnoremap <C-h> <C-w>h
-" <CTRL+j> Focus on pane down
-nnoremap <C-j> <C-w>j
-" <CTRL+k> Focus on pane up
-nnoremap <C-k> <C-w>k
-" <CTRL+l> Focus on pane to right
-nnoremap <C-l> <C-w>l
-" normal mode: save
-nnoremap <C-s> :w<CR>
-" insert mode: escape to normal and save
-inoremap <C-s> <esc>:w<CR>
-" visual mode: escape to normal and save
-vnoremap <C-s> <esc>:w<CR>
+" buffer number
+set statusline+=﹟%n\ 
 
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
