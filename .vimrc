@@ -214,7 +214,7 @@ let &t_SR = ''
 " 
 " use an orange cursor in insert mode
 " INSERT = red cursor
-let &t_SI = "\e]12;red\x7"
+let &t_SI = "\e[12;red\x7"
 " NORMAL = green cursor
 let &t_EI = "\e]12;green\x7"
 " REPLACE = blue cursor
