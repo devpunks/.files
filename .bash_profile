@@ -187,7 +187,6 @@ alias ssadd='(
 # SSh(d) ------------------------------------------------------------------
 #   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
 #   - https://wiki.termux.com/wiki/Remote_Access
-#   - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
 #   - https://www.man7.org/linux/man-pages/man1/ssh.1.html
 #   - https://github.com/termux/termux-packages/issues/3620
 #
