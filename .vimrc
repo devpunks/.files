@@ -272,9 +272,9 @@ set cursorlineopt=both " [number,line,both,screenline]
 " let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
 " printf '\033]12;red\033\\'
 " reset cursor escapes
-let &t_EI = ''
-let &t_SI = ''
-let &t_SR = ''
+let &t_EI = '' " EXIT INSERT
+let &t_SI = '' " START INSERT
+let &t_SR = '' " START REPLACE
 
 " CURSOR TYPE -------------------------------------------------------------
 "SI = INSERT bar |
