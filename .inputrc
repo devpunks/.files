@@ -118,6 +118,8 @@ set page-completions off
 set match-hidden-files on
 # All <Tab>-Autocompletion ambiguous matches.
 set show-all-if-ambiguous on
+# All <Tab>-Autocompletion list matches.
+set show-all-if-unmodified on
 # Case insensitive <Tab>-Autocomplete matches.
 set completion-ignore-case on
 # Maximum <Tab>-Autocompletion display results.
