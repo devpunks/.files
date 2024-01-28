@@ -9,6 +9,10 @@
 #  Y8P 88888P"  "Y888888  88888P' 888  888 888     "Y8888P
 #
 #
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: .bashrc
+# Source: https://github.com/devpunks
 # Author: Ahmid-Ra (github.com/snuggs)
 #
 # INVOCATION
