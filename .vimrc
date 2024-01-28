@@ -281,7 +281,7 @@ let &t_SR = '' " START REPLACE
 let &t_SI..='[5 q'
 "SR = START REPLACE underline _
 let &t_SR..='[3 q'
-"EI = NORMAL mode block
+"EI = EXIT INSERT (NORMAL) mode block
 let &t_EI..='[2 q'
 
 " CURSOR COLOR ------------------------------------------------------------
