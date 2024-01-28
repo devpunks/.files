@@ -292,7 +292,8 @@ let &t_EI..="\e]12;green\x7"
 " REPLACE = blue cursor
 let &t_SR..="\e]12;blue\x7"
 " reset cursor when vim exits
-autocmd VimLeave * silent !echo -ne "]12;cyan\x7"
+" autocmd VimLeave * silent !echo -ne "]12;cyan\x7"
+autocmd VimLeave * silent !echo -ne '[0;0;0 q'
 
 " GUI CURSOR -------------------------------------------------------------
 if has('gui_running')
