@@ -374,7 +374,10 @@ function destroy {
 function recycle {
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
-  destroy "${TMPDIR}/*.*"
+  # destroy "${TMPDIR}/*.*"
+  command rm -rf "${TMPDIR}/*"
+
+  trash
 }
 
 # Trash
