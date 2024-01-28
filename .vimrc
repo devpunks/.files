@@ -279,7 +279,7 @@ let &t_SR = '' " START REPLACE
 " CURSOR TYPE -------------------------------------------------------------
 "SI = START INSERT bar |
 let &t_SI..='[5 q'
-"SR = REPLACE underline _
+"SR = START REPLACE underline _
 let &t_SR..='[3 q'
 "EI = NORMAL mode block
 let &t_EI..='[2 q'
