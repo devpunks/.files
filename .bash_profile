@@ -617,7 +617,7 @@ function term {
 
 #
 # http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
-alias shortcuts='bind -P'
+alias shortcuts='bind -vP'
 # Case insensitive tab completion in Bash
 # bind "set show-all-if-ambiguous on" # SEE ~/.inputrc
 # bind "set completion-ignore-case on" # SEE ~/.inputrc
