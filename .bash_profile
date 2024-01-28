@@ -173,8 +173,9 @@ alias be='bundle exec'
 # {{{ Server(s)
 # ==========================================================================
 # SSh ---------------------------------------------------------------------
-#   - https://www.ssh.com/academy/ssh
-# https://www.ssh.com/academy/ssh/add-command
+# - https://www.ssh.com/academy/ssh
+# - https://www.ssh.com/academy/ssh/add-command
+# - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
 alias ssadd='(
   clear
   echo adding ssh
