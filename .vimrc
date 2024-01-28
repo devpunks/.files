@@ -304,64 +304,6 @@ if has('gui_running')
   set guicursor+=n-v-c:block-Cursor
 endif
 
-" Chrome ------------------------------------------------------------------
-" tabs
-set tabline=%!TabLine()
-set showtabline=2 " :help setting-tabline
-" shell window
-set title " Turn on title
-set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Title String format
-
-" Menus -------------------------------------------------------------------
-" - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
-" - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
-set wildmenu
-set infercase
-set wildchar=<Tab>
-set wildoptions=pum
-set wildcharm=<C-Z> " macros
-set wildmode=list:longest,full
-set wildignore+=*.DS_STORE,.git/**,.npm/**,.ssh/**,.cache/** " etc.
-
-" Completion / LSPs -------------------------------------------------------
-" https://github.com/neoclide/coc.nvim
-" https://github.com/jayli/vim-easycomplete
-" https://github.com/prabirshrestha/vim-lsp
-" https://linuxhandbook.com/vim-auto-complete
-" https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
-" https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
-set complete=.,w,b,u,i " -t - https://www.mail-archive.com/vim@vim.org/msg03963.html
-set completepopup+=align:item,border:on
-set completeopt+=menu,menuone,noinsert,popup
-
-" Clipboard Registers -----------------------------------------------------
-"   - https://stackoverflow.com/questions/11489428
-"   - https://github.com/termux/termux-packages/issues/2308
-"   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
-"   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
-"   - OSC52 Escape to system clipboard - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.vim
-
-" vnoremap <C-c> "*y<cr>
-" inoremap <C-v> “*p<cr>
-if has('unnamedplus') | set clipboard=unnamed,unnamedplus | endif
-"
-"  copy and paste
-" vmap <C-c> "+yi
-" vmap <C-x> "+c
-" vmap <C-v> c<ESC>"+p
-" imap <C-v> <ESC>"+pa
-
-" Termux ------------------------------------------------------------------
-" https://ibnishak.github.io/blog/post/copy-to-termux-clip/
-if executable('termux-clipboard-set')
-  echom 'SHAZAAAM FOUND CLIPBOARD'
-  " vnoremap <C-x> :!termux-clipboard-set<CR>
-  " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
-  " inoremap <C-v> <ESC>:read !termux-clipboard-get<CR>i
-else
-  echom 'Termux clipboard not found'
-endif
-
 " }}}
 
 " =========================================================================
