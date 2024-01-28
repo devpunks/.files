@@ -619,24 +619,6 @@ function term {
 
 # }}}
 
-# -----------------------------------------------------------------------
-# {{{ Bindings
-#   - https://geeksforgeeks.org/bind-command-in-linux-with-examples
-# -----------------------------------------------------------------------
-#   See to avoid potential conflicts:
-#     - $HOME/.vimrc
-#     - $HOME/.termux.conf
-#     - $HOME/.termux/termux.properties
-
-#
-# http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
-alias shortcuts='bind -vP'
-# Case insensitive tab completion in Bash
-# bind "set show-all-if-ambiguous on" # SEE ~/.inputrc
-# bind "set completion-ignore-case on" # SEE ~/.inputrc
-
-# }}}
-
 echo 'devPunks😈studio .bash_profile'
 echo
 
