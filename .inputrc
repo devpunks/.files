@@ -131,7 +131,7 @@ set menu-complete-display-prefix on
 # Alphabetical horizontal search of completions.
 set print-completions-horizontally on
 # Display ellipsis for long <Tab>-Autocompletion results.
-set completion-prefix-display-length 10
+set completion-prefix-display-length 5
 
 
 # Be more intelligent when autocompleting by also looking at the text after
