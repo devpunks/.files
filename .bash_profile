@@ -261,6 +261,18 @@ alias g#="(
 # }}}
 
 # =========================================================================
+# {{{ Bindings # see ~/.inputrc
+# =========================================================================
+# bind -x '"TAB":complete'  # default
+# bind -x '"TAB":menu-complete'
+bind -x '"\C-l":clear'
+# RETURN: "\e\n"
+
+alias shortcuts='bind -vP'
+
+# }}}
+
+# =========================================================================
 # {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
