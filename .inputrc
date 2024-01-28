@@ -125,7 +125,11 @@ set completion-ignore-case on
 # Maximum <Tab>-Autocompletion display results.
 set completion-query-items 200
 # <Tab>-Autocompletion results in single column.
-set completion-display-width 0
+set completion-display-width 3
+# Common prefix of completion list.
+set menu-complete-display-prefix on
+# Alphabetical horizontal search of completions.
+set print-completions-horizontally on
 # Display ellipsis for long <Tab>-Autocompletion results.
 set completion-prefix-display-length 10
 
