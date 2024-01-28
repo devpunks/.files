@@ -11,8 +11,10 @@
 #                                                  888
 #                                                  888
 #
-# =========================================================================
-#
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: .bash_profile
+# Source: https://github.com/devpunks
 # Author: Ahmid-Ra (github.com/snuggs)
 #
 # INVOCATION
