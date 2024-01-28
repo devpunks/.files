@@ -174,6 +174,14 @@ alias be='bundle exec'
 # ==========================================================================
 # SSh ---------------------------------------------------------------------
 #   - https://www.ssh.com/academy/ssh
+# https://www.ssh.com/academy/ssh/add-command
+alias ssadd='(
+  clear
+  echo adding ssh
+  eval $( ssh-agent )
+  ssh-add
+  ps x | grep ssh-agent
+)'
 
 # SSh(d) ------------------------------------------------------------------
 #   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
