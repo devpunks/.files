@@ -276,6 +276,15 @@ let &t_EI = ''
 let &t_SI = ''
 let &t_SR = ''
 
+" CURSOR TYPE -------------------------------------------------------------
+"SI = INSERT bar |
+let &t_SI..='[5 q'
+"SR = REPLACE underline _
+let &t_SR..='[3 q'
+"EI = NORMAL mode block
+let &t_EI..='[2 q'
+
+" CURSOR COLOR ------------------------------------------------------------
 " INSERT = red cursor
 let &t_SI = "\<Esc>]12;red\x7"
 " NORMAL = green cursor
