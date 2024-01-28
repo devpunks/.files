@@ -223,8 +223,8 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 # 6 Bar (steady)
 # https://linuxgazette.net/137/anonymous.html
 # https://baeldung.com/linux/console-cursor-features
-echo -ne '\e[5 q'
-echo -ne '\e]12;#FF00FF\a'
+echo -ne '[5;0;0 q'
+echo -ne ']12;#FF00FF\a'
 
 # prompt ------------------------------------------
 # Shell Prompt - for many examples, see:
