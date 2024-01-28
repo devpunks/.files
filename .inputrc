@@ -11,12 +11,43 @@
 #                   888
 #                   888
 #
-# *************************************************************************
-#  ~/.inputrc
-#    - https://tldp.org/LDP/lfs/LFS-BOOK-6.1.1-HTML/chapter07/inputrc.html
-#    - https://github.com/termux/termux-packages/blob/master/packages/readline/inputrc
-#    - https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
-# ******************************************************↴
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: .inputrc
+# Source: https://github.com/devpunks
+# Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: Readline Run Commands on $SHELL prompt.
+# -------------------------------------------------------------------------
+#
+# This file controls the behaviour of line input editing for
+# programs that use the GNU Readline library.  Existing
+# programs include FTP, Bash, and GDB.
+#
+# You can re-read the inputrc file with C-x C-r.
+#
+# See to avoid potential conflicts:
+#   - $HOME/.vimrc
+#   - $HOME/.termux.conf
+#   - $HOME/.termux/termux.properties
+# -------------------------------------------------------------------------
+#   - https://ioflood.com/blog/bind-linux-command
+#   - https://www.topbug.net/blog/2017/07/31/inputrc-for-humans
+#   - https://geeksforgeeks.org/bind-command-in-linux-with-examples
+#   - https://tldp.org/LDP/lfs/LFS-BOOK-6.1.1-HTML/chapter07/inputrc.html
+#   - https://unix.stackexchange.com/questions/529385/i-key-is-not-functional-in-bash
+#   - https://github.com/termux/termux-packages/blob/master/packages/readline/inputrc
+#   - https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
+#   - https://unix.stackexchange.com/questions/153357/inputrc-file-not-sourcing-correctly
+# =========================================================================
+# {{{ Bindings
+# =========================================================================
+"\C-l":clear
+# RETURN: "\e\n"
+# "TAB":menu-complete
+# "TAB":complete # default
+"\C-x\C-r": re-read-init-file
+
 # Use Alt/Meta + Delete to delete the preceding word
 # "\e[3;3~": kill-word
 
