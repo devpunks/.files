@@ -267,6 +267,9 @@ set cursorlineopt=both " [number,line,both,screenline]
 
 " https://stackoverflow.com/questions/6488683
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
+" let &t_EI = '\e[1;0;0 q' " Normal mode block cursor
+" let &t_SR = '\e[3;0;0 q' " Replace mode underline cursor
+" let &t_SI = '\e[5;0;0 q' " Insert mode bar cursor
 " printf '\033]12;red\033\\'
 " reset cursor escapes
 let &t_EI = ''
