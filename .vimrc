@@ -292,7 +292,6 @@ let &t_EI..="]12;yellow\x7"
 " REPLACE = blue cursor
 let &t_SR..="]12;blue\x7"
 " reset cursor when vim exits
-" !echo -ne "'\033]12;red\033\\'"
 " autocmd VimLeave * silent !echo -ne "\033]112\007"
 
 let &t_SI..='\<Esc>[6 q' "SI = INSERT mode
