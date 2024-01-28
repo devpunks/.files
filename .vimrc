@@ -247,7 +247,11 @@ set undodir=$TMPDIR " undo location
 set directory=$TMPDIR " swap location
 set backupdir=$TMPDIR " backup location
 
-" Cursor ------------------------------------------------------------------
+" }}}
+
+" =========================================================================
+" {{{ Cursor
+" =========================================================================
 set ttyfast " Send more characters for redraws
 set timeout " on mappings
 set ttimeout " on keycodes
