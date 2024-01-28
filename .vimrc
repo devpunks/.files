@@ -485,6 +485,14 @@ augroup END
 " =========================================================================
 " {{{ typography.vimrc
 " =========================================================================
+if $TERM =~ '256color'
+  " WARNING: ^[ must be entered as <c-v><c-[>
+  echo 'SHAZAAM TERM'
+  let &t_so = '[7m' " smso (standout)
+  let &t_ZH = '[3m' " sitm (enable italics)
+  let &t_ZR = '[0m' " ritm (disable italics)
+endif
+
 " - Line Length -----------------------------------------------------------
 syntax on " turns syntax highlighting on
 set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
