@@ -133,6 +133,7 @@ set print-completions-horizontally on
 # Display ellipsis for long <Tab>-Autocompletion results.
 set completion-prefix-display-length 5
 
+# }}}
 
 # Be more intelligent when autocompleting by also looking at the text after
 # the cursor. For example, when the current line is "cd ~/src/mozil", and
