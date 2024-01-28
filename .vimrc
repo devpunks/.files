@@ -207,7 +207,10 @@ set tabpagemax=50 " Maximum number of tab pages
 set splitbelow splitright " new buffer locations
 command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 
-" Views, Sessions, Viminfo ------------------------------------------------
+" }}}
+
+" =========================================================================
+" {{{ Views, Sessions, Viminfo
 "   - https://vimtricks.com/p/saving-session-state/
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 " disable sessions
