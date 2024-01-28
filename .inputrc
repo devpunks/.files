@@ -75,9 +75,9 @@ set completion-prefix-display-length 10
 set skip-completed-text on
 
 # vi mode
-#   - https://unix.stackexchange.com/questions/112406
-#   - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
-#   - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
+# - https://unix.stackexchange.com/questions/112406
+# - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
+# - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
 set keymap vi-insert
 set editing-mode vi-insert
 set show-mode-in-prompt on
