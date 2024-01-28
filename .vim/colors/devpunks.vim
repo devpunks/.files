@@ -11,7 +11,7 @@
 " Version: 0.1
 " File: devpunks.vim
 " Source: https://github.com/devpunks
-" Author: devPunks (github.com/devpunks)
+" Author: Ahmid-Ra (github.com/snuggs)
 " Maintainer: devPunks <https://github.com/devpunks>
 " Description: Default terminal colorscheme and typography
 " -------------------------------------------------------------------------
