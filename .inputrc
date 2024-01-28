@@ -60,9 +60,21 @@
  "\e[A": history-search-backward
  "\e[B": history-search-forward
 
-# ctrl left, ctrl right for moving on the readline by word
-# "\e[1;5C": forward-word
-# "\e[1;5D": backward-word
+# <CTRL>+<J> and <CTRL>+<K> search
+"\C-j": history-search-forward
+"\C-k": history-search-backward
+
+# <CTRL>+<N> and <CTRL>+<P> search
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+
+# }}}
+
+# =========================================================================
+# {{{ Options
+# =========================================================================
+# milliseconds to wait for key sequence
+keyseq-timeout 1000
 
 # Allow UTF-8 input and output, instead of $'\0123\0456'
 set input-meta on
