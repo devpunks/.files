@@ -14,6 +14,9 @@
 # File: .bashrc
 # Source: https://github.com/devpunks
 # Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: Bourne Again SHell Run Commands on $SHELL login.
+# -------------------------------------------------------------------------
 #
 # INVOCATION
 #   - https://stackoverflow.com/questions/9953005
