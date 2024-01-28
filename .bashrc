@@ -29,7 +29,7 @@
 #   - OSC 52 base64 remote clipboard
 #     - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh
 # =========================================================================
-# {{{ Exports -------------------------------------------------------------
+# {{{ Exports
 # for rc in ~in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
 #   # (r)un (c)omm(ands) - https://superuser.com/questions/144339
 #   echo Sourcing ~/.bash run commands \(where available\)
