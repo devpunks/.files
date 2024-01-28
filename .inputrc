@@ -140,12 +140,12 @@ set completion-prefix-display-length 5
 # - https://unix.stackexchange.com/questions/112406
 # - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
 # - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
-set keymap vi-insert
-set editing-mode vi-insert
-set show-mode-in-prompt on
-# https://unix.stackexchange.com/questions/529385/i-key-is-not-functional-in-bash
-# "k": history-search-backward
-# "j": history-search-forward
+# =========================================================================
+# set keymap vi
+set keymap emacs
+#set editing-mode vi
+set editing-mode emacs
+
 # PS1 prompt prefix
 set vi-cmd-mode-string '(vi CMD)'
 set vi-ins-mode-string '(vi INS)'
