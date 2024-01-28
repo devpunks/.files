@@ -78,9 +78,9 @@ set skip-completed-text on
 #   - https://unix.stackexchange.com/questions/112406
 #   - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
 #   - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
-# set keymap vi
-# set editing-mode vi
-# set show-mode-in-prompt on
+set keymap vi-insert
+set editing-mode vi-insert
+set show-mode-in-prompt on
 # https://unix.stackexchange.com/questions/529385/i-key-is-not-functional-in-bash
 # "k": history-search-backward
 # "j": history-search-forward
