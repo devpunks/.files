@@ -16,6 +16,9 @@
 # File: .bash_profile
 # Source: https://github.com/devpunks
 # Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: Bourne Again SHell profile on $SHELL login.
+# -------------------------------------------------------------------------
 #
 # INVOCATION
 #   - https://unix.stackexchange.com/questions/43953
