@@ -288,7 +288,7 @@ let &t_EI..='[2 q'
 " INSERT = red cursor
 let &t_SI..="]12;red\x7"
 " NORMAL = green cursor
-let &t_EI = "\<Esc>]12;green\x7"
+let &t_EI..="]12;yellow\x7"
 " REPLACE = blue cursor
 let &t_SR = "\<Esc>]12;blue\x7"
 " reset cursor when vim exits
