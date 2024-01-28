@@ -147,8 +147,8 @@ set keymap emacs
 set editing-mode emacs
 
 # PS1 prompt prefix
-set vi-cmd-mode-string '(vi CMD)'
-set vi-ins-mode-string '(vi INS)'
+set show-mode-in-prompt on
+
 # 0 Default
 # 1 Block (blinking)
 # 2 Block (steady)
