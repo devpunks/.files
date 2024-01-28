@@ -286,7 +286,7 @@ let &t_EI..='[2 q'
 
 " CURSOR COLOR ------------------------------------------------------------
 " INSERT = red cursor
-let &t_SI = "\<Esc>]12;red\x7"
+let &t_SI..="]12;red\x7"
 " NORMAL = green cursor
 let &t_EI = "\<Esc>]12;green\x7"
 " REPLACE = blue cursor
