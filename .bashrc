@@ -125,6 +125,8 @@ export LC_ALL=$LANG
 tput init
 setterm --resize
 
+export TERM='xterm-256color'
+
 # Software Flow Control
 #  - https://unix.stackexchange.com/questions/515252
 #  - https://unix.stackexchange.com/questions/12107
