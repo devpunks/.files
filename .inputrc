@@ -77,7 +77,7 @@
 # {{{ Options
 # =========================================================================
 # milliseconds to wait for key sequence
-keyseq-timeout 1000
+set keyseq-timeout 1000
 
 # Allow UTF-8 input and output, instead of $'\0123\0456'
 set input-meta on
