@@ -29,7 +29,7 @@
 # Types -------------------------------------------------------------------
 # no Normal
 # fi File
-# ln Symbolic Link
+# di Directory
 # pi Fifo file
 # so Socket file
 # bd Block (buffered) special file
