@@ -134,7 +134,7 @@ alias vdir='command vdir -alAF --author --human-readable --group-directories-fir
 alias find='command find -type f -ls . -iname '*'"$1"'*''
 alias ls='command ls -C -AhklFG --color=auto --hyperlink=auto --group-directories-first'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
-alias list='exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
+alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 alias egrep='command grep -E $GREP_OPTS'
