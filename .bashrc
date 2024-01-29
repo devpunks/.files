@@ -267,6 +267,8 @@ PS1_PROMPT='$(tput rev)💲'"$PS1_RESET"
 
 # export PS1="\001\n$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\002"
 
+export PS1=${PS1_PROMPT}
+
 # }}}
 
 # =========================================================================
