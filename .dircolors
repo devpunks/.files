@@ -82,7 +82,7 @@
 # 106 = Turquoise Background
 # =========================================================================
 
-export LS_COLORS="no=7:*=0:*.*.*=1:*LS_COLORS=1;3;4;7:*.dir_colors=2;3;4;7:di=1;3;4;7:ex=1;4:ln=3;4;9:so=0:pi=0:bd=0:cd=0:su=0:sg=0:tw=0:ow=0:*id_rsa=1;4;7:*.pub=3;4:*authorized_keys=3;4;7:*.hosts=3;4;7:*known_hosts=3;4;7:*rc=2;3:*history=2;3;9:*.bak=2;3;9:*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=3;4;7:*.gitconfig=2;4:*.conf=2;4:*config=2;4:*.yaml=2;4:*.properties=2;4:*README=7:*.md=7:*NOTES=7";
+export LS_COLORS="no=7:fi=1:*=1:*LS_COLORS=1;3;4;7:*.dircolors=2;3;4;7:di=1;3;4;7;4:ln=3;4;9:so=1;4;5:pi=0:bd=0:cd=0:su=0:sg=0:ow=30;42:tw=30;43:ex=1;4:*.bash=1;4:*.sh=1;4:*id_rsa=1;4;7:*.pem=1;4;7:*.pid=0:*.pub=3;4:*authorized_keys=3;4;7:*hosts=3;4;7:*.hosts=3;4;7:*known_hosts=3;4;7:*rc=2;3:*history=2;3;9:*.bak=2;3;9:*~=2;3;9:*.swp=2;3;9:*.dpkg-old=2;3;9:*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=3;4;7:*.gitconfig=2;4:*.conf=2;4:*config=2;4:*.yml=2;4:*.yaml=2;4:*.properties=2;4:*README=7:*.md=7:*.markdown=7:*NOTES=7:*.h=1;3:*.sample=3";
 
 echo && echo 'devPunks😈studio .dircolors'
 
