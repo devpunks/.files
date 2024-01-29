@@ -32,6 +32,7 @@
 # di Directory
 # pi Fifo file
 # so Socket file
+# ln Symbolic Link
 # bd Block (buffered) special file
 # cd Character (unbuffered) special file
 # or Symbolic Link pointing to a non-existent file (orphan)
