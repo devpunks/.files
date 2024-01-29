@@ -281,10 +281,6 @@ export CLICOLOR=1 # https://stackoverflow.com/questions/41849875
 # https://github.com/microsoft/terminal/issues/11057
 export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
 
-# Truecolor test
-printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
-
-
 # LS_COLORS
 [ -e $HOME/.dircolors ] && source $HOME/.dircolors
 
