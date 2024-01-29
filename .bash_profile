@@ -221,7 +221,7 @@ alias ss='command sshd -X -Dddd -p8022'
 alias ssh.add='echo adding ssh'
 
 # HTTP(s) ------------------------------------------------------------------
-alias serve='python -m http.server'
+alias serve='command python -m http.server'
 
 # - syslog() - https://stackify.com/syslog-101/
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
