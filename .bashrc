@@ -285,7 +285,7 @@ GREP_COLOR='1;4;38;5;13;48;5;235'
 export GREP_COLORS="ln=1;4;38;5;241:ms=${GREP_COLOR}:"
 
 # https://the.exa.website/docs/colour-themes
-export EXA_COLORS="${LS_COLORS}:hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:sn=1;4;38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;4;38;5;2:.*=2;3;18;38;5;8:"
+export EXA_COLORS="hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:sn=1;4;38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;4;38;5;2:.*=2;3;18;38;5;8:${LS_COLORS}"
 
 # }}}
 
