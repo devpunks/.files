@@ -224,7 +224,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 # echo -ne '[5;0;0 q' see .inputrc
 echo -ne ']12;#FF0000\x7'
 
-# prompt ------------------------------------------
+# prompt ------------------------------------------------------------------
 # Shell Prompt - for many examples, see:
 #  - https://bash-prompt-generator.org
 #  - https://github.com/nojhan/liquidprompt
