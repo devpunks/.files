@@ -231,7 +231,7 @@ function logs () {
   command logcat
 }
 
-# TMUX ----------------------
+# TMUX --------------------------------------------------------------------
 alias tmux.config='(
   echo && echo Server Options:
   tmux show-options -s
