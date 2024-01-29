@@ -190,7 +190,7 @@ alias ssadd='(
   clear
   echo adding ssh
   eval $( ssh-agent )
-  ssh-add
+  command ssh-add
   ps x | grep ssh-agent
 )'
 
