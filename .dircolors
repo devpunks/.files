@@ -25,6 +25,61 @@
 # https://github.com/coreutils/coreutils/blob/master/src/dircolors.c
 # https://unix.stackexchange.com/questions/94299/dircolors-modify-color-settings-globaly
 # https://github.com/RobertAudi/.dotfiles/blob/master/docs/cheat-sheets/ls-colors-cheat-sheet.txt
+#
+# Types -------------------------------------------------------------------
+# di Directory
+# no Normal
+# fi File
+# ln Symbolic Link
+# pi Fifo file
+# so Socket file
+# bd Block (buffered) special file
+# cd Character (unbuffered) special file
+# or Symbolic Link pointing to a non-existent file (orphan)
+# mi Non-existent file pointed to by a symbolic link (visible when you type ls -l)
+# ex File which is executable (ie. has 'x' set in permissions).
+
+# Style Codes -------------------------------------------------------------
+# 0 = Default Colour
+# 1 = Bold
+# 2 = Dim
+# 3 = Italic
+# 4 = Underlined
+# 5 = Flashing Text
+# 7 = Reverse Field
+# 8 = Concealed
+
+# Color Codes -------------------------------------------------------------
+# 30  = Black
+# 31  = Red
+# 32  = Green
+# 33  = Yellow
+# 34  = Blue
+# 35  = Purple
+# 36  = Cyan
+# 37  = Grey
+# 40  = Black Background
+# 41  = Red Background
+# 42  = Green Background
+# 43  = Yellow Background
+# 44  = Blue Background
+# 45  = Purple Background
+# 46  = Cyan Background
+# 47  = Grey Background
+# 90  = Dark Grey
+# 91  = Light Red
+# 92  = Light Green
+# 93  = Yellow
+# 94  = Light Blue
+# 95  = Light Purple
+# 96  = Turquoise
+# 100 = Dark Grey Background
+# 101 = Light Red Background
+# 102 = Light Green Background
+# 103 = Yellow Background
+# 104 = Light Blue Background
+# 105 = Light Purple Background
+# 106 = Turquoise Background
 # =========================================================================
 
 export LS_COLORS="no=7:*=0:*.*.*=1:*LS_COLORS=1;3;4;7:*.dir_colors=2;3;4;7:di=1;3;4;7:ex=1;4:ln=3;4;9:so=0:pi=0:bd=0:cd=0:su=0:sg=0:tw=0:ow=0:*id_rsa=1;4;7:*.pub=3;4:*authorized_keys=3;4;7:*.hosts=3;4;7:*known_hosts=3;4;7:*rc=2;3:*history=2;3;9:*.bak=2;3;9:*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=3;4;7:*.gitconfig=2;4:*.conf=2;4:*config=2;4:*.yaml=2;4:*.properties=2;4:*README=7:*.md=7:*NOTES=7";
