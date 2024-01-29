@@ -233,6 +233,7 @@ function logs () {
 
 # TMUX --------------------------------------------------------------------
 alias tmux.config='(
+  tmux info
   echo && echo Server Options:
   tmux show-options -s
   echo && echo Global Options:
