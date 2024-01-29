@@ -160,10 +160,8 @@ fi
 # {{{ Options
 # =========================================================================
 # https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
-set -o nolog
-set -o notify
-set -o ignoreeof
-set -o noclobber
+set -o notify # terminated background jobs to be reported immediately
+set -o noclobber # Prevent redirection '>' from overwriting existing files
 
 # shell options -------------------------------------------------------
 # https://gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
@@ -226,7 +224,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 # =========================================================================
 # cursor ------------------------------------------------------------------
 # echo -ne '[5;0;0 q' see .inputrc
-echo -ne ']12;#FF0000\x7'
+# echo -ne ']12;#FF0000\x7'
 
 # prompt ------------------------------------------------------------------
 # Shell Prompt - for many examples, see:
