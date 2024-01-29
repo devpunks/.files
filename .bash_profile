@@ -137,7 +137,6 @@ alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|
 alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
-alias egrep='command grep -E $GREP_OPTS'
 alias grep='command grep $GREP_OPTIONS'
 alias fgrep='LC_ALL=C command grep -F $GREP_OPTS'
 
