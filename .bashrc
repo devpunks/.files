@@ -173,7 +173,6 @@ shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s extglob # Extended glob pattern matching
 shopt -s mailwarn # last access on login
 shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
-shopt -s direxpand # https://stackoverflow.com/questions/6438341/what-does-shopt-s-dirspell-do
 shopt -s checkjobs # on exit
 shopt -s checkhash # command exists in hashtable first
 shopt -s nocaseglob # https://stackoverflow.com/questions/25331100/bash-match-string-with-regex
