@@ -161,9 +161,9 @@ set show-mode-in-prompt on
 # 6 Bar (steady)
 # https://linuxgazette.net/137/anonymous.html
 # https://baeldung.com/linux/console-cursor-features
-set emacs-mode-string (emacs) \1[5 q\2
-set vi-ins-mode-string (vi INS) \1[3 q]12;red\x7\2\2
-set vi-cmd-mode-string (vi CMD) \1[2 q]12;magenta\x7\2
+set emacs-mode-string (emacs ⌨️) \1[5 q\2
+set vi-ins-mode-string (vi ✒️) \1[3 q]12;red\x7\2\2
+set vi-cmd-mode-string (vi 🔏) \1[2 q]12;magenta\x7\2
 
 # }}}
 
