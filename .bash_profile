@@ -126,6 +126,11 @@ alias which='command type -a'
 alias mkdir='command mkdir -pv'
 alias most='command most +u -s -t2'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
+
+# https://unix.stackexchange.com/questions/344213
+# https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
+alias dir='tree -d'
+alias vdir='command vdir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}'
 alias find='command find -type f -ls . -iname '*'"$1"'*''
 alias ls='command ls -AhklFG --color=auto --hyperlink=auto --group-directories-first'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
