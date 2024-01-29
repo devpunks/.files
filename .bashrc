@@ -166,6 +166,8 @@ set -o noclobber
 # https://unix.stackexchange.com/questions/32409/set-and-shopt-why-two/32446
 # https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
 shopt -s dotglob # https://unix.stackexchange.com/questions/40662
+# https://unix.stackexchange.com/questions/700199
+shopt -s globstar # https://linuxjournal.com/content/globstar-new-bash-globbing-option
 # shopt –s xpg_echo # https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
 shopt -s mailwarn # last access on login
 shopt -s extglob # Extended glob pattern matching
