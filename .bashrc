@@ -75,10 +75,6 @@ export CDPATH=".:$HOME" # https://www.theunixschool.com/2012/04/what-is-cdpath.h
 export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_node/Filename-Expansion.html
 export GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
 
-# https://www.baeldung.com/linux/bash-calculate-time-elapsed
-# https://www.cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
-export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
-
 # GIT ----------------------------------------------------------------------
 export GIT_EDITOR=vi
 export GIT_PAGER=most
