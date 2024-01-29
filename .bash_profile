@@ -137,6 +137,9 @@ alias ls='command ls -C -AhklFG --color=auto --hyperlink=auto --group-directorie
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
 
+# https://en.m.wikipedia.org/wiki/Named_pipe
+# https://stackoverflow.com/questions/4113986
+alias pipe='command mkfifo'
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 alias grep='command grep $GREP_OPTIONS'
 alias egrep='command grep -E $GREP_OPTS'
