@@ -138,6 +138,7 @@ alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directorie
 
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
 alias grep='command grep $GREP_OPTIONS'
+alias egrep='command grep -E $GREP_OPTS'
 alias fgrep='LC_ALL=C command grep -F $GREP_OPTS'
 
 alias delete='command rm -dIrv --preserve-root'
