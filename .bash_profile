@@ -216,7 +216,7 @@ alias ssadd='(
 #   keyscan(1), chroot(2), login.conf(5), moduli(5), sshd_config(5),
 #   inetd(8), sftp-server(8)
 # -X flag for Enable X11 forwarding
-alias ss='sshd -X -Dddd -p8022'
+alias ss='command sshd -X -Dddd -p8022'
 # https://www.ssh.com/academy/ssh/add-command
 alias ssh.add='echo adding ssh'
 
