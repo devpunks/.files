@@ -170,6 +170,8 @@ shopt -s dotglob # https://unix.stackexchange.com/questions/40662
 shopt -s globstar # https://linuxjournal.com/content/globstar-new-bash-globbing-option
 # shopt –s xpg_echo # https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
 shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
+shopt -s extglob # Extended glob pattern matching
+shopt -s mailwarn # last access on login
 shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s direxpand # https://stackoverflow.com/questions/6438341/what-does-shopt-s-dirspell-do
 shopt -s checkjobs # on exit
