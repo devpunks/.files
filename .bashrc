@@ -288,6 +288,9 @@ export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
 GREP_COLOR='1;4;38;5;13;48;5;235'
 export GREP_COLORS="ln=1;4;38;5;241:ms=${GREP_COLOR}:"
 
+# Truecolor test
+printf "\x1b[38;2;255;100;0mTRUECOLOR ${COLORTERM}\x1b[0m\n"
+
 # https://the.exa.website/docs/colour-themes
 export EXA_COLORS="hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:sn=1;4;38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;4;38;5;2:"
 
