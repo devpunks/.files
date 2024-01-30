@@ -256,7 +256,6 @@ PS1_RESET='\001$(tput sgr0)\002'
 # PS1_AT='\001$(tput sgr0)\002@'"$PS1_RESET"
 # PS1_HOST='\001$(tput setaf 2)\002\H'"$PS1_RESET"
 # PS1_COLON='\001$(tput sgr0)\002:'"$PS1_RESET"
-# PS1_PATH='\001$(tput setaf 3)\002\w'"$PS1_RESET"
 #
 
 PS1_DATE="$(tput dim)$(tput setaf 5)\D{%H:%M:%S}""$PS1_RESET"
@@ -265,6 +264,7 @@ PS1_AT='$(tput sgr0)@'"$PS1_RESET"
 PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
 PS1_COLON='$(tput sgr0):'"$PS1_RESET"
 
+PS1_PATH="$( tput setaf 3 )\w$PS1_RESET"
 # PS1_GIT='$(__git_ps1 " (%s)")'"$PS1_RESET"
 PS1_PROMPT=$(tput rev)💲$PS1_RESET
 
