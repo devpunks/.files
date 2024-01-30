@@ -53,7 +53,7 @@ export CRON_TZ=$TZ
 # https://unix.stackexchange.com/questions/27588
 # https://unix.stackexchange.com/questions/640495
 # https://www.theunixschool.com/2012/09/ignoreeof-prevent-terminal-close-user-logout.html
-export IGNOREEOF=2  # set -o ignoreeof (Ksh)
+export IGNOREEOF=10 # set -o ignoreeof
 
 export HOSTFILE="$HOME/.hosts"
 
