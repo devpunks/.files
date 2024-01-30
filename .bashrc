@@ -264,7 +264,6 @@ PS1_USER='$(tput setaf 6)\u'"$PS1_RESET"
 PS1_AT='$(tput sgr0)@'"$PS1_RESET"
 PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
 PS1_COLON='$(tput sgr0):'"$PS1_RESET"
-PS1_PATH='$(tput setaf 3)\w'"$PS1_RESET"
 
 # PS1_GIT='$(__git_ps1 " (%s)")'"$PS1_RESET"
 PS1_PROMPT=$(tput rev)💲$PS1_RESET
