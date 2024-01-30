@@ -266,11 +266,11 @@ PS1_COLON='$(tput sgr0):'"$PS1_RESET"
 PS1_DATE="\001$(tput dim)$(tput setaf 5)\D{%H:%M:%S}$PS1_RESET"
 PS1_PATH="\001$(tput setaf 3)\w${PS1_RESET}\002"
 # PS1_GIT='$(__git_ps1 " (%s)")'"$PS1_RESET"
-PS1_PROMPT=$(tput rev)💲$PS1_RESET
+PS1_PROMPT="\001$(tput rev)💲$PS1_RESET\002"
 
 # export PS1="\001\n$PS1_DATE$PS1_USER$PS1_AT$PS1_HOST$PS1_COLON$PS1_PATH$PS1_PROMPT\002"
 
-export PS1="\001$PS1_PROMPT\002"
+export PS1="\001${PS1_DATE}${PS1_PROMPT}\002"
 
 # }}}
 
