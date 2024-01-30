@@ -133,6 +133,7 @@ alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-comman
 alias vdir='command vdir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}'
 alias find='command find -type f -ls . -iname '*'"$1"'*''
 alias ls='command ls -C -AhklFG --color=auto --hyperlink=auto --group-directories-first'
+alias branch='tree -d -L 4'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
 
