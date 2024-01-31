@@ -119,8 +119,59 @@ ibm
 # }}}
 #
 # =========================================================================
+# 256 ansi colors # Where N is a color code {0-256}
+# \e[38;5;Nm # foreground
+# \e[48;5;Nm # background
 
+# resets ------------------------------------------------------------------
+NC=$(tput sgr0) # No Color
 
-echo && echo 'devPunks😈studio .colors'
+# Format ------------------------------------------------------------------
+DIM=$(tput dim)
+BOLD=$(tput bold)
+REVERSE=$(tput rev)
+UNDERLINE=$(tput smul)
+
+# Colors ------------------------------------------------------------------
+BLACK=$(tput setaf 0)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
+YELLOW=$(tput setaf 3)
+BLUE=$(tput setaf 4)
+PURPLE=$(tput setaf 5)
+CYAN=$(tput setaf 6)
+WHITE=$(tput setaf 7)
+
+# (Light) Colors ----------------------------------------------------------
+# https://retrocomputing.stackexchange.com/questions/20043
+BLACK_LIGHT=$(tput setaf 8)
+RED_LIGHT=$(tput setaf 9)
+GREEN_LIGHT=$(tput setaf 10)
+YELLOW_LIGHT=$(tput setaf 11)
+BLUE_LIGHT=$(tput setaf 12)
+PURPLE_LIGHT=$(tput setaf 13) # MAGENTA
+CYAN_LIGHT=$(tput setaf 14)
+WHITE_LIGHT=$(tput setaf 15)
+MAGENTA=$PURPLE_LIGHT
+
+# background ----
+BG_BLACK=$(tput setab 0)
+BG_RED=$(tput setab 1)
+BG_GREEN=$(tput setab 2)
+BG_YELLOW=$(tput setab 3)
+BG_BLUE=$(tput setab 4)
+BG_MAGENTA=$(tput setab 5)
+BG_CYAN=$(tput setab 6)
+BG_WHITE=$(tput setab 7)
+
+# =========================================================================
+# https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
+[ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
+
+# =========================================================================
+
+echo && echo "I ${REVERSE}${MAGENTA}love${NC} devPunks .colors"
+
+echo
 
 # vim: foldmethod=marker
