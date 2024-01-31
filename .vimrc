@@ -601,9 +601,11 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
 " let character = strpart(getline('.'), col('.') -1, 1, 1 )
   let char = strpart(getline('.'), col('.')-1, 1, 1 )
   let index = char2nr( char )
-  let character = printf( '|⌨ %-2s|', char )
-  let decimal = printf( '\0d%-6d', index )
-  let hexadecimal = printf( '\0x%-5X', index )
+  let character = printf( '| %-2s|', char )
+  let decimal = printf( '\D%%%-6d', index )
+  " https://stackoverflow.com/questions/1273693
+  " https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
+  let hexadecimal = printf( 'U+%-8s' , printf( '%04X', index ) )
   let octal = printf( '\0o%-6o', index )
 
   return character..join( [ decimal, hexadecimal, octal ], ' ' )
