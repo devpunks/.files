@@ -43,7 +43,7 @@
 # {{{ Bindings
 # =========================================================================
 "\C-l":clear
-# RETURN: "\e\n"
+'RETURN': "\e\n"
 # "TAB":menu-complete
 # "TAB":complete # default
 "\C-x\C-r": re-read-init-file
