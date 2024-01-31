@@ -247,6 +247,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 #  - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
 # -------------------------------------------------------------------------
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
+export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
 # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
 #PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
