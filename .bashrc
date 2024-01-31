@@ -127,6 +127,10 @@ export LC_ALL=$LANG
 tput init
 setterm --resize
 
+# PLEASE NOTE:
+# Inside tmux TERM must be "screen", "tmux" "tmux-256color"
+# Outside, it should match your terminal
+# https://github.com/tmux/tmux/wiki/FAQ#what-is-term-and-what-does-it-do
 export TERM='xterm-256color'
 
 # Software Flow Control
