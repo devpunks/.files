@@ -357,7 +357,7 @@ set statusline+=%=
 " cursor column position
 set statusline+=%5(%4l⇩%)✖%-8.(⇨%-c%-V%)
 " Show Command
-set statusline+=\|%-2(%k%)
+set statusline+=\|%1.(%k%)
 " Show Control Character Value
 set statusline+=\|%-2(%S%)
 " Show Cursor Character Values
