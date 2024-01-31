@@ -246,7 +246,6 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 #  - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 #  - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
 # -------------------------------------------------------------------------
-export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 
 # export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
