@@ -28,6 +28,20 @@
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 #   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats
 #   - escapes vs. tput - https://unix.stackexchange.com/questions/274453
+#   - ANSI Escape Codes - https://en.m.wikipedia.org/wiki/ANSI_escape_code
+#   - TERM COLOR DISCUSSION - https://news.ycombinator.com/item?id=30483899
+#   - https://tuxthink.blogspot.com/2012/02/changing-font-and-background-of.html?m=1
+#
+# Note: Some control escape sequences, like \e for ESC, are not guaranteed
+# to work in all languages and compilers. It is recommended to use
+# the decimal 27, octal \033, or hex \x1B representation as escape code.
+
+# ANSI Escape Sequences ---------------------------------------------------
+# iCtrl-Key: 
+# Octal: \033
+# Unicode: \u001b
+# Hexadecimal: \x1B
+# Decimal: 27
 
 # =========================================================================
 # {{{ Color Codes
