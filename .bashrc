@@ -255,7 +255,6 @@ PS1_RESET='\[$(tput sgr0)\]'
 
 PS1_USER='$(tput setaf 6)\u'"$PS1_RESET"
 PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
-PS1_COLON='$(tput sgr0):'"$PS1_RESET"
 
 PS1_DATE="\001\D{%H:%M:%S}$PS1_RESET\002"
 PS1_PATH="\001$(tput setaf 3)\w$PS1_RESET\002"
