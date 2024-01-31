@@ -1,0 +1,72 @@
+#
+#                       88
+#                       888
+#                       888
+#       .d8888b .d88b.  888  .d88b.  888d888 .d8888b
+#      d88P"   d88""88b 888 d88""88b 888P"   88K
+#      888     888  888 888 888  888 888     "Y8888b.
+#  d8b Y88b.   Y88..88P 888 Y88..88P 888          X88
+#  Y8P  "Y8888P "Y88P"  888  "Y88P"  888      88888P'
+#
+#
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: .dircolors
+# Source: https://github.com/devpunks
+# Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: LS_COLORS configuration
+# -------------------------------------------------------------------------
+#
+#   - escapes vs. tput - https://unix.stackexchange.com/questions/274453
+
+# =========================================================================
+# {{{ Color Codes
+#   The 16-color feature is borrowed from IBM aixterm,
+#   which maps 16 codes each for foreground and background onto two ranges;
+# =========================================================================
+# Color Codes
+# foreground onto 30-37, and 90-97 ----------------------------------------
+# 30  = Black
+# 31  = Red
+# 32  = Green
+# 33  = Yellow
+# 34  = Blue
+# 35  = Purple
+# 36  = Cyan
+# 37  = Grey
+#
+# 90  = Dark Grey
+# 91  = Light Red
+# 92  = Light Green
+# 93  = Yellow
+# 94  = Light Blue
+# 95  = Light Purple
+# 96  = Turquoise
+#
+# background onto 40-47, and 100-107
+# 40  = Black Background
+# 41  = Red Background
+# 42  = Green Background
+# 43  = Yellow Background
+# 44  = Blue Background
+# 45  = Purple Background
+# 46  = Cyan Background
+# 47  = Grey Background
+#
+# 100 = Dark Grey Background
+# 101 = Light Red Background
+# 102 = Light Green Background
+# 103 = Yellow Background
+# 104 = Light Blue Background
+# 105 = Light Purple Background
+# 106 = Turquoise Background
+#
+# }}}
+#
+# =========================================================================
+
+
+echo && echo 'devPunks😈studio .colors'
+
+# vim: foldmethod=marker
