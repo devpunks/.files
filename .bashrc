@@ -290,10 +290,7 @@ export CLICOLOR=1 # https://stackoverflow.com/questions/41849875
 # https://github.com/microsoft/terminal/issues/11057
 export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
 
-# LS_COLORS
-[ -e $HOME/.dircolors ] && source $HOME/.dircolors
-
-# https://linuxcommando.blogspot.com/2007/10/grep-with-color-output.html
+# https://askubuntu.com/questions/1042234
 GREP_COLOR='1;4;38;5;13;48;5;235'
 export GREP_COLORS="ln=1;4;38;5;241:ms=${GREP_COLOR}:"
 
