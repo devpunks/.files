@@ -254,7 +254,6 @@ PS1_RESET='\[$(tput sgr0)\]'
 # PS1_ERROR='$(code=${?##0};echo ${code:+\001$(tput setaf 1)\002[${code}]\ })'"$PS1_RESET"
 
 PS1_USER='$(tput setaf 6)\u'"$PS1_RESET"
-PS1_AT='$(tput sgr0)@'"$PS1_RESET"
 PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
 PS1_COLON='$(tput sgr0):'"$PS1_RESET"
 
