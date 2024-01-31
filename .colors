@@ -166,12 +166,11 @@ BG_WHITE=$(tput setab 7)
 
 # =========================================================================
 # https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
-[ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
-
-# =========================================================================
+# [ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
+# LS_COLORS
+[ -e $HOME/.dircolors ] && source $HOME/.dircolors
 
 echo && echo "I ${REVERSE}${MAGENTA}love${NC} devPunks .colors"
-
 echo
 
 # vim: foldmethod=marker
