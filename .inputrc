@@ -160,13 +160,11 @@ set show-mode-in-prompt on
 # 2 Block (steady)
 # 3 Underline (blinking)
 # 4 Underline (steady)
-# 5 Bar (blinking)
-# 6 Bar (steady)
-# https://linuxgazette.net/137/anonymous.html
-# https://baeldung.com/linux/console-cursor-features
-set emacs-mode-string (emacs ⌨️) \1[5 q\2
-set vi-ins-mode-string 【vi  】\1[3 q]12;red\x7\2\2
-set vi-cmd-mode-string 【vi🔏】\1[2 q]12;blue\x7\2
+# 5 Bar (blinking) (xterm)
+# 6 Bar (steady) (xterm)
+set emacs-mode-string (emacs) \1\e[0m\e[5 q\2
+set vi-ins-mode-string 【vi  】\1\e]12;red\x7\2\1\e[3 q\2
+set vi-cmd-mode-string 【vi🔏】\1\e]12;blue\x7\2\1\e[2 q\2
 
 # }}}
 
