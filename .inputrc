@@ -68,8 +68,8 @@
 '\C-k': history-search-backward
 
 # <CTRL>+<N> and <CTRL>+<P> search
-"\C-p": history-search-backward
-"\C-n": history-search-forward
+'\C-p': history-search-backward
+'\C-n': history-search-forward
 
 # }}}
 
