@@ -249,9 +249,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
-# export PS1="📂  \[\033[0;95m\]\w\[\033[00m\]\$(git_branch) 👉  "
-#PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
-# export PS1="\[\u@\h:\w \]"
+PS1_RESET='\[$(tput sgr0)\]'
 # export PS1="\[non-printing terminal escapes here\e[0;0m\]\n\[\033[0;47m💲\e[0;0m\]"
 PS1_RESET='$(tput sgr0)'
 # PS1_ERROR='$(code=${?##0};echo ${code:+\001$(tput setaf 1)\002[${code}]\ })'"$PS1_RESET"
