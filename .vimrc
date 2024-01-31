@@ -692,6 +692,8 @@ endfunction
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
 nnoremap <Space> za
+nnoremap <leader>? :h index<CR>
+nnoremap <leader>/ :verbose map<CR>
 nnoremap <C-f> /
 nnoremap <C-z> <C-w>_ <C-w>|
 " (insert) Tab completion
