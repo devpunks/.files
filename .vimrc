@@ -602,6 +602,7 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   let char = strpart(getline('.'), col('.')-1, 1, 1 )
   let index = char2nr( char )
   let character = printf( '| %-2s|', char )
+  " https://www.utf8-chartable.de/
   " https://stackoverflow.com/questions/1273693
   " https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
   let hexadecimal = printf( 'U+%-8s' , printf( '%04X', index ) )
