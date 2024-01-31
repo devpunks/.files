@@ -51,9 +51,8 @@
 #   - https://retrocomputing.stackexchange.com/questions/20043
 #   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
 # =========================================================================
-# Color Codes
 # foreground onto 30-37, and 90-97 ----------------------------------------
-# 30  = Black
+# 30  = Black #000000
 # 31  = Red
 # 32  = Green
 # 33  = Yellow
@@ -65,10 +64,11 @@
 # 90  = Dark Grey
 # 91  = Light Red
 # 92  = Light Green
-# 93  = Yellow
+# 93  = Light Yellow
 # 94  = Light Blue
 # 95  = Light Purple
 # 96  = Turquoise
+# 97  = Light White
 #
 # background onto 40-47, and 100-107
 # 40  = Black Background
