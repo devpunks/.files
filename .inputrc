@@ -140,6 +140,8 @@ set completion-prefix-display-length 5
 
 # =========================================================================
 # {{{ Editing Mode
+# - https://linuxgazette.net/137/anonymous.html
+# - https://stackoverflow.com/questions/7888387
 # - https://unix.stackexchange.com/questions/112406
 # - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
 # - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
