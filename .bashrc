@@ -100,7 +100,6 @@ export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 # =========================================================================
 export LANG=en_US.UTF-8 # Locale override
 export LANGUAGE=en:fr:de  # LC_MESSAGES Override
-export LANG=en_US.UTF-8   # Locale override (from "C")
 export LC_ALL=$LANG
   # LC_TIME
   # LC_CTYPE
