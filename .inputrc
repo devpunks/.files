@@ -52,7 +52,7 @@
 # "\e[3;3~": kill-word
 
 # ctrl left, ctrl right fpr moving on the readline by word
-"\e[1;5C": forward-word
+'\e[1;5C': forward-word
 '\e[1;5D': backward-word
 
 # Use the text that has already been typed as the prefix for searching through
