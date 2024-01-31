@@ -25,19 +25,6 @@
 # http://bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors
 # https://github.com/coreutils/coreutils/blob/master/src/dircolors.c
 # https://github.com/RobertAudi/.dotfiles/blob/master/docs/cheat-sheets/ls-colors-cheat-sheet.txt
-#
-# Types -------------------------------------------------------------------
-# no Normal
-# fi File
-# di Directory
-# pi Fifo file
-# so Socket file
-# ln Symbolic Link
-# bd Block (buffered) special file
-# cd Character (unbuffered) special file
-# or Symbolic Link pointing to a non-existent file (orphan)
-# mi Non-existent file pointed to by a symbolic link (visible when you type ls -l)
-# ex File which is executable (ie. has 'x' set in permissions).
 
 # Style Codes -------------------------------------------------------------
 # 0 = Default Colour
