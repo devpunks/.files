@@ -261,6 +261,7 @@ PS1_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS1_RESET"
 PS1_GIT="\[$(tput rev)$(tput dim)\]$( __git_ps1 | sed -e 's/(\(.*\))/【🌵\1】/' )$PS1_RESET"
 PS1_PROMPT="\[$(tput rev)\]💲$PS1_RESET"
 
+PS1="${PS1_DATE} ${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 # }}}
 
 # =========================================================================
