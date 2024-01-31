@@ -872,6 +872,14 @@ syntax match Conceal /for/ conceal cchar=∀
 syntax match Conceal /in/ conceal cchar=∈
 syntax match Conceal "\<not in\>" conceal cchar=∉
 syntax match Conceal /assert/ conceal cchar=‼
+syntax match Conceal 'BEGIN' conceal cchar=︷
+syntax match Conceal 'END' conceal cchar=︸
+syntax match Conceal /fn/ conceal cchar=𝑓
+syntax match Conceal /def/ conceal cchar=𝑓
+syntax match Conceal /function/ conceal cchar=𝑓
+syntax match Conceal /lambda/ conceal cchar=λ
+syntax match Conceal /import/ conceal cchar=⬅
+syntax match Conceal '@import' conceal cchar=⬅
 
 syntax match Conceal /bool/ conceal cchar=𝔹
 syntax match Conceal /char/ conceal cchar=∁
