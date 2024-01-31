@@ -283,6 +283,9 @@ export PS1="\001$PS1_DATE$PS1_PROMPT\002"
 # {{{ COLORS
 #   - https://github.com/termstandard/colors
 # =========================================================================
+# LS_COLORS
+[ -e $HOME/.dircolors ] && source $HOME/.dircolors
+
 export CLICOLOR=1 # https://stackoverflow.com/questions/41849875
 # https://github.com/microsoft/terminal/issues/11057
 export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
