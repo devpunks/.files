@@ -295,12 +295,6 @@ export EXA_COLORS="
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
-# Slightly modified from: https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt
-# # https://misc.flogisoft.com/bash/tip_colors_and_formatting
-# Show current git branch in command line
-git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (🐙 \1)/'
-}
 
 # }}}
 
