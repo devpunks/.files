@@ -871,8 +871,6 @@ syntax match Conceal /false/ conceal cchar=⊥
 syntax match Conceal /for/ conceal cchar=∀
 syntax match Conceal /in/ conceal cchar=∈
 syntax match Conceal "\<not in\>" conceal cchar=∉
-syntax match Conceal /=/ conceal cchar=≝
-syntax match Conceal /->/ conceal cchar=→
 syntax match Conceal /assert/ conceal cchar=‼
 
 syntax match Conceal /bool/ conceal cchar=𝔹
