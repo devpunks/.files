@@ -252,7 +252,7 @@ tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrappi
 #PS1="\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]"
 # export PS1="\[\u@\h:\w \]"
 # export PS1="\[non-printing terminal escapes here\e[0;0m\]\n\[\033[0;47m💲\e[0;0m\]"
-PS1_RESET='\001$(tput sgr0)\002'
+PS1_RESET='$(tput sgr0)'
 # PS1_ERROR='$(code=${?##0};echo ${code:+\001$(tput setaf 1)\002[${code}]\ })'"$PS1_RESET"
 
 # PS1_DATE='\001$(tput setaf 5)\002\D{%H:%M:%S} '"$PS1_RESET"
