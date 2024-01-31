@@ -268,8 +268,9 @@ PS1="${PS1_DATE} ${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 # {{{ COLORS
 #   - https://github.com/termstandard/colors
 # =========================================================================
-# LS_COLORS
-[ -e $HOME/.dircolors ] && source $HOME/.dircolors
+# .colors
+[ -e $HOME/.dircolors ] && source $HOME/.colors
+
 
 export CLICOLOR=1 # https://stackoverflow.com/questions/41849875
 # https://github.com/microsoft/terminal/issues/11057
