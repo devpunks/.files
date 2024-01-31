@@ -251,7 +251,6 @@ export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
 PS1_RESET='\[$(tput sgr0)\]'
 # export PS1="\[non-printing terminal escapes here\e[0;0m\]\n\[\033[0;47m💲\e[0;0m\]"
-PS1_RESET='$(tput sgr0)'
 # PS1_ERROR='$(code=${?##0};echo ${code:+\001$(tput setaf 1)\002[${code}]\ })'"$PS1_RESET"
 
 # PS1_DATE='\001$(tput setaf 5)\002\D{%H:%M:%S} '"$PS1_RESET"
