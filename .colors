@@ -18,6 +18,15 @@
 # Description: Color configuration
 # -------------------------------------------------------------------------
 #
+#   - Benchmark - https://imgur.com/xIyuaYt
+#   - https://ditig.com/256-colors-cheat-sheet
+#   - https://stackoverflow.com/questions/4842424
+#   - https://stackoverflow.com/questions/27159322
+#   - https://unix.stackexchange.com/questions/274453
+#   - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
+#   - https://misc.flogisoft.com/bash/tip_colors_and_formatting
+#   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
+#   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats
 #   - escapes vs. tput - https://unix.stackexchange.com/questions/274453
 
 # =========================================================================
