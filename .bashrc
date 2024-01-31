@@ -111,8 +111,8 @@ export LC_ALL=$LANG
 
 # =========================================================================
 # {{{ Terminal
+#  tty - https://linusakesson.net/programming/tty
 #  stty - https://computerhope.com/unix/ustty.htm
-#  tty  - https://linusakesson.net/programming/tty/
 #  setterm
 #    - setterm --reverse on # reverse terminal coloring
 #    - https://man7.org/linux/man-pages/man1/setterm.1.html
