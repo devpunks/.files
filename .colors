@@ -15,7 +15,7 @@
 # Source: https://github.com/devpunks
 # Author: Ahmid-Ra (github.com/snuggs)
 # Maintainer: devPunks <https://github.com/devpunks>
-# Description: LS_COLORS configuration
+# Description: Color configuration
 # -------------------------------------------------------------------------
 #
 #   - escapes vs. tput - https://unix.stackexchange.com/questions/274453
