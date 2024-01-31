@@ -67,7 +67,8 @@
 # 104 = Light Blue Background
 # 105 = Light Purple Background
 # 106 = Turquoise Background
-# =========================================================================
+#
+# Types -------------------------------------------------------------------
 # TODO: Works TOO good :ec=31:rs=31:lc=0:rc=0
 export LS_COLORS="bd=31:ca=31:cd=31:cl=31:do=31:mh=31:mi=31:or=31:sg=31:st=31:su=31:no=7:fi=1:*=1:di=1;3;4;7;4:ln=3;4;9:pi=1;4;5:so=1;4;5:ow=30;42:tw=30;43:ex=1;4:*LS_COLORS=2;3;4;7:*.dircolors=2;3;4;7:*.bash=1;4:*.sh=1;4:*id_rsa=1;4;7:*.pem=1;4;7:*.pid=31:*.pub=3;4:*authorized_keys=3;4;7:*hosts=3;4;7:*.hosts=3;4;7:*known_hosts=3;4;7:*rc=2;3:*history=2;3;9:*.bak=2;3;9:*~=2;3;9:*.swp=2;3;9:*.dpkg-old=2;3;9:*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=2;4:*.gitconfig=2;4:*.conf=2;4:*config=2;4:*.yml=2;4:*.yaml=2;4:*.properties=2;4:*README=7:*.md=7:*.markdown=7:*NOTES=7:*.h=1;3:*.sample=3";
 
