@@ -46,7 +46,7 @@
 'RETURN': '\e\n'
 # "TAB":menu-complete
 # "TAB":complete # default
-"\C-x\C-r": re-read-init-file
+'\C-x\C-r': re-read-init-file
 
 # Use Alt/Meta + Delete to delete the preceding word
 # "\e[3;3~": kill-word
