@@ -100,7 +100,7 @@
 # 106 = Turquoise Background
 # 107 = Light White Background
 
-function ibm () {
+function 16Colors () {
   T='gYw'   # The test text
 
   printf "\n "
