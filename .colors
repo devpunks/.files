@@ -161,7 +161,7 @@ CYAN_LIGHT=$(tput setaf 14)
 WHITE_LIGHT=$(tput setaf 15)
 MAGENTA=$PURPLE_LIGHT
 
-# background ----
+# Backgrounds -------------------------------------------------------------
 BG_BLACK=$(tput setab 0)
 BG_RED=$(tput setab 1)
 BG_GREEN=$(tput setab 2)
@@ -170,6 +170,18 @@ BG_BLUE=$(tput setab 4)
 BG_MAGENTA=$(tput setab 5)
 BG_CYAN=$(tput setab 6)
 BG_WHITE=$(tput setab 7)
+
+# (Light) Backgrounds -----------------------------------------------------
+BG_BLACK_LIGHT=$(tput setab 8)
+BG_RED_LIGHT=$(tput setab 9)
+BG_GREEN_LIGHT=$(tput setab 10)
+BG_YELLOW_LIGHT=$(tput setab 11)
+BG_BLUE_LIGHT=$(tput setab 12)
+BG_MAGENTA_LIGHT=$(tput setab 13)
+BG_CYAN_LIGHT=$(tput setab 14)
+BG_WHITE_LIGHT=$(tput setab 15)
+
+# }}}
 
 # =========================================================================
 # https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
