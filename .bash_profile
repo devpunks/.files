@@ -226,6 +226,9 @@ open () {
   # apk
   [[ -f $1 ]] && [[ -x $1 ]] && termux-open $1
 
+  # file
+  [[ -f $1 ]] && termux-open $1
+
   # url
   [[ $1 == http* ]] && termux-open-url "$1"
 
