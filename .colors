@@ -228,9 +228,17 @@ function 256Colors () {
       "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
   done
 
-  echo && echo ' (extended) TrueColor'
-  for n in {16..255} ; do
-    printf " ${bg}%sm%3d\e[0m" "$n" "$n"
+  echo && echo ' (extended) 216 Colors'
+  for n in {16..231} ; do
+    printf " ${bg}%sm %3d \e[0m" "$n" "$n"
+    if (( ( n > 15 ) && (n-15) % $columns == 0 ))
+        then printf "\n";
+    fi
+  done
+
+  echo && echo ' GrayScale Colors'
+  for n in {232..255} ; do
+    printf " ${bg}%sm %3d \e[0m" "$n" "$n"
     if (( ( n > 15 ) && (n-15) % $columns == 0 ))
         then printf "\n";
     fi
