@@ -2,6 +2,8 @@
 
 ########################################################
 # TERMUX - https://wiki.termux.com/wiki/Postgresql
+#
+# - https://thenewstack.io/a-cheat-sheet-to-database-access-control-postgresql/
 
 # PostgreSQL 16.x - https://www.postgresql.org/about/news/postgresql-16-released-2715/
 declare -xr PGVERSION=15
