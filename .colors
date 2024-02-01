@@ -184,10 +184,80 @@ BG_WHITE_LIGHT=$(tput setab 15)
 # }}}
 
 # =========================================================================
-# https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
-# [ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
-# LS_COLORS
-[ -e $HOME/.dircolors ] && source $HOME/.dircolors
+# {{{ 256-Color Codes
+#
+# 256 ansi colors # Where N is a color code {0-256}
+# \e[38;5;Nm # foreground
+# \e[48;5;Nm # background
+# =========================================================================
+function 256Colors () {
+  # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+  local bg="\e[48;5;"
+  local fg="\e[38;5;"
+  local columns=6
+
+  echo && echo ' TERM 8bit'
+  printf "  #  %-12s  %-12s\n" Foreground Background
+  for n in {0..7} ; do
+    printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
+      "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
+  done
+
+  echo && echo ' IBM 16bit'
+  printf "  #  %-12s  %-12s\n" Foreground Background
+  for n in {8..15} ; do
+    printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
+      "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
+  done
+
+  echo && echo ' (extended) TrueColor'
+  for n in {16..255} ; do
+    printf " ${bg}%sm%3d\e[0m" "$n" "$n"
+    if (( ( n > 15 ) && (n-15) % $columns == 0 ))
+        then printf "\n";
+    fi
+  done
+} # 256Colors
+
+# }}}
+
+# =========================================================================
+# {{{ Functions
+# =========================================================================
+function colors () {
+  echo && echo "Colors: $(tput colors)"
+  printf "\n\$LS_COLORS:\n$LS_COLORS\n"
+  echo && dircolors --print-ls-colors
+  echo && 16Colors
+  echo && 256Colors
+  echo && spectrum
+  echo
+}
+
+function spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
+  # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
+  echo
+  awk \
+    -v term_cols="${width:-$( tput cols || echo 80 )}" \
+    -v term_lines="${height:-$( tput lines || echo 1 )}" \
+    'BEGIN{
+      s="/\\";
+      total_cols=term_cols*term_lines;
+      for (colnum = 0; colnum<total_cols; colnum++) {
+          r = 255-(colnum*255/total_cols);
+          g = (colnum*510/total_cols);
+          b = (colnum*255/total_cols);
+          if (g>255) g = 510-g;
+          printf "\033[48;2;%d;%d;%dm", r,g,b;
+          printf "\033[38;2;%d;%d;%dm", 255-r,255-g,255-b;
+          printf "%s\033[0m", substr(s,colnum%2+1,1);
+          if (colnum%term_cols==term_cols) printf "\n";
+      }
+      printf "\n";
+    }' # BEGIN
+}
+
+# }}}
 
 echo && echo "I ${REVERSE}${MAGENTA}love${NC} devPunks .colors"
 echo
