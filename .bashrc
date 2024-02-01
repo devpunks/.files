@@ -266,7 +266,6 @@ PS1="${PS1_DATE} ${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 
 # =========================================================================
 # {{{ COLORS
-#   - https://github.com/termstandard/colors
 # =========================================================================
 # .colors
 [ -e $HOME/.dircolors ] && source $HOME/.colors
