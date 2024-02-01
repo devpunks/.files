@@ -273,14 +273,6 @@ PS1="${PS1_DATE} ${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 # }}}
 
 # =========================================================================
-# {{{ COLORS
-# =========================================================================
-# .colors
-[ -e $HOME/.dircolors ] && source $HOME/.colors
-
-# }}}
-
-# =========================================================================
 # {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
