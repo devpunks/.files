@@ -57,9 +57,9 @@ export EXA_COLORS="
 # LS_COLORS
 [ -e $HOME/.dircolors ] && source $HOME/.dircolors
 
-
 # =========================================================================
 # {{{{ ANSI Escape Sequences
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#8-bit
 # =========================================================================
 # iCtrl-Key: 
 # Octal: \033
