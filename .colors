@@ -116,8 +116,6 @@ export EXA_COLORS="
 # [107m - Off White Background
 
 function 16Colors () {
-  T='gYw'   # The test text
-
   printf "\n "
   printf "%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
     '  40m' '  41m' '  42m' '  43m' '  44m' '  45m' '  46m' '  47m'
