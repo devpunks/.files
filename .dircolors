@@ -69,18 +69,34 @@
 # 106 = Turquoise Background
 #
 # Types -------------------------------------------------------------------
-# TODO: Works TOO good :ec=31:rs=31:lc=0:rc=0
-# no Normal
-# fi File
-# di Directory
-# pi Fifo file
-# so Socket file
-# ln Symbolic Link
-# bd Block (buffered) special file
-# cd Character (unbuffered) special file
-# or Symbolic Link pointing to a non-existent file (orphan)
-# mi Non-existent file pointed to by a symbolic link (visible when you type ls -l)
-# ex File which is executable (ie. has 'x' set in permissions).
+# TODO: Works TOO good :ec=31:rs=31:lc=0:rc=0:cl=3
+#   - https://github.com/coreutils/coreutils/blob/master/src/ls.c#L592-L606
+#
+# no - Normal
+# cl - C_CLR_TO_EOL - see grep completion
+#
+# Filetype Indicators ----
+# bd - C_BLK - Block (buffered) special file
+# cd - C_CHR - Character (unbuffered) special file
+# di - C_DIR - Directory
+# ex - C_EXEC - File which is executable (ie. has 'x' set in permissions).
+# pi - C_FIFO - Fifo file
+# fi - C_FILE - File
+# ln - C_LINK - Symbolic Link
+# or - C_ORPHAN - Symbolic Link pointing to a non-existent file (orphan)
+# so - C_SOCK - Socket file
+#
+# Links ------------------
+# ca - C_CAP
+# do - C_DOOR
+# mh - C_MULTIHARDLINK
+# mi - C_MISSING - Symbolic link to non-existent file (visible when you type ls -l)
+#
+# Permittable ------------
+# sg - C_SETGID
+# su - C_SETUID
+# st - C_STICKY
+#
 # =========================================================================
 
 export LS_COLORS="bd=101:ca=101:cd=101:cl=101:do=101:mh=101:mi=101:or=101:sg=101:st=101:su=101:no=7:fi=1:*=1:di=1;3;4;7;4:ln=3;4;9:pi=1;4;5:so=1;4;5:ow=30;42:tw=30;43:ex=1;4:*LS_COLORS=2;3;4;7:*.dircolors=2;3;4;7:*.bash=1;4:*.sh=1;4:*id_rsa=1;4;7:*.pem=1;4;7:*.pid=101:*.pub=3;4:*authorized_keys=3;4;7:*hosts=3;4;7:*.hosts=3;4;7:*known_hosts=3;4;7:*rc=2;3:*history=2;3;9:*.bak=2;3;9:*~=2;3;9:*.swp=2;3;9:*.dpkg-old=2;3;9:*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=2;4:*.gitconfig=2;4:*.conf=2;4:*config=2;4:*.yml=2;4:*.yaml=2;4:*.toml=2;4:*.properties=2;4:*README=7:*.md=7:*.markdown=7:*NOTES=7:*.h=1;3:*.sample=3";
