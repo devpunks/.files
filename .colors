@@ -254,15 +254,11 @@ function 256Colors () {
 # 48;2;ʀ;ɢ;ʙ │Background - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
 #             for closest supported color (non-GUI TTY has only 16 colors!)
 # =========================================================================
-function colors () {
-  echo && echo "Colors: $(tput colors)"
-  printf "\n\$LS_COLORS:\n$LS_COLORS\n"
-  echo && dircolors --print-ls-colors
-  echo && 16Colors
-  echo && 256Colors
-  echo && spectrum
-  echo
-}
+# https://github.com/microsoft/terminal/issues/11057
+export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
+
+# Truecolor test
+printf "\x1b[38;2;255;100;0mTRUECOLOR ${COLORTERM}\x1b[0m\n"
 
 function spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
   # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
