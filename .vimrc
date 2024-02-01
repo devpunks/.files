@@ -85,7 +85,12 @@ endif
 " =========================================================================
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
-" set path+=$PWD/** " slowwwwwwwwwwwwwwwwwwwwwwww
+let &path   = '.,'
+let &path ..= $HOME..'/**,'
+" Check for TERMUX $PREFIX
+let &path ..= ( exists('$PREFIX') ? $PREFIX : '/usr' )..'/include/**'
+let &path ..= ',,'
+
 set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
 
 " https://vim.fandom.com/wiki/Folding
