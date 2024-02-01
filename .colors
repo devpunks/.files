@@ -203,8 +203,10 @@ BG_WHITE_LIGHT=$(tput setab 15)
 # {{{ 256-Color Codes
 #
 # 256 ansi colors # Where N is a color code {0-256}
-# \e[38;5;Nm # foreground
-# \e[48;5;Nm # background
+# 38;5;n  │Foreground - Replace ɴ with value from 256-color chart below
+#         │for closest supported color (non-GUI TTY has only 16 colors!)
+# 48;5;n  │Background - Replace ɴ with value from 256-color chart below
+#         │for closest supported color (non-GUI TTY has only 16 colors!)
 # =========================================================================
 function 256Colors () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
