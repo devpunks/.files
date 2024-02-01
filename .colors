@@ -52,6 +52,8 @@
 # Hexadecimal: \x1B
 # Decimal: 27
 
+# }}}
+
 # =========================================================================
 # {{{ IBM aixterm,16-Color Codes
 #   The 16-color feature is borrowed from IBM aixterm,
