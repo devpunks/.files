@@ -128,13 +128,13 @@ function 16Colors () {
     '  34m' '1;34m' '  35m' '1;35m' '  36m' '1;36m' '  37m' '1;37m' \
     '  90m' '1;90m' '  91m' '1;91m' '  92m' '1;92m' '  93m' '1;93m' \
     '  94m' '1;94m' '  95m' '1;95m' '  96m' '1;96m' '  97m' '1;97m';
-      do FG=${FGs// /}
-        for BG in \
-          40m 41m 42m 43m 44m 45m 46m 47m \
-          100m 101m 102m 103m 104m 105m 106m 107m;
-            do printf "\033[$BG\033[$FG %5s \033[0m" $FG;
-        done
-      echo;
+    do FG=${FGs// /}
+      for BG in \
+        40m 41m 42m 43m 44m 45m 46m 47m \
+        100m 101m 102m 103m 104m 105m 106m 107m;
+          do printf "\033[$BG\033[$FG %5s \033[0m" $FG;
+      done
+    echo;
   done
 } # 16Colors
 
