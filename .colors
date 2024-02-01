@@ -31,6 +31,7 @@
 #   - ANSI Escape Codes - https://en.m.wikipedia.org/wiki/ANSI_escape_code
 #   - TERM COLOR DISCUSSION - https://news.ycombinator.com/item?id=30483899
 #   - https://tuxthink.blogspot.com/2012/02/changing-font-and-background-of.html?m=1
+#   - https://unix.stackexchange.com/questions/755954/how-does-a-terminal-produce-accurate-colors
 #
 # Note: Some control escape sequences, like \e for ESC, are not guaranteed
 # to work in all languages and compilers. It is recommended to use
