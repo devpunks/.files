@@ -123,9 +123,7 @@ function 16Colors () {
         done
       echo;
   done
-}
-
-ibm
+} # 16Colors
 
 # }}}
 #
