@@ -695,7 +695,7 @@ nnoremap <Space> za
 nnoremap <leader>? :h index<CR>
 nnoremap <leader>/ :verbose map<CR>
 nnoremap <C-f> /
-nnoremap <C-z> <C-w>_ <C-w>|
+nnoremap <C-z> <C-w>_ \| <C-w>|
 " (insert) Tab completion
 inoremap <Tab> <C-n>
 " (normal) [TAB] Next Tab
