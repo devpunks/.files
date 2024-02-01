@@ -78,14 +78,14 @@ export EXA_COLORS="
 #   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
 # =========================================================================
 # foreground onto 30-37, and 90-97 ----------------------------------------
-# 30  = Black #000000
-# 31  = Red
-# 32  = Green
-# 33  = Yellow
-# 34  = Blue
-# 35  = Purple
-# 36  = Cyan
-# 37  = Grey
+# [30m - Black
+# [31m - Red
+# [32m - Green
+# [33m - Yellow
+# [34m - Blue
+# [35m - Purple
+# [36m - Cyan
+# [37m - Grey
 #
 # 90  = Dark Grey
 # 91  = Light Red
