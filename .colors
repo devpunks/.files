@@ -248,7 +248,11 @@ function 256Colors () {
 # }}}
 
 # =========================================================================
-# {{{ Functions
+# {{{ 24-Bit True Color
+# 38;2;ʀ;ɢ;ʙ │Foreground - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
+#             for closest supported color (non-GUI TTY has only 16 colors!)
+# 48;2;ʀ;ɢ;ʙ │Background - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
+#             for closest supported color (non-GUI TTY has only 16 colors!)
 # =========================================================================
 function colors () {
   echo && echo "Colors: $(tput colors)"
