@@ -493,8 +493,6 @@ function term {
   echo "\nSize \033[3mROWS\033[23mX\033[3mCOLUMNS\033[23m: $(stty size | tr " " "x")"
   echo && [[ -n $TMUX ]] && echo "TMUX INFO:" && tmux info
   echo && echo "TERM=${TERM} $( tput -V )" && toe
-  echo && echo "Bindings \033[3m( see ~/.inputrc )\033[23m & alias shortcuts"
-  shortcuts
   echo && echo "stty: $(stty -g)" && stty -a
   echo && infocmp -l # terminfo description
   echo && infocmp -lCr # termcap description
