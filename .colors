@@ -221,7 +221,7 @@ function 256Colors () {
       "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
   done
 
-  echo && echo ' IBM 16bit'
+  echo && echo ' High-Intensity Colors'
   printf "  #  %-12s  %-12s\n" Foreground Background
   for n in {8..15} ; do
     printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
