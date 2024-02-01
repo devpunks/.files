@@ -106,14 +106,14 @@ export EXA_COLORS="
 # [46m - Cyan Background
 # [47m - Grey Background
 #
-# 100 = Dark Grey Background
-# 101 = Light Red Background
-# 102 = Light Green Background
-# 103 = Yellow Background
-# 104 = Light Blue Background
-# 105 = Light Purple Background
-# 106 = Turquoise Background
-# 107 = Off White Background
+# [100m - Dark Grey Background
+# [101m - Light Red Background
+# [102m - Light Green Background
+# [103m - Yellow Background
+# [104m - Light Blue Background
+# [105m - Light Purple Background
+# [106m - Turquoise Background
+# [107m - Off White Background
 
 function 16Colors () {
   T='gYw'   # The test text
