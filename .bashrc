@@ -271,7 +271,6 @@ PS1="${PS1_DATE} ${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 # .colors
 [ -e $HOME/.dircolors ] && source $HOME/.colors
 
-
 export CLICOLOR=1 # https://stackoverflow.com/questions/41849875
 # https://github.com/microsoft/terminal/issues/11057
 export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
