@@ -87,14 +87,14 @@ export EXA_COLORS="
 # [36m - Cyan
 # [37m - Grey
 #
-# 90  = Dark Grey
-# 91  = Light Red
-# 92  = Light Green
-# 93  = Light Yellow
-# 94  = Light Blue
-# 95  = Light Purple
-# 96  = Turquoise
-# 97  = Off White
+# [90m - Dark Grey
+# [91m - Light Red
+# [92m - Light Green
+# [93m - Light Yellow
+# [94m - Light Blue
+# [95m - Light Purple
+# [96m - Turquoise
+# [97m - Off White
 #
 # background onto 40-47, and 100-107
 # 40  = Black Background
