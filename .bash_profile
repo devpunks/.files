@@ -187,7 +187,7 @@ alias tmux.config='(
 # {{{ Git Aliases
 # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
 alias ga='git add -p'
-alias gb='git branch'
+alias gb='git -c pager.branch=false branch -a'
 alias gc='git commit --message '
 alias gd='git diff'
 alias gg='git grep --break --heading'
