@@ -39,6 +39,8 @@
 # =========================================================================
 # {{{ Imports
 # =========================================================================
+# https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
+# [[ -z "$PS1" ]] && exit
 # .colors
 [ -e $HOME/.dircolors ] && source $HOME/.colors
 
