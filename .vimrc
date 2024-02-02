@@ -485,6 +485,7 @@ augroup END
 fun! s:DetectNode()
     if getline(1) =~ 'node'
         set filetype=javascript
+        echom 'Detected node'
     endif
 endfun
 
