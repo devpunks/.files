@@ -134,10 +134,10 @@
 #  The first color given is the foreground; the second is the background.
 #  The position of the attribute, if any, doesn't matter.
 [color "branch"]
-  local = 13
-  remote = dim italic 240
-  plain = bold reverse 10
-  current = bold 13
+# local = 13
+  remote = dim italic
+  plain = bold reverse
+  current = bold
 
 [color "showbranch"]
 
