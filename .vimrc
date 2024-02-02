@@ -483,7 +483,7 @@ augroup END
 "   - https://www.simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
 fun! s:DetectNode()
-    if getline(1) == '#!/usr/bin/env node'
+    if getline(1) =~ 'node'
         set filetype=javascript
     endif
 endfun
