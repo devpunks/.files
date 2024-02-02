@@ -479,6 +479,18 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
+" Nodejs
+"   - https://www.simplified.guide/vim/auto-complete-javascript
+" -------------------------------------------------------------------------
+fun! s:DetectNode()
+    if getline(1) == '#!/usr/bin/env node'
+        set filetype=javascript
+    endif
+endfun
+
+autocmd BufNewFile,BufRead * call s:DetectNode()
+
+" -------------------------------------------------------------------------
 " Ruby
 "   - https://stackoverflow.com/questions/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
 " -------------------------------------------------------------------------
