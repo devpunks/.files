@@ -70,6 +70,7 @@ export IGNOREEOF=10 # set -o ignoreeof
 # https://gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-HOSTFILE
 export HOSTFILE="$HOME/.hosts"
 
+# https://gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-INPUTRC
 export INPUTRC="$HOME/.inputrc"
 
 if [ -n "${PREFIX}" ]; then # TERMUX
