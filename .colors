@@ -46,6 +46,11 @@ export GREP_COLORS="
   :fn=1;4:se=1:ln=1;2;3:sl=2;3;9:cx=2;3;9:ms=0;1;4;7:mc=0;1;4;7:mt=0;1;4;7:bn=31:
 "
 
+# LS_COLORS
+[ -e $HOME/.dircolors ] && source $HOME/.dircolors
+# https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
+# [ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
+
 # https://the.exa.website/docs/colour-themes
 export EXA_COLORS="
   hd=1;4;38;5;13;48;5;8:sb=1;4;38;5;13:
