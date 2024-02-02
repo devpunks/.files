@@ -44,10 +44,6 @@
 # .colors
 [ -e $HOME/.dircolors ] && source $HOME/.colors
 
-# }}}
-
-# =========================================================================
-# {{{ Exports
 # for rc in ~in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
 #   # (r)un (c)omm(ands) - https://superuser.com/questions/144339
 #   echo Sourcing ~/.bash run commands \(where available\)
