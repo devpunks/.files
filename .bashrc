@@ -273,7 +273,7 @@ PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
 PS1_DATE="\[$(tput smul)\]\D{%H:%M:%S}$PS1_RESET"
 PS1_JOBS="\[$(tput bold)\]🔧\j$PS1_RESET"
 PS1_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS1_RESET"
-PS1_GIT="\[$(tput rev)$(tput dim)\]$( __git_ps1 | sed -e 's/(\(.*\))/【🌵\1】/' )$PS1_RESET"
+PS1_GIT="\[$(tput rev)$(tput bold)$(tput dim)\]$( __git_ps1 | sed -e 's/(\(.*\))/【🌵\1】/' )$PS1_RESET"
 PS1_PROMPT="\[$(tput rev)\]💲$PS1_RESET"
 
 PS1="${PS1_DATE} ${PS1_JOBS} ${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
