@@ -61,7 +61,7 @@ export VISUAL=$EDITOR
 
 # https://gnu.org/software/libc/manual/html_node/TZ-Variable.html
 export TZ='Etc/UTC'
-export CRON_TZ=$TZ
+export CRON_TZ=$TZ # https://devicetests.com/set-timezone-crontab
 
 # https://unix.stackexchange.com/questions/27588
 # https://unix.stackexchange.com/questions/640495
