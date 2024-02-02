@@ -66,7 +66,11 @@ alias find='command find -type f -iname'
 alias ls='command ls -C -AhklFG --color=auto --hyperlink=auto --group-directories-first'
 alias branch='tree -d -L 4'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
-alias list='command exa -ahlFT --git --grid --icons --level=2 --group-directories-first -I ".git|log|node_modules|storage"'
+alias list='
+  command exa -ahlFT --git --grid --icons --level=2 \
+    --group-directories-first -I ".git|log|node_modules|storage" \
+  && weigh
+'
 
 # https://en.m.wikipedia.org/wiki/Named_pipe
 # https://stackoverflow.com/questions/4113986
@@ -393,6 +397,11 @@ weigh () {
     ncdu -2 -e --color=dark-bg \
       $hide -- "$location"
 
+  weight
+}
+
+function weight () {
+  local location=`realpath ${1:-.}`
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
   echo && echo # https://redhat.com/sysadmin/linux-df-command
   df -ah -- "$location"
