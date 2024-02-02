@@ -482,14 +482,13 @@ augroup END
 " Nodejs
 "   - https://www.simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
+autocmd BufNewFile,BufRead * call s:DetectNode()
+
 fun! s:DetectNode()
     if getline(1) =~ 'node'
         set filetype=javascript
-        echom 'Detected node'
     endif
 endfun
-
-autocmd BufNewFile,BufRead * call s:DetectNode()
 
 " -------------------------------------------------------------------------
 " Ruby
