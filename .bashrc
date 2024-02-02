@@ -59,7 +59,7 @@ export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
 
-# https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html
+# https://gnu.org/software/libc/manual/html_node/TZ-Variable.html
 export TZ='Etc/UTC'
 export CRON_TZ=$TZ
 
