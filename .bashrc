@@ -280,7 +280,8 @@ PS0="\[$(tput sitm)\]Running command:$PS1_RESET ⌛`command date '+%T'`\n"
 
 PS1="${PS1_JOBS}${PS1_TIME}${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 
-PS2='⋯ ↪'
+PS2='⋯ ➡'
+PS4=''
 
 # }}}
 
