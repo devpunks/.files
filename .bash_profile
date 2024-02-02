@@ -411,6 +411,7 @@ function weight () {
   du --summarize --total --time \
     --human-readable $hide \
   -- "$location"
+
 }
 
 function environment {
