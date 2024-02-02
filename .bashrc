@@ -289,6 +289,13 @@ PS2='⋯ ↪'
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
+function teardown () {
+  echo 'Tearing down...GOODBYE! 👋🏽😈'
+
+  [[ -n ${TMUX} ]] \
+    && tmux display-message 'Tearing down...GOODBYE! 👋🏽😈'
+}
+trap teardown EXIT
 
 # }}}
 
