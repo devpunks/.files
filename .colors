@@ -57,11 +57,6 @@ export EXA_COLORS="
   sn=1;4;38;5;13:da=3;38;5;13:uu=2;38;5;13:gd=1;4;38;5;2:
 "
 
-# https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
-# [ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
-# LS_COLORS
-[ -e $HOME/.dircolors ] && source $HOME/.dircolors
-
 # =========================================================================
 # {{{{ ANSI Escape Sequences
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#8-bit
