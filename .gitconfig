@@ -178,7 +178,7 @@
   error = reverse 9
   header = dim 13
   help = italic 145
-  prompt = reverse bold 132
+  prompt = reverse bold magenta
 
 # color.decorate.<slot>
 #  Use customized color for git log --decorate output.  <slot> is one of branch, remoteBranch, tag,
