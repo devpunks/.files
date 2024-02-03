@@ -74,6 +74,11 @@ export HOSTFILE="$HOME/.hosts"
 # https://gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-INPUTRC
 export INPUTRC="$HOME/.inputrc"
 
+unset PATH
+PATH="${HOME}"
+[ -d "$HOME/bin" ] && PATH="${PATH}:${HOME}/bin"
+[ -d "$HOME/local/bin" ] && PATH="${PATH}:${HOME}/local/bin"
+
 if [ -n "${PREFIX}" ]; then # TERMUX
   unset PATH
   unset LD_LIBRARY_PATH
