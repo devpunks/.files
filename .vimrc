@@ -444,7 +444,15 @@ function OverflowMargin () abort
   call matchadd('ColorColumn', '\%>' . &tw . 'v')
   " https://www.baeldung.com/linux/vim-ruler-on-specific-column
   let &colorcolumn= ( &tw +1 )
-endfunction
+endfunction " OverflowMargin
+
+" -------------------------------------------------------------------------
+" .vimrc
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  " Autoload .vimrc on write
+  autocmd BufWritePost $MYVIMRC nested source $MYVIMRC
+augroup END
 
 " -------------------------------------------------------------------------
 " Markdown
