@@ -400,6 +400,7 @@ set autoread " re-read files
 set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
 
+" Indentation ------------------------------------
 set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
