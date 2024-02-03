@@ -66,10 +66,9 @@ alias find='command find -type f -iname'
 alias ls='command ls -C -AFGhklp --color=auto --hyperlink=auto --group-directories-first'
 alias branch='gb && echo && tree -d -L 4'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
-alias list='
-  command exa -ahlFT --git --grid --icons --level=2 \
-    --group-directories-first -I ".git|log|node_modules|storage" \
-  && weigh
+alias list='weight \
+  && command exa -ahlFT --git --grid --icons --level=2 \
+      --group-directories-first -I ".git|log|node_modules|storage"
 '
 
 # https://en.m.wikipedia.org/wiki/Named_pipe
