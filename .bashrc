@@ -276,10 +276,6 @@ PS1_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS1_RESET"
 PS1_GIT='$( __git_ps1 "\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]" )'
 PS1_PROMPT="\[$(tput rev)\]💲$PS1_RESET"
 
-function git_ps1 () {
-  echo "\[$(tput rev)$(tput bold)\]$( __git_ps1 | sed -e 's/(\(.*\))/【🌵\1】/' )$PS1_RESET"
-}
-
 PS0="\[$(tput sitm)\]Running command:$PS1_RESET ⌛`command date '+%T'`\n"
 PS1="${PS1_JOBS}${PS1_TIME}${PS1_PATH}$( git_ps1 )${PS1_PROMPT}"
 PS2='⋯ ➡'
