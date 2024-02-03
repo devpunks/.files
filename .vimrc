@@ -455,6 +455,16 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
+" .tmux.conf
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  " Autoload .tmux.conf on write
+  autocmd BufWritePost .tmux.conf
+    \ :echom 'Loading TMUX Configuration' |
+    \ call system('tmux source-file "$HOME/.tmux.conf"')
+augroup END
+
+" -------------------------------------------------------------------------
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
 " -------------------------------------------------------------------------
