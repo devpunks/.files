@@ -277,7 +277,7 @@ PS1_GIT='$( __git_ps1 "\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]" 
 PS1_PROMPT="\[$(tput rev)\]💲$PS1_RESET"
 
 PS0="\[$(tput sitm)\]Running command:$PS1_RESET ⌛`command date '+%T'`\n"
-PS1="${PS1_JOBS}${PS1_TIME}${PS1_PATH}$( git_ps1 )${PS1_PROMPT}"
+PS1="${PS1_JOBS}${PS1_TIME}${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
 PS2='⋯ ➡'
 PS4=''
 
