@@ -19,6 +19,7 @@
 # -------------------------------------------------------------------------
 #
 # INVOCATION
+#   - https://superuser.com/a/183980
 #   - https://stackoverflow.com/questions/9953005
 #   - https://unix.stackexchange.com/questions/43953
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
