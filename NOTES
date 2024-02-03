@@ -99,6 +99,7 @@ Android Accessibility
 # TERMUX ------------------------------------------------------------------
 #   - https://wiki.termux.com/wiki/Termux-services
 #   - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
+#   - https://wiki.termux.com/wiki/PRoot
 
 - [CTRL][ESC]       # Context Menu (Right Click)
 - [CTRL][ALT] + -   # Reduce text size
