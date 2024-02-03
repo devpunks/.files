@@ -406,7 +406,7 @@ set copyindent   " copy previous line indentation
 set smartindent  " indent based off current line on load
 
 " https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
-set formatoptions=   " reset
+set formatoptions=''   " reset
 set formatoptions+=c " autowrap `c`omments (with leader)
 set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=l " preserve existing lines
