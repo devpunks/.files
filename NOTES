@@ -126,6 +126,7 @@ Android Accessibility
 # Shortcut mappings - <prefix>+?
 
 # VIM ---------------------------------------------------------------------
+# set termcap? - Term Capabilities
 # gf - Find fild under cursor
 # gq - Automatic formatting
 # :h group-name
