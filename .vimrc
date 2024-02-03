@@ -406,6 +406,11 @@ set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
 set smartindent  " indent based off current line on load
 
+" Meta-chars ------------------------------------
+set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:↯
+set fillchars+=stl:▲,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
+
+" Format Options ------------------------------------
 " https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
 set formatoptions=''   " reset
 set formatoptions+=c " autowrap `c`omments (with leader)
