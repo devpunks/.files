@@ -412,7 +412,7 @@ set fillchars+=stl:▲,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
 
 " Format Options ------------------------------------
 " https://vimdoc.sourceforge.net/htmldoc/change.html#fo-table
-set formatoptions=''   " reset
+set formatoptions=   " reset
 set formatoptions+=c " autowrap `c`omments (with leader)
 set formatoptions+=j " Delete comment from joining lines
 set formatoptions+=l " preserve existing lines
