@@ -273,6 +273,7 @@ PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
 PS1_TIME="\[$(tput rev)\]⌚\D{%H:%M:%S} ⏳\[$(tput sitm)\]XX secs. $PS1_RESET"
 PS1_JOBS="\[$(tput rev)$(tput bold)\] 🔧\j $PS1_RESET"
 PS1_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS1_RESET"
+PS1_GIT='$( __git_ps1 "\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]" )'
 PS1_PROMPT="\[$(tput rev)\]💲$PS1_RESET"
 
 function git_ps1 () {
