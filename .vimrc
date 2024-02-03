@@ -423,9 +423,6 @@ set formatoptions+=r " Preserve comment on <Enter>
 set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
-" - Meta-chars ------------------------------------
-set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:↯
-set fillchars+=stl:▲,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
 
 augroup FileDefaults
   autocmd!
