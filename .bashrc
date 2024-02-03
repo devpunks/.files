@@ -80,7 +80,6 @@ PATH="${HOME}"
 [ -d "$HOME/local/bin" ] && PATH="${PATH}:${HOME}/local/bin"
 
 if [ -n "${PREFIX}" ]; then # TERMUX
-  unset PATH
   unset LD_LIBRARY_PATH
   echo "FOUND $PREFIX ON TERMUX"
   # https://askubuntu.com/questions/386629
