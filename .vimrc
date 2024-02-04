@@ -771,6 +771,8 @@ inoremap <C-s> <esc>:w<CR>
 " visual mode: escape to normal and save
 vnoremap <C-s> <esc>:w<CR>
 
+nnoremap <S-t> :terminal<CR>
+
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
 cnoremap <C-r> :source ~/.vimrc<CR>
