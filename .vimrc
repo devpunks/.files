@@ -825,7 +825,6 @@ augroup END
 " ZoomWin
 " -------------------------------------------------------------------------
 nnoremap <Enter> :ZoomWin<CR>
-nnoremap <leader>z :ZoomWin<CR> " TMUX dexterity clone
 
 " -------------------------------------------------------------------------
 " NERDTree
