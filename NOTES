@@ -119,6 +119,7 @@ Android Accessibility
 
 # TMUX --------------------------------------------------------------------
 # Bind(ed) Keys
+#   - tmux show-hooks -g
 #   - tmux list-keys
 #   - tmux list-keys -a
 #   - tmux list-keys -N(ame)
