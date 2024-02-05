@@ -136,6 +136,8 @@ Android Accessibility
 # :h highlight-groups
 # :h index - All keyboard mappings
 # :h motion.txt ------------------------------
+# :jumps - List
+# :clearjumps - List
 # <C-g> - Current location in file
 # <C-i> - Previous Jump Position
 # <C-k> extended unicode digraphs (:h digraphs)
