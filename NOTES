@@ -128,12 +128,15 @@ Android Accessibility
 
 # VIM ---------------------------------------------------------------------
 # set termcap? - Term Capabilities
-# gf - Find fild under cursor
+# gf - Open file under cursor
 # gq - Automatic formatting
 # :h group-name
 # :h cterm-colors
 # :h highlight-groups
 # :h index - All keyboard mappings
+# :h motion.txt ------------------------------
+# <C-g> - Current location in file
+# <C-i> - Previous Jump Position
 # <C-k> extended unicode digraphs (:h digraphs)
 # <C-v> (<C-q> on Windows) Then type escape command
 # :buffers, :files, :ls, :sbuffer :bdelete, :badd {1} {2} {3}
