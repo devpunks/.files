@@ -824,7 +824,13 @@ augroup END
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
-nnoremap <Enter> :ZoomWin<CR>
+nnoremap <Enter> call s:Zoom()
+
+function! s:Zoom () abort
+  echom "Shazzaam"
+  echom NERDTree.IsOpen()
+" ZOOMWin
+endfunction
 
 " -------------------------------------------------------------------------
 " NERDTree
