@@ -772,7 +772,7 @@ inoremap <C-s> <esc>:w<CR>
 vnoremap <C-s> <esc>:w<CR>
 
 " https://vimhelp.org/terminal.txt.html
-nnoremap <S-t> :terminal<CR>
+if has('terminal') | nnoremap <S-t> :terminal<CR> | endif
 
 " Reload .vimrc configuration
 " nnoremap <Leader>R :source ~/.vimrc
