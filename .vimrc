@@ -140,10 +140,15 @@ set smartcase " Capitalization case-sensitive search
 " set ignorecase " Case in-sensitive search
 set tagcase=followscs " Follow smartcase & ignorecase
 
-set visualbell " Set the window bell to flash
-set errorbells " Unset display beep on errors
-set belloff+=wildmode " Turn off insert completion bell
-let &t_vb = '\<C-G>\e|50f' " Set termcap(ability) for visual bell
+"set errorbells " Unset display beep on errors
+"set belloff+=wildmode " Turn off insert completion bell
+"let &t_vb = "\<C-G>\e|50f" " Set termcap(ability) for visual bell
+" let &t_vb = "|1000f" " Set termcap(ability) for visual bell
+" Set termcap(ability) for visual bell
+" Set the window bell to flash
+"set visualbell t_vb="|1000f"
+set visualbell t_vb=[?5h$<1000>[?5l
+"let &t_vb = "|1000f" " Set termcap(ability) for visual bell
 
 set showmatch " jump to matching brace
 set matchtime=6 "in 1/10ths of second"
