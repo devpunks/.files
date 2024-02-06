@@ -1,3 +1,18 @@
+let g:NERDTreeOpen = g:NERDTree.IsOpen()
+
+function! ZoomDrawer () " abort
+  echom "Shazzaam"
+  let g:NERDTreeOpen = g:NERDTree.IsOpen()
+  echom g:NERDTreeOpen
+" ZOOMWin
+endfunction
+messages clear
+nnoremap <Enter> call ZoomDrawer()
+nnoremap <Enter> call ZoomDrawer()
+nnoremap <S-CR> echo "SHIFT ENTER"
+echo 'foo'
+verb nnoremap <Enter>
+verb nnoremap <S-CR>
 "                   .
 "   ##############......##############
 "   ##############......##############
