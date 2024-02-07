@@ -126,10 +126,6 @@ set smartcase " Capitalization case-sensitive search
 " set ignorecase " Case in-sensitive search
 set tagcase=followscs " Follow smartcase & ignorecase
 
-"set errorbells " Unset display beep on errors
-"set belloff+=wildmode " Turn off insert completion bell
-"let &t_vb = "\<C-G>\e|50f" " Set termcap(ability) for visual bell
-" let &t_vb = "|1000f" " Set termcap(ability) for visual bell
 " Set termcap(ability) for visual bell
 " Set the window bell to flash
 "set visualbell t_vb="|1000f"
