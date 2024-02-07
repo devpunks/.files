@@ -68,7 +68,7 @@ pkg install tar
 pkg install zip
 pkg install unzip
 pkg install brotli
-pkg install asciinema
+pkg install zopfli
 
 pip list
 gem help env
