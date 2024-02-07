@@ -24,7 +24,6 @@ pkg install bc
 pkg install jq
 pkg install exa
 pkg install git
-pkg install tar
 pkg install man
 pkg install vim
 pkg install zip
