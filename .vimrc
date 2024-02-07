@@ -47,6 +47,7 @@ if ! exists('g:pluginname_setting')
   source $VIMRUNTIME/defaults.vim
 endif
 
+set t_RV= " Disable automatic mouse detection
 if has('mouse_sgr')
   set mouse=a " Enable mouse use in all modes
   " Must be one of: sgr, xterm, xterm2, netterm, dec, jsbterm, pterm
