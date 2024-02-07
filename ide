@@ -28,7 +28,7 @@ echo $SOCKET
 # Split pane vertically by 30%
 tmux -S $SOCKET split-window -h -l 40%
 sleep $DELAY
-tmux send-keys 'git status' Enter
+tmux -S $SOCKET send-keys 'git status' Enter
 
 # Split pane 1 horizontally
 tmux split-window -v -l 30%
