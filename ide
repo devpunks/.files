@@ -33,7 +33,7 @@ tmux -S $SOCKET send-keys 'git status' Enter
 # Split pane 1 horizontally
 tmux -S $SOCKET split-window -v -l 30%
 sleep $DELAY
-tmux send-keys 'pwd' Enter
+tmux -S $SOCKET send-keys 'pwd' Enter
 
 # Split first pane horizontally
 tmux select-pane -t 1
