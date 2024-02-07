@@ -36,7 +36,6 @@ pkg install whois
 pkg install which
 pkg install gnupg
 pkg install golang
-pkg install ffmpeg
 pkg install strace
 pkg install ncurses
 pkg install cmatrix
