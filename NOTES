@@ -150,6 +150,8 @@ Android Accessibility
 # BASH --------------------------------------------------------------------
 #   - Shell Check - https://shellcheck.net
 #   - Explain Shell - https://explainshell.com/
+#   - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
+#   - Shell Expansion https://stackoverflow.com/a/59629043/173208
 #   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
 #   - echo vs printf
 #     - https://www.in-ulm.de/%7Emascheck/various/echo+printf/
