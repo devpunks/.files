@@ -46,8 +46,12 @@ pkg install logrotate
 pkg install youtubedr
 pkg install asciinema
 pkg install vlc && vlc --version
-pkg install ruby && gem update --system
-pkg install nodejs-lts && npm install -g npm
+
+# Networking --------------------------------------------------------------
+pkg install socat
+pkg install netcat-openbsd
+
+# -------------------------------------------------------------------------
 pkg install python
 pip install pytest
 pkg install python-numpy
