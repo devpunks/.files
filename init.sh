@@ -47,6 +47,7 @@ pkg install logrotate
 # TODO: pkg install sox
 pkg install ffmpeg
 pkg install asciinema
+pkg install youtubedr
 pkg install vlc && vlc --version
 
 # Networking --------------------------------------------------------------
