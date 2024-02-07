@@ -9,8 +9,10 @@
 # Use PIPES for race conditions in pane creation commands
 #   - https://www.manniwood.com/2021_08_02/fun_with_tmux.html
 DELAY=0.5
-SESSION='devPunks😈studio'
-SOCKET='devpunks' # See tmux -L|S <socket|file> flag
+NAME=devpunks # See tmux -L|S <socket|file> flag
+SESSION="${NAME}😈studio"
+NAME=devpunks # See tmux -L|S <socket|file> flag
+SOCKET="${HOME}/${NAME}.sock" # See tmux -L|S <socket|file> flag
 
 echo COLUMNS $COLUMNS
 echo LINES $LINES
