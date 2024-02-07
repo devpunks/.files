@@ -271,8 +271,9 @@ set timeout " on mappings
 set ttimeout " on keycodes
 set ttimeoutlen=1 " mappings
 set timeoutlen=3000 " keykodes
+
+set lazyredraw " Prevent slow macro updates
 set ttyscroll=3 " number of characters for redraws
-set lazyredraw " Prevent macro script execution update
 
 set cursorline " highlight current cursor line
 set cursorcolumn " highlight current cursor column
