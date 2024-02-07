@@ -46,4 +46,6 @@ sleep $DELAY
 tmux -S $SOCKET send-keys 'vi' Enter
 
 # attach to new session
-tmux -v -u2 attach -t $SESSION
+# -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
+tmux -S $SOCKET -vv -u2 attach -t $SESSION
+exit
