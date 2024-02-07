@@ -130,9 +130,14 @@ set tagcase=followscs " Follow smartcase & ignorecase
 set errorbells " Unset display beep on errors
 "set belloff+=wildmode " Turn off insert completion bell
 " Set the window bell to flash
-"set visualbell t_vb="|1000f"
-set visualbell t_vb=[?5h$<1000>[?5l
-"let &t_vb = "|1000f" " Set termcap(ability) for visual bell
+set t_vb=
+if has("gui_running")
+  set visualbell t_vb=|250f " Nf - where N = milliseconds
+elseif exists('$TMUX')
+  set novisualbell " passthrough to TMUX
+else
+  set visualbell t_vb=[?5h$<250>[?5l " <N> - where N = milliseconds
+endif
 
 set showmatch " jump to matching brace
 set matchtime=6 "in 1/10ths of second"
