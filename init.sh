@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 pkg upgrade
 pkg update
 pkg install termux-services
