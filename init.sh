@@ -61,7 +61,12 @@ pkg install nodejs-lts && npm install -g npm
 # -------------------------------------------------------------------------
 pkg install postgresql
 pkg install postgis
-pkg install zopfli
+pkg install sqlite
+
+# -------------------------------------------------------------------------
+pkg install tar
+pkg install zip
+pkg install unzip
 pkg install brotli
 pkg install asciinema
 
