@@ -70,6 +70,7 @@ pkg install unzip
 pkg install brotli
 pkg install zopfli
 
+# -------------------------------------------------------------------------
 pip list
 gem help env
 ruby --version
