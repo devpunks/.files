@@ -18,7 +18,12 @@ echo COLUMNS $COLUMNS
 echo LINES $LINES
 
 # Setup a session work space called `$SESSION
-tmux new-session -d -s $SESSION -x - -y -
+# -L SOCKET NAME
+# -S SOCKET PATH
+# -s SESSION NAME
+# -x - -y - (Current $TERM size)
+tmux -S $SOCKET new-session -d -s $SESSION -x - -y -
+echo $SOCKET
 
 # Split pane vertically by 30%
 tmux split-window -h -l 40%
