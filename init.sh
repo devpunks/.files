@@ -85,9 +85,6 @@ vim --version
 ffmpeg -version
 tmux -V
 
-echo
-source ~/.bashrc
-echo
 
 echo Cloning Authorized Keys from...
 # TODO: use readline to get username
