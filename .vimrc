@@ -127,6 +127,8 @@ set smartcase " Capitalization case-sensitive search
 set tagcase=followscs " Follow smartcase & ignorecase
 
 " Set termcap(ability) for visual bell
+set errorbells " Unset display beep on errors
+"set belloff+=wildmode " Turn off insert completion bell
 " Set the window bell to flash
 "set visualbell t_vb="|1000f"
 set visualbell t_vb=[?5h$<1000>[?5l
