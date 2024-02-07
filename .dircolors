@@ -29,7 +29,7 @@
 # - https://github.com/coreutils/coreutils/blob/master/src/ls.c#L592-L606
 # - https://github.com/RobertAudi/.dotfiles/blob/master/docs/cheat-sheets/ls-colors-cheat-sheet.txt
 
-# Style Codes -------------------------------------------------------------
+# {{{ Style Codes ---------------------------------------------------------
 # 0 = Default Colour
 # 1 = Bold
 # 2 = Dim
