@@ -73,7 +73,9 @@
 # 105 = Light Purple Background
 # 106 = Turquoise Background
 #
-# Types -------------------------------------------------------------------
+# }}}
+
+# {{{ Types ---------------------------------------------------------------
 # TODO: Works TOO good :ec=31:rs=31:lc=0:rc=0:cl=3
 #
 # no - Normal
