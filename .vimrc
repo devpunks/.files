@@ -836,6 +836,16 @@ augroup END
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
+nmap <silent> <Enter> :call  ZoomDrawer()<cr>
+
+function! ZoomDrawer () " abort
+  let l:open = g:NERDTree.IsOpen()
+  NERDTreeClose
+  ZoomWin
+  if ( l:open )
+    NERDTree | wincmd p " Open Drawer & focus on `p`revious buffer
+  endif
+endfunction
 
 " -------------------------------------------------------------------------
 " NERDTree
