@@ -436,7 +436,7 @@ set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) nex
 
 augroup FileDefaults
   autocmd!
-  autocmd VimResized * wincmd = " resize
+  autocmd VimResized * wincmd = " resize (see equalalways)
   autocmd FocusLost * :w " save on focus lost
   " (https://vi.stackexchange.com/a/15995)
   " autocmd winEnter,BufEnter Double triggers event.
