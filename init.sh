@@ -55,7 +55,10 @@ pkg install netcat-openbsd
 pkg install python
 pip install pytest
 pkg install python-numpy
-pkg install sqlite
+pkg install ruby && gem update --system
+pkg install nodejs-lts && npm install -g npm
+
+# -------------------------------------------------------------------------
 pkg install postgresql
 pkg install postgis
 pkg install zopfli
