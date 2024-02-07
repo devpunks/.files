@@ -42,7 +42,10 @@ pkg install cmatrix
 pkg install openssh
 pkg install iproute2
 pkg install logrotate
-pkg install youtubedr
+
+# Multimedia --------------------------------------------------------------
+# TODO: pkg install sox
+pkg install ffmpeg
 pkg install asciinema
 pkg install vlc && vlc --version
 
