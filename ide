@@ -22,7 +22,7 @@ echo LINES $LINES
 # -S SOCKET PATH
 # -s SESSION NAME
 # -x - -y - (Current $TERM size)
-tmux -S $SOCKET new-session -d -s $SESSION -x - -y -
+tmux -C -S $SOCKET new-session -d -s $SESSION -x - -y -
 echo $SOCKET
 
 # Split pane vertically by 30%
