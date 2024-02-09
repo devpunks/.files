@@ -269,21 +269,18 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
-PS1_RESET='\[$(tput sgr0)\]'
-# export PS1="\[non-printing terminal escapes here\e[0;0m\]\n\[\033[0;47m💲\e[0;0m\]"
-# PS1_ERROR='$(code=${?##0};echo ${code:+\001$(tput setaf 1)\002[${code}]\ })'"$PS1_RESET"
+PS_RESET='\[$(tput sgr0)\]'
 
-PS1_USER='$(tput setaf 6)\u'"$PS1_RESET"
-PS1_HOST='$(tput dim)$(tput sitm)$(tput setaf 2)\H'"$PS1_RESET"
+PS_USER="$(tput setaf 6)\u$PS_RESET"
+PS_HOST="$(tput dim)$(tput sitm)$(tput setaf 2)\H$PS_RESET"
+PS_JOBS="\[$(tput rev)$(tput bold)\] 🔧\j $PS_RESET"
+PS_TIME="\[$(tput rev)\]⌚\D{%H:%M:%S} ⏳\[$(tput sitm)\]\[$(tput sitm)$(tput smul)\]XX secs. $PS_RESET"
+PS_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS_RESET"
+PS_GIT="$( __git_ps1 '\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]' )"
+PS_PROMPT="\[$(tput rev)\]💲$PS_RESET"
 
-PS1_TIME="\[$(tput rev)\]⌚\D{%H:%M:%S} ⏳\[$(tput sitm)\]\[$(tput sitm)$(tput smul)\]XX secs. $PS1_RESET"
-PS1_JOBS="\[$(tput rev)$(tput bold)\] 🔧\j $PS1_RESET"
-PS1_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS1_RESET"
-PS1_GIT='$( __git_ps1 "\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]" )'
-PS1_PROMPT="\[$(tput rev)\]💲$PS1_RESET"
-
-PS0="\[$(tput sitm)\]Running command:$PS1_RESET ⌛`command date '+%T'`\n"
-PS1="${PS1_JOBS}${PS1_TIME}${PS1_PATH}${PS1_GIT}${PS1_PROMPT}"
+PS0="\[$(tput sitm)\]Running command:$PS_RESET ⌛`command date '+%T'`\n"
+PS1="${PS_JOBS}${PS_TIME}${PS_PATH}${PS_GIT}${PS_PROMPT}"
 PS2='⋯ ➡'
 PS3='Select：'
 PS4='➕ '
