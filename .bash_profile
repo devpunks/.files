@@ -251,9 +251,7 @@ function archive {
   echo contents: $contents
 
   command tar cvzf $file $contents # -u for update only
-
-  # Create a ZIP archive of a file or folder.
-  # zip -r "${1%%/}.zip" "$1"
+  command zip -rv $file $contents # -u for update only
 
   # Creates an archive (*.tar.gz) from given directory.
   # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
