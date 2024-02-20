@@ -279,7 +279,6 @@ function zip {
   test -e "$file" \
     && command view "$file" \
     && echo && command zipinfo "$file" \
-    && echo && command unzip -lv "$file"
 }
 
 # https://linuxhandbook.com/unzip-command
