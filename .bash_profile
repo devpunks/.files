@@ -250,7 +250,6 @@ function archive {
   echo file: $file
   echo contents: $contents
 
-  command zip -rv $file $contents # -u for update only
   command tar cvzf $file $contents # -u for update only
 
   # Create a ZIP archive of a file or folder.
