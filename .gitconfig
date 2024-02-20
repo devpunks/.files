@@ -148,12 +148,13 @@
 #  or whitespace (highlighting whitespace errors). The values of these variables may be specified as
 #  in color.branch.<slot>.
 [color "diff"]
-  meta = dim 145
-  new = bold 150
-  frag = bold 132
-  old = dim italic 9
-  whitespace = reverse 9
-  commit = reverse bold 132
+  old = bold 9 # deletions
+  new = bold 10 # additions
+  plain = italic # unaltered
+  meta = normal # headers
+  frag = bold reverse # i.e. @@ -148,10 +148,10 @@
+  whitespace = reverse red
+  commit = reverse bold yellow
 
 # color.status.<slot>
 #     Use customized color for status colorization.  <slot> is one of header (the header text of the
