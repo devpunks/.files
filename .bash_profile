@@ -261,7 +261,6 @@ function archive {
 
   test -e "$file" \
    && command view $file \
-    && command zipinfo $file
 }
 
 # Zip

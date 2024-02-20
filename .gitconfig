@@ -76,7 +76,7 @@
   #  not intended for machine consumption to use color, to true or auto if you want such output to use
   #  color when written to the terminal, or to false or never if you prefer git commands not to use
   #  color unless enabled explicitly with some other configuration or the --color option.
-  ui = always
+  ui = auto
 
   # color.pager
   #  A boolean to enable/disable colored output when the pager is in use (default is true).
