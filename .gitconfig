@@ -176,10 +176,10 @@
 #  error, for four distinct types of normal output from interactive commands. The values of these
 #  variables may be specified as in color.branch.<slot>.
 [color "interactive"]
-  error = reverse 9
-  header = dim 13
-  help = italic 145
-  prompt = reverse bold magenta
+  error = reverse bold red
+  header = reverse red
+  help = bold italic normal
+  prompt = reverse bold normal
 
 # color.decorate.<slot>
 #  Use customized color for git log --decorate output.  <slot> is one of branch, remoteBranch, tag,
