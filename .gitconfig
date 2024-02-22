@@ -121,7 +121,6 @@
   #   Defaults to false.
   interactive = always
 
-
 # color.branch.<slot>
 #  Use customized color for branch coloration.  <slot> is one of current (the current branch), local
 #  (a local branch), remote (a remote-tracking branch in refs/remotes/), plain (other refs).
