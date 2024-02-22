@@ -74,6 +74,9 @@
   #  not intended for machine consumption to use color, to true or auto if you want such output to use
   #  color when written to the terminal, or to false or never if you prefer git commands not to use
   #  color unless enabled explicitly with some other configuration or the --color option.
+
+  # color.ui
+  #  This variable determines the default value for variables such as color.diff and color.grep that
   ui = auto
 
   # color.pager
