@@ -34,7 +34,7 @@
 
 #	prefab = cherry -v origin/fabrication
 [format]
-  pretty = '%C(132)%h%Creset %C(145)%cd%Creset %d %s'
+  pretty = %C(14)%h%Creset %C(145)%cd%Creset %d %s
 
 [diff]
   submodule = log
