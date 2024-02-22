@@ -79,6 +79,10 @@
   #  A boolean to enable/disable colored output when the pager is in use (default is true).
   pager = true
 
+  # color.ui
+  #  This variable determines the default value for variables such as color.diff and color.grep that
+  ui = auto
+
   # color.diff
   #  Whether to use ANSI escape sequences to add color to patches. If this is set to always, git-
   #  diff(1), git-log(1), and git-show(1) will use color for all patches. If it is set to true or
