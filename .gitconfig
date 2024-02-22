@@ -166,7 +166,7 @@
   added = bold green
   deleted = italic red
   changed = bold yellow
-  untracked = magenta
+  untracked = dim
   nobranch = reverse red
   header = brightmagenta
   branch = bold magenta
