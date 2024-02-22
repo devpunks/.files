@@ -33,9 +33,8 @@
   autosetuprebase = always
 
 #	prefab = cherry -v origin/fabrication
-[format]
-  # https://git-scm.com/docs/pretty-formats
-  pretty = %C(14)%h%Creset %C(145)%cd%Creset %d %s
+[format] # https://git-scm.com/docs/pretty-formats
+  pretty = %C(reverse cyan) %h %Creset %C(145)%<(32)%cD %C(italic)%>(10,mtrunc)%cd%Creset %d ► %C(bold)%s
 
 [diff]
   submodule = log
