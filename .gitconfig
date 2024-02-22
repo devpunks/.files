@@ -34,6 +34,7 @@
 
 #	prefab = cherry -v origin/fabrication
 [format]
+  # https://git-scm.com/docs/pretty-formats
   pretty = %C(14)%h%Creset %C(145)%cd%Creset %d %s
 
 [diff]
