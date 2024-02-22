@@ -168,8 +168,8 @@
   changed = bold yellow
   untracked = dim
   nobranch = reverse red
-  header = brightmagenta
-  branch = bold magenta
+  header = normal
+  branch = bold reverse
 
 # color.interactive.<slot>
 #  Use customized color for git add --interactive output.  <slot> may be prompt, header, help or
