@@ -34,7 +34,7 @@
 
 #	prefab = cherry -v origin/fabrication
 [format] # https://git-scm.com/docs/pretty-formats
-  pretty = %C(reverse) 🗓 %<(30)%cD %C(reverse italic) %>(12,mtrunc)%cd %C(reset)► %C(reset) %h %C(italic)%d ► %C(reset)[ %aN ] %C(bold)✏️%s
+  pretty = %C(reverse) 🗓 %<(30)%cD %C(reverse italic) %>(12,mtrunc)%cd %C(reset)► %C(reset) %h %C(italic)%d ► %C(reset)[ %aN ] %C(bold)📝 %s
 
 [diff]
   submodule = log
