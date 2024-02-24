@@ -260,7 +260,7 @@ function archive {
   # zip -r "${1%%/}.zip" "$1"
 
   test -e "$file" \
-   && command view $file \
+   && command view $file
 }
 
 # Zip
