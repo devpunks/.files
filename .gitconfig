@@ -95,8 +95,10 @@
   serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
   pend = cherry -v origin/master
 
+# }}}
+
 # ------------------------------------------------------------------------
-# ANSI 256 COLOURS
+# {{{ ANSI 256 COLOURS
 # ------------------------------------------------------------------------
 
 [color]
