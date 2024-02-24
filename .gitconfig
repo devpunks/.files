@@ -37,7 +37,7 @@
 #	prefab = cherry -v origin/fabrication
 [format] # https://git-scm.com/docs/pretty-formats
   # https://stackoverflow.com/questions/21830810/how-to-make-git-log-cut-long-comments
-  pretty = %C(reverse) 🗓 %<(30,trunc)%cd %C(reverse italic) %>(12,mtrunc)%cr %C(reset)► %h ►%C(italic)%d %C(reset)► [ %aN ] %C(bold)📝 %<(75,trunc)%s
+  pretty = %C(reverse) 🗓 %<(18,trunc)%cd %C(reverse italic) %>(11,mtrunc)%cr %C(reset)► %h ►%C(italic)%d %C(reset)► [ %aN ] %C(bold)📝 %<(50,trunc)%s
 
 [diff]
   submodule = log
