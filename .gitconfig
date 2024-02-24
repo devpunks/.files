@@ -40,7 +40,10 @@
   email = rashaunstovall@gmail.com
 
 [credential]
-	helper = cache
+  helper = cache
+
+[init]
+  defaultBranch = main
 
 [rerere]
   enabled = 1
