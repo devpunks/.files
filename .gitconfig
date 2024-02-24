@@ -20,8 +20,10 @@
   enabled = 1
 
 [log]
-  # date = relative
-  date = short
+  # [human|relative|local|default|iso|iso-strict|rfc|short|raw]
+  # [human-local|relative-local|default-local|iso-local|iso-strict-local|rfc-local|short-local|raw-local]
+  # https://stackoverflow.com/questions/7853332
+  date = default-local
 
 [push]
   default = simple
