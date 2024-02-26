@@ -242,7 +242,7 @@ function open () {
 
 # Archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
-function archive {
+function archive () {
   clear
   local file=$1
   local contents=${@:2}
