@@ -344,7 +344,7 @@ function recycle () {
 
 # Trash
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
-function trash {
+function trash () {
   #   [ -f "$1" ] || \
   #     [ -d "$1" ]  \
   #       return tree -L 1 $TMPDIR
