@@ -65,6 +65,9 @@ tmux -S $SOCKET send-keys 'htop' Enter
 # Split window
 tmux -S $SOCKET split-window -v -l 80%
 
+#Select Previous window again
+#tmux -S $SOCKET previous-window
+
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
 tmux -S $SOCKET -vv -u2 attach -t $SESSION
