@@ -48,7 +48,7 @@ tmux -S $SOCKET send-keys 'clear' Enter
 # Jump back to first window
 tmux -S $SOCKET select-pane -t 1
 sleep $DELAY
-tmux -S $SOCKET send-keys 'vi' Enter
+tmux -S $SOCKET send-keys 'vi -S dotfiles.session' Enter
 
 
 # Create next window
