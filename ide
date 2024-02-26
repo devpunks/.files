@@ -65,6 +65,10 @@ tmux -S $SOCKET send-keys 'htop' Enter
 
 # Split window
 tmux -S $SOCKET split-window -v -l 80%
+sleep $DELAY
+sleep $DELAY
+# Start vim
+tmux -S $SOCKET send-keys 'cd crypto && vi price' Enter
 
 # Split pane vertically by 40%
 tmux -S $SOCKET split-window -h -l 40%
