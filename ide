@@ -50,6 +50,7 @@ tmux -S $SOCKET select-pane -t 1
 sleep $DELAY
 tmux -S $SOCKET send-keys 'vi' Enter
 
+
 # Create next window
 tmux -S $SOCKET new-window
 
