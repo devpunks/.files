@@ -112,7 +112,9 @@ function archives () { echo -n ":*.zip=2;4:"; }
 
 function scripts () { echo -n ":*.bash=1;4:*.sh=1;4:*rc=2;3:"; }
 
-function docs () { echo -n "*README=7:*.md=7:*.markdown=7:*NOTES=7:*.h=1;3:*.sample=3:"; }
+function ls_colors () { echo -n "*LS_COLORS=2;3;4;7:*dircolors=2;3;4;7:"; }
+
+function docs () { echo -n "*README=2;7:*.md=7:*.markdown=7:*NOTES=7:*.h=1;3:*.sample=3:"; }
 
 function dotfiles () { echo -n "*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=2;4:*.gitconfig=2;4:"; }
 
