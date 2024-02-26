@@ -54,7 +54,7 @@ tmux -S $SOCKET send-keys 'vi' Enter
 tmux -S $SOCKET new-window
 
 # Select STATS window
-tmux -S $SOCKET select-window -t 2
+tmux -S $SOCKET next-window
 
 # Rename window
 tmux -S $SOCKET rename-window -t 2 'STATS'
