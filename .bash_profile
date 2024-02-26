@@ -282,7 +282,7 @@ function zip () {
 
 # https://linuxhandbook.com/unzip-command
 # https://linuxhandbook.com/gzip-directory
-function unpack {
+function unpack () {
   clear
   local file=$1
   local destination=$2
