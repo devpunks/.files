@@ -59,6 +59,9 @@ tmux -S $SOCKET rename-window 'STATS'
 
 # Select htop PANE & Start
 tmux -S $SOCKET select-pane -T '?HTOP?'
+sleep $DELAY
+sleep $DELAY
+sleep $DELAY
 tmux -S $SOCKET send-keys 'htop' Enter
 
 # Split window
