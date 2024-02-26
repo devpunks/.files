@@ -50,6 +50,9 @@ tmux -S $SOCKET select-pane -t 1
 sleep $DELAY
 tmux -S $SOCKET send-keys 'vi' Enter
 
+# Rename window
+tmux -S $SOCKET rename-window 'DEV'
+
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
 tmux -S $SOCKET -vv -u2 attach -t $SESSION
