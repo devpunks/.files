@@ -74,6 +74,7 @@ tmux -S $SOCKET send-keys 'cd crypto && vi price' Enter
 tmux -S $SOCKET split-window -h -l 40%
 sleep $DELAY
 sleep $DELAY
+# Start price
 tmux -S $SOCKET send-keys 'cd crypto && price' Enter
 
 #Select Previous window again
