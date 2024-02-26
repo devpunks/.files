@@ -29,7 +29,6 @@ echo $SOCKET
 # Rename window
 tmux -S $SOCKET rename-window 'DEV'
 
-
 # Split pane vertically by 30%
 tmux -S $SOCKET split-window -h -l 40%
 sleep $DELAY
