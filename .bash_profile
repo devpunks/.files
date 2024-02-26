@@ -412,7 +412,7 @@ function weight () {
 
 }
 
-function environment {
+function environment () {
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
   clear
   echo "\n\n\n\$BASH: $BASH\n👇Options👇\n$BASHOPTS"
