@@ -54,10 +54,7 @@ tmux -S $SOCKET send-keys 'vi' Enter
 # Create next window
 tmux -S $SOCKET new-window
 
-# Select STATS window
-tmux -S $SOCKET next-window
-
-# Rename window
+# Rename STATS window
 tmux -S $SOCKET rename-window 'STATS'
 
 sleep $DELAY
