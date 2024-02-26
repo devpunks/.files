@@ -337,7 +337,7 @@ function recycle () {
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
   # destroy "${TMPDIR}/*.*"
-  command rm -v $TMPDIR/*
+  command rm -rv $TMPDIR/*
 
   trash
 }
