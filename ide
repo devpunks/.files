@@ -57,7 +57,6 @@ tmux -S $SOCKET new-window
 # Rename STATS window
 tmux -S $SOCKET rename-window 'STATS'
 
-sleep $DELAY
 # Select htop PANE & Start
 tmux -S $SOCKET select-pane -T '?HTOP?'
 tmux -S $SOCKET send-keys 'htop' Enter
