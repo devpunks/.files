@@ -470,7 +470,7 @@ function permit () {
 # https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
 # exec $SHELL --login
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
-function reload {
+function reload () {
   termux-reload-settings
   [[ -n ${TMUX} ]] && tmux source "$HOME/.tmux.conf"
   clear
