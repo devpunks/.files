@@ -74,7 +74,7 @@ sleep $DELAY
 tmux -S $SOCKET send-keys 'cd crypto && price' Enter
 
 #Select Previous window again
-#tmux -S $SOCKET previous-window
+tmux -S $SOCKET previous-window
 
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
