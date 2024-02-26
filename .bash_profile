@@ -333,7 +333,7 @@ function destroy () {
   echo "💣 destroyed 💥 ${1}"
 }
 
-function recycle {
+function recycle () {
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
   # destroy "${TMPDIR}/*.*"
