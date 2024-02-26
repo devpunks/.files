@@ -54,7 +54,7 @@ tmux -S $SOCKET send-keys 'vi' Enter
 tmux -S $SOCKET new-window
 
 # Rename window
-tmux -S $SOCKET rename-window 'DEV'
+tmux -S $SOCKET rename-window 'STATS'
 
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
