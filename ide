@@ -18,6 +18,7 @@ echo COLUMNS $COLUMNS
 echo LINES $LINES
 
 # Setup a session work space called `$SESSION
+# See tmux -L|S <socket|file> flag
 # -L SOCKET NAME
 # -S SOCKET PATH
 # -s SESSION NAME
