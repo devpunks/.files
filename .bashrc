@@ -96,6 +96,15 @@ export CDPATH=".:$HOME" # https://www.theunixschool.com/2012/04/what-is-cdpath.h
 
 export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_node/Filename-Expansion.html
 
+# TIME_STYLE [FORMAT,locale,iso,long-iso,full-iso]
+# SIZE -
+#   The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+#   Units are K,M,G,T,P,E,Z,Y,R,Q (powers of 1024) or KB,MB, (powers of 1000).
+#   Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+# https://www.linuxquestions.org/questions/slackware-14/the-ls_options-variable-4175464331/
+# https://www.linuxquestions.org/questions/slackware-14/anyone-familiar-with-splitvt-4175464327/#post4963357
+export LS_OPTIONS='--inode --size --escape --context --author --almost-all --no-group --group-directories-first --hide-control-chars --color=auto --hyperlink=auto --block-size=MiB --tabsize=0 --width=2 --format=vertical --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
+
 export GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
 
 # GIT ----------------------------------------------------------------------
