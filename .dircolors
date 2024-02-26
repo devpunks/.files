@@ -108,7 +108,7 @@
 # {{{ Functions ----------------------------------------------------------------
 function default () { echo -n "*=1:"; }
 
-function archives () { echo -n ":*.zip=2;4:"; }
+function archives () { echo -n ":*.zip=1;4;7:"; }
 
 function scripts () { echo -n ":*.bash=1;4:*.sh=1;4:*rc=2;3:"; }
 
