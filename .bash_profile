@@ -447,7 +447,7 @@ function environment () {
 # https://askubuntu.com/questions/44542/what-is-umask-and-how-does-it-work
 # https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
 # https://askubuntu.com/questions/932713/what-is-the-difference-between-chmod-x-and-chmod-755
-function permit {
+function permit () {
   echo umask: `umask`
   echo umask -S: `umask -S`
 
