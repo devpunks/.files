@@ -357,7 +357,7 @@ function trash () {
 }
 
 # stream protocol
-function stream {
+function stream () {
   yes "$1"
 }
 
