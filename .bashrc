@@ -42,8 +42,9 @@
 # =========================================================================
 # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 # [[ -z "$PS1" ]] && exit
+
 # .colors
-[ -e $HOME/.dircolors ] && source $HOME/.colors
+[ -e $HOME/.colors ] && source $HOME/.colors
 
 # for rc in ~in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
 #   # (r)un (c)omm(ands) - https://superuser.com/questions/144339
