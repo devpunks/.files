@@ -58,6 +58,7 @@ tmux -S $SOCKET select-window -t 2
 
 # Rename window
 tmux -S $SOCKET rename-window -t 2 'STATS'
+tmux -S $SOCKET select-pane-t 1
 
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
