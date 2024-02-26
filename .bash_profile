@@ -326,7 +326,7 @@ function unpack () {
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
 # - https://computerhope.com/unix/shred.htm
 # - https://geeksforgeeks.org/shred-command-in-linux-with-examples
-function destroy {
+function destroy () {
   [ ! -e "$1" ] && return
 
   shred --force --zero --iterations=5 --remove "${1}"
