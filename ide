@@ -26,6 +26,9 @@ echo LINES $LINES
 tmux -C -S $SOCKET new-session -d -s $SESSION -x - -y -
 echo $SOCKET
 
+# Rename window
+
+
 # Split pane vertically by 30%
 tmux -S $SOCKET split-window -h -l 40%
 sleep $DELAY
