@@ -120,7 +120,7 @@ function dotfiles () { echo -n ":*profile=1;2;3:*gitignore=2;3;9:*.gitmodules=2;
 
 function historic () { echo -n ":*history=2;3;9:*.bak=2;3;9:*~=2;3;9:*.swp=2;3;9:*.dpkg-old=2;3;9:"; }
 
-function config () { echo -n "*.conf=2;4:*config=2;4:*.yml=2;4:*.yaml=2;4:*.toml=2;4:*.properties=2;4:"; }
+function config () { echo -n ":*.conf=2;4:*config=2;4:*.yml=2;4:*.yaml=2;4:*.toml=2;4:*.properties=2;4:"; }
 
 function auth () { echo -n "*id_rsa=1;4;7:*.pem=1;4;7:*.pid=101:*.pub=3;4:*authorized_keys=3;4;7:*hosts=3;4;7:*.hosts=3;4;7:*known_hosts=3;4;7:"; }
 
