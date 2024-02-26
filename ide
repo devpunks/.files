@@ -64,6 +64,9 @@ sleep $DELAY
 tmux -S $SOCKET select-pane -t 1 -T '?HTOP?'
 tmux -S $SOCKET send-keys 'htop' Enter
 
+# Split window
+tmux -S $SOCKET split-window -v -l 80%
+
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
 tmux -S $SOCKET -vv -u2 attach -t $SESSION
