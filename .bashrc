@@ -103,7 +103,11 @@ export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manua
 #   Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
 # https://www.linuxquestions.org/questions/slackware-14/the-ls_options-variable-4175464331/
 # https://www.linuxquestions.org/questions/slackware-14/anyone-familiar-with-splitvt-4175464327/#post4963357
-export LS_OPTIONS='--inode --size --escape --context --author --almost-all --no-group --group-directories-first --hide-control-chars --color=auto --hyperlink=auto --block-size=MiB --tabsize=0 --width=2 --format=vertical --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
+export LS_OPTIONS='\
+  --inode --size --escape --context --author --almost-all \
+  --no-group --group-directories-first --hide-control-chars \
+  --color=auto --hyperlink=auto --tabsize=0 --width=2 --format=vertical \
+  --block-size=MiB --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
 
 export GREP_OPTIONS='-iIn --color=auto --devices=skip --directories=skip --binary-files=without-match --exclude-dir="{.git,log,node_modules,storage}"'
 
