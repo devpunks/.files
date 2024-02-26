@@ -62,7 +62,8 @@ export EXA_COLORS="
 
 # LS_COLORS
 # https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
-[ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
+# TODO: Fix 
+[ -e "$HOME/.dircolors" ] && exaval $( dircolors -b "$HOME/.dircolors" )
 [ -e $HOME/.dircolors ] && source $HOME/.dircolors
 
 # https://askubuntu.com/questions/1042234
