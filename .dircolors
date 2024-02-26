@@ -128,9 +128,9 @@ function types () { echo -n "bd=101:ca=102:cd=103:do=105:mh=106:mi=1;9:or=108:sg
 
 # }}}
 
-export LS_COLORS="$(
-  ls_colors && default && types \
-  && dotfiles && auth && config && historic && docs && scripts )";
+export LS_COLORS="$( \
+  ls_colors && default && dotfiles && auth && config \
+    && scripts && historic && archives && docs && types )";
 
 echo && echo 'devPunks😈studio .dircolors'
 
