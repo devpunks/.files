@@ -42,6 +42,7 @@
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#8-bit
 #   - https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 #
+# Standard Escape Codes
 # iCtrl-Keys: \e \x9B 
 # Octal: \033
 # Unicode: \u001b
