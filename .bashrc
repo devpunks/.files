@@ -308,7 +308,7 @@ PS4='➕ '
 
 # teardown
 function teardown () {
-  echo 'Tearing down...GOODBYE! 👋🏽😈'
+  echo 'Tearing $BASH down...GOODBYE! 👋🏽😈'
 
   [[ -n ${TMUX} ]] \
     && tmux display-message 'Tearing down...GOODBYE! 👋🏽😈'
