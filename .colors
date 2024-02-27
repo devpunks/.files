@@ -42,7 +42,7 @@
 # {{{ ANSI Escape Sequences
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#8-bit
 #
-# iCtrl-Key: 
+# iCtrl-Keys: \e \x9B 
 # Octal: \033
 # Unicode: \u001b
 # Hexadecimal: \x1B
