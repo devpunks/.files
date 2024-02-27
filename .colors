@@ -48,6 +48,10 @@
 # Unicode: \u001b
 # Hexadecimal: \x1B
 # Decimal: 27
+#
+# Delimited by opening square bracket ([), known as a Control Sequence Introducer (CSI),
+# optionally followed by arguments and the command itself.
+# Arguments are delimeted by semi colon (;)
 
 # }}}
 
