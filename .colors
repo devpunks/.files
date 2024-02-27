@@ -80,7 +80,7 @@ export GREP_COLORS="
 
 # }}}
 
-# =========================================================================
+#==========================================================================
 # {{{ IBM aixterm,16-Color Codes
 #   The 16-color feature is borrowed from IBM aixterm,
 #   which maps 16 codes each for foreground and background onto two ranges;
