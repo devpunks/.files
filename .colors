@@ -73,6 +73,8 @@ export GREP_COLORS="
   :fn=1;4:se=1:ln=1;2;3:sl=2;3;9:cx=2;3;9:ms=0;1;4;7:mc=0;1;4;7:mt=0;1;4;7:bn=31:
 "
 
+# }}}
+
 # =========================================================================
 # {{{ IBM aixterm,16-Color Codes
 #   The 16-color feature is borrowed from IBM aixterm,
