@@ -311,7 +311,12 @@ function teardown () {
   echo 'Tearing $BASH down...GOODBYE! 👋🏽😈'
 
   [[ -n ${TMUX} ]] \
-    && tmux display-message 'Tearing down...GOODBYE! 👋🏽😈'
+    && tmux display-message 'Tearing $TMUX down...GOODBYE! 👋🏽😈'
+
+  [[ "SHLVL" = 1 ]]
+  echo 'Tearing $SHELL down...GOODBYE! 👋🏽😈'
+
+  sleep 2
 }
 trap teardown EXIT
 
