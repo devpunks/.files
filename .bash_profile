@@ -399,7 +399,8 @@ function weight () {
   local location=`realpath ${1:-.}`
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
   echo && echo # https://redhat.com/sysadmin/linux-df-command
-  df -ah -- "$location"
+  df -ah \
+    -- "$location"
 
   # https://geeksforgeeks.org/du-command-linux/
   echo && echo # https://redhat.com/sysadmin/du-command-options
