@@ -122,8 +122,8 @@ export GIT_PAGER=most
 export GIT_CONFIG_NOSYSTEM=true
 
 # TIME --------------------------------------------------------------------
-# https://www.baeldung.com/linux/bash-calculate-time-elapsed
-# https://www.cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
+# https://baeldung.com/linux/bash-calculate-time-elapsed
+# https://cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
 export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 
 # }}}
