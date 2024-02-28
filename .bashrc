@@ -164,7 +164,7 @@ export LC_ALL=$LANG
 # =========================================================================
 
 tput init
-setterm --resize
+setterm --resize # Sync kernel terminal driver to display
 
 # PLEASE NOTE:
 # Inside tmux TERM must be "screen", "tmux" "tmux-256color"
