@@ -37,6 +37,14 @@ function teardown () {
   [[ "SHLVL" = 1 ]]
   echo 'Logout Tearing $SHELL down...GOODBYE! 👋🏽😈'
 
-sleep 2
+  sleep 2
+}
+trap teardown EXIT
+
+# }}}
+
+
+echo 'devPunks😈studio .bash_logout'
+echo
 
 # vim: foldmethod=marker
