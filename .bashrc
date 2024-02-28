@@ -109,9 +109,7 @@ export LS_OPTIONS='\
   --color=auto --hyperlink=auto --tabsize=0 --width=2 --format=vertical \
   --block-size=MiB --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
 
-EXCLUDE="{ .git, log, node_modules, storage }"
-export GREP_OPTIONS="--context=1 --exclude-dir=\"${EXCLUDE}\" \
-  -iIn --no-messages --line-number --with-filename --color=auto \
+export GREP_OPTIONS='--context=1 \
   --directories=skip --devices=skip --binary-files=without-match \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
 "
