@@ -199,7 +199,7 @@ if [[ "$( tic -V )" == *"ncurses"* ]]; then
   # write tty terminal size
   echo && echo "💻 TTY SIZE: $( stty size | tr ' ' 'x' )" && echo
 
-  shopt -s checkwinsize # https://www.reddit.com/r/bash/comments/88tt7i
+  shopt -s checkwinsize # https://reddit.com/r/bash/comments/88tt7i
 fi
 
 # }}}
