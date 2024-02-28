@@ -383,7 +383,7 @@ monitor () {
 weigh () {
   clear
   local location=`realpath ${1:-.}`
-  local hide="--exclude={.git,log,node_modules,storage}"
+  local hide='--exclude="{ .config, .gnupg, .ssh, .vim }"'
 
   echo location 👉 $location
   echo hide 👉 $hide
