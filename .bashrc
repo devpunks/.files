@@ -305,21 +305,9 @@ PS4='➕ '
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
-
-# teardown
-function teardown () {
-  echo 'Tearing $BASH down...GOODBYE! 👋🏽😈'
-
-  [[ -n ${TMUX} ]] \
-    && tmux display-message 'Tearing $TMUX down...GOODBYE! 👋🏽😈'
-
-  [[ "SHLVL" = 1 ]]
-  echo 'Tearing $SHELL down...GOODBYE! 👋🏽😈'
-
-  sleep 2
-}
-trap teardown EXIT
-
+#
+# TODO: Refactor into functions
+#
 # }}}
 
 echo 'devPunks😈studio .bashrc'
