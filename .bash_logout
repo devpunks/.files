@@ -22,8 +22,20 @@
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
 
-echo 'devPunks😈studio .bash_profile'
-echo
+# teardown
+function teardown () {
+  echo 'Tearing $BASH down...GOODBYE! 👋🏽😈'
+
+  echo logout TMUX $TMUX
+
+  [[ -n ${TMUX} ]] \
+    && echo 'Logout Tearing $TMUX down...GOODBYE! 👋🏽😈' \
+    && tmux display-message 'Logout Tearing $TMUX down...GOODBYE! 👋🏽😈'
+
+  echo logout SHLVL $SHLVL
+
+  [[ "SHLVL" = 1 ]]
+  echo 'Logout Tearing $SHELL down...GOODBYE! 👋🏽😈'
 
 sleep 2
 
