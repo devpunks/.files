@@ -101,8 +101,8 @@ export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manua
 #   The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
 #   Units are K,M,G,T,P,E,Z,Y,R,Q (powers of 1024) or KB,MB, (powers of 1000).
 #   Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
-# https://www.linuxquestions.org/questions/slackware-14/the-ls_options-variable-4175464331/
-# https://www.linuxquestions.org/questions/slackware-14/anyone-familiar-with-splitvt-4175464327/#post4963357
+# https://linuxquestions.org/questions/slackware-14/the-ls_options-variable-4175464331/
+# https://linuxquestions.org/questions/slackware-14/anyone-familiar-with-splitvt-4175464327/#post4963357
 export LS_OPTIONS='\
   --inode --size --escape --context --author --almost-all \
   --no-group --group-directories-first --hide-control-chars \
