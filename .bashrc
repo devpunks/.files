@@ -88,7 +88,7 @@ if [ -n "${PREFIX}" ]; then # TERMUX
   # https://wiki.termux.com/wiki/Differences_from_Linux
   # uptime/htop
   #   - https://github.com/termux/termux-app/issues/819
-  #   - https://www.site24x7.com/learn/linux/uptime.html
+  #   - https://site24x7.com/learn/linux/uptime.html
   # Prior to Android 7
   # export LD_LIBRARY_PATH="/system/bin/uptime:$PREFIX/bin/uptime"
 fi
