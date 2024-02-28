@@ -195,7 +195,10 @@ if [[ "$( tic -V )" == *"ncurses"* ]]; then
   # https://stackoverflow.com/questions/1780483
   export LINES=$( tput lines )
   export COLUMNS=$( tput columns )
-  echo "$( stty size | tr ' ' 'x' )"
+
+  # write tty terminal size
+  echo && echo "💻 TTY SIZE: $( stty size | tr ' ' 'x' )" && echo
+
   shopt -s checkwinsize # https://www.reddit.com/r/bash/comments/88tt7i
 fi
 
