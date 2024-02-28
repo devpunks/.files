@@ -304,7 +304,7 @@ PS0="\[$(tput sitm)\]Running command:$PS_RESET ⌛`command date '+%T'`\n"
 PS1="${PS_JOBS}${PS_TIME}${PS_PATH}${PS_GIT}${PS_PROMPT}"
 PS2='⋯ ➡' # Nested shell levels
 PS3='Select：' # Select prompts
-PS4='➕ '
+PS4='➕ ' # Verbose prompt tracing
 
 # }}}
 
