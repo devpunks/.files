@@ -189,7 +189,7 @@ stty -ctlecho # Stop  echo - https://stackoverflow.com/questions/418073
 # https://unix.stackexchange.com/questions/198794
 
 # TERMUX nCurses- https://stackoverflow.com/questions/76148896
-if [[ "$(tic -V)" == *"ncurses"* ]]; then
+if [[ "$( tic -V )" == *"ncurses"* ]]; then
   export CURSES_CFLAGS="-I${PREFIX}/include"
   export CURSES_LDFLAGS="-L${PREFIX}/lib -lncurses"
   # https://stackoverflow.com/questions/1780483
