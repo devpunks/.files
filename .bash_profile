@@ -385,7 +385,6 @@ weigh () {
   local location=`realpath ${1:-.}`
 
   echo location 👉 $location
-  echo hide 👉 $hide
 
   echo && echo # - https://dev.yorhel.nl/ncdu/man
   [[ -d $location ]] && \
