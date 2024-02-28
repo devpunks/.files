@@ -300,7 +300,7 @@ function spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/col
 # =========================================================================
 function colors () {
   echo && echo "Colors: $(tput colors)"
-  printf "\n\$LS_COLORS:\n$LS_COLORS\n"
+  printf "\n\$LS_COLORS\n$LS_COLORS\n"
   echo && dircolors --print-ls-colors
   echo && 16Colors
   echo && 256Colors
