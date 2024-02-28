@@ -283,9 +283,9 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 #  - https://github.com/nojhan/liquidprompt
 #  - https://askubuntu.com/questions/409599
 #  - http://tldp.org/HOWTO/Bash-Prompt-HOWTO
-#  - http://www.debian-administration.org/articles/205
-#  - http://www.askapache.com/linux/bash-power-prompt.html
-#  - https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
+#  - http://debian-administration.org/articles/205
+#  - http://askapache.com/linux/bash-power-prompt.html
+#  - https:/gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
 #  - https://unix.stackexchange.com/questions/105958/terminal-prompt-not-wrapping-correctly
 #  - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 #  - https://unix.stackexchange.com/questions/611419/how-does-the-escape-character-work-in-bash-prompt
