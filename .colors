@@ -70,8 +70,8 @@ export EXA_COLORS="
 export DIRCOLORS="$HOME/.dircolors"
 # https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
 # TODO: Fix 
-[ -e "$HOME/.dircolors" ] && eval $( dircolors -b "$HOME/.dircolors" )
-[ -e $HOME/.dircolors ] && source $HOME/.dircolors
+[ -e "$DIRCOLORS" ] && eval $( dircolors -b "$DIRCOLORS" )
+[ -e "$DIRCOLORS" ] && source "$DIRCOLORS"
 
 # https://askubuntu.com/questions/1042234
 # https://gnu.org/software/grep/manual/grep.html#index-GREP_005fCOLORS-environment-variable
