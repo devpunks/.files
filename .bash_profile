@@ -62,7 +62,7 @@ alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-comman
 # https://unix.stackexchange.com/questions/344213
 # https://askubuntu.com/questions/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
-alias vdir='command vdir -alAF --author --human-readable --group-directories-first --color=auto --hyperlink=auto --hide="{.git,log,node_modules,storage}"'
+alias vdir="command vdir $LS_OPTIONS -l"
 alias find='command find -type f -iname'
 alias ls="command ls $LS_OPTIONS -l"
 alias branch='gb && echo && tree -d -L 4'
