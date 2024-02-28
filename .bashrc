@@ -185,8 +185,7 @@ stty -ixon # Disable XON/XOFF output control
 stty -ixoff # Disable sending START/STOP characters
 stty -ixany # Disable any key to resume (not just START)
 stty -ctlecho # Stop  echo - https://stackoverflow.com/questions/418073
-# https://unix.stackexchange.com/questions/9957
-# https://unix.stackexchange.com/questions/198794
+# https://unix.stackexchange.com/ruestions/198794
 
 # TERMUX nCurses- https://stackoverflow.com/questions/76148896
 if [[ "$( tic -V )" == *"ncurses"* ]]; then
