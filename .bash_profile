@@ -76,9 +76,7 @@ alias list='weight \
 # https://stackoverflow.com/questions/4113986
 alias pipe='command mkfifo'
 # - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
-alias grep="command grep $GREP_OPTIONS"
-alias egrep="command grep -E $GREP_OPTS"
-alias fgrep="LC_ALL=C command grep -F $GREP_OPTS"
+alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 
 alias delete='command rm -dIrv --preserve-root'
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
