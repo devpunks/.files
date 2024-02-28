@@ -199,6 +199,9 @@ if [[ "$( tic -V )" == *"ncurses"* ]]; then
   # write tty terminal size
   echo && echo "💻 TTY SIZE: $( stty size | tr ' ' 'x' )" && echo
 
+  # Check the window size after each command.
+  # If necessary, Update the values of LINES and COLUMNS.
+  # Correct line-wrapping-over-prompt issues when a window is resized.
   shopt -s checkwinsize # https://reddit.com/r/bash/comments/88tt7i
 fi
 
