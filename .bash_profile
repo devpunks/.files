@@ -404,9 +404,8 @@ function weight () {
 
   # https://geeksforgeeks.org/du-command-linux/
   echo && echo # https://redhat.com/sysadmin/du-command-options
-  du --summarize --total --time \
-    --human-readable $hide \
-  -- "$location"
+  du --summarize --total --time --human-readable \
+    -- "$location"
 
 }
 
