@@ -428,7 +428,7 @@ function Spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/col
       }
       printf "\n";
     }' # BEGIN
-} # Spectrum()
+} # Spectrum
 
 #  }}}
 
