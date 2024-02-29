@@ -435,6 +435,7 @@ function spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/col
 # {{{ Functions
 # =========================================================================
 function colors () {
+  echo && Styles
   echo && echo "Colors: $( tput colors )"
   printf "\n\$LS_COLORS\n$LS_COLORS\n"
   printf "\ndircolors .dircolors\n$( dircolors "$DIRCOLORS" )\n"
