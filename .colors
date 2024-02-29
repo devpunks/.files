@@ -159,7 +159,7 @@ export GREP_COLORS="
 # [34m - Blue
 # [35m - Purple
 # [36m - Cyan
-# [37m - Grey
+# [37m - Off White
 #
 # [39m - Reset
 
