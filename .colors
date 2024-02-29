@@ -55,6 +55,36 @@
 
 # }}}
 
+# -------------------------------------------------------------------------
+# {{{ ANSI Styles
+
+# ┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
+# ┃ ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY
+# ┡━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
+# │   0 │ «reset style+colors»    │ «reset style+colors»    │ «reset style+colors
+# ├─────┼─────────────────────────┼─────────────────────────┼────────────────
+# │   1 │ +bold, +brighter color  │ +bold, +brighter color  │ +brighter color
+# │   2 │ +fainter color          │ +fainter color          │ +forced grey   
+# │   3 │ +italic                 │ +italic                 │ +forced green  
+# │   4 │ +underline              │ +underline              │ +forced cyan   
+# │   5 │ «no effect»             │ +blink                  │ «no effect»    
+# │   7 │ +invert colors          │ +invert colors          │ +invert colors 
+# │   8 │ +invisible              │ +invisible              │ «no effect»    
+# │     │                         │   ● underline appears   │                
+# │   9 │ +strikethrough          │ +strikethrough          │ «no effect»    
+# ├─────┼─────────────────────────┤                         ├────────────────
+# │  21 │ -bold, -brighter color, │ +double underline       │ -brighter color
+# │  22 │ -bold, -brighter color, │ -bold, -brighter color, │ -brighter color
+# │  23 │ -italic                 │ -italic                 │ -forced green  
+# │  24 │ -underline              │ -underline,             │ -forced cyan   
+# │  25 │ «no effect»             │ -blink                  │ «no effect»    
+# │  27 │ -invert colors          │ -invert colors          │ -invert colors 
+# │  28 │ -invisible              │ -invisible              │ «no effect»    
+# │  29 │ -strikethrough          │ -strikethrough          │ «no effect»    
+
+
+# }}}
+
 #==========================================================================
 # {{{ Environment Color Codes
 # =========================================================================
