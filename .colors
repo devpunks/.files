@@ -178,6 +178,8 @@ export GREP_COLORS="
 # [46m - Cyan Background
 # [47m - Grey Background
 #
+# [49m - Reset
+
 # [100m - Dark Grey Background
 # [101m - Light Red Background
 # [102m - Light Green Background
