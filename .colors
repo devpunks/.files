@@ -111,7 +111,8 @@ export GREP_COLORS="
 # │ 22 │ -Fainter color         │ -Fainter color         │ -Forced grey
 # │ 23 │ -Italic                │ -Italic                │ -Forced green
 # │ 24 │ -Underline             │ -Underline,            │ -Forced cyan
-# │ 25 │ -«no effect»           │ -Blink                 │ «No effect»
+# │ 25 │ «No effect»            │ -Blink                 │ «No effect»
+# │ 26 │ «No effect»            │ -Blink (fast)          │ «No effect»
 # │ 27 │ -Invert colors         │ -Invert colors         │ -Invert colors
 # │ 28 │ -Invisible             │ -Invisible             │ «No effect»
 # │ 29 │ -Strikethrough         │ -Strikethrough         │ «No effect»
