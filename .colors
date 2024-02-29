@@ -124,6 +124,15 @@ export GREP_COLORS="
 # │  8 │ +Invisible             │ +Invisible             │ «No effect»
 # │  9 │ +Strikethrough         │ +Strikethrough         │ «No effect»
 
+function Styles () {
+  echo && echo 💅 ANSI Styles && echo
+
+  for style in $( seq 9 )
+  do
+    echo style $style
+  done
+} # Styles
+
 #-------------------------- Unset Style -----------------------------------
 
 # │ 21 │ -Bold, -Brighter color │ -Double underline      │ -Brighter color
