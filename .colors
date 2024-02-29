@@ -86,7 +86,8 @@ export GREP_COLORS="
 # optionally followed by arguments and the command itself.
 # Arguments are delimeted by semi colon (;)
 
-# Styles
+# SGR (Select Graphic Rendition) Styles
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters
 # -------------------------------------------------------------------------
 
 #┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
