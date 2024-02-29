@@ -84,12 +84,13 @@
 # │  28 │ -invisible              │ -invisible              │ «no effect»    
 # │  29 │ -strikethrough          │ -strikethrough          │ «no effect»    
 
-
 # }}}
 
 #==========================================================================
 # {{{ Environment Color Codes
+#
 # =========================================================================
+
 export CLICOLOR=1 # Defaults - https://stackoverflow.com/questions/41849875
 
 # https://the.exa.website/docs/colour-themes
