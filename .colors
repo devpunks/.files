@@ -90,10 +90,6 @@ export GREP_COLORS="
 # Decimal Escape: \27[
 # Unicode Escape: \u001b[
 # Hexadecimal Escape: \x1B[
-#
-# Delimited by opening square bracket ([), known as a Control Sequence Introducer (CSI),
-# optionally followed by arguments and the command itself.
-# Arguments are delimeted by semi colon (;)
 
 # SGR (Select Graphic Rendition) Styles
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#SGR_(Select_Graphic_Rendition)_parameters
