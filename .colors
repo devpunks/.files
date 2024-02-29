@@ -69,6 +69,15 @@ export GREP_COLORS="
 #==========================================================================
 # {{{ ANSI Styles
 #
+# Delimited by opening square bracket ([), known as a
+# Control Sequence Introducer (CSI), optionally followed by
+# semi-colon (;) delimeted arguments and the command itself.
+#
+# All common sequences just use the parameters as
+# a series of semicolon-separated numbers such as 1;2;3.
+# Missing numbers are treated as 0 (1;;3 acts like the middle number is 0,
+# and no parameters at all in ESC[m acts like a 0 reset code).
+#
 #==========================================================================
 
 # CSI (Control Sequence Introducer) Escape Sequences
