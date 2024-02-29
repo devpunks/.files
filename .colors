@@ -132,6 +132,8 @@ export GREP_COLORS="
 # [36m - Cyan
 # [37m - Grey
 #
+# [39m - Reset
+
 # [90m - Dark Grey
 # [91m - Light Red
 # [92m - Light Green
