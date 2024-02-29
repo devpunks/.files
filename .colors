@@ -189,6 +189,29 @@ export GREP_COLORS="
 # [106m - Turquoise Background
 # [107m - Off White Background
 
+#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
+#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+# │  40 │ Very dark grey          │ Black                   │ Black
+# │  41 │ Dull red                │ Red                     │ Light red
+# │  42 │ Dull green              │ Light green             │ Light green
+# │  43 │ Dull yellow             │ Yellow                  │ Yellow
+# │  44 │ Greyish blue            │ Dark blue               │ Sky blue
+# │  45 │ Dull purple             │ Purple                  │ Purple
+# │  46 │ Teal                    │ Cyan                    │ Cyan
+
+# │  49 │ «Reset color»           │ «Reset color»           │ «Reset color»
+
+# │ 100 │ Dark grey               │ Dull grey               │ Black
+# │ 101 │ Red                     │ Bright red              │ Light red
+# │ 102 │ Lime green              │ Bright green            │ Light green
+# │ 103 │ Yellow                  │ Bright yellow           │ Yellow
+# │ 104 │ Light greyish blue      │ Dull blue               │ Sky blue
+# │ 105 │ Light purple            │ Magenta                 │ Purple
+# │ 106 │ Cyan                    │ Bright cyan             │ Cyan
+# │ 107 │ Off white               │ White                   │ Light grey
+#──────────────────────────────────────────────────────────────────────────
+
 function 16Colors () {
   printf "\n "
   printf "%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
