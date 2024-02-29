@@ -496,7 +496,7 @@ function reload () {
 # TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html?m=1
 function term () {
   clear
-  echo "\033[7m"
+  echo "\e[7m"
   echo && echo "TTY: $(tty)"
   echo "\nSize \033[3mROWS\033[23mX\033[3mCOLUMNS\033[23m: $(stty size | tr " " "x")"
   echo && [[ -n $TMUX ]] && echo "TMUX INFO:" && tmux info
