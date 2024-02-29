@@ -91,17 +91,18 @@ export GREP_COLORS="
 # -------------------------------------------------------------------------
 # Styles Reset - 0, On 0-9, and Off 21-29
 # -------------------------------------------------------------------------
-# [0m - Reset
+# If no codes are given, CSI m ( [m ) is treated as CSI 0m ( [0m ) (reset / normal).
+# - [0m Reset [m
 
-# [1m - Bold[21m
-# [2m - Faint[22m
-# [3m - Italic[23m
-# [4m - Underline[24m
-# [5m - Blink[25m
-# [6m - Blink (Fast)[26m
-# [7m - Invert[27m
-# [8m - Invisible[28m
-# [9m - Strikethrough[29m
+# - [1m Bold [21m
+# - [2m Faint [22m
+# - [3m Italic [23m
+# - [4m Underline [24m
+# - [5m Blink [25m
+# - [6m Blink (Fast) [26m
+# - [7m Invert [27m
+# - [8m Invisible [28m
+# - [9m Strikethrough [29m
 #
 #┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
 #┃  ## ┃ GNOME Terminal         ┃ xterm                  ┃ non-GUI TTY    ┃
