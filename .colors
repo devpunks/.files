@@ -127,6 +127,10 @@ export GREP_COLORS="
 function Styles () {
   echo && echo 💅 ANSI Styles && echo
 
+  local styles=( Reset Bold Italic Underline Blink Strobe Reverse Invisible Strikethrough )
+
+  echo The Styles: $styles
+
   for style in $( seq 0 9 )
     do
       echo style $style
