@@ -128,9 +128,11 @@ function Styles () {
   echo && echo 💅 ANSI Styles && echo
 
   for style in $( seq 9 )
-  do
-    echo style $style
-  done
+    do
+      echo style $style
+      echo "\e[${style}mThe quick brown fox jumped over the lazy dog!\e[m"
+      echo
+    done
 } # Styles
 
 #-------------------------- Unset Style -----------------------------------
