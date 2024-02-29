@@ -67,6 +67,57 @@ export GREP_COLORS="
 # }}}
 
 #==========================================================================
+# {{{ ANSI Styles
+#
+#==========================================================================
+
+# Escape Sequences
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences
+# -------------------------------------------------------------------------
+
+# Ctrl Escape: 
+# Standard Escape: \e[
+# Octal Escape: \033[
+# Decimal Escape: \27[
+# Unicode Escape: \u001b[
+# Hexadecimal Escape: \x1B[
+#
+# Delimited by opening square bracket ([), known as a Control Sequence Introducer (CSI),
+# optionally followed by arguments and the command itself.
+# Arguments are delimeted by semi colon (;)
+
+# Styles
+# -------------------------------------------------------------------------
+
+#┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
+#┃  ## ┃ GNOME Terminal         ┃ xterm                  ┃ non-GUI TTY    ┃
+#┡━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━┩
+# │  0 │ «Reset style»          │ «Reset style»          │ «Reset style»
+
+# │  1 │ +Bold, +brighter color │ +Bold, +Brighter color │ +Brighter color
+# │  2 │ +Fainter color         │ +Fainter color         │ +Forced grey
+# │  3 │ +Italic                │ +Italic                │ +Forced green
+# │  4 │ +Underline             │ +Underline             │ +Forced cyan
+# │  5 │ +«no effect»           │ +Blink                 │ «No effect»
+# │  7 │ +Invert colors         │ +Invert colors         │ +Invert colors
+# │  8 │ +Invisible             │ +Invisible             │ «No effect»
+# │  9 │ +Strikethrough         │ +Strikethrough         │ «No effect»
+
+#-------------------------- Unset Style -----------------------------------
+
+# │ 21 │ -Bold, -Brighter color │ -Double underline      │ -Brighter color
+# │ 22 │ -Fainter color         │ -Fainter color         │ -Forced grey
+# │ 23 │ -Italic                │ -Italic                │ -Forced green
+# │ 24 │ -Underline             │ -Underline,            │ -Forced cyan
+# │ 25 │ -«no effect»           │ -Blink                 │ «No effect»
+# │ 27 │ -Invert colors         │ -Invert colors         │ -Invert colors
+# │ 28 │ -Invisible             │ -Invisible             │ «No effect»
+# │ 29 │ -Strikethrough         │ -Strikethrough         │ «No effect»
+#──────────────────────────────────────────────────────────────────────────
+
+# }}}
+
+#==========================================================================
 # {{{ IBM aixterm,16-Color Codes
 #
 #   The 16-color feature is borrowed from IBM aixterm,
