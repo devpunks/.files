@@ -205,7 +205,7 @@ export GREP_COLORS="
 # [44m - Blue Background
 # [45m - Purple Background
 # [46m - Cyan Background
-# [47m - Grey Background
+# [47m - Off White Background
 #
 # [49m - Reset
 
@@ -216,7 +216,7 @@ export GREP_COLORS="
 # [104m - Light Blue Background
 # [105m - Light Purple Background
 # [106m - Turquoise Background
-# [107m - Off White Background
+# [107m - Light White Background
 
 #┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 #┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
