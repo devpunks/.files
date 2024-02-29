@@ -245,6 +245,8 @@ function 16Colors () {
   printf "\n "
   printf "%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
     '  40m' '  41m' '  42m' '  43m' '  44m' '  45m' '  46m' '  47m'
+
+  # AIXTerm Header (Non-Standard)
   printf "%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
     ' 100m' ' 101m' ' 102m' ' 103m' ' 104m' ' 105m' ' 106m' ' 107m'
   echo
