@@ -132,7 +132,7 @@ export GREP_COLORS="
 # │ 24 │ -Underline             │ -Underline,            │ -Forced cyan
 # │ 25 │ «No effect»            │ -Blink                 │ «No effect»
 # │ 26 │ «No effect»            │ -Blink (fast)          │ «No effect»
-# │ 27 │ -Invert colors         │ -Invert colors         │ -Invert colors
+# │ 27 │ -Reverse video         │ -Invert colors         │ -Reverse video
 # │ 28 │ -Invisible             │ -Invisible             │ «No effect»
 # │ 29 │ -Strikethrough         │ -Strikethrough         │ «No effect»
 #──────────────────────────────────────────────────────────────────────────
