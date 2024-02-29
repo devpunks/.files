@@ -504,7 +504,7 @@ function term () {
   echo && echo "stty: $(stty -g)" && stty -a
   echo && infocmp -l # terminfo description
   echo && infocmp -lCr # termcap description
-  echo "\033[27m"
+  echo "\e[m"
   echo && echo "Bindings \033[3m( see ~/.inputrc )\033[23m & alias shortcuts"
   shortcuts
   [[ $( type -t colors ) == function ]] && echo && colors
