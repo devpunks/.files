@@ -142,8 +142,33 @@ export GREP_COLORS="
 # [95m - Light Purple
 # [96m - Turquoise
 # [97m - Off White
-#
-# backgro-nd onto 40-47, and 100-107
+
+#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
+#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+# │  30 │ Very dark grey          │ Black                   │ Black
+# │  31 │ Dull red                │ Red                     │ Light red
+# │  32 │ Dull green              │ Light green             │ Light green
+# │  33 │ Dull yellow             │ Yellow                  │ Yellow
+# │  34 │ Greyish blue            │ Dark blue               │ Sky blue
+# │  35 │ Dull purple             │ Purple                  │ Purple
+# │  36 │ Teal                    │ Cyan                    │ Cyan
+# │  37 │ Light grey              │ Light grey              │ Light grey
+
+# │  39 │ «Reset color»           │ «Reset color»           │ «Reset color»
+
+# │  90 │ Dark grey               │ Dull grey               │ Dull grey
+# │  91 │ Red                     │ Bright red              │ Bright red
+# │  92 │ Lime green              │ Bright green            │ Bright green
+# │  93 │ Yellow                  │ Bright yellow           │ Pure yellow
+# │  94 │ Light greyish blue      │ Dull blue               │ Deep blue
+# │  95 │ Light purple            │ Magenta                 │ Magenta
+# │  96 │ Cyan                    │ Bright cyan             │ Bright cyan
+# │  97 │ Off white               │ White                   │ White
+#────────────┴─────────────────────────────────────────────────────────────
+
+# Background onto 40-47, and 100-107
+# -------------------------------------------------------------------------
 # [40m - Black Background
 # [41m - Red Background
 # [42m - Green Background
