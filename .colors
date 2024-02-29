@@ -105,7 +105,7 @@ export GREP_COLORS="
 # - [4m Underline [24m
 # - [5m Blink [25m
 # - [6m Blink (Fast) [26m
-# - [7m Invert [27m
+# - [7m Reverse [27m
 # - [8m Invisible [28m
 # - [9m Strikethrough [29m
 #
