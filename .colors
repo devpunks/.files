@@ -41,12 +41,17 @@
 #==========================================================================
 # {{{ ANSI Styles
 #
-# Standard Escape Codes
-# iCtrl-Keys: \e \x9B 
-# Octal: \033
-# Unicode: \u001b
-# Hexadecimal: \x1B
-# Decimal: 27
+#==========================================================================
+# Escape Sequences
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences
+# -------------------------------------------------------------------------
+
+# Ctrl Escape: 
+# Standard Escape: \e[
+# Octal Escape: \033[
+# Decimal Escape: \27[
+# Unicode Escape: \u001b[
+# Hexadecimal Escape: \x1B[
 #
 # Delimited by opening square bracket ([), known as a Control Sequence Introducer (CSI),
 # optionally followed by arguments and the command itself.
