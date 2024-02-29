@@ -446,7 +446,7 @@ function Colors () {
   echo && 256Colors
   echo && Spectrum
   echo
-} # Colors()
+} # Colors
 
 # }}}
 
