@@ -71,7 +71,7 @@ export GREP_COLORS="
 #
 #==========================================================================
 
-# Escape Sequences
+# CSI (Control Sequence Introducer) Escape Sequences
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences
 # -------------------------------------------------------------------------
 
