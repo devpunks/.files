@@ -83,7 +83,7 @@ export GREP_COLORS="
 # CSI (Control Sequence Introducer) Escape Sequences
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences
 # -------------------------------------------------------------------------
-
+#
 # Ctrl Escape: 
 # Standard Escape: \e[
 # Octal Escape: \033[
