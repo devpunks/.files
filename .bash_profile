@@ -498,7 +498,7 @@ function term () {
   clear
   echo "\e[7m"
   echo && echo "TTY: $(tty)"
-  echo "\nSize \033[3mROWS\033[23mX\033[3mCOLUMNS\033[23m: $(stty size | tr " " "x")"
+  echo "\nSize \e[3mROWS\e[23mX\e[3mCOLUMNS\e[23m: $(stty size | tr " " "x")"
   echo && [[ -n $TMUX ]] && echo "TMUX INFO:" && tmux info
   echo && echo "TERM=${TERM} $( tput -V )" && toe
   echo && echo "stty: $(stty -g)" && stty -a
