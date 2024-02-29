@@ -127,7 +127,9 @@ export GREP_COLORS="
 function Styles () {
   echo && echo 💅 ANSI Styles && echo
 
-  local styles=( Reset Bold Italic Underline Blink Strobe Reverse Invisible Strikethrough )
+  local styles=(
+    Reset Bold Italic Underline Blink Strobe Reverse Invisible Strikethrough
+  )
 
   echo "The Styles: ${styles[@]}"
 
