@@ -247,11 +247,11 @@ function 16Colors () {
 # Reset -------------------------------------------------------------------
 NC=$( tput sgr0 ) # No Color
 
-# Format ------------------------------------------------------------------
-DIM=$(tput dim)
-BOLD=$(tput bold)
-REVERSE=$(tput rev)
-UNDERLINE=$(tput smul)
+# Styles ------------------------------------------------------------------
+DIM=$( tput dim )
+BOLD=$( tput bold )
+REVERSE=$( tput rev )
+UNDERLINE=$( tput smul )
 
 # Colors ------------------------------------------------------------------
 BLACK=$(tput setaf 0)
