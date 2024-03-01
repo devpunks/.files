@@ -317,6 +317,11 @@ PS4='➕ ' # Verbose prompt tracing
 #
 # TODO: Refactor into functions
 #
+function exitstatus () {
+  local status=$?
+  [[ ${status} == 0 ]] && echo "✅ ${status} "
+  [[ ${status} != 0 ]] && echo "❌ ${status} "
+}
 # }}}
 
 echo 'devPunks😈studio .bashrc'
