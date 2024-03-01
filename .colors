@@ -329,7 +329,7 @@ function 3bit () {
     done && echo
   done && echo
 
-  echo && echo "ANSI 3-bit [1;39m Bright [m" && echo
+  echo && echo " ANSI 3-bit [1;39mBright[m" && echo
 
   printf " %12s " ' 🎨  '
   for BG in $( seq 40 47 ); do
