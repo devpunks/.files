@@ -506,7 +506,6 @@ function term () {
   echo "\e[m"
   echo && echo "Bindings \e[3m( see ~/.inputrc )\e[23m & alias shortcuts"
   shortcuts
-  [[ $( type -t Styles ) == function ]] && echo && Styles
   [[ $( type -t Colors ) == function ]] && echo && Colors
 }
 
