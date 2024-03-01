@@ -275,7 +275,21 @@ function 3bit () {
   done && echo
 
   echo && echo "ANSI 3-bit [1;39m Bright [m" && echo
-} # 4bit
+
+  printf " %12s " ' 🎨  '
+  for BG in $( seq 40 47 ); do
+    printf "[${BG}m %-8s [m" "\\e[${BG}m"
+  done && echo
+
+  for FG in $( seq 30 37 ); do
+    printf "[1;${FG}m %-11s [m" "\\e[1;${FG}m ➤"
+
+    for BG in $( seq 40 47 ); do
+      printf "[1;${FG};${BG}m %-8s [m" "1;${FG};${BG}m"
+    done && echo
+  done && echo
+
+} # 3bit
 
 function 8bit () {
   printf "\n%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
