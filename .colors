@@ -292,7 +292,7 @@ function 3bit () {
 } # 3bit
 
 function 4bit () {
-  echo && echo ANSI 3-bit && echo
+  echo && echo ANSI 4-bit && echo
 } # 4bit
 
 function 8bit () {
