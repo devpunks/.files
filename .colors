@@ -367,6 +367,7 @@ function 4bit () {
 
 #==========================================================================
 # {{{ 8-bit 256 Color
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#8-bit
 #
 # 256 ansi colors # Where N is a color code {0-256}
 # 38;5;n  │Foreground - Replace ɴ with value from 256-color chart below
