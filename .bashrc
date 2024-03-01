@@ -320,8 +320,10 @@ PS4='➕ ' # Verbose prompt tracing
 #
 function exitstatus () {
   local status=$?
-  [[ ${status} == 0 ]] && echo "✅ ${status} "
-  [[ ${status} != 0 ]] && echo "❌ ${status} "
+  [[ ${status} == 0 ]] && \
+    echo " ✅ ${status} "
+  [[ ${status} != 0 ]] && \
+    echo " ❌ ${status} "
 }
 # }}}
 
