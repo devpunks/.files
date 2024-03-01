@@ -67,7 +67,7 @@ export GREP_COLORS="\
 # }}}
 
 #==========================================================================
-# {{{ ANSI Styles
+# {{{ ANSI Monochrome
 #
 # Delimited by opening square bracket ([), known as a
 # Control Sequence Introducer (CSI), optionally followed by
