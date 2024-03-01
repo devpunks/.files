@@ -478,7 +478,7 @@ function Colors () {
 
 # }}}
 
-echo && echo "I ${REVERSE}${MAGENTA}love${NC} devPunks .colors"
+echo && echo "$( whoami ) 💜s devPunks .colors"
 echo
 
 # vim: foldmethod=marker
