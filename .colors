@@ -124,8 +124,8 @@ export GREP_COLORS="\
 # │  8 │ +Invisible             │ +Invisible             │ «No effect»
 # │  9 │ +Strikethrough         │ +Strikethrough         │ «No effect»
 
-function Styles () {
-  echo && echo 💅 ANSI Styles && echo
+function Monochrome () {
+  echo && echo ANSI Monochrome && echo
 
   local styles=(
     Reset Bold Dim Italic Underline
