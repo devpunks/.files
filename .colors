@@ -270,7 +270,7 @@ function 3bit () {
     printf "[${FG}m%-9s[m" " \\e[${FG}m ➤"
 
     for BG in $( seq 40 47 ); do
-      printf "\e[${FG};${BG}m%s\e[m" "${FG};${BG}m "
+      printf "[${FG};${BG}m%-9s[m" " ${FG};${BG}m"
     done && echo
   done && echo
 
