@@ -483,8 +483,7 @@ function Colors () {
   echo && 3bit
   echo && 4bit
   echo && 8bit
-  echo && 256Colors
-  echo && Spectrum
+  echo && 24bit
   echo
 } # Colors
 
