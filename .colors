@@ -262,7 +262,7 @@ function 4bit () {
   echo && echo ANSI Monochrome && echo
 
   printf "\n%-8s%-8s[m%-8s[m%-8s[m%-8s[m%-8s[m%-8s[m%-8s[m%-8s[m\n" \
-    ' 🎨 ' '[40m  40m' '[41m  41m' '[42m  42m' '[43m  43m' '[44m  44m' '[45m  45m' '[46m  46m' '[47m  47m'
+    ' 🎨 ' '[40m  40m  ' '[41m  41m  ' '[42m  42m  ' '[43m  43m  ' '[44m  44m  ' '[45m  45m  ' '[46m  46m  ' '[47m  47m  '
 } # 4bit
 
 function 8bit () {
