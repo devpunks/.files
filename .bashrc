@@ -298,7 +298,7 @@ PS_JOBS="\[$(tput rev)$(tput bold)\] 🔧\j $PS_RESET"
 PS_TIME="\[$(tput sitm)$(tput smul)\]⏳XX secs.$PS_RESET "
 PS_CLOCK="\[$( tput rev )$( tput sitm )\]⌚\D{%H:%M:%S} $PS_RESET"
 PS_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS_RESET"
-PS_EXIT='$( exitstatus )'
+PS_EXIT='\[\e[1m\]$( exitstatus )'"$PS_RESET"
 PS_GIT="$( __git_ps1 '\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]' )"
 PS_PROMPT="\[$(tput rev)\]💲$PS_RESET"
 
