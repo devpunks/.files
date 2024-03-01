@@ -314,7 +314,7 @@ function Monochrome () {
 # ANSI 3-bit & 4-bit Colorspace(s)
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
 function 3bit () {
-  echo && echo ANSI 3-bit && echo
+  echo && echo " ANSI 3-bit" && echo
 
   printf " %9s " ' 🎨'
   for BG in $( seq 40 47 ); do
