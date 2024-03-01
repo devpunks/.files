@@ -261,10 +261,10 @@ function Monochrome () {
 function 3bit () {
   echo && echo ANSI 3-bit && echo
 
-  printf "\n%s%s%s%s%s%s%s%s%s\n" \
-    ' 🎨 ' '[40m  40  [m' '[41m  41  [m' \
-    '[42m  42  [m' '[43m  43  [m' '[44m  44  [m' \
-    '[45m  45  [m' '[46m  46  [m' '[47m  47  [m'
+  printf " %9s " ' 🎨'
+  for BG in $( seq 40 47 ); do
+    printf "[${BG}m %-8s[m" "\\e[${BG}m"
+  done && echo
 
   for FG in $( seq 30 37 ); do
     printf "\e[${FG}m%4s\e[m" "${FG} "
