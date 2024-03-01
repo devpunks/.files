@@ -475,7 +475,6 @@ function reload () {
 # reset # slowwwwww
   tput reset
   tput sgro # reset attributes
-  tput op # reset colors
   stty sane
   setterm --initialize
   setterm --resize
