@@ -256,7 +256,6 @@ function Monochrome () {
 # │ 107 │ Off white               │ White                   │ Light grey
 #──────────────────────────────────────────────────────────────────────────
 
-# ANSI 4-bit Colorspace
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
 function 4bit () {
   echo && echo ANSI 3-bit && echo
