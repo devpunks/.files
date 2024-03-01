@@ -505,7 +505,7 @@ function term () {
   echo && infocmp -l # terminfo description
   echo && infocmp -lCr # termcap description
   echo "\e[m"
-  echo && echo "Bindings \033[3m( see ~/.inputrc )\033[23m & alias shortcuts"
+  echo && echo "Bindings \e[3m( see ~/.inputrc )\033[23m & alias shortcuts"
   shortcuts
   [[ $( type -t Styles ) == function ]] && echo && Styles
   [[ $( type -t Colors ) == function ]] && echo && Colors
