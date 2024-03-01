@@ -259,7 +259,7 @@ function Monochrome () {
 # ANSI 4-bit Colorspace
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
 function 4bit () {
-  echo && echo ANSI Monochrome && echo
+  echo && echo ANSI 3-bit && echo
 
   printf "\n%s%s%s%s%s%s%s%s%s\n" \
     ' 🎨 ' '[40m  40m  [m' '[41m  41m  [m' '[42m  42m  [m' '[43m  43m  [m' '[44m  44m  [m' '[45m  45m  [m' '[46m  46m  [m' '[47m  47m  [m'
