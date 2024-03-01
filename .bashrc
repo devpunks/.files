@@ -303,7 +303,7 @@ PS_GIT="$( __git_ps1 '\[$(tput rev)$(tput bold)\]【🌵%s】\[$(tput sgr0)\]' )
 PS_PROMPT="\[$(tput rev)\]💲$PS_RESET"
 
 PS0="\[$(tput sitm)\]Running command:$PS_RESET ⌛`command date '+%T'`\n"
-PS1="${PS_EXIT}${PS_JOBS}${PS_TIME}${PS_PATH}${PS_GIT}${PS_PROMPT}"
+PS1="${PS_EXIT}${PS_TIME}${PS_JOBS}${PS_CLOCK}${PS_PATH}${PS_GIT}${PS_PROMPT}"
 PS2='⋯ ➡' # Nested shell levels
 PS3='Select：' # Select prompts
 PS4='➕ ' # Verbose prompt tracing
