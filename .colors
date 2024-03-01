@@ -318,7 +318,7 @@ function 8bit () {
       do printf "\033[$BG\033[$FG %5s \033[0m" $FG;
     done && echo
   done && echo
-} # 16Colors
+} # 8bit
 
 # }}}
 
