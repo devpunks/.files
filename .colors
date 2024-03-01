@@ -388,7 +388,7 @@ function 8bit () {
 #         │for closest supported color (non-GUI TTY has only 16 colors!)
 # =========================================================================
 
-function 256Colors () {
+function 8bit () {
   # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
   local bg="\e[48;5;"
   local fg="\e[38;5;"
