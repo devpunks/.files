@@ -468,6 +468,7 @@ function Colors () {
   printf "\ndircolors .dircolors\n$( dircolors "${DIRCOLORS}" )\n"
   printf "\ndircolors -b .dircolors\n$( dircolors -b "${DIRCOLORS}" )\n"
   echo && dircolors --print-ls-colors
+  echo && Monochrome
   echo && 3bit
   echo && 4bit
   echo && 8bit
