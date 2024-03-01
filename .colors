@@ -482,7 +482,7 @@ function Colors () {
   echo && dircolors --print-ls-colors
   echo && 3bit
   echo && 4bit
-  echo && 16Colors
+  echo && 8bit
   echo && 256Colors
   echo && Spectrum
   echo
