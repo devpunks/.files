@@ -441,6 +441,7 @@ function Spectrum () { # https://github.com/JohnMorales/dotfiles/blob/master/col
 # {{{ Functions
 # =========================================================================
 function Colors () {
+  echo && Monochrome
   echo && echo "Colors: $( tput colors )"
   printf "\n\$GREP_COLORS\n$GREP_COLORS\n"
   printf "\n\$LS_COLORS\n$LS_COLORS\n"
