@@ -133,7 +133,7 @@ function Styles () {
   )
 
   for style in "${!styles[@]}"; do
-    echo " \\\e[${style}m - ${styles[ $style ]} ➖" \
+    echo " ${style} - ${styles[ $style ]} ➖ \\\e[${style}m " \
       "\e[${style}mThe quick brown fox jumped over the lazy dog!\e[m"
     echo
   done && echo
