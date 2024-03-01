@@ -423,7 +423,7 @@ function 8bit () {
         then printf "\n";
     fi
   done
-} # 256Colors
+} # 8bit
 
 # }}}
 
