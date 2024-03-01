@@ -293,8 +293,8 @@ export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
 PS_RESET='\[$( tput sgr0 )\]'
 PS_USER="\[$( tput setaf 6 )\]\u$PS_RESET"
-PS_HOST="\[$(tput dim)$(tput sitm)$(tput setaf 2)\]\H$PS_RESET"
-PS_JOBS="\[$(tput rev)$(tput bold)\] 🔧\j $PS_RESET"
+PS_HOST="\[$( tput dim )$( tput sitm )$( tput setaf 2 )\]\H$PS_RESET"
+PS_JOBS="\[$( tput rev )$( tput bold )\] 🔧\j $PS_RESET"
 PS_TIME="\[$(tput sitm)$(tput smul)\]⏳XX secs.$PS_RESET "
 PS_CLOCK="\[$( tput rev )$( tput sitm )\]⌚\D{%H:%M:%S} $PS_RESET"
 PS_PATH="\[$(tput bold)$(tput rev)\]📂\[$(tput sitm)\]\w/$PS_RESET"
