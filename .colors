@@ -256,7 +256,13 @@ function Monochrome () {
 # │ 107 │ Off white               │ White                   │ Light grey
 #──────────────────────────────────────────────────────────────────────────
 
-function 16Colors () {
+# ANSI 4-bit Colorspace
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
+function 4bit () {
+  echo && echo ANSI Monochrome && echo
+} # 4bit
+
+function 8bit () {
   printf "\n "
   printf "%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
     '  40m' '  41m' '  42m' '  43m' '  44m' '  45m' '  46m' '  47m'
