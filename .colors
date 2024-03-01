@@ -291,6 +291,10 @@ function 3bit () {
 
 } # 3bit
 
+function 4bit () {
+  echo && echo ANSI 3-bit && echo
+} # 4bit
+
 function 8bit () {
   printf "\n%-7s%-7s%-7s%-7s%-7s%-7s%-7s%-7s" \
     '  40m' '  41m' '  42m' '  43m' '  44m' '  45m' '  46m' '  47m'
