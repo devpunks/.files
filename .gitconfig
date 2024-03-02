@@ -58,6 +58,9 @@
 [init]
   defaultBranch = main
 
+[submodule]
+  recurse = true
+
 [rerere]
   enabled = 1
 
