@@ -113,6 +113,8 @@
 #
 #  The attributes are:
 #    bold, dim, italic, ul, blink, reverse, strike.
+#    Specific attributes may be turned off by prefixing them
+#    with no or no- (e.g., noreverse, no-ul, etc).
 #
 # ------------------------------------------------------------------------
 
