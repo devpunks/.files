@@ -198,7 +198,7 @@
 #     red). The values of these variables may be specified as in color.branch.<slot>.
 [color "status"]
   added = bold green
-  deleted = italic red
+  deleted = red
   changed = bold yellow
   untracked = dim italic
   nobranch = reverse red
