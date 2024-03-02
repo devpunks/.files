@@ -165,6 +165,11 @@
 
 #  The first color given is the foreground; the second is the background.
 #  The position of the attribute, if any, doesn't matter.
+
+# color.branch.<slot>
+#  Use customized color for branch coloration.
+#  <slot> is one of current (the current branch), local (a local branch),
+#  remote (a remote-tracking branch in refs/remotes/), plain (other refs).
 [color "branch"]
 # local = 13
   remote = dim italic
