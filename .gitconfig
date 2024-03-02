@@ -224,10 +224,10 @@
   tag = reverse 13
 
 [color "remote"]
-  hint = 
-  error = 
-  warning = 
-  success = 
+  hint = italic cyan
+  error = reverse cyan
+  warning = reverse yellow
+  success = reverse magenta
 
 # }}}
 
