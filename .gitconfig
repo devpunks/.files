@@ -191,7 +191,7 @@
   old = bold red # deletions
   new = bold green # additions
   plain = italic # unaltered
-  meta = normal # headers
+  meta = default # headers
   frag = bold reverse # i.e. @@ -148,10 +148,10 @@
   whitespace = reverse red
   commit = reverse bold normal
