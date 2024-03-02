@@ -177,7 +177,7 @@
   plain = bold
   local = default
   remote = dim italic
-  current = ul bold reverse
+  current = bold reverse ul
 
 [color "showbranch"]
 
