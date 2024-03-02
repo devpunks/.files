@@ -107,8 +107,12 @@
 #  All the basic colors except `normal` and `default` have a `bright` variant
 #  that can be specified by prefixing the color with `bright` (i.e. brightred)
 #
+#  Colors may also be given as numbers between 0 and 255;
+#  these use ANSI 256-color mode (not all terminals may support this).
+#  Specify 24-bit RGB values as hex, (i.e. #ff0ab3 not all terminals may support this)
+#
 #  The attributes are:
-#    bold, dim, ul, blink and reverse.
+#    bold, dim, italic, ul, blink, reverse, strike.
 #
 # ------------------------------------------------------------------------
 
