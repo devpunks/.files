@@ -63,6 +63,9 @@
   # https://stackoverflow.com/questions/7853332
   date = default-local
 
+[status]
+  aheadBehind = on
+
 [push]
   default = simple
 
