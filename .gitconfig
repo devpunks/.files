@@ -227,7 +227,7 @@
   hint = cyan
   error = cyan
   warning = yellow
-  success = reverse magenta
+  success = magenta
 
 # }}}
 
