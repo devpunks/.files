@@ -174,8 +174,6 @@
 #  <slot> is one of current (the current branch), local (a local branch),
 #  remote (a remote-tracking branch in refs/remotes/), plain (other refs).
 [color "branch"]
-# local = 13
-  remote = dim italic
   plain = bold
   current = bold reverse
 
