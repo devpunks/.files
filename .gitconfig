@@ -194,7 +194,7 @@
   meta = default # headers
   frag = bold reverse # i.e. @@ -148,10 +148,10 @@
   whitespace = reverse red
-  commit = reverse bold normal
+  commit = reverse bold default
 
 # color.status.<slot>
 #     Use customized color for status colorization.  <slot> is one of header (the header text of the
