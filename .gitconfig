@@ -39,6 +39,9 @@
   name = snuggs
   email = rashaunstovall@gmail.com
 
+[advice]
+  statusHints = on
+
 [credential]
   helper = cache
 
