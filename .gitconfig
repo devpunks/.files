@@ -224,7 +224,7 @@
   tag = reverse 13
 
 [color "remote"]
-  hint = italic cyan
+  hint = cyan
   error = reverse cyan
   warning = reverse yellow
   success = reverse magenta
