@@ -43,7 +43,8 @@
   helper = cache
 
 [help]
-  format = man # [man|info|web|html]
+  format = web # [man|info|web|html]
+  htmlPath = https://git-scm.com/docs/
 
 [advice]
   statusHints = on
