@@ -225,7 +225,7 @@
 
 [color "remote"]
   hint = cyan
-  error = reverse cyan
+  error = cyan
   warning = reverse yellow
   success = reverse magenta
 
