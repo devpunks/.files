@@ -182,8 +182,8 @@
 #  or whitespace (highlighting whitespace errors). The values of these variables may be specified as
 #  in color.branch.<slot>.
 [color "diff"]
-  old = bold 9 # deletions
-  new = bold 10 # additions
+  old = bold red # deletions
+  new = bold green # additions
   plain = italic # unaltered
   meta = normal # headers
   frag = bold reverse # i.e. @@ -148,10 +148,10 @@
