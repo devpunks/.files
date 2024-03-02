@@ -42,6 +42,15 @@
 [credential]
   helper = cache
 
+[advice]
+  statusHints = on
+  detachedHead = on
+  pushNeedsForce = on
+  addIgnoredFile = on
+  forceDeleteBranch = on
+  statusAheadBehind = on
+  submodulesNotUpdated = on
+
 [init]
   defaultBranch = main
 
