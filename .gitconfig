@@ -99,6 +99,14 @@
 
 # ------------------------------------------------------------------------
 # {{{ ANSI 256 COLOURS
+#
+#  The value for these configuration variables is a list of colors
+#  (at most two) and attributes separated by spaces. The colors accepted are:
+#    normal, black, red, green, yellow, blue, magenta, cyan, white, and default;
+#
+#  The attributes are:
+#    bold, dim, ul, blink and reverse.
+#
 # ------------------------------------------------------------------------
 
 [color]
