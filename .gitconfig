@@ -175,7 +175,9 @@
 #  remote (a remote-tracking branch in refs/remotes/), plain (other refs).
 [color "branch"]
   plain = bold
-  current = bold reverse
+  local = default
+  remote = dim italic
+  current = ul bold reverse
 
 [color "showbranch"]
 
