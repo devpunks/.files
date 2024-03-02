@@ -90,6 +90,7 @@
   tool = vimdiff
 
 [core]
+  pager = cat
   autocrlf = input
   editor=/usr/bin/vim
   excludesfile = ~/.gitignore
