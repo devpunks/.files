@@ -170,8 +170,8 @@
 [color "branch"]
 # local = 13
   remote = dim italic
-  plain = bold reverse
-  current = bold
+  plain = bold
+  current = bold reverse
 
 [color "showbranch"]
 
