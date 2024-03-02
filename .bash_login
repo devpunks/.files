@@ -511,7 +511,7 @@ function term () {
 
 # }}}
 
-echo 'devPunks😈studio .bash_profile'
+echo 'devPunks😈studio .bash_login'
 echo
 
 # vim: foldmethod=marker
