@@ -42,6 +42,9 @@
 [credential]
   helper = cache
 
+[help]
+  format = man # [man|info|web|html]
+
 [advice]
   statusHints = on
   detachedHead = on
