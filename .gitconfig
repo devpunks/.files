@@ -223,6 +223,8 @@
   remoteBranch = dim italic 145
   tag = reverse 13
 
+[color "remote"]
+
 # }}}
 
 # vim: foldmethod=marker
