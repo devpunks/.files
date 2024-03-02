@@ -101,8 +101,12 @@
 # {{{ ANSI 256 COLOURS
 #
 #  The value for these configuration variables is a list of colors
-#  (at most two) and attributes separated by spaces. The colors accepted are:
-#  normal, black, red, green, yellow, blue, magenta, cyan, white, and default;
+#  (at most two) and attributes separated by spaces.
+#
+#  The attributes are:
+#    bold, dim, italic, ul, blink, reverse, strike.
+#    Specific attributes may be turned off by prefixing them
+#    with no or no- (e.g., noreverse, no-ul, etc).
 #
 #  All the basic colors except `normal` and `default` have a `bright` variant
 #  that can be specified by prefixing the color with `bright` (i.e. brightred)
