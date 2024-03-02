@@ -208,7 +208,7 @@
   changed = bold yellow
   untracked = dim italic
   nobranch = reverse red
-  header = normal
+  header = default
   branch = bold reverse
 
 # color.interactive.<slot>
