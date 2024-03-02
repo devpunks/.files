@@ -224,6 +224,10 @@
   tag = reverse 13
 
 [color "remote"]
+  hint = 
+  error = 
+  warning = 
+  success = 
 
 # }}}
 
