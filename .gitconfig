@@ -122,8 +122,6 @@
 # before applying the specified coloring. For example,
 # `reset green` will result in a green foreground
 # and default background without any active attributes.
-
-
 #
 # ------------------------------------------------------------------------
 
