@@ -88,8 +88,8 @@
   br = branch
   ci = commit
   co = checkout
-  graph = log --graph --oneline --decorate=short --branches='*'
-  br = branch
+  st = status -sb
+  pend = cherry -v origin/master
   df = diff --color-words='[^[:space:]]'
   sh = show --color-words='[^[:space:]]'
   lg = log -p
