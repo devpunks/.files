@@ -102,7 +102,10 @@
 #
 #  The value for these configuration variables is a list of colors
 #  (at most two) and attributes separated by spaces. The colors accepted are:
-#    normal, black, red, green, yellow, blue, magenta, cyan, white, and default;
+#  normal, black, red, green, yellow, blue, magenta, cyan, white, and default;
+#
+#  All the basic colors except `normal` and `default` have a `bright` variant
+#  that can be specified by prefixing the color with `bright` (i.e. brightred)
 #
 #  The attributes are:
 #    bold, dim, ul, blink and reverse.
