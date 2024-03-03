@@ -304,14 +304,14 @@ function Monochrome () {
 
 # │  49 │ «Reset color»           │ «Reset color»           │ «Reset color»
 
-# │ 100 │ Dark grey               │ Dull grey               │ Black
-# │ 101 │ Red                     │ Bright red              │ Light red
-# │ 102 │ Lime green              │ Bright green            │ Light green
-# │ 103 │ Yellow                  │ Bright yellow           │ Yellow
-# │ 104 │ Light greyish blue      │ Dull blue               │ Sky blue
-# │ 105 │ Light purple            │ Magenta                 │ Purple
-# │ 106 │ Cyan                    │ Bright cyan             │ Cyan
-# │ 107 │ Off white               │ White                   │ Light grey
+# │1;40 │ Dark grey               │ Dull grey               │ Black
+# │1;41 │ Red                     │ Bright red              │ Light red
+# │1;42 │ Lime green              │ Bright green            │ Light green
+# │1;43 │ Yellow                  │ Bright yellow           │ Yellow
+# │1;44 │ Light greyish blue      │ Dull blue               │ Sky blue
+# │1;45 │ Light purple            │ Magenta                 │ Purple
+# │1;46 │ Cyan                    │ Bright cyan             │ Cyan
+# │1;47 │ Off white               │ White                   │ Light grey
 #──────────────────────────────────────────────────────────────────────────
 
 # ANSI 3-bit & 4-bit Colorspace(s)
