@@ -265,7 +265,7 @@ function Monochrome () {
 # │1;37 │ Off white               │ White                   │ White
 #──────────────────────────────────────────────────────────────────────────
 
-# Background onto 40-47, and 100-107
+# Background onto 40-47
 # -------------------------------------------------------------------------
 # [40m - Black Background
 # [41m - Red Background
@@ -276,16 +276,20 @@ function Monochrome () {
 # [46m - Cyan Background
 # [47m - Off White Background
 #
+# -------------------------------------------------------------------------
 # [49m - Reset
+# -------------------------------------------------------------------------
 
-# [100m - Dark Grey Background
-# [101m - Light Red Background
-# [102m - Light Green Background
-# [103m - Yellow Background
-# [104m - Light Blue Background
-# [105m - Light Purple Background
-# [106m - Turquoise Background
-# [107m - Light White Background
+# Bright Background onto 1;40-1;47
+# -------------------------------------------------------------------------
+# [1;40m - Dark Grey Background
+# [1;41m - Light Red Background
+# [1;42m - Light Green Background
+# [1;43m - Yellow Background
+# [1;44m - Light Blue Background
+# [1;45m - Light Purple Background
+# [1;46m - Turquoise Background
+# [1;47m - Light White Background
 
 #┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 #┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
