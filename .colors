@@ -215,7 +215,7 @@ function Monochrome () {
 #   - https://retrocomputing.stackexchange.com/questions/20043
 # =========================================================================
 
-# Foreground onto 30-37, and 90-97
+# Foreground onto 30-37
 # -------------------------------------------------------------------------
 # [30m - Black
 # [31m - Red
