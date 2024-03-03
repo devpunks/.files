@@ -386,17 +386,6 @@ function 3bit () {
 #┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 #┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
 #┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
-# │  30 │ Very dark grey          │ Black                   │ Black
-# │  31 │ Dull red                │ Red                     │ Light red
-# │  32 │ Dull green              │ Light green             │ Light green
-# │  33 │ Dull yellow             │ Yellow                  │ Yellow
-# │  34 │ Greyish blue            │ Dark blue               │ Sky blue
-# │  35 │ Dull purple             │ Purple                  │ Purple
-# │  36 │ Teal                    │ Cyan                    │ Cyan
-# │  37 │ Light grey              │ Light grey              │ Light grey
-
-# │  39 │ «Reset color»           │ «Reset color»           │ «Reset color»
-
 # │  90 │ Dark grey               │ Dull grey               │ Dull grey
 # │  91 │ Red                     │ Bright red              │ Bright red
 # │  92 │ Lime green              │ Bright green            │ Bright green
