@@ -209,7 +209,7 @@ function Monochrome () {
 # }}}
 
 #==========================================================================
-# {{{ 3-bit & 4-bit IBM aixterm,16-Color
+# {{{ 3-bit 16-Color
 #
 #   The 16-color feature is borrowed from IBM aixterm,
 #   which maps 16 codes each for foreground and background onto two ranges;
