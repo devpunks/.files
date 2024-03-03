@@ -331,7 +331,6 @@ function 3bit () {
       printf "[${FG};${BG}m%-9s[m" " ${FG};${BG}m"
     done && echo
   done && echo
-
   echo && echo " ANSI 3-bit [1;39mBright[m" && echo
 
   printf " %12s " ' 🎨  '
