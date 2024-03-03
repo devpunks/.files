@@ -40,6 +40,10 @@
 # =========================================================================
 # {{{ Imports
 # =========================================================================
+# https://stackoverflow.com/questions/42757236/what-does-mean-in-bash
+echo THE FLAGS $-
+# [[ $- != *i* ]] 
+
 # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 # [[ -z "$PS1" ]] && exit
 
