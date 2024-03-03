@@ -362,6 +362,92 @@ function 3bit () {
 
 } # 3bit
 
+# }}}
+
+#==========================================================================
+# {{{ 4-bit IBM AIXterm,16-Color
+#
+#   The 16-color feature is borrowed from IBM aixterm,
+#   which maps 16 codes each for foreground and background onto two ranges;
+#   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
+#==========================================================================
+
+# Foreground onto 30-37
+# -------------------------------------------------------------------------
+# [30m - Black
+# [31m - Red
+# [32m - Green
+# [33m - Yellow
+# [34m - Blue
+# [35m - Purple
+# [36m - Cyan
+# [37m - Off White
+#
+# -------------------------------------------------------------------------
+# [39m - Reset
+# -------------------------------------------------------------------------
+
+# Bright Foreground onto 90-97
+# -------------------------------------------------------------------------
+# [90m - Grey
+# [91m - Light Red
+# [92m - Light Green
+# [93m - Light Yellow
+# [94m - Light Blue
+# [95m - Light Purple
+# [96m - Turquoise
+# [97m - White
+
+#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
+#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+# │  30 │ Very dark grey          │ Black                   │ Black
+# │  31 │ Dull red                │ Red                     │ Light red
+# │  32 │ Dull green              │ Light green             │ Light green
+# │  33 │ Dull yellow             │ Yellow                  │ Yellow
+# │  34 │ Greyish blue            │ Dark blue               │ Sky blue
+# │  35 │ Dull purple             │ Purple                  │ Purple
+# │  36 │ Teal                    │ Cyan                    │ Cyan
+# │  37 │ Light grey              │ Light grey              │ Light grey
+
+# │  39 │ «Reset color»           │ «Reset color»           │ «Reset color»
+
+# │  90 │ Dark grey               │ Dull grey               │ Dull grey
+# │  91 │ Red                     │ Bright red              │ Bright red
+# │  92 │ Lime green              │ Bright green            │ Bright green
+# │  93 │ Yellow                  │ Bright yellow           │ Pure yellow
+# │  94 │ Light greyish blue      │ Dull blue               │ Deep blue
+# │  95 │ Light purple            │ Magenta                 │ Magenta
+# │  96 │ Cyan                    │ Bright cyan             │ Bright cyan
+# │  97 │ Off white               │ White                   │ White
+#──────────────────────────────────────────────────────────────────────────
+
+# Bright Background onto 100-107
+# -------------------------------------------------------------------------
+# [100m - Dark Grey Background
+# [101m - Light Red Background
+# [102m - Light Green Background
+# [103m - Yellow Background
+# [104m - Light Blue Background
+# [105m - Light Purple Background
+# [106m - Turquoise Background
+# [107m - Light White Background
+
+#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
+#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+# │ 100 │ Dark grey               │ Dull grey               │ Black
+# │ 101 │ Red                     │ Bright red              │ Light red
+# │ 102 │ Lime green              │ Bright green            │ Light green
+# │ 103 │ Yellow                  │ Bright yellow           │ Yellow
+# │ 104 │ Light greyish blue      │ Dull blue               │ Sky blue
+# │ 105 │ Light purple            │ Magenta                 │ Purple
+# │ 106 │ Cyan                    │ Bright cyan             │ Cyan
+# │ 107 │ Off white               │ White                   │ Light grey
+#──────────────────────────────────────────────────────────────────────────
+
+# ANSI 4-bit Colorspace(s)
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
 function 4bit () {
   echo && echo " ANSI 4-bit (AIXTerm Non-Standard)" && echo
 
