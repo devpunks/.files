@@ -109,10 +109,10 @@ export LS_OPTIONS='\
   --color=auto --hyperlink=auto --tabsize=0 --width=2 --format=vertical \
   --block-size=MiB --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
 
-export GREP_OPTIONS='--context=1 \
-  --directories=skip --devices=skip --binary-files=without-match \
-  --ignore-case --no-messages --line-number --with-filename --color=auto \
-  --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
+export GREP_OPTIONS='--context=1
+  --directories=skip --devices=skip --binary-files=without-match
+  --ignore-case --no-messages --line-number --with-filename --color=auto
+  --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
   --exclude-dir="{ .cache, .config, .git, .gnupg, .npm, .ssh, .vim, log, node_modules, storage }
 '
 
