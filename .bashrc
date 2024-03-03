@@ -112,7 +112,7 @@ export LS_OPTIONS='\
 export GREP_OPTIONS='--context=1 \
   --directories=skip --devices=skip --binary-files=without-match \
   --ignore-case --no-messages --line-number --with-filename --color=auto \
-  --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
+  --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
   --exclude-dir="{ .cache, .config, .git, .gnupg, .npm, .ssh, .vim, log, node_modules, storage }
 '
 
