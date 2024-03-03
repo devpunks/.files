@@ -15,7 +15,7 @@
 # Source: https://github.com/devpunks
 # Author: Ahmid-Ra (github.com/snuggs)
 # Maintainer: devPunks <https://github.com/devpunks>
-# Description: Bourne Again SHell Run Commands on $SHELL login.
+# Description: Bourne Again SHell Run Commands for interactive $SHELL
 # -------------------------------------------------------------------------
 #
 # INVOCATION
