@@ -255,14 +255,14 @@ function Monochrome () {
 
 # │  39 │ «Reset color»           │ «Reset color»           │ «Reset color»
 
-# │  90 │ Dark grey               │ Dull grey               │ Dull grey
-# │  91 │ Red                     │ Bright red              │ Bright red
-# │  92 │ Lime green              │ Bright green            │ Bright green
-# │  93 │ Yellow                  │ Bright yellow           │ Pure yellow
-# │  94 │ Light greyish blue      │ Dull blue               │ Deep blue
-# │  95 │ Light purple            │ Magenta                 │ Magenta
-# │  96 │ Cyan                    │ Bright cyan             │ Bright cyan
-# │  97 │ Off white               │ White                   │ White
+# │1;30 │ Dark grey               │ Dull grey               │ Dull grey
+# │1;31 │ Red                     │ Bright red              │ Bright red
+# │1;32 │ Lime green              │ Bright green            │ Bright green
+# │1;33 │ Yellow                  │ Bright yellow           │ Pure yellow
+# │1;34 │ Light greyish blue      │ Dull blue               │ Deep blue
+# │1;35 │ Light purple            │ Magenta                 │ Magenta
+# │1;36 │ Cyan                    │ Bright cyan             │ Bright cyan
+# │1;37 │ Off white               │ White                   │ White
 #──────────────────────────────────────────────────────────────────────────
 
 # Background onto 40-47, and 100-107
