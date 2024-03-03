@@ -346,6 +346,20 @@ function 3bit () {
     done && echo
   done && echo
 
+  echo && echo " ANSI 3-bit [7m Video Reversal [m" && echo
+
+  printf " %12s " '  🎨 '
+  for FG in $( seq 30 37 ); do
+    printf "[7;${FG};49m %-8s [m" "7;${FG}m"
+  done && echo
+
+  printf " %12s " '[1;39mBright 🎨 '
+  for FG in $( seq 30 37 ); do
+    printf "[1;7;${FG}m %-8s [m" "1;7;${FG}m"
+  done && echo
+
+  echo
+
 } # 3bit
 
 function 4bit () {
