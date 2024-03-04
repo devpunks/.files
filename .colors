@@ -386,6 +386,17 @@ MAGENTA=$PURPLE_LIGHT
 # │  97 │ Off white               │ White                   │ White
 #──────────────────────────────────────────────────────────────────────────
 
+# Bright Background Colors ------------------------------------------------
+BLACK_LIGHT_BG=$( tput setab 8 )
+RED_LIGHT_BG=$( tput setab 9 )
+GREEN_LIGHT_BG=$( tput setab 10 )
+YELLOW_LIGHT_BG=$( tput setab 11 )
+BLUE_LIGHT_BG=$( tput setab 12 )
+MAGENTA_LIGHT_BG=$( tput setab 13 )
+CYAN_LIGHT_BG=$( tput setab 14 )
+WHITE_LIGHT_BG=$( tput setab 15 )
+
+GRAY_BG=$( tput setab 16 )
 # Bright Background onto 100-107
 # -------------------------------------------------------------------------
 # [100m - Dark Grey Background
