@@ -181,8 +181,8 @@ function Monochrome () {
 #┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
 #┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
 # │  30 │ Very dark grey          │ Black                   │ Black
-# │  31 │ Dull red                │ Red                     │ Light red
-# │  32 │ Dull green              │ Light green             │ Light green
+# │  31 │ Dull red                │ Red                     │ Red
+# │  32 │ Dull green              │ Green             │     │ Green
 # │  33 │ Dull yellow             │ Yellow                  │ Yellow
 # │  34 │ Greyish blue            │ Dark blue               │ Sky blue
 # │  35 │ Dull purple             │ Purple                  │ Purple
