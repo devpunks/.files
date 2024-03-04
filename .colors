@@ -322,7 +322,7 @@ function 3bit () {
     printf "[1;7;${FG}m %-8s [m" "1;7;${FG}m"
   done
 
-  echo
+  echo && echo
 
 } # 3bit
 
