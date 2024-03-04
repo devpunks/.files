@@ -333,7 +333,7 @@ function exitstatus () {
     echo " ✅ ${status} "
   [[ ${status} != 0 ]] && \
     echo " ❌ ${status} "
-}
+} # exitstatus
 # }}}
 
 echo 'devPunks😈studio .bashrc'
