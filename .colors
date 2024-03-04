@@ -153,8 +153,8 @@ function Monochrome () {
   echo && echo ANSI Monochrome && echo
 
   local styles=(
-    Reset Bold Dim Italic Underline
-    Blink Strobe Reverse Invisible Strikethrough
+    DEFAULT BOLD DIM ITALIC UNDERLINE
+    BLINK STROBE REVERSE INVISIBLE STRIKE
   )
 
   local CSI='\\e'
