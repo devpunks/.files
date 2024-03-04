@@ -345,7 +345,6 @@ BLUE_LIGHT=$( tput setaf 12 )
 MAGENTA_BRIGHT=$( tput setaf 13 )
 CYAN_LIGHT=$( tput setaf 14 )
 WHITE_LIGHT=$( tput setaf 15 )
-MAGENTA=$PURPLE_LIGHT
 
 # Bright Foreground onto 90-97
 # -------------------------------------------------------------------------
