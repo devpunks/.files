@@ -464,8 +464,8 @@ function 8bit () {
   printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
   for n in {0..7} ; do
-    printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
-      "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
+    printf " %2s ${fg}%dm \\${fg}%-3s \e[m  ${bg}%dm \\${bg}%-3s \e[m\n" \
+      $n $n "${n}m" $n "${n}m"
   done
 
   echo && echo ' High-Intensity Colors'
