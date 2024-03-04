@@ -311,7 +311,8 @@ function 3bit () {
     done && echo
   done
 
-  printf " %12s " '  🎨 '
+  echo && echo ' ANSI 3-bit [7m Video Reversal [m'
+  printf "\n %12s " '  🎨 '
   for FG in $( seq 30 37 ); do
     printf "[7;${FG};49m %-8s [m" "7;${FG}m"
   done && echo
