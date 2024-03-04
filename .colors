@@ -245,7 +245,8 @@ WHITE_BG=$( tput setab 7 ) #000000 RGB( 192,192,192 ) [47m
 NORMAL_BG=[49m
 # -------------------------------------------------------------------------
 
-# Bright Background onto 1;40-1;47
+# Bold Background onto 1;40-1;47
+# XTerm X11 ColorSpace Bold Background 1;40-1;47
 # -------------------------------------------------------------------------
 # [1;40m - Dark Grey Background
 # [1;41m - Light Red Background
