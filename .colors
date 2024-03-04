@@ -123,8 +123,8 @@ export GREP_COLORS="\
 # -------------------------------------------------------------------------
 # Styles Reset - 0, On 0-9, and Off 21-29
 # -------------------------------------------------------------------------
-# If no codes are given, CSI m ( [m ) is treated as CSI 0m ( [0m ) (reset / normal).
-# - [0m Reset [m
+# If no codes are given, CSI m ( \e[m ) is treated as CSI 0m ( \e[0m ) (reset / normal).
+# - \e[0m Reset \e[m
 
 # - \e[1m Bold \e[21m
 # - \e[2m Faint \e[22m
@@ -145,6 +145,7 @@ DIM='\e[2m' # tput dim
 ITALIC='\e[3m' # tput sitm
 UNDERLINE='\e[4m' # tput smul
 BLINK='\e[5m' # tput blink
+STROBE='\e[6m' # tput ????
 REVERSE='\e[7m' # tput rev
 INVISIBLE='\e[8m' # tput invis
 STRIKE='\e[9m' # tput smso
