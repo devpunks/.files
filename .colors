@@ -317,7 +317,7 @@ function 3bit () {
     printf "[7;${FG};49m %-8s [m" "7;${FG}m"
   done
 
-  printf " %12s " '[1;39mBright 🎨 '
+  printf "\n %12s " '[1;39mBright 🎨 '
   for FG in $( seq 30 37 ); do
     printf "[1;7;${FG}m %-8s [m" "1;7;${FG}m"
   done && echo
