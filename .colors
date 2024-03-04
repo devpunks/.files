@@ -551,6 +551,7 @@ function Colors () {
   echo && echo "Colors: $( tput colors )"
   printf "\n\$GREP_COLORS\n$GREP_COLORS\n"
   printf "\n\$LS_COLORS\n$LS_COLORS\n"
+  printf "\ndircolors -b\n$( dircolors -b )\n"
   printf "\ndircolors .dircolors\n$( dircolors "${DIRCOLORS}" )\n"
   printf "\ndircolors -b .dircolors\n$( dircolors -b "${DIRCOLORS}" )\n"
   echo && dircolors --print-ls-colors
