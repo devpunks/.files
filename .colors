@@ -270,8 +270,7 @@ WHITE_BG='\e[47m' #808080 RGB( 192,192,192 )
 NORMAL_BG='\e[49m'
 # -------------------------------------------------------------------------
 
-# Bold Background onto 1;40-1;47
-# XTerm X11 ColorSpace Bold Background 1;40-1;47
+# XTerm X11 ColorSpace Bold Video-Reverse Background 1;7;30-1;7;37
 # -------------------------------------------------------------------------
 # [1;40m - Dark Grey Background
 # [1;41m - Light Red Background
