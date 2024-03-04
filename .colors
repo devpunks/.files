@@ -532,7 +532,7 @@ function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors
         g = ( colnum * 510 / total_cols );
         b = ( colnum * 255 / total_cols );
 
-          if ( g > 255 ) g = 510-g;
+        if ( g > 255 ) g = 510-g;
 
           printf "\033[48;2;%d;%d;%dm", r, g, b;
           printf "\033[38;2;%d;%d;%dm", 255 - r, 255 - g, 255 - b;
