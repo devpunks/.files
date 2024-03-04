@@ -140,7 +140,7 @@ export GREP_COLORS="\
 DEFAULT='\e[0m'
 
 # Monochrome Term(inal) Styles --------------------------------------------
-BOLD='\e[1m' # tput bold
+BOLD='\e[[1m' # tput bold
 DIM='\e[2m' # tput dim
 ITALIC='\e[3m' # tput sitm
 UNDERLINE='\e[4m' # tput smul
