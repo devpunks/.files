@@ -480,7 +480,8 @@ function 8bit () {
   printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
   for n in {16..231} ; do
-    printf " ${bg}%sm %3d \e[0m" "$n" "$n"
+    printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
+
     if (( ( n > 15 ) && (n-15) % $columns == 0 ))
         then printf "\n";
     fi
