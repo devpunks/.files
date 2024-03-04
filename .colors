@@ -541,7 +541,7 @@ function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors
     }' # BEGIN
 } # 24bit
 
-#  }}}
+# }}}
 
 # {{{ Functions
 # =========================================================================
