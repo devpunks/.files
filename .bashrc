@@ -320,9 +320,13 @@ PS4='➕ ' # Verbose prompt tracing
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
-#
-# TODO: Refactor into functions
-#
+
+function prompts () {
+  for i in `seq 1 ${SHLVL}`; do
+    printf '💲'
+  done
+} # prompts
+
 function exitstatus () {
   local status=$?
   [[ ${status} == 0 ]] && \
