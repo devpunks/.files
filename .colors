@@ -126,30 +126,28 @@ export GREP_COLORS="\
 # If no codes are given, CSI m ( [m ) is treated as CSI 0m ( [0m ) (reset / normal).
 # - [0m Reset [m
 
-# - [1m Bold [21m
-# - [2m Faint [22m
-# - [3m Italic [23m
-# - [4m Underline [24m
-# - [5m Blink [25m
-# - [6m Blink (Fast) [26m
-# - [7m Reverse [27m
-# - [8m Invisible [28m
-# - [9m Strikethrough [29m
+# - \e[1m Bold \e[21m
+# - \e[2m Faint \e[22m
+# - \e[3m Italic \e[23m
+# - \e[4m Underline \e[24m
+# - \e[5m Blink \e[25m
+# - \e[6m Blink (Fast) \e[26m
+# - \e[7m Reverse \e[27m
+# - \e[8m Invisible \e[28m
+# - \e[9m Strikethrough \e[29m
+#
+# -------------------------------------------------------------------------
+DEFAULT='\e[0m'
 
-#┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
-#┃  ## ┃ GNOME Terminal         ┃ xterm                  ┃ non-GUI TTY    ┃
-#┡━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━┩
-# │  0 │ «Reset style»          │ «Reset style»          │ «Reset style»
-
-# │  1 │ +Bold, +brighter color │ +Bold, +Brighter color │ +Brighter color
-# │  2 │ +Fainter color         │ +Fainter color         │ +Forced grey
-# │  3 │ +Italic                │ +Italic                │ +Forced green
-# │  4 │ +Underline             │ +Underline             │ +Forced cyan
-# │  5 │ «no effect»            │ +Blink                 │ «No effect»
-# │  6 │ «no effect»            │ +Blink (fast)          │ «No effect»
-# │  7 │ +Reverse video         │ +Invert colors         │ +Reverse video
-# │  8 │ +Invisible             │ +Invisible             │ «No effect»
-# │  9 │ +Strikethrough         │ +Strikethrough         │ «No effect»
+# Monochrome Term(inal) Styles --------------------------------------------
+BOLD='\e[1m' # tput bold
+DIM='\e[2m' # tput dim
+ITALIC='\e[3m' # tput sitm
+UNDERLINE='\e[4m' # tput smul
+BLINK='\e[5m' # tput blink
+REVERSE='\e[7m' # tput rev
+INVISIBLE='\e[8m' # tput invis
+STRIKE='\e[9m' # tput smso
 
 function Monochrome () {
   echo && echo ANSI Monochrome && echo
