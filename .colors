@@ -214,17 +214,6 @@ MAGENTA='\e[35m' #800080 RGB( 128,0,128 )
 CYAN='\e[36m' #008080 RGB( 0,128,128 )
 WHITE='\e[37m' #808080 RGB( 192,192,192 )
 
-# Background Colors -------------------------------------------------------
-BLACK_BG=$( tput setab 0 ) #000000 RGB( 0,0,0 )
-RED_BG=$( tput setab 1 ) #000000 RGB( 255,0,0 )
-GREEN_BG=$( tput setab 2 ) #000000 RGB( 0,255,0 )
-YELLOW_BG=$( tput setab 3 ) #000000 RGB( 255,255,0 )
-BLUE_BG=$( tput setab 4 ) #000000 RGB( 0,0,255 )
-MAGENTA_BG=$( tput setab 5 ) #000000 RGB( 255,0,255 )
-CYAN_BG=$( tput setab 6 ) #000000 RGB( 0,255,255 )
-WHITE_BG=$( tput setab 7 ) #000000 RGB( 255,255,255 )
-
-# Background onto 40-47
 # -------------------------------------------------------------------------
 # [40m - Black Background
 # [41m - Red Background
