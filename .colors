@@ -187,7 +187,7 @@ function Monochrome () {
 # │  34 │ Greyish blue            │ Dark blue               │ Blue
 # │  35 │ Dull purple             │ Purple                  │ Magenta
 # │  36 │ Teal                    │ Cyan                    │ Cyan
-# │  37 │ Light grey              │ Light grey              │ Light grey
+# │  37 │ Light grey              │ White                   │ White
 
 # │  39 │ «Reset color»           │ «Reset color»           │ «Reset color»
 
