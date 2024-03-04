@@ -272,37 +272,14 @@ NORMAL_BG='\e[49m'
 
 # XTerm X11 ColorSpace Bold Video-Reverse Background 1;7;30-1;7;37
 # -------------------------------------------------------------------------
-# [1;40m - Dark Grey Background
-# [1;41m - Light Red Background
-# [1;42m - Light Green Background
-# [1;43m - Yellow Background
-# [1;44m - Light Blue Background
-# [1;45m - Light Purple Background
-# [1;46m - Turquoise Background
-# [1;47m - Light White Background
-
-#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
-#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
-#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
-# │  40 │ Very dark grey          │ Black                   │ Black
-# │  41 │ Dull red                │ Red                     │ Light red
-# │  42 │ Dull green              │ Light green             │ Light green
-# │  43 │ Dull yellow             │ Yellow                  │ Yellow
-# │  44 │ Greyish blue            │ Dark blue               │ Sky blue
-# │  45 │ Dull purple             │ Purple                  │ Purple
-# │  46 │ Teal                    │ Cyan                    │ Cyan
-
-# │  49 │ «Reset color»           │ «Reset color»           │ «Reset color»
-
-# │1;40 │ Dark grey               │ Dull grey               │ Black
-# │1;41 │ Red                     │ Bright red              │ Light red
-# │1;42 │ Lime green              │ Bright green            │ Light green
-# │1;43 │ Yellow                  │ Bright yellow           │ Yellow
-# │1;44 │ Light greyish blue      │ Dull blue               │ Sky blue
-# │1;45 │ Light purple            │ Magenta                 │ Purple
-# │1;46 │ Cyan                    │ Bright cyan             │ Cyan
-# │1;47 │ Off white               │ White                   │ Light grey
-#──────────────────────────────────────────────────────────────────────────
+# \e[1;7;30m - Bold Black Video-Reverse
+# \e[1;7;31m - Bold Red Video-Reverse
+# \e[1;7;32m - Bold Green Video-Reverse
+# \e[1;7;33m - Bold Yellow Video-Reverse
+# \e[1;7;34m - Bold Blue Video-Reverse
+# \e[1;7;35m - Bold Magenta Video-Reverse
+# \e[1;7;36m - Bold Cyan Video-Reverse
+# \e[1;7;37m - Bold White Video-Reverse
 
 # ANSI 3-bit & 4-bit Colorspace(s)
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
