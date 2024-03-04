@@ -76,18 +76,22 @@ export GREP_COLORS="\
 # Missing numbers are treated as 0 (1;;3 acts like the middle number is 0,
 # and no parameters at all in ESC[m acts like a 0 reset code).
 #
-# Reset -------------------------------------------------------------------
-RESET=$( tput sgr0 ) # \e[0m
+#┏━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┓
+#┃  ## ┃ GNOME Terminal         ┃ xterm                  ┃ non-GUI TTY    ┃
+#┡━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━┩
+# │  0 │ «Reset style»          │ «Reset style»          │ «Reset style»
 
-# Monochrome Styles -------------------------------------------------------
-BOLD=$( tput bold ) # \e[1m
-DIM=$( tput dim ) # \e[2m
-ITALIC=$( tput sitm ) # \e[3m
-UNDERLINE=$( tput smul ) # \e[4m
-BLINK=$( tput blink ) # \e[5m
-REVERSE=$( tput rev ) # \e[7m
-INVISIBLE=$( tput invis ) # \e[8m
-STRIKE=$( tput smso ) # \e[9m
+# │  1 │ +Bold, +brighter color │ +Bold, +Brighter color │ +Brighter color
+# │  2 │ +Fainter color         │ +Fainter color         │ +Forced grey
+# │  3 │ +Italic                │ +Italic                │ +Forced green
+# │  4 │ +Underline             │ +Underline             │ +Forced cyan
+# │  5 │ «no effect»            │ +Blink                 │ «No effect»
+# │  6 │ «no effect»            │ +Blink (fast)          │ «No effect»
+# │  7 │ +Reverse video         │ +Invert colors         │ +Reverse video
+# │  8 │ +Invisible             │ +Invisible             │ «No effect»
+# │  9 │ +Strikethrough         │ +Strikethrough         │ «No effect»
+
+#-------------------------- Unset Style -----------------------------------
 
 #==========================================================================
 
