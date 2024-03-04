@@ -93,6 +93,17 @@ export GREP_COLORS="\
 
 #-------------------------- Unset Style -----------------------------------
 
+# │ 21 │ -Bold, -Brighter color │ -Double underline      │ -Brighter color
+# │ 22 │ -Fainter color         │ -Fainter color         │ -Forced grey
+# │ 23 │ -Italic                │ -Italic                │ -Forced green
+# │ 24 │ -Underline             │ -Underline,            │ -Forced cyan
+# │ 25 │ «No effect»            │ -Blink                 │ «No effect»
+# │ 26 │ «No effect»            │ -Blink (fast)          │ «No effect»
+# │ 27 │ -Reverse video         │ -Invert colors         │ -Reverse video
+# │ 28 │ -Invisible             │ -Invisible             │ «No effect»
+# │ 29 │ -Strikethrough         │ -Strikethrough         │ «No effect»
+#──────────────────────────────────────────────────────────────────────────
+#
 #==========================================================================
 
 # CSI (Control Sequence Introducer) Escape Sequences
