@@ -516,9 +516,6 @@ function 8bit () {
 # https://github.com/microsoft/terminal/issues/11057
 export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
 
-# Truecolor test
-printf "\n\e[38;2;255;100;0mTRUECOLOR ${COLORTERM}\e[m\n"
-
 function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
   # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
   # Truecolor test
