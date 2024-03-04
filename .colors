@@ -287,7 +287,7 @@ function 3bit () {
   printf "\n %9s " ' 🎨'
   for BG in $( seq 40 47 ); do
     printf "[${BG}m %-8s[m" "\\e[${BG}m"
-  done && echo
+  done
 
   for FG in $( seq 30 37 ); do
     printf "[${FG}m%-9s[m" " \\e[${FG}m ➤"
