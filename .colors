@@ -463,8 +463,6 @@ function 8bit () {
   echo && echo " ANSI 8-bit 256 [2;3m(0-7) [m[1mStandard Colors[m" && echo
   printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
-  echo && echo ' Standard Colors'
-  printf "  #  %-12s  %-12s\n" Foreground Background
   for n in {0..7} ; do
     printf " ${fg}%sm%2d  %-12s\e[0m  ${bg}%sm %-12s\e[0m\n" \
       "$n" "$n" "${fg}${n}m" "$n" "${bg}${n}m"
