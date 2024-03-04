@@ -536,8 +536,8 @@ function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors
 
           printf "\033[48;2;%d;%d;%dm", r,g,b;
           printf "\033[38;2;%d;%d;%dm", 255-r,255-g,255-b;
-          printf "%s\033[0m", substr(s,colnum%2+1,1);
-          if (colnum%term_cols==term_cols) printf "\n";
+          printf "%s\033[0m", substr( s, colnum%2+1, 1 );
+          if ( colnum % term_cols==term_cols ) printf "\n";
       }
       printf "\n";
     }' # BEGIN
