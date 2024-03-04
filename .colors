@@ -283,9 +283,8 @@ NORMAL_BG=[49m
 # ANSI 3-bit & 4-bit Colorspace(s)
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
 function 3bit () {
-  echo && echo " ANSI 3-bit" && echo
-
-  printf " %9s " ' 🎨'
+  echo && echo ' ANSI 3-bit'
+  printf "\n %9s " ' 🎨'
   for BG in $( seq 40 47 ); do
     printf "[${BG}m %-8s[m" "\\e[${BG}m"
   done && echo
