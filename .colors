@@ -524,7 +524,7 @@ function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors
   awk \
     -v term_cols="${width:-$( tput cols || echo 80 )}" \
     -v term_lines="${height:-$( tput lines || echo 1 )}" \
-    'BEGIN{
+    'BEGIN {
       s="/\\";
       total_cols=term_cols*term_lines;
       for (colnum = 0; colnum<total_cols; colnum++) {
