@@ -163,16 +163,11 @@ function Monochrome () {
       "\e[${style}mThe quick brown fox jumped over the lazy dog!\e[m"
   done && echo
 
-# │ 21 │ -Bold, -Brighter color │ -Double underline      │ -Brighter color
-# │ 22 │ -Fainter color         │ -Fainter color         │ -Forced grey
-# │ 23 │ -Italic                │ -Italic                │ -Forced green
-# │ 24 │ -Underline             │ -Underline,            │ -Forced cyan
-# │ 25 │ «No effect»            │ -Blink                 │ «No effect»
-# │ 26 │ «No effect»            │ -Blink (fast)          │ «No effect»
-# │ 27 │ -Reverse video         │ -Invert colors         │ -Reverse video
-# │ 28 │ -Invisible             │ -Invisible             │ «No effect»
-# │ 29 │ -Strikethrough         │ -Strikethrough         │ «No effect»
-#──────────────────────────────────────────────────────────────────────────
+  for style in "${!styles[@]}"; do
+    echo "\e[1m${styles[ $style ]}\e[m ➖ \e[2m${CSI}\e[m\e[1m[${style}m\e[m" \
+      "\e[${style}mThe quick brown fox jumped over the lazy dog!\e[m"
+  done && echo
+} # Monochrome
 
 # }}}
 
