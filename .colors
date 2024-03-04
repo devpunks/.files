@@ -351,6 +351,17 @@ function 3bit () {
 #   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
 #==========================================================================
 
+# Bright Foreground Colors ------------------------------------------------
+BLACK_LIGHT=$( tput setaf 8 )
+RED_LIGHT=$( tput setaf 9 )
+GREEN_LIGHT=$( tput setaf 10 )
+YELLOW_LIGHT=$( tput setaf 11 )
+BLUE_LIGHT=$( tput setaf 12 )
+PURPLE_LIGHT=$( tput setaf 13 )
+CYAN_LIGHT=$( tput setaf 14 )
+WHITE_LIGHT=$( tput setaf 15 )
+MAGENTA=$PURPLE_LIGHT
+
 # Bright Foreground onto 90-97
 # -------------------------------------------------------------------------
 # [90m - Grey
