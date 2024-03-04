@@ -189,7 +189,7 @@ function Monochrome () {
 # │  36 │ Teal                    │ Cyan                    │ Cyan
 # │  37 │ Light grey              │ White                   │ White
 
-# │  39 │ «Reset color»           │ «Reset color»           │ «Reset color»
+# │  39 │ «Normal Reset           │ «Normal Reset»          │ «Normal Reset»
 
 # │1;30 │ Dark grey               │ Bold Black              │ Bold Black
 # │1;31 │ Red                     │ Bold Red                │ Bold Red
