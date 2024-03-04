@@ -184,8 +184,8 @@ function Monochrome () {
 # │  31 │ Dull red                │ Red                     │ Red
 # │  32 │ Dull green              │ Green             │     │ Green
 # │  33 │ Dull yellow             │ Yellow                  │ Yellow
-# │  34 │ Greyish blue            │ Dark blue               │ Sky blue
-# │  35 │ Dull purple             │ Purple                  │ Purple
+# │  34 │ Greyish blue            │ Dark blue               │ Blue
+# │  35 │ Dull purple             │ Purple                  │ Magenta
 # │  36 │ Teal                    │ Cyan                    │ Cyan
 # │  37 │ Light grey              │ Light grey              │ Light grey
 
