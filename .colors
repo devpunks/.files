@@ -340,91 +340,71 @@ function 3bit () {
 # }}}
 
 #==========================================================================
-# {{{ 4-bit IBM AIXterm,16-Color
-#
-#   The 16-color feature is borrowed from IBM aixterm,
-#   which maps 16 codes each for foreground and background onto two ranges;
-#   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
-#==========================================================================
+  # {{{ 4-bit IBM AIXterm,16-Color
+  #
+  #   The 16-color feature is borrowed from IBM aixterm,
+  #   which maps 16 codes each for foreground and background onto two ranges;
+  #   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
+  #==========================================================================
 
-# Bright Foreground Colors ------------------------------------------------
-BLACK_LIGHT=$( tput setaf 8 )
-RED_LIGHT=$( tput setaf 9 )
-GREEN_LIGHT=$( tput setaf 10 )
-YELLOW_LIGHT=$( tput setaf 11 )
-BLUE_LIGHT=$( tput setaf 12 )
-MAGENTA_BRIGHT=$( tput setaf 13 )
-CYAN_LIGHT=$( tput setaf 14 )
-WHITE_LIGHT=$( tput setaf 15 )
+  #┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
+  #┃  ### ┃ GNOME Terminal          ┃ xterm                 ┃ non-GUI TTY ┃
+  #┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
+  # │  90 │ Dark grey               │ Light Black           │ Light Black
+  # │  91 │ Red                     │ Light Red             │ Light Red
+  # │  92 │ Lime green              │ Light Green           │ Light Green
+  # │  93 │ Yellow                  │ Light Yellow          │ Light Yellow
+  # │  94 │ Light greyish blue      │ Light Blue            │ Light Blue
+  # │  95 │ Light purple            │ Light Magenta         │ Light Magenta
+  # │  96 │ Cyan                    │ Light Cyan            │ Light Cyan
+  # │  97 │ Off white               │ Light White           │ Light White
+  #────────────────────────────────────────────────────────────────────────
+  #
+  #------------------------- Light Background -----------------------------
+  #
+  # │ 100 │ Dark grey               │ Light Black           │ Light Black
+  # │ 101 │ Red                     │ Light Red             │ Light Red
+  # │ 102 │ Lime green              │ Light Green           │ Light Green
+  # │ 103 │ Yellow                  │ Light Yellow          │ Light Yellow
+  # │ 104 │ Light greyish blue      │ Light Blue            │ Light Blue
+  # │ 105 │ Light purple            │ Light Magenta         │ Light Magenta
+  # │ 106 │ Cyan                    │ Light Cyan            │ Light Cyan
+  # │ 107 │ Off white               │ Light White           │ Light White
+  #────────────────────────────────────────────────────────────────────────
 
-# Bright Foreground onto 90-97
-# -------------------------------------------------------------------------
-# [90m - Grey
-# [91m - Light Red
-# [92m - Light Green
-# [93m - Light Yellow
-# [94m - Light Blue
-# [95m - Light Purple
-# [96m - Turquoise
-# [97m - White
+  # Light Foreground Helpers (90-97) --------------------------------------
+  BLACK_LIGHT=$( tput setaf 8 )        # [90m
+  RED_LIGHT=$( tput setaf 9 )          # [91m
+  GREEN_LIGHT=$( tput setaf 10 )       # [92m
+  YELLOW_LIGHT=$( tput setaf 11 )      # [93m
+  BLUE_LIGHT=$( tput setaf 12 )        # [94m
+  MAGENTA_BRIGHT=$( tput setaf 13 )    # [95m
+  CYAN_LIGHT=$( tput setaf 14 )        # [96m
+  WHITE_LIGHT=$( tput setaf 15 )       # [97m
 
-#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
-#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
-#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
-# │  90 │ Dark grey               │ Dull grey               │ Dull grey
-# │  91 │ Red                     │ Bright red              │ Bright red
-# │  92 │ Lime green              │ Bright green            │ Bright green
-# │  93 │ Yellow                  │ Bright yellow           │ Pure yellow
-# │  94 │ Light greyish blue      │ Dull blue               │ Deep blue
-# │  95 │ Light purple            │ Magenta                 │ Magenta
-# │  96 │ Cyan                    │ Bright cyan             │ Bright cyan
-# │  97 │ Off white               │ White                   │ White
-#──────────────────────────────────────────────────────────────────────────
+  # Light Background Colors (100-107) -------------------------------------
+  BLACK_LIGHT_BG=$( tput setab 8 )     # [100m
+  RED_LIGHT_BG=$( tput setab 9 )       # [101m
+  GREEN_LIGHT_BG=$( tput setab 10 )    # [102m
+  YELLOW_LIGHT_BG=$( tput setab 11 )   # [103m
+  BLUE_LIGHT_BG=$( tput setab 12 )     # [104m
+  MAGENTA_LIGHT_BG=$( tput setab 13 )  # [105m
+  CYAN_LIGHT_BG=$( tput setab 14 )     # [106m
+  WHITE_LIGHT_BG=$( tput setab 15 )    # [107m
 
-# Bright Background Colors ------------------------------------------------
-BLACK_BRIGHT_BG=$( tput setab 8 )
-RED_BRIGHT_BG=$( tput setab 9 )
-GREEN_BRIGHT_BG=$( tput setab 10 )
-YELLOW_BRIGHT_BG=$( tput setab 11 )
-BLUE_BRIGHT_BG=$( tput setab 12 )
-MAGENTA_BRIGHT_BG=$( tput setab 13 )
-CYAN_BRIGHT_BG=$( tput setab 14 )
-WHITE_BRIGHT_BG=$( tput setab 15 )
+  # ANSI 4-bit Colorspace(s)
+  #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
+  function 4bit () {
+    local SYSTEM=( BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE )
 
-GRAY_BG=$( tput setab 16 )
-# Bright Background onto 100-107
-# -------------------------------------------------------------------------
-# [100m - Dark Grey Background
-# [101m - Light Red Background
-# [102m - Light Green Background
-# [103m - Yellow Background
-# [104m - Light Blue Background
-# [105m - Light Purple Background
-# [106m - Turquoise Background
-# [107m - Light White Background
+    echo '\n\n ANSI 4-bit \e[1mLight\e[m Helpers'
+    for color in "${!SYSTEM[@]}"; do
+      local fg=$( eval "echo \$${SYSTEM[ $color ]}_LIGHT" )
+      local bg=$( eval "echo \$${SYSTEM[ $color ]}_LIGHT_BG" )
 
-#┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
-#┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
-#┡━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━┩
-# │ 100 │ Dark grey               │ Dull grey               │ Black
-# │ 101 │ Red                     │ Bright red              │ Light red
-# │ 102 │ Lime green              │ Bright green            │ Light green
-# │ 103 │ Yellow                  │ Bright yellow           │ Yellow
-# │ 104 │ Light greyish blue      │ Dull blue               │ Sky blue
-# │ 105 │ Light purple            │ Magenta                 │ Purple
-# │ 106 │ Cyan                    │ Bright cyan             │ Cyan
-# │ 107 │ Off white               │ White                   │ Light grey
-#──────────────────────────────────────────────────────────────────────────
-
-# ANSI 4-bit Colorspace(s)
-#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
-function 4bit () {
-  echo && echo " ANSI 4-bit [1mBright [2;3m(AIXTerm Non-Standard)[m" && echo
-
-  printf " %9s " ' 🎨'
-  for BG in $( seq 100 107 ); do
-    printf "[${BG}m %-8s[m" "\\e[${BG}m"
-  done && echo
+      printf "\n ${fg} %-16s \e[m ${bg} %20s \e[m" \
+        "\${${SYSTEM[ $color ]}_LIGHT}" "\${${SYSTEM[ $color ]}_LIGHT_BG}"
+    done
 
   for FG in $( seq 90 97 ); do
     printf "[${FG}m%-9s[m" " \\e[${FG}m ➤"
