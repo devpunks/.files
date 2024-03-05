@@ -333,9 +333,7 @@ function 3bit () {
   printf "\n \e[1mBright 🎨 \e[m "
   for FG in $( seq 30 37 ); do
     printf "\e[1;7;${FG}m %-8s \e[m" "1;7;${FG}m"
-  done
-
-  echo && echo
+  done && echo
 
 } # 3bit
 
