@@ -546,5 +546,12 @@ function Colors () {
   echo && 8bit
   echo && 24bit
   echo
+} # Colors
+
+# }}}
+
+echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
+💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
+echo
 
 # vim: foldmethod=marker
