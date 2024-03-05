@@ -473,35 +473,8 @@ function 3bit () {
       fi
     done
 
-# https://github.com/microsoft/terminal/issues/11057
-export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
-
-function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
-  # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
-  # Truecolor test
-  printf "\n\e[38;2;255;100;0mTRUECOLOR ${COLORTERM}\e[0m\n"
-
-  awk \
-    -v term_cols="${width:-$( tput cols || echo 80 )}" \
-    -v term_lines="${height:-$( tput lines || echo 1 )}" \
-    'BEGIN {
-      s="/\\";
-      total_cols=term_cols * term_lines;
-      for ( colnum = 0; colnum < total_cols; colnum++ ) {
-        r = 255 - ( colnum * 255 / total_cols );
-        g = ( colnum * 510 / total_cols );
-        b = ( colnum * 255 / total_cols );
-
-        if ( g > 255 ) g = 510-g;
-
-        printf "\033[48;2;%d;%d;%dm", r, g, b;
-        printf "\033[38;2;%d;%d;%dm", 255 - r, 255 - g, 255 - b;
-        printf "%s\033[0m", substr( s, colnum % 2 + 1, 1 );
-        if ( colnum % term_cols==term_cols ) printf "\n";
-      }
-      printf "\n";
-    }' # BEGIN
-} # 24bit
+    echo && echo " ANSI 8-bit 256 [2;3m(232-255) [m[1mGrayScale Colors[m" && echo
+    printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
 # }}}
 
