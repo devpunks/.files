@@ -303,7 +303,7 @@ PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
 PS_TIME="\[${ITALIC}${UNDERLINE}\]⏳XX secs.$PS_RESET "
 PS_CLOCK="\[${REVERSE}${ITALIC}\]⌚\D{%H:%M:%S} $PS_RESET"
 PS_PATH="\[${BOLD}${REVERSE}\]📂\[${ITALIC}\]\w/$PS_RESET"
-PS_EXIT='\[${BOLD}\]$( exitstatus )'"$PS_RESET"
+PS_EXIT='$( exitstatus )'
 PS_GIT="$( __git_ps1 '\[${REVERSE}${BOLD}\]【🌵%s】${PS_RESET}' )"
 PS_PROMPT='\[${REVERSE}\]$( prompts )'"$PS_RESET"
 
