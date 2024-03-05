@@ -307,8 +307,8 @@ function 3bit () {
     printf "\n\e[${FG}m%-9s\e[m" " \\e[${FG}m ➤"
 
     for BG in $( seq 40 47 ); do
-      printf "[${FG};${BG}m%-9s[m" " ${FG};${BG}m"
-    done && echo
+      printf "\e[${FG};${BG}m%-9s\e[m" " ${FG};${BG}m"
+    done
   done
 
   echo && echo ' ANSI 3-bit [1;39mBright[m'
