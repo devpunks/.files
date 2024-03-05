@@ -457,8 +457,10 @@ function 3bit () {
     echo && echo " ANSI 8-bit 256 [2;3m(8-15) [m[1mHigh-Intensity Colors[m" && echo
     printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
-  for n in {232..255} ; do
-    printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
+    for n in {8..15} ; do
+      printf " %2s ${fg}%dm \\${fg}%-3s \e[m  ${bg}%dm \\${bg}%-3s \e[m\n" \
+        $n $n "${n}m" $n "${n}m"
+    done
 
     if (( ( n > 15 ) && (n-15) % $columns == 0 ))
         then printf "\n";
