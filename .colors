@@ -485,7 +485,70 @@ function 3bit () {
     done
   } # 8bit
 
-# }}}
+  # }}}
+
+  #==========================================================================
+  # {{{ 24-Bit True Color
+  #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#24-bit
+  #
+  # 38;2;ʀ;ɢ;ʙ │Foreground - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
+  #             for closest supported color (non-GUI TTY has only 16 colors!)
+  #--------------------------------------------------------------------------
+  # 48;2;ʀ;ɢ;ʙ │Background - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
+  #             for closest supported color (non-GUI TTY has only 16 colors!)
+  # =========================================================================
+
+  # https://github.com/microsoft/terminal/issues/11057
+  export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
+
+  function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors/24-bit-color.sh
+    # https://unix.stackexchange.com/questions/404414/print-true-color-24-bit-test-pattern/404415#404415
+    # Truecolor test
+    printf "\n\e[38;2;255;100;0mTRUECOLOR ${COLORTERM}\e[0m\n"
+
+    awk \
+      -v term_cols="${width:-$( tput cols || echo 80 )}" \
+      -v term_lines="${height:-$( tput lines || echo 1 )}" \
+      'BEGIN {
+        s="/\\";
+        total_cols=term_cols * term_lines;
+        for ( colnum = 0; colnum < total_cols; colnum++ ) {
+          r = 255 - ( colnum * 255 / total_cols );
+          g = ( colnum * 510 / total_cols );
+          b = ( colnum * 255 / total_cols );
+
+          if ( g > 255 ) g = 510-g;
+
+          printf "\033[48;2;%d;%d;%dm", r, g, b;
+          printf "\033[38;2;%d;%d;%dm", 255 - r, 255 - g, 255 - b;
+          printf "%s\033[0m", substr( s, colnum % 2 + 1, 1 );
+          if ( colnum % term_cols==term_cols ) printf "\n";
+        }
+        printf "\n";
+      }' # BEGIN
+  } # 24bit
+
+  # }}}
+
+  # {{{ Functions
+  # =========================================================================
+  function Colors () {
+    echo && echo "Colors: $( tput colors )"
+    printf "\n\$GREP_COLORS\n$GREP_COLORS\n"
+    printf "\n\$LS_COLORS\n$LS_COLORS\n"
+    printf "\ndircolors -b\n$( dircolors -b )\n"
+    printf "\ndircolors .dircolors\n$( dircolors "${DIRCOLORS}" )\n"
+    printf "\ndircolors -b .dircolors\n$( dircolors -b "${DIRCOLORS}" )\n"
+    printf "\ndircolors --print-ls-colors\n$( dircolors --print-ls-colors )\n"
+    echo && Monochrome
+    echo && 3bit
+    echo && 4bit
+    echo && 8bit
+    echo && 24bit
+    echo
+  } # Colors
+
+  # }}}
 
 echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
 💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
