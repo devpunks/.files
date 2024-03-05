@@ -530,8 +530,21 @@ function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors
 
 # }}}
 
-  echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
-  💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
+# {{{ Functions
+# =========================================================================
+function Colors () {
+  echo && echo "Colors: $( tput colors )"
+  printf "\n\$GREP_COLORS\n$GREP_COLORS\n"
+  printf "\n\$LS_COLORS\n$LS_COLORS\n"
+  printf "\ndircolors -b\n$( dircolors -b )\n"
+  printf "\ndircolors .dircolors\n$( dircolors "${DIRCOLORS}" )\n"
+  printf "\ndircolors -b .dircolors\n$( dircolors -b "${DIRCOLORS}" )\n"
+  printf "\ndircolors --print-ls-colors\n$( dircolors --print-ls-colors )\n"
+  echo && Monochrome
+  echo && 3bit
+  echo && 4bit
+  echo && 8bit
+  echo && 24bit
   echo
 
 # vim: foldmethod=marker
