@@ -340,7 +340,7 @@ function 3bit () {
 # }}}
 
 #==========================================================================
-# {{{ 4-bit IBM AIXterm,16-Color
+# {{{ 4-bit AIXterm Light 8-Color
 #
 #  The 16-color feature is borrowed from IBM aixterm,
 #  which maps 16 codes each for foreground and background onto two ranges;
