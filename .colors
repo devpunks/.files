@@ -425,10 +425,34 @@ function 3bit () {
 
   # }}}
 
-    if (( ( n > 15 ) && (n-15) % $columns == 0 ))
-        then printf "\n";
-    fi
-  done
+  #==========================================================================
+  # {{{ 8-bit 256 Color
+  #
+  #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#8-bit
+  #   - https://www.ditig.com/publications/256-colors-cheat-sheet#xterm-system-colors
+  #   - https://www.ditig.com/publications/256-colors-cheat-sheet#xterm-non-system-colors
+  #
+  # 256 ansi colors # Where N is a color code {0-256}
+  # 38;5;n  │Foreground - Replace ɴ with value from 256-color chart below
+  #         │for closest supported color (non-GUI TTY has only 16 colors!)
+  #--------------------------------------------------------------------------
+  # 48;5;n  │Background - Replace ɴ with value from 256-color chart below
+  #         │for closest supported color (non-GUI TTY has only 16 colors!)
+  # =========================================================================
+
+  function 8bit () {
+    # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+    local columns=6
+    local fg='\e[38;5;'
+    local bg='\e[48;5;'
+
+    echo && echo " ANSI 8-bit 256 [2;3m(0-7) [m[1mStandard Colors[m" && echo
+    printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
+
+    for n in {0..7} ; do
+      printf " %2s ${fg}%dm \\${fg}%-3s \e[m  ${bg}%dm \\${bg}%-3s \e[m\n" \
+        $n $n "${n}m" $n "${n}m"
+    done
 
   echo && echo " ANSI 8-bit 256 [2;3m(232-255) [m[1mGrayScale Colors[m" && echo
   printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
