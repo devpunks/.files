@@ -408,6 +408,7 @@ function 3bit () {
 
     echo "\n\n ANSI 4-bit \e[1mLight \e[2;3m(AIXTerm Non-Standard)\e[m"
 
+    printf "\n %9s " ' 🎨'
     for BG in $( seq 100 107 ); do
       printf "[${FG};${BG}m%-9s[m" " ${FG};${BG}m"
     done && echo
