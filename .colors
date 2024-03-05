@@ -550,8 +550,8 @@ function 3bit () {
 
   # }}}
 
-echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
-💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
-echo
+  echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
+  💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
+  echo
 
 # vim: foldmethod=marker
