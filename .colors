@@ -487,7 +487,16 @@ function 8bit () {
 
 # }}}
 
-  # }}}
+#==========================================================================
+# {{{ 24-Bit True Color
+#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#24-bit
+#
+# 38;2;ʀ;ɢ;ʙ │Foreground - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
+#             for closest supported color (non-GUI TTY has only 16 colors!)
+#--------------------------------------------------------------------------
+# 48;2;ʀ;ɢ;ʙ │Background - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
+#             for closest supported color (non-GUI TTY has only 16 colors!)
+# =========================================================================
 
   # {{{ Functions
   # =========================================================================
