@@ -285,9 +285,7 @@ NORMAL_BG='\e[49m'
 # ANSI 3-bit & 4-bit Colorspace(s)
 #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
 function 3bit () {
-  local system=(
-    BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE NORMAL
-  )
+  local SYSTEM=( NORMAL BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE)
 
   echo '\n\n ANSI 3-bit Helpers'
 
