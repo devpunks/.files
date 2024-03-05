@@ -528,7 +528,7 @@ function 24bit () { # https://github.com/JohnMorales/dotfiles/blob/master/colors
     }' # BEGIN
 } # 24bit
 
-  # }}}
+# }}}
 
   echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
   💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
