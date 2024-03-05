@@ -321,8 +321,8 @@ function 3bit () {
     printf "\n\e[1;${FG}m %-11s \e[m" "\\e[1;${FG}m ➤"
 
     for BG in $( seq 40 47 ); do
-      printf "[1;${FG};${BG}m %-8s [m" "1;${FG};${BG}m"
-    done && echo
+      printf "\e[1;${FG};${BG}m %-8s \e[m" "1;${FG};${BG}m"
+    done
   done
 
   echo && echo ' ANSI 3-bit [7m Video Reversal [m'
