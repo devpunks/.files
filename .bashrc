@@ -295,7 +295,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
-PS_RESET="\[${DEFAULT}${NORMAL}\]"
+PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_USER="\[$( tput setaf 6 )\]\u$PS_RESET"
 PS_HOST="\[${DIM}${ITALIC}$( tput setaf 2 )\]\H$PS_RESET"
