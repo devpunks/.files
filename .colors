@@ -548,7 +548,7 @@ function Colors () {
 # }}}
 
 echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
-💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${NORMAL}"
+💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${DEFAULT}${NORMAL}"
 echo
 
 # vim: foldmethod=marker
