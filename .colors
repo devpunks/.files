@@ -468,16 +468,10 @@ function 3bit () {
     for n in {16..231} ; do
       printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
 
-#==========================================================================
-# {{{ 24-Bit True Color
-#   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#24-bit
-#
-# 38;2;ʀ;ɢ;ʙ │Foreground - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
-#             for closest supported color (non-GUI TTY has only 16 colors!)
-#--------------------------------------------------------------------------
-# 48;2;ʀ;ɢ;ʙ │Background - Replace ʀ, ɢ, and ʙ with RGB values from 0 to 255
-#             for closest supported color (non-GUI TTY has only 16 colors!)
-# =========================================================================
+      if (( ( n > 15 ) && (n-15) % $columns == 0 ))
+          then printf "\n";
+      fi
+    done
 
 # https://github.com/microsoft/terminal/issues/11057
 export COLORTERM='24bit' # [24bit|truecolor|xterm-truecolor]
