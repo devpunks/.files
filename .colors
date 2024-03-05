@@ -465,10 +465,8 @@ function 8bit () {
   echo && echo " ANSI 8-bit 256 [2;3m(16-231) [m[3m(Extended)[m [1m216 Colors[m" && echo
   printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
-      if (( ( n > 15 ) && (n-15) % $columns == 0 ))
-          then printf "\n";
-      fi
-    done
+  for n in {16..231} ; do
+    printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
 
     echo && echo " ANSI 8-bit 256 [2;3m(232-255) [m[1mGrayScale Colors[m" && echo
     printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
