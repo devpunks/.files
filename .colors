@@ -340,11 +340,12 @@ function 3bit () {
 # }}}
 
 #==========================================================================
-  # {{{ 4-bit IBM AIXterm,16-Color
-  #
-  #   The 16-color feature is borrowed from IBM aixterm,
-  #   which maps 16 codes each for foreground and background onto two ranges;
-  #   - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
+# {{{ 4-bit IBM AIXterm,16-Color
+#
+#  The 16-color feature is borrowed from IBM aixterm,
+#  which maps 16 codes each for foreground and background onto two ranges;
+#  - https://github.com/termstandard/colors/issues/19
+#  - https://wikipedia.org/wiki/List_of_monochrome_and_RGB_color_formats#4-bit_RGBI
   #==========================================================================
 
   #┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
