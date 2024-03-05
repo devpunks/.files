@@ -423,8 +423,7 @@ function 3bit () {
 
   } # 4bit
 
-  for n in {16..231} ; do
-    printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
+  # }}}
 
     if (( ( n > 15 ) && (n-15) % $columns == 0 ))
         then printf "\n";
