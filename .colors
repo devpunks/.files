@@ -167,7 +167,7 @@ function Monochrome () {
   for style in "${!styles[@]}"; do
     echo " \e[1m${styles[ $style ]}\e[m ➖ \e[1m\${${styles[ $style ]}}\e[m" \
       "$( eval "echo \$${styles[ $style ]}" )The quick brown fox jumped over the lazy dog!\e[m"
-  done && echo
+  done
 } # Monochrome
 
 # }}}
