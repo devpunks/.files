@@ -305,7 +305,7 @@ PS_CLOCK="\[${REVERSE}${ITALIC}\]⌚\D{%H:%M:%S} $PS_RESET"
 PS_PATH="\[${BOLD}${REVERSE}\]📂\[${ITALIC}\]\w/$PS_RESET"
 PS_EXIT='$( exitstatus )'
 PS_GIT="$( __git_ps1 '\[${REVERSE}${BOLD}\]【🌵%s】${PS_RESET}' )"
-PS_PROMPT='\[${REVERSE}\]$( prompts )'"$PS_RESET"
+PS_PROMPT='$( prompts )'
 
 PS0="\[$( tput sitm )\]Running command:$PS_RESET ⌛`command date '+%T'`\n"
 PS1="${PS_EXIT}${PS_CHEVRON}${PS_TIME}${PS_JOBS}${PS_CLOCK}${PS_PATH}${PS_GIT}${PS_PROMPT}"
