@@ -292,11 +292,9 @@ function 3bit () {
     local fg=$( eval "echo \$${SYSTEM[ $color ]}" )
     local bg=$( eval "echo \$${SYSTEM[ $color ]}_BG" )
 
-  local CSI='\\e'
-  for style in "${!styles[@]}"; do
-    echo " \e[2m${CSI}\e[m\e[1m[${style}m\e[m" \
-      "➖ \e[${style}m${styles[ $style ]}\e[m"
-  done && echo
+    printf "\n ${fg} %-10s \e[m ${bg} %13s \e[m" \
+      "\${${SYSTEM[ $color ]}}" "\${${SYSTEM[ $color ]}_BG}"
+  done
 
   echo '\n\n ANSI 3-bit'
   printf "\n %9s " ' 🎨'
