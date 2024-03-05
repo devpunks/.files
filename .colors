@@ -476,7 +476,8 @@ function 3bit () {
     echo && echo " ANSI 8-bit 256 [2;3m(232-255) [m[1mGrayScale Colors[m" && echo
     printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
 
-# }}}
+    for n in {232..255} ; do
+      printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
 
 # {{{ Functions
 # =========================================================================
