@@ -406,8 +406,7 @@ function 3bit () {
         "\${${SYSTEM[ $color ]}_LIGHT}" "\${${SYSTEM[ $color ]}_LIGHT_BG}"
     done
 
-  for FG in $( seq 90 97 ); do
-    printf "[${FG}m%-9s[m" " \\e[${FG}m ➤"
+    echo "\n\n ANSI 4-bit \e[1mLight \e[2;3m(AIXTerm Non-Standard)\e[m"
 
     for BG in $( seq 100 107 ); do
       printf "[${FG};${BG}m%-9s[m" " ${FG};${BG}m"
