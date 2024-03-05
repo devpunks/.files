@@ -374,24 +374,24 @@ function 3bit () {
   #────────────────────────────────────────────────────────────────────────
 
   # Light Foreground Helpers (90-97) --------------------------------------
-  BLACK_LIGHT=$( tput setaf 8 )        # [90m
-  RED_LIGHT=$( tput setaf 9 )          # [91m
-  GREEN_LIGHT=$( tput setaf 10 )       # [92m
-  YELLOW_LIGHT=$( tput setaf 11 )      # [93m
-  BLUE_LIGHT=$( tput setaf 12 )        # [94m
-  MAGENTA_BRIGHT=$( tput setaf 13 )    # [95m
-  CYAN_LIGHT=$( tput setaf 14 )        # [96m
-  WHITE_LIGHT=$( tput setaf 15 )       # [97m
+  BLACK_LIGHT=$( tput setaf 8 )        # \e[90m
+  RED_LIGHT=$( tput setaf 9 )          # \e[91m
+  GREEN_LIGHT=$( tput setaf 10 )       # \e[92m
+  YELLOW_LIGHT=$( tput setaf 11 )      # \e[93m
+  BLUE_LIGHT=$( tput setaf 12 )        # \e[94m
+  MAGENTA_BRIGHT=$( tput setaf 13 )    # \e[95m
+  CYAN_LIGHT=$( tput setaf 14 )        # \e[96m
+  WHITE_LIGHT=$( tput setaf 15 )       # \e[97m
 
-  # Light Background Colors (100-107) -------------------------------------
-  BLACK_LIGHT_BG=$( tput setab 8 )     # [100m
-  RED_LIGHT_BG=$( tput setab 9 )       # [101m
-  GREEN_LIGHT_BG=$( tput setab 10 )    # [102m
-  YELLOW_LIGHT_BG=$( tput setab 11 )   # [103m
-  BLUE_LIGHT_BG=$( tput setab 12 )     # [104m
-  MAGENTA_LIGHT_BG=$( tput setab 13 )  # [105m
-  CYAN_LIGHT_BG=$( tput setab 14 )     # [106m
-  WHITE_LIGHT_BG=$( tput setab 15 )    # [107m
+  # Light Background Colors (100-107) ---\e--------------------------------
+  BLACK_LIGHT_BG=$( tput setab 8 )     # \e[100m
+  RED_LIGHT_BG=$( tput setab 9 )       # \e[101m
+  GREEN_LIGHT_BG=$( tput setab 10 )    # \e[102m
+  YELLOW_LIGHT_BG=$( tput setab 11 )   # \e[103m
+  BLUE_LIGHT_BG=$( tput setab 12 )     # \e[104m
+  MAGENTA_LIGHT_BG=$( tput setab 13 )  # \e[105m
+  CYAN_LIGHT_BG=$( tput setab 14 )     # \e[106m
+  WHITE_LIGHT_BG=$( tput setab 15 )    # \e[107m
 
   # ANSI 4-bit Colorspace(s)
   #   - https://en.m.wikipedia.org/wiki/ANSI_escape_code#3-bit_and_4-bit
