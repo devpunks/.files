@@ -454,8 +454,8 @@ function 8bit () {
       $n $n "${n}m" $n "${n}m"
   done
 
-  echo && echo " ANSI 8-bit 256 [2;3m(8-15) [m[1mHigh-Intensity Colors[m" && echo
-  printf "  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
+  echo && echo " ANSI 8-bit 256 [2;3m(8-15) [m[1mHigh-Intensity Colors[m"
+  printf "\n  # [1m %-12s  [7m %-12s[m\n\n" Foreground Background
   for n in {8..15} ; do
     printf " %2s ${fg}%dm \\${fg}%-3s \e[m  ${bg}%dm \\${bg}%-3s \e[m\n" \
       $n $n "${n}m" $n "${n}m"
