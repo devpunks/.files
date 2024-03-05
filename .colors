@@ -479,23 +479,11 @@ function 3bit () {
     for n in {232..255} ; do
       printf "${fg}%dm %3s \e[m${bg}%dm %3s \e[m" $n "${n}" $n "${n}"
 
-# {{{ Functions
-# =========================================================================
-function Colors () {
-  echo && echo "Colors: $( tput colors )"
-  printf "\n\$GREP_COLORS\n$GREP_COLORS\n"
-  printf "\n\$LS_COLORS\n$LS_COLORS\n"
-  printf "\ndircolors -b\n$( dircolors -b )\n"
-  printf "\ndircolors .dircolors\n$( dircolors "${DIRCOLORS}" )\n"
-  printf "\ndircolors -b .dircolors\n$( dircolors -b "${DIRCOLORS}" )\n"
-  printf "\ndircolors --print-ls-colors\n$( dircolors --print-ls-colors )\n"
-  echo && Monochrome
-  echo && 3bit
-  echo && 4bit
-  echo && 8bit
-  echo && 24bit
-  echo
-} # Colors
+      if (( ( n > 15 ) && (n-15) % $columns == 0 ))
+          then printf "\n";
+      fi
+    done
+  } # 8bit
 
 # }}}
 
