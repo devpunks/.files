@@ -288,6 +288,9 @@ function 3bit () {
   local SYSTEM=( NORMAL BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE )
 
   echo '\n\n ANSI 3-bit Helpers'
+  for color in "${!SYSTEM[@]}"; do
+    local fg=$( eval "echo \$${SYSTEM[ $color ]}" )
+    local bg=$( eval "echo \$${SYSTEM[ $color ]}_BG" )
 
   local CSI='\\e'
   for style in "${!styles[@]}"; do
