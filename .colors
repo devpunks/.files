@@ -173,7 +173,7 @@ function Monochrome () {
 # }}}
 
 #==========================================================================
-# {{{ 3-bit 16-Color
+# {{{ ANSI 3-bit 8-Color
 #
 #   - https://en.m.wikipedia.org/wiki/Color_Graphics_Adapter
 #   - https://retrocomputing.stackexchange.com/questions/20043
