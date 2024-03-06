@@ -539,7 +539,7 @@ function Colors () {
 
 # }}}
 
-echo && echo "👤 ${BOLD}$( whoami )${DEFAULT} \
+echo && echo -E "👤 ${BOLD}$( whoami )${DEFAULT} \
 💜s devPunks ${REVERSE}${BOLD}${MAGENTA} .colors ${DEFAULT}${NORMAL}"
 echo
 
