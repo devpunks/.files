@@ -302,7 +302,6 @@ PS_HOST="\H"
 PS_EXIT='$( exitstatus )'
 PS_GIT='$( __git_ps1 '【🌵%s】' )'
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
-PS_HOST="\[${DIM}${ITALIC}\]\H$PS_RESET"
 PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
 PS_TIME="\[${ITALIC}${UNDERLINE}\]⏳XX secs.$PS_RESET "
 PS_CLOCK="\[${REVERSE}${ITALIC}\]⌚\D{%H:%M:%S} $PS_RESET"
