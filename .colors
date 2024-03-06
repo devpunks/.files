@@ -271,7 +271,7 @@ WHITE_BG='\e[47m' #808080 RGB( 192,192,192 )
 NORMAL_BG='\e[49m'
 # -------------------------------------------------------------------------
 
-# XTerm X11 ColorSpace Bold Video-Reverse Background 1;7;30-1;7;37
+# XTerm X11 ColorSpace Bold Video-Reverse Background 30;1;7-37;1;7
 # -------------------------------------------------------------------------
 # \e[1;7;30m - Bold Black Video-Reverse
 # \e[1;7;31m - Bold Red Video-Reverse
