@@ -338,14 +338,14 @@ function prompts () {
   done
 } && export -f prompts
 
-export -f exitstatus
 function exitstatus () {
   local status=$?
   [[ ${status} == 0 ]] && \
     echo " ✅ ${status} "
   [[ ${status} != 0 ]] && \
     echo " ❌ ${status} "
-} # exitstatus
+} && export -f exitstatus
+
 # }}}
 
 echo 'devPunks😈studio .bashrc'
