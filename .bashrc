@@ -309,7 +309,7 @@ PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
 
 PS_USER="\u"
 PS_HOST="\H"
-PS_EXIT=$( echo \\[${BOLD}\\]$( exitstatus )$PS_RESET )
+PS_EXIT='$( exitstatus )'
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
 PS_PROMPT=$( echo \\[${REVERSE}\\]$( prompts )$PS_RESET )
