@@ -105,3 +105,8 @@ git status
 echo Cloning submodules...
 git submodule
 git submodule update --init
+
+echo 'devPunks😈studio init.sh'
+echo
+
+# vim: foldmethod=marker
