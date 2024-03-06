@@ -170,7 +170,7 @@ export LC_ALL=$LANG
 #  ncurses
 #    - https://en.m.wikipedia.org/wiki/Ncurses
 #    - https://en.m.wikipedia.org/wiki/Curses_(programming_library)
-# =========================================================================
+#==========================================================================
 
 tput init
 setterm --resize # Sync kernel terminal driver to display
