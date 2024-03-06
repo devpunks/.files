@@ -339,6 +339,7 @@ function prompts () {
   done
 } # prompts
 
+export -f exitstatus
 function exitstatus () {
   local status=$?
   [[ ${status} == 0 ]] && \
