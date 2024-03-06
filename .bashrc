@@ -309,8 +309,7 @@ PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
 
 PS_USER="\u"
 PS_HOST="\H"
-PS_EXIT='$( exitstatus )'
-PS_GIT='$( __git_ps1 '【🌵%s】' )'
+PS_EXIT=$( echo \\[${BOLD}\\]$( exitstatus )$PS_RESET )
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
 PS_TIME="\[${ITALIC}${UNDERLINE}\]⏳XX secs.$PS_RESET "
