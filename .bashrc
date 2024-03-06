@@ -249,14 +249,14 @@ shopt -s no_empty_cmd_completion # on empty line attempts
 #==========================================================================
 # {{{ History
 #
-#   - https://superuser.com/questions/788428
-#   - https://gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
-#   - Reverse Search
-#     - https://gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
-#     - https://gnu.org/software/bash/manual/html_node/Commands-For-History.html
-#     - https://superuser.com/questions/472846/how-to-reverse-i-search-back-and-forth
-#     - https://codeburst.io/use-reverse-i-search-to-quickly-navigate-through-your-history-917f4d7ffd37
-# =========================================================================
+#  - https://superuser.com/questions/788428
+#  - https://gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
+#  - Reverse Search
+#    - https://gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
+#    - https://gnu.org/software/bash/manual/html_node/Commands-For-History.html
+#    - https://superuser.com/questions/472846/how-to-reverse-i-search-back-and-forth
+#    - https://codeburst.io/use-reverse-i-search-to-quickly-navigate-through-your-history-917f4d7ffd37
+#==========================================================================
 shopt -s histappend
 shopt -s histverify
 export HISTSIZE=1000
@@ -282,7 +282,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 
 #==========================================================================
 # {{{ Cursor / Prompt
-# =========================================================================
+#
 # cursor ------------------------------------------------------------------
 # echo -ne '[5;0;0 q' see .inputrc
 # echo -ne ']12;#FF0000\x7'
