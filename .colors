@@ -192,14 +192,14 @@ function Monochrome () {
 
 # │  39 │ «Normal Reset           │ «Normal Reset»          │ «Normal Reset»
 
-# │1;30 │ Dark grey               │ Bold Black              │ Bold Black
-# │1;31 │ Red                     │ Bold Red                │ Bold Red
-# │1;32 │ Lime green              │ Bold Green              │ Bold Green
-# │1;33 │ Yellow                  │ Bold Yellow             │ Bold Yellow
-# │1;34 │ Light greyish blue      │ Bold Blue               │ Bold Blue
-# │1;35 │ Light purple            │ Bold Magenta            │ Bold Magenta
-# │1;36 │ Cyan                    │ Bold Cyan               │ Bold Cyan
-# │1;37 │ Off white               │ Bold White              │ Bold White
+# │30;1 │ Dark grey               │ Bold Black              │ Bold Black
+# │31;1 │ Red                     │ Bold Red                │ Bold Red
+# │32;1 │ Lime green              │ Bold Green              │ Bold Green
+# │33;1 │ Yellow                  │ Bold Yellow             │ Bold Yellow
+# │34;1 │ Light greyish blue      │ Bold Blue               │ Bold Blue
+# │35;1 │ Light purple            │ Bold Magenta            │ Bold Magenta
+# │36;1 │ Cyan                    │ Bold Cyan               │ Bold Cyan
+# │37;1 │ Off white               │ Bold White              │ Bold White
 #──────────────────────────────────────────────────────────────────────────
 #
 #==========================================================================
