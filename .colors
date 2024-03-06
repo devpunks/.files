@@ -246,14 +246,14 @@ NORMAL='\e[39m'
 
 #------------------------ Bold Video-Reverse ------------------------------
 
-# │1;7;30 │ Dark grey               │ Bold Black           │ Bold Black
-# │1;7;31 │ Red                     │ Bold Red             │ Bold  Red
-# │1;7;32 │ Lime green              │ Bold Green           │ Bold  Green
-# │1;7;33 │ Yellow                  │ Bold Yellow          │ Bold Yellow
-# │1;7;34 │ Light greyish blue      │ Bold Blue            │ Bold Blue
-# │1;7;35 │ Light purple            │ Bold Magenta         │ Bold Magenta
-# │1;7;36 │ Cyan                    │ Bold Cyan            │ Bold Cyan
-# │1;7;37 │ Off white               │ Bold White           │ Bold White
+# │30;1;7 │ Dark grey               │ Bold Black           │ Bold Black
+# │31;1;7 │ Red                     │ Bold Red             │ Bold  Red
+# │32;1;7 │ Lime green              │ Bold Green           │ Bold  Green
+# │33;1;7 │ Yellow                  │ Bold Yellow          │ Bold Yellow
+# │34;1;7 │ Light greyish blue      │ Bold Blue            │ Bold Blue
+# │35;1;7 │ Light purple            │ Bold Magenta         │ Bold Magenta
+# │36;1;7 │ Cyan                    │ Bold Cyan            │ Bold Cyan
+# │37;1;7 │ Off white               │ Bold White           │ Bold White
 #─────────────────────────────────────────────────────────────────────────
 
 # XTerm X11 ColorSpace Background 40-47
