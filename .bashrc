@@ -243,8 +243,9 @@ shopt -s no_empty_cmd_completion # on empty line attempts
 
 # }}}
 
-# =========================================================================
+#==========================================================================
 # {{{ History
+#
 #   - https://superuser.com/questions/788428
 #   - https://gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html
 #   - Reverse Search
