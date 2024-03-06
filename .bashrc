@@ -212,8 +212,9 @@ fi
 
 # }}}
 
-# =========================================================================
+#==========================================================================
 # {{{ Options
+#
 # =========================================================================
 # https://gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 set -o notify # terminated background jobs to be reported immediately
