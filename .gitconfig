@@ -109,7 +109,7 @@
   sshCommand = 'ssh'
   compression = -1
   looseCompression = -1
-  bigFileThreshold = 10m
+  bigFileThreshold = 1m
   excludesfile = ~/.gitignore
   whitespace = trailing-space,space-before-tab,tab-in-indent,fix,-indent-with-non-tab,-cr-at-eol
 
