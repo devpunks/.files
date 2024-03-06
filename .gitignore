@@ -4,7 +4,6 @@
 .less
 .lesskey
 .bundle
-.config
 .docker
 .eclipse
 .gist
