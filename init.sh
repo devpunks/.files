@@ -54,7 +54,7 @@ pkg install vlc && vlc --version
 pkg install socat
 pkg install netcat-openbsd
 
-# -------------------------------------------------------------------------
+# Programming -------------------------------------------------------------
 pkg install python
 pip install pytest
 pkg install python-numpy
