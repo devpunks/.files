@@ -324,15 +324,15 @@ function 3bit () {
     done
   done
 
-  echo '\n\n ANSI 3-bit \e[7m Video Reverse \e[m'
+  echo '\n\n ANSI 3-bit \e[1;7m Video Reverse \e[m'
   printf "\n        🎨  "
   for FG in $( seq 30 37 ); do
-    printf "\e[7;${FG};49m %-8s \e[m" "7;${FG}m"
+    printf "\e[${FG};7;49m %-8s \e[m" "${FG};7m"
   done
 
   printf "\n \e[1mBright 🎨 \e[m "
   for FG in $( seq 30 37 ); do
-    printf "\e[1;7;${FG}m %-8s \e[m" "1;7;${FG}m"
+    printf "\e[${FG};1;7;49m %-8s \e[m" "${FG};1;7m"
   done && echo
 
 } # 3bit
