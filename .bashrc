@@ -312,6 +312,7 @@ PS_HOST="\H"
 PS_EXIT=$( echo \\[${BOLD}\\]$( exitstatus )$PS_RESET )
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
+PS_PROMPT=$( echo \\[${REVERSE}\\]$( prompts )$PS_RESET )
 PS_TIME="\[${ITALIC}${UNDERLINE}\]⏳XX secs.$PS_RESET "
 PS_CLOCK="\[${REVERSE}${ITALIC}\]⌚\D{%H:%M:%S} $PS_RESET"
 PS_PATH="\[${BOLD}${REVERSE}\]📂\[${ITALIC}\]\w/$PS_RESET"
