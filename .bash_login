@@ -206,11 +206,10 @@ alias g#='(
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
   # https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   GIT_PAGER=cat \
-    gl --since='1 day ago'
-  echo && echo Total: \
-    && gl --since='1 day ago' | wc -l
+    gl --since="1 day ago"
+    printf "\n Total:%d" $( gl --since="1 day ago" | wc -l )
   echo
-)"
+)'
 
 # }}}
 
