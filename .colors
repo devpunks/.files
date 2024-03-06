@@ -161,7 +161,8 @@ function Monochrome () {
   local CSI='\\e'
   for style in "${!styles[@]}"; do
     echo " \e[2m${CSI}\e[m\e[1m[${style}m\e[m" \
-      "➖ \e[${style}m${styles[ $style ]}\e[m"
+      "➖ \e[${style}m${styles[ $style ]}\e[m" \
+      " \e[2m${CSI}\e[m\e[1m[2${style}m\e[m"
   done && echo
 
   for style in "${!styles[@]}"; do
