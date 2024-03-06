@@ -309,10 +309,10 @@ PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
 
 PS_USER='\u'
 PS_HOST='\H'
+PS_PROMPT='$( prompts )'
 PS_EXIT='$( exitstatus )'
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
-PS_PROMPT='$( prompts )'
 PS_TIME="\[${ITALIC}${UNDERLINE}\]⏳XX secs.$PS_RESET "
 PS_CLOCK="\[${REVERSE}${ITALIC}\]⌚\D{%H:%M:%S} $PS_RESET"
 PS_PATH="\[${BOLD}${REVERSE}\]📂\[${ITALIC}\]\w/$PS_RESET"
