@@ -42,6 +42,7 @@ pkg install cmatrix
 pkg install openssh
 pkg install iproute2
 pkg install logrotate
+pkg install shellcheck
 
 # Multimedia --------------------------------------------------------------
 # TODO: pkg install sox
