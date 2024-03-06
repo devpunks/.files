@@ -317,7 +317,7 @@ function 3bit () {
   done
 
   for FG in $( seq 30 37 ); do
-    printf "\n\e[1;${FG}m %-11s \e[m" "\\e[1;${FG}m ➤"
+    printf "\n\e[${FG};1m %-11s \e[m" "\\e[${FG};1m ➤"
 
     for BG in $( seq 40 47 ); do
       printf "\e[1;${FG};${BG}m %-8s \e[m" "1;${FG};${BG}m"
