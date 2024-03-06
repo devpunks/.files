@@ -332,6 +332,7 @@ PS4='➕ ' # Verbose prompt tracing
 #  - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 #=========================================================================
 
+export -f prompts
 function prompts () {
   for i in `seq 1 ${SHLVL}`; do
     printf '💲'
