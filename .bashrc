@@ -321,7 +321,7 @@ PS4='➕ ' # Verbose prompt tracing
 
 # }}}
 
-# =========================================================================
+#==========================================================================
 # {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
