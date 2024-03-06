@@ -333,7 +333,7 @@ PS4='➕ ' # Verbose prompt tracing
 #=========================================================================
 
 function prompts () {
-  for i in `seq 1 ${SHLVL}`; do
+  for (( i = 1 ; i <= SHLVL ; i++ )); do
     printf '💲'
   done
 } && export -f prompts
