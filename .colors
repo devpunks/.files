@@ -310,7 +310,7 @@ function 3bit () {
     done
   done
 
-  echo '\n\n ANSI 3-bit \e[1;39mBright\e[m'
+  echo '\n\n ANSI 3-bit \e[39;1mBright\e[m'
   printf "\n %12s " ' 🎨  '
   for BG in $( seq 40 47 ); do
     printf "\e[${BG}m %-8s \e[m" "\\e[${BG}m"
