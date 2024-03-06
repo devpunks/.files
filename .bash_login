@@ -34,6 +34,10 @@
 # =========================================================================
 # {{{ Shell
 # =========================================================================
+alias fonts='(
+  # https://github.com/hackerb9/fonttable
+  echo $( $HOME/.config/fonttable )
+)' # ScreenSaver
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
 alias cl=clear
