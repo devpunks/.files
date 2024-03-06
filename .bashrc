@@ -296,6 +296,8 @@ tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrappi
 export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
 PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
+
+PS_USER="\u"
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_USER="\[$( tput setaf 6 )\]\u$PS_RESET"
 PS_HOST="\[${DIM}${ITALIC}$( tput setaf 2 )\]\H$PS_RESET"
