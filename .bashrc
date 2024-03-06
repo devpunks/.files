@@ -307,8 +307,8 @@ export PROMPT_DIRTRIM=3 # https://stackoverflow.com/questions/5687446
 
 PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
 
-PS_USER="\u"
-PS_HOST="\H"
+PS_USER='\u'
+PS_HOST='\H'
 PS_EXIT='$( exitstatus )'
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
 PS_JOBS="\[${REVERSE}${BOLD}\] 🔧\j $PS_RESET"
