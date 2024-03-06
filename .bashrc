@@ -336,7 +336,7 @@ function prompts () {
   for i in `seq 1 ${SHLVL}`; do
     printf '💲'
   done
-} # prompts
+} && export -f prompts
 
 export -f exitstatus
 function exitstatus () {
