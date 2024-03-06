@@ -56,7 +56,8 @@ alias jobs='command jobs -l'
 alias path='echo -e ${PATH//:/\\n}'
 alias mount='command mount | column -t'
 alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
-alias echo='command echo -e' # for escape characters
+# for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
+alias echo='command echo -e'
 
 alias pop='command popd'
 alias push='command pushd'
