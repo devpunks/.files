@@ -667,8 +667,8 @@ endfunction
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
 " let character = strpart(getline('.'), col('.') -1, 1, 1 )
-  let char = strpart(getline('.'), col('.')-1, 1, 1 )
-  let index = char2nr( char )
+  let char = strpart( getline('.'), col('.')-1, 1, 1 )
+  let index = char2nr( char ) " char(acter) to number
   let character = printf( '| %-2s|', char )
   " https://www.utf8-chartable.de/
   " https://stackoverflow.com/questions/1273693
