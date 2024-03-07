@@ -30,6 +30,7 @@
 #   - $HOME/.termux/termux.properties
 # -------------------------------------------------------------------------
 #   - https://ioflood.com/blog/bind-linux-command
+#   - https://man7.org/linux/man-pages/man3/readline.3.html
 #   - https://www.topbug.net/blog/2017/07/31/inputrc-for-humans
 #   - https://geeksforgeeks.org/bind-command-in-linux-with-examples
 #   - https://tldp.org/LDP/lfs/LFS-BOOK-6.1.1-HTML/chapter07/inputrc.html
