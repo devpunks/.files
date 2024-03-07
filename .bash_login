@@ -256,7 +256,9 @@ function backup () {
 }
 
 function play () {
-  # sox cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
+  # sox
+  #   - https://en.m.wikipedia.org/wiki/SoX
+  #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
   sox --help
 }
 function open () {
