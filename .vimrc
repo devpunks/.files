@@ -640,6 +640,24 @@ augroup END
 " {{{ Functions
 " =========================================================================
 " -------------------------------------------------------------------------
+" :call Browser ( value = 0 )
+"   - :help ga
+"   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
+" -------------------------------------------------------------------------
+" Open Url on this line with the browser \w
+cnoremap <silent> <C-o> :call Browser ()<CR>
+
+function! Browser() abort " Opening URL
+  let url = getline (".")->matchstr("http[^ ]*")
+
+  if ! empty( url )
+    echom "Opening URL: "..url
+"   exec "!echo "..url
+    exec "!type ls && type grep"
+  endif
+endfunction
+
+" -------------------------------------------------------------------------
 " :call CursorCharacter ( value = 0 )
 "   - :help ga
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
