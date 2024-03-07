@@ -231,6 +231,11 @@ alias shortcuts='bind -vP'
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
+# https://www.zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
+function backup () {
+  echo Backing Up
+}
+
 function open () {
   # apk
   [[ -f $1 ]] && [[ -x $1 ]] && termux-open $1
