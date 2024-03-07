@@ -180,17 +180,6 @@ alias ss='command sshd -X -Dddd -p8022'
 # https://www.ssh.com/academy/ssh/add-command
 alias ssh.add='echo adding ssh'
 
-# HTTP(s) ------------------------------------------------------------------
-alias serve='command python -m http.server'
-
-# - syslog() - https://stackify.com/syslog-101/
-# - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
-# - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
-alias logs.sshd="command logcat -s 'sshd:*'"
-function logs () {
-  command logcat
-}
-
 # TMUX --------------------------------------------------------------------
 alias tmux.config='(
   tmux info
