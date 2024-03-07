@@ -35,9 +35,13 @@ pkg install wget
 pkg install whois
 pkg install which
 pkg install golang
-pkg install strace
 pkg install ncurses
 pkg install cmatrix
+pkg install shellcheck
+
+# Security ----------------------------------------------------------------
+pkg install gnupg
+pkg install strace
 pkg install openssh
 pkg install iproute2
 pkg install logrotate
