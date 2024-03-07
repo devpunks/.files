@@ -71,6 +71,7 @@ pkg install sqlite
 pkg install tar
 pkg install zip
 pkg install unzip
+pkg install rsync
 pkg install brotli
 pkg install zopfli
 
