@@ -660,6 +660,8 @@ endfunction
 " -------------------------------------------------------------------------
 " :call CursorCharacter ( value = 0 )
 "   - :help ga
+"   - https://www.utf8-chartable.de/
+"   - https://stackoverflow.com/questions/1273693
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
