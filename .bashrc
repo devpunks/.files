@@ -295,6 +295,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 #  - http://tldp.org/HOWTO/Bash-Prompt-HOWTO
 #  - http://debian-administration.org/articles/205
 #  - http://askapache.com/linux/bash-power-prompt.html
+#  - https://wiki.archlinux.org/title/Bash/Prompt_customization
 #  - https:/gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html
 #  - https://unix.stackexchange.com/questions/105958/terminal-prompt-not-wrapping-correctly
 #  - https://cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
