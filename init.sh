@@ -75,6 +75,7 @@ pkg install unzip
 pkg install rsync
 pkg install brotli
 pkg install zopfli
+pkg install logrotate
 
 # -------------------------------------------------------------------------
 pip list
