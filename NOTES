@@ -127,6 +127,7 @@ Android Accessibility
 # Shortcut mappings - <prefix>+?
 
 # VIM ---------------------------------------------------------------------
+# :h key-notation - For mappings
 # :h term.txt ------------------------------
 # set termcap? - Term Capabilities
 # gf - Open file under cursor
