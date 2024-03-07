@@ -88,13 +88,6 @@
 '\e[A': history-search-backward
 '\e[B': history-search-forward
 
-# "\C-a": # Beginning of line
-# "\C-e": # End of line
-
-# <CTRL>+<J> and <CTRL>+<K> search
-'\C-j': history-search-forward
-'\C-k': history-search-backward
-
 # <CTRL>+<N> and <CTRL>+<P> search
 '\C-p': history-search-backward
 '\C-n': history-search-forward
