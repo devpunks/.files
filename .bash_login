@@ -194,6 +194,19 @@ alias tmux.config='(
 # }}}
 
 # =========================================================================
+# {{{ Log(s)
+#
+# ==========================================================================
+# - syslog() - https://stackify.com/syslog-101/
+# - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
+# - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
+alias logs.sshd="command logcat -s 'sshd:*'"
+function logs () {
+  command logcat
+}
+# }}}
+
+# =========================================================================
 # {{{ Git Aliases
 # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
 alias ga='git add -p'
