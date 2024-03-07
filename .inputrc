@@ -24,8 +24,6 @@
 # programs that use the GNU Readline library.  Existing
 # programs include FTP, Bash, and GDB.
 #
-# You can re-read the inputrc file with C-x C-r.
-#
 # See to avoid potential conflicts:
 #   - $HOME/.vimrc
 #   - $HOME/.termux.conf
