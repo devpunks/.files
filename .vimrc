@@ -663,6 +663,7 @@ endfunction
 "   - https://www.utf8-chartable.de/
 "   - https://stackoverflow.com/questions/1273693
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
+"   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
 " let character = strpart(getline('.'), col('.') -1, 1, 1 )
