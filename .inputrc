@@ -63,34 +63,50 @@
 # =========================================================================
 # {{{ Bindings
 # =========================================================================
-'\C-l':clear
-'RETURN': '\e\n'
-# "TAB":menu-complete
-# "TAB":complete # default
-'"C-x\C-r": re-read-init-file
+# some defaults / modifications for the emacs mode
+$if mode=emacs
+  '\C-l':clear
+  'RETURN': '\e\n'
+  # "TAB":menu-complete
+  # "TAB":complete # default
+  '"C-x\C-r": re-read-init-file
 
-# "\C-a": # Beginning of line
-# "\C-e": # End of line
+  "\C-a": beginning-of-line # Beginning of line
+  "\C-e": end-of-line # End of line
 
-# Use Alt/Meta + Delete to delete the preceding word
-# "\e[3;3~": kill-word
+  # Use Alt/Meta + Delete to delete the preceding word
+  # "\e[3;3~": kill-word
 
-# CTRL+left, CTRL+right fpr moving on the readline by character
-'\e[C': forward-char
-'\e[D': backward-char
+  # allow Home/End keys
+  "\e[1~": beginning-of-line
+  "\e[2~": quoted-insert
 
-# ALT+left, ALT+right fpr moving on the readline by word
-'\e[1;5C': forward-word
-'\e[1;5D': backward-word
+  # allow Delete/Insert keys
+  "\e[3~": delete-char
+  "\e[4~": end-of-line
 
-# Use the text that has already been typed as the prefix for searching through
-# commands (i.e. more intelligent Up/Down behavior)
-'\e[A': history-search-backward
-'\e[B': history-search-forward
+  "\e[8~": end-of-line
 
-# <CTRL>+<N> and <CTRL>+<P> search
-'\C-p': history-search-backward
-'\C-n': history-search-forward
+  # CTRL+left, CTRL+right fpr moving on the readline by character
+  '\e[C': forward-char
+  '\e[D': backward-char
+
+  # ALT+left, ALT+right fpr moving on the readline by word
+  '\e[5C': forward-word
+  '\e[5D': backward-word
+  '\e[1;5C': forward-word
+  '\e[1;5D': backward-word
+
+  # Use the text that has already been typed as the prefix for searching through
+  # commands (i.e. more intelligent Up/Down behavior)
+  '\e[A': history-search-backward
+  '\e[B': history-search-forward
+
+  # <CTRL>+<N> and <CTRL>+<P> search
+  '\C-p': history-search-backward
+  '\C-n': history-search-forward
+
+$endif
 
 # }}}
 
