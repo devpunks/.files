@@ -115,6 +115,7 @@ set enable-keypad on
 set visible-stats on
 set history-size 1000
 # audible (default), visible, none
+set bell-style none
 set bell-style visible
 set blink-matching-paren on
 
