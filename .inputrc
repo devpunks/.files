@@ -75,7 +75,11 @@
 # Use Alt/Meta + Delete to delete the preceding word
 # "\e[3;3~": kill-word
 
-# ctrl left, ctrl right fpr moving on the readline by word
+# CTRL+left, CTRL+right fpr moving on the readline by character
+'\e[C': forward-char
+'\e[D': backward-char
+
+# ALT+left, ALT+right fpr moving on the readline by word
 '\e[1;5C': forward-word
 '\e[1;5D': backward-word
 
