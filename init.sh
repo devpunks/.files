@@ -25,7 +25,7 @@ pkg install fetchmail # https://www.fetchmail.info
 # -------------------------------------------------------------------------
 pkg install bc
 pkg install jq
-pkg install exa
+pkg install eza
 pkg install git
 pkg install man
 pkg install vim
