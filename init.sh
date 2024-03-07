@@ -49,7 +49,7 @@ pkg install openssh
 pkg install iproute2
 
 # Multimedia --------------------------------------------------------------
-# TODO: pkg install sox
+pkg install sox
 pkg install ffmpeg
 pkg install asciinema
 pkg install youtubedr
