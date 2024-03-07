@@ -619,7 +619,7 @@ set t_Co=256 " enable 256 colors
 set background=dark " [dark|light]
 
 try | colorscheme devpunks
-catch | set termguicolors " 24bit gui(fg|bg)
+  catch | set termguicolors " 24bit gui(fg|bg)
 endtry
 
 " :help xterm-true-color
