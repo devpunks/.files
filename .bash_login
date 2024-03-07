@@ -135,7 +135,9 @@ alias catscan='(
   nc -z -v -w 1 google.com 442-444
 )'
 alias catnet='(
-  nc -k -l -v 1234
+  while true; do command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" | nc -l -v 1234; done
+
+#   | nc -k -l -v 1234
 )'
 
 # HTTP(s) ------------------------------------------------------------------
