@@ -34,7 +34,7 @@ pkg install htop
 pkg install most
 pkg install lynx
 pkg install wget
-pkg install whois
+pkg install tree
 pkg install which
 pkg install golang
 pkg install ncurses
