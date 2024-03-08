@@ -68,6 +68,8 @@ pkg install nodejs-lts && npm install -g npm
 
 # Database ----------------------------------------------------------------
 pkg install sqlite
+pkg install postgis
+pkg install postgresql
 
 # Archive -----------------------------------------------------------------
 pkg install tar
