@@ -81,6 +81,10 @@ pkg install zopfli
 pkg install logrotate
 
 # -------------------------------------------------------------------------
+tmux -V
+git --version
+vim --version
+
 pip list
 gem help env
 ruby --version
