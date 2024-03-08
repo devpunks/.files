@@ -445,7 +445,6 @@ augroup END
 
 " http://blog.ezyang.com/2010/03/vim-textwidth
 function OverflowMargin () abort
-  set colorcolumn=0
   call clearmatches()
 
   if ! &tw | return | endif
