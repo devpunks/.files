@@ -96,13 +96,7 @@ gem --version
 ruby --version
 
 npm --version
-python --version
-pip --version
-go version
-git --version
-vim --version
-ffmpeg -version
-tmux -V
+node --version
 
 
 # -------------------------------------------------------------------------
