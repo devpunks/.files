@@ -71,7 +71,7 @@ let &t_fd = '\<Esc>[?1004l' " disable focus-event tracking
 if executable( 'termux-info' ) | echom "TERMUX: " .. $TERMUX_VERSION | endif
 if exists( '$TMUX' ) | echom "TMUX: " .. system( 'echo -n $(tmux -V)' ) | endif
 echom "BASH: " .. system( 'echo -n $BASH_VERSION' )
-echom "VIM: ".. v:version
+echom "VIM: " .. v:version
 
 " =========================================================================
 " {{{ Settings
