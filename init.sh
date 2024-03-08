@@ -86,6 +86,11 @@ git --version
 vim --version
 
 pip list
+pip --version
+python --version
+
+go version
+
 gem help env
 ruby --version
 gem --version
