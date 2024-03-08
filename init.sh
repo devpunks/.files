@@ -29,9 +29,6 @@ pkg install man
 pkg install eza
 pkg install git
 pkg install vim
-pkg install lynx
-pkg install most
-pkg install htop
 pkg install tmux
 pkg install tree
 pkg install wget
