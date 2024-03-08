@@ -98,6 +98,8 @@ ruby --version
 npm --version
 node --version
 
+vlc --version
+ffmpeg -version
 
 # -------------------------------------------------------------------------
 echo Cloning Authorized Keys from...
