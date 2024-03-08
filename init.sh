@@ -36,12 +36,12 @@ pkg install lynx
 pkg install wget
 pkg install tree
 pkg install which
-pkg install golang
 pkg install ncurses
 pkg install cmatrix
 pkg install shellcheck
 
 # Security ----------------------------------------------------------------
+pkg install whois
 pkg install gnupg
 pkg install strace
 pkg install openssh
@@ -49,16 +49,17 @@ pkg install iproute2
 
 # Multimedia --------------------------------------------------------------
 pkg install sox
+pkg install vlc
 pkg install ffmpeg
 pkg install asciinema
 pkg install youtubedr
-pkg install vlc && vlc --version
 
 # Networking --------------------------------------------------------------
 pkg install socat
 pkg install netcat-openbsd
 
 # Programming -------------------------------------------------------------
+pkg install golang
 pkg install python
 pip install pytest
 pkg install python-numpy
