@@ -28,7 +28,6 @@ pkg install jq
 pkg install man
 pkg install eza
 pkg install git
-pkg install man
 pkg install vim
 pkg install lynx
 pkg install most
