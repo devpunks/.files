@@ -67,8 +67,6 @@ pkg install ruby && gem update --system
 pkg install nodejs-lts && npm install -g npm
 
 # Database ----------------------------------------------------------------
-pkg install postgresql
-pkg install postgis
 pkg install sqlite
 
 # Archive -----------------------------------------------------------------
