@@ -92,9 +92,9 @@ python --version
 go version
 
 gem help env
-ruby --version
 gem --version
-node --version
+ruby --version
+
 npm --version
 python --version
 pip --version
