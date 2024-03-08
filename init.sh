@@ -10,7 +10,7 @@ termux-open $HOME/.termux/Termux_Boot_0.7.apk
 termux-setup-storage
 termux-info
 
-# -------------------------------------------------------------------------
+# Mail --------------------------------------------------------------------
 # MAIL CLIENTS - https://www.reddit.com/r/commandline/comments/p36vp0
 #   - https://meli-email.org/
 #   - https://github.com/neomutt/neomutt
