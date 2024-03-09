@@ -8,12 +8,12 @@
 # d8b 888  888  888 888  888 888 888 888    Y88b.
 # Y8P 888  888  888 "Y888888 888 888 888     "Y8888P
 #
-" -------------------------------------------------------------------------
-" File: .mailrc
-" Source: https://github.com/devpunks
-" Author: devPunks (github.com/devpunks)
-" Description: Mail(rc) configuration file.
-" -------------------------------------------------------------------------
+#--------------------------------------------------------------------------
+# File: .mailrc
+# Source: https://github.com/devpunks
+# Author: devPunks (github.com/devpunks)
+# Description: Mail(rc) configuration file.
+#--------------------------------------------------------------------------
 
 #  - https://gist.github.com/heisvoid/e8716555d4e4cc8f38bd6e0fc1f54ffb
 #
