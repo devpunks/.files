@@ -17,6 +17,7 @@
 
 set mta=smtp://USER:PASSWORD@smtp.gmail.com:587
 set smtp=smtps://smtp.gmail.com:465
+set smtp-use-starttls
 set ssl-verify=ignore
 set v15-compat
 
