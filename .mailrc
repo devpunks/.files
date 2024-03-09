@@ -17,6 +17,7 @@
 
 set smtp=smtps://smtp.gmail.com:465
 set ssl-verify=ignore
+set v15-compat
 
 set smtp-auth=login
 set smtp-auth-password=YOURPASSWORD
