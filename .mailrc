@@ -15,6 +15,10 @@
 " Description: Mail(rc) configuration file.
 " -------------------------------------------------------------------------
 
+#  - https://gist.github.com/heisvoid/e8716555d4e4cc8f38bd6e0fc1f54ffb
+#
+#==========================================================================
+
 set mta=smtp://USER:PASSWORD@smtp.gmail.com:587
 set smtp=smtps://smtp.gmail.com:465
 set smtp-use-starttls
