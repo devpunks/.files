@@ -17,3 +17,5 @@ set smtp-auth-user=USERNAME@gmail.com
 
 # You might need to adjust this depending on your Unix OS
 # set nss-config-dir=/etc/pki/nssdb/
+
+" vim: foldmethod=marker
