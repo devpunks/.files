@@ -1,0 +1,7 @@
+ssl_starttls=yes
+ssl_force_tls=yes
+imap_user = 'user@gmail.com'
+imap_pass = 'password'
+from='user@gmail.com'
+realname='user' 
+
