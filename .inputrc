@@ -26,7 +26,7 @@
 #
 # See to avoid potential conflicts:
 #   - $HOME/.vimrc
-#   - $HOME/.termux.conf
+#   - $HOME/.tmux.conf
 #   - $HOME/.termux/termux.properties
 # -------------------------------------------------------------------------
 #   - https://ioflood.com/blog/bind-linux-command
