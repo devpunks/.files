@@ -29,6 +29,7 @@ termux-info
 #   - https://mailutils.org/manual/html_section/mail.html
 #   - https://bence.ferdinandy.com/2023/07/20/email-in-the-terminal-a-complete-guide-to-the-unix-way-of-email/
 #   - https://web.archive.org/web/20210126200507/https://chiraag.me/blog/2019/08/21/managing-multiple-email-accounts-with-mutt-and-fetchmail/
+
 pkg install mutt
 pkg install mailutils
 pkg install fetchmail # https://www.fetchmail.info

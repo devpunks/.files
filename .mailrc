@@ -19,7 +19,9 @@
 #
 #==========================================================================
 
+# TLS
 set mta=smtp://USER:PASSWORD@smtp.gmail.com:587
+# SSL
 set smtp=smtps://smtp.gmail.com:465
 set smtp-use-starttls
 set ssl-verify=ignore
