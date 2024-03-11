@@ -244,7 +244,6 @@ alias g#='(
 # {{{ Bindings # see ~/.inputrc
 # =========================================================================
 # bind -x '"TAB":complete'  # default
-# bind -x '"TAB":menu-complete'
 bind -x '"\C-l":clear'
 # RETURN: "\e\n"
 
