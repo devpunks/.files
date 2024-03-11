@@ -75,7 +75,6 @@ TAB:complete # default
 # $if mode=emacs
   'RETURN': '\e\n'
   # "TAB":menu-complete
-  '"C-x\C-r": re-read-init-file
 
   "\C-a": beginning-of-line # Beginning of line
   "\C-e": end-of-line # End of line
