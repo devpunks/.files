@@ -245,13 +245,13 @@ alias g#='(
 # =========================================================================
 
 # https://computerhope.com/unix/bash/bind.htm
-alias shortcuts='$(
-  echo && echo Bindings: \
-    && command bind -p \
-  echo && echo Macros: \
-    && command bind -s
-  echo && echo Variables: \
-    && command bind -v
+alias shortcuts='(
+  echo && echo Bindings:
+    command bind -p
+  echo && echo Macros:
+    command bind -s
+  echo && echo Variables:
+    command bind -v
 
 )'
 
