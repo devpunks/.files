@@ -245,7 +245,7 @@ alias g#='(
 # =========================================================================
 
 # https://computerhope.com/unix/bash/bind.htm
-alias shortcuts='bind -vp'
+alias shortcuts='command bind -vp'
 
 # }}}
 
