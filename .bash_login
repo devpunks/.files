@@ -248,7 +248,7 @@ alias g#='(
 bind -x '"\C-l":clear'
 # RETURN: "\e\n"
 
-alias shortcuts='bind -vP'
+alias shortcuts='bind -vp'
 
 # }}}
 
