@@ -104,8 +104,8 @@ TAB:complete # default
 
   # Use the text that has already been typed as the prefix for searching through
   # commands (i.e. more intelligent Up/Down behavior)
-  '\e[A': history-search-backward
-  '\e[B': history-search-forward
+  "\e[A": history-search-backward
+  "\e[B": history-search-forward
 
   # <CTRL>+<N> and <CTRL>+<P> search
   "\C-p": history-search-backward
