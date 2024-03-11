@@ -93,8 +93,8 @@ TAB:complete # default
   "\e[8~": end-of-line
 
   # CTRL+left, CTRL+right fpr moving on the readline by character
-  '\e[C': forward-char
-  '\e[D': backward-char
+  "\e[C": forward-char
+  "\e[D": backward-char
 
   # ALT+left, ALT+right fpr moving on the readline by word
   '\e[5C': forward-word
