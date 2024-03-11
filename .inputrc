@@ -72,7 +72,7 @@ TAB:complete # default
 '\C-l':clear-display # of all lines or `clear-screen` (scrolls below fold)
 
 # some defaults / modifications for the emacs mode
-$if mode=emacs
+# $if mode=emacs
   'RETURN': '\e\n'
   # "TAB":menu-complete
   '"C-x\C-r": re-read-init-file
@@ -112,7 +112,7 @@ $if mode=emacs
   '\C-p': history-search-backward
   '\C-n': history-search-forward
 
-$endif
+# $endif
 
 # }}}
 
