@@ -68,7 +68,7 @@
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 # "TAB":menu-complete
-"TAB":complete # default
+"TAB": complete # default
 "\C-x\C-r": re-read-init-file
 "\C-l":clear-display # of all lines or `clear-screen` (scrolls below fold)
 
