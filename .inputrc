@@ -72,7 +72,6 @@ TAB:complete # default
 
 # some defaults / modifications for the emacs mode
 $if mode=emacs
-  '\C-l':clear
   'RETURN': '\e\n'
   # "TAB":menu-complete
   '"C-x\C-r": re-read-init-file
