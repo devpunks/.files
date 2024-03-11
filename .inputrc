@@ -68,9 +68,9 @@
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 TAB:complete # default
-'"\C-x\C-r": re-read-init-file'
-'\C-l':clear-screen # of all lines or `clear-screen` (scrolls below fold)
-'\C-L':clear-display # of all lines or `clear-screen` (scrolls below fold)
+"\C-x\C-r": re-read-init-file
+"\C-l":clear-screen # of all lines or `clear-screen` (scrolls below fold)
+"\C-L":clear-display # of all lines or `clear-screen` (scrolls below fold)
 
 # some defaults / modifications for the emacs mode
 # $if mode=emacs
