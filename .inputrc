@@ -108,8 +108,8 @@ TAB:complete # default
   '\e[B': history-search-forward
 
   # <CTRL>+<N> and <CTRL>+<P> search
-  '\C-p': history-search-backward
-  '\C-n': history-search-forward
+  "\C-p": history-search-backward
+  "\C-n": history-search-forward
 
 # $endif
 
