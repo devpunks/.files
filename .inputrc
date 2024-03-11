@@ -68,7 +68,7 @@
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 TAB:complete # default
-'\C-l':clear-screen # or clear-display
+'\C-l':clear-display # of all lines or `clear-screen` (scrolls below fold)
 
 # some defaults / modifications for the emacs mode
 $if mode=emacs
