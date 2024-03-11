@@ -63,6 +63,11 @@
 # =========================================================================
 # {{{ Bindings
 # =========================================================================
+# default readline configuration
+$include /data/data/com.termux/files/usr/etc/inputrc
+
+TAB:complete # default
+
 # some defaults / modifications for the emacs mode
 $if mode=emacs
   '\C-l':clear
