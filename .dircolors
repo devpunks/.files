@@ -20,10 +20,10 @@
 
 # - https://geoff.greer.fm/lscolors/
 # - https://linux.die.net/man/1/dircolors
+# - https://github.com/trapd00r/LS_COLORS
 # - https://gist.github.com/thomd/7667642
 # - https://github.com/xonsh/xonsh/issues/3608
 # - https://unix.stackexchange.com/questions/94299
-# - https://github.com/trapd00r/LS_COLORS?tab=readme-ov-file
 # - http://bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors
 # - https://github.com/coreutils/coreutils/blob/master/src/dircolors.c
 # - https://github.com/coreutils/coreutils/blob/master/src/ls.c#L592-L606
