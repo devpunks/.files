@@ -244,6 +244,7 @@ alias g#='(
 # {{{ Bindings # see ~/.inputrc
 # =========================================================================
 
+# https://computerhope.com/unix/bash/bind.htm
 alias shortcuts='bind -vp'
 
 # }}}
