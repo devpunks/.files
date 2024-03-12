@@ -82,6 +82,10 @@
 [branch]
   autosetuprebase = always
 
+[showbranch]
+default = --topo-order
+default = heads/*
+
 # prefab = cherry -v origin/fabrication
 [format] # https://git-scm.com/docs/pretty-formats
   # https://stackoverflow.com/questions/21830810/how-to-make-git-log-cut-long-comments
