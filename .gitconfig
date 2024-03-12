@@ -264,8 +264,8 @@ default = heads/*
 [color "interactive"]
   help = bold italic
   header = reverse red
-  help = bold italic default
-  prompt = reverse bold default
+  prompt = reverse bold
+  error = reverse bold red
 
 # color.decorate.<slot>
 #  Use customized color for git log --decorate output.  <slot> is one of branch, remoteBranch, tag,
