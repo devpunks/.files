@@ -239,7 +239,6 @@ default = heads/*
   old = bold red # deletions
   new = bold green # additions
   frag = bold reverse # i.e. @@ -148,10 +148,10 @@
-  whitespace = reverse red
   commit = reverse bold default
 
 # color.status.<slot>
