@@ -68,6 +68,7 @@ pkg install youtubedr
 
 # Networking --------------------------------------------------------------
 pkg install socat
+pkg install dnsutils
 pkg install netcat-openbsd
 
 # Programming -------------------------------------------------------------
