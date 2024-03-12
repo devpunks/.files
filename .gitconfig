@@ -253,6 +253,8 @@ default = heads/*
   changed = bold yellow
   deleted = default red
   branch = bold reverse
+  nobranch = reverse red
+  untracked = dim italic
 
 # color.interactive.<slot>
 #  Use customized color for git add --interactive output.  <slot> may be prompt, header, help or
