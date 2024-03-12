@@ -233,6 +233,9 @@ default = heads/*
 #  or whitespace (highlighting whitespace errors). The values of these variables may be specified as
 #  in color.branch.<slot>.
 [color "diff"]
+  whitespace = reverse red
+  meta = default # headers
+  plain = italic # unaltered
   old = bold red # deletions
   new = bold green # additions
   plain = italic # unaltered
