@@ -249,6 +249,9 @@ default = heads/*
 #     red). The values of these variables may be specified as in color.branch.<slot>.
 [color "status"]
   header = default
+  added = bold default
+  changed = bold yellow
+  deleted = default red
   branch = bold reverse
 
 # color.interactive.<slot>
