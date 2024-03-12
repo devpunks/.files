@@ -32,6 +32,48 @@
 # Hyperlinks - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
 
 # =========================================================================
+# {{{ Bindings # see ~/.inputrc
+# =========================================================================
+
+# https://computerhope.com/unix/bash/bind.htm
+alias shortcuts='(
+  echo && echo Bindings:
+    command bind -p
+  echo && echo Macros:
+    command bind -s
+  echo && echo Variables:
+    command bind -v
+
+)'
+
+# }}}
+
+# =========================================================================
+# {{{ Git Aliases
+# https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+alias ga='git add -p'
+alias gb='git -P branch -a'
+alias gc='git commit --message '
+alias gd='git diff'
+alias gg='git grep --break --heading'
+alias gl='git log --reverse --since=1.week --decorate --all'
+alias gll='git log -L'
+alias gp='git push && git push --tags'
+alias gr='git rebase -i'
+alias gs='git status --column --verbose'
+alias gt='git tag -a'
+alias g#='(
+  # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+  # https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager
+  GIT_PAGER=cat \
+    gl --since="1 day ago"
+    printf "\n Total:%d" $( gl --since="1 day ago" | wc -l )
+  echo
+)'
+
+# }}}
+
+# =========================================================================
 # {{{ Shell
 # =========================================================================
 alias fonts='(
