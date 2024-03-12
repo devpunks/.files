@@ -226,8 +226,6 @@ default = heads/*
   remote = dim italic
   current = bold reverse ul
 
-[color "showbranch"]
-
 # color.diff.<slot>
 #  Use customized color for diff colorization.  <slot> specifies which part of the patch to use the
 #  specified color, and is one of plain (context text), meta (metainformation), frag (hunk header),
