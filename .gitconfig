@@ -248,11 +248,6 @@ default = heads/*
 #     (the current branch), or nobranch (the color the no branch warning is shown in, defaulting to
 #     red). The values of these variables may be specified as in color.branch.<slot>.
 [color "status"]
-  added = bold green
-  deleted = red
-  changed = bold yellow
-  untracked = dim italic
-  nobranch = reverse red
   header = default
   branch = bold reverse
 
