@@ -257,9 +257,10 @@ default = heads/*
   untracked = dim italic
 
 # color.interactive.<slot>
-#  Use customized color for git add --interactive output.  <slot> may be prompt, header, help or
-#  error, for four distinct types of normal output from interactive commands. The values of these
-#  variables may be specified as in color.branch.<slot>.
+#  Use customized color for git add --interactive output.
+#  <slot> may be prompt, header, help or error,
+#  for four distinct types of normal output from interactive commands.
+#  The values of these variables may be specified as in color.branch.<slot>.
 [color "interactive"]
   error = reverse bold red
   header = reverse red
