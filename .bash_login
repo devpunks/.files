@@ -131,15 +131,6 @@ alias list='weight && \
     --group-directories-first --ignore-glob ".git|log|node_modules|storage"'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 
-# https://en.m.wikipedia.org/wiki/Named_pipe
-# https://stackoverflow.com/questions/4113986
-alias pipe='command mkfifo'
-# - https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories
-alias grep="LC_ALL=C command grep $GREP_OPTIONS"
-
-alias delete='command rm -dIrv --preserve-root'
-# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
-alias watch='command watch -n 2 $1'
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
