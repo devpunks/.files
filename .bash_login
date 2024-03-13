@@ -123,7 +123,6 @@ alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 alias ls="command ls $LS_OPTIONS -l"
 alias vdir="command vdir $LS_OPTIONS -l"
 alias find='command find -type f -iname'
-alias ls="command ls $LS_OPTIONS -l"
 alias branch='gb && echo && tree -d -L 4'
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 # https://github.com/eza-community/eza
