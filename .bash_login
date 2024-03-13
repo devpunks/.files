@@ -94,8 +94,6 @@ alias rm='echo "rm is disabled, use delete, or destroy"'
 alias delete='command rm -dIrv --preserve-root' # recursive
 alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
 
-alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
-
 # termux-job-scheduler
 #   - https://github.com/termux/termux-api/issues/282
 alias jobs='command jobs -l'
