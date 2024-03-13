@@ -64,7 +64,7 @@
 # =========================================================================
 # {{{ Bindings
 # =========================================================================
-# default readline configuration
+# Preserve system wide settings
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 # "TAB":menu-complete
