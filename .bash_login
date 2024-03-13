@@ -120,6 +120,7 @@ alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 # https://unix.stackexchange.com/questions/344213
 # https://askubuntu.com/questions/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
+alias ls="command ls $LS_OPTIONS -l"
 alias vdir="command vdir $LS_OPTIONS -l"
 alias find='command find -type f -iname'
 alias ls="command ls $LS_OPTIONS -l"
