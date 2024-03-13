@@ -86,6 +86,7 @@ alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 alias echo='command echo -e'
 
 alias ..='command cd ..'
+alias ln='command ln -i'
 alias mv='command mv -i'
 alias cp='command cp -i'
 alias ln='command ln -i'
