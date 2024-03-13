@@ -97,12 +97,7 @@ alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-example
 # termux-job-scheduler
 #   - https://github.com/termux/termux-api/issues/282
 alias jobs='command jobs -l'
-
-alias path='echo -e ${PATH//:/\\n}'
-alias mount='command mount | column -t'
-alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
-# for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
-alias echo='command echo -e'
+alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
 
 alias pop='command popd'
 alias push='command pushd'
