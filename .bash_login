@@ -89,7 +89,9 @@ alias ..='command cd ..'
 alias ln='command ln -i'
 alias mv='command mv -i'
 alias cp='command cp -i'
-alias ln='command ln -i'
+# - https://en.m.wikipedia.org/wiki/Rm_(Unix)
+alias rm='echo "rm is disabled, use delete, or destroy"'
+alias delete='command rm -dIrv --preserve-root' # recursive
 alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
 
 alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
