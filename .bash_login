@@ -107,6 +107,16 @@ alias mkdir='command mkdir -pv'
 alias most='command most +u -s -t2'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
+alias path='echo -e ${PATH//:/\\n}'
+alias mount='command mount | column -t'
+alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
+
+# https://en.m.wikipedia.org/wiki/Named_pipe
+# https://stackoverflow.com/questions/4113986
+alias pipe='command mkfifo'
+# - https://stackoverflow.com/questions/1987926
+alias grep="LC_ALL=C command grep $GREP_OPTIONS"
+
 # https://unix.stackexchange.com/questions/344213
 # https://askubuntu.com/questions/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
