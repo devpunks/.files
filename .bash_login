@@ -147,6 +147,8 @@ alias now='command date +"%T - %::z %Z (${TZ})"'
 alias chown='command chown --preserve-root'
 alias chmod='command chmod --preserve-root'
 alias chgrp='command chgrp --preserve-root'
+alias who='command id \
+  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
 alias header='command curl -I'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
