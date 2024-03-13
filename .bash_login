@@ -132,8 +132,8 @@ alias list='weight && \
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|node_modules|storage"'
 
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
-# - https://en.m.wikipedia.org/wiki/Rm_(Unix)
-alias rm='echo "rm is disabled, use delete, destroy, or command rm instead."'
+# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
+alias watch='command watch -n 2'
 
 alias rand='echo $RANDOM'
 alias random='echo $SRANDOM'
