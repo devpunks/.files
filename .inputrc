@@ -134,7 +134,6 @@ set colored-stats on
 set enable-keypad on
 # Show extra file information when completing, `ls -F` (e.g. *,/,@)
 set visible-stats on
-set history-size 1000
 # audible (default), visible, none
 set bell-style none
 set bell-style visible
