@@ -78,7 +78,10 @@ pkg install strace
 pkg install openssh
 pkg install iproute2
 
-# Multimedia --------------------------------------------------------------
+# }}}
+
+# {{{ Multimedia ----------------------------------------------------------
+
 pkg install sox
 pkg install vlc
 pkg install ffmpeg
