@@ -33,7 +33,7 @@
 #
 #==========================================================================
 
-DELAY=0.5 # shell load wait time
+DELAY=1.0 # shell load wait time
 NAME="devpunks" # NAME of environment
 SOCKET="${HOME}/${NAME}" # See tmux -L <socket> flag
 SOCK="${SOCKET}.sock" # See tmux -S <sock file> flag
