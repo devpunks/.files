@@ -127,7 +127,10 @@ pkg install brotli
 pkg install zopfli
 pkg install logrotate
 
-# -------------------------------------------------------------------------
+# }}}
+
+# {{{ Versioning ----------------------------------------------------------
+
 tmux -V
 git --version
 vim --version
