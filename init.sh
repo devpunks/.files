@@ -96,7 +96,10 @@ pkg install socat
 pkg install dnsutils
 pkg install netcat-openbsd
 
-# Programming -------------------------------------------------------------
+# }}}
+
+# {{{ Programming ---------------------------------------------------------
+
 pkg install golang
 pkg install python
 pip install pytest
