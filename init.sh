@@ -33,9 +33,7 @@ termux-info
 
 # }}}
 
-pkg install mutt
-pkg install mailutils
-pkg install fetchmail # https://www.fetchmail.info
+# {{{ Shell ---------------------------------------------------------------
 
 # -------------------------------------------------------------------------
 pkg install bc
