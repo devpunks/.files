@@ -107,7 +107,10 @@ pkg install python-numpy
 pkg install ruby && gem update --system
 pkg install nodejs-lts && npm install -g npm
 
-# Database ----------------------------------------------------------------
+# }}}
+
+# {{{ Database ------------------------------------------------------------
+
 pkg install sqlite
 pkg install postgis
 pkg install postgresql
