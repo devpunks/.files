@@ -115,7 +115,10 @@ pkg install sqlite
 pkg install postgis
 pkg install postgresql
 
-# Archive -----------------------------------------------------------------
+# }}}
+
+# {{{ Archive -------------------------------------------------------------
+
 pkg install tar
 pkg install zip
 pkg install unzip
