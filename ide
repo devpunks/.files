@@ -30,6 +30,9 @@
 
 # Use PIPES for race conditions in pane creation commands
 #   - https://www.manniwood.com/2021_08_02/fun_with_tmux.html
+#
+#==========================================================================
+
 DELAY=0.5 # shell load wait time
 NAME="devpunks" # NAME of environment
 SOCKET="${HOME}/${NAME}" # See tmux -L <socket> flag
