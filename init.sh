@@ -88,7 +88,10 @@ pkg install ffmpeg
 pkg install asciinema
 pkg install youtubedr
 
-# Networking --------------------------------------------------------------
+# }}}
+
+# {{{ Networking ----------------------------------------------------------
+
 pkg install socat
 pkg install dnsutils
 pkg install netcat-openbsd
