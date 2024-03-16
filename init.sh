@@ -10,6 +10,15 @@
 # 888 888  888 888  "Y888 Y8P 88888P' 888  888
 #
 # -------------------------------------------------------------------------
+# Version: 0.1
+# File: init.sh
+# Source: https://github.com/devpunks
+# Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: Init install script
+# -------------------------------------------------------------------------
+
+#==========================================================================
 
 pkg upgrade
 pkg update
