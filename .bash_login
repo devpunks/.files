@@ -275,11 +275,6 @@ function download () {
   header uri
 } # download
 
-# https://www.zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
-function backup () {
-  echo Backing Up
-}
-
 function play () {
   # SoX
   #   - https://en.m.wikipedia.org/wiki/SoX
