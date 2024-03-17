@@ -159,6 +159,7 @@ function download () {
   local uri=$1
 
   youtubedr --help
+  youtubedr uri
   header uri
 } # download
 
