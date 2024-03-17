@@ -156,6 +156,8 @@ alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 function download () {
+  local uri=$1
+
   youtubedr --help
   header uri
 } # download
