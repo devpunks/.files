@@ -261,6 +261,14 @@ function logs () {
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
+function download () {
+  local uri=$1
+
+  youtubedr --help
+  youtubedr uri
+  header uri
+} # download
+
 # https://www.zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function backup () {
   echo Backing Up
