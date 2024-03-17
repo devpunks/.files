@@ -157,6 +157,7 @@ alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 function download () {
   youtubedr --help
+  header uri
 } # download
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
