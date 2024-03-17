@@ -645,6 +645,7 @@ function! Browser() abort " Opening URL
     echom "Opening URL: "..url
 "   exec "!echo "..url
     exec "!type ls && type grep"
+    exec "!type open"
   endif
 endfunction
 
