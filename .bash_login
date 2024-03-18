@@ -76,6 +76,10 @@ alias g#='(
 # =========================================================================
 # {{{ Shell
 # =========================================================================
+
+# for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
+alias echo='command echo -e'
+
 alias fonts='(
   # https://github.com/hackerb9/fonttable
   echo $( $HOME/.config/fonttable )
