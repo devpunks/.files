@@ -86,9 +86,6 @@ alias fonts='(
 )' # fonts
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
-# for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
-alias echo='command echo -e'
-
 alias ..='command cd ..'
 alias ln='command ln -i'
 alias mv='command mv -i'
