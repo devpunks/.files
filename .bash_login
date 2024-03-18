@@ -83,7 +83,7 @@ alias echo='command echo -e'
 alias fonts='(
   # https://github.com/hackerb9/fonttable
   echo $( $HOME/.config/fonttable )
-)' # ScreenSaver
+)' # fonts
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
