@@ -133,7 +133,7 @@ alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git|log|
 
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
-alias watch='command watch --interval 2 -d'
+alias watch='command watch --interval 2 --differences=permanennt'
 
 alias rand='echo $RANDOM'
 alias random='echo $SRANDOM'
