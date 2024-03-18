@@ -83,7 +83,7 @@ sleep $DELAY
 tmux -S $SOCKET send-keys 'vi -S vim.session' Enter
 
 # STATS -------------------------------------------------------------------
-#
+
 # Create next window
 tmux -S $SOCKET new-window
 
