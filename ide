@@ -105,9 +105,7 @@ tmux -S $SOCKET send-keys 'cd crypto && vi price' Enter
 tmux -S $SOCKET split-window -h -l 40%
 sleep $DELAY
 # Start price
-tmux -S $SOCKET send-keys \
-  "cd crypto && watch --no-wrap --exec --interval 30 $SHELL ./price" \
-  Enter
+tmux -S $SOCKET send-keys "cd crypto && watch ./price" Enter
 
 # Jump back to first window
 tmux -S $SOCKET select-pane -t 2
