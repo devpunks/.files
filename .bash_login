@@ -270,7 +270,7 @@ function backup () {
 function download () {
   local uri=$1
 
-  echo uri: $uri
+  clear && echo uri: $uri
 
   youtubedr --help
   youtubedr info $uri
