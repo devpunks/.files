@@ -55,6 +55,8 @@ echo LINES $LINES
 tmux -C -S $SOCKET new-session -d -s $SESSION -x - -y -
 echo $SOCKET
 
+# DEV ---------------------------------------------------------------------
+
 # Rename window
 tmux -S $SOCKET rename-window 'DEV'
 
