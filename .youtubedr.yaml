@@ -1,4 +1,5 @@
 --xattrs
 --add-metadata
---output ./%(title)s.%(ext)
+--output ./%(title)s.%(ext)s
+--output thumbnail:%(title)s_thumbnail.%(ext)s
 --format 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
