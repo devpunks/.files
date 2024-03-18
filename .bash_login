@@ -104,7 +104,6 @@ alias pop='command popd'
 alias push='command pushd'
 alias dirs='command dirs -p'
 alias which='command type -a'
-alias mkdir='command mkdir --verbose --parents'
 alias most='command most +u -s -t2'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
