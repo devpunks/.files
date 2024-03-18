@@ -1,3 +1,5 @@
 --xattrs
+--add-metadata
+--output ./%(title)s.%(ext)
 --format 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
 --output ~/Videos/%(title)s.%(ext)s
