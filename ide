@@ -44,6 +44,8 @@ SESSION="${NAME}😈studio" # used throughout (i.e. VIM session name)
 echo COLUMNS $COLUMNS
 echo LINES $LINES
 
+# SESSION -----------------------------------------------------------------
+
 # Setup a session work space called `$SESSION
 # See tmux -L|S <socket|file> flag
 # -L SOCKET NAME
