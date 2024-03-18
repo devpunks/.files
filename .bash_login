@@ -122,6 +122,7 @@ alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 # https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
 alias ls="command ls $LS_OPTIONS -l"
 alias vdir="command vdir $LS_OPTIONS -l"
+# https://tecmint.com/35-practical-examples-of-linux-find-command/
 alias find='command find -type f -iname'
 alias branch='gb && echo && tree -d -L 4'
 # https://github.com/eza-community/eza
