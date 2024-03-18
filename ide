@@ -33,6 +33,8 @@
 #
 #==========================================================================
 
+# ENV ---------------------------------------------------------------------
+
 DELAY=0.6 # shell load wait time
 NAME="devpunks" # NAME of environment
 SOCKET="${HOME}/${NAME}" # See tmux -L <socket> flag
