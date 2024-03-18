@@ -283,8 +283,9 @@ function download () {
   echo uri: $uri && echo process: $process && echo
 
   youtubedr --help
-  youtubedr info $uri
-  youtubedr url $uri
+  $process --help
+  $process $uri
+  $process $uri
   header $uri
 } # download
 
