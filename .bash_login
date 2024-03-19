@@ -153,6 +153,7 @@ alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
 alias header='command curl -I'
+alias cookies='command curl -I --cookie-jar ./.cookies'
 alias ping='command ping -c 100 -s.2'
 alias ip='ip addr | grep -Po '\''(?<=inet)\s(?!127)[^/]+'\'
 
