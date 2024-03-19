@@ -273,12 +273,7 @@ function backup () {
 function download () {
   local uri=$1
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
-  local process="$HOME/.local/yt-dlp --config-location $HOME/yt-dlp.conf"
-
-# local process="$HOME/.local/yt-dlp --verbose --xattrs \
-#   --format mp4 --remux-video mp4 --recode-video mp4 --merge-output-format mp4 \
-#   --audio-format=best --audio-quality=0 --extract-audio \
-#   --progress --write-thumbnail --embed-thumbnail --write-subs --write-comments --write-info-json "
+  local process='../.local/yt-dlp'
 
   clear
   echo uri: $uri && echo process: $process && echo
