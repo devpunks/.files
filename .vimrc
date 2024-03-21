@@ -804,7 +804,7 @@ cnoremap <C-r> :source ~/.vimrc<CR>
 " }}}
 
 " =========================================================================
-" {{{ Plugins
+" {{{ PLUGINS
 " =========================================================================
 augroup FileDefaults
   filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
