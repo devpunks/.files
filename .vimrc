@@ -74,7 +74,7 @@ echom "BASH: " .. system( 'echo -n $BASH_VERSION' )
 echom "VIM: " .. v:version
 
 " =========================================================================
-" {{{ Settings
+" {{{ SETTINGS
 " =========================================================================
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
