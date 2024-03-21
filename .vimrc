@@ -195,7 +195,7 @@ endif
 " }}}
 
 " =========================================================================
-" {{{ Buffers
+" {{{ BUFFERS
 " =========================================================================
 " set nohidden possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
 set hidden
