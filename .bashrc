@@ -116,6 +116,8 @@ export LS_OPTIONS='\
   --color=auto --hyperlink=auto --tabsize=0 --width=2 --format=vertical \
   --block-size=MiB --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
 
+# TODO: Deprecate
+#   - https://stackoverflow.com/questions/42138844/remove-line-number-option-from-grep#comment113769544_64338090
 export GREP_OPTIONS='--context=1 \
   --directories=skip --devices=skip --binary-files=without-match \
   --ignore-case --no-messages --line-number --with-filename --color=auto \
