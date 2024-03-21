@@ -739,7 +739,7 @@ endfunction
 " }}}
 
 " =========================================================================
-" {{{ Mappings
+" {{{ MAPPINGS
 " - https://vi.stackexchange.com/questions/2089
 " - https://vi.stackexchange.com/questions/7722/how-to-debug-a-mapping
 " - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
