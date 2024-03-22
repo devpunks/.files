@@ -76,6 +76,7 @@ echom "VIM: " .. v:version
 " =========================================================================
 " {{{ SETTINGS
 " =========================================================================
+let &shell = $SHELL
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/questions/2288756/how-to-set-working-current-directory-in-vim
 let &path   = '.,'
