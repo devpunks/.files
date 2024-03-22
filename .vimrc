@@ -134,7 +134,7 @@ else
 endif
 
 set showmatch " jump to matching brace
-set matchtime=6 "in 1/10ths of second"
+set matchtime=5 "in 1/10ths of second"
 
 " Chrome ------------------------------------------------------------------
 " tabs
