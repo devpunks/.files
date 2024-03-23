@@ -38,8 +38,8 @@
 "  - https://www.reddit.com/r/vim/comments/86pjx4/does_vim_currently_have_a_way_to_handle_clicks_on/
 
 " =========================================================================
-set encoding=utf-8
-set emoji
+
+set emoji encoding=utf-8
 
 if ! exists('g:pluginname_setting')
   unlet! skip_defaults_vim
