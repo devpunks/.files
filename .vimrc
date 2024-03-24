@@ -749,7 +749,6 @@ endfunction
 let mapleader = ',' " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
 let g:mapleader = ","
 
-
 " =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
