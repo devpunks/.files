@@ -780,7 +780,7 @@ nnoremap <C-w>t :tab split<CR>
 " All buffers into tabs
 nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
 " current buffer in new (t)ab
-nnoremap <leader>t <C-w>t
+nnoremap <Leader>t <C-w>t
 
 " <=> Equal sized panes
 nnoremap = <C-w>=
