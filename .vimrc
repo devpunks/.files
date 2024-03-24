@@ -571,7 +571,7 @@ set wrap " word
 set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting
 set linebreak " Avoid wrapping line in middle of word
 set showbreak=⥹ " Character used for wrapped line
-set pastetoggle=<leader>p " Allow toggle of (paste) insert indentation
+set pastetoggle=<Leader>p " Allow toggle of (paste) insert indentation
 
 set list " show hidden characters & replacement characters
 set listchars=tab:▣□▢,extends:⇨,precedes:⇦,leadmultispace:··╵,multispace:··╵,lead:·,space:╵,nbsp:■,trail:■,eol:↴
