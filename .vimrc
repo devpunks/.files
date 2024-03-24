@@ -745,6 +745,8 @@ endfunction
 " - https://stackoverflow.com/questions/1764263/what-is-the-leader-in-a-vimrc-file
 " - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
 " let mapleader = ',' " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
+" set a map leader for more key combos
+let mapleader = ","
 " =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
