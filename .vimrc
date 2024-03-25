@@ -667,8 +667,7 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   let char = strpart( getline('.'), col('.')-1, 1, 1 )
   let index = char2nr( char ) " char(acter) to number
   let character = printf( '| %-2s|', char )
-  let hexadecimal = printf( 'U+%-8s' , printf( '%04X', index ) )
-  let decimal = printf( '\D%%%-6d', index )
+
   let octal = printf( '\0o%-6o', index )
 
   return character..join( [ hexadecimal, decimal, octal ], ' ' )
