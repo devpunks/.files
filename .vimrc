@@ -304,6 +304,20 @@ endif
 " }}}
 
 " =========================================================================
+" {{{ MOUSE
+" =========================================================================
+set t_RV= " Disable automatic mouse detection
+if has('mouse')
+elseif has('mouse_sgr')
+  set mouse=a " Enable mouse use in a(ll) modes
+  set ttymouse=sgr " https://vimhelp.org/options.txt.html#sgr-mouse
+else
+  set ttymouse=xterm2
+endif
+
+" }}}
+
+" =========================================================================
 " {{{ STATUS
 " Word Count - https://vimtricks.com/p/count-words-and-lines/
 "   - <C-g> - short format
