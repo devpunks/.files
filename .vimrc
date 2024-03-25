@@ -324,7 +324,7 @@ elseif has('mouse_sgr') " https://vimhelp.org/options.txt.html#sgr-mouse
   set mouse=a " Enable mouse use in a(ll) modes
   set ttymouse=sgr " Set sgr mouse
 else
-  set ttymouse=xterm2
+  set ttymouse=xterm2 " degrade to xterm2 mouse
 endif
 
 " }}}
