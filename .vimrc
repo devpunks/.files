@@ -260,7 +260,7 @@ set backupdir=$TMPDIR " backup location
 " =========================================================================
 " {{{ CURSOR
 " =========================================================================
-set ttyfast " Send more characters for redraws
+set ttyfast " for redraws
 set timeout " on mappings
 set ttimeout " on keycodes
 set ttimeoutlen=1 " mappings
