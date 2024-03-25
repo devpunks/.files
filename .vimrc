@@ -49,16 +49,6 @@ if ! exists('g:pluginname_setting')
   source $VIMRUNTIME/defaults.vim
 endif
 
-set t_RV= " Disable automatic mouse detection
-if has('mouse_sgr')
-  set mouse=a " Enable mouse use in all modes
-  " Must be one of: sgr, xterm, xterm2, netterm, dec, jsbterm, pterm
-  " Set this to the name of your terminal that supports mouse codes.
-  set ttymouse=sgr
-else
-  set ttymouse=xterm2
-endif
-
 execute 'set <FocusLost>=\<Esc>[O'
 execute 'set <FocusGained>=\<Esc>[I'
 " xterm-focus-event tracking - https://github.com/vim/vim/issues/9296
