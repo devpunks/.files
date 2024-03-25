@@ -669,7 +669,7 @@ endfunction
 
 " -------------------------------------------------------------------------
 " :call CursorCharacter ( value = 0 )
-"   - :help ga
+"   - :help ascii ga g8
 "   - https://www.utf8-chartable.de/
 "   - https://stackoverflow.com/questions/1273693
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
