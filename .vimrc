@@ -78,8 +78,6 @@ let &path ..= $HOME..'/**,'
 let &path ..= ( exists('$PREFIX') ? $PREFIX : '/usr' )..'/include/**'
 let &path ..= ',,'
 
-set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
-
 " https://vim.fandom.com/wiki/Folding
 set foldenable
 set foldlevel=1
