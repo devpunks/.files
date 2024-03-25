@@ -60,7 +60,7 @@ alias gl='git log --reverse --since=1.week --decorate --all'
 alias gll='git log -L'
 alias gp='git push && git push --tags'
 alias gr='git rebase -i'
-alias gs='git status --column --verbose && echo'
+alias gs='clear && echo && git status --column --verbose && echo'
 alias gt='git tag -a'
 alias g#='(
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
