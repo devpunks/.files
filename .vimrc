@@ -316,6 +316,7 @@ endif
 
 " =========================================================================
 " {{{ MOUSE
+"   - https://vimhelp.org/options.txt.html#%27ttymouse%27
 " =========================================================================
 set t_RV= " Disable automatic mouse detection
 if has('mouse')
