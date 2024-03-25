@@ -664,7 +664,6 @@ endfunction
 "   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
-" let character = strpart(getline('.'), col('.') -1, 1, 1 )
   let char = strpart( getline('.'), col('.')-1, 1, 1 )
   let index = char2nr( char ) " char(acter) to number
   let character = printf( '| %-2s|', char )
