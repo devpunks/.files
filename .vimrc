@@ -34,6 +34,8 @@
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
+"
+" TODO:
 " CLICKING LINE NUMBERS
 "  - https://www.reddit.com/r/vim/comments/86pjx4/does_vim_currently_have_a_way_to_handle_clicks_on/
 
