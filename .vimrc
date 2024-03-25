@@ -34,6 +34,7 @@
 " Auto Commands - https://vimhelp.org/autocmd.txt.html
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
+" Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
 "
 " TODO:
 " CLICKING LINE NUMBERS
