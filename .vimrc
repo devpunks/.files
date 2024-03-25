@@ -315,7 +315,6 @@ endif
 
 " =========================================================================
 " {{{ STATUS
-"
 " Word Count - https://vimtricks.com/p/count-words-and-lines/
 "   - <C-g> - short format
 "   - g<C-g> - extended format
