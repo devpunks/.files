@@ -315,8 +315,10 @@ endif
 
 " =========================================================================
 " {{{ STATUS
-" Word Count
-"   - g<C-g> - https://vimtricks.com/p/count-words-and-lines/
+"
+" Word Count - https://vimtricks.com/p/count-words-and-lines/
+"   - <C-g> - short format
+"   - g<C-g> - extended format
 "   - Status line - https://cromwell-intl.com/open-source/vim-word-count.html
 " =========================================================================
 set showmode " in status Vi (not Vim)
