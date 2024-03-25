@@ -154,6 +154,19 @@ set complete=.,w,b,u,i " -t - https://www.mail-archive.com/vim@vim.org/msg03963.
 set completepopup+=align:item,border:on
 set completeopt+=menu,menuone,noinsert,popup
 
+" }}}
+
+" =========================================================================
+# {{{ Copy & 🍝Pasta
+" =========================================================================
+set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
+
+if has('clipboard_working')
+  echom 'Copy & 🍝Pasta'
+else
+  echom '❌ NO Copy & 🍝Pasta'
+endif
+
 " Clipboard Registers -----------------------------------------------------
 "   - https://stackoverflow.com/questions/11489428
 "   - https://github.com/termux/termux-packages/issues/2308
