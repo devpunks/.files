@@ -444,7 +444,7 @@ function hold () {
   # Redirect to stderror AND file
   # tee - https://en.m.wikipedia.org/wiki/Tee_(command)
   # nohup ./foo.sh > out.txt >2&1
-}
+} # hold
 
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
 function git_clean () {
