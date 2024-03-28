@@ -147,6 +147,8 @@ alias calendar='command cal -1 --iso --color=auto'
 # https://www.gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
 alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 
+alias what='command whatis --help'
+alias where='command whereis --help'
 alias whois='command whois -H '
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
