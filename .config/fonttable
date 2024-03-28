@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# -------------------------------------------------------------------------
+# File: fonttable
+# Source: https://github.com/hackerb9/fonttable
+# Description: Display entire font faces and table examples
+# -------------------------------------------------------------------------
+#
 # Print out every¹ unicode character in the UnicodeData.txt file.
 # ↄ⃝ 2018 hackerb9  Copyleft: All wrongs reversed.
 
