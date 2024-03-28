@@ -325,30 +325,19 @@ function open () {
 
   # android
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
-}
+} # open
 
-# Archive
-# - https://geeksforgeeks.org/tar-command-linux-examples
-function archive () {
-  clear
-  local file=$1
-  local contents=${@:2}
-
-  echo file: $file
-  echo contents: $contents
-
-  command tar cvzf $file $contents # -u for update only
-  command zip -rv $file $contents # -u for update only
-
-  # Creates an archive (*.tar.gz) from given directory.
-  # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
-
-  # Create a ZIP archive of a file or folder.
-  # zip -r "${1%%/}.zip" "$1"
-
-  test -e "$file" \
-   && command view $file
-}
+function play () {
+  # SoX
+  #   - https://en.m.wikipedia.org/wiki/SoX
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music/
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing/
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-split-by-silence/
+  #   - https://ankitshah009.blogspot.com/2016/12/usage-of-sox-tool.html
+  #   - https://ankitshah009.blogspot.com/2017/03/sox-of-silence-original-post.html
+  #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
+  sox --help
+} # play
 
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
