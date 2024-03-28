@@ -104,7 +104,6 @@ alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-p
 alias pop='command popd'
 alias push='command pushd'
 alias dirs='command dirs -p'
-alias path='echo PATHS: \\n ${PATH//:/\\n}'
 alias most='command most +u -s -t2'
 alias mount='command mount | column -t'
 alias mkdir='command mkdir --verbose --parents'
