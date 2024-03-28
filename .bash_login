@@ -103,8 +103,6 @@ alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-p
 alias pop='command popd'
 alias push='command pushd'
 alias dirs='command dirs -p'
-alias where='echo TODO: implementation'
-alias which='command type -a'
 alias most='command most +u -s -t2'
 alias mkdir='command mkdir --verbose --parents'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
