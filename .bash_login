@@ -156,10 +156,6 @@ alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 
-alias chown='command chown --preserve-root'
-alias chmod='command chmod --preserve-root'
-alias chgrp='command chgrp --preserve-root'
-
 alias ports='netstat -tulanp'
 alias header='command curl -I'
 alias ping='command ping -c 100 -s.2'
