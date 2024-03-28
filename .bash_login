@@ -120,6 +120,20 @@ alias delete='command rm \
   --verbose --preserve-root --recursive --dir --interactive=once'
 alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
 
+# https://web.njit.edu/~ronkowit/eliza.html
+alias which='command type -a'
+alias why='echo TODO: \`why\` implementation'
+alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
+alias what='command man whatis && command whatis'
+alias where='command man whereis && command whereis'
+alias whois='command whois -H'
+alias who='command id \
+  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
+
+alias find='command find . -type f -iname'
+# - https://stackoverflow.com/questions/1987926
+alias grep="clear && LC_ALL=C command grep $GREP_OPTIONS"
+
 # https://unix.stackexchange.com/questions/344213
 # https://askubuntu.com/questions/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
