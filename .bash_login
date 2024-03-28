@@ -80,10 +80,7 @@ alias g#='(
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
 
-alias fonts='(
-  # https://github.com/hackerb9/fonttable
-  echo $( $HOME/.config/fonttable )
-)' # fonts
+alias fonts='echo $( $HOME/.config/fonttable )'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
 alias ..='command cd ..'
