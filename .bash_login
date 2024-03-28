@@ -533,7 +533,7 @@ function permit () {
   chmod -R u=rwX,g=rX,o= "$@"
 
   ls $1
-}
+} # permit
 
 # https://bash.cyberciti.biz/guide/Reset_command
 # https://bash.cyberciti.biz/guide/Console_management
