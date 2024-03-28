@@ -155,8 +155,7 @@ alias chgrp='command chgrp --preserve-root'
 
 alias header='command curl -I'
 alias ping='command ping -c 100 -s.2'
-alias ip='ip addr | grep --no-filename --only-matching --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
-
+alias cookies='command curl -I --cookie-jar ./.cookies'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
