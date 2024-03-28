@@ -452,7 +452,7 @@ function git_clean () {
   git repack -a -d --depth=250 --window=250
   # https://web.archive.org/web/20190207210108/http://stevelorek.com/how-to-shrink-a-git-repository.html
   # time git gc --aggressive --prune
-}
+} # git_clean
 
 monitor () {
   htop && ps && echo "\n$(uptime)\n"
