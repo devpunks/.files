@@ -140,6 +140,7 @@ alias watch='command watch --no-wrap --interval 30 --differences=permanent --exe
 
 alias rand='echo $RANDOM'
 alias ports='netstat -tulanp'
+alias random='echo $SRANDOM'
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 alias now='command date +"%T - %::z %Z (${TZ})"'
 alias calendar='command cal -1 --iso --color=auto'
