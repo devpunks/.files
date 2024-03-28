@@ -471,7 +471,7 @@ weigh () {
     -- "$location"
 
   weight
-}
+} # weigh
 
 function weight () {
   local location=`realpath ${1:-.}`
