@@ -127,7 +127,6 @@ alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-example
 alias ls="command ls $LS_OPTIONS -l"
 alias vdir="command vdir $LS_OPTIONS -l"
 # https://tecmint.com/35-practical-examples-of-linux-find-command/
-alias find='command find . -type f -iname'
 alias branch='gb && echo && tree -d -L 4'
 # https://github.com/eza-community/eza
 alias list='weight && \
