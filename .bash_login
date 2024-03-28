@@ -149,9 +149,9 @@ alias whois='command whois -H'
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
-alias chown='command chown --preserve-root'
-alias chmod='command chmod --preserve-root'
-alias chgrp='command chgrp --preserve-root'
+alias find='command find . -type f -iname'
+# - https://stackoverflow.com/questions/1987926
+alias grep="clear && LC_ALL=C command grep $GREP_OPTIONS"
 
 alias ports='netstat -tulanp'
 alias header='command curl -I'
