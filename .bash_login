@@ -130,7 +130,7 @@ alias whois='command whois -H'
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
-# https://tecmint.com/35-practical-examples-of-linux-find-command/
+# https://tecmint.com/35-practical-examples-of-linux-find-command
 alias find='command find . -type f -iname'
 # - https://stackoverflow.com/questions/1987926
 alias grep="clear && LC_ALL=C command grep $GREP_OPTIONS"
