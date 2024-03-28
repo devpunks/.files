@@ -95,9 +95,6 @@ alias chown='command chown --preserve-root'
 alias chmod='command chmod --preserve-root'
 alias chgrp='command chgrp --preserve-root'
 
-# termux-job-scheduler
-#   - https://github.com/termux/termux-api/issues/282
-alias jobs='command jobs -l'
 alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
 
 alias pop='command popd'
