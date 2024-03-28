@@ -396,7 +396,7 @@ function unpack () {
   else
       echo "'$file' is not a valid file!"
   fi
-}
+} # unpack
 
 # Destroy
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
