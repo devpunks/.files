@@ -92,7 +92,8 @@ alias mv='command mv --interactive'
 alias cp='command cp --interactive'
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, or destroy"'
-alias delete='command rm -dIrv --preserve-root' # recursive
+alias delete='command rm \
+  --verbose --preserve-root --recursive --dir --interactive=once'
 alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
 
 # termux-job-scheduler
