@@ -83,15 +83,17 @@ alias echo='command echo -e'
 alias fonts='echo $( $HOME/.config/fonttable )'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
-alias ..='command cd ..'
-alias ln='command ln --interactive'
-alias mv='command mv --interactive'
-alias cp='command cp --interactive'
-# - https://en.m.wikipedia.org/wiki/Rm_(Unix)
-alias rm='echo "rm is disabled, use delete, or destroy"'
-alias delete='command rm \
-  --verbose --preserve-root --recursive --dir --interactive=once'
-alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
+alias rand='echo $RANDOM'
+alias random='echo $SRANDOM'
+# https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
+alias now='command date +"%T - %::z %Z (${TZ})"'
+alias calendar='command cal -1 --iso --color=auto'
+# https://www.gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
+alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
+
+alias chown='command chown --preserve-root'
+alias chmod='command chmod --preserve-root'
+alias chgrp='command chgrp --preserve-root'
 
 # termux-job-scheduler
 #   - https://github.com/termux/termux-api/issues/282
