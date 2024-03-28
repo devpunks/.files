@@ -430,12 +430,12 @@ function trash () {
     && mv -i --strip-trailing-slashes "${1}" $TMPDIR
 
   tree -L 1 $TMPDIR
-}
+} # trash
 
 # stream protocol
 function stream () {
   yes "$1"
-}
+} # stream
 
 # https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
 # https://digitalocean.com/community/tutorials/nohup-command-in-linux
