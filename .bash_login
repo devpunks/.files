@@ -145,10 +145,11 @@ alias calendar='command cal -1 --iso --color=auto'
 alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 
 # https://web.njit.edu/~ronkowit/eliza.html
-alias eliza='why' # https://en.m.wikipedia.org/wiki/ELIZA
-alias why='command man whatis'
-alias what='command man whatis'
-alias where='command man whereis'
+alias which='command type -a'
+alias why='echo TODO: \`why\` implementation'
+alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
+alias what='command man whatis && command whatis'
+alias where='command man whereis && command whereis'
 alias whois='command whois -H '
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
