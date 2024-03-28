@@ -139,7 +139,6 @@ alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 
 alias rand='echo $RANDOM'
-alias random='echo $SRANDOM'
 alias ports='netstat -tulanp'
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 alias now='command date +"%T - %::z %Z (${TZ})"'
