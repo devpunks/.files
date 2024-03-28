@@ -83,7 +83,7 @@ alias echo='command echo -e'
 alias fonts='$HOME/.config/fonttable'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
-alias rand='echo $RANDOM'
+alias rand='echo $RANDOM' # ( 0..32767 )
 alias random='echo $SRANDOM'
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 alias now='command date +"%T - %::z %Z (${TZ})"'
