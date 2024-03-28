@@ -115,9 +115,17 @@ alias ln='command ln --interactive'
 alias mv='command mv --interactive'
 alias cp='command cp --interactive'
 
-alias chown='command chown --preserve-root'
-alias chmod='command chmod --preserve-root'
+# https://askubuntu.com/questions/918379
+# https://en.m.wikipedia.org/wiki/Chgrp
+# https://en.m.wikipedia.org/wiki/Chmod
+# https://en.m.wikipedia.org/wiki/Chown
+# https://man7.org/linux/man-pages/man1/chgrp.1p.html
+# https://man7.org/linux/man-pages/man1/chmod.1p.html
+# https://man7.org/linux/man-pages/man1/chown.1p.html
+# https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
 alias chgrp='command chgrp --preserve-root'
+alias chmod='command chmod --preserve-root'
+alias chown='command chown --preserve-root'
 
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, or destroy"'
