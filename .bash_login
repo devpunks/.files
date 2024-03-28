@@ -154,7 +154,6 @@ alias chmod='command chmod --preserve-root'
 alias chgrp='command chgrp --preserve-root'
 
 alias header='command curl -I'
-alias cookies='command curl -I --cookie-jar ./.cookies'
 alias ping='command ping -c 100 -s.2'
 alias ip='ip addr | grep --no-filename --only-matching --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
 
