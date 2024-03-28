@@ -150,7 +150,7 @@ alias why='echo TODO: \`why\` implementation'
 alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
 alias what='command man whatis && command whatis'
 alias where='command man whereis && command whereis'
-alias whois='command whois -H '
+alias whois='command whois -H'
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
