@@ -563,7 +563,7 @@ function reload () {
   echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
   echo && echo "PATH: $PATH"
   echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
-}
+} # reload
 
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
 # SIGWINCH - https://www.rkoucha.fr/tech_corner/sigwinch.html
