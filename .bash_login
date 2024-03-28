@@ -110,9 +110,6 @@ alias mkdir='command mkdir --verbose --parents'
 alias libpath='echo LIBPATHS: ${LD_LIBRARY_PATH//:/\\n}'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
-alias path='echo -e ${PATH//:/\\n}'
-alias mount='command mount | column -t'
-alias libpath='echo ${LD_LIBRARY_PATH//:/\\n}'
 
 # https://en.m.wikipedia.org/wiki/Named_pipe
 # https://stackoverflow.com/questions/4113986
