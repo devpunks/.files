@@ -296,7 +296,7 @@ function archive () {
 # https://www.zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function backup () {
   echo Backing Up
-}
+} # backup
 
 function download () {
   local uri=$1
