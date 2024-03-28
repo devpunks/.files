@@ -313,17 +313,6 @@ function download () {
   header $uri
 } # download
 
-function play () {
-  # SoX
-  #   - https://en.m.wikipedia.org/wiki/SoX
-  #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music/
-  #   - https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing/
-  #   - https://madskjeldgaard.dk/posts/sox-tutorial-split-by-silence/
-  #   - https://ankitshah009.blogspot.com/2016/12/usage-of-sox-tool.html
-  #   - https://ankitshah009.blogspot.com/2017/03/sox-of-silence-original-post.html
-  #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
-  sox --help
-}
 function open () {
   # apk
   [[ -f $1 ]] && [[ -x $1 ]] && termux-open $1
