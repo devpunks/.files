@@ -416,7 +416,7 @@ function recycle () {
   command rm -rv $TMPDIR/*
 
   trash
-}
+} # recycle
 
 # Trash
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
