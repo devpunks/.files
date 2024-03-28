@@ -80,7 +80,7 @@ alias g#='(
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
 
-alias fonts='echo $( $HOME/.config/fonttable )'
+alias fonts='$HOME/.config/fonttable'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
 alias rand='echo $RANDOM'
