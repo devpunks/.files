@@ -139,14 +139,6 @@ alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 
-alias rand='echo $RANDOM'
-alias random='echo $SRANDOM'
-# https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
-alias now='command date +"%T - %::z %Z (${TZ})"'
-alias calendar='command cal -1 --iso --color=auto'
-# https://www.gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
-alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
-
 # https://web.njit.edu/~ronkowit/eliza.html
 alias which='command type -a'
 alias why='echo TODO: \`why\` implementation'
