@@ -354,7 +354,7 @@ function zip () {
   test -e "$file" \
     && command view "$file" \
     && echo && command zipinfo "$file"
-}
+} # zip
 
 # https://linuxhandbook.com/unzip-command
 # https://linuxhandbook.com/gzip-directory
