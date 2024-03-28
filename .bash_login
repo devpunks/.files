@@ -514,7 +514,7 @@ function environment () {
   command echo -e "(set -o posix; set; set +o posix)" | sort | column --fillrows
   echo && command echo 👇Declarations:👇
   declare -p | cut -d " " -f 3 | sort | column --fillrows
-}
+} # environment
 
 # https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/questions/168578/why-must-a-folder-be-executable
