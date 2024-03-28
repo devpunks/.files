@@ -484,8 +484,7 @@ function weight () {
   echo && echo # https://redhat.com/sysadmin/du-command-options
   du --summarize --total --time --human-readable \
     -- "$location"
-
-}
+} # weight
 
 function environment () {
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
