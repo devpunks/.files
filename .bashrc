@@ -118,7 +118,7 @@ export LS_OPTIONS='\
 
 # TODO: Deprecate
 #   - https://stackoverflow.com/questions/42138844/remove-line-number-option-from-grep#comment113769544_64338090
-export GREP_OPTIONS='--context=1 \
+export GREP_OPTIONS="--context=1 \
   --directories=skip --devices=skip --binary-files=without-match \
   --ignore-case --no-messages --line-number --with-filename --color=auto \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
