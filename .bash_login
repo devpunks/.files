@@ -107,6 +107,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias most='command most +u -s -t2'
 alias mount='command mount | column -t'
 alias mkdir='command mkdir --verbose --parents'
+alias libpath='echo LIBPATHS: ${LD_LIBRARY_PATH//:/\\n}'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
 alias path='echo -e ${PATH//:/\\n}'
