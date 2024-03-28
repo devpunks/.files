@@ -152,19 +152,9 @@ alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 
-# https://web.njit.edu/~ronkowit/eliza.html
-alias which='command type -a'
-alias why='echo TODO: \`why\` implementation'
-alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
-alias what='command man whatis && command whatis'
-alias where='command man whereis && command whereis'
-alias whois='command whois -H'
-alias who='command id \
-  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
-
-alias find='command find . -type f -iname'
-# - https://stackoverflow.com/questions/1987926
-alias grep="clear && LC_ALL=C command grep $GREP_OPTIONS"
+alias chown='command chown --preserve-root'
+alias chmod='command chmod --preserve-root'
+alias chgrp='command chgrp --preserve-root'
 
 alias ports='netstat -tulanp'
 alias header='command curl -I'
