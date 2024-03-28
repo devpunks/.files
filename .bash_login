@@ -151,10 +151,11 @@ alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 alias eliza='why' # https://en.m.wikipedia.org/wiki/ELIZA
 alias why='command man whatis'
 alias what='command man whatis'
-alias where='command whereis --help'
+alias where='command man whereis'
 alias whois='command whois -H '
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
+
 alias chown='command chown --preserve-root'
 alias chmod='command chmod --preserve-root'
 alias chgrp='command chgrp --preserve-root'
