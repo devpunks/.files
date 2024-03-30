@@ -48,7 +48,10 @@ echo THE FLAGS $-
 # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 # [[ -z "$PS1" ]] && exit
 
-# .colors
+# Readline
+# [ -e $HOME/.inputrc ] && source $HOME/.inputrc
+
+# Colors
 [ -e $HOME/.colors ] && source $HOME/.colors
 
 # for rc in ~in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
