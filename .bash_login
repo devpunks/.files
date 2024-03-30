@@ -154,7 +154,7 @@ alias grep="clear && LC_ALL=C command grep $GREP_OPTIONS"
 # https://unix.stackexchange.com/questions/50377/whats-the-difference-between-dir-and-ls
 alias ls="command ls $LS_OPTIONS -l"
 alias vdir="command vdir $LS_OPTIONS -l"
-alias branch='gb && echo && tree -d -L 4'
+alias branch='tree -d -L 4'
 # https://github.com/eza-community/eza
 alias list='weight && command eza --level=2 --color=auto \
   --all --grid --icons --long --git --header --classify \
