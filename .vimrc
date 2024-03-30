@@ -783,8 +783,6 @@ nnoremap <Leader>/ :verbose map<CR>
 nnoremap <C-f> /
 nnoremap <C-w>o <c-w>f
 nnoremap <C-z> <C-w>_ \| <C-w>|
-" (insert) Tab completion
-inoremap <Tab> <C-n>
 " (normal) [TAB] Next Tab
 nnoremap <Tab> :tabnext<CR>
 nnoremap <Esc> :nohlsearch<CR>
