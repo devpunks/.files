@@ -291,12 +291,9 @@ let &t_SR..='[3;0;0 q' " SR = START REPLACE underline _
 let &t_EI..='[1;0;0 q' " EI = NORMAL (EXIT INSERT) block
 
 " CURSOR COLOR ------------------------------------------------------------
-" INSERT = red cursor
-let &t_SI..="\e]12;red\x7"
-" NORMAL = green cursor
-let &t_EI..="\e]12;green\x7"
-" REPLACE = blue cursor
-let &t_SR..="\e]12;blue\x7"
+let &t_SI..="\e]12;red\x7"   " INSERT = red cursor
+let &t_SR..="\e]12;blue\x7"  " REPLACE = blue cursor
+let &t_EI..="\e]12;green\x7" " NORMAL = green cursor
 " reset cursor when vim exits
 " autocmd VimLeave * silent !echo -ne "]12;cyan\x7"
 autocmd VimLeave * silent !echo -ne '[0;0;0 q'
