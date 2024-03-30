@@ -52,7 +52,7 @@ $include /data/data/com.termux/files/usr/etc/inputrc
 
 # some defaults / modifications for the emacs mode
 # $if mode=emacs
-  'RETURN': '\e\n'
+  "RETURN": '\e\n'
 
   "\C-a": beginning-of-line # Beginning of line
   "\C-e": end-of-line # End of line
