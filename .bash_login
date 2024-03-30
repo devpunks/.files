@@ -213,7 +213,9 @@ alias serve='command python -m http.server &'
 alias ssh.add='(
   clear
   echo adding ssh
-  eval $( ssh-agent )
+
+  # default is $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
+  eval $( ssh-agent -s -a $HOME/agent.sock)
   command ssh-add
   ps x | grep ssh-agent
 )'
