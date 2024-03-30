@@ -235,6 +235,9 @@ alias ssh.add='(
 # -T - test mode
 # check
 # ~/.ssh/rc
+# ~/.ssh/config
+# ~/.ssh/id_rsa
+# ~/.ssh/id_rsa.pub
 # ~/.ssh/environment
 # ~/.ssh/known_hosts
 # /data/data/com.termux/files/usr/etc/ssh/ssh_known_hosts
