@@ -288,9 +288,16 @@ let &t_SR = '' " START REPLACE
 let &t_EI = '' " NORMAL (EXIT INSERT)
 
 " CURSOR TYPE -------------------------------------------------------------
-let &t_SI..='[5;0;0 q' " SI = START INSERT bar |
-let &t_SR..='[3;0;0 q' " SR = START REPLACE underline _
-let &t_EI..='[1;0;0 q' " EI = NORMAL (EXIT INSERT) block
+" 0 Default
+" 1 Block (blinking)
+" 2 Block (steady)
+" 3 Underline (blinking)
+" 4 Underline (steady)
+" 5 Bar (blinking) (xterm)
+" 6 Bar (steady) (xterm)
+let &t_SI..="\e[5;0;0 q" " SI = START INSERT bar |
+let &t_SR..="\e[3;0;0 q" " SR = START REPLACE underline _
+let &t_EI..="\e[1;0;0 q" " EI = NORMAL (EXIT INSERT) block
 
 " CURSOR COLOR ------------------------------------------------------------
 let &t_SI..="\e]12;red\x7"   " INSERT = red cursor
