@@ -129,6 +129,8 @@ set mark-symlinked-directories on
 #   - http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
 #   - https://stackoverflow.com/questions/42192384/show-all-if-ambiguous-vs-show-all-if-unmodified
 # =========================================================================
+set blink-matching-paren on
+
 # Be more intelligent when autocompleting by also looking at the text after
 # the cursor. For example, when the current line is "cd ~/src/mozil", and
 # the cursor is on the "z", pressing Tab will not autocomplete it to "cd
