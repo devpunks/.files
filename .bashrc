@@ -345,7 +345,7 @@ function exitstatus () {
   [[ $status == 0 ]] && \
     echo " ✅ $status "
   [[ ${status} != 0 ]] && \
-    echo " ❌ ${status} "
+    echo " ❌ $status "
 } && export -f exitstatus
 
 # }}}
