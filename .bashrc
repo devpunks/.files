@@ -82,9 +82,9 @@ export HOSTFILE="$HOME/.hosts"
 export INPUTRC="$HOME/.inputrc"
 
 unset PATH
-PATH="${HOME}"
-[ -d "$HOME/bin" ] && PATH="${PATH}:${HOME}/bin"
-[ -d "$HOME/local/bin" ] && PATH="${PATH}:${HOME}/local/bin"
+PATH="$HOME"
+[ -d "$HOME/bin" ] && PATH="$PATH:$HOME/bin"
+[ -d "$HOME/local/bin" ] && PATH="$PATH:$HOME/local/bin"
 
 if [ -n "${PREFIX}" ]; then # TERMUX
   unset LD_LIBRARY_PATH
