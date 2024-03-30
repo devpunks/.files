@@ -81,6 +81,16 @@ let &path ..= $HOME..'/**,'
 let &path ..= ( exists('$PREFIX') ? $PREFIX : '/usr' )..'/include/**'
 let &path ..= ',,'
 
+" increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
+set nrformats+=alpha
+set nrformats-=octal
+
+" https://vimhelp.org/options.txt.html#%27timeout%27
+set timeout " on mappings
+set ttimeout " on keycodes
+set ttimeoutlen=-1  " mappings
+set timeoutlen=5000 " keykodes
+
 " https://vim.fandom.com/wiki/Folding
 set foldenable
 set foldlevel=1
