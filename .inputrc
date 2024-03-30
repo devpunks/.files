@@ -151,7 +151,7 @@ set show-all-if-unmodified on
 set completion-ignore-case on
 # Maximum <Tab>-completion display results.
 set completion-query-items 200
-# <Tab>-Autocompletion results in single column.
+# <Tab>-completion results in single column.
 set completion-display-width 3
 # Common prefix of completion list.
 set menu-complete-display-prefix on
