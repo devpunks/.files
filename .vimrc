@@ -268,8 +268,8 @@ set ttyfast " for redraws
 " https://vimhelp.org/options.txt.html#%27timeout%27
 set timeout " on mappings
 set ttimeout " on keycodes
-set ttimeoutlen=1 " mappings
-set timeoutlen=3000 " keykodes
+set ttimeoutlen=-1  " mappings
+set timeoutlen=5000 " keykodes
 
 set lazyredraw " Prevent slow macro updates
 set ttyscroll=3 " number of characters for redraws
