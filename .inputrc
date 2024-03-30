@@ -135,7 +135,9 @@ set blink-matching-paren on
 # the cursor. For example, when the current line is "cd ~/src/mozil", and
 # the cursor is on the "z", pressing Tab will not autocomplete it to "cd
 # ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the
-# Readline used by Bash 4.x
+# Disable <Tab>-Autocompletion paging.
+set page-completions off
+# Skip previously matched
 set skip-completed-text on
 # Show control characters
 set echo-control-characters on
