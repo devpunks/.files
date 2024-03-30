@@ -755,7 +755,7 @@ function! TabLine() abort
   let line .= '%#TabLineFill#' " Tablist breakpoint
 
   return line
-endfunction
+endfunction " TabLine
 
 " }}}
 
