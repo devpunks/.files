@@ -106,10 +106,6 @@ set cmdheight=2 " sets the :ex command prompt line height
 set showcmdloc=statusline " Add current command to status
 set showmatch matchtime=6 " jump to matching brace (in 1/10ths of seconds)
 
-" increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
-set nrformats+=alpha
-set nrformats-=octal
-
 set wrapscan " Search respects wrapping
 set hlsearch " result highlight grouping
 set incsearch " highlight search matches
