@@ -240,7 +240,6 @@ alias ssh.add='(
 # ~/.ssh/id_rsa.pub
 # ~/.ssh/environment
 # ~/.ssh/known_hosts
-# /data/data/com.termux/files/usr/etc/ssh/ssh_known_hosts
 # ~/.ssh/authorized_keys
 #   - id_rsa.pub
 # SEE ALSO
