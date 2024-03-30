@@ -116,7 +116,7 @@ set history-size 1000
 # [ audible (default)|visible|none ]
 set bell-style none
 set bell-style visible
-set blink-matching-paren on
+set prefer-visible-bell on
 
 # Immediately add a trailing slash when autocompleting symlinks & directories
 set mark-directories on
