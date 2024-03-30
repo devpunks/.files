@@ -73,7 +73,7 @@ export CRON_TZ=${TZ} # https://devicetests.com/set-timezone-crontab
 
 # https://unix.stackexchange.com/questions/27588
 # https://unix.stackexchange.com/questions/640495
-export IGNOREEOF=10 # set -o ignoreeof
+export IGNOREEOF=10 # set -o ignoreeof # For CTRL-D logout attempt frequency
 
 # https://gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-HOSTFILE
 export HOSTFILE="$HOME/.hosts"
