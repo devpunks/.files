@@ -210,7 +210,7 @@ alias serve='command python -m http.server &'
 # - https://www.ssh.com/academy/ssh/add-command
 # - https://superuser.com/questions/141044
 # - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
-alias ssadd='(
+alias ssh.add='(
   clear
   echo adding ssh
   eval $( ssh-agent )
