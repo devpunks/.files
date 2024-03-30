@@ -700,7 +700,7 @@ function! GetColor(group, attr) abort " GetColor('LineNr', 'bg#')"
   echom "THE COLOR".color
 
   return color ? color : 'NONE'
-endfunction
+endfunction " GetColor
 
 " -------------------------------------------------------------------------
 " :call HighlightGroup () under cursor
