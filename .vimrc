@@ -281,7 +281,6 @@ set cursorlineopt=both " [number,line,both,screenline]
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
 " printf '\033]12;red\033\\'
 " reset cursor escapes
-let &t_EI = '' " EXIT INSERT
 let &t_SI = '' " START INSERT
 let &t_SR = '' " START REPLACE
 
