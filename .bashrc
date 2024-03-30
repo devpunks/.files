@@ -90,7 +90,7 @@ if [ -n "$PREFIX" ]; then # TERMUX
   unset LD_LIBRARY_PATH
   echo "FOUND $PREFIX ON TERMUX"
   # https://askubuntu.com/questions/386629
- PATH=".:${PATH}:${PREFIX}/bin"
+ PATH=".:$PATH:$PREFIX/bin"
   # https://wiki.termux.com/wiki/Differences_from_Linux
   # uptime/htop
   #   - https://github.com/termux/termux-app/issues/819
