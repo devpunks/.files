@@ -668,7 +668,7 @@ function! Browser() abort " Opening URL
     exec "!type open"
     exec 'open '..url
   endif
-endfunction
+endfunction " Browser
 
 " -------------------------------------------------------------------------
 " :call CursorCharacter ( value = 0 )
