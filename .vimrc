@@ -575,8 +575,13 @@ if $TERM =~ '256color'
   let &t_ZR = '[0m' " ritm (disable italics)
 endif
 
-" - Line Length -----------------------------------------------------------
 syntax on " turns syntax highlighting on
+set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
+
+" - Line Length -----------------------------------------------------------
+set wrap " word
+set linebreak " Avoid mid-word line wrapping
+set showbreak=⥹ " Character used for wrapped line
 set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
 set textwidth=75 " before wrap https://vimtricks.com/p/vim-line-length-marker
 set synmaxcol=256 " Prevent slow loading https://github.com/tpope/vim-sensible/issues/142
