@@ -95,6 +95,7 @@ alias calendar='command cal -1 --iso --color=auto'
 alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 
 alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
+# https://stackoverflow.com/questions/35026395/bash-what-is-a-jobspec
 alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
 
 alias ..='command cd ..'
