@@ -456,6 +456,8 @@ function stream () {
 # https://digitalocean.com/community/tutorials/nohup-command-in-linux
 function hold () {
   command nohup --version # https://en.m.wikipedia.org/wiki/Nohup
+  command nohup $1
+
   # Redirect to stderror AND file
   # tee - https://en.m.wikipedia.org/wiki/Tee_(command)
   # nohup ./foo.sh > out.txt >2&1
