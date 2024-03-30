@@ -49,6 +49,8 @@ if ! exists('g:pluginname_setting')
   let g:skip_defaults_vim=0
   source $VIMRUNTIME/defaults.vim
 endif
+" https://stackoverflow.com/questions/5845557
+if &compatible | set nocompatible | endif
 
 execute 'set <FocusLost>=\<Esc>[O'
 execute 'set <FocusGained>=\<Esc>[I'
