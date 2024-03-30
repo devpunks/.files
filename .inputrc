@@ -147,7 +147,7 @@ set match-hidden-files on
 set show-all-if-ambiguous on
 # All <Tab>-completion list matches.
 set show-all-if-unmodified on
-# Case insensitive <Tab>-Autocomplete matches.
+# Case insensitive <Tab>-complete matches.
 set completion-ignore-case on
 # Maximum <Tab>-Autocompletion display results.
 set completion-query-items 200
