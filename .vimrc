@@ -286,12 +286,9 @@ let &t_SR = '' " START REPLACE
 let &t_EI = '' " NORMAL (EXIT INSERT)
 
 " CURSOR TYPE -------------------------------------------------------------
-"SI = START INSERT bar |
-let &t_SI..='[5;0;0 q'
-"SR = START REPLACE underline _
-let &t_SR..='[3;0;0 q'
-"EI = EXIT INSERT (NORMAL) mode block
-let &t_EI..='[1;0;0 q'
+let &t_SI..='[5;0;0 q' " SI = START INSERT bar |
+let &t_SR..='[3;0;0 q' " SR = START REPLACE underline _
+let &t_EI..='[1;0;0 q' " EI = NORMAL (EXIT INSERT) block
 
 " CURSOR COLOR ------------------------------------------------------------
 " INSERT = red cursor
