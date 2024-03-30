@@ -283,6 +283,7 @@ set cursorlineopt=both " [number,line,both,screenline]
 " reset cursor escapes
 let &t_SI = '' " START INSERT
 let &t_SR = '' " START REPLACE
+let &t_EI = '' " NORMAL (EXIT INSERT)
 
 " CURSOR TYPE -------------------------------------------------------------
 "SI = START INSERT bar |
