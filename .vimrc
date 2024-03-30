@@ -774,6 +774,7 @@ let g:mapleader = ','
 " =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
+
 nnoremap <Space> za
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
