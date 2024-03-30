@@ -264,6 +264,8 @@ set backupdir=$TMPDIR " backup location
 " {{{ CURSOR
 " =========================================================================
 set ttyfast " for redraws
+
+" https://vimhelp.org/options.txt.html#%27timeout%27
 set timeout " on mappings
 set ttimeout " on keycodes
 set ttimeoutlen=1 " mappings
