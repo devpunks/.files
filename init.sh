@@ -70,6 +70,11 @@ pkg install fetchmail # https://www.fetchmail.info
 
 # }}}
 
+# {{{ Workers -------------------------------------------------------------
+pkg install cronie
+
+# }}}
+
 # {{{ Security ------------------------------------------------------------
 
 pkg install whois
