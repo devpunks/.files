@@ -342,6 +342,7 @@ function prompts () {
   done
 } && export -f prompts
 
+# https://www.baeldung.com/linux/status-codes
 function exitstatus () {
   local status=$?
   [[ ${status} == 0 ]] && \
