@@ -688,7 +688,7 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   let hexadecimal = printf( 'U+%-8s' , printf( '%04X', index ) )
 
   return character..join( [ decimal, hexadecimal, octal ], ' ' )
-endfunction
+endfunction " CursorCharacter
 
 " -------------------------------------------------------------------------
 " :call GetColor (group, attribute)
