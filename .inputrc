@@ -141,9 +141,7 @@ set page-completions off
 set skip-completed-text on
 # Show control characters
 set echo-control-characters on
-# Disable <Tab>-Autocompletion paging.
-set page-completions off
-# <Tab>-Autocompletion for (.)dot files.
+# <Tab>-completion on (.)dot files.
 set match-hidden-files on
 # All <Tab>-Autocompletion ambiguous matches.
 set show-all-if-ambiguous on
