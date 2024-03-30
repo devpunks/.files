@@ -776,6 +776,8 @@ let g:mapleader = ','
 nnoremap ; :
 
 nnoremap <Space> za
+" (Insert) Tab complete
+inoremap <Tab> <C-n>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 nnoremap <C-f> /
