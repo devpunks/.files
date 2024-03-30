@@ -99,10 +99,6 @@ set foldclose=all
 set foldlevelstart=0
 set foldmethod=indent " [ manual|indent|expr|marker|syntax|diff ]
 
-" https://stackoverflow.com/questions/5845557
-if &compatible | set nocompatible | endif
-
-set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 set showcmd " show current command prompt suffix
 set modeline " https://vim.fandom.com/wiki/Modeline_magic
 set modelines=1 " Head & tail mode lines (:help modeline)
