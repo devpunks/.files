@@ -203,7 +203,7 @@ alias pulse='(
 )'
 
 # HTTP(s) -----------------------------------------------------------------
-alias serve='command python -m http.server'
+alias serve='command python -m http.server &'
 
 # SSh ---------------------------------------------------------------------
 # - https://superuser.com/questions/141044
