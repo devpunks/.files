@@ -67,7 +67,7 @@
 [log]
   # [human|relative|local|default|iso|iso-strict|rfc|short|raw]
   # [human-local|relative-local|default-local|iso-local|iso-strict-local|rfc-local|short-local|raw-local]
-  # https://stackoverflow.com/questions/7853332
+  # https://stackoverflow.com/q/7853332
   date = default-local
 
 [status]
@@ -88,7 +88,7 @@ default = heads/*
 
 # prefab = cherry -v origin/fabrication
 [format] # https://git-scm.com/docs/pretty-formats
-  # https://stackoverflow.com/questions/21830810/how-to-make-git-log-cut-long-comments
+  # https://stackoverflow.com/q/21830810/how-to-make-git-log-cut-long-comments
   pretty = %C(reverse) 🗓 %<(18,trunc)%cd %C(reverse italic) %>(11,mtrunc)%cr %C(reset)► %C(bold ul)👤%aN%C(reset) 🌵%C(ul italic)%d%C(reset) 🆔 %h %C(bold)📝 %<(50,trunc)%s
 
 [diff]
