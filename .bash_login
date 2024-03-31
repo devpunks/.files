@@ -326,6 +326,8 @@ function download () {
 
   return 0
 
+  # curl -O $1 # generic download routine
+
 # youtubedr --help
 # $process --help
 # $process --download-sections '*00:00:00.0-00:00:05.0' $uri
