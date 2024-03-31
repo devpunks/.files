@@ -174,7 +174,6 @@ git status
 # Submodules
 #   - https://stackoverflow.com/q/10666085
 #   - https://github.blog/2016-02-01-working-with-submodules/
-#   - https://stackoverflow.com/questions/10666085/how-do-i-get-git-clone-recursive-to-recreate-submodules-remotes-and-branche
 echo Cloning submodules...
 git submodule
 git submodule update --init
