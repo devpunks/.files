@@ -751,7 +751,7 @@ function! TabLine() abort
     " Closing gliph
     let line ..= ( l:current ? ' ▼ |' : ' ' )
 
-    let line .= '%T' " Tab delineation
+    let line ..= '%T' " Tab delineation
   endfor
 
   let line .= '%<' " Overflow breakpoint
