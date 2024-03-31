@@ -282,6 +282,7 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 function logs () {
   command logcat
 }
+
 # }}}
 
 # =========================================================================
