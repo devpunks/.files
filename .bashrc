@@ -237,9 +237,9 @@ shopt -s nullglob # expand glob to empty list
 shopt -s mailwarn # last access on login
 shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s checkjobs # on exit
-shopt -s direxpand # https://stackoverflow.com/questions/6438341/what-does-shopt-s-dirspell-do
+shopt -s direxpand # https://stackoverflow.com/q/6438341/what-does-shopt-s-dirspell-do
 shopt -s checkhash # command exists in hashtable first
-shopt -s nocaseglob # https://stackoverflow.com/questions/25331100/bash-match-string-with-regex
+shopt -s nocaseglob # https://stackoverflow.com/qs/25331100/bash-match-string-with-regex
 shopt -s nocasematch # https://baeldung.com/linux/shell-case-insensitive-matching
 shopt -s cdable_vars # Change directory with shell vars
 shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion
