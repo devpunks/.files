@@ -291,7 +291,7 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 # Shell Prompt - for many examples, see:
 #  - https://bash-prompt-generator.org
 #  - https://github.com/nojhan/liquidprompt
-#  - https://askubuntu.com/questions/409599
+#  - https://askubuntu.com/q/409599
 #  - http://tldp.org/HOWTO/Bash-Prompt-HOWTO
 #  - http://debian-administration.org/articles/205
 #  - http://askapache.com/linux/bash-power-prompt.html
