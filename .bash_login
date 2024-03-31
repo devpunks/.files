@@ -563,9 +563,9 @@ function permit () {
 # https://bash.cyberciti.biz/guide/Console_management
 # https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
 # https://invisible-island.net/ncurses/man/tset.1.html#h2-HISTORY
-# https://unix.stackexchange.com/questions/335648/why-does-the-reset-command-include-a-delay
-# https://unix.stackexchange.com/questions/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
-# https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
+# https://unix.stackexchange.com/q/335648/why-does-the-reset-command-include-a-delay
+# https://unix.stackexchange.com/q/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
+# https://stackoverflow.com/q/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
 # exec $SHELL --login
 # exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
 function reload () {
