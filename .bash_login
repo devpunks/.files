@@ -165,9 +165,8 @@ alias curl='command curl --verbose \
   --user-agent "Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1"'
 alias header='curl -I'
 alias ports='netstat -tulanp'
-alias header='command curl -I'
 alias ping='command ping -c 100 -s.2'
-alias cookies='command curl -I --cookie-jar ./.cookies'
+alias cookies='header --cookie-jar ./.cookies'
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
