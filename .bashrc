@@ -20,8 +20,8 @@
 #
 # INVOCATION
 #   - https://superuser.com/a/183980
-#   - https://stackoverflow.com/questions/9953005
-#   - https://unix.stackexchange.com/questions/43953
+#   - https://stackoverflow.com/q/9953005
+#   - https://unix.stackexchange.com/q/43953
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
 
