@@ -270,7 +270,7 @@ export HISTCONTROL=ignoredups:ignorespace:erasedups # ignoreboth
 
 export PROMPT_COMMAND="history -n; history -w; history -c; history -r;"
 
-# more, less, most - https://askubuntu.com/questions/1191862
+# more, less, most - https://askubuntu.com/q/1191862
 #   - https://linux.die.net/man/1/lesskey
 #   - https://manpages.ubuntu.com/manpages/bionic/en/man1/most.1.html
 #   - https://ascending.wordpress.com/2011/02/11/unix-tip-make-less-more-friendly/
