@@ -190,7 +190,7 @@ alias be='bundle exec'
 alias catscan='(
   nc -z -v -w 1 localhost 1234
   nc -z -v -w 1 google.com 442-444
-)'
+)' # catscan
 
 alias catnet='(
   while true; do command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" | nc -l -v 1234; done
