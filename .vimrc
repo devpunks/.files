@@ -538,7 +538,7 @@ endfun
 
 " -------------------------------------------------------------------------
 " Ruby
-"   - https://stackoverflow.com/questions/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
+"   - https://stackoverflow.com/q/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType ruby set omnifunc=rubycomplete#Complete
