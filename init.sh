@@ -168,7 +168,7 @@ mkdir --verbose -m 700 ~/.ssh
 curl --location=https://github.com/snuggs.keys >> ~/.ssh/authorized_keys
 
 echo Cloning home directory...
-# git clone https://github.com/devpunks/.files.git .
+# git clone https://github.com/devpunks/.files.git $HOME
 git status
 
 # Submodules
