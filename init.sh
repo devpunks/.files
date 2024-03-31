@@ -164,7 +164,7 @@ ffmpeg -version
 echo Cloning Authorized Keys from...
 # TODO: use readline to get username
 # https://blog.prabir.me/posts/allow-github-username-to-ssh-authorized-keys/
-mkdir -m 700 ~/.ssh
+mkdir --verbose -m 700 ~/.ssh
 curl --location=https://github.com/snuggs.keys >> ~/.ssh/authorized_keys
 
 echo Cloning home directory...
