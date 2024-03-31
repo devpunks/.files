@@ -796,8 +796,6 @@ nnoremap <C-w>o <c-w>f
 nnoremap = <C-w>=
 " Maximize pane (tmux zoom)
 nnoremap <C-z> <C-w>_ \| <C-w>\|
-" <=> Equal sized panes
-nnoremap = <C-w>=
 
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
