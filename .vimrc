@@ -795,7 +795,7 @@ nnoremap <C-z> <C-w>_ \| <C-w>|
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
 " <C-t> pop tag (:pop)
-"   - https://stackoverflow.com/questions/17783539/tag-navigation-in-vim
+"   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
