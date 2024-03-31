@@ -806,6 +806,10 @@ nnoremap <C-w>o <c-w>f
 "nnoremap <C-t> :tabnew<cr>
 nnoremap <C-n> :tabnext<CR>
 nnoremap <C-p> :tabprevious<CR>
+
+" TODO: Figure out solution
+" current buffer in new (t)ab
+nnoremap <Leader>t <C-w>t
 " simulate break pane in TMUX
 nnoremap <C-w>t :tab split<CR>
 " All buffers into tabs
