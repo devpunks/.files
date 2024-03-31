@@ -636,6 +636,7 @@ try | colorscheme devpunks
   catch | set termguicolors " 24bit gui(fg|bg)
 endtry
 
+" TODO: determine xterm-true-color escapes
 " :help xterm-true-color
 " https://groups.google.com/g/vim_dev/c/wsC205JQpDo
 "let &t_8f = '[38:2:%lu:%lu:%lum'
