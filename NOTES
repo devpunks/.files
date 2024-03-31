@@ -156,7 +156,7 @@ Android Accessibility
 #   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
 #   - echo vs printf
 #     - https://www.in-ulm.de/%7Emascheck/various/echo+printf/
-#     - https://unix.stackexchange.com/questions/65803/why-is-printf-better-than-echo
+#     - https://unix.stackexchange.com/q/65803/why-is-printf-better-than-echo
 #   - POSIX SHELL - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 #   - Special Parameters - https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
 #
