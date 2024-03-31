@@ -597,7 +597,7 @@ function term () {
   echo && echo "stty: $(stty -g)" && stty -a
 
   echo && echo TERMINFO PATH: && infocmp -1 -D # terminfo location
-  echo && echo TERMINFO VALUES: && infocmp -1 -T # terminfo description
+  echo && echo TERMINFO CAP NAMES: && infocmp -1 -IT # terminfo description
   echo && echo TERMINFO CAPABILITIES: && infocmp -1 -CrT # terminfo capabilities
   echo && echo TERMINFO LONG NAMES: && infocmp -1 -LT # terminfo long names
 
