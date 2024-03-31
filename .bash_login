@@ -544,7 +544,7 @@ function environment () {
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
 # https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
 # https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
-# https://askubuntu.com/questions/932713/what-is-the-difference-between-chmod-x-and-chmod-755
+# https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
 function permit () {
   echo umask: `umask`
   echo umask -S: `umask -S`
