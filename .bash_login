@@ -596,6 +596,7 @@ function term () {
   echo && echo "TERM=${TERM} $( tput -V )" && toe
   echo && echo "stty: $(stty -g)" && stty -a
 
+  # https://manpages.ubuntu.com/manpages/bionic/man1/infocmp.1.html
   echo && echo TERMINFO PATH: && infocmp -1 -D # terminfo location
   echo && echo TERMINFO CAP NAMES: && infocmp -1 -IT # terminfo description
   echo && echo TERMINFO CAPABILITIES: && infocmp -1 -CrT # terminfo capabilities
