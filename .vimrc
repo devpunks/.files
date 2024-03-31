@@ -736,12 +736,12 @@ function! TabLine() abort
     let l:modified = getbufvar( l:index, '&mod' )
 
     " set tab page number (for mouse clicks)
-    let line ..='%' .. (l:tab) .. 'T'
-    let line .= (l:tab == tabpagenr() ? '%#TabLineSel#| ▼ ' : '%#TabLine#| ')
-    let line .= (l:tab == tabpagenr() ? '✎' : '')
-    let line .= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
-    let line .= ( l:modified ? '➕' : '' )
-    let line .= ( l:count > 1 ? ' ⊞'.l:count : '' )
+    let line ..='%' .. ( l:tab ) .. 'T'
+    let line ..= (l:tab == tabpagenr() ? '%#TabLineSel#| ▼ ' : '%#TabLine#| ')
+    let line ..= (l:tab == tabpagenr() ? '✎' : '')
+    let line ..= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
+    let line ..= ( l:modified ? '➕' : '' )
+    let line ..= ( l:count > 1 ? ' ⊞'.l:count : '' )
 
     let l:others = ( len( l:tabs ) > 1 )
     let l:current = ( l:tab == tabpagenr() )
