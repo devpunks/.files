@@ -794,7 +794,12 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
 " Find and open file under cursor
 nnoremap <C-w>o <c-w>f
 
-" TODO: https://stackoverflow.com/questions/27588664/difference-between-c-t-and-c-o-in-vim
+" TODO: Prevent overriding <C-o> & C-t>
+"   - https://stackoverflow.com/questions/27588664/difference-between-c-t-and-c-o-in-vim
+  " Open Url on this line with the browser \w
+  cnoremap <silent> <C-o> :call Browser ()<CR>
+  " tabs - https://gist.github.com/Starefossen/5957088
+  " TODO: <C-t> conflicts with :tab pop
 
 " tags (:h tagstack)
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
