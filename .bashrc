@@ -53,7 +53,7 @@ echo THE FLAGS $- # TODO: echo post load
 [ -e $HOME/.colors ] && source $HOME/.colors
 
 # for rc in ~in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
-#   # (r)un (c)omm(ands) - https://superuser.com/questions/144339
+#   # (r)un (c)omm(ands) - https://superuser.com/q/144339
 #   echo Sourcing ~/.bash run commands \(where available\)
 #   source $rc
 # done
