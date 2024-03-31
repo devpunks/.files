@@ -801,7 +801,6 @@ nnoremap <C-w>o <c-w>f
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " <C-]> jump to & push tag (:tag)
 " <C-t> pop tag (:pop)
-"   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
