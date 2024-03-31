@@ -97,6 +97,7 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 
 # {{{ Networking ----------------------------------------------------------
 
+# https://net-tools.sourceforge.io
 pkg install socat
 pkg install dnsutils
 pkg install netcat-openbsd
