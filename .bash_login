@@ -281,6 +281,10 @@ alias tmux.config='(
 function logs () {
   command logcat
 }
+
+function logs.rotate () {
+  command logrotate --help
+}
 ``
 alias logs.sshd="command logcat -s 'sshd:*'"
 
