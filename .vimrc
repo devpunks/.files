@@ -677,7 +677,7 @@ endfunction " Browser
 " :call CursorCharacter ( value = 0 )
 "   - :help ascii ga g8
 "   - https://www.utf8-chartable.de/
-"   - https://stackoverflow.com/questions/1273693
+"   - https://stackoverflow.com/q/1273693
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
 "   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
