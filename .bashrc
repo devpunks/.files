@@ -183,8 +183,8 @@ export TERM='xterm-256color'
 export TERMINFO=`infocmp -D` # terminfo database
 
 # Software Flow Control
-#  - https://unix.stackexchange.com/questions/515252
-#  - https://unix.stackexchange.com/questions/12107
+#  - https://unix.stackexchange.com/q/515252
+#  - https://unix.stackexchange.com/q/12107
 #  - https://en.m.wikipedia.org/wiki/Software_flow_control
 #  - https://bugs.launchpad.net/ubuntu/+source/bash/+bug/80635
 #  - https://sites.ualberta.ca/dept/chemeng/AIX-43/share/man/info/C/a_doc_lib/cmds/aixcmds5/stty.htm
