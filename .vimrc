@@ -279,6 +279,9 @@ set cursorcolumn " highlight current cursor column
 set nostartofline " respect cursor column position
 set cursorlineopt=both " [number,line,both,screenline]
 
+" reset cursor escapes
+" use  CSI for single quotes ('')
+" use \e CSI for double quotes ("")
 " https://stackoverflow.com/questions/6488683
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
 " printf '\033]12;red\033\\'
@@ -790,9 +793,6 @@ nnoremap <Leader>/ :verbose map<CR>
 
 nnoremap <C-w>o <c-w>f
 nnoremap <C-z> <C-w>_ \| <C-w>|
-" (normal) [TAB] Next Tab
-nnoremap <Tab> :tabnext<CR>
-nnoremap <Esc> :nohlsearch<CR>
 
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
