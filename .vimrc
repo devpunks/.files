@@ -793,6 +793,9 @@ nnoremap = <C-w>=
 nnoremap <C-z> <C-w>_ \| <C-w>\|
 " Find and open file under cursor
 nnoremap <C-w>o <c-w>f
+" Open Url on this line with the browser \w
+cnoremap <silent> <C-o> :call Browser ()<CR>
+
 
 " tags (:h tagstack)
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
