@@ -140,7 +140,7 @@ set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Window Title String format
 
 " Menus -------------------------------------------------------------------
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
-" - https://stackoverflow.com/questions/9511253/how-to-effectively-use-vim-wildmenu
+" - https://stackoverflow.com/q/9511253/how-to-effectively-use-vim-wildmenu
 set wildmenu
 set infercase
 set wildchar=<Tab>
