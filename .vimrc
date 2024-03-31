@@ -782,9 +782,12 @@ nnoremap <C-f> /
 nnoremap <Space> za
 " (Insert) Tab complete
 inoremap <Tab> <C-n>
+" (normal) [TAB] Next Tab
+nnoremap <Tab> :tabnext<CR>
+nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
-nnoremap <C-f> /
+
 nnoremap <C-w>o <c-w>f
 nnoremap <C-z> <C-w>_ \| <C-w>|
 " (normal) [TAB] Next Tab
