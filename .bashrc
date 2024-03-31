@@ -230,7 +230,7 @@ set -o noclobber # Prevent redirection '>' from overwriting existing files
 shopt -s dotglob # https://unix.stackexchange.com/q/40662
 # https://unix.stackexchange.com/q/700199
 shopt -s globstar # https://linuxjournal.com/content/globstar-new-bash-globbing-option
-# shopt –s xpg_echo # https://stackoverflow.com/questions/13517818/bash-shopt-xpg-echo
+# shopt –s xpg_echo # https://stackoverflow.com/q/13517818/bash-shopt-xpg-echo
 shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
 shopt -s extglob # Extended glob pattern matching
 shopt -s nullglob # expand glob to empty list
