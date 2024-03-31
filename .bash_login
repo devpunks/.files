@@ -64,7 +64,7 @@ alias gs='clear && echo && git status --column --verbose && echo'
 alias gt='git tag -a'
 alias g#='(
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
-  # https://stackoverflow.com/questions/2183900/how-do-i-prevent-git-diff-from-using-a-pager
+  # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   GIT_PAGER=cat \
     gl --since="1 day ago"
     printf "\n Total:%d" $( gl --since="1 day ago" | wc -l )
