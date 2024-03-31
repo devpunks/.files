@@ -262,7 +262,7 @@ alias tmux.config='(
   tmux show-options -g
   echo && echo Global Window Options:
   tmux show-window-options -g
-)'
+)' # tmux.config
 
 # }}}
 
