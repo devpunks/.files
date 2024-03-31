@@ -764,8 +764,8 @@ endfunction " TabLine
 
 " =========================================================================
 " {{{ MAPPINGS
-" - https://vi.stackexchange.com/questions/2089
-" - https://vi.stackexchange.com/questions/7722/how-to-debug-a-mapping
+" - https://vi.stackexchange.com/q/2089
+" - https://vi.stackexchange.com/q/7722/how-to-debug-a-mapping
 " - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
 
 " set a map leader for more key combos
