@@ -592,7 +592,7 @@ set expandtab "turn tabs into (tabstop) spaces
 set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
 let &tabstop=s:TABSIZE "set tab character to 2 characters
 let &shiftwidth=s:TABSIZE " Shift-indent size - http://vimcasts.org/episodes/tabs-and-spaces
-let &softtabstop=s:TABSIZE " https://vi.stackexchange.com/questions/4244
+let &softtabstop=s:TABSIZE " https://vi.stackexchange.com/q/4244
 
 retab! " (Force!) update tab format
 
