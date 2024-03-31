@@ -662,7 +662,7 @@ augroup END
 cnoremap <silent> <C-o> :call Browser ()<CR>
 
 function! Browser() abort " Opening URL
-  let url = getline (".")->matchstr("http[^ ]*")
+  const url = getline (".")->matchstr("http[^ ]*")
 
   if ! empty( url )
     echom "Opening URL: "..url
