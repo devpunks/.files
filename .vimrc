@@ -798,6 +798,7 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
 nnoremap <C-w>o <c-w>f
 
 " tags (:h tagstack)
+"   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " <C-]> jump to & push tag (:tag)
 " <C-t> pop tag (:pop)
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
