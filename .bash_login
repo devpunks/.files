@@ -221,7 +221,7 @@ alias ssh.add='(
 
   echo THE AGENT PID: $SSH_AGENT_PID
   echo THE AUTH SOCK: $SSH_AUTH_SOCK
-)'
+)' # ssh.add
 
 # SSh(d) ------------------------------------------------------------------
 #   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
