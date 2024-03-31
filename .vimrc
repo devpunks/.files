@@ -793,7 +793,7 @@ nnoremap <Leader>/ :verbose map<CR>
 " Equal sized panes
 nnoremap = <C-w>=
 " Maximize pane (tmux zoom)
-nnoremap <C-Z> <C-w>_ \| <C-w>\|
+nnoremap <C-z> <C-w>_ \| <C-w>\|
 " Find and open file under cursor
 nnoremap <C-w>o <c-w>f
 
