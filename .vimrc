@@ -284,8 +284,6 @@ set cursorlineopt=both " [number,line,both,screenline]
 " use \e CSI for double quotes ("")
 " https://stackoverflow.com/questions/6488683
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
-" printf '\033]12;red\033\\'
-" reset cursor escapes
 let &t_SI = '' " START INSERT
 let &t_SR = '' " START REPLACE
 let &t_EI = '' " NORMAL (EXIT INSERT)
