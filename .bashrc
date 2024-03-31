@@ -254,7 +254,7 @@ shopt -s no_empty_cmd_completion # on empty line attempts
 #  - Reverse Search
 #    - https://gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
 #    - https://gnu.org/software/bash/manual/html_node/Commands-For-History.html
-#    - https://superuser.com/questions/472846/how-to-reverse-i-search-back-and-forth
+#    - https://superuser.com/q/472846/how-to-reverse-i-search-back-and-forth
 #    - https://codeburst.io/use-reverse-i-search-to-quickly-navigate-through-your-history-917f4d7ffd37
 #==========================================================================
 shopt -s histappend
