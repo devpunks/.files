@@ -776,6 +776,8 @@ let g:mapleader = ','
 " =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
+" Search (Find)
+nnoremap <C-f> /
 
 nnoremap <Space> za
 " (Insert) Tab complete
