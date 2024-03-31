@@ -167,7 +167,7 @@ set completeopt+=menu,menuone,noinsert,popup
 " =========================================================================
 set selection=exclusive " No EOL CR/LF
 set pastetoggle=<Leader>p " Allow toggle of (paste) insert indentation
-set selection=exclusive " No EOL CR/LF - https://vi.stackexchange.com/questions/1260
+set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting
 
 if has('clipboard_working')
   echom 'Copy & 🍝Pasta'
