@@ -165,6 +165,8 @@ alias ports='netstat -tulanp'
 alias header='command curl -I'
 alias ping='command ping -c 100 -s.2'
 alias cookies='command curl -I --cookie-jar ./.cookies'
+alias wait='command wait' # https://www.baeldung.com/linux/wait-command
+alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 # https://www.redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='ip addr | grep --no-filename --only-matching --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
