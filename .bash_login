@@ -168,11 +168,11 @@ alias cookies='command curl -I --cookie-jar ./.cookies'
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
+
 # https://www.redhat.com/sysadmin/ifconfig-vs-ip
+# https://github.com/termux/termux-packages/issues/12758#issuecomment-1337558502
 alias ip='ip addr | grep --no-filename --only-matching --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
-alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
-alias wait='command wait' # https://www.baeldung.com/linux/wait-command
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
