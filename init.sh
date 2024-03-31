@@ -159,4 +159,28 @@ echo
 
 # }}}
 
+# {{{ Versioning ----------------------------------------------------------
+
+tmux -V
+git --version
+vim --version
+
+pip list
+pip --version
+python --version
+
+go version
+
+gem help env
+gem --version
+ruby --version
+
+npm --version
+node --version
+
+vlc --version
+ffmpeg -version
+
+# }}}
+
 # vim: foldmethod=marker
