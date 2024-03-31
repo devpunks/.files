@@ -749,7 +749,7 @@ function! TabLine() abort
     " let line ..= '%=%999X%#TabLineSel#[X]'
     let line ..= ( l:others && l:current ? '%' .. (l:tab) .. 'X ❌%X' : '' )
     " Closing gliph
-    let line .= ( l:current ? ' ▼ |' : ' ' )
+    let line ..= ( l:current ? ' ▼ |' : ' ' )
 
     let line .= '%T' " Tab delineation
   endfor
