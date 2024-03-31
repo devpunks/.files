@@ -796,6 +796,7 @@ nnoremap <C-w>o <c-w>f
 " Open Url on this line with the browser \w
 cnoremap <silent> <C-o> :call Browser ()<CR>
 
+" TODO: https://stackoverflow.com/questions/27588664/difference-between-c-t-and-c-o-in-vim
 
 " tags (:h tagstack)
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
