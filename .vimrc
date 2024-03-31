@@ -828,7 +828,7 @@ nnoremap <C-s> :call update
 " insert mode: escape to normal and save
 inoremap <C-s> :call update
 " visual mode: escape to normal and save
-vnoremap <C-s> <esc>:w<CR>
+vnoremap <C-s> :call update
 
 " https://vimhelp.org/terminal.txt.html
 if has('terminal') | nnoremap <S-t> :terminal<CR> | endif
