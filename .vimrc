@@ -826,7 +826,7 @@ nnoremap <C-l> <C-w>l
 " normal mode: save
 nnoremap <C-s> :call update
 " insert mode: escape to normal and save
-inoremap <C-s> <esc>:w<CR>
+inoremap <C-s> :call update
 " visual mode: escape to normal and save
 vnoremap <C-s> <esc>:w<CR>
 
