@@ -21,7 +21,7 @@
 # SHARING IS CARING
 #  - https://tmate.io/
 #  - https://github.com/zolrath/wemux
-#  - https://unix.stackexchange.com/questions/2523/what-are-other-ways-to-share-a-tmux-session-between-two-users
+#  - https://unix.stackexchange.com/q/2523/what-are-other-ways-to-share-a-tmux-session-between-two-users
 # mkdir -p $PREFIX/var/tmux
 
 # Splits:
