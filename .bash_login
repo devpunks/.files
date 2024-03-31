@@ -278,10 +278,11 @@ alias tmux.config='(
 # - syslog() - https://stackify.com/syslog-101/
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
-alias logs.sshd="command logcat -s 'sshd:*'"
 function logs () {
   command logcat
 }
+``
+alias logs.sshd="command logcat -s 'sshd:*'"
 
 # }}}
 
