@@ -22,7 +22,7 @@
 # -------------------------------------------------------------------------
 #
 # INVOCATION
-#   - https://unix.stackexchange.com/questions/423958/what-is-the-purpose-of-bash-logout
+#   - https://unix.stackexchange.com/q/423958/what-is-the-purpose-of-bash-logout
 
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # Paste - https://geeksforgeeks.org/paste-command-in-linux-with-examples
