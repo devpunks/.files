@@ -790,8 +790,8 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
-nnoremap <C-w>o <c-w>f
-nnoremap <C-z> <C-w>_ \| <C-w>\|
+nnoremap <C-w>o <c-w>f # Find and open file under cursor
+nnoremap <C-z> <C-w>_ \| <C-w>\| # Maximize pane (tmux zoom)
 
 " tags (:h tagstack)
 " <C-]> jump to & push tag (:tag)
