@@ -282,7 +282,7 @@ set cursorlineopt=both " [number,line,both,screenline]
 " reset cursor escapes
 " use  CSI for single quotes ('')
 " use \e CSI for double quotes ("")
-" https://stackoverflow.com/questions/6488683
+" https://stackoverflow.com/q/6488683
 " https://vim.fandom.com/wiki/Change_cursor_shape_in_different_modes
 let &t_SI = '' " START INSERT
 let &t_SR = '' " START REPLACE
