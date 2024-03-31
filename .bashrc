@@ -196,11 +196,11 @@ stty -ixoff # Disable sending START/STOP characters
 stty -ixany # Disable any key to resume (not just START)
 stty -ctlecho # Stop  echo - https://stackoverflow.com/q/418073
 
-# TERMUX nCurses- https://stackoverflow.com/questions/76148896
+# TERMUX nCurses- https://stackoverflow.com/q/76148896
 if [[ "$( tic -V )" == *"ncurses"* ]]; then
   export CURSES_CFLAGS="-I${PREFIX}/include"
   export CURSES_LDFLAGS="-L${PREFIX}/lib -lncurses"
-  # https://stackoverflow.com/questions/1780483
+  # https://stackoverflow.com/q/1780483
   export LINES=$( tput lines )
   export COLUMNS=$( tput columns )
 
