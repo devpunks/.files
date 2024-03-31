@@ -602,7 +602,8 @@ function term () {
   echo && echo TERMINFO CAPABILITIES: && infocmp -1 -CrT # terminfo capabilities
   echo && echo TERMINFO LONG NAMES: && infocmp -1 -LT # terminfo long names
 
-  echo "\e[m"
+  echo "\e[m" # DEFAULT
+
   echo && echo "Bindings \e[3m( see ~/.inputrc )\e[23m & alias shortcuts"
   shortcuts
   [[ function == $( type -t Colors ) ]] && echo && Colors
