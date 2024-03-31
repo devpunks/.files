@@ -363,9 +363,6 @@ set statusline+=%{(mode()=~'^n')?'📄':''} " Normal
 set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
 set statusline+=%{(mode()=~'^v')?'🔍':''} " Visual
 set statusline+=%{(mode()=~'^V')?'🔎':''} " Visual Line
-" https://stackoverflow.com/a/75030219
-" https://stackoverflow.com/questions/1176904
-" https://stackoverflow.com/questions/29426372
 " https://gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
 set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
 " full file name
