@@ -659,9 +659,6 @@ augroup END
 "   - :help ga
 "   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
 " -------------------------------------------------------------------------
-" Open Url on this line with the browser \w
-cnoremap <silent> <C-o> :call Browser ()<CR>
-
 function! Browser() abort " Opening URL
   const url = getline (".")->matchstr("http[^ ]*")
 
