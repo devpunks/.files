@@ -814,8 +814,6 @@ nnoremap <Leader>t <C-w>t
 nnoremap <C-w>t :tab split<CR>
 " All buffers into tabs
 nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
-" current buffer in new (t)ab
-nnoremap <Leader>t <C-w>t
 
 " <CTRL+h> Focus on pane to left
 nnoremap <C-h> <C-w>h
