@@ -728,7 +728,7 @@ function! TabLine() abort
   let l:tabs = range( tabpagenr('$') )
   for index in l:tabs
     let l:tab = index + 1
-    let l:count = tabpagewinnr(tab,'$')
+    let l:count = tabpagewinnr( tab,'$' )
     let l:window = tabpagewinnr( l:tab )
     let l:buffers = tabpagebuflist( l:tab )
     let l:index = l:buffers[ l:window - 1 ]
