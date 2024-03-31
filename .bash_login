@@ -83,9 +83,9 @@ alias echo='command echo -e'
 alias fonts='$HOME/.config/fonttable'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
-# https://stackoverflow.com/questions/42004870
+# https://stackoverflow.com/q/42004870
 alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
-# https://stackoverflow.com/questions/65523749
+# https://stackoverflow.com/q/65523749
 alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
