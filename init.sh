@@ -99,6 +99,8 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 
 # https://net-tools.sourceforge.io
 pkg install socat
+# https://github.com/termux/termux-packages/issues/12758
+pkg install iproute2
 pkg install dnsutils
 pkg install netcat-openbsd
 
