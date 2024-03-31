@@ -81,7 +81,6 @@ pkg install whois
 pkg install gnupg
 pkg install strace
 pkg install openssh
-pkg install iproute2
 
 # }}}
 
