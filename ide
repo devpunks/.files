@@ -25,7 +25,7 @@
 # mkdir -p $PREFIX/var/tmux
 
 # Splits:
-#  - https://unix.stackexchange.com/questions/124310
+#  - https://unix.stackexchange.com/q/124310
 #  - https://gist.github.com/sdondley/b01cc5bb1169c8c83401e438a652b84e
 
 # Use PIPES for race conditions in pane creation commands
