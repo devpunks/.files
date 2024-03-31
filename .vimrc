@@ -824,7 +824,7 @@ nnoremap <C-k> <C-w>k
 " <CTRL+l> Focus on pane to right
 nnoremap <C-l> <C-w>l
 " normal mode: save
-nnoremap <C-s> :call update
+nnoremap <C-s> :call update<CR>
 " insert mode: escape to normal and save
 inoremap <C-s> :call update
 " visual mode: escape to normal and save
