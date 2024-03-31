@@ -754,8 +754,8 @@ function! TabLine() abort
     let line ..= '%T' " Tab delineation
   endfor
 
-  let line .= '%<' " Overflow breakpoint
-  let line .= '%#TabLineFill#' " Tablist breakpoint
+  let line ..= '%<' " Overflow breakpoint
+  let line ..= '%#TabLineFill#' " Tablist breakpoint
 
   return line
 endfunction " TabLine
