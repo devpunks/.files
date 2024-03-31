@@ -42,7 +42,7 @@
 #==========================================================================
 # [[ -z "$PS1" ]] && exit # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 
-# https://stackoverflow.com/questions/42757236/what-does-mean-in-bash
+# https://stackoverflow.com/q/42757236/what-does-mean-in-bash
 echo THE FLAGS $- # TODO: echo post load
 # [[ $- != *i* ]] # Check for interactive
 
