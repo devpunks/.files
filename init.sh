@@ -52,7 +52,7 @@ pkg install which
 pkg install ncurses
 pkg install cmatrix
 pkg install shellcheck
-#pkg install expect # https://stackoverflow.com/questions/33304242/linux-expect-script
+# pkg install expect # https://stackoverflow.com/q/33304242
 
 # }}}
 
