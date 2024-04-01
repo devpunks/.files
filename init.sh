@@ -49,10 +49,10 @@ pkg install lynx
 pkg install wget
 pkg install tree
 pkg install which
-#pkg install expect # https://stackoverflow.com/questions/33304242/linux-expect-script
 pkg install ncurses
 pkg install cmatrix
 pkg install shellcheck
+#pkg install expect # https://stackoverflow.com/questions/33304242/linux-expect-script
 
 # }}}
 
