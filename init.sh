@@ -134,7 +134,6 @@ pkg install postgresql
 pkg install tar
 pkg install zip
 pkg install gzip
-pkg install unrar
 pkg install unzip
 pkg install rsync
 pkg install brotli
