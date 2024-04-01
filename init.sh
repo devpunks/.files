@@ -139,7 +139,6 @@ pkg install rsync
 pkg install brotli
 pkg install zopfli
 pkg install logrotate
-# RAR is patented - https://github.com/termux/termux-packages/issues/2190#issuecomment-367917474
 
 # }}}
 
