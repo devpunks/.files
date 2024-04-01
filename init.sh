@@ -42,6 +42,7 @@ pkg install eza
 pkg install git
 pkg install vim
 pkg install tmux
+pkg install ncdu
 pkg install htop
 pkg install most
 pkg install lynx
