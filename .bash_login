@@ -291,8 +291,6 @@ function logs.rotate () {
   command logrotate --help
 }
 ``
-alias logs.sshd="command logcat -s 'sshd:*'"
-
 # }}}
 
 # =========================================================================
