@@ -182,7 +182,6 @@ alias ports="netstat --verbose --numeric \
   --all --tcp --udp --listening --programs --wide"
 # https://redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='ip addr | grep --no-filename --only-matching --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
-# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
 
 alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
