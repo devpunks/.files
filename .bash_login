@@ -129,6 +129,7 @@ alias ln='command ln --interactive --verbose --symbolic'
 # https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
 alias chmod='command chmod --preserve-root'
 alias chown='command chown --preserve-root'
+alias chgrp='command chgrp --preserve-root'
 
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, or destroy"'
