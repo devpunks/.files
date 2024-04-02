@@ -169,6 +169,7 @@ alias curl='command curl --verbose \
 alias header='curl -I'
 
 # TODO: Find alternative
+#   -https://redhat.com/sysadmin/netstat
 #   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
 #   -https://www.redhat.com/sysadmin/netstat
 alias ports="netstat --verbose --numeric \
