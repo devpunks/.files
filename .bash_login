@@ -79,6 +79,7 @@ alias g#='(
 
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
+# https://linux.die.net/man/1/expect
 # https://stackoverflow.com/q/33304242
 # https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
 alias expect='pkg list-all expect'
