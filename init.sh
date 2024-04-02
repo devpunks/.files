@@ -100,6 +100,9 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 
 # {{{ Networking ----------------------------------------------------------
 
+# NMAP
+#   - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/
+# pkg install nmap
 pkg install nginx
 pkg install socat
 pkg install dnsutils
