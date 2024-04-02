@@ -143,7 +143,6 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 
 alias which='command type -a'
 alias why='echo TODO: \`why\` implementation'
-alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
 alias what='command man whatis && command whatis'
 alias where='command man whereis && command whereis'
 alias whois='command whois -H'
