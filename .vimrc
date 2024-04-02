@@ -127,7 +127,7 @@ if has("gui_running")
 elseif exists('$TMUX')
   set novisualbell " passthrough to TMUX
 else
- " <N> - where N = milliseconds
+  " <N> - where N = milliseconds
   set visualbell t_vb=[?5h$<250>[?5l
 endif
 
