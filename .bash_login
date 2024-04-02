@@ -139,6 +139,8 @@ alias delete="command rm \
 alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
 
 # https://web.njit.edu/~ronkowit/eliza.html
+alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
+
 alias which='command type -a'
 alias why='echo TODO: \`why\` implementation'
 alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
