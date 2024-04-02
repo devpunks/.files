@@ -169,7 +169,8 @@ alias curl='command curl --verbose \
 alias header='curl -I'
 
 # https://www.redhat.com/sysadmin/netstat
-alias ports='netstat --numeric --all --tcp --udp --listening --programs'
+alias ports='netstat --numeric \
+  --all --tcp --udp --listening --programs'
 alias ping='command ping -c 100 -s.2'
 alias cookies='header --cookie-jar ./.cookies'
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
