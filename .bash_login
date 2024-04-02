@@ -168,9 +168,11 @@ alias curl='command curl --verbose \
   --user-agent "Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1"'
 alias header='curl -I'
 
-# https://www.redhat.com/sysadmin/netstat
-alias ports="netstat --numeric \
-  --all --tcp --udp --listening --programs --wide --verbose"
+# TODO: Find alternative
+#   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
+#   -https://www.redhat.com/sysadmin/netstat
+alias ports="netstat --verbose --numeric \
+  --all --tcp --udp --listening --programs --wide"
 alias ping='command ping -c 100 -s.2'
 alias cookies='header --cookie-jar ./.cookies'
 alias wait='command wait' # https://www.baeldung.com/linux/wait-command
