@@ -79,6 +79,9 @@ alias g#='(
 
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
+# https://stackoverflow.com/q/33304242
+# https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
+alias expect'pkg list-all expect'
 
 alias fonts='$HOME/.config/fonttable'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
