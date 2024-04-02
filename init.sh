@@ -101,6 +101,7 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 # {{{ Networking ----------------------------------------------------------
 
 # NMAP
+#   - https://upguard.com/blog/how-to-use-nmap
 #   - https://redhat.com/sysadmin/use-cases-nmap
 #   - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/
 # pkg install nmap
