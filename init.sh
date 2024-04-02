@@ -103,8 +103,10 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 # https://github.com/termux/termux-packages/issues/12758
 pkg install nginx
 pkg install socat
-pkg install iproute2 # ip addr instad of ifconfig -a
 pkg install dnsutils
+# ifconfig
+#   - https://redhat.com/sysadmin/ifconfig-vs-ip
+pkg install iproute2 # ip addr instad of ifconfig -a
 pkg install net-tools # https://net-tools.sourceforge.io
 pkg install netcat-openbsd
 
