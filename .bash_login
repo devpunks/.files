@@ -285,7 +285,7 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
 function logs () {
   command logcat
-}
+} # logs
 
 function logs.rotate () {
   command logrotate --help
