@@ -827,6 +827,10 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-s> :update<CR> echo "Updated"
 " visual mode: escape to normal and save
 vnoremap <C-s> :call update<CR>
+" insert mode: escape to normal and save
+inoremap <C-s> <Esc>:write<CR>a
+" (Insert) Tab complete
+inoremap <Tab> <C-n>
 
 " https://vimhelp.org/terminal.txt.html
 if has('terminal') | nnoremap <S-t> :terminal<CR> | endif
