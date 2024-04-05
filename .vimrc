@@ -137,7 +137,7 @@ set tabline=%!TabLine()
 set showtabline=2 " :help setting-tabline
 " shell window
 set title " Turn on title
-set titlestring="VIM TITLE %<%F%=%l/%L-%P"  " Window Title String format
+set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P"  " Window Title String format
 
 " Menus -------------------------------------------------------------------
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
