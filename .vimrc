@@ -779,8 +779,6 @@ nnoremap ; :
 nnoremap <C-f> /
 
 nnoremap <Space> za
-" (Insert) Tab complete
-inoremap <Tab> <C-n>
 " (normal) [TAB] Next Tab
 nnoremap <Tab> :tabnext<CR>
 nnoremap <Esc> :nohlsearch<CR>
