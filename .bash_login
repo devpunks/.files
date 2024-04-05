@@ -218,7 +218,7 @@ alias pulse='(
 )' # pulse
 
 # HTTP(s) -----------------------------------------------------------------
-alias serve='command python -m http.server &'
+alias serve='command python -m http.server'
 
 # SSh ---------------------------------------------------------------------
 # - https://www.ssh.com/academy/ssh
