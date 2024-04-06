@@ -273,6 +273,7 @@ set backupdir=$TMPDIR " backup location
 set ttyfast " for redraws
 
 set nolazyredraw " Fast non-macro updates
+"set lazyredraw " Prevent slow macro updates
 set ttyscroll=3 " number of characters for redraws
 
 set cursorline " highlight current cursor line
