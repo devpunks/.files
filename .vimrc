@@ -147,7 +147,7 @@ set wildmenu
 set infercase
 set wildchar=<Tab>
 set wildoptions=pum
-set wildcharm=<C-Z> " macros
+set wildcharm=<C-z> " macros
 set wildmode=list:longest,full
 set wildignore+=*.DS_STORE,*/.cache/*,*/.git/*,*/.ssh/*,*/.npm/*,*/node_modules/*
 
