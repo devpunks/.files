@@ -390,6 +390,7 @@ function compress () {
 function uncompress () {
 
   echo 'Un-Compressing'
+  command uncompress --list
 }
 
 # Zip
