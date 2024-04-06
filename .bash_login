@@ -296,7 +296,7 @@ function logs () {
 
 function logs.rotate () {
   command logrotate --help
-}
+} # logs.rotate
 ``
 # }}}
 
