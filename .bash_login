@@ -450,7 +450,7 @@ function unpack () {
 function destroy () {
   [ ! -e "$1" ] && return
 
-  shred --force --zero --iterations=5 --remove $@
+  shred --force --zero --iterations=5 --remove "$@"
   echo "💣 destroyed 💥 $@"
 } # destroy
 
