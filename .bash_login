@@ -419,7 +419,7 @@ function unpack () {
     && echo && command zipinfo "$file" \
     && echo && command unzip -lv "$file"
 
-  echo 'Unpack using `unzip` or `tar`'
+  echo Unpack using 'unzip' or 'tar'
 #  command unzip "$file" "$destination"
 
   return # for now
