@@ -385,6 +385,12 @@ function compress () {
   echo 'Compressing'
 }
 
+# uncompress
+#   - https://ncompress.sourceforge.io
+function ukncompress () {
+
+  echo 'Un-Compressing'
+}
 
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
