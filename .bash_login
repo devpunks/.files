@@ -379,6 +379,13 @@ function play () {
   sox --help
 } # play
 
+# compress
+#   - https://ncompress.sourceforge.io
+function compress () {
+  echo 'Compressing'
+}
+
+
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
 function zip () {
