@@ -104,7 +104,7 @@ set modeline " https://vim.fandom.com/wiki/Modeline_magic
 set modelines=1 " Head & tail mode lines (:help modeline)
 set cmdheight=2 " sets the :ex command prompt line height
 set showcmdloc=statusline " Add current command to status
-set showmatch matchtime=6 " jump to matching brace (in 1/10ths of seconds)
+set showmatch matchtime=10 " jump to matching brace (in 1/10ths of seconds)
 
 set wrapscan " Search respects wrapping
 set hlsearch " result highlight grouping
