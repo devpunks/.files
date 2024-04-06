@@ -431,6 +431,7 @@ set noautowriteall " do not autowrite (all)
 set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
+set breakindent  " break with existing line indent
 set smartindent  " indent based off current line on load
 
 " Meta-chars ------------------------------------
