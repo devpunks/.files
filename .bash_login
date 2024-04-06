@@ -396,7 +396,7 @@ function zip () {
   echo "file: $file"
   echo "contents: $contents"
 
-  command zip -rv $file $contents # -u for update only
+  command zip -rv "$file $contents" # -u for update only
 
   test -e "$file" \
     && command view "$file" \
