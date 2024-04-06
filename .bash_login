@@ -391,7 +391,8 @@ function uncompress () {
 
   echo 'Un-Compressing'
   command uncompress --verbose --list "$1" \
-    | sed 's/date.*time/month day time/' | column --table
+    | sed 's/date.*time/month day time/' \
+    | column --table
 }
 
 # Zip
