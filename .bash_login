@@ -425,7 +425,7 @@ function unpack () {
   return # for now
 
   # TODO: Archive routine
-  if [ -f $file ] ; then
+  if [ -f "$file" ] ; then
     case $1 in
       *.gz)        gunzip $1       ;;
       *.zip)       unzip $1        ;;
