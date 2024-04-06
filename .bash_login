@@ -421,6 +421,7 @@ function unpack () {
   if [ -f $file ] ; then
     case $1 in
       *.gz)        gunzip $1       ;;
+      *.zip)       unzip $1        ;;
       *.bz2)       bunzip2 $1      ;;
       *.tgz)       tar xvzf $1     ;;
       *.tar)       tar xvf $1      ;;
