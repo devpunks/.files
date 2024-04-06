@@ -387,7 +387,7 @@ function compress () {
 
 # uncompress
 #   - https://ncompress.sourceforge.io
-function ukncompress () {
+function uncompress () {
 
   echo 'Un-Compressing'
 }
