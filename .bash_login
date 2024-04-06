@@ -393,7 +393,7 @@ function zip () {
   local file=$1
   local contents=${@:2}
 
-  echo file: $file
+  echo "file: $file"
   echo contents: $contents
 
   command zip -rv $file $contents # -u for update only
