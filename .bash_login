@@ -410,7 +410,7 @@ function unpack () {
   local file=$1
   local destination=$2
 
-  echo file: $file
+  echo "file: $file"
   echo contents: $contents
 
   echo "Reading contents"
