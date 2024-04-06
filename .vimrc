@@ -137,6 +137,7 @@ set tabline=%!TabLine()
 set showtabline=2 " :help setting-tabline
 " shell window
 set title " Turn on title
+set titlelen " Text length of title
 set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P"  " Window Title String format
 
 " Menus -------------------------------------------------------------------
