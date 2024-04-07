@@ -325,6 +325,15 @@ function permit () {
   ls "$1"
 } # permit
 
+# inspect
+function inspect () {
+  clear
+  local file=$1
+
+  printf "\n\nInspecing: %s" "$file"
+  echo && echo 'TODO: implement  inspect ()'
+}
+
 # probe
 function probe () {
   clear
