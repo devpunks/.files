@@ -325,7 +325,7 @@ function permit () {
   ls "$1"
 } # permit
 
-# Archive
+# archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () {
   clear
