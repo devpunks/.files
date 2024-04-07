@@ -331,7 +331,7 @@ function probe () {
   clear
   local file=$1
 
-  printf "\n\nprobing: %s" "$file"
+  printf "\n\nProbing: %s" "$file"
   echo && echo 'TODO: implement  probe ()'
 }
 
