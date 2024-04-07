@@ -306,6 +306,25 @@ function logs.rotate () {
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
 
+# https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
+# https://superuser.com/q/168578/why-must-a-folder-be-executable
+# https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
+# https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
+# https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
+function permit () {
+  echo umask: `umask`
+  echo umask -S: `umask -S`
+
+  test ! -e "$1" \
+    && echo "Does not exist!" \
+    && return
+
+  # chmod -v 755 $1
+  chmod -R u=rwX,g=rX,o= "$@"
+
+  ls "$1"
+} # permit
+
 # Archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () {
