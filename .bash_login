@@ -306,6 +306,9 @@ function logs.rotate () {
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
 
+# TODO: Implementation
+#-----------------------
+
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
 # https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
