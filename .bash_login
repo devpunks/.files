@@ -308,6 +308,14 @@ function logs.rotate () {
 
 # TODO: Implementation
 #-----------------------
+# exist
+function exist () {
+  clear
+  local file=$1
+
+  printf "\n\nInspecing: %s" "$file"
+  printf '\nTODO: implement  exist ()'
+}
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
