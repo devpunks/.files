@@ -349,6 +349,8 @@ function probe () {
   local file=$1
 
   printf "\n\nProbing: %s" "$file"
+
+  exist $file || return 2
   printf '\nTODO: implement  probe ()'
 }
 
