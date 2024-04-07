@@ -327,6 +327,12 @@ function permit () {
 
 # archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
+function probe () {
+  echo && echo 'TODO: implement  probe ()'
+}
+
+# archive
+# - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () {
   clear
   local file=$1
