@@ -313,7 +313,7 @@ function exist () {
   clear
   local file=$1
 
-  printf "\n\nInspecing: %s" "$file"
+  printf "\n\nExists: %s" [ -f "$file" ]
   printf '\nTODO: implement  exist ()'
 }
 
