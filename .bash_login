@@ -325,8 +325,7 @@ function permit () {
   ls "$1"
 } # permit
 
-# archive
-# - https://geeksforgeeks.org/tar-command-linux-examples
+# probe
 function probe () {
   clear
   local file=$1
