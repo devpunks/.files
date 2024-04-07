@@ -312,7 +312,7 @@ function logs.rotate () {
 function exist () {
   local file=$1
 
-  test -f "$file" || return 1
+  test -f "$file" || return 2
 }
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
