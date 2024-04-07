@@ -340,7 +340,7 @@ function probe () {
   local file=$1
 
   printf "\n\nProbing: %s" "$file"
-  echo && echo 'TODO: implement  probe ()'
+  printf '\nTODO: implement  probe ()'
 }
 
 # archive
