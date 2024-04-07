@@ -331,7 +331,7 @@ function inspect () {
   local file=$1
 
   printf "\n\nInspecing: %s" "$file"
-  echo && echo 'TODO: implement  inspect ()'
+  printf '\nTODO: implement  inspect ()'
 }
 
 # probe
