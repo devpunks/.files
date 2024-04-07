@@ -312,8 +312,7 @@ function logs.rotate () {
 function exist () {
   local file=$1
 
-  printf "\n\nExists: %s" "$( [ -f "$file" ] )"
-  printf '\nTODO: implement  exist ()'
+  test -f "$file" || return 1
 }
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
