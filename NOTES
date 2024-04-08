@@ -149,16 +149,17 @@ Android Accessibility
 # FULL LIST OF SHORTCUTS - https://gist.github.com/tuxfight3r/0dca25825d9f2608714b
 
 # BASH --------------------------------------------------------------------
-#   - Shell Check - https://shellcheck.net
-#   - Explain Shell - https://explainshell.com/
-#   - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
-#   - Shell Expansion https://stackoverflow.com/a/59629043/173208
-#   - Compgen - https://www.baeldung.com/linux/compgen-command-usage
-#   - echo vs printf
-#     - https://www.in-ulm.de/%7Emascheck/various/echo+printf/
-#     - https://unix.stackexchange.com/q/65803/why-is-printf-better-than-echo
-#   - POSIX SHELL - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
-#   - Special Parameters - https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
+#  - Shell Check - https://shellcheck.net
+#  - Exit Codes - https://cyberciti.biz/faq/linux-bash-exit-status-set-exit-statusin-bash/
+#  - Explain Shell - https://explainshell.com/
+#  - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
+#  - Shell Expansion https://stackoverflow.com/a/59629043/173208
+#  - Compgen - https://www.baeldung.com/linux/compgen-command-usage
+#  - echo vs printf
+#    - https://www.in-ulm.de/%7Emascheck/various/echo+printf/
+#    - https://unix.stackexchange.com/q/65803/why-is-printf-better-than-echo
+#  - POSIX SHELL - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+#  - Special Parameters - https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
 #
 #   - Reverse Search
 #     - https://www.gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
