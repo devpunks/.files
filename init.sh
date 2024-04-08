@@ -51,7 +51,7 @@ pkg install tree
 pkg install which
 pkg install ncurses
 pkg install cmatrix
-pkg install shellcheck
+pkg install shellcheck # https://shellcheck.net
 # pkg install expect
 
 # }}}
