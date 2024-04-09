@@ -87,6 +87,9 @@ $include /data/data/com.termux/files/usr/etc/inputrc
   "\C-p": history-search-backward
   "\C-n": history-search-forward
 
+# some defaults / modifications for the emacs mode
+# $if mode=emacs
+#
 # $endif
 
 # }}}
