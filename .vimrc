@@ -494,7 +494,7 @@ augroup FileDefaults
     \ :echom 'Loading TMUX Configuration' |
     \ call system('tmux source-file "$HOME/.tmux.conf"') |
     \ call system('tmux display-message "Source file loaded! (${HOME}/.tmux.conf)"')
-  
+
 augroup END
 
 " -------------------------------------------------------------------------
