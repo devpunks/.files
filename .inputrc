@@ -43,6 +43,10 @@
 # =========================================================================
 # {{{ Bindings
 # =========================================================================
+# emacs mode
+# $if mode=emacs
+# $endif
+
 # Preserve system wide settings
 $include /data/data/com.termux/files/usr/etc/inputrc
 
