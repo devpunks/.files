@@ -492,7 +492,9 @@ augroup FileDefaults
   " Autoload .tmux.conf on write
   autocmd BufWritePost .tmux.conf
     \ :echom 'Loading TMUX Configuration' |
-    \ call system('tmux source-file "$HOME/.tmux.conf"')
+    \ call system('tmux source-file "$HOME/.tmux.conf"') |
+    \ call system('tmux display-message "Source file loaded! (${HOME}/.tmux.conf)"')
+  
 augroup END
 
 " -------------------------------------------------------------------------
