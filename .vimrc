@@ -475,7 +475,7 @@ function OverflowMargin () abort
 
   " call matchadd('ColorColumn', '\%75v.*')
   call matchadd('ColorColumn', '\%>' . &tw . 'v')
-  " https://www.baeldung.com/linux/vim-ruler-on-specific-column
+  " https://baeldung.com/linux/vim-ruler-on-specific-column
   let &colorcolumn= ( &tw +1 ) ..",".. ( &tw +2 )
 endfunction " OverflowMargin
 
