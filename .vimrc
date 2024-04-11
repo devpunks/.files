@@ -527,7 +527,7 @@ augroup END
 
 " -------------------------------------------------------------------------
 " Javascript
-"   - https://www.simplified.guide/vim/auto-complete-javascript
+"   - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
