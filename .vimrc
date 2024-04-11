@@ -666,7 +666,6 @@ augroup END
 " -------------------------------------------------------------------------
 " :call Browser ( value = 0 )
 "   - :help ga
-"   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
 " -------------------------------------------------------------------------
 function! Browser() abort " Opening URL
   const url = getline (".")->matchstr("http[^ ]*")
