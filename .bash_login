@@ -172,7 +172,7 @@ alias header='curl -I'
 
 alias ping='command ping -c 100 -s.2'
 alias cookies='header --cookie-jar ./.cookies'
-alias wait='command wait' # https://www.baeldung.com/linux/wait-command
+alias wait='command wait' # https://baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
