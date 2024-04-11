@@ -684,7 +684,7 @@ endfunction " Browser
 "   - :help ascii ga g8
 "   - https://utf8-chartable.de/
 "   - https://stackoverflow.com/q/1273693
-"   - https://www.geeksforgeeks.org/program-decimal-octal-conversion/
+"   - https://geeksforgeeks.org/program-decimal-octal-conversion/
 "   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
