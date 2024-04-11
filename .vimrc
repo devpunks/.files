@@ -456,6 +456,7 @@ set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
 set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
 
+" Reset all autocommands
 augroup FileDefaults | autocmd! | augroup END
 
 augroup FileDefaults
