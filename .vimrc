@@ -701,7 +701,7 @@ endfunction " CursorCharacter
 
 " -------------------------------------------------------------------------
 " :call GetColor (group, attribute)
-"   - https://www.reddit.com/r/neovim/comments/oxddk9
+"   - https://reddit.com/r/neovim/comments/oxddk9
 " -------------------------------------------------------------------------
 function! GetColor(group, attr) abort " GetColor('LineNr', 'bg#')"
   let color = synIDattr( synIDtrans( hlID(a:group)), a:attr)
