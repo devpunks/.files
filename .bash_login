@@ -482,7 +482,7 @@ function unpack () {
   return # for now
 
   # TODO: Archive routine
-  #   - https://www.computerhope.com/unix/uuncompr.htm
+  #   - https://computerhope.com/unix/uuncompr.htm
   if [ -f "$file" ] ; then
     case $1 in
       *.gz)        gunzip $1       ;;
