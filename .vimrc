@@ -454,7 +454,7 @@ set formatoptions+=q " autowrap comments with gq program
 set formatoptions+=r " Preserve comment on CRLF newline
 set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
-set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) next
+set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (dos)
 
 " Reset all autocommands
 augroup FileDefaults | autocmd! | augroup END
