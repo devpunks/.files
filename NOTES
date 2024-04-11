@@ -153,7 +153,7 @@ Android Accessibility
 #  - Explain Shell - https://explainshell.com/
 #  - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
 #  - Shell Expansion https://stackoverflow.com/a/59629043/173208
-#  - Compgen - https://www.baeldung.com/linux/compgen-command-usage
+#  - Compgen - https://baeldung.com/linux/compgen-command-usage
 #  - echo vs printf
 #    - https://www.in-ulm.de/%7Emascheck/various/echo+printf/
 #    - https://unix.stackexchange.com/q/65803/why-is-printf-better-than-echo
