@@ -69,7 +69,7 @@ pkg install shellcheck # https://shellcheck.net
 
 pkg install mutt
 pkg install mailutils
-pkg install fetchmail # https://www.fetchmail.info
+pkg install fetchmail # https://fetchmail.info
 
 # }}}
 
