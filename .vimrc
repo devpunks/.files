@@ -181,7 +181,7 @@ endif
 "   - https://stackoverflow.com/q/11489428
 "   - https://github.com/termux/termux-packages/issues/2308
 "   - https://vimtricks.com/p/vimtrick-the-clipboard-register/
-"   - https://www.reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
+"   - https://reddit.com/r/termux/comments/c17rwf/how_to_paste_to_vim_from_external_clipboard/
 "   - OSC52 Escape to system clipboard - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.vim
 
 " vnoremap <C-c> "*y<cr>
