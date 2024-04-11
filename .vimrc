@@ -458,6 +458,9 @@ set fileformats=unix,dos " sets <LF> (unix) first, then tries <CR><LF> (dos) nex
 
 augroup FileDefaults
   autocmd!
+augroup END
+
+augroup FileDefaults
   autocmd VimResized * wincmd = " resize (see equalalways)
   autocmd FocusLost * :w " save on focus lost
   " (https://vi.stackexchange.com/a/15995)
