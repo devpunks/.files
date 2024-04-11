@@ -518,7 +518,7 @@ augroup END
 
 " -------------------------------------------------------------------------
 " CSS
-"   - https://www.simplified.guide/vim/auto-complete-css
+"   - https://simplified.guide/vim/auto-complete-css
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
