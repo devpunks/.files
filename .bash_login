@@ -95,7 +95,7 @@ alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 alias now='command date +"%T - %::z %Z (${TZ})"'
 alias calendar='command cal -1 --iso --color=auto'
-# https://www.gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
+# https://gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
 alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
 
 alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
