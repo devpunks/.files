@@ -325,6 +325,13 @@ function permit () {
   echo "umask: `umask`"
   echo umask -S: `umask -S`
 
+  local location=$1
+
+  exist "$location" || return $?
+
+  # 4 - Read
+  # 2 - Write
+  # 1 - Execute
   # chmod -v 755 $1
   chmod -R u=rwX,g=rX,o= "$@"
 
