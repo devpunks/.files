@@ -322,12 +322,8 @@ function exist () {
 # https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
 # https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
 function permit () {
-  local location=$1
-
   echo "umask: `umask`"
   echo umask -S: `umask -S`
-  echo $?
-  exist "$location" || ( echo $? && return 2 )
 
   # chmod -v 755 $1
   chmod -R u=rwX,g=rX,o= "$@"
