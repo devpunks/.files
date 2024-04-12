@@ -327,9 +327,6 @@ function permit () {
   echo umask: `umask`
   echo umask -S: `umask -S`
 
-  test ! -e "$1" \
-    && echo "Does not exist!" \
-    && return
   exist "$file" || return 2
 
   # chmod -v 755 $1
