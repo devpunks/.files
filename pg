@@ -46,7 +46,7 @@ exit 0
 # pg_ctl stop -D $PGDATA -l $LOGDIR -s -m fast
 # ls $PGDATA
 # rm -rf $PGDATA
-# pg_ctl init -D $PGDATA -l $LOG
+# pg_ctl init -D $PGDATA -l $LOGDIR
 
 
 # Run ls -al /usr/local/bin | grep pg_ for Postgres commands
