@@ -310,7 +310,7 @@ function logs.rotate () {
 #-----------------------
 # exist
 function exist () {
-  local file=$1
+  local location=$1
 
   test -f "$file" || return 2 # No such file or directory
 }
