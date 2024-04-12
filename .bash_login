@@ -324,7 +324,7 @@ function exist () {
 function permit () {
   local location=$1
 
-  echo umask: `umask`
+  echo "umask: `umask`"
   echo umask -S: `umask -S`
 
   exist "$location" || return 2
