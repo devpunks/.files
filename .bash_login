@@ -326,8 +326,8 @@ function permit () {
 
   echo "umask: `umask`"
   echo umask -S: `umask -S`
-
-  exist "$location" || return 2
+  echo $?
+  exist "$location" || ( echo $? && return 2 )
 
   # chmod -v 755 $1
   chmod -R u=rwX,g=rX,o= "$@"
