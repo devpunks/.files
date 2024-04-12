@@ -35,6 +35,7 @@ echo PGVERSION 👉 $PGVERSION
 echo PGDATA 👉 $PGDATA
 echo EXEC 👉 $EXEC
 echo LOG 👉 $LOG
+echo PORT 👉 $PORT
 echo AUTH 👉 $AUTH
 echo COMMAND 👉 $COMMAND
 
