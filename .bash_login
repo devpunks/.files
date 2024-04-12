@@ -312,7 +312,9 @@ function logs.rotate () {
 function exist () {
   local location=$1
 
-  test -f "$file" || return 2 # No such file or directory
+  test -f "$location" \
+    || test -d "$location" \
+    || ( echo "No such file or directory: $location" && return 2 )
 }
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
