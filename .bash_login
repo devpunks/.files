@@ -123,8 +123,6 @@ alias ln='command ln --interactive --verbose --symbolic'
 # https://askubuntu.com/q/918379
 # https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
 # https://en.m.wikipedia.org/wiki/Chmod
-# https://en.m.wikipedia.org/wiki/Chown
-# https://man7.org/linux/man-pages/man1/chgrp.1p.html
 # https://man7.org/linux/man-pages/man1/chmod.1p.html
 # https://man7.org/linux/man-pages/man1/chown.1p.html
 # https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
