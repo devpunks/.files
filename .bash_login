@@ -312,8 +312,7 @@ function logs.rotate () {
 function exist () {
   local location=$1
 
-  test -f "$location" \
-    || test -d "$location" \
+  test -e "$location" \
     || ( echo "No such file or directory: $location" && return 2 )
 }
 
