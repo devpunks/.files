@@ -23,7 +23,7 @@ declare -xr LOG=`pwd`/PG.log
 declare -xr AUTH=--auth-local # --auth-host
 declare -xr USERNAME=devpunks
 declare -xr HOST=localhost
-declare -xr PORT=5432
+declare -xr PORT=${PORT:-5432}
 # declare -xr PID=${PGDATA}/postmaster.pid
 
 function status {
