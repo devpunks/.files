@@ -19,7 +19,6 @@ declare -xr EXEC=${PGBIN}/pg
 declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres@15}
 declare -xr COMMAND=$1
 declare -xr OPERATION=$2
-declare -xr LOG=`pwd`/PG.log
 declare -xr AUTH=--auth-local # --auth-host
 declare -xr USERNAME=devpunks
 declare -xr HOST=localhost
