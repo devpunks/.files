@@ -332,7 +332,7 @@ function permit () {
   # chmod -v 755 $1
   chmod -R u=rwX,g=rX,o= "$@"
 
-  ls "$1"
+  ls "$location"
 } # permit
 
 # inspect
