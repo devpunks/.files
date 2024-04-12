@@ -102,6 +102,7 @@ set foldmethod=indent " [ manual|indent|expr|marker|syntax|diff ]
 set showcmd " show current command prompt suffix
 set modeline " https://vim.fandom.com/wiki/Modeline_magic
 set cmdheight=2 " sets the :ex command prompt line height
+set modelines=1 " Head & tail mode lines (:help modeline)
 set showcmdloc=statusline " Add current command to status
 set showmatch matchtime=20 " jump to matching brace (in 1/10ths of seconds)
 set wrapscan " Search respects wrapping
