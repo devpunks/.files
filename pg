@@ -43,7 +43,7 @@ status
 exit 0
 
 # REMOVE ME!
-# pg_ctl stop -D $PGDATA -l $LOG -s -m fast
+# pg_ctl stop -D $PGDATA -l $LOGDIR -s -m fast
 # ls $PGDATA
 # rm -rf $PGDATA
 # pg_ctl init -D $PGDATA -l $LOG
