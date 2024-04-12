@@ -329,6 +329,7 @@ function permit () {
   test ! -e "$1" \
     && echo "Does not exist!" \
     && return
+  exist $file || return 2
 
   # chmod -v 755 $1
   chmod -R u=rwX,g=rX,o= "$@"
