@@ -153,7 +153,6 @@ alias who='command id \
 
 # https://tecmint.com/35-practical-examples-of-linux-find-command
 alias find='command find . -type f -iname'
-
 # - https://stackoverflow.com/q/1987926
 alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 
