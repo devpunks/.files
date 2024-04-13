@@ -84,6 +84,7 @@ alias echo='command echo -e'
 # https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
 alias expect='pkg list-all expect'
 
+# https://github.com/powerline/fonts
 alias fonts='$HOME/.config/fonttable'
 alias matrix='command cmatrix -bas -C magenta' # ScreenSaver
 
