@@ -113,7 +113,7 @@ set smartcase " Capitalization case-sensitive search
 " TODO: Problematic for conditionals "A"=="a"
 " https://vi.stackexchange.com/q/11236
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
-" set ignorecase " Case in-sensitive search
+set ignorecase " Case in-sensitive search
 set tagcase=followscs " Follow smartcase & ignorecase
 
 " Bells -------------------------------------------------------------------
