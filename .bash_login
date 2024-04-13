@@ -309,6 +309,7 @@ function logs.rotate () {
 # =========================================================================
 function reboot (){ echo; }
 function restart (){ echo; }
+function refresh (){ echo; }
 
 # TODO: Implementation
 #-----------------------
