@@ -143,6 +143,7 @@ alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-example
 alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
 
 alias which='command type -a'
+alias when='echo TODO: \`when\` implementation'
 alias why='echo TODO: \`why\` implementation'
 alias what='command man whatis && command whatis'
 alias where='command man whereis && command whereis'
