@@ -319,6 +319,11 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 }
 
+# search
+function search () {
+  exist
+}
+
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
 # https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
