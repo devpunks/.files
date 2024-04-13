@@ -308,6 +308,7 @@ function logs.rotate () {
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
 function reboot (){ echo; }
+function restart (){ echo; }
 
 # TODO: Implementation
 #-----------------------
