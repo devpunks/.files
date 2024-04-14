@@ -88,15 +88,6 @@ highlight! CurSearch term=standout,underline cterm=standout,underline ctermfg=NO
 highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
   highlight! link MoreMsg ModeMsg
 
-" Error Warnings
-highlight! WarningMsg cterm=standout ctermfg=NONE
-highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
-  highlight! link ErrorMsg Error
-highlight SpellBad cterm=strikethrough ctermbg=NONE
-  highlight! link SpellCap SpellBad
-  highlight! link SpellRare SpellBad
-  highlight! link SpellLocal SpellBad
-
 " Gutter
 highlight! Cursor cterm=NONE ctermfg=NONE
 highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
