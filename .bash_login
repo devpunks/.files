@@ -310,6 +310,8 @@ function logs.rotate () {
 function reboot (){ echo; }
 function restart (){ echo; }
 function refresh (){ echo; }
+function cumulate (){ echo; }
+function accumulate (){ echo; }
 
 # TODO: Implementation
 #-----------------------
