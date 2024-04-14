@@ -65,6 +65,15 @@ highlight! DiffDelete term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=
 highlight! DiffChange term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=yellow
 highlight! DiffText   term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=NONE
 
+" Error Warnings
+highlight! WarningMsg cterm=standout ctermfg=NONE
+highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
+  highlight! link ErrorMsg Error
+highlight SpellBad cterm=strikethrough ctermbg=NONE
+  highlight! link SpellCap SpellBad
+  highlight! link SpellRare SpellBad
+  highlight! link SpellLocal SpellBad
+
 " Popups
 highlight! PmenuSbar cterm=NONE ctermbg=NONE
 highlight! PmenuSel ctermfg=NONE ctermbg=NONE
