@@ -158,11 +158,6 @@ alias whois='command whois -H'
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
-# https://tecmint.com/35-practical-examples-of-linux-find-command
-alias find='command find . -type f -iname'
-# - https://stackoverflow.com/q/1987926
-alias grep="LC_ALL=C command grep $GREP_OPTIONS"
-
 # https://unix.stackexchange.com/q/344213
 # https://askubuntu.com/q/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/q/50377/whats-the-difference-between-dir-and-ls
