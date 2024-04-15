@@ -585,7 +585,7 @@ monitor () {
 
 weigh () {
   clear
-  local location=`realpath ${1:-.}`
+  local location=$( realpath ${1:-.} )
 
   echo "location 👉 $location"
 
