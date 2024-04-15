@@ -634,7 +634,7 @@ function environment () {
   echo && echo 👇Shell Vars:👇
   command echo -e "(set -o posix; set; set +o posix)" | sort | column --fillrows
   echo && command echo 👇Declarations:👇
-  declare -p | cut -d " " -f 3 | sort | column --fillrows
+  declare -p | cut --delimiter=' ' --fields 3 | sort | column --fillrows
 } # environment
 
 # https://bash.cyberciti.biz/guide/Reset_command
