@@ -195,7 +195,7 @@ alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-
 alias be='bundle exec'
 
 # ----------------------
-# Eliza (LLM)
+# Eliza (LLM)  - https://web.njit.edu/~ronkowit/eliza.html
 # ----------------------
 # https://web.njit.edu/~ronkowit/eliza.html
 alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
