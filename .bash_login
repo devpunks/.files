@@ -587,7 +587,7 @@ weigh () {
   clear
   local location=$( realpath ${1:-.} )
 
-  echo "location 👉 $location"
+  echo && echo "location 👉 $location"
 
   echo && echo # - https://dev.yorhel.nl/ncdu/man
   [[ -d $location ]] && \
