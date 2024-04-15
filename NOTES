@@ -122,7 +122,7 @@ Android Accessibility
 # Bind(ed) Keys
 #   - tmux show-hooks -g
 #   - tmux list-keys
-#   - tmux list-keys -a
+#   - tmux list-keys -a(ll)
 #   - tmux list-keys -N(ame)
 #   - tmux list-keys -T(able)
 # Shortcut mappings - <prefix>+?
