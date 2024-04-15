@@ -93,11 +93,6 @@ alias echo='command echo -e'
 # https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
 alias expect='pkg list-all expect'
 
-# https://stackoverflow.com/q/42004870
-alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
-# https://stackoverflow.com/q/65523749
-alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
-
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 alias now='command date +"%T - %::z %Z (${TZ})"'
 alias calendar='command cal -1 --iso --color=auto'
