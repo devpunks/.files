@@ -81,6 +81,11 @@ alias g#='(
 alias fonts='$HOME/.config/fonttable'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
+# https://stackoverflow.com/q/42004870
+alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
+# https://stackoverflow.com/q/65523749
+alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
 # https://linux.die.net/man/1/expect
