@@ -114,13 +114,6 @@ alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
 alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
-# https://en.m.wikipedia.org/wiki/Named_pipe
-# https://stackoverflow.com/q/4113986
-alias pipe='command mkfifo'
-alias cp='command cp --interactive --verbose'
-alias mv='command mv --interactive --verbose'
-alias ln='command ln --interactive --verbose --symbolic'
-
 # https://askubuntu.com/q/918379
 # https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
 # https://en.m.wikipedia.org/wiki/Chmod
