@@ -319,6 +319,11 @@ function accumulate (){ echo; }
 
 # TODO: Implementation
 #-----------------------
+# search
+function search () {
+  exist
+}
+
 # exist
 function exist () {
   local location=$1
