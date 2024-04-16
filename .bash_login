@@ -658,8 +658,6 @@ function environment () {
 # https://unix.stackexchange.com/q/335648/why-does-the-reset-command-include-a-delay
 # https://unix.stackexchange.com/q/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
 # https://stackoverflow.com/q/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
-# exec $SHELL --login
-# exec env -i HOME="$HOME" TERM="$TERM" "$SHELL" -l
 function reload () {
   termux-reload-settings
   [[ -n ${TMUX} ]] && tmux source "$HOME/.tmux.conf"
