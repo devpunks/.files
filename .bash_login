@@ -330,7 +330,7 @@ function search () {
   echo "Location 👉 $location"
 
   echo && echo Greping...
-  grep "$term"
+  grep "$term" $location
 
   echo && echo Finding...
   find "*$term*"
