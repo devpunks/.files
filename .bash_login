@@ -328,6 +328,8 @@ function search () {
 
   echo && echo Finding...
   find "*$term*"
+
+  echo && echo DONE!
 }
 
 # exist
