@@ -319,8 +319,6 @@ function refresh (){ echo; }
 function cumulate (){ echo; }
 function accumulate (){ echo; }
 
-# TODO: Implementation
-#-----------------------
 # search
 function search () {
   exist
