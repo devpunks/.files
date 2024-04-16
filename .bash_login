@@ -323,9 +323,6 @@ function accumulate (){ echo; }
 function search () {
   local term=$1
 
-  echo && echo Finding...
-  find "*$term*"
-
   echo && echo Greping...
   grep "$term"
 }
