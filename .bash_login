@@ -325,6 +325,9 @@ function search () {
 
   echo && echo Greping...
   grep "$term"
+
+  echo && echo Finding...
+  find "*$term*"
 }
 
 # exist
