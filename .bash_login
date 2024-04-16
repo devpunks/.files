@@ -321,7 +321,13 @@ function accumulate (){ echo; }
 
 # search
 function search () {
-  exist
+  local term=$1
+
+  echo && echo Finding...
+  find "*$term*"
+
+  echo && echo Greping...
+  grep "$term"
 }
 
 # exist
