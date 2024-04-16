@@ -321,6 +321,8 @@ function accumulate (){ echo; }
 
 # search
 function search () {
+  clear
+
   local term=$1
 
   echo && echo Greping...
