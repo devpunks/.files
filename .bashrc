@@ -122,7 +122,7 @@ export GREP_OPTIONS="--context=1 --color=auto \
   --directories=recurse --devices=skip --binary-files=without-match \
   --dereference-recursive --ignore-case --no-messages --line-number --with-filename \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
-  --exclude-dir='{ .cache, .config, .git, .gnupg, .npm, .ssh, .vim, log, node_modules, storage }'"
+  --exclude-dir={.cache,.config,.git,.gnupg,.npm,.ssh,.vim,log,node_modules,storage,'**/tmp/**'}"
 
 # GIT ----------------------------------------------------------------------
 export GIT_EDITOR=vi
