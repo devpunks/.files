@@ -118,9 +118,9 @@ export LS_OPTIONS='\
 # TODO: Deprecate
 #   - https://stackoverflow.com/q/31156517
 #   - https://stackoverflow.com/q/42138844/remove-line-number-option-from-grep#comment113769544_64338090
-export GREP_OPTIONS="--context=1 \
-  --directories=skip --devices=skip --binary-files=without-match \
-  --ignore-case --no-messages --line-number --with-filename --color=auto \
+export GREP_OPTIONS="--context=1 --color=auto \
+  --directories=recurse --devices=skip --binary-files=without-match \
+  --dereference-recursive --ignore-case --no-messages --line-number --with-filename \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
   --exclude-dir='{ .cache, .config, .git, .gnupg, .npm, .ssh, .vim, log, node_modules, storage }'"
 
