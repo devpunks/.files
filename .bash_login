@@ -311,6 +311,8 @@ function logs.rotate () {
 #   - https://tldp.org/LDP/abs/html/functions.html
 #   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 # =========================================================================
+# TODO: Implementation
+#-----------------------
 function reboot (){ echo; }
 function restart (){ echo; }
 function refresh (){ echo; }
