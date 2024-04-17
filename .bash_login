@@ -353,7 +353,7 @@ function exist () {
 # https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
 function permit () {
   echo "umask: $( umask )"
-  echo umask -S: `umask -S`
+  echo umask -S: $( umask -S )
 
   local location=$1
 
