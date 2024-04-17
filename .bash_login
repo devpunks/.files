@@ -385,7 +385,7 @@ function probe () {
   printf "\n\nProbing: %s\n" "$file"
 
   exist "$file" || return $?
-  echo '\nTODO: implement  probe ()'
+  printf '\nTODO: implement  probe ()'
 }
 
 # archive
