@@ -407,7 +407,7 @@ function archive () {
   # Create a ZIP archive of a file or folder.
   # zip -r "${1%%/}.zip" "$1"
 
-  test -e "$file" \
+  exist "$file" \
    && command view $file
 } # archive
 
