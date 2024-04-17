@@ -324,7 +324,7 @@ function search () {
   clear
 
   local term=$1
-  local location=$( realpath ${2:-.} )
+  local location=$( realpath "${2:-.}" )
 
   echo && echo "Search Term 🔎 $term"
   echo "Location 👉 $location"
