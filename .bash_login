@@ -609,7 +609,7 @@ weigh () {
       --exclude={.config,.gnupg,.ssh,.vim} \
     -- "$location"
 
-  weight
+  weight "$location"
 } # weigh
 
 function weight () {
