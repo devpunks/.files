@@ -422,7 +422,7 @@ function download () {
   local process='../.local/yt-dlp'
 
   clear
-  echo uri: $uri 
+  echo uri: $uri
   echo process: $process && echo
 
   return 0
