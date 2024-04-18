@@ -76,7 +76,8 @@
   aheadBehind = on
 
 [push]
-  default = simple
+  default = upstream
+
 
 [apply]
   whitespace = warn
