@@ -423,7 +423,8 @@ function download () {
 
   clear
   echo "uri: $uri"
-  echo process: "$process" && echo
+  echo process: "$process"
+  echo
 
   return 0
 
