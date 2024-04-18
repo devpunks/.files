@@ -284,8 +284,8 @@ default = heads/*
 [color "advice"]
   hint = italic
   error = reverse red
-  warning = reverse white
-  success = reverse blue
+  warning = reverse italic
+  success = bold
 
 # }}}
 
