@@ -135,7 +135,8 @@ default = heads/*
 
 # ------------------------------------------------------------------------
 # {{{ ANSI 256 COLOURS
-
+#  - https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_colors_in_git
+#
 #  The value for these configuration variables is a list of colors
 #  (at most two) and attributes separated by spaces.
 #
