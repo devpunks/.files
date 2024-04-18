@@ -408,7 +408,7 @@ function archive () {
   # zip -r "${1%%/}.zip" "$1"
 
   exist "$file" \
-   && command view $file
+   && command view "$file"
 } # archive
 
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
