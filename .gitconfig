@@ -106,9 +106,6 @@ default = heads/*
 [pull]
   rebase = true
 
-[push]
-  default = upstream
-
 [core]
   pager = cat
   autocrlf = input
