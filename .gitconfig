@@ -278,6 +278,7 @@ default = heads/*
   tag = reverse ul magenta
   remoteBranch = dim italic magenta
 
+# color.remote.<slot>
 [color "remote"]
   hint = italic cyan
   error = reverse blue
