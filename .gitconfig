@@ -78,7 +78,6 @@
 [push]
   default = upstream
 
-
 [apply]
   whitespace = warn
 
