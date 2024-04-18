@@ -280,10 +280,21 @@ default = heads/*
 
 # color.remote.<slot>
 [color "remote"]
-  hint = italic cyan
-  error = reverse blue
-  warning = reverse yellow
-  success = reverse magenta
+  error = reverse red
+  warning = reverse white
+  success = reverse blue
+
+# color.push.<slot>
+[color "push"]
+  error = reverse red
+  warning = reverse white
+  success = reverse blue
+
+# color.hint.<slot>
+[color "hint"]
+  error = reverse red
+  warning = reverse white
+  success = reverse blue
 
 # }}}
 
