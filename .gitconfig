@@ -161,7 +161,7 @@ default = heads/*
 #
 # ------------------------------------------------------------------------
 
-[color]
+[color] # https://stackoverflow.com/q/61048433/how-do-i-explore-git-colors
 
   #  control the use of color per command family. Its scope will expand as more commands learn
   #  configuration to set a default for the --color option. Set it to always if you want all output
