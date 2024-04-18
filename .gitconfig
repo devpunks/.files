@@ -135,7 +135,7 @@ default = heads/*
 
 # ------------------------------------------------------------------------
 # {{{ ANSI 256 COLOURS
-#
+
 #  The value for these configuration variables is a list of colors
 #  (at most two) and attributes separated by spaces.
 #
