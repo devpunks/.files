@@ -281,7 +281,8 @@ default = heads/*
   success = reverse blue
 
 # color.hint.<slot>
-[color "hint"]
+[color "advice"]
+  hint = italic
   error = reverse red
   warning = reverse white
   success = reverse blue
