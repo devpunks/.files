@@ -268,14 +268,6 @@ default = heads/*
   prompt = reverse bold
   error = reverse bold red
 
-# color.decorate.<slot>
-#  Use customized color for git log --decorate output.  <slot> is one of branch, remoteBranch, tag,
-#  stash or HEAD for local branches, remote-tracking branches, tags, stash and HEAD, respectively.
-[color "decorate"]
-  branch = bold magenta
-  tag = reverse ul magenta
-  remoteBranch = dim italic magenta
-
 # color.remote.<slot>
 [color "remote"]
   error = reverse red
