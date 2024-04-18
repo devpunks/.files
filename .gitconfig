@@ -233,7 +233,8 @@ default = heads/*
 #  specified color, and is one of plain (context text), meta (metainformation), frag (hunk header),
 #  func (function in hunk header), old (removed lines), new (added lines), commit (commit headers),
 #  or whitespace (highlighting whitespace errors). The values of these variables may be specified as
-#  in color.branch.<slot>.
+
+#  in color.diff.<slot>.
 [color "diff"]
   whitespace = reverse red
   meta = default # headers
