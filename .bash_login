@@ -433,7 +433,7 @@ function download () {
 # youtubedr --help
 # $process --help
 # $process --download-sections '*00:00:00.0-00:00:05.0' $uri
-  $process $uri
+  $process "$uri"
   header $uri
 } # download
 
