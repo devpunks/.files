@@ -78,7 +78,7 @@ alias g#='(
 # =========================================================================
 
 # https://github.com/powerline/fonts
-alias fonts='$HOME/.config/fonttable'
+alias fonts='$HOME/.config/fonttable && echo "\nSee ~/.local/fonts"'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
 # https://stackoverflow.com/q/42004870
