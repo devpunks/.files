@@ -646,7 +646,7 @@ function environment () {
   compgen -b | sort | column --fillrows
   echo && echo Functions:
   compgen -A function | sort | column --fillrows
-  echo && echo 👇Aliases:👇
+  echo && echo '👇Aliases:👇'
   compgen -a | sort | column --fillrows # alias -p
 
   echo && echo 👇Reserved Words:👇
