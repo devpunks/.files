@@ -643,7 +643,7 @@ function environment () {
   echo && echo 👇Exports:👇
   compgen -e | sort | column --fillrows
   echo && echo 👇Built-ins:👇
-  echo $( compgen -b ) | sort | column --fillrows
+  compgen -b | sort | column --fillrows
   echo && echo Functions:
   compgen -A function | sort | column --fillrows
   echo && echo 👇Aliases:👇
