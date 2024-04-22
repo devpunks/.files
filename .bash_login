@@ -648,8 +648,7 @@ function environment () {
   compgen -A function | sort | column --fillrows
   echo && echo '👇Aliases👇'
   compgen -a | sort | column --fillrows # alias -p
-
-  echo && echo '👇Reserved Words:👇'
+  echo && echo '👇Reserved Words👇'
   compgen -k | sort | column --fillrows
   echo && echo '👇Env Vars:👇'
   # https://unix.stackexchange.com/q/123473
