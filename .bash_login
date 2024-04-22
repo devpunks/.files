@@ -564,9 +564,11 @@ function trash () {
   #     [ -d "$1" ]  \
   #       return tree -L 1 $TMPDIR
 
-  [[ -f  "$1" ]] \
-    && echo "🚮  Sending to trash \n 🗑 ${1}" \
-    && mv -i --strip-trailing-slashes "${1}" $TMPDIR
+  for f in "$@"; do
+    exist "$f" \
+      && mv -i --strip-trailing-slashes "${f}" "$TMPDIR" \
+      && echo '🚮  Sent to trash 🗑' "${f}"
+  done
 
   tree -L 1 "$TMPDIR"
 } # trash
