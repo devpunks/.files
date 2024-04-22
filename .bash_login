@@ -542,9 +542,9 @@ function unpack () {
 # - https://geeksforgeeks.org/shred-command-in-linux-with-examples
 function destroy () {
   for f in "$@"; do
-    exist "$f" \
-      && shred --force --zero --iterations=5 --remove "$f" \
-      && echo '💣 destroyed 💥 ' "$f"
+    exist "$file" \
+      && shred --force --zero --iterations=5 --remove "$file" \
+      && echo '💣 destroyed 💥 ' "$file"
   done
 } # destroy
 
