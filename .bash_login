@@ -438,7 +438,7 @@ function download () {
 
 function open () {
   # apk
-  [[ -f $1 ]] && [[ -x $1 ]] && termux-open $1
+  [ -f "$1" ] && [ -x "$1" ] && termux-open "$1"
 
   # file
   [[ -f $1 ]] && termux-open $1
