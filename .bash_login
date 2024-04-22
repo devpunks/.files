@@ -302,7 +302,7 @@ function logs () {
 
 function logs_rotate () {
   command logrotate --help
-} # logs.rotate
+} # logs_rotate
 
 # }}}
 
