@@ -685,7 +685,7 @@ function reload () {
   echo && environment
   echo && termux-info
   printf "\n\n\n\$BASH: %s Options:\n %s" "$BASH" "$BASHOPTS"
-  echo "\n\$SHELL: $SHELL Options:\n$SHELLOPTS"
+  printf "\n\$SHELL: %s Options:\n %s" "$SHELL" "$SHELLOPTS"
   echo && echo "PATH: $PATH"
   echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
 } # reload
