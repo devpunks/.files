@@ -221,7 +221,7 @@ fi
 #==========================================================================
 # {{{ Options
 #==========================================================================
-
+# https://tldp.org/LDP/abs/html/options.html
 # https://gnu.org/software/bash/manual/html_node/The-Set-Builtin.html
 set -o notify # terminated background jobs to be reported immediately
 set -o noclobber # Prevent redirection '>' from overwriting existing files
