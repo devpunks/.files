@@ -653,7 +653,8 @@ function environment () {
   echo && echo '👇Env Vars👇'
   # https://unix.stackexchange.com/q/123473
   env | sort | column --fillrows # printenv | export -p
-  echo && echo '👇Shell Vars:👇'
+
+  echo && echo '👇Shell Vars👇'
   # TODO: refactor set
   #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
     # ( set +o posix; set; set +o posix ) | sort | column --fillrows
