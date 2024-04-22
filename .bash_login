@@ -636,7 +636,7 @@ function environment () {
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
 
-  echo && echo '👇Commands:👇'
+  echo && echo '👇Commands👇'
   compgen -c | sort | column --fillrows
   echo && echo '👇Shell Variables:👇'
   compgen -v | sort | column --fillrows
