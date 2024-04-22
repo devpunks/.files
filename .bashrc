@@ -46,6 +46,9 @@
 echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # [[ $- != *i* ]] # Check for interactive
 
+
+# TODO: FIX source SHELLCHECK ERROR - https://shellcheck.net/wiki/SC1091
+
 # Readline
 # [ -e $HOME/.inputrc ] && source $HOME/.inputrc
 
