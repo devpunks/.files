@@ -53,7 +53,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # [ -e $HOME/.inputrc ] && source $HOME/.inputrc
 
 # Colors
-[ -e $HOME/.colors ] && source $HOME/.colors
+[ -e "$HOME/.colors" ] && source "$HOME/.colors"
 
 # for rc in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
 #   # (r)un (c)omm(ands) - https://superuser.com/q/144339
