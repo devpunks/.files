@@ -554,7 +554,7 @@ function recycle () {
   # destroy "${TMPDIR}/*.*"
   command rm -rv "$TMPDIR/*"
 
-  trash
+  trash 0
 } # recycle
 
 # Trash
