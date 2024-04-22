@@ -633,8 +633,8 @@ function weight () {
 function environment () {
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
   clear
-  echo "\n\n\n\$BASH: $BASH\n👇Options👇\n$BASHOPTS"
-  echo "\n\$SHELL: $SHELL\n👇Options👇\n$SHELLOPTS"
+  printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
+  printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
 
   echo && echo 👇Commands:👇
   compgen -c | sort | column --fillrows
