@@ -300,7 +300,7 @@ function logs () {
   command logcat
 } # logs
 
-function logs.rotate () {
+function logs_rotate () {
   command logrotate --help
 } # logs.rotate
 
