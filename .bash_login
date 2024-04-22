@@ -541,13 +541,11 @@ function unpack () {
 # - https://computerhope.com/unix/shred.htm
 # - https://geeksforgeeks.org/shred-command-in-linux-with-examples
 function destroy () {
-  exist "$1" || return $?
-
-  echo "$@"
-  return
-
-  shred --force --zero --iterations=5 --remove "$@"
-  echo "💣 destroyed 💥 $@"
+  for f in "$@"; do
+    exist "$f" \
+      && shred --force --zero --iterations=5 --remove "$f" \
+      && echo '💣 destroyed 💥 ' "$f"
+  done
 } # destroy
 
 function recycle () {
