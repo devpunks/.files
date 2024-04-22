@@ -681,7 +681,7 @@ function reload () {
   setterm --initialize
   setterm --resize
   tput cup 0 0
-  [ -n ${TMUX} ] && echo && echo tmux -V
+  [ -n "$TMUX" ] && echo && echo tmux -V
   echo && environment
   echo && termux-info
   echo "\n\n\n\$BASH: $BASH Options:\n$BASHOPTS"
