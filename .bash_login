@@ -638,7 +638,7 @@ function environment () {
 
   echo && echo '👇Commands:👇'
   compgen -c | sort | column --fillrows
-  echo && echo 👇Shell Variables:👇
+  echo && echo '👇Shell Variables:👇'
   compgen -v | sort | column --fillrows
   echo && echo 👇Exports:👇
   compgen -e | sort | column --fillrows
