@@ -651,7 +651,7 @@ function environment () {
 
   echo && echo '👇Reserved Words:👇'
   compgen -k | sort | column --fillrows
-  echo && echo 👇Env Vars:👇
+  echo && echo '👇Env Vars:👇'
   # https://unix.stackexchange.com/q/123473
   env | sort | column --fillrows # printenv | export -p
   echo && echo 👇Shell Vars:👇
