@@ -640,7 +640,7 @@ function environment () {
   compgen -c | sort | column --fillrows
   echo && echo '👇Shell Variables:👇'
   compgen -v | sort | column --fillrows
-  echo && echo 👇Exports:👇
+  echo && echo '👇Exports:👇'
   compgen -e | sort | column --fillrows
   echo && echo 👇Built-ins:👇
   compgen -b | sort | column --fillrows
