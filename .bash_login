@@ -686,7 +686,8 @@ function reload () {
   setterm --resize
   tput cup 0 0
   [ -n "$TMUX" ] && echo && echo tmux -V
-  echo && environment
+  #TODO: fix posix bug
+  # echo && environment
   echo && termux-info
   echo && echo
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
