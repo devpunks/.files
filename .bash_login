@@ -689,6 +689,8 @@ function reload () {
   printf "\n\nPATH: %s\n" "$PATH"
   printf "\n\nTTY: %s\n Lines: %s x Columns: %s\n" \
     "$( tty )" "$LINES" "$COLUMNS"
+
+  echo && echo
 } # reload
 
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
