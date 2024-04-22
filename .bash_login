@@ -684,6 +684,7 @@ function reload () {
   [ -n "$TMUX" ] && echo && echo tmux -V
   echo && environment
   echo && termux-info
+  echo && echo
   printf "\n\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   printf "\n\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
   printf "\n\nPATH: %s\n" "$PATH"
