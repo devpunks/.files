@@ -139,7 +139,7 @@ alias copy='echo TODO: implement copy command for multiple destination types'
 alias rm='echo "rm is disabled, use delete, or destroy"'
 alias delete="command rm \
   --verbose --preserve-root --recursive --dir --interactive=once"
-alias fc='command fc -e vi' # https://geeksforgeeks.org/fc-command-linux-examples
+alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
 
 # https://tecmint.com/35-practical-examples-of-linux-find-command
 alias find='command find . -type f -iname'
