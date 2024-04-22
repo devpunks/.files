@@ -641,7 +641,7 @@ function environment () {
   echo && echo 👇Shell Variables:👇
   compgen -v | sort | column --fillrows
   echo && echo 👇Exports:👇
-  echo $( compgen -e ) | sort | column --fillrows
+  compgen -e | sort | column --fillrows
   echo && echo 👇Built-ins:👇
   echo $( compgen -b ) | sort | column --fillrows
   echo && echo Functions:
