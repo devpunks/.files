@@ -684,10 +684,11 @@ function reload () {
   [ -n "$TMUX" ] && echo && echo tmux -V
   echo && environment
   echo && termux-info
-  printf "\n\n\n\$BASH: %s Options:\n %s" "$BASH" "$BASHOPTS"
-  printf "\n\$SHELL: %s Options:\n %s" "$SHELL" "$SHELLOPTS"
-  echo && echo "PATH: $PATH"
-  echo && echo "TTY: $( tty ) Lines: $LINES x Columns: $COLUMNS" && echo
+  printf "\n\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
+  printf "\n\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
+  printf "\n\nPATH: %s\n" "$PATH"
+  printf "\n\nTTY: %s\n Lines: %s x Columns: %s\n" \
+    "$( tty )" "$LINES" "$COLUMNS"
 } # reload
 
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
