@@ -566,7 +566,7 @@ function trash () {
 
   for file in "$@"; do
     exist "$file" \
-      && mv -i --strip-trailing-slashes "${file}" "$TMPDIR" \
+      && mv -i --strip-trailing-slashes "$file" "$TMPDIR" \
       && echo '🚮  Sent to trash 🗑' "${file}"
   done
 
