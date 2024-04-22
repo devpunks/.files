@@ -598,7 +598,8 @@ function git_clean () {
 } # git_clean
 
 monitor () {
-  htop && ps && echo "\n$(uptime)\n"
+  htop && ps
+  printf "\n%s\n" "$(uptime)"
 } # monitor
 
 weigh () {
