@@ -610,7 +610,7 @@ weigh () {
   echo && echo "location 👉 $location"
 
   echo && echo # - https://dev.yorhel.nl/ncdu/man
-  [[ -d $location ]] && \
+  [ -d "$location" ] && \
     ncdu -2 -e --color=dark-bg \
       --exclude={.config,.gnupg,.ssh,.vim} \
     -- "$location"
