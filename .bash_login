@@ -484,7 +484,7 @@ function uncompress () {
 function zip () {
   clear
   local file=$1
-  local contents=${@:2}
+  local -r contents=${@:2}
 
   echo "file: $file"
   echo "contents: $contents"
