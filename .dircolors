@@ -121,7 +121,7 @@ function default () { echo -n "*=1:"; }
 
 function scripts () { echo -n ":*.bash=1;4:*.sh=1;4:*rc=2;3:"; }
 
-function ls_colors () { echo -n "*LS_COLORS=2;3;4;7:*dircolors=2;3;4;7:"; }
+function ls_colors () { echo -n ":*LS_COLORS=2;3;4;7:*dircolors=2;3;4;7:"; }
 
 function docs () { echo -n ":*README=2;7:*.md=7:*.markdown=7:*NOTES=7:*.h=1;3:*.sample=3:"; }
 
