@@ -711,7 +711,7 @@ function term () {
   echo && echo "TTY: $(tty)"
   printf "\n\nSize \e[3mROWS\e[23mX\e[3mCOLUMNS\e[23m: %s\n" \
     "$(stty size | tr ' ' 'x')"
-  echo && [[ -n $TMUX ]] && echo "TMUX INFO:" && tmux info
+  echo && [ -n $TMUX ] && echo "TMUX INFO:" && tmux info
   echo && echo "TERM=$TERM $( tput -V )" && toe
   echo && echo "stty: $(stty -g)" && stty -a
 
