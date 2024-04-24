@@ -620,6 +620,7 @@ weigh () {
 
 function weight () {
   local -r location=$( realpath "${1:-.}" )
+
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
   echo && echo # https://redhat.com/sysadmin/linux-df-command
   df -ah "$location"
