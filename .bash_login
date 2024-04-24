@@ -600,7 +600,7 @@ function git_clean () {
 
 monitor () {
   htop && ps
-  printf "\n %s\n" "$(uptime)"
+  printf "\n %s \n" "$(uptime)"
 } # monitor
 
 weigh () {
