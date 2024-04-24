@@ -318,7 +318,7 @@ function reboot (){ echo reboot; }
 function restart (){ echo restart; }
 function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
-function accumulate (){ echo; }
+function accumulate (){ echo accumulate; }
 
 # search
 function search () {
