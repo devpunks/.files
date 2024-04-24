@@ -314,7 +314,7 @@ function logs_rotate () {
 # TODO: Implementation
 #-----------------------
 function about () { echo about; }
-function reboot (){ echo; }
+function reboot (){ echo reboot; }
 function restart (){ echo; }
 function refresh (){ echo; }
 function cumulate (){ echo; }
