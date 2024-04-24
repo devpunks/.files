@@ -689,6 +689,7 @@ function reload () {
   #TODO: fix posix bug
   # echo && environment
   echo && termux-info
+
   echo && echo
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
