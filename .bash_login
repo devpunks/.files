@@ -454,7 +454,7 @@ function open () {
 function play () {
   # SoX
   #   - https://en.m.wikipedia.org/wiki/SoX
-  #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music/
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing/
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-split-by-silence/
   #   - https://ankitshah009.blogspot.com/2016/12/usage-of-sox-tool.html
