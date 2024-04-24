@@ -678,7 +678,7 @@ function reload () {
   source "$HOME/.bashrc" \
     && source "$HOME/.bash_profile"
 
-# reset # slowwwwww
+# reset # slowww
   tput reset
   tput sgro # reset attributes
   stty sane
