@@ -646,6 +646,7 @@ try | colorscheme devpunks
 endtry
 
 " :help xterm-true-color
+" TODO: determine xterm-true-color escapes
 " https://groups.google.com/g/vim_dev/c/wsC205JQpDo
 "let &t_8f = '[38:2:%lu:%lu:%lum'
 "let &t_8b = '[48:2:%lu:%lu:%lum'
