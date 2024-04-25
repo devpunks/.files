@@ -679,7 +679,7 @@ function! Browser() abort " Opening URL
 endfunction " Browser
 
 " -------------------------------------------------------------------------
-" :call CursorCharacter ( value = 0 )
+" :call CursorCharacter ( )
 "   - :help ascii ga g8
 "   - https://utf8-chartable.de/
 "   - https://stackoverflow.com/q/1273693
