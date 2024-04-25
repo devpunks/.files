@@ -769,8 +769,9 @@ endfunction " TabLine
 
 " =========================================================================
 " {{{ MAPPINGS
-" - https://vi.stackexchange.com/q/2089
-" - https://vi.stackexchange.com/q/7722/how-to-debug-a-mapping
+"  - :help ga
+"  - https://vi.stackexchange.com/q/2089
+"  - https://vi.stackexchange.com/q/7722/how-to-debug-a-mapping
 
 " set a map leader for more key combos
 " - https://stackoverflow.com/q/1764263/what-is-the-leader-in-a-vimrc-file
