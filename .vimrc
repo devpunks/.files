@@ -859,6 +859,7 @@ augroup END
 " -------------------------------------------------------------------------
 " Omni-Complete
 "   - https://vim.fandom.com/wiki/Omni_completion
+"   - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
 " -------------------------------------------------------------------------
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
