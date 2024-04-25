@@ -437,7 +437,7 @@ function 3bit () {
 # =========================================================================
 
 function 8bit () {
-  # https://unix.stackexchange.com/questions/9957/how-to-check-if-bash-can-print-colors
+  # https://unix.stackexchange.com/q/9957/how-to-check-if-bash-can-print-colors
   local columns=6
   local fg='\e[38;5;'
   local bg='\e[48;5;'
