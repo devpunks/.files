@@ -36,7 +36,7 @@
 #
 # =========================================================================
 
-export CLICOLOR=1 # Defaults - https://stackoverflow.com/questions/41849875
+export CLICOLOR=1 # Defaults - https://stackoverflow.com/q/41849875
 
 # https://github.com/eza-community/eza
 # https://the.exa.website/docs/colour-themes
