@@ -628,6 +628,8 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 " {{{ COLORSCHEME
 "   - ./vim/colors/default.vim
 "   - ./vim/colors/devpunks.vim
+"   * can use hexidecimal values for gui (e.g. guibg=#000000)
+"   * term modes (NONE,(s)tandout,(r)everse,(i)talic,(b)old, (u)nderline, under(c)url)
 "
 "   - https://jonasjacek.github.io/colors
 "   - http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
