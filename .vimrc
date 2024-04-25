@@ -948,7 +948,7 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
 "let g:closetag_emptyTags_caseSensitive = 1
 
 " -------------------------------------------------------------------------
-" Vim-Ruby-Miinitest - https://github.com/sunaku/vim-ruby-minitest
+" Vim-test - https://github.com/vim-test/vim-test?tab=readme-ov-file
 " -------------------------------------------------------------------------
 
 " }}}
