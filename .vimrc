@@ -884,7 +884,7 @@ function! g:GitGutter() abort
 endfunction
 
 " -------------------------------------------------------------------------
-" Scrollbar
+" Scrollbar - https://github.com/obcat/vim-sclow
 " -------------------------------------------------------------------------
 augroup FileDefaults
   " autocmd VimEnter * call sclow#update()
