@@ -171,7 +171,7 @@ function Monochrome () {
 #==========================================================================
 # {{{ ANSI 3-bit 8-Color
 #
-#   - https://retrocomputing.stackexchange.com/questions/20043
+#   - https://retrocomputing.stackexchange.com/q/20043
 
 #┏━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 #┃  ### ┃ GNOME Terminal          ┃ xterm                   ┃ non-GUI TTY ┃
