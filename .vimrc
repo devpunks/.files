@@ -864,7 +864,7 @@ augroup END
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
-" Vim (Git) Gutter
+" Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd VimEnter,BufEnter * call g:GitGutter()
