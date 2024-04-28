@@ -321,6 +321,15 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+# check
+function check () {
+  local location=$1
+  exist "$location" || return $?
+
+  shellcheck --help
+  shellcheck --format=checkstyle $location
+}
+
 # search
 function search () {
   clear
