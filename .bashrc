@@ -311,8 +311,6 @@ export PROMPT_DIRTRIM=3 # https://stackoverflow.com/qs/5687446
 
 PS_RESET="\[${DEFAULT}${NORMAL}${NORMAL_BG}\e[m\]"
 
-PS_USER='\u'
-PS_HOST='\H'
 PS_PROMPT='$( prompts )'
 PS_EXIT='$( exitstatus )'
 PS_CHEVRON="\[${BOLD}\]❭〉$PS_RESET"
