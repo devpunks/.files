@@ -569,7 +569,6 @@ function recycle () {
 } # recycle
 
 # Trash
-#  - (M) trash - https://github.com/termux/termux-packages/issues/5488
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
 function trash () {
   #   [ -f "$1" ] || \
