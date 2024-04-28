@@ -121,7 +121,7 @@ export LS_OPTIONS='\
 # TODO: Deprecate
 #   - https://stackoverflow.com/q/31156517
 #   - https://stackoverflow.com/q/42138844/remove-line-number-option-from-grep#comment113769544_64338090
-export GREP_OPTIONS="--context=1 --color=auto \
+export GREP_OPTIONS="--context=1 --color=auto --exclude=.bash_history \
   --directories=recurse --devices=skip --binary-files=without-match \
   --dereference-recursive --ignore-case --no-messages --line-number --with-filename \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
