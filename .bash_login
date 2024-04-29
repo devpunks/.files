@@ -506,45 +506,42 @@ function zip () {
     && echo && command zipinfo "$file"
 } # zip
 
-# https://linuxhandbook.com/unzip-command
-# https://linuxhandbook.com/gzip-directory
-function unpack () {
-  clear
-  local file=$1
-  local destination=$2
+function unpack () { clear
+  local operation
+  local source=$( realpath $1 )
+  local destination=$( realpath ${2:-./$source} )
 
-  echo "file: $file"
-  echo "contents: $contents"
+  exist "$source" || return $?
+  exist "$destination" || mkdir "$destination"
 
-  echo "Reading contents"
-  test -e "$file" \
-    && command view "$file" \
-    && echo && command zipinfo "$file" \
-    && echo && command unzip -lv "$file"
-
-  echo Unpack using 'unzip' or 'tar'
-#  command unzip "$file" "$destination"
-
-  return # for now
+  command view "$source"
 
   # TODO: Archive routine
   #   - https://computerhope.com/unix/uuncompr.htm
-  if [ -f "$file" ] ; then
-    case $1 in
-      *.gz)        gunzip $1       ;;
-      *.zip)       unzip $1        ;;
-      *.bz2)       bunzip2 $1      ;;
-      *.tgz)       tar xvzf $1     ;;
-      *.tar)       tar xvf $1      ;;
-      *.tar.gz)    tar xvzf $1     ;;
-      *.tar.bz2)   tar xvjf $1     ;;
-      *.Z)         uncompress $1   ;;
-      *.7z)        7z x $1         ;;
-      *)           echo "'$1' cannot be extracted via >extract<" ;;
+#   && echo && command zipinfo "$file" \
+#   && echo && command unzip -lv "$file"
+
+    case $source in
+      *.Z)       operation="uncompress $source"   ;;
+      *.7z)      operation="7z x $source"         ;;
+    # https://linuxhandbook.com/unzip-command
+      *.zip)     operation="unzip -lv $source"        ;;
+    # https://linuxhandbook.com/gzip-directory
+      *.gz)      operation="gunzip $source"       ;;
+
+      *.bz2)     operation="bunzip2 $source"      ;;
+      *.tgz)     operation="tar xvzf $source"     ;;
+#     *.tar)     operation="tar xvf $source"      ;;
+      *.tar)     operation="tar --file=$source $destination"      ;;
+      *.tar.gz)  operation="tar xvzf $source"     ;;
+      *.tar.bz2) operation="tar xvjf $source"     ;;
+      *)         echo "'$source' cannot be extracted via >extract<" ;;
     esac
-  else
-      echo "'$file' is not a valid file!"
-  fi
+
+  echo "source: $source"
+  echo "operation: $operation"
+  echo "destination: $destination"
+
 } # unpack
 
 # Destroy
