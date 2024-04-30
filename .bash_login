@@ -444,7 +444,9 @@ function permit () {
 
 # compress
 #   - https://ncompress.sourceforge.io
-function compress () {
+function compress () { clear
+  local file=$( realpath "$1" )
+
   echo 'Compressing'
 } # compress
 
