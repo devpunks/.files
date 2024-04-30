@@ -493,6 +493,15 @@ function zip () {
     && echo && command zipinfo "$file"
 } # zip
 
+# expand
+function expand () {
+
+  echo 'Expanding'
+  command uncompress --verbose --list "$1" \
+    | sed 's/date.*time/month day time/' \
+    | column --table
+}
+
 function unpack () { clear
   local operation
   local source=$( realpath "$1" )
