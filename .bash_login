@@ -373,7 +373,7 @@ function search () { clear
   echo && echo DONE!
 }
 
-function download () {
+function download () { clear
   local uri=$1
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
   local process='../.local/yt-dlp'
