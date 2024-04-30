@@ -330,6 +330,26 @@ function check () {
   shellcheck --format=checkstyle $location
 } # check
 
+# inspect
+function inspect () {
+  clear
+  local file=$1
+
+  printf "\n\nInspecing: %s" "$file"
+  printf '\nTODO: implement  inspect ()'
+}
+
+# probe
+function probe () {
+  clear
+  local file=$1
+
+  printf "\n\nProbing: %s\n" "$file"
+
+  exist "$file" || return $?
+  printf '\nTODO: implement  probe ()'
+}
+
 # search
 function search () {
   clear
