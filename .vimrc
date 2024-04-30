@@ -793,6 +793,12 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
+" Find and open file under cursor
+nnoremap <C-w>o <c-w>f
+
+nnoremap _ :split<CR>
+nnoremap <Bar> :vsplit<CR>
+
 " Equal sized panes
 nnoremap = <C-w>=
 " Maximize pane (tmux zoom)
