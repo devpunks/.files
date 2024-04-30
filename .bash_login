@@ -446,7 +446,7 @@ function permit () {
   ls "$location"
 } # permit
 
-## compress
+# compress
 #   - https://ncompress.sourceforge.io
 function compress () {
   echo 'Compressing'
