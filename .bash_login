@@ -544,6 +544,7 @@ function unpack () { clear
     *.zip)     operation="unzip -l -v -n -d $destination $source"        ;;
     # https://linux.die.net/man/1/bunzip2
     *.bz2)     operation="bunzip2 --verbose --test $source"              ;;
+    # https://linux.die.net/man/1/gunzip
     *.gz)      operation="gunzip --verbose --test --list $source"        ;;
 
     # *.tar)     operation="tar xvf $source"      ;;
