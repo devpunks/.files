@@ -410,7 +410,7 @@ function open () {
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 } # open
 
-function play () {
+function play () { clear
   # SoX
   #   - https://en.m.wikipedia.org/wiki/SoX
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
