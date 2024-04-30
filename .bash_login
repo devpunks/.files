@@ -547,8 +547,8 @@ function unpack () { clear
     *.tar.gz)  operation="tar xvzf $source"     ;;
     *.tar.bz2) operation="tar xvjf $source"     ;;
 
-      *)         echo "'$source' cannot be extracted via >extract<" ;;
-    esac
+    *)         echo "'$source' cannot be extracted via >extract<" ;;
+  esac
 
   echo "source: $source"
   echo "operation: $operation"
