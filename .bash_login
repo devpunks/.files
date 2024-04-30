@@ -453,7 +453,7 @@ function compress () { clear
  archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () { clear
-  local file=$1
+  local file=$( realpath "$1" )
   local contents=${@:2}
 
   echo file: "$file"
