@@ -546,6 +546,10 @@ function unpack () { clear
       *)         echo "'$source' cannot be extracted via >extract<" ;;
     esac
 
+  echo "source: $source"
+  echo "operation: $operation"
+  echo "destination: $destination"
+
   # TODO: Archive routine .lzma
   #   - https://computerhope.com/unix/uuncompr.htm
 
