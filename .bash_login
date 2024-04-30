@@ -486,6 +486,8 @@ function zip () { clear
   local file=$( realpath "$1" )
   local -r contents=${@:2}
 
+  exist "$file" || return $?
+
   echo "file: $file"
   echo "contents: $contents"
 
