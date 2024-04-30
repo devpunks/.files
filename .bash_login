@@ -347,8 +347,7 @@ function inspect () { clear
 }
 
 # probe
-function probe () {
-  clear
+function probe () { clear
   local file=$1
 
   printf "\n\nProbing: %s\n" "$file"
