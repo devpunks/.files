@@ -496,8 +496,8 @@ function zip () { clear
 function expand () { clear
   local source=$( realpath "$1" )
 
-  echo 'Expanding'
-  command uncompress --verbose --list "$1" \
+  echo Expanding "$source"
+  command uncompress --verbose --list "$source" \
     | sed 's/date.*time/month day time/' \
     | column --table
 } # expand
