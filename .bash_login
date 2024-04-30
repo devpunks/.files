@@ -501,6 +501,8 @@ function zip () { clear
 function expand () { clear
   local source=$( realpath "$1" )
 
+  exist "$source" || return $?
+
   echo Expanding "$source"
   command uncompress --verbose --list "$source" \
     | sed 's/date.*time/month day time/' \
