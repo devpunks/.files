@@ -535,7 +535,7 @@ function unpack () { clear
     # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
     *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source" ;;
     # xz --decompress - https://linux.die.net/man/1/unxz
-    *.xz)   operation="unxz --verbose --test --list --keep --files $source"            ;;
+    *.xz)   operation="view $source && unxz --verbose --test --list --keep --files $source" ;;
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
     *.lzma) operation="unlzma --verbose --test --list --keep --files $source"          ;;
 
