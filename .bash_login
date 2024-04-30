@@ -536,7 +536,7 @@ function unpack () { clear
   #   - https://computerhope.com/unix/uuncompr.htm
 
   command view "$source"
-  echo && command unzip -t "source"
+  echo && command unzip -t "$source"
   echo && command zipinfo "$source"
   echo && command tar --list --file="$source"
 
