@@ -357,9 +357,7 @@ function probe () { clear
 }
 
 # search
-function search () {
-  clear
-
+function search () { clear
   local term=$1
   local location=$( realpath "${2:-.}" )
 
