@@ -574,7 +574,7 @@ augroup END
 
 " -------------------------------------------------------------------------
 " Tar
-"   - http://vimcasts.org/episodes/hard-wrapping-text/
+"   - https://vi.stackexchange.com/a/2224
 " -------------------------------------------------------------------------
 let g:loaded_tar = 1
 let g:loaded_tarPlugin = 1
