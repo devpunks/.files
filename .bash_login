@@ -444,7 +444,7 @@ function permit () { clear
   # 2 - Write
   # 1 - Execute
   # chmod -v 755 $location
-  chmod u=rwX,g=rX,o= "location"
+  chmod u=rwX,g=rX,o= "$location"
 
   ls "$location"
 } # permit
