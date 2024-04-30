@@ -525,7 +525,7 @@ function unpack () { clear
       *.Z)       operation="uncompress $source"   ;;
       *.7z)      operation="7z x $source"         ;;
     # https://linuxhandbook.com/unzip-command
-      *.zip)     operation="unzip -lv $source"        ;;
+      *.zip)     operation="unzip -lv $source"    ;;
     # https://linuxhandbook.com/gzip-directory
       *.gz)      operation="gunzip $source"       ;;
 
