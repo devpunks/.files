@@ -528,7 +528,7 @@ function unpack () { clear
   exist "$destination" || mkdir "$destination"
 
   case $source in
-  #   - https://computerhope.com/unix/uuncompr.htm
+    #   - https://computerhope.com/unix/uuncompr.htm
     *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source" ;;
     *.7z)   operation="7z x $source"         ;;
 
