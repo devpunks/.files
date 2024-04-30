@@ -452,6 +452,34 @@ function compress () {
   echo 'Compressing'
 }
 
+ archive
+# - https://geeksforgeeks.org/tar-command-linux-examples
+function archive () {
+  clear
+  local file=$1
+  local contents=${@:2}
+
+  echo file: "$file"
+  echo contents: "$contents"
+
+  command zip -rv "$file" "$contents" # -u for update only
+  command tar cvzf "$file" "$contents" # -u for update only
+
+  # Creates an archive (*.tar.gz) from given directory.
+  # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
+
+  # Create a ZIP archive of a file or folder.
+  # zip -r "${1%%/}.zip" "$1"
+
+  exist "$file" \
+   && command view "$file"
+} # archive
+
+# https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
+function backup () {
+  echo Backing Up
+} # backup
+
 # expand
 function expand () {
 
