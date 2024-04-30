@@ -494,7 +494,7 @@ function zip () {
 } # zip
 
 # expand
-function expand () {
+function expand () { clear
 
   echo 'Expanding'
   command uncompress --verbose --list "$1" \
