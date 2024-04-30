@@ -548,7 +548,7 @@ function unpack () { clear
     *.gz)      operation="gunzip --verbose --test --list $source"        ;;
 
     # *.tar)     operation="tar xvf $source"      ;;
-    *.tar)     operation="tar --verbose --file=$source $destination"     ;;
+    *.tar)     operation="tar --verbose --list --file=$source $destination";;
 
     *.tgz)     operation="tar xvzf $source"     ;;
     *.tar.gz)  operation="tar xvzf $source"     ;;
