@@ -803,8 +803,6 @@ nnoremap <Bar> :vsplit<CR>
 nnoremap = <C-w>=
 " Maximize pane (tmux zoom)
 nnoremap <C-z> <C-w>_ \| <C-w>\|
-" Find and open file under cursor
-nnoremap <C-w>o <c-w>f
 
 " TODO: Prevent overriding <C-o> & C-t>
 "   - https://stackoverflow.com/q/27588664/difference-between-c-t-and-c-o-in-vim
