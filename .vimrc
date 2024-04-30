@@ -572,6 +572,13 @@ augroup FileDefaults
   autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
 augroup END
 
+" -------------------------------------------------------------------------
+" Zip
+"   - http://vimcasts.org/episodes/hard-wrapping-text/
+" -------------------------------------------------------------------------
+let g:loaded_zip = 1
+let g:loaded_zipPlugin = 1
+
 " }}}
 
 " =========================================================================
