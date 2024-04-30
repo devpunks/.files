@@ -334,7 +334,7 @@ function exist () {
 
 # check
 function check () {
-  local file=$( realpath "$1" )
+  local script=$( realpath "$1" )
 
   exist "$file" || return $?
 
