@@ -530,7 +530,7 @@ function unpack () { clear
   # TODO: Unpack routine
   #   - https://computerhope.com/unix/uuncompr.htm
   case $source in
-    *.Z)    operation="uncompress --verbose --test --list --keep $source"   ;;
+    *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source" ;;
     *.7z)   operation="7z x $source"         ;;
 
     # xz --decompress - https://linux.die.net/man/1/unxz
