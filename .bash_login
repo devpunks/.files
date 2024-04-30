@@ -447,6 +447,8 @@ function permit () {
 function compress () { clear
   local file=$( realpath "$1" )
 
+  exist "$file" || return $?
+
   echo 'Compressing'
 } # compress
 
