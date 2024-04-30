@@ -399,26 +399,6 @@ function permit () {
   ls "$location"
 } # permit
 
-# inspect
-function inspect () {
-  clear
-  local file=$1
-
-  printf "\n\nInspecing: %s" "$file"
-  printf '\nTODO: implement  inspect ()'
-}
-
-# probe
-function probe () {
-  clear
-  local file=$1
-
-  printf "\n\nProbing: %s\n" "$file"
-
-  exist "$file" || return $?
-  printf '\nTODO: implement  probe ()'
-}
-
 # archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () {
