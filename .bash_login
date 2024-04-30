@@ -559,9 +559,7 @@ function unpack () { clear
   echo && command gunzip --list -t "$source"
   echo && command bunzip --verbose --test "$source"
 
-  echo "source: $source"
-  echo "operation: $operation"
-  echo "destination: $destination"
+  echo && command tar --list --file="$source"
 } # unpack
 
 function recycle () {
