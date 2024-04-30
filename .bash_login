@@ -538,6 +538,7 @@ function unpack () { clear
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
     *.lzma) operation="unlzma --verbose --test --list $source"          ;;
 
+    # https://linuxhandbook.com/gzip-directory
     # https://linuxhandbook.com/unzip-command
     *.zip)     operation="unzip -l -v -n -d $destination $source"        ;;
     # https://linuxhandbook.com/gzip-directory
