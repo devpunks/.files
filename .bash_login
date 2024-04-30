@@ -475,6 +475,8 @@ function archive () {
 function backup () { clear
   local source=$( realpath "$1" )
 
+  exist "$source" || return $?
+
   echo Backing Up "$source"
 } # backup
 
