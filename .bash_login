@@ -527,20 +527,20 @@ function unpack () { clear
   exist "$source" || return $?
   exist "$destination" || mkdir "$destination"
 
-    # TODO: Unpack routine
-    #   - https://computerhope.com/unix/uuncompr.htm
-    case $source in
-      # .lzma
-      *.Z)       operation="unxz $source"   ;;
-      *.Z)       operation="uncompress $source"   ;;
-      *.7z)      operation="7z x $source"         ;;
+  # TODO: Unpack routine
+  #   - https://computerhope.com/unix/uuncompr.htm
+  case $source in
+    # .lzma
+    *.Z)       operation="unxz $source"   ;;
+    *.Z)       operation="uncompress $source"   ;;
+    *.7z)      operation="7z x $source"         ;;
 
-    # https://linuxhandbook.com/unzip-command
-      *.zip)     operation="unzip -l -v -n -d $destination $source"   ;;
-    # https://linuxhandbook.com/gzip-directory
-      *.bz2)     operation="bunzip2 --verbose --test $source"            ;;
-      *.gz)      operation="gunzip --verbose --test $source"             ;;
-      *.tar)     operation="tar --verbose --file=$source $destination"   ;;
+  # https://linuxhandbook.com/unzip-command
+    *.zip)     operation="unzip -l -v -n -d $destination $source"   ;;
+  # https://linuxhandbook.com/gzip-directory
+    *.bz2)     operation="bunzip2 --verbose --test $source"            ;;
+    *.gz)      operation="gunzip --verbose --test $source"             ;;
+    *.tar)     operation="tar --verbose --file=$source $destination"   ;;
 
 #     *.tar)     operation="tar xvf $source"      ;;
       *.tgz)     operation="tar xvzf $source"     ;;
