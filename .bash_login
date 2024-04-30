@@ -525,7 +525,7 @@ function unpack () { clear
       *.bz2)     operation="bunzip2 $source"      ;;
 
 #     *.tar)     operation="tar xvf $source"      ;;
-      *.tar)     operation="tar --file=$source $destination"      ;;
+      *.tgz)     operation="tar xvzf $source"     ;;
       *.tar.gz)  operation="tar xvzf $source"     ;;
       *.tar.bz2) operation="tar xvjf $source"     ;;
       *)         echo "'$source' cannot be extracted via >extract<" ;;
