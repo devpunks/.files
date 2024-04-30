@@ -529,6 +529,7 @@ function unpack () { clear
 
   # TODO: Unpack routine
   case $source in
+  #   - https://computerhope.com/unix/uuncompr.htm
     *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source" ;;
     *.7z)   operation="7z x $source"         ;;
 
