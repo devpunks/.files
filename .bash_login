@@ -521,8 +521,7 @@ function unpack () { clear
     # https://linuxhandbook.com/unzip-command
       *.zip)     operation="unzip -f -l -v -n -d $destination $source"    ;;
     # https://linuxhandbook.com/gzip-directory
-      *.gz)      operation="gunzip $source"       ;;
-
+      *.gz)      operation="gunzip --verbose $source"       ;;
       *.bz2)     operation="bunzip2 $source"      ;;
       *.tgz)     operation="tar xvzf $source"     ;;
 #     *.tar)     operation="tar xvf $source"      ;;
