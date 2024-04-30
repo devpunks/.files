@@ -415,7 +415,8 @@ function play () {
   #   - https://ankitshah009.blogspot.com/2016/12/usage-of-sox-tool.html
   #   - https://ankitshah009.blogspot.com/2017/03/sox-of-silence-original-post.html
   #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
-  sox --help
+  sox --help && echo
+  ffmpeg --help && echo
 } # play
 
 
