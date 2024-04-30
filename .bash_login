@@ -321,6 +321,14 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+# exist
+function exist () {
+  local location=$1
+
+  test -e "$location" \
+    || ( echo "No such file or directory: $location" && return 2 )
+} # exist
+
 # check
 function check () {
   local location=$1
