@@ -542,7 +542,6 @@ function unpack () { clear
       *.tgz)     operation="tar xvzf $source"     ;;
       *.tar.gz)  operation="tar xvzf $source"     ;;
       *.tar.bz2) operation="tar xvjf $source"     ;;
-      *.tar)     operation="tar --verbose --file=$source $destination"      ;;
 
       *)         echo "'$source' cannot be extracted via >extract<" ;;
     esac
