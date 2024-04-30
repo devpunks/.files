@@ -341,7 +341,9 @@ function check () {
 
 # inspect
 function inspect () { clear
-  local file=$1
+  local file=$( realpath "$1" )
+
+  exist "$file" || return $?
 
   printf "\n\nInspecing: %s" "$file"
   printf '\nTODO: implement  inspect ()'
