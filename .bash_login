@@ -353,6 +353,8 @@ function inspect () { clear
 function probe () { clear
   local file=$1
 
+  exist "$file" || return $?
+
   printf "\n\nProbing: %s\n" "$file"
 
   exist "$file" || return $?
