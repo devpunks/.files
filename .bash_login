@@ -339,8 +339,7 @@ function check () {
 } # check
 
 # inspect
-function inspect () {
-  clear
+function inspect () { clear
   local file=$1
 
   printf "\n\nInspecing: %s" "$file"
