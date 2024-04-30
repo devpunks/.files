@@ -523,7 +523,7 @@ function unpack () { clear
     # https://linuxhandbook.com/gzip-directory
       *.gz)      operation="gunzip --verbose $source"       ;;
       *.bz2)     operation="bunzip2 $source"      ;;
-      *.tgz)     operation="tar xvzf $source"     ;;
+
 #     *.tar)     operation="tar xvf $source"      ;;
       *.tar)     operation="tar --file=$source $destination"      ;;
       *.tar.gz)  operation="tar xvzf $source"     ;;
