@@ -566,15 +566,6 @@ function destroy () {
   done
 } # destroy
 
-function recycle () {
-  echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
-
-  # TODO: destroy "$TMPDIR/*.*"
-  command rm -rv "$TMPDIR/*"
-
-  trash 0
-} # recycle
-
 # Trash
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
 #   - (M) trash - https://github.com/termux/termux-packages/issues/5488
