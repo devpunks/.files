@@ -482,7 +482,7 @@ function compress () {
 # expand
 function expand () {
 
-  echo 'Un-Compressing'
+  echo 'Expanding'
   command uncompress --verbose --list "$1" \
     | sed 's/date.*time/month day time/' \
     | column --table
