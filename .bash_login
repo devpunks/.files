@@ -479,9 +479,8 @@ function compress () {
   echo 'Compressing'
 }
 
-# uncompress
-#   - https://ncompress.sourceforge.io
-function uncompress () {
+# expand
+function expand () {
 
   echo 'Un-Compressing'
   command uncompress --verbose --list "$1" \
