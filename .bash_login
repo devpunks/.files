@@ -557,6 +557,7 @@ function unpack () { clear
   echo && command zipinfo "$source"
   echo && command unzip -t "$source"
   echo && command bunzip --verbose --test "$source"
+  echo && command gunzip --verbose --test --list "$source"
 
   echo && command tar --list --file="$source"
 } # unpack
