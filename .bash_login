@@ -534,7 +534,7 @@ function unpack () { clear
     *.7z)   operation="7z x $source"         ;;
 
     # xz --decompress - https://linux.die.net/man/1/unxz
-    *.xz)   operation="unxz --verbose --test --list $source"            ;;
+    *.xz)   operation="unxz --verbose --test --list --keep $source"            ;;
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
     *.lzma) operation="unlzma --verbose --test --list $source"          ;;
 
