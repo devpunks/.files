@@ -476,15 +476,6 @@ function backup () {
   echo Backing Up
 } # backup
 
-# expand
-function expand () {
-
-  echo 'Expanding'
-  command uncompress --verbose --list "$1" \
-    | sed 's/date.*time/month day time/' \
-    | column --table
-}
-
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
 function zip () {
