@@ -357,7 +357,6 @@ function probe () { clear
 
   printf "\n\nProbing: %s\n" "$file"
 
-  exist "$file" || return $?
   printf '\nTODO: implement  probe ()'
 }
 
