@@ -494,6 +494,7 @@ function zip () { clear
 
 # expand
 function expand () { clear
+  local source=$( realpath "$1" )
 
   echo 'Expanding'
   command uncompress --verbose --list "$1" \
