@@ -440,8 +440,8 @@ function permit () {
   # 4 - Read
   # 2 - Write
   # 1 - Execute
-  # chmod -v 755 $1
-  chmod -R u=rwX,g=rX,o= "$@"
+  # chmod -v 755 $location
+  chmod --recursive u=rwX,g=rX,o= "$@"
 
   ls "$location"
 } # permit
