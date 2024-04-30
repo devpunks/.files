@@ -542,7 +542,7 @@ function unpack () { clear
     # https://linuxhandbook.com/unzip-command
     # https://linux.die.net/man/1/unzip
     *.zip)     operation="unzip -l -v -n -d $destination $source"        ;;
-    # https://linuxhandbook.com/gzip-directory
+    # https://linux.die.net/man/1/bunzip2
     *.bz2)     operation="bunzip2 --verbose --test $source"              ;;
     *.gz)      operation="gunzip --verbose --test --list $source"        ;;
 
