@@ -336,7 +336,7 @@ function check () {
   exist "$file" || return $?
 
   shellcheck --help
-  shellcheck --format=checkstyle $location
+  shellcheck --format=checkstyle $file
 } # check
 
 # inspect
