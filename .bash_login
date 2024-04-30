@@ -489,15 +489,6 @@ function archive () { clear
    && command view "$file"
 } # archive
 
-# https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
-function backup () { clear
-  local source=$( realpath "$1" )
-
-  exist "$source" || return $?
-
-  echo Backing Up "$source"
-} # backup
-
 # Zip
 #   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
 function zip () { clear
