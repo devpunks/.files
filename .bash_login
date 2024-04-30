@@ -456,6 +456,8 @@ function archive () { clear
   local file=$( realpath "$1" )
   local contents=${@:2}
 
+  exist "$file" || return $?
+
   echo file: "$file"
   echo contents: "$contents"
 
