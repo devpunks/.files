@@ -434,6 +434,9 @@ function permit () {
 
   exist "$location" || return $?
 
+  echo "umask: $( umask )"
+  echo "umask -S: $( umask -S )"
+
   # 4 - Read
   # 2 - Write
   # 1 - Execute
