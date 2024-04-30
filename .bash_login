@@ -331,8 +331,9 @@ function exist () {
 
 # check
 function check () {
-  local location=$1
-  exist "$location" || return $?
+  local file=$( realpath "$1" )
+
+  exist "$file" || return $?
 
   shellcheck --help
   shellcheck --format=checkstyle $location
