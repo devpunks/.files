@@ -508,8 +508,8 @@ function zip () {
 
 function unpack () { clear
   local operation
-  local source=$( realpath $1 )
-  local destination=$( realpath ${2:-./$source} )
+  local source=$( realpath "$1" )
+  local destination=$( realpath "${2:-./$source}" )
 
   exist "$source" || return $?
   exist "$destination" || mkdir "$destination"
