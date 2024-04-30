@@ -500,7 +500,7 @@ function expand () { clear
   command uncompress --verbose --list "$1" \
     | sed 's/date.*time/month day time/' \
     | column --table
-}
+} # expand
 
 function unpack () { clear
   local operation
