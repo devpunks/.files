@@ -545,7 +545,6 @@ function unpack () { clear
     # *.tar)     operation="tar xvf $source"      ;;
     *.tar)     operation="tar --verbose --file=$source $destination"     ;;
 
-    # *.tar)     operation="tar xvf $source"      ;;
     *.tgz)     operation="tar xvzf $source"     ;;
     *.tar.gz)  operation="tar xvzf $source"     ;;
     *.tar.bz2) operation="tar xvjf $source"     ;;
