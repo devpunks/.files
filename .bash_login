@@ -555,9 +555,6 @@ function unpack () { clear
   echo "operation: $operation"
   echo "destination: $destination"
 
-  # TODO: Archive routine .lzma
-  #   - https://computerhope.com/unix/uuncompr.htm
-
   command view "$source"
   echo && command zipinfo "$source"
   echo && command unzip -t "$source"
