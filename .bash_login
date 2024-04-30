@@ -545,6 +545,15 @@ function unpack () { clear
   echo "destination: $destination"
 } # unpack
 
+function recycle () {
+  echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
+
+  # TODO: destroy "$TMPDIR/*.*"
+  command rm -rv "$TMPDIR/*"
+
+  trash 0
+} # recycle
+
 # Destroy
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
 # - https://computerhope.com/unix/shred.htm
