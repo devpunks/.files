@@ -517,6 +517,7 @@ function unpack () { clear
     case $source in
       *.Z)       operation="uncompress $source"   ;;
       *.7z)      operation="7z x $source"         ;;
+
     # https://linuxhandbook.com/unzip-command
       *.zip)     operation="unzip -lv $source"    ;;
     # https://linuxhandbook.com/gzip-directory
