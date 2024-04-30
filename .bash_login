@@ -531,7 +531,7 @@ function unpack () { clear
   #   - https://computerhope.com/unix/uuncompr.htm
   case $source in
     # .lzma
-    *.Z)       operation="unxz $source"   ;;
+    *.Z)       operation="unxz --verbose $source"   ;;
     *.Z)       operation="uncompress $source"   ;;
     *.7z)      operation="7z x $source"         ;;
 
