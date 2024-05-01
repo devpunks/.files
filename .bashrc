@@ -53,6 +53,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # [ -e "$HOME/.inputrc" ] && source "$HOME/.inputrc"
 
 # Colors
+# shellcheck source-path=.
 [ -e "$HOME/.colors" ] && source "$HOME/.colors"
 
 # (R)un (C)ommands - https://superuser.com/q/144339
