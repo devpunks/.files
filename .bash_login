@@ -340,7 +340,6 @@ function check () {
   shellcheck --format=checkstyle "$script"
 } # check
 
-# inspect
 function inspect () { clear
   local file=$( realpath "$1" )
 
