@@ -360,7 +360,7 @@ function probe () { clear
       --exclude={.gnupg,.ssh} \
     -- "$location"
 
-  printf '\nTODO: implement  probe ()'
+  weigh "$location"
 } # probe
 
 function search () { clear
