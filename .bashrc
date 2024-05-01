@@ -57,7 +57,6 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 
 # (R)un (C)ommands - https://superuser.com/q/144339
 # for rc in `find ~/*.{ba}sh{rc} -maxdepth 1 -type f`; do
-#   # (r)un (c)omm(ands) - https://superuser.com/q/144339
 #   echo Sourcing ~/.bash run commands \(where available\)
 #   source $rc
 # done
