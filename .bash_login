@@ -638,7 +638,7 @@ function hold () {
 weigh () { clear
   local -r location=$( realpath "${1:-.}" )
 
-  echo && echo "location 👉 $location"
+  printf "\n location 👉 %s \n" "$location"
 
   echo && echo # - https://dev.yorhel.nl/ncdu/man
   [ -d "$location" ] && \
