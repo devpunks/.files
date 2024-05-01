@@ -349,7 +349,6 @@ function inspect () { clear
   printf '\nTODO: implement  inspect ()'
 } # inspect
 
-# probe
 function probe () { clear
   local file=$1
 
