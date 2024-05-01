@@ -579,7 +579,7 @@ function recycle () {
 
   command rm -rv "$TMPDIR"/**/*
 
-  trash 0
+  trash $@
 } # recycle
 
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
