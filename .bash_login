@@ -477,7 +477,8 @@ function archive () { clear
 } # archive
 
 
-  command zip -rv "$file $contents" # -u for update only
+function shrink () { clear
+  local source=$( realpath "$1" )
 
   test -e "$file" \
     && command view "$file" \
