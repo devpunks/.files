@@ -354,7 +354,11 @@ function probe () { clear
 
   printf "\n location 👉 %s \n" "$location"
 
-  printf "\n\nProbing: %s\n" "$file"
+  # - https://dev.yorhel.nl/ncdu/man
+  [ -d "$location" ] && \
+    ncdu -2 -r -e --color=dark-bg \
+      --exclude={.gnupg,.ssh} \
+    -- "$location"
 
   printf '\nTODO: implement  probe ()'
 } # probe
