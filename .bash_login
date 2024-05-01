@@ -480,10 +480,7 @@ function archive () { clear
 function shrink () { clear
   local source=$( realpath "$1" )
 
-  test -e "$file" \
-    && command view "$file" \
-    && echo && command zipinfo "$file"
-} # zip
+  exist "$source" || return $?
 
 # shrink
 function shrink () { clear
