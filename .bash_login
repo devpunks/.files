@@ -500,6 +500,11 @@ function zip () { clear
     && echo && command zipinfo "$file"
 } # zip
 
+# shrink
+function shrink () { clear
+  echo Shrinking: "$source"
+} # shrink
+
 # expand
 function expand () { clear
   local source=$( realpath "$1" )
