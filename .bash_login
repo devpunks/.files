@@ -590,7 +590,7 @@ function destroy () {
   for file in "$@"; do
     exist "$file" \
       && shred --force --zero --iterations=5 --remove "$file" \
-      && echo '💣 destroyed 💥 ' "$file"
+      && echo 💣 destroyed 💥 "$file"
   done
 } # destroy
 
