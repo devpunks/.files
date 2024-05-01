@@ -608,7 +608,6 @@ function trash () {
   tree -L 1 "$TMPDIR"
 } # trash
 
-# stream protocol
 function stream () {
   yes "$1"
 } # stream
