@@ -654,7 +654,7 @@ function weigh () {
   echo && echo # https://redhat.com/sysadmin/linux-df-command
   df -ah "$location"
   echo && echo 
-} # weight
+} # weigh
 
 function environment () {
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
