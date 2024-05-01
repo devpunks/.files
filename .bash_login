@@ -333,7 +333,7 @@ function lint () { check .*rc; }
 function check () {
   command shellcheck --help
 
-  echo "$@"
+  echo "Checking $@"
 
   for script in "$@"; do
     echo "$script"
