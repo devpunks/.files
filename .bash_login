@@ -329,7 +329,10 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
-function lint () { check .*rc; }
+function lint () {
+  check .*rc;
+}
+
 function check () { clear
   command shellcheck --help
 
