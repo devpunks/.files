@@ -31,7 +31,7 @@
 # to work in all languages and compilers. It is recommended to use
 # the decimal 27, octal \033, or hex \x1B representation as escape code.
 #
-#==========================================================================
+# =========================================================================
 # {{{ Environment Color Codes
 #
 # =========================================================================
