@@ -339,7 +339,7 @@ function check () {
   exist "$script" || return $?
 
   shellcheck --help
-  shellcheck --format=diff "$@"
+  shellcheck --format=tty "$@"
 } # check
 
 function inspect () { clear
