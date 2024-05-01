@@ -335,7 +335,6 @@ function check () {
   command shellcheck --help
 
   echo "$@"
-  exist "$script" || return $?
 
   shellcheck --help
   shellcheck --format=tty "$@"
