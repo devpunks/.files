@@ -11,10 +11,12 @@
 # -------------------------------------------------------------------------
 # Version: 0.1
 # File: .shellcheckrc
-# Source: https://github.com/devpunks
-# Author: Ahmid-Ra (github.com/snuggs)
-# Maintainer: devPunks <https://github.com/devpunks>
+# Source: https://github.com/koalaman/shellcheck
+# Author: Vidar Holen (github.com/koalaman)
+# Maintainer: https://shellcheck.net
 # Description: Shellcheck Run Commands https://shellcheck.net
 # -------------------------------------------------------------------------
 #
 
+# https://github.com/koalaman/shellcheck/wiki/directive#external-sources
+external-sources=true
