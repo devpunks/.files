@@ -352,7 +352,7 @@ function inspect () { clear
 function probe () { clear
   local -r location=$( realpath "${1:-.}" )
 
-  exist "$file" || return $?
+  printf "\n location 👉 %s \n" "$location"
 
   printf "\n\nProbing: %s\n" "$file"
 
