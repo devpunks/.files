@@ -50,7 +50,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # TODO: FIX source SHELLCHECK ERROR - https://shellcheck.net/wiki/SC1091
 
 # Readline
-# [ -e $HOME/.inputrc ] && source $HOME/.inputrc
+# [ -e "$HOME/.inputrc" ] && source "$HOME/.inputrc"
 
 # Colors
 [ -e "$HOME/.colors" ] && source "$HOME/.colors"
