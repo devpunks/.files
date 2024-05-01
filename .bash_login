@@ -316,7 +316,6 @@ function logs_rotate () {
 # =========================================================================
 # TODO: Implementation
 #-----------------------
-function lint () { echo lint; }
 function about () { echo about; }
 function reboot (){ echo reboot; }
 function restart (){ echo restart; }
