@@ -334,6 +334,8 @@ function lint () { check .*rc; }
 function check () {
   local script=$( realpath "$1" )
 
+  echo "$1"
+  echo "$@"
   exist "$script" || return $?
 
   shellcheck --help
