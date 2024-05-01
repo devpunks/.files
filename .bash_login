@@ -336,8 +336,11 @@ function check () {
 
   echo "$@"
 
-  shellcheck --help
-  shellcheck --format=tty "$@"
+  for script in "$@"; do
+    echo "$script"
+    exist "$script" \
+      && command shellcheck --format=tty "$script"
+  done
 } # check
 
 function inspect () { clear
