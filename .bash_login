@@ -336,7 +336,7 @@ function exist () {
 function check () {
   local script=$( realpath "$1" )
 
-  exist "$script" || return $?
+  exist "$rile" || return $?
 
   shellcheck --help
   shellcheck --format=checkstyle "$script"
