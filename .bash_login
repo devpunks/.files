@@ -594,7 +594,6 @@ function destroy () {
   done
 } # destroy
 
-# Trash
 #   - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
 #   - (M) trash - https://github.com/termux/termux-packages/issues/5488
 #   - https://askubuntu.com/q/468721/how-can-i-empty-the-trash-using-terminal
