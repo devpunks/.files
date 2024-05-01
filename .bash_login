@@ -645,6 +645,7 @@ monitor () {
 
 weigh () { clear
   local -r location=$( realpath "${1:-.}" )
+  local -r exclude='{.config,.gnupg,.ssh,.vim}'
 
   echo && echo "location 👉 $location"
 
