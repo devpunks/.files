@@ -851,7 +851,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " normal mode: save
-nnoremap <C-s> :update<CR> echo "Updated"
+nnoremap <C-s> :update<CR> :echo 'Updated'<CR>
 " visual mode: escape to normal and save
 vnoremap <C-s> :call update<CR>
 " insert mode: escape to normal and save
