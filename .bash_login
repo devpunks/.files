@@ -612,6 +612,13 @@ function stream () {
   yes "$1"
 } # stream
 
+function devices () { clear
+  local location="$1"
+
+  ( exist "$location" && df -a -h $location ) \
+    || df -a -h
+} # devices
+
 # https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
 # https://digitalocean.com/community/tutorials/nohup-command-in-linux
 function hold () {
