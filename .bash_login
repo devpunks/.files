@@ -336,7 +336,7 @@ function check () { clear
   echo "Checking $@"
 
   for script in "$@"; do
-    printf "\n\n\n %s 🎯" "$script\n"
+    echo && echo 🎯 "$script"
     exist "$script" \
       && command shellcheck --format=tty "$script"
   done
