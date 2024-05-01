@@ -330,7 +330,7 @@ function exist () {
 } # exist
 
 function lint () {
-  check .*rc;
+  check .*rc
 } # lint
 
 function check () { clear
