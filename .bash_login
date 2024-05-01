@@ -598,10 +598,6 @@ function destroy () {
 #   - (M) trash - https://github.com/termux/termux-packages/issues/5488
 #   - https://askubuntu.com/q/468721/how-can-i-empty-the-trash-using-terminal
 function trash () {
-  #   [ -f "$1" ] || \
-  #     [ -d "$1" ]  \
-  #       return tree -L 1 $TMPDIR
-
   for file in "$@"; do
     exist "$file" \
       && mv -i --strip-trailing-slashes "$file" "$TMPDIR" \
