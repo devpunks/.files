@@ -639,21 +639,7 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
-weigh () { clear
-  local -r location=$( realpath "${1:-.}" )
-
-  printf "\n location 👉 %s \n" "$location"
-
-  # - https://dev.yorhel.nl/ncdu/man
-  [ -d "$location" ] && \
-    ncdu -2 -r -e --color=dark-bg \
-      --exclude={.gnupg,.ssh} \
-    -- "$location"
-
-  weight "$location"
-} # weigh
-
-function weight () {
+function weigh () {
   local -r location=$( realpath "${1:-.}" )
 
   exist "$location" || return $?
