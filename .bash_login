@@ -330,6 +330,7 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
+function lint () { check .*rc; }
 function check () {
   local script=$( realpath "$1" )
 
