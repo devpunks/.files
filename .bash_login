@@ -496,7 +496,6 @@ function expand () { clear
     | column --table
 } # expand
 
-# compress
 #   - https://ncompress.sourceforge.io
 function compress () { clear
   local operation
