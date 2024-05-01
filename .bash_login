@@ -350,7 +350,7 @@ function inspect () { clear
 } # inspect
 
 function probe () { clear
-  local file=$1
+  local -r location=$( realpath "${1:-.}" )
 
   exist "$file" || return $?
 
