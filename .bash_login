@@ -332,7 +332,7 @@ function exist () {
 
 function lint () { check .*rc; }
 function check () {
-  local script=$( realpath "$1" )
+  command shellcheck --help
 
   echo "$1"
   echo "$@"
