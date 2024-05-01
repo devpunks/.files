@@ -324,7 +324,6 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
-# exist
 function exist () {
   local location=$1
 
