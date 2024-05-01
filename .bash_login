@@ -574,7 +574,7 @@ function unpack () { clear
   echo && command tar --list --file="$source"
 } # unpack
 
-function recycle () {
+function recycle () { clear
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
   command rm -rv "$TMPDIR"/**/*
