@@ -643,7 +643,7 @@ weigh () { clear
   # - https://dev.yorhel.nl/ncdu/man
   [ -d "$location" ] && \
     ncdu -2 -r -e --color=dark-bg \
-      --exclude={.config,.gnupg,.ssh,.vim} \
+      --exclude={.gnupg,.ssh} \
     -- "$location"
 
   weight "$location"
