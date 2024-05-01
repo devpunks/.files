@@ -476,16 +476,6 @@ function archive () { clear
    && command view "$file"
 } # archive
 
-# Zip
-#   - https://geeksforgeeks.org/zip-command-in-linux-with-examples
-function zip () { clear
-  local file=$( realpath "$1" )
-  local -r contents=${@:2}
-
-  exist "$file" || return $?
-
-  echo "file: $file"
-  echo "contents: $contents"
 
   command zip -rv "$file $contents" # -u for update only
 
