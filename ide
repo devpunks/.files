@@ -110,7 +110,7 @@ tmux -S $SOCKET send-keys "cd crypto && watch ./price" Enter
 # Jump back to first window
 tmux -S $SOCKET select-pane -t 2
 
-#Select Previous window again
+# Select Previous window again
 tmux -S $SOCKET previous-window
 
 # attach to new session
