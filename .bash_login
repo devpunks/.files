@@ -449,16 +449,6 @@ function permit () { clear
   ls "$location"
 } # permit
 
-# compress
-#   - https://ncompress.sourceforge.io
-function compress () { clear
-  local file=$( realpath "$1" )
-
-  exist "$file" || return $?
-
-  echo 'Compressing'
-} # compress
-
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function backup () { clear
   local source=$( realpath "$1" )
