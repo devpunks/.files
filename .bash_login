@@ -656,7 +656,9 @@ function weight () {
 
   # https://geeksforgeeks.org/du-command-linux/
   # https://redhat.com/sysadmin/du-command-options
-  du --summarize --total --time --human-readable "$location"
+  du --summarize --total --time --human-readable \
+      --exclude={.gnupg,.ssh} \
+    -- "$location"
 
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
   echo && echo # https://redhat.com/sysadmin/linux-df-command
