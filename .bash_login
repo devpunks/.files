@@ -373,7 +373,7 @@ function search () { clear
   command find "$location" -type f -iname "*$term*"
 
   echo && echo DONE!
-}
+} # search
 
 function download () { clear
   local uri=$1
