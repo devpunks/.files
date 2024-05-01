@@ -453,7 +453,6 @@ function backup () { clear
   echo Backing Up "$source"
 } # backup
 
-# archive
 # - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () { clear
   local file=$( realpath "$1" )
