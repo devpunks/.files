@@ -330,7 +330,7 @@ function exist () {
 } # exist
 
 function lint () { check .*rc; }
-function check () {
+function check () { clear
   command shellcheck --help
 
   echo "Checking $@"
