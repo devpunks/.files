@@ -336,7 +336,7 @@ function lint () {
 function check () { clear
   command shellcheck --help
 
-  echo "Checking $@"
+  echo Checking "$*"
 
   for script in "$@"; do
     echo && echo " 🎯$script"
