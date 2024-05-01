@@ -359,7 +359,6 @@ function probe () { clear
   printf '\nTODO: implement  probe ()'
 } # probe
 
-# search
 function search () { clear
   local term=$1
   local location=$( realpath "${2:-.}" )
