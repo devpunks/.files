@@ -37,7 +37,7 @@
 
 # https://computerhope.com/unix/bash/bind.htm
 alias shortcuts='(
-  echo && echo Bindings:
+  printf "Bindings:\n"
     command bind -p
   echo && echo Macros:
     command bind -s
