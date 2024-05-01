@@ -482,8 +482,6 @@ function shrink () { clear
 
   exist "$source" || return $?
 
-# shrink
-function shrink () { clear
   echo Shrinking: "$source"
 } # shrink
 
