@@ -517,6 +517,29 @@ function expand () { clear
     | column --table
 } # expand
 
+# compress
+#   - https://ncompress.sourceforge.io
+function compress () { clear
+  local operation
+  local source=$( realpath "$1" )
+  local destination=$( realpath "${2:-./$source}" )
+
+  exist "$source" || return $?
+  exist "$destination" || mkdir "$destination"
+
+  echo Compressing "$destination"
+} # compress
+
+function decompress () { clear
+  local operation
+  local source=$( realpath "$1" )
+  local destination=$( realpath "${2:-./$source}" )
+
+  exist "$source" || return $?
+  exist "$destination" || mkdir "$destination"
+
+} # decompress
+
 function unpack () { clear
   local operation
   local source=$( realpath "$1" )
