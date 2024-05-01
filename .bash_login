@@ -357,7 +357,7 @@ function probe () { clear
   printf "\n\nProbing: %s\n" "$file"
 
   printf '\nTODO: implement  probe ()'
-}
+} # probe
 
 # search
 function search () { clear
