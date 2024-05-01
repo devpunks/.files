@@ -331,7 +331,6 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
-# check
 function check () {
   local script=$( realpath "$1" )
 
