@@ -133,8 +133,8 @@ alias chmod='command chmod --verbose --preserve-root --recursive'
 # https://stackoverflow.com/q/4113986
 alias pipe='command mkfifo'
 alias ln='command ln --verbose --interactive --symbolic'
-alias cp='command cp --verbose --interactive --no-clobber'
-alias mv='command mv --verbose --interactive --no-clobber'
+alias cp='command cp --verbose --interactive --no-clobber --recursive'
+alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slashes'
 alias cut='command cut --only-delimited --delimiter="," --fields'
 alias copy='echo TODO: implement copy command for multiple destination types'
 
