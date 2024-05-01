@@ -612,6 +612,11 @@ function stream () {
   yes "$1"
 } # stream
 
+monitor () {
+  htop && ps
+  printf "\n %s \n" "$( uptime )"
+} # monitor
+
 function devices () { clear
   local location="$1"
 
