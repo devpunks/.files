@@ -577,8 +577,7 @@ function unpack () { clear
 function recycle () {
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
-  # TODO: destroy "$TMPDIR/*.*"
-  command rm -rv "$TMPDIR/*"
+  command rm -rv "$TMPDIR"/**/*
 
   trash 0
 } # recycle
