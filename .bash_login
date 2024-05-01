@@ -331,7 +331,7 @@ function exist () {
 
 function lint () {
   check .*rc;
-}
+} # lint
 
 function check () { clear
   command shellcheck --help
