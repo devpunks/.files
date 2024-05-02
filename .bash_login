@@ -81,6 +81,7 @@ alias bell='echo "\a"'
 alias fonts='$HOME/.config/fonttable && echo "\nSee ~/.local/fonts"'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
+# TODO: implementation
 # - https://graphviz.org/pdf/dotguide.pdf
 # - https://graphviz.org/doc/info/lang.html
 alias graph="command dot -Tps -o"
