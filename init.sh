@@ -92,6 +92,7 @@ pkg install openssh
 pkg install sox
 pkg install vlc
 pkg install ffmpeg
+pkg install graphviz
 pkg install asciinema
 pkg install youtubedr
 echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
