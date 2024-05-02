@@ -330,7 +330,7 @@ function chat () { clear
 
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # --plugins <plugins> --run-command <command>
-# weechat --dir "$HOME/chat" --temp-dir
+  weechat --dir "$HOME/chat" --temp-dir
 }
 
 function draw () { echo draw; }
