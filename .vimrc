@@ -361,7 +361,7 @@ set statusline=%#Statement# " initialize highlight group
 set statusline+=%{empty(&mouse)?'  ':'🐭'}
 "
 " buffer number
-set statusline+=﹟%n\ 
+set statusline+=﹟%n\ 
 
 " mode
 set statusline+=%{(mode()=~'^c')?'💲':''} " Command
