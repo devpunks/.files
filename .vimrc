@@ -404,7 +404,7 @@ set statusline+=%#Normal# " set highlight
 " formatoptions
 set statusline+=\ 📜\ %{&fo}
 " show colorscheme on statusline
-set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
+set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 
 " }}}
 
