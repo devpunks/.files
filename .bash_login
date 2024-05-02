@@ -322,8 +322,10 @@ function logs_rotate () {
 # =========================================================================
 # TODO: Implementation
 #-----------------------
-function chat () {
-  echo 🗣️CHATTY PATTY!
+function chat () { clear
+  echo && echo 🗣️CHATTY PATTY!
+  echo && echo WeeChat Version: $( weechat --version )
+  weechat --colors
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   weechat --version
 }
