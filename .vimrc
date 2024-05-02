@@ -376,7 +376,7 @@ set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
 " full file name
 set statusline+=%-4.15F%m
 " file type
-set statusline+=\ 💻%Y
+set statusline+=\ 💻%Y
 " flags
 set statusline+=\ %r%h
 " change to default highlight
