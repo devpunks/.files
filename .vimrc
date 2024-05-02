@@ -386,7 +386,7 @@ set statusline+=%-7((%p%%)⇳%)
 " cursor line, total lines
 set statusline+=%L☰LOC
 " breakpoint
-set statusline+=\ %<
+set statusline+=\ %<
 " align right
 set statusline+=%=
 " cursor column position
