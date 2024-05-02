@@ -380,7 +380,7 @@ set statusline+=\ 💻%Y
 " flags
 set statusline+=\ %r%h
 " change to default highlight
-set statusline+=\ %#StatusLine#\ 
+set statusline+=\ %#StatusLine#\ 
 " percentage
 set statusline+=%-7((%p%%)⇳%)
 " cursor line, total lines
