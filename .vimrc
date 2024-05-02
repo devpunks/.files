@@ -329,6 +329,7 @@ endif
 " =========================================================================
 set t_RV= " Disable automatic mouse detection
 if has('mouse')
+  echo "Has mouse"
 elseif has('mouse_sgr') " https://vimhelp.org/options.txt.html#sgr-mouse
   set mouse=a " Enable mouse use in a(ll) modes
   set ttymouse=sgr " Set sgr mouse
