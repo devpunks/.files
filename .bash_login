@@ -84,7 +84,8 @@ alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 # TODO: Implementation
 # - https://graphviz.org/pdf/dotguide.pdf
 # - https://graphviz.org/doc/info/lang.html
-alias graph="command dot -Tps -o"
+alias graph='command dot -Tps -o'
+alias chart='echo TODO: Implement chart'
 
 # https://stackoverflow.com/q/42004870
 alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
