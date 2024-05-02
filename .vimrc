@@ -378,7 +378,7 @@ set statusline+=%-4.15F%m
 " file type
 set statusline+=\ 💻%Y
 " flags
-set statusline+=\ %r%h
+set statusline+=\ %r%h
 " change to default highlight
 set statusline+=\ %#StatusLine#\ 
 " percentage
