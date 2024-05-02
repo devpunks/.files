@@ -357,6 +357,9 @@ set rulerformat=📏%P⏬%l⏩%c%V " overridden by statusline
 
 set statusline=%#Statement# " initialize highlight group
 
+" mouse
+set statusline+=%{empty(&mouse)?'  ':'🐭'}
+"
 " buffer number
 set statusline+=﹟%n\ 
 
