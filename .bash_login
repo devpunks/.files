@@ -327,6 +327,7 @@ function chat () { clear
   echo && echo WeeChat Version: $( weechat --version )
 
   weechat --colors
+
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # --plugins <plugins> --run-command <command>
 # weechat --dir "$HOME/chat" --temp-dir
