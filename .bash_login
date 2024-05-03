@@ -430,7 +430,7 @@ function download () { clear
 function open () { clear
   local -r location="$1"
   # apk
-  [ -f "$1" ] && [ -x "$1" ] && termux-open "$1"
+  [ -f "$location" ] && [ -x "$location" ] && termux-open "$location"
 
   # file
   [ -f "$1" ] && termux-open "$1"
