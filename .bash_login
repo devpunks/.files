@@ -497,7 +497,6 @@ function backup () { clear
   echo Backing Up "$source"
 } # backup
 
-# - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () { clear
   local -r file=$( realpath "$1" )
   local -r contents=${@:2}
