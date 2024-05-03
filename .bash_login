@@ -554,8 +554,8 @@ function decompress () { clear
 
 function unpack () { clear
   local operation
-  local source=$( realpath "$1" )
-  local destination=$( realpath "${2:-./$source}" )
+  local -r source=$( realpath "$1" )
+  local -r destination=$( realpath "${2:-./$source}" )
 
   exist "$source" || return $?
   exist "$destination" || mkdir "$destination"
