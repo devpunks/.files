@@ -602,6 +602,9 @@ function unpack () { clear
     *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source" ;;
 
     # https://linux.die.net/man/1/gunzip
+    # https://linuxhandbook.com/gunzip-command/
+    *.tar.gz)  operation="tar xvzf $source"     ;;
+    *.tgz)     operation="tar xvzf $source"     ;;
     *.gz)      operation="view $source && gunzip --verbose --test --list $source"        ;;
 
     # *.tar)     operation="tar xvf $source"      ;;
