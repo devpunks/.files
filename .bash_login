@@ -601,12 +601,6 @@ function unpack () { clear
     # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
     *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source" ;;
 
-    # https://linuxhandbook.com/gzip-directory
-    # https://linuxhandbook.com/unzip-command
-    # https://linux.die.net/man/1/unzip
-    *.zip)     operation="view $source && unzip -l -v -n -d $destination $source"        ;;
-    # https://linux.die.net/man/1/bunzip2
-    *.bz2)     operation="bunzip2 --verbose --test $source"              ;;
     # https://linux.die.net/man/1/gunzip
     *.gz)      operation="view $source && gunzip --verbose --test --list $source"        ;;
 
