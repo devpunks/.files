@@ -341,7 +341,7 @@ function prompts () {
 
 # https://baeldung.com/linux/status-codes
 function exitstatus () {
-  local status=$?
+  local -r status=$?
 
   [[ $status == 0 ]] && \
     echo " ✅ $status "
