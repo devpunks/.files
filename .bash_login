@@ -522,7 +522,6 @@ function archive () { clear
    && command view "$file"
 } # archive
 
-
 function shrink () { clear
   local -r source=$( realpath "$1" )
 
