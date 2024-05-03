@@ -488,8 +488,8 @@ function backup () { clear
 
 # - https://geeksforgeeks.org/tar-command-linux-examples
 function archive () { clear
-  local file=$( realpath "$1" )
-  local contents=${@:2}
+  local -r file=$( realpath "$1" )
+  local -r contents=${@:2}
 
   exist "$file" || return $?
 
