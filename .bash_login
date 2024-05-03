@@ -479,7 +479,7 @@ function permit () { clear
 
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function backup () { clear
-  local source=$( realpath "$1" )
+  local -r source=$( realpath "$1" )
 
   exist "$source" || return $?
 
