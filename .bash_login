@@ -322,6 +322,14 @@ function logs_rotate () {
 # =========================================================================
 # TODO: Implementation
 #-----------------------
+function draw () { echo draw; }
+function about () { echo about; }
+function reboot (){ echo reboot; }
+function restart (){ echo restart; }
+function refresh (){ echo refresh; }
+function cumulate (){ echo cumulate; }
+function accumulate (){ echo accumulate; }
+
 function chat () { clear
   echo && echo 🗣️CHATTY PATTY!
   echo && echo WeeChat Version: $( weechat --version )
