@@ -411,7 +411,7 @@ function search () { clear
 function download () { clear
   local -r uri=$1
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
-  local process='../.local/yt-dlp'
+  local -r process='../.local/yt-dlp'
 
   echo "uri: $uri"
   echo process: "$process"
