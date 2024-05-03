@@ -491,6 +491,9 @@ function backup () { clear
 
   exist "$source" || return $?
 
+  # archive
+  # compress
+
   echo Backing Up "$source"
 } # backup
 
