@@ -443,6 +443,8 @@ function open () { clear
 } # open
 
 function play () { clear
+  local location="$1"
+
   # SoX
   #   - https://en.m.wikipedia.org/wiki/SoX
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
