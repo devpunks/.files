@@ -413,7 +413,7 @@ function download () { clear
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
   local -r process='../.local/yt-dlp'
 
-  echo "uri: $uri"
+  echo uri: "$uri"
   echo process: "$process"
   echo
 
