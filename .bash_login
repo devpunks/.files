@@ -455,7 +455,6 @@ function play () { clear
   #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
   sox --help && echo
   vlc --help && echo
-  # ffplay --help && echo
 } # play
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
