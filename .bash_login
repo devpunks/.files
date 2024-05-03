@@ -519,7 +519,7 @@ function shrink () { clear
 } # shrink
 
 function expand () { clear
-  local source=$( realpath "$1" )
+  local -r source=$( realpath "$1" )
 
   exist "$source" || return $?
 
