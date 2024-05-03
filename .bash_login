@@ -637,7 +637,8 @@ function trash () {
 } # trash
 
 function stream () {
-  yes "$1"
+  local -r bytes="${1:-foo}"
+  yes "$bytes"
 } # stream
 
 monitor () {
