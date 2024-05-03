@@ -506,6 +506,7 @@ function archive () { clear
   echo file: "$file"
   echo contents: "$contents"
 
+  # https://en.m.wikipedia.org/wiki/Deflate
   command zip -rv "$file" "$contents" # -u for update only
   command tar cvzf "$file" "$contents" # -u for update only
 
