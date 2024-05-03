@@ -594,7 +594,6 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/XZ_Utils
     # xz --decompress - https://linux.die.net/man/1/unxz
-    *.xz)   operation="view $source && unxz --verbose --test --list --keep --files $source" ;;
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
     *.lzma) operation="view $source && unlzma --verbose --test --list --keep --files $source"  ;;
 
