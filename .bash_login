@@ -508,6 +508,8 @@ function archive () { clear
 
   # https://en.m.wikipedia.org/wiki/Deflate
   command zip -rv "$file" "$contents" # -u for update only
+
+# - https://geeksforgeeks.org/tar-command-linux-examples
   command tar cvzf "$file" "$contents" # -u for update only
 
   # Creates an archive (*.tar.gz) from given directory.
