@@ -649,7 +649,7 @@ monitor () {
 function devices () { clear
   local -r location="$1"
 
-  ( exist "$location" && df -a -h $location ) \
+  ( exist "$location" && df -a -h "$location" ) \
     || df -a -h
 } # devices
 
