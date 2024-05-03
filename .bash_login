@@ -647,7 +647,7 @@ monitor () {
 } # monitor
 
 function devices () { clear
-  local location="$1"
+  local -r location="$1"
 
   ( exist "$location" && df -a -h $location ) \
     || df -a -h
