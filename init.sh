@@ -58,6 +58,8 @@ pkg install shellcheck # https://shellcheck.net
 
 # {{{ COMMUNICATIONS ------------------------------------------------------
 
+pkg install weechat
+
 # MAIL CLIENTS - https://reddit.com/r/commandline/comments/p36vp0
 #  - https://meli-email.org/
 #  - https://github.com/neomutt/neomutt
