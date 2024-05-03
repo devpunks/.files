@@ -346,14 +346,6 @@ function chat () { clear
   weechat --dir "$HOME/chat" --temp-dir
 } # chat
 
-function draw () { echo draw; }
-function about () { echo about; }
-function reboot (){ echo reboot; }
-function restart (){ echo restart; }
-function refresh (){ echo refresh; }
-function cumulate (){ echo cumulate; }
-function accumulate (){ echo accumulate; }
-
 function exist () {
   local -r location="$1"
 
