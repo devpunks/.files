@@ -333,6 +333,7 @@ function chat () { clear
   # /plugin
   # /fset irc.*
   # /fset weechat.*
+  # /server add libera irc.foo.bar/1234 -tls -autoconnect
   # --plugins <plugins> --run-command <command>
   weechat --dir "$HOME/chat" --temp-dir
 }
