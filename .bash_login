@@ -573,6 +573,22 @@ function unpack () { clear
   exist "$destination" || mkdir "$destination"
 
   case $source in
+    # --------------- archives
+    # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
+    # https://linux.die.net/man/1/unzip
+    # https://linuxhandbook.com/unzip-command
+    *.zip)     operation="view $source && unzip -l -v -n -d $destination $source"  ;;
+
+    # https://en.m.wikipedia.org/wiki/RAR_(file_format)
+    *.rar)   operation="rar $source"         ;;
+
+    # https://en.m.wikipedia.org/wiki/Tar_(computing)
+    # *.tar)     operation="tar xvf $source"      ;;
+    *.tar)     operation="view $source && tar --verbose --list --file=$source $destination";;
+
+    # https://en.m.wikipedia.org/wiki/7z
+    # https://tecmint.com/7zip-command-examples-in-linux/
+    *.7z)   operation="7z $source"         ;;
     #   - https://computerhope.com/unix/uuncompr.htm
     *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source" ;;
     *.7z)   operation="7z x $source"         ;;
