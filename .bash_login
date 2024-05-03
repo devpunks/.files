@@ -370,7 +370,7 @@ function check () { clear
 } # check
 
 function inspect () { clear
-  local file=$( realpath "$1" )
+  local -r file=$( realpath "$1" )
 
   exist "$file" || return $?
 
