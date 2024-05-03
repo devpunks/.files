@@ -460,6 +460,7 @@ function play () { clear
   ffmpeg --help && echo
 
   echo ▷ Playing: "$location"
+  echo
 } # play
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
