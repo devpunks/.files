@@ -592,8 +592,7 @@ function unpack () { clear
     #   - https://computerhope.com/unix/uuncompr.htm
     *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source" ;;
 
-    # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
-    *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source" ;;
+    # https://en.m.wikipedia.org/wiki/XZ_Utils
     # xz --decompress - https://linux.die.net/man/1/unxz
     *.xz)   operation="view $source && unxz --verbose --test --list --keep --files $source" ;;
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
