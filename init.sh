@@ -56,7 +56,7 @@ pkg install shellcheck # https://shellcheck.net
 
 # }}}
 
-# {{{ Mail ----------------------------------------------------------------
+# {{{ COMMUNICATIONS ------------------------------------------------------
 
 # MAIL CLIENTS - https://reddit.com/r/commandline/comments/p36vp0
 #  - https://meli-email.org/
