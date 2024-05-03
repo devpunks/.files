@@ -597,6 +597,9 @@ function unpack () { clear
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
     *.xz)   operation="view $source && unxz --verbose --test --list --keep --files $source" ;;
     *.lzma) operation="view $source && unlzma --verbose --test --list --keep --files $source"  ;;
+    # https://en.m.wikipedia.org/wiki/Brotli
+    # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
+    *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source" ;;
 
     # https://linuxhandbook.com/gzip-directory
     # https://linuxhandbook.com/unzip-command
