@@ -330,6 +330,9 @@ function chat () { clear
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
   weechat --colors
 
+  # /plugin
+  # /fset irc.*
+  # /fset weechat.*
   # --plugins <plugins> --run-command <command>
   weechat --dir "$HOME/chat" --temp-dir
 }
