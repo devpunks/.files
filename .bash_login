@@ -393,8 +393,8 @@ function probe () { clear
 } # probe
 
 function search () { clear
-  local term=$1
-  local location=$( realpath "${2:-.}" )
+  local -r term=$1
+  local -r location=$( realpath "${2:-.}" )
 
   echo && echo "Search Term 🔎 $term"
   echo "Location 👉 $location"
