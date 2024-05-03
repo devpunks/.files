@@ -445,6 +445,8 @@ function open () { clear
 function play () { clear
   local location="$1"
 
+  exist "$location" || return $?
+
   # SoX
   #   - https://en.m.wikipedia.org/wiki/SoX
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
