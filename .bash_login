@@ -457,7 +457,7 @@ function play () { clear
   vlc --help && echo
   ffmpeg --help && echo
 
-  echo ▷ Playing: $location
+  echo ▷ Playing: "$location"
 } # play
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
