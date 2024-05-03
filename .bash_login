@@ -591,7 +591,6 @@ function unpack () { clear
     *.7z)   operation="7z $source"         ;;
     #   - https://computerhope.com/unix/uuncompr.htm
     *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source" ;;
-    *.7z)   operation="7z x $source"         ;;
 
     # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
     *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source" ;;
