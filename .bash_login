@@ -409,7 +409,7 @@ function search () { clear
 } # search
 
 function download () { clear
-  local -r uri=$1
+  local -r uri="$1"
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
   local -r process='../.local/yt-dlp'
 
