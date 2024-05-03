@@ -436,7 +436,7 @@ function open () { clear
   [ -f "$location" ] && termux-open "$location"
 
   # url
-  [ "$1" == http* ] && termux-open-url "$1"
+  [ "$location" == http* ] && termux-open-url "$location"
 
   # android
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
