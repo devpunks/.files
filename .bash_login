@@ -427,7 +427,7 @@ function download () { clear
   header "$uri"
 } # download
 
-function open () {
+function open () { clear
   # apk
   [ -f "$1" ] && [ -x "$1" ] && termux-open "$1"
 
