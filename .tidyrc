@@ -1,4 +1,5 @@
 level: 0
+errors: yes
 indent: auto
 indent-spaces:2
 doctype: html5
