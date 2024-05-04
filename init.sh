@@ -119,6 +119,10 @@ pkg install netcat-openbsd
 
 # {{{ Programming ---------------------------------------------------------
 
+pkg install jq
+pkg install vim
+pkg install tmux
+pkg install tidy
 pkg install cmake
 pkg install clang
 pkg install golang
