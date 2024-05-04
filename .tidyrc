@@ -4,3 +4,4 @@ indent-spaces:2
 uppercase-tags: no
 show-warnings: yes
 errors: yes
+accessibility-check: 0
