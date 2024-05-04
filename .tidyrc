@@ -2,3 +2,4 @@ level: 0
 indent: auto
 indent-spaces:2
 uppercase-tags: no
+show-warnings: yes
