@@ -7,3 +7,5 @@ uppercase-tags: no
 show-warnings: yes
 input-encoding: utf8
 accessibility-check: 0
+
+show-errors: yes
