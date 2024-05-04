@@ -5,5 +5,5 @@ indent-spaces:2
 doctype: html5
 uppercase-tags: no
 show-warnings: yes
-errors: yes
+input-encoding: utf8
 accessibility-check: 0
