@@ -353,6 +353,7 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
+alias tidy='tidy -config ~/.config/tidy.conf'
 function lint () {
   check .*rc
 } # lint
