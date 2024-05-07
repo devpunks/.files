@@ -2,6 +2,7 @@
 
 level: 0
 indent: auto
+doctype: omit
 newline: CRLF
 indent-spaces:2
 doctype: html5
