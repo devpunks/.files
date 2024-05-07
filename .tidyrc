@@ -3,6 +3,7 @@
 indent: auto
 doctype: omit
 newline: CRLF
+show-errors: 1
 indent-spaces:2
 doctype: html5
 uppercase-tags: no
