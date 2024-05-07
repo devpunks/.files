@@ -1,4 +1,28 @@
-# Comment
+#
+#     888    d8b      888
+#     888    Y8P      888
+#     888             888
+#     888888 888  .d88888 888  888 888d888 .d8888b
+#     888    888 d88" 888 888  888 888P"  d88P"
+#     888    888 888  888 888  888 888    888
+# d8b Y88b.  888 Y88b 888 Y88b 888 888    Y88b.
+# Y8P  "Y888 888  "Y88888  "Y88888 888     "Y8888P
+#                              888
+#                         Y8b d88P
+#                          "Y88P"
+#
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: ide
+# Source: https://github.com/devpunks
+# Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: IDE script
+# -------------------------------------------------------------------------
+
+# https://api.html-tidy.org/tidy/quickref_5.8.0.html
+#
+# =========================================================================
 
 indent: auto
 doctype: omit
