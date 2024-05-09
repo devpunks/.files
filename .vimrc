@@ -746,7 +746,7 @@ function! TabLine() abort
   let mouse="%{empty(&mouse)?'    ':'  🐭'}"
 
   let line = mouse " Initialize
-  let line .= ' devPunks😈studio %#TabLine#' " logo
+  let line ..= ' devPunks😈studio %#TabLine#' " logo
 
   let l:tabs = range( tabpagenr('$') )
   for index in l:tabs
