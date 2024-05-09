@@ -742,8 +742,11 @@ command! Colors call HighlightGroup()
 function! TabLine() abort
   if ! exists('+showtabline') | return '' | endif
 
-  let line = '' " Initialize
-  let line .= '%#TabLine#  devPunks😈👉 ' " logo
+" mouse
+  let mouse="%{empty(&mouse)?'  ':'🐭'}"
+"
+  let line = '%#TabLine#' " Initialize
+  let line .= mouse..' devPunks😈studio ' " logo
 
   let l:tabs = range( tabpagenr('$') )
   for index in l:tabs
