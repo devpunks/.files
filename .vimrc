@@ -744,7 +744,7 @@ function! TabLine() abort
 
 " mouse
   let mouse="%{empty(&mouse)?'  ':'🐭'}"
-"
+
   let line = '%#TabLine#' " Initialize
   let line .= mouse..' devPunks😈studio ' " logo
 
