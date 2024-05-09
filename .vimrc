@@ -742,7 +742,7 @@ command! Colors call HighlightGroup()
 function! TabLine() abort
   if ! exists('+showtabline') | return '' | endif
 
-" mouse
+  " mouse
   let mouse="%{empty(&mouse)?'  ':'🐭'}"
 
   let line = '%#TabLine#' " Initialize
