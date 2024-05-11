@@ -862,7 +862,6 @@ vnoremap <C-s> :call update<CR>
 inoremap <C-s> <Esc>:write<CR>a
 
 " (Insert) Tab complete
-inoremap <Tab> <C-n>
 
 " https://vimhelp.org/terminal.txt.html
 if has('terminal') | nnoremap <S-t> :terminal<CR> | endif
