@@ -214,6 +214,11 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 # {{{ Server(s)
 #
 # =========================================================================
+# Benchmarking
+#   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
+function load () { clear
+  echo TODO: 'load' Implementation
+} # load
 
 # NetCat ------------------------------------------------------------------
 #  - https://baeldung.com/linux/netcat-command
