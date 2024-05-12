@@ -38,9 +38,13 @@
 #     - https://gnu.org/software/grep/manual/html_node/Environment-Variables.html
 #     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
 #     - https://web.archive.org/web/20170713001430/http://sc.tamu.edu/help/general/unix/vars.html
-#
-#   - OSC 52 base64 remote clipboard
-#     - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh
+
+#   - Subshell Processes
+#     - https://unix.stackexchange.com/a/442704
+#     - Coprocess - https://gnu.org/software/bash/manual/html_node/Coprocesses.html
+#     - Grouping - https://gnu.org/software/bash/manual/html_node/Command-Grouping.html
+#     - Process Substitution - https://gnu.org/software/bash/manual/html_node/Process-Substitution.html
+#     - Execution Environment - https://gnu.org/software/bash/manual/html_node/Command-Execution-Environment.html
 #
 #==========================================================================
 # {{{ Imports
