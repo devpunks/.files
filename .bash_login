@@ -301,6 +301,10 @@ alias tmux.config='{
 #
 # ==========================================================================
 alias logs.sshd="command logcat -s 'sshd:*'"
+function log () {
+  command logcat
+  logs
+} # log
 
 # - syslog() - https://stackify.com/syslog-101/
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
