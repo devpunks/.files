@@ -581,7 +581,7 @@ function unpack () { clear
     *.zip)     operation="view $archive && unzip -l -v -n -d $destination $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
-    *.rar)   operation="rar $source"  ;;
+    *.rar)   operation="rar $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
     # *.tar)     operation="tar xvf $source"  ;;
