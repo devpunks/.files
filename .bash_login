@@ -334,6 +334,10 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+function load () { clear
+  echo TODO: 'load' Implementation
+} # load
+
 function balance () { clear
   nginx -help
   nginx -V
