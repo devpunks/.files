@@ -310,7 +310,7 @@ function log () {
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
 function logs () {
-  command logcat
+  tree "$LOGDIR"
 } # logs
 
 function logs_rotate () {
