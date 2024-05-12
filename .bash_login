@@ -217,7 +217,11 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 # Benchmarking
 #   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
 function load () { clear
-  echo TODO: 'load' Implementation
+  local address="${1}"
+  local concurrent=10
+  local iterations=100 # 100000
+
+  echo TODO: 'load' Implementation for "$address@${iterations}:${concurrent}"
 } # load
 
 function balance () { clear
