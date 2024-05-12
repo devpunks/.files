@@ -522,7 +522,7 @@ function pack () { clear
 
   exist "$file" \
    && command view "$file"
-} # package
+} # pack
 
 function shrink () { clear
   local -r source=$( realpath "$1" )
