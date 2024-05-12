@@ -25,6 +25,8 @@
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
 
+#   - Subshells - https://unix.stackexchange.com/a/442704
+#
 #   - GNU `coreutils`
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
 #     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
