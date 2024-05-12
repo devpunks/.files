@@ -29,6 +29,9 @@
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
 #     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 #
+#   - OSC 52 base64 remote clipboard
+#     - https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.sh
+#
 #   - Variables
 #     - https://askubuntu.com/q/26318
 #     - https://gnu.org/software/bash/manual/html_node/Bash-Variables.html
