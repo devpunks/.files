@@ -5,6 +5,7 @@
 .gist
 .less
 .lesskey
+.local
 .bundle
 .docker
 .eclipse
