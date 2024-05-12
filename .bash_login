@@ -345,18 +345,6 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
-# Benchmarking
-#   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
-function load () { clear
-  echo TODO: 'load' Implementation
-} # load
-
-function balance () { clear
-  nginx -help
-  nginx -V
-  cat "$PREFIX/etc/nginx/nginx.conf"
-} # balance
-
 function shared () { clear
   tree "$PREFIX/share"
 } # shared
