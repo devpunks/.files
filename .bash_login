@@ -604,9 +604,9 @@ function unpack () { clear
 
     # https://linux.die.net/man/1/gunzip
     # https://linuxhandbook.com/gunzip-command/
-    *.tar.gz)  operation="tar xvzf $source"  ;;
-    *.tgz)     operation="tar xvzf $source"  ;;
-    *.gz)      operation="view $source && gunzip --verbose --test --list $source"  ;;
+    *.tar.gz)  operation="tar xvzf $archive"  ;;
+    *.tgz)     operation="tar xvzf $archive"  ;;
+    *.gz)      operation="view $archive && gunzip --verbose --test --list $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/Bzip2
     # https://linux.die.net/man/1/bunzip2
