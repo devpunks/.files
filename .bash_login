@@ -36,7 +36,7 @@
 # =========================================================================
 
 # https://computerhope.com/unix/bash/bind.htm
-alias shortcuts='(
+alias shortcuts='{
   printf "Bindings:\n"
     command bind -p
   printf "\n\nMacros:\n"
