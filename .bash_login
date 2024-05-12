@@ -43,7 +43,7 @@ alias shortcuts='{
     command bind -s
   printf "\n\nVariables:\n"
     command bind -v
-)'
+}' # shortcuts
 
 # }}}
 
