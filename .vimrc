@@ -866,6 +866,7 @@ inoremap <Tab> <C-n>
 
 " https://vimhelp.org/terminal.txt.html
 if has('terminal')
+  set termwinkey=<C-w>
   nnoremap <S-t> :terminal<CR>
   set termwinkey=<C-l>
 endif
