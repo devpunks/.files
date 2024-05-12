@@ -513,7 +513,8 @@ function pack () { clear
 # - https://geeksforgeeks.org/tar-command-linux-examples
   command tar cvzf "$file" "$contents" # -u for update only
 
-  # Creates an archive (*.tar.gz) from given directory.
+  # Creates a package (*.tgz *.tar.gz) from given directory.
+  # tar cvzf "${1%%/}.tgz"  "${1%%/}/"
   # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
 
   # Create a ZIP archive of a file or folder.
