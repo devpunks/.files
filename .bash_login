@@ -540,6 +540,32 @@ function decompress () { clear
 
 } # decompress
 
+function pack () { clear
+  local -r file=$( realpath "$1" )
+  local -r contents=${@:2}
+
+  exist "$file" || return $?
+
+  echo file: "$file"
+  echo contents: "$contents"
+
+  # https://en.m.wikipedia.org/wiki/Deflate
+  command zip -rv "$file" "$contents" # -u for update only
+
+# - https://geeksforgeeks.org/tar-command-linux-examples
+  command tar cvzf "$file" "$contents" # -u for update only
+
+  # Creates a package (*.tgz *.tar.gz) from given directory.
+  # tar cvzf "${1%%/}.tgz"  "${1%%/}/"
+  # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
+
+  # Create a ZIP package of a file or folder.
+  # zip -r "${1%%/}.zip" "$1"
+
+  exist "$file" \
+   && command view "$file"
+} # pack
+
 function unpack () { clear
   local operation
   local -r archive=$( realpath "$1" )
