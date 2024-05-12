@@ -28,7 +28,6 @@
 #   - Subshell Processes
 #     - https://unix.stackexchange.com/a/442704
 #     - Coprocess - https://gnu.org/software/bash/manual/html_node/Coprocesses.html
-#     - Process Substitution - https://gnu.org/software/bash/manual/html_node/Process-Substitution.html
 #     - Grouping - https://gnu.org/software/bash/manual/html_node/Command-Grouping.html
 #     - Execution Environment - https://gnu.org/software/bash/manual/html_node/Command-Execution-Environment.html
 #
