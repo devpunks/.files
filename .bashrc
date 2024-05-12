@@ -25,7 +25,7 @@
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
 
-#   - Subshell Processes- https://unix.stackexchange.com/a/442704
+#   - Subshell Processes - https://unix.stackexchange.com/a/442704
 #     - Command Grouping - https://gnu.org/software/bash/manual/html_node/Command-Grouping.html#Command-Grouping
 #
 #   - GNU `coreutils`
