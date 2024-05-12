@@ -230,7 +230,7 @@ alias catnet='{
 alias pulse='{
   pulseaudio -k
   pulseaudio -L "module-sles-source" -D
-)' # pulse
+}' # pulse
 
 # HTTP(s) -----------------------------------------------------------------
 alias serve='command python -m http.server -d'
