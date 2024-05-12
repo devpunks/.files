@@ -61,7 +61,7 @@ alias gp='git push && git push --tags'
 alias gr='git rebase -i'
 alias gs='clear && echo && git status --column --verbose && echo'
 alias gt='git tag -a'
-alias g#='(
+alias g#='{
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
   # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   GIT_PAGER=cat \
