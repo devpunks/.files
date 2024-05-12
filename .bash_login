@@ -498,7 +498,7 @@ function backup () { clear
   echo Backing Up "$source"
 } # backup
 
-function archive () { clear
+function pack () { clear
   local -r file=$( realpath "$1" )
   local -r contents=${@:2}
 
