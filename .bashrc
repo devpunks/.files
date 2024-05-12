@@ -25,13 +25,13 @@
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
 
-#   - GNU `coreutils`
-#     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
-#     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
+#   - gnu `coreutils`
+#     - https://en.m.wikipedia.org/wiki/gnu_core_utilities
+#     - https://en.m.wikipedia.org/wiki/list_of_gnu_core_utilities_commands
 #
-#   - Common environment variables
-#     - https://gnu.org/software/bash/manual/html_node/Bash-Variables.html
-#     - https://gnu.org/software/grep/manual/html_node/Environment-Variables.html
+#   - common environment variables
+#     - https://gnu.org/software/bash/manual/html_node/bash-variables.html
+#     - https://gnu.org/software/grep/manual/html_node/environment-variables.html
 #     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
 #
 #   - OSC 52 base64 remote clipboard
