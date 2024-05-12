@@ -24,13 +24,6 @@
 #   - https://unix.stackexchange.com/q/43953
 #   - Sample .bashrc - https://tldp.org/LDP/abs/html/sample-bashrc.html
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
-
-#   - Subshell Processes
-#     - https://unix.stackexchange.com/a/442704
-#     - Coprocess - https://gnu.org/software/bash/manual/html_node/Coprocesses.html
-#     - Grouping - https://gnu.org/software/bash/manual/html_node/Command-Grouping.html
-#     - Process Substitution - https://gnu.org/software/bash/manual/html_node/Process-Substitution.html
-#     - Execution Environment - https://gnu.org/software/bash/manual/html_node/Command-Execution-Environment.html
 #
 #   - GNU `coreutils`
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
