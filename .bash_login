@@ -568,8 +568,8 @@ function decompress () { clear
 
 function unpack () { clear
   local operation
-  local -r source=$( realpath "$1" )
-  local -r destination=$( realpath "${2:-./$source}" )
+  local -r archive=$( realpath "$1" )
+  local -r destination=$( realpath "${2:-./$archive}" )
 
   exist "$source" || return $?
   exist "$destination" || mkdir "$destination"
