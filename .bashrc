@@ -63,7 +63,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 
 #==========================================================================
 # {{{ Exports
-#  Shell Variables vs. Environment Variables
+#  Shell vs. Environment Variables
 #    - https://askubuntu.com/q/26318
 #    - https://web.archive.org/web/20170713001430/http://sc.tamu.edu/help/general/unix/vars.html
 #==========================================================================
