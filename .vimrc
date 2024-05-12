@@ -868,7 +868,6 @@ inoremap <Tab> <C-n>
 if has('terminal')
   set termwinkey=<C-w>
   nnoremap <S-t> :terminal<CR>
-  set termwinkey=<C-l>
 endif
 
 " Reload .vimrc configuration
