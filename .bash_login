@@ -334,6 +334,11 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+function balance () { clear
+  nginx -V
+  nginx -help
+} # balance
+
 function shared () { clear
   tree "$PREFIX/share"
 } # shared
