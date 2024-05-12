@@ -284,7 +284,7 @@ alias ssh.add='{
 alias sshd='command sshd -X -Dddd -p8022'
 
 # TMUX --------------------------------------------------------------------
-alias tmux.config='(
+alias tmux.config='{
   tmux info
   echo && echo Server Options:
   tmux show-options -s
