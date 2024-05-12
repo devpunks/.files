@@ -613,7 +613,7 @@ function unpack () { clear
     *.tar.bz2) operation="tar xvjf $archive"  ;;
     *.bz2)     operation="bunzip2 --verbose --test $archive"  ;;
 
-    *) echo "'$source' cannot be extracted via >extract<"  ;;
+    *) echo "'$archive' cannot be extracted via >extract<"  ;;
   esac
 
   echo "source: $source"
