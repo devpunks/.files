@@ -68,7 +68,7 @@ alias g#='{
     gl --since="1 day ago"
     printf "\n Total:%d" $( gl --since="1 day ago" | wc -l )
   echo
-)'
+}' # g#
 
 # }}}
 
