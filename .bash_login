@@ -365,6 +365,11 @@ function check () { clear
   done
 } # check
 
+alias tidy='tidy -config ~/.tidyrc -o /dev/null'
+function lint () {
+  check .*rc
+} # lint
+
 function inspect () { clear
   local -r file=$( realpath "$1" )
 
