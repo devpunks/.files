@@ -600,7 +600,7 @@ function unpack () { clear
     *.lzma) operation="view $archive && unlzma --verbose --test --list --keep --files $source"  ;;
     # https://en.m.wikipedia.org/wiki/Brotli
     # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
-    *.br)   operation="view $source && brotli --decompress --verbose --test --keep --files $source"  ;;
+    *.br)   operation="view $archive && brotli --decompress --verbose --test --keep --files $source"  ;;
 
     # https://linux.die.net/man/1/gunzip
     # https://linuxhandbook.com/gunzip-command/
