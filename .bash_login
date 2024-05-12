@@ -223,7 +223,7 @@ function load () { clear
 
   echo TODO: 'load' Implementation for "$address@${iterations}:${requests}"
 
-  # ab -n $iterations -c $concurrent $address
+  # ab -n $iterations -c $requests $address
 } # load
 
 function balance () { clear
