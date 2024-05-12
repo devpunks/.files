@@ -335,7 +335,6 @@ function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
 function balance () { clear
-  nginx -V
   nginx -help
   cat "$PREFIX/etc/nginx/nginx.conf"
 } # balance
