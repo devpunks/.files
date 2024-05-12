@@ -92,6 +92,13 @@ export HOSTFILE="$HOME/.hosts"
 # https://gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-INPUTRC
 export INPUTRC="$HOME/.inputrc"
 
+# https://baeldung.com/linux/bash-calculate-time-elapsed
+# https://cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
+export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
+
+export TZ='Etc/UTC' # https://gnu.org/software/libc/manual/html_node/TZ-Variable.html
+export CRON_TZ=${TZ} # https://devicetests.com/set-timezone-crontab
+
 unset PATH
 PATH="$HOME"
 [ -d "$HOME/bin" ] && PATH="$PATH:$HOME/bin"
