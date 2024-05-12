@@ -620,11 +620,11 @@ function unpack () { clear
   echo "operation: $operation"
   echo "destination: $destination"
 
-  command view "$source"
-  echo && command unzip -l -v -t "$source"
-  echo && command zipinfo -h -l -t -v "$source"
-  echo && command bunzip2 --verbose --test "$source"
-  echo && command gunzip --verbose --test --list "$source"
+  command view "$archive"
+  echo && command unzip -l -v -t "$archive"
+  echo && command zipinfo -h -l -t -v "$archive"
+  echo && command bunzip2 --verbose --test "$archive"
+  echo && command gunzip --verbose --test --list "$archive"
 
   echo && command tar --list --file="$source"
 } # unpack
