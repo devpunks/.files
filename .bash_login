@@ -517,7 +517,7 @@ function pack () { clear
   # tar cvzf "${1%%/}.tgz"  "${1%%/}/"
   # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
 
-  # Create a ZIP archive of a file or folder.
+  # Create a ZIP package of a file or folder.
   # zip -r "${1%%/}.zip" "$1"
 
   exist "$file" \
