@@ -9,9 +9,6 @@
 .bundle
 .docker
 .eclipse
-.gist
-.local
-.ssh
 .viminfo
 
 # history
