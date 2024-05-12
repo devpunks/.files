@@ -26,6 +26,7 @@
 #   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
 
 #   - Subshell Processes- https://unix.stackexchange.com/a/442704
+#     - Command Grouping - https://gnu.org/software/bash/manual/html_node/Command-Grouping.html#Command-Grouping
 #
 #   - GNU `coreutils`
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
