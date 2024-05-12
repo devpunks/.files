@@ -577,7 +577,8 @@ function unpack () { clear
   case $archive in
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
-    *.zip)     operation="view $source && unzip -l -v -n -d $destination $source"  ;;
+    # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
+    *.zip)     operation="view $archive && unzip -l -v -n -d $destination $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
     *.rar)   operation="rar $source"  ;;
