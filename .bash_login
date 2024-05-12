@@ -224,7 +224,7 @@ alias catscan='{
 
 alias catnet='{
   while true; do command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" | nc -l -v 1234; done
-)' # catnet
+}' # catnet
 
 # PulseAudio --------------------------------------------------------------
 alias pulse='(
