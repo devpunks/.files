@@ -626,7 +626,7 @@ function unpack () { clear
   echo && command bunzip2 --verbose --test "$archive"
   echo && command gunzip --verbose --test --list "$archive"
 
-  echo && command tar --list --file="$source"
+  echo && command tar --list --file="$archive"
 } # unpack
 
 function recycle () { clear
