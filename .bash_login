@@ -222,6 +222,8 @@ function load () { clear
   local iterations=100 # 100000
 
   echo TODO: 'load' Implementation for "$address@${iterations}:${concurrent}"
+
+  # ab -n $iterations -c $concurrent $address
 } # load
 
 function balance () { clear
