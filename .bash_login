@@ -574,9 +574,7 @@ function unpack () { clear
   exist "$archive" || return $?
   exist "$destination" || mkdir "$destination"
 
-  case $source in
-    # --------------- archives
-    # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
+  case $archive in
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
     *.zip)     operation="view $source && unzip -l -v -n -d $destination $source"  ;;
