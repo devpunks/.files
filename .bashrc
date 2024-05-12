@@ -78,6 +78,16 @@ export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
 
+# GIT ---------------------------------------------------------------------
+export GIT_EDITOR=vi
+export GIT_PAGER=most
+export GIT_CONFIG_NOSYSTEM=true
+
+# TIME --------------------------------------------------------------------
+# https://baeldung.com/linux/bash-calculate-time-elapsed
+# https://cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
+export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
+
 export TZ='Etc/UTC' # https://gnu.org/software/libc/manual/html_node/TZ-Variable.html
 export CRON_TZ=${TZ} # https://devicetests.com/set-timezone-crontab
 
