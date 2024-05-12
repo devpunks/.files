@@ -353,11 +353,6 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
-alias tidy='tidy -config ~/.tidyrc -o /dev/null'
-function lint () {
-  check .*rc
-} # lint
-
 function check () { clear
   command shellcheck --help
 
