@@ -227,7 +227,7 @@ alias catnet='{
 }' # catnet
 
 # PulseAudio --------------------------------------------------------------
-alias pulse='(
+alias pulse='{
   pulseaudio -k
   pulseaudio -L "module-sles-source" -D
 )' # pulse
