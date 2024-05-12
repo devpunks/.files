@@ -336,7 +336,7 @@ function chat () { clear
 
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
-  weechat --colors
+  TERM=tmux-256color weechat --colors
 
   # /plugin
   # /fset irc.*
