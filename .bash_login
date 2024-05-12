@@ -571,7 +571,7 @@ function unpack () { clear
   local -r archive=$( realpath "$1" )
   local -r destination=$( realpath "${2:-./$archive}" )
 
-  exist "$source" || return $?
+  exist "$archive" || return $?
   exist "$destination" || mkdir "$destination"
 
   case $source in
