@@ -584,8 +584,8 @@ function unpack () { clear
     *.rar)   operation="rar $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
-    # *.tar)     operation="tar xvf $source"  ;;
-    *.tar)     operation="view $source && tar --verbose --list --file=$source $destination"  ;;
+    # *.tar)     operation="tar xvf $archive"  ;;
+    *.tar)     operation="view $archive && tar --verbose --list --file=$archive $destination"  ;;
 
     # https://en.m.wikipedia.org/wiki/7z
     # https://tecmint.com/7zip-command-examples-in-linux/
