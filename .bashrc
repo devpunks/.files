@@ -29,7 +29,8 @@
 #     - https://en.m.wikipedia.org/wiki/GNU_Core_Utilities
 #     - https://en.m.wikipedia.org/wiki/List_of_GNU_Core_Utilities_commands
 #
-#   - Common environment variables
+#   - Variables
+#     - https://askubuntu.com/q/26318
 #     - https://gnu.org/software/bash/manual/html_node/Bash-Variables.html
 #     - https://gnu.org/software/grep/manual/html_node/Environment-Variables.html
 #     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
