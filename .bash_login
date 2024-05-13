@@ -448,7 +448,7 @@ function check () { clear
   done
 } # check
 
-function lint () {
+function lint () { clear
   check .*rc
 } # lint
 
