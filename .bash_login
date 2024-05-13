@@ -379,8 +379,8 @@ function rotate () {
 
   exist "$log" || return $?
 
-  echo ⥁ rotating log: "$log"
-  command logrotate --help
+  echo && command logrotate --help
+  echo && echo ⥁ rotating log: "$log"
 } # rotate
 
 # }}}
