@@ -381,7 +381,7 @@ function rotate () {
 
   echo ⥁ rotating log: "$log"
   command logrotate --help
-} # logs_rotate
+} # rotate
 
 # }}}
 
