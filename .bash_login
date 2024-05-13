@@ -268,8 +268,11 @@ function load () { clear
 function balance () { clear
   nginx -help
   nginx -V
-  cat "$PREFIX/etc/nginx/nginx.conf"
-  # nginx -c "$HOME/nginx.conf"
+  exist "$PREFIX/etc/nginx/nginx.conf" && cat "$PREFIX/etc/nginx/nginx.conf"
+  exist "$HOME/nginx.conf" && cat "$HOME/nginx.conf"
+
+  nginx -c "$HOME/nginx.conf" \
+    && echo Started nginx load balancer on PORT 8080
 } # balance
 
 # HTTP(s) -----------------------------------------------------------------
