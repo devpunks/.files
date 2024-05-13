@@ -428,9 +428,14 @@ function check () { clear
   echo Checking "$*"
 
   for script in "$@"; do
-    echo && echo " 🎯$script"
-    exist "$script" \
-      && command shellcheck --format=tty "$script"
+    echo && echo " 🎯 $script"
+    exist "$script" || continue
+
+    case "$script" in
+      *) echo "'$script' has no checker"  ;;
+    esac
+    #
+    # command shellcheck --format=tty "$script"
   done
 } # check
 
