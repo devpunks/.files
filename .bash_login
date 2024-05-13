@@ -218,6 +218,10 @@ function limit () { clear
   echo TODO: 'limit' Implementation
 } # load
 
+function unlimit () { clear
+  echo TODO: 'unlimit' Implementation
+} # unlimit
+
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
 #   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
