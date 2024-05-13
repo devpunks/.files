@@ -350,6 +350,13 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+function draw () { echo draw; }
+@ http://gnuplot.info
+function plot () { clear
+  gnuplot --version
+  gnuplot --help
+} # plot
+
 function shared () { clear
   tree "$PREFIX/share"
 } # shared
