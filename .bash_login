@@ -367,6 +367,7 @@ function log () {
 } # log
 
 # - syslog() - https://stackify.com/syslog-101/
+# - https://plesk.com/blog/featured/linux-logs-explained
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
 function logs () {
