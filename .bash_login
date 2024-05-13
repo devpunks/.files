@@ -214,6 +214,10 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 # {{{ Server(s)
 #
 # =========================================================================
+function limit () { clear
+  echo TODO: 'limit' Implementation
+} # load
+
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
 #   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
