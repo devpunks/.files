@@ -207,9 +207,9 @@ alias ls="command ls $LS_OPTIONS -l"
 alias vdir="command vdir $LS_OPTIONS -l"
 alias branch='clear && tree -d -L 4'
 # https://github.com/eza-community/eza
-alias list="command eza --level=2 --color=auto \
-  --all --grid --icons --long --git --header --classify \
-  --group-directories-first --ignore-glob '.git|node_modules|storage'"
+alias list="command eza --level=2 --color=auto --classify=auto \
+  --all --links --grid --icons --long --header --no-user --octal-permissions\
+  --group-directories-first --total-size --git --git-repos --git-ignore --ignore-glob '.git'"
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
 
 alias curl='command curl --verbose \
