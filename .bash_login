@@ -534,28 +534,6 @@ function play () { clear
   echo
 } # play
 
-# https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
-# https://superuser.com/q/168578/why-must-a-folder-be-executable
-# https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
-# https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
-# https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
-function permit () { clear
-  local -r location=$( realpath "$1" )
-
-  exist "$location" || return $?
-
-  echo "umask: $( umask )"
-  echo "umask -S: $( umask -S )"
-
-  # 4 - Read
-  # 2 - Write
-  # 1 - Execute
-  # chmod -v 755 $location
-  chmod u=rwX,g=rX,o= "$location"
-
-  ls "$location"
-} # permit
-
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function backup () { clear
   local -r source=$( realpath "$1" )
