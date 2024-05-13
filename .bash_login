@@ -436,8 +436,6 @@ function check () { clear
       *nginx.conf) nginx -T -q -c "$script" ;;
       * | *.sh) command shellcheck --format=tty "$script"  ;;
     esac
-    #
-    # command shellcheck --format=tty "$script"
   done
 } # check
 
