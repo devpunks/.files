@@ -224,7 +224,7 @@ function load () { clear
   local connections=10
   local requests=100 # 100000
 
-  echo TODO: 'load' Implementation for "$address@${iterations}:${requests}"
+  echo TODO: 'load' Implementation for "$address@${requests}:${connections}"
 
   # ab -n $iterations -c $requests $address
 } # load
