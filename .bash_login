@@ -217,6 +217,8 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
 #   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
+#   - https://engineering.appfolio.com/appfolio-engineering/2019/1/18/benchmarking-ruby-app-servers-badly
+#   - https://engineering.appfolio.com/appfolio-engineering/2019/4/21/wrk-it-my-experiences-load-testing-with-an-interesting-new-tool
 function load () { clear
   local address="${1}"
   local requests=10
