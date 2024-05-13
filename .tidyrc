@@ -37,8 +37,6 @@ show-warnings: yes
 input-encoding: utf8
 accessibility-check: 0
 
-output-file: /dev/null
-
 mute: INSERTING_TAG
 mute: MISSING_DOCTYPE
 mute: MISSING_TITLE_ELEMENT
