@@ -351,7 +351,7 @@ function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
 function draw () { echo draw; }
-@ http://gnuplot.info
+# http://gnuplot.info
 function plot () { clear
   gnuplot --version
   gnuplot --help
