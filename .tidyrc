@@ -23,6 +23,7 @@
 # https://api.html-tidy.org/tidy/quickref_5.8.0.html
 #
 # =========================================================================
+output-file: /dev/null
 
 indent: auto
 doctype: omit
