@@ -374,7 +374,12 @@ function logs () {
   tree "$LOGDIR"
 } # logs
 
-function logs_rotate () {
+function rotate () {
+  local log=${1}
+
+  exist "$log" || return $?
+
+  echo ⥁ rotating log: "$log"
   command logrotate --help
 } # logs_rotate
 
