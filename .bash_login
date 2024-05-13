@@ -432,7 +432,9 @@ function check () { clear
     exist "$script" || continue
 
     case "$script" in
-      *) echo "'$script' has no checker"  ;;
+      *.html) tidy "$script" ;;
+      *nginx.conf) nginx -T -q -c "$script" ;;
+      * | *.sh) command shellcheck --format=tty "$script"  ;;
     esac
     #
     # command shellcheck --format=tty "$script"
