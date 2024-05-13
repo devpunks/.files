@@ -425,8 +425,6 @@ function exist () {
 } # exist
 
 function check () { clear
-  command shellcheck --help
-
   echo Checking "$*"
 
   for script in "$@"; do
