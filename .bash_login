@@ -448,7 +448,6 @@ function check () { clear
   done
 } # check
 
-alias tidy='tidy -utf8 '
 function lint () {
   check .*rc
 } # lint
