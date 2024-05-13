@@ -269,6 +269,7 @@ function balance () { clear
   nginx -help
   nginx -V
   cat "$PREFIX/etc/nginx/nginx.conf"
+  # nginx -c "$HOME/nginx.conf"
 } # balance
 
 # HTTP(s) -----------------------------------------------------------------
