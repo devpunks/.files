@@ -448,7 +448,7 @@ function check () { clear
   done
 } # check
 
-alias tidy='tidy -config ~/.tidyrc -o /dev/null'
+alias tidy='tidy -utf8 '
 function lint () {
   check .*rc
 } # lint
