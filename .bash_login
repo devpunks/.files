@@ -220,7 +220,7 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 #   - https://engineering.appfolio.com/appfolio-engineering/2019/1/18/benchmarking-ruby-app-servers-badly
 #   - https://engineering.appfolio.com/appfolio-engineering/2019/4/21/wrk-it-my-experiences-load-testing-with-an-interesting-new-tool
 function load () { clear
-  local address="${1}"
+  local url="${1}"
   local connections=10
   local requests=100 # 100000
 
