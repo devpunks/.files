@@ -446,7 +446,6 @@ function rotate () {
 # =========================================================================
 # TODO: Implementation
 #-----------------------
-function about () { echo about; }
 function reboot (){ echo reboot; }
 function restart (){ echo restart; }
 function refresh (){ echo refresh; }
