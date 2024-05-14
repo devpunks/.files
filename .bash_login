@@ -172,21 +172,6 @@ alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
 alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
-# https://man7.org/linux/man-pages/man1/chown.1p.html
-# https://en.m.wikipedia.org/wiki/Chown
-alias chown='command chown --verbose --preserve-root --recursive'
-
-# https://en.m.wikipedia.org/wiki/Chgrp
-# https://man7.org/linux/man-pages/man1/chgrp.1p.html
-alias chgrp='command chgrp --verbose --preserve-root --recursive'
-
-# https://askubuntu.com/q/918379
-# https://en.m.wikipedia.org/wiki/Chmod
-# https://gnu.org/software/coreutils/chmod
-# https://man7.org/linux/man-pages/man1/chmod.1p.html
-# https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
-alias chmod='command chmod --verbose --preserve-root --recursive'
-
 # https://en.m.wikipedia.org/wiki/Named_pipe
 # https://stackoverflow.com/q/4113986
 alias pipe='command mkfifo'
