@@ -227,16 +227,6 @@ alias wait='command wait' # https://baeldung.com/linux/wait-command
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
-# TODO: Find alternative
-#   -https://redhat.com/sysadmin/netstat
-#   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
-#alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
-alias ports="netstat --verbose --all --numeric --listening --programs --wide"
-# https://redhat.com/sysadmin/ifconfig-vs-ip
-alias ip='command ip --color address | \
-  command grep --color=auto --perl-regexp "(inet)\s[^/]+" \
-  && echo && command ip --color route'
-
 # ----------------------
 # Ruby
 # ----------------------
