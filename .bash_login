@@ -249,6 +249,22 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 # {{{ Server(s)
 #
 # =========================================================================
+
+# https://man7.org/linux/man-pages/man8/tc.8.html
+alias traffic='tc --help'
+
+# https://redhat.com/sysadmin/ifconfig-vs-ip
+alias ip='command ip --color address | \
+  command grep --color=auto --perl-regexp "(inet)\s[^/]+" \
+  && echo && command ip --color route \
+  && echo && command route -v -ee -A inet'
+
+# TODO: Find alternative
+#   -https://redhat.com/sysadmin/netstat
+#   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
+#alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
+alias ports="netstat --verbose --all --numeric --listening --programs --wide"
+
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
 #   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
