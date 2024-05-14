@@ -40,6 +40,7 @@ pkg install pv # progress
 pkg install man
 pkg install eza
 pkg install git
+pkg install tmux
 pkg install ncdu
 pkg install htop
 pkg install most
