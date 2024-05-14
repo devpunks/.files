@@ -671,7 +671,6 @@ function decompress () { clear
 
   exist "$source" || return $?
   exist "$destination" || mkdir "$destination"
-
 } # decompress
 
 function pack () { clear
