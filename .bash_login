@@ -144,11 +144,6 @@ alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 alias graph='command dot -Tps -o'
 alias chart='echo TODO: Implement chart'
 
-# https://stackoverflow.com/q/42004870
-alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
-# https://stackoverflow.com/q/65523749
-alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
-
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
 # https://linux.die.net/man/1/expect
