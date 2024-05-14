@@ -278,8 +278,7 @@ function host (){ clear
   [ "$domain" ] \
     || { echo invalid domain: "$domain" && return 1; }
 
-  echo && echo && command host "$domain"
-  echo && echo && command host -v "$domain"
+  echo && echo && command host -v -C "$domain"
   echo && echo && command host -v -a "$domain"
 
   ping $domain
