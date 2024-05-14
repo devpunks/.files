@@ -287,7 +287,7 @@ function host () { clear
   command host -v -R 3 -C "$domain"
   echo && command host -v -R 3 "$domain"
   echo && echo && ping $domain
-  echo && command host "$domain"
+  echo && command host -R 3 "$domain"
   echo
 } # host
 
