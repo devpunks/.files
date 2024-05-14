@@ -36,6 +36,7 @@ termux-info
 # {{{ Shell ---------------------------------------------------------------
 
 pkg install bc
+pkg install pv # progress
 pkg install man
 pkg install eza
 pkg install git
