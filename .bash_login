@@ -452,6 +452,12 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+# https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
+function about () {
+  stat "$location"
+  echo about;
+} # about
+
 # Runit
 # https://en.m.wikipedia.org/wiki/Runit
 # https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
