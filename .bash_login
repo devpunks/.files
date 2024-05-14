@@ -180,6 +180,7 @@ alias cp='command cp --verbose --interactive --no-clobber --recursive'
 alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slashes'
 alias cut='command cut --only-delimited --delimiter="," --fields'
 alias copy='echo TODO: implement copy command for multiple destination types'
+alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo "rm is disabled, use delete, or destroy"'
