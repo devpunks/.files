@@ -283,8 +283,9 @@ function host () { clear
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
   echo && echo SOA:
-  command host -v -C "$domain"
-  echo && command host -v "$domain"
+  command host -t SOA "$domain"
+  command host -v -R 3 -C "$domain"
+  echo && command host -v -R 3 "$domain"
   echo && echo && ping $domain
   echo && command host "$domain"
   echo
