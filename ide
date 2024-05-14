@@ -91,7 +91,7 @@ tmux -S "$SOCKET" new-window
 tmux -S "$SOCKET" rename-window 'STATS'
 
 # Select monitor (htop) PANE & Start
-tmux -S $SOCKET select-pane -T '?HTOP?'
+tmux -S "$SOCKET" select-pane -T '?HTOP?'
 sleep $DELAY
 tmux -S $SOCKET send-keys 'monitor' Enter
 
