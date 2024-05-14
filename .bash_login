@@ -228,9 +228,8 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 # TODO: Find alternative
 #   -https://redhat.com/sysadmin/netstat
 #   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
-alias port="netstat --all --numeric --timers"
-alias ports="netstat --verbose --numeric \
-  --all --tcp --udp --listening --programs --wide"
+#alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
+alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 # https://redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='command ip addr | command grep --color=auto --perl-regexp "(inet)\s[^/]+" - '
 
