@@ -252,7 +252,7 @@ alias ip='command ip --color address | \
   && echo && command ip --color route \
   && echo && command route -v -ee -A inet'
 
-# TODO: Find alternative
+# TODO: Find netstat alternative
 #   - https://man7.org/linux/man-pages/man8/netstat.8.html
 #   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
 #alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
