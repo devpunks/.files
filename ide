@@ -72,7 +72,7 @@ tmux -S "$SOCKET" send-keys 'pwd' Enter
 
 # Split first pane horizontally
 tmux -S "$SOCKET" select-pane -t 1
-tmux -S $SOCKET split-window -t 1 -v -l 20%
+tmux -S "$SOCKET" split-window -t 1 -v -l 20%
 sleep $DELAY
 tmux -S $SOCKET send-keys 'clear' Enter
 
