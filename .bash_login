@@ -454,6 +454,10 @@ function accumulate (){ echo accumulate; }
 
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
+  local location="${1}"
+
+  exist "$location" || return $?
+
   stat "$location"
   echo about;
 } # about
