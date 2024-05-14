@@ -93,16 +93,16 @@ tmux -S "$SOCKET" rename-window 'STATS'
 # Select monitor (htop) PANE & Start
 tmux -S "$SOCKET" select-pane -T '?HTOP?'
 sleep $DELAY
-tmux -S $SOCKET send-keys 'monitor' Enter
+tmux -S "$SOCKET" send-keys 'monitor' Enter
 
 # Split window
-tmux -S $SOCKET split-window -v -l 85%
+tmux -S "$SOCKET" split-window -v -l 85%
 sleep $DELAY
 # Start vim
-tmux -S $SOCKET send-keys 'cd crypto && vi price' Enter
+tmux -S "$SOCKET" send-keys 'cd crypto && vi price' Enter
 
 # Split pane vertically by 40%
-tmux -S $SOCKET split-window -h -l 40%
+tmux -S "$SOCKET" split-window -h -l 40%
 sleep $DELAY
 # Start price
 tmux -S $SOCKET send-keys "cd crypto && watch ./price" Enter
