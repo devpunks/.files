@@ -133,6 +133,11 @@ alias bell='echo "\a"'
 alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
+# https://stackoverflow.com/q/42004870
+alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
+# https://stackoverflow.com/q/65523749
+alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+
 # TODO: Implementation
 # - https://graphviz.org/pdf/dotguide.pdf
 # - https://graphviz.org/doc/info/lang.html
