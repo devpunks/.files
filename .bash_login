@@ -235,7 +235,7 @@ alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 # https://redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='command ip --color address | \
   command grep --color=auto --perl-regexp "(inet)\s[^/]+" \
-  && echo && command ip route'
+  && echo && command ip --color route'
 
 # ----------------------
 # Ruby
