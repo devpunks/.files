@@ -489,6 +489,7 @@ function chat () { clear
   # /fset irc.*
   # /fset weechat.*
   # --plugins <plugins> --run-command <command>
+  # /server add libera irc.foo.bar/1234 -tls -autoconnect
   TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
 } # chat
 
