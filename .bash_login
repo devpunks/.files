@@ -232,10 +232,7 @@ alias port="netstat --all --numeric --timers"
 alias ports="netstat --verbose --numeric \
   --all --tcp --udp --listening --programs --wide"
 # https://redhat.com/sysadmin/ifconfig-vs-ip
-alias ip='command ip addr | grep --devices=read --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
-#  | grep --no-filename --only-matching --perl-regexp '\''(?<=inet)\s(?!127)[^/]+'\'
-
-alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
+alias ip='command ip addr | command grep --color=auto --perl-regexp "(inet)\s[^/]+" - '
 
 # ----------------------
 # Ruby
