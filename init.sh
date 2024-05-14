@@ -109,7 +109,7 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 pkg install nginx
 pkg install socat
 pkg install dnsutils
-# TODO: deprecate ifconfig
+# TODO: deprecate ifconfig and netstat
 #   - https://redhat.com/sysadmin/ifconfig-vs-ip
 #   - https://wiki.linuxfoundation.org/networking/iproute2
 #   - https://github.com/termux/termux-packages/issues/12758
