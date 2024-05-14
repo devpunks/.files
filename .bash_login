@@ -286,7 +286,8 @@ function host () { clear
   command host -v -C "$domain"
   echo && command host -v "$domain"
   echo && echo && ping $domain
-}
+  echo && command host "$domain"
+} # host
 
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
