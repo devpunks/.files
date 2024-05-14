@@ -402,6 +402,7 @@ function accumulate (){ echo accumulate; }
 
 # Runit
 # https://en.m.wikipedia.org/wiki/Runit
+# https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 function run () {
   local service="${1}"
 
