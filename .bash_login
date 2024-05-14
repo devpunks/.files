@@ -281,7 +281,7 @@ function host () { clear
     || { echo invalid domain: "$domain" && return 1; }
 
   echo && echo ALL:
-  command host -v -a "$domain"
+  command host -v -R 3 -a "$domain"
   echo && echo SOA:
   command host -v -C "$domain"
   echo && command host -v "$domain"
