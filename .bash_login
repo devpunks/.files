@@ -269,6 +269,21 @@ alias ip='command ip --color address | \
 #alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
 alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 
+function host (){ clear
+  local domain=${1}
+
+  echo "Current Host: $( hostname )"
+
+  [ "$domain" ] \
+    || { echo invalid domain: "$domain" && return 1; }
+
+  echo && echo && command host "$domain"
+  echo && echo && command host -v "$domain"
+  echo && echo && command host -v -a "$domain"
+
+  ping $domain
+}
+
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
 #   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
