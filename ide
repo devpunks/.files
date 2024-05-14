@@ -58,7 +58,7 @@ echo "$SOCKET"
 # DEV ---------------------------------------------------------------------
 
 # Rename window
-tmux -S $SOCKET rename-window 'DEV'
+tmux -S "$SOCKET" rename-window 'DEV'
 
 # Split pane vertically by 40%
 tmux -S $SOCKET split-window -h -l 40%
