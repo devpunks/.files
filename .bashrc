@@ -138,7 +138,6 @@ export LS_OPTIONS='\
 #   - https://stackoverflow.com/q/31156517
 #   - https://stackoverflow.com/q/42138844/remove-line-number-option-from-grep#comment113769544_64338090
 export GREP_OPTIONS="--context=1 --color=auto --exclude=.bash_history \
-  --directories=recurse --binary-files=without-match --label=' \$STDIN ⇉ ' \
   --dereference-recursive --ignore-case --no-messages --line-number --with-filename \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
   --exclude-dir={.cache,.config,.git,.gnupg,.npm,.ssh,.vim,log,logs,node_modules,storage,tmp}"
