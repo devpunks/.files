@@ -459,7 +459,6 @@ function about () {
   exist "$location" || return $?
 
   stat "$location"
-  echo about;
 } # about
 
 # Runit
