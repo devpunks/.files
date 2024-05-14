@@ -886,7 +886,7 @@ function reload () {
   clear
 
   source "$HOME/.bashrc" \
-    && source "$HOME/.bash_profile"
+    && source "$HOME/.bash_login"
 
 # reset # slowww
   tput reset
