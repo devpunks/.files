@@ -231,7 +231,9 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 #alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
 alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 # https://redhat.com/sysadmin/ifconfig-vs-ip
-alias ip='command ip addr | command grep --color=auto --perl-regexp "(inet)\s[^/]+" - '
+alias ip='command ip address | \
+  command grep --color=auto --perl-regexp "(inet)\s[^/]+" \
+  && echo && command ip route'
 
 # ----------------------
 # Ruby
