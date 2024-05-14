@@ -53,7 +53,7 @@ echo LINES $LINES
 # -s SESSION NAME
 # -x - -y - (Current $TERM size)
 tmux -C -S "$SOCKET" new-session -d -s "$SESSION" -x - -y -
-echo $SOCKET
+echo "$SOCKET"
 
 # DEV ---------------------------------------------------------------------
 
