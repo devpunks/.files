@@ -283,6 +283,23 @@ function balance () { clear
     && echo Started nginx load balancer on PORT 8080
 } # balance
 
+# NetCat ------------------------------------------------------------------
+#  - https://baeldung.com/linux/netcat-command
+alias catscan='{
+  nc -z -v -w 1 localhost 1234
+  nc -z -v -w 1 google.com 442-444
+}' # catscan
+
+alias catnet='{
+  while true; do command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" | nc -l -v 1234; done
+}' # catnet
+
+# }}}
+
+# =========================================================================
+# {{{ Server(s)
+#
+# =========================================================================
 # HTTP(s) -----------------------------------------------------------------
 alias serve='command python -m http.server -d'
 
