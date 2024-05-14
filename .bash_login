@@ -686,7 +686,7 @@ function pack () { clear
   command zip -rv "$file" "$contents" # -u for update only
 
 # - https://geeksforgeeks.org/tar-command-linux-examples
-  command tar cvzf "$file" "$contents" # -u for update only
+  command tar --verbose --create ---gzip --file "$file" "$contents" # -u for update only
 
   # Creates a package (*.tgz *.tar.gz) from given directory.
   # tar cvzf "${1%%/}.tgz"  "${1%%/}/"
