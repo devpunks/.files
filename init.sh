@@ -125,7 +125,6 @@ pkg install netcat-openbsd
 
 pkg install jq
 pkg install vim
-pkg install tmux
 pkg install tidy
 pkg install cmake
 pkg install clang
