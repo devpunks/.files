@@ -188,6 +188,8 @@ alias delete="command rm \
   --verbose --preserve-root --recursive --dir --interactive=once"
 alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
 
+# https://unix.stackexchange.com/q/90653
+alias sed='sed --regexp-extended'
 # https://tecmint.com/35-practical-examples-of-linux-find-command
 alias find='command find . -type f -iname'
 # - https://stackoverflow.com/q/1987926
