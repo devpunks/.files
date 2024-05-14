@@ -501,6 +501,7 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
+# https://linux.die.net/man/1/pv
 # https://reddit.com/r/programming/comments/7u8f2/a_unix_utility_you_should_know_about_pipe_viewer/
 function progress () {
   echo 'TODO: Implement progress (bar)'
