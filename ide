@@ -61,7 +61,7 @@ echo "$SOCKET"
 tmux -S "$SOCKET" rename-window 'DEV'
 
 # Split pane vertically by 40%
-tmux -S $SOCKET split-window -h -l 40%
+tmux -S "$SOCKET" split-window -h -l 40%
 sleep $DELAY
 tmux -S $SOCKET send-keys 'git status' Enter
 
