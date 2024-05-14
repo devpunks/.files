@@ -105,20 +105,20 @@ tmux -S "$SOCKET" send-keys 'cd crypto && vi price' Enter
 tmux -S "$SOCKET" split-window -h -l 40%
 sleep $DELAY
 # Start price
-tmux -S $SOCKET send-keys "cd crypto && watch ./price" Enter
+tmux -S "$SOCKET" send-keys "cd crypto && watch ./price" Enter
 
 # Split pane horizontally by 40%
-tmux -S $SOCKET split-window -v -l 40%
+tmux -S "$SOCKET" split-window -v -l 40%
 sleep $DELAY
 # Start network monitor
-tmux -S $SOCKET send-keys "command ip monitor" Enter
+tmux -S "$SOCKET" send-keys "command ip monitor" Enter
 
 # Select editor pane
-tmux -S $SOCKET select-pane -t 2
+tmux -S "$SOCKET" select-pane -t 2
 
 # Select Previous window again
-tmux -S $SOCKET previous-window
+tmux -S "$SOCKET" previous-window
 
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
-tmux -S $SOCKET -vv -u2 attach -t $SESSION
+tmux -S "$SOCKET" -vv -u2 attach -t $SESSION
