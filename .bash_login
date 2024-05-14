@@ -501,6 +501,8 @@ function exist () {
     || ( echo "No such file or directory: $location" && return 2 )
 } # exist
 
+# Syntax checkers
+#   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
 function check () { clear
   echo Checking "$*"
 
