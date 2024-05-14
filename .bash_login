@@ -241,6 +241,10 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 
 # =========================================================================
 # {{{ Network
+#   NMAP
+#     - https://upguard.com/blog/how-to-use-nmap
+#     - https://redhat.com/sysadmin/use-cases-nmap
+#     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/
 # =========================================================================
 
 # https://man7.org/linux/man-pages/man8/ss.8.html
