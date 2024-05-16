@@ -108,7 +108,7 @@ sleep $DELAY
 tmux -S "$SOCKET" send-keys "cd crypto && watch ./price" Enter
 
 # Split pane horizontally by 40%
-tmux -S "$SOCKET" split-window -v -l 40%
+tmux -S "$SOCKET" split-window -v -l 60%
 sleep $DELAY
 # Start network monitor
 tmux -S "$SOCKET" send-keys "command ip monitor" Enter
