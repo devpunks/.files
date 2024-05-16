@@ -628,6 +628,7 @@ function backup () { clear
 
   # archive
   # compress
+  # sync
 
   echo Backing Up "$source"
 } # backup
