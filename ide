@@ -46,7 +46,7 @@ echo LINES $LINES
 
 # SESSION -----------------------------------------------------------------
 
-# Setup a $SESSION work space called $SESSION
+# Setup a $SESSION work space
 # See tmux -L|S <socket|file> flag
 # -L SOCKET NAME
 # -S SOCKET PATH
