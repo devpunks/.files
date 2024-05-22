@@ -65,7 +65,7 @@ tmux -S "$SOCKET" split-window -h -l 40%
 sleep $DELAY
 tmux -S "$SOCKET" send-keys 'git status' Enter
 
-# Split pane 2 horizontally
+# Split second pane horizontally
 tmux -S "$SOCKET" split-window -v -l 30%
 sleep $DELAY
 tmux -S "$SOCKET" send-keys 'pwd' Enter
