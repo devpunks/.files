@@ -289,6 +289,7 @@ function host () { clear
 
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
+  # SOA (Start of Authority) Record(s)
   # rfc1035 Domain Names - https://datatracker.ietf.org/doc/html/rfc1035#autoid-31
   echo && echo SOA:
   command host -t SOA "$domain"
