@@ -285,7 +285,7 @@ function host () { clear
   echo "Current Host: $( hostname )"
 
   [ "$domain" ] \
-    || { echo invalid domain: "$domain" && return 1; }
+    || { echo missing domain && return 1; }
 
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
