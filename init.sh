@@ -130,7 +130,6 @@ pkg install cmake
 pkg install clang
 pkg install golang
 pkg install python
-pip install pytest
 pkg install python-numpy
 pkg install ruby && gem update --system
 pkg install nodejs-lts && npm install -g npm
