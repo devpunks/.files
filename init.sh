@@ -129,6 +129,7 @@ pkg install tidy
 pkg install cmake
 pkg install clang
 pkg install golang
+pip install pytest
 pkg install python
 pkg install python-numpy
 pkg install ruby && gem update --system
