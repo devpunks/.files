@@ -292,9 +292,9 @@ function host () { clear
   # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
   # rfc1035 Domain Names - https://datatracker.ietf.org/doc/html/rfc1035#autoid-31
   echo && echo SOA:
-  command host -t SOA "$domain"
-  command host -v -R 3 -C "$domain"
-  echo && command host -v -R 3 "$domain"
+  command host -v -t SOA "$domain"
+  echo && echo && command host -v -R 3 -C "$domain"
+  echo && echo && command host -v -R 3 "$domain"
   echo && echo && command ping "$domain"
   echo && command host -R 3 "$domain"
   echo
