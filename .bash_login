@@ -325,7 +325,7 @@ function load () { clear
   header "$url"
 
   ab -n $requests -c $connections "$url"
-  echo
+  echo && echo ${requests}:${connections} @ "$url"
 } # load
 
 function balance () { clear
