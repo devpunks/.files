@@ -338,6 +338,7 @@ function balance () { clear
   exist "$configuration" && cat "$configuration"
 
   nginx -T -c "$configuration"
+  echo && echo
   nginx -c "$configuration" \
     && echo Started nginx load balancer on PORT 8080
 } # balance
