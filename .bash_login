@@ -451,7 +451,6 @@ function log () {
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
 function logs () {
-
   printf "\n🌎Global logs :\n%s\n\n" "$( tree "$LOGDIR" )"
 
   [ -d logs ] \
