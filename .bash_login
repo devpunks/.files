@@ -282,6 +282,7 @@ alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 # https://cloudns.net/blog/linux-host-command-troubleshot-dns/
 function host () { clear
   local domain=${1}
+  local hosts=$PREFIX/etc/hosts
 
   [ "$domain" ] \
     || { echo missing domain && return 1; }
