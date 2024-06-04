@@ -329,7 +329,7 @@ function load () { clear
 } # load
 
 function balance () { clear
-  local $configuration
+  local configuration="$HOME/nginx.conf"
 
   nginx -help
   nginx -V
