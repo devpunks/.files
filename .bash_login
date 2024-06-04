@@ -277,6 +277,7 @@ alias ip='command ip --color address | \
 alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 
 # https://man.archlinux.org/man/host.1.en
+# https://man7.org/linux/man-pages/man5/hosts.5.html
 # https://man7.org/linux/man-pages/man1/hostname.1.html
 # https://cloudns.net/blog/linux-host-command-troubleshot-dns/
 function host () { clear
