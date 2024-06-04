@@ -287,6 +287,10 @@ function host () { clear
 
   echo "Current Host: $( hostname )"
 
+  echo "Remote Host: $domain"
+
+  whois $domain
+
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
   # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
