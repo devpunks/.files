@@ -189,6 +189,7 @@ setterm --resize # Sync kernel terminal driver to display
 # Outside, it should match your terminal
 # https://github.com/tmux/tmux/wiki/FAQ#what-is-term-and-what-does-it-do
 export TERM='xterm-256color'
+export TERMINFO=$( infocmp -D ) # terminfo database
 
 # Software Flow Control
 #  - https://unix.stackexchange.com/q/515252
