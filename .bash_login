@@ -322,7 +322,7 @@ function load () { clear
   [ "$url" ] \
     || { echo missing url && return 1; }
 
-  echo TODO: 'load' Implementation for "$url@${requests}:${connections}"
+  header "$url"
 
   ab -n $requests -c $connections "$url"
   echo
