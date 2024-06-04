@@ -287,8 +287,6 @@ function host () { clear
 
   echo "Current Host: $( hostname )"
 
-  echo "Remote Host: $domain"
-
   whois $domain
 
   echo && echo ALL:
