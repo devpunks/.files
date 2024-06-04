@@ -285,6 +285,8 @@ function host () { clear
   [ "$domain" ] \
     || { echo missing domain && return 1; }
 
+  echo "Current Host: $( hostname )"
+
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
   # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
