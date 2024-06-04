@@ -615,9 +615,6 @@ function open () { clear
   # apk
   [ -f "$location" ] && [ -x "$location" ] && termux-open "$location"
 
-  # file
-  [ -f "$location" ] && termux-open "$location"
-
   # url
   [[ "$location" == http* ]] && termux-open-url "$location"
 
