@@ -331,6 +331,7 @@ function load () { clear
 function balance () { clear
   nginx -help
   nginx -V
+
   exist "$PREFIX/etc/nginx/nginx.conf" && cat "$PREFIX/etc/nginx/nginx.conf"
   exist "$HOME/nginx.conf" && cat "$HOME/nginx.conf"
 
