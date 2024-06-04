@@ -285,7 +285,7 @@ function host () { clear
   [ "$domain" ] \
     || { echo missing domain && return 1; }
 
-  echo "Current Host: $( hostname )"
+  echo Current Host: "$( hostname )"
 
   whois $domain
 
