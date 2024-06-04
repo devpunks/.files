@@ -220,7 +220,7 @@ alias curl='command curl --verbose \
   --user-agent "Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1"'
 alias header='curl -I'
 
-alias ping='command ping -c 10 -s0.2'
+alias ping='command ping -c 5'
 alias cookies='header --cookie-jar ./.cookies'
 alias wait='command wait' # https://baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
