@@ -246,6 +246,8 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/
 # =========================================================================
 
+alias whois='command whois -H'
+
 # https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
 alias telnet='telnet --login'
 
