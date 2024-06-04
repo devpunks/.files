@@ -541,8 +541,8 @@ function check () { clear
   echo Checking "$*"
 
   for script in "$@"; do
-    echo && echo " 🎯 $script"
-    exist "$script" || continue
+    echo && echo " 🎯 $( realpath $script )"
+    exist "$( realpath $script )" || continue
 
     case "$script" in
       *.html) tidy "$script" ;;
