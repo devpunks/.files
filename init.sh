@@ -55,7 +55,7 @@ pkg install shellcheck # https://shellcheck.net
 
 # }}}
 
-# {{{ COMMUNICATIONS ------------------------------------------------------
+# {{{ Communications ------------------------------------------------------
 
 pkg install weechat
 
