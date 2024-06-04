@@ -75,7 +75,7 @@ pkg install fetchmail # https://fetchmail.info
 # }}}
 
 # {{{ Jobs -------------------------------------------------------------
-# pkg install runit # http://smarden.org/runit
+pkg install runit # http://smarden.org/runit
 pkg install cronie
 
 # }}}
