@@ -663,6 +663,10 @@ function backup () { clear
   echo Backing Up "$source"
 } # backup
 
+function package () { clear
+  local -r source=$( realpath "$1" )
+}
+
 function shrink () { clear
   local -r source=$( realpath "$1" )
 
