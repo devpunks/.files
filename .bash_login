@@ -325,6 +325,7 @@ function load () { clear
   echo TODO: 'load' Implementation for "$url@${requests}:${connections}"
 
   ab -n $requests -c $connections "$url"
+  echo
 } # load
 
 function balance () { clear
