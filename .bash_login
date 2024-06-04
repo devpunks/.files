@@ -328,7 +328,7 @@ function load () { clear
   echo && echo ${requests}:${connections} @ "$url"
 } # load
 
-# https://nginx.org/en/docs/
+# https://nginx.org/en/docs
 function balance () { clear
   local configuration="$HOME/nginx.conf"
 
