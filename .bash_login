@@ -329,6 +329,8 @@ function load () { clear
 } # load
 
 function balance () { clear
+  local $configuration
+
   nginx -help
   nginx -V
 
