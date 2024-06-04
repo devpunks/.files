@@ -293,7 +293,7 @@ function host () { clear
 
   echo && echo
 
-  whois $domain
+  whois "$domain"
 
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
