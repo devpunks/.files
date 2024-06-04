@@ -305,7 +305,7 @@ function host () { clear
   echo && echo && command host -v -R 3 "$domain"
   echo && echo && command host -R 3 "$domain"
   echo && echo && ping $domain
-  echo
+  echo && echo
 } # host
 
 # Benchmarking
