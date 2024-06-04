@@ -665,6 +665,7 @@ function backup () { clear
 
 function package () { clear
   local -r source=$( realpath "$1" )
+  local -r destination="$1"
 
   exist "$source" || return $?
 
