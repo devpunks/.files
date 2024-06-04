@@ -319,6 +319,9 @@ function load () { clear
   local connections=10
   local requests=100 # 100000
 
+  [ "$url" ] \
+    || { echo missing url && return 1; }
+
   echo TODO: 'load' Implementation for "$url@${requests}:${connections}"
 
   ab -n $requests -c $connections $url
