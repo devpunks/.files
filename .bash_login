@@ -288,6 +288,10 @@ function host () { clear
     || { echo missing domain && return 1; }
 
   echo Current Host: "$( hostname )"
+  echo /etc/hosts:
+  cat "$hosts"
+
+  echo && echo
 
   whois $domain
 
