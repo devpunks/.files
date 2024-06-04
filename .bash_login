@@ -282,8 +282,6 @@ alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 function host () { clear
   local domain=${1}
 
-  echo "Current Host: $( hostname )"
-
   [ "$domain" ] \
     || { echo missing domain && return 1; }
 
