@@ -3,7 +3,7 @@
 
 ## SERVICES
   - RUNIT - (pkg install runit) http://smarden.org/runit
-      runsv, runsvdir, sv, syslogd
+      runsv, runsvdir, runsvchdir, runsvctrl, runsvstat, sv, syslogd
     - benefits - http://smarden.org/runit/benefits.html
   - https://github.com/termux/termux-services
   - https://wiki.termux.com/wiki/Termux-services
