@@ -669,7 +669,8 @@ function package () { clear
 
   exist "$source" || return $?
 
-  echo 📦 Packaging: "$source"
+  echo "📦 Packaging: $source"
+  echo "📦   Destination: $destination"
 } # package
 
 function shrink () { clear
