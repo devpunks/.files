@@ -656,7 +656,7 @@ function backup () { clear
 
   exist "$source" || return $?
 
-  # archive
+  package $source
   # compress
   # sync
 
