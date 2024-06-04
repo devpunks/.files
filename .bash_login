@@ -337,6 +337,7 @@ function balance () { clear
   exist "$PREFIX/etc/nginx/nginx.conf" && cat "$PREFIX/etc/nginx/nginx.conf"
   exist "$configuration" && cat "$configuration"
 
+  nginx -T -c "$configuration"
   nginx -c "$configuration" \
     && echo Started nginx load balancer on PORT 8080
 } # balance
