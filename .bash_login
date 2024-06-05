@@ -367,7 +367,9 @@ alias catnet='{
 #
 # =========================================================================
 # HTTP(s) -----------------------------------------------------------------
-alias serve='command python -m http.server -d'
+function serve () {
+  command python -m http.server
+}
 
 # SSh ---------------------------------------------------------------------
 # - https://ssh.com/academy/ssh
