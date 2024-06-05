@@ -17,7 +17,9 @@
 # Maintainer: devPunks <https://github.com/devpunks>
 # Description: Init install script
 # -------------------------------------------------------------------------
-
+#
+# `http://freedesktop.org
+#
 #==========================================================================
 
 pkg upgrade
