@@ -306,6 +306,15 @@ function host () { clear
   echo && echo && command host -R 3 "$domain"
   echo && echo && ping "$domain"
   echo && echo
+
+  echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
+  echo /etc/hosts:
+  cat "$hosts"
+
+  [ $HOSTFILE ] \
+    && { printf '\n $HOSTFILE \n %s' $( cat "$hosts" ) ; }
+
+  echo && echo
 } # host
 
 # Benchmarking
