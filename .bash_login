@@ -322,7 +322,7 @@ function host () { clear
 function load () { clear
   local -r url="${1}"
   local -r connections=10
-  local requests=100 # 100000
+  local -r requests=100 # 100000
 
   [ "$url" ] \
     || { echo missing url && return 1; }
