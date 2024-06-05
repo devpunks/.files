@@ -492,7 +492,7 @@ function about () {
 # See $HOME/.termux/boot/README on Android
 # https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 function run () {
-  local service="${1}"
+  local -r service="${1}"
 
   echo running "$service"
 } # run
