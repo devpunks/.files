@@ -312,7 +312,7 @@ function host () { clear
   cat "$hosts"
 
   [ "$HOSTFILE" ] \
-    && { printf "\n \$HOSTFILE \n %s" "$( cat "$HOSTFILE" )" ; }
+    && { printf "\n \$HOSTFILE: \n %s" "$( cat "$HOSTFILE" )" ; }
 
   echo && echo
 } # host
