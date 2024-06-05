@@ -290,10 +290,8 @@ function host () { clear
   local -r domain=${1:-localhost}
   local -r hosts=${PREFIX}/etc/hosts
 
-  [ "$domain" ] \
-    || echo missing domain && return 1
-
-  whois "$domain"
+  [ "$domain" != localhost ] \
+    && whois "$domain"
 
   echo && echo ALL:
   command host -v -R 3 -a "$domain"
