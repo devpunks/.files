@@ -881,7 +881,7 @@ function weigh () {
   echo && echo 
 } # weigh
 
-function environment () {
+function environment () { clear
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
   clear
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
