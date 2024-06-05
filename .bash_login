@@ -340,7 +340,7 @@ function balance () { clear
   nginx -help
   nginx -V
 
-  exist "$PREFIX/etc/nginx/nginx.conf" && cat "$PREFIX/etc/nginx/nginx.conf"
+  exist "${PREFIX}/etc/nginx/nginx.conf" && cat "${PREFIX}/etc/nginx/nginx.conf"
   exist "$configuration" && cat "$configuration"
 
   check "$configuration"
