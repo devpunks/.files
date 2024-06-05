@@ -42,6 +42,8 @@
 #
 # =========================================================================
 # {{{ Bindings
+#   - Default key bindings - https://stackoverflow.com/a/12009972
+#   - https://gnu.org/software/bash/manual/bash.html#Readline-Interaction
 # =========================================================================
 # emacs mode
 # $if mode=emacs
