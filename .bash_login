@@ -311,7 +311,7 @@ function host () { clear
   echo /etc/hosts:
   cat "$hosts"
 
-  [ $HOSTFILE ] \
+  [ "$HOSTFILE" ] \
     && { printf '\n $HOSTFILE \n %s' $( cat "$hosts" ) ; }
 
   echo && echo
