@@ -935,7 +935,7 @@ function reload () {
   setterm --initialize
   setterm --resize
   tput cup 0 0
-  [ -n "$TMUX" ] && echo && echo tmux -V
+  [ "$TMUX" ] && echo && echo tmux -V
   # TODO: fix posix bug
   # echo && environment
   echo && termux-info
