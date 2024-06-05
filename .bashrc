@@ -117,7 +117,7 @@ if [ -n "$PREFIX" ]; then # TERMUX
   # export LD_LIBRARY_PATH="/system/bin/uptime:$PREFIX/bin/uptime"
 fi
 
-export CDPATH=".:$HOME" # https://theunixschool.com/2012/04/what-is-cdpath.html
+export CDPATH=".:${HOME}" # https://theunixschool.com/2012/04/what-is-cdpath.html
 
 export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_node/Filename-Expansion.html
 
