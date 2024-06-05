@@ -214,7 +214,8 @@ if [[ "$( tic -V )" == *"ncurses"* ]]; then
   export COLUMNS=$( tput columns )
 
   # write tty terminal size
-  echo && echo "💻 TTY SIZE: $( stty size | tr ' ' 'x' )" && echo
+  printf "\n\n 💻 TTY SIZE: %s \n " \
+    "$( stty size | tr ' ' 'x' )"
 
   # Check the window size after each command.
   # If necessary, Update the values of LINES and COLUMNS.
