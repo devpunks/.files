@@ -310,7 +310,6 @@ function host () { clear
   echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
   printf "\n /etc/hosts: \n %s \n\n" "$( cat "$hosts" )"
 
-  echo && echo 
   cat "$hosts"
 
   [ "$HOSTFILE" ] \
