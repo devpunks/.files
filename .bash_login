@@ -291,7 +291,7 @@ function host () { clear
   local hosts=$PREFIX/etc/hosts
 
   [ "$domain" ] \
-    || echo missing domain && return 1;
+    || echo missing domain && return 1
 
   whois "$domain"
 
