@@ -738,7 +738,7 @@ function pack () { clear
   # zip -r "${1%%/}.zip" "$1"
 
   exist "$file" \
-   && command view "$file"
+    && command view "$file"
 } # pack
 
 function unpack () { clear
