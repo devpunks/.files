@@ -325,7 +325,7 @@ function load () { clear
   local -r requests=100 # 100000
 
   [ "$url" ] \
-    || { echo missing url && return 1; }
+    || echo missing url && return 1
 
   header "$url"
 
