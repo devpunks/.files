@@ -311,7 +311,7 @@ function host () { clear
   printf "\n /etc/hosts: \n %s \n\n" "$( cat "$hosts" )"
 
   [ "$HOSTFILE" ] \
-    && printf "\n \$HOSTFILE: \n %s \n\n" "$( cat "$HOSTFILE" )" ;
+    && printf "\n \$HOSTFILE: \n %s \n\n" "$( cat "$HOSTFILE" )"
 
   echo && echo
 } # host
