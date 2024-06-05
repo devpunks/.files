@@ -293,12 +293,6 @@ function host () { clear
   [ "$domain" ] \
     || { echo missing domain && return 1; }
 
-  echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
-  echo /etc/hosts:
-  cat "$hosts"
-
-  echo && echo
-
   whois "$domain"
 
   echo && echo ALL:
