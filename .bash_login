@@ -308,7 +308,7 @@ function host () { clear
   echo && echo
 
   echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
-  echo /etc/hosts:
+  echo && echo /etc/hosts:
   cat "$hosts"
 
   [ "$HOSTFILE" ] \
