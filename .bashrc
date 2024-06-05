@@ -90,7 +90,7 @@ export IGNOREEOF=10 # set -o ignoreeof # For CTRL-D logout attempt frequency
 export HOSTFILE="${HOME}/.hosts"
 
 # https://gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-INPUTRC
-export INPUTRC="$HOME/.inputrc"
+export INPUTRC="${HOME}/.inputrc"
 
 # https://baeldung.com/linux/bash-calculate-time-elapsed
 # https://cyberciti.biz/faq/unix-linux-time-command-examples-usage-syntax/
