@@ -321,7 +321,7 @@ function host () { clear
 #   - https://engineering.appfolio.com/appfolio-engineering/2019/4/21/wrk-it-my-experiences-load-testing-with-an-interesting-new-tool
 function load () { clear
   local -r url="${1}"
-  local connections=10
+  local -r connections=10
   local requests=100 # 100000
 
   [ "$url" ] \
