@@ -458,7 +458,7 @@ function logs () {
 } # logs
 
 function rotate () {
-  local log=${1}
+  local -r log=${1}
 
   exist "$log" || return $?
 
