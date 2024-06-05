@@ -272,7 +272,7 @@ shopt -s histappend
 shopt -s histverify
 export HISTSIZE=1000
 export HISTFILESIZE=1000
-export HISTFILE="$HOME/.bash_history"
+export HISTFILE="${HOME}/.bash_history"
 export HISTTIMEFORMAT="%d/%m/%y %T - "
 export HISTIGNORE=bg:fg:exit:cd:ls:pwd:echo
 # https://google.com/amp/s/geeksforgeeks.org/histcontrol-command-in-linux-with-examples/amp/
