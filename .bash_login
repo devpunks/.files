@@ -631,7 +631,7 @@ function open () { clear
 } # open
 
 function play () { clear
-  local location="$1"
+  local -r location="$1"
 
   exist "$location" || return $?
 
