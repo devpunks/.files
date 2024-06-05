@@ -312,8 +312,6 @@ function host () { clear
 
   [ "$HOSTFILE" ] \
     && printf "\n \$HOSTFILE: \n %s \n\n" "$( cat "$HOSTFILE" )"
-
-  echo && echo
 } # host
 
 # Benchmarking
