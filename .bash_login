@@ -287,7 +287,7 @@ alias ports="netstat --verbose --all --numeric --listening --programs --wide"
 # https://man7.org/linux/man-pages/man1/hostname.1.html
 # https://cloudns.net/blog/linux-host-command-troubleshot-dns/
 function host () { clear
-  local domain=${1}
+  local -r domain=${1}
   local hosts=$PREFIX/etc/hosts
 
   [ "$domain" ] \
