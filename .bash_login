@@ -110,8 +110,8 @@ function permit () { clear
 
   exist "$location" || return $?
 
-  echo "umask: $( umask )"
-  echo "umask -S: $( umask -S )"
+  echo umask : "$( umask )"
+  echo umask "-S : $( umask -S )"
 
   # 4 - Read
   # 2 - Write
