@@ -1,1 +1,1000 @@
-alias socket='command ss -aeopTit'
+#!/usr/bin/env bash
+#
+#     888                        888               888                   d8b
+#     888                        888               888                   Y8P
+#     888                        888               888
+#     88888b.   8888b.  .d8888b  88888b.           888  .d88b.   .d88b.  888 88888b.
+#     888 "88b     "88b 88K      888 "88b          888 d88""88b d88P"88b 888 888 "88b
+#     888  888 .d888888 "Y8888b. 888  888          888 888  888 888  888 888 888  888
+# d8b 888 d88P 888  888      X88 888  888          888 Y88..88P Y88b 888 888 888  888
+# Y8P 88888P"  "Y888888  88888P' 888  888 88888888 888  "Y88P"   "Y88888 888 888  888
+#                                                                   888
+#                                                               Y8b d88P
+#                                                               "Y88P"
+#
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: .bash_login
+# Source: https://github.com/devpunks
+# Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: Bourne Again SHell Run Commands for login $SHELL.
+# -------------------------------------------------------------------------
+#
+# INVOCATION
+#   - https://unix.stackexchange.com/q/43953
+#   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+
+# [ -r $HOME/.bashrc ] && source $HOME/.bashrc
+
+# ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
+# Paste - https://geeksforgeeks.org/paste-command-in-linux-with-examples
+# Hyperlinks - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
+
+# =========================================================================
+# {{{ Bindings # see ~/.inputrc
+# =========================================================================
+
+# https://computerhope.com/unix/bash/bind.htm
+alias shortcuts='{
+  printf "Bindings:\n"
+    command bind -p
+  printf "\n\nMacros:\n"
+    command bind -s
+  printf "\n\nVariables:\n"
+    command bind -v
+}' # shortcuts
+
+# }}}
+
+# =========================================================================
+# {{{ Git Aliases
+# https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+alias ga='git add -p'
+alias gb='git -P branch -a'
+alias gc='git commit --message '
+alias gd='git diff'
+alias gg='git grep --break --heading'
+alias gl='git log --reverse --since=1.week --all'
+alias gll='git log -L'
+alias gp='git push && git push --tags'
+alias gr='git rebase -i'
+alias gs='clear && echo && git status --column --verbose && echo'
+alias gt='git tag -a'
+alias g#='{
+  # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+  # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
+  GIT_PAGER=cat \
+    gl --since="1 day ago"
+    printf "\n Total:%d" $( gl --since="1 day ago" | wc -l )
+  echo
+}' # g#
+
+# }}}
+
+# =========================================================================
+# {{{ Security
+# =========================================================================
+
+# https://man7.org/linux/man-pages/man1/chown.1p.html
+# https://en.m.wikipedia.org/wiki/Chown
+alias chown='command chown --verbose --preserve-root --recursive'
+
+# https://en.m.wikipedia.org/wiki/Chgrp
+# https://man7.org/linux/man-pages/man1/chgrp.1p.html
+alias chgrp='command chgrp --verbose --preserve-root --recursive'
+
+# https://askubuntu.com/q/918379
+# https://en.m.wikipedia.org/wiki/Chmod
+# https://gnu.org/software/coreutils/chmod
+# https://man7.org/linux/man-pages/man1/chmod.1p.html
+# https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
+alias chmod='command chmod --verbose --preserve-root --recursive'
+
+function limit () { clear
+  echo TODO: 'limit' Implementation
+  ulimit --help
+} # limit
+
+function unlimit () { clear
+  echo TODO: 'unlimit' Implementation
+} # unlimit
+
+# https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
+# https://superuser.com/q/168578/why-must-a-folder-be-executable
+# https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
+# https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
+# https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
+function permit () { clear
+  local -r location=$( realpath "$1" )
+
+  exist "$location" || return $?
+
+  echo umask : "$( umask )"
+  echo umask "-S : $( umask -S )"
+
+  # 4 - Read
+  # 2 - Write
+  # 1 - Execute
+  # chmod -v 755 $location
+  chmod u=rwX,g=rX,o= "$location"
+
+  ls "$location"
+} # permit
+
+# }}}
+
+# =========================================================================
+# {{{ Jobs
+# =========================================================================
+alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
+# https://stackoverflow.com/q/35026395/bash-what-is-a-jobspec
+alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
+
+# }}}
+
+# =========================================================================
+# {{{ Shell
+# =========================================================================
+
+alias bell='echo "\a"'
+# https://github.com/powerline/fonts
+alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
+alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
+
+# https://stackoverflow.com/q/42004870
+alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
+# https://stackoverflow.com/q/65523749
+alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+
+# TODO: Implementation
+# - https://graphviz.org/pdf/dotguide.pdf
+# - https://graphviz.org/doc/info/lang.html
+alias graph='command dot -Tps -o'
+alias chart='echo TODO: Implement chart'
+
+# for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
+alias echo='command echo -e'
+# https://linux.die.net/man/1/expect
+# https://stackoverflow.com/q/33304242
+# https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
+alias expect='pkg list-all expect'
+
+# https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
+alias now='command date +"%T - %::z %Z (${TZ})"'
+alias calendar='command cal -1 --iso --color=auto'
+# https://gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
+alias date='command date +"%Y-%m-%d - %A" && echo && calendar'
+
+alias ..='command cd ..'
+alias pop='command popd'
+alias push='command pushd'
+alias dirs='command dirs -p'
+alias most='command most +u -s -t2'
+alias mount='command mount | column -t'
+alias mkdir='command mkdir --verbose --parents'
+alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
+alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
+alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
+
+# https://en.m.wikipedia.org/wiki/Named_pipe
+# https://stackoverflow.com/q/4113986
+alias pipe='command mkfifo'
+alias ln='command ln --verbose --interactive --symbolic'
+alias cp='command cp --verbose --interactive --no-clobber --recursive'
+alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slashes'
+alias cut='command cut --only-delimited --delimiter="," --fields'
+alias copy='echo TODO: implement copy command for multiple destination types'
+alias zipper='command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
+
+# - https://en.m.wikipedia.org/wiki/Rm_(Unix)
+alias rm='echo "rm is disabled, use delete, or destroy"'
+alias delete="command rm \
+  --verbose --preserve-root --recursive --dir --interactive=once"
+alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
+
+# https://unix.stackexchange.com/q/90653
+alias sed='sed --regexp-extended'
+# https://tecmint.com/35-practical-examples-of-linux-find-command
+alias find='command find . -type f -iname'
+# - https://stackoverflow.com/q/1987926
+alias grep="LC_ALL=C command grep $GREP_OPTIONS"
+
+alias which='command type -a'
+alias when='echo TODO: \`when\` implementation'
+alias why='echo TODO: \`why\` implementation'
+alias what='command man whatis && command whatis'
+alias where='command man whereis && command whereis'
+alias who='command id \
+  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
+
+# https://unix.stackexchange.com/q/344213
+# https://askubuntu.com/q/103913/difference-between-dir-and-ls-terminal-commands
+# https://unix.stackexchange.com/q/50377/whats-the-difference-between-dir-and-ls
+alias ls="command ls $LS_OPTIONS -l"
+alias vdir="command vdir $LS_OPTIONS -l"
+alias branch='clear && tree -d -L 4'
+# https://github.com/eza-community/eza
+alias list="command eza --level=2 --color=auto --classify=auto \
+  --all --links --grid --icons --long --header --no-user --octal-permissions\
+  --group-directories-first --total-size --git --git-repos --git-ignore --ignore-glob '.git'"
+alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
+
+alias curl='command curl --verbose \
+  --user-agent "Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1"'
+alias header='curl -I'
+
+alias ping='command ping -c 5'
+alias cookies='header --cookie-jar ./.cookies'
+alias wait='command wait' # https://baeldung.com/linux/wait-command
+# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
+alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
+alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
+
+# ----------------------
+# Ruby
+# ----------------------
+alias be='bundle exec'
+
+# ----------------------
+# Eliza (LLM) - https://web.njit.edu/~ronkowit/eliza.html
+# ----------------------
+alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
+
+# }}}
+
+# =========================================================================
+# {{{ Network
+#   NMAP
+#     - https://upguard.com/blog/how-to-use-nmap
+#     - https://redhat.com/sysadmin/use-cases-nmap
+#     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time/
+# =========================================================================
+
+alias whois='command whois -H'
+
+# https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
+alias telnet='telnet --login'
+
+# https://man7.org/linux/man-pages/man8/ss.8.html
+# https://man7.org/linux/man-pages/man2/socket.2.html
+alias socket='man ss && man socat'
+
+# https://man7.org/linux/man-pages/man2/connect.2.html
+alias connect='TODO: implementation'
+
+# https://man7.org/linux/man-pages/man8/tc.8.html
+alias traffic='man tc'
+
+# https://redhat.com/sysadmin/ifconfig-vs-ip
+alias ip='command ip --color address | \
+  command grep --color=auto --perl-regexp "(inet)\s[^/]+" \
+  && echo && command ip --color route \
+  && echo && command route -v -ee -A inet'
+
+# TODO: Find netstat alternative
+#   - https://man7.org/linux/man-pages/man8/netstat.8.html
+# This program is mostly obsolete.  Replacement for netstat is ss.
+# Replacement for netstat --route is ip route.
+# Replacement for netstat --groups is ip maddr.
+# Replacement for netstat --interfaces is ip -s link.
+#   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c/
+#alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
+alias ports="netstat --verbose --all --numeric --listening --programs --wide"
+
+# https://man.archlinux.org/man/host.1.en
+# https://man7.org/linux/man-pages/man5/hosts.5.html
+# https://man7.org/linux/man-pages/man1/hostname.1.html
+# https://cloudns.net/blog/linux-host-command-troubleshot-dns/
+function host () { clear
+  local -r domain=${1:-localhost}
+  local -r hosts=${PREFIX}/etc/hosts
+
+  [ "$domain" != localhost ] \
+    && whois "$domain"
+
+  echo && echo ALL:
+  command host -v -R 3 -a "$domain"
+  # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
+  # rfc1035 Domain Names - https://datatracker.ietf.org/doc/html/rfc1035#autoid-31
+  echo && echo SOA:
+  command host -v -t SOA "$domain"
+  echo && echo && command host -v -R 3 -C "$domain"
+  echo && echo && command host -v -R 3 "$domain"
+  echo && echo && command host -R 3 "$domain"
+  echo && echo && ping "$domain"
+  echo && echo
+
+  echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
+  printf "\n /etc/hosts: \n %s \n\n" "$( cat "$hosts" )"
+
+  [ "$HOSTFILE" ] \
+    && printf "\n \$HOSTFILE: $HOSTFILE \n %s \n\n" "$( cat "$HOSTFILE" )"
+} # host
+
+# Benchmarking
+#   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
+#   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
+#   - https://engineering.appfolio.com/appfolio-engineering/2019/1/18/benchmarking-ruby-app-servers-badly
+#   - https://engineering.appfolio.com/appfolio-engineering/2019/4/21/wrk-it-my-experiences-load-testing-with-an-interesting-new-tool
+function load () { clear
+  local -r url="${1}"
+  local -r connections=10
+  local -r requests=100 # 100000
+
+  [ "$url" ] \
+    || echo missing url && return 1
+
+  header "$url"
+
+  ab -n $requests -c $connections "$url"
+  echo && echo "${requests}:${connections} @ ${url}"
+} # load
+
+# https://nginx.org/en/docs
+function balance () { clear
+  local -r configuration="${HOME}/nginx.conf"
+
+  nginx -help
+  nginx -V
+
+  exist "${PREFIX}/etc/nginx/nginx.conf" && cat "${PREFIX}/etc/nginx/nginx.conf"
+  exist "$configuration" && cat "$configuration"
+
+  check "$configuration"
+  echo && echo
+  nginx -c "$configuration" \
+    && echo Started nginx load balancer on PORT 8080
+} # balance
+
+# NetCat ------------------------------------------------------------------
+#  - https://baeldung.com/linux/netcat-command
+alias catscan='{
+  nc -z -v -w 1 localhost 1234
+  nc -z -v -w 1 google.com 442-444
+}' # catscan
+
+alias catnet='{
+  while true; do command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" | nc -l -v 1234; done
+}' # catnet
+
+# }}}
+
+# =========================================================================
+# {{{ Server(s)
+#
+# =========================================================================
+# HTTP(s) -----------------------------------------------------------------
+function serve () {
+  command python -m http.server
+} # serve
+
+# SSh ---------------------------------------------------------------------
+# - https://ssh.com/academy/ssh
+# - https://ssh.com/academy/ssh/add-command
+# - https://superuser.com/q/141044
+# - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add/
+alias ssh.add='{
+  clear
+  echo adding ssh
+
+  # default is $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
+  eval $( ssh-agent -s -a $HOME/agent.sock)
+  command ssh-add
+  ps x | grep ssh-agent
+
+  echo THE AGENT PID: $SSH_AGENT_PID
+  echo THE AUTH SOCK: $SSH_AUTH_SOCK
+}' # ssh.add
+
+# SSh(d) ------------------------------------------------------------------
+#   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
+#   - https://wiki.termux.com/wiki/Remote_Access
+#   - https://man7.org/linux/man-pages/man1/ssh.1.html
+#   - https://github.com/termux/termux-packages/issues/3620
+#
+# -d - debug level
+# -c - for host_certificate_file
+# -f - /data/data/com.termux/files/usr/etc/ssh/sshd_config
+# -T - test mode
+# check
+# ~/.ssh/rc
+# ~/.ssh/config
+# ~/.ssh/id_rsa
+# ~/.ssh/id_rsa.pub
+# ~/.ssh/environment
+# ~/.ssh/known_hosts
+# ~/.ssh/authorized_keys
+# $PREFIX/etc/ssh/ssh_config
+# $PREFIX/etc/ssh/sshd_config
+# $PREFIX/etc/ssh/ssh_known_hosts
+# $PREFIX/etc/ssh/ssh_host_rsa_key
+# $PREFIX/etc/ssh/ssh_host_rsa_key.pub
+# SEE ALSO
+#   scp(1), sftp(1), ssh(1), ssh-add(1), ssh-agent(1), ssh-keygen(1), ssh-
+#   keyscan(1), chroot(2), login.conf(5), moduli(5), sshd_config(5),
+#   inetd(8), sftp-server(8)
+# -X flag for Enable X11 forwarding
+alias sshd='command sshd -X -Dddd -p8022'
+
+# PulseAudio --------------------------------------------------------------
+alias pulse='{
+  pulseaudio -k
+  pulseaudio -L "module-sles-source" -D
+}' # pulse
+
+# TMUX --------------------------------------------------------------------
+alias tmux.config='{
+  tmux info
+  echo && echo Server Options:
+  tmux show-options -s
+  echo && echo Global Options:
+  tmux show-options -g
+  echo && echo Global Window Options:
+  tmux show-window-options -g
+}' # tmux.config
+
+# }}}
+
+# =========================================================================
+# {{{ Log(s)
+#
+# ==========================================================================
+alias logs.sshd="command logcat -s 'sshd:*'"
+function log () {
+  command logcat
+  logs
+} # log
+
+# - syslog() - https://stackify.com/syslog-101/
+# - https://plesk.com/blog/featured/linux-logs-explained
+# - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
+# - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
+function logs () {
+  printf "\n🌎Global logs :\n%s\n\n" "$( tree "$LOGDIR" )"
+
+  [ -d logs ] \
+    && printf "\n🏠Local logs :\n%s\n\n" "$( command ls -l logs )"
+} # logs
+
+function rotate () {
+  local -r log=${1}
+
+  exist "$log" || return $?
+
+  echo && command logrotate --help
+  echo && echo ⥁ rotating log: "$log"
+} # rotate
+
+# }}}
+
+# =========================================================================
+# {{{ FUNCTIONS
+#   - https://tldp.org/LDP/abs/html/functions.html
+#   - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
+# =========================================================================
+# TODO: Implementation
+#-----------------------
+function clean (){ echo clean; }
+function reboot (){ echo reboot; }
+function restart (){ echo restart; }
+function refresh (){ echo refresh; }
+function cumulate (){ echo cumulate; }
+function accumulate (){ echo accumulate; }
+
+# https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
+function about () {
+  stat "$@"
+} # about
+
+# Runit
+# https://en.m.wikipedia.org/wiki/Runit
+# See $HOME/.termux/boot/README on Android
+# https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
+function run () {
+  local -r service="${1}"
+
+  echo running "$service"
+} # run
+
+function draw () { echo draw; }
+# http://gnuplot.info
+function plot () { clear
+  gnuplot --version
+  gnuplot --help
+} # plot
+
+function shared () { clear
+  tree "$PREFIX/share"
+} # shared
+
+function chat () { clear
+  echo && echo 🗣️CHATTY PATTY!
+  echo && echo WeeChat Version: "$( weechat --version )"
+
+  # Configuration - https://gist.github.com/pascalpoitras/8406501
+  # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
+  TERM=tmux-256color weechat --colors
+
+  # /plugin
+  # /fset irc.*
+  # /fset weechat.*
+  # --plugins <plugins> --run-command <command>
+  #
+  # /server add libera irc.foo.bar/1234 -tls -autoconnect
+  TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
+} # chat
+
+function exist () {
+  local -r location="$1"
+
+  test -e "$location" \
+    || ( echo "No such file or directory: $location" && return 2 )
+} # exist
+
+# https://linux.die.net/man/1/pv
+# https://reddit.com/r/programming/comments/7u8f2/a_unix_utility_you_should_know_about_pipe_viewer/
+alias progress='pv --progress --eta --timer'
+
+# Syntax checkers
+#   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
+function check () { clear
+  echo Checking "$*"
+
+  for script in "$@"; do
+    echo && echo " 🎯 $( realpath $script )"
+    exist "$( realpath $script )" || continue
+
+    case "$script" in
+      *.html) tidy "$script" ;;
+      *nginx.conf) nginx -T -c "$( realpath $script )" ;;
+      *.sh | *) command shellcheck --format=tty "$( realpath $script )" ;;
+    esac
+  done
+} # check
+
+function lint () { clear
+  check .*rc
+} # lint
+
+function inspect () { clear
+  local -r file=$( realpath "$1" )
+
+  exist "$file" || return $?
+
+  printf "\n\nInspecing: %s" "$file"
+  printf '\nTODO: implement  inspect ()'
+} # inspect
+
+function probe () { clear
+  local -r location=$( realpath "${1:-.}" )
+
+  printf "\n location 👉 %s \n" "$location"
+
+  # - https://dev.yorhel.nl/ncdu/man
+  [ -d "$location" ] && \
+    ncdu -2 -r -e --color=dark-bg \
+      --exclude={.gnupg,.ssh} \
+    -- "$location"
+
+  weigh "$location"
+} # probe
+
+function search () { clear
+  local -r term="$1"
+  local -r location=$( realpath "${2:-.}" )
+
+  echo && echo Search Term 🔎 "$term"
+  echo Location 👉 "$location"
+
+  echo && echo Greping...
+  grep --devices=skip "$term" "$location"
+
+  echo && echo Finding...
+  command find "$location" -type f -iname "*$term*"
+
+  echo && echo DONE!
+} # search
+
+function download () { clear
+  local -r uri="$1"
+  # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
+  local -r process='../.local/yt-dlp'
+
+  echo uri: "$uri"
+  echo process: "$process"
+  echo
+
+  return 0
+
+  # curl -O $1 # generic download routine
+
+# $process --help
+# $process --download-sections '*00:00:00.0-00:00:05.0' $uri
+  $process "$uri"
+  header "$uri"
+} # download
+
+function open () { clear
+  local -r location="$1"
+  # apk
+  [ -f "$location" ] && [ -x "$location" ] && termux-open "$location"
+
+  # url
+  [[ "$location" == http* ]] && termux-open-url "$location"
+
+  # file
+  [ -f "$location" ] && termux-open "$location"
+
+  # android
+  # am start -a android.intent.action.VIEW -d "$1" > /dev/null
+} # open
+
+function play () { clear
+  local -r location="$1"
+
+  exist "$location" || return $?
+
+  # SoX
+  #   - https://en.m.wikipedia.org/wiki/SoX
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-split-by-silence
+  #   - https://ankitshah009.blogspot.com/2016/12/usage-of-sox-tool.html
+  #   - https://ankitshah009.blogspot.com/2017/03/sox-of-silence-original-post.html
+  #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
+  sox --help && echo
+  vlc --help && echo
+  ffmpeg --help && echo
+
+  echo ▷ Playing: "$location"
+  echo
+} # play
+
+# https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
+function backup () { clear
+  local -r source=$( realpath "$1" )
+
+  exist "$source" || return $?
+
+  package $source
+  # compress
+  # sync
+
+  echo Backing Up "$source"
+} # backup
+
+function package () { clear
+  local -r source=$( realpath "$1" )
+  local -r destination="$1"
+
+  exist "$source" || return $?
+
+  echo "📦 Packaging: $source"
+  echo "📦   Destination: $destination"
+} # package
+
+function shrink () { clear
+  local -r source=$( realpath "$1" )
+
+  exist "$source" || return $?
+
+  echo Shrinking: "$source"
+} # shrink
+
+function expand () { clear
+  local -r source=$( realpath "$1" )
+
+  exist "$source" || return $?
+
+  echo Expanding "$source"
+  command uncompress --verbose --list "$source" \
+    | sed 's/date.*time/month day time/' \
+    | column --table
+} # expand
+
+#   - https://ncompress.sourceforge.io
+function compress () { clear
+  local -r operation
+  local -r source=$( realpath "$1" )
+  local -r destination=$( realpath "${2:-./$source}" )
+
+  exist "$source" || return $?
+  exist "$destination" || mkdir "$destination"
+
+  echo Compressing "$destination"
+} # compress
+
+function decompress () { clear
+  local -r operation
+  local -r source=$( realpath "$1" )
+  local -r destination=$( realpath "${2:-./$source}" )
+
+
+  exist "$source" || return $?
+  exist "$destination" || mkdir "$destination"
+} # decompress
+
+function pack () { clear
+  local -r file=$( realpath "$1" )
+  local -r contents=${@:2}
+
+  exist "$file" || return $?
+
+  echo file: "$file"
+  echo contents: "$contents"
+
+  # https://en.m.wikipedia.org/wiki/Deflate
+  command zip -rv "$file" "$contents" # -u for update only
+
+# - https://geeksforgeeks.org/tar-command-linux-examples
+  command tar --verbose --create ---gzip --file "$file" "$contents" # -u for update only
+
+  # Creates a package (*.tgz *.tar.gz) from given directory.
+  # tar cvzf "${1%%/}.tgz"  "${1%%/}/"
+  # tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"
+
+  # Create a ZIP package of a file or folder.
+  # zip -r "${1%%/}.zip" "$1"
+
+  exist "$file" \
+    && command view "$file"
+} # pack
+
+function unpack () { clear
+  local operation
+  local -r archive=$( realpath "$1" )
+  local -r destination=$( realpath "${2:-./$archive}" )
+
+  exist "$archive" || return $?
+  exist "$destination" || mkdir "$destination"
+
+  case $archive in
+    # https://linux.die.net/man/1/unzip
+    # https://linuxhandbook.com/unzip-command
+    # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
+    *.zip)     operation="view $archive && unzip -l -v -n -d $destination $archive"  ;;
+
+    # https://en.m.wikipedia.org/wiki/RAR_(file_format)
+    *.rar)   operation="rar $archive"  ;;
+
+    # https://en.m.wikipedia.org/wiki/Tar_(computing)
+    # *.tar)     operation="tar xvf $archive"  ;;
+    *.tar)     operation="view $archive && tar --verbose --list --file=$archive $destination"  ;;
+
+    # https://en.m.wikipedia.org/wiki/7z
+    # https://tecmint.com/7zip-command-examples-in-linux/
+    *.7z)   operation="7z $archive"  ;;
+    #   - https://computerhope.com/unix/uuncompr.htm
+    *.Z)    operation="uncompress --verbose --test --list --keep --recursive $source"  ;;
+
+    # https://en.m.wikipedia.org/wiki/XZ_Utils
+    # xz --decompress - https://linux.die.net/man/1/unxz
+    # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
+    *.xz)   operation="view $archive && unxz --verbose --test --list --keep --files $source"  ;;
+    *.lzma) operation="view $archive && unlzma --verbose --test --list --keep --files $source"  ;;
+    # https://en.m.wikipedia.org/wiki/Brotli
+    # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
+    *.br)   operation="view $archive && brotli --decompress --verbose --test --keep --files $source"  ;;
+
+    # https://linux.die.net/man/1/gunzip
+    # https://linuxhandbook.com/gunzip-command/
+    *.tar.gz)  operation="tar xvzf $archive"  ;;
+    *.tgz)     operation="tar xvzf $archive"  ;;
+    *.gz)      operation="view $archive && gunzip --verbose --test --list $archive"  ;;
+
+    # https://en.m.wikipedia.org/wiki/Bzip2
+    # https://linux.die.net/man/1/bunzip2
+    *.tar.bz2) operation="tar xvjf $archive"  ;;
+    *.bz2)     operation="bunzip2 --verbose --test $archive"  ;;
+
+    *) echo "'$archive' cannot be extracted via >extract<"  ;;
+  esac
+
+  echo "source: $archive"
+  echo "operation: $operation"
+  echo "destination: $destination"
+
+  command view "$archive"
+  echo && command unzip -l -v -t "$archive"
+  echo && command zipinfo -h -l -t -v "$archive"
+  echo && command bunzip2 --verbose --test "$archive"
+  echo && command gunzip --verbose --test --list "$archive"
+
+  echo && command tar --list --file="$archive"
+} # unpack
+
+function recycle () { clear
+  echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
+
+  delete "$TMPDIR"/**/*
+
+  trash $@
+} # recycle
+
+# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
+# - https://computerhope.com/unix/shred.htm
+# - https://geeksforgeeks.org/shred-command-in-linux-with-examples
+function destroy () {
+  for file in "$@"; do
+    exist "$file" \
+      && shred --force --zero --iterations=5 --remove "$file" \
+      && echo 💣 destroyed 💥 "$file"
+  done
+} # destroy
+
+# - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
+# - (M) trash - https://github.com/termux/termux-packages/issues/5488
+# - https://askubuntu.com/q/468721/how-can-i-empty-the-trash-using-terminal
+function trash () {
+  for file in "$@"; do
+    exist "$file" \
+      && mv "$file" "$TMPDIR" \
+      && echo 🚮 Sent to trash 🗑 "$file"
+  done
+
+  tree -L 1 "$TMPDIR"
+} # trash
+
+function stream () {
+  local -r bytes="${1:-foo}"
+  yes "$bytes"
+} # stream
+
+monitor () {
+  htop && ps
+  printf "\n %s \n" "$( uptime )"
+} # monitor
+
+function devices () { clear
+  local -r location="$1"
+
+  ( exist "$location" && df -a -h "$location" ) \
+    || df -a -h
+} # devices
+
+# https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
+# https://digitalocean.com/community/tutorials/nohup-command-in-linux
+function hold () {
+  command nohup --version # https://en.m.wikipedia.org/wiki/Nohup
+  command nohup "$1"
+
+  # Redirect to stderror AND file
+  # tee - https://en.m.wikipedia.org/wiki/Tee_(command)
+  # nohup ./foo.sh > out.txt >2&1
+} # hold
+
+function weigh () {
+  local -r location=$( realpath "${1:-.}" )
+
+  exist "$location" || return $?
+
+  # https://geeksforgeeks.org/du-command-linux/
+  # https://redhat.com/sysadmin/du-command-options
+  du --summarize --total --time --human-readable \
+      --exclude={.gnupg,.ssh} \
+    -- "$location"
+
+  # https://geeksforgeeks.org/df-command-in-linux-with-examples
+  echo && echo # https://redhat.com/sysadmin/linux-df-command
+  df -ah "$location"
+  echo && echo 
+} # weigh
+
+function environment () { clear
+  # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
+  printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
+  printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
+
+  echo && echo '👇Commands👇'
+  compgen -c | sort | column --fillrows
+  echo && echo '👇Shell Variables👇'
+  compgen -v | sort | column --fillrows
+  echo && echo '👇Exports👇'
+  compgen -e | sort | column --fillrows
+  echo && echo '👇Built-ins👇'
+  compgen -b | sort | column --fillrows
+  echo && echo 👇Functions👇
+  compgen -A function | sort | column --fillrows
+  echo && echo '👇Aliases👇'
+  compgen -a | sort | column --fillrows # alias -p
+  echo && echo '👇Reserved Words👇'
+  compgen -k | sort | column --fillrows
+  echo && echo '👇Env Vars👇'
+  # https://unix.stackexchange.com/q/123473
+  env | sort | column --fillrows # printenv | export -p
+
+  echo && echo '👇Shell Vars👇'
+  # TODO: refactor set
+  #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
+    # ( set +o posix; set; set +o posix ) | sort | column --fillrows
+  set
+  echo && echo '👇Declarations👇'
+  declare -p | command cut --delimiter=' ' --fields 3 | sort | column --fillrows
+} # environment
+
+# https://bash.cyberciti.biz/guide/Reset_command
+# https://bash.cyberciti.biz/guide/Console_management
+# https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
+# https://invisible-island.net/ncurses/man/tset.1.html#h2-HISTORY
+# https://unix.stackexchange.com/q/335648/why-does-the-reset-command-include-a-delay
+# https://unix.stackexchange.com/q/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
+# https://stackoverflow.com/q/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
+function reload () {
+  termux-reload-settings
+  [ -n "$TMUX" ] && tmux source "$HOME/.tmux.conf"
+  clear
+
+  source "$HOME/.bashrc" \
+    && source "$HOME/.bash_login"
+
+# reset # slowww
+  tput reset
+  tput sgro # reset attributes
+  stty sane
+  setterm --initialize
+  setterm --resize
+  tput cup 0 0
+  [ "$TMUX" ] && echo && echo tmux -V
+  # TODO: fix posix bug
+  # echo && environment
+  echo && termux-info
+
+  echo && echo
+  printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
+  printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
+  printf "\nPATH: %s\n" "$PATH"
+  printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
+    "$( tty )" "$LINES" "$COLUMNS"
+
+  echo && echo
+} # reload
+
+# TOE - https://invisible-island.net/ncurses/man/toe.1m.html
+# SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
+# TERMINFO - https://bbs.archlinux.org/viewtopic.php?id=163103
+# TIC - https://ibm.com/docs/ro/aix/7.1?topic=t-tic-command
+# TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html?m=1
+function term () {
+  clear
+  echo "\e[7m" # REVERSE
+  echo && echo "TTY: $(tty)"
+  printf "\n\nSize \e[3mROWS\e[23mX\e[3mCOLUMNS\e[23m: %s\n" \
+    "$(stty size | tr ' ' 'x')"
+  echo && [ -n "$TMUX" ] && echo "TMUX INFO:" && tmux info
+  echo && echo "TERM=$TERM $( tput -V )" && toe
+  echo && echo "stty: $(stty -g)" && stty -a
+
+  # https://manpages.ubuntu.com/manpages/bionic/man1/infocmp.1.html
+  echo && echo TERMINFO PATH: && infocmp -1 -D # terminfo location
+  echo && echo TERMINFO CAP NAMES: && infocmp -1 -IT # terminfo description
+  echo && echo TERMINFO CAPABILITIES: && infocmp -1 -CrT # terminfo capabilities
+  echo && echo TERMINFO LONG NAMES: && infocmp -1 -LT # terminfo long names
+
+  echo "\e[m" # DEFAULT
+
+  echo && echo "Bindings \e[3m( see ~/.inputrc )\e[23m & alias shortcuts"
+  shortcuts
+  [[ function == $( type -t Colors ) ]] \
+    && echo && Colors
+} # term
+
+# Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
+function git_clean () {
+  # https://stackoverflow.com/q/5613345/how-to-shrink-the-git-folder
+  # https://stackoverflow.com/q/3119850/is-there-a-way-to-reduce-the-size-of-the-git-folder
+  # https://web.archive.org/web/20190207210108/http://stevelorek.com/how-to-shrink-a-git-repository.html
+  # TODO: Check if ran with git gc
+  git repack -a -d --depth=250 --window=250
+  git reflog expire --expire=now --all
+  time git gc --aggressive --prune=now
+
+  git remote prune origin
+} # git_clean
+
+# }}}
+
+echo 'devPunks😈studio .bash_login'
+echo
+
+# vim: foldmethod=marker
