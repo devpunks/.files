@@ -336,6 +336,7 @@ function balance () { clear
   local -r configuration="${HOME}/nginx.conf"
 
   nginx -V
+  nginx -help
 
   exist "${PREFIX}/etc/nginx/nginx.conf" && cat "${PREFIX}/etc/nginx/nginx.conf"
   exist "$configuration" && cat "$configuration"
