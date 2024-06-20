@@ -494,7 +494,7 @@ function browse (){ clear
   local -r location="${1}"
   local -r configuration="${PREFIX}/etc/lynx.cfg"
 
-  lynx -validate -verbose -cfg="${PREFIX}/etc/lynx.cfg" \
+  lynx -validate -verbose \
     -homepage='http://mdn.com' -session="${HOME}/lynx.session" \
     -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies" \
     -anonymous -use_mouse -scrollbar -scrollbar_arrow -show_cursor -show_rate -vikeys
