@@ -487,6 +487,10 @@ function about () {
   stat "$@"
 } # about
 
+function browse (){ clear
+
+} #browse
+
 # Runit
 # https://en.m.wikipedia.org/wiki/Runit
 # See $HOME/.termux/boot/README on Android
