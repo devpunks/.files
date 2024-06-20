@@ -493,8 +493,7 @@ function about () {
 function browse (){ clear
   local -r location="${1}"
 
-  lynx -validate -verbose \
-    -show_rate -vikeys -anonymous -use_mouse -show_cursor \
+  lynx -validate -verbose -cfg="${HOME}/lynx.cfg" \
     -homepage='http://mdn.com' -session="${HOME}/lynx.session" \
     -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies" \
   $location
