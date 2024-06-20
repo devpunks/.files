@@ -487,6 +487,7 @@ function about () {
   stat "$@"
 } # about
 
+# See /usr/etc/lynx.cfg
 # - https://lynx.invisible-island.net/lynx_help/
 # - https://lynx.invisible-island.net/lynx2.8.3/breakout/lynx.cfg
 function browse (){ clear
