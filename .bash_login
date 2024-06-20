@@ -352,6 +352,7 @@ function balance () { clear
   local -r configuration="${HOME}/nginx.conf"
 
   exist "$configuration" && cat "$configuration"
+  # /usr/local/nginx/conf/*, /etc/nginx/*, or /usr/local/etc/nginx/*
   exist "${PREFIX}/etc/nginx/nginx.conf" && cat "${PREFIX}/etc/nginx/nginx.conf"
 
   check "$configuration"
