@@ -492,6 +492,7 @@ function about () {
 # - https://lynx.invisible-island.net/lynx2.8.3/breakout/lynx.cfg
 function browse (){ clear
   local -r location="${1}"
+  local -r configuration="${PREFIX}/etc/lynx.cfg"
 
   lynx -validate -verbose -cfg="${PREFIX}/etc/lynx.cfg" \
     -homepage='http://mdn.com' -session="${HOME}/lynx.session" \
