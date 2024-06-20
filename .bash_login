@@ -93,7 +93,7 @@ alias chmod='command chmod --verbose --preserve-root --recursive'
 
 function limit () { clear
   ulimit --help
-  ulimit -a
+  echo && ulimit -a
   echo TODO: 'limit' Implementation
 } # limit
 
