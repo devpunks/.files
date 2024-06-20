@@ -496,6 +496,7 @@ function browse (){ clear
   lynx -validate -verbose -cfg="${HOME}/lynx.cfg" \
     -homepage='http://mdn.com' -session="${HOME}/lynx.session" \
     -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies" \
+    -scrollbar -scrollbar_arrow -show_rate -vikeys -anonymous -use_mouse -show_cursor
   $location
 
   echo && lynx -show_cfg
