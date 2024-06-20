@@ -92,7 +92,6 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
 function limit () { clear
-  echo TODO: 'limit' Implementation
   ulimit --help
 } # limit
 
