@@ -80,8 +80,8 @@ alias g#='{
 # - https://en.m.wikipedia.org/wiki/Chown
 alias chown='command chown --verbose --preserve-root --recursive'
 
-# https://en.m.wikipedia.org/wiki/Chgrp
-# https://man7.org/linux/man-pages/man1/chgrp.1p.html
+# - https://en.m.wikipedia.org/wiki/Chgrp
+# - https://man7.org/linux/man-pages/man1/chgrp.1p.html
 alias chgrp='command chgrp --verbose --preserve-root --recursive'
 
 # https://askubuntu.com/q/918379
