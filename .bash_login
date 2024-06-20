@@ -494,7 +494,7 @@ function browse (){ clear
 
   lynx -validate -verbose \
     -show_rate -vikeys -anonymous -use_mouse -show_cursor \
-    -homepage='http://mdn.com' -session="${HOME}/lynx.session"
+    -homepage='http://mdn.com' -session="${HOME}/lynx.session" \
     -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies"
 
   echo && lynx -show_cfg
