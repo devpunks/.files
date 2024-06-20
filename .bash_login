@@ -333,8 +333,6 @@ function load () { clear
 
 # https://nginx.org/en/docs
 function balance () { clear
-  local -r configuration="${HOME}/nginx.conf"
-
   nginx -V
   nginx -help
 
