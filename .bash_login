@@ -492,7 +492,7 @@ function about () {
 function browse (){ clear
   local -r location="${1}"
 
-  lynx -vikeys -validate -verbose -anonymous -book -use_mouse -show_cursor -show_rate -cookies -cookie_file="${HOME}/.cookies" -homepage='http://mdn.com' -session="${HOME}/lynx.session"
+  lynx -vikeys -validate -verbose -anonymous -use_mouse -show_cursor -show_rate -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies" -homepage='http://mdn.com' -session="${HOME}/lynx.session"
 
   echo && lynx -show_cfg
 } #browse
