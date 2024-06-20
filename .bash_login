@@ -124,6 +124,15 @@ function permit () { clear
   ls "$location"
 } # permit
 
+function restrict () { clear
+  local -r location=$( realpath "$1" )
+
+  exist "$location" || return $?
+
+  echo umask : "$( umask )"
+  echo umask "-S : $( umask -S )"
+} # restrict
+
 # }}}
 
 # =========================================================================
