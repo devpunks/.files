@@ -98,6 +98,7 @@ function limit () { clear
 } # limit
 
 function unlimit () { clear
+  ulimit -a
   echo TODO: 'unlimit' Implementation
 } # unlimit
 
