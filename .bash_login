@@ -92,6 +92,7 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
 # - https://wiki.archlinux.org/title/Limits.conf
+# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command/
 function limit () { clear
   ulimit --help
   echo && ulimit -a
