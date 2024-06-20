@@ -440,6 +440,7 @@ alias tmux.config='{
 # {{{ Log(s)
 #
 # ==========================================================================
+alias tail='command tail --verbose'
 alias logs.sshd="command logcat -s 'sshd:*'"
 function log () {
   command logcat
