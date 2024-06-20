@@ -488,7 +488,7 @@ function about () {
 } # about
 
 function browse (){ clear
-
+  lynx -anonymous -book -blink -color -cookies -cookie_file="${HOME}/.cookies"
 } #browse
 
 # Runit
