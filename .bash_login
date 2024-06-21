@@ -536,7 +536,6 @@ function run () {
 
   man sv
   man runsv
-  man svlogd
   man runsvdir
   man runsvchdir
 
