@@ -96,7 +96,6 @@ alias chmod='command chmod --verbose --preserve-root --recursive'
 function limit () { clear
   ulimit --help
 
-
   echo && echo Hard Limits:
   ulimit -Ha
 
