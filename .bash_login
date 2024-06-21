@@ -719,7 +719,7 @@ function backup () { clear
 
   exist "$source" || return $?
 
-  package $source
+  package "$source"
   # compress
   # sync
 
