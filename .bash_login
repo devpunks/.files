@@ -95,7 +95,14 @@ alias chmod='command chmod --verbose --preserve-root --recursive'
 # - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command/
 function limit () { clear
   ulimit --help
-  echo && ulimit -a
+
+
+  echo && echo Hard Limits:
+  ulimit -Ha
+
+  echo && echo Soft Limits:
+  ulimit -Sa
+
   echo TODO: 'limit' Implementation
 } # limit
 
