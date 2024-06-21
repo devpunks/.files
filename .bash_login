@@ -556,6 +556,7 @@ function run () {
 
 function services () {
   man svlogd
+  ps | command grep runsv
   tree "$PREFIX/var/service"
 } # services
 
