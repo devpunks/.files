@@ -554,6 +554,11 @@ function run () {
   done
 } # run
 
+function services () {
+  man svlogd
+  tree "$PREFIX/var/service"
+} # services
+
 function draw () { echo draw; }
 # http://gnuplot.info
 function plot () { clear
