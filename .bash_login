@@ -531,7 +531,8 @@ function browse (){ clear
 # See $HOME/.termux/boot/README on Android
 # https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 function run () {
-  local -r service="${1}"
+  local -r seconds=5
+  local -r services="${@:-nginx postgresql}"
 
   man runsvchdir
   man runsvdir
