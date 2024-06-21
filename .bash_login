@@ -533,6 +533,9 @@ function browse (){ clear
 function run () {
   local -r service="${1}"
 
+  man runsvchdir
+  man runsvdir
+
   echo running "$service"
 } # run
 
