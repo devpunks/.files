@@ -549,7 +549,7 @@ function run () {
     echo "Process routine for $service"
     echo "checking $service" # check
 
-    # sv status "$service"
+    sv status "$service"
     echo
   done
 } # run
