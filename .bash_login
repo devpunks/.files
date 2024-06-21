@@ -534,7 +534,9 @@ function run () {
   local -r seconds=5
   local -r services="${@:-nginx postgresql}"
 
-  man runsvchdir
+  man sv
+  man runsv
+  man svlogd
   man runsvdir
 
   echo running "$service"
