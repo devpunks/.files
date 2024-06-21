@@ -543,7 +543,7 @@ function run () {
   #   || mkdir -p ${PREFIX}/etc/init.d
   tree "$PREFIX/etc/init.d"
 
-  echo Running "$services"
+  services
   for service in $services ; do
     echo "Wait time: $seconds"
     echo "Process routine for $service"
