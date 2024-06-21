@@ -539,7 +539,6 @@ function run () {
   man runsvdir
   man runsvchdir
 
-  tree "$PREFIX/var/services"
   # [ -d ${PREFIX}/etc/init.d ] \
   #   || mkdir -p ${PREFIX}/etc/init.d
   tree "$PREFIX/etc/init.d"
