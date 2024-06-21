@@ -538,6 +538,7 @@ function run () {
   man runsv
   man svlogd
   man runsvdir
+  man runsvchdir
 
   echo running "$service"
 } # run
