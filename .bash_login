@@ -521,7 +521,7 @@ function browse (){ clear
     -homepage='http://mdn.com' -session="${HOME}/lynx.session" \
     -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies" \
     -anonymous -use_mouse -scrollbar -scrollbar_arrow -show_cursor -show_rate -vikeys \
-  $location
+  "$location"
 
   echo && lynx -show_cfg
 } #browse
