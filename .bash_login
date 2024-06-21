@@ -566,10 +566,6 @@ function plot () { clear
   gnuplot --help
 } # plot
 
-function shared () { clear
-  tree "$PREFIX/share"
-} # shared
-
 function chat () { clear
   echo && echo 🗣️CHATTY PATTY!
   echo && echo WeeChat Version: "$( weechat --version )"
