@@ -532,7 +532,7 @@ function browse (){ clear
 # https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 function run () {
   local -r seconds=5
-  local -r services="${@:-nginx postgresql}"
+  local -r services="${*:-nginx postgresql}"
 
   man sv
   man runsv
