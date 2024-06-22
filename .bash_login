@@ -548,7 +548,6 @@ function run () {
   services
   for service in $services ; do
     echo "Wait time: $seconds"
-    echo "Process routine for $service"
     echo "checking $service" # check
 
     runsv "$service"
