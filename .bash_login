@@ -548,6 +548,9 @@ function run () {
   for service in $services ; do
     echo "Wait time: $seconds"
     echo "checking $service" # check
+
+    [[ "$service" == ./* ]] && echo A PATH || echo A SERVICE
+
     echo "Process routine for $service"
 
     runsv "$service"
