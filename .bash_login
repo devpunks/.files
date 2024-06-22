@@ -540,7 +540,9 @@ function trip () {
   # man sv
   echo Check
   sv -v check "$service"
-  sv -v force-stop "$service"
+  echo Statuus
+  sv -v status "$service"
+# sv -v force-stop "$service"
   sv -v force-shutdown "$service"
 
   services
