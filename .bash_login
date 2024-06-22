@@ -550,6 +550,9 @@ function run () {
     echo "checking $service" # check
 
     echo "Process routine for $service"
+    [[ "$service" == ./* ]] \
+      && { runsv "$( realpath "$service" )" ; sv -v -w $seconds status $( realpath "$service" ) ; } \
+      || { runsv "${path}/${service}" ; sv -v -w $seconds status "${path}/${service}" ; }
 
     runsv "$service"
     sv -v -w $seconds status "$service"
