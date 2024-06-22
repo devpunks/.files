@@ -570,6 +570,10 @@ function run () {
   echo && tree "$PREFIX/etc/init.d"
   echo "$path" && echo
 
+  [ -z "$services" ] \
+    && { service-daemon start ; return ; }
+
+
   for service in $services ; do
     echo "Wait time: $seconds"
     echo "checking $service"
