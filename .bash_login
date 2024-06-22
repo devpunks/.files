@@ -538,7 +538,8 @@ function trip () {
   local -r path="${PREFIX}/var/service"
 
   man sv
-  sv -v status "$service"
+  sv -v check "$service" # check
+  sv -v force-shutdown "$service"
 
   services
 } # trip
