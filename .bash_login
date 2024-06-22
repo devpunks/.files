@@ -535,8 +535,8 @@ function run () {
   local -r services="${*:-nginx}"
 
   man sv
-  man runsv
-  man runsvdir
+  man runsv    # Per service
+  man runsvdir # Services dir
   man runsvchdir
 
   # [ -d ${PREFIX}/etc/init.d ] \
