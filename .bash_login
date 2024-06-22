@@ -566,6 +566,7 @@ function run () {
   #   || mkdir -p ${PREFIX}/etc/init.d
   # https://unix.stackexchange.com/q/20357
   echo && tree "$PREFIX/etc/init.d"
+  echo "$path" && echo
 
   for service in $services ; do
     echo "Wait time: $seconds"
