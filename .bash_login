@@ -537,7 +537,8 @@ function trip () {
   local -r services="${*:-nginx}"
   local -r path="${PREFIX}/var/service"
 
-  man sv
+  # man sv
+  echo Check
   sv -v check "$service"
   sv -v force-stop "$service"
   sv -v force-shutdown "$service"
