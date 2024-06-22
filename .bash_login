@@ -552,7 +552,7 @@ function run () {
     runsv -w $seconds "$service"
     sv status "$service"
     echo
-  done
+  done # for
 } # run
 
 function services () {
