@@ -538,6 +538,7 @@ function trip () {
   local -r path="${PREFIX}/var/service"
 
   man sv
+  sv -v status "$service"
 
 } # trip
 
