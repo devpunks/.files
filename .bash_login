@@ -567,8 +567,8 @@ function run () {
     sv -v check "$service" # check
 
     echo "Process routine for $service"
-    ( [[ "$service" == ./* ]] && runsv "$service" >/dev/null 2>&1 & ) \
-      || ( runsv "${path}/${service}" >/dev/null 2>&1 & )
+    ( [[ "$service" == ./* ]] && runsv "$service" >/dev/null & ) \
+      || ( runsv "${path}/${service}" >/dev/null & )
 
 #     && { runsv "$( realpath "$service" )" 2>&1 & ; sv -v -w $seconds status $( realpath "$service" ) ; } \
 #     || { runsv "${path}/${service}" 2>&1 & ; sv -v -w $seconds status "${path}/${service}" ; }
