@@ -561,7 +561,7 @@ function services () { clear
 
   man svlogd
   ps | command grep runsv
-  echo && tree "$path"
+  echo && tree -L 3 "$path"
 } # services
 
 function draw () { echo draw; }
