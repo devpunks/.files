@@ -563,7 +563,7 @@ function services () { clear
   htop --tree --filter=runsv
 
   ps | command grep runsv
-  echo && tree -L 3 "$path"
+  echo && tree -L 4 "$path"
 } # services
 
 function draw () { echo draw; }
