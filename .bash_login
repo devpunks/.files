@@ -560,6 +560,8 @@ function services () { clear
   local -r path="${PREFIX}/var/service/"
 
   man svlogd
+  htop --tree --filter=runsv
+
   ps | command grep runsv
   echo && tree -L 3 "$path"
 } # services
