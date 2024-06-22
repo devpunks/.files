@@ -549,8 +549,8 @@ function run () {
     echo "Process routine for $service"
     echo "checking $service" # check
 
-    runsv -w $seconds "$service"
-    sv status "$service"
+    runsv "$service"
+    sv -v -w $seconds status "$service"
     echo
   done # for
 } # run
