@@ -545,7 +545,6 @@ function run () {
   # https://unix.stackexchange.com/q/20357
   echo && tree "$PREFIX/etc/init.d"
 
-  services
   for service in $services ; do
     echo "Wait time: $seconds"
 
