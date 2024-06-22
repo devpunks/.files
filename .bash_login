@@ -556,7 +556,7 @@ function run () {
   done # for
 } # run
 
-function services () {
+function services () { clear
   local -r path="${PREFIX}/var/service/"
 
   man svlogd
