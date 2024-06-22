@@ -558,7 +558,7 @@ function run () {
 function services () {
   man svlogd
   ps | command grep runsv
-  tree "$PREFIX/var/service"
+  echo && tree "$PREFIX/var/service"
 } # services
 
 function draw () { echo draw; }
