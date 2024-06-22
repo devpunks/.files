@@ -535,10 +535,10 @@ function run () {
   local -r services="${*:-nginx}"
   local -r path="${PREFIX}/var/service"
 
-  man sv
-  man runsv    # Per service
-  man runsvdir # Services dir
-  man runsvchdir
+# man sv
+# man runsv    # Per service
+# man runsvdir # Services dir
+# man runsvchdir
 
   # [ -d ${PREFIX}/etc/init.d ] \
   #   || mkdir -p ${PREFIX}/etc/init.d
