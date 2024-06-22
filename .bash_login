@@ -554,6 +554,8 @@ function run () {
     runsv "$service"
     sv -v -w $seconds status "$service"
   done # for
+
+  services
 } # run
 
 function services () { clear
