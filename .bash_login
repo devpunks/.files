@@ -565,7 +565,6 @@ function run () {
 function services () {
   local -r path="${PREFIX}/var/service/"
 
-  man svlogd
   htop --tree --filter=runsv
 
   ps | command grep runsv
