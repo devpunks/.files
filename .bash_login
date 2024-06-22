@@ -557,6 +557,8 @@ function run () {
 } # run
 
 function services () {
+  local -r path="${PREFIX}/var/service/"
+
   man svlogd
   ps | command grep runsv
   echo && tree "$PREFIX/var/service"
