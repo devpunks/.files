@@ -561,6 +561,7 @@ function run () {
   for service in $services ; do
     echo "Wait time: $seconds"
     echo "checking $service" # check
+    echo sv -v check "$service" # check
 
     echo "Process routine for $service"
     [[ "$service" == ./* ]] \
