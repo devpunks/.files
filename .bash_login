@@ -544,6 +544,10 @@ function trip () {
   sv -v status "$service"
 # sv -v force-stop "$service"
   sv -v force-shutdown "$service"
+  echo Check
+  sv -v check "$service"
+  echo Statuus
+  sv -v status "$service"
 
   services
   sv -v status "$service"
