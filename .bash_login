@@ -536,6 +536,9 @@ function trip () {
   local -r service="${1}"
   local -r services="${*:-nginx}"
   local -r path="${PREFIX}/var/service"
+
+  man sv
+
 } # trip
 
 function run () {
