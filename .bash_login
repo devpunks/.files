@@ -556,7 +556,7 @@ function trip () {
 
 function run () {
   local -r seconds=5
-  local -r services="${*:-nginx}"
+  local -r services="${*}"
   local -r path="${SVDIR:-$PREFIX/var/service}"
 
 # man sv
