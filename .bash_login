@@ -549,6 +549,7 @@ function run () {
   for service in $services ; do
     echo "Wait time: $seconds"
     echo "checking $service" # check
+    echo "Process routine for $service"
 
     runsv "$service"
     sv -v -w $seconds status "$service"
