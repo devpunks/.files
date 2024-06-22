@@ -542,6 +542,7 @@ function trip () {
   sv -v force-shutdown "$service"
 
   services
+  sv -v status "$service"
 } # trip
 
 function run () {
