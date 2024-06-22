@@ -574,6 +574,7 @@ function run () {
 #     || { runsv "${path}/${service}" 2>&1 & ; sv -v -w $seconds status "${path}/${service}" ; }
 
     sv -v -w $seconds status "$service"
+    sv -v -w $seconds status "${service}/log"
   done # for
 
   services
