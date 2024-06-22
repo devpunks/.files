@@ -542,6 +542,7 @@ function run () {
 
   # [ -d ${PREFIX}/etc/init.d ] \
   #   || mkdir -p ${PREFIX}/etc/init.d
+  # https://unix.stackexchange.com/q/20357
   echo && tree "$PREFIX/etc/init.d"
 
   services
