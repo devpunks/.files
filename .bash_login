@@ -123,11 +123,10 @@ function permit () { clear
   echo umask : "$( umask )"
   echo umask "-S : $( umask -S )"
 
-  # 4 - Read
-  # 2 - Write
-  # 1 - Execute
-  # chmod -v 755 $location
-  chmod u=rwX,g=rX,o= "$location"
+  # r(4) - Read (R - disabled)
+  # w(2) - Write (W - disabled)
+  # x(1) - Execute (X - disabled)
+  chmod u=rwx,g=rx,o=rx "$location" # 755
 
   ls "$location"
 } # permit
