@@ -207,6 +207,7 @@ alias most='command most +u -s -t2'
 alias mount='command mount | column -t'
 alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
 alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
+alias mkdir='command mkdir --verbose --parents --mode=740' # u=rwx,g=r,o=
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
 # https://en.m.wikipedia.org/wiki/Named_pipe
