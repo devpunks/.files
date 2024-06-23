@@ -141,8 +141,16 @@ function restrict () { clear
 
   exist "$location" || return $?
 
-  echo "umask : $( umask )"
-  echo "umask -S : $( umask -S )"
+  # chmod u+x g+x o+x a+x
+  # r(4) - Read (R - disabled)
+  # w(2) - Write (W - disabled)
+  # x(1) - Execute (X - disabled)
+  # u=user,g=group,o=others,a=all
+  # [ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+.
+  chmod u=rw,g=,o= "$( realpath "$location" )" # 600
+
+  ls "$location"
+  about "$location"
 } # restrict
 
 # }}}
