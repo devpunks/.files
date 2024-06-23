@@ -532,7 +532,7 @@ function stop () {
 
   start-stop-daemon -K -s 1 -o -p "$PIDFILE"
 
-  tail --pid=$( cat "$PIDFILE" ) /dev/null
+  #tail --pid=$( cat "$PIDFILE" ) /dev/null
 
   for f in "$SVDIR/*/supervise" "$SVDIR/*/log/supervise"; do
     kill -9 $(cat "$f/pid") 2>/dev/null || rm -rf $f
