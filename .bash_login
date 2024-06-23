@@ -115,7 +115,7 @@ function unlimit () { clear
 # https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
 # https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
 # https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
-# https://stackoverflow.com/questions/12445527/set-different-umask-for-files-and-folders
+# https://stackoverflow.com/q/12445527/set-different-umask-for-files-and-folders
 function permit () { clear
   printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
 
