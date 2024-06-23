@@ -120,8 +120,8 @@ function permit () { clear
 
   exist "$location" || return $?
 
-  echo umask : "$( umask )"
-  echo umask "-S : $( umask -S )"
+  echo "umask : $( umask )"
+  echo "umask -S : $( umask -S )"
 
   # u=user, g=group, o=others
   # r(4) - Read (R - disabled)
