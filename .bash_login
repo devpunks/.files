@@ -553,7 +553,7 @@ function stop () {
   man start-stop-daemon
   return
 
-  start-stop-daemon -K -s 1 -o -p "$PIDFILE"
+  command start-stop-daemon --stop --oknodo --remove-pidfile --pidfile "$pidfile" --signal 1 --retry "$retry"
 
   #tail --pid=$( cat "$PIDFILE" ) /dev/null
 
