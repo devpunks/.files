@@ -522,6 +522,8 @@ function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
 function start () {
+  local -r path="$1"
+  local -r nice="-10"
   local name='services'
   local piddir="${HOME}"
   local piddir="${PREFIX}/var/run"
