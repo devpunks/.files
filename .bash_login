@@ -522,9 +522,9 @@ function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
 function start () {
-  local -r name='services'
-  local -r piddir="${PREFIX}/var/run"
-  local -r piddir="${HOME}"
+  local name='services'
+  local piddir="${HOME}"
+  local piddir="${PREFIX}/var/run"
   local -r pidfile="${piddir}/${name}.pid"
   local -r daemon="${PREFIX}/bin/runsvdir"
 
