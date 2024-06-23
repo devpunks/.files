@@ -512,6 +512,10 @@ function start () {
   man start-stop-daemon
 } # about
 
+function stop () {
+  man start-stop-daemon
+} # about
+
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
   stat "$@"
