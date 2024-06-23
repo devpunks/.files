@@ -123,6 +123,7 @@ function permit () { clear
   echo umask : "$( umask )"
   echo umask "-S : $( umask -S )"
 
+  # u=user, g=group, o=others
   # r(4) - Read (R - disabled)
   # w(2) - Write (W - disabled)
   # x(1) - Execute (X - disabled)
