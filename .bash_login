@@ -527,13 +527,14 @@ function start () {
   local piddir="${PREFIX}/var/run"
   local -r pidfile="${piddir}/${name}.pid"
   local -r daemon="${PREFIX}/bin/runsvdir"
+  local -r daemon_opts="${SVDIR}"
 
   mkdir -p "$piddir"
 
   man start-stop-daemon
   return
 
-  start-stop-daemon -S -b -m -p "$PIDFILE" -x "$DAEMON" -d "$PREFIX" -- "$DAEMON_OPTS"
+  start-stop-daemon -S -b -m -p "$pidfile" -x "$daemon" -d "$PREFIX" -- "$daemon_opts"
 } # about
 
 function stop () {
