@@ -91,25 +91,6 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 # - https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
-# - https://wiki.archlinux.org/title/Limits.conf
-# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command/
-function limit () { clear
-  ulimit --help
-
-  echo && echo Hard Limits:
-  ulimit -Ha
-
-  echo && echo Soft Limits:
-  ulimit -Sa
-
-  echo TODO: 'limit' Implementation
-} # limit
-
-function unlimit () { clear
-  echo && ulimit -a
-  echo TODO: 'unlimit' Implementation
-} # unlimit
-
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
 # https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
