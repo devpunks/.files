@@ -508,6 +508,10 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+function start () {
+  man start-stop-daemon
+} # about
+
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
   stat "$@"
