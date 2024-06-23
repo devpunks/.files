@@ -130,6 +130,7 @@ function permit () { clear
   chmod u=rwx,g=rx,o=rx "$location" # 755
 
   ls "$location"
+  about "$location"
 } # permit
 
 function restrict () { clear
