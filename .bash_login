@@ -521,6 +521,7 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+# >/dev/null 2>&1 &
 function start () { clear
   # >/dev/null 2>&1 &
   local -r path="$1"
