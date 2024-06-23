@@ -123,7 +123,7 @@ function permit () { clear
 
   exist "$location" || return $?
 
-  # u=user, g=group, o=others
+  # chmod u+x g+x o+x a+x
   # r(4) - Read (R - disabled)
   # w(2) - Write (W - disabled)
   # x(1) - Execute (X - disabled)
