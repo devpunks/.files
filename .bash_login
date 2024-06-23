@@ -127,7 +127,7 @@ function permit () { clear
   # r(4) - Read (R - disabled)
   # w(2) - Write (W - disabled)
   # x(1) - Execute (X - disabled)
-  chmod u=rwx,g=rx,o=rx "$location" # 755
+  chmod u=rwx,g=rx,o=rx $( realpath "$location" ) # 755
 
   ls "$location"
   about "$location"
