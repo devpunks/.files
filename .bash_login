@@ -514,7 +514,9 @@ function start () {
   mkdir -p "$piddir"
 
   man start-stop-daemon
-  start-stop-daemon -S -b -m -p $PIDFILE -x $DAEMON -d $PREFIX -- $DAEMON_OPTS
+  return
+
+  start-stop-daemon -S -b -m -p "$PIDFILE" -x "$DAEMON" -d "$PREFIX" -- "$DAEMON_OPTS"
 } # about
 
 function stop () {
