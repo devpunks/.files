@@ -140,8 +140,8 @@ function restrict () { clear
 
   exist "$location" || return $?
 
-  echo umask : "$( umask )"
-  echo umask "-S : $( umask -S )"
+  echo "umask : $( umask )"
+  echo "umask -S : $( umask -S )"
 } # restrict
 
 # }}}
