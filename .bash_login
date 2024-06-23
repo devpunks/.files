@@ -135,7 +135,9 @@ function permit () { clear
 } # permit
 
 function restrict () { clear
-  local -r location=$( realpath "$1" )
+  printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
+
+  local -r location="$1"
 
   exist "$location" || return $?
 
