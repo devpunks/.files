@@ -116,8 +116,7 @@ function unlimit () { clear
 # https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
 # https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
 function permit () { clear
-  echo "umask : $( umask )"
-  echo "umask -S : $( umask -S )"
+  printf "\n\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
 
   local -r location="$1"
 
