@@ -512,6 +512,9 @@ function start () {
   local -r name='services'
   local -r piddir="${PREFIX}/var/run"
   local -r piddir="${HOME}"
+  local -r pidfile="${piddir}/${name}.pid"
+  local -r daemon="${PREFIX}/bin/runsvdir"
+
   mkdir -p "$piddir"
 
   man start-stop-daemon
