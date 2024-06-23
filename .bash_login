@@ -559,7 +559,8 @@ function stop () {
   #tail --pid=$( cat "$PIDFILE" ) /dev/null
 
   #for f in "$SVDIR/*/supervise" "$SVDIR/*/log/supervise"; do
-  #  kill -9 $(cat "$f/pid") 2>/dev/null || rm -rf $f
+  #  kill -9 $(cat "$f/pid") 2>/dev/null || :
+  #  rm -rf $f
   #done
 } # about
 
