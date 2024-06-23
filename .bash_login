@@ -511,7 +511,7 @@ function accumulate (){ echo accumulate; }
 function start () {
   local -r piddir="${PREFIX}/var/run"
   local -r piddir="${HOME}"
-  mkdir -p $piddir
+  mkdir -p "$piddir"
 
   man start-stop-daemon
   start-stop-daemon -S -b -m -p $PIDFILE -x $DAEMON -d $PREFIX -- $DAEMON_OPTS
