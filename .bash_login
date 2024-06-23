@@ -526,6 +526,7 @@ function start () {
   local -r nice="-10"
   local name='services'
   local piddir="${HOME}"
+  local -r mask="u=rwx,g=r,o="
   local piddir="${PREFIX}/var/run"
   local -r pidfile="${piddir}/${name}.pid"
   local -r daemon="${PREFIX}/bin/runsvdir"
