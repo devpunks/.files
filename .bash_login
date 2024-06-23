@@ -521,7 +521,8 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
-function start () {
+function start () { clear
+  # >/dev/null 2>&1 &
   local -r path="$1"
   local -r nice="-10"
   local name='services'
