@@ -520,6 +520,9 @@ function start () {
 } # about
 
 function stop () {
+  local -r piddir="${PREFIX}/var/run"
+  local -r piddir="${HOME}"
+
   man start-stop-daemon
 } # about
 
