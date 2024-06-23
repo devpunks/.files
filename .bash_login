@@ -205,7 +205,7 @@ alias push='command pushd'
 alias dirs='command dirs -p'
 alias most='command most +u -s -t2'
 alias mount='command mount | column -t'
-alias mkdir='command mkdir --verbose --parents'
+alias mkdir='command mkdir --verbose --parents --mode=740' # u=rwx,g=r,o=
 alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
 alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
