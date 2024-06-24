@@ -547,9 +547,6 @@ function start () { clear
     --chdir "$service" --nicelevel "$nice" --umask "$mask" \
     --make-pidfile --pidfile "$pidfile" \
   --exec "$daemon" -- "$service"
-  # --exec "$daemon" -- "$daemon_opts"
-
-  # start-stop-daemon -S -b -m -p "$pidfile" -x "$daemon" -d "$PREFIX" -- "$daemon_opts"
 } # start
 
 function stop () {
