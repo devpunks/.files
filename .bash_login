@@ -833,7 +833,7 @@ function backup () { clear
 
   package "$source"
   # compress
-  # sync
+  sync "$source"
 
   echo Backing Up "$source"
 } # backup
