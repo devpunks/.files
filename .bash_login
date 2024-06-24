@@ -174,6 +174,9 @@ alias bell='echo "\a"'
 alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
+# - https://man7.org/linux/man-pages/man1/uuidgen.1.html
+# - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
+alias uuid='uuidgen'
 # https://stackoverflow.com/q/42004870
 # https://en.m.wikipedia.org/wiki/Random_number_generation
 alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
