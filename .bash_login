@@ -406,6 +406,7 @@ function serve () { clear
   command python -m http.server &
   command apachectl configtest
   command apachectl status
+  command apachectl -S
 } # serve
 
 # SSh ---------------------------------------------------------------------
