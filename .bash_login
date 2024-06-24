@@ -983,7 +983,7 @@ function recycle () { clear
 
   delete "$TMPDIR"/**/*
 
-  trash $@
+  trash "$@"
 } # recycle
 
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
