@@ -52,6 +52,7 @@ pkg install tree
 pkg install which
 pkg install ncurses
 pkg install cmatrix
+pkg install uuid-utils # uuidgen
 pkg install shellcheck # https://shellcheck.net
 # pkg install expect
 
