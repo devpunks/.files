@@ -427,7 +427,7 @@ alias ssh.add='{
   # default is $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
   eval $( ssh-agent -s -a $HOME/agent.sock)
   command ssh-add
-  ps x | grep ssh-agent
+  ps x | command grep ssh-agent
 
   echo THE AGENT PID: $SSH_AGENT_PID
   echo THE AUTH SOCK: $SSH_AUTH_SOCK
