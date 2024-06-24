@@ -555,7 +555,7 @@ function start () { clear
   echo PIDFILE: "$pidfile"
   echo DAEMON: "$daemon"
 
-  #--background
+  #--background - https://stackoverflow.com/q/63274948
   command start-stop-daemon --start --name "$name" \
     --chdir "$service" --nicelevel "$nice" --umask "$mask" \
     --make-pidfile --pidfile "$pidfile" \
