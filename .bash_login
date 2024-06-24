@@ -539,6 +539,9 @@ function start () { clear
 
   #man start-stop-daemon
   echo Name: "$name"
+  echo PIDDIR: "$piddir"
+  echo PIDFILE: "$pidfile"
+  echo DAEMON: "$daemon"
 
   ( [[ "$service" == ./ ]] && { echo RELATIVE PATH "$( realpath "$path" )" ; ls "$( realpath "$path" )" ; } ) \
     || { echo SERVICE PATH "${SVDIR}/${path}" ; ls "${SVDIR}/${path}" ; }
