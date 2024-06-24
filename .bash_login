@@ -399,7 +399,9 @@ alias catnet='{
 #
 # =========================================================================
 # HTTP(s) -----------------------------------------------------------------
-function serve () {
+# check etc/apache2/httpd.conf (ServerName)
+# - https://realpython.com/python-http-server/
+function serve () { clear
   command python -m http.server
 } # serve
 
