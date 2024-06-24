@@ -406,7 +406,7 @@ function serve () { clear
 
   echo PORT: "$port"
 
-  # python
+  echo && echo # python
   command python -m http.server "$port" 2>&1 &
 
   # apache
