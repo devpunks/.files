@@ -531,7 +531,8 @@ function start () { clear
   local piddir="$service"
   #local piddir="${PREFIX}/var/run"
   local -r pidfile="${piddir}/${name}.pid"
-  local -r daemon="${PREFIX}/bin/runsvdir"
+  #local -r daemon="${PREFIX}/bin/runsvdir"
+  local -r daemon="${PREFIX}/bin/runsv"
   local -r daemon_opts="${SVDIR}"
 
   mkdir -p "$piddir"
