@@ -571,7 +571,7 @@ function stop () {
   #  kill -9 $(cat "$supervisor/pid") 2>/dev/null || :
   #  rm -rf $supervisor
   #done
-} # about
+} # stop
 
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
