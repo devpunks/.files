@@ -543,8 +543,6 @@ function start () { clear
   echo PIDFILE: "$pidfile"
   echo DAEMON: "$daemon"
 
-  return
-
   #--background
   command start-stop-daemon --start --name "$name" \
     --chdir "$service" --nicelevel "$nice" --umask "$mask" \
