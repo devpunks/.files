@@ -405,7 +405,7 @@ alias catnet='{
 function serve () { clear
   local -r port=3210
 
-  echo PORT: "$PORT"
+  echo PORT: "$port"
 
   # python
   command python -m http.server "$PORT" &
