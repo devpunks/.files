@@ -118,12 +118,6 @@ pkg install net-tools # https://net-tools.sourceforge.io
 # pkg install nmap
 pkg install socat
 pkg install dnsutils
-# TODO: deprecate ifconfig and netstat
-#   - https://redhat.com/sysadmin/ifconfig-vs-ip
-#   - https://wiki.linuxfoundation.org/networking/iproute2
-#   - https://github.com/termux/termux-packages/issues/12758
-pkg install iproute2 # ip addr instad of ifconfig -a
-pkg install net-tools # https://net-tools.sourceforge.io
 pkg install netcat-openbsd
 
 # }}}
