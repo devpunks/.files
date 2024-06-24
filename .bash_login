@@ -537,7 +537,12 @@ function start () { clear
   mkdir -p "$piddir"
 
   #man start-stop-daemon
-  #return
+
+  [[ "$path" == ./ ]] \
+    && { echo RELATIVE PATH "$( realpath "$path" )" ; ls "$( realpath "$path" )" ; } \
+    || { echo SERVICE PATH "${SVDIR}/${path}" ; ls "${SVDIR}/${path}" ; }
+
+  return
 
   command start-stop-daemon --start --name "$name" \
     --chroot "$path" --nicelevel "$nice" --umask "$mask" \
