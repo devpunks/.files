@@ -404,6 +404,7 @@ alias catnet='{
 # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
 function serve () { clear
   command python -m http.server
+  command apachectl configtest
 } # serve
 
 # SSh ---------------------------------------------------------------------
