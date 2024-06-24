@@ -537,6 +537,7 @@ function start () { clear
   mkdir -p "$piddir"
 
   #man start-stop-daemon
+  echo Name: "$name"
 
   [[ "$path" == ./ ]] \
     && { echo RELATIVE PATH "$( realpath "$path" )" ; ls "$( realpath "$path" )" ; } \
