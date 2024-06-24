@@ -521,6 +521,12 @@ function refresh (){ echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 
+# https://chrony-project.org
+function clock () {
+  man chronyd
+  man chronyc
+} # clock
+
 # >/dev/null 2>&1 &
 function start () { clear
   local -r nice="-10"
