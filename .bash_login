@@ -539,8 +539,7 @@ function start () { clear
   #man start-stop-daemon
   echo Name: "$name"
 
-  [[ "$path" == ./ ]] \
-    && { echo RELATIVE PATH "$( realpath "$path" )" ; ls "$( realpath "$path" )" ; } \
+  ( [[ "$service" == ./ ]] && { echo RELATIVE PATH "$( realpath "$path" )" ; ls "$( realpath "$path" )" ; } ) \
     || { echo SERVICE PATH "${SVDIR}/${path}" ; ls "${SVDIR}/${path}" ; }
 
   return
