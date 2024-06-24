@@ -133,7 +133,6 @@ pkg install vim
 pkg install tidy
 pkg install clang
 pkg install cmake
-pkg install apache2 # https://packages.debian.org/buster/apache2-utils
 pkg install golang
 pip install pytest
 pkg install python
