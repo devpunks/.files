@@ -1100,8 +1100,8 @@ function reload () {
   [ -n "$TMUX" ] && tmux source "${HOME}/.tmux.conf"
   clear
 
-  source "$HOME/.bashrc" \
-    && source "$HOME/.bash_login"
+  source "${HOME}/.bashrc" \
+    && source "${HOME}/.bash_login"
 
 # reset # slowww
   tput reset
