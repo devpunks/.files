@@ -528,9 +528,8 @@ function start () { clear
   local -r service="$( realpath "$1" )"
   local name="$( basename "${service##*/}" )"
 
-  local piddir="${HOME}"
-  local -r mask="u=rwx,g=r,o="
-  local piddir="${PREFIX}/var/run"
+  local piddir="$service"
+  #local piddir="${PREFIX}/var/run"
   local -r pidfile="${piddir}/${name}.pid"
   local -r daemon="${PREFIX}/bin/runsvdir"
   local -r daemon_opts="${SVDIR}"
