@@ -403,7 +403,7 @@ alias catnet='{
 # check $PREFIX/etc/apache2/httpd.conf (ServerName)
 # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
 function serve () { clear
-  local -r port="${1:${PORT:3210}}"
+  local -r port=3210
 
   echo PORT: "$PORT"
 
