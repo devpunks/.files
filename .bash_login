@@ -169,9 +169,6 @@ alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/
 # {{{ Shell
 # =========================================================================
 
-# - https://man7.org/linux/man-pages/man1/uuidgen.1.html
-# - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
-alias uuid='uuidgen'
 alias bell='echo "\a"'
 # https://github.com/powerline/fonts
 alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
