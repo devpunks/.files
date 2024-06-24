@@ -547,7 +547,7 @@ function start () { clear
 
   command start-stop-daemon --start --name "$name" \
     --chroot "$path" --nicelevel "$nice" --umask "$mask" \
-    --make-pidfile --pid <pid> --pidfile "$pidfile" \
+    --make-pidfile --pidfile "$pidfile" \
   --exec "$daemon" -- "$daemon_opts"
 
   start-stop-daemon -S -b -m -p "$pidfile" -x "$daemon" -d "$PREFIX" -- "$daemon_opts"
