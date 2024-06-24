@@ -523,8 +523,6 @@ function accumulate (){ echo accumulate; }
 
 # >/dev/null 2>&1 &
 function start () { clear
-  local -r path="$1"
-
   local -r nice="-10"
   local name='services'
   local piddir="${HOME}"
