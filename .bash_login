@@ -543,9 +543,6 @@ function start () { clear
   echo PIDFILE: "$pidfile"
   echo DAEMON: "$daemon"
 
-  ( [[ "$service" == ./ ]] && { echo RELATIVE PATH "$( realpath "$path" )" ; ls "$( realpath "$path" )" ; } ) \
-    || { echo SERVICE PATH "${SVDIR}/${path}" ; ls "${SVDIR}/${path}" ; }
-
   return
 
   command start-stop-daemon --start --name "$name" \
