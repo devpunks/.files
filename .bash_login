@@ -408,7 +408,7 @@ function serve () { clear
   echo PORT: "$port"
 
   # python
-  command python -m http.server "$PORT" &
+  command python -m http.server "$port" &
 
   # apache
   command apachectl configtest
