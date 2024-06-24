@@ -524,6 +524,7 @@ function accumulate (){ echo accumulate; }
 # >/dev/null 2>&1 &
 function start () { clear
   local -r nice="-10"
+  local -r mask="u=rwx,g=r,o="
   local -r service="$( realpath "$1" )"
   local name="$( basename "$service" )"
 
