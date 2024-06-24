@@ -528,7 +528,7 @@ function clock () {
   man chronyd
   man chronyc
 
-  chronyd -f "$CONFIG"
+  chronyd -n -f "$CONFIG"
 } # clock
 
 # >/dev/null 2>&1 &
