@@ -406,6 +406,7 @@ function serve () { clear
   local -r port="${1:${PORT:3210}}"
 
   echo PORT: "$PORT"
+
   # python
   command python -m http.server "$PORT" &
 
