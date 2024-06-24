@@ -553,7 +553,7 @@ function start () { clear
 # --exec "$daemon" -- "$daemon_opts"
 
   start-stop-daemon -S -b -m -p "$pidfile" -x "$daemon" -d "$PREFIX" -- "$daemon_opts"
-} # about
+} # start
 
 function stop () {
   local -r retry='TERM/10/KILL/5'
