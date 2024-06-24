@@ -523,6 +523,8 @@ function accumulate (){ echo accumulate; }
 
 # https://chrony-project.org
 function clock () {
+  local -r $CONFIG="${HOME}/chrony.conf"
+
   man chronyd
   man chronyc
 } # clock
