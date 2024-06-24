@@ -819,6 +819,11 @@ function play () { clear
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function sync () {
   local -r source=$( realpath "$1 ")
+
+  man command sync
+  man command rsync
+
+  echo Synching source: "$source"
 }
 
 function backup () { clear
