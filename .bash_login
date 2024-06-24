@@ -545,6 +545,7 @@ function start () { clear
 
   return
 
+  #--background
   command start-stop-daemon --start --name "$name" \
     --chroot "$path" --nicelevel "$nice" --umask "$mask" \
     --make-pidfile --pidfile "$pidfile" \
