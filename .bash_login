@@ -1176,7 +1176,7 @@ function term () { clear
   echo "\e[m" # DEFAULT
 
   [ -e "${HOME}/.inputrc" ] \
-    && { shortcuts ; echo "\e[3m( see ~/.inputrc )\e[23m" }
+    && { shortcuts ; echo "\e[3m( see ~/.inputrc )\e[23m" ; }
 
   [[ function == $( type -t Colors ) ]] \
     && echo && Colors
