@@ -493,6 +493,7 @@ alias tmux.config='{
 alias tail='command tail --verbose'
 alias logs.sshd="command logcat -s 'sshd:*'"
 
+# - RFC5424 - https://datatracker.ietf.org/doc/html/rfc5424
 function log () {
   man logger
   man svlogd
