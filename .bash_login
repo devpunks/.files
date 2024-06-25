@@ -1125,7 +1125,7 @@ function environment () {
     "$( tty )" "$LINES" "$COLUMNS"
 
   echo && termux-info
-  [ "$TMUX" ] && echo && echo tmux -V
+  [ "$TMUX" ] && echo && tmux -V
 } # environment
 
 # https://bash.cyberciti.biz/guide/Reset_command
