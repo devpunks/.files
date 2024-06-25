@@ -509,7 +509,7 @@ function log () {
 } # log
 
 function err () {
-}  echo ERROR return 1
+  echo ERROR return 1
 } # err
 
 # - https://plesk.com/blog/featured/linux-logs-explained
