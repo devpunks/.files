@@ -151,6 +151,8 @@ function limit () { clear
 } # limit
 
 function unlimit () { clear
+  ulimit --help
+
   echo && ulimit -a
   echo TODO: 'unlimit' Implementation
 } # unlimit
