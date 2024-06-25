@@ -1157,7 +1157,7 @@ function reload () { clear
 # TIC - https://ibm.com/docs/ro/aix/7.1?topic=t-tic-command
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
 # TERMINFO - https://bbs.archlinux.org/viewtopic.php?id=163103
-# TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html?m=1
+# TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html
 function term () {
   clear
   echo "\e[7m" # REVERSE
