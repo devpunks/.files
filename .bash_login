@@ -843,8 +843,7 @@ function play () { clear
   echo && vlc --help
   echo && ffmpeg --help
 
-  echo ▷ Playing: "$location"
-  echo
+  echo && echo ▷ Playing: "$location"
 } # play
 
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
