@@ -414,7 +414,7 @@ function serve () { clear
 
   echo PORT: "$port"
 
-  echo && echo # python
+  echo && echo # Python
   command python -m http.server "$port" 2>&1 &
 
   echo && echo # apache
