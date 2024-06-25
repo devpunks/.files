@@ -1150,8 +1150,6 @@ function reload () { clear
   # TODO: fix posix bug
   echo && environment
   echo && termux-info
-
-  echo && echo
 } # reload
 
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
