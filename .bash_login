@@ -897,7 +897,7 @@ function expand () { clear
     | column --table
 } # expand
 
-#   - https://ncompress.sourceforge.io
+# - https://ncompress.sourceforge.io
 function compress () { clear
   local -r operation
   local -r source=$( realpath "$1" )
