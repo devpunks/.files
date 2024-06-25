@@ -1158,8 +1158,7 @@ function reload () { clear
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
 # TERMINFO - https://bbs.archlinux.org/viewtopic.php?id=163103
 # TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html
-function term () {
-  clear
+function term () { clear
   echo "\e[7m" # REVERSE
   echo && echo "TTY: $(tty)"
   printf "\n\nSize \e[3mROWS\e[23mX\e[3mCOLUMNS\e[23m: %s\n" \
