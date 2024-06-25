@@ -50,7 +50,7 @@ alias shortcuts='{ clear
 # =========================================================================
 # {{{ Git Aliases
 # =========================================================================
-# https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+
 alias ga='git add -p'
 alias gb='git -P branch -a'
 alias gc='git commit --message '
