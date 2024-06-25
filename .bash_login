@@ -41,7 +41,7 @@ alias shortcuts='{ clear
     command bind -p
   printf "\n\n Macros:\n"
     command bind -s
-  printf "\n\nVariables:\n"
+  printf "\n\n Variables:\n"
     command bind -v
 }' # shortcuts
 
