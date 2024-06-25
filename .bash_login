@@ -497,7 +497,8 @@ alias tmux.config='{
 alias tail='command tail --verbose'
 alias logs.sshd="command logcat -s 'sshd:*'"
 
-# - RFC5424
+# Syslog - RFC5424
+#   - https://stackify.com/syslog-101/
 #   - https://rfc-editor.org/rfc/rfc5424
 #   - https://datatracker.ietf.org/doc/html/rfc5424
 function log () {
