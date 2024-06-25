@@ -1149,7 +1149,7 @@ function reload () { clear
   setterm --initialize
   setterm --resize
   tput cup 0 0
-  [ "$TMUX" ] && echo && echo tmux -V
+
   echo && environment
   echo && termux-info
 } # reload
