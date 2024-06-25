@@ -417,7 +417,7 @@ function serve () { clear
   echo && echo # Python
   command python -m http.server "$port" 2>&1 &
 
-  echo && echo # apache
+  echo && echo # Apache
   command apachectl configtest
   command apachectl status
   command apachectl -S
