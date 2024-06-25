@@ -261,8 +261,6 @@ alias list="command eza --level=2 --color=auto --classify=auto \
   --group-directories-first --total-size --git --git-repos --git-ignore --ignore-glob '.git'"
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
 
-alias curl='command curl --verbose \
-  --user-agent "Lynx/2.8.9rel.1 libwww-FM/2.14 SSL-MM/1.4.1"'
 alias header='curl -I'
 
 alias ping='command ping -c 5'
