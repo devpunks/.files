@@ -497,6 +497,7 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 function log () {
   man logger
   man svlogd
+  # svlogd -tt "$LOGDIR/sv/$service"
 } # log
 
 # - syslog() - https://stackify.com/syslog-101/
