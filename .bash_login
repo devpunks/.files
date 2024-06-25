@@ -1152,8 +1152,6 @@ function reload () { clear
   echo && termux-info
 
   echo && echo
-
-  echo && echo
 } # reload
 
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
