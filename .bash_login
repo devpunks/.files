@@ -1131,8 +1131,7 @@ function environment () { clear
 # https://stackoverflow.com/q/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
 function reload () { clear
   termux-reload-settings
-  [ -n "$TMUX" ] && tmux source "${HOME}/.tmux.conf"
-  clear
+  [ "$TMUX" ] && tmux source "${HOME}/.tmux.conf"
 
   source "${HOME}/.bashrc" \
     && source "${HOME}/.bash_login"
