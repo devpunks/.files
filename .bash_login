@@ -518,7 +518,7 @@ function logs () {
   printf "\n🌎Global logs :\n%s\n\n" "$( tree "$LOGDIR" )"
 
   [ -d logs ] \
-    && printf "\n🏠Local logs :\n%s\n\n" "$( command ls -l logs )"
+    && printf "\n🏠Local logs :\n%s\n\n" "$( tree logs )"
 } # logs
 
 function rotate () {
