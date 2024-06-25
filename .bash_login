@@ -502,6 +502,7 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 #   - https://rfc-editor.org/rfc/rfc5424
 #   - https://datatracker.ietf.org/doc/html/rfc5424
 function log () {
+  local -r message="${1}"
   local source # --source IP | --unix SOCK
 
   man logger
