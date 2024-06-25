@@ -1148,7 +1148,7 @@ function reload () { clear
   tput cup 0 0
   [ "$TMUX" ] && echo && echo tmux -V
   # TODO: fix posix bug
-  # echo && environment
+  echo && environment
   echo && termux-info
 
   echo && echo
