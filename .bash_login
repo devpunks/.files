@@ -501,6 +501,7 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 # - RFC5424 - https://datatracker.ietf.org/doc/html/rfc5424
 function log () {
   man logger
+  # logger --ipv4
   man svlogd
   # svlogd -tt "$LOGDIR/sv/$service"
 } # log
