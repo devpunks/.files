@@ -511,7 +511,7 @@ function log () {
 function err () {
   local -r message="${1}"
 
-  printf "\n$( command date) - %s\n" "${message}"
+  printf "\n$( command date) 🛑 %s\n" "${message}"
 
   return 1
 } # err
