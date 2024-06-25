@@ -515,7 +515,7 @@ function err () {
   local source # --source IP | --unix SOCK
   local -r message="${1}"
 
-  # logger --ipv4 --stderr --tag "ERROR"
+  # logger --id --ipv4 --stderr --tag "ERROR"
   printf "\n$( command date) 🛑 %s\n" "${message}"
 
   return 1
