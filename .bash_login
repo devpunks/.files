@@ -37,7 +37,7 @@
 
 # https://computerhope.com/unix/bash/bind.htm
 alias shortcuts='{ clear
-  printf "Bindings:\n"
+  printf "\n Bindings:\n"
     command bind -p
   printf "\n\nMacros:\n"
     command bind -s
