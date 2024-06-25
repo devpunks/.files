@@ -1087,7 +1087,7 @@ function weigh () {
   echo && echo
 } # weigh
 
-function environment () { clear
+function environment () {
   echo && echo '👇Kernel👇'
   command sysctl --all
 
