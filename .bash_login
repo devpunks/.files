@@ -1153,7 +1153,6 @@ function reload () { clear
   echo && environment
 } # reload
 
-# TOE - https://invisible-island.net/ncurses/man/toe.1m.html
 # SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
 # TERMINFO - https://bbs.archlinux.org/viewtopic.php?id=163103
 # TIC - https://ibm.com/docs/ro/aix/7.1?topic=t-tic-command
