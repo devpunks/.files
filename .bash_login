@@ -1123,6 +1123,9 @@ function environment () {
   printf "\nPATH: %s\n" "$PATH"
   printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
     "$( tty )" "$LINES" "$COLUMNS"
+
+  echo && termux-info
+  [ "$TMUX" ] && echo && echo tmux -V
 } # environment
 
 # https://bash.cyberciti.biz/guide/Reset_command
