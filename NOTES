@@ -162,7 +162,7 @@ Android Accessibility
 #   - https://wiki.archlinux.org/title/Systemd
 #   - https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization/
 #   - https://medium.com/the-code-vault/systemd-simple-service-examples-ce586afeed27
-#  - https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
+#  - https://digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
 #
 #  - Explain Shell - https://explainshell.com/
 #  - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
