@@ -12,6 +12,14 @@
 #                                                               Y8b d88P
 #                                                               "Y88P"
 #
+# -------------------------------------------------------------------------
+# Version: 0.1
+# File: .bash_login
+# Source: https://github.com/devpunks
+# Author: Ahmid-Ra (github.com/snuggs)
+# Maintainer: devPunks <https://github.com/devpunks>
+# Description: Bourne Again SHell Run Commands for login $SHELL.
+# -------------------------------------------------------------------------
 #
 # INVOCATION
 #   - https://unix.stackexchange.com/q/43953
