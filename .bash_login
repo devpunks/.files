@@ -21,6 +21,11 @@
 # Description: Bourne Again SHell Run Commands for login $SHELL.
 # -------------------------------------------------------------------------
 #
+# INVOCATION
+#   - https://unix.stackexchange.com/q/43953
+#   - https://gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html
+
+# [ -r $HOME/.bashrc ] && source $HOME/.bashrc
 
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # Paste - https://geeksforgeeks.org/paste-command-in-linux-with-examples
