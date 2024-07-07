@@ -442,7 +442,7 @@ alias ssh.add='{
   ps x | command grep ssh-agent
 
   echo AGENT PID: $SSH_AGENT_PID
-  echo THE AUTH SOCK: $SSH_AUTH_SOCK
+  echo AUTH SOCK: $SSH_AUTH_SOCK
 }' # ssh.add
 
 # SSh(d) ------------------------------------------------------------------
