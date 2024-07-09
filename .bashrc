@@ -76,8 +76,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 
 export ZIPINFO='-h-l-t-v-z'
 # See man unzip TIPS section
-export UNZIP='-aL'
-export ZIPINFO='-z'
+export UNZIP='-uo -aL -l -v -n'
 
 export EDITOR=vi
 export PAGER=most
