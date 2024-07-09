@@ -1038,8 +1038,6 @@ function unpack () { clear
   echo && command zipinfo -h -l -t -v "$archive"
   echo && command bunzip2 --verbose --test "$archive"
   echo && command gunzip --verbose --test --list "$archive"
-
-  echo && command tar --list --file="$archive"
 } # unpack
 
 function recycle () { clear
