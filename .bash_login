@@ -113,7 +113,7 @@ function restrict () { clear
 
   ls "$location"
   about "$location"
-} # permit
+} # restrict
 
 function restrict () { clear
   printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
