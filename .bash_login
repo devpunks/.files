@@ -972,6 +972,10 @@ function pack () { clear
 } # pack
 
 function extract () {
+  local -r archive=$( realpath "$1" )
+
+  exist "$archive" || return $?
+
   unpack $archive
 } # extract
 
