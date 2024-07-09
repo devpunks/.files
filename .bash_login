@@ -1024,7 +1024,6 @@ function unpack () { clear
     *.gz)      operation="view $archive && gunzip --verbose --test --list $archive"  ;;
     *.tar.gz)  operation="tar xvzf $archive"  ;;
     *.tgz)     operation="tar xvzf $archive"  ;;
-    *.gz)      operation="view $archive && gunzip --verbose --test --list $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/Bzip2
     # https://linux.die.net/man/1/bunzip2
