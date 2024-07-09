@@ -74,6 +74,8 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # {{{ Exports
 #==========================================================================
 
+export UNZIP='-aL'
+
 export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
