@@ -1008,6 +1008,7 @@ function unpack () { clear
     # -o  overwrite files WITHOUT prompting
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
+    # https://en.m.wikipedia.org/wiki/Zip_bomb
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
     *.zip)  operation="command unzip -v ${archive} ; command unzip -tq ${archive} ;" ;;
     #*.zip)  operation="command unzip -v && command unzip -tq ${archive} && : unzip -d ${destination} ${archive}" ;;
