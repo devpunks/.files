@@ -971,6 +971,10 @@ function pack () { clear
     && command view "$file"
 } # pack
 
+function extract () {
+  unpack $archive
+} # unpack
+
 function unpack () { clear
   local operation
   local -r archive=$( realpath "$1" )
