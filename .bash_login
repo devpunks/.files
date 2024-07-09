@@ -1005,7 +1005,7 @@ function unpack () { clear
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
-    *.zip)  operation="unzip -l -v -n -d ${destination} ${archive}"  ;;
+    *.zip)  operation="unzip -tq ${archive} && unzip -l -v -n -d ${destination} ${archive}"  ;;
 
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
     *.rar)   operation="rar $archive"  ;;
