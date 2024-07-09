@@ -1045,15 +1045,14 @@ function unpack () { clear
 
   echo "operation: $operation"
 
-  $( $operation )
-  return
+  $operation
 
-  echo && command view "$archive"
-  echo && command tar --list --file="$archive"
-  echo && command unzip -l -v -t "$archive"
-  echo && command zipinfo -h -l -t -v "$archive"
-  echo && command bunzip2 --verbose --test "$archive"
-  echo && command gunzip --verbose --test --list "$archive"
+# echo && command view "$archive"
+# echo && command tar --list --file="$archive"
+# echo && command unzip -l -v -t "$archive"
+# echo && command zipinfo -h -l -t -v "$archive"
+# echo && command bunzip2 --verbose --test "$archive"
+# echo && command gunzip --verbose --test --list "$archive"
 } # unpack
 
 function recycle () { clear
