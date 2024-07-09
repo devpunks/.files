@@ -982,7 +982,8 @@ function extract () {
 function unpack () { clear
   local operation
   local -r archive=$( realpath "$1" )
-  local -r destination=$( realpath "${2:-./$archive}" )
+  local -r destination="${archive%.*}"
+  #local -r destination=$( realpath "${2:-./$archive}" )
 
   exist "$archive" || return $?
 # exist "$destination" || mkdir "$destination"
