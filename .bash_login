@@ -1028,7 +1028,6 @@ function unpack () { clear
     *) echo "'$archive' cannot be extracted via >extract<"  ;;
   esac
 
-  echo "source: $archive"
   echo "operation: $operation"
   echo "destination: $destination"
 
