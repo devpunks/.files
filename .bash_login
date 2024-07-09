@@ -973,7 +973,7 @@ function pack () { clear
 
 function extract () {
   unpack $archive
-} # unpack
+} # extract
 
 function unpack () { clear
   local operation
