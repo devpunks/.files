@@ -138,7 +138,7 @@ function permit () { clear
 
   ls "$location"
   about "$location"
-} # restrict
+} # permit
 
 # - https://wiki.archlinux.org/title/Limits.conf
 # - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command/
