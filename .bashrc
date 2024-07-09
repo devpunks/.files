@@ -77,7 +77,8 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # -h(eader) -l(ong) -t(itle) -v(erbose) -z(comment)
 export ZIPINFO='-h -l -t -v -z'
 # See man unzip TIPS section
-export UNZIP='-uo -aL -l -v -n'
+# -a(convert text files) -f(reshen) -L(owercase systems) -l(ist) -n(ever overwrite) -v(erbose) -z(comment)
+export UNZIP='-a -f -L -l -v -z'
 
 export EDITOR=vi
 export PAGER=most
