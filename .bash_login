@@ -1045,7 +1045,7 @@ function unpack () { clear
 
   echo "operation: $operation"
 
-  exec $operation
+  $( $operation )
   return
 
   echo && command view "$archive"
