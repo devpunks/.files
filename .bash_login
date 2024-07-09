@@ -1002,6 +1002,10 @@ function unpack () { clear
   echo "destination: $destination"
 
   case $archive in
+    # -f  freshen existing files, create none
+    # -n  never overwrite existing files
+    # -q  quiet mode (-qq => quieter)
+    # -o  overwrite files WITHOUT prompting
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
