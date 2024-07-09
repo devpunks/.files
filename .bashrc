@@ -74,6 +74,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 # {{{ Exports
 #==========================================================================
 
+# See man unzip TIPS section
 export UNZIP='-aL'
 export ZIPINFO='-z'
 
