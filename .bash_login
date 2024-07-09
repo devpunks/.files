@@ -109,7 +109,7 @@ function restrict () { clear
   # x(1) - Execute (X - disabled)
   # u=user,g=group,o=others,a=all
   # [ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+.
-  chmod u=rwx,g=rx,o=rx "$( realpath "$location" )" # 755
+  chmod u=r,g=,o= "$( realpath "$location" )" # 600
 
   ls "$location"
   about "$location"
