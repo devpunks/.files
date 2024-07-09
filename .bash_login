@@ -78,11 +78,11 @@ alias g#='{
 # =========================================================================
 
 function unlock () {
-  : "Foo"
+  : unlock
 } # unlock
 
 function lock () {
-  : "Foo"
+  : lock
 } # lock
 
 # - https://en.m.wikipedia.org/wiki/Chown
