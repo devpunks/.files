@@ -994,7 +994,7 @@ function unpack () { clear
   #local -r destination=$( realpath "${2:-./$archive}" )
 
   exist "$archive" || return $?
-# exist "$destination" || mkdir "$destination"
+  exist "$destination" || mkdir "$destination"
 
   echo "source: $archive"
   echo "destination: $destination"
