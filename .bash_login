@@ -77,6 +77,10 @@ alias g#='{
 # {{{ Security
 # =========================================================================
 
+function unlock () {
+  : "Foo"
+} # unlock
+
 function lock () {
   : "Foo"
 } # lock
