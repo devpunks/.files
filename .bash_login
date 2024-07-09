@@ -96,13 +96,7 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 # - https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
-# https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
-# https://superuser.com/q/168578/why-must-a-folder-be-executable
-# https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
-# https://stackoverflow.com/q/12445527/set-different-umask-for-files-and-folders
-# https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
-# https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
-function permit () { clear
+function restrict () { clear
   printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
 
   local -r location="$1"
