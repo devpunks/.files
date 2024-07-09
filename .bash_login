@@ -1029,7 +1029,6 @@ function unpack () { clear
   esac
 
   echo "operation: $operation"
-  echo "destination: $destination"
 
   command view "$archive"
   echo && command unzip -l -v -t "$archive"
