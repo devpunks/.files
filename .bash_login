@@ -1009,7 +1009,6 @@ function unpack () { clear
     # -o overwrite files WITHOUT prompting
     # -f freshen existing files, create none
     # -v Verbosely list archive contents then exit
-    # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
     # https://en.m.wikipedia.org/wiki/Zip_bomb
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
