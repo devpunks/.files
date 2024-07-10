@@ -1017,8 +1017,7 @@ function unpack () { clear
       echo && echo
       weigh "${archive}"
       UNZIP='-t --u' unzip "${archive}" \
-        && zipinfo "${archive}" \
-        && unzip -d "${destination}" "${archive}"
+        && zipinfo "${archive}" && unzip -d "${destination}" "${archive}"
     } ;; # *.zip
     #*.zip)  operation="command unzip -v && command unzip -tq ${archive} && : unzip -d ${destination} ${archive}" ;;
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
