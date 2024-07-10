@@ -79,7 +79,7 @@ export ZIPINFO='-h -l -t -v -z'
 export ZIPINFOOPT="${ZIPINFO}"
 # See man unzip TIPS section
 # -a(convert text files) -f(reshen) -L(owercase systems) -l(ist) -n(ever overwrite) -v(erbose) -z(comment)
-export UNZIP='-a -f -L -l -v -z'
+export UNZIP='-a -f -L -v -z'
 export UNZIPOPT="${UNZIP}"
 
 export EDITOR=vi
