@@ -1010,7 +1010,7 @@ function unpack () { clear
     # https://linuxhandbook.com/unzip-command
     # https://en.m.wikipedia.org/wiki/Zip_bomb
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
-    *.zip)  operation="command unzip -v ${archive} ; command unzip -tq ${archive} ;" ;;
+    *.zip) { UNZIP='-v' command unzip ${archive} ; UNZIP='-tq' command unzip ${archive} ; } ;;
     #*.zip)  operation="command unzip -v && command unzip -tq ${archive} && : unzip -d ${destination} ${archive}" ;;
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
     *.rar)   operation="rar $archive"  ;;
