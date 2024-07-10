@@ -1049,9 +1049,7 @@ function unpack () { clear
     *) echo "'$archive' cannot be extracted via >extract<"  ;;
   esac
 
-  echo "operation: $operation"
-
-  "$operation"
+  echo && echo
 
 # echo && command view "$archive"
 # echo && command tar --list --file="$archive"
