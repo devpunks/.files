@@ -1013,6 +1013,7 @@ function unpack () { clear
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
     *.zip) {
       unzip -v
+      weigh "${archive}"
       UNZIP='-tq' command unzip "${archive}" \
       && UNZIP='-v' command unzip "${archive}" \
       && unzip -d "${destination}" "${archive}"
