@@ -1003,8 +1003,6 @@ function unpack () { clear
   echo && echo
 
   case $archive in
-    # -f  freshen existing files, create none
-    # -n  never overwrite existing files
     # -q  quiet mode (-qq => quieter)
     # -o  overwrite files WITHOUT prompting
     # https://linux.die.net/man/1/unzip
