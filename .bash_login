@@ -1004,6 +1004,8 @@ function unpack () { clear
 
   case $archive in
     # -q  quiet mode (-qq => quieter)
+    # -n  never overwrite existing files
+    # -u  update existing files, or create
     # -o  overwrite files WITHOUT prompting
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
