@@ -1014,7 +1014,8 @@ function unpack () { clear
     *.zip) {
       unzip -v
       UNZIP='-tq' command unzip "${archive}" \
-      && UNZIP='-v' command unzip "${archive}" ;
+      && UNZIP='-v' command unzip "${archive}" \
+      && unzip -d "${destination}" "${archive}"
     } ;;
     #*.zip)  operation="command unzip -v && command unzip -tq ${archive} && : unzip -d ${destination} ${archive}" ;;
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
