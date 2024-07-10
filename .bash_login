@@ -1003,12 +1003,12 @@ function unpack () { clear
   echo && echo
 
   case $archive in
-    # -q  quiet mode (-qq => quieter)
-    # -n  never overwrite existing files
-    # -u  update existing files, or create
-    # -o  overwrite files WITHOUT prompting
-    # -f  freshen existing files, create none
-    # -v  Verbosely list archive contents then exit
+    # -q quiet mode (-qq => quieter)
+    # -n never overwrite existing files
+    # -u update existing files, or create
+    # -o overwrite files WITHOUT prompting
+    # -f freshen existing files, create none
+    # -v Verbosely list archive contents then exit
     # https://linux.die.net/man/1/unzip
     # https://linuxhandbook.com/unzip-command
     # https://en.m.wikipedia.org/wiki/Zip_bomb
