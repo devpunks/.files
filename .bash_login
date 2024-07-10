@@ -1050,7 +1050,7 @@ function unpack () { clear
 
   echo "operation: $operation"
 
-  $operation
+  "$operation"
 
 # echo && command view "$archive"
 # echo && command tar --list --file="$archive"
