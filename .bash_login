@@ -1002,7 +1002,7 @@ function unpack () { clear
   echo "destination: $destination"
   echo && echo
 
-  case $archive in
+  case "$archive" in
     # -q quiet mode (-qq => quieter)
     # -n never overwrite existing files
     # -u update existing files, or create
