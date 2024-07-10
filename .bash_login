@@ -1021,6 +1021,7 @@ function unpack () { clear
     } ;; # *.zip
 
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
+    # https://github.com/termux/termux-packages/issues/2190
     *.rar)   operation="rar $archive"  ;;
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
