@@ -78,7 +78,8 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 export ZIPINFO='-h -l -t -v -z'
 export ZIPINFOOPT="${ZIPINFO}"
 # See man unzip TIPS section
-# -a(convert text files) -f(reshen) -L(owercase systems) -l(ist) -n(ever overwrite) -v(erbose) -z(comment)
+# -a(convert text files) -f(reshen) 
+# -L(owercase systems) -l(ist) -u(pdate or create)
 export UNZIP='-a -L -u'
 export UNZIPOPT="${UNZIP}"
 
