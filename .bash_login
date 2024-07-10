@@ -1000,7 +1000,7 @@ function unpack () { clear
 
   echo "source: $archive"
   echo "destination: $destination"
-  echo && echo 
+  echo && echo
 
   case $archive in
     # -f  freshen existing files, create none
