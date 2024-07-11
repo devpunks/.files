@@ -1026,7 +1026,7 @@ function unpack () { clear
       # TODO: 7z command
       unrar t "${archive}"
       unrar v "${archive}"
-      unrar x "${archive}"
+      unrar x "${archive}" "${destination}"
     } ;; # *.rar
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
