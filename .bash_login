@@ -1021,6 +1021,7 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
     # https://github.com/termux/termux-packages/issues/2190
+    # https://unix.stackexchange.com/q/522958/how-to-use-p7zip-to-open-rar-files
     # https://cyberciti.biz/faq/open-rar-file-or-extract-rar-files-under-linux-or-unix/#google_vignette
     *.rar) {
       # TODO: 7z command
