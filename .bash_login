@@ -835,7 +835,7 @@ function download () { clear
   echo process: "$process"
   echo
 
-  return 0
+  return
 
   # curl -O $1 # generic download routine
 
