@@ -840,6 +840,7 @@ function download () { clear
 # $process "$uri"
   header "$uri"
 # keep local file name similar to remote-name
+  wget "$uri"
   curl --remote-name "$uri"
 } # download
 
