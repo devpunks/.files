@@ -157,6 +157,7 @@ pkg install postgresql
 pkg install tar
 pkg install zip
 pkg install gzip
+pkg install p7zip
 pkg install unrar
 pkg install unzip
 pkg install rsync
