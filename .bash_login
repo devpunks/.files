@@ -1015,7 +1015,6 @@ function unpack () { clear
     *.zip) {
       unzip -v
       echo && echo
-      weigh "${archive}"
       UNZIP='-t --u' unzip "${archive}" \
         && zipinfo "${archive}" && unzip -d "${destination}" "${archive}"
     } ;; # *.zip
