@@ -999,6 +999,7 @@ function unpack () { clear
 
   echo "source: $archive"
   echo "destination: $destination"
+  weigh "${archive}"
   echo && echo
 
   case "$archive" in
