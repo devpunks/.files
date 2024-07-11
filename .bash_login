@@ -835,10 +835,6 @@ function download () { clear
   echo process: "$process"
   echo
 
-  return
-
-  # curl -O $1 # generic download routine
-
 # $process --help
 # $process --download-sections '*00:00:00.0-00:00:05.0' $uri
   $process "$uri"
