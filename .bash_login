@@ -1022,7 +1022,11 @@ function unpack () { clear
     # https://en.m.wikipedia.org/wiki/RAR_(file_format)
     # https://github.com/termux/termux-packages/issues/2190
     # https://cyberciti.biz/faq/open-rar-file-or-extract-rar-files-under-linux-or-unix/#google_vignette
-    *.rar)   operation="rar $archive"  ;;
+    *.rar)  {
+      unrar t "${archive}"
+      unrar v "${archive}"
+      unrar x "${archive}"
+    } ;; # *.rar
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
     # *.tar)     operation="tar xvf $archive"  ;;
