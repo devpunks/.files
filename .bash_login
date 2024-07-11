@@ -273,7 +273,7 @@ alias list="command eza --level=2 --color=auto --classify=auto \
   --group-directories-first --total-size --git --git-repos --git-ignore --ignore-glob '.git'"
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
 
-alias header='curl -I'
+alias header='curl --head'
 # https://gist.github.com/eneko/dc2d8edd9a4b25c5b0725dd123f98b10
 alias curl='command curl --verbose'
 
