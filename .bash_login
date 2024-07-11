@@ -839,6 +839,8 @@ function download () { clear
 # $process --download-sections '*00:00:00.0-00:00:05.0' $uri
 # $process "$uri"
   header "$uri"
+# keep local file name similar to remote-name
+  curl --remote-name "$uri"
 } # download
 
 function open () { clear
