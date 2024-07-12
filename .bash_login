@@ -1032,7 +1032,7 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
     # *.tar)     operation="tar xvf $archive"  ;;
-    *.tar)     operation="view $archive && tar --verbose --list --file=$archive $destination"  ;;
+    *.tar) operation="view $archive && tar --verbose --list --file=$archive $destination"  ;;
 
     # https://en.m.wikipedia.org/wiki/7z
     # https://tecmint.com/7zip-command-examples-in-linux/
