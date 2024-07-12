@@ -1038,7 +1038,10 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/7z
     # https://tecmint.com/7zip-command-examples-in-linux/
-    *.7z) operation="7z $archive"  ;;
+    *.7z) {
+      operation="7z $archive"
+    } ;;
+
     #   - https://computerhope.com/unix/uuncompr.htm
     *.Z) operation="uncompress --verbose --test --list --keep --recursive $source"  ;;
 
