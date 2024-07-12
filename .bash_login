@@ -1066,7 +1066,10 @@ function unpack () { clear
 
     # https://linux.die.net/man/1/gunzip
     # https://linuxhandbook.com/gunzip-command/
-    *.gz) operation="view $archive && gunzip --verbose --test --list $archive"  ;;
+    *.gz) {
+      operation="view $archive && gunzip --verbose --test --list $archive"
+    } ;;
+
     *.tar.gz) operation="tar xvzf $archive"  ;;
     *.tgz) operation="tar xvzf $archive"  ;;
 
