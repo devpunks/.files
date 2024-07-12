@@ -1043,7 +1043,9 @@ function unpack () { clear
     } ;;
 
     #   - https://computerhope.com/unix/uuncompr.htm
-    *.Z) operation="uncompress --verbose --test --list --keep --recursive $source"  ;;
+    *.Z) {
+      operation="uncompress --verbose --test --list --keep --recursive $source"  ;;
+    } ;;
 
     # https://en.m.wikipedia.org/wiki/XZ_Utils
     # xz --decompress - https://linux.die.net/man/1/unxz
