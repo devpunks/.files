@@ -187,6 +187,11 @@ function work (){
 
 alias bell='echo "\a"'
 alias view='command view -n -M -R'
+
+# https://linux.die.net/man/1/pv
+# https://reddit.com/r/programming/comments/7u8f2/a_unix_utility_you_should_know_about_pipe_viewer/
+alias progress='pv --progress --eta --timer'
+
 # https://github.com/powerline/fonts
 alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
