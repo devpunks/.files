@@ -979,16 +979,6 @@ function pack () { clear
     && command view "$file"
 } # pack
 
-function extract () {
-  local -r archive=$( realpath "$1" )
-
-  exist "$archive" || return $?
-
-  unpack $archive
-} # extract
-
-alias view='command view -n -M -R'
-
 function unpack () { clear
   local operation
   local -r archive="${1}"
