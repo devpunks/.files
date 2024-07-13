@@ -186,6 +186,7 @@ function work (){
 # =========================================================================
 
 alias bell='echo "\a"'
+alias view='command view -n -M -R'
 # https://github.com/powerline/fonts
 alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
