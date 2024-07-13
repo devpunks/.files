@@ -1062,7 +1062,6 @@ function unpack () { clear
       operation="view $archive && gunzip --verbose --test --list $archive"
     } ;;
 
-    *.tar.gz) operation="tar xvzf $archive"  ;;
     *.tgz) operation="tar xvzf $archive"  ;;
 
     # https://linux.die.net/man/1/bunzip2
