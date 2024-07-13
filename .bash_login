@@ -1074,6 +1074,14 @@ function unpack () { clear
 
   echo && echo
 
+function extract () {
+  local -r archive=$( realpath "$1" )
+
+  exist "$archive" || return $?
+
+  unpack $archive
+} # extract
+
 # echo && command view "$archive"
 # echo && command tar --list --file="$archive"
 # echo && command bunzip2 --verbose --test "$archive"
