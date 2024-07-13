@@ -1045,7 +1045,7 @@ function unpack () { clear
 
     #   - https://computerhope.com/unix/uuncompr.htm
     *.Z) {
-      operation="uncompress --verbose --test --list --keep --recursive $source"  ;;
+      operation="uncompress --verbose --test --list --keep --recursive $source"
     } ;;
 
     # https://en.m.wikipedia.org/wiki/XZ_Utils
