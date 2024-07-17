@@ -575,7 +575,7 @@ function rotate () {
 function clean () { echo clean; }
 function reboot () { echo reboot; }
 function restart () { echo restart; }
-function refresh (){ echo refresh; }
+function refresh () { echo refresh; }
 function cumulate (){ echo cumulate; }
 function accumulate (){ echo accumulate; }
 # https://chrony-project.org
