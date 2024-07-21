@@ -572,12 +572,12 @@ function rotate () {
 
 # TODO: Implementation
 #-----------------------
-function clean () { echo clean; }
-function reboot () { echo reboot; }
-function restart () { echo restart; }
-function refresh () { echo refresh; }
-function cumulate () { echo cumulate; }
-function accumulate () { echo accumulate; }
+function clean () { : clean; }
+function reboot () { : reboot; }
+function restart () { : restart; }
+function refresh () { : refresh; }
+function cumulate () { : cumulate; }
+function accumulate () { : accumulate; }
 # https://chrony-project.org
 function clock () {
   local -r LOG="${HOME}/chrony.log"
