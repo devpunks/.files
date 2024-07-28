@@ -1234,7 +1234,7 @@ function reload () { clear
   setterm --resize
   tput cup 0 0
 
-  echo && environment
+  environment
 } # reload
 
 # SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
