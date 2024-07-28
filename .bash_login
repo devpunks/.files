@@ -1084,7 +1084,7 @@ function extract () {
 
   exist "$archive" || return $?
 
-  unpack $archive
+  unpack "$archive"
 } # extract
 
 # echo && command view "$archive"
