@@ -464,7 +464,6 @@ function serve () { clear
   command lighttpd -l
   command lighttpd -tt -f "${HOME}/lighttpd.conf"
   command lighttpd -D -f "${HOME}/lighttpd.conf"
-
 } # serve
 
 # SSh ---------------------------------------------------------------------
