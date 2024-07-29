@@ -451,7 +451,7 @@ function serve () { clear
 
   cat $config
   check $config \
-    && command apachectl -k start -d $server -f $config
+    && command apachectl restart -d $server -f $config
 
   # command httpd -d <ServerRoot> -f <Config> -k start
 
