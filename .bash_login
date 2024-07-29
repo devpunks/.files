@@ -441,7 +441,7 @@ function serve () { clear
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
   # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
   command httpd -v
-  command httpd -l
+  command apachectl -l
   command apachectl -L
   command apachectl -M
   command apachectl -V
