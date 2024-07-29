@@ -741,6 +741,7 @@ function run () {
   services
 } # run
 
+# https://wiki.termux.com/wiki/Termux-services
 function services () {
   local -r path="${PREFIX}/var/service/"
 
