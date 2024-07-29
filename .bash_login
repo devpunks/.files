@@ -450,8 +450,8 @@ function serve () { clear
   command apachectl configtest
 
   cat $config
-
-  command apachectl -k start -d $server -f $config
+  check $config \
+    && command apachectl -k start -d $server -f $config
 
   # command httpd -d <ServerRoot> -f <Config> -k start
 
