@@ -803,8 +803,6 @@ function check () {
         command tidy "$script" ;;
       *nginx.conf)
         command nginx -T -c "$( realpath "$script" )" ;;
-      *httpd.conf)
-        command apachectl -t -f "$( realpath "$script" )" ;;
       *lighttpd.conf)
         command lighttpd -t -f "$( realpath "$script" )" ;;
       *.sh | *)
