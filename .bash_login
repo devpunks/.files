@@ -431,6 +431,7 @@ alias catnet='{
 function serve () { clear
   local -r port=${PORT:-4321}
   local -r root=$( realpath ${1:-.} )
+  local -r server=$( realpath ${PREFIX:-/usr} )
   local -r config="${PREFIX}/etc/apache2/httpd.conf"
 
   echo PORT: "$port"
