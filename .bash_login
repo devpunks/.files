@@ -458,6 +458,9 @@ function serve () { clear
   echo && echo # Python
   command python -m http.server "$port" 2>&1 &
 
+  echo && echo # Lighttpd
+  command lighttpd -tt -f "${HOME}/lighttpd.conf"
+
 } # serve
 
 # SSh ---------------------------------------------------------------------
