@@ -446,7 +446,6 @@ function serve () { clear
   command httpd -M
   command httpd -V
   command apachectl -S
-  command apachectl status
   command apachectl configtest
 
   cat $config
