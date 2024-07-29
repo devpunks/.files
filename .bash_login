@@ -443,6 +443,17 @@ function serve () { clear
   command httpd -L
   command httpd -M
   command httpd -V
+  command apachectl -S
+  command apachectl status
+  command apachectl configtest
+  command apachectl -t -f $config
+
+  cat $config
+
+  # command httpd -d <ServerRoot> -f <Config> -k start
+
+  echo && echo # Python
+  command python -m http.server "$port" 2>&1 &
 
 } # serve
 
