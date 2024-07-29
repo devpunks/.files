@@ -434,10 +434,8 @@ function serve () { clear
   local -r config="${PREFIX}/etc/apache2/httpd.conf"
 
   echo PORT: "$port"
-
-  echo && echo # Python
-  command python -m http.server "$port" 2>&1 &
-
+  echo ROOT: "$root"
+  echo CONFIG: "$config"
   echo && echo # Apache
   command apachectl configtest
   command apachectl status
