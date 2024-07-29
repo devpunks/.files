@@ -459,7 +459,6 @@ function serve () { clear
   command python -m http.server "$port" 2>&1 &
 
   echo && echo # Lighttpd
-  command lighttpd -l
   command lighttpd -v
   command lighttpd -tt -f "${HOME}/lighttpd.conf"
   command lighttpd -D -f "${HOME}/lighttpd.conf"
