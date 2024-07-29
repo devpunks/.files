@@ -437,9 +437,7 @@ function serve () { clear
   echo ROOT: "$root"
   echo CONFIG: "$config"
   echo && echo # Apache
-  command apachectl configtest
-  command apachectl status
-  command apachectl -S
+
   command httpd -v
   command httpd -V
 
