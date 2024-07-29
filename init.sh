@@ -129,6 +129,7 @@ pkg install dnsutils
 pkg install netcat-openbsd
 
 pkg install nginx
+pkg install lighttpd
 pkg install apache2 # https://packages.debian.org/buster/apache2-utils
 
 # }}}
