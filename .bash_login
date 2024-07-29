@@ -430,6 +430,8 @@ alias catnet='{
 # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
 function serve () { clear
   local -r port=${PORT:-4321}
+  local -r root=$( realpath ${1:-.} )
+  local -r config="${PREFIX}/etc/apache2/httpd.conf"
 
   echo PORT: "$port"
 
