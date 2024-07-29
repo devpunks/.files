@@ -444,7 +444,7 @@ function serve () { clear
   command httpd -l
   command httpd -L
   command httpd -M
-  command httpd -V
+  command apachectl -V
   command apachectl -S
   command apachectl fullstatus # See $STATUSURL
 
