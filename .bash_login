@@ -443,7 +443,7 @@ function serve () { clear
   command httpd -v
   command httpd -l
   command httpd -L
-  command httpd -M
+  command apachectl -M
   command apachectl -V
   command apachectl -S
   command apachectl fullstatus # See $STATUSURL
