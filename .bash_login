@@ -802,6 +802,7 @@ function check () { clear
 
     case "$script" in
       *.html) tidy "$script" ;;
+      *lighttpd.conf) command lighttpd -t -f "$( realpath "$script" )" ;;
       *nginx.conf) nginx -T -c "$( realpath "$script" )" ;;
       *.sh | *) command shellcheck --format=tty "$( realpath "$script" )" ;;
     esac
