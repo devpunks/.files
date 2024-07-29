@@ -460,6 +460,7 @@ function serve () { clear
   command python -m http.server "$port" 2>&1 &
 
   echo && echo # Lighttpd
+  tree "${PREFIX}/etc/lighttpd"
   command lighttpd -v
   command lighttpd -V
   command lighttpd -l
