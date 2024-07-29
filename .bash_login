@@ -461,6 +461,7 @@ function serve () { clear
 
   echo && echo # Lighttpd
   tree "${PREFIX}/etc/lighttpd"
+  # https://redmine.lighttpd.net/projects/lighttpd/wiki/TutorialConfiguration
   command lighttpd -v
   command lighttpd -V
   command lighttpd -l
