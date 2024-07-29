@@ -437,6 +437,7 @@ function serve () { clear
   echo CONFIG: "$config"
 
   echo && echo # Apache
+  tree "${PREFIX}/etc/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
   # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
   command httpd -v
