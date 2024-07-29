@@ -438,6 +438,7 @@ function serve () { clear
   echo ROOT: "$root"
   echo CONFIG: "$config"
 
+  echo && echo # Apache
   command httpd -v
   command httpd -l
   command httpd -L
