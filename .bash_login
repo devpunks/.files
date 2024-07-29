@@ -440,6 +440,9 @@ function serve () { clear
   command apachectl configtest
   command apachectl status
   command apachectl -S
+  command httpd -v
+  command httpd -V
+
 } # serve
 
 # SSh ---------------------------------------------------------------------
