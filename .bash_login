@@ -439,6 +439,9 @@ function serve () { clear
   echo && echo # Apache
 
   command httpd -v
+  command httpd -l
+  command httpd -L
+  command httpd -M
   command httpd -V
 
 } # serve
