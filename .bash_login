@@ -791,7 +791,7 @@ function exist () {
 
 # Syntax checkers
 #   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
-function check () { clear
+function check () {
   echo Checking "$*"
 
   for script in "$@"; do
