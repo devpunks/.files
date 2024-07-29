@@ -116,6 +116,7 @@ Android Accessibility
 - [CTRL][ALT] + K   # Soft Keyboard
 - [CTRL][ALT] + -   # Reduce text size
 - [CTRL][ALT] + =   # Increase text size
+- [CTRL][ESC]       # Context Menu (Right Click)
 - [CTRL][ALT] + {N} # Switch to Session N (0-9)
 - [CTRL][ALT] + →   # Drawer
 - [CTRL][ALT] + ←   # Close Drawer
