@@ -97,7 +97,6 @@ echo Cloning Authorized Keys from...
 mkdir --verbose -m 700 ~/.ssh
 curl --location=https://github.com/snuggs.keys >> ~/.ssh/authorized_keys
 
-
 # }}}
 
 # {{{ Multimedia ----------------------------------------------------------
