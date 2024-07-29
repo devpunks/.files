@@ -442,7 +442,7 @@ function serve () { clear
   # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
   command httpd -v
   command httpd -l
-  command httpd -L
+  command apachectl -L
   command apachectl -M
   command apachectl -V
   command apachectl -S
