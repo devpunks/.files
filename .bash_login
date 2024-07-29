@@ -801,10 +801,14 @@ function check () { clear
     exist "$( realpath "$script" )" || continue
 
     case "$script" in
-      *.html) command tidy "$script" ;;
-      *lighttpd.conf) command lighttpd -t -f "$( realpath "$script" )" ;;
-      *nginx.conf) nginx -T -c "$( realpath "$script" )" ;;
-      *.sh | *) command shellcheck --format=tty "$( realpath "$script" )" ;;
+      *.html)
+        command tidy "$script" ;;
+      *nginx.conf)
+        command nginx -T -c "$( realpath "$script" )" ;;
+      *lighttpd.conf)
+        command lighttpd -t -f "$( realpath "$script" )" ;;
+      *.sh | *)
+        command shellcheck --format=tty "$( realpath "$script" )" ;;
     esac
   done
 } # check
