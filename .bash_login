@@ -460,6 +460,7 @@ function serve () { clear
 
   echo && echo # Lighttpd
   command lighttpd -l
+  command lighttpd -v
   command lighttpd -tt -f "${HOME}/lighttpd.conf"
   command lighttpd -D -f "${HOME}/lighttpd.conf"
 
