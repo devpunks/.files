@@ -146,6 +146,7 @@ pip install pytest
 pkg install python
 pkg install python-pip
 pkg install python-numpy
+
 pkg install ruby && gem update --system
 pkg install nodejs-lts && npm install -g npm
 
