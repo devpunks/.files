@@ -138,7 +138,11 @@ pkg install apache2 # https://packages.debian.org/buster/apache2-utils
 
 pkg install jq
 pkg install vim
-pkg install php
+pkg install php # PHP
+pkg install php-fpm # FastCGI Process Manager
+pkg install php-pgsql # PostgreSQL Modules
+pkg install php-redis # Redis Interface
+pkg install php-apache # Apache 2.0 Handler Module
 pkg install tidy
 pkg install clang
 pkg install cmake
