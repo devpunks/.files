@@ -663,7 +663,9 @@ function stop () {
 
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
-  stat "$@"
+  echo && df -a -h "$@"
+  echo && df -a -i "$@"
+  echo && stat "$@"
 } # about
 
 # See /usr/etc/lynx.cfg
