@@ -1202,7 +1202,7 @@ function weigh () {
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
   echo && echo # https://redhat.com/sysadmin/linux-df-command
   df -a -h "$location"
-  df -ai "$location"
+  df -a -i "$location"
   echo && echo
 } # weigh
 
