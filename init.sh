@@ -159,6 +159,7 @@ pkg install php-fpm # FastCGI Process Manager
 pkg install php-pgsql # PostgreSQL Modules
 pkg install php-redis # Redis Interface
 pkg install php-apache # Apache 2.0 Handler Module
+pkg install php-apache-pgsql # PostgreSQL modules for PHP/Apache 2.0
 
 # }}}
 
