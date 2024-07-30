@@ -1173,8 +1173,8 @@ monitor () {
 function devices () { clear
   local -r location="$1"
 
-  ( exist "$location" && df -a -h "$location" ) \
-    || df -a -h
+  ( exist "$location" && df -a -h "$location" && df -a -i "$location" ) \
+    || ( df -a -h && df -a -i )
 } # devices
 
 # https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
