@@ -151,6 +151,12 @@ pkg install ruby && gem update --system
 
 pkg install nodejs-lts && npm install -g npm
 
+pkg install php # PHP
+pkg install php-fpm # FastCGI Process Manager
+pkg install php-pgsql # PostgreSQL Modules
+pkg install php-redis # Redis Interface
+pkg install php-apache # Apache 2.0 Handler Module
+
 # }}}
 
 # {{{ Database ------------------------------------------------------------
