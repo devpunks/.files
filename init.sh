@@ -37,6 +37,8 @@ termux-info
 
 # {{{ Shell ---------------------------------------------------------------
 
+pkg install busybox
+
 pkg install bc
 pkg install pv # progress
 pkg install man
