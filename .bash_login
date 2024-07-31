@@ -453,7 +453,7 @@ function serve () { clear
     && command apachectl restart -d $server -f $config
 
   # see http.conf
-  command busybox httpd -f -p 0.0.0.0:7000 # -h COM.BOOBSBAGS/public
+  command busybox httpd -f -v -c /dev/null -p 0.0.0.0:7070 # -h COM.BOOBSBAGS/public
   # command httpd -d <ServerRoot> -f <Config> -k start
 
   echo && echo # Python
