@@ -132,6 +132,8 @@ pkg install netcat-openbsd
 
 pkg install nginx
 pkg install apache2 # https://httpd.apache.org/docs
+pkg install lighttpd
+pkg install tinyproxy # https://tinyproxy.github.io/
 
 # }}}
 
