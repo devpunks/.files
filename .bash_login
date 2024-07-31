@@ -186,6 +186,7 @@ function work (){
 # =========================================================================
 
 alias bell='echo "\a"'
+alias shell='chsh' # https://wiki.termux.com/wiki/Shells
 alias view='command view -n -M -R'
 
 # https://linux.die.net/man/1/pv
