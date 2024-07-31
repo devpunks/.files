@@ -449,8 +449,8 @@ function serve () { clear
   command apachectl fullstatus # See $STATUSURL
 
   cat $config
-  check $config \
-    && command apachectl restart -d $server -f $config
+# check $config \
+#   && command apachectl restart -d $server -f $config
 
   # see http.conf
   command busybox httpd -f -p 0.0.0.0:7000 # -h COM.BOOBSBAGS/public
