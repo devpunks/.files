@@ -463,7 +463,6 @@ function serve () { clear
   tree "${PREFIX}/etc/lighttpd"
   # https://redmine.lighttpd.net/projects/lighttpd/wiki/TutorialConfiguration
   command lighttpd -V
-  command lighttpd -l
   check "./lighttpd.conf" \
     && command lighttpd -D -f "./lighttpd.conf"
 } # serve
