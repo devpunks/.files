@@ -457,7 +457,7 @@ function serve () { clear
   # command httpd -d <ServerRoot> -f <Config> -k start
 
   echo && echo # Python
-  command python -m http.server "$port" 2>&1 &
+  command python -m http.server 5000 2>&1 &
 
   echo && echo # Lighttpd
   tree "${PREFIX}/etc/lighttpd"
