@@ -464,6 +464,7 @@ function serve () { clear
   # https://redmine.lighttpd.net/projects/lighttpd/wiki/TutorialConfiguration
   command lighttpd -V
   check "./lighttpd.conf" \
+    && command lighttpd -p -f "./lighttpd.conf" \
     && command lighttpd -f "./lighttpd.conf"
 } # serve
 
