@@ -605,6 +605,7 @@ function restart () { : restart; }
 function refresh () { : refresh; }
 function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
+
 # https://chrony-project.org
 function clock () {
   local -r LOG="${HOME}/chrony.log"
