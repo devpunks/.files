@@ -606,6 +606,16 @@ function refresh () { : refresh; }
 function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 
+function convert () {
+  local files="$@"
+
+  for file in $files; do
+    echo The file: "$file"
+
+    # ffmpeg -i "$i" "${i%.*}.mp4"
+  done
+}
+
 # https://chrony-project.org
 function clock () {
   local -r LOG="${HOME}/chrony.log"
