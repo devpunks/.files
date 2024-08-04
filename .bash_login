@@ -612,7 +612,6 @@ function convert () {
   for file in $files; do
     echo The file: "$file"
 
-    # ffmpeg -i "$i" "${i%.*}.mp4"
   done
 }
 
