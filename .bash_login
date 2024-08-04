@@ -609,6 +609,16 @@ function accumulate () { : accumulate; }
 function convert () {
   local files="$@"
 
+  ffmpeg -muxers
+  ffmpeg -demuxers
+  ffmpeg -formats
+  ffmpeg -codecs
+  ffmpeg -decoders
+  ffmpeg -encodery
+  ffmpeg -filters
+  ffmpeg -color
+  ffmpeg -sample_fmts
+
   for file in $files; do
     echo The file: "$file"
 
