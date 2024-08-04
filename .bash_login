@@ -623,6 +623,8 @@ function convert () {
     echo The file: "$file"
 
     # ffmpeg -i "$i" "${i%.*}.mp4"
+
+  #  ffprobe
   done
 }
 
