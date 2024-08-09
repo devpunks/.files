@@ -175,13 +175,7 @@ Android Accessibility
 #   - https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization
 #   - https://medium.com/the-code-vault/systemd-simple-service-examples-ce586afeed27
 #  - https://digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
-#
-#  - Explain Shell - https://explainshell.com/
-#  - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
-#  - Shell Expansion https://stackoverflow.com/a/59629043/173208
-#  - File Descriptors - https://en.m.wikipedia.org/wiki/File_descriptor
-#  - Compgen (shell commands) - https://baeldung.com/linux/compgen-command-usage
-#  - Exit Codes - https://cyberciti.biz/faq/linux-bash-exit-status-set-exit-statusin-bash/
+
 #  - echo vs printf
 #    - https://in-ulm.de/%7Emascheck/various/echo+printf/
 #    - https://unix.stackexchange.com/q/65803/why-is-printf-better-than-echo
