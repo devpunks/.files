@@ -607,7 +607,7 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 
 function convert () {
-  local files="$@"
+  local files=$@
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
 
   ffmpeg -muxers
@@ -620,8 +620,9 @@ function convert () {
   ffmpeg -color
   ffmpeg -sample_fmts
 
-  for file in "$@"; do
-    echo The file: "$file"
+  for file in $files; do
+    echo Input: "$file"
+    echo Filter: "$filter"
 
     # ffmpeg -i "$i" "${i%.*}.mp4"
 
