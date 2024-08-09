@@ -609,7 +609,7 @@ function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
 function convert () {
-  local files=$@
+  local -a files="$@"
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
 
   ffmpeg -muxers
