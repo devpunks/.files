@@ -625,7 +625,7 @@ function convert () {
   echo ${#}
   echo ${#files[@]}
 
-  for file in "${@}"; do
+  for file in "${files[@]}"; do
     echo Input: "$file"
     echo Filter: "$filter"
 
