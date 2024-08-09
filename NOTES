@@ -179,9 +179,7 @@ Android Accessibility
 #  - echo vs printf
 #    - https://in-ulm.de/%7Emascheck/various/echo+printf/
 #    - https://unix.stackexchange.com/q/65803/why-is-printf-better-than-echo
-#  - POSIX SHELL - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
-#  - Special Parameters - https://gnu.org/software/bash/manual/bash.html#Special-Parameters
-#
+
 #  - Reverse Search
 #    - https://gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
 #    - https://gnu.org/software/bash/manual/html_node/Commands-For-History.html
