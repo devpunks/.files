@@ -164,6 +164,7 @@ Android Accessibility
 # - Shebang - https://en.m.wikipedia.org/wiki/Shebang_(Unix)
 # - Shell Expansion https://stackoverflow.com/a/59629043/173208
 # - SED User Guide - https://gnu.org/software/sed/manual/sed.html
+# - AWK User Guide - https://gnu.org/software/gawk/manual/gawk.html
 # - File Descriptors - https://en.m.wikipedia.org/wiki/File_descriptor
 # - Math Expressions - https://redswitches.com/blog/bash-arithmetic-operators
 #  - Compgen (shell commands) - https://baeldung.com/linux/compgen-command-usage
