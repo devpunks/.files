@@ -599,6 +599,7 @@ function rotate () {
 
 # TODO: Implementation
 #-----------------------
+function used () { : used; }
 function clean () { : clean; }
 function reboot () { : reboot; }
 function restart () { : restart; }
