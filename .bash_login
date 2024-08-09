@@ -606,6 +606,7 @@ function restart () { : restart; }
 function refresh () { : refresh; }
 function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
+function bandwidth () { : bandwidth; }
 
 function convert () {
   local files=$@
