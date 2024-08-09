@@ -622,6 +622,7 @@ function convert () {
   ffmpeg -color
   ffmpeg -sample_fmts
 
+  echo ${#}
   echo ${#files[@]}
 
   for file in "${@}"; do
