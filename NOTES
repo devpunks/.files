@@ -185,6 +185,7 @@ Android Accessibility
 #    - https://gnu.org/software/emacs/manual/html_node/emacs/Basic-Isearch.html
 #    - https://gnu.org/software/bash/manual/html_node/Commands-For-History.html
 #    - https://codeburst.io/use-reverse-i-search-to-quickly-navigate-through-your-history-917f4d7ffd37
+
 <C-a> (BOL)
 <C-e> (EOL)
 <C-n> (Next command)
