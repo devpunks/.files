@@ -77,6 +77,8 @@ alias g#='{
 # {{{ Security
 # =========================================================================
 
+alias su='command su ; tsu '
+
 function lock () {
   : lock
 } # lock
