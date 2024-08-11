@@ -326,6 +326,7 @@ alias connect='TODO: implementation'
 # https://tinyproxy.github.io/
 alias proxy='tinyproxy -v ; tinyproxy -h ; tinyproxy'
 
+# https://en.m.wikipedia.org/wiki/Tc_(Linux)
 # https://man7.org/linux/man-pages/man8/tc.8.html
 alias traffic='man tc'
 
