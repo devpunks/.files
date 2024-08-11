@@ -838,7 +838,7 @@ function check () {
     case "$script" in
       *.html )
         command tidy "$script" ;;
-      *nginx.conf)
+      *nginx.conf )
         command nginx -T -c "$( realpath "$script" )" ;;
       *lighttpd.conf)
         command lighttpd -t -f "$( realpath "$script" )" ;;
