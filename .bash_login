@@ -77,8 +77,8 @@ alias g#='{
 # {{{ Security
 # =========================================================================
 
-#https://pypi.org/project/tsu/
-#http://androidcentral.com/root
+# https://pypi.org/project/tsu/
+# http://androidcentral.com/root
 alias su='command su ; tsu '
 
 function lock () {
