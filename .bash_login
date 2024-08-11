@@ -612,15 +612,15 @@ function convert () {
   local -a files=${@}
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
 
-  ffmpeg -muxers
-  ffmpeg -demuxers
-  ffmpeg -formats
-  ffmpeg -codecs
-  ffmpeg -decoders
-  ffmpeg -encodery
-  ffmpeg -filters
-  ffmpeg -color
-  ffmpeg -sample_fmts
+# ffmpeg -muxers
+# ffmpeg -demuxers
+# ffmpeg -formats
+# ffmpeg -codecs
+# ffmpeg -decoders
+# ffmpeg -encodery
+# ffmpeg -filters
+# ffmpeg -color
+# ffmpeg -sample_fmts
 
   echo ${#}
   echo ${#files[@]}
