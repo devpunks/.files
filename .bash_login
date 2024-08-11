@@ -846,6 +846,8 @@ function check () {
         command apachectl configtest -f "$( realpath "$script" )" ;;
       *.sh )
         command shellcheck --format=tty "$( realpath "$script" )" ;;
+      * )
+        echo "  🛑 cannot check ${script}"
     esac # $script
   done
 } # check
