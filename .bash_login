@@ -849,7 +849,7 @@ function check () {
       * )
         echo "  🛑 cannot check ${script}"
     esac # $script
-  done
+  done # for $script`
 } # check
 
 function lint () { clear
