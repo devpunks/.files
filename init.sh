@@ -121,6 +121,7 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 #   - https://github.com/termux/termux-packages/issues/12758
 pkg install iproute2 # ip addr instad of ifconfig -a
 pkg install net-tools # https://net-tools.sourceforge.io
+pkg install traceroute # https://traceroute.sourceforge.net/
 # NMAP
 #   - https://upguard.com/blog/how-to-use-nmap
 #   - https://redhat.com/sysadmin/use-cases-nmap
