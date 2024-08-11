@@ -368,7 +368,9 @@ function host () { clear
   echo && echo && command host -v -R 3 -C "$domain"
   echo && echo && command host -v -R 3 "$domain"
   echo && echo && command host -R 3 "$domain"
-  echo && echo && ping "$domain"
+
+  echo && echo && traceroute -N 1 -z 0.1 "$domain"
+  echo && ping "$domain"
   echo && echo
 
   echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
