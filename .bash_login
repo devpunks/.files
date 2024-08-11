@@ -844,7 +844,7 @@ function check () {
         command lighttpd -t -f "$( realpath "$script" )" ;;
       *httpd.conf )
         command apachectl configtest -f "$( realpath "$script" )" ;;
-      *.sh | *)
+      *.sh )
         command shellcheck --format=tty "$( realpath "$script" )" ;;
     esac # $script
   done
