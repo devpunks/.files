@@ -840,7 +840,7 @@ function check () {
         command tidy "$script" ;;
       *nginx.conf )
         command nginx -T -c "$( realpath "$script" )" ;;
-      *lighttpd.conf)
+      *lighttpd.conf )
         command lighttpd -t -f "$( realpath "$script" )" ;;
       *httpd.conf)
         command apachectl configtest -f "$( realpath "$script" )" ;;
