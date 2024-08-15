@@ -43,6 +43,8 @@
 
 " =========================================================================
 
+set emoji encoding=utf-8
+
 if ! exists('g:pluginname_setting')
   unlet! skip_defaults_vim
   let g:skip_defaults_vim=0
