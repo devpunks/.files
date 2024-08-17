@@ -931,7 +931,9 @@ function search () { clear
   echo && echo DONE!
 } # search
 
-function upload () { }
+function upload () {
+  : upload
+} # upload
 
 function download () { clear
   local -r uri="$1"
