@@ -1028,7 +1028,7 @@ function expand () { clear
 function forkbomb () { clear #:(){ :|:& };:
   local -r destination=$( realpath "${1:-./bomb.zip}" )
 
-  echo forkBomb # https://en.m.wikipedia.org/wiki/Fork_bomb
+  echo forkBomb
 } # forkbomb
 
 function zipbomb () { clear
