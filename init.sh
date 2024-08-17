@@ -145,7 +145,6 @@ pkg install jq
 pkg install vim
 pkg install tidy
 
-# pkg install clang # https://clang.llvm.org
 pkg install cmake
 
 pkg install golang
