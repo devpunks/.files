@@ -656,7 +656,7 @@ function authenticate () { clear
   # curl --key --cert
   # https://stackoverflow.com/q/25969196
   local -r type='--basic' # (digest|basic)
-  local -r credentials="${1:-:}" # default to (:)
+  local -r credentials="${1:-:}" # default to `:`
   local -r domain="localhost:7070"
 
   echo domain: $domain
