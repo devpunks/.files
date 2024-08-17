@@ -933,6 +933,8 @@ function search () { clear
 
 # https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 function upload () {
+  local -r uri="$2"
+
   : upload
 
   curl --upload-file "$location"
