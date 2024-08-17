@@ -188,6 +188,8 @@ function work (){
 # =========================================================================
 # {{{ Shell
 # =========================================================================
+alias etc='tree "$PREFIX/etc"'
+alias share='tree "$PREFIX/share"'
 
 alias bell='echo "\a"'
 alias shell='chsh' # https://wiki.termux.com/wiki/Shells
