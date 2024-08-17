@@ -653,7 +653,7 @@ function decode () {
 } # decode
 
 function authenticate () { clear
-  # curl --key
+  # curl --key --cert
   # https://stackoverflow.com/q/25969196
   local -r credentials="${1:-:}"
   local -r domain="localhost:7070"
