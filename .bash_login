@@ -658,7 +658,7 @@ function authenticate () { clear
   local -r type='--basic' # (digest|basic)
   local -r credentials="${1:-:}" # default to `:`
   local -r port="${PORT}"
-  local -r domain="localhost:7070"
+  local -r domain="localhost:$port"
 
   echo domain: $domain
   echo authenticating: "$credentials"
