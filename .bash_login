@@ -643,6 +643,7 @@ function authenticate () { clear
   local -r user="${1}"
   local -r credentials="${user}"
   curl
+  curl --user username http://
 } # authenticate
 
 # LLVM - https://llvm.org
