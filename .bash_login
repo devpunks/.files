@@ -418,7 +418,7 @@ function balance () { clear
 } # balance
 
 # NetCat ------------------------------------------------------------------
-#  - https://baeldung.com/linux/netcat-command
+# - https://baeldung.com/linux/netcat-command
 alias catscan='{
   nc -z -v -w 1 localhost 1234
   nc -z -v -w 1 google.com 442-444
