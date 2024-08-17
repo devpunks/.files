@@ -665,7 +665,7 @@ function authenticate () { clear
   echo type: $type
   echo credentials: "$credentials"
 
-  curl $type --user "$credentials" "$uri"
+  curl $type --head --user "$credentials" "$uri"
 } # authenticate
 
 # LLVM - https://llvm.org
