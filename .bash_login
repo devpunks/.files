@@ -428,6 +428,22 @@ alias catnet='{
   while true; do command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" | nc -l -v 1234; done
 }' # catnet
 
+# Exploits ----------------------------------------------------------------
+function attack () {
+  # Unauthorized access
+  # Data sniffing
+  # Physical damage
+  # Social engineering attacks
+  # Credential theft
+  # Vulnerability exploits
+
+  echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
+
+  echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
+  echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection/
+  echo Billion Laughs # https://en.m.wikipedia.org/wiki/Billion_laughs_attack
+} # attack
+
 # }}}
 
 # =========================================================================
