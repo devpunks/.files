@@ -669,7 +669,7 @@ function convert () {
 
   #  ffprobe
   done
-}
+} # convert
 
 # https://chrony-project.org
 function clock () {
