@@ -639,6 +639,7 @@ function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
 function encode () { : encode; }
+function decode () { : decode; }
 
 function authenticate () { clear
   # https://stackoverflow.com/q/25969196
