@@ -639,6 +639,8 @@ function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
 function authenticate () { clear
+  # https://stackoverflow.com/q/25969196
+  curl
 } # authenticate
 
 # LLVM - https://llvm.org
