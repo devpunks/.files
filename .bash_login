@@ -610,6 +610,10 @@ function rotate () {
 #-----------------------
 function attack () {
   echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
+
+  echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
+  echo dDoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
+  echo Billion Laughs # https://en.m.wikipedia.org/wiki/Billion_laughs_attack
 }
 
 function used () { : used; }
