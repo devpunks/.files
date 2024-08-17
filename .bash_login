@@ -638,7 +638,16 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
-function encode () { : encode; }
+function encode () {
+  local -r bytes="$1"
+  local -r encoding='--base64' # base16 | base32 | base64
+
+  echo bytes: "$bytes"
+  echo encoding: "$encoding"
+
+  printf "$bytes" | basenc $encoding
+} # encode
+
 function decode () { : decode; }
 
 function authenticate () { clear
