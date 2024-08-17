@@ -636,6 +636,13 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
+# Tiny C Compiler
+# - https://bellard.org/tcc
+# - https://en.m.wikipedia.org/wiki/Tiny_C_Compiler
+function compile () { clear
+  : compile;
+} # compile
+
 function convert () {
   local -a files=${@}
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
