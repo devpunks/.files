@@ -661,6 +661,7 @@ function authenticate () { clear
   local -r domain="localhost" # localhost default domain
   local -r uri="${domain}:${port}" # URI default to domain and port
 
+  echo type: $type
   echo domain: $domain
   echo authenticating: "$credentials"
 
