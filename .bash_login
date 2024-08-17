@@ -928,14 +928,6 @@ function search () { clear
   echo && echo DONE!
 } # search
 
-function etc () { clear
-  tree "$PREFIX/etc"
-} # etc
-
-function shared () { clear
-  tree "$PREFIX/share"
-} # shared
-
 function download () { clear
   local -r uri="$1"
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
