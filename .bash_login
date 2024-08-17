@@ -938,7 +938,7 @@ function upload () {
 
   : upload
 
-  curl --upload-file "$location"
+  curl --upload-file "$resource" "$uri"
 } # upload
 
 function download () { clear
