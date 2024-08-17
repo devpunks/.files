@@ -1024,7 +1024,7 @@ function expand () { clear
     | column --table
 } # expand
 
-
+ # https://en.m.wikipedia.org/wiki/Fork_bomb
 function forkbomb () { clear #:(){ :|:& };:
   local -r destination=$( realpath "${1:-./bomb.zip}" )
 
