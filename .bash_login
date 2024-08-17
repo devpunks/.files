@@ -643,6 +643,8 @@ function authenticate () { clear
   local -r credentials="${1:-:}"
   local -r domain="localhost:7070"
 
+  echo authenticating with: $credentials
+
   curl --user "$credentials" "$domain"
 } # authenticate
 
