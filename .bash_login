@@ -942,7 +942,8 @@ function upload () {
 
   exist "$resource" || return $?
 
-  : curl --upload-file "$resource" "$uri"
+  about "$resource"
+  curl --upload-file "$resource" "$uri"
 } # upload
 
 function download () { clear
