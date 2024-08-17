@@ -663,7 +663,6 @@ function authenticate () { clear
 
   echo uri: $uri
   echo type: $type
-  echo domain: $domain
   echo credentials: "$credentials"
 
   curl $type --user "$credentials" "$uri"
