@@ -646,6 +646,7 @@ function compile () { clear
   : compile
 } # compile
 
+# https://en.m.wikipedia.org/wiki/FFmpeg
 function convert () {
   local -a files=${@}
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
