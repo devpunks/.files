@@ -609,6 +609,13 @@ function rotate () {
 # TODO: Implementation
 #-----------------------
 function attack () {
+  # Unauthorized access
+  # Data sniffing
+  # Physical damage
+  # Social engineering attacks
+  # Credential theft
+  # Vulnerability exploits
+
   echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
 
   echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
