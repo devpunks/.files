@@ -429,6 +429,7 @@ alias catnet='{
 }' # catnet
 
 # Exploits ----------------------------------------------------------------
+# - https://securitygate.io/blog/osi-model-fundamentals-cybersecurity-basics/
 function attack () {
   # Unauthorized access
   # Data sniffing
