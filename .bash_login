@@ -441,7 +441,7 @@ function attack () {
   # Vulnerability exploits
 
   echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
-
+  echo C10k Problem # https://en.m.wikipedia.org/wiki/C10k_problem
   echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
   echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection/
   echo Billion Laughs # https://en.m.wikipedia.org/wiki/Billion_laughs_attack
