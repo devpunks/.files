@@ -1035,7 +1035,7 @@ function forkbomb () { clear #:(){ :|:& };:
 function zipbomb () { clear
   local -r destination=$( realpath "${1:-./bomb.zip}" )
 
-  echo zipBomb # https://en.m.wikipedia.org/wiki/Zip_bomb
+  echo zipBomb
 } # zipbomb
 
 # - https://ncompress.sourceforge.io
