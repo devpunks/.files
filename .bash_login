@@ -936,7 +936,11 @@ function upload () {
   local -r resource="${1}"
   local -r uri="${2}"
 
-  : upload
+  echo resource: "$resource"
+  echo uri: "$uri"
+  echo
+
+  exist "$resource" || return $?
 
   curl --upload-file "$resource" "$uri"
 } # upload
