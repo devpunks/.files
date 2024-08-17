@@ -640,6 +640,8 @@ function bandwidth () { : bandwidth; }
 
 function authenticate () { clear
   # https://stackoverflow.com/q/25969196
+  local -r user="${1}"
+  local -r credentials="${user}"
   curl
 } # authenticate
 
