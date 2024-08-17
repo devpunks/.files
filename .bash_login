@@ -655,13 +655,14 @@ function decode () {
 function authenticate () { clear
   # curl --key --cert
   # https://stackoverflow.com/q/25969196
+  local -r type='--basic'
   local -r credentials="${1:-:}"
   local -r domain="localhost:7070"
 
   echo domain: $domain
   echo authenticating: "$credentials"
 
-  curl --user "$credentials" "$domain"
+  curl $type --user "$credentials" "$domain"
 } # authenticate
 
 # LLVM - https://llvm.org
