@@ -638,6 +638,8 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
+function encode () { : encode; }
+
 function authenticate () { clear
   # https://stackoverflow.com/q/25969196
   local -r credentials="${1:-:}"
