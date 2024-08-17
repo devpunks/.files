@@ -285,7 +285,6 @@ alias list="command eza --level=2 --color=auto --classify=auto \
 alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
 
 alias header='curl --head'
-# https://gist.github.com/eneko/dc2d8edd9a4b25c5b0725dd123f98b10
 alias curl='command curl --verbose'
 
 alias ping='command ping -c 5'
