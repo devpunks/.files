@@ -944,6 +944,7 @@ function upload () {
 
   list "$resource"
   about "$resource"
+  weigh "$resource"
   curl --upload-file "$resource" "$uri"
 } # upload
 
