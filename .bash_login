@@ -642,7 +642,6 @@ function encode () {
   local -r bytes="$1"
   local -r encoding='--base64' # base2lsbf | base2msbf | base16 | base32 | base32hex | base64 | base64url
 
-
   printf "$bytes" | basenc $encoding
 } # encode
 
