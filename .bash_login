@@ -933,6 +933,7 @@ function search () { clear
 
 function upload () {
   : upload
+  # https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 } # upload
 
 function download () { clear
