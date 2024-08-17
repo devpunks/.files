@@ -932,6 +932,7 @@ function search () { clear
 } # search
 
 function upload () { }
+
 function download () { clear
   local -r uri="$1"
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
