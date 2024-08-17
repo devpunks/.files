@@ -946,6 +946,8 @@ function upload () {
   about "$resource"
   weigh "$resource"
   curl --upload-file "$resource" "$uri"
+
+  # TODO: to remote domain ( e.g. AWS / CDN )
 } # upload
 
 function download () { clear
