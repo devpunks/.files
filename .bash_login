@@ -663,7 +663,7 @@ function authenticate () { clear
   echo domain: $domain
   echo authenticating: "$credentials"
 
-  curl $type --user "$credentials" "$domain"
+  curl $type --user "$credentials" "$domain:$port"
 } # authenticate
 
 # LLVM - https://llvm.org
