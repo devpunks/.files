@@ -659,7 +659,7 @@ function authenticate () { clear
   local -r credentials="${1:-:}" # default to `:`
   local -r port="${PORT}" # PORT env variable default
   local -r domain="localhost" # localhost default domain
-  local -r uri="${domain}:${port}"
+  local -r uri="${domain}:${port}" # URI default to domain and port
 
   echo domain: $domain
   echo authenticating: "$credentials"
