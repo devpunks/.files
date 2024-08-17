@@ -621,7 +621,7 @@ function attack () {
   echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
   echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection/
   echo Billion Laughs # https://en.m.wikipedia.org/wiki/Billion_laughs_attack
-}
+} # attack
 
 function used () { : used; }
 function clean () { : clean; }
