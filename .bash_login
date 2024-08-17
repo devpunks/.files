@@ -992,7 +992,7 @@ function download () { clear
   header "$uri"
 # keep local file name similar to remote-name
   wget "$uri"
-  curl --remote-name "$uri"
+  curl --parallel --remote-name "$uri"
 } # download
 
 function open () { clear
