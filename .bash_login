@@ -931,6 +931,7 @@ function search () { clear
   echo && echo DONE!
 } # search
 
+# https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 function upload () {
   # https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
   : upload
