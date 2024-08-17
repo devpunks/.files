@@ -638,6 +638,9 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
+function authenticate () { clear
+} # authenticate
+
 # LLVM - https://llvm.org
 # - https://clang.llvm.org
 # - https://en.m.wikipedia.org/wiki/Clang
