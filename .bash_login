@@ -1024,6 +1024,12 @@ function expand () { clear
     | column --table
 } # expand
 
+function zipbomb () { clear
+  local -r destination=$( realpath "${1:-./bomb.zip}" )
+
+  echo zipBomb # https://en.m.wikipedia.org/wiki/Zip_bomb
+} # zipbomb
+
 # - https://ncompress.sourceforge.io
 function compress () { clear
   local -r operation
