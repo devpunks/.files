@@ -935,6 +935,7 @@ function upload () {
   # https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
   : upload
 
+  curl --upload-file $location
 } # upload
 
 function download () { clear
