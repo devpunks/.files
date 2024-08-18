@@ -677,7 +677,7 @@ alias make="command make -v; command make"
 # - https://en.m.wikipedia.org/wiki/Tiny_C_Compiler
 function compile () { clear
   local -r source="${1}"
-  local -r output="$( basename "${1%.*}").run"
+  local -r output="$( basename "${1%.*}" ).run"
   local -r include="$PREFIX/include/bsd"
 
   command tcc -h
