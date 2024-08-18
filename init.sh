@@ -146,7 +146,7 @@ pkg install vim
 pkg install tidy
 
 pkg install cmake
-pkg install tcc # tiny C Compiler https://bellard.org/tcc/
+pkg install tcc # tiny C Compiler https://bellard.org/tcc
 # pkg install clang # https://clang.llvm.org
 
 pkg install golang
