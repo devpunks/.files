@@ -686,6 +686,8 @@ function compile () { clear
 
   exist "$source" && \
   command tcc "$source" -I"$PREFIX/include/bsd" -o "$output"
+
+  return $?
 } # compile
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
