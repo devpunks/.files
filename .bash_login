@@ -677,12 +677,12 @@ function authenticate () { clear
 alias make="command make -v; command make"
 function compile () { clear
   local -r source="${1}"
-  local -r output="$( basename ${1%.*})"
+  local -r output="$( basename ${1%.*}).run"
 
   exist "$source" || return $?
 
   command tcc --help
-# command tcc "$source"
+# command tcc "$source" -o "$output"
 } # compile
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
