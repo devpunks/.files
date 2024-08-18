@@ -712,7 +712,7 @@ function convert () { clear
 
     # ffmpeg -i "$i" "${i%.*}.mp4"
 
-    #  ffprobe
+    # ffprobe
   done
 } # convert
 
