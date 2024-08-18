@@ -680,7 +680,7 @@ function compile () { clear
   exist "$source" || return $?
 
   command tcc --help
-  command tcc
+# command tcc "$source"
 } # compile
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
