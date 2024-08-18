@@ -480,7 +480,7 @@ function serve () { clear
   command apachectl fullstatus # See $STATUSURL
 
   cat "$config"
-  check $config \
+  check "$config" \
     && command apachectl restart -d $server -f $config
 
   # see http.conf
