@@ -464,6 +464,8 @@ function serve () { clear
   local -r server=$( realpath ${PREFIX:-/usr} )
   local -r config="${HOME}/httpd.conf"
 
+  exists "$root" || return $?
+
   echo PORT: "$port"
   echo ROOT: "$root"
   echo CONFIG: "$config"
