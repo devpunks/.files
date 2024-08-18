@@ -711,7 +711,6 @@ function convert () { clear
     echo Filter: "$filter"
 
     # ffmpeg -i "$i" "${i%.*}.mp4"
-
     # ffprobe
   done
 } # convert
