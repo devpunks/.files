@@ -479,7 +479,7 @@ function serve () { clear
   command apachectl -S
   command apachectl fullstatus # See $STATUSURL
 
-  cat $config
+  cat "$config"
   check $config \
     && command apachectl restart -d $server -f $config
 
