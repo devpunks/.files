@@ -680,8 +680,6 @@ function compile () { clear
   local -r output="$( basename ${1%.*}).run"
   local -r include="$PREFIX/include/bsd"
 
-  exist "$source" || return $?
-
   command tcc -h
   command tcc -hh
   command tcc -vv
