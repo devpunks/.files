@@ -481,7 +481,7 @@ function serve () { clear
 
   cat "$config"
   check "$config" \
-    && command apachectl restart -d "$server" -f $config
+    && command apachectl restart -d "$server" -f "$config"
 
   # see http.conf
   command busybox httpd -v -f -c /dev/null -p 0.0.0.0:7070 # -h COM.BOOBSBAGS/public
