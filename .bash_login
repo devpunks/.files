@@ -1403,7 +1403,7 @@ function reload () { clear
   source "${HOME}/.bashrc" \
     && source "${HOME}/.bash_login"
 
-  # reset  slowww
+  # reset  slowwwwwwwwwwwwwwww
   tput reset
   tput sgro # reset attributes
   stty sane
