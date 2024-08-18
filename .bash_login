@@ -668,6 +668,7 @@ function authenticate () { clear
   curl $type --head --user "$credentials" "$uri"
 } # authenticate
 
+alias make="command make -v; command make"
 # LLVM - https://llvm.org
 # - https://clang.llvm.org
 # - https://en.m.wikipedia.org/wiki/Clang
