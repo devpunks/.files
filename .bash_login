@@ -685,7 +685,10 @@ function compile () { clear
   command tcc -vv
 
   exist "$source" && \
-  command tcc "$source" -I"$PREFIX/include/bsd" -o "$output"
+  command tcc "$source" \
+    -I"$PREFIX/include/bsd/stdio.h" \
+    -L"$PREFIX/include/bsd/stdio.h" \
+    -o "$output"
 
   return $?
 } # compile
