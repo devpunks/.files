@@ -458,6 +458,7 @@ function attack () {
 # HTTP(s) -----------------------------------------------------------------
 # - https://realpython.com/python-http-server/
 function serve () { clear
+  local -r realm='devPunks' # Authentication
   local -r port=${PORT:-4321}
   local -r root=$( realpath ${1:-.} )
   local -r server=$( realpath ${PREFIX:-/usr} )
