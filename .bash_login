@@ -684,7 +684,7 @@ function compile () { clear
   command tcc -h
   command tcc -hh
   command tcc -vv
-# command tcc "$source" -o "$output"
+  command tcc "$source" -o "$output"
 } # compile
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
