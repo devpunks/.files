@@ -470,6 +470,7 @@ function serve () { clear
   echo ROOT: "$root"
   echo CONFIG: "$config"
 
+
   echo && echo # Apache
   tree "${PREFIX}/etc/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
