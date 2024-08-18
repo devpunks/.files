@@ -674,6 +674,7 @@ function authenticate () { clear
 # Tiny C Compiler
 # - https://bellard.org/tcc
 # - https://en.m.wikipedia.org/wiki/Tiny_C_Compiler
+alias make="make -v; make"
 function compile () { clear
   local -r source="${1}"
   local -r output="$( basename ${1%.*})"
