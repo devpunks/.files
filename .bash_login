@@ -678,6 +678,7 @@ function compile () { clear
   local -r source="${1}"
 
   exist "$source" || return $?
+
   command tcc --help
   command tcc
 } # compile
