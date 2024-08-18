@@ -146,6 +146,7 @@ pkg install vim
 pkg install tidy
 
 pkg install cmake
+pkg install tcc
 # pkg install clang # https://clang.llvm.org
 
 pkg install golang
