@@ -682,6 +682,7 @@ function compile () { clear
   exist "$source" || return $?
 
   command tcc --help
+  command tcc --vv
 # command tcc "$source" -o "$output"
 } # compile
 
