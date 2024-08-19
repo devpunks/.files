@@ -675,7 +675,7 @@ function authenticate () { clear
   echo auth: $auth
   echo credentials: "$credentials"
 
-  curl --head $type --user "$credentials" "$uri"
+  curl --head $auth $user $uri
 } # authenticate
 
 alias make="command make -v; command make"
