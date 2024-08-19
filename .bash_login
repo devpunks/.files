@@ -421,7 +421,7 @@ function balance () { clear
 # https://tinyproxy.github.io/
 alias proxy='tinyproxy -v ; tinyproxy -h ; tinyproxy -d -c $HOME/tinyproxy.conf'
 
-function proxy () {
+function proxy () { clear
   tinyproxy -v
   tinyproxy -h
   tinyproxy -d -c "$HOME/tinyproxy.conf"
