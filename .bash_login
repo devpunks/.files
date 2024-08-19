@@ -761,7 +761,7 @@ function start () { clear
   echo SERVICE: "$service"
   echo PIDFILE: "$pidfile"
 
-  #man start-stop-daemon
+  # man start-stop-daemon
   #--background - https://stackoverflow.com/q/63274948
   command start-stop-daemon --start --name "$name" \
     --chdir "$service" --nicelevel "$nice" --umask "$mask" \
