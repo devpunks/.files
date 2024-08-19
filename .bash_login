@@ -991,7 +991,6 @@ function search () { clear
 
 # Test Servers
 # - https://smartftp.com/en-us/support/kb/2779
-#
 # FTP (File Transfer Protocol)
 # - https://dlptest.com/ftp-test
 #
