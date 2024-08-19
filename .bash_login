@@ -877,6 +877,7 @@ function run () {
 
 # https://wiki.termux.com/wiki/Termux-services
 function services () {
+  local -r filter='runsv'
   local -r runs="${PREFIX}/var/run/"
   local -r services="${PREFIX}/var/service/"
 
