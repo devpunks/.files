@@ -888,8 +888,8 @@ function services () {
   echo && tree -L 4 "$services"
 } # services
 
-function draw () { echo draw; }
 # http://gnuplot.info
+function draw () { echo draw; }
 function plot () { clear
   gnuplot --version
   gnuplot --help
