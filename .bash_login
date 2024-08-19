@@ -881,7 +881,7 @@ function services () {
   local -r runs="${PREFIX}/var/run/"
   local -r services="${PREFIX}/var/service/"
 
-  htop --tree --filter='runsv'
+  htop --tree --filter=$filter
 
   ps | command grep runsv
   echo && tree -L 4 "$runs"
