@@ -418,7 +418,7 @@ function balance () { clear
 
 # Proxies -----------------------------------------------------------------
 # - https://oxylabs.io/blog/curl-with-proxy
-alias proxyoff='unset http_proxy ; unset https_proxy'
+alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 alias proxyon='(
   export http_proxy="http://user:pwd@127.0.0.1:8888";
   export https_proxy=" http://user:pwd@127.0.0.1:8888"
