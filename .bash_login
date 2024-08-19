@@ -744,6 +744,7 @@ function clock () {
   chronyc
 } # clock
 
+# See bin/service-daemon
 function start () { clear
   local -r nice='-10'
   local -r mask='077' # u=rwx,g=r,o=
@@ -876,7 +877,7 @@ function run () {
 
 # https://wiki.termux.com/wiki/Termux-services
 function services () {
-  local -r path="${PREFIX}/var/service/"
+  local -r services="${PREFIX}/var/service/"
 
   htop --tree --filter=runsv
 
