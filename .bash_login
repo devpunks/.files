@@ -422,6 +422,7 @@ function balance () { clear
 # - https://datatracker.ietf.org/doc/html/rfc1928
 # cURL
 # - https://oxylabs.io/blog/curl-with-proxy
+# - https://everything.curl.dev/usingcurl/proxies/socks.html
 alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 alias proxyon='
   export http_proxy="http://user:pwd@127.0.0.1:8888" ;
