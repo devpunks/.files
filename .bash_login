@@ -996,6 +996,7 @@ function search () { clear
 #
 # Curl
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
+alias ftp='command ftp --version; ftp --verbose'
 function upload () {
   local -r resource="${1}"
   local -r uri="${2}"
