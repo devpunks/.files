@@ -479,7 +479,7 @@ function serve () { clear
   # - https://httpd.apache.org/docs/current/programs/apachectl.html
   $APACHE -V # version & compile settings
   $APACHE -l # compiled modules
-  command apachectl -L # configuration directives
+  $APACHE -L # configuration directives
   command apachectl -M # (-t -D DUMP_MODULES) Show all loaded modules
   command apachectl -S # (-t -D DUMP_VHOSTS) vhost settings (-t -D DUMP_RUN_CFG) run settings
   command apachectl fullstatus # See $STATUSURL
