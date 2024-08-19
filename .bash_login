@@ -416,6 +416,8 @@ function balance () { clear
     && echo Started nginx load balancer on PORT 8080
 } # balance
 
+# Proxies ----
+
 # NetCat ------------------------------------------------------------------
 # - https://baeldung.com/linux/netcat-command
 alias catscan='{
