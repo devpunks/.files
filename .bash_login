@@ -476,7 +476,7 @@ function serve () { clear
   tree "${PREFIX}/etc/apache2"
   list "${PREFIX}/libeexec/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
-  # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
+  # - https://httpd.apache.org/docs/current/programs/apachectl.html
   command apachectl -V # version & compile settings
   command apachectl -l # compiled modules
   command apachectl -L # configuration directives
