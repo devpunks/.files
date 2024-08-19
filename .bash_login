@@ -432,7 +432,7 @@ alias proxyon='
 ' # proxyon
 alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 function proxy () { clear
-  # https://tinyproxy.github.io/
+  # https://tinyproxy.github.io
   tinyproxy -v
   tinyproxy -h
   tinyproxy -d -c "$HOME/tinyproxy.conf"
