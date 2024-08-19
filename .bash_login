@@ -476,6 +476,8 @@ function serve () { clear
   list "${PREFIX}/libeexec/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
   # - https://httpd.apache.org/docs/current/programs/apachectl.html
+  local -r APACHE="command apachectl -d ${root} -f ${config}"
+  echo && echo "APACHE COMMAND: $APACHE"
   $APACHE -V # version & compile settings
   $APACHE -l # compiled modules
   $APACHE -L # configuration directives
