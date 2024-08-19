@@ -423,6 +423,7 @@ alias proxy='tinyproxy -v ; tinyproxy -h ; tinyproxy -d -c $HOME/tinyproxy.conf'
 
 function proxy () {
   tinyproxy -v
+  tinyproxy -h
 }
 # NetCat ------------------------------------------------------------------
 # - https://baeldung.com/linux/netcat-command
