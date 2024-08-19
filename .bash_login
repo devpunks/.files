@@ -482,7 +482,7 @@ function serve () { clear
   $APACHE -L # configuration directives
   $APACHE -M # (-t -D DUMP_MODULES) Show all loaded modules
   $APACHE -S # (-t -D DUMP_VHOSTS) vhost settings (-t -D DUMP_RUN_CFG) run settings
-  command apachectl fullstatus # See $STATUSURL
+  $APACHE fullstatus # See $STATUSURL
 
   cat "$config"
   check "$config" \
