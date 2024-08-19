@@ -842,7 +842,7 @@ function run () {
   local -r path="${SVDIR:-$PREFIX/var/service}"
 
 # man sv
-# man runsv    # Per service
+# man runsv      # Per service
 # man runsvdir   # Services dir
 # man runsvchdir # (Change to) Services dir
 
