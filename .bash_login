@@ -843,7 +843,7 @@ function run () {
 
 # man sv
 # man runsv      # Per service
-# man runsvdir   # Services dir
+# man runsvdir   # Run services dir
 # man runsvchdir # (Change to) Services dir
 
   # [ -d ${PREFIX}/etc/init.d ] \
