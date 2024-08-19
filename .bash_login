@@ -496,6 +496,7 @@ function serve () { clear
   echo && echo # Python
   command python -m http.server 5000 2>&1 &
 
+
   echo && echo # Lighttpd
   tree "${PREFIX}/etc/lighttpd"
   # https://redmine.lighttpd.net/projects/lighttpd/wiki/TutorialConfiguration
