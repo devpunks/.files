@@ -662,7 +662,6 @@ function decode () {
 } # decode
 
 function authenticate () { clear
-  # curl --key --cert
   # https://stackoverflow.com/q/25969196
   local -r type='--basic' # (anyauth|digest|basic)
   local -r credentials="${1:-:}" # default to `:`
