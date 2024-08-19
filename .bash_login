@@ -432,6 +432,7 @@ alias proxyon='
 ' # proxyon
 alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 
+# SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
 function proxy () { clear
   # https://tinyproxy.github.io
   tinyproxy -v
