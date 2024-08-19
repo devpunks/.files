@@ -475,7 +475,7 @@ function serve () { clear
   tree "${PREFIX}/etc/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
   # - https://httpd.apache.org/docs/2.4/programs/apachectl.html
-  command apachectl -V # extra verbose
+  command apachectl -V # version & compile settings
   command apachectl -l
   command apachectl -L
   command apachectl -M
