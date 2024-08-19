@@ -418,6 +418,7 @@ function balance () { clear
 
 # Proxies -----------------------------------------------------------------
 # SOCKS4 - SOCKS | TCP protocols,
+# SOCKS5 - DNS | UDP | SSH | IPv6 | Auth
 # SOCKS (5|4)
 # - https://en.m.wikipedia.org/wiki/SOCKS
 # - https://datatracker.ietf.org/doc/html/rfc1928
