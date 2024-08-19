@@ -883,7 +883,6 @@ function services () {
   htop --tree --filter=runsv
 
   ps | command grep runsv
-  echo && tree -L 4 "$services"
   echo && tree -L 4 "$runs"
 } # services
 
