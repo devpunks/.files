@@ -417,6 +417,7 @@ function balance () { clear
 } # balance
 
 # Proxies -----------------------------------------------------------------
+# SOCKS (4|5)
 # SOCKS4 - SOCKS | TCP protocols,
 # SOCKS5 - DNS | UDP | SSH | IPv6 | Auth
 # SOCKS (5|4)
