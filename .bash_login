@@ -478,7 +478,7 @@ function serve () { clear
   command apachectl -V # version & compile settings
   command apachectl -l # compiled modules
   command apachectl -L # configuration directives
-  command apachectl -M # (-t -D DUMP_MODULES)
+  command apachectl -M # (-t -D DUMP_MODULES) Show all loaded modules
   command apachectl -S
   command apachectl fullstatus # See $STATUSURL
 
