@@ -472,6 +472,7 @@ function serve () { clear
 
 
   echo && echo # Apache
+  local -r APACHE="command apachectl -d ${root} -f ${config}"
   tree "${PREFIX}/etc/apache2"
   list "${PREFIX}/libeexec/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
