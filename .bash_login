@@ -489,7 +489,7 @@ function serve () { clear
     && command apachectl restart -d "$server" -f "$config"
 
   # see http.conf
-  command busybox httpd -f -vv -r "$realm" -h "$root" -p 0.0.0.0:7070 -c /dev/null
+  command busybox httpd -f "$config" -vv -r "$realm" -h "$root" -p 0.0.0.0:7070 -c /dev/null
   # command httpd -d <ServerRoot> -f <Config> -k start
 
   echo && echo # Python
