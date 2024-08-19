@@ -889,7 +889,7 @@ function services () {
 } # services
 
 # http://gnuplot.info
-function draw () { echo draw; }
+function draw () { : draw; }
 function plot () { clear
   gnuplot --version
   gnuplot --help
