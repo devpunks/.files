@@ -673,7 +673,7 @@ function authenticate () { clear
 
   echo uri: "$uri"
   echo auth: $auth
-  echo credentials: "$credentials"
+  echo user: "$user"
 
   curl --head $auth $user $uri
 } # authenticate
