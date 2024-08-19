@@ -841,7 +841,7 @@ function run () {
   local -r services="${*}"
   local -r path="${SVDIR:-$PREFIX/var/service}"
 
-# man sv
+# man sv         # Signals
 # man runsv      # Run service
 # man runsvdir   # Run service dir
 # man runsvchdir # (Change to) service dir
