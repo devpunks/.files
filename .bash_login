@@ -416,7 +416,7 @@ function balance () { clear
     && echo Started nginx load balancer on PORT 8080
 } # balance
 
-# Proxies ----
+# Proxies -----------------------------------------------------------------
 # https://tinyproxy.github.io/
 alias proxy='tinyproxy -v ; tinyproxy -h ; tinyproxy -d -c $HOME/tinyproxy.conf'
 
