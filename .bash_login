@@ -657,8 +657,8 @@ function rotate () {
 
 # TODO: Implementation
 #-----------------------
-function forward () { : forward }
-function reverse () { : reverse }
+function forward () { : forward; }
+function reverse () { : reverse; }
 
 function used () { : used; }
 function clean () { : clean; }
