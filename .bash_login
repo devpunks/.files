@@ -989,6 +989,7 @@ function search () { clear
   echo && echo DONE!
 } # search
 
+# - https://smartftp.com/en-us/support/kb/2779
 # https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 function upload () {
   local -r resource="${1}"
