@@ -761,7 +761,6 @@ function start () { clear
   echo DAEMON: "$daemon"
   echo SERVICE: "$service"
   echo PIDFILE: "$pidfile"
-  echo DAEMON: "$daemon"
 
   #--background - https://stackoverflow.com/q/63274948
   command start-stop-daemon --start --name "$name" \
