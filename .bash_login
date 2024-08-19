@@ -754,7 +754,7 @@ function start () { clear
   local -r pidfile="${service}/${name}.pid"
   local -r daemon="${PREFIX}/bin/runsv" # runsvdir for directories
 
-  mkdir -p "$service"
+  mkdir -p "$service" # ensure servicee directory exists
 
   #man start-stop-daemon
   echo Name: "$name"
