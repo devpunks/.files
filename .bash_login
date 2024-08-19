@@ -756,7 +756,7 @@ function start () { clear
   #local -r daemon="${PREFIX}/bin/runsvdir"
   local -r daemon="${PREFIX}/bin/runsv" # runsvdir for directories
 
-  mkdir -p "$piddir"
+  mkdir -p "$service"
 
   #man start-stop-daemon
   echo Name: "$name"
