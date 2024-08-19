@@ -420,7 +420,6 @@ function balance () { clear
 # https://tinyproxy.github.io/
 alias proxy='tinyproxy -v ; tinyproxy -h ; tinyproxy -d -c $HOME/tinyproxy.conf'
 
-
 # NetCat ------------------------------------------------------------------
 # - https://baeldung.com/linux/netcat-command
 alias catscan='{
