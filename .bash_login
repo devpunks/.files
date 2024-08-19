@@ -837,7 +837,7 @@ function trip () {
 } # trip
 
 function run () {
-  local -r seconds=5
+  local -r -i seconds=5
   local -r services="${*}"
   local -r path="${SVDIR:-$PREFIX/var/service}"
 
