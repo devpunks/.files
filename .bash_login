@@ -758,7 +758,7 @@ function start () { clear
 
   #man start-stop-daemon
   echo Name: "$name"
-  echo PIDDIR: "$piddir"
+  echo SERVICE: "$piddir"
   echo PIDFILE: "$pidfile"
   echo DAEMON: "$daemon"
 
