@@ -430,6 +430,7 @@ alias proxyon='
   export https_proxy=" http://user:pwd@127.0.0.1:8888" ;
   echo "PROXY ON! http: ${http_proxy} https: ${http_proxy}" ;
 ' # proxyon
+alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 function proxy () { clear
   # https://tinyproxy.github.io/
   tinyproxy -v
