@@ -744,7 +744,6 @@ function clock () {
   chronyc
 } # clock
 
-# >/dev/null 2>&1 &
 function start () { clear
   local -r nice='-10'
   local -r mask='077' # u=rwx,g=r,o=
