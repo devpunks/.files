@@ -995,7 +995,7 @@ function upload () {
   local -r uri="${2}"
 
   echo uri: "$uri"
-  echo
+  echo resource: "$resource"
 
   exist "$resource" || return $?
 
