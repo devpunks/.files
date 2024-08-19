@@ -994,7 +994,6 @@ function upload () {
   local -r resource="${1}"
   local -r uri="${2}"
 
-  echo resource: "$resource"
   echo uri: "$uri"
   echo
 
