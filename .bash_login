@@ -991,6 +991,9 @@ function search () { clear
 
 # Test Servers
 # - https://smartftp.com/en-us/support/kb/2779
+#
+# FTP (File Transfer Protocol)
+#
 # Curl
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 function upload () {
