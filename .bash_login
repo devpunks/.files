@@ -425,7 +425,6 @@ function balance () { clear
 # cURL --proxy --socks4 --socks4a --socks5
 # - https://oxylabs.io/blog/curl-with-proxy
 # - https://everything.curl.dev/usingcurl/proxies/socks.html
-alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 alias proxyon='
   export http_proxy="http://user:pwd@127.0.0.1:8888" ;
   export https_proxy=" http://user:pwd@127.0.0.1:8888" ;
