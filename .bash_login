@@ -417,6 +417,8 @@ function balance () { clear
 } # balance
 
 # Proxies -----------------------------------------------------------------
+# SOCKS (5)
+# - https://en.m.wikipedia.org/wiki/SOCKS
 # - https://oxylabs.io/blog/curl-with-proxy
 alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 alias proxyon='
