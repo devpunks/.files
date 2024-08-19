@@ -877,13 +877,14 @@ function run () {
 
 # https://wiki.termux.com/wiki/Termux-services
 function services () {
+  local -r runs="${PREFIX}/var/run/"
   local -r services="${PREFIX}/var/service/"
 
   htop --tree --filter=runsv
 
   ps | command grep runsv
   echo && tree -L 4 "$services"
-  echo && tree -L 4 "$path"
+  echo && tree -L 4 "$runs"
 } # services
 
 function draw () { echo draw; }
