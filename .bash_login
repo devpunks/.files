@@ -884,6 +884,7 @@ function services () {
 
   ps | command grep runsv
   echo && tree -L 4 "$runs"
+  echo && tree -L 4 "$services"
 } # services
 
 function draw () { echo draw; }
