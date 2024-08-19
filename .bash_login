@@ -993,7 +993,6 @@ function search () { clear
 # - https://smartftp.com/en-us/support/kb/2779
 # FTP (File Transfer Protocol)
 # - https://dlptest.com/ftp-test
-#
 # Curl
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 alias ftp='command ftp --version; ftp --verbose'
