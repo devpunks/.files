@@ -752,7 +752,6 @@ function start () { clear
   local name="${service##*/}"
 
   local piddir="$service"
-  #local piddir="${PREFIX}/var/run"
   local -r pidfile="${piddir}/${name}.pid"
   #local -r daemon="${PREFIX}/bin/runsvdir"
   local -r daemon="${PREFIX}/bin/runsv"
