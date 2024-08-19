@@ -421,8 +421,8 @@ function balance () { clear
 alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 alias proxyon='(
   export http_proxy="http://user:pwd@127.0.0.1:8888";
-  export https_proxy=" http://user:pwd@127.0.0.1:8888"
-  echo "PROXY ON! http: ${http_proxy} https: ${http_proxy}"
+  export https_proxy=" http://user:pwd@127.0.0.1:8888";
+  echo "PROXY ON! http: ${http_proxy} https: ${http_proxy}";
   )'
 function proxy () { clear
   # https://tinyproxy.github.io/
