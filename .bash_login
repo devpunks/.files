@@ -418,9 +418,7 @@ function balance () { clear
 
 # Proxies -----------------------------------------------------------------
 # - https://oxylabs.io/blog/curl-with-proxy
-# https://tinyproxy.github.io/
-alias proxy='tinyproxy -v ; tinyproxy -h ; tinyproxy -d -c $HOME/tinyproxy.conf'
-
+# - https://tinyproxy.github.io/
 function proxy () { clear
   tinyproxy -v
   tinyproxy -h
