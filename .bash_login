@@ -940,7 +940,7 @@ function check () {
       *.sh )
         command shellcheck --format=tty "$( realpath "$script" )" ;;
       * )
-        echo "  🛑 cannot check ${script}"
+        echo "  🛑 Cannot check ${script}"
     esac # $script
   done # for $script
 } # check
