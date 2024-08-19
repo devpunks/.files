@@ -424,6 +424,7 @@ function proxy () { clear
   tinyproxy -h
   tinyproxy -d -c "$HOME/tinyproxy.conf"
 } # proxy
+
 # NetCat ------------------------------------------------------------------
 # - https://baeldung.com/linux/netcat-command
 alias catscan='{
