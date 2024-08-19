@@ -946,6 +946,7 @@ function check () {
 } # check
 
 function lint () { clear
+  echo Linting...
   check .*rc
 } # lint
 
