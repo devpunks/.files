@@ -756,7 +756,6 @@ function start () { clear
 
   mkdir -p "$service" # ensure servicee directory exists
 
-  #man start-stop-daemon
   echo NAME: "$name"
   echo DAEMON: "$daemon"
   echo SERVICE: "$service"
