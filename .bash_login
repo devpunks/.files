@@ -672,7 +672,7 @@ function authenticate () { clear
   local -r uri="${domain}:${port}" # URI default to domain and port
 
   echo uri: "$uri"
-  echo type: $type
+  echo auth: $auth
   echo credentials: "$credentials"
 
   curl $type --head --user "$credentials" "$uri"
