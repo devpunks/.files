@@ -693,6 +693,7 @@ function boot () { clear
 
   echo Booting...
   tree "$profile"
+  echo "${profile}/start-services.sh"
   cat "${profile}/start-services.sh"
 } # boot
 
