@@ -692,7 +692,7 @@ function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
 
   echo Booting...
-  tree $profile
+  tree "$profile"
   cat "${profile}/start-services.sh"
 } # boot
 
