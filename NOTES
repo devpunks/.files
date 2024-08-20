@@ -109,7 +109,11 @@ Android Accessibility
 #   - https://wiki.termux.com/wiki/PRoot
 #   - https://wiki.termux.com/wiki/Shells
 #   - https://wiki.termux.com/wiki/Termux-services
-#   - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
+#   Termux:Widget
+#   - https://github.com/termux/termux-widget
+#   - https://f-droid.org/en/packages/com.termux.widget
+#
+# - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
 
 - [CTRL][ALT] + →   # Drawer
 - [CTRL][ALT] + ←   # Close Drawer
