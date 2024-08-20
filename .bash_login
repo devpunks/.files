@@ -732,7 +732,6 @@ function convert () { clear
   local -a files=${@}
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
 
-# ffmpeg -filters
 # ffmpeg -colors
 # ffmpeg -hwaccels
 
