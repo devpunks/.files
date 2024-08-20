@@ -169,6 +169,23 @@ function unlimit () { clear
   echo TODO: 'unlimit' Implementation
 } # unlimit
 
+function authenticate () { clear
+  # https://stackoverflow.com/q/25969196
+  local -r certificate='--cert' # (key|cert)
+  local -r credentials="${1:-:}" # default to `:`
+  local -r auth='--basic' # (anyauth|digest|basic)
+  local -r user="--user ${credentials}" # login credentials
+  local -r domain="localhost" # localhost default domain
+  local -r port="${PORT:-80}" # PORT env variable default
+  local -r uri="${domain}:${port}" # URI default to domain and port
+
+  echo uri: "$uri"
+  echo auth: $auth
+  echo user: "$user"
+
+  curl --head $auth $user $uri
+} # authenticate
+
 # }}}
 
 # =========================================================================
