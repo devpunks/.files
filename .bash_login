@@ -741,6 +741,8 @@ function convert () { clear
 # ffmpeg -demuxers
 # ffmpeg -decoders
 # ffmpeg -encoders
+
+# ffmpeg -formats
 # ffmpeg -sample_fmts
 
   echo ${#}
