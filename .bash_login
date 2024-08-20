@@ -767,7 +767,7 @@ function run () {
     sv -v -w $seconds status "${service}/log"
   done # for
 
-  services
+  services "$@"
 } # run
 
 # See bin/service-daemon
