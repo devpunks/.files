@@ -737,7 +737,7 @@ function services () {
   local -r running="${PREFIX}/var/run/"
   local -r services="${PREFIX}/var/service/"
 
-  [ "$service" ] || htop --tree --filter=$filter
+  [ "$service" ] || htop --tree --filter="$filter"
 
   ps | command grep "$filter"
   echo && tree -L 4 "${init}${service}"
