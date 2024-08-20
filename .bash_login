@@ -733,8 +733,8 @@ function compile () { clear
 function services () {
   local -r service=${1}
   local -r filter="runsv $service"
-  local -r runs="${PREFIX}/var/run/"
-  local -r inits="${PREFIX}/etc/init.d/"
+  local -r init="${PREFIX}/etc/init.d/"
+  local -r running="${PREFIX}/var/run/"
   local -r services="${PREFIX}/var/service/"
 
   [ "$service" ] || htop --tree --filter=$filter
