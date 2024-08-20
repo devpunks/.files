@@ -106,6 +106,8 @@ Android Accessibility
     - https://unix.stackexchange.com/q/679569
 
 # TERMUX ------------------------------------------------------------------
+# - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
+
 # Termux:PRoot - https://wiki.termux.com/wiki/PRoot
 # Termux:Shells - https://wiki.termux.com/wiki/Shells
 # Termux:Boot - https://wiki.termux.com/wiki/Termux:Boot
@@ -120,8 +122,6 @@ Android Accessibility
 #   - https://github.com/termux/termux-widget
 #   - https://f-droid.org/en/packages/com.termux.widget
 #
-# - https://dev.to/voyeg3r/termux-useful-tweaks-3mjl
-
 - [CTRL][ALT] + →   # Drawer
 - [CTRL][ALT] + ←   # Close Drawer
 - [CTRL][ALT] + K   # Soft Keyboard
