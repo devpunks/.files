@@ -743,7 +743,7 @@ function convert () { clear
 # ffmpeg -encoders
 
 # ffmpeg -formats
-# ffmpeg -sample_fmts
+# ffmpeg -hide_banner -sample_fmts
 
   echo ${#}
   echo ${#files[@]}
