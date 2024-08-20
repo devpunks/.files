@@ -73,6 +73,14 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 #==========================================================================
 # {{{ Exports
 #==========================================================================
+export EDITOR=vi
+export PAGER=most
+export VISUAL=$EDITOR
+
+export GIT_EDITOR=vi
+export GIT_PAGER=most
+export GIT_CONFIG_NOSYSTEM=true
+
 
 # -h(eader) -l(ong) -t(itle) -v(erbose) -z(comment)
 export ZIPINFO='-h -l -t -v -z'
