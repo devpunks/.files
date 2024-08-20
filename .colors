@@ -51,6 +51,7 @@ export DIRCOLORS="$HOME/.dircolors"
 [ -e "$DIRCOLORS" ] && eval $( dircolors -b "$DIRCOLORS" )
 [ -e "$DIRCOLORS" ] && source "$DIRCOLORS"
 
+# GREP_COLORS
 # https://askubuntu.com/q/1042234
 # https://gnu.org/software/grep/manual/grep.html#index-GREP_005fCOLORS-environment-variable
 export GREP_COLORS="\
