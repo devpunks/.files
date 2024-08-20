@@ -734,7 +734,7 @@ function convert () { clear
 
 # ffmpeg -hide_banner -colors
 # ffmpeg -hide_banner -filters
-# ffmpeg -hwaccels
+# ffmpeg -hide_banner -hwaccels
 
 # ffmpeg -codecs
 # ffmpeg -muxers
