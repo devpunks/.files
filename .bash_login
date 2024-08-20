@@ -733,6 +733,7 @@ function compile () { clear
 function services () {
   local -r filter='runsv'
   local -r runs="${PREFIX}/var/run/"
+  local -r inits="${PREFIX}/etc/init.d/"
   local -r services="${PREFIX}/var/service/"
 
   htop --tree --filter=$filter
