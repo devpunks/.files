@@ -120,7 +120,7 @@
 # =========================================================================
 function default () { printf '*=1:'; }
 
-function scripts () { echo -n ":*.bash=1;4:*.sh=1;4:*rc=2;3:"; }
+function scripts () { printf ':*.bash=1;4:*.sh=1;4:*rc=2;3:'; }
 
 function ls_colors () { echo -n ":*LS_COLORS=2;3;4;7:*dircolors=2;3;4;7:"; }
 
