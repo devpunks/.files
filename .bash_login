@@ -740,7 +740,6 @@ function convert () { clear
 # ffmpeg -decoders
 # ffmpeg -encoders
 # ffmpeg -encodery
-# ffmpeg -filters
 # ffmpeg -colors
 # ffmpeg -sample_fmts
 
