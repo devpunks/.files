@@ -727,6 +727,9 @@ function compile () { clear
   return $?
 } # compile
 
+
+
+
 # See bin/service-daemon
 function start () { clear
   local -r nice='-10'
