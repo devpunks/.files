@@ -690,6 +690,7 @@ function bandwidth () { : bandwidth; }
 
 function boot () {
   echo Booting...
+
   cat "${PREFIX}/etc/profile.d/start-services.sh"
 } # boot
 
