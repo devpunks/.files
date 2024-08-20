@@ -729,6 +729,57 @@ function compile () { clear
 
 
 
+# https://wiki.termux.com/wiki/Termux-services
+function services () {
+  local -r filter='runsv'
+  local -r runs="${PREFIX}/var/run/"
+  local -r services="${PREFIX}/var/service/"
+
+  htop --tree --filter=$filter
+
+  ps | command grep $filter
+  echo && tree -L 4 "$runs"
+  echo && tree -L 4 "$services"
+} # services
+
+function run () {
+  local -r -i seconds=5
+  local -r services="${*}"
+  local -r path="${SVDIR:-$PREFIX/var/service}"
+
+# man sv         # Signals
+# man runsv      # Run service
+# man runsvdir   # Run service dir
+# man runsvchdir # (Change to) service dir
+
+  # [ -d ${PREFIX}/etc/init.d ] \
+  #   || mkdir -p ${PREFIX}/etc/init.d
+  # https://unix.stackexchange.com/q/20357
+  echo && tree "$PREFIX/etc/init.d"
+  echo "$path" && echo
+
+  [ -z "$services" ] \
+    && { service-daemon start ; return ; }
+
+
+  for service in $services ; do
+    echo "Wait time: $seconds"
+    echo "checking $service"
+    sv -v check "$service" # check
+
+    echo "Process routine for $service"
+    ( [[ "$service" == ./* ]] && runsv "$service" >/dev/null & ) \
+      || ( runsv "${path}/${service}" >/dev/null & )
+
+#     && { runsv "$( realpath "$service" )" 2>&1 & ; sv -v -w $seconds status $( realpath "$service" ) ; } \
+#     || { runsv "${path}/${service}" 2>&1 & ; sv -v -w $seconds status "${path}/${service}" ; }
+
+    sv -v -w $seconds status "$service"
+    sv -v -w $seconds status "${service}/log"
+  done # for
+
+  services
+} # run
 
 # See bin/service-daemon
 function start () { clear
