@@ -739,7 +739,7 @@ function services () {
 
   [ "$service" ] || htop --tree --filter=$filter
 
-  ps | command grep $filter
+  ps | command grep "$filter"
   echo && tree -L 4 "${runs}${service}"
   echo && tree -L 4 "${inits}${service}"
   echo && tree -L 4 "${services}${service}"
