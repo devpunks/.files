@@ -739,8 +739,8 @@ function convert () { clear
 # ffmpeg -hide_banner -codecs
 # ffmpeg -hide_banner -muxers
 # ffmpeg -hide_banner -demuxers
-# ffmpeg -hide_banner -decoders
-# ffmpeg -hide_banner -encoders
+# ffmpeg -hide_banner -decoders # decoder=
+# ffmpeg -hide_banner -encoders # encoder=
 
 # ffmpeg -hide_banner -formats
 # ffmpeg -hide_banner -sample_fmts
