@@ -741,6 +741,7 @@ function convert () { clear
 # ffmpeg -encoders
 # ffmpeg -colors
 # ffmpeg -filters
+# ffmpeg -sample_fmts
 
   echo ${#}
   echo ${#files[@]}
