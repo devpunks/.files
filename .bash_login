@@ -740,7 +740,7 @@ function convert () { clear
 # ffmpeg -decoders
 # ffmpeg -encodery
 # ffmpeg -filters
-# ffmpeg -color
+# ffmpeg -colors
 # ffmpeg -sample_fmts
 
   echo ${#}
