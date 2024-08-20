@@ -1366,11 +1366,6 @@ function trash () {
   tree -L 1 "$TMPDIR"
 } # trash
 
-function stream () {
-  local -r bytes="${1:-foo}"
-  yes "$bytes"
-} # stream
-
 monitor () {
   htop && ps
   printf "\n %s \n" "$( uptime )"
