@@ -140,7 +140,7 @@ function archives () { printf ':*.tar=1;4;7:*.tgz=1;4;7:*.arc=1;4;7:*.arj=1;4;7:
 
 # }}}
 
-export LS_COLORS=$(
+export LS_COLORS="$(
   default && ls_colors && dotfiles && auth && config \
     && scripts && historic && archives && docs && types )
 
