@@ -800,31 +800,6 @@ function clock () {
   chronyc
 } # clock
 
-# See bin/service-daemon
-function start () { clear
-  local -r nice='-10'
-  local -r mask='077' # u=rwx,g=r,o=
-  local -r service="$( realpath "$1" )"
-  local -r name="${service##*/}" # minus path
-
-  local -r pidfile="${service}/${name}.pid"
-  local -r daemon="${PREFIX}/bin/runsv" # runsvdir for directories
-
-  mkdir -p "$service" # ensure servicee directory exists
-
-  echo NAME: "$name"
-  echo DAEMON: "$daemon"
-  echo SERVICE: "$service"
-  echo PIDFILE: "$pidfile"
-
-  # man start-stop-daemon
-  # >/dev/null 2>&1 & # --background - https://stackoverflow.com/q/63274948
-  command start-stop-daemon --start --name "$name" \
-    --chdir "$service" --nicelevel "$nice" --umask "$mask" \
-    --make-pidfile --pidfile "$pidfile" \
-  --exec "$daemon" -- "$service"
-} # start
-
 function stop () {
   local -r retry='TERM/10/KILL/5'
   local -r piddir="${PREFIX}/var/run"
