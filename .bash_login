@@ -689,6 +689,7 @@ function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
 function boot () { clear
+  local -r profile="${PREFIX}/etc/profile.d"
   echo Booting...
 
   cat "${PREFIX}/etc/profile.d/start-services.sh"
