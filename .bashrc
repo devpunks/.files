@@ -91,14 +91,6 @@ export ZIPINFOOPT="${ZIPINFO}"
 export UNZIP='-a -L -u'
 export UNZIPOPT="${UNZIP}"
 
-export EDITOR=vi
-export PAGER=most
-export VISUAL=$EDITOR
-
-export GIT_EDITOR=vi
-export GIT_PAGER=most
-export GIT_CONFIG_NOSYSTEM=true
-
 # https://unix.stackexchange.com/q/27588
 # https://unix.stackexchange.com/q/640495
 export IGNOREEOF=10 # set -o ignoreeof # For CTRL-D logout attempt frequency
