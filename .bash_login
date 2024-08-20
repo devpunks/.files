@@ -1471,6 +1471,38 @@ function term () { clear
     && echo && Colors
 } # term
 
+function recycle () { clear
+  echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
+
+  delete "${TMPDIR}"/**/*
+
+  trash "$@"
+} # recycle
+
+# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
+# - https://computerhope.com/unix/shred.htm
+# - https://geeksforgeeks.org/shred-command-in-linux-with-examples
+function destroy () {
+  for file in "$@"; do
+    exist "$file" \
+      && shred --force --zero --iterations=5 --remove "$file" \
+      && echo 💣 destroyed 💥 "$file"
+  done
+} # destroy
+
+# - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
+# - (M) trash - https://github.com/termux/termux-packages/issues/5488
+# - https://askubuntu.com/q/468721/how-can-i-empty-the-trash-using-terminal
+function trash () {
+  for file in "$@"; do
+    exist "$file" \
+      && mv "$file" "$TMPDIR" \
+      && echo 🚮 Sent to trash 🗑 "$file"
+  done
+
+  tree -L 1 "$TMPDIR"
+} # trash
+
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
 function git_clean () {
   # https://stackoverflow.com/q/5613345/how-to-shrink-the-git-folder
