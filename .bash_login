@@ -853,6 +853,7 @@ function trip () {
 
 # -------------------------------------------------------------------------
 
+
 # https://en.m.wikipedia.org/wiki/FFmpeg
 function convert () { clear
   local -a files=${@}
