@@ -733,7 +733,7 @@ function convert () { clear
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
 
 # ffmpeg -hide_banner -colors
-# ffmpeg -hide_banner -filters
+# ffmpeg -hide_banner -filters # filter=
 # ffmpeg -hide_banner -hwaccels
 
 # ffmpeg -hide_banner -codecs
