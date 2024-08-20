@@ -731,7 +731,7 @@ function compile () { clear
 
 # https://wiki.termux.com/wiki/Termux-services
 function services () {
-  local -r service=${1}
+  local -r service="${1}"
   local -r filter="runsv $service"
   local -r init="${PREFIX}/etc/init.d/"
   local -r running="${PREFIX}/var/run/"
@@ -740,6 +740,7 @@ function services () {
   [ "$service" ] || htop --tree --filter="$filter"
 
   ps | command grep "$filter"
+
   echo && tree -L 4 "${init}${service}"
   echo && tree -L 4 "${running}${service}"
   echo && tree -L 4 "${services}${service}"
