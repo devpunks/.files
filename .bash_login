@@ -736,7 +736,7 @@ function convert () { clear
 # ffmpeg -codecs
 # ffmpeg -formats
 # ffmpeg -filters
-# ffmpeg -hide_banner -hwaccels
+# ffmpeg -hwaccels
 # ffmpeg -muxers
 # ffmpeg -demuxers
 # ffmpeg -decoders
