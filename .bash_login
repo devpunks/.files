@@ -742,7 +742,7 @@ function convert () { clear
 # ffmpeg -decoders
 # ffmpeg -encoders
 
-# ffmpeg -formats
+# ffmpeg -hide_banner -formats
 # ffmpeg -hide_banner -sample_fmts
 
   echo ${#}
