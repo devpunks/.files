@@ -108,8 +108,15 @@ Android Accessibility
 # TERMUX ------------------------------------------------------------------
 #   - https://wiki.termux.com/wiki/PRoot
 #   - https://wiki.termux.com/wiki/Shells
-#   - https://wiki.termux.com/wiki/Termux-services
-#   Termux:Widget
+# Termux:Services - https://wiki.termux.com/wiki/Termux-services
+#   - https://github.com/termux/termux-services
+# Termux:Boot - https://wiki.termux.com/wiki/Termux:Boot
+#   - https://github.com/termux/termux-boot
+#   - https://f-droid.org/en/packages/com.termux.boot
+# Termux:Styling - https://wiki.termux.com/wiki/Termux:Styling
+#   - https://github.com/termux/termux-Styling
+#   - https://f-droid.org/en/packages/com.termux.Styling
+# Termux:Widget - https://wiki.termux.com/wiki/Termux:Widget
 #   - https://github.com/termux/termux-widget
 #   - https://f-droid.org/en/packages/com.termux.widget
 #
