@@ -688,6 +688,11 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
+function boot () {
+  echo Booting...
+  cat "${PREFIX}/etc/profile.d/start-services.sh"
+}
+
 alias make="command make -v; command make"
 # LLVM - https://llvm.org
 # - https://clang.llvm.org
