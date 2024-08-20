@@ -899,24 +899,6 @@ function clock () {
   chronyc
 } # clock
 
-function stop () {
-  local -r retry='TERM/10/KILL/5'
-  local -r piddir="${PREFIX}/var/run"
-  local -r piddir="${HOME}"
-
-  man start-stop-daemon
-  return
-
-  command start-stop-daemon --stop --oknodo --remove-pidfile --pidfile "$pidfile" --signal 1 --retry "$retry"
-
-  #tail --pid=$( cat "$PIDFILE" ) /dev/null
-
-  #for supervisor in "$SVDIR/*/supervise" "$SVDIR/*/log/supervise"; do
-  #  kill -9 $(cat "$supervisor/pid") 2>/dev/null || :
-  #  rm -rf $supervisor
-  #done
-} # stop
-
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
   echo && df -a -h "$@"
