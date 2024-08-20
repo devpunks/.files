@@ -688,6 +688,8 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 
+# -------------------------------------------------------------------------
+
 function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
 
