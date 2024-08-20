@@ -738,6 +738,7 @@ function convert () { clear
 # ffmpeg -muxers
 # ffmpeg -demuxers
 # ffmpeg -decoders
+# ffmpeg -encoders
 # ffmpeg -encodery
 # ffmpeg -filters
 # ffmpeg -colors
