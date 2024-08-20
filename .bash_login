@@ -692,7 +692,7 @@ function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
   echo Booting...
 
-  cat "${PREFIX}/etc/profile.d/start-services.sh"
+  cat "${profile}/start-services.sh"
 } # boot
 
 alias make="command make -v; command make"
