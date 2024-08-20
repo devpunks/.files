@@ -806,6 +806,51 @@ function start () { clear
   --exec "$daemon" -- "$service"
 } # start
 
+function stop () {
+  local -r retry='TERM/10/KILL/5'
+  local -r piddir="${PREFIX}/var/run"
+  local -r piddir="${HOME}"
+
+  man start-stop-daemon
+  return
+
+  command start-stop-daemon --stop --oknodo --remove-pidfile --pidfile "$pidfile" --signal 1 --retry "$retry"
+
+  #tail --pid=$( cat "$PIDFILE" ) /dev/null
+
+  #for supervisor in "$SVDIR/*/supervise" "$SVDIR/*/log/supervise"; do
+  #  kill -9 $(cat "$supervisor/pid") 2>/dev/null || :
+  #  rm -rf $supervisor
+  #done
+} # stop
+
+# Runit
+# https://en.m.wikipedia.org/wiki/Runit
+# See $HOME/.termux/boot/README on Android
+# https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
+function trip () {
+  local -r service="${1}"
+  local -r services="${*:-nginx}"
+  local -r path="${PREFIX}/var/service"
+
+  [ -z "$service" ] && service-daemon stop && return
+
+  # man sv
+  echo Check
+  sv -v check "$service"
+  echo Statuus
+  sv -v status "$service"
+# sv -v force-stop "$service"
+  sv -v force-shutdown "$service"
+  echo Check
+  sv -v check "$service"
+  echo Statuus
+  sv -v status "$service"
+
+  services
+} # trip
+
+
 
 
 
