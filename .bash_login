@@ -695,6 +695,7 @@ function boot () { clear
 
   echo Booting Kernel...
   man sysctl
+  man sysctl.conf
 
   echo Loading Profile...
   tree "$profile"
