@@ -697,6 +697,7 @@ function boot () { clear
   man sysctl.conf
 
   command sysctl --version
+  command sysctl --system
 
   echo Loading Profile...
   tree "$profile"
