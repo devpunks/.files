@@ -687,7 +687,6 @@ function service () { : service; }
 function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
-
 # -------------------------------------------------------------------------
 
 function boot () { clear
