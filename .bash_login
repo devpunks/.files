@@ -696,6 +696,8 @@ function boot () { clear
   man sysctl
   man sysctl.conf
 
+  command sysctl --version
+
   echo Loading Profile...
   tree "$profile"
   echo "${profile}/start-services.sh"
