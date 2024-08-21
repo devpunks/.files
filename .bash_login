@@ -693,7 +693,9 @@ function bandwidth () { : bandwidth; }
 function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
 
-  echo Booting...
+  echo Booting Kernel...
+
+  echo Loading Profile...
   tree "$profile"
   echo "${profile}/start-services.sh"
   cat "${profile}/start-services.sh"
