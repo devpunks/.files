@@ -825,6 +825,8 @@ function stop () {
 
   command start-stop-daemon --stop --oknodo --remove-pidfile --pidfile "$pidfile" --signal 1 --retry "$retry"
 
+  return
+
   #tail --pid=$( cat "$PIDFILE" ) /dev/null
 
   #for supervisor in "$SVDIR/*/supervise" "$SVDIR/*/log/supervise"; do
