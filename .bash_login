@@ -822,7 +822,6 @@ function stop () {
 # local -r piddir="${HOME}"
 
   man start-stop-daemon
-  return
 
   command start-stop-daemon --stop --oknodo --remove-pidfile --pidfile "$pidfile" --signal 1 --retry "$retry"
 
