@@ -816,8 +816,10 @@ function start () { clear
 
 function stop () {
   local -r retry='TERM/10/KILL/5'
-  local -r piddir="${PREFIX}/var/run"
-  local -r piddir="${HOME}"
+  local -r service="$( realpath "$1" )"
+  local -r pidfile="${service}/${name}.pid"
+# local -r piddir="${PREFIX}/var/run"
+# local -r piddir="${HOME}"
 
   man start-stop-daemon
   return
