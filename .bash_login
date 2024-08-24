@@ -800,7 +800,7 @@ function start () { clear
   local -r daemon="${PREFIX}/bin/runsv" # runsvdir for directories
 
   man start-stop-daemon
-  mkdir -p "$service" # ensure servicee directory exists
+  mkdir -p "$service" # ensure service directory exists
 
   echo NAME: "$name"
   echo DAEMON: "$daemon"
