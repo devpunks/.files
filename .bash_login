@@ -674,6 +674,8 @@ function rotate () {
 
 function mail () { clear
   local -r timestamp=$( command date --rfc-mail )
+
+  echo Send Time: $timestamp
 }
 
 # =========================================================================
