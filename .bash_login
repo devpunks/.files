@@ -684,6 +684,7 @@ function mail () { clear
   echo "Timestamp: $timestamp"
   echo "Title: $title"
   echo "Body: $body"
+  echo
 } # mail
 
 # =========================================================================
