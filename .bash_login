@@ -677,8 +677,6 @@ function mail () { clear
   local -r body=${1:"Message"}
   local -r timestamp=$( command date --rfc-email )
 
-  ( [ "$title" ] && [ "$body" ] ) || return 1
-
   man mail
 
   echo Timestamp: $timestamp
