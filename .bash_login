@@ -680,7 +680,7 @@ function mail () { clear
 
   echo Time: $timestamp
   echo Title: $title
-  echo Message: $body
+  echo Body: $body
 }
 
 # =========================================================================
