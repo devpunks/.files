@@ -66,7 +66,7 @@ alias g#='{
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
   # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   # gl --since="1 day ago"
-  #   printf "\n Total:%d" $( gl --since="1 day ago" | wc -l )
+  #   printf "\n Total:%d" $( gl --since=1.day | wc -l )
   GIT_PAGER=cat \
     gl --since="00:00"
     printf "\n Total:%d" $( gl --since="00:00" | wc -l )
