@@ -673,6 +673,7 @@ function rotate () {
 # }}}
 
 function mail () { clear
+  local -r title=$1:"Title"
   local -r body=${1:"Blank Message"}
   local -r timestamp=$( command date --rfc-email )
 
