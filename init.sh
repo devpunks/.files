@@ -77,7 +77,7 @@ pkg install weechat
 pkg install mutt
 pkg install mailutils
 pkg install fetchmail # https://fetchmail.info
-pkg install texinfo
+pkg install texinfo # https://en.m.wikipedia.org/wiki/Texinfo
 
 # }}}
 
