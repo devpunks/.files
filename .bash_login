@@ -678,7 +678,7 @@ function mail () { clear
   local -r timestamp=$( command date --rfc-email )
 
   man mail
-  info mail
+  # info mail # TODO: install texinfo
 
   echo "Timestamp: $timestamp"
   echo "Title: $title"
