@@ -678,6 +678,7 @@ function mail () { clear
   local -r timestamp=$( command date --rfc-email )
 
   man mail
+  info mail
 
   echo "Timestamp: $timestamp"
   echo "Title: $title"
