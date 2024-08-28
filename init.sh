@@ -79,6 +79,7 @@ pkg install mailutils
 pkg install fetchmail # https://fetchmail.info
 # https://www.tug.org/levels.html
 # https://en.m.wikipedia.org/wiki/Texinfo
+# https://tex.stackexchange.com/q/49/what-is-the-difference-between-tex-and-latex
 pkg install texinfo
 
 # }}}
