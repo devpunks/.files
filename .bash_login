@@ -150,7 +150,7 @@ function permit () { clear
 
   ls "$location"
   about "$location"
-} # restrict
+} # permit
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
