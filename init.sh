@@ -75,7 +75,6 @@ pkg install weechat
 #  - https://chiraag.me/blog/2019/08/21/managing-multiple-email-accounts-with-mutt-and-fetchmail/
 
 pkg install mutt
-pkg install texinfo
 pkg install mailutils
 pkg install fetchmail # https://fetchmail.info
 
