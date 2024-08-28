@@ -672,6 +672,10 @@ function rotate () {
 
 # }}}
 
+function mail () { clear
+  local -r timestamp=$( command date --rfc-mail )
+}
+
 # =========================================================================
 # {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
