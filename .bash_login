@@ -680,6 +680,7 @@ function mail () { clear
   man mail
   # info mail # TODO: install texinfo
 
+  echo
   echo "Timestamp: $timestamp"
   echo "Title: $title"
   echo "Body: $body"
