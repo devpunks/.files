@@ -910,6 +910,7 @@ function clock () {
   chronyd -d -f "$CONFIG" -l "$LOG"
 
   chronyc
+  now # time
 } # clock
 
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
