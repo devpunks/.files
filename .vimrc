@@ -25,7 +25,7 @@
 " Gist: https://gist.github.com/snuggs/612093
 " -------------------------------------------------------------------------
 "
-" Screencasts: http://vimcasts.org
+" Screencasts - http://vimcasts.org
 " Cheatsheets:
 "   - https://vim.rtorr.com/
 "   - https://devhints.io/vimscript
