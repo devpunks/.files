@@ -1093,24 +1093,6 @@ function upload () {
   # TODO: upload to remote domain ( e.g. AWS / CDN )
 } # upload
 
-function download () { clear
-  local -r uri="$1"
-  # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
-  local -r process='../.local/yt-dlp'
-
-  echo uri: "$uri"
-  echo process: "$process"
-  echo
-
-# $process --help
-# $process --download-sections '*00:00:00.0-00:00:05.0' $uri
-# $process "$uri"
-  header "$uri"
-# keep local file name similar to remote-name
-  wget "$uri"
-  curl --remote-name "$uri"
-} # download
-
 function open () { clear
   local -r location="$1"
   # apk
