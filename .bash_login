@@ -687,11 +687,6 @@ function mail () { clear
 
 # TODO: Implementation
 # -------------------------------------------------------------------------
-# https://gnupg.org
-# https://bashupload.com/how_to_encrypt_files
-function encrypt () {
-  man gpg
-} # encrypt
 function decrypt () {
   man gpg
 } # decrypt
