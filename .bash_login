@@ -988,6 +988,8 @@ function check () {
     exist "$( realpath "$script" )" || continue
 
     case "$script" in
+      .bash* )
+        command shellcheck --format=tty "$( realpath "$script" )" ;;
       *.html )
         command tidy "$script" ;;
       *nginx.conf )
