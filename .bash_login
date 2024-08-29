@@ -681,6 +681,7 @@ function mail () { clear
 
 # TODO: Implementation
 # -------------------------------------------------------------------------
+function encrypt () { : encrypt; }
 function forward () { : forward; }
 function reverse () { : reverse; }
 
