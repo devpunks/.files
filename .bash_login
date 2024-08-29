@@ -957,7 +957,7 @@ function plot () { clear
 } # plot
 
 function chat () { clear
-  echo && echo 🗣️CHATTY PATTY!
+  echo 🗣️CHATTY PATTY!
   echo && echo WeeChat Version: "$( weechat --version )"
 
   # Configuration - https://gist.github.com/pascalpoitras/8406501
