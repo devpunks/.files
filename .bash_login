@@ -900,7 +900,6 @@ function convert () { clear
   done
 } # convert
 
-
 # https://en.m.wikipedia.org/wiki/ISO_8601
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 # https://gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
