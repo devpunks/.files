@@ -44,7 +44,7 @@ function teardown () {
     && echo "Logout Tearing $TMUX down...GOODBYE! 👋🏽😈" \
     && tmux display-message "Logout Tearing $TMUX down...GOODBYE! 👋🏽😈"
 
-  echo logout SHLVL $SHLVL
+  echo "logout SHLVL $SHLVL"
 
   [[ "SHLVL" = 1 ]]
   echo 'Logout Tearing $SHELL down...GOODBYE! 👋🏽😈'
