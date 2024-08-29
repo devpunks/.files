@@ -686,7 +686,9 @@ function mail () { clear
 function encrypt () {
   man gpg
 } # encrypt
-function decrypt () { : decrypt; }
+function decrypt () {
+  man gpg
+} # decrypt
 
 function forward () { : forward; }
 function reverse () { : reverse; }
