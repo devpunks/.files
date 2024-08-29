@@ -232,12 +232,6 @@ alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 
-# TODO: Implementation
-# - https://graphviz.org/pdf/dotguide.pdf
-# - https://graphviz.org/doc/info/lang.html
-alias graph='command dot -Tps -o'
-alias chart='echo TODO: Implement chart'
-
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
 # https://linux.die.net/man/1/expect
