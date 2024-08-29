@@ -625,6 +625,7 @@ alias tmux.config='{
 
 alias tail='command tail --verbose'
 alias logs.sshd="command logcat -s 'sshd:*'"
+
 # Kernel Ring - https://unix.stackexchange.com/q/198178
 alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 
