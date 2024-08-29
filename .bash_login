@@ -51,6 +51,7 @@ alias shortcuts='{ clear
 # {{{ Git Aliases
 # =========================================================================
 
+alias ga='git add -p'
 alias gb='git -P branch -a'
 alias gc='git commit --message '
 alias gd='git diff'
