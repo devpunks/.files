@@ -38,7 +38,7 @@
 function teardown () {
   echo "Tearing $BASH down...GOODBYE! 👋🏽😈"
 
-  echo logout TMUX $TMUX
+  echo "logout TMUX $TMUX"
 
   [[ -n ${TMUX} ]] \
     && echo 'Logout Tearing $TMUX down...GOODBYE! 👋🏽😈' \
