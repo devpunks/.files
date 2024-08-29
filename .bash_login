@@ -91,6 +91,12 @@ function unlock () {
   : unlock
 } # unlock
 
+# https://gnupg.org
+# https://bashupload.com/how_to_encrypt_files
+function encrypt () {
+  man gpg
+} # encrypt
+
 # - https://en.m.wikipedia.org/wiki/Chown
 # - https://man7.org/linux/man-pages/man1/chown.1p.html
 alias chown='command chown --verbose --preserve-root --recursive'
