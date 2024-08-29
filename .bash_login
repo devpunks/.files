@@ -93,6 +93,13 @@ function encrypt () {
 function decrypt () {
   man gpg
 } # decrypt
+function lock () {
+  : lock
+} # lock
+
+function unlock () {
+  : unlock
+} # unlock
 
 # - https://en.m.wikipedia.org/wiki/Chown
 # - https://man7.org/linux/man-pages/man1/chown.1p.html
