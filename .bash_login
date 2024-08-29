@@ -1056,7 +1056,7 @@ function search () { clear
 # FTP (File Transfer Protocol)
 #
 
-# curl
+# cURL
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 # - https://everything.curl.dev/usingcurl/downloads/index.html
 function download () { clear
