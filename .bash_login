@@ -943,6 +943,12 @@ function browse (){ clear
   echo && lynx -show_cfg
 } #browse
 
+
+# TODO: Implementation
+# - https://graphviz.org/pdf/dotguide.pdf
+# - https://graphviz.org/doc/info/lang.html
+alias graph='command dot -Tps -o'
+alias chart='echo TODO: Implement chart'
 # http://gnuplot.info
 function draw () { : draw; }
 function plot () { clear
