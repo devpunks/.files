@@ -1055,6 +1055,24 @@ function search () { clear
 # - https://dlptest.com/ftp-test
 # FTP (File Transfer Protocol)
 #
+function download () { clear
+  local -r uri="$1"
+  # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
+  local -r process='../.local/yt-dlp'
+
+  echo uri: "$uri"
+  echo process: "$process"
+  echo
+
+# $process --help
+# $process --download-sections '*00:00:00.0-00:00:05.0' $uri
+# $process "$uri"
+  header "$uri"
+# keep local file name similar to remote-name
+  wget "$uri"
+  curl --remote-name "$uri"
+} # download
+
 # Curl
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 alias ftp='command ftp --version; ftp --verbose'
