@@ -275,8 +275,7 @@ alias zipper='man paste ; command paste' # https://geeksforgeeks.org/paste-comma
 
 # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
 alias rm='echo 🛑 rm is disabled, use delete, or destroy'
-alias delete="command rm \
-  --verbose --preserve-root --recursive --dir --interactive=once"
+alias delete='command rm --verbose --preserve-root --recursive --dir --interactive=once'
 alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
 
 # https://unix.stackexchange.com/q/90653
