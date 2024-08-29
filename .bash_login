@@ -184,6 +184,7 @@ function authenticate () { clear
   echo uri: "$uri"
   echo auth: $auth
   echo user: "$user"
+  echo cert: "$certificate"
 
   curl --head $auth "$user" "$uri"
 } # authenticate
