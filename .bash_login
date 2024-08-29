@@ -68,7 +68,7 @@ alias g#='{
   # gl --since="1 day ago"
   #   printf "\n Total:%d" $( gl --since=1.day | wc -l )
   GIT_PAGER=cat \
-    gl --since="today 04:00"
+    gl --since="Today 04:00"
     printf "\n Total:%d" $( gl --since="today 04:00" | wc -l )
   echo
 }' # g#
