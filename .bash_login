@@ -983,7 +983,7 @@ function exist () {
 
   test -e "$location" \
     || type "$location" \
-    || ( echo "No such command, file, or directory: $location" && return 2 )
+    || ( echo "No such file, or directory: $location" && return 2 )
 } # exist
 
 # Syntax checkers
