@@ -1058,6 +1058,7 @@ function search () { clear
 
 # cURL
 # - https://everything.curl.dev/usingcurl/downloads/index.html
+# - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 function download () { clear
   local -r uri="$1"
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
