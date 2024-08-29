@@ -181,7 +181,6 @@ Android Accessibility
 # - Math Expressions - https://redswitches.com/blog/bash-arithmetic-operators
 #  - Compgen (shell commands) - https://baeldung.com/linux/compgen-command-usage
 #  - Exit Codes - https://cyberciti.biz/faq/linux-bash-exit-status-set-exit-statusin-bash/
-#  - POSIX SHELL - https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
 #  - Special Parameters - https://gnu.org/software/bash/manual/bash.html#Special-Parameters
 
 # - systemd
