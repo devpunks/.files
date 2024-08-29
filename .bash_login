@@ -922,7 +922,7 @@ function clock () {
   now # time
 } # clock
 
-alias tldr='open https://tldr.inbrowser.app/'
+alias tldr='open https://tldr.inbrowser.app'
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
   local location="${1}"
