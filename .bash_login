@@ -682,7 +682,9 @@ function mail () { clear
 # TODO: Implementation
 # -------------------------------------------------------------------------
 # https://bashupload.com/how_to_encrypt_files
-function encrypt () { : encrypt; }
+function encrypt () {
+  man gpg
+}
 function decrypt () { : decrypt; }
 
 function forward () { : forward; }
