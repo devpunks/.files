@@ -47,7 +47,7 @@ function teardown () {
   echo "logout SHLVL $SHLVL"
 
   [[ "$SHLVL" = 1 ]] \
-    && echo "Logout Tearing $SHELL down...GOODBYE! 👋🏽😈""
+    && echo "Logout Tearing $SHELL down...GOODBYE! 👋🏽😈"
 
   sleep 2
 }
