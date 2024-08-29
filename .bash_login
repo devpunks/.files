@@ -684,6 +684,7 @@ function mail () { clear
 # https://bashupload.com/how_to_encrypt_files
 function encrypt () { : encrypt; }
 function decrypt () { : decrypt; }
+
 function forward () { : forward; }
 function reverse () { : reverse; }
 
