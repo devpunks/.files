@@ -988,7 +988,6 @@ function check () {
     exist "$( realpath "$script" )" || continue
 
     case "$script" in
-      .bash* )
       *.html )
         command tidy "$script" ;;
       *nginx.conf )
