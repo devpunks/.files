@@ -925,7 +925,8 @@ function clock () {
 alias tldr='open https://tldr.inbrowser.app/'
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
-  ( type $1 && return ) || exist $1
+  type $1
+  exist $1
 
   echo && df -a -h "$@"
   echo && df -a -i "$@"
