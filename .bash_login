@@ -904,7 +904,7 @@ function convert () { clear
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 # https://gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
 # https://unix.stackexchange.com/q/625474/what-does-the-plus-symbol-in-date-command-refer-to
-alias date='date +"%Y-%m-%d"'
+alias date='date --utc'
 alias now='command date --utc +"%FT%TZ"'
 alias calendar='command cal -1 --iso --color=auto'
 alias day='echo && command date +"%A 🗓 %Y-%m-%d" && echo && calendar'
