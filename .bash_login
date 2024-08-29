@@ -691,10 +691,6 @@ function mail () { clear
 
 # TODO: Implementation
 # -------------------------------------------------------------------------
-function decrypt () {
-  man gpg
-} # decrypt
-
 function forward () { : forward; }
 function reverse () { : reverse; }
 
