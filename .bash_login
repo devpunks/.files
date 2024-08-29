@@ -907,7 +907,7 @@ function convert () { clear
 alias date='date +"%Y-%m-%d"'
 alias now='command date --utc +"%FT%T%:z"'
 alias calendar='command cal -1 --iso --color=auto'
-alias day'echo && command date +"%A 🗓 %Y-%m-%d" && echo && calendar'
+alias day='echo && command date +"%A 🗓 %Y-%m-%d" && echo && calendar'
 # https://chrony-project.org
 function clock () {
   local -r LOG="${HOME}/chrony.log"
