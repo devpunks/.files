@@ -957,8 +957,6 @@ function plot () { clear
 } # plot
 
 function chat () { clear
-  echo && echo WeeChat Version: "$( weechat --version )"
-
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
   TERM=tmux-256color weechat --colors
