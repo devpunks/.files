@@ -922,6 +922,7 @@ function clock () {
   now # time
 } # clock
 
+alias tldr='open https://tldr.inbrowser.app'
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
   echo && df -a -h "$@"
