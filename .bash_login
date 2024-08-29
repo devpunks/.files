@@ -983,6 +983,7 @@ function exist () {
   local -r location="$1"
 
   test -e "$location" \
+    || type "$location" \
     || ( echo "No such command, file, or directory: $location" && return 2 )
 } # exist
 
