@@ -93,6 +93,7 @@ function encrypt () {
 function decrypt () {
   man gpg
 } # decrypt
+
 function lock () {
   : lock
 } # lock
