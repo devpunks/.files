@@ -1055,6 +1055,10 @@ function search () { clear
 # - https://dlptest.com/ftp-test
 # FTP (File Transfer Protocol)
 #
+
+# curl
+# - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
+# - https://everything.curl.dev/usingcurl/downloads/index.html
 function download () { clear
   local -r uri="$1"
   # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
