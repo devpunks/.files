@@ -927,7 +927,7 @@ alias tldr='open https://tldr.inbrowser.app/'
 function about () {
   local location="${1}"
 
-  exist "$location" || ( type "$location" && return ) || return $?
+  exist "$location" || ( ( type "$location" ) && return ) || return $?
 
   echo && df -a -h "$@"
   echo && df -a -i "$@"
