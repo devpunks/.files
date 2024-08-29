@@ -97,6 +97,10 @@ function encrypt () {
   man gpg
 } # encrypt
 
+function decrypt () {
+  man gpg
+} # decrypt
+
 # - https://en.m.wikipedia.org/wiki/Chown
 # - https://man7.org/linux/man-pages/man1/chown.1p.html
 alias chown='command chown --verbose --preserve-root --recursive'
