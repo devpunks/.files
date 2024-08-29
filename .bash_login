@@ -83,13 +83,6 @@ alias g#='{
 # http://androidcentral.com/root
 alias su='command su ; tsu '
 
-function lock () {
-  : lock
-} # lock
-
-function unlock () {
-  : unlock
-} # unlock
 
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
