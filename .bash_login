@@ -77,6 +77,7 @@ alias g#='{
 
 # =========================================================================
 # {{{ Security
+#   POSIX Access Control Lists on Linux - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
 # =========================================================================
 #https://man7.org/linux/man-pages/man1/passwd.1.html
 alias passwd='clear && man -k passwd && echo && command passwd'
