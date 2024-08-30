@@ -1417,7 +1417,7 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
-alias free='{ echo ; command free --mega --human --wide; echo ; }'
+alias free='echo && command free --mega --human --wide'
 function weigh () {
   local -r location=$( realpath "${1:-.}" )
 
