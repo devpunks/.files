@@ -1418,7 +1418,7 @@ function hold () {
 } # hold
 
 # https://man7.org/linux/man-pages/man1/lscpu.1.html
-alias cpu='command lscpu'
+alias cpu='command lscpu && command lscpu --extended
 # https://man7.org/linux/man-pages/man1/free.1.html
 alias free='command free --mega --human --wide'
 function weigh () {
