@@ -977,7 +977,8 @@ function chat () { clear
 } # chat
 
 alias tldr='open https://tldr.inbrowser.app'
-alias file='command file --mime --mime-type'
+# https://man7.org/linux/man-pages/man1/file.1.html
+alias file='command file --mime --mime-type --extension'
 function exist () {
   local -r location="$1"
 
