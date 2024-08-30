@@ -933,6 +933,7 @@ function clock () {
 } # clock
 
 alias tldr='open https://tldr.inbrowser.app'
+alias file='command file'
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
 function about () {
   local location="${1}"
