@@ -53,6 +53,7 @@ pkg install wget
 pkg install tree
 pkg install which
 pkg install chrony # https://chrony-project.org
+pkg install figlet
 pkg install ncurses
 pkg install cmatrix
 pkg install uuid-utils # uuidgen
