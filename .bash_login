@@ -295,6 +295,7 @@ function where () {
 
   command man whereis
   command whereis "$term"
+  command apropos "$term"
 }
 
 # https://unix.stackexchange.com/q/344213
