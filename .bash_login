@@ -1035,6 +1035,57 @@ function search () { clear
   echo && echo DONE!
 } # search
 
+function lint () { clear
+  echo Linting...
+  check .*rc
+} # lint
+
+# Syntax checkers
+#   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
+function check () {
+  echo Checking "$*"
+
+  for script in "$@"; do
+    echo && echo " 🎯 $( realpath "$script" )"
+    exist "$( realpath "$script" )" || continue
+
+    case "$script" in
+      *.html )
+        command tidy "$script" ;;
+      *nginx.conf )
+        command nginx -T -c "$( realpath "$script" )" ;;
+      *lighttpd.conf )
+        command lighttpd -t -f "$( realpath "$script" )" ;;
+      *httpd.conf )
+        command apachectl configtest -f "$( realpath "$script" )" ;;
+      .bash* | *.sh )
+        command shellcheck --format=tty "$( realpath "$script" )" ;;
+      * )
+        echo "  🛑 Cannot check ${script}"
+    esac # $script
+  done # for $script
+} # check
+
+function play () { clear
+  local -r location="$1"
+
+  exist "$location" || return $?
+
+  # SoX
+  #   - https://en.m.wikipedia.org/wiki/SoX
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing
+  #   - https://madskjeldgaard.dk/posts/sox-tutorial-split-by-silence
+  #   - https://ankitshah009.blogspot.com/2016/12/usage-of-sox-tool.html
+  #   - https://ankitshah009.blogspot.com/2017/03/sox-of-silence-original-post.html
+  #   - cheatsheet - https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
+  echo && sox --help
+  echo && vlc --help
+  echo && ffmpeg --help
+
+  echo && echo ▷ Playing: "$location"
+} # play
+
 # Test Servers
 # - https://smartftp.com/en-us/support/kb/2779
 # - https://dlptest.com/ftp-test
