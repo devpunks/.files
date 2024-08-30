@@ -78,7 +78,7 @@ alias g#='{
 # =========================================================================
 # {{{ Security
 #   ACL
-#     - https://unix.stackexchange.com/questions/364517/difference-between-chmod-vs-acl
+#     - https://unix.stackexchange.com/q/364517/difference-between-chmod-vs-acl
 #   POSIX Access Control Lists on Linux - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
 # =========================================================================
 #https://man7.org/linux/man-pages/man1/passwd.1.html
