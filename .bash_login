@@ -976,7 +976,7 @@ function write () {
   man figlet
 
   figlet "$message"
-}
+} # write
 
 # http://gnuplot.info
 function plot () { clear
