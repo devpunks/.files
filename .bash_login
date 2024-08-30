@@ -977,6 +977,7 @@ function write () {
 
   figlet "$message"
 }
+
 # http://gnuplot.info
 function plot () { clear
   gnuplot --version
