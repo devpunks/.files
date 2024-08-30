@@ -1058,7 +1058,7 @@ function check () {
         command lighttpd -t -f "$( realpath "$script" )" ;;
       *httpd.conf  )
         command apachectl configtest -f "$( realpath "$script" )" ;;
-      .bash* | *.sh  )
+      .bash* | *.sh )
         command shellcheck --format=tty "$( realpath "$script" )" ;;
       * )
         echo "  🛑 Cannot check ${script}"
