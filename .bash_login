@@ -977,7 +977,7 @@ function chat () { clear
 } # chat
 
 alias tldr='open https://tldr.inbrowser.app'
-alias file='command file'
+alias file='command file --mime'
 function exist () {
   local -r location="$1"
 
