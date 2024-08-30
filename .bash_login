@@ -985,10 +985,9 @@ function exist () {
     || ( echo "No such file, or directory: $location" && return 2 )
 } # exist
 
-# Syntax checkers
-#   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
-function check () {
-  echo Checking "$*"
+# https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
+function about () {
+  local location="${1}"
 
   for script in "$@"; do
     echo && echo " 🎯 $( realpath "$script" )"
