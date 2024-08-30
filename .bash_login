@@ -1087,6 +1087,7 @@ function download () { clear
   header "$uri"
 # keep local file name similar to remote-name
   wget "$uri"
+  # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
   curl --remote-name "$uri"
 } # download
 
