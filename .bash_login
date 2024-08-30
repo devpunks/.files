@@ -969,6 +969,7 @@ function browse (){ clear
 # - https://graphviz.org/doc/info/lang.html
 alias graph='command dot -Tps -o'
 alias chart='echo TODO: Implement chart'
+function draw () { : draw; }
 # http://gnuplot.info
 function write () {
   man figlet
