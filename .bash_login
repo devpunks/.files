@@ -78,7 +78,6 @@ alias g#='{
 # =========================================================================
 # {{{ Security
 #   ACLs (Access Control List)
-#     - https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-acls.html
 #     - https://unix.stackexchange.com/q/364517/difference-between-chmod-vs-acl
 #   POSIX Access Control Lists on Linux - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
 # =========================================================================
