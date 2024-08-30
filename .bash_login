@@ -969,7 +969,7 @@ function browse (){ clear
 # - https://graphviz.org/doc/info/lang.html
 alias graph='command dot -Tps -o'
 # https://www.gnu.org/software/barcode
-alias barcode='barcode --help && barcode'
+alias barcode='command barcode --help && barcode'
 alias chart='echo TODO: Implement chart'
 function draw () { : draw; }
 function write () { clear
