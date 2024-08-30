@@ -288,13 +288,6 @@ alias find='command find . -type f -iname'
 # - https://stackoverflow.com/q/1987926
 alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 
-alias which='command type -a'
-alias when='echo TODO: \`when\` implementation'
-alias why='echo TODO: \`why\` implementation'
-alias what='command man whatis && command whatis'
-alias who='command id \
-  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
-
 # - https://man7.org/linux/man-pages/man1/apropos.1.html
 # - https://man7.org/linux/man-pages/man1/whereis.1.html
 function where () { clear
