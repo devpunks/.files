@@ -78,6 +78,7 @@ alias g#='{
 # =========================================================================
 # {{{ Security
 # =========================================================================
+#https://man7.org/linux/man-pages/man1/passwd.1.html
 alias passwd='command passwd'
 
 # https://pypi.org/project/tsu/
