@@ -298,6 +298,13 @@ function where () { clear
   command apropos "$term"
 } # where
 
+alias which='command type -a'
+alias when='echo TODO: \`when\` implementation'
+alias why='echo TODO: \`why\` implementation'
+alias what='command man whatis && command whatis'
+alias who='command id \
+  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
+
 # https://unix.stackexchange.com/q/344213
 # https://askubuntu.com/q/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/q/50377/whats-the-difference-between-dir-and-ls
