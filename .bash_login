@@ -1449,9 +1449,6 @@ function environment () {
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
   echo && echo '👇Commands👇'
   compgen -c | sort | column --fillrows
-  # https://gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-enable
-  echo && echo '👇Commands👇'
-  enable -p | column --fillrows
   echo && echo '👇Shell Variables👇'
   compgen -v | sort | column --fillrows
   echo && echo '👇Exports👇'
