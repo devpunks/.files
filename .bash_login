@@ -932,19 +932,6 @@ function clock () {
   now # time
 } # clock
 
-alias tldr='open https://tldr.inbrowser.app'
-alias file='command file'
-# https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
-function about () {
-  local location="${1}"
-
-  exist "$location" || return $?
-
-  echo && df -a -h "$@"
-  echo && df -a -i "$@"
-  echo && stat "$@"
-} # about
-
 # See /usr/etc/lynx.cfg
 # - https://lynx.invisible-island.net/lynx_help/
 # - https://lynx.invisible-island.net/lynx2.8.3/breakout/lynx.cfg
