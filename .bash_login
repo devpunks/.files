@@ -78,6 +78,7 @@ alias g#='{
 # =========================================================================
 # {{{ Security
 # =========================================================================
+alias passwd='command passwd'
 
 # https://pypi.org/project/tsu/
 # http://androidcentral.com/root
