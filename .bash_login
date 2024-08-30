@@ -989,9 +989,7 @@ function exist () {
 function about () {
   local location="${1}"
 
-  for script in "$@"; do
-    echo && echo " 🎯 $( realpath "$script" )"
-    exist "$( realpath "$script" )" || continue
+  exist "$location" || return $?
 
     case "$script" in
       *.html )
