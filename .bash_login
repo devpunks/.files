@@ -976,6 +976,8 @@ function chat () { clear
   TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
 } # chat
 
+alias tldr='open https://tldr.inbrowser.app'
+alias file='command file'
 function exist () {
   local -r location="$1"
 
