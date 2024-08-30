@@ -77,6 +77,8 @@ alias g#='{
 
 # =========================================================================
 # {{{ Security
+#   eXtended Attr(ibutes)
+#     - https://linuxexam.net/2019/11/linux-tools-getfattrsetfattr.html
 #   ACLs (Access Control List)
 #     - https://unix.stackexchange.com/q/364517/difference-between-chmod-vs-acl
 #     - https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-acls.html
