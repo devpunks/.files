@@ -971,6 +971,7 @@ alias graph='command dot -Tps -o'
 alias chart='echo TODO: Implement chart'
 function draw () { : draw; }
 function write () {
+  local -r message="${1}"
   man figlet
 
   figlet "$message"
