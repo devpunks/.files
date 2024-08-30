@@ -1090,8 +1090,6 @@ function play () { clear
 # - https://smartftp.com/en-us/support/kb/2779
 # - https://dlptest.com/ftp-test
 # FTP (File Transfer Protocol)
-#
-
 # cURL
 function download () { clear
   local -r uri="$1"
