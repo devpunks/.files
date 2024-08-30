@@ -290,7 +290,7 @@ alias what='command man whatis && command whatis'
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
-function where () {
+function where () { clear
   local -r term="${1}"
 
   command man whereis
