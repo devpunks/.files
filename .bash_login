@@ -970,7 +970,6 @@ function browse (){ clear
 alias graph='command dot -Tps -o'
 alias chart='echo TODO: Implement chart'
 function draw () { : draw; }
-# http://gnuplot.info
 function write () {
   man figlet
 
