@@ -1110,6 +1110,7 @@ function upload () {
   curl --upload-file "$resource" "$uri"
 
   # TODO: upload to remote domain ( e.g. AWS / CDN )
+  # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
 } # upload
 
 function open () { clear
