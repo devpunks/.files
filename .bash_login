@@ -303,7 +303,7 @@ function where () { clear
   command man whereis
   command whereis "$term"
   command apropos "$term"
-}
+} # where
 
 # https://unix.stackexchange.com/q/344213
 # https://askubuntu.com/q/103913/difference-between-dir-and-ls-terminal-commands
