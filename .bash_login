@@ -1417,6 +1417,7 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
+# https://man7.org/linux/man-pages/man1/lscpu.1.html
 alias cpu=''
 # https://man7.org/linux/man-pages/man1/free.1.html
 alias free='command free --mega --human --wide'
