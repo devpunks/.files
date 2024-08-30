@@ -976,7 +976,6 @@ function write () {
 
   figlet "$message"
 }
-function draw () { : draw; }
 function plot () { clear
   gnuplot --version
   gnuplot --help
