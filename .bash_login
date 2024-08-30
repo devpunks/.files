@@ -86,7 +86,7 @@ alias g#='{
 #https://man7.org/linux/man-pages/man1/passwd.1.html
 alias passwd='clear && man -k passwd && echo && command passwd'
 
-# https://pypi.org/project/tsu/
+# https://pypi.org/project/tsu
 # http://androidcentral.com/root
 alias su='command su ; tsu '
 
