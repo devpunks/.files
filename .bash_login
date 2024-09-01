@@ -1269,15 +1269,6 @@ function expand () { clear
     | column --table
 } # expand
 
- # https://en.m.wikipedia.org/wiki/Fork_bomb
-function forkbomb () { clear #:(){ :|:& };:
-  local -r destination=$( realpath "${1:-./bomb.zip}" )
-
-  echo forkBomb
-
-  # forkbomb | forkbomb &
-} # forkbomb
-
 # https://en.m.wikipedia.org/wiki/Zip_bomb
 function zipbomb () { clear
   local -r destination=$( realpath "${1:-./bomb.zip}" )
