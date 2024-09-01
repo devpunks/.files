@@ -359,6 +359,30 @@ alias ip='command ip --color address |
 #alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
 alias ports='netstat --verbose --all --numeric --listening --programs --wide'
 
+# Test Servers
+# - https://smartftp.com/en-us/support/kb/2779
+# - https://dlptest.com/ftp-test
+# FTP (File Transfer Protocol)
+# cURL
+function download () { clear
+  local -r uri="$1"
+  # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
+  local -r process='../.local/yt-dlp'
+
+  echo uri: "$uri"
+  echo process: "$process"
+  echo
+
+# $process --help
+# $process --download-sections '*00:00:00.0-00:00:05.0' $uri
+# $process "$uri"
+  header "$uri"
+# keep local file name similar to remote-name
+  wget "$uri"
+  # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
+  curl --remote-name "$uri"
+} # download
+
 # https://man.archlinux.org/man/host.1.en
 # https://man7.org/linux/man-pages/man5/hosts.5.html
 # https://man7.org/linux/man-pages/man1/hostname.1.html
