@@ -1151,30 +1151,6 @@ function play () { clear
   echo && echo ▷ Playing: "$location"
 } # play
 
-# Test Servers
-# - https://smartftp.com/en-us/support/kb/2779
-# - https://dlptest.com/ftp-test
-# FTP (File Transfer Protocol)
-# cURL
-function download () { clear
-  local -r uri="$1"
-  # https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file
-  local -r process='../.local/yt-dlp'
-
-  echo uri: "$uri"
-  echo process: "$process"
-  echo
-
-# $process --help
-# $process --download-sections '*00:00:00.0-00:00:05.0' $uri
-# $process "$uri"
-  header "$uri"
-# keep local file name similar to remote-name
-  wget "$uri"
-  # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
-  curl --remote-name "$uri"
-} # download
-
 # cURL
 # - https://everything.curl.dev/usingcurl/uploads.html
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
