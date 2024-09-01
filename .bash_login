@@ -1096,7 +1096,7 @@ function chat () { clear
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
   TERM=tmux-256color weechat --colors
 
-  echo && echo WeeChat Version: "$( weechat --version )"
+  echo WeeChat Version: "$( weechat --version )"
 
   # /plugin
   # /fset irc.*
