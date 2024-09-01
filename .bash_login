@@ -836,21 +836,6 @@ function rotate () {
 
 # }}}
 
-function mail () { clear
-  local -r title=${1:-"Title"}
-  local -r body=${1:-"Message"}
-  local -r timestamp=$( command date --rfc-email )
-
-  man mail
-  # info mail # TODO: install texinfo
-
-  echo
-  echo "Timestamp: $timestamp"
-  echo "Title: $title"
-  echo "Body: $body"
-  echo
-} # mail
-
 # =========================================================================
 # {{{ FUNCTIONS
 #   - https://tldp.org/LDP/abs/html/functions.html
