@@ -507,6 +507,7 @@ function work (){
 
 # =========================================================================
 # {{{ Services
+#   - https://wiki.termux.com/wiki/Termux-services
 # =========================================================================
 function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
@@ -879,23 +880,6 @@ function lint () { clear
   echo Linting...
   check .*rc
 } # lint
-
-function boot () { clear
-  local -r profile="${PREFIX}/etc/profile.d"
-
-  echo Booting Kernel...
-  man sysctl
-  man sysctl.conf
-
-  command sysctl --version
-  command sysctl --system
-  command sysctl --all
-
-  echo Loading Profile...
-  tree "$profile"
-  echo "${profile}/start-services.sh"
-  cat "${profile}/start-services.sh"
-} # boot
 
 alias make="command make -v; command make"
 # LLVM - https://llvm.org
