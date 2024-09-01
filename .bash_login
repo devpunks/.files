@@ -1070,11 +1070,6 @@ function search () { clear
   echo && echo DONE!
 } # search
 
-function lint () { clear
-  echo Linting...
-  check .*rc
-} # lint
-
 # Syntax checkers
 #   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
 function check () {
