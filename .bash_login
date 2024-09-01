@@ -48,6 +48,123 @@ alias shortcuts='{ clear
 # }}}
 
 # =========================================================================
+# {{{ Shell
+# =========================================================================
+alias etc='tree "$PREFIX/etc"'
+alias share='tree "$PREFIX/share"'
+
+alias bell='echo "\a"'
+alias shell='chsh' # https://wiki.termux.com/wiki/Shells
+alias view='command view -n -M -R'
+
+# https://linux.die.net/man/1/pv
+# https://reddit.com/r/programming/comments/7u8f2/a_unix_utility_you_should_know_about_pipe_viewer/
+alias progress='pv --progress --eta --timer'
+
+# https://github.com/powerline/fonts
+alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
+alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
+
+# https://stackoverflow.com/q/42004870
+# https://en.m.wikipedia.org/wiki/Random_number_generation
+alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
+# https://stackoverflow.com/q/65523749
+alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+# - https://baeldung.com/linux/bash-generate-uuid
+# - https://man7.org/linux/man-pages/man1/uuidgen.1.html
+# - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
+alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
+
+# for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
+alias echo='command echo -e'
+# https://linux.die.net/man/1/expect
+# https://stackoverflow.com/q/33304242
+# https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
+alias expect='pkg list-all expect'
+
+alias ..='command cd ..'
+alias pop='command popd'
+alias push='command pushd'
+alias dirs='command dirs -p'
+alias most='command most +u -s -t2'
+alias mount='command mount | column -t'
+alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
+alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
+alias mkdir='command mkdir --verbose --parents --mode u=rwx,g=rx,o=' # 750
+alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
+
+# https://stackoverflow.com/q/4113986
+alias pipe='command mkfifo' # https://en.m.wikipedia.org/wiki/Named_pipe
+alias ln='command ln --verbose --interactive --symbolic'
+alias cp='command cp --verbose --interactive --no-clobber --recursive'
+alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slashes'
+alias cut='command cut --only-delimited --delimiter="," --fields'
+alias copy='echo TODO: implement copy command for multiple destination types'
+alias zipper='man paste ; command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
+
+alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
+alias rm='echo 🛑 rm is disabled, use delete, or destroy' # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
+alias delete='command rm --verbose --preserve-root --recursive --dir --interactive=once'
+
+# https://unix.stackexchange.com/q/90653
+alias sed='sed --regexp-extended'
+# https://tecmint.com/35-practical-examples-of-linux-find-command
+alias find='command find . -type f -iname'
+# - https://stackoverflow.com/q/1987926
+alias grep="LC_ALL=C command grep $GREP_OPTIONS"
+
+# - https://man7.org/linux/man-pages/man1/apropos.1.html
+# - https://man7.org/linux/man-pages/man1/whereis.1.html
+function where () { clear
+  local -r term="${1}"
+
+  command man whereis
+  command whereis "$term"
+  command apropos "$term"
+} # where
+
+alias which='command type -a'
+alias when='echo TODO: \`when\` implementation'
+alias why='echo TODO: \`why\` implementation'
+alias what='command man whatis && command whatis'
+alias who='command id \
+  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
+
+# https://unix.stackexchange.com/q/344213
+# https://askubuntu.com/q/103913/difference-between-dir-and-ls-terminal-commands
+# https://unix.stackexchange.com/q/50377/whats-the-difference-between-dir-and-ls
+alias ls="command ls $LS_OPTIONS -l"
+alias vdir="command vdir $LS_OPTIONS -l"
+alias branch='clear && tree -d -L 4'
+# https://github.com/eza-community/eza
+alias list="command eza --level=2 --color=auto --classify=auto \
+  --all --links --grid --icons --long --header --no-user --octal-permissions\
+  --group-directories-first --total-size --git --git-repos --git-ignore --ignore-glob '.git'"
+alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
+
+alias header='curl --head'
+alias curl='command curl --verbose'
+
+alias ping='command ping -c 5'
+alias cookies='header --cookie-jar ./.cookies'
+alias wait='command wait' # https://baeldung.com/linux/wait-command
+# https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux/
+alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
+alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
+
+# ----------------------
+# Ruby
+# ----------------------
+alias be='bundle exec'
+
+# ----------------------
+# Eliza (LLM) - https://web.njit.edu/~ronkowit/eliza.html
+# ----------------------
+alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
+
+# }}}
+
+# =========================================================================
 # {{{ Git Aliases
 # =========================================================================
 
