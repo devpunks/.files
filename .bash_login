@@ -145,7 +145,7 @@ alias who='command id \
 
 # - https://man7.org/linux/man-pages/man1/apropos.1.html
 # - https://man7.org/linux/man-pages/man1/whereis.1.html
-function where () { clear
+function where () {
   local -r term="${1}"
 
   command man whereis
