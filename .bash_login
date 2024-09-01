@@ -435,7 +435,7 @@ function host () { clear
 
   [ "$HOSTFILE" ] \
     && printf "\n \$HOSTFILE: $HOSTFILE \n %s \n\n" "$( cat "$HOSTFILE" )"
-} # host
+}
 
 # Benchmarking
 #   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
