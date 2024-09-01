@@ -383,6 +383,28 @@ function download () { clear
   curl --remote-name "$uri"
 } # download
 
+# cURL
+# - https://everything.curl.dev/usingcurl/uploads.html
+# - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
+alias ftp='command ftp --version; ftp --verbose'
+function upload () {
+  local -r resource="${1}"
+  local -r uri="${2}"
+
+  echo uri: "$uri"
+  echo resource: "$resource"
+
+  exist "$resource" || return $?
+
+  list "$resource"
+  about "$resource"
+  weigh "$resource"
+  curl --upload-file "$resource" "$uri"
+
+  # TODO: upload to remote domain ( e.g. AWS / CDN )
+  # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
+} # upload
+
 # https://man.archlinux.org/man/host.1.en
 # https://man7.org/linux/man-pages/man5/hosts.5.html
 # https://man7.org/linux/man-pages/man1/hostname.1.html
