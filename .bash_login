@@ -113,23 +113,6 @@ alias find='command find . -type f -iname'
 # - https://stackoverflow.com/q/1987926
 alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 
-# - https://man7.org/linux/man-pages/man1/apropos.1.html
-# - https://man7.org/linux/man-pages/man1/whereis.1.html
-function where () { clear
-  local -r term="${1}"
-
-  command man whereis
-  command whereis "$term"
-  command apropos "$term"
-} # where
-
-alias which='command type -a'
-alias when='echo TODO: \`when\` implementation'
-alias why='echo TODO: \`why\` implementation'
-alias what='command man whatis && command whatis'
-alias who='command id \
-  && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
-
 # https://unix.stackexchange.com/q/344213
 # https://askubuntu.com/q/103913/difference-between-dir-and-ls-terminal-commands
 # https://unix.stackexchange.com/q/50377/whats-the-difference-between-dir-and-ls
