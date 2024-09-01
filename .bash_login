@@ -65,7 +65,6 @@ alias progress='pv --progress --eta --timer'
 
 # https://github.com/powerline/fonts
 alias fonts='$HOME/.local/fonts/fonttable && echo "\nSee ~/.local/fonts"'
-alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
 # https://stackoverflow.com/q/42004870
 # https://en.m.wikipedia.org/wiki/Random_number_generation
