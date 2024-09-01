@@ -50,6 +50,8 @@ alias shortcuts='{ clear
 # =========================================================================
 # {{{ Aliases
 # =========================================================================
+alias tldr='open https://tldr.inbrowser.app'
+
 alias etc='tree "$PREFIX/etc"'
 alias share='tree "$PREFIX/share"'
 
