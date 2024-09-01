@@ -216,6 +216,20 @@ alias g#='{
 # }}}
 
 # =========================================================================
+# {{{ Jobs
+# =========================================================================
+
+alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring/
+# https://stackoverflow.com/q/35026395/bash-what-is-a-jobspec
+alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
+
+function work (){
+  echo working
+} # jobs
+
+# }}}
+
+# =========================================================================
 # {{{ iNodes
 # =========================================================================
 # https://man7.org/linux/man-pages/man1/file.1.html
