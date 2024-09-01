@@ -111,7 +111,7 @@ tmux -S "$SOCKET" send-keys "cd crypto && watch ./price" Enter
 tmux -S "$SOCKET" split-window -v -l 60%
 sleep $DELAY
 # Start network monitor
-tmux -S "$SOCKET" send-keys "command ip -timestamp monitor" Enter
+tmux -S "$SOCKET" send-keys "command ip -pretty -color -timestamp monitor" Enter
 
 # Select editor pane
 tmux -S "$SOCKET" select-pane -t 2
