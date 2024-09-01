@@ -991,6 +991,7 @@ function plot () { clear
   gnuplot --version
   gnuplot --help
 } # plot
+
 function write () { clear
   local -r message="${1}"
 
