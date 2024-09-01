@@ -728,7 +728,6 @@ function lint () { clear
   check .*rc
 } # lint
 
-
 function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
 
