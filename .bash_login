@@ -508,6 +508,23 @@ function work (){
 # =========================================================================
 # {{{ Services
 # =========================================================================
+function boot () { clear
+  local -r profile="${PREFIX}/etc/profile.d"
+
+  echo Booting Kernel...
+  man sysctl
+  man sysctl.conf
+
+  command sysctl --version
+  command sysctl --system
+  command sysctl --all
+
+  echo Loading Profile...
+  tree "$profile"
+  echo "${profile}/start-services.sh"
+  cat "${profile}/start-services.sh"
+} # boot
+
 # https://wiki.termux.com/wiki/Termux-services
 function services () {
   local -r service="${1}"
