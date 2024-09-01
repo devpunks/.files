@@ -190,7 +190,6 @@ alias eliza='why && echo TODO: ELIZA implementation' # https://en.m.wikipedia.or
 # =========================================================================
 # {{{ Git Aliases
 # =========================================================================
-
 alias ga='git add -p'
 alias gb='git -P branch -a'
 alias gc='git commit --message '
