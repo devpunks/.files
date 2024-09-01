@@ -1018,7 +1018,6 @@ function chat () { clear
   TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
 } # chat
 
-alias tldr='open https://tldr.inbrowser.app'
 # https://man7.org/linux/man-pages/man1/file.1.html
 alias file='command file --mime --mime-type --extension'
 function exist () {
