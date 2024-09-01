@@ -985,6 +985,7 @@ alias chart='echo TODO: Implement chart'
 alias barcode='command barcode --help && command barcode'
 
 function draw () { : draw; }
+
 # http://gnuplot.info
 function plot () { clear
   gnuplot --version
