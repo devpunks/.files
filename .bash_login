@@ -723,6 +723,12 @@ function accumulate () { : accumulate; }
 function bandwidth () { : bandwidth; }
 # -------------------------------------------------------------------------
 
+function lint () { clear
+  echo Linting...
+  check .*rc
+} # lint
+
+
 function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
 
