@@ -997,12 +997,6 @@ function write () { clear
   figlet "$message"
 } # write
 
-# http://gnuplot.info
-function plot () { clear
-  gnuplot --version
-  gnuplot --help
-} # plot
-
 function chat () { clear
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
