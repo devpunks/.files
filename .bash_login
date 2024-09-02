@@ -1135,7 +1135,6 @@ function browse () { clear
 # - https://graphviz.org/doc/info/lang.html
 alias chart='echo TODO: Implement chart'
 alias graph='command dot -Tps -o'
-alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 alias barcode='command barcode --help && command barcode'
 alias chart='echo TODO: Implement chart'
 # https://www.gnu.org/software/barcode
