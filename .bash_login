@@ -1155,6 +1155,7 @@ function write () { clear
   figlet -c -w $COLUMNS "$message"
 } # write
 
+  # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 function chat () { clear
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
