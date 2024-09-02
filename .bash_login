@@ -1462,7 +1462,7 @@ function hold () {
 alias cpu='clear ;
   echo && command lscpu ;
   echo && command lscpu --extende --all ;
-  echo && lscpu --caches --output-all
+  echo && lscpu --caches --output-all ;
 ' # cpu
 
 # https://man7.org/linux/man-pages/man1/free.1.html
