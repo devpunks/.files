@@ -210,7 +210,7 @@ alias g#='{
     gl --since="Yesterday 04:00"
     printf "\n Total:%d" $( gl --since="Yesterday 04:00" | wc -l )
   echo
-}'
+}' # g#
 
 # }}}
 
