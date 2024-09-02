@@ -996,7 +996,6 @@ function chat () { clear
   TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
 } # chat
 
-
 # PulseAudio --------------------------------------------------------------
 alias pulse='{
   pulseaudio -k
