@@ -1198,22 +1198,6 @@ function write () { clear
   figlet -c -w $COLUMNS "$message"
 } # write
 
-  # Configuration - https://gist.github.com/pascalpoitras/8406501
-  # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
-function chat () { clear
-  TERM=tmux-256color weechat --colors
-
-  echo && echo WeeChat Version: "$( weechat --version )"
-
-  # /plugin
-  # /fset irc.*
-  # /fset weechat.*
-  # --plugins <plugins> --run-command <command>
-  #
-  # /server add libera irc.foo.bar/1234 -tls -autoconnect
-  TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
-} # chat
-
 function play () { clear
   local -r location="$1"
 
