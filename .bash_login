@@ -1139,13 +1139,13 @@ alias chart='echo TODO: Implement chart'
 alias barcode='command barcode --help && command barcode'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
+function draw () { : draw; }
+
 # http://gnuplot.info
 function plot () { clear
   gnuplot --version
   gnuplot --help
 } # plot
-
-function draw () { : draw; }
 
 function write () { clear
   local -r message="${1}"
