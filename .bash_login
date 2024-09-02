@@ -1374,7 +1374,7 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/7z
     # https://tecmint.com/7zip-command-examples-in-linux/
-    *.7z) {
+    *.7z ) {
       operation="7z $archive"
     } ;;
 
