@@ -979,6 +979,7 @@ function mail () { clear
   echo
 } # mail
 
+# CHAT -----------------------------------------------------------------
   # Configuration - https://gist.github.com/pascalpoitras/8406501
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 function chat () { clear
