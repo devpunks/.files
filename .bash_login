@@ -1348,7 +1348,7 @@ function unpack () { clear
     # https://linuxhandbook.com/unzip-command
     # https://en.m.wikipedia.org/wiki/Zip_bomb
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
-    *.zip) {
+    *.zip ) {
       unzip -v
       echo && echo
       UNZIP='-t --u' unzip "${archive}" \
