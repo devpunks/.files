@@ -1148,7 +1148,7 @@ function plot () { clear
 } # plot
 
 function write () { clear
-  local -r message=${1}
+  local -r message="${1}"
 
   man figlet
 
