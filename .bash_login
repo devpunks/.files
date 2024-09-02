@@ -1403,7 +1403,7 @@ function unpack () { clear
     *.tar.gz ) operation="tar xvzf $archive"  ;;
     # https://linux.die.net/man/1/gunzip
     # https://linuxhandbook.com/gunzip-command/
-    *.gz) {
+    *.gz ) {
       operation="view $archive && gunzip --verbose --test --list $archive"
     } ;;
 
