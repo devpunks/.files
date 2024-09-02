@@ -1407,7 +1407,7 @@ function unpack () { clear
       operation="view $archive && gunzip --verbose --test --list $archive"
     } ;;
 
-    *.tgz) operation="tar xvzf $archive"  ;;
+    *.tgz ) operation="tar xvzf $archive"  ;;
 
     *.tar.bz2) operation="tar xvjf $archive"  ;;
 
