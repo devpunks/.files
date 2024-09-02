@@ -1396,7 +1396,7 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/Brotli
     # brotli --decompress - https://manpages.ubuntu.com/manpages/jammy/en/man1/brotli.1.html
-    *.br) {
+    *.br ) {
       operation="view $archive && brotli --decompress --verbose --test --keep --files $source"
     } ;;
 
