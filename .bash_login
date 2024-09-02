@@ -1138,7 +1138,6 @@ alias graph='command dot -Tps -o'
 # https://www.gnu.org/software/barcode
 alias barcode='command barcode --help && command barcode'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
-# https://www.gnu.org/software/barcode
 
 function draw () { : draw; }
 
