@@ -1133,7 +1133,6 @@ function browse () { clear
 # TODO: Implementation
 # - https://graphviz.org/pdf/dotguide.pdf
 # - https://graphviz.org/doc/info/lang.html
-alias chart='echo TODO: Implement chart'
 alias graph='command dot -Tps -o'
 # https://www.gnu.org/software/barcode
 alias barcode='command barcode --help && command barcode'
