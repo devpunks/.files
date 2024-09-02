@@ -993,7 +993,7 @@ function chat () { clear
   # --plugins <plugins> --run-command <command>
   #
   # /server add libera irc.foo.bar/1234 -tls -autoconnect
-  TERM=tmux-256color weechat --dir "$HOME/chat" --temp-dir
+  TERM=tmux-256color weechat --temp-dir --dir "$HOME/chat"
 } # chat
 
 # PulseAudio --------------------------------------------------------------
