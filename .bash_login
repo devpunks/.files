@@ -1485,32 +1485,6 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
-# https://man7.org/linux/man-pages/man1/lscpu.1.html
-alias cpu='clear ;
-  echo && command lscpu ;
-  echo && command lscpu --extende --all ;
-  echo && lscpu --caches --output-all ;
-' # cpu
-
-# https://man7.org/linux/man-pages/man1/free.1.html
-alias free='command free --mega --human --wide'
-function weigh () {
-  local -r location=$( realpath "${1:-.}" )
-
-  exist "$location" || return $?
-
-  # https://geeksforgeeks.org/du-command-linux/
-  # https://redhat.com/sysadmin/du-command-options
-  du --summarize --total --time --human-readable \
-      --exclude={.gnupg,.ssh} \
-    -- "$location"
-
-  # https://redhat.com/sysadmin/linux-df-command
-  # https://geeksforgeeks.org/df-command-in-linux-with-examples
-  echo && df -a -h "$location"
-  echo && df -a -i "$location"
-} # weigh
-
 function environment () {
   echo && echo '👇Kernel👇'
   command sysctl --all
