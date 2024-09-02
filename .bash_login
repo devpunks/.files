@@ -987,7 +987,6 @@ function chat () { clear
 
   TERM=tmux-256color weechat --colors
 
-
   # /plugin
   # /fset irc.*
   # /fset weechat.*
