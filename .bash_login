@@ -1117,7 +1117,7 @@ function convert () { clear
 # See /usr/etc/lynx.cfg
 # - https://lynx.invisible-island.net/lynx_help/
 # - https://lynx.invisible-island.net/lynx2.8.3/breakout/lynx.cfg
-function browse (){ clear
+function browse () { clear
   local -r location="${1}"
   local -r configuration="${PREFIX}/etc/lynx.cfg"
 
