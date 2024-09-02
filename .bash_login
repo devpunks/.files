@@ -1368,7 +1368,7 @@ function unpack () { clear
 
     # https://en.m.wikipedia.org/wiki/Tar_(computing)
     # *.tar)     operation="tar xvf $archive"  ;;
-    *.tar) {
+    *.tar ) {
       operation="view $archive && tar --verbose --list --file=$archive $destination"
     } ;;
 
