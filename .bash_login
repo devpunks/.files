@@ -984,6 +984,7 @@ function mail () { clear
   # Quickstart - https://weechat.org/files/doc/stable/weechat_quickstart.en.html
 function chat () { clear
   echo WeeChat Version: ` weechat --version `
+
   TERM=tmux-256color weechat --colors
 
   # /plugin
