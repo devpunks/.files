@@ -963,7 +963,7 @@ alias ssh.add='{
 # -X flag for Enable X11 forwarding
 alias sshd='command sshd -X -Dddd -p8022'
 
-# SMTP(s) -----------------------------------------------------------------
+# SMTP -----------------------------------------------------------------
 function mail () { clear
   local -r title=${1:-"Title"}
   local -r body=${1:-"Message"}
