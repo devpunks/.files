@@ -1390,7 +1390,7 @@ function unpack () { clear
       operation="view $archive && unxz --verbose --test --list --keep --files $source"
     } ;;
 
-    *.lzma) {
+    *.lzma ) {
       operation="view $archive && unlzma --verbose --test --list --keep --files $source"
     } ;;
 
