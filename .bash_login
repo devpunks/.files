@@ -1329,7 +1329,6 @@ function unpack () { clear
   local operation
   local -r archive="${1}"
   local -r destination="${2:-${archive%.*}}"
-  #local -r destination=$( realpath "${2:-./$archive}" )
 
   exist "$archive" || return $?
   exist "$destination" || mkdir "$destination"
