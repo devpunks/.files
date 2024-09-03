@@ -463,8 +463,8 @@ function weigh () {
 
   # https://redhat.com/sysadmin/linux-df-command
   # https://geeksforgeeks.org/df-command-in-linux-with-examples
-  echo && df -a -h "$location"
-  echo && df -a -i "$location"
+  echo ; df -a -h "$location"
+  echo ; df -a -i "$location"
 } # weigh
 
 function search () { clear
