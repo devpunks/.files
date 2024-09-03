@@ -480,7 +480,7 @@ function search () { clear
   echo ; echo Finding...
   command find "$location" -type f -iname "*$term*"
 
-  echo && echo DONE!
+  echo ; echo DONE!
 } # search
 
 # Syntax checkers
