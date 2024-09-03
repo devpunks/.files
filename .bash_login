@@ -573,7 +573,7 @@ function unlimit () { clear
 function limit () { clear
   ulimit --help
 
-  echo && echo Hard Limits:
+  echo ; echo Hard Limits:
   ulimit -Ha
 
   echo && echo Soft Limits:
