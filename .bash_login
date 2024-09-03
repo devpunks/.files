@@ -1234,8 +1234,8 @@ function rotate () {
 
   exist "$log" || return $?
 
-  echo && command logrotate --verbose --log="$log" "$log"
-  echo && echo ⥁ rotating log: "$log"
+  echo ; command logrotate --verbose --log="$log" "$log"
+  echo ; echo ⥁ rotating log: "$log"
 } # rotate
 
 # }}}
