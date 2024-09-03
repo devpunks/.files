@@ -187,6 +187,14 @@ monitor () {
   printf "\n %s \n" "$( uptime )"
 } # monitor
 
+# - https://en.m.wikipedia.org/wiki/Device_file
+function devices () { clear
+  local -r location="$1"
+
+  ( exist "$location" && df -a -h "$location" && df -a -i "$location" ) \
+    || ( df -a -h && df -a -i )
+} # devices
+
 # ----------------------
 # Ruby
 # ----------------------
