@@ -1257,7 +1257,6 @@ function decode () {
   printf "$bytes" | basenc --decode $encoding
 } # decode
 
-
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function sync () {
   local -r source=$( realpath "$1 ")
