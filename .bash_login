@@ -232,6 +232,48 @@ function reload () { clear
 } # reload
 
 
+function environment () {
+  echo && echo '👇Kernel👇'
+  command sysctl --all
+
+  # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
+  echo && echo '👇Commands👇'
+  compgen -c | sort | column --fillrows
+  echo && echo '👇Shell Variables👇'
+  compgen -v | sort | column --fillrows
+  echo && echo '👇Exports👇'
+  compgen -e | sort | column --fillrows
+  echo && echo '👇Built-ins👇'
+  # https://gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-enable
+  enable -p | column --fillrows
+  echo && echo 👇Functions👇
+  compgen -A function | sort | column --fillrows
+  echo && echo '👇Aliases👇'
+  compgen -a | sort | column --fillrows # alias -p
+  echo && echo '👇Reserved Words👇'
+  compgen -k | sort | column --fillrows
+  echo && echo '👇Env Vars👇'
+  # https://unix.stackexchange.com/q/123473
+  env | sort | column --fillrows # printenv | export -p
+
+  echo && echo '👇Shell Vars👇'
+  # TODO: refactor set (fix POSIX bug)
+  #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
+    # ( set +o posix; set; set +o posix ) | sort | column --fillrows
+  set
+  echo && echo '👇Declarations👇'
+  declare -p | command cut --delimiter=' ' --fields 3 | sort | column --fillrows
+
+  printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
+  printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
+  printf "\nPATH: %s\n" "$PATH"
+  printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
+    "$( tty )" "$LINES" "$COLUMNS"
+
+  echo && termux-info
+  [ "$TMUX" ] && echo && tmux -V
+} # environment
+
 # ----------------------
 # Ruby
 # ----------------------
