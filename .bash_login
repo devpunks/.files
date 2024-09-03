@@ -420,9 +420,9 @@ function about () {
 
   exist "$location" || return $?
 
-  echo && df -a -h "$@"
-  echo && df -a -i "$@"
-  echo && stat "$@"
+  echo ; df -a -h "$@"
+  echo ; df -a -i "$@"
+  echo ; stat "$@"
 } # about
 
 function inspect () { clear
