@@ -1529,7 +1529,7 @@ function convert () { clear
     # ffprobe "$file"
     # ffmpeg -i "$file" "${file%.*}.mp4"
     # ffprobe .mp4
-  done
+  done # for $file
 } # convert
 
 # See /usr/etc/lynx.cfg
