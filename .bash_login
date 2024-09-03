@@ -512,6 +512,141 @@ function check () {
 # }}}
 
 # =========================================================================
+# {{{ Security
+#   eXtended Attr(ibutes)
+#     - https://linuxexam.net/2019/11/linux-tools-getfattrsetfattr.html
+#   ACLs (Access Control List)
+#     - https://unix.stackexchange.com/q/364517/difference-between-chmod-vs-acl
+#     - https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-acls.html
+#     - https://reddit.com/r/linux/comments/170crnt/acl_101_a_visual_guide_to_accesscontrol_lists/
+#     - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
+# =========================================================================
+#https://man7.org/linux/man-pages/man1/passwd.1.html
+alias passwd='clear && man -k passwd && echo && command passwd'
+
+# https://pypi.org/project/tsu
+# http://androidcentral.com/root
+alias su='command su ; tsu '
+
+# - https://en.m.wikipedia.org/wiki/Chown
+# - https://man7.org/linux/man-pages/man1/chown.1p.html
+alias chown='command chown --verbose --preserve-root --recursive'
+
+# - https://en.m.wikipedia.org/wiki/Chgrp
+# - https://man7.org/linux/man-pages/man1/chgrp.1p.html
+alias chgrp='command chgrp --verbose --preserve-root --recursive'
+
+# - https://askubuntu.com/q/918379
+# - https://en.m.wikipedia.org/wiki/Chmod
+# - https://gnu.org/software/coreutils/chmod
+# - https://man7.org/linux/man-pages/man1/chmod.1p.html
+# - https://marksei.com/linux-permissions-chown-chgrp-and-chmod/
+alias chmod='command chmod --verbose --preserve-root --recursive'
+
+# https://gnupg.org
+# https://bashupload.com/how_to_encrypt_files
+function encrypt () {
+  man gpg
+} # encrypt
+
+function decrypt () {
+  man gpg
+} # decrypt
+
+function lock () {
+  : lock
+} # lock
+
+function unlock () {
+  : unlock
+} # unlock
+
+# - https://wiki.archlinux.org/title/Limits.conf
+# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command/
+function unlimit () { clear
+  ulimit --help
+
+  echo && ulimit -a
+  echo TODO: 'unlimit' Implementation
+} # unlimit
+
+function limit () { clear
+  ulimit --help
+
+  echo && echo Hard Limits:
+  ulimit -Ha
+
+  echo && echo Soft Limits:
+  ulimit -Sa
+
+  echo TODO: 'limit' Implementation
+} # limit
+
+# https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
+# https://superuser.com/q/168578/why-must-a-folder-be-executable
+# https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
+# https://stackoverflow.com/q/12445527/set-different-umask-for-files-and-folders
+# https://askubuntu.com/q/932713/what-is-the-difference-between-chmod-x-and-chmod-755
+# https://theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/how-permissions-chmod-with-numbers-command-explained-777-rwx-unix
+function permit () { clear
+  printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
+
+  local -r location="$1"
+
+  exist "$location" || return $?
+
+  # chmod u+x g+x o+x a+x
+  # r(4) - Read (R - disabled)
+  # w(2) - Write (W - disabled)
+  # x(1) - Execute (X - disabled)
+  # u=user,g=group,o=others,a=all
+  # [ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+.
+  chmod u=rwx,g=rx,o=rx "$( realpath "$location" )" # 755
+
+  ls "$location"
+  about "$location"
+} # permit
+
+function restrict () { clear
+  printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
+
+  local -r location="$1"
+
+  exist "$location" || return $?
+
+  # chmod u+x g+x o+x a+x
+  # r(4) - Read (R - disabled)
+  # w(2) - Write (W - disabled)
+  # x(1) - Execute (X - disabled)
+  # u=user,g=group,o=others,a=all
+  # [ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+.
+  chmod u=r,g=,o= "$( realpath "$location" )" # 600
+
+  ls "$location"
+  about "$location"
+} # restrict
+
+function authenticate () { clear
+  # https://stackoverflow.com/q/25969196
+  local -r certificate='--cert' # (key|cert)
+  local -r credentials="${1:-:}" # default to `:`
+  local -r auth='--basic' # (anyauth|digest|basic)
+  local -r user="--user ${credentials}" # login credentials
+  local -r domain="localhost" # localhost default domain
+  local -r port="${PORT:-80}" # PORT env variable default
+  local -r uri="${domain}:${port}" # URI default to domain and port
+
+  echo uri: "$uri"
+  echo auth: $auth
+  echo user: "$user"
+  echo cert: "$certificate"
+
+  curl --head "$auth" "$cert" "$user" "$uri"
+} # authenticate
+
+# }}}
+
+# =========================================================================
 # {{{ Network
 #   NMAP
 #     - https://upguard.com/blog/how-to-use-nmap
