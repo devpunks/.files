@@ -273,6 +273,35 @@ function environment () {
   [ "$TMUX" ] && echo && tmux -V
 } # environment
 
+# SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
+# TIC - https://ibm.com/docs/ro/aix/7.1?topic=t-tic-command
+# TOE - https://invisible-island.net/ncurses/man/toe.1m.html
+# TERMINFO - https://bbs.archlinux.org/viewtopic.php?id=163103
+# TERMINAL GREETER - https://yalneb.blogspot.com/2019/04/bash-terminal-greeter.html
+function term () { clear
+  echo "\e[7m" # REVERSE
+  echo && echo "TTY: $(tty)"
+  printf "\n\nSize \e[3mROWS\e[23mX\e[3mCOLUMNS\e[23m: %s\n" \
+    "$(stty size | tr ' ' 'x')"
+  echo && [ -n "$TMUX" ] && echo "TMUX INFO:" && tmux info
+  echo && echo "TERM=$TERM $( tput -V )" && toe
+  echo && echo "stty: $(stty -g)" && stty -a
+
+  # https://manpages.ubuntu.com/manpages/bionic/man1/infocmp.1.html
+  echo && echo TERMINFO PATH: && infocmp -1 -D # terminfo location
+  echo && echo TERMINFO CAP NAMES: && infocmp -1 -IT # terminfo description
+  echo && echo TERMINFO CAPABILITIES: && infocmp -1 -CrT # terminfo capabilities
+  echo && echo TERMINFO LONG NAMES: && infocmp -1 -LT # terminfo long names
+
+  echo "\e[m" # DEFAULT
+
+  [ -e "${HOME}/.inputrc" ] \
+    && { shortcuts ; echo "\e[3m( see ~/.inputrc )\e[23m" ; }
+
+  [[ function == $( type -t Colors ) ]] \
+    && echo && Colors
+} # term
+
 # ----------------------
 # Ruby
 # ----------------------
