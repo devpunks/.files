@@ -990,7 +990,6 @@ alias catnet='{
 }' # catnet
 
 # Exploits ----------------------------------------------------------------
-
 # https://en.m.wikipedia.org/wiki/Zip_bomb
 function zipbomb () { clear
   local -r destination=$( realpath "${1:-./bomb.zip}" )
