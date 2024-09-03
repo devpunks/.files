@@ -146,7 +146,7 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 alias which='command type -a'
 alias when='echo TODO: \`when\` implementation'
 alias why='echo TODO: \`why\` implementation'
-alias what='command man whatis && command whatis'
+alias what='command man whatis ; command whatis'
 alias who='command id \
   && command id | tr "[\w|\,] " "\n" | tr "groups=" "\n\nGroups:" '
 
