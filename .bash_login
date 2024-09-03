@@ -231,7 +231,6 @@ function reload () { clear
   environment
 } # reload
 
-
 function environment () {
   echo && echo '👇Kernel👇'
   command sysctl --all
