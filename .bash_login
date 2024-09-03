@@ -1466,11 +1466,6 @@ function extract () {
   unpack "$archive"
 } # extract
 
-monitor () {
-  htop && ps
-  printf "\n %s \n" "$( uptime )"
-} # monitor
-
 # - https://en.m.wikipedia.org/wiki/Device_file
 function devices () { clear
   local -r location="$1"
