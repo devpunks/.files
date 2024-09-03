@@ -576,7 +576,7 @@ function limit () { clear
   echo ; echo Hard Limits:
   ulimit -Ha
 
-  echo && echo Soft Limits:
+  echo ; echo Soft Limits:
   ulimit -Sa
 
   echo TODO: 'limit' Implementation
