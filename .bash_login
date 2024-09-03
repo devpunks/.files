@@ -1069,7 +1069,7 @@ function serve () { clear
   # command httpd -d <ServerRoot> -f <Config> -k start
 
 
-  echo && echo # Python
+  echo ; echo # Python
   command python -m http.server 5000 2>&1 &
 
 
