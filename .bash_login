@@ -457,7 +457,7 @@ function weigh () {
 
   exist "$location" || return $?
 
-  # https://geeksforgeeks.org/du-command-linux/
+  # https://geeksforgeeks.org/du-command-linux
   # https://redhat.com/sysadmin/du-command-options
   du --summarize --total --time --human-readable \
       --exclude={.gnupg,.ssh} \
