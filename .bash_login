@@ -370,7 +370,6 @@ alias g#='
   GIT_PAGER=cat \
     gl --since="Today 04:00"
     printf "\n Total:%d\n\n" $( gl --since="Today 04:00" | wc -l )
-  echo
 ' # g#
 
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
