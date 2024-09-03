@@ -678,9 +678,9 @@ function services () {
 
   ps | command grep "$filter"
 
-  echo && tree -L 4 "${init}${service}"
-  echo && tree -L 4 "${running}${service}"
-  echo && tree -L 4 "${services}${service}"
+  echo ; tree -L 4 "${init}${service}"
+  echo ; tree -L 4 "${running}${service}"
+  echo ; tree -L 4 "${services}${service}"
 } # services
 
 function run () {
