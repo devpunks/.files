@@ -1612,7 +1612,7 @@ function play () { clear
   echo ; vlc --help
   echo ; ffmpeg --help
 
-  echo && echo ▷ Playing: "$location"
+  echo ; echo ▷ Playing: "$location"
 } # play
 
 function encode () {
