@@ -489,7 +489,7 @@ function check () {
   echo Checking "$*"
 
   for script in "$@"; do
-    echo && echo " 🎯 $( realpath "$script" )"
+    echo ; echo " 🎯 $( realpath "$script" )"
     exist "$( realpath "$script" )" || continue
 
     case "$script" in
