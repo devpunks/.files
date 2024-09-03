@@ -647,6 +647,156 @@ function authenticate () { clear
 # }}}
 
 # =========================================================================
+# {{{ Services
+#   - https://wiki.termux.com/wiki/Termux-services
+# =========================================================================
+function boot () { clear
+  local -r profile="${PREFIX}/etc/profile.d"
+
+  echo Booting Kernel...
+  man sysctl
+  man sysctl.conf
+
+  command sysctl --version
+  command sysctl --system
+  command sysctl --all
+
+  echo Loading Profile...
+  tree "$profile"
+  echo "${profile}/start-services.sh"
+  cat "${profile}/start-services.sh"
+} # boot
+
+function services () {
+  local -r service="${1}"
+  local -r filter="runsv $service"
+  local -r init="${PREFIX}/etc/init.d/"
+  local -r running="${PREFIX}/var/run/"
+  local -r services="${PREFIX}/var/service/"
+
+  [ "$service" ] || htop --tree --filter="$filter"
+
+  ps | command grep "$filter"
+
+  echo && tree -L 4 "${init}${service}"
+  echo && tree -L 4 "${running}${service}"
+  echo && tree -L 4 "${services}${service}"
+} # services
+
+function run () {
+  local -r -i seconds=5
+  local -r services="${*}"
+  local -r path="${SVDIR:-$PREFIX/var/service}"
+
+# man sv         # Signals
+# man runsv      # Run service
+# man runsvdir   # Run service dir
+# man runsvchdir # (Change to) service dir
+
+  # [ -d ${PREFIX}/etc/init.d ] \
+  #   || mkdir -p ${PREFIX}/etc/init.d
+  # https://unix.stackexchange.com/q/20357
+  echo && tree "$PREFIX/etc/init.d"
+  echo "$path" && echo
+
+  [ -z "$services" ] \
+    && { service-daemon start ; return ; }
+
+
+  for service in $services ; do
+    echo "Wait time: $seconds"
+    echo "checking $service"
+    sv -v check "$service" # check
+
+    echo "Process routine for $service"
+    ( [[ "$service" == ./* ]] && runsv "$service" >/dev/null & ) \
+      || ( runsv "${path}/${service}" >/dev/null & )
+
+#     && { runsv "$( realpath "$service" )" 2>&1 & ; sv -v -w $seconds status $( realpath "$service" ) ; } \
+#     || { runsv "${path}/${service}" 2>&1 & ; sv -v -w $seconds status "${path}/${service}" ; }
+
+    sv -v -w $seconds status "$service"
+    sv -v -w $seconds status "${service}/log"
+  done # for $service
+
+  services "$@"
+} # run
+
+# See bin/service-daemon
+function start () { clear
+  local -r nice='-10'
+  local -r mask='077' # u=rwx,g=r,o=
+  local -r service="$( realpath "$1" )"
+  local -r name="${service##*/}" # minus path
+
+  local -r pidfile="${service}/${name}.pid"
+  local -r daemon="${PREFIX}/bin/runsv" # runsvdir for directories
+
+  man start-stop-daemon
+  mkdir -p "$service" # ensure service directory exists
+
+  echo NAME: "$name"
+  echo DAEMON: "$daemon"
+  echo SERVICE: "$service"
+  echo PIDFILE: "$pidfile"
+
+  # >/dev/null 2>&1 & # --background - https://stackoverflow.com/q/63274948
+  command start-stop-daemon --start --name "$name" \
+    --chdir "$service" --nicelevel "$nice" --umask "$mask" \
+    --make-pidfile --pidfile "$pidfile" \
+  --exec "$daemon" -- "$service"
+} # start
+
+function stop () {
+  local -r retry='TERM/10/KILL/5'
+  local -r service="$( realpath "$1" )"
+  local -r pidfile="${service}/${name}.pid"
+# local -r piddir="${PREFIX}/var/run"
+# local -r piddir="${HOME}"
+
+  man start-stop-daemon
+
+  command start-stop-daemon --stop --oknodo --remove-pidfile --pidfile "$pidfile" --signal 1 --retry "$retry"
+
+  return
+
+  #tail --pid=$( cat "$PIDFILE" ) /dev/null
+
+  #for supervisor in "$SVDIR/*/supervise" "$SVDIR/*/log/supervise"; do
+  #  kill -9 $(cat "$supervisor/pid") 2>/dev/null || :
+  #  rm -rf $supervisor
+  #done
+} # stop
+
+# Runit
+# https://en.m.wikipedia.org/wiki/Runit
+# See $HOME/.termux/boot/README on Android
+# https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
+function trip () {
+  local -r service="${1}"
+  local -r services="${*:-nginx}"
+  local -r path="${PREFIX}/var/service"
+
+  [ -z "$service" ] && service-daemon stop && return
+
+  # man sv
+  echo Check
+  sv -v check "$service"
+  echo Statuus
+  sv -v status "$service"
+# sv -v force-stop "$service"
+  sv -v force-shutdown "$service"
+  echo Check
+  sv -v check "$service"
+  echo Statuus
+  sv -v status "$service"
+
+  services
+} # trip
+
+# }}}
+
+# =========================================================================
 # {{{ Network
 #   NMAP
 #     - https://upguard.com/blog/how-to-use-nmap
