@@ -233,7 +233,7 @@ function trash () {
     exist "$file" \
       && mv "$file" "$TMPDIR" \
       && echo 🚮 Sent to trash 🗑 "$file"
-  done
+  done # for
 
   tree -L 1 "$TMPDIR"
 } # trash
