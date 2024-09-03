@@ -214,6 +214,17 @@ function recycle () { clear
   trash "$@"
 } # recycle
 
+# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
+# - https://computerhope.com/unix/shred.htm
+# - https://geeksforgeeks.org/shred-command-in-linux-with-examples
+function destroy () {
+  for file in "$@"; do
+    exist "$file" \
+      && shred --force --zero --iterations=5 --remove "$file" \
+      && echo 💣 destroyed 💥 "$file"
+  done
+} # destroy
+
 # https://bash.cyberciti.biz/guide/Reset_command
 # https://bash.cyberciti.biz/guide/Console_management
 # https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
