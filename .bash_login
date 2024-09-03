@@ -823,8 +823,8 @@ alias traffic='man tc'
 # https://redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='command ip --color address |
   command grep --color --perl-regexp "(inet)\s[^/]+" ;
-  echo && command ip --color route ;
-  echo && command route -v -ee -A inet ;
+  echo ; command ip --color route ;
+  echo ; command route -v -ee -A inet ;
 ' # alias
 
 # TODO: Find netstat alternative
