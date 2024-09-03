@@ -206,6 +206,32 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
+# https://bash.cyberciti.biz/guide/Reset_command
+# https://bash.cyberciti.biz/guide/Console_management
+# https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
+# https://invisible-island.net/ncurses/man/tset.1.html#h2-HISTORY
+# https://unix.stackexchange.com/q/335648/why-does-the-reset-command-include-a-delay
+# https://unix.stackexchange.com/q/546918/any-reason-to-not-alias-reset-tput-reset-in-bashrc
+# https://stackoverflow.com/q/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again
+function reload () { clear
+  termux-reload-settings
+  [ "$TMUX" ] && tmux source "${HOME}/.tmux.conf"
+
+  source "${HOME}/.bashrc" \
+    && source "${HOME}/.bash_login"
+
+  # reset  slowwwwwwwwwwwwwwww
+  tput reset
+  tput sgro # reset attributes
+  stty sane
+  setterm --initialize
+  setterm --resize
+  tput cup 0 0
+
+  environment
+} # reload
+
+
 # ----------------------
 # Ruby
 # ----------------------
