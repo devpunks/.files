@@ -369,7 +369,7 @@ alias g#='
   #   printf "\n Total:%d" $( gl --since=1.day | wc -l )
   GIT_PAGER=cat \
     gl --since="Today 04:00"
-    printf "\n Total:%d" $( gl --since="Today 04:00" | wc -l )
+    printf "\n Total:%d\n\n" $( gl --since="Today 04:00" | wc -l )
   echo
 ' # g#
 
