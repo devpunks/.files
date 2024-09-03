@@ -1243,11 +1243,6 @@ function open () { clear
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 } # open
 
-function stream () {
-  local -r bytes="${1:-foo}"
-  yes "$bytes"
-} # stream
-
 function encode () {
   local -r bytes="$1"
   local -r encoding='--base64' # base2lsbf | base2msbf | base16 | base32 | base32hex | base64 | base64url
