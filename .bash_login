@@ -566,7 +566,7 @@ function unlock () {
 function unlimit () { clear
   ulimit --help
 
-  echo && ulimit -a
+  echo ; ulimit -a
   echo TODO: 'unlimit' Implementation
 } # unlimit
 
