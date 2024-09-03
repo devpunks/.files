@@ -206,6 +206,14 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
+function recycle () { clear
+  echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
+
+  delete "${TMPDIR}"/**/*
+
+  trash "$@"
+} # recycle
+
 # https://bash.cyberciti.biz/guide/Reset_command
 # https://bash.cyberciti.biz/guide/Console_management
 # https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
