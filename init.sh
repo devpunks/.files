@@ -29,6 +29,7 @@ pkg update
 
 termux-open "${HOME}/.termux/Termux_Boot_0.7.apk"
 pkg install termux-services
+pkg install termux-auth
 pkg install termux-api
 termux-setup-storage
 termux-info
