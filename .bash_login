@@ -1033,7 +1033,7 @@ function attack () {
 # =========================================================================
 
 # HTTP(s) -----------------------------------------------------------------
-# - https://realpython.com/python-http-server/
+# - https://realpython.com/python-http-server
 function serve () { clear
   local -r realm='devPunks' # Authentication
   local -r port=${PORT:-4321}
