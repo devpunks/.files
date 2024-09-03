@@ -1046,7 +1046,7 @@ function serve () { clear
   echo CONFIG: "$config"
 
 
-  echo && echo # Apache
+  echo ; echo # Apache
   tree "${PREFIX}/etc/apache2"
   list "${PREFIX}/libeexec/apache2"
   # check $PREFIX/etc/apache2/httpd.conf (ServerName)
