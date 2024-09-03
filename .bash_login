@@ -320,10 +320,10 @@ function term () { clear
   echo ; echo "stty: $(stty -g)" && stty -a
 
   # https://manpages.ubuntu.com/manpages/bionic/man1/infocmp.1.html
-  echo && echo TERMINFO PATH: && infocmp -1 -D # terminfo location
-  echo && echo TERMINFO CAP NAMES: && infocmp -1 -IT # terminfo description
-  echo && echo TERMINFO CAPABILITIES: && infocmp -1 -CrT # terminfo capabilities
-  echo && echo TERMINFO LONG NAMES: && infocmp -1 -LT # terminfo long names
+  echo ; echo TERMINFO PATH: ; infocmp -1 -D # terminfo location
+  echo ; echo TERMINFO CAP NAMES: ; infocmp -1 -IT # terminfo description
+  echo ; echo TERMINFO CAPABILITIES: ; infocmp -1 -CrT # terminfo capabilities
+  echo ; echo TERMINFO LONG NAMES: ; infocmp -1 -LT # terminfo long names
 
   echo "\e[m" # DEFAULT
 
