@@ -58,7 +58,6 @@ alias cpu='clear ;
   echo ; lscpu --caches --output-all ;
   echo "\n\nCPU count: ` nproc `\n\n"
   echo ; command lscpu --extended --all ;
-  echo ; lscpu --caches --output-all ;
 ' # cpu
 
 alias etc='tree "$PREFIX/etc"'
