@@ -1353,7 +1353,7 @@ function unpack () { clear
   echo "source: $archive"
   echo "destination: $destination"
   weigh "${archive}"
-  echo && echo
+  echo ; echo
 
   case "$archive" in
     # -q quiet mode (-qq => quieter)
