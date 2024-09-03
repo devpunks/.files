@@ -650,13 +650,6 @@ function limit () { clear
   echo TODO: 'limit' Implementation
 } # limit
 
-function unlimit () { clear
-  ulimit --help
-
-  echo && ulimit -a
-  echo TODO: 'unlimit' Implementation
-} # unlimit
-
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
 # https://askubuntu.com/q/44542/what-is-umask-and-how-does-it-work
