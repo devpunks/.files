@@ -222,7 +222,7 @@ function destroy () {
     exist "$file" \
       && shred --force --zero --iterations=5 --remove "$file" \
       && echo 💣 destroyed 💥 "$file"
-  done
+  done # for $file
 } # destroy
 
 # - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
