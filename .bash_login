@@ -1547,7 +1547,7 @@ function browse () { clear
     -anonymous -use_mouse -scrollbar -scrollbar_arrow -show_cursor -show_rate -vikeys \
   "$location"
 
-  echo && lynx -show_cfg
+  echo ; lynx -show_cfg
 } #browse
 
 # TODO: Implementation
