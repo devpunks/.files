@@ -301,7 +301,7 @@ function environment () {
   printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
     "$( tty )" "$LINES" "$COLUMNS"
 
-  echo && termux-info
+  echo ; termux-info
   [ "$TMUX" ] && echo && tmux -V
 } # environment
 
