@@ -55,7 +55,7 @@ alias tldr='open https://tldr.inbrowser.app'
 # https://man7.org/linux/man-pages/man1/lscpu.1.html
 alias cpu='clear ;
   echo ; command lscpu ;
-  echo ; lscpu --caches --output-all ;
+  echo ; lscpu --caches --output-all
   echo "\n\nCPU count: ` nproc `\n\n"
   echo ; command lscpu --extended --all ;
 ' # cpu
