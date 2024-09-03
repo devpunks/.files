@@ -1223,6 +1223,11 @@ function play () { clear
   echo && echo ▷ Playing: "$location"
 } # play
 
+function stream () {
+  local -r bytes="${1:-foo}"
+  yes "$bytes"
+} # stream
+
 function open () { clear
   local -r location="$1"
   # apk
