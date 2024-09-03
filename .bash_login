@@ -437,7 +437,7 @@ function inspect () { clear
 function probe () { clear
   local -r location=$( realpath "${1:-.}" )
 
-  printf "\n location 👉 %s \n" "$location"
+  printf '\n location 👉 %s \n' "$location"
 
   # - https://dev.yorhel.nl/ncdu/man
   [ -d "$location" ] && \
