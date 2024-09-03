@@ -1079,7 +1079,7 @@ function rotate () {
 # }}}
 
 # =========================================================================
-# {{{ Log(s)
+# {{{ Archives
 # =========================================================================
 # https://zdnet.com/google-amp/article/how-to-back-up-a-linux-directory-to-a-remote-machine-with-rsync/
 function sync () {
