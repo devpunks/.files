@@ -945,7 +945,7 @@ function run () {
 
     sv -v -w $seconds status "$service"
     sv -v -w $seconds status "${service}/log"
-  done # for
+  done # for $service
 
   services "$@"
 } # run
