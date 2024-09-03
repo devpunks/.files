@@ -1614,17 +1614,6 @@ function decode () {
   printf "$bytes" | basenc --decode $encoding
 } # decode
 
-# - https://en.m.wikipedia.org/wiki/Shred_(Unix)
-# - https://computerhope.com/unix/shred.htm
-# - https://geeksforgeeks.org/shred-command-in-linux-with-examples
-function destroy () {
-  for file in "$@"; do
-    exist "$file" \
-      && shred --force --zero --iterations=5 --remove "$file" \
-      && echo 💣 destroyed 💥 "$file"
-  done
-} # destroy
-
 # - https://manpages.ubuntu.com/manpages/xenial/man1/trash.1.html
 # - (M) trash - https://github.com/termux/termux-packages/issues/5488
 # - https://askubuntu.com/q/468721/how-can-i-empty-the-trash-using-terminal
