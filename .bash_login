@@ -274,7 +274,7 @@ function environment () {
   compgen -v | sort | column --fillrows
   echo ; echo '👇Exports👇'
   compgen -e | sort | column --fillrows
-  echo && echo '👇Built-ins👇'
+  echo ; echo '👇Built-ins👇'
   # https://gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-enable
   enable -p | column --fillrows
   echo && echo 👇Functions👇
