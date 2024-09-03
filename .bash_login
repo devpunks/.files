@@ -1366,7 +1366,7 @@ function unpack () { clear
     # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
     *.zip ) {
       unzip -v
-      echo && echo
+      echo ; echo
       UNZIP='-t --u' unzip "${archive}" \
         && zipinfo "${archive}" && unzip -d "${destination}" "${archive}"
     } ;; # *.zip
