@@ -54,9 +54,9 @@ alias tldr='open https://tldr.inbrowser.app'
 
 # https://man7.org/linux/man-pages/man1/lscpu.1.html
 alias cpu='clear ;
-  echo && command lscpu ;
-  echo && command lscpu --extende --all ;
-  echo && lscpu --caches --output-all ;
+  echo ; command lscpu ;
+  echo ; command lscpu --extende --all ;
+  echo ; lscpu --caches --output-all ;
 ' # cpu
 
 alias etc='tree "$PREFIX/etc"'
