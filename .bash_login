@@ -1556,7 +1556,7 @@ function browse () { clear
 alias graph='command dot -Tps -o'
 alias chart='echo TODO: Implement chart'
 # https://gnu.org/software/barcode
-alias barcode='command barcode --help && command barcode'
+alias barcode='command barcode --help ; command barcode'
 alias matrix='command cmatrix -b -a -s -C magenta' # ScreenSaver
 
 function draw () { : draw; }
