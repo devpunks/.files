@@ -1172,11 +1172,11 @@ alias pulse='{
 # TMUX --------------------------------------------------------------------
 alias tmux.config='{
   tmux info
-  echo && echo Server Options:
+  echo ; echo Server Options:
   tmux show-options -s
-  echo && echo Global Options:
+  echo ; echo Global Options:
   tmux show-options -g
-  echo && echo Global Window Options:
+  echo ; echo Global Window Options:
   tmux show-window-options -g
 }' # tmux.config
 
