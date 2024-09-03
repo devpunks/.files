@@ -182,6 +182,11 @@ function clock () {
   now # time
 } # clock
 
+monitor () {
+  htop && ps
+  printf "\n %s \n" "$( uptime )"
+} # monitor
+
 # ----------------------
 # Ruby
 # ----------------------
