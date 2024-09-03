@@ -564,7 +564,7 @@ function unlock () {
 } # unlock
 
 # - https://wiki.archlinux.org/title/Limits.conf
-# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command/
+# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command
 function unlimit () { clear
   ulimit --help
 
