@@ -209,7 +209,7 @@ function hold () {
 function recycle () { clear
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
-  delete "${TMPDIR}/**/*"
+  delete "${TMPDIR}/**"
 
   trash "$@"
 } # recycle
