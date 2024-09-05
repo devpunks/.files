@@ -209,6 +209,7 @@ function hold () {
 function recycle () { clear
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
+  # TODO: Fix error when empty temp directory.
   delete "${TMPDIR}/**"
 
   trash "$@"
