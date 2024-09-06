@@ -68,7 +68,7 @@ alias shell='chsh' # https://wiki.termux.com/wiki/Shells
 alias view='command view -n -M -R'
 # for escape characters - https://tldp.org/HOWTO/Bash-Prompt-HOWTO/c583.html
 alias echo='command echo -e'
-alias lines='command nl --number-separator=".＞"'
+alias lines='command nl --number-separator=".＞ "'
 # https://linux.die.net/man/1/pv
 # https://reddit.com/r/programming/comments/7u8f2/a_unix_utility_you_should_know_about_pipe_viewer
 alias progress='pv --progress --eta --timer'
