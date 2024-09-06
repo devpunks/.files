@@ -36,7 +36,6 @@ termux-info
 # }}}
 
 # {{{ Shell ---------------------------------------------------------------
-
 pkg install busybox
 
 pkg install bc
