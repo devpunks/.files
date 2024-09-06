@@ -193,7 +193,6 @@ pkg install logrotate
 # }}}
 
 # {{{ Submodules ----------------------------------------------------------
-
 echo Cloning home directory...
 # git clone https://github.com/devpunks/.files.git $HOME
 git status
