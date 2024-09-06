@@ -26,7 +26,6 @@ pkg upgrade
 pkg update
 
 # {{{ Termux --------------------------------------------------------------
-
 termux-open "${HOME}/.termux/Termux_Boot_0.7.apk"
 pkg install termux-services
 pkg install termux-auth
