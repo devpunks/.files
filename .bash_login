@@ -833,8 +833,8 @@ alias ip='command ip --color address |
 # Replacement for netstat --route is ip route.
 # Replacement for netstat --groups is ip maddr.
 # Replacement for netstat --interfaces is ip -s link.
-# - https://dev.to/nayetwolf/common-ports-and-protocols-2nb9
-# -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c
+#   - https://dev.to/nayetwolf/common-ports-and-protocols-2nb9
+#   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c
 #alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
 alias ports='netstat --verbose --all --numeric --listening --programs --wide'
 
