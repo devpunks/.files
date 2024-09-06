@@ -480,7 +480,8 @@ function search () { clear
   grep --devices=skip "$term" "$location"
 
   echo ; echo Finding...
-  command find "$location" -type f -iname "*$term*"
+  command find "$location" -type f -iname "*${term}*" \
+    | lines
 
   echo ; echo DONE!
 } # search
