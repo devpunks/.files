@@ -119,7 +119,6 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 # }}}
 
 # {{{ Networking ----------------------------------------------------------
-
 # TODO: deprecate ifconfig and netstat
 #   - https://redhat.com/sysadmin/ifconfig-vs-ip
 #   - https://wiki.linuxfoundation.org/networking/iproute2
