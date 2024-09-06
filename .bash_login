@@ -52,6 +52,12 @@ alias shortcuts='{ clear
 alias ide="command source ${HOME}/ide"
 alias tldr='open https://tldr.inbrowser.app'
 
+# https://linux.die.net/man/1/expect
+# https://stackoverflow.com/q/33304242
+# https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
+alias expect='pkg info expect'
+alias script='man script'
+
 # https://man7.org/linux/man-pages/man1/lscpu.1.html
 alias cpu='clear ;
   echo ; command lscpu
