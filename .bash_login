@@ -971,6 +971,8 @@ alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 # SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
 function proxy () { clear
   # https://tinyproxy.github.io
+  # VULNERABILITIES
+  # - https://talosintelligence.com/vulnerability_reports/TALOS-2023-1889
   tinyproxy -v
   tinyproxy -h
   tinyproxy -d -c "$HOME/tinyproxy.conf"
