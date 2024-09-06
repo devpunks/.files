@@ -63,7 +63,6 @@ pkg install shellcheck # https://shellcheck.net
 # }}}
 
 # {{{ Communications ------------------------------------------------------
-
 pkg install weechat
 
 # MAIL CLIENTS - https://reddit.com/r/commandline/comments/p36vp0
