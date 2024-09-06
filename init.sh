@@ -210,7 +210,6 @@ echo
 # }}}
 
 # {{{ Versioning ----------------------------------------------------------
-
 tmux -V
 git --version
 vim --version
