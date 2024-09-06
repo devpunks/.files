@@ -1192,7 +1192,6 @@ alias tmux.config='{
 #     - https://rfc-editor.org/rfc/rfc5424
 #     - https://datatracker.ietf.org/doc/html/rfc5424
 # ==========================================================================
-
 alias tail='command tail --verbose'
 alias logs.sshd="command logcat -s 'sshd:*'"
 
