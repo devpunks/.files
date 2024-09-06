@@ -145,7 +145,7 @@ alias watch='command watch --no-wrap --interval 30 --differences=permanent --exe
 # https://linux.die.net/man/1/expect
 # https://stackoverflow.com/q/33304242
 # https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
-alias expect='pkg list-all expect'
+alias expect='pkg info expect'
 
 alias which='command type -a'
 alias when='echo TODO: \`when\` implementation'
