@@ -26,6 +26,5 @@ Y8P 888    888 888  "Y8888   88888P'
 ```
 $ ./init.sh
 ```
-
 ## References
   - https://www.blackdown.org/linux-for-iot
