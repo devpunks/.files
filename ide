@@ -37,8 +37,7 @@
 
 DELAY=0.8 # shell load wait time
 NAME='devpunks' # NAME of environment
-SOCKET="${HOME}/${NAME}" # See tmux -L <socket> flag
-SOCK="${SOCKET}.sock" # See tmux -S <sock file> flag
+SOCKET="${HOME}/${NAME}.sock" # See tmux -L <socket> -S <sock file>
 SESSION="${NAME}😈studio" # used throughout (i.e. VIM session name)
 
 echo COLUMNS $COLUMNS
