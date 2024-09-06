@@ -148,11 +148,6 @@ alias wait='command wait' # https://baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux
 alias watch='command watch --no-wrap --interval 30 --differences=permanent --exec'
 
-# https://linux.die.net/man/1/expect
-# https://stackoverflow.com/q/33304242
-# https://digitalocean.com/community/tutorials/expect-script-ssh-example-tutorial
-alias expect='pkg info expect'
-
 alias which='command type -a'
 alias when='echo TODO: \`when\` implementation'
 alias why='echo TODO: \`why\` implementation'
