@@ -972,6 +972,7 @@ alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
 function proxy () { clear
   # https://tinyproxy.github.io
   # VULNERABILITIES
+  # - https://github.com/tinyproxy/tinyproxy/issues/533
   # - https://talosintelligence.com/vulnerability_reports/TALOS-2023-1889
   tinyproxy -v
   tinyproxy -h
