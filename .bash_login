@@ -668,7 +668,7 @@ function boot () { clear
   cat "${profile}/start-services.sh"
 } # boot
 
-# -https://github.com/termux/termux-packages/pull/3460/files
+# - https://github.com/termux/termux-packages/pull/3460/files
 function services () {
   local -r service="${1}"
   local -r filter="runsv $service"
