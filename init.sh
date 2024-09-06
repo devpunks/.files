@@ -108,7 +108,6 @@ curl --location=https://github.com/snuggs.keys >> ~/.ssh/authorized_keys
 # }}}
 
 # {{{ Multimedia ----------------------------------------------------------
-
 pkg install sox
 pkg install vlc
 pkg install ffmpeg
