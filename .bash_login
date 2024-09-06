@@ -34,7 +34,6 @@
 # =========================================================================
 # {{{ Bindings # see ~/.inputrc
 # =========================================================================
-
 # https://computerhope.com/unix/bash/bind.htm
 alias shortcuts='{ clear
   printf "\n Bindings:\n"
