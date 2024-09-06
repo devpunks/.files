@@ -172,7 +172,6 @@ pkg install php-apache-pgsql # PostgreSQL modules for PHP/Apache 2.0
 # }}}
 
 # {{{ Database ------------------------------------------------------------
-
 pkg install sqlite
 pkg install postgis
 pkg install postgresql
