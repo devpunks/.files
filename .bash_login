@@ -72,9 +72,6 @@ alias cpu='clear ;
   echo ; command lscpu --extended --all
 ' # cpu
 
-alias etc='tree "$PREFIX/etc"'
-alias share='tree "$PREFIX/share"'
-
 alias bell='echo "\a"'
 alias shell='chsh' # https://wiki.termux.com/wiki/Shells
 alias view='command view -n -M -R'
@@ -378,7 +375,7 @@ alias g#='
   # gl --since="1 day ago"
   #   printf "\n Total:%d" $( gl --since=1.day | wc -l )
   GIT_PAGER=cat \
-    gl --since="Today 04:00"; echo
+    gl --since="Yesterday 04:00"; echo
     printf "\n Total:%d\n\n" $( gl --since="Today 04:00" | wc -l )
 ' # g#
 
