@@ -274,6 +274,7 @@ function reload () { clear
   environment
 } # reload
 
+  # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
 function environment () {
   echo ; echo '👇Kernel👇'
   command sysctl --all
