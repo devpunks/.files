@@ -317,6 +317,10 @@ function environment () {
   [ "$TMUX" ] && echo && tmux -V
 } # environment
 
+function functions () {
+  echo
+}
+
 # SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
 # TIC - https://ibm.com/docs/ro/aix/7.1?topic=t-tic-command
 # TOE - https://invisible-island.net/ncurses/man/toe.1m.html
