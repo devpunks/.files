@@ -310,7 +310,8 @@ function environment () {
 #functions
 
   echo ; echo '👇Declarations👇'
-  declare -p | command cut --delimiter=' ' --fields 3 | sort | column --fillrows
+  declare -p | \
+    command cut --delimiter=' ' --fields 3 | sort | column --fillrows
 
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
