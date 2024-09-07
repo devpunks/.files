@@ -102,6 +102,7 @@ function snowflake () {
   local -r epoch=1288834974657
   local -r tick=$(($(($((id>>22)) + $epoch)) / 1000))
 
+  # TODO: FIx output
   command date -d @$tick
 } # snowflake
 
