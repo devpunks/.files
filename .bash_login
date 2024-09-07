@@ -96,7 +96,7 @@ alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 # https://en.m.wikipedia.org/wiki/Snowflake_ID
-# https://www.reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
+# https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
 alias snowflake=''
 
 alias ..='command cd ..'
