@@ -105,7 +105,6 @@ function snowflake () {
   # TODO: FIx output
   command date -d @$tick
 } # snowflake
-
 alias ..='command cd ..'
 alias pop='command popd'
 alias push='command pushd'
