@@ -317,7 +317,7 @@ function environment () {
 
 function variables () {
   help variables
-}
+} # variables
 function functions () {
   set # shows all function definitions
 
