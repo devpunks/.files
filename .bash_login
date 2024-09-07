@@ -319,7 +319,7 @@ function environment () {
 
 function functions () {
   set # shows all function definitions
-}
+} # functions
 
 # SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
 # TIC - https://ibm.com/docs/ro/aix/7.1?topic=t-tic-command
