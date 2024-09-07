@@ -819,6 +819,8 @@ function trip () {
 alias header='curl --head'
 alias curl='command curl --verbose'
 
+alias ping='command ping -c 5'
+
 alias whois='command whois -H'
 
 # https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
