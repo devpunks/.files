@@ -316,6 +316,8 @@ function environment () {
 } # environment
 
 function functions () {
+  echo ; echo 👇Functions👇
+  compgen -A function | sort | column --fillrows
   set # shows all function definitions
 } # functions
 
