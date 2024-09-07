@@ -100,6 +100,7 @@ alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 alias snowflake=''
 function snowflake () {
   local -r id=$1
+  local -r epoch=1288834974657
 } # snowflake
 
 alias ..='command cd ..'
