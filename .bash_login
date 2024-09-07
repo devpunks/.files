@@ -823,7 +823,6 @@ alias cookies='header --cookie-jar ./.cookies'
 
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
-alias whois='command whois -H'
 
 # https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
 alias telnet='telnet --login'
