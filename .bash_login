@@ -815,6 +815,7 @@ function trip () {
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # =========================================================================
 alias ping='command ping -c 5'
+alias whois='command whois -H'
 
 alias header='curl --head'
 alias curl='command curl --verbose'
