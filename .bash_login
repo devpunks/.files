@@ -819,7 +819,7 @@ alias header='curl --head'
 alias curl='command curl --verbose'
 alias cookies='header --cookie-jar ./.cookies'
 
-alias ping='command ping -c 5'
+alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
 alias whois='command whois -H'
 
