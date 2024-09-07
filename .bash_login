@@ -99,7 +99,7 @@ alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 # https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
 alias snowflake=''
 function snowflake () {
-
+  local -r id=$1
 } # snowflake
 
 alias ..='command cd ..'
