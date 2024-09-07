@@ -826,16 +826,16 @@ alias whois='command whois -H'
 # https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
 alias telnet='telnet --login'
 
-# https://man7.org/linux/man-pages/man8/ss.8.html
-# https://man7.org/linux/man-pages/man2/socket.2.html
-alias socket='man ss ; man socat'
+# https://en.m.wikipedia.org/wiki/Tc_(Linux)
+# https://man7.org/linux/man-pages/man8/tc.8.html
+alias traffic='man tc'
 
 # https://man7.org/linux/man-pages/man2/connect.2.html
 alias connect='TODO: implementation'
 
-# https://en.m.wikipedia.org/wiki/Tc_(Linux)
-# https://man7.org/linux/man-pages/man8/tc.8.html
-alias traffic='man tc'
+# https://man7.org/linux/man-pages/man8/ss.8.html
+# https://man7.org/linux/man-pages/man2/socket.2.html
+alias socket='man ss ; man socat'
 
 # https://redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='command ip --color address |
