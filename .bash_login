@@ -819,6 +819,8 @@ function trip () {
 #     - https://redhat.com/sysadmin/use-cases-nmap
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # =========================================================================
+alias header='curl --head'
+
 alias whois='command whois -H'
 
 # https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
