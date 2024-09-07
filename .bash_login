@@ -318,7 +318,7 @@ function environment () {
 } # environment
 
 function functions () {
-  echo
+  set # shows all function definitions
 }
 
 # SIGWINCH - https://rkoucha.fr/tech_corner/sigwinch.html
