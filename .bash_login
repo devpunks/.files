@@ -98,7 +98,7 @@ alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 # https://en.m.wikipedia.org/wiki/Snowflake_ID
 # https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
 function snowflake () {
-  local -r id=$1
+  local -r id=${1:12345}
   local -r epoch=1288834974657
   local -r tick=$(($(($((id>>22)) + $epoch)) / 1000))
 
