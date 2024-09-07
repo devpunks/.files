@@ -299,6 +299,10 @@ function environment () {
   # TODO: refactor set (fix POSIX bug)
   #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
     # ( set +o posix; set; set +o posix ) | sort | column --fillrows
+
+  # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
+  echo ; echo '👇Commands👇'
+  compgen -c | sort | column --fillrows
   set
   echo ; echo '👇Declarations👇'
   declare -p | command cut --delimiter=' ' --fields 3 | sort | column --fillrows
