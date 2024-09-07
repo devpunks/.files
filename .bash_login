@@ -286,8 +286,6 @@ function environment () {
   echo ; echo '👇Built-ins👇'
   # https://gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-enable
   enable -p | column --fillrows
-  echo ; echo 👇Functions👇
-  compgen -A function | sort | column --fillrows
   echo ; echo '👇Aliases👇'
   compgen -a | sort | column --fillrows # alias -p
   echo ; echo '👇Reserved Words👇'
