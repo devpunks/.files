@@ -97,7 +97,6 @@ alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 # https://en.m.wikipedia.org/wiki/Snowflake_ID
 # https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
-alias snowflake=''
 function snowflake () {
   local -r id=$1
   local -r epoch=1288834974657
