@@ -298,7 +298,7 @@ function environment () {
   echo ; echo '👇Shell Vars👇'
   # TODO: refactor set (fix POSIX bug)
   #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
-    # ( set +o posix; set; set +o posix ) | sort | column --fillrows
+  # ( set +o posix; set; set +o posix ) | sort | column --fillrows
 
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
   echo ; echo '👇Commands👇'
