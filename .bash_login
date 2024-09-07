@@ -813,6 +813,8 @@ function trip () {
 #     - https://redhat.com/sysadmin/use-cases-nmap
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # =========================================================================
+alias ping='command ping -c 5'
+
 alias header='curl --head'
 alias curl='command curl --verbose'
 alias cookies='header --cookie-jar ./.cookies'
