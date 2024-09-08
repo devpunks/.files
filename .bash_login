@@ -370,13 +370,6 @@ function variables () {
 
 } # variables
 
-function functions () {
-  set # shows all function definitions
-
-  echo ; echo 👇Functions👇
-  compgen -A function | sort | column --fillrows
-} # functions
-
 # ----------------------
 # Ruby
 # ----------------------
