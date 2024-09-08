@@ -662,6 +662,7 @@ function restrict () { clear
   about "$location"
 } # restrict
 
+# https://dev.to/vyan/the-ultimate-guide-to-web-authentication-comparing-session-jwt-sso-and-oauth-20-in-2024-2og0
 function authenticate () { clear
   # https://stackoverflow.com/q/25969196
   local -r certificate='--cert' # (key|cert)
