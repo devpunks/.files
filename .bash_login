@@ -332,6 +332,7 @@ function environment () {
 
 
   echo ; termux-info
+
   [ "$TMUX" ] && echo && tmux -V
 
   printf "\nPATH: %s\n" "$PATH"
