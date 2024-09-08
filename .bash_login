@@ -1557,6 +1557,7 @@ ffmpeg -hide_banner -hwaccels
 # ffmpeg -hide_banner -muxers
 # ffmpeg -hide_banner -demuxers
 # ffmpeg -hide_banner -encoders # encoder=
+# ffmpeg -hide_banner -decoders # decoder=
 
 # ffmpeg -hide_banner -formats
 # ffmpeg -hide_banner -sample_fmts
