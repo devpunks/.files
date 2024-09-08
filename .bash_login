@@ -66,10 +66,8 @@ alias share='tree "$PREFIX/share"'
 
 # https://man7.org/linux/man-pages/man1/lscpu.1.html
 alias cpu='
-  echo "\n\n 👇Kernel👇"
-  command sysctl --all
-
-  echo ; command lscpu
+  echo "\n\n 👇Kernel👇 \n" ; command sysctl --all | sort
+  echo ; echo ; command lscpu
   echo ; lscpu --caches --output-all
   echo "\n\n CPU count: ` nproc ` \n\n"
   echo ; command lscpu --extended --all
