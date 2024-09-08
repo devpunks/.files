@@ -78,7 +78,7 @@ alias kernel='
 
   command sysctl --version
   command sysctl --system
-  command sysctl --all
+  echo "\n\n 👇Kernel👇 \n" ; command sysctl --all | sort
 ' # kernel
 
 alias bell='echo "\a"'
