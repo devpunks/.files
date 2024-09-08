@@ -681,7 +681,8 @@ function authenticate () { clear
 function boot () { clear
   local -r profile="${PREFIX}/etc/profile.d"
 
-  echo CPU...
+  echo CPU... ;  cpu
+
   echo Booting Kernel...
   man sysctl
   man sysctl.conf
