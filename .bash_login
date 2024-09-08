@@ -689,13 +689,7 @@ function boot () { clear
 
   echo CPU... ;  cpu
 
-  echo Booting Kernel...
-  man sysctl
-  man sysctl.conf
-
-  command sysctl --version
-  command sysctl --system
-  command sysctl --all
+  echo Booting Kernel... ; kernel
 
   echo Loading Profile...
   tree "$profile"
