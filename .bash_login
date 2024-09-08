@@ -327,21 +327,6 @@ function environment () {
   echo ; echo '👇Aliases👇'
   compgen -a | sort | column --fillrows # alias -p
 
-  echo ; echo '👇Shell Variables👇'
-  compgen -v | sort | column --fillrows
-
-  echo ; echo '👇Env Vars👇'
-  # https://unix.stackexchange.com/q/123473
-  printenv | sort | column --fillrows # printenv | export -p
-
-  echo ; echo '👇Exports👇'
-  compgen -e | sort | column --fillrows
-
-  echo ; echo '👇Shell Vars👇'
-  # TODO: refactor set (fix POSIX bug)
-  #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
-  # ( set +o posix; set; set +o posix ) | sort | column --fillrows
-
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
