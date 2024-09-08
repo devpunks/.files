@@ -1551,7 +1551,7 @@ function convert () { clear
 
 # ffmpeg -hide_banner -colors | column --fillrows
 # ffmpeg -hide_banner -filters # filter=
-# ffmpeg -hide_banner -hwaccels
+ffmpeg -hide_banner -hwaccels
 
 # ffmpeg -hide_banner -codecs
 # ffmpeg -hide_banner -muxers
