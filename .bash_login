@@ -316,11 +316,6 @@ function term () { clear
 function environment () {
   kernel
   cpu
-  echo ; echo '👇Shell Variables👇'
-  compgen -v | sort | column --fillrows
-
-  echo ; echo '👇Exports👇'
-  compgen -e | sort | column --fillrows
 
   echo ; echo '👇Reserved Words👇'
   compgen -k | sort | column --fillrows
