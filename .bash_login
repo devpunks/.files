@@ -338,6 +338,8 @@ function environment () {
   printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
   printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
     "$( tty )" "$LINES" "$COLUMNS"
+
+  printf "\nMULTIPLEXER: %s\n" "$( [ "$TMUX" ] && tmux -V )"
 } # environment
 
 function functions () {
