@@ -71,7 +71,7 @@ alias cpu='
 
   echo ; command lscpu
   echo ; lscpu --caches --output-all
-  echo "\n\nCPU count: ` nproc `\n\n"
+  echo "\n\n CPU count: ` nproc `\n\n"
   echo ; command lscpu --extended --all
 ' # cpu
 
