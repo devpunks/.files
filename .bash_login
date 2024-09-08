@@ -314,7 +314,7 @@ function term () { clear
 } # term
 
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
-function environment () {
+function environment () { kernel ; cpu
   echo ; echo '👇Shell Variables👇'
   compgen -v | sort | column --fillrows
 
