@@ -334,6 +334,9 @@ function environment () {
   # https://unix.stackexchange.com/q/123473
   env | sort | column --fillrows # printenv | export -p
 
+  echo ; echo '👇Exports👇'
+  compgen -e | sort | column --fillrows
+
   echo ; echo '👇Shell Vars👇'
   # TODO: refactor set (fix POSIX bug)
   #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
