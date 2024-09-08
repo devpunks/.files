@@ -69,7 +69,7 @@ alias cpu='
   echo "\n\n 👇Kernel👇 \n" ; command sysctl --all | sort
   echo ; echo ; command lscpu
   echo ; lscpu --caches --output-all
-  echo "\n\n CPU count: ` nproc ` \n\n"
+  echo "\n\n CPU count: $( nproc ) \n\n"
   echo ; command lscpu --extended --all
 ' # cpu
 
