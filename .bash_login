@@ -344,6 +344,23 @@ function environment () {
 
 function variables () {
   help variables
+
+  echo ; echo '👇Env Variables👇'
+  # https://unix.stackexchange.com/q/123473
+  printenv | sort | column --fillrows # printenv | export -p
+
+  echo ; echo '👇Exports👇'
+  compgen -e | sort | column --fillrows
+
+  echo ; echo '👇Declarations👇'
+  declare -p | \
+    command cut --delimiter=' ' --fields 3 | sort | column --fillrows
+
+  echo ; echo '👇Shell Varsiables👇'
+  # TODO: refactor set (fix POSIX bug)
+  #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
+  # ( set +o posix; set; set +o posix ) | sort | column --fillrows
+
 } # variables
 
 function functions () {
