@@ -332,7 +332,7 @@ function environment () {
 
 
   [ "$TERMUX_VERSION" ] \
-    && printf "\n\nTERMUX: %s\n" $( termux-info )
+    && printf "\n\nTERMUX: %s\n" "$( termux-info )"
 
   printf "\nPATH: %s\n" "$PATH"
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
