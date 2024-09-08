@@ -64,10 +64,6 @@ alias script='man command script ; clear ; command script'
 alias etc='tree "$PREFIX/etc"'
 alias share='tree "$PREFIX/share"'
 
-# https://man7.org/linux/man-pages/man8/sysctl.8.html
-alias kernel='
-  echo "\n\n 👇Kernel👇 \n" ; command sysctl --all | sort
-' # kernel
 # https://man7.org/linux/man-pages/man1/lscpu.1.html
 alias cpu='
   echo ; echo ; command lscpu
