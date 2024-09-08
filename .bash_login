@@ -339,7 +339,7 @@ function environment () {
   printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
     "$( tty )" "$LINES" "$COLUMNS"
 
-  printf "\nMULTIPLEXER: %s\n" "$( [ "$TMUX" ] && tmux -V )"
+  [ "$TMUX" ] && printf "\nMULTIPLEXER: %s\n" "$( tmux -V )"
 } # environment
 
 function functions () {
