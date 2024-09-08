@@ -332,7 +332,7 @@ function environment () {
 
   echo ; echo '👇Env Vars👇'
   # https://unix.stackexchange.com/q/123473
-  env | sort | column --fillrows # printenv | export -p
+  printenv | sort | column --fillrows # printenv | export -p
 
   echo ; echo '👇Exports👇'
   compgen -e | sort | column --fillrows
