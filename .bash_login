@@ -330,6 +330,7 @@ function environment () {
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
+  variables # && functions # TODO: Fix output to 5000 LINES
 
   [ "$TERMUX_VERSION" ] \
     && printf "\n\nTERMUX: %s\n" "$( termux-info )"
