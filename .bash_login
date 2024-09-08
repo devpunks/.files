@@ -345,7 +345,7 @@ function environment () {
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
-#functions
+ # functions
 
   echo ; echo '👇Declarations👇'
   declare -p | \
