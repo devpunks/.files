@@ -331,7 +331,7 @@ function environment () {
   compgen -c | sort | column --fillrows
 
 
-  echo ; termux-info
+  printf "\n\nTERMUX: %s\n" $( termux-info )
 
   printf "\nPATH: %s\n" "$PATH"
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
