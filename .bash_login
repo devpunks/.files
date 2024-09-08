@@ -1560,7 +1560,7 @@ ffmpeg -hide_banner -hwaccels
 # ffmpeg -hide_banner -decoders # decoder=
 
 # ffmpeg -hide_banner -formats
-# ffmpeg -hide_banner -sample_fmts
+ffmpeg -hide_banner -sample_fmts
 
   echo ${#}
   echo ${#files[@]}
