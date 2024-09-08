@@ -1544,8 +1544,6 @@ function compile () { clear
   return $?
 } # compile
 
-# -------------------------------------------------------------------------
-
 # https://en.m.wikipedia.org/wiki/FFmpeg
 function convert () { clear
   local -a files=${@}
