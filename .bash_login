@@ -330,7 +330,6 @@ function environment () {
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
- functions
 
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
