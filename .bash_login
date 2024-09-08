@@ -330,11 +330,7 @@ function environment () {
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
- # functions
-
-  echo ; echo '👇Declarations👇'
-  declare -p | \
-    command cut --delimiter=' ' --fields 3 | sort | column --fillrows
+ functions
 
   printf "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
