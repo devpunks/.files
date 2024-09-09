@@ -404,7 +404,7 @@ alias g#='
   # gl --since="1 day ago"
   #   printf "\n Total:%d" $( gl --since=1.day | wc -l )
   GIT_PAGER=cat \
-    gl --since="Today 04:00"; echo
+    gl --since="Today 00:00"; echo
     printf "\n Total:%d\n\n" $( gl --since="Today 04:00" | wc -l )
 ' # g#
 
@@ -1561,6 +1561,7 @@ ffmpeg -hide_banner -hwaccels
 
 # ffmpeg -hide_banner -formats
 ffmpeg -hide_banner -sample_fmts
+
   echo ${#files[@]}
   for file in "${files[@]}"; do
     echo Input: "$file"
