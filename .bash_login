@@ -1561,7 +1561,6 @@ ffmpeg -hide_banner -hwaccels
 
 # ffmpeg -hide_banner -formats
 ffmpeg -hide_banner -sample_fmts
-
   echo ${#files[@]}
   for file in "${files[@]}"; do
     echo Input: "$file"
