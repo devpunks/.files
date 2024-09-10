@@ -315,7 +315,7 @@ function term () { clear
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
 function environment () {
   echo ; echo '\n👇Kernel👇' && kernel
-  echo ; echo '\n👇CPU👇' && cpu
+  echo '\n👇CPU👇' && cpu
 
   echo ; echo '\n👇Reserved Words👇'
   compgen -k | sort | column --fillrows
