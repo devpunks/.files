@@ -327,7 +327,7 @@ function environment () {
   echo '\n👇Aliases👇'
   compgen -a | sort | column --fillrows # alias -p
 
-  echo ; echo '\n👇Commands👇'
+  echo '\n👇Commands👇'
   compgen -c | sort | column --fillrows
 
   echo ; echo '\n👇BusyBox👇'
