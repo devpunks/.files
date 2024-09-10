@@ -330,6 +330,8 @@ function environment () {
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
+  type busybox && busybox --list | column --fillrows
+
   variables && functions # TODO: Fix output to 5000 LINES
 
   [ "$TERMUX_VERSION" ] \
