@@ -340,7 +340,7 @@ function environment () {
 
   echo "\nPATH: %s\n" "$PATH"
   echo "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
-  printf "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
+  echo "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
   printf "\nTTY: %s\n Lines: %s x Columns: %s\n" \
     "$( tty )" "$LINES" "$COLUMNS"
 
