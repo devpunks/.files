@@ -363,7 +363,7 @@ function variables () {
   # https://unix.stackexchange.com/q/123473
   printenv | sort | column --fillrows # printenv | export -p
 
-  echo ; echo '\n👇Exports👇'
+  echo '\n👇Exports👇'
   compgen -e | sort | column --fillrows
 
   echo ; echo '\n👇Declarations👇'
