@@ -340,7 +340,7 @@ function environment () {
 
   echo "\nPATH: $PATH\n"
   echo "\n\$BASH: $BASH\n Options: $BASHOPTS\n"
-  echo "\n\$SHELL: $SHELL\n Options: $SHELLOPTS\n" "$SHELL" "$SHELLOPTS"
+  echo "\n\$SHELL: $SHELL\n Options: $SHELLOPTS\n"
   echo "\nTTY: $( tty )\n Lines: $LINES x Columns: $COLUMNS\n"
 
   [ "$TMUX" ] \
