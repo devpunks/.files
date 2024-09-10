@@ -320,7 +320,7 @@ function environment () {
   echo ; echo '\n👇Reserved Words👇'
   compgen -k | sort | column --fillrows
 
-  echo ; echo '👇Built-ins👇'
+  echo ; echo '\n👇Built-ins👇'
   # https://gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-enable
   enable -p | column --fillrows
 
