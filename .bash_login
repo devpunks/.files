@@ -341,8 +341,8 @@ function environment () {
   echo "\nPATH: %s\n" "$PATH"
   echo "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
   echo "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
-  echo "\nTTY: %s\n Lines: %s x Columns: %s\n" \
-    "$( tty )" "$LINES" "$COLUMNS"
+  echo "\nTTY: $( tty )\n Lines: %s x Columns: %s\n" \
+    "$LINES" "$COLUMNS"
 
   [ "$TMUX" ] \
     && printf "\nMULTIPLEXER: %s\n" "$( tmux -V )"
