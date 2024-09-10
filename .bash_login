@@ -356,6 +356,7 @@ function functions () {
 } # functions
 
 function variables () {
+  echo ; echo '👇Shell Variables👇'
   help variables
 
   echo ; echo '👇Env Variables👇'
