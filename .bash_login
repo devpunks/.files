@@ -339,7 +339,7 @@ function environment () {
     && printf "\n\nTERMUX: %s\n" "$( termux-info )"
 
   echo "\nPATH: $PATH\n"
-  echo "\n\$BASH: %s\n Options: %s\n" "$BASH" "$BASHOPTS"
+  echo "\n\$BASH: $BASH\n Options: %s\n" "$BASH" "$BASHOPTS"
   echo "\n\$SHELL: %s\n Options: %s\n" "$SHELL" "$SHELLOPTS"
   echo "\nTTY: $( tty )\n Lines: $LINES x Columns: $COLUMNS\n"
 
