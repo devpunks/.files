@@ -366,7 +366,7 @@ function variables () {
   echo '\n👇Exports👇'
   compgen -e | sort | column --fillrows
 
-  echo ; echo '\n👇Declarations👇'
+  echo '\n👇Declarations👇'
   declare -p | \
     command cut --delimiter=' ' --fields 3 | sort | column --fillrows
 
