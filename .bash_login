@@ -330,6 +330,7 @@ function environment () {
   echo ; echo '👇Commands👇'
   compgen -c | sort | column --fillrows
 
+  echo ; echo '👇BusyBox👇'
   type busybox && busybox --list | column --fillrows
 
   variables && functions # TODO: Fix output to 5000 LINES
