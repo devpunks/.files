@@ -317,7 +317,7 @@ function environment () {
   echo ; echo '\n👇Kernel👇' && kernel
   echo '\n👇CPU👇' && cpu
 
-  echo ; echo '\n👇Reserved Words👇'
+  echo '\n👇Reserved Words👇'
   compgen -k | sort | column --fillrows
 
   echo ; echo '\n👇Built-ins👇'
