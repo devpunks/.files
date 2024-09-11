@@ -337,7 +337,7 @@ function environment () {
 
   [ "$TERMUX_VERSION" ] \
     && echo '\n Gathering Termux Information. Please Wait...' \
-    && echo "\n\nTERMUX: $( termux-info )"
+    && echo "\nTERMUX: $( termux-info )"
 
   echo "\nPATH: $PATH\n"
   echo "\n\$BASH: $BASH\n Options: $BASHOPTS"
