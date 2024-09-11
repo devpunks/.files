@@ -336,7 +336,7 @@ function environment () {
   variables && functions # TODO: Fix output to 5000 LINES
 
   [ "$TERMUX_VERSION" ] \
-    && echo '\n Gathering Termux Information. Please Wait...'
+    && echo '\n Gathering Termux Information. Please Wait...' \
     && echo "\n\nTERMUX: $( termux-info )"
 
   echo "\nPATH: $PATH\n"
