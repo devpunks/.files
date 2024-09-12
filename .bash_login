@@ -317,7 +317,7 @@ function environment () {
   printf '\n👇Kernel👇 \n%s\n' "$( kernel )"
   printf '\n👇CPU👇 \n%s\n' "$( cpu )"
 
-  prinf '\n👇Reserved Words👇\n%s\n' \
+  printf '\n👇Reserved Words👇\n%s\n' \
     "$( compgen -k | sort | column --fillrows )"
 
   return
