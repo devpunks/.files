@@ -320,8 +320,7 @@ function environment () {
   prinf '\n👇Reserved Words👇\n%s\n' \
     "$( compgen -k | sort | column --fillrows )"
 
-  echo '\n👇Reserved Words👇'
-  compgen -k | sort | column --fillrows
+  return
 
   echo '\n👇Built-ins👇'
   # https://gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-enable
