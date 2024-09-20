@@ -856,6 +856,7 @@ alias whois='command whois -H'
 
 # https://developer.technexion.com/docs/using-uart-from-a-linux-shell
 alias uart='echo TODO: implementation'
+# https://github.com/delletenebre/SerialManager2
 alias serial='echo TODO: Implementation'
 
 alias header='curl --head'
