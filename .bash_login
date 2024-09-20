@@ -595,6 +595,9 @@ function encrypt () {
 alias nms='command nms -a -f magenta'
 function decrypt () {
   man gpg
+
+  # https://github.com/bartobri/no-more-secrets?tab=readme-ov-file#usage
+  man gpg | nms -a -f magenta
 } # decrypt
 
 function lock () {
