@@ -213,7 +213,7 @@ function devices () { clear
   ( exist "$location" && df -a -h "$location" && df -a -i "$location" ) \
     || ( df -a -h && df -a -i )
 
-  printf "\n\n USB DEVICES: \n%s" "$( termux-usb -h )"
+  printf "\n\n USB DEVICES: \n%s\n\n" "$( termux-usb -h )"
 } # devices
 
 # https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
