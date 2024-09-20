@@ -56,6 +56,7 @@ pkg install shellcheck # https://shellcheck.net
 
 pkg install figlet
 pkg install barcode
+pkg install cmatrix
 pkg install ncurses
 pkg install busybox # http://busybox.net/downloads
 
