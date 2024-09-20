@@ -295,7 +295,7 @@ function term () { clear
     "$(stty size | tr ' ' 'x')"
   echo ; [ -n "$TMUX" ] && echo "TMUX INFO:" && tmux info
   echo ; echo "TERM=$TERM $( tput -V )" && toe
-  echo ; echo "stty: $(stty -g)" && stty -a
+  echo ; echo "stty: $( stty --save )" && stty -a
 
   # https://manpages.ubuntu.com/manpages/bionic/man1/infocmp.1.html
   echo ; echo TERMINFO PATH: ; infocmp -1 -D # terminfo location
