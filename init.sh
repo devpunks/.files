@@ -68,7 +68,7 @@ pkg install no-more-secrets # https://github.com/bartobri/no-more-secrets
 pkg install weechat
 
 # MAIL CLIENTS - https://reddit.com/r/commandline/comments/p36vp0
-#  - https://meli-email.org/
+#  - https://meli-email.org
 #  - https://github.com/neomutt/neomutt
 #  - https://github.com/lukesmithxyz/mutt-wizard
 #  - https://web.archive.org/web/20210126200507/
