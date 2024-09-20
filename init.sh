@@ -200,7 +200,7 @@ git status
 
 # Submodules
 #  - https://stackoverflow.com/q/10666085
-#  - https://github.blog/2016-02-01-working-with-submodules/
+#  - https://github.blog/2016-02-01-working-with-submodules
 echo Cloning submodules...
 git submodule
 git submodule update --init
