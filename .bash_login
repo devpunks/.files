@@ -848,6 +848,9 @@ function trip () {
 #     - https://redhat.com/sysadmin/use-cases-nmap
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # =========================================================================
+alias ping='command ping -c 5'
+alias whois='command whois -H'
+
 # https://developer.technexion.com/docs/using-uart-from-a-linux-shell
 alias uart='echo TODO: implementation'
 alias serial='echo TODO: Implementation'
