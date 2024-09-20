@@ -850,7 +850,6 @@ function trip () {
 # =========================================================================
 alias ping='command ping -c 5'
 alias whois='command whois -H'
-
 # https://developer.technexion.com/docs/using-uart-from-a-linux-shell
 alias uart='echo TODO: implementation'
 alias serial='echo TODO: Implementation'
