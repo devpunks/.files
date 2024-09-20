@@ -58,6 +58,9 @@ pkg install uuid-utils # uuidgen
 pkg install shellcheck # https://shellcheck.net
 # pkg install expect
 
+pkg install busybox # http://busybox.net/downloads
+
+
 # }}}
 
 # {{{ Communications ------------------------------------------------------
