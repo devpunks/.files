@@ -592,7 +592,7 @@ function encrypt () {
   man gpg
 } # encrypt
 
-alias nms='command nms -a -f magenta'
+alias nms='command nms -a -c -f magenta'
 function decrypt () {
   man gpg
 
