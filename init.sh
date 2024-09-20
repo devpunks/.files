@@ -102,7 +102,7 @@ pkg install openssh
 
 echo Cloning Authorized Keys from...
 # TODO: use readline to get username
-# https://blog.prabir.me/posts/allow-github-username-to-ssh-authorized-keys/
+# https://blog.prabir.me/posts/allow-github-username-to-ssh-authorized-keys
 mkdir --verbose -m 700 ~/.ssh
 curl --location=https://github.com/snuggs.keys >> ~/.ssh/authorized_keys
 
