@@ -59,6 +59,7 @@ pkg install barcode
 pkg install cmatrix
 pkg install ncurses
 pkg install busybox # http://busybox.net/downloads
+pkg install no-more-secrets
 
 
 # }}}
