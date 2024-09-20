@@ -93,7 +93,7 @@ pkg install cronie
 # }}}
 
 # {{{ Security ------------------------------------------------------------
-pkg install tsu # https://pypi.org/project/tsu/
+pkg install tsu # https://pypi.org/project/tsu
 
 pkg install whois
 pkg install gnupg
