@@ -612,7 +612,7 @@ function lock () {
   local -r location="$(realpath $1 )"
   local -r lock="$( realpath ${1}.lock )"
 
-  man flock
+  exist $location || return $?
 
   exists $location || return $?
 
