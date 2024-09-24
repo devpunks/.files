@@ -605,6 +605,7 @@ function decrypt () {
 
 # - https://linuxhandbook.com/flock-command
 # - https://howtogeek.com/limit-bash-scripts-to-run-once-at-a-time
+# - https://unix.stackexchange.com/questions/203694/is-flock-exec-safe-in-bash
 function lock () {
   : lock
 } # lock
