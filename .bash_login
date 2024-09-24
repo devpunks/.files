@@ -614,7 +614,7 @@ function lock () {
 
 # - https://stackoverflow.com/q/67351646/what-does-flock-u-actually-do
 function unlock () {
-  : unlock
+  man flock
 } # unlock
 
 # - https://wiki.archlinux.org/title/Limits.conf
