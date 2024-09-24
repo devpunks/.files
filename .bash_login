@@ -624,7 +624,7 @@ function unlock () {
   local -r location="$(realpath $1 )"
   local -r lock="$( realpath "${1}.lock" )"
 
-  exist $location || return $?
+  exist "$location" || return $?
 
   man flock
 
