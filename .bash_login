@@ -630,6 +630,7 @@ function unlock () {
   man flock
 
   echo "🔓 Unlocking $lock"
+
   flock -u $lock
 } # unlock
 
