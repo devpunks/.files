@@ -631,7 +631,7 @@ function unlock () {
 
   echo "🔓 Unlocking $lock"
 
-  flock -u $lock
+  flock -u "$lock"
 } # unlock
 
 # - https://wiki.archlinux.org/title/Limits.conf
