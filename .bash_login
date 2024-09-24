@@ -614,6 +614,8 @@ function lock () {
 
   man flock
 
+  exists $location || return $?
+
   echo "🔐 Locking $location 🔗 ($lock)"
 } # lock
 
