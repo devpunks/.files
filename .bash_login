@@ -630,6 +630,7 @@ function unlock () {
   man flock
 
   echo "🔓 Unlocking $location 🔗 ($lock)"
+  flock -u $lock
 } # unlock
 
 # - https://wiki.archlinux.org/title/Limits.conf
