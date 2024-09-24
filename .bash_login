@@ -611,7 +611,6 @@ function decrypt () {
 function lock () {
   local -r lock="${1}.lock"
 
-  echo 🔐🔓
   man flock
 } # lock
 
