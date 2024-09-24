@@ -622,7 +622,7 @@ function unlock () {
 
   man flock
 
-  echo 🔐🔓
+  echo 🔓
 } # unlock
 
 # - https://wiki.archlinux.org/title/Limits.conf
