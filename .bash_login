@@ -613,7 +613,7 @@ function lock () {
 
   man flock
 
-  echo 🔐🔓
+  echo 🔐
 } # lock
 
 # - https://stackoverflow.com/q/67351646/what-does-flock-u-actually-do
