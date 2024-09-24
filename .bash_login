@@ -603,6 +603,7 @@ function decrypt () {
   man gpg | nms -a -f magenta
 } # decrypt
 
+# - https://www.howtogeek.com/limit-bash-scripts-to-run-once-at-a-time/
 function lock () {
   : lock
 } # lock
