@@ -628,7 +628,7 @@ function unlock () {
 
   man flock
 
-  echo "🔓 Unlocking $location 🔗 ($lock)"
+  echo "🔓 Unlocking $lock"
   flock -u $lock
 } # unlock
 
