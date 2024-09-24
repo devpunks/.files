@@ -617,6 +617,7 @@ function lock () {
   man flock
 
   echo "🔐 Locking $location 🔗 ($lock)"
+  flock $lock $location
 } # lock
 
 # - https://stackoverflow.com/q/67351646/what-does-flock-u-actually-do
