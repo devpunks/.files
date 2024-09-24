@@ -610,6 +610,7 @@ function decrypt () {
 # - https://unix.stackexchange.com/questions/203694/is-flock-exec-safe-in-bash
 function lock () {
   local -r lock="${1}.lock"
+
   man flock
 } # lock
 
