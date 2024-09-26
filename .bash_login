@@ -1591,6 +1591,7 @@ function debug () {
 
   exist "$location" || return $?
 
+  # TODO: gdb --nx $location
   pkg info gdb
 
   echo "🐛 debugging $location"
