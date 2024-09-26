@@ -1592,6 +1592,8 @@ function debug () {
   exist "$location" || return $?
 
   pkg info gdb
+
+  echo debugging $location
 }
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
