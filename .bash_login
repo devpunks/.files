@@ -1594,7 +1594,7 @@ function dump () { clear
   man hexdump
 
   echo "🐛 debugging $location"
-}
+} # dump
 
 function debug () { clear
   local -r location="${1}"
