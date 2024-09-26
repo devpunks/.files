@@ -1587,6 +1587,8 @@ function compile () { clear
 } # compile
 
 function debug () {
+  local -r location="${1}"
+
   pkg info gdb
 }
 
