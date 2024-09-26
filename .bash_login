@@ -1589,6 +1589,8 @@ function compile () { clear
 function debug () {
   local -r location="${1}"
 
+  exist "$location" || return $?
+
   pkg info gdb
 }
 
