@@ -1588,6 +1588,8 @@ function compile () { clear
 
 function dump () {
   local -r source="${1}"
+
+  exist "$source" || return $?
 }
 
 function debug () {
