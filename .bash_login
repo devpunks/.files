@@ -1596,7 +1596,7 @@ function dump () { clear
   echo "🐛 debugging $location"
 }
 
-function debug () {
+function debug () { clear
   local -r location="${1}"
 
   exist "$location" || return $?
