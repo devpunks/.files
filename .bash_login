@@ -1587,7 +1587,7 @@ function compile () { clear
 } # compile
 
 function debug () {
-  pkg info dbg
+  pkg info gdb
 }
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
