@@ -1593,8 +1593,6 @@ function dump () { clear
 
   man hexdump
 
-  hexdump $source
-
   echo "dumping $source"
 } # dump
 
