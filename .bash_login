@@ -1590,6 +1590,10 @@ function dump () {
   local -r source="${1}"
 
   exist "$source" || return $?
+
+  man hexdump
+
+  echo "🐛 debugging $location"
 }
 
 function debug () {
