@@ -1593,7 +1593,7 @@ function debug () {
 
   pkg info gdb
 
-  echo debugging $location
+  echo 🐛 debugging $location
 }
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
