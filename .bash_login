@@ -1586,6 +1586,8 @@ function compile () { clear
   return $?
 } # compile
 
+function dump () { : dump; }
+
 function debug () {
   local -r location="${1}"
 
