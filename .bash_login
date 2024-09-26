@@ -1593,7 +1593,7 @@ function dump () { clear
 
   man hexdump
 
-  echo "🐛 debugging $location"
+  echo "🐛 debugging $source"
 } # dump
 
 function debug () { clear
