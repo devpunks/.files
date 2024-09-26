@@ -1545,6 +1545,7 @@ function extract () {
 function forward () { : forward; }
 function reverse () { : reverse; }
 
+function debug () { : debug; }
 function used () { : used; }
 function clean () { : clean; }
 function reboot () { : reboot; }
