@@ -1595,7 +1595,7 @@ function debug () {
   pkg info gdb
 
   echo "🐛 debugging $location"
-}
+} # debug
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
 function convert () { clear
