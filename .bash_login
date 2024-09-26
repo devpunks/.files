@@ -1586,7 +1586,9 @@ function compile () { clear
   return $?
 } # compile
 
-function debug () { : debug; }
+function debug () {
+  pkg info dbg
+}
 
 # https://en.m.wikipedia.org/wiki/FFmpeg
 function convert () { clear
