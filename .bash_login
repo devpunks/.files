@@ -840,10 +840,6 @@ function stop () {
   #done
 } # stop
 
-# Runit
-# https://en.m.wikipedia.org/wiki/Runit
-# See $HOME/.termux/boot/README on Android
-# https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 function trip () {
   local -r service="${1}"
   local -r services="${*:-nginx}"
