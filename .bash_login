@@ -1551,6 +1551,8 @@ function clean () { : clean; }
 function reboot () { : reboot; }
 function restart () { : restart; }
 function refresh () { : refresh; }
+function forward () { : forward; }
+function reverse () { : reverse; }
 function service () { : service; }
 function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
