@@ -1546,6 +1546,7 @@ function extract () {
 # -------------------------------------------------------------------------
 
 function used () { : used; }
+function count () { : count; }
 function clean () { : clean; }
 function reboot () { : reboot; }
 function restart () { : restart; }
