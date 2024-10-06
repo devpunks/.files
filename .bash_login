@@ -912,6 +912,7 @@ alias ip='command ip --color address |
 ' # alias
 
 # TODO: Find netstat alternative
+# https://plesk.com/blog/various/open-ports-in-linux/
 # - https://man7.org/linux/man-pages/man8/netstat.8.html
 # This program is mostly obsolete.  Replacement for netstat is ss.
 # Replacement for netstat --route is ip route.
