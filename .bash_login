@@ -1544,7 +1544,6 @@ function extract () {
 # =========================================================================
 # TODO: Implementation
 # -------------------------------------------------------------------------
-
 function used () { : used; }
 function count () { : count; }
 function clean () { : clean; }
