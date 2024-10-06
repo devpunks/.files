@@ -860,7 +860,7 @@ function trip () {
   sv -v force-shutdown "$service"
   echo Check
   sv -v check "$service"
-  echo Statuus
+  echo Status
   sv -v status "$service"
 
   services
