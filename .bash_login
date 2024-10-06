@@ -795,7 +795,6 @@ function run () {
   services "$@"
 } # run
 
-# See bin/service-daemon
 function start () { clear
   local -r nice='-10'
   local -r mask='077' # u=rwx,g=r,o=
