@@ -1026,7 +1026,7 @@ function balance () { clear
   nginx -V
   nginx -help
 
-  local -r configuration="${HOME}/nginx.conf"
+  local -r configuration="${HOME}/.nginx/nginx.conf"
 
   exist "$configuration" && cat "$configuration"
   # /usr/local/nginx/conf/*, /etc/nginx/*, or /usr/local/etc/nginx/*
