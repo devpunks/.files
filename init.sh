@@ -121,7 +121,7 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 
 # {{{ Networking ----------------------------------------------------------
 # TODO: deprecate ifconfig and netstat
-#   - https://redhat.com/sysadmin/ifconfig-vs-ip
+# - https://redhat.com/sysadmin/ifconfig-vs-ip
 #   - https://wiki.linuxfoundation.org/networking/iproute2
 #   - https://github.com/termux/termux-packages/issues/12758
 pkg install iproute2 # ip addr instad of ifconfig -a
