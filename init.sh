@@ -78,7 +78,7 @@ pkg install weechat
 pkg install mutt
 pkg install mailutils
 pkg install fetchmail # https://fetchmail.info
-# https://www.tug.org/levels.html
+# https://tug.org/levels.html
 # https://en.m.wikipedia.org/wiki/Texinfo
 # https://gnu.org/software/texinfo/manual/texinfo/texinfo.html
 # https://tex.stackexchange.com/q/49/what-is-the-difference-between-tex-and-latex
