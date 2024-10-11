@@ -1294,7 +1294,7 @@ function tail () { clear
   man multitail
 
   echo "Lines: $lines"
-  echo "TODO: (multi)tail ${files}"
+  echo "TODO: (multi)tail $files"
 
 } # tail
 
