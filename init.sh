@@ -49,7 +49,8 @@ pkg install lynx
 pkg install wget
 pkg install tree
 pkg install which
-pkg install chrony # https://chrony-project.org
+pkg install chrony
+pkg install multitail
 pkg install uuid-utils # uuidgen
 pkg install shellcheck # https://shellcheck.net
 # pkg install expect
