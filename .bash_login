@@ -1285,7 +1285,7 @@ alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 
 function tail () { clear
 : TODO
-}
+} # tail
 function log () { clear
   local -r message="${1}"
   local source # --source IP | --unix SOCK
