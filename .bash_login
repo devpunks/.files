@@ -1283,6 +1283,7 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 # Kernel Ring - https://unix.stackexchange.com/q/198178
 alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 
+# - http://vanheusden.com/multitail/
 # - https://linux.die.net/man/1/multitail
 function tail () { clear
   local lines=${ROWS:-50}
