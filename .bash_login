@@ -1292,6 +1292,9 @@ function tail () { clear
   man tail
 
   man multitail
+
+  echo "TODO: (multi)tail ${files}"
+
 } # tail
 
 function log () { clear
