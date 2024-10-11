@@ -1283,6 +1283,9 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 # Kernel Ring - https://unix.stackexchange.com/q/198178
 alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 
+function tail () { clear
+: TODO
+}
 function log () { clear
   local -r message="${1}"
   local source # --source IP | --unix SOCK
