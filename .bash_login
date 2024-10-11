@@ -1287,7 +1287,7 @@ function tail () { clear
 : TODO
 } # tail
 
-function log () { cleas
+function log () { clear
   local -r message="${1}"
   local source # --source IP | --unix SOCK
 
