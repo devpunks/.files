@@ -1285,6 +1285,7 @@ alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 
 function tail () { clear
   man tail
+  man multitail
 } # tail
 
 function log () { clear
