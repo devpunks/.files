@@ -52,7 +52,7 @@ pkg install which
 pkg install chrony
 pkg install multitail
 pkg install uuid-utils # uuidgen
-pkg install shellcheck # https://shellcheck.net
+pkg install shellcheck
 # pkg install expect
 
 pkg install figlet
