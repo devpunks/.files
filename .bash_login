@@ -1287,6 +1287,7 @@ function tail () { clear
   local lines=${ROWS:-50}
 
   man tail
+
   man multitail
 } # tail
 
