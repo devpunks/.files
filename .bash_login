@@ -1286,6 +1286,7 @@ alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 # - http://vanheusden.com/multitail
 # - https://linux.die.net/man/1/multitail
 function tail () { clear
+  local -a files=${@}
   local lines=${ROWS:-50}
 
   man tail
