@@ -1284,6 +1284,8 @@ alias logs.sshd="command logcat -s 'sshd:*'"
 alias dmesg='man dmesg; command dmesg --human --ctime --color=auto'
 
 function tail () { clear
+  local lines=${ROWS:-50}
+
   man tail
   man multitail
 } # tail
