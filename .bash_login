@@ -128,9 +128,9 @@ alias mkdir='command mkdir --verbose --parents --mode u=rwx,g=rx,o=' # 750
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
 # https://stackoverflow.com/q/4113986
-alias pipe='command mkfifo' # https://en.m.wikipedia.org/wiki/Named_pipe
-alias ln='command ln --verbose --interactive --symbolic'
+alias pipe='command mkfifo' # https://fn.m.wikipedia.org/wiki/Named_pipe
 alias cp='command cp --verbose --interactive --no-clobber --recursive'
+alias ln='command ln --verbose --interactive --symbolic --no-dereference'
 alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slashes'
 alias cut='command cut --only-delimited --delimiter="," --fields'
 alias copy='echo TODO: implement copy command for multiple destination types'
