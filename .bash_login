@@ -35,14 +35,14 @@
 # {{{ Bindings # see ~/.inputrc
 # =========================================================================
 # https://computerhope.com/unix/bash/bind.htm
-alias bindings='{ clear
+alias shortcuts='{ clear
   printf "\n Bindings:\n"
     command bind -p
   printf "\n\n Macros:\n"
     command bind -s
   printf "\n\n Variables:\n"
     command bind -v
-}' # shortcuts
+}' # bindings
 
 # }}}
 
