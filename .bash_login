@@ -35,7 +35,7 @@
 # {{{ Bindings # see ~/.inputrc
 # =========================================================================
 # https://computerhope.com/unix/bash/bind.htm
-alias shortcuts='{ clear
+alias bindings='{ clear
   printf "\n Bindings:\n"
     command bind -p
   printf "\n\n Macros:\n"
