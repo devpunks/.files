@@ -42,7 +42,7 @@ alias bindings='{ clear
     command bind -s
   printf "\n\n Variables:\n"
     command bind -v
-}' # shortcuts
+}' # bindings
 
 # }}}
 
