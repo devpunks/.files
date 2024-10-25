@@ -992,6 +992,7 @@ function host () { clear
   echo ; echo ; command host -v -R 3 "$domain"
   echo ; echo ; command host -R 3 "$domain"
 
+  # https://linux.die.net/man/8/traceroute
   echo ; echo ; traceroute -N 1 -z 0.1 "$domain"
   # https://linux.die.net/man/8/tracepath
   echo ; echo ; tracepath "$domain"
