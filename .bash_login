@@ -997,7 +997,7 @@ function host () { clear
   # https://linux.die.net/man/8/tracepath
   # # https://geeksforgeeks.org/tracepath-command-in-linux-with-examples
   echo ; echo ; tracepath -m 10 "$domain"
-  echo ; echo ; tracepath -n -m 10 "$domain"
+  echo ; echo ; tracepath -n -m 10 "$domain" # with ip
   echo ; ping "$domain"
   echo ; echo
 
