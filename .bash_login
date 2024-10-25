@@ -996,6 +996,8 @@ function host () { clear
   echo ; ping "$domain"
   echo ; echo
 
+  nslookup "$domain"
+
   echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
   printf "\n /etc/hosts: \n %s \n\n" "$( cat "$hosts" )"
 
