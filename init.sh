@@ -134,7 +134,7 @@ pkg install traceroute # https://traceroute.sourceforge.net
 #   - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # pkg install nmap
 pkg install socat
-pkg install dnsutils
+pkg install dnsutils # nslookup
 pkg install netcat-openbsd
 
 pkg install nginx
