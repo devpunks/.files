@@ -592,6 +592,7 @@ alias chmod='command chmod --verbose --preserve-root --recursive'
 
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
+# https://en.m.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
   man gpg
 } # encrypt
