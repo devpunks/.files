@@ -995,7 +995,7 @@ function host () { clear
   # https://linux.die.net/man/8/traceroute
   echo ; echo ; traceroute -N 1 -z 0.1 "$domain"
   # https://linux.die.net/man/8/tracepath
-  echo ; echo ; tracepath "$domain"
+  echo ; echo ; tracepath -m 10 "$domain"
   echo ; ping "$domain"
   echo ; echo
 
