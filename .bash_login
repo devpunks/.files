@@ -996,6 +996,7 @@ function host () { clear
   echo ; ping "$domain"
   echo ; echo
 
+  # https://linux.die.net/man/1/nslookup
   nslookup "$domain"
 
   echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
