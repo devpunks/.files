@@ -997,6 +997,7 @@ function host () { clear
   echo ; echo
 
   # https://linux.die.net/man/1/nslookup
+  # https://phoenixnap.com/kb/nslookup-command
   nslookup "$domain"
 
   echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
