@@ -78,6 +78,7 @@ export PAGER=most
 export VISUAL=$EDITOR
 
 export GIT_EDITOR=$EDITOR
+export GIT_PAGER=$PAGER
 export GIT_CONFIG_NOSYSTEM=true
 
 
