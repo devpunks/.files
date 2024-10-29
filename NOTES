@@ -144,7 +144,6 @@ Android Accessibility
 #   - tmux list-keys -N(ame)
 #   - tmux list-keys -T(able)
 # Shortcut mappings
-#   - <prefix>+q # indexes
 #   - <prefix>+t # time
 
 # VIM ---------------------------------------------------------------------
