@@ -44,6 +44,7 @@ pkg install git
 pkg install tmux
 pkg install entr # http://eradman.com/entrproject
 pkg install wget
+pkg install most
 pkg install lynx
 pkg install tree
 pkg install which
