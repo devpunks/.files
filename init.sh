@@ -43,9 +43,6 @@ pkg install eza
 pkg install git
 pkg install tmux
 pkg install entr # http://eradman.com/entrproject
-pkg install ncdu
-pkg install htop
-pkg install most
 pkg install wget
 pkg install lynx
 pkg install tree
