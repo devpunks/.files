@@ -47,6 +47,8 @@ pkg install wget
 pkg install most
 pkg install lynx
 pkg install tree
+pkg install ncdu
+pkg install htop
 pkg install which
 pkg install chrony
 pkg install multitail
