@@ -46,7 +46,6 @@ pkg install entr
 pkg install ncdu
 pkg install htop
 pkg install most
-pkg install lynx
 pkg install wget
 pkg install tree
 pkg install which
