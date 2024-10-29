@@ -42,6 +42,7 @@ pkg install man
 pkg install eza
 pkg install git
 pkg install tmux
+pkg install entr
 pkg install ncdu
 pkg install htop
 pkg install most
