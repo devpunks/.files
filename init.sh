@@ -47,6 +47,7 @@ pkg install ncdu
 pkg install htop
 pkg install most
 pkg install wget
+pkg install lynx
 pkg install tree
 pkg install which
 pkg install chrony
