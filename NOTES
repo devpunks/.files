@@ -72,6 +72,8 @@ Android Accessibility
 - [CTRL]+D # Bookmark current page
 - [CTRL]+F # Find
 - [CTRL]+H # History
+- [CMD][ALT]+I # DevTools
+- [CMD][ALT]+J # Dev Logs
 - [CTRL]+L # Address bar
 - [CTRL]+N # New tab
 - [CTRL]+P # Print
