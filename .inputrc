@@ -61,6 +61,7 @@ $include /data/data/com.termux/files/usr/etc/inputrc
 
   "RETURN": '\e\n'
 
+  "\C-v": ''
   "\C-a": beginning-of-line # Beginning of line
   "\C-e": end-of-line # End of line
 
