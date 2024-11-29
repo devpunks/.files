@@ -74,6 +74,7 @@ Android Accessibility
 - [CTRL]+H # History
 - [CMD][ALT]+I # DevTools
 - [CMD][ALT]+J # Dev Logs
+- [CTRL][SHIFT]+D # DevTools Layout Switch
 - [CTRL]+L # Address bar
 - [CTRL]+N # New tab
 - [CTRL]+P # Print
