@@ -64,27 +64,54 @@ Android Accessibility
 - C # Toggle Closed Captions
 
 # Chrome ------------------------------------------------------------------
-- [ALT]+E # Open menu
-- [CTRL][SHIFT]+B # Bookmarks
-- [CTRL]+= # Larger size
+# https://github.com/jaredwilli/devtools-cheatsheet?tab=readme-ov-file
+- [ESC] # Console
+- [CTRL][TAB] # Next tab
+- [CTRL][SHIFT][TAB] # Prev tab
+- [CTRL][SPACE] # Completion Menu
+- [CMD]+ , # Search Settings
+- [CMD]+ ? # Toggle Comment
+- [CTRL]+→ # Next Word
+- [ALT]+← # Previous Word
+- [ALT]+= # Larger size
 - [CTRL]+- # Smaller size
 - [CTRL]+0 # Default size
-- [CTRL]+D # Bookmark current page
-- [CTRL]+F # Find
-- [CTRL]+H # History
+- [CTRL]+A # BOL
+- [CTRL]+B # Back one character
+- [CTRL][SHIFT]+B # Bookmarks
+- [CTRL][SHIFT]+C # Switch to Elements.
+- [CMD]+ D # Bookmark current page
+- [CTRL]+D # Delete character after
+- [CTRL][SHIFT]+D # DevTools Layout Switch
+- [CMD][SHFT]+D # swap devtools layout
+- [ALT]+E # Open menu
+- [CTRL]+E # EOL
+- [CMD]+ F # Find
+- [CTRL]+F # Forward one character
+- [CMD][SHIFT]+F # Fullscreen
+- [CTRL]+G # GOTO Line
+- H - # Hide element
+- [CMD]+ H # History
+- [CTRL]+H # Delete character before
+- [CMD][SHIFT]+H # Breakpoints Pane
 - [CMD][ALT]+I # DevTools
 - [CMD][ALT]+J # Dev Logs
-- [CTRL][SHIFT]+D # DevTools Layout Switch
-- [CTRL]+L # Address bar
+- [CTRL]+K # Delete to EOL
+- [CMD]+ L # Address bar
+- [CTRL]+M # Matching Bracket
+- [CMD][SHIFT]+M # Mobile Responsive
+- [CMD]+ N # Next Line
 - [CTRL]+N # New tab
+- [CTRL][SHIFT]+N # New incognito tab
+- [CTRL]+O # Following to new line
+- [CMD]+ P # Previous Line
 - [CTRL]+P # Print
 - [CTRL]+R # Reload
 - [CTRL][SHIFT]+R # Reload (with cache busting)
-- [CTRL]+W # Close current tab
-- [CTRL][SHIFT]+N # New incognito tab
+- [CTRL]+T # Swap Character Right
 - [CTRL][SHIFT]+T # Reopen last closed tab
-- [CTRL][TAB] # Next tab
-- [CTRL][SHIFT][TAB] # Prev tab
+- [CTRL]+V # Page Down
+- [CMD]+ W # Close current tab
 
 # DEX ---------------------------------------------------------------------
 - <OS> + [UP]
