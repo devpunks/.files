@@ -1580,6 +1580,7 @@ function reverse () { : reverse; }
 function service () { : service; }
 function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
+function aggregate () { : aggregate; }
 function bandwidth () { : bandwidth; }
 # -------------------------------------------------------------------------
 
