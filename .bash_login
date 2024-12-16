@@ -182,6 +182,7 @@ function where () {
 
 # https://en.m.wikipedia.org/wiki/ISO_8601
 # https://redhat.com/en/blog/formatting-date-command
+# https://cyberciti.biz/faq/linux-unix-formatting-dates-for-display
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
 # https://gnu.org/software/coreutils/manual/html_node/Date-conversion-specifiers.html
 # https://unix.stackexchange.com/q/625474/what-does-the-plus-symbol-in-date-command-refer-to
