@@ -705,20 +705,21 @@ endfunction " Browser
 function! CursorCharacter() abort " DecimalToOctal(27)"
   let char = strpart( getline('.'), col('.')-1, 1, 1 )
   let index = char2nr( char ) " char(acter) to number
-  let character = printf( '| %-2s|', char )
+  let character = printf( '|%-2s', char )
 
   " Formal Hexadecimal Unicode Notation (Code Point)
   " - https://en.wikipedia.org/wiki/UTF-8
   " - https://en.wikipedia.org/wiki/UTF-16
   " - https://en.wikipedia.org/wiki/Hexadecimal
   " - https://en.wikipedia.org/wiki/Percent-encoding (e.g. %20)
-  let hexadecimal = printf( 'U+%-8s' , printf( '%04X', index ) )
+  let hexadecimal = printf( '|U+%-7s' , printf( '%04X', index ) )
   " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
-  let decimal = printf( '&#%-7s', printf ( '%d;', index ) )
+  let decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
   " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
-  let octal = printf( '\0o%-6o', index )
+  let octal = printf( '|\0o%-6o', index )
 
   " Join character to escape sequences
+  " - https://en.wikipedia.org/wiki/Escape_sequence
   return character..join( [ decimal, hexadecimal, octal ], ' ' )
 endfunction " CursorCharacter
 
