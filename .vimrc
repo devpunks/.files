@@ -696,10 +696,10 @@ endfunction " Browser
 
 " -------------------------------------------------------------------------
 " :call CursorCharacter ()
-"   - :help ascii ga g8
-"   - https://utf8-chartable.de/
-"   - https://stackoverflow.com/q/1273693
-"   - https://geeksforgeeks.org/program-decimal-octal-conversion/
+"   - :help ascii
+"   - https://stackoverflow.com/q/20357800
+"   - https://en.wikipedia.org/wiki/Unicode
+"   - https://geeksforgeeks.org/program-decimal-octal-conversion
 "   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
@@ -707,10 +707,18 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   let index = char2nr( char ) " char(acter) to number
   let character = printf( '| %-2s|', char )
 
-  let octal = printf( '\0o%-6o', index )
-  let decimal = printf( '\D%%%-6d', index )
+  " Formal Hexadecimal Unicode Notation (Code Point)
+  " - https://en.wikipedia.org/wiki/UTF-8
+  " - https://en.wikipedia.org/wiki/UTF-16
+  " - https://en.wikipedia.org/wiki/Hexadecimal
+  " - https://en.wikipedia.org/wiki/Percent-encoding (e.g. %20)
   let hexadecimal = printf( 'U+%-8s' , printf( '%04X', index ) )
+  " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
+  let decimal = printf( '&#%-7s', printf ( '%d;', index ) )
+  " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
+  let octal = printf( '\0o%-6o', index )
 
+  " Join character to escape sequences
   return character..join( [ decimal, hexadecimal, octal ], ' ' )
 endfunction " CursorCharacter
 
