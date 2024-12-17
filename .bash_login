@@ -1063,10 +1063,10 @@ function balance () { clear
 # - https://everything.curl.dev/usingcurl/proxies/socks.html
 alias proxyon='
   export http_proxy="http://user:pwd@127.0.0.1:8888" ;
-  export https_proxy=" http://user:pwd@127.0.0.1:8888" ;
-  echo "PROXY ON! http: ${http_proxy} https: ${http_proxy}" ;
+  export https_proxy="http://user:pwd@127.0.0.1:8888" ;
+  echo "PROXY ON!\n http: ${http_proxy}\n https: ${http_proxy}" ;
 ' # proxyon
-alias proxyoff='echo "PROXY OFF!" ; unset http_proxy ; unset https_proxy'
+alias proxyoff='unset http_proxy ; unset https_proxy; echo "PROXY OFF!"'
 
 # SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
 function proxy () { clear
