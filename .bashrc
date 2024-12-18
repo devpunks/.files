@@ -236,6 +236,7 @@ fi
 
 #==========================================================================
 # {{{ Options
+#   - https://unix.stackexchange.com/q/32409/set-and-shopt-why-two/32446
 #==========================================================================
 # set options -------------------------------------------------------------
 # https://tldp.org/LDP/abs/html/options.html
@@ -246,24 +247,28 @@ set -o noclobber # Prevent redirection '>' from overwriting existing files
 
 # shell options -------------------------------------------------------
 # https://gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html
-# https://unix.stackexchange.com/q/32409/set-and-shopt-why-two/32446
-# https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command/
+# https://linuxhint.com/how-to-customize-a-bash-shell-with-the-shopt-command
+
+# TODO: fix for macOS
+shopt -s extglob # Extended glob pattern matching
+shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
+shopt -s direxpand # https://stackoverflow.com/q/6438341/what-does-shopt-s-dirspell-do
+
 shopt -s dotglob # https://unix.stackexchange.com/q/40662
 # https://unix.stackexchange.com/q/700199
 shopt -s globstar # https://linuxjournal.com/content/globstar-new-bash-globbing-option
 # shopt –s xpg_echo # https://stackoverflow.com/q/13517818/bash-shopt-xpg-echo
-shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
-shopt -s extglob # Extended glob pattern matching
+shopt -s cdspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell
 shopt -s nullglob # expand glob to empty list
 shopt -s mailwarn # last access on login
-shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
-shopt -s checkjobs # on exit
-shopt -s direxpand # https://stackoverflow.com/q/6438341/what-does-shopt-s-dirspell-do
+shopt -s xpg_echo # expand escapes in echo string
+shopt -s checkjobs # confirm job status list on exit
 shopt -s checkhash # command exists in hashtable first
 shopt -s nocaseglob # https://stackoverflow.com/q/25331100/bash-match-string-with-regex
 shopt -s nocasematch # https://baeldung.com/linux/shell-case-insensitive-matching
 shopt -s cdable_vars # Change directory with shell vars
 shopt -s hostcomplete # https://blog.sanctum.geek.nz/bash-hostname-completion
+shopt -s shift_verbose # `shift` out of range error message
 shopt -s no_empty_cmd_completion # on empty line attempts
 
 # }}}
