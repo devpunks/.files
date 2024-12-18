@@ -554,6 +554,12 @@ function check () {
         command apachectl configtest -f "$( realpath "$script" )" ;;
       .bash* | *.sh )
         command shellcheck --format=tty "$( realpath "$script" )" ;;
+      *.tar* )
+        echo && echo Checking sha512 \
+          && (exist "${script}.sha512" && sha512sum --check "${script}.sha512") \
+          || echo && echo Checking sha256 \
+          && (exist "${script}.sha256" && sha256sum --check "${script}.sha256")
+      ;;
       * )
         echo "  🛑 Cannot check ${script}"
     esac # $script
@@ -1387,6 +1393,8 @@ function package () { clear
 
   echo "📦 Packaging: $source"
   echo "📦   Destination: $destination"
+
+  checksum "$destination"
 } # package
 
 function shrink () { clear
@@ -1468,6 +1476,8 @@ function unpack () { clear
   echo "destination: $destination"
   weigh "${archive}"
   echo ; echo
+
+  check "$archive" # checksum
 
   case "$archive" in
     # -q quiet mode (-qq => quieter)
@@ -1585,6 +1595,18 @@ function accumulate () { : accumulate; }
 function aggregate () { : aggregate; }
 function bandwidth () { : bandwidth; }
 # -------------------------------------------------------------------------
+
+function checksum () {
+# local -r hash='sha512'
+  local -r hash='sha256'
+  local -r file=${1}
+
+  exist "$file" || return $?
+
+  echo "Checksum"
+  "${hash}sum" "$file" | tee "$file.$hash"
+  echo
+} # checksum
 
 function lint () { clear
   echo Linting...
