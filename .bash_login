@@ -1477,8 +1477,6 @@ function unpack () { clear
   weigh "${archive}"
   echo ; echo
 
-  check "$archive" # checksum
-
   case "$archive" in
     # -q quiet mode (-qq => quieter)
     # -n never overwrite existing files
@@ -1569,7 +1567,7 @@ function extract () {
 
   exist "$archive" || return $?
 
-  unpack "$archive"
+  check "$archive" && unpack "$archive"
 } # extract
 
 # }}}
