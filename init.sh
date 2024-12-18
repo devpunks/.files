@@ -25,6 +25,8 @@
 pkg upgrade
 pkg update
 
+pkg install mount-utils
+
 # {{{ Termux --------------------------------------------------------------
 termux-open "${HOME}/.termux/Termux_Boot_0.7.apk"
 pkg install termux-services
@@ -62,7 +64,6 @@ pkg install cmatrix
 pkg install ncurses
 pkg install busybox # http://busybox.net/downloads
 pkg install no-more-secrets # https://github.com/bartobri/no-more-secrets
-
 
 # }}}
 
