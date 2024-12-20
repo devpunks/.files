@@ -713,6 +713,12 @@ function restrict () { clear
   about "$location"
 } # restrict
 
+function authorize () {
+  local -r user=${1:-'Bob'}
+
+  echo "Authorizing: $user"
+} # authorize
+
 # https://dev.to/vyan/the-ultimate-guide-to-web-authentication-comparing-session-jwt-sso-and-oauth-20-in-2024-2og0
 function authenticate () { clear
   # https://stackoverflow.com/q/25969196
@@ -1108,6 +1114,8 @@ function upload () {
 } # upload
 
 # Exploits ----------------------------------------------------------------
+#   - https://en.m.wikipedia.org/wiki/Alice_and_Bob
+# -------------------------------------------------------------------------
 # https://en.m.wikipedia.org/wiki/Zip_bomb
 function zipbomb () { clear
   local -r destination=$( realpath "${1:-./bomb.zip}" )
@@ -1133,12 +1141,13 @@ function attack () {
   # Vulnerability exploits
   # Social engineering attacks
 
-  echo C10k Problem # https://en.m.wikipedia.org/wiki/C10k_problem
+  echo MitM # https://en.m.wikipedia.org/wiki/Man-in-the-middle_attack
   echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
   echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection
+  echo C10k Problem # https://en.m.wikipedia.org/wiki/C10k_problem
 
-  echo Algorithmic # https://en.m.wikipedia.org/wiki/Algorithmic_complexity_attack
   echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
+  echo Algorithmic # https://en.m.wikipedia.org/wiki/Algorithmic_complexity_attack
   echo Billion Laughs # https://en.m.wikipedia.org/wiki/Billion_laughs_attack
 } # attack
 
