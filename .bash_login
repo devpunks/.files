@@ -941,29 +941,32 @@ alias catnet='{
 }' # catnet
 
 # Transmission ------------------------------------------------------------
+# Test server - https://httpbin.org
 alias header='curl --head'
 alias curl='command curl --verbose'
 alias cookies='header --cookie-jar ./.cookies'
 alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
 
 # Proxies -----------------------------------------------------------------
-# SOCKS (4|5) SOCK(et) S(ecure)
-# SOCKS4 - SOCKS | TCP protocols,
+# Disable curl --noproxy '*' ...
+# SOCKS (4|4a|5|5h) SOCK(et) S(ecure)
+# SOCKS4 - SOCKS4 IPv4 | TCP protocols
 # SOCKS5 - DNS | UDP | SSH | IPv6 | Auth
 # - https://en.m.wikipedia.org/wiki/SOCKS
 # - https://datatracker.ietf.org/doc/html/rfc1928
 # cURL --proxy --socks4 --socks4a --socks5 --socks5-hostname
 # - https://oxylabs.io/blog/curl-with-proxy
+# - https://everything.curl.dev/usingcurl/proxies/http.html
 # - https://everything.curl.dev/usingcurl/proxies/socks.html
 alias proxyon='
-  export http_proxy="http://user:pwd@127.0.0.1:8888"
-  export https_proxy="https://user:pwd@127.0.0.1:8888"
+  export http_proxy=http://user:pwd@127.0.0.1:8888
+  export https_proxy=https://user:pwd@127.0.0.1:8888
   echo "PROXY ON!\n http: ${http_proxy}\n https: ${https_proxy}"
 ' # proxyon
 alias proxyoff='
   unset http_proxy ; unset https_proxy
   echo "PROXY OFF!\n http: ${http_proxy}\n https: ${https_proxy}"
-'
+' # proxyoff
 
 # SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
 function proxy () { clear
