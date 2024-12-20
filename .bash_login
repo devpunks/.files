@@ -578,7 +578,9 @@ function check () {
 #     - https://reddit.com/r/linux/comments/170crnt/acl_101_a_visual_guide_to_accesscontrol_lists
 #     - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
 # =========================================================================
-#https://man7.org/linux/man-pages/man1/passwd.1.html
+alias whois='command whois -H'
+
+# https://man7.org/linux/man-pages/man1/passwd.1.html
 alias password='clear ; man -k passwd ; echo ; command passwd'
 
 # https://pypi.org/project/tsu
@@ -887,41 +889,17 @@ function trip () {
 #     - https://redhat.com/sysadmin/use-cases-nmap
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # =========================================================================
+
 alias ping='command ping -c 5'
-alias whois='command whois -H'
-
-# https://developer.technexion.com/docs/using-uart-from-a-linux-shell
-alias uart='echo TODO: implementation'
-# https://github.com/delletenebre/SerialManager2
-alias serial='echo TODO: Implementation'
-
-alias header='curl --head'
-alias curl='command curl --verbose'
-alias cookies='header --cookie-jar ./.cookies'
-
-alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
-
-
-# https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
-alias telnet='telnet --login'
-
-# https://en.m.wikipedia.org/wiki/Tc_(Linux)
-# https://man7.org/linux/man-pages/man8/tc.8.html
-alias traffic='man tc'
-
-# https://man7.org/linux/man-pages/man2/connect.2.html
-alias connect='TODO: implementation'
-
 # https://man7.org/linux/man-pages/man8/ss.8.html
 # https://man7.org/linux/man-pages/man2/socket.2.html
 alias socket='man ss ; man socat'
-
 # https://redhat.com/sysadmin/ifconfig-vs-ip
 alias ip='command ip --color address |
   command grep --color --perl-regexp "(inet)\s[^/]+" ;
   echo ; command ip --color route ;
   echo ; command route -v -ee -A inet ;
-' # alias
+' # ip
 
 # TODO: Find netstat alternative
 # https://plesk.com/blog/various/open-ports-in-linux/
@@ -934,6 +912,150 @@ alias ip='command ip --color address |
 #   -https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c
 #alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
 alias ports='netstat --verbose --all --numeric --listening --programs --wide'
+
+# https://man7.org/linux/man-pages/man2/connect.2.html
+alias connect='TODO: implementation'
+
+# https://developer.technexion.com/docs/using-uart-from-a-linux-shell
+alias uart='echo TODO: implementation'
+
+# https://github.com/delletenebre/SerialManager2
+alias serial='echo TODO: Implementation'
+
+# https://computernetworkingnotes.com/linux-tutorials/how-to-configure-telnet-sever-and-client-in-linux.html
+alias telnet='telnet --login'
+
+alias wget='command wget --continue --no-hsts' # resume downloads & prevent writing HSTs
+
+alias header='curl --head'
+alias curl='command curl --verbose'
+alias cookies='header --cookie-jar ./.cookies'
+
+# NetCat ------------------------------------------------------------------
+# - https://baeldung.com/linux/netcat-command
+alias catscan='{
+  nc -z -v -w 1 localhost 1234
+  nc -z -v -w 1 google.com 442-444
+}' # catscan
+
+alias catnet='{
+  while true; do
+    command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" \
+      | nc -l -v 1234
+  done
+}' # catnet
+
+# Proxies -----------------------------------------------------------------
+# SOCKS (4|5) SOCK(et) S(ecure)
+# SOCKS4 - SOCKS | TCP protocols,
+# SOCKS5 - DNS | UDP | SSH | IPv6 | Auth
+# - https://en.m.wikipedia.org/wiki/SOCKS
+# - https://datatracker.ietf.org/doc/html/rfc1928
+# cURL --proxy --socks4 --socks4a --socks5 --socks5-hostname
+# - https://oxylabs.io/blog/curl-with-proxy
+# - https://everything.curl.dev/usingcurl/proxies/socks.html
+alias proxyon='
+  export http_proxy="http://user:pwd@127.0.0.1:8888"
+  export https_proxy="https://user:pwd@127.0.0.1:8888"
+  echo "PROXY ON!\n http: ${http_proxy}\n https: ${https_proxy}"
+' # proxyon
+alias proxyoff='
+  unset http_proxy ; unset https_proxy
+  echo "PROXY OFF!\n http: ${http_proxy}\n https: ${https_proxy}"
+'
+
+# SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
+function proxy () { clear
+  # https://tinyproxy.github.io
+  # VULNERABILITIES
+  # - https://github.com/tinyproxy/tinyproxy/issues/533
+  # - https://talosintelligence.com/vulnerability_reports/TALOS-2023-1889
+  tinyproxy -v
+  tinyproxy -h
+  tinyproxy -d -c "$HOME/tinyproxy.conf"
+} # proxy
+
+# https://man.archlinux.org/man/host.1.en
+# https://man7.org/linux/man-pages/man5/hosts.5.html
+# https://man7.org/linux/man-pages/man1/hostname.1.html
+# https://cloudns.net/blog/linux-host-command-troubleshot-dns
+function host () { clear
+  local -r domain=${1:-localhost}
+  local -r hosts=${PREFIX}/etc/hosts
+
+  [ "$domain" != localhost ] \
+    && whois "$domain"
+
+  echo ; echo ALL:
+  command host -v -R 3 -a "$domain"
+  # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
+  # rfc1035 Domain Names - https://datatracker.ietf.org/doc/html/rfc1035#autoid-31
+  echo ; echo SOA:
+  command host -v -t SOA "$domain"
+  echo ; echo ; command host -v -R 3 -C "$domain"
+  echo ; echo ; command host -v -R 3 "$domain"
+  echo ; echo ; command host -R 3 "$domain"
+
+  # https://linux.die.net/man/8/traceroute
+  echo ; echo ; traceroute -N 1 -z 0.1 "$domain"
+  # https://linux.die.net/man/8/tracepath
+  # # https://geeksforgeeks.org/tracepath-command-in-linux-with-examples
+  echo ; echo ; tracepath -b -m 10 "$domain" # name + ip
+  echo ; ping "$domain"
+  echo ; echo
+
+  # https://linux.die.net/man/1/nslookup
+  # https://phoenixnap.com/kb/nslookup-command
+  nslookup "$domain"
+  nslookup "$domain" -type=any
+
+  echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
+  printf "\n /etc/hosts: \n %s \n\n" "$( cat "$hosts" )"
+
+  [ "$HOSTFILE" ] \
+    && printf "\n \$HOSTFILE: $HOSTFILE \n %s \n\n" "$( cat "$HOSTFILE" )"
+} # host
+
+# https://en.m.wikipedia.org/wiki/Tc_(Linux)
+# https://man7.org/linux/man-pages/man8/tc.8.html
+# https://netbeez.net/blog/how-to-use-the-linux-traffic-control
+alias traffic='man tc'
+
+# https://nginx.org/en/docs
+function balance () { clear
+  nginx -V
+  nginx -help
+
+  local -r configuration="${HOME}/.nginx/nginx.conf"
+
+  exist "$configuration" && cat "$configuration"
+  # /usr/local/nginx/conf/*, /etc/nginx/*, or /usr/local/etc/nginx/*
+  exist "${PREFIX}/etc/nginx/nginx.conf" && cat "${PREFIX}/etc/nginx/nginx.conf"
+
+  check "$configuration"
+
+  nginx -c "$configuration" \
+    && echo Started nginx load balancer on PORT 8080
+} # balance
+
+# Benchmarking
+#   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
+#   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
+#   - https://engineering.appfolio.com/appfolio-engineering/2019/1/18/benchmarking-ruby-app-servers-badly
+#   - https://engineering.appfolio.com/appfolio-engineering/2019/4/21/wrk-it-my-experiences-load-testing-with-an-interesting-new-tool
+function load () { clear
+  local -r url="${1}"
+  local -r connections=10
+  local -r requests=100 # 100000
+
+  [ "$url" ] \
+    || echo missing url && return 1
+
+  header "$url"
+
+  ab -n $requests -c $connections "$url"
+  echo ; echo "${requests}:${connections} @ ${url}"
+} # load
 
 # Test Servers
 # - https://smartftp.com/en-us/support/kb/2779
@@ -981,124 +1103,6 @@ function upload () {
   # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
 } # upload
 
-# https://man.archlinux.org/man/host.1.en
-# https://man7.org/linux/man-pages/man5/hosts.5.html
-# https://man7.org/linux/man-pages/man1/hostname.1.html
-# https://cloudns.net/blog/linux-host-command-troubleshot-dns
-function host () { clear
-  local -r domain=${1:-localhost}
-  local -r hosts=${PREFIX}/etc/hosts
-
-  [ "$domain" != localhost ] \
-    && whois "$domain"
-
-  echo ; echo ALL:
-  command host -v -R 3 -a "$domain"
-  # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
-  # rfc1035 Domain Names - https://datatracker.ietf.org/doc/html/rfc1035#autoid-31
-  echo ; echo SOA:
-  command host -v -t SOA "$domain"
-  echo ; echo ; command host -v -R 3 -C "$domain"
-  echo ; echo ; command host -v -R 3 "$domain"
-  echo ; echo ; command host -R 3 "$domain"
-
-  # https://linux.die.net/man/8/traceroute
-  echo ; echo ; traceroute -N 1 -z 0.1 "$domain"
-  # https://linux.die.net/man/8/tracepath
-  # # https://geeksforgeeks.org/tracepath-command-in-linux-with-examples
-  echo ; echo ; tracepath -b -m 10 "$domain" # name + ip
-  echo ; ping "$domain"
-  echo ; echo
-
-  # https://linux.die.net/man/1/nslookup
-  # https://phoenixnap.com/kb/nslookup-command
-  nslookup "$domain"
-  nslookup "$domain" -type=any
-
-  echo Current Host: "$( hostname ) ⇋ $( hostname --ip-addresses )"
-  printf "\n /etc/hosts: \n %s \n\n" "$( cat "$hosts" )"
-
-  [ "$HOSTFILE" ] \
-    && printf "\n \$HOSTFILE: $HOSTFILE \n %s \n\n" "$( cat "$HOSTFILE" )"
-} # host
-
-# Benchmarking
-#   - https://lobste.rs/s/mqxwuc/what_s_your_preferred_tool_for_load
-#   - https://codedamn.com/news/backend/performance-tuning-benchmarking-optimization
-#   - https://engineering.appfolio.com/appfolio-engineering/2019/1/18/benchmarking-ruby-app-servers-badly
-#   - https://engineering.appfolio.com/appfolio-engineering/2019/4/21/wrk-it-my-experiences-load-testing-with-an-interesting-new-tool
-function load () { clear
-  local -r url="${1}"
-  local -r connections=10
-  local -r requests=100 # 100000
-
-  [ "$url" ] \
-    || echo missing url && return 1
-
-  header "$url"
-
-  ab -n $requests -c $connections "$url"
-  echo ; echo "${requests}:${connections} @ ${url}"
-} # load
-
-# https://nginx.org/en/docs
-function balance () { clear
-  nginx -V
-  nginx -help
-
-  local -r configuration="${HOME}/.nginx/nginx.conf"
-
-  exist "$configuration" && cat "$configuration"
-  # /usr/local/nginx/conf/*, /etc/nginx/*, or /usr/local/etc/nginx/*
-  exist "${PREFIX}/etc/nginx/nginx.conf" && cat "${PREFIX}/etc/nginx/nginx.conf"
-
-  check "$configuration"
-
-  nginx -c "$configuration" \
-    && echo Started nginx load balancer on PORT 8080
-} # balance
-
-# Proxies -----------------------------------------------------------------
-# SOCKS (4|5) SOCK(et) S(ecure)
-# SOCKS4 - SOCKS | TCP protocols,
-# SOCKS5 - DNS | UDP | SSH | IPv6 | Auth
-# - https://en.m.wikipedia.org/wiki/SOCKS
-# - https://datatracker.ietf.org/doc/html/rfc1928
-# cURL --proxy --socks4 --socks4a --socks5 --socks5-hostname
-# - https://oxylabs.io/blog/curl-with-proxy
-# - https://everything.curl.dev/usingcurl/proxies/socks.html
-alias proxyon='
-  export http_proxy="http://user:pwd@127.0.0.1:8888" ;
-  export https_proxy="http://user:pwd@127.0.0.1:8888" ;
-  echo "PROXY ON!\n http: ${http_proxy}\n https: ${http_proxy}" ;
-' # proxyon
-alias proxyoff='unset http_proxy ; unset https_proxy; echo "PROXY OFF!"'
-
-# SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
-function proxy () { clear
-  # https://tinyproxy.github.io
-  # VULNERABILITIES
-  # - https://github.com/tinyproxy/tinyproxy/issues/533
-  # - https://talosintelligence.com/vulnerability_reports/TALOS-2023-1889
-  tinyproxy -v
-  tinyproxy -h
-  tinyproxy -d -c "$HOME/tinyproxy.conf"
-} # proxy
-
-# NetCat ------------------------------------------------------------------
-# - https://baeldung.com/linux/netcat-command
-alias catscan='{
-  nc -z -v -w 1 localhost 1234
-  nc -z -v -w 1 google.com 442-444
-}' # catscan
-
-alias catnet='{
-  while true; do
-    command echo -e "HTTP/1.1 200 OK\n\nHello World!\n" \
-      | nc -l -v 1234
-  done
-}' # catnet
-
 # Exploits ----------------------------------------------------------------
 # https://en.m.wikipedia.org/wiki/Zip_bomb
 function zipbomb () { clear
@@ -1116,18 +1120,18 @@ function forkbomb () { clear #:(){ :|:& };:
   # forkbomb | forkbomb &
 } # forkbomb
 
-# - https://securitygate.io/blog/osi-model-fundamentals-cybersecurity-basics/
+# - https://securitygate.io/blog/osi-model-fundamentals-cybersecurity-basics
 function attack () {
   # Unauthorized access
   # Data sniffing
   # Physical damage
-  # Social engineering attacks
   # Credential theft
   # Vulnerability exploits
+  # Social engineering attacks
 
   echo C10k Problem # https://en.m.wikipedia.org/wiki/C10k_problem
   echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
-  echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection/
+  echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection
 
   echo Algorithmic # https://en.m.wikipedia.org/wiki/Algorithmic_complexity_attack
   echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
