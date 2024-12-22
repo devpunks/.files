@@ -965,15 +965,15 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 # - https://oxylabs.io/blog/curl-with-proxy
 # - https://everything.curl.dev/usingcurl/proxies/http.html
 # - https://everything.curl.dev/usingcurl/proxies/socks.html
-alias proxyon='
+alias proxyon='{
   export http_proxy=http://user:pwd@127.0.0.1:8888
   export https_proxy=https://user:pwd@127.0.0.1:8888
   echo "PROXY ON!\n http: ${http_proxy}\n https: ${https_proxy}"
-' # proxyon
-alias proxyoff='
+}' # proxyon
+alias proxyoff='{
   unset http_proxy ; unset https_proxy
   echo "PROXY OFF!\n http: ${http_proxy}\n https: ${https_proxy}"
-' # proxyoff
+}' # proxyoff
 
 # SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
 function proxy () { clear
@@ -1214,11 +1214,10 @@ function serve () { clear
 # - https://ssh.com/academy/ssh/add-command
 # - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add
 alias ssh.add='{
-  clear
   echo adding ssh
 
   # default is $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
-  eval $( ssh-agent -s -a $HOME/agent.sock)
+  eval $( ssh-agent -s -t 86400 -a $HOME/agent.sock )
   command ssh-add
   ps x | command grep ssh-agent
 
@@ -1227,7 +1226,9 @@ alias ssh.add='{
 }' # ssh.add
 
 # SSh(d) ------------------------------------------------------------------
-#   - Terrapin Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
+#   - Terrapin Vulnerability
+#     - https://en.m.wikipedia.org/wiki/Terrapin_attack
+#     - Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
 #   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://man7.org/linux/man-pages/man1/ssh.1.html
 #   - https://github.com/termux/termux-packages/issues/3620
