@@ -1753,6 +1753,7 @@ function stream () {
   yes "$bytes"
 } # stream
 
+alias sd='list /storage/E82D-4DB6'
 function open () { clear
   local -r location="$1"
   # apk
