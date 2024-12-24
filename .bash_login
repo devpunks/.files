@@ -1769,6 +1769,18 @@ function open () { clear
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 } # open
 
+function pick () { # files
+  type am || return # short circuit
+
+  # File Picker
+  am start -a android.intent.action.VIEW \
+    -d "content://com.android.externalstorage.documents/root/primary"
+
+  # Termux file picker
+  am start -a android.intent.action.OPEN_DOCUMENT \
+    -d /storage/emulated/0 -t '*/*'
+} # pick
+
 function play () { clear
   local -r location="$1"
 
