@@ -413,6 +413,7 @@ alias gr='git rebase -i'
 alias gs='clear ; echo ; git status --column --verbose ; echo'
 alias gsl='echo ; git shortlog -s | sort -r; echo'
 alias gt='git tag -a'
+alias gv='git verify-commit --verbose' # --raw
 alias g#='
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
   # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
@@ -584,6 +585,36 @@ alias whois='command whois -H'
 # https://man7.org/linux/man-pages/man1/passwd.1.html
 alias password='clear ; man -k passwd ; echo ; command passwd'
 
+# https://ietf.org/rfc/rfc4880.txt
+# https://gnupg.org/documentation/manpage.html
+alias keygen='command ssh-keygen -t ed25519 -C'
+# https://www.betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
+alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
+
+# https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
+# https://www.gnupg.org/documentation/manuals/gnupg/GPG-Configuration.html
+alias keys='{ clear
+  cat ~/.ssh/banner
+  echo; echo "~/.ssh" ; ls -al ~/.ssh
+  echo ; echo "~/.gnupg" ; ls -al ~/.gnupg
+  echo ; echo "/etc/ssh" ; ls -al $PREFIX/etc/ssh
+  echo ; echo
+  signatures
+}' # keys
+
+# https://stackoverflow.com/questions/12749858/rsa-public-key-format
+# https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
+# https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
+# alias signatures='decrypt "$(
+alias signatures='echo "$(
+  echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
+  echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
+  echo ; echo id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
+  echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
+  echo ; echo known_hosts ; cat ~/.ssh/known_hosts
+  echo ; gpg --check-signatures
+)"' # signatures
+
 # https://pypi.org/project/tsu
 # http://androidcentral.com/root
 alias su='command su ; tsu '
@@ -612,10 +643,10 @@ function encrypt () {
 
 alias nms='command nms -a -c -f magenta'
 function decrypt () {
-  man gpg
+  local -r message="${1}"
 
   # https://github.com/bartobri/no-more-secrets?tab=readme-ov-file#usage
-  man gpg | nms -a -f magenta
+  echo "$message" | nms
 } # decrypt
 
 # - https://linux.die.net/man/1/flock
@@ -649,15 +680,6 @@ function unlock () {
   flock -u "$lock"
 } # unlock
 
-# - https://wiki.archlinux.org/title/Limits.conf
-# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command
-function unlimit () { clear
-  ulimit --help
-
-  echo ; ulimit -a
-  echo TODO: 'unlimit' Implementation
-} # unlimit
-
 # https://unix.stackexchange.com/q/302938/about-ulimit-setrlimit-and-cgroup
 function limit () { clear
   ulimit --help
@@ -670,6 +692,15 @@ function limit () { clear
 
   echo TODO: 'limit' Implementation
 } # limit
+
+# - https://wiki.archlinux.org/title/Limits.conf
+# - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command
+function unlimit () { clear
+  ulimit --help
+
+  echo ; ulimit -a
+  echo TODO: 'unlimit' Implementation
+} # unlimit
 
 # https://askubuntu.com/q/29589/chmod-ux-versus-chmod-x#1075089
 # https://superuser.com/q/168578/why-must-a-folder-be-executable
