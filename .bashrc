@@ -77,6 +77,7 @@ export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
 
+# https://dev.gnupg.org/T3412
 # https://gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 export GPG_TTY=$(tty) # https://github.com/keybase/keybase-issues/issues/2798
 export GIT_TRACE=1 # tracing
