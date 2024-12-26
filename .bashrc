@@ -77,9 +77,11 @@ export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
 
-export GIT_EDITOR=$EDITOR
+export GPG_TTY=$(tty) # https://github.com/keybase/keybase-issues/issues/2798
+export GIT_TRACE=1 # tracing
 export GIT_PAGER=$PAGER
-export GIT_CONFIG_NOSYSTEM=true
+export GIT_EDITOR=$EDITOR
+export GIT_CONFIG_NOSYSTEM=true # Disable systemwide (etc/gitconfig)
 
 
 # -h(eader) -l(ong) -t(itle) -v(erbose) -z(comment)
