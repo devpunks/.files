@@ -587,7 +587,7 @@ alias password='clear ; man -k passwd ; echo ; command passwd'
 
 # https://ietf.org/rfc/rfc4880.txt
 # https://gnupg.org/documentation/manpage.html
-alias keygen='command ssh-keygen -t ed25519 -C'
+alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t'
 # https://www.betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
 alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
 
