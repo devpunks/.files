@@ -179,6 +179,7 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
+# - https://vim.rtorr.com
 # :K - (SHIFT+K) keywordprg(default to man page for under cursor)
 # :h key-notation - For mappings
 # :h <key> - For mapping
