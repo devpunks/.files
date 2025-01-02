@@ -1367,8 +1367,11 @@ function tail () { clear
   man tail
 
   man multitail
+  echo ~/.multitailrc
+  cat ~/.multitailrc
 
   echo "Lines: $lines"
+
   echo "TODO: (multi)tail $files"
 } # tail
 
