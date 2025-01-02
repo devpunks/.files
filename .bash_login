@@ -1636,7 +1636,6 @@ function extract () {
 # TODO: Implementation
 # -------------------------------------------------------------------------
 function used () { : used; }
-function count () { : count; }
 function clean () { : clean; }
 function reboot () { : reboot; }
 function restart () { : restart; }
@@ -1649,6 +1648,34 @@ function accumulate () { : accumulate; }
 function aggregate () { : aggregate; }
 function bandwidth () { : bandwidth; }
 # -------------------------------------------------------------------------
+
+function count () {
+  exist $1 || return
+
+  local -r file=${1}
+  local -r LINES=`wc --lines $file | command cut -d' ' -f 1`
+  local -r WORDS=`wc --words $file | command cut -d' ' -f 1`
+  local -r CHARS=`wc --chars $file | command cut -d' ' -f 1`
+  local -r BYTES=`wc --bytes $file | command cut -d' ' -f 1`
+
+  lines $file
+
+  echo printing
+
+  printf '\n%-10s %-10s %-10s %-10s' \
+    'LINES' 'WORDS' 'CHARS' 'BYTES'
+  printf '\n%-10s %-10s %-10s %-10s' \
+    "$LINES" "$WORDS" "$CHARS" "$BYTES"
+  echo
+} # count
+
+# https://blog.kubesimplify.com/the-complete-guide-to-the-dd-command-in-linux
+function generate () {
+  local -r size=${1}
+  local -r output=${2}
+
+  wc -l j
+} # generate
 
 function checksum () {
 # local -r hash='sha512'
