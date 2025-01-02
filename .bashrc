@@ -73,6 +73,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
 #==========================================================================
 # {{{ Exports
 #==========================================================================
+export PG_CONFIG="${PREFIX}/bin/pg_config"
 export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
