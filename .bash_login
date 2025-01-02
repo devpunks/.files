@@ -102,10 +102,14 @@ alias fonts='$HOME/.local/fonts/fonttable ; echo "\nSee ~/.local/fonts"'
 alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
 # https://stackoverflow.com/q/65523749
 alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+# https://serverfault.com/q/283294/how-to-read-in-n-random-characters-from-dev-urandom
+alias randchars='tr -dC "[:xdigit:]" </dev/urandom | head -c8'
 # - https://baeldung.com/linux/bash-generate-uuid
 # - https://man7.org/linux/man-pages/man1/uuidgen.1.html
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
+alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned) # head -c 30 /dev/urandom
+alias token='dd status=none if=/dev/urandom count=1 bs=128 | sha256sum | command cut -d " " -f1' # sha512sum
 # https://en.m.wikipedia.org/wiki/Snowflake_ID
 # https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
 function snowflake () {
@@ -1677,7 +1681,10 @@ function generate () {
   local -r size=${1}
   local -r output=${2}
 
-  wc -l j
+  dd if=/dev/urandom of=$output bs=$size count=1
+
+  list $output
+  weigh $output
 } # generate
 
 function checksum () {
