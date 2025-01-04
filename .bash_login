@@ -1436,8 +1436,10 @@ function sync () {
   echo Synching source: "$source"
 } # sync
 
+# https://blog.kubesimplify.com/the-complete-guide-to-the-dd-command-in-linux
 function backup () { clear
   local -r source=$( realpath "$1" )
+  local -r destination="$2"
 
   exist "$source" || return $?
 
@@ -1445,8 +1447,14 @@ function backup () { clear
   # compress
   sync "$source"
 
-  echo Backing Up "$source"
+  man dd
+  echo Backing Up "$source" to "$destination"
+  dd if=$source of=$destination
 } # backup
+
+function restore () { clear
+  man dd
+} # restore
 
 function package () { clear
   local -r source=$( realpath "$1" )
