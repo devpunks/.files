@@ -212,6 +212,8 @@ function clock () {
 } # clock
 
 monitor () {
+  open http://prometheus.io
+
   htop && ps
   printf "\n %s \n" "$( uptime )"
 } # monitor
