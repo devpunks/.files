@@ -63,6 +63,7 @@ alias expect='pkg info expect'
 alias script='man command script ; clear ; command script'
 
 alias dev='tree /dev'
+alias proc='tree /proc'
 alias bin='tree "$PREFIX/bin"'
 alias etc='tree "$PREFIX/etc"'
 alias share='tree "$PREFIX/share"'
