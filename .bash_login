@@ -62,6 +62,7 @@ alias expect='pkg info expect'
 # https://ibm.com/docs/fi/zos/2.4.0?topic=descriptions-script-makes-typescript-terminal-session
 alias script='man command script ; clear ; command script'
 
+alias dev='tree /dev'
 alias bin='tree "$PREFIX/bin"'
 alias etc='tree "$PREFIX/etc"'
 alias share='tree "$PREFIX/share"'
