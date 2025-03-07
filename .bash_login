@@ -617,7 +617,6 @@ alias keys='{ clear
 # https://stackoverflow.com/q/12749858/rsa-public-key-format
 # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
 # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
-# alias signatures='decrypt "$(
 alias signatures='echo "$(
   echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
   echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
