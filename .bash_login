@@ -1114,6 +1114,10 @@ function load () { clear
 # - https://smartftp.com/en-us/support/kb/2779
 # - https://dlptest.com/ftp-test
 # FTP (File Transfer Protocol)
+# (s)FTP
+# - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
+alias ftp='command ftp --version; ftp --verbose'
+
 # cURL
 function download () { clear
   local -r uri="$1"
