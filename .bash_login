@@ -1135,8 +1135,7 @@ function download () { clear
   curl --remote-name "$uri"
 } # download
 
-# cURL
-# - https://everything.curl.dev/usingcurl/uploads.html
+# (s)FTP
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 alias ftp='command ftp --version; ftp --verbose'
 function upload () {
