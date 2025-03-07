@@ -595,7 +595,7 @@ let g:loaded_zipPlugin = 1
 " =========================================================================
 if $TERM =~ '256color'
   " WARNING: ^[ must be entered as <c-v><c-[>
-  echo 'SHAZAAM TERM'
+  echo '$TERM is set to 256color'
   let &t_so = '[7m' " smso (standout)
   let &t_ZH = '[3m' " sitm (enable italics)
   let &t_ZR = '[0m' " ritm (disable italics)
