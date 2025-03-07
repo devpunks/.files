@@ -349,6 +349,7 @@ endif
 " =========================================================================
 set showmode " in status Vi (not Vim)
 set shortmess= " Verbose command messaging
+set shortmess-=S " Show search count
 set laststatus=2 " Always show status line
 if has('win32') | set shortname=on | end
 
