@@ -1259,6 +1259,7 @@ function serve () { clear
 # - https://ssh.com/academy/ssh
 # - https://ssh.com/academy/ssh/add-command
 # - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add
+alias ssh='man ssh; command ssh -T'
 alias ssh.add='{
   echo adding ssh
 
