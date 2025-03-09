@@ -787,6 +787,10 @@ function authorize () {
   echo "Authorizing: $user"
 } # authorize
 
+# JWT - https://datatracker.ietf.org/doc/html/rfc7519
+# BASIC - https://datatracker.ietf.org/doc/html/rfc7617
+# BEARER - https://datatracker.ietf.org/doc/html/rfc6750
+# DIGEST - https://datatracker.ietf.org/doc/html/rfc7616
 # https://dev.to/vyan/the-ultimate-guide-to-web-authentication-comparing-session-jwt-sso-and-oauth-20-in-2024-2og0
 function authenticate () { clear
   # https://stackoverflow.com/q/25969196
