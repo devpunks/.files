@@ -942,9 +942,16 @@ function trip () {
 #     - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 # =========================================================================
 alias ping='command ping -c 5'
+
 function trace () {
   command traceroute $domain
   command tracepath $domain
+} # trace
+
+function map () {
+  local domain=${1:-localhost}
+
+  echo domain
 } # trace
 
 # https://man7.org/linux/man-pages/man8/ss.8.html
