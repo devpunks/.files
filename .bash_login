@@ -1743,18 +1743,6 @@ function generate () {
   weigh $output
 } # generate
 
-function checksum () {
-# local -r hash='sha512'
-  local -r hash='sha256'
-  local -r file=${1}
-
-  exist "$file" || return $?
-
-  echo "Checksum"
-  "${hash}sum" "$file" | tee "$file.$hash"
-  echo
-} # checksum
-
 function lint () { clear
   echo Linting...
   check .*rc
