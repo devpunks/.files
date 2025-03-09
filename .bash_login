@@ -588,6 +588,8 @@ function check () {
 
 # =========================================================================
 # {{{ Security
+#   SSH Key Best Practices
+#     - https://www.brandonchecketts.com/archives/ssh-ed25519-key-best-practices-for-2025
 #   eXtended Attr(ibutes)
 #     - https://linuxexam.net/2019/11/linux-tools-getfattrsetfattr.html
 #   ACLs (Access Control List)
