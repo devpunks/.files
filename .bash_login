@@ -405,7 +405,7 @@ function variables () {
 alias be='bundle exec'
 
 # ----------------------
-# Eliza (LLM) - https://web.njit.edu/~ronkowit/eliza.html
+# Artificial Intelligence
 # ----------------------
 alias eliza='why ; echo TODO: ELIZA implementation' # https://en.m.wikipedia.org/wiki/ELIZA
 
