@@ -656,6 +656,20 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 # - https://marksei.com/linux-permissions-chown-chgrp-and-chmod
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
+# see check ()
+# https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums/
+function checksum () {
+# local -r hash='sha512'
+  local -r hash='sha256'
+  local -r file=${1}
+
+  exist "$file" || return $?
+
+  echo "Checksum"
+  "${hash}sum" "$file" | tee "$file.$hash"
+  echo
+} # checksum
+
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
 # https://en.m.wikipedia.org/wiki/Advanced_Encryption_Standard
