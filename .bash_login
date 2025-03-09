@@ -595,6 +595,7 @@ function check () {
 #   ACLs (Access Control List)
 #     - https://unix.stackexchange.com/q/364517/difference-between-chmod-vs-acl
 #     - https://reddit.com/r/linux/comments/170crnt/acl_101_a_visual_guide_to_accesscontrol_lists
+#     - https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-acls.html
 #     - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
 # =========================================================================
 alias whois='command whois -H'
