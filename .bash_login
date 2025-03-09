@@ -114,7 +114,8 @@ alias randchars='tr -dC "[:xdigit:]" </dev/urandom | head -c8'
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned) # head -c 30 /dev/urandom
-alias token='dd status=none if=/dev/urandom count=1 bs=128 | sha256sum | command cut -d " " -f1' # sha512sum
+alias toke='dd status=none if=/dev/urandom count=1 bs=128 | sha256sum | command cut -d " " -f1'
+alias token='dd status=none if=/dev/urandom count=1 bs=128 | sha512sum | command cut -d " " -f1'
 # https://en.m.wikipedia.org/wiki/Snowflake_ID
 # https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique/
 function snowflake () {
