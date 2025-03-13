@@ -684,9 +684,6 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 # - https://marksei.com/linux-permissions-chown-chgrp-and-chmod
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
-# https://geeksforgeeks.org/hash-command-in-linux-with-examples/
-alias hash='hash --help; hash'
-
 # see check ()
 # https://en.m.wikipedia.org/wiki/Cksum
 # https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums/
