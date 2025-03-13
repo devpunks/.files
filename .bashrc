@@ -158,6 +158,14 @@ export GREP_OPTIONS="--context=1 --color=auto --exclude=.bash_history \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
   --exclude-dir={.cache,.config,.git,.gnupg,.npm,.ssh,.vim,log,logs,node_modules,storage,tmp}"
 
+# https://php.net/manual/en/function.curl-setopt.php
+# export CURLOPT_URL # URL
+# export CURLOPT_SSLCERT # client.pem file
+# export CURLOPT_SSLKEY  # key.pem file
+# export CURLOPT_KEYPASSWD # password
+# export CURLOPT_DEFAULT_PROTOCOL # https
+# export CURLOPT_FOLLOWLOCATION # [0 - FALSE | 1 - TRUE]
+
 # }}}
 
 #==========================================================================
