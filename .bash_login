@@ -1128,6 +1128,7 @@ function dns () { clear
   echo ; echo  "PING $domain"
   echo ; ping "$domain"
 
+  echo ; echo  "LOOKUP $domain"
   # https://linux.die.net/man/1/nslookup
   # https://phoenixnap.com/kb/nslookup-command
   nslookup "$domain"
