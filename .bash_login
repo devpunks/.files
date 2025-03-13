@@ -655,7 +655,8 @@ function digest () { clear
   printf "$phrase" | argon2 $SALT -i
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
-  echo ; htpasswd -nbBC 10 USER $phrase
+  echo ; echo BCRYPT:
+  htpasswd -nbBC 10 USER $phrase
 } # digest
 
 function passgen () {
