@@ -667,6 +667,8 @@ alias hash='hash --help; hash'
 # see check ()
 # https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums/
 function checksum () {
+  local -r hash='md5'
+# local -r hash='sha256'
 # local -r hash='sha512'
   local -r hash='sha256'
   local -r file=${1}
