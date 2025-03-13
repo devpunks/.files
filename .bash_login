@@ -408,10 +408,9 @@ alias g#='{
   # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   # gl --since="1 day ago"
   #   printf "\n Total:%d" $( gl --since=1.day | wc -l )
-  GIT_PAGER=cat \
-    gl --since="Today 00:00"; echo
-    printf "\n Total:%d\n\n" $( gl --since="Today 00:00" | wc -l )
-' # g#
+  gl --since="Today 00:00" ;
+  printf "\n Total:%s\n\n" "$( gl --since="Today 00:00" | wc -l )"
+}' # g#
 
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
 function git_clean () { clear
