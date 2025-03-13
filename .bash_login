@@ -1334,6 +1334,7 @@ alias ssh.add='{
 # -f - /data/data/com.termux/files/usr/etc/ssh/sshd_config
 # -T - test mode
 # check
+# ~/.hosts
 # ~/.ssh/rc
 # ~/.ssh/config
 # ~/.ssh/id_rsa
