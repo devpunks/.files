@@ -1112,9 +1112,13 @@ function dns () { clear
   echo Current Host ⇋ "$( hostname --short )"
   echo Current IP ⇋ "$( hostname --ip-addresses )"
 
-  [ "$HOSTFILE" ] \
-    && printf "\n \$HOSTFILE: $HOSTFILE \n %s \n\n" "$( cat "$HOSTFILE" )"
-} # host
+  printf \
+    "\n \${PREFIX}/etc/hosts: \n %s \n" "$( cat ${PREFIX}/etc/hosts )"
+  printf \
+    "\n \$HOSTFILE: $HOSTFILE \n %s \n" "$( cat "$HOSTFILE" )"
+  printf \
+    "\n ~/.ssh/known_hosts:\n %s \n" "$( cat ~/.ssh/known_hosts )"
+} # dns
 
 # https://en.m.wikipedia.org/wiki/Tc_(Linux)
 # https://man7.org/linux/man-pages/man8/tc.8.html
