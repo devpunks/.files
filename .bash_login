@@ -1116,7 +1116,7 @@ function dns () { clear
   # https://linux.die.net/man/1/nslookup
   # https://phoenixnap.com/kb/nslookup-command
   nslookup "$domain"
-  nslookup "$domain" -type=any
+  dig "$domain" any
 
   echo Current Domain ⇋ "$( hostname --domain )"
   echo Current Host ⇋ "$( hostname --short )"
