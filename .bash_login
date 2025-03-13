@@ -686,7 +686,10 @@ function checksum () {
 
   exist "$file" || return $?
 
-  echo "Checksum"
+  echo "CkSum:"
+  cksum "$file"
+
+  echo; echo "Checksum ($hash):"
   "${hash}sum" "$file" | tee "$file.$hash"
   echo
 } # checksum
