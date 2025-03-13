@@ -1083,7 +1083,10 @@ function dns () { clear
   local -r domain=${1:-localhost}
 
   [ "$domain" != localhost ] \
-    && whois "$domain" && dig # dnsutils
+    && whois "$domain"
+
+  # dnsutils https://digitalocean.com/community/tutorials/how-to-retrieve-dns-information-using-dig
+  [ "$domain" != localhost ] && dig "$domain"
 
   echo ; echo ALL:
   command host -v -R 3 -a "$domain"
