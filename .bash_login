@@ -659,7 +659,7 @@ function digest () {
   htpasswd -nbBC 10 USER $phrase
 } # digest
 
-function passgen () {
+function passgen () { clear
   local pwd=${1}
 
   echo PASSWORD: $pwd
