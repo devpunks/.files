@@ -676,6 +676,7 @@ alias chmod='command chmod --verbose --preserve-root --recursive'
 alias hash='hash --help; hash'
 
 # see check ()
+# https://en.m.wikipedia.org/wiki/Cksum
 # https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums/
 function checksum () {
   local -r hash='md5'
