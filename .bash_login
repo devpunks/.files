@@ -944,6 +944,8 @@ function stop () {
 } # stop
 
 function trip () {
+  services
+
   local -r service="${1}"
   local -r services="${*:-nginx}"
   local -r path="${PREFIX}/var/service"
