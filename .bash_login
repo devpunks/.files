@@ -651,6 +651,7 @@ function digest () { clear
   local phrase=${1}
 
   argon2 -h
+  echo ; echo ARGON2i:
   printf "$phrase" | argon2 $SALT -i
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
