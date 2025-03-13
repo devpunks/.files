@@ -614,7 +614,7 @@ export SALT='abcdefgh' # TODO: generate SALT
 # https://linux.die.net/man/1/mkpasswd
 alias passgen='{ man mkpasswd
   mkpasswd -m help
-  mkpasswd -5 -S abcdefgh
+  mkpasswd -5 -S $SALT
 }'
 # https://ietf.org/rfc/rfc4880.txt
 alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
