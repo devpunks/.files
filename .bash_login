@@ -119,7 +119,7 @@ alias cp='command cp --verbose --interactive --no-clobber --recursive'
 alias ln='command ln --verbose --interactive --symbolic --no-dereference'
 alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slashes'
 alias cut='command cut --only-delimited --delimiter="," --fields'
-alias copy='echo TODO: implement copy command for multiple destination types'
+alias copy='man scp; echo TODO: implement copy command for multiple destination types'
 alias zipper='man paste ; command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
 alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
