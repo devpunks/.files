@@ -548,10 +548,6 @@ function check () {
       .bash* | *.sh )
         command shellcheck --format=tty "$( realpath "$script" )" ;;
       *.tar* )
-        echo && echo Checking sha512 \
-          && ( exist "${script}.sha512" && sha512sum --check "${script}.sha512" ) \
-        || echo && echo Checking sha256 \
-          && ( exist "${script}.sha256" && sha256sum --check "${script}.sha256" )
       ;;
       * )
         echo "  🛑 Cannot check ${script}"
