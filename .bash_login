@@ -657,7 +657,14 @@ function digest () { clear
   echo ; htpasswd -nbBC 10 USER $phrase
 } # digest
 
-alias passgen='{ man mkpasswd
+function passgen () {
+  local pwd=${1}
+
+  echo PASSWORD: $pwd
+
+  digest $pwd
+
+  man mkpasswd
   mkpasswd -m help
   mkpasswd -5 -S $SALT # TODO: Factor in updating $SALT env var
 }'
