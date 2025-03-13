@@ -992,6 +992,8 @@ function trip () {
 alias ping='command ping -c 5'
 
 function trace () {
+  local domain=${1:-localhost}
+
   command traceroute $domain
   command tracepath $domain
 } # trace
