@@ -93,7 +93,7 @@ pkg install tsu # https://pypi.org/project/tsu
 pkg install whois # mkpasswd
 pkg install gnupg
 pkg install strace
-pkg install openssh
+pkg install openssh # https://openssh.com/manual.html
 
 echo Cloning Authorized Keys from...
 # TODO: use readline to get username
