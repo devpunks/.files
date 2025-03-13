@@ -403,7 +403,7 @@ alias gs='clear ; echo ; git status --column --verbose ; echo'
 alias gsl='echo ; git shortlog -s | sort -r; echo'
 alias gt='git tag -a'
 alias gv='git verify-commit --verbose' # --raw
-alias g#='
+alias g#='{
   # https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
   # https://stackoverflow.com/q/2183900/how-do-i-prevent-git-diff-from-using-a-pager
   # gl --since="1 day ago"
