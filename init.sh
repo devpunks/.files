@@ -93,6 +93,7 @@ pkg install tsu # https://pypi.org/project/tsu
 pkg install whois # mkpasswd
 pkg install gnupg
 pkg install strace
+pkg install openssl # https://openssl.org
 pkg install openssh # https://openssh.com/manual.html
 
 echo Cloning Authorized Keys from...
