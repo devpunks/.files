@@ -668,6 +668,7 @@ function passgen () { clear
 
   man mkpasswd
   mkpasswd -m help
+  echo ; echo MD5:
   mkpasswd -5 -S $SALT $pwd # TODO: Factor in updating $SALT env var
 } # passgen
 
