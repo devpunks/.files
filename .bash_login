@@ -1122,13 +1122,8 @@ function dns () { clear
   echo ; echo A RECORD IP ADDRESSES:
   dig "$domain" +short
 
-  # https://linux.die.net/man/8/traceroute
-  echo ; echo TRACE ROUTE; traceroute -N 1 -z 0.1 "$domain"
-  # https://linux.die.net/man/8/tracepath
-  # # https://geeksforgeeks.org/tracepath-command-in-linux-with-examples
-  echo ; echo ; tracepath -b -m 10 "$domain" # name + ip
-  echo ; echo  TRACE ROOT NAMESERVER RESOLUTION:
-  dig "$domain" +trace
+  echo ; echo  "TRACE $domain"
+  echo ; trace "$domain"
 
   echo ; echo  "PING $domain"
   echo ; ping "$domain"
