@@ -670,7 +670,6 @@ function checksum () {
   local -r hash='md5'
 # local -r hash='sha256'
 # local -r hash='sha512'
-  local -r hash='sha256'
   local -r file=${1}
 
   exist "$file" || return $?
