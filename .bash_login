@@ -647,7 +647,7 @@ alias hash='hash --help; hash'
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://httpd.apache.org/docs/current/programs/htpasswd.html
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
-function digest () { clear
+function digest () {
   local phrase=${1}
 
   argon2 -h
