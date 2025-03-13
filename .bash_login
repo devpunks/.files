@@ -523,6 +523,8 @@ function search () { clear
   command find "$location" -type f -iname "*${term}*" \
     | lines
 
+  echo ; man -k $term
+
   echo ; echo DONE!
 } # search
 
