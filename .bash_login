@@ -550,7 +550,14 @@ function check () {
       *.tar* )
       ;;
       * )
-        echo "  🛑 Cannot check ${script}"
+        ( echo && echo Checking sha512 \
+          && exist "${script}.sha512" && sha512sum --check "${script}.sha512" ) \
+        || ( echo && echo Checking sha256 \
+          && exist "${script}.sha256" && sha256sum --check "${script}.sha256" ) \
+        || ( echo && echo Checking MD5 \
+          && exist "${script}.md5" && md5sum --check "${script}.md5" ) \
+        || echo "  🛑 Cannot check ${script}"
+      ;;
     esac # $script
   done # for $script
 } # check
