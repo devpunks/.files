@@ -642,9 +642,6 @@ alias keys='{ banner
   signatures
 }' # keys
 
-# https://stackoverflow.com/q/12749858/rsa-public-key-format
-# https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
-# https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
 alias signatures='{
   echo ; gpg --check-signatures
 }' # signatures
