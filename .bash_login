@@ -613,6 +613,18 @@ function snowflake () {
 
 export SALT='abcdefgh' # TODO: generate SALT
 # https://linux.die.net/man/1/mkpasswd
+
+# https://geeksforgeeks.org/hash-command-in-linux-with-examples/
+alias hash='hash --help; hash'
+
+# https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
+function digest () { clear
+  local phrase=${1}
+
+  argon2 -h
+  printf "$1" | argon2 $SALT -i
+} # digest
+
 alias passgen='{ man mkpasswd
   mkpasswd -m help
   mkpasswd -5 -S $SALT # TODO: Factor in updating $SALT env var
