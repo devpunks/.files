@@ -1134,6 +1134,7 @@ function dns () { clear
   nslookup "$domain"
   dig "$domain" any
 
+  echo ; echo  "HOSTING"
   echo Current Domain ⇋ "$( hostname --domain )"
   echo Current Host ⇋ "$( hostname --short )"
   echo Current IP ⇋ "$( hostname --ip-addresses )"
