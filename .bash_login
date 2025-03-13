@@ -610,6 +610,11 @@ function snowflake () {
   command date -d @$tick
 } # snowflake
 
+# https://linux.die.net/man/1/mkpasswd
+alias passgen='{ man mkpasswd
+  mkpasswd -m help
+  mkpasswd -5 -S abcdefgh
+}'
 # https://ietf.org/rfc/rfc4880.txt
 alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
 # https://gnupg.org/documentation/manpage.html
