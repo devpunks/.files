@@ -631,7 +631,6 @@ alias keys='{ clear
   echo; echo "~/.ssh" ; ls -al ~/.ssh
   echo ; echo "~/.gnupg" ; ls -al ~/.gnupg
   echo ; echo "/etc/ssh" ; ls -al $PREFIX/etc/ssh
-  echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
   echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
   echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
   echo ; echo id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
