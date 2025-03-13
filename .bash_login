@@ -1081,7 +1081,6 @@ function proxy () { clear
 # https://cloudns.net/blog/linux-host-command-troubleshot-dns
 function dns () { clear
   local -r domain=${1:-localhost}
-  local -r hosts=${PREFIX}/etc/hosts
 
   [ "$domain" != localhost ] \
     && whois "$domain"
