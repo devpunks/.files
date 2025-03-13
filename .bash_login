@@ -691,6 +691,7 @@ function checksum () {
 
   echo; echo "Checksum ($hash):"
   "${hash}sum" "$file" | tee "$file.$hash"
+  echo Created "${file}.${hash}"
   echo
 } # checksum
 
