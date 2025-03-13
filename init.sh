@@ -93,6 +93,7 @@ pkg install tsu # https://pypi.org/project/tsu
 pkg install whois # mkpasswd
 pkg install gnupg # https://gnupg.org
 pkg install strace
+pkg install argon2 # https://en.m.wikipedia.org/wiki/Argon2
 pkg install openssl # https://openssl.org
 pkg install openssh # https://openssh.com/manual.html
 
