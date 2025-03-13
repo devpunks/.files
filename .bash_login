@@ -636,12 +636,7 @@ alias keys='{ clear
 # https://stackoverflow.com/q/12749858/rsa-public-key-format
 # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
 # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
-alias signatures='echo "$(
-  echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
-  echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
-  echo ; echo id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
-  echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
-  echo ; echo known_hosts ; cat ~/.ssh/known_hosts
+alias signatures='{
   echo ; gpg --check-signatures
 )"' # signatures
 
