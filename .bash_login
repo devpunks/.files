@@ -1106,6 +1106,10 @@ function dns () { clear
   # https://linux.die.net/man/8/tracepath
   # # https://geeksforgeeks.org/tracepath-command-in-linux-with-examples
   echo ; echo ; tracepath -b -m 10 "$domain" # name + ip
+  echo ; echo  TRACE ROOT NAMESERVER RESOLUTION:
+  dig "$domain" +trace
+
+  echo ; echo  "PING $domain"
   echo ; ping "$domain"
   echo ; echo
 
