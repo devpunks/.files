@@ -90,7 +90,7 @@ pkg install logrotate
 # {{{ Security ------------------------------------------------------------
 pkg install tsu # https://pypi.org/project/tsu
 
-pkg install whois
+pkg install whois # mkpasswd
 pkg install gnupg
 pkg install strace
 pkg install openssh
