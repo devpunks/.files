@@ -644,6 +644,7 @@ alias keys='{ banner
 
 alias signatures='{
   echo ; gpg --check-signatures
+  echo ; echo "~/.gnupg" ; ls -al ~/.gnupg
 }' # signatures
 
 # https://pypi.org/project/tsu
