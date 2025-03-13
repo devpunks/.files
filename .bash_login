@@ -634,6 +634,8 @@ alias keys='{ clear
   echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
   echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
   echo ; echo id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
+  echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
+  echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
   signatures
 }' # keys
 
