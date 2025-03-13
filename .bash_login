@@ -651,7 +651,10 @@ function digest () { clear
   local phrase=${1}
 
   argon2 -h
-  printf "$1" | argon2 $SALT -i
+  printf "$phrase" | argon2 $SALT -i
+
+  # https://en.m.wikipedia.org/wiki/Bcrypt
+  echo ; htpasswd -nbBC 10 USER $phrase
 } # digest
 
 alias passgen='{ man mkpasswd
