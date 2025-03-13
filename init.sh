@@ -73,6 +73,20 @@ pkg install cronie
 
 # }}}
 
+# {{{ Archive -------------------------------------------------------------
+pkg install tar
+pkg install zip
+pkg install gzip
+pkg install p7zip
+pkg install unrar
+pkg install unzip
+pkg install rsync
+pkg install brotli
+pkg install zopfli
+pkg install logrotate
+
+# }}}
+
 # {{{ Security ------------------------------------------------------------
 pkg install tsu # https://pypi.org/project/tsu
 
