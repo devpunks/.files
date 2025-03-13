@@ -638,7 +638,7 @@ alias keys='{ clear
 # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
 alias signatures='{
   echo ; gpg --check-signatures
-)"' # signatures
+}' # signatures
 
 # https://pypi.org/project/tsu
 # http://androidcentral.com/root
