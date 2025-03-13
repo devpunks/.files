@@ -513,7 +513,7 @@ function search () { clear
   local -r term="$1"
   local -r location=$( realpath "${2:-.}" )
 
-  echo ; echo Search Term 🔎 "$term"
+  echo ; echo Searching... 🔎 "$term"
   echo Location 👉 "$location"
 
   echo ; echo Greping...
