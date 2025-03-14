@@ -661,6 +661,7 @@ function digest () {
   htpasswd -nbBC 10 USER $phrase
 } # digest
 
+# https://linux.die.net/man/1/mkpasswd
 function passgen () { clear
   local pwd=${1}
 
