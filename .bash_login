@@ -720,7 +720,7 @@ function checksum () {
 
   exist "$file" || return $?
 
-  echo "CkSum:"
+  echo "CkSum (base10):"
   cksum "$file"
 
   echo; echo "Checksum ($hash):"
