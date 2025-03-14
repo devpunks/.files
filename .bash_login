@@ -1812,6 +1812,8 @@ function extract () {
 # =========================================================================
 # TODO: Implementation
 # -------------------------------------------------------------------------
+function deny () { : deny; }
+function allow () { : allow; }
 function used () { : used; }
 function clean () { : clean; }
 function reboot () { : reboot; }
