@@ -636,8 +636,9 @@ alias nonce="{
   command date +%s%N | md5sum | command cut -d' ' -f 1 ;
   echo OPENSSL BASE 64: ;
   command openssl rand -base64 32 ; # <n> can be adjusted (i.e. 24,  etc.)
-}"
+}" # nonce
 
+# https://en.m.wikipedia.org/wiki/Salt_(cryptography)
 export SALT='abcdefgh' # TODO: generate SALT
 # https://linux.die.net/man/1/mkpasswd
 
