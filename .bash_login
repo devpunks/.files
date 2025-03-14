@@ -680,7 +680,6 @@ function passgen () { clear
 alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
 alias sign='echo Cryptographically Signing...'
 alias verify='echo Cryptographically Verifying...'
-alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 
 # https://ietf.org/rfc/rfc4880.txt
 alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
