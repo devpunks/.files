@@ -749,6 +749,20 @@ function checksum () {
   echo
 } # checksum
 
+function encode () {
+  local -r bytes="$1"
+  local -r encoding='--base64' # base2lsbf | base2msbf | base16 | base32 | base32hex | base64 | base64url
+
+  printf "$bytes" | basenc $encoding
+} # encode
+
+function decode () {
+  local -r bytes="$1"
+  local -r encoding='--base64' # base2lsbf | base2msbf | base16 | base32 | base32hex | base64 | base64url
+
+  printf "$bytes" | basenc --decode $encoding
+} # decode
+
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
 # https://en.m.wikipedia.org/wiki/Advanced_Encryption_Standard
