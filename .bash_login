@@ -708,7 +708,26 @@ alias signatures='{
 
 alias certificates='{
   echo TODO: certificates ;
-}'
+}' # certificates
+
+# https://stackoverflow.com/q/4294689/how-to-generate-an-openssl-key-using-a-passphrase-from-the-command-line
+function certify () { clear # Certificate Authority
+  echo Write text file...
+  echo "Foo Bar Alice" > alice_pub.txt
+  cat alice_pub.txt
+
+  echo Generate private key...
+  openssl genrsa -passout pass:1234 -out CA_private.pem 1024 # size
+  cat CA_private.pem
+
+  echo Generate public key...
+  openssl rsa -passin pass:1234 -pubout -in CA_private.pem -out CA_public.pem
+  cat CA_public.pem
+
+  echo Sign public key...
+  openssl dgst -sha256 -sign CA_private.pem -out alice_pub_signed_by_CA.sha256 alice_pub.txt
+  cat alice_pub_signed_by_CA.sha256
+} # certify
 
 # see check ()
 # https://en.m.wikipedia.org/wiki/Cksum
