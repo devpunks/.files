@@ -1429,6 +1429,15 @@ function serve () { clear
     && command lighttpd -f "./lighttpd.conf"
 } # serve
 
+# GPG ---------------------------------------------------------------------
+alias ssh='man ssh ; command ssh' # -T
+# https://gnupg.org/documentation/manpage.html
+# https://betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
+alias gpg='man gpg ; command gpg --verbose --armor --fingerprint --keyid-format=long'
+alias gpg.add='{ man gpg-agent
+  ps x | command grep gpg-agent
+}' # gpg.add
+
 # SSh ---------------------------------------------------------------------
 # - https://ssh.com/academy/ssh
 # - https://ssh.com/academy/ssh/add-command
