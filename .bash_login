@@ -644,6 +644,11 @@ alias nonce="{
 # https://geeksforgeeks.org/hash-command-in-linux-with-examples/
 alias hash='hash --help; hash'
 
+# https://en.m.wikipedia.org/wiki/Salt_(cryptography)
+export SALT='abcdefgh' # TODO: generate SALT
+
+alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
+
 alias sign='echo Cryptographically Signing...'
 alias verify='echo Cryptographically Verifying...'
 # https://gnupg.org/documentation/manpage.html
