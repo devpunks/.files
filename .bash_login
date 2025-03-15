@@ -680,6 +680,8 @@ alias keys='{ banner
 
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
 
+  echo ; echo "Added keys (to ssh-agent)" ; ssh-add -l
+
   signatures
 }' # keys
 
