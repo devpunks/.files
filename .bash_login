@@ -669,6 +669,7 @@ alias keys='{ banner
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
 }' # keys
 
+# https://gnupg.org/documentation/manuals/gnupg/GPG-Configuration.html
 alias sign='echo Cryptographically Signing...'
 alias signatures='{
   echo ; gpg --check-signatures
