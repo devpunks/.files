@@ -1445,6 +1445,11 @@ alias gpg.add='{ man gpg-agent
   gpg-connect-agent updatestartuptty /bye >/dev/null
 
   ps x | command grep gpg-agent
+
+  echo
+  echo \$SSH_AGENT_PID: $SSH_AGENT_PID
+  echo \$SSH_AUTH_SOCK: $SSH_AUTH_SOCK
+  echo
 }' # gpg.add
 
 # SSh ---------------------------------------------------------------------
