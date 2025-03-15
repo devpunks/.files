@@ -652,7 +652,8 @@ function passgen () { clear
 } # passgen
 
 # https://ietf.org/rfc/rfc4880.txt
-alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
+alias keygen='command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key"'
+  # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
 alias keys='{ banner
   # https://stackoverflow.com/q/12749858/rsa-public-key-format
   echo "Keyscan of ~/.ssh/known_hosts"
