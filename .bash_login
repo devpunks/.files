@@ -671,6 +671,7 @@ alias keys='{ banner
 
 # https://gnupg.org/documentation/manuals/gnupg/GPG-Configuration.html
 alias sign='echo Cryptographically Signing...'
+# https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
 alias signatures='{
   echo ; gpg --check-signatures
   echo ; echo "~/.gnupg" ; ls -al ~/.gnupg
