@@ -733,7 +733,6 @@ function certify () { clear # Certificate Authority
 } # certify
 
 # see check ()
-# https://en.m.wikipedia.org/wiki/Cksum
 # https://en.m.wikipedia.org/wiki/Cyclic_code
 # https://en.m.wikipedia.org/wiki/Cyclic_redundancy_check
 # https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums
