@@ -617,7 +617,6 @@ export SALT='abcdefgh' # TODO: generate SALT
 
 alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 
-alias sign='echo Cryptographically Signing...'
 alias verify='echo Cryptographically Verifying...'
 # https://gnupg.org/documentation/manpage.html
 # https://betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
