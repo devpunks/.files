@@ -654,9 +654,6 @@ function passgen () { clear
 # https://ietf.org/rfc/rfc4880.txt
 alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
 alias keys='{ banner
-  echo; echo "~/.ssh" ; ls -al ~/.ssh
-# https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
-  echo ; echo "/etc/ssh" ; ls -al $PREFIX/etc/ssh
   # https://stackoverflow.com/q/12749858/rsa-public-key-format
   echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
   echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
