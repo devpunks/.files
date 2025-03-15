@@ -658,11 +658,23 @@ alias keys='{ banner
   echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
 
   # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
-  echo ; echo "/etc/ssh" ; ls -al $PREFIX/etc/ssh
-  echo; echo "~/.ssh" ; ls -al ~/.ssh
-  echo ; echo id_rsa.pub ; cat ~/.ssh/id_rsa.pub
-  echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
-  echo ; echo id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
+  echo ; echo /etc/ssh/ ; ls -al ${PREFIX}/etc/ssh
+  echo ; echo /etc/ssh/ssh_host_ed25519_key ; cat ${PREFIX}/etc/ssh/ssh_host_ed25519_key
+  echo ; echo /etc/ssh/ssh_host_ed25519_key.pub ; cat ${PREFIX}/etc/ssh/ssh_host_ed25519_key.pub
+  echo ; echo /etc/ssh/ssh_host_ecdsa_key ; cat ${PREFIX}/etc/ssh/ssh_host_ecdsa_key
+  echo ; echo /etc/ssh/ssh_host_ecdsa_key.pub ; cat ${PREFIX}/etc/ssh/ssh_host_ecdsa_key.pub
+  echo ; echo /etc/ssh/ssh_host_rsa_key ; cat ${PREFIX}/etc/ssh/ssh_host_rsa_key
+  echo ; echo /etc/ssh/ssh_host_rsa_key.pub ; cat ${PREFIX}/etc/ssh/ssh_host_rsa_key.pub
+  echo ; echo /etc/ssh/ssh_host_dsa_key ; cat ${PREFIX}/etc/ssh/ssh_host_dsa_key
+  echo ; echo /etc/ssh/ssh_host_dsa_key.pub ; cat ${PREFIX}/etc/ssh/ssh_host_dsa_key.pub
+
+  echo; echo ~/.ssh ; ls -al ~/.ssh
+  echo ; echo ~/.ssh/id_ed25519 ; cat ~/.ssh/id_ed25519
+  echo ; echo ~/.ssh/id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
+  echo ; echo ~/.ssh/id_ecdsa ; cat ~/.ssh/id_ecdsa
+  echo ; echo ~/.ssh/id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
+  echo ; echo ~/.ssh/id_rsa ; cat ~/.ssh/id_rsa
+  echo ; echo ~/.ssh/id_rsa.pub ; cat ~/.ssh/id_rsa.pub
 
   # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
