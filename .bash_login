@@ -671,6 +671,7 @@ alias keys='{ banner
   signatures
 }' # keys
 
+alias sign='echo Cryptographically Signing...'
 alias signatures='{
   echo ; gpg --check-signatures
   echo ; echo "~/.gnupg" ; ls -al ~/.gnupg
