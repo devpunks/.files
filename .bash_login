@@ -665,7 +665,7 @@ alias keys='{ banner
   echo ; echo id_ecdsa.pub ; cat ~/.ssh/id_ecdsa.pub
   echo ; echo id_ed25519.pub ; cat ~/.ssh/id_ed25519.pub
 
-# https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
+  # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
   echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
 
