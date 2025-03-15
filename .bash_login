@@ -1444,7 +1444,6 @@ alias gpg.add='{ man gpg-agent
 
   gpg-connect-agent updatestartuptty /bye >/dev/null
 
-  gpgconf --list-dirs
   ps x | command grep gpg-agent
 }' # gpg.add
 
