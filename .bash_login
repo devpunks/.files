@@ -680,6 +680,7 @@ alias keys='{ banner
   signatures
 }' # keys
 
+alias verify='echo Cryptographically Verifying...'
 # https://gnupg.org/documentation/manuals/gnupg/GPG-Configuration.html
 alias sign='echo Cryptographically Signing...' # ssh-keygen -V # sign/verify certificate
 # https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
