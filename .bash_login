@@ -678,7 +678,6 @@ alias keys='{ banner
   echo ; echo ~/.ssh/id_rsa ; cat ~/.ssh/id_rsa
   echo ; echo ~/.ssh/id_rsa.pub ; cat ~/.ssh/id_rsa.pub
 
-  # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
 
   signatures
