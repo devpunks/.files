@@ -1423,7 +1423,7 @@ alias ssh.add='{
   echo adding ssh
 
   # default is $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
-  [ -e "${HOME}.agent.sock" ] \
+  [ -e "${HOME}/agent.sock" ] \
     && command rm "${HOME}/agent.sock"
   eval $( ssh-agent -s -t 86400 -a $HOME/agent.sock )
   command ssh-add
