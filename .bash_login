@@ -1420,8 +1420,6 @@ function serve () { clear
 # - http://blog.joncairns.com/2013/12/understanding-ssh-agent-and-ssh-add
 alias ssh='man ssh; command ssh' # -T
 alias ssh.add='{
-  echo adding ssh
-
   # default is $TMPDIR/ssh-XXXXXXXXXX/agent.<ppid>
   [ -e "${HOME}/agent.sock" ] \
     && command rm "${HOME}/agent.sock"
