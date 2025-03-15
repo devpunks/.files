@@ -2,6 +2,7 @@
 
 # dotfiles
 .ssh
+.gnupg
 .gist
 .less
 .lesskey
