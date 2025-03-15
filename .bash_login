@@ -1361,7 +1361,6 @@ function attack () {
   # Vulnerability exploits
   # Social engineering attacks
 
-  echo MitM # https://en.m.wikipedia.org/wiki/Man-in-the-middle_attack
   echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
   echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection
   echo C10k Problem # https://en.m.wikipedia.org/wiki/C10k_problem
