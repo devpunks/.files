@@ -655,6 +655,7 @@ function passgen () { clear
 alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
 alias keys='{ banner
   # https://stackoverflow.com/q/12749858/rsa-public-key-format
+  echo "Keyscan of ~/.ssh/known_hosts"
   echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
 
   # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
