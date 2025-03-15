@@ -1438,6 +1438,7 @@ alias gpg.add='{ man gpg-agent
   gpgconf --kill gpg-agent
   gpgconf --list-dirs
 
+  echo unset \$SSH_AGENT_PID ; unset SSH_AGENT_PID
   [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ] \
     && export SSH_AUTH_SOCK="`gpgconf --list-dirs agent-ssh-socket`"
 
