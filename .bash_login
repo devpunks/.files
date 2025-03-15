@@ -553,13 +553,11 @@ function check () {
 # =========================================================================
 # {{{ Jobs
 # =========================================================================
-alias whois='command whois -H'
-# https://man7.org/linux/man-pages/man1/passwd.1.html
-alias password='clear ; man -k passwd ; echo ; command passwd'
-
-# https://pypi.org/project/tsu
-# http://androidcentral.com/root
-alias su='command su ; tsu '
+alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring
+# https://stackoverflow.com/q/35026395/bash-what-is-a-jobspec
+alias cron='man crontab ; man cronnext ; man crond ; ' # https://crontab.guru
+alias job='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
+alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
 
 # - https://en.m.wikipedia.org/wiki/Chown
 # - https://man7.org/linux/man-pages/man1/chown.1p.html
