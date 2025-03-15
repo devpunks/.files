@@ -649,6 +649,12 @@ alias nonce="{
 # https://geeksforgeeks.org/hash-command-in-linux-with-examples/
 alias hash='hash --help; hash'
 
+alias sign='echo Cryptographically Signing...'
+alias verify='echo Cryptographically Verifying...'
+# https://gnupg.org/documentation/manpage.html
+# https://www.betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
+alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
+
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://httpd.apache.org/docs/current/programs/htpasswd.html
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
