@@ -614,10 +614,8 @@ alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned)
 # - https://man7.org/linux/man-pages/man1/uuidgen.1.html
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
-# https://geeksforgeeks.org/od-command-linux-example/
-alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned) # head -c 30 /dev/urandom
-alias toke='dd status=none if=/dev/urandom count=1 bs=128 | sha256sum | command cut -d " " -f1'
-alias token='dd status=none if=/dev/urandom count=1 bs=128 | sha512sum | command cut -d " " -f1'
+alias toke='dd bs=256 count=1 status=none if=/dev/urandom | sha256sum | command cut -d " " -f1'
+alias token='dd bs=512 count=1 status=none if=/dev/urandom | sha512sum | command cut -d " " -f1'
 
 alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 
