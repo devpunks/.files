@@ -611,7 +611,6 @@ alias randchars='tr -dC "[:xdigit:]" </dev/urandom | head -c8'
 # - https://baeldung.com/linux/bash-generate-uuid
 # - https://man7.org/linux/man-pages/man1/uuidgen.1.html
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
-alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned) # head -c 30 /dev/urandom
 alias toke='dd status=none if=/dev/urandom count=1 bs=128 | sha256sum | command cut -d " " -f1'
