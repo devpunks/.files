@@ -684,12 +684,6 @@ function passgen () { clear
   mkpasswd -5 -S $SALT $pwd # TODO: Factor in updating $SALT env var
 } # passgen
 
-# https://gnupg.org/documentation/manpage.html
-# https://www.betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
-alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
-alias sign='echo Cryptographically Signing...'
-alias verify='echo Cryptographically Verifying...'
-
 # https://ietf.org/rfc/rfc4880.txt
 alias keygen='command ssh-keygen -b 4096 -C "devPunks mobile key" -t ed25519'
 # https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
