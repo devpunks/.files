@@ -693,6 +693,7 @@ alias signatures='{
   echo ; gpg --check-signatures
 }' # signatures
 
+# https://en.m.wikipedia.org/wiki/X.509
 alias certificates='{
   echo TODO: certificates ;
 }' # certificates
