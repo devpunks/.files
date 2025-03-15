@@ -769,6 +769,43 @@ function lock () {
   flock "$lock" "$location"
 } # lock
 
+# }}}
+
+# =========================================================================
+# {{{ Security
+#   SSH Key Best Practices
+#     - https://www.brandonchecketts.com/archives/ssh-ed25519-key-best-practices-for-2025
+#   eXtended Attr(ibutes)
+#     - https://linuxexam.net/2019/11/linux-tools-getfattrsetfattr.html
+#   ACLs (Access Control List)
+#     - https://unix.stackexchange.com/q/364517/difference-between-chmod-vs-acl
+#     - https://reddit.com/r/linux/comments/170crnt/acl_101_a_visual_guide_to_accesscontrol_lists
+#     - https://doc.opensuse.org/documentation/leap/security/html/book-security/cha-security-acls.html
+#     - https://usenix.org/legacy/publications/library/proceedings/usenix03/tech/freenix03/full_papers/gruenbacher/gruenbacher_html/main.html
+# =========================================================================
+alias whois='command whois -H'
+# https://man7.org/linux/man-pages/man1/passwd.1.html
+alias password='clear ; man -k passwd ; echo ; command passwd'
+
+# https://pypi.org/project/tsu
+# http://androidcentral.com/root
+alias su='command su ; tsu '
+
+# - https://en.m.wikipedia.org/wiki/Chown
+# - https://man7.org/linux/man-pages/man1/chown.1p.html
+alias chown='command chown --verbose --preserve-root --recursive'
+
+# - https://en.m.wikipedia.org/wiki/Chgrp
+# - https://man7.org/linux/man-pages/man1/chgrp.1p.html
+alias chgrp='command chgrp --verbose --preserve-root --recursive'
+
+# - https://askubuntu.com/q/918379
+# - https://en.m.wikipedia.org/wiki/Chmod
+# - https://gnu.org/software/coreutils/chmod
+# - https://man7.org/linux/man-pages/man1/chmod.1p.html
+# - https://marksei.com/linux-permissions-chown-chgrp-and-chmod
+alias chmod='command chmod --verbose --preserve-root --recursive'
+
 # - https://stackoverflow.com/q/67351646/what-does-flock-u-actually-do
 function unlock () {
   local -r lock="$( realpath "${1}.lock" )"
