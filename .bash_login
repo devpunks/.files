@@ -1435,6 +1435,14 @@ alias ssh='man ssh ; command ssh' # -T
 # https://betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
 alias gpg='man gpg ; command gpg --verbose --armor --fingerprint --keyid-format=long'
 alias gpg.add='{ man gpg-agent
+  unset SSH_AGENT_PID
+
+  [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ] \
+    && export SSH_AUTH_SOCK="`gpgconf --list-dirs agent-ssh-socket`"
+
+  gpg-connect-agent updatestartuptty /bye >/dev/null
+
+  gpgconf --list-dirs
   ps x | command grep gpg-agent
 }' # gpg.add
 
