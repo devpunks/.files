@@ -1444,7 +1444,7 @@ alias ssh.add='{
     && command rm "${HOME}/agent.sock"
   eval $( ssh-agent -s -t 86400 -a $HOME/agent.sock )
   command ssh-add -vvv -D # delete
-  command ssh-add -vvv -c # ssh-askpass
+  command ssh-add -vvv # -c ssh-askpass breaks github
   command ssh-add -vvv -T # test
   command ssh-add -vvv -l # list
   ps x | command grep ssh-agent
