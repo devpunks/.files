@@ -667,9 +667,6 @@ alias keys='{ banner
 
   # https://security.stackexchange.com/q/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
-  echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
-
-  signatures
 }' # keys
 
 alias sign='echo Cryptographically Signing...'
