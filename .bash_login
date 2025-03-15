@@ -559,13 +559,9 @@ alias cron='man crontab ; man cronnext ; man crond ; ' # https://crontab.guru
 alias job='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
 alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
 
-# - https://en.m.wikipedia.org/wiki/Chown
-# - https://man7.org/linux/man-pages/man1/chown.1p.html
-alias chown='command chown --verbose --preserve-root --recursive'
-
-# - https://en.m.wikipedia.org/wiki/Chgrp
-# - https://man7.org/linux/man-pages/man1/chgrp.1p.html
-alias chgrp='command chgrp --verbose --preserve-root --recursive'
+function work () {
+  echo working
+} # jobs
 
 # - https://askubuntu.com/q/918379
 # - https://en.m.wikipedia.org/wiki/Chmod
