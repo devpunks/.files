@@ -617,11 +617,6 @@ export SALT='abcdefgh' # TODO: generate SALT
 
 alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 
-alias verify='echo Cryptographically Verifying...'
-# https://gnupg.org/documentation/manpage.html
-# https://betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
-alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
-
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://httpd.apache.org/docs/current/programs/htpasswd.html
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
