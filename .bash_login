@@ -657,7 +657,6 @@ alias keys='{ banner
   # https://stackoverflow.com/q/12749858/rsa-public-key-format
   echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
 
-  signatures
   # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
   echo ; echo "/etc/ssh" ; ls -al $PREFIX/etc/ssh
   echo; echo "~/.ssh" ; ls -al ~/.ssh
