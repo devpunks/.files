@@ -671,6 +671,7 @@ function digest () { # digests
   printf "$phrase" | openssl dgst -sha256 -c | command cut -d' ' -f2
 
   echo ; echo SHA-512:
+  printf "$phrase" | sha512sum | command cut -d' ' -f1
   printf "$phrase" | openssl dgst -sha512 -c | command cut -d' ' -f2
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
