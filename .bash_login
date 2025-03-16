@@ -661,7 +661,6 @@ alias keys='{ banner
   echo "Keyscan of ~/.ssh/known_hosts"
   echo ; ssh-keyscan -v -f ~/.ssh/known_hosts
 
-  # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
   echo ; echo /etc/ssh/ ; ls -al ${PREFIX}/etc/ssh
   echo ; echo /etc/ssh/ssh_host_ed25519_key ; cat ${PREFIX}/etc/ssh/ssh_host_ed25519_key
   echo ; echo /etc/ssh/ssh_host_ed25519_key.pub ; cat ${PREFIX}/etc/ssh/ssh_host_ed25519_key.pub
