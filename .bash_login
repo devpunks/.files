@@ -695,6 +695,7 @@ function decode () {
 # https://en.m.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
   man gpg
+  man openssl
 } # encrypt
 
 alias nms='command nms -a -c -f magenta'
