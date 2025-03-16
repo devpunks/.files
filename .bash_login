@@ -612,6 +612,9 @@ alias nonce="{
 # https://en.m.wikipedia.org/wiki/Salt_(cryptography)
 export SALT='abcdefgh' # TODO: generate SALT
 
+# https://geeksforgeeks.org/hash-command-in-linux-with-examples
+alias hash='hash --help; hash'
+
 alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 
 # see check ()
