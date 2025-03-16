@@ -631,7 +631,7 @@ function digest () { # digests
   echo ; printf "ARGON2i: $phrase\n\n" | argon2 $SALT -i
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
-  echo ; printf "\nBCRYPT: %s" \
+  echo ; printf "BCRYPT: %s\n\n" \
     "$( htpasswd -nbBC 10 USER "$phrase" )"
 
   echo
