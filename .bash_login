@@ -643,7 +643,7 @@ alias digests='command openssl list -digest-algorithms'
 # https://en.m.wikipedia.org/wiki/Key_derivation_function
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
-function digest () { # digests
+function derive () {
   local phrase="${1}"
 
   echo ; printf "SCRYPT: "
