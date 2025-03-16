@@ -625,7 +625,7 @@ function digest () { # digests
   local phrase="${1}"
 
   echo ; printf "\nMD5: "
-  printf "$phrase" | openssl dgst -md5 -c | command cut -d' ' -f2
+  printf "$phrase\n\n" | openssl dgst -md5 -c | command cut -d' ' -f2
 
   argon2 -h
   echo ; printf "\nARGON2i: $phrase" | argon2 $SALT -i
