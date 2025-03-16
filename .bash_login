@@ -761,6 +761,30 @@ alias signatures='{
   echo ; gpg --check-signatures
 }' # signatures
 
+function sign () {
+  local file="$( realpath $1 )"
+  local key="${HOME}/.ssh/id_rsa.pem" # private .pem file
+
+  exist "$file" || return $?
+
+  echo "Cryptographically Signing > $file with $key ..."
+  # ssh-keygen -V # sign/verify certificate
+
+  openssl dgst -sha256 -sign "$key" -out "${file}.signature" "$file"
+} # sign
+
+function verify () {
+  local file="$( realpath $1 )"
+  local key="${HOME}/.ssh/id_rsa.pub" # public .pem file
+
+  exist "$file" || return $?
+
+  echo "Cryptographically Verifying > $file with $key ..."
+  # ssh-keygen -V # sign/verify certificate
+
+  openssl dgst -sha256 -verify "$key" -signature "${file}.signature" # -prverify
+} # verify
+
 # https://en.m.wikipedia.org/wiki/X.509
 alias certificates='{
   echo TODO: certificates ;
