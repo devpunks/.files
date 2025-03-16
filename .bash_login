@@ -722,7 +722,7 @@ function passgen () { clear
 
   echo PASSWORD: $pwd
 
-  digest $pwd
+  derive $pwd
 
   man mkpasswd
   mkpasswd -m help
