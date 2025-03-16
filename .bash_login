@@ -624,9 +624,6 @@ alias digests='command openssl list -digest-algorithms'
 function digest () { # digests
   local phrase="${1}"
 
-  echo ; printf "\nMD5: "
-  printf "$phrase\n\n" | openssl dgst -md5 -c | command cut -d' ' -f2
-
   argon2 -h
   echo ; printf "ARGON2i: $phrase\n\n" | argon2 $SALT -i
 
