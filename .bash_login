@@ -637,8 +637,8 @@ function digest () { # digests
   echo ; echo SHA-256:
   printf "$phrase" | openssl dgst -sha256 -c | command cut -d' ' -f2
 
-  echo ; printf "MD5: "
-  printf "$phrase\n\n" | openssl dgst -md5 -c | command cut -d' ' -f2
+  echo ; echo SHA-512:
+  printf "$phrase" | openssl dgst -sha512 -c | command cut -d' ' -f2
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
   echo ; printf "BCRYPT: %s\n\n" \
