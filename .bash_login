@@ -650,6 +650,10 @@ function digest () { # digests
   echo ; printf "ARGON2i: "
   printf "$phrase" | argon2 $SALT -i
 
+  # https://en.m.wikipedia.org/wiki/Bcrypt
+  echo ; printf "BCRYPT: %s\n" \
+    "$( htpasswd -nbBC 10 USER "$phrase" )"
+
   echo ; echo MD5:
   printf "$phrase" | openssl dgst -md5 -c | command cut -d' ' -f2
 
