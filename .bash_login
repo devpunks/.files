@@ -628,8 +628,7 @@ function digest () { # digests
   printf "$phrase" | openssl dgst -md5 -c | command cut -d' ' -f2
 
   argon2 -h
-  echo ; echo ARGON2i:
-  printf "$phrase" | argon2 $SALT -i
+  echo ; printf "\nARGON2i: $phrase" | argon2 $SALT -i
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
   echo ; echo BCRYPT:
