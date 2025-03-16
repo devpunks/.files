@@ -667,6 +667,7 @@ function digest () { # digests
   printf "$phrase" | openssl dgst -sha3-224 -c | command cut -d' ' -f2
 
   echo ; echo SHA-256:
+  printf "$phrase" | sha256sum | command cut -d' ' -f1
   printf "$phrase" | openssl dgst -sha256 -c | command cut -d' ' -f2
 
   echo ; echo SHA-512:
