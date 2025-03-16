@@ -645,6 +645,8 @@ function digest () { # digests
 
   echo ; printf "SCRYPT: "
 
+  echo ; printf "PBKDF2: "
+
   argon2 -h
   echo ; printf "ARGON2i: "
   printf "$phrase" | argon2 $SALT -i
