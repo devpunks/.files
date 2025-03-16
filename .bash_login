@@ -653,8 +653,15 @@ function derive () {
   printf "$phrase" | argon2 $SALT -i
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
-  echo ; printf "BCRYPT: %s\n" \
-    "$( htpasswd -nbBC 10 USER "$phrase" )"
+  # https://httpd.apache.org/docs/current/programs/htpasswd.html
+  echo ; printf "BCRYPT: %s\n" "$( htpasswd -nbBC 10 USER "$phrase" )"
+
+  echo ; printf "SCRYPT: "
+
+  echo ; printf "PBKDF2: "
+
+  # https://eprint.iacr.org/2010/264
+  echo ; printf "HKDF: "
 
   echo ; echo MD5:
   printf "$phrase" | md5sum | command cut -d' ' -f1
