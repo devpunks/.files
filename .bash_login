@@ -643,6 +643,8 @@ alias digests='command openssl list -digest-algorithms'
 function digest () { # digests
   local phrase="${1}"
 
+  echo ; printf "SCRYPT: "
+
   argon2 -h
   echo ; printf "ARGON2i: "
   printf "$phrase" | argon2 $SALT -i
