@@ -634,7 +634,7 @@ function digest () { # digests
   echo ; printf "BCRYPT: %s\n\n" \
     "$( htpasswd -nbBC 10 USER "$phrase" )"
 
-  echo
+  echo ; echo
 } # digest
 
 # https://linux.die.net/man/1/mkpasswd
