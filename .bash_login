@@ -617,6 +617,7 @@ export SALT='abcdefgh' # TODO: generate SALT
 
 alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 
+alias digests='command openssl list -digest-algorithms'
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://httpd.apache.org/docs/current/programs/htpasswd.html
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
