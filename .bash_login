@@ -847,6 +847,24 @@ alias chgrp='command chgrp --verbose --preserve-root --recursive'
 # - https://marksei.com/linux-permissions-chown-chgrp-and-chmod
 alias chmod='command chmod --verbose --preserve-root --recursive'
 
+# - https://linux.die.net/man/1/flock
+# - https://linuxhandbook.com/flock-command
+# - https://man7.org/linux/man-pages/man2/flock.2.html
+# - https://howtogeek.com/limit-bash-scripts-to-run-once-at-a-time
+# - https://unix.stackexchange.com/questions/203694/is-flock-exec-safe-in-bash
+function lock () {
+  local -r location="$(realpath "$1" )"
+  local -r lock="$( realpath "${location}.lock" )"
+
+  exist "$location" || return $?
+
+  man flock
+
+  echo "🔐 Locking $location 🔗 ($lock)"
+
+  flock "$lock" "$location"
+} # lock
+
 # - https://stackoverflow.com/q/67351646/what-does-flock-u-actually-do
 function unlock () {
   local -r lock="$( realpath "${1}.lock" )"
