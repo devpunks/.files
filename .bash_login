@@ -646,10 +646,6 @@ alias digests='command openssl list -digest-algorithms'
 function derive () {
   local phrase="${1}"
 
-  echo ; printf "SCRYPT: "
-
-  echo ; printf "PBKDF2: "
-
   argon2 -h
   echo ; printf "ARGON2i: "
   printf "$phrase" | argon2 $SALT -i
