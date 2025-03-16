@@ -1444,7 +1444,8 @@ alias gpg.add='{ man gpg-agent
   [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ] \
     && export SSH_AUTH_SOCK="`gpgconf --list-dirs agent-ssh-socket`"
 
-  gpg-connect-agent --verbose updatestartuptty /bye >/dev/null
+  # restart
+  gpg-connect-agent --verbose updatestartuptty /bye
 
   ps x | command grep gpg-agent
 
