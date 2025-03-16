@@ -621,8 +621,11 @@ alias digests='command openssl list -digest-algorithms'
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://httpd.apache.org/docs/current/programs/htpasswd.html
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
-function digest () {
-  local phrase=${1}
+function digest () { # digests
+  local phrase="${1}"
+
+  echo ; printf "\nMD5: "
+  printf "$phrase" | openssl dgst -md5 -c | command cut -d' ' -f2
 
   argon2 -h
   echo ; echo ARGON2i:
