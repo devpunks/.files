@@ -770,11 +770,6 @@ function passgen () { clear
   echo PASSWORD: $pwd
 
   derive $pwd
-
-  man mkpasswd
-  mkpasswd -m help
-  echo ; echo MD5:
-  mkpasswd -5 -S $SALT $pwd # TODO: Factor in updating $SALT env var
 } # passgen
 
 # https://ietf.org/rfc/rfc4880.txt
