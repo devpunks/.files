@@ -743,7 +743,11 @@ function encrypt () {
 alias nms='command nms -a -c -f magenta'
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 function decrypt () {
-  local -r message="${1}"
+  local -r file="${1}"
+  local -r output="${file%.*}"
+
+  echo GPG decrypt "$file" :
+  gpg -o - < "$file" > "$output"
 
   # https://github.com/bartobri/no-more-secrets?tab=readme-ov-file#usage
   echo "$message" | nms
