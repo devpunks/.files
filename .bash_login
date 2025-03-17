@@ -678,7 +678,7 @@ function derive () {
   echo ; printf "PBKDF2: "
   # need 600K iters. to be secure
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
-    -kdfopt digest:md5 -kdfopt iter:600000 PBKDF2 # need 600K iters. to be secure
+    -kdfopt digest:sha256 -kdfopt iter:600000 PBKDF2
 
   # https://eprint.iacr.org/2010/264
   # https://en.m.wikipedia.org/wiki/HKDF
