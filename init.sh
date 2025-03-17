@@ -94,6 +94,7 @@ pkg install whois # mkpasswd
 pkg install gnupg # https://gnupg.org
 pkg install strace # https://man7.org/linux/man-pages/man1/strace.1.html
 pkg install argon2 # https://en.m.wikipedia.org/wiki/Argon2
+pkg install scrypt # https://tarsnap.com/scrypt.html
 pkg install openssl # https://openssl.org
 pkg install openssh # https://openssh.com/manual.html
 
