@@ -683,6 +683,9 @@ function derive () {
   # https://en.m.wikipedia.org/wiki/HKDF
   echo  "HKDF: "
 
+  echo ; printf "DES: "
+  mkpasswd -m descrypt -S ${SALT:0:2} "$phrase"
+
   echo ; echo MD5:
   openssl passwd -1 -table -salt $SALT "$phrase"
   printf "$phrase" | md5sum | command cut -d' ' -f1
