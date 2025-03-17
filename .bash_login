@@ -842,6 +842,7 @@ function verify () {
 
   openssl rsa -in "$pem" -outform PEM -pubout -out "${pem}.pub"
 
+  exist "$pem" || return $?
   exist "$file" || return $?
 
   echo "Cryptographically Verifying > $file with $key ..."
