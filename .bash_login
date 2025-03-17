@@ -669,6 +669,7 @@ function derive () {
   # https://en.m.wikipedia.org/wiki/Scrypt
   echo ; printf "SCRYPT: "
 
+  # https://en.m.wikipedia.org/wiki/PBKDF2
   echo ; printf "PBKDF2: "
 
   # https://eprint.iacr.org/2010/264
