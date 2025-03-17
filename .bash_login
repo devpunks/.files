@@ -827,6 +827,7 @@ function sign () {
 
   openssl genrsa -aes256 -out "$pem" 2048
 
+  exist "$pem" || return $?
   exist "$file" || return $?
 
   echo "Cryptographically Signing > $file with $key ..."
