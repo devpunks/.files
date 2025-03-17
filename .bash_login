@@ -603,7 +603,7 @@ function snowflake () {
 alias nonce="{
   echo SHA512 SUM: ;
   command date +%s%N | sha512sum | command cut -d' ' -f 1 ;
-  echo SHA-256 SUM: ;
+  echo SHA256 SUM: ;
   command date +%s%N | sha256sum | command cut -d' ' -f 1 ;
   echo MD5 SUM: ;
   command date +%s%N | md5sum | command cut -d' ' -f 1 ;
