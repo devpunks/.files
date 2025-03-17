@@ -765,7 +765,7 @@ function decrypt () {
 # https://linux.die.net/man/1/mkpasswd
 # https://antofthy.gitlab.io/info/crypto/passwd_generation.txt
 function passgen () { clear
-  local pwd=${1}
+  local pwd=${1:-randchars}
 
   echo PASSWORD: $pwd
 
