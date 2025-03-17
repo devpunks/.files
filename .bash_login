@@ -763,6 +763,7 @@ function decrypt () {
 
 # https://linux.die.net/man/1/mkpasswd
 # https://antofthy.gitlab.io/info/crypto/passwd_generation.txt
+# https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
 function passgen () { clear
   local pwd=${1:-randchars}
 
