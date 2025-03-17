@@ -1546,8 +1546,6 @@ alias gpg.add='{ man gpg-agent
   # restart
   gpg-connect-agent --verbose updatestartuptty /bye
 
-  ps x | command grep gpg-agent
-
   echo
   echo \$GPG_TTY ▶ $GPG_TTY
   echo \$SSH_AGENT_PID ▶ $SSH_AGENT_PID
