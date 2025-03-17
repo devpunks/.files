@@ -859,6 +859,8 @@ alias certificates='{
 
 # https://stackoverflow.com/q/4294689/how-to-generate-an-openssl-key-using-a-passphrase-from-the-command-line
 function certify () { clear # Certificate Authority
+  openssl x509 --help
+
   echo Write text file...
   echo "Foo Bar Alice" > alice_pub.txt
   cat alice_pub.txt
