@@ -1551,6 +1551,8 @@ alias gpg.add='{ man gpg-agent
   echo \$SSH_AGENT_PID ▶ $SSH_AGENT_PID
   echo \$SSH_AUTH_SOCK ▶ $SSH_AUTH_SOCK
   echo
+
+  ps x | command grep gpg-agent
 }' # gpg.add
 
 # SSh ---------------------------------------------------------------------
