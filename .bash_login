@@ -649,6 +649,9 @@ alias digests='command openssl list -digest-commands' # -digest-algorithms
 # https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
 function derive () {
+  local length=32 # 24
+  local memory=1024
+  local iterations=3
   local phrase="${1}"
 
   argon2 -h
