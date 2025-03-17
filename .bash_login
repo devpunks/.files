@@ -732,6 +732,12 @@ function encrypt () {
   local -r file="${1}"
   man gpg
   man openssl
+
+  # echo GPG-AES-128:
+  # gpg -c -o - < "$file" > "${file}.gpg"
+
+  echo GPG-AES-256 encrypt "$file" :
+  gpg -c -o - --cipher-algo=AES256 < "$file" > "${file}.gpg"
 } # encrypt
 
 alias nms='command nms -a -c -f magenta'
