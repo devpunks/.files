@@ -666,6 +666,7 @@ function derive () {
   echo ; printf "BCRYPT: %s\n" "$( htpasswd -nbBC 10 USER "$phrase" )"
   # https://en.m.wikipedia.org/wiki/SHA-256
 
+  # https://en.m.wikipedia.org/wiki/Scrypt
   echo ; printf "SCRYPT: "
 
   echo ; printf "PBKDF2: "
