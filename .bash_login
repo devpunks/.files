@@ -829,6 +829,7 @@ function sign () {
   local pem="${HOME}/.ssh/aes256.pem"
 
   openssl genrsa -aes256 -out "$pem" 2048
+  openssl rsa -in "${pem}" -out "${pem}.key"
 
   exist "$pem" || return $?
   exist "$file" || return $?
