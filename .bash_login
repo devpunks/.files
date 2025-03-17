@@ -805,6 +805,7 @@ alias keys='{ banner
   echo ; echo ~/.ssh/id_rsa.pub ; cat ~/.ssh/id_rsa.pub
 
   echo ; echo authorized_keys ; cat ~/.ssh/authorized_keys
+  echo ; ssh-keygen -lv -f ~/.ssh/authorized_keys
 
   echo ; echo "Added keys (to ssh-agent)" ; ssh-add -l
 
