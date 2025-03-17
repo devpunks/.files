@@ -671,6 +671,8 @@ function derive () {
 
   # https://en.m.wikipedia.org/wiki/PBKDF2
   echo ; printf "PBKDF2: "
+  openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
+    -kdfopt digest:md5 -kdfopt iter:$iterations -kdfopt memcost:$memory PBKDF2
 
   # https://eprint.iacr.org/2010/264
   echo ; printf "HKDF: "
