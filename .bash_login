@@ -698,7 +698,7 @@ function derive () {
 
   echo ; echo SHA-2: # https://en.m.wikipedia.org/wiki/SHA-2
 
-  echo ; echo SHA-256:
+  echo ; echo SHA2/256:
   # https://en.m.wikipedia.org/wiki/SHA-256
   openssl passwd -5 -table -salt $SALT "$phrase"
   printf "$phrase" | sha256sum | command cut -d' ' -f1
