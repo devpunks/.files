@@ -574,7 +574,9 @@ alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
 # https://stackoverflow.com/q/65523749
 alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # https://serverfault.com/q/283294/how-to-read-in-n-random-characters-from-dev-urandom
-alias randchars='tr -dC "[:xdigit:]" </dev/urandom | head -c8'
+alias randchars='tr -dC "[:xdigit:]" </dev/urandom | head -c16 ; echo ;'
+# https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
+function slug () { printf "$1" | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g' ; echo ; }
 
 # https://geeksforgeeks.org/od-command-linux-example
 alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned)
