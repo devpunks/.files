@@ -861,7 +861,7 @@ alias certificates='{
   # ssh-keygen -L # prints contents of certificate
 }' # certificates
 
-# https://stackoverflow.com/q/4294689/how-to-generate-an-openssl-key-using-a-passphrase-from-the-command-line
+# https://superuser.com/q/1007842
 function certify () { clear # Certificate Authority
   openssl x509 --help
 
