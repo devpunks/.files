@@ -729,6 +729,7 @@ function decode () {
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.m.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
+  local -r file="${1}"
   man gpg
   man openssl
 } # encrypt
