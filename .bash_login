@@ -845,7 +845,7 @@ function verify () {
   exist "$pem" || return $?
   exist "$file" || return $?
 
-  echo "Cryptographically Verifying > $file with $key ..."
+  echo "Cryptographically Verifying > $file with $pem ..."
   # ssh-keygen -V # sign/verify certificate
 
   openssl dgst -sha256 -verify "$key" -signature "${file}.signature" # -prverify
