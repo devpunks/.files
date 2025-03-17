@@ -750,7 +750,7 @@ function decrypt () {
   gpg -o - < "$file" > "$output"
 
   # https://github.com/bartobri/no-more-secrets?tab=readme-ov-file#usage
-  echo "$message" | nms
+  cat "$output" | nms
 } # decrypt
 
 # https://linux.die.net/man/1/mkpasswd
