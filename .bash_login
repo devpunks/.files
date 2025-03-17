@@ -823,7 +823,9 @@ alias signatures='{
 
 function sign () {
   local file="$( realpath $1 )"
-  local key="${HOME}/.ssh/id_rsa.pem" # private .pem file
+  local pem="${HOME}/.ssh/aes256.pem"
+
+  openssl genrsa -aes256 -out "$pem" 2048
 
   exist "$file" || return $?
 
