@@ -671,6 +671,7 @@ function derive () {
 
   # https://github.com/Tarsnap/scrypt
   # https://en.m.wikipedia.org/wiki/Scrypt
+  # https://datatracker.ietf.org/doc/html/rfc7914
   echo ; printf "SCRYPT: \n"
 
   # https://en.m.wikipedia.org/wiki/PBKDF2
