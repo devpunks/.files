@@ -833,7 +833,7 @@ function sign () {
   echo "Cryptographically Signing > $file with PRIVATE $pem ..."
   # ssh-keygen -V # sign/verify certificate
 
-  openssl dgst -sha256 -sign "$key" -out "${file}.signature" "$file"
+  openssl dgst -sha256 -sign "$pem" -out "${file}.signature" "$file"
 } # sign
 
 function verify () {
