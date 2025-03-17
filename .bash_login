@@ -654,6 +654,9 @@ function derive () {
   local iterations=3
   local phrase="${1}"
 
+  echo ; echo Digests: ; digests
+  echo ; echo Ciphers: ; ciphers
+
   # https://datatracker.ietf.org/doc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   echo ; printf "ARGON2i: "
