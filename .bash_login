@@ -726,6 +726,7 @@ function decode () {
 
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
+# https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.m.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
   man gpg
