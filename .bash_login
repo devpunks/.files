@@ -838,7 +838,9 @@ function sign () {
 
 function verify () {
   local file="$( realpath $1 )"
-  local key="${HOME}/.ssh/id_rsa.pub" # public .pem file
+  local pem="${HOME}/.ssh/aes256.pem"
+
+  openssl rsa -in "$pem" -outform PEM -pubout -out "${pem}.pub"
 
   exist "$file" || return $?
 
