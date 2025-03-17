@@ -741,6 +741,7 @@ function encrypt () {
 } # encrypt
 
 alias nms='command nms -a -c -f magenta'
+# https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 function decrypt () {
   local -r message="${1}"
 
