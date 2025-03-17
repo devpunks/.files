@@ -657,7 +657,9 @@ function derive () {
   # https://datatracker.ietf.org/doc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   echo ; printf "ARGON2i: "
-  printf "$phrase" | argon2 $SALT -i
+  printf "$phrase" | argon2 $SALT -i -t $iterations -k $memory -l $length
+  openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
+    -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2I
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
