@@ -874,6 +874,7 @@ function certify () { clear # Certificate Authority
 
 # =========================================================================
 # {{{ Security
+#   OWASP (Open Web Application Security Project) - https://cheatsheetseries.owasp.org
 #   SSH Key Best Practices
 #     - https://brandonchecketts.com/archives/ssh-ed25519-key-best-practices-for-2025
 #   eXtended Attr(ibutes)
