@@ -691,7 +691,7 @@ function derive () {
   mkpasswd -m md5crypt -S $SALT "$phrase"
   openssl passwd -1 -table -salt $SALT "$phrase"
   printf "$phrase" | md5sum | command cut -d' ' -f1
-  printf "$phrase" | openssl dgst -md5 -c | command cut -d' ' -f2
+  printf "$phrase" | openssl md5 -c | command cut -d' ' -f2
 
   echo ; echo SHA-1: # https://en.m.wikipedia.org/wiki/SHA-1
   printf "$phrase" | sha1sum | command cut -d' ' -f1
