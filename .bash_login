@@ -625,6 +625,8 @@ alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
 # https://linux.die.net/man/1/xxd
 alias hex='xxd'
 
+alias binary='echo TODO: Binary immplementation'
+
 # see check ()
 # https://en.m.wikipedia.org/wiki/Cyclic_code
 # https://en.m.wikipedia.org/wiki/Cyclic_redundancy_check
