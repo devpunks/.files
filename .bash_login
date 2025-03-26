@@ -433,6 +433,7 @@ function git_clean () { clear
 # {{{ iNodes
 #   - https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-hdfs/ExtendedAttributes.html
 # =========================================================================
+# https://en.m.wikipedia.org/wiki/File_(command)
 # https://man7.org/linux/man-pages/man1/file.1.html
 alias file='command file --mime --mime-type --extension'
 function exist () {
