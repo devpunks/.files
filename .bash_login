@@ -1323,6 +1323,9 @@ function proxy () { clear
 # https://man7.org/linux/man-pages/man5/hosts.5.html
 # https://man7.org/linux/man-pages/man1/hostname.1.html
 # https://cloudns.net/blog/linux-host-command-troubleshot-dns
+# dnsutils
+# - https://digitalocean.com/community/tutorials/how-to-retrieve-dns-information-using-dig
+# - https://forum.huawei.com/enterprise/intl/en/thread/difference-between-dig-and-nslookup/689608776220557312
 function dns () { clear
   local -r domain=${1:-localhost}
 
