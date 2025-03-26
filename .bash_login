@@ -1332,7 +1332,6 @@ function dns () { clear
   [ "$domain" != localhost ] \
     && whois "$domain"
 
-  # dnsutils https://digitalocean.com/community/tutorials/how-to-retrieve-dns-information-using-dig
   [ "$domain" != localhost ] && dig "$domain"
 
   echo ; echo "ALL $domain"
