@@ -2137,7 +2137,7 @@ function browse () { clear
   lynx -anonymous -validate -verbose \
     -homepage='http://google.com' -session="${HOME}/lynx.session" \
     -cookies -accept_all_cookies -cookie_file="${HOME}/.cookies" \
-    -anonymous -use_mouse -scrollbar -scrollbar_arrow -show_cursor -show_rate -vikeys \
+     -underline_links -scrollbar -show_cursor -use_mouse -vikeys \
   "$location"
 
   echo ; lynx -show_cfg
