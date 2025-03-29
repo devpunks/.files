@@ -25,6 +25,8 @@
 pkg upgrade
 pkg update
 
+# https://github.com/YurinDoctrine/termux-essentials/blob/main/termux-essentials.sh
+
 pkg install mount-utils
 
 # {{{ Termux --------------------------------------------------------------
