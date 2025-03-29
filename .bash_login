@@ -96,6 +96,7 @@ alias echo='command echo -e'
 # https://man7.org/linux/man-pages/man1/nl.1.html
 alias lines='command nl --number-separator=".＞ "'
 # https://linux.die.net/man/1/pv
+# https://ivarch.com/programs/pv.shtml
 # https://reddit.com/r/programming/comments/7u8f2/a_unix_utility_you_should_know_about_pipe_viewer
 alias progress='pv --progress --eta --timer'
 
