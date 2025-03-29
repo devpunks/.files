@@ -77,6 +77,7 @@ pkg install cronie
 pkg install tar
 pkg install zip
 pkg install gzip
+pkg install zstd # https://github.com/facebook/zstd
 pkg install p7zip
 pkg install unrar
 pkg install unzip
