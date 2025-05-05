@@ -30,6 +30,7 @@
 #   - $PREFIX/etc/inputrc
 #   - $HOME/.termux/termux.properties
 # -------------------------------------------------------------------------
+#   - https://keycombiner.com/collections/terminal
 #   - https://ioflood.com/blog/bind-linux-command
 #   - https://man7.org/linux/man-pages/man3/readline.3.html
 #   - https://topbug.net/blog/2017/07/31/inputrc-for-humans
