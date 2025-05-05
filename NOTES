@@ -110,7 +110,6 @@ Android Accessibility
 - [CMD][SHFT]+D # swap devtools layout
 - [ALT]+E # Open menu
 - [CTRL]+E # EOL
-- [CMD]+ F # Find
 - [CTRL]+F # Forward one character
 - [CMD][SHIFT]+F # Fullscreen
 - [CTRL]+G # GOTO Line
