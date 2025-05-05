@@ -125,7 +125,6 @@ Android Accessibility
 - [CMD]+ P # Previous Line
 - [CTRL]+T # Swap Character Right
 - [CTRL]+V # Page Down
-- [CMD]+ W # Close current tab
 
 # DEX ---------------------------------------------------------------------
 - <OS> + [UP]
