@@ -123,9 +123,6 @@ Android Accessibility
 - [ALT]+O  # $$$ TAB SWITCH SIMILAR FILENAME???
 - [CTRL]+O # Following to new line
 - [CMD]+ P # Previous Line
-- [CTRL]+P # Print
-- [CTRL]+R # Reload
-- [CTRL][SHIFT]+R # Reload (with cache busting)
 - [CTRL]+T # Swap Character Right
 - [CTRL][SHIFT]+T # Reopen last closed tab
 - [CTRL]+V # Page Down
