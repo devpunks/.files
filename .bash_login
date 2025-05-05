@@ -1297,9 +1297,6 @@ alias ports='netstat --verbose --all --numeric --listening --programs --wide'
 # https://man7.org/linux/man-pages/man2/connect.2.html
 alias connect='TODO: implementation'
 
-# https://developer.technexion.com/docs/using-uart-from-a-linux-shell
-alias uart='echo TODO: implementation'
-
 # https://github.com/delletenebre/SerialManager2
 alias serial='echo TODO: Implementation'
 
