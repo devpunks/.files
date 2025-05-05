@@ -70,6 +70,30 @@ Android Accessibility
 
 # Chrome ------------------------------------------------------------------
 # https://github.com/jaredwilli/devtools-cheatsheet?tab=readme-ov-file
+- [TAB] # Next Clickable Item
+- [SHIFT][TAB] # Previous Clickable Item
+- [SPACE] # Scroll Down
+- [SHIFT][SPACE] # Scroll Up
+- [ALT]+= # Larger size
+- [CTRL]+- # Smaller size
+- [CTRL]+0 # Default size
+- [CTRL][SHIFT]+B # Bookmarks Bar
+- [CMD]+D # Bookmark current page
+- [CMD][SHIFT]+F # Fullscreen
+- [CMD]+H # History
+- [CTRL][SHIFT]+H # Home
+- [CTRL]+L # Address bar
+- [CTRL]+N # New tab
+- [CTRL][SHIFT]+N # New incognito tab
+- [CTRL][SHIFT][TAB] # Prev tab
+- [CMD][SHIFT]+M # Mobile Responsive
+- [CTRL]+P # Print
+- [CTRL]+R # Reload
+- [CTRL][SHIFT]+J # Downloads Tab
+- [CTRL][SHIFT]+R # Reload (with cache busting)
+- [CTRL][SHIFT]+T # Reopen last closed tab
+- [CTRL]+W # Close current tab
+# Chrome (DevTools) -------------------------------------------------------
 - [ESC] # Console
 - [CTRL][TAB] # Next tab
 - [CTRL][SHIFT][TAB] # Prev tab
