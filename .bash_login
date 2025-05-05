@@ -607,6 +607,9 @@ function snowflake () {
 
   # TODO: FIx output
   command date -d @$tick
+
+  echo TODO: Fix Snowflake algorithm
+  open https://en.m.wikipedia.org/wiki/Snowflake_ID
 } # snowflake
 
 # Create a nonce from date with seconds & nanoseconds
