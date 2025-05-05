@@ -102,9 +102,6 @@ Android Accessibility
 - [CMD]+/ # Toggle Comment
 - [CTRL]+→ # Next Word
 - [ALT]+← # Previous Word
-- [ALT]+= # Larger size
-- [CTRL]+- # Smaller size
-- [CTRL]+0 # Default size
 - [CTRL]+A # BOL
 - [CTRL]+B # Back one character
 - [CTRL][SHIFT]+B # Bookmarks
