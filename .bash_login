@@ -1502,44 +1502,6 @@ function upload () {
   # TODO: Progress bar - https://bashupload.com/how_to_upload_progress_curl
 } # upload
 
-# Exploits ----------------------------------------------------------------
-#   - https://en.m.wikipedia.org/wiki/Alice_and_Bob
-# -------------------------------------------------------------------------
-# https://en.m.wikipedia.org/wiki/Zip_bomb
-function zipbomb () { clear
-  local -r destination=$( realpath "${1:-./bomb.zip}" )
-
-  echo zipBomb
-} # zipbomb
-
- # https://en.m.wikipedia.org/wiki/Fork_bomb
-function forkbomb () { clear #:(){ :|:& };:
-  local -r destination=$( realpath "${1:-./bomb.zip}" )
-
-  echo forkBomb
-
-  # forkbomb | forkbomb &
-} # forkbomb
-
-# - https://securitygate.io/blog/osi-model-fundamentals-cybersecurity-basics
-function attack () {
-  # Unauthorized access
-  # Data sniffing
-  # Physical damage
-  # Credential theft
-  # Vulnerability exploits
-  # Social engineering attacks
-
-  echo DoS # https://en.m.wikipedia.org/wiki/Denial-of-service_attack
-  echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection
-  echo MitM # https://en.m.wikipedia.org/wiki/Man-in-the-middle_attack
-  echo Birthday Attack # https://en.m.wikipedia.org/wiki/Birthday_attack
-
-  echo ReDOS # https://en.m.wikipedia.org/wiki/ReDoS
-  echo Algorithmic # https://en.m.wikipedia.org/wiki/Algorithmic_complexity_attack
-  echo Billion Laughs # https://en.m.wikipedia.org/wiki/Billion_laughs_attack
-} # attack
-
 # }}}
 
 # =========================================================================
