@@ -119,7 +119,6 @@ Android Accessibility
 - [CMD][ALT]+J # Dev Logs
 - [CTRL]+K # Delete to EOL
 - [CTRL]+M # Matching Bracket
-- [CMD][SHIFT]+M # Mobile Responsive
 - [CMD]+ N # Next Line
 - [CTRL]+N # New tab
 - [CTRL][SHIFT]+N # New incognito tab
