@@ -48,11 +48,16 @@ Android Accessibility
 
 # ANSI UNICODE ASCII UTF-8 ------------------------------------------------
 #  - https://jkorpela.fi/chars
-#    - https://jkorpela.fi/chars/
-#    - Guide - https://jkorpela.fi/unicode/guide.html
-#    - Spaces - https://jkorpela.fi/chars/spaces.html
-#    - Math Symbols - https://jkorpela.fi/math/syms.html
-#    - Dashes & Hyphens - https://jkorpela.fi/dashes.html
+#  - Guide - https://jkorpela.fi/unicode/guide.html
+#  - Spaces - https://jkorpela.fi/chars/spaces.html
+#  - Math Symbols - https://jkorpela.fi/math/syms.html
+#  - Dashes & Hyphens - https://jkorpela.fi/dashes.html
+
+# Twitter -----------------------------------------------------------------
+- http://keycombiner.com/devtools/collections/twitter
+
+# VLC ---------------------------------------------------------------------
+- http://keycombiner.com/devtools/vlc-player
 
 # Youtube -----------------------------------------------------------------
 - [CTRL] # Keyboard Shortcut Menu
