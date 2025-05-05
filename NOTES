@@ -98,8 +98,8 @@ Android Accessibility
 - [CTRL]+ F # Find
 - [CTRL][TAB] # Next tab
 - [CTRL][SPACE] # Completion Menu
-- [CMD]+ , # Search Settings
-- [CMD]+ ? # Toggle Comment
+- [CMD]+, # Search Settings
+- [CMD]+/ # Toggle Comment
 - [CTRL]+→ # Next Word
 - [ALT]+← # Previous Word
 - [ALT]+= # Larger size
