@@ -104,7 +104,6 @@ Android Accessibility
 - [ALT]+← # Previous Word
 - [CTRL]+A # BOL
 - [CTRL]+B # Back one character
-- [CTRL][SHIFT]+B # Bookmarks
 - [CTRL][SHIFT]+C # Switch to Elements
 - [CMD]+ D # Bookmark current page
 - [CTRL]+D # Delete character after
