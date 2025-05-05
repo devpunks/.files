@@ -111,7 +111,6 @@ Android Accessibility
 - [ALT]+E # Open menu
 - [CTRL]+E # EOL
 - [CTRL]+F # Forward one character
-- [CMD][SHIFT]+F # Fullscreen
 - [CTRL]+G # GOTO Line
 - H - # Hide element
 - [CMD]+ H # History
