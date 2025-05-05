@@ -120,8 +120,7 @@ Android Accessibility
 - [CTRL]+K # Delete to EOL
 - [CTRL]+M # Matching Bracket
 - [CMD]+ N # Next Line
-- [CTRL]+N # New tab
-- [CTRL][SHIFT]+N # New incognito tab
+- [ALT]+O  # $$$ TAB SWITCH SIMILAR FILENAME???
 - [CTRL]+O # Following to new line
 - [CMD]+ P # Previous Line
 - [CTRL]+P # Print
