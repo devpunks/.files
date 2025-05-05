@@ -113,7 +113,6 @@ Android Accessibility
 - [CTRL]+F # Forward one character
 - [CTRL]+G # GOTO Line
 - H - # Hide element
-- [CMD]+ H # History
 - [CTRL]+H # Delete character before
 - [CMD][SHIFT]+H # Home
 - [CMD][SHIFT]+H # (dev) Breakpoints Pane
