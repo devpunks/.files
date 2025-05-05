@@ -95,6 +95,7 @@ Android Accessibility
 - [CTRL]+W # Close current tab
 # Chrome (DevTools) -------------------------------------------------------
 - [ESC] # Console
+- [CTRL]+ F # Find
 - [CTRL][TAB] # Next tab
 - [CTRL][SHIFT][TAB] # Prev tab
 - [CTRL][SPACE] # Completion Menu
