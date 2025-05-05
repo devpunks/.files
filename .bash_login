@@ -727,7 +727,7 @@ function derive () {
   printf "$phrase" | openssl sha3-224 -c | command cut -d' ' -f2
 
   echo
-} # digest
+} # derive
 
 function encode () {
   local -r bytes="$1"
