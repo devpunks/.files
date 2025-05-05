@@ -584,6 +584,9 @@ alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # https://serverfault.com/q/283294/how-to-read-in-n-random-characters-from-dev-urandom
 alias randchars='tr -dC "[:xdigit:]" </dev/urandom | head -c16 ; echo ;'
 # https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
+# https://gnu.org/software/gawk/manual/html_node/Bracket-Expressions.html
+# https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html
+# https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions
 function slug () { printf "$1" | sed 's/[[:space:]]/-/g' | tr '[:upper:]' '[:lower:]' | tr -dc '[:alnum:]-' ; }
 
 # https://geeksforgeeks.org/od-command-linux-example
