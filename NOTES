@@ -118,7 +118,6 @@ Android Accessibility
 - [CMD][ALT]+I # DevTools
 - [CMD][ALT]+J # Dev Logs
 - [CTRL]+K # Delete to EOL
-- [CMD]+ L # Address bar
 - [CTRL]+M # Matching Bracket
 - [CMD][SHIFT]+M # Mobile Responsive
 - [CMD]+ N # Next Line
