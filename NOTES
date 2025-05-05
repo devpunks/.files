@@ -97,7 +97,6 @@ Android Accessibility
 - [ESC] # Console
 - [CTRL]+ F # Find
 - [CTRL][TAB] # Next tab
-- [CTRL][SHIFT][TAB] # Prev tab
 - [CTRL][SPACE] # Completion Menu
 - [CMD]+ , # Search Settings
 - [CMD]+ ? # Toggle Comment
