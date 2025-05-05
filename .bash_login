@@ -132,6 +132,9 @@ alias sed='sed --regexp-extended'
 # https://tecmint.com/35-practical-examples-of-linux-find-command
 alias find='command find . -type f -iname'
 # - https://stackoverflow.com/q/1987926
+# https://gnu.org/software/gawk/manual/html_node/Bracket-Expressions.html
+# https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html
+# https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions
 alias grep="LC_ALL=C command grep $GREP_OPTIONS"
 
 # https://unix.stackexchange.com/q/344213
