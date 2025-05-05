@@ -114,7 +114,6 @@ Android Accessibility
 - [CTRL]+G # GOTO Line
 - H - # Hide element
 - [CTRL]+H # Delete character before
-- [CMD][SHIFT]+H # Home
 - [CMD][SHIFT]+H # (dev) Breakpoints Pane
 - [CMD][ALT]+I # DevTools
 - [CMD][ALT]+J # Dev Logs
