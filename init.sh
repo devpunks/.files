@@ -100,6 +100,7 @@ pkg install argon2 # https://en.m.wikipedia.org/wiki/Argon2
 pkg install scrypt # https://tarsnap.com/scrypt.html
 pkg install openssl # https://openssl.org
 pkg install openssh # https://openssh.com/manual.html
+pkg install sharutils # https://gnu.org/software/sharutils
 
 echo Cloning Authorized Keys from...
 # TODO: use readline to get username
