@@ -448,8 +448,8 @@ function git_submodule () { clear
 
   [ "$module" ] || return $?
 
-  echo ; echo Github Module URL: ${url}
-  echo ; echo Local Submodule Path: ${path}
+  echo ; echo "Github Module URL: ${url}"
+  echo ; echo "Local Submodule Path: ${path}"
 
   pushd ${start}
 # git clone ${url}
