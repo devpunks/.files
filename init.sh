@@ -213,7 +213,13 @@ git status
 # Submodules
 #  - https://stackoverflow.com/q/10666085
 #  - https://github.blog/2016-02-01-working-with-submodules
+
 echo Cloning submodules...
+# https://github.com/tpope/vim-surround
+# https://github.com/preservim/nerdtree
+# https://github.com/vim-scripts/The-NERD-tree
+# https://github.com/airblade/vim-gitgutter
+
 git submodule
 git submodule update --init --recursive
 
