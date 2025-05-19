@@ -426,6 +426,7 @@ alias g#='{
 # - https://stackoverflow.com/q/10666085
 # - https://git-scm.com/docs/gitmodules
 # - https://git-scm.com/docs/git-submodule
+# - https://baeldung.com/ops/git-submodule-add-remove
 # - https://git-scm.com/book/en/v2/Git-Tools-Submodules
 # - https://github.blog/2016-02-01-working-with-submodules
 function git_submodule () { clear
