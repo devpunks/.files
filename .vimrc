@@ -912,6 +912,13 @@ augroup FileDefaults
   autocmd VimEnter,BufEnter * call g:GitGutter()
 augroup END
 
+function! g:GitStatus() " abort
+  let [a,m,r] = GitGutterGetHunkSummary()
+
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+" set statusline+=%{GitStatus()}
+
 function! g:GitGutter() abort
   if exists('g:loaded_gitgutter') && has('signs')
     sign define GitGutterLineAdded text=➕
