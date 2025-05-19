@@ -438,8 +438,7 @@ function git_submodule () {
   # git submodule add ${url}
   # git submodule update --init --recursive
 
-  echo Get into the submodules
-
+  echo
 } # git_submodule
 
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
