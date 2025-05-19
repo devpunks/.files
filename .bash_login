@@ -453,6 +453,7 @@ function git_submodule () { clear
   git submodule init ${name}
   echo DEINIT
   git submodule deinit ${name}
+  git rm --cached ${name}
   command rm -rf ${name}
 
   popd
