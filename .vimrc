@@ -932,7 +932,7 @@ function! g:GitGutter() abort
     highlight! link GitGutterDelete DiffDelete
     highlight! link GitGutterChange DiffChange
   endif
-endfunction
+endfunction " g:GitGutter()
 
 " -------------------------------------------------------------------------
 " Scrollbar - https://github.com/obcat/vim-sclow
