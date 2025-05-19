@@ -417,6 +417,28 @@ alias g#='{
   printf "\n Total:%s\n\n" "$( gl --since="Today 00:00" | wc -l )"
 }' # g#
 
+function git_submodule () {
+  local -r module="${1}"
+  local -r user=$(whoami)
+  local -r start='~/.vim/pack/${user}/start'
+  local -r url="https://github.com/${module}.git"
+
+  git submodule status --recursive
+
+  # vim -u NONE -c "helptags vim-gitgutter/doc" -c q
+
+  [ "$module" ] || return 1
+
+  # pushd ${start}
+  # git clone ${url}
+
+  # git submodule add ${url}
+  # git submodule update --init --recursive
+
+  echo Get into the submodules
+
+} # git_submodule
+
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
 function git_clean () { clear
   # https://stackoverflow.com/q/5613345/how-to-shrink-the-git-folder
