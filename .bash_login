@@ -453,8 +453,8 @@ function git_submodule () { clear
 
   pushd "${start}"
 # git clone ${url}
-  git submodule add --force ${url}
-  echo ; echo ${BOLD}${module}${DEFAULT}
+  git submodule add --force "${url}"
+  echo ; echo "${BOLD}${module}${DEFAULT}"
 
   echo Adding Submodule ${module}
   git submodule init ${name}
