@@ -465,8 +465,8 @@ function git_submodule () { clear
 
   echo "${BOLD}Removing Submodule ${module} from .git/config${DEFAULT}"
   git submodule deinit --force "${name}"
-  echo "${BOLD}Removing Submodule ${module} from .git/modules/${start}${DEFAULT}"
-  command rm -rf ".git/modules/${start}/${name}"
+  echo "${BOLD}Removing Submodule ${module} from .git/modules/${path}${DEFAULT}"
+  command rm -rf ".git/modules/${path}"
   echo "${BOLD}Removing Submodule ${module} from .gitmodules & directory path${DEFAULT}"
   git rm -r --force "${name}"
 
