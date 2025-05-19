@@ -459,7 +459,7 @@ function git_submodule () { clear
   echo "Adding Submodule ${module}"
   git submodule init "${name}"
   git submodule sync --recursive
-  ls -al ${name}
+  ls -al "${name}"
 
 # echo Removing Submodule ${module}
 # git submodule deinit --force ${name}
