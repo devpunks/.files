@@ -435,6 +435,8 @@ function git_submodule () { clear
   ls -al ${start}
   echo ; echo Listing submodules...
   git submodule status --recursive
+  echo ; echo Updating submodules...
+  git submodule update --init --recursive
 
   # vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
