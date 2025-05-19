@@ -905,6 +905,9 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
+nmap <silent> ]h <Plug>(GitGutterNextHunk)
+nmap <silent> [h <Plug>(GitGutterPrevHunk)
+
 augroup FileDefaults
   autocmd VimEnter,BufEnter * call g:GitGutter()
 augroup END
