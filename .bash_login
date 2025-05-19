@@ -408,7 +408,7 @@ alias gpu='git pull --verbose --summary --prune --tags -r --recurse-submodules=o
 alias gr='git rebase -i'
 alias gs='{ clear ; echo
   git status --column --verbose --show-stash --no-ignore-submodules
-  GIT_PAGER=cat hit stash list
+  GIT_PAGER=cat git stash list
   echo
 }'
 alias gsl='echo ; git shortlog -s | sort -r; echo'
