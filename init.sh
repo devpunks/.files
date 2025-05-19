@@ -212,7 +212,7 @@ git config --global rerere.enabled true
 git config --global status.submoduleSummary true # Add submodules to git summary
 
 echo Cloning home directory...
-# git clone https://github.com/devpunks/.files.git $HOME
+# git clone --recurse-submodules https://github.com/devpunks/.files.git $HOME
 git status
 
 # Submodules
