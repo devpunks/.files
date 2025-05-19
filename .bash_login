@@ -429,6 +429,7 @@ function git_submodule () { clear
 
   mkdir -p ${start}
   echo ; echo Start: ${start}
+  ls -al ${start}
   echo ; echo Listing submodules...
   git submodule status --recursive
 
