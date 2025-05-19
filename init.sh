@@ -215,7 +215,7 @@ git status
 #  - https://github.blog/2016-02-01-working-with-submodules
 echo Cloning submodules...
 git submodule
-git submodule update --init
+git submodule update --init --recursive
 
 echo 'devPunks😈studio init.sh'
 echo
