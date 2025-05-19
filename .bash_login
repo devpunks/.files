@@ -422,7 +422,7 @@ alias g#='{
 function git_submodule () { clear
   local -r module="${1}"
   local -r user=$(whoami)
-  local -r start="~/.vim/pack/${user}/start"
+  local -r start=".vim/pack/${user}/start"
   local -r url="https://github.com/${module}.git"
 
   echo ; echo Start Path: ${start}
