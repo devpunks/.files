@@ -216,6 +216,7 @@ git status
 
 echo Cloning submodules...
 # https://github.com/vim-scripts/ZoomWin
+# https://github.com/tpope/vim-endwise
 # https://github.com/tpope/vim-surround
 # https://github.com/preservim/nerdtree
 # https://github.com/vim-scripts/jellybeans.vim
