@@ -218,6 +218,7 @@ echo Cloning submodules...
 # https://github.com/vim-scripts/ZoomWin
 # https://github.com/tpope/vim-surround
 # https://github.com/preservim/nerdtree
+# https://github.com/vim-scripts/jellybeans.vim
 # https://github.com/vim-scripts/The-NERD-tree
 # https://github.com/airblade/vim-gitgutter
 
