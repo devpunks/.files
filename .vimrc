@@ -916,7 +916,7 @@ function! g:GitStatus() " abort
   let [a,m,r] = GitGutterGetHunkSummary()
 
   return printf('+%d ~%d -%d', a, m, r)
-endfunction
+endfunction " g:GitStatus"
 " set statusline+=%{GitStatus()}
 
 function! g:GitGutter() abort
