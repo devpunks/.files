@@ -450,8 +450,6 @@ function git_submodule () { clear
   git submodule add --force ${url}
   echo ; echo ${BOLD}${module}${DEFAULT}
 
-  # git submodule update --init --recursive
-
   echo Adding Submodule ${module}
   git submodule init ${name}
   ls -al ${name}
