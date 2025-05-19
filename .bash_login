@@ -451,7 +451,7 @@ function git_submodule () { clear
   echo ; echo "Github Module URL: ${url}"
   echo ; echo "Local Submodule Path: ${path}"
 
-  pushd ${start}
+  pushd "${start}"
 # git clone ${url}
   git submodule add --force ${url}
   echo ; echo ${BOLD}${module}${DEFAULT}
