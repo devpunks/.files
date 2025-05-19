@@ -446,7 +446,7 @@ function git_submodule () { clear
 
   # vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
-  [ "$module" ] || return 1
+  [ "$module" ] || return $?
 
   echo ; echo Github Module URL: ${url}
   echo ; echo Local Submodule Path: ${path}
