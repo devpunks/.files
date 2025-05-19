@@ -417,7 +417,7 @@ set numberwidth=4 " gutter columns
 
 if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   " https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
-  set signcolumn=yes " [auto|no|yes|number]
+  set signcolumn=yes " [auto|number|yes|no|off]
 endif
 
 " }}}
