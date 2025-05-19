@@ -447,6 +447,10 @@ function git_submodule () { clear
   # git submodule add ${url}
   # git submodule update --init --recursive
 
+  pwd
+  ls -al
+  git submodule init ${name}
+  git submodule deinit ${name}
   popd
   echo
 } # git_submodule
