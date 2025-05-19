@@ -435,6 +435,7 @@ function git_submodule () { clear
 
   echo ; echo Github Module URL: ${start}
 
+  mkdir -p ${start}
   pushd ${start}
   git clone ${url}
 
