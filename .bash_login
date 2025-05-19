@@ -424,6 +424,7 @@ function git_submodule () { clear
   local -r name="${module##*/}"
   local -r user=$(whoami)
   local -r start=".vim/pack/${user}/start"
+  local -r path=".vim/pack/${user}/start/${name}"
   local -r url="https://github.com/${module}.git"
 
   echo ; echo Start Path: ${start}
