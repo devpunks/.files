@@ -441,6 +441,8 @@ function git_submodule () { clear
   mkdir -p ${start}
   pushd ${start}
   git clone ${url}
+  echo ; echo ${BOLD}${module}${DEFAULT}
+  ls -al ${name}
 
   # git submodule add ${url}
   # git submodule update --init --recursive
