@@ -448,7 +448,6 @@ function git_submodule () { clear
 
   # git submodule update --init --recursive
 
-  ls -al ${name}
   echo INIT
   git submodule init ${name}
   echo DEINIT
