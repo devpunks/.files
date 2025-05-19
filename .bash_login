@@ -445,7 +445,6 @@ function git_submodule () { clear
   echo ; echo ${BOLD}${module}${DEFAULT}
   ls -al ${name}
 
-  # git submodule add ${url}
   # git submodule update --init --recursive
 
   pwd
