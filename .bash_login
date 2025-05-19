@@ -450,6 +450,7 @@ function git_submodule () { clear
 
   echo INIT
   git submodule init ${name}
+  ls -al ${name}
   echo DEINIT
   git submodule deinit ${name}
   git rm --cached ${name}
