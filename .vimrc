@@ -944,7 +944,7 @@ function! g:GitGutter() abort
     highlight! link GitGutterAddLine GitGutterAdd
     highlight! link GitGutterChangeLine GitGutterChange
     highlight! link GitGutterDeleteLine GitGutterDelete
-    highlight! link GitGutterChangeDeleteLine GitGutterChangeLine
+    highlight! link GitGutterChangeDeleteLine DiffText " GitGutterChangeLine
   endif
 endfunction " g:GitGutter()
 
