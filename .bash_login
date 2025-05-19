@@ -453,7 +453,9 @@ function git_submodule () { clear
   ls -al ${name}
   echo DEINIT
   git submodule deinit --force ${name}
-# git rm --force ${name}
+  git rm -r --force ${name}
+  git add .gitmodules
+  git commit -m "Remove Submodule '@${module}'"
   command rm -rf ${name}
 
   popd
