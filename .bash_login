@@ -430,6 +430,8 @@ function git_submodule () {
 
   [ "$module" ] || return 1
 
+  echo ; echo Github Module URL: ${start}
+
   # pushd ${start}
   # git clone ${url}
 
