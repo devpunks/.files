@@ -421,6 +421,7 @@ alias g#='{
 # - https://github.blog/2016-02-01-working-with-submodules
 function git_submodule () { clear
   local -r module="${1}"
+  local -r name="${module##*/}"
   local -r user=$(whoami)
   local -r start=".vim/pack/${user}/start"
   local -r url="https://github.com/${module}.git"
