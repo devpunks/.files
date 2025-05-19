@@ -921,6 +921,8 @@ endfunction
 
 function! g:GitGutter() abort
   if exists('g:loaded_gitgutter') && has('signs')
+    let g:gitgutter_max_signs = -1
+
     sign define GitGutterLineAdded text=➕
     sign define GitGutterLineRemoved text=➖
     sign define GitGutterLineModified text=～
