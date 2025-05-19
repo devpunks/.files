@@ -449,6 +449,7 @@ function git_submodule () { clear
 
   pwd
   ls -al
+  echo INIT
   git submodule init ${name}
   git submodule deinit ${name}
   command rm -rf ${name}
