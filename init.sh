@@ -206,6 +206,10 @@ echo TODO: Install yt-dlp https://github.com/yt-dlp/yt-dlp
 # }}}
 
 # {{{ Submodules ----------------------------------------------------------
+echo Git Settings...
+# https://stackoverflow.com/q/49500943/what-is-git-rerere-and-how-does-it-work
+git config rerere.enabled true
+
 echo Cloning home directory...
 # git clone https://github.com/devpunks/.files.git $HOME
 git status
