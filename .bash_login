@@ -451,6 +451,7 @@ function git_submodule () { clear
   ls -al
   echo INIT
   git submodule init ${name}
+  echo DEINIT
   git submodule deinit ${name}
   command rm -rf ${name}
 
