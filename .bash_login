@@ -404,7 +404,7 @@ alias gg='git grep --break --heading'
 alias gl='GIT_PAGER=cat git log --since=1.week --show-signature --reverse --all'
 alias gll='git log -h; git log -L'
 alias gp='git push --verbose --recurse-submodules=on-demand ; git push --tags'
-alias gpu='git pull --verbose --summary --prune --tags -r --recurse-submodules=on-demand'
+alias gpu='git pull --verbose --prune --tags -r --recurse-submodules=on-demand'
 alias gr='git rebase -i'
 alias gs='{ clear ; echo
   git status --column --verbose --show-stash --no-ignore-submodules
