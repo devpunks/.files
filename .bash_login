@@ -434,9 +434,9 @@ function git_submodule () { clear
   local -r path=".vim/pack/${user}/start/${name}"
   local -r url="https://github.com/${module}.git"
 
-  mkdir -p ${start}
-  echo ; echo Start: ${start}
-  ls -al ${start}
+  mkdir -p "${start}"
+  echo ; echo "Start: ${start}"
+  ls -al "${start}"
   echo ; echo Listing submodules...
   git submodule status --recursive
   echo ; echo Updating submodules...
