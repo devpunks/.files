@@ -443,7 +443,6 @@ function git_submodule () { clear
 # git clone ${url}
   git submodule add ${url}
   echo ; echo ${BOLD}${module}${DEFAULT}
-  ls -al ${name}
 
   # git submodule update --init --recursive
 
