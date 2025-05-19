@@ -454,9 +454,8 @@ function git_submodule () { clear
   git submodule init ${name}
   git submodule sync --recursive
   ls -al ${name}
-  git submodule status --recursive
 
-  echo Removing Submodule ${module}
+# echo Removing Submodule ${module}
 # git submodule deinit --force ${name}
 # git rm -r --force ${name}
 
