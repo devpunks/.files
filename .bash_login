@@ -435,7 +435,8 @@ function git_submodule () { clear
 
   [ "$module" ] || return 1
 
-  echo ; echo Github Module URL: ${start}
+  echo ; echo Github Module URL: ${url}
+  echo ; echo Local Submodule path: ${path}
 
   mkdir -p ${start}
   pushd ${start}
