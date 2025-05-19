@@ -465,7 +465,7 @@ function git_submodule () { clear
 # git submodule deinit --force ${name}
 # git rm -r --force ${name}
 
-  popd
+  popd || return $?
   echo
 } # git_submodule
 
