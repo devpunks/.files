@@ -423,6 +423,7 @@ function git_submodule () {
   local -r start="~/.vim/pack/${user}/start"
   local -r url="https://github.com/${module}.git"
 
+  echo Start Path: ${start}
   git submodule status --recursive
 
   # vim -u NONE -c "helptags vim-gitgutter/doc" -c q
