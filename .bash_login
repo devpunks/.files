@@ -441,6 +441,7 @@ function git_submodule () { clear
   # git submodule add ${url}
   # git submodule update --init --recursive
 
+  popd
   echo
 } # git_submodule
 
