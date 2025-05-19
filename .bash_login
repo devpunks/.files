@@ -417,6 +417,8 @@ alias g#='{
   printf "\n Total:%s\n\n" "$( gl --since="Today 00:00" | wc -l )"
 }' # g#
 
+#  - https://stackoverflow.com/q/10666085
+#  - https://github.blog/2016-02-01-working-with-submodules
 function git_submodule () { clear
   local -r module="${1}"
   local -r user=$(whoami)
