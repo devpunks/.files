@@ -448,7 +448,7 @@ function git_submodule () { clear
 
   # git submodule update --init --recursive
 
-  echo INIT
+  echo Adding Submodule ${module}
   git submodule init ${name}
   ls -al ${name}
   git submodule status --recursive
