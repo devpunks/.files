@@ -439,7 +439,6 @@ function git_submodule () { clear
   echo ; echo Github Module URL: ${url}
   echo ; echo Local Submodule Path: ${path}
 
-  mkdir -p ${start}
   pushd ${start}
 # git clone ${url}
   git submodule add ${url}
