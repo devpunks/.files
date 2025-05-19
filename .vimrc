@@ -931,7 +931,6 @@ function! g:GitGutter() abort
 
     " Link Diff highlight groups
     highlight! link GitGutterAdd DiffAdd
-    highlight! link GitGutterDelete DiffDelete
     highlight! link GitGutterChange DiffChange
   endif
 endfunction " g:GitGutter()
