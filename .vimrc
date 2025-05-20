@@ -909,11 +909,11 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 "   autocmd CursorHoldI * call g:Completion()
 " augroup END
 
-function! g:Completion() " abort
-  if !exists('g:mymu_enabled')
-    echo 'Cannot find it'
-    return
-  endif
+" function! g:Completion() " abort
+"   if !exists('g:mymu_enabled')
+"     echo 'Cannot find it'
+"     return
+"   endif
 
   set complete=-t " no tags
   set complete=-i " no includes
