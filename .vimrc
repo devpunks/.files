@@ -915,8 +915,7 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 "     return
 "   endif
 
-  set complete=-t " no tags
-  set complete=-i " no includes
+" endfunction " g:Completion
 
   let chain = [ 'omni','path','c-n', 'uspl' ]
   let default = [ 'omni', 'list', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
