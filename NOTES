@@ -200,7 +200,19 @@ Android Accessibility
 # :h key-notation - For mappings
 # :h <key> - For mapping
 # :h term.txt ------------------------------
-# set termcap? - Term Capabilities
+#
+#  (Insert Mode) ---------------------------
+# :help complete
+# :help ins-completion
+# <C-n> - Next Completion
+# <C-p> - Previous Completion
+# <C-x><C-f> - File Path Completion
+# <C-x><C-o> - Omni Completion :h omnifunc
+# <C-x><C-s> - Spelling Suggestions
+# <C-x><C-t> - Thesaurus Suggestions
+# <C-x><C-v> - Vim Command Line Completion
+# <C-x><C-z> - Stop Completion
+#
 # gf - Open file under cursor
 # gg - Current key mappings
 # gq - Automatic formatting
