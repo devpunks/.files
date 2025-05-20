@@ -467,14 +467,14 @@ function git_submodule () { clear
   $( GIT_PAGER=cat git diff --name-status --staged | grep '.gitmodules' > /dev/null ) \
     && git commit -m "Add Submodule @${module}"
 
-  echo "${BOLD}Removing Submodule ${module} from .git/config${DEFAULT}"
-  git config -f $HOME/.git/config --remove-section "submodule.${path}"
-  git submodule deinit --force "${name}"
-  echo "${BOLD}Removing Submodule ${module} from .git/modules/${path}${DEFAULT}"
-  command rm -rfdv "${HOME}/.git/modules/${path}"
-  echo "${BOLD}Removing Submodule ${module} from .gitmodules & directory path${DEFAULT}"
-  git rm -r --force "${name}"
-  git config -f $HOME/.gitmodules --remove-section "submodule.${path}"
+# echo "${BOLD}Removing Submodule ${module} from .git/config${DEFAULT}"
+# git config -f $HOME/.git/config --remove-section "submodule.${path}"
+# git submodule deinit --force "${name}"
+# echo "${BOLD}Removing Submodule ${module} from .git/modules/${path}${DEFAULT}"
+# command rm -rfdv "${HOME}/.git/modules/${path}"
+# echo "${BOLD}Removing Submodule ${module} from .gitmodules & directory path${DEFAULT}"
+# git rm -r --force "${name}"
+# git config -f $HOME/.gitmodules --remove-section "submodule.${path}"
 
   popd || return $?
   echo
