@@ -928,6 +928,7 @@ function! g:Completion() " abort
   let g:mucomplete#chains = {}
   let g:mucomplete#chains['html'] = chain
   let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
+  let g:mucomplete#chains['default'] = { 'default' : default }
 
 endfunction " g:Completion
 
