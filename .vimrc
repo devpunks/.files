@@ -921,32 +921,32 @@ endfunction " g:GitStatus"
 
 function! g:GitGutter() abort
   if exists('g:loaded_gitgutter') && has('signs')
-    GitGutterEnable
+"   GitGutterEnable
 
-    let g:gitgutter_max_signs = -1
-    let g:gitgutter_sign_allow_clobber = 1
-    let g:gitgutter_set_sign_backgrounds = 1
+"   let g:gitgutter_max_signs = -1
+"   let g:gitgutter_sign_allow_clobber = 1
+"   let g:gitgutter_set_sign_backgrounds = 1
 
-    sign define GitGutterLineAdded text=➕
-    sign define GitGutterLineRemoved text=➖
-    sign define GitGutterLineModified text=～
+"   sign define GitGutterLineAdded text=➕
+"   sign define GitGutterLineRemoved text=➖
+"   sign define GitGutterLineModified text=～
 
-    let g:gitgutter_sign_added = 'xx'
-    let g:gitgutter_sign_modified = 'yy'
-    let g:gitgutter_sign_removed = 'zz'
-    let g:gitgutter_sign_removed_first_line = '^^'
-    let g:gitgutter_sign_removed_above_and_below = '{'
-    let g:gitgutter_sign_modified_removed = 'ww'
+"   let g:gitgutter_sign_added = 'xx'
+"   let g:gitgutter_sign_modified = 'yy'
+"   let g:gitgutter_sign_removed = 'zz'
+"   let g:gitgutter_sign_removed_first_line = '^^'
+"   let g:gitgutter_sign_removed_above_and_below = '{'
+"   let g:gitgutter_sign_modified_removed = 'ww'
 
-    " Link Diff highlight groups
-    highlight! link GitGutterAdd DiffAdd
-    highlight! link GitGutterChange DiffChange
-    highlight! link GitGutterDelete DiffDelete
+"   " Link Diff highlight groups
+"   highlight! link GitGutterAdd DiffAdd
+"   highlight! link GitGutterChange DiffChange
+"   highlight! link GitGutterDelete DiffDelete
 
-    highlight! link GitGutterAddLine GitGutterAdd
-    highlight! link GitGutterChangeLine GitGutterChange
-    highlight! link GitGutterDeleteLine GitGutterDelete
-    highlight! link GitGutterChangeDeleteLine DiffText " GitGutterChangeLine
+"   highlight! link GitGutterAddLine GitGutterAdd
+"   highlight! link GitGutterChangeLine GitGutterChange
+"   highlight! link GitGutterDeleteLine GitGutterDelete
+"   highlight! link GitGutterChangeDeleteLine DiffText " GitGutterChangeLine
   endif
 endfunction " g:GitGutter()
 
