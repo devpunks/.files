@@ -923,12 +923,14 @@ set complete-=i " no includes
 let chain = [ 'omni','path','c-n', 'uspl' ]
 let default = [ 'list', 'omni', 'cmd', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
 
-  let g:mucomplete#chains = {}
-  let g:mucomplete#chains['html'] = chain
-  let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
-  let g:mucomplete#chains['default'] = { 'default' : default }
+let g:mucomplete#completion_delay = 1
+let g:mucomplete#enable_auto_at_startup = 1
+let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] } " list
 
-endfunction " g:Completion
+let g:mucomplete#chains = {}
+let g:mucomplete#chains['html'] = chain
+let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
+let g:mucomplete#chains['default'] = { 'default' : default }
 
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
