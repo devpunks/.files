@@ -920,9 +920,8 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 set complete-=t " no tags
 set complete-=i " no includes
 
-  let g:mucomplete#completion_delay = 1
-  let g:mucomplete#enable_auto_at_startup = 1
-  let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] }
+let chain = [ 'omni','path','c-n', 'uspl' ]
+let default = [ 'list', 'omni', 'cmd', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
 
   let g:mucomplete#chains = {}
   let g:mucomplete#chains['html'] = chain
