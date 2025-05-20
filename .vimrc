@@ -570,7 +570,7 @@ augroup END
 
 " -------------------------------------------------------------------------
 " Python
-"   - https://simplified.guide/vim/auto-complete-ruby
+"   - https://simplified.guide/vim/auto-complete-python
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType python setlocal omnifunc=python3complete#Complete
