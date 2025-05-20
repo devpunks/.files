@@ -461,7 +461,7 @@ function git_submodule () { clear
   echo ; echo "${BOLD}${module}${DEFAULT}"
 
   echo "Adding Submodule ${module}"
-  git submodule init "${name}"
+  git submodule init -- "${name}"
   git submodule sync --recursive
   ls -al "${name}"
   $( GIT_PAGER=cat git diff --name-status --staged | grep '.gitmodules' > /dev/null ) \
