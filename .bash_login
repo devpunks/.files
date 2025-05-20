@@ -445,8 +445,6 @@ function git_submodule () { clear
   git submodule status --recursive
   echo ; echo Updating submodules...
   git submodule update --recursive --remote --merge
-  git add .vim/pack
-  git commit -m 'Update Submodules'
 
   # vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
