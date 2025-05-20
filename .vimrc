@@ -905,9 +905,9 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd CursorHoldI * call g:Completion()
-augroup END
+" augroup FileDefaults
+"   autocmd CursorHoldI * call g:Completion()
+" augroup END
 
 function! g:Completion() " abort
   if !exists('g:mymu_enabled')
