@@ -192,6 +192,7 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
+# :version - See all version compiled options
 # use :verbose set ... for declaration location
 # - https://vim.rtorr.com
 # :set all - View all settings
