@@ -205,6 +205,9 @@ Android Accessibility
 # :h <key> - For mapping
 # :h term.txt ------------------------------
 #
+#  (Normal Mode) ---------------------------
+#  :normal gg=G # Reformat current buffer
+#
 #  (Insert Mode) ---------------------------
 # :help complete
 # :help ins-completion
