@@ -194,6 +194,8 @@ Android Accessibility
 # VIM ---------------------------------------------------------------------
 # use :verbose set ... for declaration location
 # - https://vim.rtorr.com
+# :set all - View all settings
+# :set termcap? - Term Capabilities
 # :K - (SHIFT+K) keywordprg(default to man page for under cursor)
 # :h key-notation - For mappings
 # :h <key> - For mapping
