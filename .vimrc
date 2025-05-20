@@ -919,6 +919,7 @@ function! g:Completion() " abort
   set complete=-i " no includes
 
   let chain = [ 'omni','path','c-n', 'uspl' ]
+  let default = [ 'omni', 'list', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
 
   let g:mucomplete#completion_delay = 1
   let g:mucomplete#enable_auto_at_startup = 1
