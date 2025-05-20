@@ -903,6 +903,30 @@ augroup END
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
+" Mμ Complete - https://github.com/lifepillar/vim-mucomplete
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd CursorHoldI * call g:Completion()
+augroup END
+
+function! g:Completion() " abort
+  if !exists('g:mymu_enabled')
+    echo 'Cannot find it'
+    return
+  endif
+
+  set complete=-t " no tags
+  set complete=-i " no includes
+
+  let g:mucomplete#completion_delay = 1
+  let g:mucomplete#enable_auto_at_startup = 1
+  let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] }
+  let g:mucomplete#chains = {}
+  let g:mucomplete#chains['html'] = [ 'omni','path','c-n', 'uspl' ]
+  " let g:mucomplete#chains['css'] = [ 'omni','path','c-n ]
+endfunction " g:Completion
+
+" -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
 nmap <silent> ]h <Plug>(GitGutterNextHunk)
