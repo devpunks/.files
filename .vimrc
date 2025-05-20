@@ -561,6 +561,14 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
+" PHP
+"   - https://simplified.guide/vim/auto-complete-php
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd FileType python setlocal omnifunc=phpcomplete#CompletePHP
+augroup END
+
+" -------------------------------------------------------------------------
 " Python
 "   - https://simplified.guide/vim/auto-complete-ruby
 " -------------------------------------------------------------------------
