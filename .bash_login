@@ -753,6 +753,7 @@ function derive () {
   # https://en.m.wikipedia.org/wiki/Scrypt
   # https://datatracker.ietf.org/doc/html/rfc7914
   echo ; printf "SCRYPT: \n"
+  echo $( scrypt enc --passphrase env:SALT <( echo "$phrase" ) ) && echo
 
   # https://en.m.wikipedia.org/wiki/PBKDF2
   echo ; printf "PBKDF2: "
