@@ -464,6 +464,8 @@ function git_submodule () { clear
   git submodule init "${name}"
   git submodule sync --recursive
   ls -al "${name}"
+  $( GIT_PAGER=cat git diff --name-status --staged | grep '.gitmodules' > /dev/null ) \
+    && git commit -m "Add Submodule @${module}"
 
   echo "${BOLD}Removing Submodule ${module} from .git/config${DEFAULT}"
   git config -f $HOME/.git/config --remove-section "submodule.${path}"
