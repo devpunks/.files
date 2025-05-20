@@ -473,8 +473,8 @@ function git_submodule () { clear
 # echo "${BOLD}Removing Submodule ${module} from .git/modules/${path}${DEFAULT}"
 # command rm -rfdv "${HOME}/.git/modules/${path}"
 # echo "${BOLD}Removing Submodule ${module} from .gitmodules & directory path${DEFAULT}"
-# git rm -r --force "${name}"
-# git config -f $HOME/.gitmodules --remove-section "submodule.${path}"
+# git rm -r --force -- "${name}"
+# git config -f -- $HOME/.gitmodules --remove-section "submodule.${path}"
 
   popd || return $?
   echo
