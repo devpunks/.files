@@ -918,12 +918,16 @@ function! g:Completion() " abort
   set complete=-t " no tags
   set complete=-i " no includes
 
+  let chain = [ 'omni','path','c-n', 'uspl' ]
+
   let g:mucomplete#completion_delay = 1
   let g:mucomplete#enable_auto_at_startup = 1
   let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] }
+
   let g:mucomplete#chains = {}
-  let g:mucomplete#chains['html'] = [ 'omni','path','c-n', 'uspl' ]
-  " let g:mucomplete#chains['css'] = [ 'omni','path','c-n ]
+  let g:mucomplete#chains['html'] = chain
+  let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
+
 endfunction " g:Completion
 
 " -------------------------------------------------------------------------
