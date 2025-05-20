@@ -469,7 +469,7 @@ function git_submodule () { clear
 
 # echo "${BOLD}Removing Submodule ${module} from .git/config${DEFAULT}"
 # git config -f $HOME/.git/config --remove-section "submodule.${path}"
-# git submodule deinit --force "${name}"
+# git submodule deinit --force -- "${name}"
 # echo "${BOLD}Removing Submodule ${module} from .git/modules/${path}${DEFAULT}"
 # command rm -rfdv "${HOME}/.git/modules/${path}"
 # echo "${BOLD}Removing Submodule ${module} from .gitmodules & directory path${DEFAULT}"
