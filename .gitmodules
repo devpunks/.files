@@ -19,3 +19,6 @@
 [submodule ".vim/pack/u0_a311/start/jellybeans.vim"]
 	path = .vim/pack/u0_a311/start/jellybeans.vim
 	url = https://github.com/vim-scripts/jellybeans.vim.git
+[submodule ".vim/pack/u0_a311/start/ZoomWin"]
+	path = .vim/pack/u0_a311/start/ZoomWin
+	url = https://github.com/vim-scripts/ZoomWin.git
