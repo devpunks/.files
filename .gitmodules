@@ -19,3 +19,6 @@
 [submodule ".vim/pack/u0_a311/start/ZoomWin"]
 	path = .vim/pack/u0_a311/start/ZoomWin
 	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule ".vim/pack/u0_a311/start/vim-closetag"]
+	path = .vim/pack/u0_a311/start/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
