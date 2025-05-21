@@ -1,9 +1,6 @@
 [submodule ".vim/pack/devpunks/start/ZoomWin"]
 	path = .vim/pack/devpunks/start/ZoomWin
 	url = https://github.com/vim-scripts/ZoomWin
-[submodule ".vim/pack/devpunks/start/jellybeans.vim"]
-	path = .vim/pack/devpunks/start/jellybeans.vim
-	url = https://github.com/vim-scripts/jellybeans.vim
 [submodule ".vim/pack/devpunks/start/vim-endwise"]
 	path = .vim/pack/devpunks/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
@@ -22,3 +19,6 @@
 [submodule ".vim/pack/u0_a311/start/nerdtree"]
 	path = .vim/pack/u0_a311/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
+[submodule ".vim/pack/u0_a311/start/jellybeans.vim"]
+	path = .vim/pack/u0_a311/start/jellybeans.vim
+	url = https://github.com/vim-scripts/jellybeans.vim.git
