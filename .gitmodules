@@ -1,9 +1,6 @@
 [submodule ".vim/pack/devpunks/start/syntastic"]
 	path = .vim/pack/devpunks/start/syntastic
 	url = https://github.com/scrooloose/syntastic
-[submodule ".vim/pack/devpunks/start/vim-gitgutter"]
-	path = .vim/pack/devpunks/start/vim-gitgutter
-	url = https://github.com/airblade/vim-gitgutter
 [submodule ".vim/pack/u0_a311/start/vim-mucomplete"]
 	path = .vim/pack/u0_a311/start/vim-mucomplete
 	url = https://github.com/lifepillar/vim-mucomplete.git
@@ -22,3 +19,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-endwise"]
 	path = .vim/pack/u0_a311/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/pack/u0_a311/start/vim-gitgutter"]
+	path = .vim/pack/u0_a311/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
