@@ -919,6 +919,8 @@ augroup END
 nmap <silent> <Enter> :call  ZoomDrawer()<cr>
 
 function! ZoomDrawer () " abort
+  if ! exists('*ZoomWin') | return | endif
+
   let l:open = g:NERDTree.IsOpen()
   NERDTreeClose
   ZoomWin
