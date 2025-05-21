@@ -957,7 +957,13 @@ endfunction
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
 " -------------------------------------------------------------------------
-if exists('g:loaded_closetag')
+augroup FileDefaults
+  autocmd VimEnter * call s:CloseTags()
+augroup END
+
+function! s:CloseTags() abort
+  if ! exists('g:loaded_closetag') | return | endif
+
   " These are the file types where this plugin is enabled.
   let g:closetag_filetypes = 'svg,html,xhtml,phtml,eruby,*.vue'
 
