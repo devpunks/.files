@@ -1,6 +1,3 @@
-[submodule ".vim/pack/devpunks/start/ZoomWin"]
-	path = .vim/pack/devpunks/start/ZoomWin
-	url = https://github.com/vim-scripts/ZoomWin
 [submodule ".vim/pack/devpunks/start/vim-endwise"]
 	path = .vim/pack/devpunks/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise
