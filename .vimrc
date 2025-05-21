@@ -977,6 +977,92 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.vue,*.jsx'
 " }}}
 
 " =========================================================================
+" {{{ TYPOGRAPHY.VIMRC
+" =========================================================================
+if $TERM =~ '256color'
+  " WARNING: ^[ must be entered as <c-v><c-[>
+  echo '$TERM is set to 256color'
+  let &t_so = '[7m' " smso (standout)
+  let &t_ZH = '[3m' " sitm (enable italics)
+  let &t_ZR = '[0m' " ritm (disable italics)
+endif
+
+syntax on " turns syntax highlighting on
+set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
+
+" - Line Length -----------------------------------------------------------
+set wrap " word
+set linebreak " Avoid mid-word line wrapping
+set showbreak=⥹ " Character used for wrapped line
+set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
+set textwidth=75 " before wrap https://vimtricks.com/p/vim-line-length-marker
+set synmaxcol=256 " Prevent slow loading https://github.com/tpope/vim-sensible/issues/142
+
+" - Whitespace ------------------------------------------------------------
+let s:TABSIZE=2
+set expandtab "turn tabs into (tabstop) spaces
+set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
+let &tabstop=s:TABSIZE "set tab character to 2 characters
+let &shiftwidth=s:TABSIZE " Shift-indent size - http://vimcasts.org/episodes/tabs-and-spaces
+let &softtabstop=s:TABSIZE " https://vi.stackexchange.com/q/4244
+
+retab! " (Force!) update tab format
+
+set list " show hidden characters & replacement characters
+set listchars=tab:▣□▢,extends:⇨,precedes:⇦,leadmultispace:··╵,multispace:··╵,lead:·,space:╵,nbsp:■,trail:■,eol:↴
+
+set sidescroll=10 " scroll amount when a word is outside of view
+" https://vim.fandom.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
+set scrolloff=999 " Line jump scrolling offset (999=centered)
+set display=lastline " Show Special chars for long last line
+
+" (NORMAL/VISUAL MODE)
+set whichwrap=h,l " 'h' & 'l' wrap EOL & BOL
+set whichwrap+=b,s " (b)ackspace & (s)pace wrap EOL & BOL
+set whichwrap+=<,> " < left and right > arrow wrap to prev. and next line
+" (INSERT/REPLACE MODE)
+set whichwrap+=[,] " [ left and right ] arrow wrap to prev. and next line
+set backspace=indent,eol,nostop " Insert mode <BS> deletion
+
+"}}}
+
+" =========================================================================
+" {{{ COLORSCHEME
+"  - ./vim/colors/default.vim
+"  - ./vim/colors/devpunks.vim
+"  * can use hexidecimal values for gui (e.g. guibg=#000000)
+"  * term modes (NONE,(s)tandout,(r)everse,(i)talic,(b)old, (u)nderline, under(c)url)
+"
+"  - https://jonasjacek.github.io/colors
+"  - http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
+"  - http://bjornenki.com/blog/gvim-colorscheme/bjornenki-colorscheme.vim
+"  - Overrides - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+"  - https://vi.stackexchange.com/q/8751/how-to-completely-turn-off-colorscheme
+"hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
+" =========================================================================
+set t_Co=256 " enable 256 colors
+set background=dark " [dark|light]
+
+try | colorscheme devpunks
+  catch | set termguicolors " 24bit gui(fg|bg)
+endtry
+
+" :help xterm-true-color
+" TODO: determine xterm-true-color escapes
+" https://groups.google.com/g/vim_dev/c/wsC205JQpDo
+"let &t_8f = '[38:2:%lu:%lu:%lum'
+"let &t_8b = '[48:2:%lu:%lu:%lum'
+
+" Interactive Status -----------------------------
+augroup Status
+  autocmd!
+  autocmd InsertLeave * highlight! StatusLine term=reverse cterm=reverse gui=reverse
+  autocmd InsertEnter * highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
+augroup END
+
+" }}}
+
+" =========================================================================
 " {{{ CONCEAL.VIM
 " =========================================================================
 set conceallevel=2
