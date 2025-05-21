@@ -965,7 +965,7 @@ function! s:CloseTags() abort
   if ! exists('g:loaded_closetag') | return | endif
 
   " These are the file types where this plugin is enabled.
-  let g:closetag_filetypes = 'svg,html,xhtml,phtml,eruby,*.vue'
+  let g:closetag_filetypes = 'svg,html,phtml,eruby,*.vue'
 
   " These are the file extensions where this plugin is enabled.
   let g:closetag_filenames = '*.svg,*.html,*.xhtml,*.phtml,*.html.erb,*.vue'
