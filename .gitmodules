@@ -19,3 +19,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-mucomplete"]
 	path = .vim/pack/u0_a311/start/vim-mucomplete
 	url = https://github.com/lifepillar/vim-mucomplete.git
+[submodule ".vim/pack/u0_a311/start/nerdtree"]
+	path = .vim/pack/u0_a311/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
