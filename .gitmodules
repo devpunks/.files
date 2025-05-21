@@ -16,9 +16,6 @@
 [submodule ".vim/pack/devpunks/start/vim-gitgutter"]
 	path = .vim/pack/devpunks/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
-[submodule ".vim/pack/devpunks/start/nerdtree"]
-	path = .vim/pack/devpunks/start/nerdtree
-	url = https://github.com/preservim/nerdtree.git
 [submodule ".vim/pack/u0_a311/start/vim-mucomplete"]
 	path = .vim/pack/u0_a311/start/vim-mucomplete
 	url = https://github.com/lifepillar/vim-mucomplete.git
