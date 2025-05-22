@@ -843,14 +843,12 @@ function! g:Completion() " abort
   let g:mucomplete#enable_auto_at_startup = 1
   let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] } " list
 
-let g:mucomplete#completion_delay = 1
-let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] } " list
+  let g:mucomplete#chains = {}
+  let g:mucomplete#chains['html'] = chain
+  let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
+  let g:mucomplete#chains['default'] = { 'default' : default }
 
-let g:mucomplete#chains = {}
-let g:mucomplete#chains['html'] = chain
-let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
-let g:mucomplete#chains['default'] = { 'default' : default }
+endfunction " g:Completion
 
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
