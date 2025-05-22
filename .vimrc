@@ -824,6 +824,21 @@ augroup END
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
+" CtrlP - https://github.com//ctrlpvim/ctrlp.vim
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:ControlP()
+augroup END
+
+function! g:ControlP() abort
+  echo 'Checking CtrlP path'
+  if &rtp !~ 'ctrlp.vim' | return | endif
+
+  echo 'Re-Mapping CtrlP to <c-o>'
+  let ctrlp_map = '<c-o>'
+endfunction
+
+" -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
 augroup FileDefaults
