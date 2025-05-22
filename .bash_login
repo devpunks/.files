@@ -430,6 +430,7 @@ alias g#='{
 # - https://git-scm.com/book/en/v2/Git-Tools-Submodules
 # - https://github.blog/2016-02-01-working-with-submodules
 # - https://stackoverflow.com/q/1260748/how-do-i-remove-a-submodule
+# - https://stackoverflow.com/q/4161022/how-to-track-untracked-content
 function git_submodule () { clear
   local -r module="${1}"
   local -r name="${module##*/}"
