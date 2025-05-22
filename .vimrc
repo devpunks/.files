@@ -830,11 +830,8 @@ augroup FileDefaults
   autocmd CursorHoldI * call g:Completion()
 augroup END
 
-" function! g:Completion() " abort
-"   if !exists('g:mymu_enabled')
-"     echo 'Cannot find it'
-"     return
-"   endif
+function! g:Completion() " abort
+  if !exists('g:loaded_mucomplete') | return | endif
 
 " endfunction " g:Completion
 
