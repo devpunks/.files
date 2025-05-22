@@ -836,8 +836,8 @@ function! g:Completion() " abort
   set complete-=t " no tags
   set complete-=i " no includes
 
-set complete-=t " no tags
-set complete-=i " no includes
+  let chain = [ 'omni','path','c-n', 'uspl' ]
+  let default = [ 'list', 'omni', 'cmd', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
 
 let chain = [ 'omni','path','c-n', 'uspl' ]
 let default = [ 'list', 'omni', 'cmd', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
