@@ -833,7 +833,8 @@ augroup END
 function! g:Completion() " abort
   if !exists('g:loaded_mucomplete') | return | endif
 
-" endfunction " g:Completion
+  set complete-=t " no tags
+  set complete-=i " no includes
 
 set complete-=t " no tags
 set complete-=i " no includes
