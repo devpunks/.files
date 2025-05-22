@@ -221,6 +221,7 @@ git status
 #  - https://github.blog/2016-02-01-working-with-submodules
 
 echo Cloning submodules...
+# https://github.com/ctrlpvim/ctrlp.vim
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/vim-scripts/ZoomWin
 # https://github.com/alvan/vim-closetag
