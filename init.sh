@@ -27,6 +27,7 @@ pkg upgrade && pkg update
 pkg install mount-utils
 
 # {{{ Termux --------------------------------------------------------------
+# https://github.com/YurinDoctrine/termux-essentials/blob/main/termux-essentials.sh
 termux-open "${HOME}/.termux/Termux_Boot_0.7.apk"
 pkg install termux-services
 pkg install termux-auth
