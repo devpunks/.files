@@ -220,6 +220,7 @@ git status
 #  - https://github.blog/2016-02-01-working-with-submodules
 
 echo Cloning submodules...
+# https://github.com/chrisbra/csv.vim
 # https://github.com/ctrlpvim/ctrlp.vim
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/vim-scripts/ZoomWin
