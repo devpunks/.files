@@ -228,6 +228,7 @@ echo Cloning submodules...
 # https://github.com/tpope/vim-endwise
 # https://github.com/tpope/vim-surround
 # https://github.com/preservim/nerdtree
+# https://github.com/lambdalisue/vim-fern
 # https://github.com/vim-scripts/jellybeans.vim
 # https://github.com/vim-scripts/The-NERD-tree
 # https://github.com/airblade/vim-gitgutter
