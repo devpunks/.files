@@ -230,7 +230,6 @@ echo Cloning submodules...
 # https://github.com/preservim/nerdtree
 # https://github.com/lambdalisue/vim-fern
 # https://github.com/vim-scripts/jellybeans.vim
-# https://github.com/vim-scripts/The-NERD-tree
 # https://github.com/airblade/vim-gitgutter
 
 git submodule
