@@ -34,3 +34,6 @@
 [submodule ".vim/pack/u0_a311/start/.vim/pack/u0_a311/start/vim-fern-git-status"]
 	path = .vim/pack/u0_a311/start/.vim/pack/u0_a311/start/vim-fern-git-status
 	url = https://github.com/lambdalisue/vim-fern-git-status.git
+[submodule ".vim/pack/u0_a311/start/vim-fern-bookmark"]
+	path = .vim/pack/u0_a311/start/vim-fern-bookmark
+	url = https://github.com/lambdalisue/vim-fern-bookmark.git
