@@ -868,6 +868,7 @@ endfunction " g:Completion
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
 " https://github.com/vim/vim/issues/1611
+" https://thesynack.com/posts/vim-thesaurus
 set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
 
 " -------------------------------------------------------------------------
