@@ -25,6 +25,3 @@
 [submodule ".vim/pack/u0_a311/start/ctrlp.vim"]
 	path = .vim/pack/u0_a311/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule ".vim/pack/u0_a311/start/vim-online-thesaurus"]
-	path = .vim/pack/u0_a311/start/vim-online-thesaurus
-	url = https://github.com/beloglazov/vim-online-thesaurus.git
