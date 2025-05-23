@@ -985,7 +985,23 @@ function! ZoomDrawer () " abort
 endfunction
 
 " -------------------------------------------------------------------------
-" NERDTree
+" Fern - https://github.com/lambdalisue/vim-fern
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call s:FernDrawer()
+augroup END
+
+function! s:NerdDrawer() abort
+  if ! exists('g:NERDTree') | return | endif
+
+  " [SHIFT]+[TAB] Opens Nerdtree
+  nnoremap <S-Tab> :NERDTreeToggle | :Fern . -drawer<CR>
+
+  Fern . -drawer | wincmd p " Open Drawer & focus on `p`revious buffer
+endfunction
+
+" -------------------------------------------------------------------------
+" NERDTree - https://github.com/preservim/nerdtree
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd VimEnter * call s:NerdDrawer()
