@@ -863,6 +863,13 @@ function! g:Completion() " abort
 
 endfunction " g:Completion
 
+
+" -------------------------------------------------------------------------
+" Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
+" -------------------------------------------------------------------------
+" https://github.com/vim/vim/issues/1611
+set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
+
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
