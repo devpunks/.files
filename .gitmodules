@@ -28,3 +28,6 @@
 [submodule ".vim/pack/u0_a311/start/csv.vim"]
 	path = .vim/pack/u0_a311/start/csv.vim
 	url = https://github.com/chrisbra/csv.vim.git
+[submodule ".vim/pack/u0_a311/start/vim-fern"]
+	path = .vim/pack/u0_a311/start/vim-fern
+	url = https://github.com/lambdalisue/vim-fern.git
