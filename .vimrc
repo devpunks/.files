@@ -893,7 +893,8 @@ augroup END
 " https://thesynack.com/posts/vim-thesaurus
 set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
 
-function! s:thesaurus() abort
+function! g:Thesaurus() abort
+  if ! filereadable('$HOME/mthesaur.txt') | return | endif
   let s:saved_ut = &ut
   if &ut > 200 | let &ut = 200 | endif
   augroup ThesaurusAuGroup
