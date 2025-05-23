@@ -871,6 +871,20 @@ endfunction " g:Completion
 " https://thesynack.com/posts/vim-thesaurus
 set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
 
+function! s:thesaurus() abort
+  let s:saved_ut = &ut
+  if &ut > 200 | let &ut = 200 | endif
+  augroup ThesaurusAuGroup
+      autocmd CursorHold,CursorHoldI <buffer>
+                  \ let &ut = s:saved_ut |
+                  \ set iskeyword-=32 |
+                  \ autocmd! ThesaurusAuGroup
+  augroup END
+  return ":set iskeyword+=32\<cr>vaWovea\<c-x>\<c-t>"
+endfunction
+
+nnoremap <expr> <leader>t <SID>thesaurus()
+
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
