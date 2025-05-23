@@ -482,6 +482,24 @@ function OverflowMargin () abort
 endfunction " OverflowMargin
 
 " -------------------------------------------------------------------------
+" CSV - https://github.com/chrisbra/csv.vim
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd BufRead,BufNewFile *.csv,*.dat call CSV ()
+augroup END
+
+function CSV () " abort
+  setfiletype csv
+
+" let b:csv_arrange_align = 'l*'
+
+  ArrangeColumn
+
+  echo 'loaded CSV (See https://github.com/chrisbra/csv.vim)'
+  let g:csv_highlight_column = 'y'
+endfunction
+
+" -------------------------------------------------------------------------
 " .vimrc
 " -------------------------------------------------------------------------
 augroup FileDefaults
