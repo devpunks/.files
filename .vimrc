@@ -744,7 +744,6 @@ endfunction " TabLine
 " - https://stackoverflow.com/q/1764263/what-is-the-leader-in-a-vimrc-file
 " " https://stevelosh.com/blog/2010/09/coming-home-to-vim/#using-the-leader
 " - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
-let mapleader = ','
 let g:mapleader = ','
 
 " =========================================================================
