@@ -890,6 +890,11 @@ nnoremap <leader>t g:Thesaurus()
 
 augroup FileDefaults
   autocmd VimEnter * call g:Thesaurus()
+
+  " https://github.com/vim/vim/issues/1611
+  " https://thesynack.com/posts/vim-thesaurus
+  echo 'setting thesaurus'
+  set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
 augroup END
 
 " https://github.com/vim/vim/issues/1611
