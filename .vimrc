@@ -996,6 +996,13 @@ function! g:GitGutter() abort
 endfunction " g:GitGutter()
 
 " -------------------------------------------------------------------------
+" IndentLine - https://github.com/Yggdroot/IndentLine
+" -------------------------------------------------------------------------
+let g:indentLine_setColors = 0
+let g:indentLine_defaultGroup = 'SpecialKey'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+" -------------------------------------------------------------------------
 " Scrollbar - https://github.com/obcat/vim-sclow
 " -------------------------------------------------------------------------
 augroup FileDefaults
