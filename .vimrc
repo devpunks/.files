@@ -852,7 +852,7 @@ function! s:ControlP() abort
 " if &rtp !~ 'ctrlp.vim' | return | endif
 
   echo 'Re-Mapping CtrlP to <c-o>'
-  let ctrlp_map = '<c-o>'
+  let g:ctrlp_map=<c-o>
 endfunction
 
 " -------------------------------------------------------------------------
