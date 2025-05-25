@@ -1007,8 +1007,15 @@ function! s:Fern() abort
   " [SHIFT]+[TAB] Opens Nerdtree
   nnoremap <S-Tab> :NERDTreeToggle<CR> | :Fern -drawer -stay .<CR>
 
-  Fern . -drawer | wincmd p " Open Drawer & focus on `p`revious buffer
-endfunction
+  let g:fern#mark_symbol = '📌'
+  let g:fern#renderer#default#leading = '|'
+  let g:fern#renderer#default#root_symbol = '🎯'
+  let g:fern#renderer#default#leaf_symbol = '📄'
+  let g:fern#renderer#default#expanded_symbol = '📂'
+  let g:fern#renderer#default#collapsed_symbol = '📁'
+
+  Fern -drawer -stay . " | wincmd p Open Drawer & focus on `p`revious buffer
+endfunction " Fern
 
 " -------------------------------------------------------------------------
 " NERDTree - https://github.com/preservim/nerdtree
