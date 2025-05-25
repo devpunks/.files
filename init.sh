@@ -235,6 +235,7 @@ echo Cloning submodules...
 # https://github.com/lambdalisue/vim-fern-bookmark
 # https://github.com/lambdalisue/vim-fern-git-status
 # https://github.com/vim-scripts/jellybeans.vim
+# https://github.com/lifepillar/vim-mucomplete
 # https://github.com/Asheq/close-buffers.vim
 # https://github.com/airblade/vim-gitgutter
 
