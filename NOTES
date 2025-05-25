@@ -211,6 +211,7 @@ Android Accessibility
 #  (Insert Mode) ---------------------------
 # :help complete
 # :help ins-completion
+# <C-d> - command mode list
 # <C-n> - Next Completion
 # <C-p> - Previous Completion
 # <C-x><C-f> - File Path Completion
