@@ -752,6 +752,8 @@ nnoremap ; :
 " Search (Find)
 nnoremap <C-f> /
 
+" :Bdelete menu<CR>
+nnoremap <silent> <Del> :Bwipeout menu<CR>
 nnoremap <Space> za
 " (normal) [TAB] Next Tab
 nnoremap <Tab> :tabnext<CR>
