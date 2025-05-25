@@ -193,6 +193,11 @@ Android Accessibility
 
 # VIM ---------------------------------------------------------------------
 # - https://vim.rtorr.com
+# :version - See all version compiled options
+# :verbose let . all let declarations & location
+# :verbose set . all set options & location
+# :verbose function - See all functions & location
+# :ls! - Show all buffers included unlisted (h = hidden, a = active):w
 # :set all - View all settings
 # :set termcap? - Term Capabilities
 # :K - (SHIFT+K) keywordprg(default to man page for under cursor)
