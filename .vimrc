@@ -850,7 +850,7 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 let g:ctrlp_map='<C-o>'
 
 augroup FileDefaults
-  autocmd VimEnter * call s:ControlP()
+  autocmd VimEnter * call g:ControlP()
 augroup END
 
 function! s:ControlP() abort
