@@ -192,11 +192,6 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
-# :version - See all version compiled options
-# :set - See all set options
-# :let - See all let options
-# :function - See all functions
-# use :verbose set ... for declaration location
 # - https://vim.rtorr.com
 # :set all - View all settings
 # :set termcap? - Term Capabilities
