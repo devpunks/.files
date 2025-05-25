@@ -37,3 +37,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-fern-bookmark"]
 	path = .vim/pack/u0_a311/start/vim-fern-bookmark
 	url = https://github.com/lambdalisue/vim-fern-bookmark.git
+[submodule ".vim/pack/u0_a311/start/close-buffers.vim"]
+	path = .vim/pack/u0_a311/start/close-buffers.vim
+	url = https://github.com/Asheq/close-buffers.vim.git
