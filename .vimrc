@@ -655,7 +655,7 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
   let l:decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
   " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
-  let octal = printf( '|\0o%-6o', index )
+  let l:octal = printf( '|\0o%-6o', index )
 
   " Join character to escape sequences
   " - https://en.wikipedia.org/wiki/Escape_sequence
