@@ -866,6 +866,26 @@ function! g:ControlP() abort
 endfunction
 
 " -------------------------------------------------------------------------
+" TagBar - https://github.com/preservim/tagbar
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter,BufEnter * call g:Tagbar()
+augroup END
+
+function Tagbar () abort
+  let l:ctags = expand('$PREFIX/bin/ctags')
+  if ! exists(':Tagbar') | return | endif
+
+  echo 'Configuring tag storage'
+  set tags+=./tags
+  " set tagdir=./tags
+
+  echo 'Loading Tagbar'
+  let g:tagbar_ctags_bin = l:ctags
+
+endfunction " Tagbar
+
+" -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
 augroup FileDefaults
