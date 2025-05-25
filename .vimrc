@@ -893,7 +893,13 @@ augroup FileDefaults
 augroup END
 
 function! g:Thesaurus() " abort
-  if ! filereadable( expand('$HOME/mthesaur.txt') ) | return | endif
+  let l:path = expand('$HOME/mthesaur.txt')
+  if ! filereadable( path ) | return | endif
+
+  " https://github.com/vim/vim/issues/1611
+  " https://thesynack.com/posts/vim-thesaurus
+  echo 'setting thesaurus to '..path
+  set thesaurus=path " https://stackoverflow.com/q/33453468
 
   let s:saved_ut = &ut
   if &ut > 200 | let &ut = 200 | endif
