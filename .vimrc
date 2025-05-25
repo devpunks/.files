@@ -856,6 +856,7 @@ augroup END
 function! g:ControlP() abort
   echo 'Checking CtrlP path'
 " if &rtp !~ 'ctrlp.vim' | return | endif
+  if ! exists('g:loaded_ctrlp') | return | endif
 
   echo 'Re-Mapping CtrlP to <c-o>'
   let g:ctrlp_map=<c-o>
