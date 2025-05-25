@@ -223,7 +223,7 @@ git status
 echo Cloning submodules...
 # https://github.com/chrisbra/csv.vim
 # https://github.com/ctrlpvim/ctrlp.vim
-# https://github.com/lifepillar/vim-mucomplete
+# https://github.com/Yggdroot/IndentLine
 # https://github.com/vim-scripts/ZoomWin
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-endwise
