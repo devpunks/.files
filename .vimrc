@@ -911,8 +911,6 @@ function! g:Thesaurus() " abort
   return ":set iskeyword+=32\<cr>vaWovea\<c-x>\<c-t>"
 endfunction
 
-nnoremap <expr> <leader>t <SID>thesaurus()
-
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
