@@ -1029,8 +1029,8 @@ endfunction
 " Fern - https://github.com/lambdalisue/vim-fern
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd VimEnter * call s:Fern()
-  autocmd FileType fern call s:FernDrawer()
+  autocmd VimEnter * call g:Fern()
+  autocmd FileType fern call g:FernDrawer()
 augroup END
 
 function! s:FernDrawer() abort
