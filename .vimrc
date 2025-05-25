@@ -897,9 +897,8 @@ augroup FileDefaults
   set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
 augroup END
 
-" https://github.com/vim/vim/issues/1611
-" https://thesynack.com/posts/vim-thesaurus
-set thesaurus=$HOME/mthesaur.txt " https://stackoverflow.com/q/33453468
+function! g:Thesaurus() " abort
+  if ! filereadable( expand('$HOME/mthesaur.txt') ) | return | endif
 
 function! g:Thesaurus() abort
   if ! filereadable('$HOME/mthesaur.txt') | return | endif
