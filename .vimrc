@@ -1046,7 +1046,7 @@ function! g:Fern() abort
   let g:fern#renderer#default#expanded_symbol = '📂'
   let g:fern#renderer#default#collapsed_symbol = '📁'
 
-  Fern -drawer -stay . " | wincmd p Open Drawer & focus on `p`revious buffer
+  Fern -drawer -stay .
 endfunction " Fern
 
 " -------------------------------------------------------------------------
