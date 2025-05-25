@@ -831,6 +831,7 @@ cnoremap <C-r> :source ~/.vimrc<CR>
 " =========================================================================
 " {{{ PLUGINS - check loaded with &rtp =~ 'plugin-name'
 " =========================================================================
+
 augroup FileDefaults
   filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 augroup END
