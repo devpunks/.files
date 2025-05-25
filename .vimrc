@@ -1033,13 +1033,7 @@ augroup FileDefaults
   autocmd FileType fern call g:FernDrawer()
 augroup END
 
-function! s:FernDrawer() abort
-  echo 'Fern Drawer'
-  setlocal nonumber
-  setlocal laststatus=0 " turn off statusline
-endfunction " FernDrawer
-
-function! s:Fern() abort
+function! g:Fern() abort
   if &rtp !~ 'vim-fern' | return | endif
 
   " [SHIFT]+[TAB] Opens Nerdtree
