@@ -1028,7 +1028,7 @@ function! s:NerdDrawer() abort
   if ! exists('g:NERDTree') | return | endif
 
   " [SHIFT]+[TAB] Opens Nerdtree
-  nnoremap <S-Tab> :NERDTreeToggle | :Fern . -drawer<CR>
+  nnoremap <S-Tab> :NERDTreeToggle<CR> | :Fern -drawer -stay .<CR>
 
   let g:NERDTreeIgnore=[] " ignored files
   let g:NERDTreeFileLines=1 " LOC number in files
