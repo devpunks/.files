@@ -787,8 +787,8 @@ nnoremap <S-t> :TagbarToggle<CR>
 
 " tabs
 "nnoremap <C-t> :tabnew<cr>
-nnoremap <C-n> :tabnext<CR>
-nnoremap <C-p> :tabprevious<CR>
+nnoremap <silent> <C-n> :tabnext<CR>
+nnoremap <silent> <C-p> :tabprevious<CR>
 
 " current buffer in new (t)ab
 nnoremap <Leader>t <C-w>t
