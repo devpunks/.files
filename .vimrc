@@ -846,6 +846,9 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " -------------------------------------------------------------------------
 " CtrlP - https://github.com//ctrlpvim/ctrlp.vim
 " -------------------------------------------------------------------------
+" TODO: migrate into autocmd
+let g:ctrlp_map='<C-o>'
+
 augroup FileDefaults
   autocmd VimEnter * call s:ControlP()
 augroup END
