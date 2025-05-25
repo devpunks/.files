@@ -886,6 +886,8 @@ endfunction " g:Completion
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
+nnoremap <leader>t g:Thesaurus()
+
 augroup FileDefaults
   autocmd VimEnter * call g:Thesaurus()
 augroup END
