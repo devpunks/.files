@@ -642,9 +642,9 @@ endfunction " Browser
 "   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
 function! CursorCharacter() abort " DecimalToOctal(27)"
-  let char = strpart( getline('.'), col('.')-1, 1, 1 )
-  let index = char2nr( char ) " char(acter) to number
-  let character = printf( '|%-2s', char )
+  let l:char = strpart( getline('.'), col('.')-1, 1, 1 )
+  let l:index = char2nr( char ) " char(acter) to number
+  let l:character = printf( '|%-2s', char )
 
   " Formal Hexadecimal Unicode Notation (Code Point)
   " - https://en.wikipedia.org/wiki/UTF-8
