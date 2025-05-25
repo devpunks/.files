@@ -239,6 +239,10 @@ Android Accessibility
 # :verbose map - Keyboard mappings - https://vi.stackexchange.com/q/7722
 # :verbose autocmd [event]
 # FULL LIST OF SHORTCUTS - https://gist.github.com/tuxfight3r/0dca25825d9f2608714b
+# CtrlP -----------------------------------------------------
+# (active) <c-f> - Switch between files, & bufers
+# vim-fern --------------------------------------------------
+# ! Toggle . (dot) files
 
 # BASH --------------------------------------------------------------------
 # - Explain Shell - https://explainshell.com/
