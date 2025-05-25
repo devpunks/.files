@@ -900,8 +900,6 @@ augroup END
 function! g:Thesaurus() " abort
   if ! filereadable( expand('$HOME/mthesaur.txt') ) | return | endif
 
-function! g:Thesaurus() abort
-  if ! filereadable('$HOME/mthesaur.txt') | return | endif
   let s:saved_ut = &ut
   if &ut > 200 | let &ut = 200 | endif
   augroup ThesaurusAuGroup
