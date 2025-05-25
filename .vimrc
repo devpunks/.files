@@ -653,7 +653,7 @@ function! CursorCharacter() abort " DecimalToOctal(27)"
   " - https://en.wikipedia.org/wiki/Percent-encoding (e.g. %20)
   let l:hexadecimal = printf( '|U+%-7s' , printf( '%04X', index ) )
   " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
-  let decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
+  let l:decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
   " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
   let octal = printf( '|\0o%-6o', index )
 
