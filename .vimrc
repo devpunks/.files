@@ -1049,6 +1049,45 @@ function! g:Fern() abort
   Fern -drawer -stay .
 endfunction " Fern
 
+function! g:FernDrawer() abort
+  echo 'Fern Drawer'
+  setlocal nonumber
+  setlocal splitright
+
+  nnoremap <buffer> <Esc> :bw
+  " Custom <Plug>in command
+  nnoremap <Plug>(fern-close-drawer) :<C-u>FernDo close -drawer -stay<CR>
+
+  nnoremap <buffer> q :FernDo close -drawer -stay
+
+  " Jump to top directory
+  nnoremap <buffer> P gg
+  nnoremap <buffer> I <Plug>(fern-action-hidden-toggle)
+
+  noremap <buffer> <C-l> <C-w>l
+  noremap <buffer> <C-h> <C-w>h
+
+  " mappings
+  nnoremap <buffer> x <Plug>(fern-action-collapse)
+  " nnoremap <buffer> o <Plug>(fern-action-open:edit)
+  nnoremap <buffer> o <Plug>(fern-action-open:right)
+  nnoremap <buffer> go <Plug>(fern-action-open:edit)<C-w>p
+  nnoremap <buffer> t <Plug>(fern-action-open:tabedit)
+  nnoremap <buffer> T <Plug>(fern-action-open:tabedit)gT
+  nnoremap <buffer> i <Plug>(fern-action-open:split)
+  nnoremap <buffer> gi <Plug>(fern-action-open:split) | wincmd p
+  nnoremap <buffer> s <Plug>(fern-action-open:vsplit)
+  nnoremap <buffer> si <Plug>(fern-action-open:vsplit)<C-w>p
+
+  nnoremap <buffer> ma <Plug>(fern-action-new-path)
+  nnoremap <buffer> C <Plug>(fern-action-enter)
+  nnoremap <buffer> u <Plug>(fern-action-leave)
+  nnoremap <buffer> r <Plug>(fern-action-reload)
+  nnoremap <buffer> R gg<Plug>(fern-action-reload)
+  nnoremap <buffer> cd <Plug>(fern-action-cd)
+  nnoremap <buffer> CD gg<Plug>(fern-action-cd)<C-o>
+endfunction " FernDrawer
+
 " -------------------------------------------------------------------------
 " NERDTree - https://github.com/preservim/nerdtree
 " -------------------------------------------------------------------------
