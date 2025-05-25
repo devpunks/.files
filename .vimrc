@@ -1036,8 +1036,8 @@ augroup END
 function! g:Fern() abort
   if &rtp !~ 'vim-fern' | return | endif
 
-  " [SHIFT]+[TAB] Opens Nerdtree
-  nnoremap <S-Tab> :NERDTreeToggle<CR> | :Fern -drawer -stay .<CR>
+  " [SHIFT]+[TAB] Opens Fern
+  nnoremap <S-Tab> :Fern -drawer -stay .
 
   let g:fern#mark_symbol = '📌'
   let g:fern#renderer#default#leading = '|'
