@@ -134,6 +134,7 @@ pkg install tinyproxy # https://tinyproxy.github.io
 # }}}
 
 # {{{ Programming ---------------------------------------------------------
+pkg install libxml2
 pkg install jq
 pkg install vim
 pkg install tidy
