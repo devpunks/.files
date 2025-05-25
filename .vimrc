@@ -995,8 +995,14 @@ augroup FileDefaults
   autocmd FileType fern call s:FernDrawer()
 augroup END
 
-function! s:NerdDrawer() abort
-  if ! exists('g:NERDTree') | return | endif
+function! s:FernDrawer() abort
+  echo 'Fern Drawer'
+  setlocal nonumber
+  setlocal laststatus=0 " turn off statusline
+endfunction " FernDrawer
+
+function! s:Fern() abort
+  if &rtp !~ 'vim-fern' | return | endif
 
   " [SHIFT]+[TAB] Opens Nerdtree
   nnoremap <S-Tab> :NERDTreeToggle | :Fern . -drawer<CR>
