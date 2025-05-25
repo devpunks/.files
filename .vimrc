@@ -844,7 +844,7 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " CtrlP - https://github.com//ctrlpvim/ctrlp.vim
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd VimEnter * call g:ControlP()
+  autocmd VimEnter * call s:ControlP()
 augroup END
 
 function! g:ControlP() abort
