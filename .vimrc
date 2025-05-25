@@ -788,7 +788,6 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
 nnoremap <C-n> :tabnext<CR>
 nnoremap <C-p> :tabprevious<CR>
 
-" TODO: Figure out solution
 " current buffer in new (t)ab
 nnoremap <Leader>t <C-w>t
 " simulate break pane in TMUX
