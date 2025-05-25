@@ -1005,7 +1005,7 @@ function! s:Fern() abort
   if &rtp !~ 'vim-fern' | return | endif
 
   " [SHIFT]+[TAB] Opens Nerdtree
-  nnoremap <S-Tab> :NERDTreeToggle | :Fern . -drawer<CR>
+  nnoremap <S-Tab> :NERDTreeToggle<CR> | :Fern -drawer -stay .<CR>
 
   Fern . -drawer | wincmd p " Open Drawer & focus on `p`revious buffer
 endfunction
