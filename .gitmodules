@@ -46,3 +46,6 @@
 [submodule ".vim/pack/u0_a311/start/tagbar"]
 	path = .vim/pack/u0_a311/start/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule ".vim/pack/u0_a311/start/vim-gutentags"]
+	path = .vim/pack/u0_a311/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
