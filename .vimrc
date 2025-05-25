@@ -858,8 +858,11 @@ function! g:ControlP() abort
 " if &rtp !~ 'ctrlp.vim' | return | endif
   if ! exists('g:loaded_ctrlp') | return | endif
 
-  echo 'Re-Mapping CtrlP to <c-o>'
-  let g:ctrlp_map=<c-o>
+  echo 'Re-Mapping CtrlP to <C-o>'
+  let g:ctrlp_cmd='CtrlPMixed'
+  nnoremap <C-o> :CtrlPMixed<CR><C-d>
+
+  let g:ctrlp_root_markers = ['.git', 'package.json', 'Gemfile', '.bashrc' ]
 endfunction
 
 " -------------------------------------------------------------------------
