@@ -239,6 +239,10 @@ echo Cloning submodules...
 # https://github.com/Asheq/close-buffers.vim
 # https://github.com/airblade/vim-gitgutter
 
+# LSP (Language Server Protocols) ---------
+# https://github.com/prabirshrestha/vim-lsp
+# https://github.com/mattn/vim-lsp-settings
+
 git submodule
 git submodule update --init --recursive
 
