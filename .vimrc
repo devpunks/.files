@@ -897,6 +897,13 @@ augroup END
 function! g:Complete () " abort
   if !exists('g:loaded_mucomplete') | return | endif
 
+  echo 'Mμ Completing'
+
+endfunction " Complete
+
+function! g:Completion () " abort
+  if &rtp !~ 'vim-mucomplete' | return | endif
+
   set complete-=t " no tags
   set complete-=i " no includes
 
