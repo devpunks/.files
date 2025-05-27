@@ -960,7 +960,7 @@ augroup FileDefaults
   autocmd FileReadPost * call g:GitGutter()
 augroup END
 
-function! g:GitStatus() " abort
+function! g:GitStatus () " abort
   let [a,m,r] = GitGutterGetHunkSummary()
 
   return printf('+%d ~%d -%d', a, m, r)
