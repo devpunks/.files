@@ -1119,7 +1119,7 @@ augroup FileDefaults
   autocmd VimEnter * call s:CloseTags()
 augroup END
 
-function! s:CloseTags() abort
+function! s:CloseTags () abort
   if ! exists('g:loaded_closetag') | return | endif
 
   " These are the file types where this plugin is enabled.
