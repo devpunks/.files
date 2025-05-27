@@ -872,7 +872,6 @@ augroup FileDefaults
 augroup END
 
 function Tagbar () abort
-  let l:ctags = expand('$PREFIX/bin/ctags')
   if ! exists(':Tagbar') | return | endif
 
   echo 'Configuring tag storage'
