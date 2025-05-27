@@ -86,7 +86,7 @@ let &path ..= ',,'
 set nrformats+=alpha
 set nrformats-=octal
 
-set updatetime=1000 " 1 Second
+set updatetime=150 " 150 Milliseconds
 " https://vimhelp.org/options.txt.html#%27timeout%27
 set timeout " on mappings
 set ttimeout " on keycodes
