@@ -1047,7 +1047,7 @@ function! g:Fern () abort
   Fern -drawer -stay .
 endfunction " g:Fern
 
-function! g:FernDrawer() abort
+function! g:FernDrawer () abort
   echo 'Fern Drawer'
   setlocal nonumber
   setlocal splitright
