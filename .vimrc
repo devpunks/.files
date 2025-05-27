@@ -487,7 +487,7 @@ augroup FileDefaults
   autocmd BufRead,BufNewFile *.csv,*.dat call g:CSV ()
 augroup END
 
-function CSV () " abort
+function g:CSV () " abort
   setfiletype csv
 
 " let b:csv_arrange_align = 'l*'
