@@ -967,7 +967,7 @@ function! g:GitStatus () " abort
 endfunction " g:GitStatus
 " set statusline+=%{GitStatus()}
 
-function! g:GitGutter() abort
+function! g:GitGutter () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter')
     echo 'No Git Gutter!'
     return
