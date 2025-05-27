@@ -1031,7 +1031,7 @@ augroup FileDefaults
   autocmd FileType fern call g:FernDrawer()
 augroup END
 
-function! g:Fern() abort
+function! g:Fern () abort
   if &rtp !~ 'vim-fern' | return | endif
 
   " [SHIFT]+[TAB] Opens Fern
