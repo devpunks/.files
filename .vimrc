@@ -877,7 +877,6 @@ function Tagbar () abort
 
   echo 'Configuring tag storage'
   set tags+=./tags
-  " set tagdir=./tags
 
   echo 'Loading Tagbar'
   let g:tagbar_ctags_bin = l:ctags
