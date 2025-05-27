@@ -1045,7 +1045,7 @@ function! g:Fern () abort
   let g:fern#renderer#default#collapsed_symbol = '📁'
 
   Fern -drawer -stay .
-endfunction " Fern
+endfunction " g:Fern
 
 function! g:FernDrawer() abort
   echo 'Fern Drawer'
