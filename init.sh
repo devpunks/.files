@@ -243,6 +243,9 @@ echo Cloning submodules...
 # LSP (Language Server Protocols) ---------
 # https://github.com/prabirshrestha/vim-lsp
 # https://github.com/mattn/vim-lsp-settings
+# https://github.com/prabirshrestha/asynccomplete.vim
+# https://github.com/prabirshrestha/asynccomplete-lsp.vim
+
 
 git submodule
 git submodule update --init --recursive
