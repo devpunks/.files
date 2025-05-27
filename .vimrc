@@ -948,7 +948,7 @@ function! g:Thesaurus () " abort
       \ autocmd! ThesaurusAuGroup
   augroup END
   return ":set iskeyword+=32\<cr>vaWovea\<c-x>\<c-t>"
-endfunction
+endfunction " g:Thesaurus
 
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
