@@ -46,3 +46,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-gutentags"]
 	path = .vim/pack/u0_a311/start/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule ".vim/pack/u0_a311/start/vim-surround"]
+	path = .vim/pack/u0_a311/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
