@@ -878,8 +878,8 @@ function Tagbar () abort
   echo 'Configuring tag storage'
   set tags+=./tags
 
-  echo 'Loading Tagbar'
-  let g:tagbar_ctags_bin = l:ctags
+  echo 'Set Tagbar Binary'
+  let g:tagbar_ctags_bin = expand('$PREFIX/bin/ctags')
 
   " Shortcut SHIFT+t
   nnoremap <S-t> :TagbarToggle<CR>
