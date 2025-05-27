@@ -894,7 +894,7 @@ augroup FileDefaults
   autocmd CursorHoldI * call g:Complete ()
 augroup END
 
-function! g:Completion() " abort
+function! g:Complete () " abort
   if !exists('g:loaded_mucomplete') | return | endif
 
   set complete-=t " no tags
