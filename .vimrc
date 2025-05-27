@@ -991,17 +991,7 @@ function! g:GitGutter () abort
   let g:gitgutter_sign_removed_first_line = '^^'
   let g:gitgutter_sign_removed_above_and_below = '{'
   let g:gitgutter_sign_modified_removed = 'ww'
-
-  " Link Diff highlight groups
-" highlight! link GitGutterAdd DiffAdd
-" highlight! link GitGutterChange DiffChange
-" highlight! link GitGutterDelete DiffDelete
-
-" highlight! link GitGutterAddLine GitGutterAdd
-" highlight! link GitGutterChangeLine GitGutterChange
-" highlight! link GitGutterDeleteLine GitGutterDelete
-" highlight! link GitGutterChangeDeleteLine DiffText " GitGutterChangeLine
-endfunction " g:GitGutter()
+endfunction " g:GitGutter
 
 " -------------------------------------------------------------------------
 " IndentLine - https://github.com/Yggdroot/IndentLine
