@@ -1084,7 +1084,7 @@ function! g:FernDrawer () abort
   nnoremap <buffer> R gg<Plug>(fern-action-reload)
   nnoremap <buffer> cd <Plug>(fern-action-cd)
   nnoremap <buffer> CD gg<Plug>(fern-action-cd)<C-o>
-endfunction " FernDrawer
+endfunction " g:FernDrawer
 
 " -------------------------------------------------------------------------
 " NERDTree - https://github.com/preservim/nerdtree
