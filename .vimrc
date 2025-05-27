@@ -930,7 +930,7 @@ augroup FileDefaults
   autocmd VimEnter * call g:Thesaurus()
 augroup END
 
-function! g:Thesaurus() " abort
+function! g:Thesaurus () " abort
   let l:path = expand('$HOME/mthesaur.txt')
   if ! filereadable( path ) | return | endif
 
