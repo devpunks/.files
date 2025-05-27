@@ -874,6 +874,7 @@ augroup END
 function Tagbar () abort
   if ! exists(':Tagbar') | return | endif
 
+
   echo 'Configuring tag storage'
   set tags+=./tags
   " set tagdir=./tags
