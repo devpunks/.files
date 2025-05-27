@@ -620,7 +620,7 @@ let g:loaded_zipPlugin = 1
 " -------------------------------------------------------------------------
 " :call Browser ()
 " -------------------------------------------------------------------------
-function! Browser() abort " Opening URL
+function! Browser () abort " Opening URL
   const url = getline (".")->matchstr("http[^ ]*")
 
   if ! empty( url )
