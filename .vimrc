@@ -957,7 +957,7 @@ nmap <silent> ]h <Plug>(GitGutterNextHunk)
 nmap <silent> [h <Plug>(GitGutterPrevHunk)
 
 augroup FileDefaults
-  autocmd VimEnter,BufEnter * call g:GitGutter()
+  autocmd FileReadPost * call g:GitGutter()
 augroup END
 
 function! g:GitStatus() " abort
