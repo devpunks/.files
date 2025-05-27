@@ -1137,6 +1137,34 @@ function! s:CloseTags () abort
 endfunction " s:CloseTags
 
 " -------------------------------------------------------------------------
+" Vim-LSP - https://github.com/prabirshrestha/vim-lsp
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:VimLSP()
+augroup END
+
+function g:VimLSP () abort
+  echo 'VIM LSP'
+endfunction " g:VimLSP
+
+" -------------------------------------------------------------------------
+" Vim EasyComplete - https://github.com/jayli/vim-easycomplete
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:EasyComplete()
+augroup END
+
+function g:EasyComplete () abort
+  let g:easycomplete_cursor_word_hl = 1
+
+  " Mappings
+  nnoremap rn :EasyCompleteRename<CR>
+  nnoremap gb :BackToOriginalBuffer<CR>
+  nnoremap gr :EasyCompleteReference<CR>
+  nnoremap gd :EasyCompleteGotoDefinition<CR>
+endfunction " g:VimLSP
+
+" -------------------------------------------------------------------------
 " Vim-test - https://github.com/vim-test/vim-test
 " -------------------------------------------------------------------------
 
