@@ -885,6 +885,38 @@ function Tagbar () abort
 endfunction " Tagbar
 
 " -------------------------------------------------------------------------
+" Supertab - https://github.com/ervandew/supertab
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:TabCompletion ()
+augroup END
+
+function g:EasyComplete () abort
+
+  echo 'SUPERTAB Initialization'
+
+endfunction " g:TabComplete ()
+
+" -------------------------------------------------------------------------
+" Vim EasyComplete - https://github.com/jayli/vim-easycomplete
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:EasyCompletion()
+augroup END
+
+function g:EasyCompletion () abort
+  echo 'EasyCompletion Initialization'
+
+  let g:easycomplete_cursor_word_hl = 1
+
+  " Mappings
+  nnoremap rn :EasyCompleteRename<CR>
+  nnoremap gb :BackToOriginalBuffer<CR>
+  nnoremap gr :EasyCompleteReference<CR>
+  nnoremap gd :EasyCompleteGotoDefinition<CR>
+endfunction " g:EasyCompletion
+
+" -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
 augroup FileDefaults
