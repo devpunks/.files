@@ -1004,7 +1004,7 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 " Scrollbar - https://github.com/obcat/vim-sclow
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  " autocmd VimEnter * call sclow#update()
+  autocmd FileReadPost * call sclow#update()
 augroup END
 
 " -------------------------------------------------------------------------
