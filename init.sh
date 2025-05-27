@@ -228,6 +228,7 @@ echo Cloning submodules...
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-endwise
 # https://github.com/tpope/vim-surround
+# https://github.com/tpope/vim-commentary
 # https://github.com/ludovicchabant/vim-gutentags # See ctags
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/preservim/nerdtree
