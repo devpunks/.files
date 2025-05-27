@@ -890,7 +890,8 @@ endfunction " Tagbar
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd CursorHoldI * call g:Completion()
+  autocmd VimEnter * call g:Completion ()
+  autocmd CursorHoldI * call g:Complete ()
 augroup END
 
 function! g:Completion() " abort
