@@ -1136,7 +1136,7 @@ function! s:CloseTags () abort
 
   " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
   "let g:closetag_emptyTags_caseSensitive = 1
-endfunction
+endfunction " s:CloseTags
 
 " -------------------------------------------------------------------------
 " Vim-test - https://github.com/vim-test/vim-test
