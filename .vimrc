@@ -862,13 +862,13 @@ function! g:ControlP () abort
   nnoremap <C-o> :CtrlPMixed<CR><C-d>
 
   let g:ctrlp_root_markers = ['.git', 'package.json', 'Gemfile', '.bashrc' ]
-endfunction
+endfunction " ControlP
 
 " -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd VimEnter,BufEnter * call g:Tagbar()
+  autocmd FileReadPost * call g:Tagbar()
 augroup END
 
 function Tagbar () abort
