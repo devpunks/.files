@@ -640,7 +640,7 @@ endfunction " Browser
 "   - https://geeksforgeeks.org/program-decimal-octal-conversion
 "   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
 " -------------------------------------------------------------------------
-function! CursorCharacter() abort " DecimalToOctal(27)"
+function! CursorCharacter () abort " DecimalToOctal(27)"
   let l:char = strpart( getline('.'), col('.')-1, 1, 1 )
   let l:index = char2nr( char ) " char(acter) to number
   let l:character = printf( '|%-2s', char )
