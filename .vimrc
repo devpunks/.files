@@ -687,7 +687,7 @@ command! Colors call HighlightGroup()
 " -------------------------------------------------------------------------
 " TabLine () :h(elp) setting-tablines
 " -------------------------------------------------------------------------
-function! TabLine() abort
+function! TabLine () abort
   if ! exists('+showtabline') | return '' | endif
 
   " mouse
