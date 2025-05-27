@@ -484,7 +484,7 @@ endfunction " OverflowMargin
 " CSV - https://github.com/chrisbra/csv.vim
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd BufRead,BufNewFile *.csv,*.dat call CSV ()
+  autocmd BufRead,BufNewFile *.csv,*.dat call g:CSV ()
 augroup END
 
 function CSV () " abort
