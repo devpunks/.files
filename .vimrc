@@ -1021,7 +1021,7 @@ function! ZoomDrawer () " abort
   if ( l:open )
     NERDTree | wincmd p " Open Drawer & focus on `p`revious buffer
   endif
-endfunction
+endfunction " ZoomDrawer
 
 " -------------------------------------------------------------------------
 " Fern - https://github.com/lambdalisue/vim-fern
