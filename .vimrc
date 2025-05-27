@@ -852,7 +852,7 @@ augroup FileDefaults
   autocmd VimEnter * call g:ControlP()
 augroup END
 
-function! g:ControlP() abort
+function! g:ControlP () abort
   echo 'Checking CtrlP path'
 " if &rtp !~ 'ctrlp.vim' | return | endif
   if ! exists('g:loaded_ctrlp') | return | endif
