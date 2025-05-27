@@ -882,6 +882,8 @@ function Tagbar () abort
   echo 'Loading Tagbar'
   let g:tagbar_ctags_bin = l:ctags
 
+  " Shortcut SHIFT+t
+  nnoremap <S-t> :TagbarToggle<CR>
 endfunction " Tagbar
 
 " -------------------------------------------------------------------------
