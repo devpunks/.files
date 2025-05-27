@@ -783,7 +783,6 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " <C-]> jump to & push tag (:tag)
 " <C-t> pop tag (:pop)
-nnoremap <S-t> :TagbarToggle<CR>
 
 " tabs
 "nnoremap <C-t> :tabnew<cr>
