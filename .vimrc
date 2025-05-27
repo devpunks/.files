@@ -1110,7 +1110,7 @@ function! s:NerdDrawer () abort
   let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
 
   NERDTree | wincmd p " Open Drawer & focus on `p`revious buffer
-endfunction
+endfunction " g:NerdDrawer
 
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
