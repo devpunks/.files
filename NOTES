@@ -194,8 +194,9 @@ Android Accessibility
 # - https://vim.rtorr.com
 # :find - files (can use * globs)
 # :version - See all version compiled options
-# :verbose let . all let declarations & location
-# :verbose set . all set options & location
+# :verbose autocmd [VimEvent] - all autocmd declarations
+# :verbose let - all let declarations & location
+# :verbose set - all set options & location
 # :verbose function - See all functions & location
 # :ls! - Show all buffers included unlisted (h = hidden, a = active):w
 # :b(uffer) <substring>- Open buffer based off substring in file name.
