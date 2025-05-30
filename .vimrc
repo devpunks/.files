@@ -73,6 +73,7 @@ echom "VIM: " .. v:version
 " {{{ SETTINGS
 " =========================================================================
 let &shell = $SHELL..' --login' " Add login"
+let $prefix = exists('$PREFIX') ? $PREFIX : '/usr' " Check for TERMUX $PREFIX
 
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/q/2288756/how-to-set-working-current-directory-in-vim
