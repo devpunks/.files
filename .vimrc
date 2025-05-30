@@ -932,7 +932,7 @@ augroup FileDefaults
   autocmd VimEnter * call g:SuperTab ()
 augroup END
 
-function g:EasyComplete () abort
+function g:SuperTab () abort
 
   echo 'SUPERTAB Initialization'
 
