@@ -1240,6 +1240,7 @@ augroup END
 
 function g:VimLSP () abort
   echo 'VIM LSP'
+  :LspStatus
 endfunction " g:VimLSP
 
 " -------------------------------------------------------------------------
