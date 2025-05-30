@@ -850,6 +850,7 @@ endfunction " OverflowMargin
 " - :help netrw
 " - :help netrw-browse-maps
 " -------------------------------------------------------------------------
+let g:netrw_liststyle=3    " treeview
 
 " -------------------------------------------------------------------------
 " CtrlP - https://github.com//ctrlpvim/ctrlp.vim
