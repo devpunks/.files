@@ -216,6 +216,8 @@ Android Accessibility
 # <C-d> - command mode list
 # <C-n> - Next Completion
 # <C-p> - Previous Completion
+# <C-x><C-n> - Next Completion (Current File)
+# <C-x><C-p> - Previous Completion (Current File)
 # <C-x><C-f> - File Path Completion
 # <C-x><C-o> - Omni Completion :h omnifunc
 # <C-x><C-s> - Spelling Suggestions
