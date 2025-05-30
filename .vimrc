@@ -1022,6 +1022,15 @@ function! g:Thesaurus () " abort
 endfunction " g:Thesaurus
 
 " -------------------------------------------------------------------------
+" Vim Signature - https://github.com/kshenoy/vim-signature
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * :SignatureToggleSigns
+  autocmd FileReadPost * :SignatureRefresh
+augroup END
+
+
+" -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
 nmap <silent> ]h <Plug>(GitGutterNextHunk)
