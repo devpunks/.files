@@ -961,7 +961,7 @@ augroup END
 function g:EasyCompletion () abort
   echo 'EasyCompletion Initialization'
 
-" let g:easycomplete_cursor_word_hl = 1
+  let g:easycomplete_cursor_word_hl = 0
 
 " " Mappings
 " nnoremap rn :EasyCompleteRename<CR>
