@@ -1074,12 +1074,11 @@ function! g:GitGutter () abort
 endfunction " g:GitGutter
 
 " -------------------------------------------------------------------------
-" IndentLine - https://github.com/Yggdroot/IndentLine
 " IndentGuides - https://github.com/preservim/vim-indent-guides
 " -------------------------------------------------------------------------
-let g:indentLine_setColors = 0
-let g:indentLine_defaultGroup = 'SpecialKey'
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+augroup FileDefaults
+  autocmd VimEnter * :IndentGuidesEnable
+augroup END
 
 " -------------------------------------------------------------------------
 " Scrollbar - https://github.com/obcat/vim-sclow
