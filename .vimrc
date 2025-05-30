@@ -102,7 +102,7 @@ set foldclose=all
 set foldlevelstart=0
 set foldmethod=indent " [ manual|indent|expr|marker|syntax|diff ]
 
-set showcmd " show current command prompt suffix
+set showcmd " show current command characters
 set modeline " https://vim.fandom.com/wiki/Modeline_magic
 set cmdheight=2 " sets the :ex command prompt line height
 set modelines=1 " Head & tail mode lines (:help modeline)
