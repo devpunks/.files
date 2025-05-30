@@ -826,7 +826,24 @@ augroup END
 " -------------------------------------------------------------------------
 " OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
 " -------------------------------------------------------------------------
-set omnifunc=syntaxcomplete#Complete " Default Completion
+augroup FileDefaults
+  autocmd VimResized * wincmd = " resize (see equalalways)
+  autocmd FocusLost * :w " save on focus lost
+  " (https://vi.stackexchange.com/a/15995)
+  " autocmd winEnter,BufEnter Double triggers event.
+  autocmd BufEnter * call OverflowMargin ()
+augroup END
+
+function OverflowMargin () abort
+  call clearmatches()
+
+  if ! &tw | return | endif
+
+  " call matchadd('ColorColumn', '\%75v.*')
+  call matchadd('ColorColumn', '\%>' . &tw . 'v')
+  " https://baeldung.com/linux/vim-ruler-on-specific-column
+  let &colorcolumn= ( &tw +1 ) ..",".. ( &tw +2 )
+endfunction " OverflowMargin
 
 " -------------------------------------------------------------------------
 " CtrlP - https://github.com//ctrlpvim/ctrlp.vim
