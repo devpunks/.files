@@ -192,6 +192,7 @@ Android Accessibility
 
 # VIM ---------------------------------------------------------------------
 # - https://vim.rtorr.com
+# :find - files (can use * globs)
 # :version - See all version compiled options
 # :verbose let . all let declarations & location
 # :verbose set . all set options & location
