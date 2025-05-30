@@ -233,6 +233,7 @@ echo Cloning submodules...
 # ??? https://github.com/ludovicchabant/vim-gutentags # See ctags
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/preservim/nerdtree
+# https://github.com/preservim/vim-indent-guides
 # https://github.com/lambdalisue/vim-fern
 # https://github.com/lambdalisue/vim-fern-bookmark
 # https://github.com/lambdalisue/vim-fern-git-status
