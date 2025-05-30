@@ -878,6 +878,35 @@ function! g:ControlP () abort
 endfunction " ControlP
 
 " -------------------------------------------------------------------------
+" ctags
+"  - https://en.m.wikipedia.org/wiki/Ctags
+"  - https://github.com/universal-ctags/ctags
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:CTags ()
+augroup END
+
+function g:CTags () " abort
+  set tags =$HOME/tags
+  echo 'Setting ctags path: '..&tags
+  set omnifunc=ccomplete#Complete " CTags Complete
+endfunction " g:CTags
+
+" -------------------------------------------------------------------------
+" vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:GutenTags ()
+  autocmd FileReadPost * echo 'Loading gutentags'
+  autocmd FileWritePost * echo 'Saving gutentags'
+augroup END
+
+function g:GutenTags () " abort
+  set tags +=./tags
+  echo 'Setting gutentags path: '..&tags
+endfunction " g:GutenTags
+
+" -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
 augroup FileDefaults
