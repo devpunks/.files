@@ -938,6 +938,20 @@ function g:SuperTab () abort
 endfunction " g:SuperTab
 
 " -------------------------------------------------------------------------
+" Snippets
+"  - Ultisnips
+" -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:Snippets ()
+augroup END
+
+function g:Snippets () abort
+
+  echo 'Snippets Initialization'
+
+endfunction " g:Snippets
+
+" -------------------------------------------------------------------------
 " Vim EasyComplete - https://github.com/jayli/vim-easycomplete
 " -------------------------------------------------------------------------
 augroup FileDefaults
