@@ -208,8 +208,11 @@ Android Accessibility
 # :h term.txt ------------------------------
 #
 #  (Normal Mode) ---------------------------
-#  :gf - FInd file under cursor
+#  :g; - Previouss edit location
+#  :gf - Locate file under cursor
 #  :normal gg=G # Reformat current buffer
+# <C-]> - Jump to tag definition
+# <C-t> - Pop tag definition
 #
 #  (Insert Mode) ---------------------------
 # <C-e> - Exit Completion
