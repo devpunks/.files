@@ -211,6 +211,7 @@ Android Accessibility
 #  :normal gg=G # Reformat current buffer
 #
 #  (Insert Mode) ---------------------------
+# <TAB> - Completion
 # :help complete
 # :help ins-completion
 # <C-d> - command mode list
