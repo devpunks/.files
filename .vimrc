@@ -457,28 +457,16 @@ set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
 set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 
+
 " Reset all autocommands
 augroup FileDefaults | autocmd! | augroup END
 
-augroup FileDefaults
-  autocmd VimResized * wincmd = " resize (see equalalways)
-  autocmd FocusLost * :w " save on focus lost
-  " (https://vi.stackexchange.com/a/15995)
-  " autocmd winEnter,BufEnter Double triggers event.
-  autocmd BufEnter * call OverflowMargin ()
-augroup END
-
-" http://blog.ezyang.com/2010/03/vim-textwidth
-function OverflowMargin () abort
-  call clearmatches()
-
-  if ! &tw | return | endif
-
-  " call matchadd('ColorColumn', '\%75v.*')
-  call matchadd('ColorColumn', '\%>' . &tw . 'v')
-  " https://baeldung.com/linux/vim-ruler-on-specific-column
-  let &colorcolumn= ( &tw +1 ) ..",".. ( &tw +2 )
-endfunction " OverflowMargin
+" -------------------------------------------------------------------------
+" Omni-Complete
+"  - https://vim.fandom.com/wiki/Omni_completion
+"  - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
+" -------------------------------------------------------------------------
+set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
 " CSV - https://github.com/chrisbra/csv.vim
