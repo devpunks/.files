@@ -918,11 +918,8 @@ function g:Tagbar () " abort
 
   let l:path=expand( '$PREFIX/bin/ctags' )
 
-  echo 'Configuring tag storage'
-  set tags+=./tags
-
-  echo 'Set Tagbar Binary'
-  let g:tagbar_ctags_bin = expand('$PREFIX/bin/ctags')
+  echo 'Set Tagbar Binary path'..l:path
+  let g:tagbar_ctags_bin = l:path
 
   " Shortcut SHIFT+t
   nnoremap <S-t> :TagbarToggle<CR>
