@@ -913,7 +913,7 @@ augroup FileDefaults
   autocmd FileReadPost * call g:Tagbar()
 augroup END
 
-function Tagbar () abort
+function g:Tagbar () " abort
   if ! exists(':Tagbar') | return | endif
 
 
