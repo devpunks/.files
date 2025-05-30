@@ -929,7 +929,7 @@ endfunction " g:Tagbar
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd VimEnter * call g:TabCompletion ()
+  autocmd VimEnter * call g:SuperTab ()
 augroup END
 
 function g:EasyComplete () abort
