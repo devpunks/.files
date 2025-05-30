@@ -55,3 +55,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-easycomplete"]
 	path = .vim/pack/u0_a311/start/vim-easycomplete
 	url = https://github.com/jayli/vim-easycomplete.git
+[submodule ".vim/pack/u0_a311/start/vim-indent-guides"]
+	path = .vim/pack/u0_a311/start/vim-indent-guides
+	url = https://github.com/preservim/vim-indent-guides.git
