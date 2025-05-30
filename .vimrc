@@ -916,6 +916,7 @@ augroup END
 function g:Tagbar () " abort
   if ! exists(':Tagbar') | return | endif
 
+  let l:path=expand( '$PREFIX/bin/ctags' )
 
   echo 'Configuring tag storage'
   set tags+=./tags
