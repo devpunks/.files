@@ -936,7 +936,7 @@ function g:SuperTab () abort
 
   echo 'SUPERTAB Initialization'
 
-endfunction " g:TabComplete ()
+endfunction " g:SuperTab
 
 " -------------------------------------------------------------------------
 " Vim EasyComplete - https://github.com/jayli/vim-easycomplete
