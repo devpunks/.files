@@ -851,6 +851,7 @@ endfunction " OverflowMargin
 " - :help netrw-browse-maps
 " -------------------------------------------------------------------------
 let g:netrw_liststyle=3    " treeview
+let g:netrw_banner=0       " disable banner
 
 " -------------------------------------------------------------------------
 " CtrlP - https://github.com//ctrlpvim/ctrlp.vim
