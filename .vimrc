@@ -923,7 +923,7 @@ function g:Tagbar () " abort
 
   " Shortcut SHIFT+t
   nnoremap <S-t> :TagbarToggle<CR>
-endfunction " Tagbar
+endfunction " g:Tagbar
 
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
