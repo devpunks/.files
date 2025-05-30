@@ -824,9 +824,7 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
-" Omni-Complete
-"  - https://vim.fandom.com/wiki/Omni_completion
-"  - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
+" OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
 " -------------------------------------------------------------------------
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
