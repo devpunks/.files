@@ -959,7 +959,7 @@ augroup FileDefaults
 augroup END
 
 function g:EasyCompletion () abort
-" echo 'EasyCompletion Initialization'
+  echo 'EasyCompletion Initialization'
 
 " let g:easycomplete_cursor_word_hl = 1
 
