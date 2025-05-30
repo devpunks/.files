@@ -1066,6 +1066,7 @@ endfunction " g:GitGutter
 
 " -------------------------------------------------------------------------
 " IndentLine - https://github.com/Yggdroot/IndentLine
+" IndentGuides - https://github.com/preservim/vim-indent-guides
 " -------------------------------------------------------------------------
 let g:indentLine_setColors = 0
 let g:indentLine_defaultGroup = 'SpecialKey'
