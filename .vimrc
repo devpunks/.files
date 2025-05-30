@@ -852,6 +852,7 @@ endfunction " OverflowMargin
 " -------------------------------------------------------------------------
 let g:netrw_liststyle=3    " treeview
 let g:netrw_banner=0       " disable banner
+let g:netrw_browse_split=4 " open prior window
 
 " -------------------------------------------------------------------------
 " CtrlP - https://github.com//ctrlpvim/ctrlp.vim
