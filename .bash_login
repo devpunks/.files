@@ -236,6 +236,9 @@ function recycle () { clear
   delete ${TMPDIR}/**
 
   trash "$@"
+
+# Ensure $TMPDIR exists
+  mkdir -p $TMPDIR
 } # recycle
 
 # - https://en.m.wikipedia.org/wiki/Shred_(Unix)
