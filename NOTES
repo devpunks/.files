@@ -198,6 +198,7 @@ Android Accessibility
 # :verbose set . all set options & location
 # :verbose function - See all functions & location
 # :ls! - Show all buffers included unlisted (h = hidden, a = active):w
+# :b(uffer) <substring>- Open buffer based off substring in file name.
 # :set all - View all settings
 # :set termcap? - Term Capabilities
 # :K - (SHIFT+K) keywordprg(default to man page for under cursor)
