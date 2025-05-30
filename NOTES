@@ -205,6 +205,7 @@ Android Accessibility
 # :h term.txt ------------------------------
 #
 #  (Normal Mode) ---------------------------
+#  :gf - FInd file under cursor
 #  :normal gg=G # Reformat current buffer
 #
 #  (Insert Mode) ---------------------------
