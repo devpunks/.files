@@ -82,7 +82,6 @@ set path +=$HOME
 set path +=$prefix/include
 
 echo &path
-echo PREFIX
 " increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
 set nrformats+=alpha
 set nrformats-=octal
