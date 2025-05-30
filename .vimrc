@@ -152,7 +152,7 @@ set wildchar=<Tab>
 set wildoptions=pum
 set wildcharm=<C-z> " macros
 set wildmode=list:longest,full
-set wildignore+=*.DS_STORE,*/.cache/*,*/.git/*,*/.ssh/*,*/.npm/*,*/node_modules/*
+set wildignore+=*.DS_STORE,*/storage,*/.cache,*/.git/*,*/.ssh/*,*/.npm/*,*/node_modules/*
 
 " Completion / LSPs -------------------------------------------------------
 " https://github.com/neoclide/coc.nvim
