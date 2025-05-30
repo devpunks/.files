@@ -77,12 +77,12 @@ let $prefix = exists('$PREFIX') ? $PREFIX : '/usr' " Check for TERMUX $PREFIX
 
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
 " - https://stackoverflow.com/q/2288756/how-to-set-working-current-directory-in-vim
-let &path   = '.,'
-let &path ..= $HOME..'/**,'
-" Check for TERMUX $PREFIX
-let &path ..= ( exists('$PREFIX') ? $PREFIX : '/usr' )..'/include/**'
-let &path ..= ',,'
+set path =**
+set path +=$HOME
+set path +=$prefix/include
 
+echo &path
+echo PREFIX
 " increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
 set nrformats+=alpha
 set nrformats-=octal
