@@ -155,7 +155,6 @@ set wildignore+=.DS_STORE,storage/,.cache/,.git/,.ssh/,.npm/,node_modules/
 
 " Completion / LSPs -------------------------------------------------------
 " https://github.com/neoclide/coc.nvim
-" https://github.com/jayli/vim-easycomplete
 " https://linuxhandbook.com/vim-auto-complete
 " https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
