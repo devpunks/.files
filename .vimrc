@@ -963,11 +963,11 @@ function g:EasyCompletion () abort
 
 " let g:easycomplete_cursor_word_hl = 1
 
-  " Mappings
-  nnoremap rn :EasyCompleteRename<CR>
-  nnoremap gb :BackToOriginalBuffer<CR>
-  nnoremap gr :EasyCompleteReference<CR>
-  nnoremap gd :EasyCompleteGotoDefinition<CR>
+" " Mappings
+" nnoremap rn :EasyCompleteRename<CR>
+" nnoremap gb :BackToOriginalBuffer<CR>
+" nnoremap gr :EasyCompleteReference<CR>
+" nnoremap gd :EasyCompleteGotoDefinition<CR>
 endfunction " g:EasyCompletion
 
 " -------------------------------------------------------------------------
