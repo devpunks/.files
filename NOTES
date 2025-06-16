@@ -191,6 +191,7 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
+#  (Command Mode) ---------------------------
 # - https://vim.rtorr.com
 # :find - files (can use * globs)
 # :version - See all version compiled options
