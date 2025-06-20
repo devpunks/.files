@@ -199,6 +199,8 @@ Android Accessibility
 # history s - search history
 # (Normal Mode) q: - buffered History
 # (Command Mode) <C-f> - buffered History
+# / - Search
+# (Normal Mode) q/ - buffered Search
 # :reg - registers
 # :scriptname - All scripts loaded
 # :buffers, :files, :ls, :sbuffer :bdelete, :badd {1} {2} {3}
