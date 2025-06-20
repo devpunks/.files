@@ -242,6 +242,9 @@ echo Cloning submodules...
 # https://github.com/vim-scripts/jellybeans.vim
 # https://github.com/airblade/vim-gitgutter
 
+# https://github.com/jayli/SirVer/ultisnips
+# https://github.com/jayli/vim-easycomplete
+
 # LSP (Language Server Protocols) ---------
 # https://github.com/prabirshrestha/vim-lsp
 # https://github.com/mattn/vim-lsp-settings
