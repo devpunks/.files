@@ -197,6 +197,8 @@ Android Accessibility
 # :version - See all version compiled options
 # :verbose autocmd [VimEvent] - all autocmd declarations
 # :verbose set - all set options & location
+# :verbose let - all let declarations & location
+# (filter) :echo copy(g:)->filter('v:key =~# "^substr"')
 # :verbose function - See all functions & location
 # :ls! - Show all buffers included unlisted (h = hidden, a = active):w
 # :b(uffer) <substring>- Open buffer based off substring in file name.
