@@ -193,6 +193,29 @@ Android Accessibility
 # VIM ---------------------------------------------------------------------
 #  (Command Mode) ---------------------------
 # - https://vim.rtorr.com
+# messages - messages
+# history - command history
+# history c - command history
+# history s - search history
+# (Normal Mode) q: - buffered History
+# (Command Mode) <C-f> - buffered History
+# :reg - registers
+# :scriptname - All scripts loaded
+# :buffers, :files, :ls, :sbuffer :bdelete, :badd {1} {2} {3}
+# :ls! - Show all buffers included unlisted (h = hidden, a = active)
+# :verbose map - nmap, vmap, xmap, smap, omap mode Keyboard mappings - https://vi.stackexchange.com/q/7722
+# :map! - Normal & Visual mode Keyboard mappings - https://vi.stackexchange.com/q/7722
+# :verbose nmap - Normal Mode Mappings
+# :verbose cmap - imap, cmap Command Mode mappings
+# :verbose xmap - Visual mode mappings
+# :verbose vmap - Visual and Select mode mappings
+# :tabs - list
+# :tags - list
+# :marks - marks
+# :menu # :help menu
+# :verbose command
+# :verbose autocmd [event]
+# :changes - see file changes
 # :find - files (can use * globs)
 # :version - See all version compiled options
 # :verbose autocmd [VimEvent] - all autocmd declarations
