@@ -219,6 +219,7 @@ Android Accessibility
 # :find - files (can use * globs)
 # :version - See all version compiled options
 # :verbose autocmd [VimEvent] - all autocmd declarations
+# :spellinfo - spellfiles used
 # :verbose set - all set options & location
 # :verbose let - all let declarations & location
 # (filter) :echo copy(g:)->filter('v:key =~# "^substr"')
