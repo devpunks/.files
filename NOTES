@@ -281,6 +281,8 @@ Android Accessibility
 # (active) <c-f> - Switch between files, & bufers
 # vim-fern --------------------------------------------------
 # ! Toggle . (dot) files
+#
+# Popups :h popup.txt ------------------------------
 
 # BASH --------------------------------------------------------------------
 # - Explain Shell - https://explainshell.com/
