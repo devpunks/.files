@@ -609,7 +609,7 @@ let g:loaded_zipPlugin = 1
 " Popups - https://vimhelp.org/popup.txt.html
 
 function! PopUp () abort " Opening URL
-  call popup_atcursor([ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ], #{ title: 'devPunks Studio', drag: 'TRUE', wrap 'FALSE', pos: 'botleft', col: 'cursor+1', highlight: 'WildMenu', borderhighlight: 'WildMenu' })
+  call popup_atcursor([ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ], #{ title: 'devPunks Studio', drag: 'TRUE', wrap 'FALSE', pos: 'botleft', col: 'cursor+1', highlight: 'WildMenu', borderhighlight: 'WildMenu', borderchars: ['|'] })
 endfunction " PopUp
 
 " -------------------------------------------------------------------------
