@@ -608,6 +608,10 @@ let g:loaded_zipPlugin = 1
 " =========================================================================
 " Popups - https://vimhelp.org/popup.txt.html
 
+function! PopUp () abort " Opening URL
+  call popup_atcursor([ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ], #{ })
+endfunction " PopUp
+
 " -------------------------------------------------------------------------
 " :call Browser ()
 " -------------------------------------------------------------------------
