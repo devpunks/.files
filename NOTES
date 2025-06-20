@@ -225,6 +225,9 @@ Android Accessibility
 # :verbose setglobal - all global set options
 # :verbose setgtermcap - Terminal codes & keys
 # :verbose let - all let declarations & location
+# :verbose let v: - vim variables
+# :verbose let g: - global let declarations & location
+# :verbose let b: - buffer let declarations & location
 # (filter) :echo copy(g:)->filter('v:key =~# "^substr"')
 # :verbose function - See all functions & location
 # :ls! - Show all buffers included unlisted (h = hidden, a = active):w
