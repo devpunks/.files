@@ -236,7 +236,8 @@ Android Accessibility
 # :K - (SHIFT+K) keywordprg(default to man page for under cursor)
 # :h key-notation - For mappings
 # :h <key> - For mapping
-# :h term.txt ------------------------------
+# :h term.txt -------------------------------
+# :h gui.txt --------------------------------
 #
 #  (Normal Mode) ---------------------------
 #  :g; - Previouss edit location
