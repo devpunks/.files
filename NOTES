@@ -221,6 +221,9 @@ Android Accessibility
 # :verbose autocmd [VimEvent] - all autocmd declarations
 # :spellinfo - spellfiles used
 # :verbose set - all set options & location
+# :verbose setlocal - all local set options
+# :verbose setglobal - all global set options
+# :verbose setgtermcap - Terminal codes & keys
 # :verbose let - all let declarations & location
 # (filter) :echo copy(g:)->filter('v:key =~# "^substr"')
 # :verbose function - See all functions & location
