@@ -142,7 +142,7 @@ set titlelen=75 " Text length of title
 set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P"  " Window Title String format
 
 " Menus -------------------------------------------------------------------
-# :menu # :help menu
+" :menu " :help menu
 let do_no_lazyload_menus = 1
 source $VIMRUNTIME/menu.vim
 
