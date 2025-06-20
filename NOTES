@@ -196,7 +196,6 @@ Android Accessibility
 # :find - files (can use * globs)
 # :version - See all version compiled options
 # :verbose autocmd [VimEvent] - all autocmd declarations
-# :verbose let - all let declarations & location
 # :verbose set - all set options & location
 # :verbose function - See all functions & location
 # :ls! - Show all buffers included unlisted (h = hidden, a = active):w
