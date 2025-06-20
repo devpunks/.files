@@ -30,7 +30,6 @@
 "   - https://vim.rtorr.com/
 "   - https://devhints.io/vimscript
 " TERM - https://vimhelp.org/term.txt.html
-" Popups - https://vimhelp.org/popup.txt.html
 " Auto Commands - https://vimhelp.org/autocmd.txt.html
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
