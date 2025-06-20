@@ -1244,6 +1244,8 @@ augroup END
 
 function g:VimLSP () abort
   echo 'VIM LSP'
+  let g:lsp_preview_float = 0
+  let g:lsp_use_native_client = 1
   :LspStatus
 endfunction " g:VimLSP
 
