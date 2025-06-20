@@ -234,7 +234,6 @@ Android Accessibility
 # <C-x><C-z> - Stop Completion
 #
 # gf - Open file under cursor
-# gg - Current key mappings
 # gq - Automatic formatting
 # :h group-name
 # :h cterm-colors
