@@ -145,6 +145,7 @@ set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P"  " Window Title String format
 " Menus -------------------------------------------------------------------
 # :menu # :help menu
 let do_no_lazyload_menus = 1
+source $VIMRUNTIME/menu.vim
 
 " - http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 " - https://stackoverflow.com/q/9511253/how-to-effectively-use-vim-wildmenu
