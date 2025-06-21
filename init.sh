@@ -222,6 +222,7 @@ git status
 
 echo Cloning submodules...
 # https://github.com/chr4/nginx
+# https://github.com/othree/html5.vim
 # https://github.com/mhinz/vim-startify
 # https://github.com/chrisbra/csv.vim
 # https://github.com/tpope/vim-endwise
