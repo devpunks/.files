@@ -605,6 +605,7 @@ let g:loaded_zipPlugin = 1
 
 " =========================================================================
 " {{{ FUNCTIONS
+"  - https://tecmint.com/bash-scripts-linux-sysadmin
 " =========================================================================
 " Popups - https://vimhelp.org/popup.txt.html
 
