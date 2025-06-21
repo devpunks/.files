@@ -873,7 +873,7 @@ function! g:Start () abort
   let g:startify_commands = [
     \ ':help reference',
     \ [ 'Vim Reference', 'h ref' ],
-    \ { 'm': [ 'My magical function', 'call Magic()' ] },
+    \ { 'v': [ 'Edit .vimrc', 'tabnew ~/.vimrc' ] },
     \ ]
 
   let g:startify_lists = [
