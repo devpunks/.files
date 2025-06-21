@@ -846,6 +846,36 @@ augroup END
 "   - :h startify
 "   - :h startify-faq
 " -------------------------------------------------------------------------
+augroup FileDefaults
+  autocmd VimEnter * call g:Start()
+augroup END
+
+function! g:Start () abort
+  echo 'Calling Startify'
+" if &rtp !~ 'startify' | return | endif
+"
+  let g:startify_files_number = 20
+  let g:startify_custom_footer =
+        \ ["", "devPunks😈Studio ", ""]
+  let g:startify_custom_header =
+    \ 'startify#center(startify#fortune#cowsay())'
+  let g:startify_commands = [
+    \ ':help reference',
+    \ [ 'Vim Reference', 'h ref' ],
+    \ { 'm': [ 'My magical function', 'call Magic()' ] },
+    \ ]
+
+  let g:startify_lists = [
+    \ { 'type': 'files',     'header': [ '    MRU' ]           },
+    \ { 'type': 'dir',       'header': [ '    MRU', getcwd() ] },
+    \ { 'type': 'sessions',  'header': [ '    Sessions' ]      },
+    \ { 'type': 'bookmarks', 'header': [ '    Bookmarks' ]     },
+    \ { 'type': 'commands',  'header': [ '    Commands' ]      },
+    \ { 'type': function('s:gitModified'),  'header': [ '    git modified' ] },
+    \ { 'type': function('s:NerdtreeBookmarks'), 'header': [ '    NERDtree Bookmarks' ] },
+    \ ]
+endfunction " g:Start
+
 function! s:gitModified() abort
   let l:files = systemlist('git ls-files -m 2>/dev/null')
 
