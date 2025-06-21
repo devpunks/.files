@@ -245,6 +245,8 @@ echo Cloning submodules...
 # https://github.com/preservim/vim-indent-guides
 # https://github.com/ntpeters/vim-better-whitespace
 
+# Telesense (auto completion) ---------
+# https://github.com/ctrlpvim/ctrlp.vim
 # https://github.com/jayli/SirVer/ultisnips
 # https://github.com/jayli/vim-easycomplete
 
