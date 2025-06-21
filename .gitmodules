@@ -88,3 +88,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-css3-syntax"]
 	path = .vim/pack/u0_a311/start/vim-css3-syntax
 	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule ".vim/pack/u0_a311/start/vim-better-whitespace"]
+	path = .vim/pack/u0_a311/start/vim-better-whitespace
+	url = https://github.com/ntpeters/vim-better-whitespace.git
