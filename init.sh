@@ -244,11 +244,6 @@ echo Cloning submodules...
 # https://github.com/Yggdroot/IndentLine
 # https://github.com/preservim/vim-indent-guides
 # https://github.com/ntpeters/vim-better-whitespace
-# https://github.com/ludovicchabant/vim-gutentags # See ctags
-# https://github.com/lambdalisue/vim-fern-bookmark
-# https://github.com/lambdalisue/vim-fern-git-status
-# https://github.com/vim-scripts/jellybeans.vim
-# https://github.com/airblade/vim-gitgutter
 
 # https://github.com/jayli/SirVer/ultisnips
 # https://github.com/jayli/vim-easycomplete
