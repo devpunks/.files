@@ -228,6 +228,7 @@ echo Cloning submodules...
 # https://github.com/lambdalisue/vim-fern-git-status
 #
 # https://github.com/chr4/nginx
+# https://github.com/chrisbra/csv.vim
 # https://github.com/othree/html5.vim
 # https://github.com/hail2u/vim-css3-syntax
 # https://github.com/mhinz/vim-startify
