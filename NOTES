@@ -291,6 +291,8 @@ Android Accessibility
 # popup_notification()
 # popup_dialog()
 # popup_menu()
+# popup_close()
+# popup_clear()
 
 # BASH --------------------------------------------------------------------
 # - Explain Shell - https://explainshell.com/
