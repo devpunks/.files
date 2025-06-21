@@ -979,6 +979,8 @@ augroup FileDefaults
   autocmd VimEnter * call g:GutenTags ()
   autocmd FileReadPost * echo 'Loading gutentags'
   autocmd FileWritePost * echo 'Saving gutentags'
+  autocmd User GutentagsUpdated let g:gutentags_updated = 1
+  autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
 function g:GutenTags () " abort
