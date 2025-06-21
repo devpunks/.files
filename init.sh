@@ -231,8 +231,8 @@ echo Cloning submodules...
 # https://github.com/chrisbra/csv.vim
 # https://github.com/othree/html5.vim
 # https://github.com/hail2u/vim-css3-syntax
-# https://github.com/mhinz/vim-startify
-# https://github.com/chrisbra/csv.vim
+# https://github.com/airblade/vim-gitgutter
+# https://github.com/tpope/vim-rails
 # https://github.com/tpope/vim-endwise
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-surround
