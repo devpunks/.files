@@ -1059,7 +1059,7 @@ augroup END
 function! g:Complete () " abort
   if !exists('g:loaded_mucomplete') | return | endif
 
-  echo 'Mμ Completing'
+  echo 'Mμ Completing ( Not Yet Implemented. See Complete() )'
 
 endfunction " Complete
 
