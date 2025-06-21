@@ -236,7 +236,6 @@ echo Cloning submodules...
 # https://github.com/tpope/vim-endwise
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-surround
-# https://github.com/ctrlpvim/ctrlp.vim
 # https://github.com/preservim/nerdtree
 # https://github.com/lambdalisue/vim-fern
 # https://github.com/Yggdroot/IndentLine
