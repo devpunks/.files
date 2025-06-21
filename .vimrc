@@ -843,7 +843,44 @@ augroup END
 
 " -------------------------------------------------------------------------
 " Startify - https://github.com/mhinz/vim-startify
+"   - :h startify
+"   - :h startify-faq
 " -------------------------------------------------------------------------
+function! s:gitModified() abort
+  let l:files = systemlist('git ls-files -m 2>/dev/null')
+
+  echo 'startify gitModified'
+  return map( l:files, "{ 'line': v:val, 'path': v:val }")
+endfunction " s:gitModified
+
+function! s:NerdtreeBookmarks() abort
+  let l:bookmarks = systemlist( "cut -d' ' -f 2- ~/.NERDTreeBookmarks")
+  let l:bookmarks = bookmarks[0:-2] " Slice empty last line
+
+  echo 'startify NERDTreeBookmarks'
+  return map( l:bookmarks, "{ 'line': v:val, 'path': v:val }")
+endfunction " s:NerdtreeBookmarks
+
+let g:startify_files_number = 20
+let g:startify_custom_footer =
+      \ ["", "devPunks😈Studio ", ""]
+let g:startify_custom_header =
+  \ 'startify#center(startify#fortune#cowsay())'
+let g:startify_commands = [
+  \ ':help reference',
+  \ [ 'Vim Reference', 'h ref' ],
+  \ { 'm': [ 'My magical function', 'call Magic()' ] },
+  \ ]
+
+let g:startify_lists = [
+  \ { 'type': 'files',     'header': [ '    MRU' ]           },
+  \ { 'type': 'dir',       'header': [ '    MRU', getcwd() ] },
+  \ { 'type': 'sessions',  'header': [ '    Sessions' ]      },
+  \ { 'type': 'bookmarks', 'header': [ '    Bookmarks' ]     },
+  \ { 'type': 'commands',  'header': [ '    Commands' ]      },
+  \ { 'type': function('s:gitModified'),  'header': [ '    git modified' ] },
+  \ { 'type': function('s:NerdtreeBookmarks'), 'header': [ '    NERDtree Bookmarks' ] },
+  \ ]
 
 " -------------------------------------------------------------------------
 " OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
