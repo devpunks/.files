@@ -369,12 +369,15 @@ set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
 set statusline+=%{(mode()=~#'^v')?'🔍':''} " Visual
 set statusline+=%{(mode()=~#'^V')?'🔎':''} " Visual Line
 " https://gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
-set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔎':''} " Visual Block ()
+set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔍':''} " Visual Block ()
 
 " full file name
 set statusline+=%-4.15F%m
 " file type
 set statusline+=\ 💻%Y
+" (Guten)Tags
+set statusline+=%{gutentags#statusline('#')}
+"set statusline+=%{get(g:, 'gutentags_updated', '')}
 " flags
 set statusline+=\ %r%h
 " change to default highlight
