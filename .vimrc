@@ -534,6 +534,13 @@ augroup FileDefaults
   autocmd BufNewFile,BufRead *.sss,*.sass,*.scss setlocal filetype=css
 augroup END
 
+function! g:CSS () abort
+  if &rtp !~ 'vim-css3-syntax' | return | endif
+
+  highlight VendorPrefix guifg=#00ffff gui=bold
+  match VendorPrefix /-\(moz\|webkit\|o\|ms\)-[a-zA-Z-]\+/
+endfunction " g:CSS
+
 " -------------------------------------------------------------------------
 " Javascript
 "   - https://simplified.guide/vim/auto-complete-javascript
