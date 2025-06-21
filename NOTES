@@ -192,6 +192,7 @@ Android Accessibility
 
 # VIM ---------------------------------------------------------------------
 #  (Command Mode) ---------------------------
+#  <C-b> - Beginning of command
 # - https://vim.rtorr.com
 # messages - messages
 # history - command history
