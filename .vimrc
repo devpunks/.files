@@ -613,8 +613,8 @@ function! PopUp () abort
 
   call popup_menu( l:choices
     \, #{ highlight: 'WildMenu', borderhighlight: ['WildMenu'], border: [], borderchars: ['•']
-      \, title: '• devPunks😈Studio •', filtermode: 'a', zindex: 1, pos: 'botleft', col: 'cursor+1', callback: 'PopUpComplete'
-      \, padding: [1,1,0,1], close: 'button', scrollbar: 'TRUE', resize: 'FALSE', drag: 'TRUE', wrap: 'FALSE' })
+      \, padding: [1,1,0,1], close: 'button', scrollbar: 'TRUE', resize: 'FALSE', drag: 'TRUE', wrap: 'FALSE'
+      \, title: '• devPunks😈Studio •', filtermode: 'a', zindex: 1, pos: 'botleft', col: 'cursor+1', callback: 'PopUpComplete' })
 endfunction " PopUp
 
 function! PopUpComplete (id, result) abort
