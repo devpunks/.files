@@ -240,6 +240,7 @@ echo Cloning submodules...
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/preservim/vim-indent-guides
 # https://github.com/preservim/tagbar # See ctags
+# https://github.com/ntpeters/vim-better-whitespace
 # https://github.com/ludovicchabant/vim-gutentags # See ctags
 # https://github.com/lambdalisue/vim-fern-bookmark
 # https://github.com/lambdalisue/vim-fern-git-status
