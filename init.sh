@@ -259,7 +259,6 @@ echo Cloning submodules...
 # https://github.com/prabirshrestha/asynccomplete.vim
 # https://github.com/prabirshrestha/asynccomplete-lsp.vim
 
-
 git submodule
 git submodule update --init --recursive
 
