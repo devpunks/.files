@@ -286,6 +286,11 @@ Android Accessibility
 # ! Toggle . (dot) files
 #
 # Popups :h popup.txt ------------------------------
+# popup_create()
+# popup_atcursor()
+# popup_notification()
+# popup_dialog()
+# popup_menu()
 
 # BASH --------------------------------------------------------------------
 # - Explain Shell - https://explainshell.com/
