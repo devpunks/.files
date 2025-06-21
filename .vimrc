@@ -609,7 +609,9 @@ let g:loaded_zipPlugin = 1
 " Popups - https://vimhelp.org/popup.txt.html
 
 function! PopUp () abort
-  call popup_menu( [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
+  let l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
+
+  call popup_menu( l:choices
     \, #{ highlight: 'WildMenu', borderhighlight: ['WildMenu'], border: [], borderchars: ['•']
       \, title: '• devPunks😈Studio •', filtermode: 'a', zindex: 1, pos: 'botleft', col: 'cursor+1', callback: 'PopUpComplete'
       \, padding: [1,1,0,1], close: 'button', scrollbar: 'TRUE', resize: 'FALSE', drag: 'TRUE', wrap: 'FALSE' })
