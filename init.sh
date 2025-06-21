@@ -237,8 +237,6 @@ echo Cloning submodules...
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-surround
 # https://github.com/preservim/nerdtree
-# https://github.com/lambdalisue/vim-fern
-# https://github.com/Yggdroot/IndentLine
 # https://github.com/vim-scripts/ZoomWin
 # https://github.com/tpope/vim-commentary
 # https://github.com/kshenoy/vim-signature
