@@ -91,3 +91,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-better-whitespace"]
 	path = .vim/pack/u0_a311/start/vim-better-whitespace
 	url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule ".vim/pack/u0_a311/start/vim-rails"]
+	path = .vim/pack/u0_a311/start/vim-rails
+	url = https://github.com/tpope/vim-rails.git
