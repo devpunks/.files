@@ -221,6 +221,7 @@ git status
 #  - https://github.blog/2016-02-01-working-with-submodules
 
 echo Cloning submodules...
+# https://github.com/mhinz/vim-startify
 # https://github.com/chrisbra/csv.vim
 # https://github.com/tpope/vim-endwise
 # https://github.com/alvan/vim-closetag
