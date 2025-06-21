@@ -835,7 +835,7 @@ inoremap <Tab> <C-n>
 " https://vimhelp.org/terminal.txt.html
 if has('terminal')
   set termwinkey=<C-w>
-  nnoremap <C-S-t> :terminal<CR>
+  nnoremap <C-t> :terminal<CR>
 endif
 
 " Reload .vimrc configuration
