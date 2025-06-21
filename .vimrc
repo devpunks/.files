@@ -879,7 +879,7 @@ let g:netrw_altv=1         " open splits to the right
 let g:netrw_list_hide=netrw_gitignore#Hide()
 
 " -------------------------------------------------------------------------
-" CtrlP - https://github.com//ctrlpvim/ctrlp.vim
+" CtrlP - https://github.com/ctrlpvim/ctrlp.vim
 " -------------------------------------------------------------------------
 " TODO: migrate into autocmd
 let g:ctrlp_map='<C-o>'
