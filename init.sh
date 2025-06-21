@@ -241,7 +241,7 @@ echo Cloning submodules...
 # https://github.com/tpope/vim-commentary
 # https://github.com/kshenoy/vim-signature
 # https://github.com/Asheq/close-buffers.vim
-# https://github.com/lifepillar/vim-mucomplete
+# https://github.com/Yggdroot/IndentLine
 # https://github.com/preservim/vim-indent-guides
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/ntpeters/vim-better-whitespace
