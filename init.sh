@@ -221,6 +221,12 @@ git status
 #  - https://github.blog/2016-02-01-working-with-submodules
 
 echo Cloning submodules...
+# https://github.com/mhinz/vim-startify
+
+# https://github.com/lambdalisue/vim-fern
+# https://github.com/lambdalisue/vim-fern-bookmark
+# https://github.com/lambdalisue/vim-fern-git-status
+#
 # https://github.com/chr4/nginx
 # https://github.com/othree/html5.vim
 # https://github.com/hail2u/vim-css3-syntax
