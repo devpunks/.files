@@ -996,7 +996,7 @@ augroup FileDefaults
 augroup END
 
 function g:Tagbar () " abort
-  if ! exists(':Tagbar') | return | endif
+  if &rtp !~ 'tagbar' | return | endif
 
   let l:path=expand( '$PREFIX/bin/ctags' )
 
