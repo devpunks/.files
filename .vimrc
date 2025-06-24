@@ -443,7 +443,7 @@ set smartindent  " indent based off current line on load
 
 " Meta-chars ------------------------------------
 set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:↯
-set fillchars+=stl:▲,stlnc:⚊,vert:‖,diff:-,eob:𝕏,lastline:▶
+set fillchars+=stl:▲,stlnc:\ ,vert:‖,diff:-,eob:𝕏,lastline:▶
 
 " Format Options ------------------------------------
 set joinspaces " Add two spaces after punctuation
