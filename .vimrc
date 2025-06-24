@@ -1182,7 +1182,7 @@ augroup END
 " Scrollbar - https://github.com/obcat/vim-sclow
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd FileReadPost * call sclow#update()
+  " autocmd FileReadPost * call sclow#update()
 augroup END
 
 " -------------------------------------------------------------------------
