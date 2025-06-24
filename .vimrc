@@ -774,6 +774,7 @@ nnoremap <Space> za
 " (normal) [TAB] Next Tab
 nnoremap <S-Tab> :tabprevious<CR>
 nnoremap <Tab> :tabnext<CR>
+nnoremap <S-Tab> :tabprevious<CR>
 nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
