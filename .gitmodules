@@ -97,3 +97,6 @@
 [submodule ".vim/pack/u0_a311/start/html5.vim"]
 	path = .vim/pack/u0_a311/start/html5.vim
 	url = https://github.com/othree/html5.vim.git
+[submodule ".vim/pack/u0_a311/start/vim-fern-git-status"]
+	path = .vim/pack/u0_a311/start/vim-fern-git-status
+	url = https://github.com/lambdalisue/vim-fern-git-status.git
