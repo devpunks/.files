@@ -772,6 +772,7 @@ nnoremap <C-f> /
 nnoremap <silent> <Del> :Bwipeout menu<CR>
 nnoremap <Space> za
 " (normal) [TAB] Next Tab
+nnoremap <S-Tab> :tabprevious<CR>
 nnoremap <Tab> :tabnext<CR>
 nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
