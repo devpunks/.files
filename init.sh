@@ -92,6 +92,7 @@ pkg install logrotate
 
 # {{{ Security ------------------------------------------------------------
 pkg install tsu # https://pypi.org/project/tsu
+pkg install proot # https://wiki.termux.com/wiki/PRoot
 
 pkg install whois # mkpasswd
 pkg install gnupg # https://gnupg.org
