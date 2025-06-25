@@ -145,6 +145,7 @@ pkg install libxml2
 pkg install libxslt
 pkg install libiconv
 
+pkg install make
 pkg install cmake
 pkg install tcc # tiny C Compiler https://bellard.org/tcc
 # pkg install clang # https://clang.llvm.org
