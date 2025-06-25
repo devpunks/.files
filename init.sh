@@ -167,6 +167,32 @@ pkg install php-redis # Redis Interface
 pkg install php-apache # Apache 2.0 Handler Module
 pkg install php-apache-pgsql # PostgreSQL modules for PHP/Apache 2.0
 
+# https://stackoverflow.com/q/57538555
+# https://gist.github.com/lnfel/d84ead4b914fd3e4e7897537d8f61535
+# https://linkedin.com/pulse/installing-running-ruby-rails-7-android-antonio-nesic
+pkg install ruby # https://wiki.termux.com/wiki/Ruby
+pkg install libffi
+pkg install binutils 
+pkg install gumbo-parser
+# https://github.com/termux/termux-packages/issues/1940
+pkg install libxml2 && gem install libxml-ruby
+# https://en.m.wikipedia.org/wiki/Pkg-config
+pkg install pkg-config && gem install pkg-config
+# RVM on termux - https://github.com/rvm/rvm/issues/4734
+pkg install build-essentials # Ruby HEAVY!!!! (600+Mb)
+gem update --system && PATH=$PATH gem environment # Must set PATH to prevent Nil split error
+# https://github.com/termux/termux-packages/discussions/8583
+bundle config set force_ruby_platform true
+# https://github.com/sparklemotion/nokogiri/issues/1739
+# https://github.com/sparklemotion/nokogiri/issues/1884
+# https://nokogiri.org/tutorials/installing_nokogiri.html#termux
+# Installing Rails (Nokogiri) https://github.com/termux/termux-packages/discussions/8855
+# https://nokogiri.org/tutorials/installing_nokogiri.html#why-would-i-not-want-to-use-a-native-gem
+PATH=$PATH gem install nokogiri --platform=ruby -- --use-system-libraries
+gem install rubygems-server && gem server && open http://localhost:8808
+PATH=$PATH gem install sqlite3 && gem info sqlite3
+PATH=$PATH bundle # $$$$ Set PATH fixes most ENV['PATH'] errors
+
 # }}}
 
 # {{{ Database ------------------------------------------------------------
