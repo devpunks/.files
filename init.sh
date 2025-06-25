@@ -148,7 +148,7 @@ pkg install libiconv
 pkg install make
 pkg install cmake
 pkg install tcc # tiny C Compiler https://bellard.org/tcc
-# pkg install clang # https://clang.llvm.org
+pkg install clang # https://clang.llvm.org
 
 pkg install golang
 
