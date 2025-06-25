@@ -283,6 +283,7 @@ echo Cloning submodules...
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/ludovicchabant/vim-gutentags # See ctags
+# https://github.com/sunaku/vim-ruby-minitest
 
 # LSP (Language Server Protocols) ---------
 # https://github.com/prabirshrestha/vim-lsp
