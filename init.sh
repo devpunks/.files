@@ -172,7 +172,7 @@ pkg install php-apache-pgsql # PostgreSQL modules for PHP/Apache 2.0
 # https://linkedin.com/pulse/installing-running-ruby-rails-7-android-antonio-nesic
 pkg install ruby # https://wiki.termux.com/wiki/Ruby
 pkg install libffi
-pkg install binutils 
+pkg install binutils
 pkg install gumbo-parser
 # https://github.com/termux/termux-packages/issues/1940
 pkg install libxml2 && gem install libxml-ruby
