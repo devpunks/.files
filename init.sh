@@ -152,7 +152,9 @@ pkg install clang # https://clang.llvm.org
 
 pkg install golang
 
-pip install pytest
+pkg install nodejs-lts
+npm install -g npm@latest
+
 pkg install python
 pkg install python-pip
 pkg install python-numpy
