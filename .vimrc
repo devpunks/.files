@@ -1195,7 +1195,7 @@ augroup END
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
-nmap <silent> <Enter> :call ZoomDrawer()<cr>
+nnoremap <Enter> :call ZoomDrawer()<CR>
 
 function! ZoomDrawer () " abort
   if ! exists('*ZoomWin') | return | endif
