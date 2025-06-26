@@ -295,6 +295,10 @@ echo Cloning submodules...
 # https://github.com/prabirshrestha/async.vim
 # https://github.com/prabirshrestha/asynccomplete.vim
 # https://github.com/prabirshrestha/asynccomplete-lsp.vim
+#
+# Language Servers ------------------------
+# https://github.com/bash-lsp/bash-language-server
+npm install -g bash-language-server
 
 git submodule
 git submodule update --init --recursive
