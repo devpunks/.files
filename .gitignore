@@ -12,6 +12,11 @@
 .eclipse
 .viminfo
 .bookmarks
+.NERDmarks
+
+# tags
+tags
+ctags
 
 # history
 log
