@@ -1068,7 +1068,7 @@ function! g:MuComplete () " abort
 
 endfunction " Complete
 
-function! g:Completion () " abort
+function! g:MuCompletion () " abort
   if &rtp !~ 'vim-mucomplete' | return | endif
 
   set complete-=t " no tags
