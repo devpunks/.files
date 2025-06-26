@@ -130,6 +130,7 @@ if [ -n "$PREFIX" ]; then # TERMUX
   #   - https://site24x7.com/learn/linux/uptime.html
   # Prior to Android 7
   # export LD_LIBRARY_PATH="/system/bin/uptime:$PREFIX/bin/uptime"
+  # export LD_LIBRARY_PATH="/data/data/com.termux/files/usr/lib:/system/bin/uptime:$PREFIX/bin/uptime"
 fi
 
 export CDPATH=".:${HOME}" # https://theunixschool.com/2012/04/what-is-cdpath.html
