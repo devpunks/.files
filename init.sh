@@ -279,8 +279,9 @@ echo Cloning submodules...
 
 # Telesense (auto completion) ---------
 # https://github.com/ctrlpvim/ctrlp.vim
-# https://github.com/jayli/SirVer/ultisnips
-# https://github.com/jayli/vim-easycomplete
+# https://github.com/SirVer/ultisnips
+# https://github.com/honza/vim-snippets
+# https://github.com/jayli/vim-easycomplete (DO NOT USE)
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/ludovicchabant/vim-gutentags # See ctags
