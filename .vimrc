@@ -515,8 +515,8 @@ augroup END
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd BufNewFile,BufRead *.md setlocal formatoptions-=t formatoptions+=n
-  autocmd BufNewFile,BufRead README setlocal formatoptions-=t formatoptions+=n
+  autocmd BufNewFile,BufReadPost *.md setlocal formatoptions-=t formatoptions+=n
+  autocmd BufNewFile,BufReadPost README setlocal formatoptions-=t formatoptions+=n
 augroup END
 
 " -------------------------------------------------------------------------
