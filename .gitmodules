@@ -91,3 +91,6 @@
 [submodule ".vim/pack/u0_a311/start/nerdtree-git-plugin"]
 	path = .vim/pack/u0_a311/start/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule ".vim/pack/u0_a311/start/supertab"]
+	path = .vim/pack/u0_a311/start/supertab
+	url = https://github.com/ervandew/supertab.git
