@@ -1043,6 +1043,7 @@ augroup END
 function g:EasyCompletion () abort
   echo 'EasyCompletion Initialization'
 
+  let g:esaycomplete_tabnine_enable = 0
   let g:easycomplete_cursor_word_hl = 0
 
 " " Mappings
