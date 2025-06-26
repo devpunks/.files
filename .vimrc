@@ -1289,7 +1289,7 @@ function! g:NerdDrawer () abort
   let g:NERDTreeFileLines=1 " LOC number in files
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
   let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
-  let g:NERDTreeBookmarksFile='.bookmarks' " location
+  let g:NERDTreeBookmarksFile='.NERDmarks' " location
   let g:NERDTreeHighlightCursorLine=1 " highlight current line
   let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
   let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
