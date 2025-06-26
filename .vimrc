@@ -1276,7 +1276,7 @@ endfunction " g:FernDrawer
 "   - Shortcuts - https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt#L247-L293
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd VimEnter * call s:NerdDrawer()
+  autocmd VimEnter * call g:NerdDrawer()
 augroup END
 
 function! s:NerdDrawer () abort
