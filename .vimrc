@@ -1087,7 +1087,6 @@ function! g:MuCompletion () " abort
   let g:mucomplete#chains['default'] = { 'default' : default }
 endfunction " g:Completion
 
-
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
