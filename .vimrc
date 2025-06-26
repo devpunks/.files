@@ -872,9 +872,7 @@ function! g:Start () abort
   let g:startify_custom_header =
     \ 'startify#center(startify#fortune#cowsay())'
   let g:startify_commands = [
-    \ ':help reference',
-    \ [ 'Vim Reference', 'h ref' ],
-    \ { 'v': [ 'Edit .vimrc', 'tabnew ~/.vimrc' ] },
+    \ { 'v': [ 'Edit .vimrc', 'tabnew $HOME/.vimrc' ] },
     \ ]
 
   let g:startify_lists = [
