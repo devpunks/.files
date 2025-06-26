@@ -1297,6 +1297,19 @@ function! g:NerdDrawer () abort
   wincmd p " Open Drawer & focus on `p`revious buffer
 endfunction " g:NerdDrawer
 
+" nerdtree-git-plugin
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+      \ 'Untracked' : '',
+      \ 'Dirty' : '⚠️',
+      \ 'Renamed' : '↔️',
+      \ 'Deleted' : '❌',
+      \ 'Ignored' : '🚫',
+      \ 'Unknown' : '❓',
+      \ 'Modified' : '⭐',
+\ }
+
+let g:NERDTreeGitStatusConcealBrackets = 1
+
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
 " -------------------------------------------------------------------------
