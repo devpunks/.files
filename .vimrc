@@ -550,14 +550,14 @@ endfunction " g:CSS
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd BufNewFile,BufRead *.json,*.es,*.mjs,*.test setlocal filetype=javascript
+  autocmd BufNewFile,BufReadPost *.json,*.es,*.mjs,*.test setlocal filetype=javascript
 augroup END
 
 " -------------------------------------------------------------------------
 " Nodejs
 "   - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
-autocmd BufNewFile,BufRead * call s:DetectNode()
+autocmd BufNewFile,BufReadPost * call s:DetectNode()
 
 fun! s:DetectNode()
     if getline(1) =~ 'node'
