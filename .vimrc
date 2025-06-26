@@ -1353,6 +1353,15 @@ function g:VimLSP () abort
 
   let g:lsp_preview_float = 0
   let g:lsp_use_native_client = 1
+
+  " if executable('bash-language-server')
+    autocmd User lsp_setup call lsp#register_server({
+    \ 'allowlist': ['sh', 'bash'],
+    \ 'name': 'bash-language-server',
+    \ 'cmd': {server_info->['bash-language-server', 'start']},
+    \ })
+  " endif
+
 endfunction " g:VimLSP
 
 " -------------------------------------------------------------------------
