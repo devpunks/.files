@@ -1293,9 +1293,9 @@ function! g:NerdDrawer () abort
   let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
   let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
 
-  NERDTree
-  ReadBookmarks
-  wincmd p " Open Drawer & focus on `p`revious buffer
+  NERDTree" Open Drawer
+  ReadBookmarks " Load Bookmarks
+  wincmd p " Focus on `p`revious buffer
 endfunction " g:NerdDrawer
 
 " nerdtree-git-plugin
