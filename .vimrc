@@ -1201,11 +1201,9 @@ function! ZoomDrawer () " abort
   if ! exists('*ZoomWin') | return | endif
 
   let l:open = g:NERDTree.IsOpen()
-  NERDTreeClose
-  ZoomWin
-  if ( l:open )
-    NERDTree | wincmd p " Open Drawer & focus on `p`revious buffer
-  endif
+  NERDTreeClose | ZoomWin
+  " Open Drawer & focus on `p`revious buffer
+  if ( l:open ) | NERDTree | wincmd p | endif
 endfunction " ZoomDrawer
 
 " -------------------------------------------------------------------------
