@@ -1166,6 +1166,10 @@ function! g:GitGutter () abort
   sign define GitGutterLineRemoved text=➖
   sign define GitGutterLineModified text=～
 
+  let g:gitgutter_highlight_linenrs = 1
+  let g:gitgutter_preview_win_floating = 1
+  let g:gitgutter_terminal_reports_focus = 0
+
   let g:gitgutter_sign_added = 'xx'
   let g:gitgutter_sign_modified = 'yy'
   let g:gitgutter_sign_removed = 'zz'
