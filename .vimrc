@@ -476,7 +476,7 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " CSV - https://github.com/chrisbra/csv.vim
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd BufRead,BufNewFile *.csv,*.dat call g:CSV ()
+  autocmd BufReadPost,BufNewFile *.csv,*.dat call g:CSV ()
 augroup END
 
 function g:CSV () " abort
