@@ -571,8 +571,8 @@ endfun
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType ruby set omnifunc=rubycomplete#Complete
-  autocmd BufNewFile,BufRead Gemfile setlocal filetype=ruby
-  autocmd BufNewFile,BufRead *.erb setlocal filetype=eruby
+  autocmd BufNewFile,BufReadPost Gemfile setlocal filetype=ruby
+  autocmd BufNewFile,BufReadPost *.erb setlocal filetype=eruby
 augroup END
 
 " -------------------------------------------------------------------------
