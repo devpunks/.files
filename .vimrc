@@ -1285,7 +1285,7 @@ function! g:NerdDrawer () abort
   " [SHIFT]+[TAB] Opens Nerdtree
 " nnoremap <S-Tab> :NERDTreeToggle<CR>
 
-  let g:NERDTreeIgnore=['.sock$', 'my-pipe'] " ignored files
+  let g:NERDTreeIgnore=['\.sock$', 'my-pipe'] " ignored files
   let g:NERDTreeFileLines=1 " LOC number in files
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
   let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
