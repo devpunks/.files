@@ -191,6 +191,7 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
+#  :!-All messages
 #  (Command Mode) ---------------------------
 #  <C-b> - Beginning of command
 # - https://vim.rtorr.com
