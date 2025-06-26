@@ -1061,7 +1061,7 @@ augroup FileDefaults
   autocmd CursorHoldI * call g:MuComplete ()
 augroup END
 
-function! g:Complete () " abort
+function! g:MuComplete () " abort
   if !exists('g:loaded_mucomplete') | return | endif
 
   echo 'Mμ Completing ( Not Yet Implemented. See Complete() )'
