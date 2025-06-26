@@ -1330,6 +1330,7 @@ endfunction " s:CloseTags
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd VimEnter * call g:VimLSP()
+  autocmd BufReadPost * echo 'Loading vim-lsp-server for file'
 augroup END
 
 function g:VimLSP () abort
