@@ -534,7 +534,7 @@ augroup END
 augroup FileDefaults
   autocmd VimEnter * call g:CSS()
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd BufNewFile,BufRead *.sss,*.sass,*.scss setlocal filetype=css
+  autocmd BufNewFile,BufReadPost *.sss,*.sass,*.scss setlocal filetype=css
 augroup END
 
 function! g:CSS () abort
