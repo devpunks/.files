@@ -1132,7 +1132,9 @@ nmap <silent> ]h <Plug>(GitGutterNextHunk)
 nmap <silent> [h <Plug>(GitGutterPrevHunk)
 
 augroup FileDefaults
-  autocmd FileReadPost * call g:GitGutter()
+  autocmd BufReadPost * call g:GitGutter()
+  autocmd InsertEnter * GitGutterLineNrHighlightsEnable | GitGutterLineHighlightsEnable
+  autocmd InsertLeave * GitGutterLineNrHighlightsDisable | GitGutterLineHighlightsDisable
 augroup END
 
 function! g:GitStatus () " abort
