@@ -1220,7 +1220,7 @@ function! g:Fern () abort
   if &rtp !~ 'vim-fern' | return | endif
 
   " [SHIFT]+[TAB] Opens Fern
-  nnoremap <S-Tab> :Fern -drawer -stay .
+" nnoremap <S-Tab> :Fern -drawer -stay .
 
   let g:fern#mark_symbol = '📌'
   let g:fern#renderer#default#leading = '|'
