@@ -1150,6 +1150,8 @@ function! g:GitGutter () abort
     return
   endif
 
+    echo 'Git Gutter!'
+
   GitGutterEnable
 
   let g:gitgutter_grep=''
