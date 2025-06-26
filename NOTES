@@ -191,6 +191,7 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
+#  vi --clean (Empty .vimrc configuration)
 #  :!-All messages
 #  (Command Mode) ---------------------------
 #  <C-b> - Beginning of command
