@@ -1154,6 +1154,8 @@ function! g:GitGutter () abort
 
   GitGutterEnable
 
+  set foldtext=gitgutter#fold#foldtext()
+
   let g:gitgutter_grep=''
 " let g:gitgutter_max_signs = -1
   let g:gitgutter_sign_priority = 1
