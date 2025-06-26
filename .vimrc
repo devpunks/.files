@@ -1308,7 +1308,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
       \ 'Modified' : '⭐',
 \ }
 
-let g:NERDTreeGitStatusConcealBrackets = 1
+let g:NERDTreeGitStatusConcealBrackets = 0 " 0 - show | 1 = hide
 
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
