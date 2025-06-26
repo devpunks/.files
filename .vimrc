@@ -1342,7 +1342,6 @@ function g:VimLSP () abort
 
   let g:lsp_preview_float = 0
   let g:lsp_use_native_client = 1
-  :LspStatus
 endfunction " g:VimLSP
 
 " -------------------------------------------------------------------------
