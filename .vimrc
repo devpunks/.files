@@ -1279,7 +1279,7 @@ augroup FileDefaults
   autocmd VimEnter * call g:NerdDrawer()
 augroup END
 
-function! s:NerdDrawer () abort
+function! g:NerdDrawer () abort
   if ! exists('g:NERDTree') | return | endif
 
   " [SHIFT]+[TAB] Opens Nerdtree
