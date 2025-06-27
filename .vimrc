@@ -1197,6 +1197,7 @@ augroup END
 " -------------------------------------------------------------------------
 augroup FileDefaults
   " autocmd FileReadPost * call sclow#update()
+  autocmd VimEnter * g:ScrollBar()
 augroup END
 
 " -------------------------------------------------------------------------
