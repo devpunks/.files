@@ -1208,7 +1208,7 @@ endfunction " g:ScrollBar
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
-nnoremap <Enter> :call ZoomDrawer()<CR>
+nnoremap <Enter> :call g:ZoomDrawer()<CR>
 
 function! ZoomDrawer () " abort
   if ! exists('*ZoomWin') | return | endif
