@@ -1460,8 +1460,7 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 " =========================================================================
 set t_Co=256 " enable 256 colors
 set background=dark " [dark|light]
-  catch | set termguicolors " 24bit gui(fg|bg)
-  catch | set termguicolors " 24bit gui(fg|bg)
+set termguicolors " 24bit gui(fg|bg)
 
 try | colorscheme devpunks
   catch | set termguicolors " 24bit gui(fg|bg)
