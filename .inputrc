@@ -22,6 +22,8 @@
 # This file controls the behaviour of line input editing for
 # programs that use the GNU Readline library.  Existing
 # programs include FTP, Bash, and GDB.
+# -------------------------------------------------------------------------
+#
 #
 # See to avoid potential conflicts:
 #   - $HOME/.vimrc
