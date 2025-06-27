@@ -871,10 +871,11 @@ function! g:Start () abort
   let g:startify_padding_left = 5
   let g:startify_session_sort = 0
   let g:startify_files_number = 20
-  let g:startify_custom_footer =
-        \ ["", "devPunks😈Studio ", ""]
-  let g:startify_custom_header =
-    \ 'startify#center(startify#fortune#cowsay())'
+  let g:startify_session_dir = '$HOME'
+  let g:startify_session_persistence = 1
+  let g:startify_custom_footer = ['😈', 'devPunks😈Studio', '😈']
+  let g:startify_custom_header = 'startify#center(startify#fortune#boxed())'
+  let g:startify_custom_indices = map(range(1,100), 'string(v:val)') " start from 1
   let g:startify_commands = [
     \ { 'v': [ 'Edit .vimrc', 'tabnew $HOME/.vimrc' ] },
     \ ]
