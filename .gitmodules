@@ -91,3 +91,6 @@
 [submodule ".vim/pack/u0_a311/start/supertab"]
 	path = .vim/pack/u0_a311/start/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule ".vim/pack/u0_a311/start/vim-scrollbar"]
+	path = .vim/pack/u0_a311/start/vim-scrollbar
+	url = https://github.com/lornix/vim-scrollbar.git
