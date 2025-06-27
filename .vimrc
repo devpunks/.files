@@ -877,6 +877,8 @@ function! g:Start () abort
   let g:startify_custom_header = 'startify#center(startify#fortune#boxed())'
   let g:startify_custom_indices = map(range(1,100), 'string(v:val)') " start from 1
   let g:startify_commands = [
+    \ { 'b': [ 'Edit .bashrc', 'tabnew $HOME/.bashrc' ] },
+    \ { 'l': [ 'Edit .bash_login', 'tabnew $HOME/.bash_login' ] },
     \ { 'v': [ 'Edit .vimrc', 'tabnew $HOME/.vimrc' ] },
     \ ]
 
