@@ -1200,6 +1200,11 @@ augroup FileDefaults
   autocmd VimEnter * g:ScrollBar()
 augroup END
 
+function! g:ScrollBar() " abort
+  if g:loaded_sclow != 1 | return | endif
+  g:sclow_bar_right_offset = 1
+endfunction " g:ScrollBar
+
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
