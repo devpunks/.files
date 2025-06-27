@@ -249,7 +249,6 @@ set viminfofile="NONE" " disable .viminfo
 set viminfo=
 
 set viminfofile=$HOME/.vim/.viminfo
-" autocmd VimLeave * call delete('~/.viminfo')
 
 " }}}
 
