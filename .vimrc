@@ -246,7 +246,7 @@ set sessionoptions+=resize,winpos
 
 set viminfo="NONE" " disable .viminfo
 set viminfofile="NONE" " disable .viminfo
-set viminfo=
+set viminfo='100,<50,s10,h,%
 
 set viminfofile=$HOME/.vim/.viminfo
 
