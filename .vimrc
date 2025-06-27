@@ -866,8 +866,10 @@ augroup END
 
 function! g:Start () abort
   echo 'Calling Startify'
-" if &rtp !~ 'startify' | return | endif
-"
+  if &rtp !~ 'startify' | return | endif
+
+  let g:startify_padding_left = 5
+  let g:startify_session_sort = 0
   let g:startify_files_number = 20
   let g:startify_custom_footer =
         \ ["", "devPunks😈Studio ", ""]
