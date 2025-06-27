@@ -883,13 +883,13 @@ function! g:Start () abort
     \ ]
 
   let g:startify_lists = [
-    \ { 'type': 'files',     'header': [ '    MRU' ]           },
-    \ { 'type': 'dir',       'header': [ '    MRU', getcwd() ] },
-    \ { 'type': 'sessions',  'header': [ '    Sessions' ]      },
-    \ { 'type': 'bookmarks', 'header': [ '    Bookmarks' ]     },
-    \ { 'type': 'commands',  'header': [ '    Commands' ]      },
-    \ { 'type': function('s:gitModified'),  'header': [ '    git modified' ] },
-    \ { 'type': function('s:NerdtreeBookmarks'), 'header': [ '    NERDtree Bookmarks' ] },
+    \ { 'type': 'commands',  'header': [ 'Commands' ]      },
+    \ { 'type': 'bookmarks', 'header': [ 'Bookmarks' ]     },
+    \ { 'type': function('s:NerdtreeBookmarks'), 'header': [ 'NERDtree Bookmarks' ] },
+    \ { 'type': function('s:gitModified'),  'header': [ 'git modified' ] },
+    \ { 'type': 'dir',       'header': [ 'MRU', getcwd() ] },
+    \ { 'type': 'files',     'header': [ 'MRU' ]           },
+    \ { 'type': 'sessions',  'header': [ 'Sessions' ]      },
     \ ]
 endfunction " g:Start
 
