@@ -1210,7 +1210,7 @@ endfunction " g:ScrollBar
 " -------------------------------------------------------------------------
 nnoremap <Enter> :call g:ZoomDrawer()<CR>
 
-function! ZoomDrawer () " abort
+function! g:ZoomDrawer () " abort
   if ! exists('*ZoomWin') | return | endif
 
   let l:open = g:NERDTree.IsOpen()
