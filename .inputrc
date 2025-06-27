@@ -19,8 +19,6 @@
 # Author: Ahmid-Ra (github.com/snuggs)
 # Maintainer: devPunks <https://github.com/devpunks>
 # Description: Readline Run Commands on $SHELL prompt.
-# -------------------------------------------------------------------------
-#
 # This file controls the behaviour of line input editing for
 # programs that use the GNU Readline library.  Existing
 # programs include FTP, Bash, and GDB.
