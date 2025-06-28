@@ -908,6 +908,10 @@ augroup ViimDefaults
   autocmd FocusLost * :w " save on focus lost
 augroup END
 
+" (https://vi.stackexchange.com/a/15995)
+" autocmd winEnter,BufEnter Double triggers event.
+autocmd FileDefaults BufEnter * call OverflowMargin ()
+
 function OverflowMargin () abort
   call clearmatches()
 
