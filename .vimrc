@@ -70,7 +70,8 @@ let &t_fd = '\<Esc>[?1004l' " disable focus-event tracking
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
 echom "VIM: "  .. v:version
 echom "BASH: " .. system( 'echo -n $BASH_VERSION' )
-echom "VIM: " .. v:version
+if exists( '$TMUX' ) | echom "TMUX: " .. system( 'echo -n $(tmux -V)' ) | endif
+if executable( 'termux-info' ) | echom "TERMUX: " .. $TERMUX_VERSION | endif
 
 " =========================================================================
 " {{{ SETTINGS
