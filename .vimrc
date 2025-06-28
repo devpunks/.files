@@ -1463,10 +1463,12 @@ endif
 "let &t_8b = '[48:2:%lu:%lu:%lum'
 
 " Interactive Status -----------------------------
+echo 'Setting StatusLine Color'
 augroup Status
-  autocmd!
-  autocmd InsertLeave * highlight! StatusLine term=reverse cterm=reverse gui=reverse
-  autocmd InsertEnter * highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
+  autocmd InsertLeave * highlight! StatusLineNC term=NONE,bold cterm=NONE,bold gui=NONE,bold
+  autocmd InsertLeave * highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
+  autocmd InsertEnter * highlight! StatusLineNC term=NONE,bold cterm=NONE,bold gui=NONE,bold
+  autocmd InsertEnter * highlight! StatusLine term=bold,italic,reverse cterm=bold,italic,reverse gui=bold,italic,reverse
 augroup END
 
 " }}}
