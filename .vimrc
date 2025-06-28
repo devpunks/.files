@@ -1019,9 +1019,7 @@ endfunction " g:SuperTab
 " Snippets
 "  - Ultisnips
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:Snippets ()
-augroup END
+autocmd VimDefaults VimEnter * call g:Snippets ()
 
 function g:Snippets () abort
 
