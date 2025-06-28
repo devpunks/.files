@@ -1109,7 +1109,7 @@ endfunction " g:Thesaurus
 " -------------------------------------------------------------------------
 " Vim Signature - https://github.com/kshenoy/vim-signature
 " -------------------------------------------------------------------------
-augroup FileDefaults
+augroup VimDefaults
   autocmd VimEnter * :SignatureToggleSigns
   autocmd FileReadPost * :SignatureRefresh
 augroup END
