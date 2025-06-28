@@ -990,9 +990,7 @@ endfunction " g:GutenTags
 " -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd FileReadPost * call g:Tagbar()
-augroup END
+autocmd FileDefaults FileReadPost * call g:Tagbar()
 
 function g:Tagbar () " abort
   if &rtp !~ 'tagbar' | return | endif
