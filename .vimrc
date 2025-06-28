@@ -558,6 +558,23 @@ function! g:CSS () abort
 endfunction " g:CSS
 
 " -------------------------------------------------------------------------
+" Go
+" -------------------------------------------------------------------------
+autocmd FileDefaults FileType go setlocal omnifunc=syntaxcomplete#Complete
+
+" -------------------------------------------------------------------------
+" PHP
+"   - https://simplified.guide/vim/auto-complete-php
+" -------------------------------------------------------------------------
+autocmd FileDefaults FileType php setlocal omnifunc=phpcomplete#CompletePHP
+
+" -------------------------------------------------------------------------
+" Python
+"   - https://simplified.guide/vim/auto-complete-python
+" -------------------------------------------------------------------------
+autocmd FileDefaults FileType python setlocal omnifunc=python3complete#Complete
+
+" -------------------------------------------------------------------------
 " Javascript
 "   - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
