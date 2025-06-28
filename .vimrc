@@ -1084,9 +1084,7 @@ endfunction " g:Completion
 " -------------------------------------------------------------------------
 nnoremap <leader>t g:Thesaurus()
 
-augroup FileDefaults
-  autocmd VimEnter * call g:Thesaurus()
-augroup END
+autocmd VimDefaults VimEnter * call g:Thesaurus()
 
 function! g:Thesaurus () " abort
   let l:path = expand('$HOME/mthesaur.txt')
