@@ -431,20 +431,6 @@ set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 " }}}
 
 " =========================================================================
-" {{{ GUTTER
-" https://github.com/airblade/vim-gitgutter/commit/8db2fc5
-" =========================================================================
-set number
-set numberwidth=4 " gutter columns
-
-if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
-  " https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
-  set signcolumn=yes " [auto|number|yes|no|off]
-endif
-
-" }}}
-
-" =========================================================================
 " {{{ FILES
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
