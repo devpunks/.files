@@ -43,8 +43,9 @@
 " =========================================================================
 
 " -------------------------------------------------------------------------
-" Reset all autocommands
-autocmd!
+" Reset all autocommand groups
+augroup VimDefaults  | autocmd! | augroup END
+augroup FileDefaults | autocmd! | augroup END
 " -------------------------------------------------------------------------
 
 set emoji encoding=UTF-8
