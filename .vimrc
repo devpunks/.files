@@ -970,6 +970,8 @@ endfunction " g:CTags
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:GutenTags ()
+
 augroup FileDefaults
   autocmd VimEnter * call g:GutenTags ()
   autocmd FileReadPost * echo 'Loading gutentags'
