@@ -468,10 +468,6 @@ set formatoptions+=t " autowrap using `t`extwidth
 set formatoptions+=/ " do not insert // leader unless after statement unless BOL
 set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 
-
-" Reset all autocommands
-augroup FileDefaults | autocmd! | augroup END
-
 " -------------------------------------------------------------------------
 " Omni-Complete
 "  - https://vim.fandom.com/wiki/Omni_completion
