@@ -1342,10 +1342,8 @@ endfunction " s:CloseTags
 " -------------------------------------------------------------------------
 " Vim-LSP - https://github.com/prabirshrestha/vim-lsp
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:VimLSP()
-  autocmd BufReadPost * echo 'Loading vim-lsp-server for file'
-augroup END
+autocmd VimDefaults VimEnter * call g:VimLSP()
+autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for file'
 
 function g:VimLSP () abort
   if &rtp !~ 'vim-lsp' | return | endif
