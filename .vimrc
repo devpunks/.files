@@ -973,7 +973,6 @@ endfunction " g:CTags
 autocmd VimDefaults VimEnter * call g:GutenTags ()
 
 augroup FileDefaults
-  autocmd VimEnter * call g:GutenTags ()
   autocmd FileReadPost * echo 'Loading gutentags'
   autocmd FileWritePost * echo 'Saving gutentags'
   autocmd User GutentagsUpdated let g:gutentags_updated = 1
