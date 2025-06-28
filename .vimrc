@@ -1111,7 +1111,7 @@ endfunction " g:Thesaurus
 " -------------------------------------------------------------------------
 augroup VimDefaults
   autocmd VimEnter * :SignatureToggleSigns
-  autocmd FileReadPost * :SignatureRefresh
+  autocmd BufEnter * :SignatureRefresh
 augroup END
 
 
