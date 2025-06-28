@@ -537,9 +537,7 @@ augroup END
 " HTML
 "   - https://vimtricks.com/p/vim-autocomplete-html-tags/
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
-augroup END
+autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 
 " -------------------------------------------------------------------------
 " CSS
