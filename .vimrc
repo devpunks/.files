@@ -844,9 +844,10 @@ cnoremap <C-r> :source ~/.vimrc<CR>
 " {{{ PLUGINS - check loaded with &rtp =~ 'plugin-name'
 " =========================================================================
 
-augroup FileDefaults
-  filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
-augroup END
+echo 'All Plugins'
+" scriptnames " List all loaded plugins
+
+filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 " -------------------------------------------------------------------------
 " Startify - https://github.com/mhinz/vim-startify
