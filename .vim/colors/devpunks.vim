@@ -100,8 +100,8 @@ highlight! CursorColumn cterm=underline gui=underline ctermfg=NONE ctermbg=NONE 
 highlight! ColorColumn term=strikethrough,italic cterm=strikethrough,italic ctermbg=NONE ctermfg=NONE gui=strikethrough,italic guifg=NONE guibg=NONE
 
 highlight! VertSplit cterm=NONE ctermfg=NONE
-highlight! StatusLineNC term=bold cterm=bold gui=bold
-highlight! StatusLine term=reverse cterm=reverse gui=reverse
+highlight! StatusLineNC term=NONE,bold cterm=NONE,bold gui=NONE,bold
+highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
 
 " Tabs
 highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
