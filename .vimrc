@@ -1280,9 +1280,7 @@ endfunction " g:FernDrawer
 " NERDTree - https://github.com/preservim/nerdtree
 "   - Shortcuts - https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt#L247-L293
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:NerdDrawer()
-augroup END
+autocmd VimDefaults VimEnter * call g:NerdDrawer()
 
 function! g:NerdDrawer () abort
   if ! exists('g:NERDTree') | return | endif
