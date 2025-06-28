@@ -534,7 +534,7 @@ augroup END
 " CSS
 "   - https://simplified.guide/vim/auto-complete-css
 " -------------------------------------------------------------------------
-augroup FileDefaults
+augroup VimDefaults
   autocmd VimEnter * call g:CSS()
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
   autocmd BufNewFile,BufReadPost *.sss,*.sass,*.scss setlocal filetype=css
