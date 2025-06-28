@@ -491,24 +491,6 @@ set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 set omnifunc=syntaxcomplete#Complete " Default Completion
 
 " -------------------------------------------------------------------------
-" CSV - https://github.com/chrisbra/csv.vim
-" -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd BufReadPost,BufNewFile *.csv,*.dat call g:CSV ()
-augroup END
-
-function g:CSV () " abort
-  setfiletype csv
-
-" let b:csv_arrange_align = 'l*'
-
-  ArrangeColumn
-
-  echo 'loaded CSV (See https://github.com/chrisbra/csv.vim)'
-  let g:csv_highlight_column = 'y'
-endfunction " g:CSV
-
-" -------------------------------------------------------------------------
 " .vimrc
 " -------------------------------------------------------------------------
 augroup FileDefaults
