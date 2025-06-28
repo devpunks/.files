@@ -959,9 +959,7 @@ endfunction " ControlP
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:CTags ()
-augroup END
+autocmd VimDefaults VimEnter * call g:CTags ()
 
 function g:CTags () " abort
   set tags =$HOME/tags
