@@ -778,6 +778,7 @@ nnoremap <C-f> /
 nnoremap <silent> <Del> :Bwipeout menu<CR>
 nnoremap <Space> za
 " (normal) [TAB] Next Tab
+nnoremap <C-Tab> echo 'Control Tab'
 nnoremap <Tab> :tabnext<CR>
 nnoremap <S-Tab> :tabprevious<CR>
 nnoremap <Esc> :nohlsearch<CR>
