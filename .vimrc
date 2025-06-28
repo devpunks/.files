@@ -1007,9 +1007,7 @@ endfunction " g:Tagbar
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:Tab ()
-augroup END
+autocmd VimDefaults VimEnter * call g:Tab ()
 
 function g:Tab () abort
 
