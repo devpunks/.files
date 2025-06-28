@@ -1048,7 +1048,7 @@ endfunction " g:EasyCompletion
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-augroup FileDefaults
+augroup VimDefaults
   autocmd VimEnter * call g:MuCompletion ()
   autocmd CursorHoldI * call g:MuComplete ()
 augroup END
