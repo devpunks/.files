@@ -903,7 +903,7 @@ endfunction " s:NerdtreeBookmarks
 " -------------------------------------------------------------------------
 " OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
 " -------------------------------------------------------------------------
-augroup FileDefaults
+augroup ViimDefaults
   autocmd VimResized * wincmd = " resize (see equalalways)
   autocmd FocusLost * :w " save on focus lost
   " (https://vi.stackexchange.com/a/15995)
