@@ -509,6 +509,22 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
+" CSV - https://github.com/chrisbra/csv.vim
+" -------------------------------------------------------------------------
+autocmd FileDefaults BufReadPost,BufNewFile *.csv,*.dat call g:CSV ()
+
+function g:CSV () " abort
+  setfiletype csv
+
+" let b:csv_arrange_align = 'l*'
+
+  ArrangeColumn
+
+  echo 'loaded CSV (See https://github.com/chrisbra/csv.vim)'
+  let g:csv_highlight_column = 'y'
+endfunction " g:CSV
+
+" -------------------------------------------------------------------------
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text/
 " -------------------------------------------------------------------------
