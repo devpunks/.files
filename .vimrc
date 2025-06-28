@@ -1218,10 +1218,8 @@ endfunction " g:ZoomDrawer
 " -------------------------------------------------------------------------
 " Fern - https://github.com/lambdalisue/vim-fern
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:Fern()
-  autocmd FileType fern call g:FernDrawer()
-augroup END
+autocmd VimDefaults VimEnter * call g:Fern()
+autocmd FileDefaults FileType fern call g:FernDrawer()
 
 function! g:Fern () abort
   if &rtp !~ 'vim-fern' | return | endif
