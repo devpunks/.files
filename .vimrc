@@ -940,9 +940,7 @@ let g:netrw_altv=1         " open splits to the right
 " TODO: migrate into autocmd
 let g:ctrlp_map='<C-o>'
 
-augroup FileDefaults
-  autocmd VimEnter * call g:ControlP()
-augroup END
+autocmd VimDefaults VimEnter * call g:ControlP()
 
 function! g:ControlP () abort
   echo 'Checking CtrlP path'
