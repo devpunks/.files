@@ -493,10 +493,8 @@ set omnifunc=syntaxcomplete#Complete " Default Completion
 " -------------------------------------------------------------------------
 " .vimrc
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  " Autoload .vimrc on write
-  autocmd BufWritePost $MYVIMRC nested source $MYVIMRC
-augroup END
+" Autoload .vimrc on write
+autocmd FileDefaults BufWritePost $MYVIMRC nested source $MYVIMRC
 
 " -------------------------------------------------------------------------
 " .tmux.conf
