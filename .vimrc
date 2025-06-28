@@ -1415,7 +1415,7 @@ let &softtabstop=s:TABSIZE " https://vi.stackexchange.com/q/4244
 retab! " (Force!) update tab format
 
 set list " show hidden characters & replacement characters
-set listchars=tab:▣□▢,extends:⇨,precedes:⇦,leadmultispace:··╵,multispace:··╵,lead:·,space:╵,nbsp:■,trail:■,eol:↴
+set listchars=tab:▣□▢,extends:⇨,precedes:⇦,leadmultispace:\|\ \|\ ,multispace:\.,lead:·,space:╵,nbsp:■,trail:■,eol:↴
 
 set sidescroll=10 " scroll amount when a word is outside of view
 " https://vim.fandom.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
