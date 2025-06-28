@@ -1030,9 +1030,7 @@ endfunction " g:Snippets
 " -------------------------------------------------------------------------
 " Vim EasyComplete - https://github.com/jayli/vim-easycomplete
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call g:EasyCompletion()
-augroup END
+autocmd VimDefaults VimEnter * call g:EasyCompletion()
 
 function g:EasyCompletion () abort
   echo 'EasyCompletion Initialization'
