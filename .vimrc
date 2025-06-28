@@ -906,9 +906,6 @@ endfunction " s:NerdtreeBookmarks
 augroup ViimDefaults
   autocmd VimResized * wincmd = " resize (see equalalways)
   autocmd FocusLost * :w " save on focus lost
-  " (https://vi.stackexchange.com/a/15995)
-  " autocmd winEnter,BufEnter Double triggers event.
-  autocmd BufEnter * call OverflowMargin ()
 augroup END
 
 function OverflowMargin () abort
