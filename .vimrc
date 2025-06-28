@@ -1318,9 +1318,7 @@ let g:NERDTreeGitStatusConcealBrackets = 0 " 0 - show | 1 = hide
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * call s:CloseTags()
-augroup END
+autocmd VimDefaults VimEnter * call s:CloseTags()
 
 function! s:CloseTags () abort
   if ! exists('g:loaded_closetag') | return | endif
