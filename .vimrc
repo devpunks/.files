@@ -1171,9 +1171,24 @@ endfunction " g:GitGutter
 " -------------------------------------------------------------------------
 " IndentGuides - https://github.com/preservim/vim-indent-guides
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd VimEnter * :IndentGuidesEnable
-augroup END
+autocmd VimDefaults VimEnter * g:Indentation()
+
+function! g:Indentation() " abort
+" if &rtp !~ 'vim-indent-guides' | return | endif
+
+  echo 'Loading indentation guides'
+  let g:indent_guides_guide_size = 1
+  let g:indent_guides_auto_colors = 0
+
+  autocmd FileDefaults BufLeave *
+    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesEnable | endif
+  autocmd FileDefaults BufEnter *
+    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesDisable | endif
+
+  highlight IndentGuidesOdd guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
+  highlight IndentGuidesEven guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
+
+endfunction " indentation
 
 " -------------------------------------------------------------------------
 " Scrollbar - https://github.com/obcat/vim-sclow
