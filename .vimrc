@@ -606,43 +606,6 @@ augroup FileDefaults
   autocmd BufNewFile,BufReadPost *.erb setlocal filetype=eruby
 augroup END
 
-" -------------------------------------------------------------------------
-" PHP
-"   - https://simplified.guide/vim/auto-complete-php
-" -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd FileType python setlocal omnifunc=phpcomplete#CompletePHP
-augroup END
-
-" -------------------------------------------------------------------------
-" Python
-"   - https://simplified.guide/vim/auto-complete-python
-" -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd FileType python setlocal omnifunc=python3complete#Complete
-augroup END
-
-" -------------------------------------------------------------------------
-" Go
-" -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd FileType python setlocal omnifunc=syntaxcomplete#Complete
-augroup END
-
-" -------------------------------------------------------------------------
-" Tar
-"   - https://vi.stackexchange.com/a/2224
-" -------------------------------------------------------------------------
-let g:loaded_tar = 1
-let g:loaded_tarPlugin = 1
-
-" -------------------------------------------------------------------------
-" Zip
-"   - https://vi.stackexchange.com/q/2223/how-to-tell-vim-not-to-try-to-unzip-a-file
-" -------------------------------------------------------------------------
-let g:loaded_zip = 1
-let g:loaded_zipPlugin = 1
-
 " }}}
 
 " =========================================================================
