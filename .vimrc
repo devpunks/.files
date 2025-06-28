@@ -975,6 +975,9 @@ autocmd VimDefaults VimEnter * call g:GutenTags ()
 augroup FileDefaults
   autocmd FileReadPost * echo 'Loading gutentags'
   autocmd FileWritePost * echo 'Saving gutentags'
+augroup END
+
+augroup UserDefaults
   autocmd User GutentagsUpdated let g:gutentags_updated = 1
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
