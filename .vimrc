@@ -436,6 +436,20 @@ set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " =========================================================================
+" -------------------------------------------------------------------------
+" Tar
+"   - https://vi.stackexchange.com/a/2224
+" -------------------------------------------------------------------------
+let g:loaded_tar = 1
+let g:loaded_tarPlugin = 1
+
+" -------------------------------------------------------------------------
+" Zip
+"   - https://vi.stackexchange.com/q/2223/how-to-tell-vim-not-to-try-to-unzip-a-file
+" -------------------------------------------------------------------------
+let g:loaded_zip = 1
+let g:loaded_zipPlugin = 1
+
 filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 set autoread " re-read files
