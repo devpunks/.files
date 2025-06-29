@@ -1200,17 +1200,6 @@ function! g:Indentation() " abort
 endfunction " indentation
 
 " -------------------------------------------------------------------------
-" Scrollbar - https://github.com/obcat/vim-sclow
-" -------------------------------------------------------------------------
-" autocmd FileReadPost * call sclow#update()
-autocmd VimDefaults VimEnter * g:ScrollBar()
-
-function! g:ScrollBar() " abort
-  if g:loaded_sclow != 1 | return | endif
-  g:sclow_bar_right_offset = 1
-endfunction " g:ScrollBar
-
-" -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
 nnoremap <Enter> :call g:ZoomDrawer()<CR>
