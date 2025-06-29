@@ -689,7 +689,7 @@ function! GetColor (group, attr) abort " GetColor('LineNr', 'bg#')"
 endfunction " GetColor
 
 " -------------------------------------------------------------------------
-" :call HighlightGroup () under cursor
+" :HighlightGroup () under cursor
 " -------------------------------------------------------------------------
 " https://vim.fandom.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
 " https://gist.github.com/millermedeiros/1262085/d6376a5cd6b13ba4573abe0f45a458bf6ae596b7#file-gistfile1-vim-L306
