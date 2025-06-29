@@ -1133,7 +1133,6 @@ endfunction " g:GitFocus
 function! g:GitChanges () " abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
-function! g:GitStatus () " abort
   let [a,m,r] = GitGutterGetHunkSummary()
 
   return printf('+%d ~%d -%d', a, m, r)
