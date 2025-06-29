@@ -968,7 +968,7 @@ endfunction " ControlP
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileReadPost * call g:TagBar()
 
-function g:Tagbar () " abort
+function g:TagBar () " abort
   if &rtp !~ 'tagbar' | return | endif
 
   let l:path=expand( '$PREFIX/bin/ctags' )
