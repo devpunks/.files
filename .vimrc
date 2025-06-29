@@ -1406,7 +1406,7 @@ endfunction " g:AsyncompleteFile
 " -------------------------------------------------------------------------
 " Asyncomplete Tags - https://github.com/prabirshrestha/asyncomplete-tags.vim
 " -------------------------------------------------------------------------
-autocmd User asyncomplete_setup * call g:AsyncompleteTags()
+autocmd VimDefaults VimEnter * call g:AsyncompleteTags()
 
 function g:AsyncompleteTags () abort
   if &rtp !~ 'asyncomplete-tags' | return | endif
