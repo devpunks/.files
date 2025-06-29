@@ -1348,6 +1348,78 @@ function! s:CloseTags () abort
 endfunction " s:CloseTags
 
 " -------------------------------------------------------------------------
+" Asyncomplete Emoji - https://github.com/prabirshrestha/asyncomplete-emoji.vim
+" -------------------------------------------------------------------------
+autocmd User asyncomplete_setup * call g:AsyncompleteEmoji()
+
+function g:AsyncompleteEmoji () abort
+  if &rtp !~ 'asyncomplete-emoji' | return | endif
+
+  echo 'Loading asyncomplete-emoji'
+
+  call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
+    \ 'name': 'emoji',
+    \ 'allowlist': ['*'],
+    \ 'completor': function('asyncomplete#sources#emoji#completor'),
+    \ }))
+endfunction " g:AsyncompleteEmoji
+
+" -------------------------------------------------------------------------
+" Asyncomplete Buffer - https://github.com/prabirshrestha/asyncomplete-buffer.vim
+" -------------------------------------------------------------------------
+autocmd User asyncomplete_setup * call g:AsyncompleteBuffer()
+
+function g:AsyncompleteBuffer () abort
+  if &rtp !~ 'asyncomplete-buffer' | return | endif
+
+  echo 'Loading asyncomplete-buffer'
+
+  call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
+    \ 'name': 'buffer',
+    \ 'blocklist': [],
+    \ 'allowlist': ['*'],
+    \ 'config': { 'max_buffer_size': -1, },
+    \ 'completor': function('asyncomplete#sources#buffer#completor'),
+    \ }))
+endfunction " g:AsyncompleteBuffer
+
+" -------------------------------------------------------------------------
+" Asyncomplete File - https://github.com/prabirshrestha/asyncomplete-file.vim
+" -------------------------------------------------------------------------
+autocmd User asyncomplete_setup * call g:AsyncompleteFile()
+
+function g:AsyncompleteFIle () abort
+  if &rtp !~ 'asyncomplete-file' | return | endif
+
+  echo 'Loading asyncomplete-file'
+
+  call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+    \ 'name': 'file',
+    \ 'priority': 10,
+    \ 'allowlist': ['*'],
+    \ 'completor': function('asyncomplete#sources#file#completor'),
+    \ }))
+endfunction " g:AsyncompleteFile
+
+" -------------------------------------------------------------------------
+" Asyncomplete Tags - https://github.com/prabirshrestha/asyncomplete-tags.vim
+" -------------------------------------------------------------------------
+autocmd User asyncomplete_setup * call g:AsyncompleteTags()
+
+function g:AsyncompleteTags () abort
+  if &rtp !~ 'asyncomplete-tags' | return | endif
+
+  echo 'Loading asyncomplete-tags'
+
+  call asyncomplete#register_source(asyncomplete#sources#tags#get_source_options({
+    \ 'name': 'tags',
+    \ 'allowlist': ['*'],
+    \ 'config': { 'max_file_size': -1, },
+    \ 'completor': function('asyncomplete#sources#tags#completor'),
+    \ }))
+endfunction " g:AsyncompleteTags
+
+" -------------------------------------------------------------------------
 " Vim-LSP - https://github.com/prabirshrestha/vim-lsp
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimLSP()
