@@ -916,7 +916,7 @@ augroup END
 " autocmd FileReadPost * call sclow#update()
 autocmd VimDefaults VimEnter * g:ScrollBar()
 
-function! g:ScrollBar() " abort
+function! g:ScrollBar() abort
   if g:loaded_sclow != 1 | return | endif
   g:sclow_bar_right_offset = 1
 endfunction " g:ScrollBar
