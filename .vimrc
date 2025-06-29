@@ -1214,6 +1214,55 @@ function! g:ZoomDrawer () " abort
 endfunction " g:ZoomDrawer
 
 " -------------------------------------------------------------------------
+" NETRW
+" - :help netrw
+" - :help netrw-browse-maps
+" -------------------------------------------------------------------------
+let g:netrw_liststyle=3    " treeview
+let g:netrw_banner=0       " disable banner
+let g:netrw_browse_split=4 " open prior window
+let g:netrw_altv=1         " open splits to the right
+"let g:netrw_list_hide=netrw_gitignore#Hide()
+
+" -------------------------------------------------------------------------
+" NERDTree - https://github.com/preservim/nerdtree
+"   - Shortcuts - https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt#L247-L293
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:NerdDrawer()
+
+function! g:NerdDrawer () abort
+  if ! exists('g:NERDTree') | return | endif
+
+  " [SHIFT]+[TAB] Opens Nerdtree
+" nnoremap <S-Tab> :NERDTreeToggle<CR>
+
+  " nerdtree-git-plugin
+  let g:NERDTreeGitStatusIndicatorMapCustom = {
+        \ 'Untracked' : '',
+        \ 'Dirty' : '⚠️',
+        \ 'Renamed' : '↔️',
+        \ 'Deleted' : '❌',
+        \ 'Ignored' : '🚫',
+        \ 'Unknown' : '❓',
+        \ 'Modified' : '⭐',
+  \ }
+
+  let g:NERDTreeIgnore=['\.sock$', 'my-pipe'] " ignored files
+  let g:NERDTreeFileLines=1 " LOC number in files
+  let g:NERDTreeShowHidden=1 " Show hidden files (I)
+  let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
+  let g:NERDTreeBookmarksFile='.NERDmarks' " location
+  let g:NERDTreeHighlightCursorLine=1 " highlight current line
+  let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
+  let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
+  let g:NERDTreeGitStatusConcealBrackets = 0 " 0 - show | 1 = hide
+
+  NERDTree" Open Drawer
+  ReadBookmarks " Load Bookmarks
+  wincmd p " Focus on `p`revious buffer
+endfunction " g:NerdDrawer
+
+" -------------------------------------------------------------------------
 " Fern - https://github.com/lambdalisue/vim-fern
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Fern()
