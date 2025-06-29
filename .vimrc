@@ -1051,12 +1051,21 @@ function! g:Thesaurus () " abort
   let l:path = expand('$HOME/mthesaur.txt')
   if ! filereadable( path ) | return | endif
 
-" " Mappings
-" nnoremap rn :EasyCompleteRename<CR>
-" nnoremap gb :BackToOriginalBuffer<CR>
-" nnoremap gr :EasyCompleteReference<CR>
-" nnoremap gd :EasyCompleteGotoDefinition<CR>
-endfunction " g:EasyCompletion
+  " https://github.com/vim/vim/issues/1611
+  " https://thesynack.com/posts/vim-thesaurus
+  echo 'setting thesaurus to '..path
+  set thesaurus=path " https://stackoverflow.com/q/33453468
+
+  let s:saved_ut = &ut
+  if &ut > 200 | let &ut = 200 | endif
+  augroup ThesaurusAuGroup
+    autocmd CursorHold,CursorHoldI <buffer>
+      \ let &ut = s:saved_ut |
+      \ set iskeyword-=32 |
+      \ autocmd! ThesaurusAuGroup
+  augroup END
+  return ":set iskeyword+=32\<cr>vaWovea\<c-x>\<c-t>"
+endfunction " g:Thesaurus
 
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
