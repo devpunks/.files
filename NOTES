@@ -259,6 +259,7 @@ Android Accessibility
 # <C-d> - command mode list
 # <C-n> - Next Completion
 # <C-p> - Previous Completion
+# :h i_CTRL_index - All commands in i_CTRL-X submodule
 # <C-x><C-n> - Next Completion (Current File)
 # <C-x><C-p> - Previous Completion (Current File)
 # <C-x><C-f> - File Path Completion
