@@ -103,3 +103,6 @@
 [submodule ".vim/pack/u0_a311/start/asyncomplete-file.vim"]
 	path = .vim/pack/u0_a311/start/asyncomplete-file.vim
 	url = https://github.com/prabirshrestha/asyncomplete-file.vim.git
+[submodule ".vim/pack/u0_a311/start/asyncomplete-tags.vim"]
+	path = .vim/pack/u0_a311/start/asyncomplete-tags.vim
+	url = https://github.com/prabirshrestha/asyncomplete-tags.vim.git
