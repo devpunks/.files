@@ -133,3 +133,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-lsp-snippets"]
 	path = .vim/pack/u0_a311/start/vim-lsp-snippets
 	url = https://github.com/thomasfaingnaert/vim-lsp-snippets.git
+[submodule ".vim/pack/u0_a311/start/vim-healthcheck"]
+	path = .vim/pack/u0_a311/start/vim-healthcheck
+	url = https://github.com/rhysd/vim-healthcheck.git
