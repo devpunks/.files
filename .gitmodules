@@ -97,3 +97,6 @@
 [submodule ".vim/pack/u0_a311/start/asyncomplete-buffer.vim"]
 	path = .vim/pack/u0_a311/start/asyncomplete-buffer.vim
 	url = https://github.com/prabirshrestha/asyncomplete-buffer.vim.git
+[submodule ".vim/pack/u0_a311/start/asyncomplete-emoji.vim"]
+	path = .vim/pack/u0_a311/start/asyncomplete-emoji.vim
+	url = https://github.com/prabirshrestha/asyncomplete-emoji.vim.git
