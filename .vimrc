@@ -398,7 +398,7 @@ set statusline+=%-4.15F%m
 " git changes
 set statusline+=%{%g:GitChanges()%}
 " file type
-set statusline+=\ 💻%Y
+set statusline+=💻%Y
 " (Guten)Tags
 set statusline+=%{gutentags#statusline('#')}
 "set statusline+=%{get(g:, 'gutentags_updated', '')}
