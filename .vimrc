@@ -648,7 +648,7 @@ function! Browser () abort " Opening URL
 endfunction " Browser
 
 " -------------------------------------------------------------------------
-" :call CursorCharacter ()
+" CursorCharacter ()
 "   - :help ascii
 "   - https://stackoverflow.com/q/20357800
 "   - https://en.wikipedia.org/wiki/Unicode
