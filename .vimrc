@@ -1121,7 +1121,7 @@ function! g:GitFocus () abort
   GitGutterLineHighlightsEnable
 endfunction " g:GitFocus
 
-function! g:GitBlur () " abort
+function! g:GitBlur () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
   highlight link GitGutterAdd NONE
