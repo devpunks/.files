@@ -118,3 +118,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-ruby-minitest"]
 	path = .vim/pack/u0_a311/start/vim-ruby-minitest
 	url = https://github.com/sunaku/vim-ruby-minitest.git
+[submodule ".vim/pack/u0_a311/start/delimitMate"]
+	path = .vim/pack/u0_a311/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
