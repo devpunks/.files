@@ -1500,9 +1500,28 @@ endfunction " g:VimLSP
 " -------------------------------------------------------------------------
 " Ale - https://github.com/dense-analysis/ale
 " -------------------------------------------------------------------------
-let g:ale_linters = {
-\ 'sh': ['language_server'],
-\ }
+autocmd VimDefaults VimEnter * call g:Lint()
+augroup UserDefaults
+  autocmd User AleFixPre echo 'ALE - Disable Syntax'
+  autocmd User AleFixPost echo 'ALE - Enable Syntax'
+augroup END
+
+function g:Lint () abort
+  if &rtp !~ 'ale' | return | endif
+
+  echo 'Setting up Ale'
+
+  let g:ale_linters = {
+  \ 'sh': ['language_server'],
+  \ }
+  let g:ale_fixers = {
+    \ 'json': ['jq'],
+    \ 'ruby': ['rubocop'],
+    \ 'python': ['flake8'],
+    \ '*': [ 'remove_trailing_lines', 'trim_whitespace' ],
+  }
+
+endfunction " g:Lint
 
 " -------------------------------------------------------------------------
 " CoC.vim - https://github.com/neoclide/coc.nvim
