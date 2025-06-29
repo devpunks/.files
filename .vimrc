@@ -905,6 +905,26 @@ function! s:NerdtreeBookmarks() abort
 endfunction " s:NerdtreeBookmarks
 
 " -------------------------------------------------------------------------
+" Vim Signature - https://github.com/kshenoy/vim-signature
+" -------------------------------------------------------------------------
+augroup VimDefaults
+  autocmd VimEnter * :SignatureToggleSigns
+  autocmd BufEnter * :SignatureRefresh
+augroup END
+
+
+" -------------------------------------------------------------------------
+" Scrollbar - https://github.com/obcat/vim-sclow
+" -------------------------------------------------------------------------
+" autocmd FileReadPost * call sclow#update()
+autocmd VimDefaults VimEnter * g:ScrollBar()
+
+function! g:ScrollBar() " abort
+  if g:loaded_sclow != 1 | return | endif
+  g:sclow_bar_right_offset = 1
+endfunction " g:ScrollBar
+
+" -------------------------------------------------------------------------
 " OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
 " -------------------------------------------------------------------------
 augroup ViimDefaults
