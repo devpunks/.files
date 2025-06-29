@@ -614,7 +614,9 @@ augroup END
 " {{{ FUNCTIONS
 "  - https://tecmint.com/bash-scripts-linux-sysadmin
 " =========================================================================
-" Popups - https://vimhelp.org/popup.txt.html
+" -------------------------------------------------------------------------
+" PopUp () - https://vimhelp.org/popup.txt.html
+" -------------------------------------------------------------------------
 
 function! PopUp () abort
   let l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
