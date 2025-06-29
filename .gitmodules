@@ -106,6 +106,6 @@
 [submodule ".vim/pack/u0_a311/start/asyncomplete-tags.vim"]
 	path = .vim/pack/u0_a311/start/asyncomplete-tags.vim
 	url = https://github.com/prabirshrestha/asyncomplete-tags.vim.git
-[submodule ".vim/.vim/pack/u0_a311/start/ultisnips"]
-	path = .vim/.vim/pack/u0_a311/start/ultisnips
+[submodule ".vim/pack/u0_a311/start/ultisnips"]
+	path = .vim/pack/u0_a311/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
