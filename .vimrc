@@ -462,7 +462,9 @@ set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
 set copyindent   " copy previous line indentation
 set breakindent  " break with existing line indent
-set smartindent  " indent based off current line on load
+" TODO: remove set smartindent  " indent based off current line on load
+
+filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
 
 " Meta-chars ------------------------------------
 set fillchars+=fold:↯,foldopen:-,foldclose:+,foldsep:↯
