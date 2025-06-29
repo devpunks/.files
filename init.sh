@@ -296,8 +296,12 @@ echo Cloning submodules...
 # https://github.com/thomasfaingnaert/vim-lsp-ultisnips
 # https://github.com/thomasfaingnaert/vim-lsp-snippets
 # https://github.com/prabirshrestha/async.vim
-# https://github.com/prabirshrestha/asynccomplete.vim
-# https://github.com/prabirshrestha/asynccomplete-lsp.vim
+# https://github.com/prabirshrestha/asyncomplete.vim
+# https://github.com/prabirshrestha/asyncomplete-lsp.vim
+# https://github.com/prabirshrestha/asyncomplete-emoji.vim
+# https://github.com/prabirshrestha/asyncomplete-buffer.vim
+# https://github.com/prabirshrestha/asyncomplete-file.vim
+# https://github.com/prabirshrestha/asyncomplete-tags.vim
 #
 # Language Servers ------------------------
 # https://github.com/bash-lsp/bash-language-server
