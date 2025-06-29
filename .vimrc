@@ -1476,6 +1476,7 @@ function g:VimLSP () abort
   if &rtp !~ 'vim-lsp' | return | endif
 
   echo 'VIM LSP'
+
   :LspStatus
   " :LspStopServer
 
