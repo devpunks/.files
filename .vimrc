@@ -1120,13 +1120,8 @@ function! g:GitFocus () " abort
   GitGutterLineHighlightsEnable
 endfunction " g:GitFocus
 
-" -------------------------------------------------------------------------
-" Vim Signature - https://github.com/kshenoy/vim-signature
-" -------------------------------------------------------------------------
-augroup VimDefaults
-  autocmd VimEnter * :SignatureToggleSigns
-  autocmd BufEnter * :SignatureRefresh
-augroup END
+function! g:GitBlur () " abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
 
 " -------------------------------------------------------------------------
