@@ -124,3 +124,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-lsp"]
 	path = .vim/pack/u0_a311/start/vim-lsp
 	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule ".vim/pack/u0_a311/start/vim-lsp-settings"]
+	path = .vim/pack/u0_a311/start/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings.git
