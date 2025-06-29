@@ -94,3 +94,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-scrollbar"]
 	path = .vim/pack/u0_a311/start/vim-scrollbar
 	url = https://github.com/lornix/vim-scrollbar.git
+[submodule ".vim/pack/u0_a311/start/.vim/pack/u0_a311/start/asyncomplete-buffer.vim"]
+	path = .vim/pack/u0_a311/start/.vim/pack/u0_a311/start/asyncomplete-buffer.vim
+	url = https://github.com/prabirshrestha/asyncomplete-buffer.vim.git
