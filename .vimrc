@@ -1076,14 +1076,14 @@ augroup VimDefaults
   autocmd CursorHoldI * call g:MuComplete ()
 augroup END
 
-function! g:MuComplete () " abort
+function! g:MuComplete () abort
   if !exists('g:loaded_mucomplete') | return | endif
 
   echo 'Mμ Completing ( Not Yet Implemented. See Complete() )'
 
 endfunction " Complete
 
-function! g:MuCompletion () " abort
+function! g:MuCompletion () abort
   if &rtp !~ 'vim-mucomplete' | return | endif
 
   set complete-=t " no tags
