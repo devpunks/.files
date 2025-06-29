@@ -1387,7 +1387,8 @@ endfunction " g:AsyncompleteBuffer
 " -------------------------------------------------------------------------
 " Asyncomplete File - https://github.com/prabirshrestha/asyncomplete-file.vim
 " -------------------------------------------------------------------------
-autocmd User asyncomplete_setup * call g:AsyncompleteFile()
+autocmd VimDefaults VimEnter * call g:AsyncompleteFile()
+" autocmd User asyncomplete_setup * call g:AsyncompleteFile()
 
 function g:AsyncompleteFIle () abort
   if &rtp !~ 'asyncomplete-file' | return | endif
