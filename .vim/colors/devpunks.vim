@@ -62,6 +62,7 @@ highlight! Normal cterm=NONE ctermfg=NONE ctermbg=NONE
 " highlight! DiffChange ctermfg=2
 highlight! DiffAdd    term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=green
 highlight! DiffChange term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=yellow
+highlight! DiffDelete term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=red
 highlight! DiffText   term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=NONE
 
 " Error Warnings
