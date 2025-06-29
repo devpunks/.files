@@ -1111,7 +1111,7 @@ augroup FileDefaults
   autocmd InsertLeave * call g:GitBlur()
 augroup END
 
-function! g:GitFocus () " abort
+function! g:GitFocus () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
   highlight! link GitGutterAdd DiffAdd
