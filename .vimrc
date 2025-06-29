@@ -964,6 +964,23 @@ function! g:ControlP () abort
 endfunction " ControlP
 
 " -------------------------------------------------------------------------
+" TagBar - https://github.com/preservim/tagbar
+" -------------------------------------------------------------------------
+autocmd FileDefaults FileReadPost * call g:Tagbar()
+
+function g:Tagbar () " abort
+  if &rtp !~ 'tagbar' | return | endif
+
+  let l:path=expand( '$PREFIX/bin/ctags' )
+
+  echo 'Set Tagbar Binary path'..l:path
+  let g:tagbar_ctags_bin = l:path
+
+  " Shortcut SHIFT+t
+  nnoremap <S-t> :TagbarToggle<CR>
+endfunction " g:Tagbar
+
+" -------------------------------------------------------------------------
 " ctags
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
