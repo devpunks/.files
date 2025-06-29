@@ -1104,7 +1104,11 @@ endfunction " g:Completion
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
-nnoremap <leader>t g:Thesaurus()
+augroup FileDefaults
+  autocmd BufReadPost * call g:GitGutter()
+  autocmd InsertEnter * call g:GitFocus()
+  autocmd InsertLeave * call g:GitBlur()
+augroup END
 
 autocmd VimDefaults VimEnter * call g:Thesaurus()
 
