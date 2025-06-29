@@ -1113,9 +1113,9 @@ augroup END
 function! g:GitFocus () " abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
-function! g:Thesaurus () " abort
-  let l:path = expand('$HOME/mthesaur.txt')
-  if ! filereadable( path ) | return | endif
+  highlight! link GitGutterAdd DiffAdd
+  highlight! link GitGutterChange DiffChange
+  highlight! link GitGutterDelete DiffDelete
 
   " https://github.com/vim/vim/issues/1611
   " https://thesynack.com/posts/vim-thesaurus
