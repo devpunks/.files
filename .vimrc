@@ -918,7 +918,10 @@ autocmd VimDefaults BufEnter * call g:ScrollBar()
 
 function! g:ScrollBar() abort
   if g:loaded_sclow != 1 | return | endif
-  g:sclow_bar_right_offset = 1
+
+  let g:scrollbar_thumb = '⬜'
+  let g:scrollbar_clear = '🔳'
+  let g:sclow_bar_right_offset = -1
 endfunction " g:ScrollBar
 
 " -------------------------------------------------------------------------
