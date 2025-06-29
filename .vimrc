@@ -978,7 +978,7 @@ function g:TagBar () " abort
 
   " Shortcut SHIFT+t
   nnoremap <S-t> :TagbarToggle<CR>
-endfunction " g:Tagbar
+endfunction " g:TagBar
 
 " -------------------------------------------------------------------------
 " ctags
