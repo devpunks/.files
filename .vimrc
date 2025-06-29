@@ -352,7 +352,7 @@ endif
 " https://github.com/airblade/vim-gitgutter/commit/8db2fc5
 " =========================================================================
 set number
-set numberwidth=8 " gutter columns
+set numberwidth=4 " gutter columns
 
 if has('signs') " https://vimdoc.sourceforge.net/htmldoc/sign.html
   " https://github.com/vim/vim/commit/394c5d8870b15150fc91a4c058dc571fd5eaa97e
