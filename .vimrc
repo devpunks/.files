@@ -1043,7 +1043,7 @@ endfunction " g:Snippets
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:EasyCompletion()
+nnoremap <leader>t g:Thesaurus()
 
 function g:EasyCompletion () abort
   echo 'EasyCompletion Initialization'
