@@ -1135,15 +1135,14 @@ function! g:GitChanges () " abort
 
   let [a,m,r] = GitGutterGetHunkSummary()
 
-  return printf('+%d ~%d -%d', a, m, r)
-endfunction " g:GitStatus
-" set statusline+=%{GitStatus()}
+  let l:summary = '%#Statement#'
+  if r > 0 | let l:summary ..= printf( '%%#DiffDelete# ➖%d ', r ) | endif
+  if m > 0 | let l:summary ..= printf( '%%#DiffChange# ～%d ', m ) | endif
+  if a > 0 | let l:summary ..= printf( '%%#DiffAdd# ➕%d '   , a ) | endif
+  let l:summary ..= '%#Statement#'
 
-function! g:GitGutter () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter')
-    echo 'No Git Gutter!'
-    return
-  endif
+  return l:summary
+endfunction " g:GitChanges
 
     echo 'Git Gutter!'
 
