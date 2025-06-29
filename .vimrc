@@ -1102,7 +1102,7 @@ function! g:MuCompletion () " abort
 endfunction " g:Completion
 
 " -------------------------------------------------------------------------
-" Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
+" Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
 nnoremap <leader>t g:Thesaurus()
 
