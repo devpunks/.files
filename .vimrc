@@ -1130,11 +1130,8 @@ function! g:GitBlur () " abort
   GitGutterLineHighlightsDisable
 endfunction " g:GitFocus
 
-augroup FileDefaults
-  autocmd BufReadPost * call g:GitGutter()
-  autocmd InsertEnter * GitGutterLineNrHighlightsEnable | GitGutterLineHighlightsEnable
-  autocmd InsertLeave * GitGutterLineNrHighlightsDisable | GitGutterLineHighlightsDisable
-augroup END
+function! g:GitChanges () " abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
 function! g:GitStatus () " abort
   let [a,m,r] = GitGutterGetHunkSummary()
