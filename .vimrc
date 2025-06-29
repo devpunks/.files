@@ -1030,6 +1030,7 @@ endfunction " g:SuperTab
 autocmd VimDefaults VimEnter * call g:Snippets ()
 
 function g:Snippets () abort
+  if &rtp !~ 'ultisnips' | return | endif
 
   echo 'Snippets Initialization'
 
