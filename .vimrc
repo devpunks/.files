@@ -1047,8 +1047,9 @@ nnoremap <leader>t g:Thesaurus()
 
 autocmd VimDefaults VimEnter * call g:Thesaurus()
 
-  let g:esaycomplete_tabnine_enable = 0
-  let g:easycomplete_cursor_word_hl = 0
+function! g:Thesaurus () " abort
+  let l:path = expand('$HOME/mthesaur.txt')
+  if ! filereadable( path ) | return | endif
 
 " " Mappings
 " nnoremap rn :EasyCompleteRename<CR>
