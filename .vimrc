@@ -1110,7 +1110,8 @@ augroup FileDefaults
   autocmd InsertLeave * call g:GitBlur()
 augroup END
 
-autocmd VimDefaults VimEnter * call g:Thesaurus()
+function! g:GitFocus () " abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
 function! g:Thesaurus () " abort
   let l:path = expand('$HOME/mthesaur.txt')
