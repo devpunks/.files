@@ -453,8 +453,6 @@ let g:loaded_tarPlugin = 1
 let g:loaded_zip = 1
 let g:loaded_zipPlugin = 1
 
-filetype indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
-
 set autoread " re-read files
 set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
