@@ -108,4 +108,4 @@
 	url = https://github.com/prabirshrestha/asyncomplete-tags.vim.git
 [submodule ".vim/.vim/pack/u0_a311/start/ultisnips"]
 	path = .vim/.vim/pack/u0_a311/start/ultisnips
-	url = https://github.com/sirver/ultisnips.git
+	url = https://github.com/SirVer/ultisnips.git
