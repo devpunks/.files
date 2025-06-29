@@ -1151,6 +1151,9 @@ function! g:GitGutter () " abort
 
   GitGutterEnable
 
+  nmap <silent><buffer> ]h <Plug>(GitGutterNextHunk)
+  nmap <silent><buffer> [h <Plug>(GitGutterPrevHunk)
+
   set foldtext=gitgutter#fold#foldtext()
 
   let g:gitgutter_grep=''
