@@ -769,10 +769,6 @@ nnoremap <C-f> /
 " :Bdelete menu<CR>
 nnoremap <silent> <Del> :Bwipeout menu<CR>
 nnoremap <Space> za
-" (normal) [TAB] Next Tab
-nnoremap <C-Tab> echo 'Control Tab'
-nnoremap <Tab> :tabnext<CR>
-nnoremap <S-Tab> :tabprevious<CR>
 nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
