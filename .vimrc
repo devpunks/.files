@@ -395,6 +395,8 @@ set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔍':''} " Visual Block ()
 
 " full file name
 set statusline+=%-4.15F%m
+" git changes
+set statusline+=%{%g:GitChanges()%}
 " file type
 set statusline+=\ 💻%Y
 " (Guten)Tags
