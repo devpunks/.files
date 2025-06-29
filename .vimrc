@@ -966,7 +966,7 @@ endfunction " ControlP
 " -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
-autocmd FileDefaults FileReadPost * call g:Tagbar()
+autocmd FileDefaults FileReadPost * call g:TagBar()
 
 function g:Tagbar () " abort
   if &rtp !~ 'tagbar' | return | endif
