@@ -266,6 +266,7 @@ Android Accessibility
 # <C-x><C-o> - Omni Completion :h omnifunc
 # <C-x><C-s> - Spelling Suggestions
 # <C-x><C-t> - Thesaurus Suggestions
+# <C-x><C-u> - User completefunc
 # <C-x><C-v> - Vim Command Line Completion
 # <C-x><C-z> - Stop Completion
 #
