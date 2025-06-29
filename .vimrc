@@ -1041,7 +1041,7 @@ function g:Snippets () abort
 endfunction " g:Snippets
 
 " -------------------------------------------------------------------------
-" Vim EasyComplete - https://github.com/jayli/vim-easycomplete
+" Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:EasyCompletion()
 
