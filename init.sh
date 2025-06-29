@@ -290,12 +290,6 @@ echo Cloning submodules...
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/ludovicchabant/vim-gutentags # See ctags
 # https://github.com/sunaku/vim-ruby-minitest
-
-# LSP (Language Server Protocols) ---------
-# https://github.com/prabirshrestha/vim-lsp
-# https://github.com/mattn/vim-lsp-settings
-# https://github.com/thomasfaingnaert/vim-lsp-ultisnips
-# https://github.com/thomasfaingnaert/vim-lsp-snippets
 # https://github.com/prabirshrestha/async.vim
 # https://github.com/prabirshrestha/asyncomplete.vim
 # https://github.com/prabirshrestha/asyncomplete-lsp.vim
