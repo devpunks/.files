@@ -1045,8 +1045,7 @@ endfunction " g:Snippets
 " -------------------------------------------------------------------------
 nnoremap <leader>t g:Thesaurus()
 
-function g:EasyCompletion () abort
-  echo 'EasyCompletion Initialization'
+autocmd VimDefaults VimEnter * call g:Thesaurus()
 
   let g:esaycomplete_tabnine_enable = 0
   let g:easycomplete_cursor_word_hl = 0
