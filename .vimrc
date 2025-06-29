@@ -1422,6 +1422,23 @@ function g:AsyncompleteTags () abort
 endfunction " g:AsyncompleteTags
 
 " -------------------------------------------------------------------------
+" Asyncomplete Ultisnips - https://github.com/prabirshrestha/asyncomplete-ultisnips.vim
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:AsyncompleteUltisnips()
+
+function g:AsyncompleteUltisnips () abort
+  if &rtp !~ 'asyncomplete-ultisnips' | return | endif
+
+  echo 'Loading asyncomplete-ultisnips'
+
+  call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_options({
+    \ 'name': 'ultisnips',
+    \ 'allowlist': ['*'],
+    \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
+    \ }))
+endfunction " g:AsyncompleteUltisnips
+
+" -------------------------------------------------------------------------
 " Vim-LSP - https://github.com/prabirshrestha/vim-lsp
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimLSP()
