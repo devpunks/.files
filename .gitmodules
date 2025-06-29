@@ -121,3 +121,6 @@
 [submodule ".vim/pack/u0_a311/start/delimitMate"]
 	path = .vim/pack/u0_a311/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule ".vim/pack/u0_a311/start/vim-lsp"]
+	path = .vim/pack/u0_a311/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
