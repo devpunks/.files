@@ -1131,7 +1131,7 @@ function! g:GitBlur () abort
   GitGutterLineHighlightsDisable
 endfunction " g:GitFocus
 
-function! g:GitChanges () " abort
+function! g:GitChanges () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
   let [a,m,r] = GitGutterGetHunkSummary()
