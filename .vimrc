@@ -1350,7 +1350,8 @@ endfunction " s:CloseTags
 " -------------------------------------------------------------------------
 " Asyncomplete Emoji - https://github.com/prabirshrestha/asyncomplete-emoji.vim
 " -------------------------------------------------------------------------
-autocmd User asyncomplete_setup * call g:AsyncompleteEmoji()
+" autocmd VimDefaults asyncomplete_setup * call g:AsyncompleteEmoji()
+autocmd VimDefaults VimEnter * call g:AsyncompleteEmoji()
 
 function g:AsyncompleteEmoji () abort
   if &rtp !~ 'asyncomplete-emoji' | return | endif
