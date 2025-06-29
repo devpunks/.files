@@ -1032,7 +1032,7 @@ autocmd VimDefaults VimEnter * call g:Snippets ()
 function g:Snippets () abort
   if &rtp !~ 'ultisnips' | return | endif
 
-  echo 'Snippets Initialization'
+  echo 'Ultisnippets Initialization'
 
 endfunction " g:Snippets
 
