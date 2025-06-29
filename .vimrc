@@ -1145,7 +1145,7 @@ function! g:GitChanges () abort
   return l:summary
 endfunction " g:GitChanges
 
-function! g:GitGutter () " abort
+function! g:GitGutter () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
   echo 'Git Gutter!'
