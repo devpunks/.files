@@ -988,7 +988,7 @@ endfunction " g:TagBar
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:CTags ()
 
-function g:CTags () " abort
+function g:CTags () abort
   set tags =$HOME/tags
   echo 'Setting ctags path: '..&tags
   set omnifunc=ccomplete#Complete " CTags Complete
