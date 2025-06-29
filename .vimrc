@@ -1447,6 +1447,30 @@ endfunction " g:AsyncompleteUltisnips
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimLSP()
 autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for file'
+autocmd FileDefaults User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+
+function! s:on_lsp_buffer_enabled() abort
+  echo 'LSP Buffer Enabled'
+  if exists('+tagfunc') | setlocal tagfunc=lsp#tag#tagfunc | endif
+
+  setlocal omnifunc=lsp#complete
+
+  let g:lsp_format_sync_timeout = 1000
+
+  nmap <buffer> K  <Plug>(lsp-hover)
+  nmap <buffer> gd <Plug>(lsp-definition)
+  nmap <buffer> gr <Plug>(lsp-references)
+  nmap <buffer> gi <Plug>(lsp-implementation)
+  nmap <buffer> gt <Plug>(lsp-type-definition)
+  nmap <buffer> gs <Plug>(lsp-document-symbol-search)
+  nmap <buffer> gS <Plug>(lsp-workspace-symbol-search)
+  nmap <buffer> <leader>rn <Plug>(lsp-rename)
+  nnoremap <buffer> <expr><C-d> lsp#scroll(-4)
+  nnoremap <buffer> <expr><C-f> lsp#scroll(+4)
+  nmap <buffer> g] <Plug>(lsp-next-diagnostic)
+  nmap <buffer> [g <Plug>(lsp-previous-diagnostic)
+
+endfunction " s:on_lsp_buffer_enabled
 
 function g:VimLSP () abort
   if &rtp !~ 'vim-lsp' | return | endif
