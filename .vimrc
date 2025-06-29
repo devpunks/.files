@@ -1123,6 +1123,9 @@ endfunction " g:GitFocus
 function! g:GitBlur () " abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
+  highlight link GitGutterAdd NONE
+  highlight link GitGutterChange NONE
+  highlight link GitGutterDelete NONE
 
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
