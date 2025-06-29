@@ -1025,8 +1025,7 @@ function g:Tab () abort
 endfunction " g:SuperTab
 
 " -------------------------------------------------------------------------
-" Snippets
-"  - Ultisnips
+" Ultisnips - https://github.com/SirVer/ultisnips
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Snippets ()
 
