@@ -112,3 +112,6 @@
 [submodule ".vim/pack/u0_a311/start/asyncomplete-ultisnips.vim"]
 	path = .vim/pack/u0_a311/start/asyncomplete-ultisnips.vim
 	url = https://github.com/prabirshrestha/asyncomplete-ultisnips.vim.git
+[submodule ".vim/pack/u0_a311/start/vim-snippets"]
+	path = .vim/pack/u0_a311/start/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
