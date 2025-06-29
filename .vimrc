@@ -633,7 +633,7 @@ endfunction " PopUpComplete
 
 
 " -------------------------------------------------------------------------
-" :call Browser ()
+" Browser ()
 " -------------------------------------------------------------------------
 function! Browser () abort " Opening URL
   const url = getline (".")->matchstr("http[^ ]*")
