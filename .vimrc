@@ -1127,11 +1127,8 @@ function! g:GitBlur () " abort
   highlight link GitGutterChange NONE
   highlight link GitGutterDelete NONE
 
-" -------------------------------------------------------------------------
-" Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
-" -------------------------------------------------------------------------
-nmap <silent> ]h <Plug>(GitGutterNextHunk)
-nmap <silent> [h <Plug>(GitGutterPrevHunk)
+  GitGutterLineHighlightsDisable
+endfunction " g:GitFocus
 
 augroup FileDefaults
   autocmd BufReadPost * call g:GitGutter()
