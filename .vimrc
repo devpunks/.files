@@ -677,7 +677,7 @@ function! CursorCharacter () abort " DecimalToOctal(27)"
 endfunction " CursorCharacter
 
 " -------------------------------------------------------------------------
-" :call GetColor (group, attribute)
+" GetColor (group, attribute)
 "   - https://reddit.com/r/neovim/comments/oxddk9
 " -------------------------------------------------------------------------
 function! GetColor (group, attr) abort " GetColor('LineNr', 'bg#')"
