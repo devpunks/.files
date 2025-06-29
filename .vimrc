@@ -1034,6 +1034,10 @@ function g:Snippets () abort
 
   echo 'Ultisnippets Initialization'
 
+  " let g:UltiSnipsEditSplit = 'vertical'
+  let g:UltiSnipsExpandTrigger = '<Tab>'
+  let g:UltiSnipsJumpForwardTrigger = '<c-b>'
+  let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
 endfunction " g:Snippets
 
 " -------------------------------------------------------------------------
