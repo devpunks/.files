@@ -1324,45 +1324,6 @@ function! g:FernDrawer () abort
 endfunction " g:FernDrawer
 
 " -------------------------------------------------------------------------
-" NERDTree - https://github.com/preservim/nerdtree
-"   - Shortcuts - https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt#L247-L293
-" -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:NerdDrawer()
-
-function! g:NerdDrawer () abort
-  if ! exists('g:NERDTree') | return | endif
-
-  " [SHIFT]+[TAB] Opens Nerdtree
-" nnoremap <S-Tab> :NERDTreeToggle<CR>
-
-  let g:NERDTreeIgnore=['\.sock$', 'my-pipe'] " ignored files
-  let g:NERDTreeFileLines=1 " LOC number in files
-  let g:NERDTreeShowHidden=1 " Show hidden files (I)
-  let g:NERDTreeShowBookmarks=1 " Show Bookmarks (B)
-  let g:NERDTreeBookmarksFile='.NERDmarks' " location
-  let g:NERDTreeHighlightCursorLine=1 " highlight current line
-  let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
-  let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
-
-  NERDTree" Open Drawer
-  ReadBookmarks " Load Bookmarks
-  wincmd p " Focus on `p`revious buffer
-endfunction " g:NerdDrawer
-
-" nerdtree-git-plugin
-let g:NERDTreeGitStatusIndicatorMapCustom = {
-      \ 'Untracked' : '',
-      \ 'Dirty' : '⚠️',
-      \ 'Renamed' : '↔️',
-      \ 'Deleted' : '❌',
-      \ 'Ignored' : '🚫',
-      \ 'Unknown' : '❓',
-      \ 'Modified' : '⭐',
-\ }
-
-let g:NERDTreeGitStatusConcealBrackets = 0 " 0 - show | 1 = hide
-
-" -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call s:CloseTags()
