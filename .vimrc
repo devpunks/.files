@@ -805,7 +805,6 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
 " <C-t> pop tag (:pop)
 
 " tabs
-"nnoremap <C-t> :tabnew<cr>
 nnoremap <silent> <C-n> :tabnext<CR>
 nnoremap <silent> <C-p> :tabprevious<CR>
 
