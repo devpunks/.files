@@ -1051,7 +1051,64 @@ function! g:Search () abort
   let g:mucomplete#chains['html'] = chain
   let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
   let g:mucomplete#chains['default'] = { 'default' : default }
-endfunction " g:Completion
+endfunction " g:Search
+
+" -------------------------------------------------------------------------
+" Supertab - https://github.com/ervandew/supertab
+" -------------------------------------------------------------------------
+inoremap <Tab> <c-O> :echo 'SuperTAB Complete'
+
+" autocmd VimDefaults VimEnter * call g:SuperTab ()
+" autocmd UserDefaults CursorHoldI * :Tab
+
+
+" function! s:tab () abort
+"   echo 'Tabbing ( Not Yet Implemented. See Tab() )'
+" endfunction " tab
+" command! Tab call s:tab()
+
+" -------------------------------------------------------------------------
+" Ultisnips - https://github.com/SirVer/ultisnips
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:Snippets ()
+
+function g:Snippets () abort
+  if &rtp !~ 'ultisnips' | return | endif
+
+  echo 'Ultisnippets Initialization'
+
+  " let g:UltiSnipsEditSplit = 'vertical'
+  let g:UltiSnipsAutoTrigger = 0
+  let g:UltiSnipsNoPythonWarning = 1
+  let g:UltiSnipsListSnippets = '<S-Tab>'
+  let g:UltiSnipsExpandTrigger = '<S-Tab>'
+  let g:UltiSnipsJumpForwardTrigger = '<c-n>'
+  let g:UltiSnipsJumpBackwardTrigger = '<c-p>'
+  let g:UltiSnipsJumpOrExpandTrigger = '<S-Tab>'
+endfunction " g:Snippets
+
+" -------------------------------------------------------------------------
+" CtrlP - https://github.com/ctrlpvim/ctrlp.vim
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * :Fuzzy
+
+" :h finddir()
+" :h findfile()
+function! s:find () abort
+endfunction " s:find
+
+function! s:fuzzy () abort
+  if &rtp !~ 'ctrlp.vim' | return | endif
+
+  echo 'Re-Mapping CtrlP to <C-S-F>'
+  let g:ctrlp_map='<C-S-F>'
+  let g:ctrlp_cmd='CtrlPMixed'
+  nnoremap <C-S-F> :CtrlPMixed<CR> <C-d>
+
+  let g:ctrlp_root_markers
+    \ = ['.git', 'node_modules', 'package.json', 'Gemfile', '.bashrc' ]
+endfunction " s:fuzzy
+command! Fuzzy call s:fuzzy()
 
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
