@@ -191,10 +191,11 @@ Android Accessibility
 #   - <prefix>+q # indexes
 
 # VIM ---------------------------------------------------------------------
-#  vi --clean (Empty .vimrc configuration)
-#  :!-All messages
-#  (Command Mode) ---------------------------
-#  <C-b> - Beginning of command
+# vi --clean (Empty .vimrc configuration)
+# :!-All messages
+#(Command Mode) ---------------------------
+# <C-b> - Beginning of command
+# <C-d> - command mode list
 # - https://vim.rtorr.com
 # messages - messages
 # history - command history
