@@ -1507,6 +1507,7 @@ function! s:on_lsp_buffer_enabled() abort
 
   setlocal omnifunc=lsp#complete
 
+  let g:lsp_diagnostics_enabled = 1 " in lieu of ALE
   let g:lsp_format_sync_timeout = 1000
 
   nmap <buffer> K  <Plug>(lsp-hover)
