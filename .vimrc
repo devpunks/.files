@@ -1525,10 +1525,10 @@ function! s:on_lsp_buffer_enabled() abort
 
 endfunction " s:on_lsp_buffer_enabled
 
-function g:VimLSP () abort
-  if &rtp !~ 'vim-lsp' | return | endif
-
-  echo 'VIM LSP'
+" -------------------------------------------------------------------------
+" Vim LSP Settings - https://github.com/mattn/vim-lsp-settings
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:VimLSPSettings()
 
   :LspStatus
   " :LspStopServer
