@@ -245,7 +245,9 @@ Android Accessibility
 # :h term.txt -------------------------------
 # :h gui.txt --------------------------------
 #
-#  (Normal Mode) ---------------------------
+#(Normal Mode) ---------------------------
+#  :gt - Next Tab
+#  :gT - Previous Tab
 #  :g; - Previouss edit location
 #  :gf - Locate file under cursor
 #  :normal gg=G # Reformat current buffer
