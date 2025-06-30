@@ -1003,33 +1003,6 @@ function g:GutenTags () abort
 endfunction " g:GutenTags
 
 " -------------------------------------------------------------------------
-" Supertab - https://github.com/ervandew/supertab
-" -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Tab ()
-
-function g:Tab () abort
-
-  echo 'SUPERTAB Initialization'
-
-endfunction " g:SuperTab
-
-" -------------------------------------------------------------------------
-" Ultisnips - https://github.com/SirVer/ultisnips
-" -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Snippets ()
-
-function g:Snippets () abort
-  if &rtp !~ 'ultisnips' | return | endif
-
-  echo 'Ultisnippets Initialization'
-
-  " let g:UltiSnipsEditSplit = 'vertical'
-  let g:UltiSnipsExpandTrigger = '<Tab>'
-  let g:UltiSnipsJumpForwardTrigger = '<c-b>'
-  let g:UltiSnipsJumpBackwardTrigger = '<c-z>'
-endfunction " g:Snippets
-
-" -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
 nnoremap <leader>t g:Thesaurus()
