@@ -1448,7 +1448,7 @@ function g:AsyncompleteUltisnips () abort
 endfunction " g:AsyncompleteUltisnips
 
 " -------------------------------------------------------------------------
-" Vim-LSP - https://github.com/prabirshrestha/vim-lsp
+" Vim LSP - https://github.com/prabirshrestha/vim-lsp
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimLSP()
 autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for file'
