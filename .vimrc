@@ -1535,9 +1535,14 @@ function g:VimLSPSettings () abort
 
   echo 'VIM LSP Settings'
 
-  " (normal) [TAB] Next Tab
-" inoremap <Tab> :tabnext<CR>
-" nnoremap <S-Tab> :tabprevious<CR>
+  let g:lsp_settings_servers_dir  = expand('$HOME/.vim/servers')
+  let g:lsp_settings_root_markers = [
+    \ '.git',
+    \ 'Gemfile',
+    \ 'package.json',
+    \ 'node_modules/',
+  \]
+endfunction " g:VimLSPSettings
 
 endfunction " g:VimLSP
 
