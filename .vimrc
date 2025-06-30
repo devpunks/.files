@@ -762,6 +762,12 @@ endfunction " TabLine
 let g:mapleader = ','
 
 " =========================================================================
+" :h modifyOtherKeys
+let &t_TI = ''
+let &t_TE = ''
+" let &t_TI = '\<Esc>[>4;2m'
+" let &t_TE = '\<Esc>[>4;m'
+
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
 " Search (Find)
