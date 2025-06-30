@@ -1345,7 +1345,7 @@ function trace () {
 } # trace
 
 function map () {
-  local domain=${1:-localhost}
+  local -r domain=${1:-localhost}
 
   echo domain
 } # map
