@@ -960,7 +960,7 @@ autocmd FileDefaults FileReadPost * call g:TagBar()
 function g:TagBar () abort
   if &rtp !~ 'tagbar' | return | endif
 
-  let l:path=expand( '$PREFIX/bin/ctags' )
+  let l:path=split(system( 'type ctags' ))[-1]
 
   echo 'Set Tagbar Binary path'..l:path
   let g:tagbar_ctags_bin = l:path
