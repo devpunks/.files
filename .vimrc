@@ -953,26 +953,6 @@ function OverflowMargin () abort
 endfunction " OverflowMargin
 
 " -------------------------------------------------------------------------
-" CtrlP - https://github.com/ctrlpvim/ctrlp.vim
-" -------------------------------------------------------------------------
-" TODO: migrate into autocmd
-let g:ctrlp_map='<C-o>'
-
-autocmd VimDefaults VimEnter * call g:ControlP()
-
-function! g:ControlP () abort
-  echo 'Checking CtrlP path'
-  if &rtp !~ 'ctrlp.vim' | return | endif
-" if ! exists('g:loaded_ctrlp') | return | endif
-
-  echo 'Re-Mapping CtrlP to <C-o>'
-  let g:ctrlp_cmd='CtrlPMixed'
-  nnoremap <C-o> :CtrlPMixed<CR><C-d>
-
-  let g:ctrlp_root_markers = ['.git', 'package.json', 'Gemfile', '.bashrc' ]
-endfunction " ControlP
-
-" -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileReadPost * call g:TagBar()
