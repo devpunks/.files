@@ -1533,16 +1533,7 @@ autocmd VimDefaults VimEnter * call g:VimLSPSettings()
 function g:VimLSPSettings () abort
   if &rtp !~ 'vim-lsp-settings' | return | endif
 
-  let g:lsp_preview_float = 0
-  let g:lsp_use_native_client = 1
-
-  " if executable('bash-language-server')
-    autocmd User lsp_setup call lsp#register_server({
-    \ 'allowlist': ['sh', 'bash'],
-    \ 'name': 'bash-language-server',
-    \ 'cmd': {server_info->['bash-language-server', 'start']},
-    \ })
-  " endif
+  echo 'VIM LSP Settings'
 
   " (normal) [TAB] Next Tab
 " inoremap <Tab> :tabnext<CR>
