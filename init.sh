@@ -113,9 +113,9 @@ curl --location=https://github.com/snuggs.keys >> ~/.ssh/authorized_keys
 
 # {{{ Networking ----------------------------------------------------------
 # TODO: deprecate ifconfig and netstat
-# - https://redhat.com/sysadmin/ifconfig-vs-ip
-# - https://wiki.linuxfoundation.org/networking/iproute2
-# - https://github.com/termux/termux-packages/issues/12758
+#  - https://redhat.com/sysadmin/ifconfig-vs-ip
+#  - https://wiki.linuxfoundation.org/networking/iproute2
+#  - https://github.com/termux/termux-packages/issues/12758
 pkg install iproute2 # ip addr instad of ifconfig -a
 pkg install net-tools # https://net-tools.sourceforge.io
 pkg install traceroute # https://linux.die.net/man/8/traceroute
