@@ -1544,7 +1544,9 @@ function g:VimLSPSettings () abort
   \]
 endfunction " g:VimLSPSettings
 
-endfunction " g:VimLSP
+" -------------------------------------------------------------------------
+" CoC.vim - https://github.com/neoclide/coc.nvim
+" -------------------------------------------------------------------------
 
 " -------------------------------------------------------------------------
 " Ale - https://github.com/dense-analysis/ale
