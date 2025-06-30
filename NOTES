@@ -275,10 +275,11 @@ Android Accessibility
 # <C-x><C-i> - ompletion (Current & Included Files)
 # <C-x><C-f> - Definition & Macro Completion
 # <C-x><C-f> - File Path Completion
-# <C-x><C-o> - Omni Completion :h omnifunc
+# <C-x><C-k> - Dictionary Completion
 # <C-x><C-s> - Spelling Suggestions
 # <C-x><C-t> - Thesaurus Suggestions
-# <C-x><C-u> - User completefunc
+# <C-x><C-u> - User `completefunc` Completion
+# <C-x><C-o> - Omni Completion :h omnifunc
 # <C-x><C-v> - Vim Command Line Completion
 # <C-x><C-z> - Stop Completion
 #
