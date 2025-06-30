@@ -1451,6 +1451,12 @@ endfunction " g:AsyncompleteUltisnips
 " Vim LSP - https://github.com/prabirshrestha/vim-lsp
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimLSP()
+augroup UserDefaults
+  autocmd User lsp_float_opened nmap <buffer><silent>
+    \ <C-c> <Plug>(lsp-preview-closed)
+  autocmd User lsp_float_closed nunmap <buffer> <C-c>
+  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
 autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for file'
 autocmd FileDefaults User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 
