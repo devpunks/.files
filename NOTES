@@ -270,8 +270,10 @@ Android Accessibility
 # <C-o> - Briefly switch to normal mode
 # Completion -----------------------------------
 # :h i_CTRL-X_index - All commands in i_CTRL-X submodule
-# <C-x><C-n> - Next Completion (Current File)
-# <C-x><C-p> - Previous Completion (Current File)
+# - :h omnifunc - :h completefunc - :h complete
+# <C-x><C-]> - Tag Completion
+# <C-x><C-i> - ompletion (Current & Included Files)
+# <C-x><C-f> - Definition & Macro Completion
 # <C-x><C-f> - File Path Completion
 # <C-x><C-o> - Omni Completion :h omnifunc
 # <C-x><C-s> - Spelling Suggestions
