@@ -1498,10 +1498,6 @@ function g:VimLSP () abort
     \ })
   " endif
 
-  " (normal) [TAB] Next Tab
-" inoremap <Tab> :tabnext<CR>
-" nnoremap <S-Tab> :tabprevious<CR>
-
 endfunction " g:VimLSP
 
 function! s:on_lsp_buffer_enabled() abort
