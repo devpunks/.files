@@ -1348,6 +1348,13 @@ function map () {
   local -r domain=${1:-localhost}
 
   echo domain
+
+  # port ranges
+  #   - 0 - 1023 (Well-known)
+  #   - 1024 - 49151 (Registered)
+  #   - 49152 - 65535 (16bit port max)
+  command nmap -p1-65535 $domain
+#   --reason -vv --version-trace \ 
 } # map
 
 # https://man7.org/linux/man-pages/man8/ss.8.html
