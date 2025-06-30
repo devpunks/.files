@@ -121,9 +121,9 @@ pkg install net-tools # https://net-tools.sourceforge.io
 pkg install traceroute # https://linux.die.net/man/8/traceroute
 pkg install tracepath # https://linux.die.net/man/8/tracepath
 # NMAP
-#   - https://upguard.com/blog/how-to-use-nmap
-#   - https://redhat.com/sysadmin/use-cases-nmap
-#   - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
+#  - https://upguard.com/blog/how-to-use-nmap
+#  - https://redhat.com/sysadmin/use-cases-nmap
+#  - https://freecodecamp.org/news/what-is-nmap-and-how-to-use-it-a-tutorial-for-the-greatest-scanning-tool-of-all-time
 pkg install nmap
 pkg install socat
 pkg install dnsutils # nslookup dig
