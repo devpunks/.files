@@ -1530,8 +1530,8 @@ endfunction " s:on_lsp_buffer_enabled
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimLSPSettings()
 
-  :LspStatus
-  " :LspStopServer
+function g:VimLSPSettings () abort
+  if &rtp !~ 'vim-lsp-settings' | return | endif
 
   let g:lsp_preview_float = 0
   let g:lsp_use_native_client = 1
