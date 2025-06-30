@@ -299,6 +299,7 @@ echo Cloning submodules...
 # https://github.com/prabirshrestha/asyncomplete-ultisnips.vim
 
 # LSP (Language Server Protocols) ---------
+# https://github.com/rhysd/vim-healthcheck
 # https://github.com/prabirshrestha/vim-lsp
 # https://github.com/mattn/vim-lsp-settings
 # https://github.com/thomasfaingnaert/vim-lsp-snippets
