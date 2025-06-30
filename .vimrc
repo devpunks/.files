@@ -1034,7 +1034,7 @@ endfunction " g:Thesaurus
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call Search()
 
-function! g:MuCompletion () abort
+function! g:Search () abort
   if &rtp !~ 'vim-mucomplete' | return | endif
 
   set complete-=t " no tags
