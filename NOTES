@@ -254,7 +254,11 @@ Android Accessibility
 # <C-]> - Jump to tag definition
 # <C-t> - Pop tag definition
 #
-#  (Insert Mode) ---------------------------
+#(Insert Mode) ---------------------------
+# Bracketed Paste # - https://en.m.wikipedia.org/wiki/Bracketed-paste
+#   - :h paste - :h pastetoggle
+# Clipboard # - https://en.m.wikipedia.org/wiki/Clipboard_(computing)
+#   - :h clipboard - :h quoteplus - :h quotestar - :h quotequote
 # <C-e> - Exit Completion
 # <TAB> - Completion
 # :help complete
