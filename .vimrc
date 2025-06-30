@@ -1032,17 +1032,7 @@ endfunction " g:Thesaurus
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-augroup VimDefaults
-  autocmd VimEnter * call g:MuCompletion ()
-  autocmd CursorHoldI * call g:MuComplete ()
-augroup END
-
-function! g:MuComplete () abort
-  if !exists('g:loaded_mucomplete') | return | endif
-
-  echo 'Mμ Completing ( Not Yet Implemented. See Complete() )'
-
-endfunction " Complete
+autocmd VimDefaults VimEnter * call Search()
 
 function! g:MuCompletion () abort
   if &rtp !~ 'vim-mucomplete' | return | endif
