@@ -1458,7 +1458,48 @@ augroup UserDefaults
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for file'
-autocmd FileDefaults User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+
+function g:VimLSP () abort
+  if &rtp !~ 'vim-lsp' | return | endif
+
+  echo 'VIM LSP'
+  call lsp#enable()
+  call lsp#disable() " TODO: REMOVE"
+
+  LspStatus
+  LspStopServer
+  CheckHealth " vim-healthcheck
+
+  let g:lsp_preview_float = 1
+  let g:lsp_use_native_client = 1
+  let g:lsp_preview_autoclose = 1
+
+  let g:lsp_signature_help_delay = 100
+  let g:lsp_tree_incoming_prefix = '⬅'
+  let g:lsp_diagnostics_signs_delay = 100
+  let g:lsp_diagnostics_signs_priority = 11 " 10 other plugins
+  let g:lsp_diagnostics_virtual_text_delay = 300
+  let g:lsp_diagnostics_virtual_text_align = 'right'
+  let g:lsp_diagnostics_signs_hint = {'text': '💡' }
+  let g:lsp_diagnostics_signs_error = {'text': '❌' }
+  let g:lsp_diagnostics_signs_warning = {'text': '⚠️' }
+  let g:lsp_diagnostics_signs_information = {'text': 'ℹ️' }
+  let g:lsp_document_code_action_signs_delay = 300
+  let g:lsp_document_code_action_signs_hint = {'text': '🚀' }
+
+  " if executable('bash-language-server')
+    autocmd User lsp_setup call lsp#register_server({
+    \ 'allowlist': ['sh', 'bash'],
+    \ 'name': 'bash-language-server',
+    \ 'cmd': {server_info->['bash-language-server', 'start']},
+    \ })
+  " endif
+
+  " (normal) [TAB] Next Tab
+" inoremap <Tab> :tabnext<CR>
+" nnoremap <S-Tab> :tabprevious<CR>
+
+endfunction " g:VimLSP
 
 function! s:on_lsp_buffer_enabled() abort
   echo 'LSP Buffer Enabled'
