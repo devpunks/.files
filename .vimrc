@@ -929,7 +929,7 @@ endfunction " g:Marks
 " Scrollbar - https://github.com/obcat/vim-sclow
 " -------------------------------------------------------------------------
 " autocmd FileReadPost * call sclow#update()
-autocmd VimDefaults BufEnter * call g:ScrollBar()
+autocmd VimDefaults BufReadPost * call g:ScrollBar()
 
 function! g:ScrollBar() abort
   if g:loaded_sclow != 1 | return | endif
