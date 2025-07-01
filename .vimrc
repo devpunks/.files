@@ -978,7 +978,9 @@ function g:CScopes () abort
   let l:cscope = system('type command cscope')[-1]
   echo l:scope
 
-  let l:path=split(system( 'type ctags' ))[-1]
+  if ! filereadable(l:cscope) | return | endif
+  echo 'Found cscope path: '..&tags
+" let l:tags = expand('$HOME/tags')
 
   echo 'Set Tagbar Binary path'..l:path
   let g:tagbar_ctags_bin = l:path
