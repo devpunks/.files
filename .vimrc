@@ -1266,7 +1266,7 @@ endfunction " s:fuzzy
 command! Fuzzy call s:fuzzy()
 
 " -------------------------------------------------------------------------
-" Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
+" Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd BufReadPost * call g:GitGutter()
