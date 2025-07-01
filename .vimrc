@@ -997,6 +997,10 @@ endfunction " g:CScopes
 "  - https://github.com/universal-ctags/ctags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 " -------------------------------------------------------------------------
+"   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
+" :h tag - <C-]> jump to & push tag
+" <C-t> pop tag (:pop)
+
 autocmd VimDefaults VimEnter * call g:CTags ()
 
 function g:CTags () abort
