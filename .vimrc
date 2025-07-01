@@ -1063,8 +1063,9 @@ autocmd VimDefaults VimEnter * call g:Indentation()
 function! g:Indentation() abort
 " if &rtp !~ 'vim-indent-guides' | return | endif
 
-function OverflowMargin () abort
-  call clearmatches()
+  echo 'Loading indentation guides'
+  let g:indent_guides_guide_size = 1
+  let g:indent_guides_auto_colors = 0
 
   if ! &tw | return | endif
 
