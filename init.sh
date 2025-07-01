@@ -289,6 +289,7 @@ echo Cloning submodules...
 # https://github.com/Raimondi/delimitMate
 # https://github.com/jayli/vim-easycomplete (DO NOT USE)
 # https://github.com/lifepillar/vim-mucomplete
+# https://github.com/yegappan/taglist
 # https://github.com/preservim/tagbar # See ctags
 # https://github.com/ludovicchabant/vim-gutentags # See ctags
 # https://github.com/sunaku/vim-ruby-minitest
