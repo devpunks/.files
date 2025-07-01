@@ -1276,13 +1276,10 @@ inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
 " autocmd VimDefaults VimEnter * call g:SuperTab ()
 " autocmd UserDefaults CursorHoldI * :Tab
 
-  let g:gitgutter_sign_added = 'xx'
-  let g:gitgutter_sign_modified = 'yy'
-  let g:gitgutter_sign_removed = 'zz'
-  let g:gitgutter_sign_removed_first_line = '^^'
-  let g:gitgutter_sign_removed_above_and_below = '{'
-  let g:gitgutter_sign_modified_removed = 'ww'
-endfunction " g:GitGutter
+" function! s:tab () abort
+"   echo 'Tabbing ( Not Yet Implemented. See Tab() )'
+" endfunction " tab
+" command! Tab call s:tab()
 
 " -------------------------------------------------------------------------
 " IndentGuides - https://github.com/preservim/vim-indent-guides
