@@ -1237,42 +1237,6 @@ function! g:Search () abort
 endfunction " g:Search
 
 " -------------------------------------------------------------------------
-" Supertab - https://github.com/ervandew/supertab
-" -------------------------------------------------------------------------
-inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
-" (normal) [TAB] Next/Previous Tab
-" nnoremap <Tab> :tabnext<CR>
-" nnoremap <S-Tab> :tabprevious<CR>
-
-" autocmd VimDefaults VimEnter * call g:SuperTab ()
-" autocmd UserDefaults CursorHoldI * :Tab
-
-" function! s:tab () abort
-"   echo 'Tabbing ( Not Yet Implemented. See Tab() )'
-" endfunction " tab
-" command! Tab call s:tab()
-
-" -------------------------------------------------------------------------
-" Ultisnips - https://github.com/SirVer/ultisnips
-" -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Snippets ()
-
-function g:Snippets () abort
-  if &rtp !~ 'ultisnips' | return | endif
-
-  echo 'Ultisnippets Initialization'
-
-  " let g:UltiSnipsEditSplit = 'vertical'
-  let g:UltiSnipsAutoTrigger = 0
-  let g:UltiSnipsNoPythonWarning = 1
-  let g:UltiSnipsListSnippets = '<S-Tab>'
-  let g:UltiSnipsExpandTrigger = '<S-Tab>'
-  let g:UltiSnipsJumpForwardTrigger = '<c-n>'
-  let g:UltiSnipsJumpBackwardTrigger = '<c-p>'
-  let g:UltiSnipsJumpOrExpandTrigger = '<S-Tab>'
-endfunction " g:Snippets
-
-" -------------------------------------------------------------------------
 " CtrlP - https://github.com/ctrlpvim/ctrlp.vim
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * :Fuzzy
