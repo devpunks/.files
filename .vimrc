@@ -1072,11 +1072,10 @@ function! g:Indentation() abort
   autocmd FileDefaults BufEnter *
     \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesDisable | endif
 
-  " call matchadd('ColorColumn', '\%75v.*')
-  call matchadd('ColorColumn', '\%>' . &tw . 'v')
-  " https://baeldung.com/linux/vim-ruler-on-specific-column
-  let &colorcolumn= ( &tw +1 ) ..",".. ( &tw +2 )
-endfunction " OverflowMargin
+  highlight IndentGuidesOdd guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
+  highlight IndentGuidesEven guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
+
+endfunction " indentation
 
 " -------------------------------------------------------------------------
 " Scopes :h cscope
