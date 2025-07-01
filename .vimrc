@@ -1143,6 +1143,20 @@ function g:GutenTags () abort
 endfunction " g:GutenTags
 
 " -------------------------------------------------------------------------
+" vim-TagList - https://github.com/yegappan/taglist
+" -------------------------------------------------------------------------
+autocmd FileDefaults BufReadPost * call g:TagsList ()
+
+function g:TagsList () abort
+  if ! exists('g:loaded_taglist') | return | endif
+
+  echo 'Opening Tags List for '..bufname('')
+  TlistOpen
+  " wincmd p
+
+endfunction " g:TagsList
+
+" -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
 " autocmd FileDefaults BufReadPost *
