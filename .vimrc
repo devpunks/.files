@@ -972,7 +972,7 @@ endfunction " OverflowMargin
 " Scopes :h cscope
 "   - https://stackoverflow.com/q/934233/cscope-or-ctags-why-choose-one-over-the-other
 " -------------------------------------------------------------------------
-autocmd FileDefaults FileReadPost * call g:TagBar()
+autocmd VimDefaults VimEnter * call g:CScopes ()
 
 function g:TagBar () abort
   if &rtp !~ 'tagbar' | return | endif
