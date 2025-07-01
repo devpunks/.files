@@ -282,6 +282,7 @@ echo Cloning submodules...
 
 # Telesense (auto completion) ---------
 # https://github.com/ctrlpvim/ctrlp.vim
+# https://github.com/ivalkeen/vim-ctrlp-tjump
 # https://github.com/SirVer/ultisnips
 # https://github.com/honza/vim-snippets
 # https://github.com/Raimondi/delimitMate
