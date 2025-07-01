@@ -35,6 +35,7 @@
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
 " Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
 " Styleguide - https://google.github.io/styleguide/vimscriptguide.xml
+" Programming - https://got-ravings.blogspot.com/2008/09/vim-pr0n-prototype-based-objects.html
 "
 " TODO:
 " CLICKING LINE NUMBERS
