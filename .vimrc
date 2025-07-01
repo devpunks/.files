@@ -1320,7 +1320,7 @@ function! g:NerdDrawer () abort
         \ 'Deleted' : '❌',
         \ 'Ignored' : '🚫',
         \ 'Unknown' : '❓',
-        \ 'Modified' : '⭐',
+        \ 'Modified' : '📝',
   \ }
 
   let g:NERDTreeIgnore=['\.sock$', 'my-pipe'] " ignored files
