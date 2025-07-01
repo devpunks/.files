@@ -995,6 +995,7 @@ endfunction " g:CScopes
 "  :h tagstack
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
+"  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 " -------------------------------------------------------------------------
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
