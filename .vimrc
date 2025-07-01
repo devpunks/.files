@@ -995,6 +995,7 @@ endfunction " g:CScopes
 "  :h tagstack
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
+"  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:CTags ()
 
