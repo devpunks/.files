@@ -971,8 +971,11 @@ endfunction " g:Marks
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
-" autocmd FileReadPost * call sclow#update()
-autocmd VimDefaults BufReadPost * call g:ScrollBar()
+augroup FileDefaults
+  autocmd BufReadPost * call g:GitGutter()
+  autocmd InsertEnter * call g:GitFocus()
+  autocmd InsertLeave * call g:GitBlur()
+augroup END
 
 function! g:ScrollBar() abort
   if g:loaded_sclow != 1 | return | endif
