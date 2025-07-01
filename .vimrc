@@ -984,10 +984,8 @@ function! g:GitFocus () abort
   highlight! link GitGutterChange DiffChange
   highlight! link GitGutterDelete DiffDelete
 
-  let g:scrollbar_thumb = '⬜'
-  let g:sclow_sbar_text = '⬜'
-  let g:scrollbar_clear = '🔳'
-  let g:sclow_bar_right_offset = -2
+  GitGutterLineHighlightsEnable
+endfunction " g:GitFocus
 
   " TODO: Remove
   " SclowDisable
