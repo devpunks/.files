@@ -1004,7 +1004,10 @@ endfunction " g:CScopes
 autocmd VimDefaults VimEnter * call g:CTags ()
 
 function g:CTags () abort
-  set tags =$HOME/tags
+  let l:tags = expand('$HOME/tags')
+
+  if ! filereadable(l:tags) | return | endif
+
   echo 'Setting ctags path: '..&tags
   set omnifunc=ccomplete#Complete " CTags Complete
 endfunction " g:CTags
