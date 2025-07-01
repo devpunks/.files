@@ -1195,6 +1195,17 @@ function! g:GitBlur () abort
   GitGutterLineHighlightsDisable
 endfunction " g:GitFocus
 
+function! g:GitDiffs () abort
+  let l:files = system('git diff --shortstat')
+ :let l:summary = '%#Statement# '
+
+ echo 'Buffer Name:'..bufname('')
+  if true | let l:summary ..= printf( '%s', summary ) | endif
+  let l:summary ..= '%#Statement# '
+
+  return l:summary
+endfunction " g:GitDiffs
+
 function! g:GitChanges () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
