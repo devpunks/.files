@@ -1282,7 +1282,7 @@ inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
 " command! Tab call s:tab()
 
 " -------------------------------------------------------------------------
-" IndentGuides - https://github.com/preservim/vim-indent-guides
+" Ultisnips - https://github.com/SirVer/ultisnips
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Indentation()
 
