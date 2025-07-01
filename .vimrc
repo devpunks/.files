@@ -1056,7 +1056,7 @@ function! g:GitGutter () abort
 endfunction " g:GitGutter
 
 " -------------------------------------------------------------------------
-" OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
+" IndentGuides - https://github.com/preservim/vim-indent-guides
 " -------------------------------------------------------------------------
 augroup ViimDefaults
   autocmd VimResized * wincmd = " resize (see equalalways)
