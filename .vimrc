@@ -976,7 +976,7 @@ autocmd VimDefaults VimEnter * call g:CScopes ()
 
 function g:CScopes () abort
   let l:cscope = system('type command cscope')[-1]
-  echo l:scope
+  echo l:cscope
 
   if ! filereadable(l:cscope) | return | endif
   echo 'Found cscope path: '..&tags
