@@ -903,6 +903,49 @@ function! s:NerdtreeBookmarks() abort
 endfunction " s:NerdtreeBookmarks
 
 " -------------------------------------------------------------------------
+" OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
+" -------------------------------------------------------------------------
+augroup ViimDefaults
+  autocmd VimResized * wincmd = " resize (see equalalways)
+  autocmd FocusLost * :w " save on focus lost
+augroup END
+
+" (https://vi.stackexchange.com/a/15995)
+" autocmd winEnter,BufEnter Double triggers event.
+autocmd FileDefaults BufEnter * call OverflowMargin ()
+
+function OverflowMargin () abort
+  call clearmatches()
+
+  if ! &tw | return | endif
+
+  " call matchadd('ColorColumn', '\%75v.*')
+  call matchadd('ColorColumn', '\%>' . &tw . 'v')
+  " https://baeldung.com/linux/vim-ruler-on-specific-column
+  let &colorcolumn= ( &tw +1 ) ..",".. ( &tw +2 )
+endfunction " OverflowMargin
+
+" -------------------------------------------------------------------------
+" Scrollbar - https://github.com/obcat/vim-sclow
+" -------------------------------------------------------------------------
+" autocmd FileReadPost * call sclow#update()
+autocmd VimDefaults BufReadPost * call g:ScrollBar()
+
+function! g:ScrollBar() abort
+  if g:loaded_sclow != 1 | return | endif
+
+  echo 'Showing Scrollbar'
+
+  let g:scrollbar_thumb = '⬜'
+  let g:sclow_sbar_text = '⬜'
+  let g:scrollbar_clear = '🔳'
+  let g:sclow_bar_right_offset = -2
+
+  " TODO: Remove
+  " SclowDisable
+endfunction " g:ScrollBar
+
+" -------------------------------------------------------------------------
 " Vim Signature - https://github.com/kshenoy/vim-signature
 "   :h mark
 "   :h marks
