@@ -1056,7 +1056,7 @@ endfunction " g:Search
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
-inoremap <Tab> <c-O> :echo 'SuperTAB Complete'
+inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
 " (normal) [TAB] Next/Previous Tab
 " nnoremap <Tab> :tabnext<CR>
 " nnoremap <S-Tab> :tabprevious<CR>
