@@ -937,6 +937,7 @@ function! g:ScrollBar() abort
   echo 'Showing Scrollbar'
 
   let g:scrollbar_thumb = '⬜'
+  let g:sclow_sbar_text = '⬜'
   let g:scrollbar_clear = '🔳'
   let g:sclow_bar_right_offset = -1
 endfunction " g:ScrollBar
