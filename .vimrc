@@ -1033,6 +1033,24 @@ function g:GutenTags () abort
 endfunction " g:GutenTags
 
 " -------------------------------------------------------------------------
+" TagBar - https://github.com/preservim/tagbar
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:TagBar()
+autocmd FileDefaults BufReadPost * :TagBar
+
+function g:TagBar () abort
+  if &rtp !~ 'tagbar' | return | endif
+
+  let l:path=split(system( 'type ctags' ))[-1]
+
+  echo 'Setting Tagbar Binary path to'..l:path
+  let g:tagbar_ctags_bin = l:path
+
+  " Shortcut SHIFT+t
+  nnoremap <S-t> :TagbarToggle<CR>
+endfunction " g:TagBar
+
+" -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
 nnoremap <leader>t g:Thesaurus()
