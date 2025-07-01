@@ -1067,7 +1067,10 @@ function! g:Indentation() abort
   let g:indent_guides_guide_size = 1
   let g:indent_guides_auto_colors = 0
 
-  if ! &tw | return | endif
+  autocmd FileDefaults BufLeave *
+    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesEnable | endif
+  autocmd FileDefaults BufEnter *
+    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesDisable | endif
 
   " call matchadd('ColorColumn', '\%75v.*')
   call matchadd('ColorColumn', '\%>' . &tw . 'v')
