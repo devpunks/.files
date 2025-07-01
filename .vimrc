@@ -1058,10 +1058,7 @@ endfunction " g:GitGutter
 " -------------------------------------------------------------------------
 " IndentGuides - https://github.com/preservim/vim-indent-guides
 " -------------------------------------------------------------------------
-augroup ViimDefaults
-  autocmd VimResized * wincmd = " resize (see equalalways)
-  autocmd FocusLost * :w " save on focus lost
-augroup END
+autocmd VimDefaults VimEnter * call g:Indentation()
 
 " (https://vi.stackexchange.com/a/15995)
 " autocmd winEnter,BufEnter Double triggers event.
