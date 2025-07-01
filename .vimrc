@@ -1525,7 +1525,7 @@ augroup UserDefaults
   autocmd User lsp_float_closed nunmap <buffer> <C-c>
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
-autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for file'
+autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for '..bufname('')
 
 function g:VimLSP () abort
   if &rtp !~ 'vim-lsp' | return | endif
