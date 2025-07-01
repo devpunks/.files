@@ -1018,8 +1018,8 @@ endfunction " g:CTags
 autocmd VimDefaults VimEnter * call g:GutenTags ()
 
 augroup FileDefaults
-  autocmd FileReadPost * echo 'Loading gutentags'
-  autocmd FileWritePost * echo 'Saving gutentags'
+  autocmd BufReadPost * echo 'Loading gutentags for '..bufname('')
+  autocmd BufWritePost * echo 'Saving gutentags for '..bufname('')
 augroup END
 
 augroup UserDefaults
