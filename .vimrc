@@ -988,7 +988,11 @@ function g:CScopes () abort
 endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
-" ctags
+" Tags :h tags-and-searches
+"  :h tag
+"  :h tags
+"  :h ctags
+"  :h tagstack
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
 " -------------------------------------------------------------------------
