@@ -939,7 +939,10 @@ function! g:ScrollBar() abort
   let g:scrollbar_thumb = '⬜'
   let g:sclow_sbar_text = '⬜'
   let g:scrollbar_clear = '🔳'
-  let g:sclow_bar_right_offset = -1
+  let g:sclow_bar_right_offset = -2
+
+  " TODO: Remove
+  " SclowDisable
 endfunction " g:ScrollBar
 
 " -------------------------------------------------------------------------
