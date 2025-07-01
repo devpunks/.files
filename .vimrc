@@ -904,6 +904,8 @@ endfunction " s:NerdtreeBookmarks
 
 " -------------------------------------------------------------------------
 " Vim Signature - https://github.com/kshenoy/vim-signature
+"   :h mark
+"   :h marks
 " -------------------------------------------------------------------------
 augroup VimDefaults
   autocmd VimEnter * :SignatureToggleSigns
