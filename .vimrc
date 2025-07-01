@@ -977,8 +977,8 @@ augroup FileDefaults
   autocmd InsertLeave * call g:GitBlur()
 augroup END
 
-function! g:ScrollBar() abort
-  if g:loaded_sclow != 1 | return | endif
+function! g:GitFocus () abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
   echo 'Showing Scrollbar'
 
