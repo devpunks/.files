@@ -969,7 +969,7 @@ function! g:Marks() abort
 endfunction " g:Marks
 
 " -------------------------------------------------------------------------
-" Scrollbar - https://github.com/obcat/vim-sclow
+" Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
 " autocmd FileReadPost * call sclow#update()
 autocmd VimDefaults BufReadPost * call g:ScrollBar()
