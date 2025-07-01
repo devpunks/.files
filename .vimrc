@@ -983,9 +983,9 @@ function g:CScopes () abort
 " let l:tags = expand('$HOME/tags')
 
 
-  " Shortcut SHIFT+t
-  nnoremap <S-t> :TagbarToggle<CR>
-endfunction " g:TagBar
+" echo 'Setting ctags path: '..&tags
+" set omnifunc=ccomplete#Complete " CTags Complete
+endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
 " ctags
