@@ -987,9 +987,73 @@ function! g:GitFocus () abort
   GitGutterLineHighlightsEnable
 endfunction " g:GitFocus
 
-  " TODO: Remove
-  " SclowDisable
-endfunction " g:ScrollBar
+function! g:GitBlur () abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+
+  highlight link GitGutterAdd NONE
+  highlight link GitGutterChange NONE
+  highlight link GitGutterDelete NONE
+
+  GitGutterLineHighlightsDisable
+endfunction " g:GitFocus
+
+function! g:GitDiffs () abort
+  let l:files = system('git diff --shortstat')
+ :let l:summary = '%#Statement# '
+
+ echo 'Buffer Name:'..bufname('')
+  if true | let l:summary ..= printf( '%s', summary ) | endif
+  let l:summary ..= '%#Statement# '
+
+  return l:summary
+endfunction " g:GitDiffs
+
+function! g:GitChanges () abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+
+  let [a,m,r] = GitGutterGetHunkSummary()
+
+  let l:summary = '%#Statement# '
+  if r > 0 | let l:summary ..= printf( '%%#DiffDelete# ➖%d ', r ) | endif
+  if m > 0 | let l:summary ..= printf( '%%#DiffChange# ～%d ', m ) | endif
+  if a > 0 | let l:summary ..= printf( '%%#DiffAdd# ➕%d '   , a ) | endif
+  let l:summary ..= '%#Statement# '
+
+  return l:summary
+endfunction " g:GitChanges
+
+function! g:GitGutter () abort
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+
+  echo 'Git Gutter!'
+
+  GitGutterEnable
+
+  nnoremap <silent><buffer> ]h <Plug>(GitGutterNextHunk)
+  nnoremap <silent><buffer> [h <Plug>(GitGutterPrevHunk)
+
+  set foldtext=gitgutter#fold#foldtext()
+
+  let g:gitgutter_grep=''
+  let g:gitgutter_sign_priority = 1
+  let g:gitgutter_sign_allow_clobber = 1
+  let g:gitgutter_set_sign_backgrounds = 1
+
+  sign define GitGutterLineAdded text=➕
+  sign define GitGutterLineRemoved text=➖
+  sign define GitGutterLineModified text=～
+
+  let g:gitgutter_highlight_linenrs = 1
+  let g:gitgutter_preview_win_floating = 1
+  let g:gitgutter_terminal_reports_focus = 0
+
+  let g:gitgutter_sign_added = 'xx'
+  let g:gitgutter_sign_modified = 'yy'
+  let g:gitgutter_sign_removed = 'zz'
+  let g:gitgutter_sign_removed_first_line = '^^'
+  let g:gitgutter_sign_removed_above_and_below = '{'
+  let g:gitgutter_sign_modified_removed = 'ww'
+endfunction " g:GitGutter
 
 " -------------------------------------------------------------------------
 " OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
