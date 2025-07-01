@@ -980,7 +980,9 @@ augroup END
 function! g:GitFocus () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
-  echo 'Showing Scrollbar'
+  highlight! link GitGutterAdd DiffAdd
+  highlight! link GitGutterChange DiffChange
+  highlight! link GitGutterDelete DiffDelete
 
   let g:scrollbar_thumb = '⬜'
   let g:sclow_sbar_text = '⬜'
