@@ -2307,6 +2307,23 @@ function play () { clear
   echo ; echo ▷ Playing: "$location"
 } # play
 
+# alias ctags='clear && ctags -R --exclude@.gitignore'
+alias ctags='ctags -R --verbose --totals=yes --exclude={vendor,node_modules,storage,.git,.cache,.config,.ssh}'
+function tag () {
+  local -r path=${1:HOME}
+  echo && echo "All Languages"
+  ctags --list-languages
+
+  echo && echo "Switching to path: $path"
+  command pushd $path
+  echo "Creating global tags file (tags)"
+  ctags -R -f tags
+  echo "Creating Ruby tags file (tags.ruby)"
+  ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
+  ls tags*
+  command popd
+} # tag
+
 # }}}
 
 echo 'devPunks😈studio .bash_login' ; echo
