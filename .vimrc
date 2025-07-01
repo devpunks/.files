@@ -1067,6 +1067,15 @@ function g:TagBar () abort
   nnoremap <S-t> :TagbarToggle<CR>
 endfunction " g:TagBar
 
+function g:TagsBar () abort
+  if &rtp !~ 'tagbar' | return | endif
+
+  echo 'Opening Tags Bar for '..bufname('')
+  TagbarToggle
+  wincmd p
+
+endfunction " g:TagsBar
+
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
