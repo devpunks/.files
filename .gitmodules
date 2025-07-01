@@ -139,3 +139,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-ctrlp-tjump"]
 	path = .vim/pack/u0_a311/start/vim-ctrlp-tjump
 	url = https://github.com/ivalkeen/vim-ctrlp-tjump.git
+[submodule ".vim/pack/u0_a311/start/taglist"]
+	path = .vim/pack/u0_a311/start/taglist
+	url = https://github.com/yegappan/taglist.git
