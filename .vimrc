@@ -1268,11 +1268,10 @@ command! Fuzzy call s:fuzzy()
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd BufReadPost * call g:GitGutter()
-  autocmd InsertEnter * call g:GitFocus()
-  autocmd InsertLeave * call g:GitBlur()
-augroup END
+inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
+" (normal) [TAB] Next/Previous Tab
+" nnoremap <Tab> :tabnext<CR>
+" nnoremap <S-Tab> :tabprevious<CR>
 
 function! g:GitFocus () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
