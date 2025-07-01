@@ -1284,24 +1284,22 @@ inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
 " -------------------------------------------------------------------------
 " Ultisnips - https://github.com/SirVer/ultisnips
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Indentation()
+autocmd VimDefaults VimEnter * call g:Snippets ()
 
-function! g:Indentation() abort
-" if &rtp !~ 'vim-indent-guides' | return | endif
+function g:Snippets () abort
+  if &rtp !~ 'ultisnips' | return | endif
 
-  echo 'Loading indentation guides'
-  let g:indent_guides_guide_size = 1
-  let g:indent_guides_auto_colors = 0
+  echo 'Ultisnippets Initialization'
 
-  autocmd FileDefaults BufLeave *
-    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesEnable | endif
-  autocmd FileDefaults BufEnter *
-    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesDisable | endif
-
-  highlight IndentGuidesOdd guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
-  highlight IndentGuidesEven guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
-
-endfunction " indentation
+  " let g:UltiSnipsEditSplit = 'vertical'
+  let g:UltiSnipsAutoTrigger = 0
+  let g:UltiSnipsNoPythonWarning = 1
+  let g:UltiSnipsListSnippets = '<S-Tab>'
+  let g:UltiSnipsExpandTrigger = '<S-Tab>'
+  let g:UltiSnipsJumpForwardTrigger = '<c-n>'
+  let g:UltiSnipsJumpBackwardTrigger = '<c-p>'
+  let g:UltiSnipsJumpOrExpandTrigger = '<S-Tab>'
+endfunction " g:Snippets
 
 " -------------------------------------------------------------------------
 " ZoomWin
