@@ -982,8 +982,6 @@ function g:CScopes () abort
   echo 'Found cscope path: '..&tags
 " let l:tags = expand('$HOME/tags')
 
-  echo 'Set Tagbar Binary path'..l:path
-  let g:tagbar_ctags_bin = l:path
 
   " Shortcut SHIFT+t
   nnoremap <S-t> :TagbarToggle<CR>
