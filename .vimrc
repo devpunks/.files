@@ -1314,7 +1314,7 @@ function! g:NerdDrawer () abort
 
   " nerdtree-git-plugin
   let g:NERDTreeGitStatusIndicatorMapCustom = {
-        \ 'Untracked' : '',
+        \ 'Untracked' : '🫣',
         \ 'Dirty' : '⚠️',
         \ 'Renamed' : '↔️',
         \ 'Deleted' : '❌',
