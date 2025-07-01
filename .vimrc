@@ -907,10 +907,12 @@ endfunction " s:NerdtreeBookmarks
 "   :h mark
 "   :h marks
 " -------------------------------------------------------------------------
-augroup VimDefaults
-  autocmd VimEnter * :SignatureToggleSigns
-  autocmd BufEnter * :SignatureRefresh
-augroup END
+autocmd VimDefaults VimEnter,ColorScheme * call g:Marks()
+
+function! g:Marks() abort
+  if ! exists('g:loaded_Signature') | return | endif
+
+  echo 'Marking...'
 
 
 " -------------------------------------------------------------------------
