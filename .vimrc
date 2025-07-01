@@ -974,8 +974,9 @@ endfunction " OverflowMargin
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:CScopes ()
 
-function g:TagBar () abort
-  if &rtp !~ 'tagbar' | return | endif
+function g:CScopes () abort
+  let l:cscope = system('type command cscope')[-1]
+  echo l:scope
 
   let l:path=split(system( 'type ctags' ))[-1]
 
