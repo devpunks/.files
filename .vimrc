@@ -914,6 +914,16 @@ function! g:Marks() abort
 
   echo 'Marking...'
 
+  let g:SignaturePurgeConfirmation = 1
+  let g:SignatureDeleteConfirmation = 1
+
+  highlight! link SignatureMarkText CursorLineNr
+  highlight! link SignatureMarkLine CursorLineNr
+  highlight! link SignatureMarkerText CursorLineNr
+  highlight! link SignatureMarkerLine CursorLineNr
+
+  autocmd FileDefaults BufEnter * :SignatureRefresh
+endfunction " g:Marks
 
 " -------------------------------------------------------------------------
 " Scrollbar - https://github.com/obcat/vim-sclow
