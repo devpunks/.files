@@ -1112,7 +1112,6 @@ inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
 " autocmd VimDefaults VimEnter * call g:SuperTab ()
 " autocmd UserDefaults CursorHoldI * :Tab
 
-
 " function! s:tab () abort
 "   echo 'Tabbing ( Not Yet Implemented. See Tab() )'
 " endfunction " tab
