@@ -1060,9 +1060,8 @@ endfunction " g:GitGutter
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Indentation()
 
-" (https://vi.stackexchange.com/a/15995)
-" autocmd winEnter,BufEnter Double triggers event.
-autocmd FileDefaults BufEnter * call OverflowMargin ()
+function! g:Indentation() abort
+" if &rtp !~ 'vim-indent-guides' | return | endif
 
 function OverflowMargin () abort
   call clearmatches()
