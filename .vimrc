@@ -1349,7 +1349,7 @@ function! g:NerdDrawer () abort
         \ 'Modified' : '📝',
   \ }
 
-  let g:NERDTreeStatusline=%{GitDiffs()}
+  let g:NERDTreeStatusline='TODO: GitDiffs()'
   let g:NERDTreeIgnore=['\.sock$', 'my-pipe'] " ignored files
   let g:NERDTreeFileLines=1 " LOC number in files
   let g:NERDTreeShowHidden=1 " Show hidden files (I)
