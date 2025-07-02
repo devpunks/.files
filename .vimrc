@@ -1553,7 +1553,7 @@ augroup UserDefaults
 augroup END
 autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for '..bufname('')
 
-function g:VimLSP () abort
+function g:LSP () abort
   if &rtp !~ 'vim-lsp' | return | endif
 
   echo 'VIM LSP'
