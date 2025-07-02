@@ -1619,7 +1619,7 @@ endfunction " s:on_lsp_buffer_enabled
 " -------------------------------------------------------------------------
 " Vim LSP Settings - https://github.com/mattn/vim-lsp-settings
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:VimLSPSettings()
+autocmd VimDefaults VimEnter * call g:LSPSettings()
 
 function g:VimLSPSettings () abort
   if &rtp !~ 'vim-lsp-settings' | return | endif
