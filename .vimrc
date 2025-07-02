@@ -1493,7 +1493,7 @@ endfunction " g:AsyncompleteBuffer
 autocmd VimDefaults VimEnter * call g:AsyncompleteFile()
 " autocmd User asyncomplete_setup * call g:AsyncompleteFile()
 
-function g:AsyncompleteFIle () abort
+function g:AsyncompleteFile () abort
   if &rtp !~ 'asyncomplete-file' | return | endif
 
   echo 'Loading asyncomplete-file'
