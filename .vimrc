@@ -1258,6 +1258,7 @@ function! s:fuzzy () abort
     \ = ['.git', 'node_modules', 'package.json', 'Gemfile', '.bashrc' ]
 
   if ! exists('g:loaded_ctrlp_tjump') | return | endif
+  if &rtp !~ 'vim-ctrlp-tjump' | return | endif
   echo 'CtrlP (tjump) tag integration'
   nnoremap <C-]> :CtrlPtjump<CR>
   vnoremap <C-]> :CtrlPtjumpVisual<CR>
