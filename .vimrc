@@ -1558,11 +1558,6 @@ function g:LSP () abort
 
   echo 'VIM LSP'
   call lsp#enable()
-  call lsp#disable() " TODO: REMOVE"
-
-  LspStatus
-  LspStopServer
-  CheckHealth " vim-healthcheck
 
   let g:lsp_preview_float = 1
   let g:lsp_use_native_client = 1
