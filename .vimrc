@@ -1180,7 +1180,7 @@ function g:TagsBar () abort
   if &rtp !~ 'tagbar' | return | endif
 
   echo 'Opening Tags Bar for '..bufname('')
-  TagbarToggle
+  TagbarOpen
   wincmd p
 
 endfunction " g:TagsBar
