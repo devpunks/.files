@@ -1584,7 +1584,13 @@ function g:LSP () abort
     \ })
   " endif
 
-endfunction " g:VimLSP
+  LspStatus
+  CheckHealth " https://github.com/rhysd/vim-healthcheck
+
+  LspStopServer
+  call lsp#disable() " TODO: REMOVE"
+
+endfunction " g:LSP
 
 function! s:on_lsp_buffer_enabled() abort
   echo 'LSP Buffer Enabled'
