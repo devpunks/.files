@@ -1249,7 +1249,10 @@ function g:CursorTag () abort
   echo 'Cursor Tag <cword>: '..word
 
 " if ! &previewwindow |return | endif
-" if has('folding') .foldopen!
+" if has('folding') | .foldopen! | endif
+  call search('$', 'b') " previous EOL"
+  let word = substitute(word, '\\', '\\\\', '')
+  call search('\<\V'..l:word..'\>')
 
   " call search('$', 'b') " previous EOL"
   " let word = substitute(word, '\\', '\\\\', '')
