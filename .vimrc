@@ -1179,11 +1179,6 @@ augroup UserDefaults
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
-function g:GutenTags () abort
-  set tags +=./tags
-  echo 'Setting gutentags path: '..&tags
-endfunction " g:GutenTags
-
 " -------------------------------------------------------------------------
 " vim-TagList - https://github.com/yegappan/taglist
 " -------------------------------------------------------------------------
