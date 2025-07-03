@@ -1187,7 +1187,7 @@ autocmd FileDefaults BufReadPost * call g:TagsList ()
 function g:TagsList () abort
   if ! exists('g:loaded_taglist') | return | endif
 
-  echo 'Opening Tags List for '..bufname('')
+  echo 'Opening Tags List for '..expand('%')
   TlistOpen
   " wincmd p
 
