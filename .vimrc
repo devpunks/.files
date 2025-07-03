@@ -1135,6 +1135,13 @@ echo '(tags) path(s): '..&tags
 " autocmd VimDefaults VimEnter * call g:Tags ()
 autocmd VimDefaults VimEnter * call g:CTags ()
 
+function g:Tags () abort
+  echo 'Current Dir: ' ..getcwd()
+  set cpoptions+=d " Start from cwd
+  set tags +=./**/tags " cwd tags
+  echo '(tags) path(s): '..&tags
+endfunction " g:ags
+
 function g:CTags () abort
   let l:tags = expand('$HOME/tags')
 
