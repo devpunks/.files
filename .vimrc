@@ -1342,7 +1342,7 @@ autocmd VimDefaults VimEnter * call g:SuperTab ()
 autocmd UserDefaults CursorHoldI * :Tab
 
 function! g:SuperTab () abort
-if &rtp !~ 'supertab' | return | endif
+  if &rtp !~ 'supertab' | return | endif
 
 echo 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
   inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
