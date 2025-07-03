@@ -1169,8 +1169,6 @@ endfunction " g:CTags
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:GutenTags ()
-
 augroup FileDefaults
   autocmd BufReadPost * echo 'Loading gutentags for '..bufname('')
   autocmd BufWritePost * echo 'Saving gutentags for '..bufname('')
