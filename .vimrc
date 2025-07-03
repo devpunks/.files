@@ -1232,7 +1232,7 @@ function g:TagsBar () abort
 
   echo 'Opening Tags Bar for '..expand('%')
   TagbarOpen
-  wincmd p
+" wincmd p " Preview
 
 endfunction " g:TagsBar
 
