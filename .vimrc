@@ -889,6 +889,7 @@ function! g:Start () abort
     \ { 'b': [ 'Edit .bashrc', 'tabnew $HOME/.bashrc' ] },
     \ { 'l': [ 'Edit .bash_login', 'tabnew $HOME/.bash_login' ] },
     \ { 's': [ 'LSP (Language Server Protocol)', 'call LSP()' ] },
+    \ { 't': [ 'Tags', 'call Tag()' ] },
     \ { 'v': [ 'Edit .vimrc', 'tabnew $HOME/.vimrc' ] },
     \ ]
 
@@ -1125,9 +1126,6 @@ endfunction " g:CScopes
 " -------------------------------------------------------------------------
 let &tags =expand('$HOME/tags')..','
   \ ..join( split( globpath('$HOME', '**/tags') ), ',' )
-set cpoptions+=d " Start from cwd
-set tags +=./**/tags " cwd tags
-echo 'Current Dir: ' ..getcwd()
 echo '(tags) path(s): '..&tags
 
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
