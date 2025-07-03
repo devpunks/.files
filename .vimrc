@@ -1140,7 +1140,7 @@ function g:Tag () abort
   set cpoptions+=d " Start from cwd
   set tags +=./**/tags " cwd tags
   echo '(tags) path(s): '..&tags
-endfunction " g:ags
+endfunction " g:Tag
 
 function g:CTags () abort
   let l:tags = expand('$HOME/tags')
