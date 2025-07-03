@@ -1258,7 +1258,7 @@ autocmd VimDefaults VimEnter * call Search()
 function! g:Search () abort
   if &rtp !~ 'vim-mucomplete' | return | endif
 
-  set complete-=t " no tags
+  " set complete-=t " no tags
   set complete-=i " no includes
 
   let chain = [ 'omni','path','c-n', 'uspl' ]
