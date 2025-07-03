@@ -1488,6 +1488,9 @@ function! g:NerdDrawer () abort
   NERDTree" Open Drawer
   ReadBookmarks " Load Bookmarks
   wincmd p " Focus on `p`revious buffer
+
+  echo 'Setting NERDTree Mapping to <Tab><Enter>'
+  nnoremap <Tab><Enter> :NERDTreeToggle<CR>
 endfunction " g:NerdDrawer
 
 " -------------------------------------------------------------------------
