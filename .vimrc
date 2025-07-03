@@ -530,7 +530,7 @@ endfunction " g:CSV
 
 " -------------------------------------------------------------------------
 " Markdown
-"   - http://vimcasts.org/episodes/hard-wrapping-text/
+"   - http://vimcasts.org/episodes/hard-wrapping-text
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd BufReadPost *.md setlocal formatoptions-=t formatoptions+=n
