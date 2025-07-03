@@ -1368,7 +1368,6 @@ function! g:SuperTab () abort
   echo 'SuperTab secondary completion type:'
   ' \ ..g:SuperTabContextDefaultCompletionType
 
-
 endfunction " g:SuperTab
 
 function! s:tab () abort
