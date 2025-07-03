@@ -891,8 +891,6 @@ function! g:Start () abort
     \ { 'b': [ 'Edit .bashrc', 'tabnew $HOME/.bashrc' ] },
     \ { 'l': [ 'Edit .bash_login', 'tabnew $HOME/.bash_login' ] },
     \ { 's': [ 'LSP (Language Server Protocol)', 'call LSP()' ] },
-    \ { 't': [ 'Tags', 'call Tag()' ] },
-    \ { 'v': [ 'Edit .vimrc', 'tabnew $HOME/.vimrc' ] },
     \ ]
 
   let g:startify_lists = [
