@@ -779,6 +779,19 @@ nnoremap <S-f> /
 " :Bdelete menu<CR>
 nnoremap <silent> <Del> :Bwipeout menu<CR>
 nnoremap <Space> za
+nnoremap <Enter> :echo 'ENTER'
+nnoremap <Space><Enter> :echo 'SPACE + ENTER'
+inoremap <Space><Enter> <C-o>:echo 'INSERT SPACE + ENTER'
+nnoremap <Tab> :echo 'TAB'<CR>
+inoremap <Tab> <C-o>:echo 'INSERT TAB'
+nnoremap <S-Tab> :echo 'SHIFT + TAB'<CR>
+inoremap <S-Tab> <C-o>:echo 'INSERT SHIFT + TAB'
+nnoremap <Tab><Enter> :echo 'TAB + ENTER'<CR>
+inoremap <Tab><Enter> <C-o>:echo 'INSERT TAB + ENTER'
+nnoremap <Tab><Space> :echo 'TAB + SPACE'<CR>
+inoremap <Tab><Space> <C-o>:echo 'INSERT TAB + SPACE'
+nnoremap <Space><Tab> :echo 'SPACE + TAB'<CR>
+inoremap <Space><Tab> <C-o>:echo 'INSERT SPACE + TAB'
 nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
