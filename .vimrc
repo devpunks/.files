@@ -1321,10 +1321,6 @@ function! s:fuzzy () abort
   let g:buftag_ctags_bin = split( system( 'type ctags' ) )[-1]
   echo 'Setting CtrlP binary tags path to: ' .. g:buftag_ctags_bin
 
-  nnoremap f<Enter> :CtrlPMixed<CR>
-  let l:path=split(system( 'type ctags' ))[-1]
-  echo 'Setting CtrlP binary tags path to'..l:path
-  let g:buftag_ctags_bin = l:path
   let g:ctrlp_extensions += ['tag', 'buffertag']
   echo 'Mapping CtrlP Tag Mode to f<Space>'
   nnoremap f<Space> :CtrlPTag<CR>
