@@ -1132,29 +1132,7 @@ echo '(tags) path(s): '..&tags
 " :h tag - <C-]> jump to & push tag
 " <C-t> pop tag (:pop)
 
-" autocmd FileDefaults VimEnter * ++nested call g:CursorTag()
-autocmd FileDefaults CursorHold * ++nested call g:CursorTag()
-function g:CursorTag () abort
-  let l:word = expand('<cword>')
-
-  if empty( l:word ) || &previewwindow |return | endif
-
-" echo 'Cursor Word: '..word
-
-" return
-" try | exe 'ptag '..word
-" catch | return | endtry
-
-" if ! &previewwindow |return | endif
-" if has('folding') .foldopen!
-
-  " call search('$', 'b') " previous EOL"
-  " let word = substitute(word, '\\', '\\\\', '')
-  " call search('\<\V'..l:word..'\>')
-
-  " exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
-endfunction " g:CursorTag
-
+" autocmd VimDefaults VimEnter * call g:Tags ()
 autocmd VimDefaults VimEnter * call g:CTags ()
 
 function g:CTags () abort
