@@ -1243,7 +1243,8 @@ function g:CursorTag () abort
 
   if empty( l:word ) || &previewwindow | return | endif
 
-" echo 'Cursor Word: '..word
+  try | exe 'ptag '..word
+  catch | return | endtry
 
 " return
 " try | exe 'ptag '..word
