@@ -1246,9 +1246,7 @@ function g:CursorTag () abort
   try | exe 'ptag '..word
   catch | return | endtry
 
-" return
-" try | exe 'ptag '..word
-" catch | return | endtry
+  echo 'Cursor Tag <cword>: '..word
 
 " if ! &previewwindow |return | endif
 " if has('folding') .foldopen!
