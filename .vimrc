@@ -1169,6 +1169,13 @@ augroup END
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:TagList()
 autocmd FileDefaults BufReadPost * call g:TagsList ()
+autocmd FileDefaults BufWritePost * if exists(':TlistUpdate') | TlistUpdate | endif
+
+function g:TagList () abort
+  let g:Tlist_Ctags_Cmd = split( system( 'type ctags' ) )[-1]
+
+  echo 'Setting TagList binary tags path to: ' .. g:Tlist_Ctags_Cmd
+endfunction " g:TagList
 
 function g:TagsList () abort
   if ! exists('g:loaded_taglist') | return | endif
