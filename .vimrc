@@ -1430,7 +1430,11 @@ function! g:ZoomDrawer () abort
   if ! exists('*ZoomWin') | return | endif
 
   let l:open = g:NERDTree.IsOpen()
-  NERDTreeClose | ZoomWin
+  " TODO: Use tagbar#IsOpen()
+  let l:tagbar_open = bufwinnr( t:tagbar_buf_name) != -1
+  NERDTreeClose
+  TagbarClose
+  ZoomWin
   " Open Drawer & focus on `p`revious buffer
   if ( l:open ) | NERDTree | wincmd p | endif
 endfunction " g:ZoomDrawer
