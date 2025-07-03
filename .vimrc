@@ -1312,6 +1312,25 @@ function! s:fuzzy () abort
   nnoremap <C-]> :CtrlPtjump<CR>
   vnoremap <C-]> :CtrlPtjumpVisual<CR>
 
+  nnoremap f<Enter> :CtrlPMixed<CR>
+  let l:path=split(system( 'type ctags' ))[-1]
+  echo 'Setting CtrlP binary tags path to'..l:path
+  let g:buftag_ctags_bin = l:path
+  let g:ctrlp_extensions += ['tag', 'buffertag']
+  echo 'Mapping CtrlP Tag Mode to f<Space>'
+  nnoremap f<Space> :CtrlPTag<CR>
+
+  let g:ctrlp_buftag_types = {
+    \ 'erlang' :
+      \ '--language-force=erlang --erlang-types=drmf',
+    \ 'javascript' : {
+      \ 'bin': 'jsctags',
+      \ 'args': '-f - ',
+    \ },
+  \ }
+
+  echo 'CtrlP tag types'..string( g:ctrlp_buftag_types )
+
 endfunction " s:fuzzy
 command! Fuzzy call s:fuzzy()
 
