@@ -785,7 +785,6 @@ inoremap <Space><Enter> <C-o>:echo 'INSERT SPACE + ENTER'
 nnoremap <Tab> :tabnext<CR>
 nnoremap <S-Tab> :tabprevious<CR>
 inoremap <Tab> <C-o>:echo 'INSERT TAB'
-nnoremap <S-Tab> :echo 'SHIFT + TAB'<CR>
 inoremap <S-Tab> <C-o>:echo 'INSERT SHIFT + TAB'
 nnoremap <Tab><Enter> :echo 'TAB + ENTER'<CR>
 inoremap <Tab><Enter> <C-o>:echo 'INSERT TAB + ENTER'
