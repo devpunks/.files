@@ -970,7 +970,7 @@ autocmd VimDefaults VimEnter,ColorScheme * call g:Marks()
 function! g:Marks() abort
   if ! exists('g:loaded_Signature') | return | endif
 
-  echo 'Marking...'
+  echo 'Marking '..expand('%')
 
   let g:SignaturePurgeConfirmation = 1
   let g:SignatureDeleteConfirmation = 1
