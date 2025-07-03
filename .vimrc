@@ -1163,7 +1163,6 @@ function g:CTags () abort
 
   if ! filereadable(l:tags) | return | endif
 
-  echo 'Setting ctags path: '..&tags
   set omnifunc=ccomplete#Complete " CTags Complete
 endfunction " g:CTags
 
