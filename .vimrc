@@ -1332,7 +1332,16 @@ function! s:fuzzy () abort
     \ },
   \ }
 
-  echo 'CtrlP tag types'..string( g:ctrlp_buftag_types )
+  echo 'CtrlP tag extensions:'
+  echo g:ctrlp_extensions
+
+  echo 'CtrlP tag types:'
+  echo string( g:ctrlp_buftag_types )
+
+  if &rtp !~ 'vim-ctrlp-tjump' | return | endif
+  echo 'CtrlP Mapping <C-]> (tjump) tag'
+  nnoremap <C-]> :CtrlPtjump<CR>
+  vnoremap <C-]> :CtrlPtjumpVisual<CR>
 
 endfunction " s:fuzzy
 command! Fuzzy call s:fuzzy()
