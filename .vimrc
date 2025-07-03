@@ -1135,7 +1135,7 @@ echo '(tags) path(s): '..&tags
 " autocmd VimDefaults VimEnter * call g:Tags ()
 autocmd VimDefaults VimEnter * call g:CTags ()
 
-function g:Tags () abort
+function g:Tag () abort
   echo 'Current Dir: ' ..getcwd()
   set cpoptions+=d " Start from cwd
   set tags +=./**/tags " cwd tags
