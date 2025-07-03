@@ -1167,6 +1167,7 @@ augroup END
 " -------------------------------------------------------------------------
 " vim-TagList - https://github.com/yegappan/taglist
 " -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:TagList()
 autocmd FileDefaults BufReadPost * call g:TagsList ()
 
 function g:TagsList () abort
