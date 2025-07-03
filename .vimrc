@@ -1228,6 +1228,7 @@ endfunction " g:TagBar
 
 function g:TagsBar () abort
   if &rtp !~ 'tagbar' | return | endif
+  if &filetype == 'taglist' | return | endif
 
   echo 'Opening Tags Bar for '..expand('%')
   TagbarOpen
