@@ -1712,9 +1712,10 @@ function g:LSP () abort
     \ })
   " endif
 
-  LspStatus
-  CheckHealth " https://github.com/rhysd/vim-healthcheck
+  " https://github.com/rhysd/vim-healthcheck
+  CheckHealth
 
+  LspStatus
   LspStopServer
   call lsp#disable() " TODO: REMOVE"
 
