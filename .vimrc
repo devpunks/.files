@@ -1378,6 +1378,30 @@ endfunction " s:tab
 command! Tab call s:tab()
 
 " -------------------------------------------------------------------------
+" Mμ Complete - https://github.com/lifepillar/vim-mucomplete
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call Search()
+
+function! g:Search () abort
+  if &rtp !~ 'vim-mucomplete' | return | endif
+
+  " set complete-=t " no tags
+  set complete-=i " no includes
+
+  let chain = [ 'omni','path','c-n', 'uspl' ]
+  let default = [ 'list', 'omni', 'cmd', 'file', 'path', 'c-n', 'dict', 'keyn', 'keyp', 'uspl' ]
+
+  let g:mucomplete#completion_delay = 1
+  let g:mucomplete#enable_auto_at_startup = 1
+  let g:mucomplete#wordlist = { '' : [ 'devpunks', 'snuggsi' ] } " list
+
+  let g:mucomplete#chains = {}
+  let g:mucomplete#chains['html'] = chain
+  let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
+  let g:mucomplete#chains['default'] = { 'default' : default }
+endfunction " g:Search
+
+" -------------------------------------------------------------------------
 " Ultisnips - https://github.com/SirVer/ultisnips
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Snippets ()
