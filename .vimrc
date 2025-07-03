@@ -1202,10 +1202,25 @@ autocmd FileDefaults BufReadPost * call g:TagsBar ()
 function g:TagBar () abort
   if &rtp !~ 'tagbar' | return | endif
 
-  let l:path=split(system( 'type ctags' ))[-1]
+  TagbarSetFoldlevel! 99
 
-  echo 'Setting Tagbar binary tags path to'..l:path
-  let g:tagbar_ctags_bin = l:path
+  let g:tagbar_left = 1
+  let g:tagbar_expand = 1
+  let g:tagbar_autoshowtag = 1
+  " let g:tagbar_autopreview = 1
+  let g:tagbar_singleclick = 1
+  let g:tagbar_show_tag_count = 1
+  let g:tagbar_show_data_type = 1
+  let g:tagbar_help_visibility = 1
+  let g:tagbar_show_tag_linenumbers = 1
+  let g:tagbar_ichonchars = ['👉', '👇']
+  let g:tagbar_visibility_symbols
+    \ = { 'public': '👀', 'protected' : '⚠️', 'private' : '🚫' }
+  " let g:tagbar_position = 'topleft vertical'
+  let g:tagbar_ctags_bin = split( system( 'type ctags' ) )[-1]
+  " Max 20% or 25 characters
+  let g:tagbar_width = max([25, winwidth(0) / 5])
+  echo 'Setting TagBar binary tags path to' .. g:tagbar_ctags_bin
 
   " Shortcut SHIFT+t
   nnoremap <S-t> :TagbarToggle<CR>
