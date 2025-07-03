@@ -1341,8 +1341,8 @@ command! Fuzzy call s:fuzzy()
 autocmd VimDefaults VimEnter * call g:SuperTab ()
 autocmd UserDefaults CursorHoldI * :Tab
 
-" autocmd VimDefaults VimEnter * call g:SuperTab ()
-" autocmd UserDefaults CursorHoldI * :Tab
+function! g:SuperTab () abort
+if &rtp !~ 'supertab' | return | endif
 
 " function! s:tab () abort
 " if &rtp !~ 'supertab' | return | endif
