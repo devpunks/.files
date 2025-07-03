@@ -1192,7 +1192,7 @@ function g:TagBar () abort
 
   let l:path=split(system( 'type ctags' ))[-1]
 
-  echo 'Setting Tagbar Binary path to'..l:path
+  echo 'Setting Tagbar binary tags path to'..l:path
   let g:tagbar_ctags_bin = l:path
 
   " Shortcut SHIFT+t
