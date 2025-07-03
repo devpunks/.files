@@ -1340,6 +1340,8 @@ command! Fuzzy call s:fuzzy()
 " (normal) [TAB] Next/Previous Tab
 nnoremap <Tab> :tabnext<CR>
 nnoremap <S-Tab> :tabprevious<CR>
+inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
+inoremap <S-Tab> <c-o>:echo 'SHIFT + SuperTAB Complete'<CR>
 
 " autocmd VimDefaults VimEnter * call g:SuperTab ()
 " autocmd UserDefaults CursorHoldI * :Tab
