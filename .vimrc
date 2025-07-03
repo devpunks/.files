@@ -1256,7 +1256,7 @@ function g:CursorTag () abort
 
   exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
-  " exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
+  wincmd P " Preview
 endfunction " g:CursorTag
 
 " -------------------------------------------------------------------------
