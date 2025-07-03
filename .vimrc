@@ -1207,6 +1207,28 @@ function g:TagsBar () abort
 
 endfunction " g:TagsBar
 
+autocmd FileDefaults CursorHold * ++nested call g:CursorTag()
+function g:CursorTag () abort
+  let l:word = expand('<cword>')
+
+  if empty( l:word ) || &previewwindow |return | endif
+
+" echo 'Cursor Word: '..word
+
+" return
+" try | exe 'ptag '..word
+" catch | return | endtry
+
+" if ! &previewwindow |return | endif
+" if has('folding') .foldopen!
+
+  " call search('$', 'b') " previous EOL"
+  " let word = substitute(word, '\\', '\\\\', '')
+  " call search('\<\V'..l:word..'\>')
+
+  " exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
+endfunction " g:CursorTag
+
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
