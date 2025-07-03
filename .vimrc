@@ -753,6 +753,7 @@ endfunction " TabLine
 " =========================================================================
 " {{{ MAPPINGS
 "  - :help ga
+"  - https://vi.stackexchange.com/q/16161
 "  - https://vi.stackexchange.com/q/2089
 "  - https://vi.stackexchange.com/q/7722/how-to-debug-a-mapping
 
