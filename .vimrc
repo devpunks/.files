@@ -1322,8 +1322,6 @@ function! s:fuzzy () abort
   echo 'Setting CtrlP binary tags path to: ' .. g:buftag_ctags_bin
 
   let g:ctrlp_extensions += ['tag', 'buffertag']
-  echo 'Mapping CtrlP Tag Mode to f<Space>'
-  nnoremap f<Space> :CtrlPTag<CR>
 
   let g:ctrlp_buftag_types = {
     \ 'erlang' :
