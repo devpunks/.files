@@ -1347,6 +1347,16 @@ function! g:SuperTab () abort
   echo 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
   inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
   inoremap <S-Tab> <c-o>:echo 'SHIFT + SuperTAB Complete'<CR>
+
+  let g:SuperTabDefaultCompletionType = 'context'
+  " fallback to SuperTabContextDefaultCompletionType = <C-p>
+  call SuperTabSetDefaultCompletionType( g:SuperTabDefaultCompletionType )
+  echo 'SuperTab default completion type (completefunc|omnifunc): '
+    \ .. g:SuperTabDefaultCompletionType
+  echo 'SuperTab secondary completion type:'
+  ' \ ..g:SuperTabContextDefaultCompletionType
+
+
 endfunction " g:SuperTab
 
 function! s:tab () abort
