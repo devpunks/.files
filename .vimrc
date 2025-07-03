@@ -1337,7 +1337,7 @@ command! Fuzzy call s:fuzzy()
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
-inoremap <Tab> <c-o> :echo 'SuperTAB Complete'
+inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
 " (normal) [TAB] Next/Previous Tab
 " nnoremap <Tab> :tabnext<CR>
 " nnoremap <S-Tab> :tabprevious<CR>
