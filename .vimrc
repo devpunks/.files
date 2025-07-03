@@ -1241,7 +1241,7 @@ nnoremap <Space><Enter> :call g:CursorTag()<CR>
 function g:CursorTag () abort
   let l:word = expand('<cword>')
 
-  if empty( l:word ) || &previewwindow |return | endif
+  if empty( l:word ) || &previewwindow | return | endif
 
 " echo 'Cursor Word: '..word
 
