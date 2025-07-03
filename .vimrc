@@ -1196,8 +1196,6 @@ endfunction " g:TagsList
 " -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
-" autocmd FileDefaults BufReadPost *
-"   \ if &rtp =~ 'tagbar' | :TagbarOpen | endif
 autocmd VimDefaults VimEnter * call g:TagBar()
 autocmd FileDefaults BufReadPost * call g:TagsBar ()
 
