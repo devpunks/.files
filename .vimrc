@@ -1347,7 +1347,9 @@ inoremap <S-Tab> <c-o>:echo 'SHIFT + SuperTAB Complete'<CR>
 " autocmd UserDefaults CursorHoldI * :Tab
 
 " function! s:tab () abort
-"   echo 'Tabbing ( Not Yet Implemented. See Tab() )'
+" if &rtp !~ 'supertab' | return | endif
+"
+"   echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
 " endfunction " tab
 " command! Tab call s:tab()
 
