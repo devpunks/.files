@@ -1294,9 +1294,10 @@ endfunction " s:find
 function! s:fuzzy () abort
   if &rtp !~ 'ctrlp.vim' | return | endif
 
-  echo 'Re-Mapping CtrlP to <C-F>'
-  let g:ctrlp_map='f<Enter>'
-  let g:ctrlp_cmd='CtrlPMixed'
+  echo 'Mapping CtrlP Mixed Mode to f<Enter>'
+  let g:ctrlp_map = 'f<Enter>'
+  let g:ctrlp_cmd = 'CtrlPMixed'
+  let g:ctrlp_extensions = ['mixed']
   nnoremap f<Enter> :CtrlPMixed<CR>
 
   let g:ctrlp_by_filename=1
