@@ -1180,7 +1180,13 @@ endfunction " g:TagList
 function g:TagsList () abort
   if ! exists('g:loaded_taglist') | return | endif
 
-  echo 'Opening Tags List for '..expand('%')
+  let g:Tlist_Sort_Type = 'name'
+  let g:Tlist_Use_SingleClick = 1
+  let g:Tlist_Use_Right_Window = 1
+  let g:Tlist_Enable_Fold_Column = 0
+  let g:Tlist_Show_One_File = 1 " v:true
+
+  echo 'Opening Tags List for ' .. expand('%')
   TlistOpen
   .foldopen!
   wincmd p
