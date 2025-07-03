@@ -1290,7 +1290,7 @@ function! s:fuzzy () abort
   echo 'Re-Mapping CtrlP to <C-F>'
   let g:ctrlp_map='f<Enter>'
   let g:ctrlp_cmd='CtrlPMixed'
-  nnoremap <C-S-F> :CtrlPMixed<CR> <C-d>
+  nnoremap f<Enter> :CtrlPMixed<CR>
 
   let g:ctrlp_root_markers
     \ = ['.git', 'node_modules', 'package.json', 'Gemfile', '.bashrc' ]
