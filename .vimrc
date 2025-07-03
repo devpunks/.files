@@ -774,7 +774,7 @@ echo 'modifyOtherKeys: t_TI='..&t_TI..' t_TI='..&t_TE
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
 " Search (Find)
-nnoremap <C-f> /
+nnoremap <S-f> /
 
 " :Bdelete menu<CR>
 nnoremap <silent> <Del> :Bwipeout menu<CR>
