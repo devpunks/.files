@@ -1254,9 +1254,7 @@ function g:CursorTag () abort
   let word = substitute(word, '\\', '\\\\', '')
   call search('\<\V'..l:word..'\>')
 
-  " call search('$', 'b') " previous EOL"
-  " let word = substitute(word, '\\', '\\\\', '')
-  " call search('\<\V'..l:word..'\>')
+  exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
   " exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 endfunction " g:CursorTag
