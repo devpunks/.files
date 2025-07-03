@@ -1344,12 +1344,17 @@ autocmd UserDefaults CursorHoldI * :Tab
 function! g:SuperTab () abort
 if &rtp !~ 'supertab' | return | endif
 
-" function! s:tab () abort
-" if &rtp !~ 'supertab' | return | endif
-"
-"   echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
-" endfunction " tab
-" command! Tab call s:tab()
+echo 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
+  inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
+  inoremap <S-Tab> <c-o>:echo 'SHIFT + SuperTAB Complete'<CR>
+endfunction " g:SuperTab
+
+function! s:tab () abort
+if &rtp !~ 'supertab' | return | endif
+
+  echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
+endfunction " s:tab
+command! Tab call s:tab()
 
 " -------------------------------------------------------------------------
 " Ultisnips - https://github.com/SirVer/ultisnips
