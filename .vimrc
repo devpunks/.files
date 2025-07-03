@@ -1217,7 +1217,7 @@ endfunction " g:TagBar
 function g:TagsBar () abort
   if &rtp !~ 'tagbar' | return | endif
 
-  echo 'Opening Tags Bar for '..bufname('')
+  echo 'Opening Tags Bar for '..expand('%')
   TagbarOpen
   wincmd p
 
