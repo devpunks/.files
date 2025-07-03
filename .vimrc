@@ -888,6 +888,7 @@ function! g:Start () abort
   let g:startify_commands = [
     \ { 'b': [ 'Edit .bashrc', 'tabnew $HOME/.bashrc' ] },
     \ { 'l': [ 'Edit .bash_login', 'tabnew $HOME/.bash_login' ] },
+    \ { 's': [ 'LSP (Language Server Protocol)', 'call LSP()' ] },
     \ { 'v': [ 'Edit .vimrc', 'tabnew $HOME/.vimrc' ] },
     \ ]
 
