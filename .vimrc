@@ -1491,7 +1491,7 @@ let g:netrw_altv=1         " open splits to the right
 autocmd VimDefaults VimEnter * call g:NerdInit ()
 autocmd FileDefaults BufReadPost * call g:NerdDrawer ()
 
-function! g:NerdDrawer () abort
+function! g:NerdInit () abort
   if ! exists('g:NERDTree') | return | endif
 
   " [SHIFT]+[TAB] Opens Nerdtree
