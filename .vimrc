@@ -1515,20 +1515,23 @@ function! g:NerdInit () abort
   let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
   let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
   let g:NERDTreeGitStatusConcealBrackets = 0 " 0 - show | 1 = hide
+endfunction " g:NerdDrawer
 
-  NERDTree" Open Drawer
+function! g:NerdDrawer () abort
+  NERDTree " Open Drawer
   ReadBookmarks " Load Bookmarks
   wincmd p " Focus on `p`revious buffer
-
-  echo 'Setting NERDTree Mapping to <Tab><Enter>'
-  nnoremap <Tab><Enter> :NERDTreeToggle<CR>
 endfunction " g:NerdDrawer
+
+nnoremap <Tab><Enter>
+  \ :TagbarToggle<CR> \| :TagbarTogglePause<CR> \| NERDTreeToggle<CR> \| :wincmd p<CR>
+  " \| :TlistToggle<CR>
 
 " -------------------------------------------------------------------------
 " Fern - https://github.com/lambdalisue/vim-fern
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Fern()
-autocmd FileDefaults FileType fern call g:FernDrawer()
+" autocmd FileDefaults FileType fern call g:FernDrawer()
 
 function! g:Fern () abort
   if &rtp !~ 'vim-fern' | return | endif
