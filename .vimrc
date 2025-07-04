@@ -790,7 +790,7 @@ inoremap <S-Tab> <C-o>:echo 'INSERT SHIFT + TAB'
 nnoremap <Tab><Enter> :echo 'TAB + ENTER'<CR>
 inoremap <Tab><Enter> <C-o>:echo 'INSERT TAB + ENTER'
 nnoremap <Tab><Space> :echo 'TAB + SPACE'<CR>
-inoremap <Tab><Space> <C-o>:echo 'INSERT TAB + SPACE'
+" inoremap <Tab><Space> <C-o>:echo 'INSERT TAB + SPACE' " Hinders completion
 nnoremap <Space><Tab> :echo 'SPACE + TAB'<CR>
 inoremap <Space><Tab> <C-o>:echo 'INSERT SPACE + TAB'
 nnoremap <Esc> :nohlsearch<CR>
