@@ -2312,8 +2312,8 @@ function play () { clear
 alias ctags='ctags --recurse --verbose --totals=yes --langmap=javascript:*.json,+.es,vim:+.vimrc --langmap=ruby:Gemfile --exclude={vendor,node_modules,storage,.git,.cache,.config,.ssh}'
 function tag () {
   local -r path=${1:HOME}
-  echo && echo "All Languages"
-  ctags --list-languages
+  echo && echo 'All Language Mappings:'
+  ctags --list-maps=all --list-kinds-full=all
 
   echo && echo "Switching to path: $path"
   command pushd $path
