@@ -1127,9 +1127,15 @@ endfunction " g:CScopes
 "  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 " -------------------------------------------------------------------------
-let &tags =expand('$HOME/tags')..','
-  \ ..join( split( globpath('$HOME', '**/tags') ), ',' )
-echo '(tags) path(s): '..&tags
+set tags= " Unset
+let tags = expand( '$HOME/tags' )
+if filereadable( tags ) | let &tags=tags | endif
+" \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
+echo 'Current Dir: ' .. getcwd()
+echo '(tags) path(s): '.. &tags
+" set cpoptions+=d " Start from cwd
+" set tags +=./**/tags " cwd tags
+echo '(recursive tags) path(s): ' .. &tags
 
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " :h tag - <C-]> jump to & push tag
