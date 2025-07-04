@@ -1204,8 +1204,7 @@ augroup END
 " vim-TagList - https://github.com/yegappan/taglist
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:TagList()
-autocmd FileDefaults BufReadPost * call g:TagsList ()
-autocmd FileDefaults BufWritePost * if exists(':TlistUpdate') | TlistUpdate | endif
+" autocmd FileDefaults BufReadPost * call g:TagsList ()
 
 function g:TagList () abort
   let g:Tlist_Ctags_Cmd = split( system( 'type ctags' ) )[-1]
