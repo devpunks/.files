@@ -1488,7 +1488,8 @@ let g:netrw_altv=1         " open splits to the right
 " NERDTree - https://github.com/preservim/nerdtree
 "   - Shortcuts - https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt#L247-L293
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:NerdDrawer()
+autocmd VimDefaults VimEnter * call g:NerdInit ()
+autocmd FileDefaults BufReadPost * call g:NerdDrawer ()
 
 function! g:NerdDrawer () abort
   if ! exists('g:NERDTree') | return | endif
