@@ -1383,8 +1383,7 @@ command! Fuzzy call s:fuzzy()
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
-" (normal) [TAB] Next/Previous Tab
-autocmd VimDefaults VimEnter * call g:SuperTab()
+autocmd VimDefaults VimEnter * call g:Tab()
 autocmd UserDefaults CursorHoldI * :Tab
 
 function! g:SuperTab () abort
