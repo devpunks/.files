@@ -1207,6 +1207,13 @@ autocmd VimDefaults VimEnter * call g:TagList()
 " autocmd FileDefaults BufReadPost * call g:TagsList ()
 
 function g:TagList () abort
+  if &rtp !~ 'taglist' | return | endif
+
+  let g:Tlist_Sort_Type = 'name'
+  let g:Tlist_Use_SingleClick = 1
+  let g:Tlist_Use_Right_Window = 1
+  let g:Tlist_Enable_Fold_Column = 1
+  " let g:Tlist_File_Fold_Auto_Close = 1
   let g:Tlist_Ctags_Cmd = split( system( 'type ctags' ) )[-1]
 
   echo 'Setting TagList binary tags path to: ' .. g:Tlist_Ctags_Cmd
