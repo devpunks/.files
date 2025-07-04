@@ -1902,11 +1902,12 @@ set t_Co=256 " enable 256 colors
 set background=dark " [dark|light]
 set termguicolors " 24bit gui(fg|bg)
 
-if filereadable(expand('$HOME/.vim/colors/devpunks.vim'))
-  try | colorscheme devpunks
-    catch | colorscheme default
-  endtry
-endif
+autocmd VimDefaults ColorScheme *
+  \ if filereadable( expand('$HOME/.vim/colors/devpunks.vim') )
+  \   try | colorscheme devpunks
+  \     catch | colorscheme default
+  \   endtry
+  \ endif
 
 " :help xterm-true-color
 " TODO: determine xterm-true-color escapes
