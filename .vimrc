@@ -1251,7 +1251,7 @@ function g:TagBar () abort
   let g:tagbar_show_data_type = 1
   let g:tagbar_help_visibility = 0
   let g:tagbar_show_tag_linenumbers = 1
-  let g:tagbar_ichonchars = ['👉', '👇']
+  let g:tagbar_iconchars = ['👉', '👇']
   let g:tagbar_visibility_symbols
     \ = { 'public': '👀', 'protected' : '⚠️', 'private' : '🚫' }
   " let g:tagbar_position = 'topleft vertical'
