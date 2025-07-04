@@ -1141,8 +1141,8 @@ echo '(recursive tags) path(s): ' .. &tags
 " :h tag - <C-]> jump to & push tag
 " <C-t> pop tag (:pop)
 
-" autocmd VimDefaults VimEnter * call g:Tags ()
-autocmd VimDefaults VimEnter * call g:CTags ()
+function g:Define (word) abort
+endfunction " Define"
 
 function g:Tag () abort
   echo 'Current Dir: ' ..getcwd()
