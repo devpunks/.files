@@ -1393,7 +1393,14 @@ if &rtp !~ 'supertab' | return | endif
 " inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
 " inoremap <S-Tab> <c-o>:echo 'SHIFT + SuperTAB Complete'<CR>
 
-endfunction " g:SuperTab
+" let g:SuperTabDefaultCompletionType = 'context'
+" " fallback to SuperTabContextDefaultCompletionType = <C-p>
+" call SuperTabSetDefaultCompletionType( g:SuperTabDefaultCompletionType )
+" echo 'SuperTab default completion type (completefunc|omnifunc): '
+"   \ .. g:SuperTabDefaultCompletionType
+" echo 'SuperTab secondary completion type:'
+" ' \ ..g:SuperTabContextDefaultCompletionType
+endfunction " g:Tab
 
 function! s:tab () abort
 if &rtp !~ 'supertab' | return | endif
