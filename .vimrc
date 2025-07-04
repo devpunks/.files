@@ -1233,12 +1233,12 @@ endfunction " g:TagsList
 " TagBar - https://github.com/preservim/tagbar
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:TagBar()
-autocmd FileDefaults BufReadPost * call g:TagsBar ()
+autocmd FileDefaults FileReadPost * call g:TagsBar ()
 
 function g:TagBar () abort
   if &rtp !~ 'tagbar' | return | endif
 
-  TagbarSetFoldlevel! 99
+  " TagbarSetFoldlevel! 99
 
   let g:tagbar_left = 1
   let g:tagbar_expand = 1
