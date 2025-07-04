@@ -1296,9 +1296,6 @@ function g:CursorTag () abort
   wincmd P " Preview
 endfunction " g:CursorTag
 
-
-nnoremap <Leader><Space> :TlistToggle<CR> \| :TagbarToggle<CR>
-
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
