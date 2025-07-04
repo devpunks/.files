@@ -2318,7 +2318,9 @@ function tag () {
   echo && echo "Switching to path: $path"
   command pushd $path
   echo "Creating global tags file (tags)"
-  ctags -R -f tags
+  ctags -f tags --languages=all
+  echo "Creating Ruby Ctags file (rb.tags)"
+  ctags -f rb.tags --languages=ruby
   echo "Creating Ruby tags file (tags.ruby)"
   ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
   ls tags*
