@@ -1176,6 +1176,9 @@ if empty( l:word ) || &previewwindow | return | endif
     \ 'Using tagfile' .. &tags
 endfunction " g:Tag
 
+" autocmd VimDefaults VimEnter * call g:Tags ()
+autocmd VimDefaults VimEnter * call g:CTags ()
+
 function g:CTags () abort
   let l:tags = expand('$HOME/tags')
 
