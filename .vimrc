@@ -1494,9 +1494,6 @@ autocmd FileDefaults BufReadPost * call g:NerdDrawer ()
 function! g:NerdInit () abort
   if ! exists('g:NERDTree') | return | endif
 
-  " [SHIFT]+[TAB] Opens Nerdtree
-" nnoremap <S-Tab> :NERDTreeToggle<CR>
-
   " nerdtree-git-plugin
   let g:NERDTreeGitStatusIndicatorMapCustom = {
         \ 'Untracked' : '🫣',
