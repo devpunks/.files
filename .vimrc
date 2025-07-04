@@ -1403,7 +1403,7 @@ if &rtp !~ 'supertab' | return | endif
 endfunction " g:Tab
 
 function! s:tab () abort
-if &rtp !~ 'supertab' | return | endif
+  if &rtp !~ 'supertab' | return | endif
 
   echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
 endfunction " s:tab
