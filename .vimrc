@@ -1145,10 +1145,35 @@ function g:Define (word) abort
 endfunction " Define"
 
 function g:Tag () abort
-  echo 'Current Dir: ' ..getcwd()
-  set cpoptions+=d " Start from cwd
-  set tags +=./**/tags " cwd tags
-  echo '(tags) path(s): '..&tags
+  let l:word = expand('<cword>')
+
+if empty( l:word ) || &previewwindow | return | endif
+
+  let l:tags = taglist('^' .. l:word )
+  " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
+
+  let list = []
+  for tag in l:tags
+    call add( list, {
+      \ 'pattern' : tag['cmd'],
+      \ 'filename' : tag['filename'],
+    \ })
+  endfor
+
+  " try | exe 'ptag '..word
+  " catch | return | endtry
+
+  if len( list ) == 0 | return | endif
+  echo string( list )
+" call setqflist( list )
+" copen
+
+  let g:ctrlp_default_input = l:word
+  CtrlPTag
+
+  echo
+    \ 'Cursor Tag <cword>: ' .. l:word
+    \ 'Using tagfile' .. &tags
 endfunction " g:Tag
 
 function g:CTags () abort
