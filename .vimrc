@@ -969,7 +969,7 @@ endfunction " g:ScrollBar
 "   :h mark
 "   :h marks
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter,ColorScheme * call g:Marks()
+autocmd VimDefaults ColorScheme * call g:Marks()
 
 function! g:Marks() abort
   if ! exists('g:loaded_Signature') | return | endif
