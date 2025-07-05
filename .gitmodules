@@ -142,3 +142,6 @@
 [submodule ".vim/pack/u0_a311/start/taglist"]
 	path = .vim/pack/u0_a311/start/taglist
 	url = https://github.com/yegappan/taglist.git
+[submodule ".vim/pack/u0_a311/start/ctrlp-funky"]
+	path = .vim/pack/u0_a311/start/ctrlp-funky
+	url = https://github.com/tacahiroy/ctrlp-funky.git
