@@ -437,7 +437,8 @@ set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 
 " =========================================================================
 " {{{ FILES
-"   - Per type configuration - https://vimtricks.com/p/per-file-type-configs/
+"   - Tagbar C-Tags https://github.com/preservim/tagbar/wiki
+"   - Per type configuration - https://vimtricks.com/p/per-file-type-configs
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " =========================================================================
 " -------------------------------------------------------------------------
