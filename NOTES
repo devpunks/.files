@@ -108,7 +108,7 @@ Android Accessibility
 - [CTRL][SHIFT]+D # DevTools Layout Switch
 - [CMD][SHFT]+D # swap devtools layout
 - [ALT]+E # Open menu
-- [CTRL]+E # EOL
+- [CTRL]+E # EOL [CMD] + →
 - [CTRL]+F # Forward one character
 - [CTRL]+G # GOTO Line
 - H - # Hide element
