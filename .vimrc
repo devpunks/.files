@@ -1369,9 +1369,6 @@ function g:TagBar () abort
   " Max 20% or 25 characters
   let g:tagbar_width = max([25, winwidth(0) / 4])
   echo 'Setting TagBar binary tags path to' .. g:tagbar_ctags_bin
-
-  " Shortcut SHIFT+t
-  nnoremap <S-t> :TagbarToggle<CR>
 endfunction " g:TagBar
 
 function g:TagsBar () abort
