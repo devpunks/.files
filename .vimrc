@@ -1571,6 +1571,7 @@ function! g:ZoomDrawer () abort
   ZoomWin
   " Open Drawer & focus on `p`revious buffer
   if ( l:open ) | NERDTree | wincmd p | endif
+  " let l:tagbar_open = bufwinnr( t:tagbar_buf_name) != -1
   "  if ( l:tagbar_open ) | TagbarOpen | wincmd p | endif
 endfunction " g:ZoomDrawer
 
