@@ -1373,11 +1373,7 @@ endfunction " g:TagBar
 
 function g:TagsBar () abort
   if &rtp !~ 'tagbar' | return | endif
-  if &filetype == 'taglist' | return | endif
-
-  echo 'Opening Tags Bar for '..expand('%')
-  TagbarOpen
-" wincmd p " Preview
+  if len( &buftype ) || index( g:blacklist, &filetype ) >= 0 || empty( &filetype ) | return | endif
 
 endfunction " g:TagsBar
 
