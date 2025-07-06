@@ -1350,10 +1350,7 @@ function g:TagBar () abort
 
   " TagbarSetFoldlevel! 99
 
-  " let g:tagbar_left = 1
-  " let g:tagbar_position = 'leftabove vertical'
-  let g:tagbar_position = 'rightbelow vertical'
-  let g:tagbar_expand = 1
+  let g:tagbar_foldlevel = 0
   let g:tagbar_autoshowtag = 1
   " let g:tagbar_autopreview = 1
   let g:tagbar_singleclick = 1
