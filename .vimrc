@@ -2018,11 +2018,9 @@ set background=dark " [dark|light]
 set termguicolors " 24bit gui(fg|bg)
 
 autocmd VimDefaults ColorScheme *
-  \ if filereadable( expand('$HOME/.vim/colors/devpunks.vim') )
-  \   try | colorscheme devpunks
-  \     catch | colorscheme default
-  \   endtry
-  \ endif
+\ try | colorscheme devpunks
+\   catch | colorscheme default
+\ endtry
 
 " :help xterm-true-color
 " TODO: determine xterm-true-color escapes
