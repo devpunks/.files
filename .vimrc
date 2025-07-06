@@ -1565,7 +1565,6 @@ function! g:ZoomDrawer () abort
 
   let l:open = g:NERDTree.IsOpen()
   " TODO: Use tagbar#IsOpen()
-  let l:tagbar_open = bufwinnr( t:tagbar_buf_name) != -1
   NERDTreeClose
   TagbarClose
   TlistClose
