@@ -1468,7 +1468,7 @@ function! s:fuzzy () abort
     \ 'javascript' : {
       \ 'bin': 'jsctags',
       \ 'args': '-f - ',
-    \ },
+    \ }
   \ }
 
   echo 'CtrlP tag extensions:'
