@@ -1361,6 +1361,8 @@ function g:TagBar () abort
   let g:tagbar_help_visibility = 0
   let g:tagbar_show_tag_linenumbers = 1
   let g:tagbar_iconchars = ['👉', '👇']
+  " let g:tagbar_position = 'leftabove vertical'
+  let g:tagbar_position = 'rightbelow vertical'
   let g:tagbar_visibility_symbols
     \ = { 'public': '👀', 'protected' : '⚠️', 'private' : '🚫' }
   let g:tagbar_ctags_bin = split( system( 'type ctags' ) )[-1]
