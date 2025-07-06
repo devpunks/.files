@@ -672,7 +672,7 @@ let g:tagbar_type_json = {
 " Nodejs
 "   - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
-autocmd FileDefaults BufNewFile,BufReadPost * call s:DetectNode()
+autocmd FileDefaults BufReadPost * call s:DetectNode()
 
 fun! s:DetectNode()
   if getline(1) !~ 'node' | return | endif
