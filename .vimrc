@@ -1375,6 +1375,7 @@ function g:TagsBar () abort
   if &rtp !~ 'tagbar' | return | endif
   if len( &buftype ) || index( g:blacklist, &filetype ) >= 0 || empty( &filetype ) | return | endif
 
+  TagbarToggle
 endfunction " g:TagsBar
 
 " autocmd FileDefaults CursorHold * ++nested call g:CursorTag()
