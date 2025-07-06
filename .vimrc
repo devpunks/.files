@@ -621,6 +621,53 @@ augroup FileDefaults
   autocmd BufNewFile,BufReadPost *.js,*.es,*.mjs setlocal filetype=javascript
 augroup END
 
+let g:tagbar_type_javascript = {
+\ 'ctagstype': 'javascript',
+\ 'kinds': [
+  \ 'T:tags',
+  \ 'A:arrays',
+  \ 'E:exports',
+  \ 'I:imports',
+  \ 'M:methods',
+  \ 'O:objects',
+  \ 'F:functions',
+  \ 'V:variables',
+  \ 'P:properties',
+  \ 'S:styled components',
+  \ 'G:generator functions',
+  \ 'C:constructors/classes'
+\ ]} " g:tagbar_type_javascript
+
+let g:tagbar_type_json = {
+\ 'sort' : 0,
+\ 'sro' : '.',
+\ 'ctagstype' : 'json',
+\ 'kinds' : [
+  \ 'o:objects',
+  \ 'a:arrays',
+  \ 'n:numbers',
+  \ 's:strings',
+  \ 'b:booleans',
+  \ 'z:nulls'
+\ ],
+\ 'scope2kind': {
+  \ 'object': 'o',
+  \ 'array': 'a',
+  \ 'number': 'n',
+  \ 'string': 's',
+  \ 'boolean': 'b',
+  \ 'null': 'z'
+\ },
+\ 'kind2scope': {
+  \ 'o': 'object',
+  \ 'a': 'array',
+  \ 'n': 'number',
+  \ 's': 'string',
+  \ 'b': 'boolean',
+  \ 'z': 'null'
+\ }
+\ } " g:tagbar_type_json
+
 " -------------------------------------------------------------------------
 " Nodejs
 "   - https://simplified.guide/vim/auto-complete-javascript
