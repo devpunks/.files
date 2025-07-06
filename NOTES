@@ -101,7 +101,7 @@ Android Accessibility
 - [CMD]+/ # Toggle Comment
 - [ALT]+→ # Next Word
 - [ALT]+← # Previous Word
-- [CTRL]+A # BOL
+- [CTRL]+A # BOL [CMD] + ←
 - [CTRL]+B # Back one character
 - [CTRL][SHIFT]+C # Switch to Elements
 - [CTRL]+D # Delete character after
