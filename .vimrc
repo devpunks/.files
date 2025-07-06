@@ -537,6 +537,33 @@ augroup FileDefaults
   autocmd BufReadPost README setlocal formatoptions-=t formatoptions+=n
 augroup END
 
+let g:tagbar_type_markdown = {
+\ 'sro' : '""',
+\ 'ctagstype' : 'markdown',
+\ 'kinds' : [
+  \ 'c:chapter:0:1',
+  \ 's:section:0:1',
+  \ 'S:subsection:0:1',
+  \ 't:subsubsection:0:1',
+  \ 'T:l4subsection:0:1',
+  \ 'u:l5subsection:0:1',
+\ ],
+\ 'kind2scope' : {
+  \ 'c' : 'chapter',
+  \ 's' : 'section',
+  \ 'S' : 'subsection',
+  \ 't' : 'subsubsection',
+  \ 'T' : 'l4subsection',
+\ },
+\ 'scope2kind' : {
+  \ 'chapter' : 'c',
+  \ 'section' : 's',
+  \ 'subsection' : 'S',
+  \ 'subsubsection' : 't',
+  \ 'l4subsection' : 'T',
+\ }
+\ } " g:tagbar_type_markdown
+
 " -------------------------------------------------------------------------
 " HTML
 "   - https://vimtricks.com/p/vim-autocomplete-html-tags
