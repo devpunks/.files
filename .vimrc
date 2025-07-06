@@ -691,6 +691,35 @@ augroup FileDefaults
   autocmd BufNewFile,BufReadPost *.erb setlocal filetype=eruby
 augroup END
 
+let g:tagbar_type_ruby = {
+\ 'kinds' : [
+  \ 'f:methods',
+  \ 'm:modules',
+  \ 'c:classes',
+  \ 'C:constants',
+  \ 'C:contexts',
+  \ 'd:describes',
+  \ 'F:singleton methods'
+\ ] } " g:tagbar_type_ruby
+
+call system('type ripper-tags')
+if v:shell_error == 0 " type exists
+  let g:tagbar_type_ruby = {
+  \ 'ctagsbin' : 'ripper-tags',
+  \ 'ctagsargs'  : [ '-f', '-' ],
+  \ 'scope2kind' : { 'class' : 'c' },
+  \ 'kind2scope' : { 'c' : 'class', 'm' : 'class' },
+  \ 'kinds' : [
+    \ 'a:aliases',
+    \ 'f:methods',
+    \ 'm:modules',
+    \ 'c:classes',
+    \ 'C:contexts',
+    \ 'd:describes',
+    \ 'F:singleton methods'
+  \ ] } " g:tagbar_type_ruby
+endif
+
 " }}}
 
 " =========================================================================
