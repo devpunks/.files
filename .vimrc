@@ -1452,6 +1452,7 @@ function! s:fuzzy () abort
 
   let g:ctrlp_regexp = 1 " <C-r>
   let g:ctrlp_show_hidden = 1
+  let g:ctrlp_by_filename = 1 " <C-d>
   let g:ctrlp_match_window = 'bottom,order:btt,min:3,max:10,results:10'
   let g:ctrlp_root_markers
     \ = ['.git', 'node_modules', 'package.json', 'Gemfile', '.bashrc' ]
