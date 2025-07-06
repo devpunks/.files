@@ -958,8 +958,8 @@ inoremap <Tab> <C-n>
 
 " https://vimhelp.org/terminal.txt.html
 if has('terminal')
-  set termwinkey=<C-w>
-  nnoremap <C-t> :terminal<CR>
+  set termwinkey=<Esc>
+  nnoremap <S-t> :terminal<CR>
 endif
 
 " Reload .vimrc configuration
