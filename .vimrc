@@ -506,14 +506,11 @@ autocmd FileDefaults BufWritePost $MYVIMRC nested source $MYVIMRC
 " -------------------------------------------------------------------------
 " .tmux.conf
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  " Autoload .tmux.conf on write
-  autocmd BufWritePost .tmux.conf
-    \ :echom 'Loading TMUX Configuration' |
-    \ call system('tmux source-file "$HOME/.tmux.conf"') |
-    \ call system('tmux display-message "Source file loaded! (#{config_files})"')
-
-augroup END
+" Autoload .tmux.conf on write
+autocmd FileDefaults BufWritePost .tmux.conf
+  \ echom 'Loading TMUX Configuration'
+  \| call system( 'tmux source-file "$HOME/.tmux.conf"' )
+  \| call system( 'tmux display-message "Source file loaded! (#{config_files})"' )
 
 " -------------------------------------------------------------------------
 " CSV - https://github.com/chrisbra/csv.vim
