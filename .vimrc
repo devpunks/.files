@@ -1558,7 +1558,7 @@ endfunction " g:Snippets
 " -------------------------------------------------------------------------
 " ZoomWin
 " -------------------------------------------------------------------------
-nnoremap <Enter> :call g:ZoomDrawer()<CR>
+" nnoremap <Enter> :call g:ZoomDrawer()<CR>
 
 function! g:ZoomDrawer () abort
   if ! exists('*ZoomWin') | return | endif
