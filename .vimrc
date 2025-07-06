@@ -618,7 +618,7 @@ autocmd FileDefaults FileType python setlocal omnifunc=python3complete#Complete
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-  autocmd BufNewFile,BufReadPost *.json,*.es,*.mjs,*.test setlocal filetype=javascript
+  autocmd BufNewFile,BufReadPost *.js,*.es,*.mjs setlocal filetype=javascript
 augroup END
 
 " -------------------------------------------------------------------------
