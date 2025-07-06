@@ -99,7 +99,7 @@ Android Accessibility
 - [CTRL][SPACE] # Completion Menu
 - [CMD]+, # Search Settings
 - [CMD]+/ # Toggle Comment
-- [CTRL]+→ # Next Word
+- [ALT]+→ # Next Word
 - [ALT]+← # Previous Word
 - [CTRL]+A # BOL
 - [CTRL]+B # Back one character
