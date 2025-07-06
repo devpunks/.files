@@ -576,7 +576,8 @@ autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#Complete
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd BufNewFile,BufReadPost *.sss,*.sass,*.scss setlocal filetype=css
+  autocmd BufNewFile,BufReadPost *.css,*.sss,*.sass,*.scss setlocal filetype=css
+  autocmd FIleReadPost *.css,*.sss,*.sass,*.scss call g:CSS()
 augroup END
 
 function! g:CSS () abort
