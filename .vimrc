@@ -674,7 +674,7 @@ let g:tagbar_type_json = {
 " -------------------------------------------------------------------------
 autocmd FileDefaults BufReadPost * call s:DetectNode()
 
-fun! s:DetectNode()
+function! s:DetectNode()
   if getline(1) !~ 'node' | return | endif
 
   setlocal filetype=javascript
