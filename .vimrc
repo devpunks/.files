@@ -586,6 +586,14 @@ function! g:CSS () abort
   highlight VendorPrefix guifg=#00ffff gui=bold
   match VendorPrefix /-\(moz\|webkit\|o\|ms\)-[a-zA-Z-]\+/
 endfunction " g:CSS
+let g:tagbar_type_css = {
+\ 'ctagstype' : 'Css',
+  \ 'kinds' : [
+    \ 'c:classes',
+    \ 's:selectors',
+    \ 'i:identities'
+  \ ]
+\ } " g:tagbar_type_css
 
 " -------------------------------------------------------------------------
 " Go
