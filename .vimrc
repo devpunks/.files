@@ -1620,8 +1620,10 @@ function! g:NerdInit () abort
 endfunction " g:NerdInit
 
 function! g:NerdDrawer () abort
-  NERDTree " Open Drawer
-  ReadBookmarks " Load Bookmarks
+  if ! exists('g:NERDTree') | return | endif
+  if len( &buftype ) || index( g:blacklist, &filetype ) >= 0 || empty( &filetype ) | return | endif
+
+  NERDTreeToggle " Open Drawer
   wincmd p " Focus on `p`revious buffer
 endfunction " g:NerdDrawer
 
