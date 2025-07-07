@@ -1117,10 +1117,6 @@ endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
 " Tags :h tags-and-searches      
-
-
-
-
 "  :h tag
 "  :h tags
 "  :h ctags
