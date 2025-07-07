@@ -402,8 +402,8 @@ set statusline+=%{%g:GitChanges()%}
 " file type
 set statusline+=💻%Y
 " (Guten)Tags
-set statusline+=%{gutentags#statusline('#')}
-"set statusline+=%{get(g:, 'gutentags_updated', '')}
+" set statusline+=%{gutentags#statusline('#')}
+" set statusline+=%{get(g:, 'gutentags_updated', '')}
 " flags
 set statusline+=\ %r%h
 " change to default highlight
