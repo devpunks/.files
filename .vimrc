@@ -951,7 +951,7 @@ endfunction " OverflowMargin
 autocmd VimDefaults BufReadPost * call g:ScrollBar()
 
 function! g:ScrollBar() abort
-  if g:loaded_sclow != 1 | return | endif
+  if get( g:, 'loaded_sclow', 0 ) != 1 | return | endif
 
   echo 'Showing Scrollbar'
 
@@ -997,7 +997,7 @@ augroup FileDefaults
 augroup END
 
 function! g:GitFocus () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
 
   highlight! link GitGutterAdd DiffAdd
   highlight! link GitGutterChange DiffChange
@@ -1007,7 +1007,7 @@ function! g:GitFocus () abort
 endfunction " g:GitFocus
 
 function! g:GitBlur () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
 
   highlight link GitGutterAdd NONE
   highlight link GitGutterChange NONE
@@ -1028,7 +1028,7 @@ function! g:GitDiffs () abort
 endfunction " g:GitDiffs
 
 function! g:GitChanges () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+  if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
 
   let [a,m,r] = GitGutterGetHunkSummary()
 
@@ -1116,7 +1116,11 @@ function g:CScopes () abort
 endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
-" Tags :h tags-and-searches
+" Tags :h tags-and-searches      
+
+
+
+
 "  :h tag
 "  :h tags
 "  :h ctags
@@ -1523,9 +1527,20 @@ function! g:NerdDrawer () abort
   wincmd p " Focus on `p`revious buffer
 endfunction " g:NerdDrawer
 
-nnoremap <Tab><Enter>
-  \ :TagbarToggle<CR> \| :TagbarTogglePause<CR> \| NERDTreeToggle<CR> \| :wincmd p<CR>
-  " \| :TlistToggle<CR>
+function g:NerdToggle () abort
+  if exists(':TagbarToggle')
+    TagbarToggle
+    TagbarTogglePause
+  endif
+
+  if exists(':NERDTreeToggle')
+    NERDTreeToggle
+    wincmd p
+  endif
+  " :TlistToggle
+endfunction " g:NerdToggle
+
+nnoremap <Tab><Enter> :call g:NerdToggle ()<CR>
 
 " -------------------------------------------------------------------------
 " Fern - https://github.com/lambdalisue/vim-fern
