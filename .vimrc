@@ -51,6 +51,8 @@ augroup FileDefaults | autocmd! | augroup END
 
 set encoding=UTF-8
 scriptencoding UTF-8
+set fileencoding=UTF-8
+set termencoding=UTF-8
 set emoji encoding=UTF-8
 
 " https://stackoverflow.com/q/5845557
