@@ -49,6 +49,7 @@ augroup VimDefaults  | autocmd! | augroup END
 augroup FileDefaults | autocmd! | augroup END
 " -------------------------------------------------------------------------
 
+scriptencoding UTF-8
 set emoji encoding=UTF-8
 
 " https://stackoverflow.com/q/5845557
