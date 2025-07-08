@@ -49,6 +49,7 @@ augroup VimDefaults  | autocmd! | augroup END
 augroup FileDefaults | autocmd! | augroup END
 " -------------------------------------------------------------------------
 
+set encoding=UTF-8
 scriptencoding UTF-8
 set emoji encoding=UTF-8
 
