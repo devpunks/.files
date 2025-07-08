@@ -2016,6 +2016,7 @@ set display=lastline " Show Special chars for long last line
 " (NORMAL/VISUAL MODE)
 set whichwrap=h,l " 'h' & 'l' wrap EOL & BOL
 set whichwrap+=b,s " (b)ackspace & (s)pace wrap EOL & BOL
+" (NORMAL/VISUAL MODE)
 set whichwrap+=<,> " < left and right > arrow wrap to prev. and next line
 " (INSERT/REPLACE MODE)
 set whichwrap+=[,] " [ left and right ] arrow wrap to prev. and next line
