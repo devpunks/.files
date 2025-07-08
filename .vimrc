@@ -1440,6 +1440,8 @@ endfunction " g:Thesaurus
 
 " -------------------------------------------------------------------------
 " CtrlP - https://github.com/ctrlpvim/ctrlp.vim
+"  - https://github.com/tacahiroy/ctrlp-funky
+"  - https://github.com/ivalkeen/vim-ctrlp-tjump
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * :Fuzzy
 
