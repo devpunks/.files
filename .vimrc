@@ -210,8 +210,10 @@ endif
 
 " vnoremap <C-c> "*y<cr>
 " inoremap <C-v> “*p<cr>
-if has('unnamedplus') | set clipboard=unnamed,unnamedplus | endif
-"
+if has('unnamedplus') | set clipboard=unnamed,unnamedplus
+else | set clipboard+=unnamed
+endif
+
 "  copy and paste
 " vmap <C-c> "+yi
 " vmap <C-x> "+c
