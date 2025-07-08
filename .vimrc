@@ -1270,7 +1270,7 @@ echo '(recursive tags) path(s): ' .. &tags
 " <C-t> pop tag (:pop)
 
 function g:Define (word) abort
-endfunction " Define"
+endfunction " Define
 
 function g:Tag () abort
   let l:word = expand('<cword>')
