@@ -54,6 +54,15 @@ set emoji encoding=UTF-8
 
 " https://stackoverflow.com/q/5845557
 " TODO: remove if &compatible | set nocompatible | endif
+function Foo()
+  echo 'Fooing'
+  call complete(col('.'), ['January', 'February', 'March',
+  \ 'April', 'May', 'June', 'July', 'August', 'September',
+  \ 'October', 'November', 'December'])
+  return ''
+endfunction
+
+inoremap <Tab><Space> <C-R>Foo()<CR>
 
 if ! exists('g:pluginname_setting')
   unlet! skip_defaults_vim
