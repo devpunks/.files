@@ -181,6 +181,7 @@ Android Accessibility
 # TMUX --------------------------------------------------------------------
 - http://keycombiner.com/devtools/collections/tmux
 # Bind(ed) Keys
+#     <Leader> s - Sessions
 #   - tmux show-hooks -g
 #   - tmux list-keys
 #   - tmux list-keys -a(ll)
