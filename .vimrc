@@ -1362,7 +1362,7 @@ function g:TagBar () abort
 
   let g:tagbar_foldlevel = 0
   let g:tagbar_autoshowtag = 1
-  let g:tagbar_autopreview = 1
+" let g:tagbar_autopreview = 1
   let g:tagbar_show_prefix = 1
   let g:tagbar_show_suffix = 1
   let g:tagbar_singleclick = 1
