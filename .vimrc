@@ -2038,6 +2038,7 @@ set backspace=indent,eol,nostop " Insert mode <BS> deletion
 "  - https://vi.stackexchange.com/q/8751/how-to-completely-turn-off-colorscheme
 "hi Example guifg=NONE guibg=#ff0000 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 " =========================================================================
+set t_ut= " terminal background
 set t_Co=256 " enable 256 colors
 set background=dark " [dark|light]
 set termguicolors " 24bit gui(fg|bg)
