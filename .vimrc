@@ -1061,12 +1061,12 @@ autocmd FileDefaults BufEnter * call OverflowMargin ()
 function OverflowMargin () abort
   call clearmatches()
 
-  if ! &tw | return | endif
+  if ! &textwidth | return | endif
 
   " call matchadd('ColorColumn', '\%75v.*')
-  call matchadd('ColorColumn', '\%>' . &tw . 'v')
+  call matchadd('ColorColumn', '\%>' . &textwidth . 'v')
   " https://baeldung.com/linux/vim-ruler-on-specific-column
-  let &colorcolumn= ( &tw +1 ) ..",".. ( &tw +2 )
+  let &colorcolumn= ( &textwidth +1 ) ..",".. ( &textwidth +2 )
 endfunction " OverflowMargin
 
 " -------------------------------------------------------------------------
@@ -1991,8 +1991,8 @@ set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
 set wrap " word
 set linebreak " Avoid mid-word line wrapping
 set showbreak=⥹ " Character used for wrapped line
+set textwidth=75 " wrap https://vimtricks.com/p/vim-line-length-marker
 set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
-set textwidth=75 " before wrap https://vimtricks.com/p/vim-line-length-marker
 set synmaxcol=256 " Prevent slow loading https://github.com/tpope/vim-sensible/issues/142
 
 " - Whitespace ------------------------------------------------------------
