@@ -358,4 +358,7 @@ ffmpeg -version
   \ && brew config
   \ && brew services list
 
+[[  $( uname-s ) =~ 'Linux' ]]
+  \ && pkg list --installed
+
 # vim: foldmethod=marker
