@@ -25,6 +25,7 @@
 pkg upgrade && pkg update
 
 pkg install mount-utils
+pkg install bash-completion
 
 # {{{ Termux --------------------------------------------------------------
 # https://github.com/YurinDoctrine/termux-essentials/blob/main/termux-essentials.sh
