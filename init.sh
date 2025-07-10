@@ -354,7 +354,8 @@ ffmpeg -version
 # }}}
 
 
-[[  $( uname-s ) =~ 'Darwin' ]] \
-  && brew services list
+[[  $( uname-s ) =~ 'Darwin' ]]
+  \ && brew config
+  \ && brew services list
 
 # vim: foldmethod=marker
