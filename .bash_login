@@ -814,7 +814,7 @@ function derive () {
   printf "$phrase" | openssl dgst  -sha384
 
   echo ; echo SHA2/512:
-  # https://en.m.wikipedia.org/wiki/SHA-512
+  # https://en.wikipedia.org/wiki/SHA-512
   openssl passwd -6 -table -salt $SALT "$phrase"
   printf "$phrase" | sha512sum | command cut -d' ' -f1
   printf "$phrase" | openssl sha512 -c | command cut -d' ' -f2
