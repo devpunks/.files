@@ -691,7 +691,7 @@ alias nonce="{
   command openssl rand -base64 32 ; # <n> can be adjusted (i.e. 24,  etc.)
 }" # nonce
 
-# https://en.m.wikipedia.org/wiki/Salt_(cryptography)
+# https://en.wikipedia.org/wiki/Salt_(cryptography)
 export SALT='abcdefgh' # TODO: generate SALT
 
 # https://geeksforgeeks.org/hash-command-in-linux-with-examples
