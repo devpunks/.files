@@ -931,6 +931,22 @@ function digest () {
   printf "SHA512-256 (openssl sha512-256 -c): %s\n" \
     $( openssl sha512-256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
+  echo ; echo SHAKE128
+  printf "SHAKE128 (openssl dgst -shake128): %s\n" \
+    $( openssl dgst -shake128 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHAKE128 (openssl shake128): %s\n" \
+    $( openssl shake128 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHAKE128 (openssl shake128 -c): %s\n" \
+    $( openssl shake128 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+
+  echo ; echo SHAKE256
+  printf "SHAKE256 (openssl dgst -shake256): %s\n" \
+    $( openssl dgst -shake256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHAKE256 (openssl shake256): %s\n" \
+    $( openssl shake256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHAKE256 (openssl shake256 -c): %s\n" \
+    $( openssl shake256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+
   echo
 
 } # digest
