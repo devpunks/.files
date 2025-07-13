@@ -904,8 +904,6 @@ function digest () {
   printf "SHA3-384 (openssl sha3-384 -c): %s\n" \
     $( openssl sha3-384 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
-return
-
   echo ; echo SHA3/512
   printf "$phrase" | busybox sha3sum  -a 512 | command cut -d' ' -f1
   printf "$phrase" | openssl sha3-512 -c | command cut -d' ' -f2
