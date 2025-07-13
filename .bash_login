@@ -640,6 +640,7 @@ function work () {
 # =========================================================================
 # {{{ Cryptography
 #   - https://antofthy.gitlab.io/info/crypto
+#   - https://madboa.com/geek/openssl
 #   - urandom vs random - https://thomas-huehn.com/myths-about-urandom
 # =========================================================================
 # https://stackoverflow.com/q/42004870
