@@ -925,6 +925,14 @@ function digest () {
 
 return
 
+  echo ; echo SHA512/256:
+  printf "SHA512-256 (openssl dgst -sha512-256): %s\n" \
+    $( openssl dgst -sha512-256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA512-256 (openssl sha512-256): %s\n" \
+    $( openssl sha3512-256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA512-256 (openssl sha512-256 -c): %s\n" \
+    $( openssl sha512-256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+
   echo
 
 } # digest
