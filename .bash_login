@@ -2222,7 +2222,7 @@ function debug () { clear
   echo "🐛 debugging $location"
 } # debug
 
-# https://en.m.wikipedia.org/wiki/FFmpeg
+# https://en.wikipedia.org/wiki/FFmpeg
 function convert () { clear
   local -a files=${@}
   local filter="-af 'afftdn=nr=10:nf=-30:tn=1'"
