@@ -2180,7 +2180,7 @@ alias make="command make -v; command make"
 # - https://en.wikipedia.org/wiki/Clang
 # Tiny C Compiler
 # - https://bellard.org/tcc
-# - https://en.m.wikipedia.org/wiki/Tiny_C_Compiler
+# - https://en.wikipedia.org/wiki/Tiny_C_Compiler
 function compile () { clear
   local -r source="${1}"
   local -r output="$( basename "${1%.*}" ).run"
