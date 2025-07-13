@@ -914,8 +914,6 @@ function digest () {
   printf "SHA3-512 (openssl sha3-512 -c): %s\n" \
     $( openssl sha3-512 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
-return
-
   # https://en.wikipedia.org/wiki/SHA-3
   echo ; echo SHA512/224:
   printf "$phrase" | openssl sha512-224 -c | command cut -d' ' -f2
