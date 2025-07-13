@@ -223,7 +223,7 @@ function hold () {
   command nohup "$1"
 
   # Redirect to stderror AND file
-  # tee - https://en.m.wikipedia.org/wiki/Tee_(command)
+  # tee - https://en.wikipedia.org/wiki/Tee_(command)
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
