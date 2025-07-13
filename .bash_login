@@ -848,7 +848,12 @@ function digest () {
     $( openssl sha256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHA2/384
-  printf "$phrase" | openssl dgst  -sha384
+  printf "SHA-384 (openssl dgst -sha384): %s\n" \
+    $( openssl dgst -sha384 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-384 (openssl sha384): %s\n" \
+    $( openssl sha384 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-384 (openssl sha384 -c): %s\n" \
+    $( openssl sha384 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHA2/512:
   # https://en.wikipedia.org/wiki/SHA-512
