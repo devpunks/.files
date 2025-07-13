@@ -862,6 +862,20 @@ function digest () {
   printf "$phrase" | openssl sha512 -c | command cut -d' ' -f2
   printf "$phrase" | openssl dgst -sha512
 
+  echo ; echo SHA2/512: # https://en.wikipedia.org/wiki/SHA-512
+  printf "SHA-512 (sha512sum): %s\n" \
+    $( printf "$phrase" | sha512sum | command cut -d' ' -f1 )
+  printf "SHA-512 (openssl passwd -6): %s\n" \
+    $( openssl passwd -6 "$phrase" )
+  printf "SHA-512 (openssl passwd -6 -salt): %s\n" \
+    $( openssl passwd -6 -salt $SALT "$phrase" )
+  printf "SHA-512 (openssl dgst -sha512): %s\n" \
+    $( openssl dgst -sha512 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-512 (openssl sha512): %s\n" \
+    $( openssl sha512 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-512 (openssl sha512 -c): %s\n" \
+    $( openssl sha512 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+
   # https://en.wikipedia.org/wiki/SHA-3
   echo ; echo SHA3/224:
   printf "$phrase" | busybox sha3sum  -a  224 | command cut -d' ' -f1
