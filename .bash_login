@@ -124,7 +124,7 @@ alias copy='man scp; echo TODO: implement copy command for multiple destination 
 alias zipper='man paste ; command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
 
 alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
-alias rm='echo 🛑 rm is disabled, use remove, delete, or destroy' # - https://en.m.wikipedia.org/wiki/Rm_(Unix)
+alias rm='echo 🛑 rm is disabled, use remove, delete, or destroy' # - https://en.wikipedia.org/wiki/Rm_(Unix)
 alias remove='trash' # See function trash ()
 alias delete='command rm --verbose --preserve-root --recursive --dir --interactive=once'
 
@@ -171,7 +171,7 @@ function where () {
   command apropos "$term"
 } # where
 
-# https://en.m.wikipedia.org/wiki/ISO_8601
+# https://en.wikipedia.org/wiki/ISO_8601
 # https://redhat.com/en/blog/formatting-date-command
 # https://cyberciti.biz/faq/linux-unix-formatting-dates-for-display
 # https://gnu.org/software/coreutils/manual/html_node/Time-conversion-specifiers.html
