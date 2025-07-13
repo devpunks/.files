@@ -2333,7 +2333,7 @@ function play () { clear
   exist "$location" || return $?
 
   # SoX
-  #   - https://en.m.wikipedia.org/wiki/SoX
+  #   - https://en.wikipedia.org/wiki/SoX
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing
   #   - https://madskjeldgaard.dk/posts/sox-tutorial-split-by-silence
