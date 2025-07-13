@@ -2177,7 +2177,7 @@ function lint () { clear
 alias make="command make -v; command make"
 # LLVM - https://llvm.org
 # - https://clang.llvm.org
-# - https://en.m.wikipedia.org/wiki/Clang
+# - https://en.wikipedia.org/wiki/Clang
 # Tiny C Compiler
 # - https://bellard.org/tcc
 # - https://en.m.wikipedia.org/wiki/Tiny_C_Compiler
