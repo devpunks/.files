@@ -2046,7 +2046,7 @@ function unpack () { clear
       unrar x "${archive}" "${destination}"
     } ;; # *.rar
 
-    # https://en.m.wikipedia.org/wiki/Tar_(computing)
+    # https://en.wikipedia.org/wiki/Tar_(computing)
     # *.tar)     operation="tar xvf $archive"  ;;
     *.tar ) {
       operation="view $archive && tar --verbose --list --file=$archive $destination"
