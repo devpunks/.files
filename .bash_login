@@ -664,7 +664,7 @@ alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
 alias toke='dd bs=256 count=1 status=none if=/dev/urandom | sha256sum | command cut -d " " -f1'
 alias token='dd bs=512 count=1 status=none if=/dev/urandom | sha512sum | command cut -d " " -f1'
 
-# https://en.m.wikipedia.org/wiki/Snowflake_ID
+# https://en.wikipedia.org/wiki/Snowflake_ID
 # https://reddit.com/r/programming/comments/cajap/twitter_announces_snowflake_a_distributed_unique
 function snowflake () {
   local -r id=${1:12345}
