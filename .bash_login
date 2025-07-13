@@ -826,6 +826,8 @@ function digest () {
   echo ; echo SHA-2: # https://en.wikipedia.org/wiki/SHA-2
 
   echo ; echo SHA2/224
+  printf "SHA-224 (sha224sum): %s\n" \
+    $( printf "$phrase" | sha224sum | command cut -d' ' -f1 )
   printf "SHA-224 (openssl dgst -sha224): %s\n" \
     $( openssl dgst -sha224 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-1 (openssl sha224): %s\n" \
