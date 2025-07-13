@@ -758,7 +758,11 @@ function derive () {
   # https://en.wikipedia.org/wiki/Bcrypt
   # https://en.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
-  printf "BCRYPT: %s\n" "$( htpasswd -nbBC 10 USERNAME "$phrase" | sed 's/\$2[abxy]\$/$2a$/g' )"
+  local  bcrypt="$( htpasswd -nbBC 12 '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
+  local bresult=${bcrypt##*$}
+  echo "BCRYPT SALT: ${bresult:0:22}"
+  echo "BCRYPT HASH: ${bresult:22}"
+  echo "BCRYPT: $bcrypt"
 
   # https://github.com/Tarsnap/scrypt
   # https://en.m.wikipedia.org/wiki/Scrypt
