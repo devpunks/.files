@@ -1075,7 +1075,7 @@ function sign () {
 
 function verify () {
   local file="$( realpath $1 )"
-  local pem="${HOME}/.ssh/aes256.pem"
+  local pem="${HOME}/.ssh/privatekey.pem"
 
   openssl rsa -in "$pem" -outform PEM -pubout -out "${pem}.pub"
 
