@@ -1036,7 +1036,7 @@ alias su='command su ; tsu '
 # - https://man7.org/linux/man-pages/man1/chown.1p.html
 alias chown='command chown --verbose --preserve-root --recursive'
 
-# - https://en.m.wikipedia.org/wiki/Chgrp
+# - https://en.wikipedia.org/wiki/Chgrp
 # - https://man7.org/linux/man-pages/man1/chgrp.1p.html
 alias chgrp='command chgrp --verbose --preserve-root --recursive'
 
