@@ -697,7 +697,7 @@ export SALT='abcdefgh' # TODO: generate SALT
 # https://geeksforgeeks.org/hash-command-in-linux-with-examples
 alias hash='hash --help; hash'
 
-alias substitute='$( open https://en.m.wikipedia.org/wiki/Substitution_cipher )'
+alias substitute='$( open https://en.wikipedia.org/wiki/Substitution_cipher )'
 
 # https://linux.die.net/man/1/xxd
 alias hex='xxd'
