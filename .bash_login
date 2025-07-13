@@ -2027,7 +2027,7 @@ function unpack () { clear
     # -f freshen existing files, create none
     # -v Verbosely list archive contents then exit
     # https://linuxhandbook.com/unzip-command
-    # https://en.m.wikipedia.org/wiki/ZIP_(file_format)
+    # https://en.wikipedia.org/wiki/ZIP_(file_format)
     *.zip ) {
       unzip -v
       echo ; echo
