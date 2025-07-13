@@ -965,7 +965,10 @@ function decode () {
   local -r bytes="$1"
   local -r encoding='--base64' # base2lsbf | base2msbf | base32 | base32hex | base64url
 
-  printf "$bytes" | basenc --decode $encoding
+  printf 'Base64  Decoding (basenc --decode --base64): %s\n' \
+    $( printf "$bytes" | basenc --decode $encoding )
+  printf 'Base64  Decoding (openssl enc -d -base64): %s\n' \
+    $( openssl enc -d -base64 -in <( printf "$bytes" ) )
 } # decode
 
 # https://gnupg.org
