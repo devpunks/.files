@@ -1989,7 +1989,7 @@ function pack () { clear
   echo file: "$file"
   echo contents: "$contents"
 
-  # https://en.m.wikipedia.org/wiki/Deflate
+  # https://en.wikipedia.org/wiki/Deflate
   command zip -rv "$file" "$contents" # -u for update only
 
 # - https://geeksforgeeks.org/tar-command-linux-examples
