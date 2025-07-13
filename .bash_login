@@ -716,7 +716,7 @@ function checksum () {
 
   exist "$file" || return $?
 
-  # https://en.m.wikipedia.org/wiki/Cksum
+  # https://en.wikipedia.org/wiki/Cksum
   echo "CkSum (base10):"
   cksum "$file"
 
