@@ -49,7 +49,7 @@ alias bindings='{ clear
 # =========================================================================
 # {{{ Aliases
 # =========================================================================
-# https://en.m.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo
+# https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo
 alias buffalo='echo Buffalo buffalo buffalo buffalo buffalo buffalo buffalo buffalo'
 alias banner="clear; cat ~/.ssh/banner"
 alias ide="command source ${HOME}/ide"
