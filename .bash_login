@@ -770,7 +770,7 @@ function derive () {
   echo ; printf "SCRYPT: \n"
   scrypt enc --passphrase env:SALT <( printf "$phrase" )
 
-  # https://en.m.wikipedia.org/wiki/PBKDF2
+  # https://en.wikipedia.org/wiki/PBKDF2
   echo ; printf "PBKDF2: "
   # need 600K iters. to be secure
   openssl kdf  -kdfopt pass:"$phrase" \
