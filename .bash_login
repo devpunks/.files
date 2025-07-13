@@ -784,15 +784,6 @@ function derive () {
   echo ; printf "DES: "
   mkpasswd -m descrypt -S ${SALT:0:2} "$phrase"
 
-  echo ; echo MD5:
-  mkpasswd -m MD5 -S $SALT "$phrase"
-  openssl passwd -1 -table -salt $SALT "$phrase"
-  printf "$phrase" | md5sum | command cut -d' ' -f1
-  printf "$phrase" | openssl md5 -c | command cut -d' ' -f2
-
-  echo ; echo md5crypt:
-  mkpasswd -m md5crypt -S $SALT "$phrase"
-
   echo ; echo SHA-1: # https://en.wikipedia.org/wiki/SHA-1
   printf "$phrase" | sha1sum | command cut -d' ' -f1
   printf "$phrase" | openssl sha1 -c | command cut -d' ' -f2
