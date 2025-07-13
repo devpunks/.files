@@ -750,6 +750,7 @@ function derive () {
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2I
 
   # https://en.m.wikipedia.org/wiki/Bcrypt
+  # https://en.m.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
   printf "BCRYPT: %s\n" "$( htpasswd -nbBC 10 USER "$phrase" )"
   # https://en.m.wikipedia.org/wiki/SHA-256
