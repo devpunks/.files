@@ -798,7 +798,7 @@ function derive () {
   printf "$phrase" | sha1sum | command cut -d' ' -f1
   printf "$phrase" | openssl sha1 -c | command cut -d' ' -f2
 
-  echo ; echo SHA-2: # https://en.m.wikipedia.org/wiki/SHA-2
+  echo ; echo SHA-2: # https://en.wikipedia.org/wiki/SHA-2
 
   echo ; echo SHA2/224
   printf "$phrase" | openssl dgst  -sha224
