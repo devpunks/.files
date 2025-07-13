@@ -219,7 +219,7 @@ function devices () { clear
 # https://gnu.org/software/coreutils/manual/html_node/nohup-invocation.html
 # https://digitalocean.com/community/tutorials/nohup-command-in-linux
 function hold () {
-  command nohup --version # https://en.m.wikipedia.org/wiki/Nohup
+  command nohup --version # https://en.wikipedia.org/wiki/Nohup
   command nohup "$1"
 
   # Redirect to stderror AND file
