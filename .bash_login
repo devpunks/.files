@@ -705,8 +705,8 @@ alias hex='xxd'
 alias binary='echo TODO: Binary immplementation'
 
 # see check ()
-# https://en.m.wikipedia.org/wiki/Cyclic_code
-# https://en.m.wikipedia.org/wiki/Cyclic_redundancy_check
+# https://en.wikipedia.org/wiki/Cyclic_code
+# https://en.wikipedia.org/wiki/Cyclic_redundancy_check
 # https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums
 function checksum () {
   local -r hash='md5'
