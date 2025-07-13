@@ -1003,6 +1003,11 @@ alias certificates='{
 
 # https://superuser.com/q/1007842
 function certify () { clear # Certificate Authority
+  local -r domain="${1:-devpunks.studio}"
+  local -r key="${domain:-certificate}.key.pem"
+  local -r certificate="${domain:-certificate}.pem"
+  local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
+
   openssl x509 --help
 
   echo Write text file...
