@@ -727,6 +727,12 @@ function checksum () {
 } # checksum
 
 # https://antofthy.gitlab.io/info/crypto/cyphers.txt
+# $1$ - MD5
+# $2a/b/x/y$ - B(lowfish)crypt
+# $sha1$ - B(lowfish)crypt
+# $5$ - SHA-256
+# $6$ - SHA-512
+# https://en.wikipedia.org/wiki/Cipher
 alias ciphers='command openssl list -cipher-commands' # -cipher-algorithms
 alias digests='command openssl list -digest-commands' # -digest-algorithms
 # https://asecuritysite.com/encryption/passes
