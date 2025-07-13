@@ -1002,6 +1002,7 @@ function passgen () { clear
 
   echo PASSWORD: $pwd
 
+  digest $pwd
   derive $pwd
 } # passgen
 
