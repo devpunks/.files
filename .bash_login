@@ -1173,7 +1173,7 @@ function authenticate () { clear
 } # authenticate
 
 # Exploits ----------------------------------------------------------------
-#   - https://en.m.wikipedia.org/wiki/Alice_and_Bob
+#   - https://en.wikipedia.org/wiki/Alice_and_Bob
 # -------------------------------------------------------------------------
 # https://en.m.wikipedia.org/wiki/Zip_bomb
 function zipbomb () { clear
