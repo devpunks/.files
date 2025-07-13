@@ -755,8 +755,8 @@ function derive () {
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2I
 
-  # https://en.m.wikipedia.org/wiki/Bcrypt
-  # https://en.m.wikipedia.org/wiki/Blowfish_(cipher)
+  # https://en.wikipedia.org/wiki/Bcrypt
+  # https://en.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
   printf "BCRYPT: %s\n" "$( htpasswd -nbBC 10 USERNAME "$phrase" | sed 's/\$2[abxy]\$/$2a$/g' )"
 
