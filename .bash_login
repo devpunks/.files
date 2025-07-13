@@ -830,7 +830,7 @@ function digest () {
     $( printf "$phrase" | sha224sum | command cut -d' ' -f1 )
   printf "SHA-224 (openssl dgst -sha224): %s\n" \
     $( openssl dgst -sha224 <( printf "$phrase" ) | command cut -d' ' -f2 )
-  printf "SHA-1 (openssl sha224): %s\n" \
+  printf "SHA-224 (openssl sha224): %s\n" \
     $( openssl sha224 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-1 (openssl sha224 -c): %s\n" \
     $( openssl sha224 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
