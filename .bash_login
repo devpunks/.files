@@ -2063,7 +2063,7 @@ function unpack () { clear
       operation="uncompress --verbose --test --list --keep --recursive $source"
     } ;;
 
-    # https://en.m.wikipedia.org/wiki/XZ_Utils
+    # https://en.wikipedia.org/wiki/XZ_Utils
     # xz --decompress - https://linux.die.net/man/1/unxz
     # xz --decompress --format=unlzma - https://linux.die.net/man/1/unlzma
     *.xz ) {
