@@ -1061,8 +1061,8 @@ function sign () {
   local file="$( realpath $1 )"
   local pem="${HOME}/.ssh/privatekey.pem"
 
-  openssl genrsa -aes256 -out "$pem" 2048
-  openssl rsa -in "${pem}" -out "${pem}.key"
+# openssl genrsa -aes256 -out "$pem" 2048
+# openssl rsa -in "${pem}" -out "${pem}.key"
 
   exist "$pem" || return $?
   exist "$file" || return $?
