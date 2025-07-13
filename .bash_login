@@ -1219,7 +1219,7 @@ function attack () {
 #   - https://man7.org/linux/man-pages/man8/start-stop-daemon.8.html
 #
 # RUNIT - (pkg install runit) http://smarden.org/runit
-#   - https://en.m.wikipedia.org/wiki/Runit
+#   - https://en.wikipedia.org/wiki/Runit
 #   - https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 # =========================================================================
 function boot () { clear
