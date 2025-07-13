@@ -2070,7 +2070,7 @@ function unpack () { clear
       operation="view $archive && unxz --verbose --test --list --keep --files $source"
     } ;;
 
-    # https://en.m.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm
+    # https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm
     *.lzma ) {
       operation="view $archive && unlzma --verbose --test --list --keep --files $source"
     } ;;
