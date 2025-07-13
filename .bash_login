@@ -1456,7 +1456,7 @@ alias wget='command wget --continue --no-hsts' # resume downloads & prevent writ
 # SOCKS (4|4a|5|5h) SOCK(et) S(ecure)
 # SOCKS4 - SOCKS4 IPv4 | TCP protocols
 # SOCKS5 - DNS | UDP | SSH | IPv6 | Auth
-# - https://en.m.wikipedia.org/wiki/SOCKS
+# - https://en.wikipedia.org/wiki/SOCKS
 # - https://datatracker.ietf.org/doc/html/rfc1928
 # cURL --proxy --socks4 --socks4a --socks5 --socks5-hostname
 # - https://oxylabs.io/blog/curl-with-proxy
