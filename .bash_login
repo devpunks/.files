@@ -1735,7 +1735,7 @@ alias ssh.add='{
 
 # SSh(d) ------------------------------------------------------------------
 #   - Terrapin Vulnerability
-#     - https://en.m.wikipedia.org/wiki/Terrapin_attack
+#     - https://en.wikipedia.org/wiki/Terrapin_attack
 #     - Scanner: https://github.com/RUB-NDS/Terrapin-Scanner
 #   - https://wiki.termux.com/wiki/Remote_Access
 #   - https://man7.org/linux/man-pages/man1/ssh.1.html
