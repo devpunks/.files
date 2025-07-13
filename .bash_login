@@ -836,6 +836,29 @@ function derive () {
   echo
 } # derive
 
+alias digests='command openssl list -digest-commands' # -digest-algorithms
+function digest () {
+  local phrase="${1}"
+
+  echo ; echo Digests: ; digests
+
+  printf "MD5 (md5sum): %s\n" \
+    $( printf "$phrase" | md5sum | command cut -d' ' -f1 )
+  printf "MD5 (md5crypt): %s\n" \
+    $( mkpasswd -m md5crypt -S $SALT "$phrase" )
+  printf "MD5 (mkpasswd): %s\n" \
+    $( mkpasswd -m MD5 -S $SALT "$phrase" )
+  printf "MD5 (openssl passwd): %s\n" \
+    $( openssl passwd -1 -salt $SALT "$phrase" )
+  printf "MD5 (openssl dgst -md5): %s\n" \
+    $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "MD5 (openssl md5): %s\n" \
+    $( openssl md5 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+
+  echo
+
+} # digest
+
 function encode () {
   local -r bytes="$1"
   local -r encoding='--base64' # base2lsbf | base2msbf| base32 | base32hex | base64url
