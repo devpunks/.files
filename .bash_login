@@ -780,6 +780,11 @@ function derive () {
   # https://eprint.iacr.org/2010/264
   # https://en.wikipedia.org/wiki/HKDF
   echo  "HKDF: "
+} # derive
+
+alias digests='command openssl list -digest-commands' # -digest-algorithms
+function digest () {
+  local phrase="${1}"
 
   echo ; printf "DES: "
   mkpasswd -m descrypt -S ${SALT:0:2} "$phrase"
