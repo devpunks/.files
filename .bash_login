@@ -788,9 +788,40 @@ function digest () {
 
   echo ; echo Digests: ; digests
 
-  echo ; echo SHA-1: # https://en.wikipedia.org/wiki/SHA-1
-  printf "$phrase" | sha1sum | command cut -d' ' -f1
-  printf "$phrase" | openssl sha1 -c | command cut -d' ' -f2
+  echo ; printf "DES: %s\n" \
+    $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
+
+  echo  # https://en.m.wikipedia.org/wiki/MD5
+  printf "MD5 (md5sum): %s\n" \
+    $( printf "$phrase" | md5sum | command cut -d' ' -f1 )
+  printf "MD5 (md5crypt): %s\n" \
+    $( mkpasswd -m md5crypt "$phrase" )
+  printf "MD5 (md5crypt -S): %s\n" \
+    $( mkpasswd -m md5crypt -S $SALT "$phrase" )
+  printf "MD5 (mkpasswd): %s\n" \
+    $( mkpasswd -m MD5 "$phrase" )
+  printf "MD5 (mkpasswd -S): %s\n" \
+    $( mkpasswd -m MD5 -S $SALT "$phrase" )
+  printf "MD5 (openssl passwd -1): %s\n" \
+    $( openssl passwd -1 "$phrase" )
+  printf "MD5 (openssl passwd -1 -salt): %s\n" \
+    $( openssl passwd -1 -salt $SALT "$phrase" )
+  printf "MD5 (openssl dgst -md5): %s\n" \
+    $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "MD5 (openssl md5): %s\n" \
+    $( openssl md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "MD5 (openssl md5 -c): %s\n" \
+    $( openssl md5 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+
+  echo # https://en.wikipedia.org/wiki/SHA-1
+  printf "SHA-1 (sha1sum): %s\n" \
+    $( printf "$phrase" | sha1sum | command cut -d' ' -f1 )
+  printf "SHA-1 (openssl dgst -sha1): %s\n" \
+    $( openssl dgst -sha1 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-1 (openssl sha1): %s\n" \
+    $( openssl sha1 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-1 (openssl sha1 -c): %s\n" \
+    $( openssl sha1 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHA-2: # https://en.wikipedia.org/wiki/SHA-2
 
