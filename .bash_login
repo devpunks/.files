@@ -850,6 +850,8 @@ function digest () {
     $( openssl sha256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHA2/384
+  printf "SHA-384 (sha384sum): %s\n" \
+    $( printf "$phrase" | sha384sum | command cut -d' ' -f1 )
   printf "SHA-384 (openssl dgst -sha384): %s\n" \
     $( openssl dgst -sha384 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-384 (openssl sha384): %s\n" \
