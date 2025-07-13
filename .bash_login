@@ -837,7 +837,7 @@ function derive () {
   printf "$phrase" | busybox sha3sum  -a 512 | command cut -d' ' -f1
   printf "$phrase" | openssl sha3-512 -c | command cut -d' ' -f2
 
-  # https://en.m.wikipedia.org/wiki/SHA-3
+  # https://en.wikipedia.org/wiki/SHA-3
   echo ; echo SHA512/224:
   printf "$phrase" | openssl sha512-224 -c | command cut -d' ' -f2
 
