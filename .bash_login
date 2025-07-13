@@ -736,8 +736,8 @@ function checksum () {
 alias ciphers='command openssl list -cipher-commands' # -cipher-algorithms
 alias digests='command openssl list -digest-commands' # -digest-algorithms
 # https://asecuritysite.com/encryption/passes
-# https://en.m.wikipedia.org/wiki/Key_derivation_function
-# https://en.m.wikipedia.org/wiki/Cryptographic_hash_function
+# https://en.wikipedia.org/wiki/Key_derivation_function
+# https://en.wikipedia.org/wiki/Cryptographic_hash_function
 # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
 function derive () {
   local length=32 # 24
