@@ -1010,6 +1010,28 @@ function certify () { clear # Certificate Authority
 
   openssl x509 --help
 
+  echo; echo  Creating  $certificate
+
+  # -new -x509
+  openssl req -new \
+    -sha256 -nodes \
+    -subj "$subject" \
+    -newkey rsa:2048 -days 365 \
+    -keyout $key -out $certificate
+
+  echo; echo Verifying Signature...
+  echo 'TODO: call verify()'
+  openssl  req  -in $certificate -verify -key $key
+  echo; echo Checking Info...
+  openssl  req  -in $certificate -text
+  echo; echo Testing...
+  openssl s_server -www -cert $certificate
+  echo; echo "Exporting PKCS ($domain.pfx)..."
+  openssl pkcs12 -export -in $certificate \
+    -out "$domain.pfx" -name 'PKCS Certificate'
+
+  return
+
   echo Write text file...
   echo "Foo Bar Alice" > alice_pub.txt
   cat alice_pub.txt
