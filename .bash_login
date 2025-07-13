@@ -1500,7 +1500,7 @@ function dns () { clear
 
   echo ; echo "ALL $domain"
   command host -v -R 3 -a "$domain"
-  # SOA (Start of Authority) Record(s) - https://en.m.wikipedia.org/wiki/SOA_record
+  # SOA (Start of Authority) Record(s) - https://en.wikipedia.org/wiki/SOA_record
   # rfc1035 Domain Names - https://datatracker.ietf.org/doc/html/rfc1035#autoid-31
   echo ; echo "SOA $domain"
   command host -v -t SOA "$domain"
