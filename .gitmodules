@@ -151,3 +151,6 @@
 [submodule ".vim/pack/u0_a311/start/asyncrun.vim"]
 	path = .vim/pack/u0_a311/start/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim.git
+[submodule ".vim/pack/u0_a311/start/vim-ruby"]
+	path = .vim/pack/u0_a311/start/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
