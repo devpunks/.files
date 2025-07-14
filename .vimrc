@@ -1977,6 +1977,8 @@ function g:TestSetup () abort
 
   echo 'Vim Testing Setup'
 
+  let  test#strategy = 'dispatch'
+
   nnoremap <Leader>t :TestNearest<CR>
   nnoremap <Leader>T :TestFile<CR>
   nnoremap <Leader>a :TestSuite<CR>
