@@ -1970,6 +1970,21 @@ endfunction " g:Lint
 " -------------------------------------------------------------------------
 " Vim-test - https://github.com/vim-test/vim-test
 " -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:TestSetup()
+
+function g:TestSetup () abort
+  if &rtp !~ 'vim-test' | return | endif
+
+  echo 'Vim Testing Setup'
+
+  nnoremap <Leader>t :TestNearest<CR>
+  nnoremap <Leader>T :TestFile<CR>
+  nnoremap <Leader>a :TestSuite<CR>
+  nnoremap <Leader>c :TestClass<CR>
+  nnoremap <Leader>l :TestLast<CR>
+  nnoremap <Leader>g :TestVisit<CR>
+
+endfunction " g:TestSetup
 
 " }}}
 
