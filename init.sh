@@ -272,6 +272,7 @@ echo Cloning submodules...
 # https://github.com/airblade/vim-gitgutter
 # https://github.com/tpope/vim-rails
 # https://github.com/tpope/vim-endwise
+# https://github.com/vim-test/vim-test
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-surround
 # https://github.com/preservim/nerdtree
