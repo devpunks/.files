@@ -1992,6 +1992,9 @@ function g:TestSetup () abort
   \ 'Rails', 'RSpec', 'Minitest'
   \ ]
 
+  let g:test#ruby#minitest#options =  '--verbose'
+  let g:test#ruby#rspec#options =  {}
+
   nnoremap <Leader>t :TestNearest<CR>
   nnoremap <Leader>T :TestFile<CR>
   nnoremap <Leader>a :TestSuite<CR>
