@@ -2021,6 +2021,18 @@ function g:VimRuby () abort
   let g:ruby_indent_assignment_style = 'variable'
   let g:ruby_indent_access_modifier_style = 'outdent'
 
+  " Ruby Syntax
+  let ruby_operators = 1
+  let ruby_space_errors = 1
+  let ruby_pseudo_operators = 1
+  let  ruby_line_continuation_error = 1
+
+  " Ruby Omni-completion  <C-x><C-o>
+  let g:rubycomplete_rails = 1
+  let g:rubycomplete_load_gemfile = 1
+  let g:rubycomplete_buffer_loading = 1
+  let g:rubycomplete_classes_in_global = 1
+
 endfunction " g:VimRuby
 
 " }}}
