@@ -1978,6 +1978,14 @@ function g:TestSetup () abort
   echo 'Vim Testing Setup'
 
   let test#strategy = 'dispatch'
+  let test#strategy = {
+  \ 'file': 'basic',
+  \ 'class': 'basic',
+  \ 'last': 'basic',
+  \ 'visit': 'basic',
+  \ 'nearest': 'basic',
+  \ 'suite': 'dispatch',
+  \ }
   let test#runner_commands = [
   \ 'Bats', 'ShellSpec',
   \ 'NodeTest', 'WebdriverIO',
