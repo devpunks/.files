@@ -1978,6 +1978,7 @@ function g:TestSetup () abort
   echo 'Vim Testing Setup'
 
   let  test#strategy = 'dispatch'
+  let  test#runner_commands = [ 'Rails', 'RSpec', 'Minitest', 'NodeTest', 'WebdriverIO', 'Bats', 'ShellSpec']
 
   nnoremap <Leader>t :TestNearest<CR>
   nnoremap <Leader>T :TestFile<CR>
