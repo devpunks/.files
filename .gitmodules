@@ -148,3 +148,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-test"]
 	path = .vim/pack/u0_a311/start/vim-test
 	url = https://github.com/vim-test/vim-test.git
+[submodule ".vim/pack/u0_a311/start/asyncrun.vim"]
+	path = .vim/pack/u0_a311/start/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim.git
