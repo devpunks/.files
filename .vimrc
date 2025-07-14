@@ -2005,6 +2005,24 @@ function g:TestSetup () abort
 
 endfunction " g:TestSetup
 
+" -------------------------------------------------------------------------
+" Vim-ruby - https://github.com/vim-ruby/vim-ruby
+" -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:VimRuby()
+
+function g:VimRuby () abort
+  if &rtp !~ 'vim-ruby' | return | endif
+
+  echo 'Vim Ruby Setup'
+
+  " Ruby Indent
+  let g:ruby_indent_block_style = 'do'
+  let g:ruby_indent_hanging_elements = 0
+  let g:ruby_indent_assignment_style = 'variable'
+  let g:ruby_indent_access_modifier_style = 'outdent'
+
+endfunction " g:VimRuby
+
 " }}}
 
 " =========================================================================
