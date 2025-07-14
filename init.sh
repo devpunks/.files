@@ -256,6 +256,8 @@ git status
 #  - https://github.blog/2016-02-01-working-with-submodules
 
 echo Cloning submodules...
+# https://github.com/skywind3000/asyncrun.vim
+
 # https://github.com/mhinz/vim-startify
 
 # https://github.com/obcat/vim-sclow
