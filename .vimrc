@@ -2018,7 +2018,7 @@ if $TERM =~ '256color'
 endif
 
 syntax on " turns syntax highlighting on
-set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check/
+set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check
 
 " - Line Length -----------------------------------------------------------
 set wrap " word
