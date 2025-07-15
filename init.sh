@@ -180,7 +180,7 @@ pkg install libxml2 && gem install libxml-ruby
 # https://en.m.wikipedia.org/wiki/Pkg-config
 pkg install pkg-config && gem install pkg-config
 # RVM on termux - https://github.com/rvm/rvm/issues/4734
-pkg install build-essentials # Ruby HEAVY!!!! (600+Mb)
+pkg install build-essential # Ruby HEAVY!!!! (600+Mb)
 gem update --system && PATH=$PATH gem environment # Must set PATH to prevent Nil split error
 # https://github.com/termux/termux-packages/discussions/8583
 bundle config set force_ruby_platform true
