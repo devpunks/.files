@@ -802,6 +802,12 @@ function digest () {
     $( mkpasswd -m MD5 "$phrase" )
   printf "MD5 (mkpasswd -S): %s\n" \
     $( mkpasswd -m MD5 -S $SALT "$phrase" )
+  printf "MD5 (Apache) (openssl passwd -apr1): %s\n" \
+    $( openssl passwd -apr1 "$phrase" )
+  printf "MD5 (Apache) (openssl passwd -apr1 -salt): %s\n" \
+    $( openssl passwd -apr1 -salt $SALT "$phrase" )
+  printf "MD5 (openssl dgst -md5): %s\n" \
+    $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "MD5 (openssl passwd -1): %s\n" \
     $( openssl passwd -1 "$phrase" )
   printf "MD5 (openssl passwd -1 -salt): %s\n" \
