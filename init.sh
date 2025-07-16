@@ -27,6 +27,16 @@ pkg upgrade && pkg update
 pkg install mount-utils
 pkg install bash-completion
 
+# {{{ Dependencies --------------------------------------------------------
+pkg install make
+pkg install cmake
+pkg install libtool
+pkg install autoconf
+pkg install automake
+pkg install readline
+
+# }}}
+
 # {{{ Termux --------------------------------------------------------------
 # https://github.com/YurinDoctrine/termux-essentials/blob/main/termux-essentials.sh
 termux-open "${HOME}/.termux/Termux_Boot_0.7.apk"
