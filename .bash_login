@@ -806,6 +806,10 @@ function digest () {
     $( openssl passwd -apr1 "$phrase" )
   printf "MD5 (Apache) (openssl passwd -apr1 -salt): %s\n" \
     $( openssl passwd -apr1 -salt $SALT "$phrase" )
+  printf "MD5 (AIX) (openssl passwd -aixmd5): %s\n" \
+    $( openssl passwd -aixmd5 "$phrase" )
+  printf "MD5 (AIX) (openssl passwd -aixmd5 -salt): %s\n" \
+    $( openssl passwd -aixmd5 -salt $SALT "$phrase" )
   printf "MD5 (openssl dgst -md5): %s\n" \
     $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "MD5 (openssl passwd -1): %s\n" \
