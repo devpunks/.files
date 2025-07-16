@@ -152,6 +152,7 @@ pkg install jq
 pkg install vim
 pkg install tidy
 pkg install ctags # Code(-completion) tags https://github.com/universal-ctags/ctags
+pkg install libyaml
 pkg install libxml2
 pkg install libxslt
 pkg install libiconv
