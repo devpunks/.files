@@ -55,7 +55,13 @@
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 # "TAB": menu-complete
-"TAB": complete # default
+"TAB": complete
+
+# reload .inputrc in all keymaps
+set keymap emacs
+"\C-x\C-r": re-read-init-file
+
+set keymap vi-command
 "\C-x\C-r": re-read-init-file
 # of all lines or `clear-screen` (scrolls below fold)
 "\C-l": clear-display
