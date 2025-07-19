@@ -63,6 +63,10 @@ set keymap emacs
 
 set keymap vi-command
 "\C-x\C-r": re-read-init-file
+
+set keymap vi-insert
+"\C-x\C-r": re-read-init-file
+
 # of all lines or `clear-screen` (scrolls below fold)
 "\C-l": clear-display
 "\C-z":'clear\n'
