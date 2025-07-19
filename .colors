@@ -48,7 +48,7 @@ export EXA_COLORS='
 # LS_COLORS
 export DIRCOLORS="$HOME/.dircolors"
 # https://gnu.org/software/coreutils/manual/html_node/dircolors-invocation.html
-# TODO: Fix 
+# TODO: Fix
 [ -e "$DIRCOLORS" ] && eval $( dircolors -b "$DIRCOLORS" )
 [ -e "$DIRCOLORS" ] && source "$DIRCOLORS"
 
