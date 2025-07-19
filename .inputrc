@@ -71,9 +71,9 @@ set keymap vi-insert
 #"\C-l": clear-display
 #"\C-z":'clear\n'
 
-  "RETURN": '\e\n'
+# "RETURN": '\e\n'
 
-  "\C-v": ''
+# "\C-v": ''
   "\C-a": beginning-of-line # Beginning of line
   "\C-e": end-of-line # End of line
 
