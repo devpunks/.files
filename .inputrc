@@ -68,8 +68,8 @@ set keymap vi-insert
 "\C-x\C-r": re-read-init-file
 
 # of all lines or `clear-screen` (scrolls below fold)
-"\C-l": clear-display
-"\C-z":'clear\n'
+#"\C-l": clear-display
+#"\C-z":'clear\n'
 
   "RETURN": '\e\n'
 
