@@ -87,7 +87,6 @@ export GIT_PAGER=$PAGER
 export GIT_EDITOR=$EDITOR
 export GIT_CONFIG_NOSYSTEM=true # Disable systemwide (etc/gitconfig)
 
-
 # -h(eader) -l(ong) -t(itle) -v(erbose) -z(comment)
 export ZIPINFO='-h -l -t -v -z'
 export ZIPINFOOPT="${ZIPINFO}"
