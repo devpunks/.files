@@ -52,7 +52,7 @@
 # [[ -z "$PS1" ]] && exit # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 
 # https://stackoverflow.com/q/42757236/what-does-mean-in-bash
-echo "SHELL OPTION FLAGS (see set --help) 👉" $- # TODO: echo post load
+echo "SHELL OPTION FLAGS (see set --help) 👉" $-
 # [[ $- != *i* ]] # Check for interactive
 
 # Readline
