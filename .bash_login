@@ -987,22 +987,13 @@ function digest () {
   printf "SHA3-512 (openssl sha3-512 -c): %s\n" \
     $( openssl sha3-512 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
-  # https://en.wikipedia.org/wiki/SHA-3
-  echo ; echo SHA512/224:
-  printf "SHA512-224 (openssl dgst -sha512-224): %s\n" \
-    $( openssl dgst -sha512-224 <( printf "$phrase" ) | command cut -d' ' -f2 )
-  printf "SHA512-224 (openssl sha512-224): %s\n" \
-    $( openssl sha512-224 <( printf "$phrase" ) | command cut -d' ' -f2 )
-  printf "SHA512-224 (openssl sha512-224 -c): %s\n" \
-    $( openssl sha512-224 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
-
-  echo ; echo SHA512/256:
-  printf "SHA512-256 (openssl dgst -sha512-256): %s\n" \
-    $( openssl dgst -sha512-256 <( printf "$phrase" ) | command cut -d' ' -f2 )
-  printf "SHA512-256 (openssl sha512-256): %s\n" \
-    $( openssl sha512-256 <( printf "$phrase" ) | command cut -d' ' -f2 )
-  printf "SHA512-256 (openssl sha512-256 -c): %s\n" \
-    $( openssl sha512-256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+  echo ; echo SHAKE128
+  printf "SHAKE128 (openssl dgst -shake128): %s\n" \
+    $( openssl dgst -shake128 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHAKE128 (openssl shake128): %s\n" \
+    $( openssl shake128 <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHAKE128 (openssl shake128 -c): %s\n" \
+    $( openssl shake128 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHAKE128
   printf "SHAKE128 (openssl dgst -shake128): %s\n" \
