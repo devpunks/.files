@@ -7,13 +7,19 @@
 
 ########################################################
 
-declare -xr FIXPRE=${PREFIX:-/usr}
+# Debian /usr
+# Darwin /usr/local
+# MacOS >M1 /opt/homebrew
+# Termux /data/data/com.termux/files/usr
+declare -xr PREFIX=${PREFIX:-/usr/}
+declare -xr LOGDIR=${LOGDIR:-$PREFIX/var/log}
 
-# declare -xr PGBIN=/usr/local/Cellar/postgresql@${PGVERSION}/${PGVERSION}.0_1/bin
-declare -xr PGBIN=${FIXPRE}/bin
-declare -xr EXEC=${PGBIN}/pg
+declare -xr PGBIN=${PREFIX}/bin
+declare -xr EXEC=${PGBIN}/pg_
 
-declare -xr PGDATA=${PGDATA:-/usr/local/var/postgres@15}
+# Darwin / MacOS >M1 $PREFIX/var/postgres
+# Debian / Termux $PREFIX/var/lib/pgsql/data
+declare -xr PGDATA=${PGDATA:-$PREFIX/var/lib/pgsql/data}
 declare -xr COMMAND=$1
 declare -xr OPERATION=$2
 declare -xr AUTH=--auth-local # --auth-host
