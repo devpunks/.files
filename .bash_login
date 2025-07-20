@@ -1023,8 +1023,20 @@ function digest () {
 } # digest
 
 function encode () {
-  local -r bytes="$1"
-  local -r encoding='--base64' # base2lsbf | base2msbf| base32 | base32hex | base64url
+  local -r file="$1"
+  local -r encoding='base64' # base2lsbf | base2msbf| base32 | base32hex | base64url
+
+  echo ; echo 'Base32'
+  echo '(basenc --base32):'
+  basenc --base32 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
+  [ -e $( readlink -f "$file" ) ] && basenc --base32 $file > "${file}.base32"
+
+  echo ; echo 'Base64'
+  echo '(basenc --base64):'
+  basenc --base64 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
+  echo ; echo '(openssl enc --base64):'
+  openssl enc -base64 -in <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
+  [ -e $( readlink -f "$file" ) ] && basenc --base64 $file > "${file}.base64"
 
   printf 'Base64  Encoding (basenc --base64): %s\n' \
     $( printf "$bytes" | basenc $encoding )
