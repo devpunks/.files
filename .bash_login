@@ -843,6 +843,12 @@ function digest () {
     $( openssl sha1 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-1 (openssl sha1 -c): %s\n" \
     $( openssl sha1 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-1 (openssl dgst -sha1 -hmac): %s\n" \
+    $( openssl dgst -sha1 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-1 (openssl sha256 -hmac): %s\n" \
+    $( openssl sha1 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-1 (openssl sha256 -c -hmac): %s\n" \
+    $( openssl sha1 -c -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHA-2: # https://en.wikipedia.org/wiki/SHA-2
 
