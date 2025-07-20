@@ -747,6 +747,8 @@ function cipher () {
 
   echo ; echo Ciphers: ; ciphers
 
+  [ -z "$phrase" ] &&  return
+
   # https://datatracker.ietf.org/doc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   echo ; printf "ARGON2i: "
