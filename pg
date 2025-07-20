@@ -28,9 +28,9 @@ declare -xr USERNAME=devpunks
 declare -xr AUTH=--auth-local # --auth-host
 # declare -xr PID=${PGDATA}/postmaster.pid
 
-function status {
-  ${EXEC}_ctl status --pgdata=$PGDATA
-}
+# function status {
+#   ${EXEC}ctl status --pgdata=$PGDATA
+# }
 
 echo FIXPRE 👉 $FIXPRE
 echo PGVERSION 👉 $PGVERSION
