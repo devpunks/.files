@@ -861,6 +861,12 @@ function digest () {
     $( openssl sha224 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-224 (openssl sha224 -c): %s\n" \
     $( openssl sha224 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-224 (openssl dgst -sha224 -hmac): %s\n" \
+    $( openssl dgst -sha224 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-224 (openssl sha224 -hmac): %s\n" \
+    $( openssl sha224 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-224 (openssl sha224 -c -hmac): %s\n" \
+    $( openssl sha224 -c -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo ; echo SHA2/256: # https://en.wikipedia.org/wiki/SHA-256
   printf "SHA-256 (sha256sum): %s\n" \
