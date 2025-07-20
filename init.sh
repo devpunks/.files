@@ -209,6 +209,7 @@ PATH=$PATH bundle # $$$$ Set PATH fixes most ENV['PATH'] errors
 # }}}
 
 # {{{ Database ------------------------------------------------------------
+pkg install redis
 pkg install sqlite
 pkg install postgis
 pkg install postgresql
