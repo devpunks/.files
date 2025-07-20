@@ -32,7 +32,7 @@ declare -xr AUTH=--auth-local # --auth-host
 #   ${EXEC}ctl status --pgdata=$PGDATA
 # }
 
-echo FIXPRE 👉 $FIXPRE
+echo PREFIX 👉 $PREFIX
 echo PGVERSION 👉 $PGVERSION
 echo PGDATA 👉 $PGDATA
 echo EXEC 👉 $EXEC
