@@ -791,6 +791,8 @@ function digest () {
 
   echo ; echo Digests: ; digests
 
+  [ -z "$phrase" ] &&  return
+
   echo ; printf "DES: %s\n" \
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
