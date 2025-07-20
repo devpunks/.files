@@ -917,6 +917,12 @@ function digest () {
     $( openssl sha512 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-512 (openssl sha512 -c): %s\n" \
     $( openssl sha512 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-512 (openssl dgst -sha512 -hmac): %s\n" \
+    $( openssl dgst -sha512 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-512 (openssl sha512 -hmac): %s\n" \
+    $( openssl sha512 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+  printf "SHA-512 (openssl sha512 -c -hmac): %s\n" \
+    $( openssl sha512 -c -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   # https://en.wikipedia.org/wiki/SHA-3
   echo ; echo SHA3/224:
