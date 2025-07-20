@@ -24,7 +24,8 @@ declare -xr COMMAND=$1
 declare -xr OPERATION=$2
 declare -xr PORT=5432
 declare -xr HOST=localhost
-declare -xr PORT=${PORT:-5432}
+declare -xr USERNAME=devpunks
+declare -xr AUTH=--auth-local # --auth-host
 # declare -xr PID=${PGDATA}/postmaster.pid
 
 function status {
