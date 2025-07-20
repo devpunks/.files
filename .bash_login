@@ -1038,10 +1038,6 @@ function encode () {
   openssl enc -base64 -in <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
   [ -e $( readlink -f "$file" ) ] && basenc --base64 $file > "${file}.base64"
 
-  printf 'Base64  Encoding (basenc --base64): %s\n' \
-    $( printf "$bytes" | basenc $encoding )
-  printf 'Base64  Encoding (openssl enc -base64): %s\n' \
-    $( openssl enc -base64 -in <( printf "$bytes" ) )
 } # encode
 
 function decode () {
