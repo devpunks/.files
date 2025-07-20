@@ -993,7 +993,6 @@ function decode () {
 function encrypt () {
   local -r file="${1}"
   man gpg
-  man openssl
 
   # echo GPG-AES-128:
   # gpg -c -o - < "$file" > "${file}.gpg"
