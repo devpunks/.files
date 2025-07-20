@@ -62,7 +62,7 @@ exit 0
 
 status
 
-${EXEC}_${COMMAND} ${OPERATION} --pgdata=$PGDATA --log=$LOGDIR -s -m fast
+${EXEC}${COMMAND} ${OPERATION} --pgdata=$PGDATA --log=$LOGDIR -s -m fast
 #pg_ctl -l $LOGDIR -D $PGDATA $COMMAND -s -m fast
 
 status
