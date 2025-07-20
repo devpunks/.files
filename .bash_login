@@ -783,7 +783,7 @@ function cipher () {
   # https://eprint.iacr.org/2010/264
   # https://en.wikipedia.org/wiki/HKDF
   echo  "HKDF: "
-} # derive
+} # cipher
 
 alias digests='command openssl list -digest-commands' # -digest-algorithms
 function digest () {
