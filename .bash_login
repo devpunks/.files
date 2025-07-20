@@ -901,6 +901,7 @@ function digest () {
     $( openssl sha384 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-384 (openssl sha384 -c): %s\n" \
     $( openssl sha384 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+  # https://en.m.wikipedia.org/wiki/HMAC
   printf "SHA-384 (openssl dgst -sha384 -hmac): %s\n" \
     $( openssl dgst -sha384 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-384 (openssl sha384 -hmac): %s\n" \
