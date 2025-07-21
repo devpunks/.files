@@ -1039,14 +1039,19 @@ function encode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base
 
 } # encode
 
-function decode () {
-  local -r bytes="$1"
-  local -r encoding='--base64' # base2lsbf | base2msbf | base32 | base32hex | base64url
+function decode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
+  local -r file="$1"
 
-  printf 'Base64  Decoding (basenc --decode --base64): %s\n' \
-    $( printf "$bytes" | basenc --decode $encoding )
-  printf 'Base64  Decoding (openssl enc -d -base64): %s\n' \
-    $( openssl enc -d -base64 -in <( printf "$bytes" ) )
+  echo ; echo 'Base32'
+  echo '(basenc --decode --base32):'
+  basenc --decode --base32 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
+
+  echo ; echo 'Base64'
+  echo '(basenc --decode --base64):'
+  basenc --decode --base64 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
+  echo ; echo '(openssl enc -d --base64):'
+  openssl enc -d -base64 -in <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
+
 } # decode
 
 # https://gnupg.org
