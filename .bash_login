@@ -1056,6 +1056,7 @@ function decode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base
 
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
+# https://antofthy.gitlab.io/info/crypto/encfs.txt
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
