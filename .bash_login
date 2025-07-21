@@ -1105,8 +1105,9 @@ function decrypt () {
 
   echo GPG decrypt "$file" :
 
-  # https://github.com/bartobri/no-more-secrets?tab=readme-ov-file#usage
-  cat "$output" | nms
+  # https://github.com/bartobri/no-more-secrets
+  # nms
+  command gpg -o - < "$file"
 } # decrypt
 
 # https://linux.die.net/man/1/mkpasswd
