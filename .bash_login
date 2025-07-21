@@ -1939,7 +1939,7 @@ alias ssh='man ssh ; command ssh' # -T
 # https://gnupg.org/documentation/manpage.html
 # https://gnupg.org/documentation/manuals/gnupg/GPG-Configuration.html
 # https://betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
-alias gpg='man gpg ; command gpg --verbose --armor --fingerprint --keyid-format=long'
+alias gpg='command gpg --verbose --armor --fingerprint --keyid-format=long'
 alias gpg.add='{ man gpg-agent
   # kill the agent
   # gpgconf --kill gpg-agent
