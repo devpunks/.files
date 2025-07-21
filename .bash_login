@@ -1104,7 +1104,6 @@ function decrypt () {
   local -r output="${file%.*}"
 
   echo GPG decrypt "$file" :
-  gpg -o - < "$file" > "$output"
 
   # https://github.com/bartobri/no-more-secrets?tab=readme-ov-file#usage
   cat "$output" | nms
