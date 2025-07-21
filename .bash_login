@@ -1059,14 +1059,43 @@ function decode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
-  local -r file="${1}"
-  man gpg
+  local -r salt="-salt"
+  local -r count=1000000
+  local -r digest="sha512"
+  local -r pbkdf2="-pbkdf2"
+  local -r file=$( readlink -f "${1}" )
+  local -r password="-pass pass:devpunks"  # "-stdin"
 
-  # echo GPG-AES-128:
-  # gpg -c -o - < "$file" > "${file}.gpg"
+  exist "$file"  || return $?
 
-  echo GPG-AES-256 encrypt "$file" :
-  gpg -c -o - --cipher-algo=AES256 < "$file" > "${file}.gpg"
+  echo ; echo 'AES (128|192|256)'
+  local scheme='-aes-128-cbc'
+  echo "$scheme encrypt $file" :
+  openssl enc $salt $scheme $pbkdf2 -md $digest -iter $count $password \
+    < "$file" > "${file}.aes128"
+
+  local scheme='-aes-192-cbc'
+  echo "$scheme encrypt $file :"
+  openssl enc $salt $scheme $pbkdf2 -md $digest -iter $count $password \
+    < "$file" > "${file}.aes192"
+
+  local scheme='-aes-256-cbc'
+  echo "$scheme encrypt $file :"
+  openssl enc $salt $scheme $pbkdf2 -md $digest -iter $count $password \
+    < "$file" > "${file}.aes256"
+
+  echo ; echo 'GPG-AES-CFB (128|192|256)'
+  local scheme='AES128'
+  echo "GPG-$scheme encrypt $file :"
+  gpg --sign -c -o "${file}.gpg128" --cipher-algo=$scheme < "$file"
+
+  local scheme='AES192'
+  echo "GPG-$scheme encrypt $file :"
+  gpg --sign -c -o "${file}.gpg192" --cipher-algo=$scheme < "$file"
+
+  local scheme='AES256'
+  echo "GPG-$scheme encrypt $file :"
+  gpg --sign -c -o "${file}.gpg256" --cipher-algo=$scheme < "$file"
 } # encrypt
 
 alias nms='command nms -a -c -f magenta'
