@@ -688,7 +688,7 @@ alias nonce="{
   command date +%s%N | sha512sum | command cut -d' ' -f 1 ;
   echo ; echo 'SHA256 SUM (sha256sum):'
   command date +%s%N | sha256sum | command cut -d' ' -f 1 ;
-  echo MD5 SUM: ;
+  echo ; echo 'MD5 SUM (md5sum):'
   command date +%s%N | md5sum | command cut -d' ' -f 1 ;
   echo OPENSSL BASE 64: ;
   command openssl rand -base64 32 ; # <n> can be adjusted (i.e. 24,  etc.)
