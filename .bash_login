@@ -690,8 +690,9 @@ alias nonce="{
   command date +%s%N | sha256sum | command cut -d' ' -f 1 ;
   echo ; echo 'MD5 SUM (md5sum):'
   command date +%s%N | md5sum | command cut -d' ' -f 1 ;
-  echo OPENSSL BASE 64: ;
+  echo ; echo 'OPENSSL BASE 64 (openssl rand -base64):'
   command openssl rand -base64 32 ; # <n> can be adjusted (i.e. 24,  etc.)
+  echo
 }" # nonce
 
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
