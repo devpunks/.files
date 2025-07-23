@@ -793,7 +793,6 @@ function cipher () {
     -kdfopt pass:"$phrase" \
   PBKDF2
 
-  # https://eprint.iacr.org/2010/264
   # https://en.wikipedia.org/wiki/HKDF
   echo  "HKDF: "
 } # cipher
