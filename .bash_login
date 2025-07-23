@@ -704,7 +704,7 @@ alias hash='hash --help; hash'
 alias substitute='$( open https://en.wikipedia.org/wiki/Substitution_cipher )'
 
 # https://linux.die.net/man/1/xxd
-alias hex='xxd'
+alias hex='xxd -u'
 
 alias binary='echo TODO: Binary immplementation'
 
