@@ -755,7 +755,7 @@ function cipher () {
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
   # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
-  echo ; printf "ARGON2i: "
+  echo ; echo "ARGON2i: "
   printf "$phrase" | argon2 $SALT -i -t $iterations -k $memory -l $length
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2I
