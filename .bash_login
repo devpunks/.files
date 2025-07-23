@@ -759,6 +759,14 @@ function cipher () {
   printf "$phrase" | argon2 $SALT -i -t $iterations -k $memory -l $length
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2I
+  echo ; echo "ARGON2d: "
+  printf "$phrase" | argon2 $SALT -d -t $iterations -k $memory -l $length
+  openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
+    -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2D
+  echo ; echo "ARGON2id: "
+  printf "$phrase" | argon2 $SALT -id -t $iterations -k $memory -l $length
+  openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
+    -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2ID
 
   # https://en.wikipedia.org/wiki/Bcrypt
   # https://en.wikipedia.org/wiki/Blowfish_(cipher)
