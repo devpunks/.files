@@ -786,9 +786,11 @@ function cipher () {
   # https://en.wikipedia.org/wiki/PBKDF2
   echo ; printf "PBKDF2: "
   # need 600K iters. to be secure
-  openssl kdf  -kdfopt pass:"$phrase" \
-    -kdfopt salt:$SALT -keylen $length \
-    -kdfopt digest:sha256 -kdfopt iter:600000 \
+  openssl kdf \
+    -keylen $length \
+    -kdfopt iter:600000 \
+    -kdfopt digest:sha256 \
+    -kdfopt pass:"$phrase" \
   PBKDF2
 
   # https://eprint.iacr.org/2010/264
