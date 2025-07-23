@@ -744,7 +744,7 @@ alias ciphers='command openssl list -cipher-commands' # -cipher-algorithms
 function cipher () {
   local length=32 # 24
   local memory=1024
-  local iterations=3
+  local iterations=10
   local phrase="${1}"
 
   echo ; echo Ciphers: ; ciphers
