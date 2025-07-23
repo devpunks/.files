@@ -794,7 +794,14 @@ function cipher () {
   PBKDF2
 
   # https://en.wikipedia.org/wiki/HKDF
-  echo  "HKDF: "
+  # https://rfc-editor.org/rfc/rfc5869.html
+  echo  "HKDF ($length): "
+  openssl kdf \
+    -keylen $length \
+    -kdfopt salt:"$SALT" \
+    -kdfopt key:"$phrase" \
+    -kdfopt digest:blake2b512 \
+  HKDF
 } # cipher
 
 alias digests='command openssl list -digest-commands' # -digest-algorithms
