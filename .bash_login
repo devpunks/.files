@@ -792,6 +792,7 @@ function cipher () {
   openssl kdf \
     -keylen $length \
     -kdfopt iter:600000 \
+    -kdfopt salt:"$SALT" \
     -kdfopt digest:sha256 \
     -kdfopt pass:"$phrase" \
   PBKDF2
