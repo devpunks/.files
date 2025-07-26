@@ -751,7 +751,7 @@ function cipher () {
 
   [ -z "$phrase" ] && return
 
-  # https://datatracker.ietf.org/doc/rfc9106
+  # https://rfc-editor.org/rfc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
   # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
