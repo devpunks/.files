@@ -765,8 +765,9 @@ function cipher () {
   echo "ARGON2i (openssl kdf ARGON2D): "
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2D
-  echo ; echo "ARGON2id: "
+  echo ; echo "ARGON2d (argon2 -id): "
   printf "$phrase" | argon2 $SALT -id -t $iterations -k $memory -l $length
+  echo "ARGON2i (openssl kdf ARGON2ID): "
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2ID
 
