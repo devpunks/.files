@@ -833,7 +833,7 @@ function digest () {
   printf "MD5 (AIX) (openssl passwd -aixmd5): %s\n" \
     $( openssl passwd -aixmd5 "$phrase" )
   printf "MD5 (AIX) (openssl passwd -aixmd5 -salt): %s\n" \
-    $( openssl passwd -aixmd5 -salt $SALT "$phrase" )
+    $( openssl passwd -aixmd5 -salt ${SALT:0:8} "$phrase" )
   printf "MD5 (openssl dgst -md5): %s\n" \
     $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "MD5 (openssl passwd -1): %s\n" \
