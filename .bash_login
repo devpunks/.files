@@ -808,7 +808,7 @@ function cipher () {
   HKDF
 } # cipher
 
-alias digests='command openssl list -digest-commands' # -digest-algorithms
+# https://linux.die.net/man/1/mkpasswd
 function digest () {
   local phrase="${1}"
 
