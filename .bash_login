@@ -852,7 +852,7 @@ function digest () {
   printf "MD5 (openssl md5 -hmac): %s\n" \
     $( openssl md5 -hmac ${SALT:0:8} <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "MD5 (openssl md5 -c -hmac): %s\n" \
-    $( openssl md5 -c -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl md5 -c -hmac ${SALT:0:8} <( printf "$phrase" ) | command cut -d' ' -f2 )
 
   echo # https://en.wikipedia.org/wiki/SHA-1
   printf "SHA-1 (sha1sum): %s\n" \
