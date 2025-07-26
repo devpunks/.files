@@ -696,7 +696,7 @@ alias nonce="{
 }" # nonce
 
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
-export SALT='abcdefgh' # TODO: generate SALT
+export SALT='12345678abcdefgh' # TODO: generate SALT
 
 # https://geeksforgeeks.org/hash-command-in-linux-with-examples
 alias hash='hash --help; hash'
