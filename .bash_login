@@ -1141,7 +1141,7 @@ function passgen () { clear
   echo PASSWORD: $pwd
 
   digest $pwd
-  derive $pwd
+  cipher $pwd
 } # passgen
 
 # https://ietf.org/rfc/rfc4880.txt
