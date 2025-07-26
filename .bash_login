@@ -812,7 +812,8 @@ function cipher () {
 function digest () {
   local phrase="${1}"
 
-  echo ; echo Digests: ; digests
+  echo ; echo Digests:
+  command openssl list -digest-commands # -digest-algorithms
 
   [ -z "$phrase" ] &&  return
 
