@@ -820,9 +820,9 @@ function digest () {
     $( printf "$phrase" | md5sum | command cut -d' ' -f1 )
   printf "MD5 (mkpasswd -m md5crypt): %s\n" \
     $( mkpasswd -m md5crypt "$phrase" )
-  printf "MD5 (md5crypt -S): %s\n" \
-    $( mkpasswd -m md5crypt -S $SALT "$phrase" )
-  printf "MD5 (mkpasswd): %s\n" \
+  printf "MD5 (mkpasswd -m md5crypt -S): %s\n" \
+    $( mkpasswd -m md5crypt -S ${SALT:0:8} "$phrase" )
+  printf "MD5 (mkpasswd -m MD5): %s\n" \
     $( mkpasswd -m MD5 "$phrase" )
   printf "MD5 (mkpasswd -S): %s\n" \
     $( mkpasswd -m MD5 -S $SALT "$phrase" )
