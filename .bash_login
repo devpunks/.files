@@ -848,7 +848,7 @@ function digest () {
     $( openssl md5 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
   # https://en.m.wikipedia.org/wiki/HMAC
   printf "MD5 (openssl dgst -md5 -hmac): %s\n" \
-    $( openssl dgst -md5 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl dgst -md5 -hmac ${SALT:0:8} <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "MD5 (openssl md5 -hmac): %s\n" \
     $( openssl md5 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "MD5 (openssl md5 -c -hmac): %s\n" \
