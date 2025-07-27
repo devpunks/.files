@@ -50,6 +50,7 @@ alias bindings='{ clear
 # {{{ Aliases
 # =========================================================================
 # https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo
+alias temp="mktemp --tmpdir=$TMPDIR"
 alias buffalo='echo Buffalo buffalo buffalo buffalo buffalo buffalo buffalo buffalo'
 alias banner="clear; cat ~/.ssh/banner"
 alias ide="command source ${HOME}/ide"
