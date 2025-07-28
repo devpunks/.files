@@ -688,8 +688,10 @@ function snowflake () {
 
 # https://crypto.stackexchange.com/q/50782
 # https://en.wikipedia.org/wiki/Cryptographic_nonce
-alias nonce="{
-}"
+alias nonce='{ head /dev/random \
+  | tr --delete --complement "[:alnum:]" \
+  | head -c 16 ; echo ;
+}' # nonce
 # Date nonce with epoch seconds & nanoseconds (billionths)
 alias donce="{
   echo ; echo 'SHA512 SUM (sha512sum):'
