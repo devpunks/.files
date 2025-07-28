@@ -700,8 +700,10 @@ alias donce="{
   command date +%s%N | sha256sum | command cut -d' ' -f 1 ;
   echo ; echo 'MD5 SUM (md5sum):'
   command date +%s%N | md5sum | command cut -d' ' -f 1 ;
-  echo ; echo 'OPENSSL BASE 64 (openssl rand -base64):'
-  command openssl rand -base64 32 ; # <n> can be adjusted (i.e. 24,  etc.)
+  echo ; echo 'BASE 64 (base64):'
+  command date +%s%N | command base64;
+  echo ; echo 'OPENSSL BASE 64 (openssl base64):'
+  command date +%s%N | command openssl base64;
   echo
 }" # donce
 
