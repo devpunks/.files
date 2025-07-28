@@ -686,7 +686,6 @@ function snowflake () {
   open https://en.wikipedia.org/wiki/Snowflake_ID
 } # snowflake
 
-# https://crypto.stackexchange.com/q/50782
 # https://en.wikipedia.org/wiki/Cryptographic_nonce
 alias nonce='{ head /dev/random \
   | tr --delete --complement "[:alnum:]" \
