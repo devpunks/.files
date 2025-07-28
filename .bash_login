@@ -687,6 +687,9 @@ function snowflake () {
 } # snowflake
 
 # https://en.wikipedia.org/wiki/Cryptographic_nonce
+# https://crypto.stackexchange.com/q/50782
+# Initialization Vector is size of block (16bytes)
+# https://en.m.wikipedia.org/wiki/Initialization_vector
 alias nonce='{ head /dev/random \
   | tr --delete --complement "[:alnum:]" \
   | head -c 16 ; echo ;
