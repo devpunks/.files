@@ -685,6 +685,9 @@ function snowflake () {
 
 # https://en.wikipedia.org/wiki/Cryptographic_nonce
 alias nonce="{
+}"
+# Create a nonce from date with seconds & nanoseconds
+alias donce="{
   echo ; echo 'SHA512 SUM (sha512sum):'
   command date +%s%N | sha512sum | command cut -d' ' -f 1 ;
   echo ; echo 'SHA256 SUM (sha256sum):'
