@@ -697,7 +697,7 @@ alias donce="{
   echo ; echo 'OPENSSL BASE 64 (openssl rand -base64):'
   command openssl rand -base64 32 ; # <n> can be adjusted (i.e. 24,  etc.)
   echo
-}" # nonce
+}" # donce
 
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
 export SALT='12345678abcdefgh' # TODO: generate SALT
