@@ -652,7 +652,10 @@ alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
 # https://stackoverflow.com/q/65523749
 alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # https://serverfault.com/q/283294/how-to-read-in-n-random-characters-from-dev-urandom
-alias randchars='tr -dC "[:xdigit:]" < /dev/urandom | head -c 16 ; echo ;'
+alias randchars='{ head /dev/random \
+  | tr --delete --complement "[:alnum:]" \
+  | head -c 32 ; echo ;
+}' # randchars
 
 # https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
 # https://gnu.org/software/gawk/manual/html_node/Bracket-Expressions.html
