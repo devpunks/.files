@@ -54,6 +54,7 @@ pkg install pv # progress
 pkg install man
 pkg install eza
 pkg install git
+pkg install bash-completion
 pkg install tmux
 pkg install entr # http://eradman.com/entrproject
 pkg install wget
