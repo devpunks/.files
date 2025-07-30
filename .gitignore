@@ -14,6 +14,9 @@
 .bookmarks
 .NERDmarks
 
+# Notes
+NOTES*
+
 # tags
 tags
 ctags
