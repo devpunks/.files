@@ -371,10 +371,17 @@ ffmpeg -version
 # }}}
 
 
+# Homebrew information
 [[  $( uname-s ) =~ 'Darwin' ]]
   \ && brew config
   \ && brew services list
 
+# Enable Side Mouse Buttons
+[[  $( uname-s ) =~ 'Darwin' ]]
+  \ && brew install --cask sanesidebuttons
+  \ && open 'https://github.com/thealpa/SaneSideButtons#automatic-launch'
+
+# List Installed Packages
 [[  $( uname-s ) =~ 'Linux' ]]
   \ && pkg list --installed
 
