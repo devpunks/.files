@@ -1248,6 +1248,7 @@ function certify () { clear # Certificate Authority
   local -r certificate="${domain:-certificate}.pem"
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
+  # - https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations
   echo ; echo "ECDSA (Elliptic Curve Digital Signature Algorithms):"
   openssl ecparam -list_curves
 
