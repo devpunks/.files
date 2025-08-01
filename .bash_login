@@ -1265,7 +1265,7 @@ function certify () { clear # Certificate Authority
   openssl req -new -key ${domain}.ecc-${curve}.pem -subj "$subject" -out ${domain}.ecc-${curve}.csr
 
   echo; echo "Generating ECC [${curve}] Certificate ${domain}.ecc-${curve}.cert"
-  openssl req -new -X509 -nodes -days 365 \
+  openssl req -new -x509 -nodes -days 365 \
     -subj "$subject" -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
   curve=secp384r1
