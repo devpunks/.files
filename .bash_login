@@ -1262,9 +1262,11 @@ function certify () { clear # Certificate Authority
   echo ; echo "Generating RSA ${bits}-bit Private Key ${domain}.rsa.pem"
   openssl genpkey -algorithm RSA -out ${domain}.rsa.pem -pkeyopt rsa_keygen_bits:${bits}
 
-  echo ; echo Generate public key...
-  openssl rsa -passin pass:1234 -pubout -in CA_private.pem -out CA-cert.pub
-  cat CA-cert.pub
+  echo ; echo "Generating RSA ${bits}-bit Public Key ${domain}.rsa.pub"
+  openssl req -new -key ${domain}.rsa.pem -out ${domain}.rsa.pub
+
+  echo; echo "Generating RSA CSR (Certificate Signing Request) ${domain}.rsa.csr"
+  openssl req -new -key ${domain}.rsa.pem -out ${domain}.rsa.csr
 
   return
 
