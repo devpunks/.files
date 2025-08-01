@@ -1247,6 +1247,8 @@ function certify () { clear # Certificate Authority
   local -r certificate="${domain:-certificate}.pem"
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
+  echo; echo  Creating ECC (Elliptic Curve Cryptograpy) $certificate...
+
   openssl x509 --help
 
   echo; echo  Creating  $certificate
