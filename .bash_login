@@ -1237,6 +1237,12 @@ function verify () {
 # https://en.wikipedia.org/wiki/X.509
 alias certificates='{
   # ssh-keygen -L # prints contents of certificate
+  echo "Certificates & Requests:"
+  for certificate in *.{csr,cert}; do
+    echo; echo ${certificate}
+    cat ${certificate}
+  done
+
   for key in *.pem; do
     echo; echo extracting Public Key from ${key}
     openssl pkey -noout -text_pub -in ${key}
