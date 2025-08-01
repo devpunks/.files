@@ -1270,6 +1270,12 @@ function certify () { clear # Certificate Authority
 
   return
 
+
+# openssl genrsa -passout pass:1234 -out CA_private.pem 1024 # size
+# cat CA_private.pem
+# openssl rsa -passin pass:1234 -pubout -in CA_private.pem -out CA-cert.pub
+# cat CA-cert.pub
+
   openssl x509 --help
 
   echo; echo  Creating $certificate...
