@@ -1288,7 +1288,7 @@ function certify () { clear # Certificate Authority
   openssl genpkey -algorithm RSA -out ${domain}.rsa-${bits}.pem -pkeyopt rsa_keygen_bits:${bits}
 
   echo ; echo "Generating RSA ${bits}-bit Public Key ${domain}.rsa-${bits}.pub"
-  openssl req -new -key ${domain}.rsa-${bits}.pem -out ${domain}.rsa-${bits}.pub
+  openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.pub
 
   echo; echo "Generating RSA CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
   openssl req -new -key ${domain}.rsa.pem -out ${domain}.rsa-${bits}.csr
