@@ -1255,7 +1255,7 @@ function certify () { clear # Certificate Authority
   openssl ecparam -genkey -name prime256v1 -out ${domain}.ecc.pem
 
   echo; echo "Generating ECC CSR (Certificate Signing Request) ${domain}.ecc.csr"
-  openssl req -new -key ${domain}.ecc.key -out ${domain}.ecc.csr
+  openssl req -new -key ${domain}.ecc.pem -out ${domain}.ecc.csr
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
