@@ -1267,7 +1267,7 @@ function certify () { clear # Certificate Authority
   openssl req -new -key ${domain}.ecc-${curve}.pem -subj "$subject" -out ${domain}.ecc-${curve}.csr
 
   echo; echo "Generating ECC [${curve}] Certificate ${domain}.ecc-${curve}.cert"
-  openssl req -new -x509 -noenc -days 365 \
+  openssl req -new -x509 -sha256 -noenc -days 365 \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
@@ -1282,7 +1282,7 @@ function certify () { clear # Certificate Authority
   openssl req -new -key ${domain}.ecc-${curve}.pem -subj "$subject" -out ${domain}.ecc-${curve}.csr
 
   echo; echo "Generating ECC [${curve}] Certificate ${domain}.ecc-${curve}.cert"
-  openssl req -new -x509 -noenc -days 365 \
+  openssl req -new -x509 -sha384 -noenc -days 365 \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
