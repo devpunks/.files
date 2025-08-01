@@ -1242,7 +1242,7 @@ alias certificates='{
 
 # https://superuser.com/q/1007842
 function certify () { clear # Certificate Authority
-  local bits
+  local curve bits
   local -r domain="${1:-devpunks.studio}"
   local -r key="${domain:-certificate}.key.pem"
   local -r certificate="${domain:-certificate}.pem"
