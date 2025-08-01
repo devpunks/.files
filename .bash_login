@@ -1262,6 +1262,8 @@ function certify () { clear # Certificate Authority
   echo ; echo "Generating ECC [${curve}] Private Key ${domain}.ecc-${curve}.key"
   openssl ecparam -genkey -name ${curve} -out ${domain}.ecc-${curve}.pem
 
+  echo; echo "Generating ECC [${curve}] CSR (Certificate Signing Request) ${domain}.ecc-${curve}.csr"
+  openssl req -new -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.csr
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
