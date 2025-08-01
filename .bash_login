@@ -1244,6 +1244,7 @@ alias certificates='{
   done
 
   for key in *.pem; do
+    echo "TODO: List certificates"
     echo; echo extracting Public Key from ${key}
     openssl pkey -noout -text_pub -in ${key}
   done
