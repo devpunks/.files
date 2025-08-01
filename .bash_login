@@ -1250,6 +1250,7 @@ function certify () { clear # Certificate Authority
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
   # - https://stackoverflow.com/q/11992036
+  # - https://datatracker.ietf.org/doc/rfc4492
   # - https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations
   echo ; echo "ECDSA (Elliptic Curve Digital Signature Algorithms):"
   openssl ecparam -list_curves
