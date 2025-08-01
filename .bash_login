@@ -1247,7 +1247,10 @@ function certify () { clear # Certificate Authority
   local -r certificate="${domain:-certificate}.pem"
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
-  echo; echo "Creating ECC (Elliptic Curve Cryptograpy) Private Key ${domain}.ecc.key"
+  echo ; echo "ECDSA (Elliptic Curve Digital Signature Algorithms):"
+  openssl ecparam -list_curves
+
+  echo ; echo "Creating ECC (Elliptic Curve Cryptograpy) Private Key ${domain}.ecc.key"
   openssl ecparam -genkey -name prime256v1 -out ${domain}.ecc.key
 
   echo; echo "Creating ECC (Elliptic Curve Cryptograpy) CSR (Certificate Signing Request) ${domain}.ecc.csr"
