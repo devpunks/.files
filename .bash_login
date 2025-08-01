@@ -1269,7 +1269,7 @@ function certify () { clear # Certificate Authority
   openssl ec -in ${domain}.ecc-${curve}.pem -pubout -out ${domain}.ecc-${curve}.pub
 
   echo; echo "Generating ECC [${curve}] CSR (Certificate Signing Request) ${domain}.ecc-${curve}.csr"
-  openssl req -new -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.csr
+  openssl req -new -key ${domain}.ecc-${curve}.pem -subj "$subject" -out ${domain}.ecc-${curve}.csr
 
   curve=secp521r1
   echo ; echo "Generating ECC [${curve}] Private Key ${domain}.ecc-${curve}.pem"
