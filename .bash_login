@@ -1251,6 +1251,7 @@ function certify () { clear # Certificate Authority
 
   # - https://stackoverflow.com/q/11992036
   # - https://datatracker.ietf.org/doc/rfc4492
+  # - https://datatracker.ietf.org/doc/rfc5480
   # - https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations
   echo ; echo "ECDSA (Elliptic Curve Digital Signature Algorithms):"
   openssl ecparam -list_curves
