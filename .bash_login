@@ -1257,10 +1257,10 @@ function certify () { clear # Certificate Authority
   echo; echo "Generating ECC CSR (Certificate Signing Request) ${domain}.ecc.csr"
   openssl req -new -key ${domain}.ecc.key -out ${domain}.ecc.csr
 
-  echo ; echo "ECDSA (Elliptic Curve Digital Signature Algorithms):"
-  echo ; echo Generate private key...
-  openssl genrsa -passout pass:1234 -out CA_private.pem 1024 # size
-  cat CA_private.pem
+  echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
+  bits=2048
+  echo ; echo "Generating RSA ${bits}-bit Private Key ${domain}.rsa.pem"
+  openssl genpkey -algorithm RSA -out ${domain}.rsa.pem -pkeyopt rsa_keygen_bits:${bits}
 
   echo ; echo Generate public key...
   openssl rsa -passin pass:1234 -pubout -in CA_private.pem -out CA-cert.pub
