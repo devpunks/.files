@@ -1240,7 +1240,7 @@ alias certificates='{
   # ssh-keygen -L # prints contents of certificate
 }' # certificates
 
-# https://superuser.com/q/1007842
+# - https://superuser.com/q/1007842
 # - https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b
 function certify () { clear # Certificate Authority
   local curve bits
