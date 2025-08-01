@@ -1253,14 +1253,8 @@ alias certificates='{
   echo Certificates:
   for certificate in *.cert; do
     echo; echo ${certificate}
-    cat ${certificate}
-  done
-
-  for key in *.pem; do
-    echo "TODO: List certificates"
-    echo; echo extracting Public Key from ${key}
-    openssl pkey -noout -text_pub -in ${key}
-  done
+    openssl x509 -text -noout -in ${certificate}
+  done ; echo
 }' # certificates
 
 # - https://superuser.com/q/1007842
