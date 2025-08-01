@@ -1282,7 +1282,7 @@ function certify () { clear # Certificate Authority
 
   echo; echo "Generating ECC [${curve}] Certificate ${domain}.ecc-${curve}.cert"
   openssl req -new -x509 -noenc -days 365 \
-    -subj "$subject" -addtext "subjectAltName=DNS:${domain},DNS:*${domain}" \
+    -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
   curve=secp521r1
