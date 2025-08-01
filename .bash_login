@@ -1291,7 +1291,7 @@ function certify () { clear # Certificate Authority
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.pub
 
   echo; echo "Generating RSA CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
-  openssl req -new -key ${domain}.rsa.pem -out ${domain}.rsa-${bits}.csr
+  openssl req -new -key ${domain}.rsa.pem -subj "$subject" -out ${domain}.rsa-${bits}.csr
 
   bits=4096
   echo ; echo "Generating RSA ${bits}-bit Private Key ${domain}.rsa-${bits}.pem"
