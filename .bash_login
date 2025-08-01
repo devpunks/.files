@@ -1244,8 +1244,14 @@ function verify () {
 # https://en.wikipedia.org/wiki/X.509
 alias certificates='{
   # ssh-keygen -L # prints contents of certificate
-  echo "Certificates & Requests:"
-  for certificate in *.{csr,cert}; do
+  echo Requests:
+  for request in *.csr; do
+    echo; echo CSR ${request}
+    cat ${request}
+  done ; echo
+
+  echo Certificates:
+  for certificate in *.cert; do
     echo; echo ${certificate}
     cat ${certificate}
   done
