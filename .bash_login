@@ -1251,7 +1251,7 @@ function certify () { clear # Certificate Authority
   echo ; echo "ECDSA (Elliptic Curve Digital Signature Algorithms):"
   openssl ecparam -list_curves
 
-  echo ; echo "Creating ECC (Elliptic Curve Cryptograpy) Private Key ${domain}.ecc.key"
+  echo ; echo "Generating ECC Private Key ${domain}.ecc.key"
   openssl ecparam -genkey -name prime256v1 -out ${domain}.ecc.key
 
   echo; echo "Creating ECC (Elliptic Curve Cryptograpy) CSR (Certificate Signing Request) ${domain}.ecc.csr"
