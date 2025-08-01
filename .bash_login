@@ -1251,7 +1251,7 @@ function certify () { clear # Certificate Authority
 
   openssl x509 --help
 
-  echo; echo  Creating  $certificate
+  echo; echo  Creating $certificate...
 
   # -new -x509
   openssl req -new \
