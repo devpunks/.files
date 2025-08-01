@@ -1297,7 +1297,8 @@ function certify () { clear # Certificate Authority
 
   echo; echo "Generating ECC [${curve}] Certificate ${domain}.ecc-${curve}.cert"
   openssl req -new -x509 -nodes -days 365 \
-    -subj "$subject" -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
+    -subj "$subject" -addtext "subjectAltName=DNS:${domain},DNS:*${domain}" \
+    -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
