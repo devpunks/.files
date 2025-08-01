@@ -1259,8 +1259,8 @@ function certify () { clear # Certificate Authority
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
-  echo ; echo "Generating RSA ${bits}-bit Private Key ${domain}.rsa.pem"
-  openssl genpkey -algorithm RSA -out ${domain}.rsa.pem -pkeyopt rsa_keygen_bits:${bits}
+  echo ; echo "Generating RSA ${bits}-bit Private Key ${domain}.rsa-${bits}.pem"
+  openssl genpkey -algorithm RSA -out ${domain}.rsa-${bits}.pem -pkeyopt rsa_keygen_bits:${bits}
 
   echo ; echo "Generating RSA ${bits}-bit Public Key ${domain}.rsa.pub"
   openssl req -new -key ${domain}.rsa.pem -out ${domain}.rsa.pub
