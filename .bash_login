@@ -1236,7 +1236,6 @@ function verify () {
 
 # https://en.wikipedia.org/wiki/X.509
 alias certificates='{
-  echo TODO: certificates ;
   # ssh-keygen -L # prints contents of certificate
 }' # certificates
 
