@@ -1336,7 +1336,7 @@ function certify () { clear # Certificate Authority
 
   # -new -x509
   openssl req -new \
-    -sha256 -nodes \
+    -sha256 -noenc \
     -subj "$subject" \
     -newkey rsa:2048 -days 365 \
     -keyout $key -out $certificate
