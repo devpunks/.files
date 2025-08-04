@@ -1164,7 +1164,7 @@ function! g:GitDiffs () abort
   let l:summary ..= '%#Statement# '
 
   return l:summary
-endfunction " g:GitDiffs
+endfunction " GitDiffs
 
 function! g:GitChanges () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
