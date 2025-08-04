@@ -79,6 +79,18 @@ function Find(...)  " abort
 "   i=i+1
 " endwhile
 
+
+  for entry in taglist('^'..tag)
+    if index(['f'], entry.kind)  > 1
+      call add(tags, entry)
+    endif
+  endfor
+
+  echo 'Tags: ' .. join( tags,  ', ' )
+  echo 'Git root: ' .. system('git rev-parse --show-toplevel')
+
+  return
+
   call complete(col('.'), ['January', 'February', 'March',
   \ 'April', 'May', 'June', 'July', 'August', 'September',
   \ 'October', 'November', 'December'])
