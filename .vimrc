@@ -75,7 +75,7 @@ function Find(...)  " abort
   echo  'argument count: ' .. argc()
 
 " while i < argc()
-"   echo 'Argument ('..i..'): ' .. argv(i)
+    echo 'Argument ('..1..'): ' .. argv(0)
 "   i=i+1
 " endwhile
 
