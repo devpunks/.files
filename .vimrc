@@ -69,7 +69,8 @@ function Foo(...)
   echo  'argument count: ' .. argc()
 
   while i < argc()
-    echo 'Argument ('..i..'): '  ..  argv(i)
+    echo 'Argument ('..i..'): ' .. argv(i)
+    i=i+1
   endwhile
 
   call complete(col('.'), ['January', 'February', 'March',
