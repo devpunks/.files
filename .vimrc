@@ -1300,7 +1300,6 @@ endfunction " g:CScopes
 "  - https://linuxhint.com/integrating_vim_ctags
 "  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
-"  - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
 " -------------------------------------------------------------------------
 nnoremap <C-/> echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> echo 'Previous Tag :tprev'<CR>
