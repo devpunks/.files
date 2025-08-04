@@ -1258,8 +1258,8 @@ function g:CScopes () abort
 endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
-" Tags :h tags-and-searches
-"  :h tag
+" Tags :h tags-and-searches (tagsrch.txt)
+"  :h tag <name>
 "  :h tags
 "  :h ctags
 "  :h tagstack
