@@ -1178,7 +1178,7 @@ function! g:GitChanges () abort
   let l:summary ..= '%#Statement# '
 
   return l:summary
-endfunction " g:GitChanges
+endfunction " GitChanges
 
 function! g:GitGutter () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
