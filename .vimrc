@@ -65,7 +65,7 @@ endfunction
 
 " - https://github.com/alvan/vim-indexer
 " -  https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
-function Foo(...)
+function Find(...)  " abort
   let i = 0
   echo 'Fooing'
   echo  'argument count: ' .. argc()
