@@ -1265,6 +1265,7 @@ endfunction " g:CScopes
 "  :h tag <name>  " or from command line : /<name>
 "  :h tags
 "  :h ctags
+"  :h tselect
 "  :h tagstack
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
