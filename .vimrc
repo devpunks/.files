@@ -1262,7 +1262,7 @@ endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
 " Tags :h tags-and-searches (tagsrch.txt)
-"  :h tag <name>
+"  :h tag <name>  " or from command line : /<name>
 "  :h tags
 "  :h tselect
 "  :h ctags
