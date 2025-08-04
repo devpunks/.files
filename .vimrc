@@ -1153,7 +1153,7 @@ function! g:GitBlur () abort
   highlight link GitGutterDelete NONE
 
   GitGutterLineHighlightsDisable
-endfunction " g:GitBlur
+endfunction " GitBlur
 
 function! g:GitDiffs () abort
   let l:files = system('git diff --shortstat')
