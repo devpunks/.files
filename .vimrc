@@ -1298,8 +1298,6 @@ endfunction " g:CScopes
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
 "  - https://linuxhint.com/integrating_vim_ctags
-"  - https://andrewradev.com/2011/06/08/vim-and-ctags
-"  - https://andrewradev.com/2011/06/08/vim-and-ctags
 "  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 "  - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
