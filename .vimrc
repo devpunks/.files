@@ -1316,7 +1316,7 @@ if empty( l:word ) || &previewwindow | return | endif
   echo
     \ 'Cursor Tag <cword>: ' .. l:word
     \ 'Using tagfile' .. &tags
-endfunction " g:Tag
+endfunction " Tag
 
 " autocmd VimDefaults VimEnter * call g:Tags ()
 autocmd VimDefaults VimEnter * call g:CTags ()
