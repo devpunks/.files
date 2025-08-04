@@ -63,6 +63,7 @@ function Foo{g:shazam} () abort
   echo 'Shazzaaaam'
 endfunction
 
+" - https://github.com/alvan/vim-indexer
 function Foo(...)
   let i = 0
   echo 'Fooing'
