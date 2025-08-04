@@ -1124,7 +1124,7 @@ function! g:Marks() abort
   highlight! link SignatureMarkerLine CursorLineNr
 
   autocmd FileDefaults BufEnter * :SignatureRefresh
-endfunction " g:Marks
+endfunction " Marks
 
 " -------------------------------------------------------------------------
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
