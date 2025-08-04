@@ -57,7 +57,14 @@ set emoji encoding=UTF-8
 
 " https://stackoverflow.com/q/5845557
 " TODO: remove if &compatible | set nocompatible | endif
-function Foo()
+
+let shazam='Bar'
+function Foo{g:shazam} () abort
+  echo 'Shazzaaaam'
+endfunction
+
+function Foo(...)
+  let i = 0
   echo 'Fooing'
   call complete(col('.'), ['January', 'February', 'March',
   \ 'April', 'May', 'June', 'July', 'August', 'September',
