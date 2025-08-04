@@ -95,8 +95,8 @@ function Find(...)  " abort
   \ 'April', 'May', 'June', 'July', 'August', 'September',
   \ 'October', 'November', 'December'])
   return ''
-endfunction
-command -nargs=* -complete=custom,foo Foo call g:Foo(<f-args>)
+endfunction " Find
+command -nargs=* -complete=custom,foo Find call g:Find(<f-args>)
 
 inoremap <Tab><Space> <C-R>Foo()<CR>
 
