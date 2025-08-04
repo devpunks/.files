@@ -66,6 +66,12 @@ endfunction
 function Foo(...)
   let i = 0
   echo 'Fooing'
+  echo  'argument count: ' .. argc()
+
+  while i < argc()
+    echo 'Argument ('..i..'): '  ..  argv(i)
+  endwhile
+
   call complete(col('.'), ['January', 'February', 'March',
   \ 'April', 'May', 'June', 'July', 'August', 'September',
   \ 'October', 'November', 'December'])
