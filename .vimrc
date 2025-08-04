@@ -1272,6 +1272,8 @@ endfunction " g:CScopes
 "  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 " -------------------------------------------------------------------------
+nnoremap <C-/> echo 'Next Tag :tnext'<CR>
+nnoremap <C-\> echo 'Previous Tag :tprev'<CR>
 set tags= " Unset
 let tags = expand( '$HOME/tags' )
 if filereadable( tags ) | let &tags=tags | endif
