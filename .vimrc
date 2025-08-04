@@ -65,7 +65,17 @@ endfunction
 
 " - https://github.com/alvan/vim-indexer
 " -  https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
-command -nargs=* -complete=custom,foo Find call g:Find(<f-args>)
+function Complete(token, command_line='', cursor_pos='0') " abort
+  if len(a:token) > 0
+    let prefix = a:token
+  else
+    let prefix = '.'
+  endif
+
+  echo 'Shazaam Completion ('..l:prefix..'): ' .. a:token
+endfunction
+
+command -nargs=* -complete=custom,Complete Find call g:Find(<f-args>)
 function Find(...)  " abort
   let i = 0
   let l:tags = []
