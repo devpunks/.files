@@ -1376,6 +1376,24 @@ augroup UserDefaults
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
+function s:TagsStatus (mods) " abort
+  let l:icon = ''
+
+  echo 'shazam:'.. get(g:, 'gutentags_updated', '')
+
+  if(index(a:mods, 'ctags') >= 0)
+    let l:icon .= '🏷️'
+  endif
+
+  if(index(a:mods, 'cscope') >= 0)
+    let l:icon .= '🔖'
+  endif
+
+  echo 'The icons: ' .. l:icon
+
+  return '[' .. l:icon .. ']'
+endfunction  " TagsStatus
+
 " -------------------------------------------------------------------------
 " vim-TagList - https://github.com/yegappan/taglist
 " -------------------------------------------------------------------------
