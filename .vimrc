@@ -77,6 +77,7 @@ function Foo(...)
   \ 'October', 'November', 'December'])
   return ''
 endfunction
+command -nargs=* -complete=custom,foo Foo call g:Foo(<f-args>)
 
 inoremap <Tab><Space> <C-R>Foo()<CR>
 
