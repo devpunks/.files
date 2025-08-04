@@ -1143,7 +1143,7 @@ function! g:GitFocus () abort
   highlight! link GitGutterDelete DiffDelete
 
   GitGutterLineHighlightsEnable
-endfunction " g:GitFocus
+endfunction " GitFocus
 
 function! g:GitBlur () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
