@@ -1399,7 +1399,7 @@ function g:TagsStatus (mods) " abort
     let l:icon .= '🔖'
   endif
 
-  echo strftime("%T") .. 'The icons: ' .. l:icon .. '& mods: ' .. join(a:mods, ',')
+  " echo strftime("%T") .. 'The icons: ' .. l:icon .. '& mods: ' .. join(a:mods, ',')
 
   return '[' .. l:icon .. ']'
 endfunction  " TagsStatus
