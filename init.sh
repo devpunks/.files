@@ -316,8 +316,6 @@ echo Cloning submodules...
 # https://github.com/sunaku/vim-ruby-minitest
 # https://github.com/prabirshrestha/async.vim
 # https://github.com/prabirshrestha/asyncomplete.vim
-# https://github.com/prabirshrestha/asyncomplete-emoji.vim
-# https://github.com/prabirshrestha/asyncomplete-buffer.vim
 # https://github.com/prabirshrestha/asyncomplete-file.vim
 # https://github.com/prabirshrestha/asyncomplete-tags.vim
 # https://github.com/prabirshrestha/asyncomplete-ultisnips.vim
