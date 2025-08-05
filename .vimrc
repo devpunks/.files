@@ -1429,7 +1429,7 @@ function g:TagsList () abort
   echo 'Opening Tags List for ' .. expand('%')
   TlistOpen
   " .foldopen!
-  wincmd p " Preview
+  wincmd p " Previous
 
 endfunction " g:TagsList
 
