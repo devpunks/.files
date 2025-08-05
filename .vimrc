@@ -75,7 +75,7 @@ function Complete(token, command_line='', cursor_pos='0') " abort
   endif
 
   echo 'Shazaam Completion ('..l:prefix..'): ' .. a:token
-endfunction
+endfunction " Complete
 
 command -nargs=* -complete=custom,Complete Find call g:Find(<f-args>)
 function Find(...)  " abort
