@@ -463,8 +463,11 @@ set statusline+=%{%g:GitChanges()%}
 set statusline+=💻%Y
 
 " (Guten)Tags
-set statusline+=%{gutentags#statusline_cb(function('TagsStatus'))}
-" set statusline+=%{get(g:, 'gutentags_updated', '')}
+if &rtp =~ 'gutentag'
+  " set statusline+=%{get(g:, 'gutentags_updated', '')}
+  set statusline+=%{gutentags#statusline_cb(function('TagsStatus'))}
+endif
+
 " flags
 set statusline+=\ %r%h
 " change to default highlight
