@@ -1370,6 +1370,22 @@ augroup UserDefaults
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
+autocmd VimDefaults VimEnter * call g:CTags ()
+
+function g:CTags () abort
+  let l:tags = expand( &tags )
+
+  if ! filereadable(l:tags) | return | endif
+
+  echom 'Found Tags in' .. l:tags
+
+  set omnifunc=ccomplete#Complete " CTags Complete
+
+  if &rtp =~ 'gutentags'
+    let g:gutentags_trace = 1
+  endif
+endfunction " g:CTags
+
 function g:TagsStatus (mods) " abort
   let l:icon = ''
 
