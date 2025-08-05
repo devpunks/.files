@@ -1382,7 +1382,7 @@ function g:TagsStatus (mods) " abort
   echo 'shazam:'.. get(g:, 'gutentags_updated', '')
 
   if(index(a:mods, 'ctags') >= 0)
-    let l:icon .= '🏷️'
+    let l:icon .= 'f🏷️'
   endif
 
   if(index(a:mods, 'cscope') >= 0)
