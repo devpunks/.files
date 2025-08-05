@@ -1376,7 +1376,7 @@ augroup UserDefaults
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
-function s:TagsStatus (mods) " abort
+function g:TagsStatus (mods) " abort
   let l:icon = ''
 
   echo 'shazam:'.. get(g:, 'gutentags_updated', '')
