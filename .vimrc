@@ -1389,7 +1389,7 @@ endfunction " g:CTags
 function g:TagsStatus (mods) " abort
   let l:icon = ''
 
-  echo 'shazam:'.. get(g:, 'gutentags_updated', '')
+  " echo 'shazam:'.. get(g:, 'gutentags_updated', '')
 
   if(index(a:mods, 'ctags') >= 0)
     let l:icon .= 'f🏷️'
