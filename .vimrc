@@ -1357,17 +1357,6 @@ if empty( l:word ) || &previewwindow | return | endif
     \ 'Using tagfile' .. &tags
 endfunction " Tag
 
-" autocmd VimDefaults VimEnter * call g:Tags ()
-autocmd VimDefaults VimEnter * call g:CTags ()
-
-function g:CTags () abort
-  let l:tags = expand('$HOME/tags')
-
-  if ! filereadable(l:tags) | return | endif
-
-  set omnifunc=ccomplete#Complete " CTags Complete
-endfunction " g:CTags
-
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
