@@ -1356,9 +1356,7 @@ function certify () { clear # Certificate Authority
   openssl  req  -in $certificate -text
   echo; echo Testing...
   openssl s_server -www -cert $certificate
-  echo; echo "Exporting PKCS ($domain.pfx)..."
-  openssl pkcs12 -export -in $certificate \
-    -out "$domain.pfx" -name 'PKCS Certificate'
+
 
   echo Generate private key...
   openssl genrsa -passout pass:1234 -out CA_private.pem 1024 # size
