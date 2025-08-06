@@ -1384,6 +1384,7 @@ function g:CTags () abort
 
   if &rtp =~ 'gutentags'
     let g:gutentags_trace = 1
+    let g:gutentags_ctags_extra_args = []
   endif
 endfunction " g:CTags
 
