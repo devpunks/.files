@@ -724,6 +724,7 @@ if v:shell_error == 0 " type exists
     \ 'f:methods',
     \ 'm:modules',
     \ 'c:classes',
+    \ 'C:constants',
     \ 'C:contexts',
     \ 'd:describes',
     \ 'F:singleton methods'
