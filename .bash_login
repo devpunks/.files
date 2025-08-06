@@ -1345,15 +1345,6 @@ function certify () { clear # Certificate Authority
 
   openssl x509 --help
 
-  echo; echo  Creating $certificate...
-
-  # -new -x509
-  openssl req -new \
-    -sha256 -noenc \
-    -subj "$subject" \
-    -newkey rsa:2048 -days 365 \
-    -keyout $key -out $certificate
-
   echo; echo Verifying Signature...
   echo 'TODO: call verify()'
   openssl  req  -in $certificate -verify -key $key
