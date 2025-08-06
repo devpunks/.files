@@ -1331,7 +1331,7 @@ function certify () { clear # Certificate Authority
 
   bits=4096
   echo ; echo "Generating RSA PKCS#8 ${bits}-bit Private Key ${domain}.rsa-${bits}.pem"
-  openssl genpkey -algorithm RSA -out ${domain}.rsa-${bits}.pem -pkeyopt rsa_keygen_bits:${bits}
+  openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.rsa-${bits}.pem
 
   echo ; echo "Generating RSA ${bits}-bit Public Key ${domain}.rsa-${bits}.pub"
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.pub
