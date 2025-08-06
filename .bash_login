@@ -1340,6 +1340,7 @@ function certify () { clear # Certificate Authority
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.csr
 
 
+  return
 
 # openssl genrsa -passout pass:1234 -out CA_private.pem 1024 # size
 # cat CA_private.pem
