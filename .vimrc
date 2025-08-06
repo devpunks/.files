@@ -58,60 +58,6 @@ set emoji encoding=UTF-8
 " https://stackoverflow.com/q/5845557
 " TODO: remove if &compatible | set nocompatible | endif
 
-let shazam='Bar'
-function Foo{g:shazam} () abort
-  echo 'Shazzaaaam'
-endfunction
-
-" - https://github.com/alvan/vim-indexer
-" - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
-" - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
-" - https://andrewradev.com/2011/06/08/vim-and-ctags
-function Complete(token, command_line='', cursor_pos='0') " abort
-  if len(a:token) > 0
-    let prefix = a:token
-  else
-    let prefix = '.'
-  endif
-
-  echo 'Shazaam Completion ('..l:prefix..'): ' .. a:token
-endfunction " Complete
-
-command -nargs=* -complete=custom,Complete Find call g:Find(<f-args>)
-function Find(...)  " abort
-  let i = 0
-  let l:tags = []
-  let l:tag  = 'module'
-  let l:kinds  = ['f', 'function', 'method', 'F', 'singleton method' ]
-
-  echo 'Fooing'
-  echo  'argument count: ' .. argc()
-
-" while i < argc()
-    echo 'Argument ('..1..'): ' .. argv(0)
-"   i=i+1
-" endwhile
-
-
-  for entry in taglist('^'..tag)
-    if index(['f'], entry.kind)  > 1
-      call add(tags, entry)
-    endif
-  endfor
-
-  echo 'Tags: ' .. join( tags,  ', ' )
-  echo 'Git root: ' .. system('git rev-parse --show-toplevel')
-
-  return
-
-  call complete(col('.'), ['January', 'February', 'March',
-  \ 'April', 'May', 'June', 'July', 'August', 'September',
-  \ 'October', 'November', 'December'])
-  return ''
-endfunction " Find
-
-inoremap <Tab><Space> <C-R>Foo()<CR>
-
 if ! exists('g:pluginname_setting')
   unlet! skip_defaults_vim
   let g:skip_defaults_vim=0
