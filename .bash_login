@@ -1363,10 +1363,6 @@ function certify () { clear # Certificate Authority
   echo Generate public key...
   openssl rsa -passin pass:1234 -pubout -in CA_private.pem -out CA-cert.pub
   cat CA-cert.pub
-
-  echo Sign public key...
-  openssl sha256 -sign CA_private.pem -out alice_pub_signed_by_CA.sha256 alice_pub.txt
-  cat alice_pub_signed_by_CA.sha256
 } # certify
 
 # }}}
