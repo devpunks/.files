@@ -1356,12 +1356,6 @@ function certify () { clear # Certificate Authority
   openssl pkcs12 -export -in $certificate \
     -out "$domain.pfx" -name 'PKCS Certificate'
 
-  return
-
-  echo Write text file...
-  echo "Foo Bar Alice" > alice_pub.txt
-  cat alice_pub.txt
-
   echo Generate private key...
   openssl genrsa -passout pass:1234 -out CA_private.pem 1024 # size
   cat CA_private.pem
