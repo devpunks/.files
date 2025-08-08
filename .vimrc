@@ -1134,7 +1134,7 @@ function! g:ScrollBar() abort
   let g:sclow_bar_right_offset = -2
 
   " TODO: Remove
-  " SclowDisable
+  SclowDisable
 endfunction " g:ScrollBar
 
 " -------------------------------------------------------------------------
