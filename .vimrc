@@ -1969,7 +1969,7 @@ function g:LSP () abort
   LspStopServer
   call lsp#disable() " TODO: REMOVE"
 
-endfunction " g:LSP
+endfunction " LSP
 
 function! s:on_lsp_buffer_enabled() abort
   echo 'LSP Buffer Enabled'
