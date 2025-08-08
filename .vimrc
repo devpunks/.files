@@ -1739,7 +1739,7 @@ function g:NerdToggle () abort
     wincmd p
   endif
   " :TlistToggle
-endfunction " g:NerdToggle
+endfunction " NerdToggle
 
 nnoremap <Tab><Enter> :call g:NerdToggle ()<CR>
 
