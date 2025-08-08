@@ -1674,7 +1674,7 @@ function! g:ZoomDrawer () abort
   if ( l:open ) | NERDTree | wincmd p | endif
   " let l:tagbar_open = bufwinnr( t:tagbar_buf_name) != -1
   "  if ( l:tagbar_open ) | TagbarOpen | wincmd p | endif
-endfunction " g:ZoomDrawer
+endfunction " ZoomDrawer
 
 " -------------------------------------------------------------------------
 " NETRW
