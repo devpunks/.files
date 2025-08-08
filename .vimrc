@@ -1603,7 +1603,7 @@ if &rtp !~ 'supertab' | return | endif
 "   \ .. g:SuperTabDefaultCompletionType
 " echo 'SuperTab secondary completion type:'
 " ' \ ..g:SuperTabContextDefaultCompletionType
-endfunction " g:Tab
+endfunction " Tab
 
 function! s:tab () abort
   if &rtp !~ 'supertab' | return | endif
