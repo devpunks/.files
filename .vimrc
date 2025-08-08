@@ -1993,7 +1993,7 @@ function! s:on_lsp_buffer_enabled() abort
   nmap <buffer> g] <Plug>(lsp-next-diagnostic)
   nmap <buffer> [g <Plug>(lsp-previous-diagnostic)
 
-endfunction " s:on_lsp_buffer_enabled
+endfunction " on_lsp_buffer_enabled
 
 " -------------------------------------------------------------------------
 " Vim LSP Settings - https://github.com/mattn/vim-lsp-settings
