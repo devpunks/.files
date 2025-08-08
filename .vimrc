@@ -863,8 +863,9 @@ function Complete(token, command_line='', cursor_pos='0') " abort
   echo 'Shazaam Completion ('..l:prefix..'): ' .. a:token
 endfunction " Complete
 
-command -nargs=* -complete=custom,Complete Lookup call g:Find(<f-args>)
-function Lookup(...)  " abort
+inoremap <Tab><Space> Lookup()<CR>
+command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
+function g:Lookup(...)  " abort
   let i = 0
   let l:tags = []
   let l:tag  = 'module'
