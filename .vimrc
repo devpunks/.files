@@ -1900,7 +1900,7 @@ function g:AsyncompleteTags () abort
     \ 'config': { 'max_file_size': -1, },
     \ 'completor': function('asyncomplete#sources#tags#completor'),
     \ }))
-endfunction " g:AsyncompleteTags
+endfunction " AsyncompleteTags
 
 " -------------------------------------------------------------------------
 " Asyncomplete Ultisnips - https://github.com/prabirshrestha/asyncomplete-ultisnips.vim
