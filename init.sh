@@ -153,7 +153,12 @@ pkg install tinyproxy # https://tinyproxy.github.io
 pkg install jq
 pkg install vim
 pkg install tidy
-pkg install ctags # Code(-completion) tags https://github.com/universal-ctags/ctags
+# Code(-completion) tags https://github.com/universal-ctags/ctags
+[[  $( uname-s ) =~ 'Darwin' ]] \
+  && pkg install universal-ctags
+[[  $( uname-s ) =~ 'Linux' ]] \
+  && pkg install ctags
+pkg install cscope
 pkg install libyaml
 pkg install libxml2
 pkg install libxslt
