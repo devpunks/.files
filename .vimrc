@@ -1726,7 +1726,7 @@ function! g:NerdDrawer () abort
 
   NERDTreeToggle " Open Drawer
   wincmd p " Focus on `p`revious buffer
-endfunction " g:NerdDrawer
+endfunction " NerdDrawer
 
 function g:NerdToggle () abort
   if exists(':TagbarToggle')
