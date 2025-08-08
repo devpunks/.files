@@ -2080,7 +2080,7 @@ function g:TestSetup () abort
   nnoremap <Leader>l :TestLast<CR>
   nnoremap <Leader>g :TestVisit<CR>
 
-endfunction " g:TestSetup
+endfunction " TestSetup
 
 " -------------------------------------------------------------------------
 " Vim-ruby - https://github.com/vim-ruby/vim-ruby
