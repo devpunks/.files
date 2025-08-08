@@ -1609,7 +1609,7 @@ function! s:tab () abort
   if &rtp !~ 'supertab' | return | endif
 
   echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
-endfunction " s:tab
+endfunction " tab
 command! Tab call s:tab()
 
 " -------------------------------------------------------------------------
