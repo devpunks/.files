@@ -477,7 +477,7 @@ nnoremap <Space> za
 nnoremap <Enter> :echo 'ENTER'
 nnoremap <Space><Enter> :echo 'SPACE + ENTER'
 inoremap <Space><Enter> <C-o>:echo 'INSERT SPACE + ENTER'
-nnoremap <Tab> :echo 'TAB'
+nnoremap <Tab> :echo 'TAB'<CR>
 nnoremap <S-Tab> :echo 'SHIFT + TAB'<CR>
 inoremap <Tab> <C-o>:echo 'INSERT TAB'
 inoremap <S-Tab> <C-o>:echo 'INSERT SHIFT + TAB'
