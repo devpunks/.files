@@ -511,8 +511,8 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
   " TODO: <C-t> conflicts with :tab pop
 
 " tabs
-nnoremap <silent> <C-n> :tabnext<CR>
-nnoremap <silent> <C-p> :tabprevious<CR>
+nnoremap <silent> L :tabnext<CR>
+nnoremap <silent> H :tabprevious<CR>
 
 " current buffer in new (t)ab
 nnoremap <Leader>t <C-w>t
