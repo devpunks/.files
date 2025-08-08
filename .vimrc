@@ -897,8 +897,6 @@ function g:Lookup(...)  " abort
   return ''
 endfunction " Lookup
 
-inoremap <Tab><Space> Lookup()<CR>
-
 " -------------------------------------------------------------------------
 " PopUp () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
