@@ -471,8 +471,8 @@ nnoremap ; :
 nnoremap <S-f> /
 
 " :Bdelete menu<CR>
-nnoremap <silent> <Del> x
-nnoremap <silent> <Tab><Del> :Bwipeout menu<CR>
+nnoremap <silent><Del> x
+nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
 nnoremap <Space> za
 nnoremap <Enter> :echo 'ENTER'
 nnoremap <Space><Enter> :echo 'SPACE + ENTER'
