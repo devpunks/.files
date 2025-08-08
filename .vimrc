@@ -1917,7 +1917,7 @@ function g:AsyncompleteUltisnips () abort
     \ 'allowlist': ['*'],
     \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
     \ }))
-endfunction " g:AsyncompleteUltisnips
+endfunction " AsyncompleteUltisnips
 
 " -------------------------------------------------------------------------
 " Vim LSP - https://github.com/prabirshrestha/vim-lsp
