@@ -2012,7 +2012,7 @@ function g:LSPSettings () abort
     \ 'package.json',
     \ 'node_modules/',
   \]
-endfunction " g:LSPSettings
+endfunction " LSPSettings
 
 " -------------------------------------------------------------------------
 " CoC.vim - https://github.com/neoclide/coc.nvim
