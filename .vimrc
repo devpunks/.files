@@ -1533,7 +1533,7 @@ autocmd VimDefaults VimEnter * :Fuzzy
 " :h finddir()
 " :h findfile()
 function! s:find () abort
-endfunction " s:find
+endfunction " find
 
 function! s:fuzzy () abort
   if &rtp !~ 'ctrlp.vim' | return | endif
