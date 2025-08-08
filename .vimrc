@@ -1882,7 +1882,7 @@ function g:AsyncompleteFile () abort
     \ 'allowlist': ['*'],
     \ 'completor': function('asyncomplete#sources#file#completor'),
     \ }))
-endfunction " g:AsyncompleteFile
+endfunction " AsyncompleteFile
 
 " -------------------------------------------------------------------------
 " Asyncomplete Tags - https://github.com/prabirshrestha/asyncomplete-tags.vim
