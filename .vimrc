@@ -1863,7 +1863,7 @@ function g:AsyncompleteBuffer () abort
     \ 'config': { 'max_buffer_size': -1, },
     \ 'completor': function('asyncomplete#sources#buffer#completor'),
     \ }))
-endfunction " g:AsyncompleteBuffer
+endfunction " AsyncompleteBuffer
 
 " -------------------------------------------------------------------------
 " Asyncomplete File - https://github.com/prabirshrestha/asyncomplete-file.vim
