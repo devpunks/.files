@@ -1844,7 +1844,7 @@ function g:AsyncompleteEmoji () abort
     \ 'allowlist': ['*'],
     \ 'completor': function('asyncomplete#sources#emoji#completor'),
     \ }))
-endfunction " g:AsyncompleteEmoji
+endfunction " AsyncompleteEmoji
 
 " -------------------------------------------------------------------------
 " Asyncomplete Buffer - https://github.com/prabirshrestha/asyncomplete-buffer.vim
