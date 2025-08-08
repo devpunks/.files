@@ -2042,7 +2042,7 @@ function g:Lint () abort
     \ '*': [ 'remove_trailing_lines', 'trim_whitespace' ],
   }
 
-endfunction " g:Lint
+endfunction " Lint
 
 " -------------------------------------------------------------------------
 " Vim-test - https://github.com/vim-test/vim-test
