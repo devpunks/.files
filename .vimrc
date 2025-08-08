@@ -1580,7 +1580,7 @@ function! s:fuzzy () abort
   if &rtp !~ 'vim-ctrlp-funky'
     let g:ctrlp_funky_syntax_highlight = 1
   endif
-endfunction " s:fuzzy
+endfunction " fuzzy
 command! Fuzzy call s:fuzzy()
 
 " -------------------------------------------------------------------------
