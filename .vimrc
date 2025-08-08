@@ -1802,7 +1802,7 @@ function! g:FernDrawer () abort
   nnoremap <buffer> R gg<Plug>(fern-action-reload)
   nnoremap <buffer> cd <Plug>(fern-action-cd)
   nnoremap <buffer> CD gg<Plug>(fern-action-cd)<C-o>
-endfunction " g:FernDrawer
+endfunction " FernDrawer
 
 " -------------------------------------------------------------------------
 " Closetag - https://github.com/alvan/vim-closetag
