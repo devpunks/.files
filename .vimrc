@@ -1718,7 +1718,7 @@ function! g:NerdInit () abort
   let g:NERDTreeDirArrowExpandable  = '📁' " Expandable directory
   let g:NERDTreeDirArrowCollapsible = '📂' " Collapsible directory
   let g:NERDTreeGitStatusConcealBrackets = 0 " 0 - show | 1 = hide
-endfunction " g:NerdInit
+endfunction " NerdInit
 
 function! g:NerdDrawer () abort
   if ! exists('g:NERDTree') | return | endif
