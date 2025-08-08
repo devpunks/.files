@@ -901,7 +901,6 @@ inoremap <Tab><Space> Lookup()<CR>
 " -------------------------------------------------------------------------
 " PopUp () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
-
 function! PopUp () abort
   let l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
 
