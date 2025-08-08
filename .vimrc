@@ -1826,7 +1826,7 @@ function! s:CloseTags () abort
 
   " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
   "let g:closetag_emptyTags_caseSensitive = 1
-endfunction " s:CloseTags
+endfunction " CloseTags
 
 " -------------------------------------------------------------------------
 " Asyncomplete Emoji - https://github.com/prabirshrestha/asyncomplete-emoji.vim
