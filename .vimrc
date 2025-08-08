@@ -1654,7 +1654,7 @@ function g:Snippets () abort
   let g:UltiSnipsJumpForwardTrigger = '<c-n>'
   let g:UltiSnipsJumpBackwardTrigger = '<c-p>'
   let g:UltiSnipsJumpOrExpandTrigger = '<S-Tab>'
-endfunction " g:Snippets
+endfunction " Snippets
 
 " -------------------------------------------------------------------------
 " ZoomWin
