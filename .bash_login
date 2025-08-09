@@ -1347,6 +1347,12 @@ function certify () { clear # Certificate Authority
   echo; echo "Generating RSA CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.csr
 
+  echo; echo "Exporting PKCS#12 [${bits}] chain ($domain.pfx)..."
+  openssl pkcs12 -export -name 'PKCS Certificate' \
+    -inkey  ${domain}.rsa-${bits}.pem \
+    -in ${domain}.rsa-${bits}.cert \
+    -out "$domain.rsa-${bits}.pfx"
+
   bits=4096
   echo ; echo "Generating RSA PKCS#8 ${bits}-bit Private Key ${domain}.rsa-${bits}.pem"
   openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.rsa-${bits}.pem
