@@ -1329,6 +1329,12 @@ function certify () { clear # Certificate Authority
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
+  echo; echo "Exporting PKCS#12 [${curve}] chain ($domain.pfx)..."
+  openssl pkcs12 -export -name 'PKCS Certificate' \
+    -inkey ${domain}.ecc-${curve}.pem \
+    -in ${domain}.ecc-${curve}.cert \
+    -out "$domain.ecc-${curve}.pfx"
+
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
