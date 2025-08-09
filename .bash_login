@@ -1292,7 +1292,6 @@ function certify () { clear # Certificate Authority
     -inkey ${domain}.ecc-${curve}.pem \
     -in ${domain}.ecc-${curve}.cert \
     -out "$domain.ecc-${curve}.pfx"
-  cat "$domain.ecc-${curve}.pfx"
 
   curve=secp384r1
   echo ; echo "Generating ECC [${curve}] Private Key ${domain}.ecc-${curve}.pem"
