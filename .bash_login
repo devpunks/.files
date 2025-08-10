@@ -1153,7 +1153,7 @@ function passgen () { clear
   cipher $pwd
 } # passgen
 
-# https://ietf.org/rfc/rfc4880.txt
+# https://ietf.org/rfc/rfc4880
 alias keygen='{
   command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
   command ssh-keygen -f ed25519 -e -m pem > ed25519.pem.pub ;
