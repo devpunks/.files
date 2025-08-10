@@ -767,6 +767,8 @@ function cipher () {
   local iterations=3
   local phrase="${1}"
 
+  echo ; echo "KDF (Key Derivation Functions): "
+
   echo ; echo Ciphers: ; ciphers
 
   [ -z "$phrase" ] && return
