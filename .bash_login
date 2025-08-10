@@ -1238,7 +1238,7 @@ function verify () {
   echo "Cryptographically Verifying > $file with $pem ..."
   # ssh-keygen -V # sign/verify certificate
 
-  openssl sha256 -verify "${pem}.pub" -signature "${file}.signature" "$file" # -prverify
+  openssl sha256 -verify "${pem}.pub" -signature "${file}.signature" "$file"
 } # verify
 
 # https://en.wikipedia.org/wiki/X.509
