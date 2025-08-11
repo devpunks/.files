@@ -1360,7 +1360,7 @@ function certify () { clear # Certificate Authority
 
   echo ; echo "ED25519 (Edwards 25519) Certificates:"
   echo ; echo "Generating ED25519 PKCS#8 Private Key ${domain}.ed25519.pem"
-  openssl genpkey -algorithm ED25519 -out ${domain}.ed25519.pem
+  openssl genpkey -algorithm ED25519 -outform PEM -out ${domain}.ed25519.pem
 
   echo ; echo "Generating ED25519 Public Key ${domain}.ed25519.pub"
   openssl req -new -key ${domain}.ed25519.pem -subj "$subject" -out ${domain}.ed25519.pub
