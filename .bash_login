@@ -652,9 +652,9 @@ alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
 # https://stackoverflow.com/q/65523749
 alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
 # https://serverfault.com/q/283294/how-to-read-in-n-random-characters-from-dev-urandom
-alias randchars='{ head /dev/random \
-  | tr --delete --complement "[:alnum:]" \
-  | head -c 32 ; echo ;
+alias randchars='{
+  tr --delete --complement "[:alnum:]" < /dev/urandom \
+    | head -c 32 ;
 }' # randchars
 
 # https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
