@@ -1421,6 +1421,37 @@ function certify () { clear # Certificate Authority
     -in ${domain}.rsa-${bits}.cert \
     -out "$domain.rsa-${bits}.pfx"
 
+  echo ; echo "DSA (Digital Signature Algorithm) Certificates:"
+  bits=2048
+  echo ; echo "Generating DSA PKCS#8 ${bits}-bit Private Key ${domain}.dsa-${bits}.pem"
+  openssl gendsa -out ${domain}.dsa-${bits}.pem <( openssl dsaparam ${bits} )
+
+  echo ; echo "Generating DSA ${bits}-bit Public Key ${domain}.dsa-${bits}.pub"
+  openssl dsa -in ${domain}.dsa-${bits}.pem -outform PEM -out ${domain}.dsa-${bits}.pub
+
+  echo; echo "Generating DSA PKCS#10 CSR (Certificate Signing Request) ${domain}.dsa-${bits}.csr"
+  openssl req -new -key ${domain}.dsa-${bits}.pem -subj "$subject" -out ${domain}.dsa-${bits}.csr
+
+  echo; echo "Generating DSA Certificate ${domain}.dsa-${bits}.cert"
+  openssl req -new -x509 -sha512 -noenc -days 365 \
+    -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
+    -key ${domain}.dsa-${bits}.pem -out ${domain}.dsa-${bits}.cert
+
+  bits=4096
+  echo ; echo "Generating DSA PKCS#8 ${bits}-bit Private Key ${domain}.dsa-${bits}.pem"
+  openssl gendsa -out ${domain}.dsa-${bits}.pem <( openssl dsaparam ${bits} )
+
+  echo ; echo "Generating DSA ${bits}-bit Public Key ${domain}.dsa-${bits}.pub"
+  openssl dsa -in ${domain}.dsa-${bits}.pem -outform PEM -out ${domain}.dsa-${bits}.pub
+
+  echo; echo "Generating RSA PKCS#10 CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
+  openssl req -new -key ${domain}.dsa-${bits}.pem -subj "$subject" -out ${domain}.dsa-${bits}.csr
+
+  echo; echo "Generating DSA Certificate ${domain}.dsa-${bits}.cert"
+  openssl req -new -x509 -sha512 -noenc -days 365 \
+    -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
+    -key ${domain}.dsa-${bits}.pem -out ${domain}.dsa-${bits}.cert
+
 
   return
 
