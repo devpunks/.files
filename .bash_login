@@ -1363,7 +1363,7 @@ function certify () { clear # Certificate Authority
   openssl genpkey -algorithm ED25519 -outform PEM -out ${domain}.ed25519.pem
 
   echo ; echo "Generating ED25519 Public Key ${domain}.ed25519.pub"
-  openssl req -new -key ${domain}.ed25519.pem -subj "$subject" -out ${domain}.ed25519.pub
+  openssl pkey -in ${domain}.ed25519.pem -pubout -out ${domain}.ed25519.pub
 
   echo; echo "Generating ED25519 PKCS#10 CSR (Certificate Signing Request) ${domain}.ed25519.csr"
   openssl req -new -key ${domain}.ed25519.pem -subj "$subject" -out ${domain}.ed25519.csr
