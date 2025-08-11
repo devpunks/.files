@@ -1137,8 +1137,8 @@ function encrypt () {
   gpg --sign -c -o "${file}.gpg192.enc" --cipher-algo=$scheme < "$file"
 
   local scheme='AES256'
-  echo "GPG-$scheme encrypt $file :"
-  gpg --sign -c -o "${file}.gpg256" --cipher-algo=$scheme < "$file"
+  echo "GPG-${scheme}-CFB encrypt $file :"
+  gpg --sign -c -o "${file}.gpg256.enc" --cipher-algo=$scheme < "$file"
 } # encrypt
 
 alias nms='command nms -a -c -f magenta'
