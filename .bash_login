@@ -1102,7 +1102,7 @@ function decode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
-  local -r salt="-salt"
+  local -r salt="-S ${SALT}"
   local -r count=1000000
   local -r digest="sha512"
   local -r pbkdf2="-pbkdf2"
