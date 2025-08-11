@@ -1268,7 +1268,7 @@ alias certificates='{
   # ssh-keygen -L # prints contents of certificate
   echo Requests:
   for request in *.csr; do
-    echo; echo CSR ${request}
+    echo; echo "PKCS#10 CSR ${request}"
     cat ${request}
   done ; echo
 
