@@ -661,7 +661,13 @@ alias randchars='{ head /dev/random \
 # https://gnu.org/software/gawk/manual/html_node/Bracket-Expressions.html
 # https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html
 # https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions
-function slug () { printf "$1" | sed 's/[[:space:]]/-/g' | tr '[:upper:]' '[:lower:]' | tr -dc '[:alnum:]-' ; }
+function slug () {
+  printf "$1" \
+    | sed 's/[[:space:]]/-/g' \
+    | tr '[:upper:]' '[:lower:]' \
+    | tr -dc '[:alnum:]-'
+  echo
+}
 
 # https://geeksforgeeks.org/od-command-linux-example
 alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned)
