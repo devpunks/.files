@@ -1149,8 +1149,6 @@ function decrypt () {
 
   echo GPG decrypt "$file" :
 
-  # https://github.com/bartobri/no-more-secrets
-  # nms
   command gpg -o - < "$file"
 } # decrypt
 
