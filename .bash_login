@@ -1194,7 +1194,7 @@ alias keys='{ banner
   echo ; echo "Added keys (to ssh-agent)" ; ssh-add -l
 
   for key in *.pem; do
-    echo "extracting Public Key from ${key}:"
+    echo ; echo "extracting Public Key from ${key}:"
     openssl pkey -noout -text_pub -in ${key}
   done
 
