@@ -1193,12 +1193,10 @@ alias keys='{ banner
 
   echo ; echo "Added keys (to ssh-agent)" ; ssh-add -l
 
-  # TODO
-  # for key in *.pem; do
-  #   echo "TODO: List certificates"
-  #   echo; echo extracting Public Key from ${key}
-  #   openssl pkey -noout -text_pub -in ${key}
-  # done
+  for key in *.pem; do
+    echo "extracting Public Key from ${key}:"
+    openssl pkey -noout -text_pub -in ${key}
+  done
 
   signatures
 }' # keys
