@@ -1221,7 +1221,7 @@ alias keys='{ banner
 
 function keygen () {
 # command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
-# command ssh-keygen -f ed25519 -e -m pem > ed25519.pem.pub ;
+# command ssh-keygen -C "devPunks mobile key" -e -f ed25519 -m pem > ed25519.pem.pub ;
 
   algorithm=ed25519
   echo ; echo "Creating OpenSSL Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
