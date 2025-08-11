@@ -767,6 +767,7 @@ alias ciphers='command openssl list -cipher-commands' # -cipher-algorithms
 # https://asecuritysite.com/encryption/passes
 # https://en.wikipedia.org/wiki/Key_derivation_function
 # https://en.wikipedia.org/wiki/Cryptographic_hash_function
+# https://antofthy.gitlab.io/info/crypto/passwd_hashing.txt
 function cipher () {
   local length=32 # 24
   local memory=65536 # 64MiB
