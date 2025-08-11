@@ -1368,6 +1368,11 @@ function certify () { clear # Certificate Authority
   echo; echo "Generating ED25519 PKCS#10 CSR (Certificate Signing Request) ${domain}.ed25519.csr"
   openssl req -new -key ${domain}.ed25519.pem -subj "$subject" -out ${domain}.ed25519.csr
 
+# echo; echo "Generating ED25519 Certificate ${domain}.ed25519.cert"
+# openssl req -new -x509 -sha512 -noenc -days 365 \
+#   -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
+#   -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
+
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
