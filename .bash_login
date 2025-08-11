@@ -1143,6 +1143,9 @@ function encrypt () {
   local scheme='AES256'
   echo "GPG-${scheme}-CFB encrypt $file :"
   gpg --sign -c -o "${file}.gpg256.enc" --cipher-algo=$scheme < "$file"
+
+  echo "TODO: S/MIME encrypt mail message $file :"
+  # https://madboa.com/geek/openssl/#smime
 } # encrypt
 
 # NMS (No More Secrets) - https://github.com/bartobri/no-more-secrets
