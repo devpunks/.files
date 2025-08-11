@@ -1216,8 +1216,7 @@ function keygen () {
 
   echo "Extracting OpenSSL Public Key ${algorithm}.pub (openssl pkey -in ${algorithm}.key -pubout):"
   openssl pkey -in ${algorithm}.key -pubout -out ${algorithm}.pub
-  openssl pkey -in ${algorithm}.key -text -noout
-  cat ${algorithm}.pub
+  openssl pkey -in ${algorithm}.key -text -pubout
 } # keygen
 
 # https://antofthy.gitlab.io/info/crypto/public_keys_gpg.txt
