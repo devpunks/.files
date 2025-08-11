@@ -1141,6 +1141,7 @@ function encrypt () {
   gpg --sign -c -o "${file}.gpg256.enc" --cipher-algo=$scheme < "$file"
 } # encrypt
 
+# NMS (No More Secrets) - https://github.com/bartobri/no-more-secrets
 alias nms='command nms -a -c -f magenta'
 function decrypt () {
   local -r file="${1}"
