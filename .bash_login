@@ -870,7 +870,7 @@ function digest () {
     $( openssl passwd -aixmd5 -salt ${SALT:0:8} "$phrase" )
   printf "MD5 (shadow-style) (openssl passwd -1): %s\n" \
     $( openssl passwd -1 "$phrase" )
-  printf "MD5 (shadow-style) (openssl passwd -1 -salt): %s\n" \
+  printf "MD5 w/ SALT (shadow-style) (openssl passwd -1 -salt): %s\n" \
     $( openssl passwd -1 -salt ${SALT:0:8} "$phrase" )
   printf "MD5 (openssl dgst -md5): %s\n" \
     $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d' ' -f2 )
