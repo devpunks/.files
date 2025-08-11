@@ -1133,8 +1133,8 @@ function encrypt () {
   gpg --sign -c -o "${file}.gpg128.enc" --cipher-algo=$scheme < "$file"
 
   local scheme='AES192'
-  echo "GPG-$scheme encrypt $file :"
-  gpg --sign -c -o "${file}.gpg192" --cipher-algo=$scheme < "$file"
+  echo "GPG-${scheme}-CFB encrypt $file :"
+  gpg --sign -c -o "${file}.gpg192.enc" --cipher-algo=$scheme < "$file"
 
   local scheme='AES256'
   echo "GPG-$scheme encrypt $file :"
