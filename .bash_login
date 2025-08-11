@@ -1146,6 +1146,7 @@ function encrypt () {
 
   echo "TODO: S/MIME encrypt mail message $file :"
   # https://madboa.com/geek/openssl/#smime
+
 } # encrypt
 
 # NMS (No More Secrets) - https://github.com/bartobri/no-more-secrets
