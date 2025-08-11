@@ -1393,7 +1393,7 @@ function certify () { clear # Certificate Authority
   echo ; echo "Generating RSA ${bits}-bit Public Key ${domain}.rsa-${bits}.pub"
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.pub
 
-  echo; echo "Generating RSA CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
+  echo; echo "Generating RSA PKCS#10 CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.csr
 
   echo; echo "Exporting PKCS#12 [${bits}] chain ($domain.pfx)..."
