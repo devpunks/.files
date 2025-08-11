@@ -1121,7 +1121,7 @@ function encrypt () {
 
   local scheme='-aes-192-cbc'
   echo "$scheme encrypt $file :"
-  openssl enc $salt $scheme $pbkdf2 -md $digest -iter $count $password \
+  openssl enc $scheme $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes192.bin"
   openssl enc -base64 $salt $scheme $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes192.enc"
