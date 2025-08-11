@@ -1206,6 +1206,21 @@ alias keys='{ banner
   signatures
 }' # keys
 
+function keygen () {
+# command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
+# command ssh-keygen -f ed25519 -e -m pem > ed25519.pem.pub ;
+
+  algorithm=ed25519
+  echo ; echo "Creating OpenSSL Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
+  openssl genpkey -algorithm ${algorithm} -out ${algorithm}.key
+  cat ${algorithm}.key
+
+  echo "Extracting OpenSSL Public Key ${algorithm}.key (openssl pkey -in ${algorithm}.key):"
+  openssl pkey -in ${algorithm}.key -pubout -out ${algorithm}.pub
+  openssl pkey -in ${algorithm}.key -text_pub -noout
+  cat ${algorithm}.pub
+} # keygen
+
 # https://antofthy.gitlab.io/info/crypto/public_keys_gpg.txt
 # https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
 alias signatures='{
