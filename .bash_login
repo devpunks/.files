@@ -766,6 +766,7 @@ function checksum () {
 # $5$ - SHA-256
 # $6$ - SHA-512
 # https://en.wikipedia.org/wiki/Cipher
+# https://github.com/openssl/openssl/issues/18075
 alias ciphers='command openssl enc -list'
 # alias ciphers='command openssl list -cipher-commands' # -cipher-algorithms
 # https://datatracker.ietf.org/doc/html/rfc2104
