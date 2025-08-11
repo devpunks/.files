@@ -1379,7 +1379,7 @@ function certify () { clear # Certificate Authority
 
   echo; echo Verifying Signature...
   echo 'TODO: call verify()'
-  openssl  req  -in $certificate -verify -key $key
+  openssl req -in $certificate -verify -key $key
 
   echo; echo Checking Info...
   openssl  req  -in $certificate -text
