@@ -1594,6 +1594,7 @@ function attack () {
   echo ReDOS # https://en.wikipedia.org/wiki/ReDoS
   echo Algorithmic # https://en.wikipedia.org/wiki/Algorithmic_complexity_attack
   echo Billion Laughs # https://en.wikipedia.org/wiki/Billion_laughs_attack
+  echo Session Fixation # https://owasp.org/www-community/attacks/Session_fixation
 } # attack
 
 # }}}
