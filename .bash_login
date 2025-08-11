@@ -1145,6 +1145,7 @@ function decrypt () {
 # https://antofthy.gitlab.io/info/crypto/passwd_generation.txt
 # https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
 function passgen () { clear
+  # Correct Horse Battery Staple - https://xkcd.com/936/
   local pwd=${1:-`randchars`}
 
   echo PASSWORD: $pwd
