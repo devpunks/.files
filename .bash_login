@@ -1217,7 +1217,7 @@ function keygen () {
 
   echo "Extracting OpenSSL Public Key ${algorithm}.key (openssl pkey -in ${algorithm}.key):"
   openssl pkey -in ${algorithm}.key -pubout -out ${algorithm}.pub
-  openssl pkey -in ${algorithm}.key -text_pub -noout
+  openssl pkey -in ${algorithm}.key -text -noout
   cat ${algorithm}.pub
 } # keygen
 
