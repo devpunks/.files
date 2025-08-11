@@ -1160,12 +1160,6 @@ function passgen () { clear
   cipher $pwd
 } # passgen
 
-# https://ietf.org/rfc/rfc4880
-alias keygen='{
-  command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
-  command ssh-keygen -f ed25519 -e -m pem > ed25519.pem.pub ;
-}' # keygen
-
 # $$$ https://antofthy.gitlab.io/info/crypto/public_keys_openssl.txt
 # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
 # https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html
