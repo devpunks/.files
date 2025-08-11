@@ -651,6 +651,10 @@ function work () {
 alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32767 )
 # https://stackoverflow.com/q/65523749
 alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+
+# https://en.m.wikipedia.org/wiki/Prime_number
+alias prime='openssl prime -generate -bits 64'
+
 # https://serverfault.com/q/283294/how-to-read-in-n-random-characters-from-dev-urandom
 alias randchars='{
   tr --delete --complement "[:alnum:]" < /dev/urandom \
