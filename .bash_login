@@ -1123,7 +1123,9 @@ function encrypt () {
   local scheme='-aes-256-cbc'
   echo "$scheme encrypt $file :"
   openssl enc $salt $scheme $pbkdf2 -md $digest -iter $count $password \
-    < "$file" > "${file}.aes256"
+    < "$file" > "${file}.aes256.bin"
+  openssl enc -base64 $salt $scheme $pbkdf2 -md $digest -iter $count $password \
+    < "$file" > "${file}.aes256.enc"
 
   echo ; echo 'GPG-AES-CFB (128|192|256)'
   local scheme='AES128'
