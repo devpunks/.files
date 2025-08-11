@@ -1381,7 +1381,6 @@ function certify () { clear # Certificate Authority
 
   return
 
-
   echo; echo Verifying Signature...
   echo 'TODO: call verify()'
   openssl req -in $certificate -verify -key $key
