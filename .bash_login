@@ -1200,7 +1200,7 @@ alias keys='{ banner
 
   for key in *.pem; do
     echo ; echo "extracting Public Key from ${key}:"
-    openssl pkey -in ${key} -text_pub -noout
+    openssl pkey -in ${key} -text -noout
   done
 
   signatures
