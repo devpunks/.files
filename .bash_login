@@ -2102,6 +2102,7 @@ function upload () {
 # {{{ Server(s)
 # =========================================================================
 # HTTP(s) -----------------------------------------------------------------
+# - https://gist.github.com/willurd/5720255
 # - https://realpython.com/python-http-server
 function serve () { clear
   local -r realm='devPunks' # Authentication
