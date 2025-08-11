@@ -1380,7 +1380,7 @@ function certify () { clear # Certificate Authority
   openssl req -in $certificate -verify -key $key
 
   echo; echo Checking Info...
-  openssl  req  -in $certificate -text
+  openssl req -in $certificate -text
   echo; echo Testing...
   openssl s_server -www -cert $certificate
 
