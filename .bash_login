@@ -1472,7 +1472,9 @@ function certify () { clear # Certificate Authority
   openssl dsa -in ${domain}.dsa-${bits}.pem -outform PEM -pubout -out ${domain}.dsa-${bits}.pub
 
   echo; echo "Generating DSA PKCS#10 CSR (Certificate Signing Request) ${domain}.dsa-${bits}.csr"
-  openssl req -new -key ${domain}.dsa-${bits}.pem -subj "$subject" -out ${domain}.dsa-${bits}.csr
+  openssl req -new \
+    -key ${domain}.rsa-${bits}.pem -out ${domain}.ecc-${bits}.csr \
+    -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
   echo; echo "Generating DSA X.509 Certificate ${domain}.dsa-${bits}.cert"
   openssl req -new -x509 -sha512 -noenc -days 365 \
