@@ -1299,6 +1299,7 @@ alias certificates='{
 # - https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b
 function certify () { clear # Certificate Authority
   local curve bits
+  local -r days=365
   local -r domain="${1:-devpunks.studio}"
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
