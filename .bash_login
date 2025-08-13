@@ -1421,7 +1421,7 @@ function certify () { clear # Certificate Authority
   echo; echo "Generating RSA PKCS#10 CSR (Certificate Signing Request) ${domain}.rsa-${bits}.csr"
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.csr
 
-  echo; echo "Generating RSA Certificate ${domain}.rsa-${bits}.cert"
+  echo; echo "Generating RSA X.509 Certificate ${domain}.rsa-${bits}.cert"
   openssl req -new -x509 -sha512 -noenc -days 365 \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.rsa-${bits}.pem -out ${domain}.rsa-${bits}.cert
