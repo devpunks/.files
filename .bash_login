@@ -1345,7 +1345,7 @@ function certify () { clear # Certificate Authority
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
   echo; echo "Exporting PKCS#12 [${curve}] chain ($domain.pfx)..."
-  openssl pkcs12 -export -name 'PKCS Certificate' \
+  openssl pkcs12 -export -name 'PKCS Certificate Chain' \
     -inkey ${domain}.ecc-${curve}.pem \
     -in ${domain}.ecc-${curve}.cert \
     -out "$domain.ecc-${curve}.pfx"
