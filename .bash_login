@@ -1381,6 +1381,7 @@ function certify () { clear # Certificate Authority
     -out "$domain.ecc-${curve}.pfx"
 
 
+  # https://blog.pinterjann.is/ed25519-certificates.html
   echo ; echo "ED25519 (Edwards 25519) Certificates:"
   echo ; echo "Generating ED25519 PKCS#8 Private Key ${domain}.ed25519.pem"
   openssl genpkey -algorithm ED25519 -outform PEM -out ${domain}.ed25519.pem
