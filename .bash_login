@@ -1297,7 +1297,6 @@ alias certificates='{
 # - https://en.m.wikipedia.org/wiki/Public_key_certificate
 # - https://en.m.wikipedia.org/wiki/Transport_Layer_Security
 # - https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b
-# - https://en.m.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm
 function certify () { clear # Certificate Authority
   local curve bits
   local -r domain="${1:-devpunks.studio}"
