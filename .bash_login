@@ -1228,6 +1228,13 @@ function keygen () {
 # command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
 # command ssh-keygen -C "devPunks mobile key" -e -f ed25519 -m pem > ed25519.pem.pub ;
 
+  # https://sandilands.info/sgordon/diffie-hellman-secret-key-exchange-with-openssl
+  echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-2048.key (openssl dhparam -dsaparam 2048):"
+  openssl dhparam -dsaparam -out dh-dsa-2048.params 2048
+
+  echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-4096.key (openssl dhparam -dsaparam 4096):"
+  openssl dhparam -dsaparam -out dh-dsa-4096.params 2048
+
   algorithm=ed25519
   echo ; echo "Creating OpenSSL Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
   echo ; echo "Generating ${algorithm} PKCS#8 Private Key ${algorithm}.key"
