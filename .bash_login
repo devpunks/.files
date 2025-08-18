@@ -1388,8 +1388,8 @@ function certify () { clear # Certificate Authority
 
   echo; echo "Generating ECC [${curve}] PKCS#10 CSR (Certificate Signing Request) ${domain}.ecc-${curve}.csr"
   openssl req -new -sha384 \
-    -subj "$subject" -addext "$extensions" \
-    -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.csr
+    -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.csr \
+    -subj "$subject" -addext "$basic" -addext "$usage" -addext "$extended" -addext "$extensions"
 
   echo; echo "Generating ECC [${curve}] X.509 Certificate ${domain}.ecc-${curve}.cert"
   openssl x509 -req -sha384 -days 365 -copy_extensions copyall \
