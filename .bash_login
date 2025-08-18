@@ -1328,6 +1328,7 @@ alias certificates='{
 function certify () { clear # Certificate Authority
   local algorithm bits curve
   local -r days=365
+  local -r IP='127.0.0.1'
   local -r domain="${1:-devpunks.studio}"
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
