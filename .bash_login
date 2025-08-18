@@ -1390,7 +1390,7 @@ function certify () { clear # Certificate Authority
   openssl ec -in ${domain}.ecc-${curve}.pem -pubout -out ${domain}.ecc-${curve}.pub
 
   echo; echo "Generating ECC [${curve}] PKCS#10 CSR (Certificate Signing Request) ${domain}.ecc-${curve}.csr"
-  openssl req -new \
+  openssl req -new -sha512 \
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
