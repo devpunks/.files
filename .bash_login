@@ -1508,8 +1508,8 @@ function certify () { clear # Certificate Authority
 
 
   bits=4096
-  echo ; echo "Generating DSA PKCS#8 ${bits}-bit Private Key ${domain}.dsa-${bits}.pem"
-  openssl gendsa -out ${domain}.dsa-${bits}.pem <( openssl dsaparam ${bits} )
+  echo ; echo "Generating ${algorithm} PKCS#8 ${bits}-bit Private Key ${domain}.${algorithm}-${bits}.pem"
+  openssl gendsa -out ${domain}.${algorithm}-${bits}.pem <( openssl dsaparam ${bits} )
 
   echo ; echo "Generating DSA ${bits}-bit Public Key ${domain}.dsa-${bits}.pub"
   openssl dsa -in ${domain}.dsa-${bits}.pem -outform PEM -pubout -out ${domain}.dsa-${bits}.pub
