@@ -1447,7 +1447,6 @@ function certify () { clear # Certificate Authority
     -in ${domain}.${algorithm}.cert \
     -out "$domain.${algorithm}.pfx"
 
-
   # https://en.m.wikipedia.org/wiki/RSA_cryptosystem
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
