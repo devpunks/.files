@@ -1514,7 +1514,7 @@ function certify () { clear # Certificate Authority
   echo ; echo "Generating ${algorithm} ${bits}-bit Public Key ${domain}.${algorithm}-${bits}.pub"
   openssl dsa -in ${domain}.${algorithm}-${bits}.pem -outform PEM -pubout -out ${domain}.${algorithm}-${bits}.pub
 
-  echo; echo "Generating DSA PKCS#10 CSR (Certificate Signing Request) ${domain}.dsa-${bits}.csr"
+  echo; echo "Generating ${algorithm} PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}-${bits}.csr"
   openssl req -new \
     -key ${domain}.rsa-${bits}.pem -out ${domain}.ecc-${bits}.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
