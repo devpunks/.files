@@ -1483,7 +1483,8 @@ function certify () { clear # Certificate Authority
   openssl genpkey -algorithm ${algorithm} -outform PEM -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.${algorithm}-${bits}.pem
 
   echo ; echo "Generating ${algorithm} ${bits}-bit Public Key ${domain}.${algorithm}-${bits}.pub"
-  openssl req -new -key ${domain}.${algorithm}-${bits}.pem -subj "$subject" -out ${domain}.${algorithm}-${bits}.pub
+  openssl pkey -pubout -outform PEM \
+    -in ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.pub
 
   echo; echo "Generating ${algorithm} PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}-${bits}.csr"
   openssl req -new \
