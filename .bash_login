@@ -1308,6 +1308,7 @@ alias certificates='{
   echo Requests:
   for request in *.csr; do
     echo; echo "PKCS#10 CSR ${request}"
+    openssl req -text -in ${request} -noout
     cat ${request}
   done ; echo
 
