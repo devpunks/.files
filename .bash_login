@@ -1409,7 +1409,8 @@ function certify () { clear # Certificate Authority
   openssl ecparam -genkey -name ${curve} -out ${domain}.ecc-${curve}.pem
 
   echo ; echo "Generating ECC [${curve}] Public Key ${domain}.ecc-${curve}.pub"
-  openssl ec -in ${domain}.ecc-${curve}.pem -pubout -out ${domain}.ecc-${curve}.pub
+  openssl ec -pubout -outform PEM \
+    -in ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.pub
 
   echo; echo "Generating ECC [${curve}] PKCS#10 CSR (Certificate Signing Request) ${domain}.ecc-${curve}.csr"
   openssl req -new -sha512 \
