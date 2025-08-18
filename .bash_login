@@ -1230,7 +1230,8 @@ function keygen () {
 
   algorithm=ed25519
   echo ; echo "Creating OpenSSL Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
-  openssl genpkey -algorithm ${algorithm} -out ${algorithm}.key
+  echo ; echo "Generating ${algorithm} PKCS#8 Private Key ${algorithm}.key"
+  openssl genpkey -algorithm ${algorithm} -outform PEM -out ${algorithm}.key
 
   echo "Extracting OpenSSL Public Key ${algorithm}.pub (openssl pkey -in ${algorithm}.key -pubout):"
   openssl pkey -in ${algorithm}.key -pubout -out ${algorithm}.pub
