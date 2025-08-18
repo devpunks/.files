@@ -1232,8 +1232,8 @@ function keygen () {
   echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-2048.params (openssl dhparam -dsaparam 2048):"
   openssl dhparam -dsaparam -out dh-dsa-2048.params 2048
 
-  echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-4096.key (openssl dhparam -dsaparam 4096):"
-  openssl dhparam -dsaparam -out dh-dsa-4096.params 2048
+  echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-4096.params (openssl dhparam -dsaparam 4096):"
+  openssl dhparam -dsaparam -out dh-dsa-4096.params 4096
 
   algorithm=ed25519
   echo ; echo "Creating OpenSSL Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
