@@ -1492,7 +1492,7 @@ function certify () { clear # Certificate Authority
 
   echo; echo "Generating ${algorithm} PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}-${bits}.csr"
   openssl req -new \
-    -key ${domain}.rsa-${bits}.pem -out ${domain}.ecc-${bits}.csr \
+    -key ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
   echo; echo "Generating DSA X.509 Certificate ${domain}.dsa-${bits}.cert"
