@@ -1434,8 +1434,8 @@ function certify () { clear # Certificate Authority
 
   echo; echo "Generating $algorithm PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}.csr"
   openssl req -new \
-    -subj "$subject" -addext "$extensions" \
-    -key ${domain}.${algorithm}.pem -out ${domain}.${algorithm}.csr
+    -key ${domain}.${algorithm}.pem -out ${domain}.${algorithm}.csr \
+    -subj "$subject" -addext "$basic" -addext "$usage" -addext "$extended" -addext "$extensions"
 
   echo; echo "Generating ${algorithm} Certificate ${domain}.${algorithm}.cert"
   openssl x509 -req -days 365 -copy_extensions copyall \
