@@ -1526,7 +1526,6 @@ function certify () { clear # Certificate Authority
     -in ${domain}.${algorithm}-${bits}.cert \
     -out "$domain.${algorithm}-${bits}.pfx"
 
-
   return
 
   echo; echo Verifying Signature...
