@@ -1170,6 +1170,7 @@ function passgen () { clear
   local pwd=${1:-`randchars`}
 
   echo PASSWORD: $pwd
+  echo DOMAIN: $pwd
 
   digest $pwd
   cipher $pwd
