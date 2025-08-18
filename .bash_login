@@ -1330,6 +1330,7 @@ function certify () { clear # Certificate Authority
   local -r days=365
   local -r IP='127.0.0.1'
   local -r domain="${1:-devpunks.studio}"
+  local -r extensions="subjectAltName=DNS:${domain},DNS:*.${domain},IP:${IP}"
   local -r subject="/O=DEVPUNKS LLC/C=US/ST=New\ Jersey/L=Jersey\ City/CN=$domain"
 
   # - https://stackoverflow.com/q/11992036
