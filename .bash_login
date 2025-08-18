@@ -1473,7 +1473,7 @@ function certify () { clear # Certificate Authority
   echo; echo "Generating ${algorithm} X.509 Certificate ${domain}.${algorithm}-${bits}.cert"
   openssl req -new -x509 -sha512 -noenc -days 365 \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
-    -key ${domain}.rsa-${bits}.pem -out ${domain}.rsa-${bits}.cert
+    -key ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.cert
 
   echo; echo "Exporting PKCS#12 [${bits}] chain ($domain.pfx)..."
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
