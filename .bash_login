@@ -56,6 +56,7 @@ alias banner="clear; cat ~/.ssh/banner"
 alias ide="command source ${HOME}/ide"
 alias tldr='open https://tldr.inbrowser.app'
 
+# https://antofthy.gitlab.io/info/crypto/passwd_input.txt
 alias dialog='command dialog --stdout --insecure --title "Foo Bar" --passwordbox "Prompt" 0 0'
 
 # https://linux.die.net/man/1/expect
