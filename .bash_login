@@ -1501,7 +1501,6 @@ function certify () { clear # Certificate Authority
     -in ${domain}.${algorithm}-${bits}.cert \
     -out "$domain.${algorithm}-${bits}.pfx"
 
-
   bits=4096
   echo ; echo "Generating ${algorithm} PKCS#8 ${bits}-bit Private Key ${domain}.${algorithm}-${bits}.pem"
   openssl gendsa -out ${domain}.${algorithm}-${bits}.pem <( openssl dsaparam ${bits} )
