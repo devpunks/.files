@@ -1519,7 +1519,7 @@ function certify () { clear # Certificate Authority
     -key ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
-  echo; echo "Generating DSA X.509 Certificate ${domain}.dsa-${bits}.cert"
+  echo; echo "Generating ${algorithm} X.509 Certificate ${domain}.${algorithm}-${bits}.cert"
   openssl req -new -x509 -sha512 -noenc -days 365 \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.dsa-${bits}.pem -out ${domain}.dsa-${bits}.cert
