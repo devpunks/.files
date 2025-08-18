@@ -1335,6 +1335,8 @@ function certify () { clear # Certificate Authority
   openssl ecparam -list_curves
 
   curve=prime256v1
+  # - https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations
+  # - https://en.m.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm
   echo ; echo "Generating ECC [${curve}] Private Key ${domain}.ecc-${curve}.pem"
   openssl ecparam -genkey -name ${curve} -out ${domain}.ecc-${curve}.pem
 
