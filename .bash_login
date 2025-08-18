@@ -1425,7 +1425,7 @@ function certify () { clear # Certificate Authority
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
     -inkey ${domain}.ecc-${curve}.pem \
     -in ${domain}.ecc-${curve}.cert \
-    -out "$domain.ecc-${curve}.pfx"
+    -out "${domain}.ecc-${curve}.pfx"
 
   algorithm=ed25519
   # https://blog.pinterjann.is/ed25519-certificates.html
