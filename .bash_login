@@ -1475,7 +1475,7 @@ function certify () { clear # Certificate Authority
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
     -key ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.cert
 
-  echo; echo "Exporting PKCS#12 [${bits}] chain ($domain.pfx)..."
+  echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}-${bits}.pfx)..."
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
     -inkey ${domain}.rsa-${bits}.pem \
     -in ${domain}.rsa-${bits}.cert \
