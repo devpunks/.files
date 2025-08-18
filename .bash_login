@@ -1223,6 +1223,8 @@ alias keys='{ banner
 }' # keys
 
 function keygen () {
+  let algorithm bits
+  let outform=PEM # PEM | DER
 # command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
 # command ssh-keygen -C "devPunks mobile key" -e -f ed25519 -m pem > ed25519.pem.pub ;
 
