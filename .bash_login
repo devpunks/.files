@@ -1492,9 +1492,8 @@ function certify () { clear # Certificate Authority
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
   echo; echo "Generating ${algorithm} X.509 Certificate ${domain}.${algorithm}-${bits}.cert"
-  openssl req -new -x509 -sha512 -noenc -days 365 \
-    -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
-    -key ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.cert
+  openssl x509 -req -days 365 -copy_extensions copyall \
+    -in ${domain}.${algorithm}-${bits}.csr -signkey ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.cert
 
   echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}-${bits}.pfx)..."
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
