@@ -1402,7 +1402,7 @@ function certify () { clear # Certificate Authority
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
     -inkey ${domain}.ecc-${curve}.pem \
     -in ${domain}.ecc-${curve}.cert \
-    -out "$domain.ecc-${curve}.pfx"
+    -out "${domain}.ecc-${curve}.pfx"
 
   curve=secp521r1
   echo ; echo "Generating ECC [${curve}] Private Key ${domain}.ecc-${curve}.pem"
