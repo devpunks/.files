@@ -1459,8 +1459,8 @@ function certify () { clear # Certificate Authority
     -out "$domain.${algorithm}-${bits}.pfx"
 
   bits=4096
-  echo ; echo "Generating RSA PKCS#8 ${bits}-bit Private Key ${domain}.rsa-${bits}.pem"
-  openssl genpkey -algorithm RSA -outform PEM -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.rsa-${bits}.pem
+  echo ; echo "Generating ${algorithm} PKCS#8 ${bits}-bit Private Key ${domain}.${algorithm}-${bits}.pem"
+  openssl genpkey -algorithm ${algorithm} -outform PEM -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.${algorithm}-${bits}.pem
 
   echo ; echo "Generating RSA ${bits}-bit Public Key ${domain}.rsa-${bits}.pub"
   openssl req -new -key ${domain}.rsa-${bits}.pem -subj "$subject" -out ${domain}.rsa-${bits}.pub
