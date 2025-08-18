@@ -1332,6 +1332,7 @@ alias certificates='{
 # - https://en.m.wikipedia.org/wiki/Public_key_certificate
 # - https://en.m.wikipedia.org/wiki/Transport_Layer_Security
 # - https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b
+# - https://letsencrypt.org/docs/certificates-for-localhost/#making-and-trusting-your-own-certificates
 function certify () { clear # Certificate Authority
   local algorithm bits curve
   local -r days=365
