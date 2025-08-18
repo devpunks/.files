@@ -1420,9 +1420,15 @@ function certify () { clear # Certificate Authority
     -key ${domain}.${algorithm}.pem -out ${domain}.${algorithm}.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
-# echo; echo "Generating ED25519 Certificate ${domain}.ed25519.cert"
-  openssl x509 -req -days 365 -signkey ${domain}.ed25519.pem \
-    -in ${domain}.ed25519.csr -out ${domain}.ed25519.cert
+  echo; echo "Generating ${algorithm} Certificate ${domain}.${algorithm}.cert"
+  openssl x509 -req -days 365 -signkey ${domain}.${algorithm}.pem \
+    -in ${domain}.${algorithm}.csr -out ${domain}.${algorithm}.cert
+
+  echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}.pfx)..."
+  openssl pkcs12 -export -name 'PKCS Certificate Chain' \
+    -inkey ${domain}.${algorithm}.pem \
+    -in ${domain}.${algorithm}.cert \
+    -out "$domain.${algorithm}.pfx"
 
 
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
