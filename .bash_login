@@ -1477,9 +1477,9 @@ function certify () { clear # Certificate Authority
 
   echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}-${bits}.pfx)..."
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
-    -inkey ${domain}.rsa-${bits}.pem \
-    -in ${domain}.rsa-${bits}.cert \
-    -out "$domain.rsa-${bits}.pfx"
+    -inkey ${domain}.${algorithm}-${bits}.pem \
+    -in ${domain}.${algorithm}-${bits}.cert \
+    -out "$domain.${algorithm}-${bits}.pfx"
 
   echo ; echo "DSA (Digital Signature Algorithm) Certificates:"
   bits=2048
