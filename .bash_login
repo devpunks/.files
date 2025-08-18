@@ -1422,7 +1422,7 @@ function certify () { clear # Certificate Authority
   openssl x509 -req -days 365 -copy_extensions copyall \
     -in ${domain}.${algorithm}.csr -signkey ${domain}.${algorithm}.pem -out ${domain}.${algorithm}.cert
 
-  echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}.pfx)..."
+  echo; echo "Exporting PKCS#12 [${algorithm}] chain ($domain.${algorithm}.pfx)..."
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
     -inkey ${domain}.${algorithm}.pem \
     -in ${domain}.${algorithm}.cert \
