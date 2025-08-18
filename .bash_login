@@ -1509,7 +1509,8 @@ function certify () { clear # Certificate Authority
   openssl gendsa -out ${domain}.${algorithm}-${bits}.pem <( openssl dsaparam ${bits} )
 
   echo ; echo "Generating ${algorithm} ${bits}-bit Public Key ${domain}.${algorithm}-${bits}.pub"
-  openssl dsa -in ${domain}.${algorithm}-${bits}.pem -outform PEM -pubout -out ${domain}.${algorithm}-${bits}.pub
+  openssl dsa -pubout -outform PEM \
+    -in ${domain}.${algorithm}-${bits}.pem -out ${domain}.${algorithm}-${bits}.pub
 
   echo; echo "Generating ${algorithm} PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}-${bits}.csr"
   openssl req -new \
