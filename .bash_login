@@ -1176,6 +1176,7 @@ function passgen () { clear
   cipher $pwd
 } # passgen
 
+# https://antofthy.gitlab.io/info/crypto/passwd_obfuscation.txt
 # $$$ https://antofthy.gitlab.io/info/crypto/public_keys_openssl.txt
 # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
 # https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html
