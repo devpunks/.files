@@ -1316,6 +1316,7 @@ alias certificates='{
   for certificate in *.cert; do
     echo; echo "Certificate ${certificate}"
     openssl x509 -text -in ${certificate} -noout
+    cat ${certificate}
   done ; echo
 }' # certificates
 
