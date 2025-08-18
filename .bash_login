@@ -1415,7 +1415,7 @@ function certify () { clear # Certificate Authority
   echo ; echo "Generating $algorithm Public Key ${domain}.$algorithm.pub"
   openssl pkey -in ${domain}.${algorithm}.pem -pubout -out ${domain}.${algorithm}.pub
 
-  echo; echo "Generating ED25519 PKCS#10 CSR (Certificate Signing Request) ${domain}.ed25519.csr"
+  echo; echo "Generating $algorithm PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}.csr"
   openssl req -new \
     -key ${domain}.ed25519.pem -out ${domain}.ed25519.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
