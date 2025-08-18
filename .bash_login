@@ -1344,7 +1344,6 @@ function certify () { clear # Certificate Authority
   # Non-CA - digitalSignature, keyEncipherment, keyAgreement
   local -r usage='keyUsage=digitalSignature,cRLSign,keyCertSign' # CA
   # S/MIME - emailProtection
-  # VPN Client - serverAuth, clientAuth
   # Non-CA - serverAuth, clientAuth
   local -r extended='extendedKeyUsage=serverAuth, clientAuth' # CA
   local -r extensions="subjectAltName=DNS:${domain}, DNS:*.${domain}, IP:${IP}"
