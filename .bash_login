@@ -1409,8 +1409,8 @@ function certify () { clear # Certificate Authority
   algorithm=ed25519
   # https://blog.pinterjann.is/ed25519-certificates.html
   echo ; echo "ED25519 (Edwards 25519) Certificates:"
-  echo ; echo "Generating ED25519 PKCS#8 Private Key ${domain}.ed25519.pem"
-  openssl genpkey -algorithm ED25519 -outform PEM -out ${domain}.ed25519.pem
+  echo ; echo "Generating $algorithm PKCS#8 Private Key ${domain}.ed25519.pem"
+  openssl genpkey -algorithm $algorithm -outform PEM -out ${domain}.${algorithm}.pem
 
   echo ; echo "Generating ED25519 Public Key ${domain}.ed25519.pub"
   openssl pkey -in ${domain}.ed25519.pem -pubout -out ${domain}.ed25519.pub
