@@ -1450,14 +1450,14 @@ function certify () { clear # Certificate Authority
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
     -inkey ${domain}.${algorithm}.pem \
     -in ${domain}.${algorithm}.cert \
-    -out "$domain.${algorithm}.pfx"
+    -out "${domain}.${algorithm}.pfx"
 
   # https://en.m.wikipedia.org/wiki/RSA_cryptosystem
   echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
   bits=2048
   algorithm=rsa
   echo ; echo "Generating ${algorithm} PKCS#8 ${bits}-bit Private Key ${domain}.${algorithm}-${bits}.pem"
-  openssl genpkey -algorithm $algorithm -outform PEM -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.${algorithm}-${bits}.pem
+  openssl genpkey -algorithm ${algorithm} -outform PEM -pkeyopt rsa_keygen_bits:${bits} -out ${domain}.${algorithm}-${bits}.pem
 
   echo ; echo "Generating ${algorithm} ${bits}-bit Public Key ${domain}.${algorithm}-${bits}.pub"
   openssl req -new -key ${domain}.${algorithm}-${bits}.pem -subj "$subject" -out ${domain}.${algorithm}-${bits}.pub
