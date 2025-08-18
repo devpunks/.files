@@ -1372,10 +1372,9 @@ function certify () { clear # Certificate Authority
     -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.csr \
     -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}"
 
-  echo; echo "Generating ECC [${curve}] Certificate ${domain}.ecc-${curve}.cert"
-  openssl req -new -x509 -sha384 -noenc -days 365 \
-    -subj "$subject" -addext "subjectAltName=DNS:${domain},DNS:*${domain}" \
-    -key ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
+  echo; echo "Generating ECC [${curve}] X.509 Certificate ${domain}.ecc-${curve}.cert"
+  openssl x509 -req -sha384 -days 365 -copy_extensions copyall \
+    -in ${domain}.ecc-${curve}.csr -signkey ${domain}.ecc-${curve}.pem -out ${domain}.ecc-${curve}.cert
 
   echo; echo "Exporting PKCS#12 [${curve}] chain ($domain.ecc-${curve}.pfx)..."
   openssl pkcs12 -export -name 'PKCS Certificate Chain' \
