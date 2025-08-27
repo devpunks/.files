@@ -1286,11 +1286,6 @@ function g:CScopes () abort
 
   if ! filereadable(l:cscope) | return | endif
   echo 'Found cscope path: '..&tags
-" let l:tags = expand('$HOME/tags')
-
-
-" echo 'Setting ctags path: '..&tags
-" set omnifunc=ccomplete#Complete " CTags Complete
 endfunction " g:CScopes
 
 " -------------------------------------------------------------------------
