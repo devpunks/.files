@@ -2919,7 +2919,7 @@ function scope () { set +o noclobber # TODO: Remove
 
   cscope --help
   echo ; echo "Scoping Files [$files]..."
-  command find . -type f -o -iname '*.rb' -o -iname '*.rake' > $files
+  command find . -type f -iname "*.rb" > $files
 
   cscope -b -q -R $( cat $files )
 
