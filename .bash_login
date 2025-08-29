@@ -2960,7 +2960,6 @@ function tag () {
   ctags --list-maps=all --list-kinds-full=all
 
   echo && echo "Switching to path: $path"
-  command pushd $path
   echo "Creating global tags file (tags)"
   ctags -f tags --languages=all
   echo "Creating Ruby Ctags file (rb.tags)"
