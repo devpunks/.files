@@ -169,8 +169,6 @@ pkg install nodejs-lts
 npm install -g npm@latest
 
 pkg install python
-pkg install python-numpy
-pkg install python-pip
 pip install pytest
 
 pkg install php # PHP
