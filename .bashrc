@@ -156,7 +156,8 @@ export GREP_OPTIONS="--ignore-case --no-messages --line-number --with-filename \
   --context=1 --color=auto --recursive \
   --devices=skip --binary-files=without-match --label=' \$STDIN ⇉ ' \
   --group-separator=☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ \
-  --exclude-dir={.bundle,.cache,.config,.git,.gnupg,.npm,.ssh,.vim,log,logs,node_modules,storage,tmp}"
+  --exclude={.bash_history,tags,cscope.files} \
+  --exclude-dir={.bundle,.cache,.config,.git,.gnupg,.npm,.ssh,.vim,bin,log,logs,node_modules,storage,tmp}"
 
 # https://php.net/manual/en/function.curl-setopt.php
 # export CURLOPT_URL # URL
