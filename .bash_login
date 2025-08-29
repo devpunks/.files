@@ -2942,6 +2942,8 @@ function scope () { set +o noclobber # TODO: Remove
   starscope --summary
   echo
 
+  ls *scope*
+  command popd
   set -o noclobber
 } # scope
 
