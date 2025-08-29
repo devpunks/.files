@@ -1285,6 +1285,7 @@ function g:CScopes () abort
   " system('type cscope')[-1]
   let l:cscope = 'cscope'
   echo l:cscope
+  echo 'foo'
 
   if ! filereadable(l:cscope) | return | endif
   echo 'Found cscope path: '..&tags
