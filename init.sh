@@ -204,8 +204,8 @@ bundle config set force_ruby_platform true
 # $$$$ Set PATH fixes most ENV['PATH'] errors
 PATH=$PATH gem install nokogiri --platform=ruby -- --use-system-libraries
 PATH=$PATH gem install sqlite3 && gem info sqlite3
-PATH=$PATH gem install ripper-tags && ripper-tags --help # https://github.com/tmm1/ripper-tags
-PATH=$PATH bundle # $$$$ Set PATH fixes most ENV['PATH'] errors
+PATH=$PATH [ -e Gemfile ] && bundle
+PATH=$PATH gem install rubygems-server && gem server & open http://localhost:8808
 
 # }}}
 
