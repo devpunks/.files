@@ -2945,7 +2945,7 @@ function scope () { set +o noclobber # TODO: Remove
 # https://github.com/universal-ctags/ctags
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
 # alias ctags='clear && ctags -R --exclude@.gitignore'
-alias ctags='command ctags --recurse --verbose --totals=yes --langmap=javascript:*.json,+.es,vim:+.vimrc --langmap=ruby:*Gemfile --exclude={vendor,node_modules,storage,.git,.cache,.config,.ssh}'
+alias ctags='command ctags --recurse --verbose --totals=yes --langmap=javascript:*.json,+.es,vim:+.vimrc --langmap=ruby:*Gemfile --exclude={.git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile,bin,log,logs,node_modules,tmp,storage,vendor}'
 function tag () {
   local -r path=${1:HOME}
   echo && echo 'All Language Mappings:'
