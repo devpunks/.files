@@ -2930,7 +2930,7 @@ function scope () { set +o noclobber # TODO: Remove
   files=cscope.rb.files
   command starscope --help
   echo ; echo "Scoping Ruby Files [$files]..."
-  command find . -type f -o -iname '*.rb' -o -iname '*.rake' > $files
+  command find . -type f -iname "*.rb" > $files
 
   starscope --verbose \
     --export cscope,cscope.rb.out \
