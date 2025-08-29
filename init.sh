@@ -170,6 +170,8 @@ npm install -g npm@latest
 
 pkg install python
 pip install pytest
+pkg install python-pip
+pkg install python-numpy
 
 pkg install php # PHP
 pkg install php-fpm # FastCGI Process Manager
