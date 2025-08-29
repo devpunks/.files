@@ -2909,7 +2909,39 @@ function play () { clear
   echo ; echo ▷ Playing: "$location"
 } # play
 
-# /usr/bin/ctags # system default
+# cscope - 
+alias cscope='command cscope'
+function scope () { set +o noclobber # TODO: Remove
+  # TODO: Remove files and use process or command substitution <(...)
+  local files=cscope.files
+
+  command -v cscope || return
+
+  cscope --help
+  echo ; echo "Scoping Files [$files]..."
+  command find . -type f -o -iname '*.rb' -o -iname '*.rake' > $files
+
+  cscope -b -q -R $( cat $files )
+
+  echo
+
+  # Ruby - https://github.com/eapache/starscope
+  [ -e Gemfile ] && command -v starscope || return
+  files=cscope.rb.files
+  command starscope --help
+  echo ; echo "Scoping Ruby Files [$files]..."
+  command find . -type f -o -iname '*.rb' -o -iname '*.rake' > $files
+
+  starscope --verbose \
+    --export cscope,cscope.rb.out \
+    --exclude ".git,.bundle,.cache,.npm,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets,app/javascript" \
+    $( cat $file )
+  starscope --summary
+  echo
+
+  set -o noclobber
+} # scope
+
 # https://github.com/universal-ctags/ctags
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
 # alias ctags='clear && ctags -R --exclude@.gitignore'
