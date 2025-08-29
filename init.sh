@@ -207,6 +207,14 @@ PATH=$PATH gem install sqlite3 && gem info sqlite3
 PATH=$PATH [ -e Gemfile ] && bundle
 PATH=$PATH gem install rubygems-server && gem server & open http://localhost:8808
 
+pkg install cscope # https://cscope.sourceforge.net
+PATH=$PATH gem install starscope # https://github.com/eapache/starscope
+
+# tags https://github.com/universal-ctags/ctags
+[[  $( uname-s ) =~ Darwin ]] \
+  && pkg install universal-ctags
+[[  $( uname-s ) =~ Linux ]] \
+  && pkg install ctags
 # }}}
 
 # {{{ Database ------------------------------------------------------------
