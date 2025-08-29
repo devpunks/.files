@@ -201,6 +201,7 @@ bundle config set force_ruby_platform true
 # https://nokogiri.org/tutorials/installing_nokogiri.html#termux
 # Installing Rails (Nokogiri) https://github.com/termux/termux-packages/discussions/8855
 # https://nokogiri.org/tutorials/installing_nokogiri.html#why-would-i-not-want-to-use-a-native-gem
+# $$$$ Set PATH fixes most ENV['PATH'] errors
 PATH=$PATH gem install nokogiri --platform=ruby -- --use-system-libraries
 gem install rubygems-server && gem server && open http://localhost:8808
 PATH=$PATH gem install sqlite3 && gem info sqlite3
