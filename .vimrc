@@ -1281,7 +1281,9 @@ endfunction " indentation
 autocmd VimDefaults VimEnter * call g:CScopes ()
 
 function g:CScopes () abort
-  let l:cscope = system('type command cscope')[-1]
+  " executable('scope')
+  " system('type cscope')[-1]
+  let l:cscope = 'cscope'
   echo l:cscope
 
   if ! filereadable(l:cscope) | return | endif
