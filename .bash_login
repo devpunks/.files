@@ -135,6 +135,7 @@ alias delete='command rm --verbose --preserve-root --recursive --dir --interacti
 # https://unix.stackexchange.com/q/90653
 alias sed='sed --regexp-extended'
 # https://unix.stackexchange.com/q/230952
+# https://en.m.wikipedia.org/wiki/Find_(Unix)
 # https://tecmint.com/35-practical-examples-of-linux-find-command
 alias find=' \
   command find . -type f -iname \
