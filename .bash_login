@@ -2921,7 +2921,7 @@ function play () { clear
   echo ; echo ▷ Playing: "$location"
 } # play
 
-# cscope - 
+# cscope - https://cscope.sourceforge.net
 alias cscope='command cscope'
 function scope () { set +o noclobber # TODO: Remove
   local -r path=${1:HOME}
