@@ -1290,7 +1290,7 @@ function g:Scope () abort
 
   echo l:command
 
-  for extension in [ 'rb', 'js' ]  " Ruby, Javascript
+  for extension in [ 'rb', 'js', 'py' ]  " Ruby, Javascript
     let l:out = getcwd() .. '/cscope.' .. extension .. '.out'
 
     if ! filereadable( l:out )  | continue | endif
