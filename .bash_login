@@ -216,7 +216,7 @@ function monitor () {
 alias free='command free --mega --human --wide'
 # https://man7.org/linux/man-pages/man5/proc_meminfo.5.html
 function memory () { clear
-  for label in \
+  echo ; for label in \
     MemTotal MemFree MemAvailable MemBuffers MemCached Active InActive; do
       command grep $label /proc/meminfo
   done
