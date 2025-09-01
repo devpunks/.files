@@ -1284,10 +1284,23 @@ autocmd FileType javascript call g:Scope ()
 function g:Scope () abort
   let l:command = 'cscope'
   " executable('scope')
-  " system('type cscope')[-1]
-  let l:cscope = 'cscope'
-  echo l:cscope
-  echo 'foo'
+  call system( 'command -v ' .. l:command )
+
+  if v:shell_error | return | else | echo 'Scoping...' | endif
+
+  echo l:command
+
+  for extension in [ 'rb', 'js' ]  " Ruby, Javascript
+    let l:out = getcwd() .. '/cscope.' .. extension .. '.out'
+
+    if ! filereadable( l:out )  | continue | endif
+
+    :cscope add l:out
+    :cscope reset
+    :cscope show
+  endfor
+
+  return
 
   if ! filereadable(l:cscope) | return | endif
   echo 'Found cscope path: '..&tags
