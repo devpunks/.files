@@ -1303,7 +1303,7 @@ function g:Scope () abort
   return
 
   echo 'Found cscope path: '..&tags
-endfunction " g:CScopes
+endfunction " scope
 
 " -------------------------------------------------------------------------
 " Tags :h tags-and-searches (tagsrch.txt)
