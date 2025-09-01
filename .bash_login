@@ -220,6 +220,8 @@ function memory () { clear
     MemTotal MemFree MemAvailable MemBuffers MemCached Active InActive; do
       command grep $label /proc/meminfo
   done
+
+  echo ; free ; echo
 }  # memory
 
 # - https://en.wikipedia.org/wiki/Device_file
