@@ -2934,7 +2934,40 @@ function scope () { set +o noclobber # TODO: Remove
 
     cscope -v -b -q -U -f cscope.js.out -R $( cat $files )
 
-  cscope -b -q -R $( cat $files)
+  # starscope --verbose \
+  #   --export cscope,cscope.js.out \
+  #   --exclude ".git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets,app/javascript" \
+  #   $( cat $file )
+  # starscope --summary
+  fi # Javascript
+
+  if [ -e Gemfile ] ; then # Ruby - https://github.com/eapache/starscope
+    files=cscope.rb.files
+    command find . -type f -iname '*.rb' > $files
+    echo ; echo "Scoping Ruby Files [$files]..."
+
+    cscope -v -b -q -U -f cscope.rb.out -R $( cat $files )
+
+  # starscope --verbose \
+  #   --export cscope,cscope.rb.out \
+  #   --exclude ".git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets,app/javascript" \
+  #   $( cat $file )
+  # starscope --summary
+  fi # Ruby
+
+  if [ -e Pipfile ] ; then # Python - https://github.com/eapache/starscope
+    files=cscope.py.files
+    command find . -type f -iname '*.py' > $files
+    echo ; echo "Scoping Python Files [$files]..."
+
+    cscope -v -b -q -U -f cscope.py.out -R $( cat $files )
+
+  # starscope --verbose \
+  #   --export cscope,cscope.rb.out \
+  #   --exclude ".git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets,app/javascript" \
+  #   $( cat $file )
+  # starscope --summary
+  fi # Python
 
   echo # Ruby - https://github.com/eapache/starscope
   [ -e Gemfile ] && command -v starscope || return
