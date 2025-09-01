@@ -1281,7 +1281,8 @@ endfunction " indentation
 autocmd FileType ruby call g:Scope ()
 autocmd FileType javascript call g:Scope ()
 
-function g:CScopes () abort
+function g:Scope () abort
+  let l:command = 'cscope'
   " executable('scope')
   " system('type cscope')[-1]
   let l:cscope = 'cscope'
