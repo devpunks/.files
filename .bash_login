@@ -2932,9 +2932,7 @@ function scope () { set +o noclobber # TODO: Remove
     command find . -type f -iname '*.js' > $files
     echo ; echo "Scoping Javascript Files [$files]..."
 
-  cscope --help
-  echo ; echo "Scoping Files [$files]..."
-  command find . -type f -iname "*.rb" > $files
+    cscope -v -b -q -U -f cscope.js.out -R $( cat $files )
 
   cscope -b -q -R $( cat $files)
 
