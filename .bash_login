@@ -2971,7 +2971,6 @@ function scope () { set +o noclobber # TODO: Remove
 
 
   echo ; ls *scope*
-  command popd
   set -o noclobber
 } # scope
 
