@@ -1280,7 +1280,6 @@ endfunction " indentation
 " -------------------------------------------------------------------------
 autocmd FileType ruby call g:Scope ()
 autocmd FileType python call g:Scope ()
-autocmd FileType javascript call g:Scope ()
 
 function g:Scope () abort
   let l:command = 'cscope'
