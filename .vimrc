@@ -1279,7 +1279,6 @@ endfunction " indentation
 "   - https://stackoverflow.com/q/934233/cscope-or-ctags-why-choose-one-over-the-other
 " -------------------------------------------------------------------------
 autocmd FileType ruby call g:Scope ()
-autocmd FileType python call g:Scope ()
 
 function g:Scope () abort
   let l:command = 'cscope'
