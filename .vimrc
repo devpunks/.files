@@ -1302,7 +1302,6 @@ function g:Scope () abort
 
   return
 
-  if ! filereadable(l:cscope) | return | endif
   echo 'Found cscope path: '..&tags
 endfunction " g:CScopes
 
