@@ -1296,7 +1296,7 @@ function g:Scope () abort
 
     if ! filereadable( l:out )  | continue | endif
 
-    :cscope add l:out
+    :cscope add l:out " -v -b -q -U -f cscope.js.out -R $( cat $files )
     :cscope reset
     :cscope show
   endfor
