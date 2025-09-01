@@ -2924,8 +2924,6 @@ function play () { clear
 # cscope - https://cscope.sourceforge.net
 alias cscope='command cscope'
 function scope () { set +o noclobber # TODO: Remove
-  local -r path=${1:.}
-
   # TODO: Remove files and use process or command substitution <(...)
   local files=cscope.files
   command pushd $path
