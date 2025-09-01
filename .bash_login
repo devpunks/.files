@@ -2950,7 +2950,6 @@ function scope () { set +o noclobber # TODO: Remove
     --exclude ".git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets,app/javascript" \
     $( cat $file )
   starscope --summary
-  echo
 
   ls *scope*
   command popd
