@@ -1278,7 +1278,8 @@ endfunction " indentation
 "   - https://www.fsl.cs.sunysb.edu/~rick/cscope.html
 "   - https://stackoverflow.com/q/934233/cscope-or-ctags-why-choose-one-over-the-other
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:CScopes ()
+autocmd FileType ruby call g:Scope ()
+autocmd FileType javascript call g:Scope ()
 
 function g:CScopes () abort
   " executable('scope')
