@@ -136,7 +136,9 @@ alias delete='command rm --verbose --preserve-root --recursive --dir --interacti
 alias sed='sed --regexp-extended'
 # https://unix.stackexchange.com/q/230952
 # https://tecmint.com/35-practical-examples-of-linux-find-command
-alias find='command find . -type f -iname'
+alias find=' \
+  command find . -type f -iname \
+'
 # - https://stackoverflow.com/q/1987926
 # https://gnu.org/software/gawk/manual/html_node/Bracket-Expressions.html
 # https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html
