@@ -2951,7 +2951,13 @@ function scope () { set +o noclobber # TODO: Remove
     $( cat $file )
   starscope --summary
 
-  ls *scope*
+  echo # Javascript
+  echo  'TODO: JavaScript' && [ -e  package.json ] || return
+
+  echo # Python
+  echo  'TODO: Python' && command -v  python || return
+
+  echo ; ls *scope*
   command popd
   set -o noclobber
 } # scope
