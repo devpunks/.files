@@ -212,6 +212,16 @@ function monitor () {
   printf "\n %s \n" "$( uptime )"
 } # monitor
 
+# https://man7.org/linux/man-pages/man1/free.1.html
+alias free='command free --mega --human --wide'
+# https://man7.org/linux/man-pages/man5/proc_meminfo.5.html
+function memory () { clear
+  for label in \
+    MemTotal MemFree MemAvailable MemBuffers MemCached Active InActive; do
+      command grep $label /proc/meminfo
+  done
+}  # memory
+
 # - https://en.wikipedia.org/wiki/Device_file
 function devices () { clear
   local -r location="$1"
