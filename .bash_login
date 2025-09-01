@@ -564,8 +564,6 @@ function probe () { clear
   weigh "$location"
 } # probe
 
-# https://man7.org/linux/man-pages/man1/free.1.html
-alias free='command free --mega --human --wide'
 function weigh () {
   local -r location=$( realpath "${1:-.}" )
 
