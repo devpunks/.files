@@ -205,7 +205,7 @@ function clock () {
   now # time
 } # clock
 
-monitor () {
+function monitor () {
   open http://prometheus.io
 
   htop && ps
