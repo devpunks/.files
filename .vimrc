@@ -1294,6 +1294,8 @@ function g:Scope () abort
 
     if ! filereadable( l:out )  | continue | endif
 
+    echo '(scope) definitions path: '.. l:out
+
     " -v -b -q -U -f cscope.js.out -R $( cat $files )
     echom 'adding: ' .. l:out
     " cscope reset
