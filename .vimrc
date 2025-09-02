@@ -1302,7 +1302,6 @@ function g:Scope () abort
 
     " -v -b -q -U -f cscope.js.out -R $( cat $files )
     " cscope add '' .. l:out
-    " cscope reset
     " cscope show
     exe 'cscope add' l:out
     cscope reset
