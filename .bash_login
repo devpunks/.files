@@ -2921,6 +2921,7 @@ function play () { clear
   echo ; echo ▷ Playing: "$location"
 } # play
 
+# https://en.wikipedia.org/wiki/Cscope
 # cscope - https://cscope.sourceforge.net
 alias cscope='command cscope'
 #  https://stackoverflow.com/q/33676829
