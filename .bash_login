@@ -2999,7 +2999,7 @@ function tag () {
   echo "Creating Ruby Ctags file (${extension}.tags)"
   # TODO: Use cscope.<extension>.files as input -L(list)
   # ctags -L  cscope.rb.files -f rb.tags --languages=ruby
-  ctags -f rb.tags --languages=ruby
+  ctags -f ${extension}.tags --languages=ruby
   echo "Creating Ruby tags file (tags.ruby)"
   ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
   ls *tags*
