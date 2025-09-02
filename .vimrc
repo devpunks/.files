@@ -1284,9 +1284,6 @@ autocmd FileType ruby,python,javascript call g:Scope ()
 function g:Scope () abort
   let l:command = 'cscope'
 
-  echo 'Current Dir: ' .. getcwd()
-  echo '(scope) definitions path: '.. &tags
-
   " executable('scope')
   call system( 'command -v ' .. l:command )
   if v:shell_error | return | else | echom l:command .. ' Scoping...' | endif
