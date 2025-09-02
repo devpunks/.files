@@ -1288,6 +1288,7 @@ function g:Scope () abort
   call system( 'command -v ' .. l:command )
   if v:shell_error | return | else | echom l:command .. ' Scoping...' | endif
 
+  echo 'Current Dir: ' .. getcwd()
   for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
     let l:out = getcwd() .. '/cscope.' .. extension .. '.out'
 
