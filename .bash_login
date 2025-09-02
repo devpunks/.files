@@ -2923,7 +2923,7 @@ function play () { clear
 
 # https://en.wikipedia.org/wiki/Cscope
 # cscope - https://cscope.sourceforge.net
-alias cscope='command cscope'
+alias cscope='command cscope -v -R'
 #  https://stackoverflow.com/q/33676829
 function scope () { set +o noclobber # TODO: Remove
   # TODO: Remove files and use process or command substitution <(...)
