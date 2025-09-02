@@ -2993,7 +2993,6 @@ function tag () {
   echo "Creating Ruby tags file (tags.ruby)"
   ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
   ls *tags*
-  command popd
 } # tag
 
 # }}}
