@@ -3002,6 +3002,7 @@ function tag () {
   ctags -f ${extension}.tags --languages=ruby
   echo "Creating Ruby tags file (tags.ruby)"
   ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
+
   ls *tags*
 } # tag
 
