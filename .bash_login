@@ -2981,8 +2981,6 @@ function scope () { set +o noclobber # TODO: Remove
 # alias ctags='clear && ctags -R --exclude@.gitignore'
 alias ctags='command ctags --recurse --verbose --totals=yes --langmap=javascript:*.json,+.es,vim:+.vimrc --langmap=ruby:*Gemfile --exclude={.git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile,bin,log,logs,node_modules,tmp,storage,vendor}'
 function tag () {
-  command pushd $path
-
   echo && echo 'All Language Mappings:'
   ctags --list-maps=all --list-kinds-full=all
 
