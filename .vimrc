@@ -1300,8 +1300,6 @@ function g:Scope () abort
   endfor
 
   return
-
-  echo 'Found cscope path: '..&tags
 endfunction " scope
 
 " -------------------------------------------------------------------------
