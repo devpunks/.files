@@ -1298,8 +1298,8 @@ function g:Scope () abort
     " cscope reset
     cscope add l:out
     cscope show
-  endfor
-endfunction " scope
+  endfor " extension
+endfunction " Scope
 command! Scope call Scope()
 
 " -------------------------------------------------------------------------
