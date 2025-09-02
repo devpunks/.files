@@ -1300,6 +1300,7 @@ function g:Scope () abort
     cscope show
   endfor
 endfunction " scope
+command! Scope call Scope()
 
 " -------------------------------------------------------------------------
 " Tags :h tags-and-searches (tagsrch.txt)
