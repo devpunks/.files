@@ -1304,9 +1304,11 @@ function g:Scope () abort
     " cscope add '' .. l:out
     " cscope reset
     " cscope show
-    exe 'cs add' l:out
-    exe 'cs reset'
-    exe 'cs show'
+    exe 'cscope add' l:out
+    cscope reset
+    echo "\n"
+    cscope show
+    echo ''
   endfor " extension
 endfunction " Scope
 command! Scope call Scope()
