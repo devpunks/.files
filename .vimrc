@@ -1288,8 +1288,9 @@ function g:Scope () abort
   call system( 'command -v ' .. l:command )
   if v:shell_error | return | else | echom l:command .. ' Scoping...' | endif
 
-  cscopepathcomp = 2 " Path parts of db path
-  cscopeverbose  = 0 " Messaging during database addition
+  set cscopeverbose " Database addition messages
+  set cscopepathcomp =2 " Path parts of db path
+  set cscopetagorder =0 "Search CScope database first
 
   echo 'Current Dir: ' .. getcwd()
   for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
