@@ -1295,7 +1295,7 @@ function g:Scope () abort
 
   echo 'Current Dir: ' .. getcwd()
   for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
-    let l:out = getcwd() .. '/cscope.' .. extension .. '.out'
+    let l:out = findfile( 'cscope.' .. extension .. '.out', '.;' )
 
     if ! filereadable( l:out )  | continue | endif
 
