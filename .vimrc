@@ -1296,7 +1296,7 @@ function g:Scope () abort
     " -v -b -q -U -f cscope.js.out -R $( cat $files )
     echom 'adding: ' .. l:out
     " cscope reset
-    cscope add l:out
+    cscope add '' .. l:out
     cscope show
   endfor " extension
 endfunction " Scope
