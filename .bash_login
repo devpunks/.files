@@ -2988,7 +2988,15 @@ function tag () {
 
   echo "Creating global tags file (tags)"
   ctags -f tags --languages=all
-  echo "Creating Ruby Ctags file (rb.tags)"
+
+  extension=js
+  echo "Creating Javascript Ctags file (${extension}.tags)"
+  # TODO: Use cscope.<extension>.files as input -L(list)
+  # ctags -L  cscope.js.files -f js.tags --languages=javascript
+  ctags -f ${extension}.tags --languages=javascript
+
+  extension=rb
+  echo "Creating Ruby Ctags file (${extension}.tags)"
   # TODO: Use cscope.<extension>.files as input -L(list)
   # ctags -L  cscope.rb.files -f rb.tags --languages=ruby
   ctags -f rb.tags --languages=ruby
