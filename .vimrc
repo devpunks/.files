@@ -1285,10 +1285,7 @@ function g:Scope () abort
 
   " executable('scope')
   call system( 'command -v ' .. l:command )
-
-  if v:shell_error | return | else | echo 'Scoping...' | endif
-
-  echo l:command
+  if v:shell_error | return | else | echo l:command .. 'Scoping...' | endif
 
   for extension in [ 'rb', 'js', 'py' ]  " Ruby, Javascript
     let l:out = getcwd() .. '/cscope.' .. extension .. '.out'
