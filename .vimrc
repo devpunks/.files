@@ -1281,6 +1281,7 @@ endfunction " indentation
 " -------------------------------------------------------------------------
 autocmd FileType ruby,python,javascript call g:Scope ()
 
+" https://stackoverflow.com/q/12243233/how-to-auto-load-cscope-out-in-vim
 function g:Scope () abort
   let l:command = 'cscope'
 
