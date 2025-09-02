@@ -1285,7 +1285,7 @@ function g:Scope () abort
   let l:command = 'cscope'
 
   echo 'Current Dir: ' .. getcwd()
-  echo '(cscope) definitions path: '.. &tags
+  echo '(scope) definitions path: '.. &tags
 
   " executable('scope')
   call system( 'command -v ' .. l:command )
