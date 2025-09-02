@@ -1288,7 +1288,7 @@ function g:Scope () abort
   call system( 'command -v ' .. l:command )
   if v:shell_error | return | else | echo l:command .. 'Scoping...' | endif
 
-  for extension in [ 'rb', 'js', 'py' ]  " Ruby, Javascript
+  for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
     let l:out = getcwd() .. '/cscope.' .. extension .. '.out'
 
     if ! filereadable( l:out )  | continue | endif
