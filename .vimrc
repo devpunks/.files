@@ -1299,8 +1299,6 @@ function g:Scope () abort
     cscope add l:out
     cscope show
   endfor
-
-  return
 endfunction " scope
 
 " -------------------------------------------------------------------------
