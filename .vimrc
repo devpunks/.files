@@ -1756,7 +1756,6 @@ function g:NerdToggle () abort
     TagbarTogglePause
   endif
 
-  if exists(':NERDTreeToggle')
     NERDTreeToggle
     wincmd p
   endif
