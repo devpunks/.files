@@ -1284,6 +1284,7 @@ autocmd FileType ruby,python,javascript call g:Scope ()
 
 function g:Scope () abort
   let l:command = 'cscope'
+  let l:suffix = &ignorecase ? '-C' : '' " Case sensitifity flag
 
   " executable('scope')
   call system( 'command -v ' .. l:command )
