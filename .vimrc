@@ -1744,7 +1744,7 @@ function! g:NerdDrawer () abort
   if ! exists('g:NERDTree') | return | endif
   if len( &buftype ) || index( g:blacklist, &filetype ) >= 0 || empty( &filetype ) | return | endif
 
-  NERDTreeToggle " Open Drawer
+  NERDTreeFind " Open Drawer & Find current
   wincmd p " Focus on `p`revious buffer
 endfunction " NerdDrawer
 
