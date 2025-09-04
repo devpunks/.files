@@ -1305,6 +1305,9 @@ function g:Scope () abort
     " -v -b -q -U -f cscope.js.out -R $( cat $files )
     " cscope add '' .. l:out
     silent! execute 'cscope add' l:out l:suffix
+    " TODO: Reconnect If mtime > last connection time
+    " https://github.com/ktchen14/cscope-auto/blob/master/autoload/cscope_auto.vim#L90
+    " :h getftime('file_location')
     cscope reset
     echo "\n"
     cscope show
