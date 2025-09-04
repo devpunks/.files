@@ -1301,13 +1301,16 @@ function g:Scope () abort
 
     echo '(scope) definitions path: '.. l:out
 
-    " -v -b -q -U -f cscope.js.out -R $( cat $files )
-    " cscope add '' .. l:out
-    exe 'cscope add' l:out
-    cscope reset
-    echo "\n"
-    cscope show
-    echo ''
+    try " connecting to scope
+      " -v -b -q -U -f cscope.js.out -R $( cat $files )
+      " cscope add '' .. l:out
+      execute 'cscope add' l:out
+    catch | finally
+      cscope reset
+      echo "\n"
+      cscope show
+      echo ''
+    endtry
   endfor " extension
 endfunction " Scope
 command! Scope call Scope()
