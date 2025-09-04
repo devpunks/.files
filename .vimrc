@@ -1314,7 +1314,7 @@ function g:Scope () abort
     echo ''
   endfor " extension
 endfunction " Scope
-command! Scope call Scope()
+command! Scope call Scope ()
 
 " -------------------------------------------------------------------------
 " Tags :h tags-and-searches (tagsrch.txt)
