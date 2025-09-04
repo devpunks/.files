@@ -1757,8 +1757,12 @@ function g:NerdToggle () abort
   endif
 
     NERDTreeToggle
-    wincmd p
-  endif
+    if ! g:NERDTree.IsOpen() | return | endif
+
+    echo g:NERDTree.IsOpen()
+    NERDTreeFind " Open Drawer & Find current
+    if expand('%:t') =~ 'NERD_tree_tab' | wincmd p  |  endif
+
   " :TlistToggle
 endfunction " NerdToggle
 
