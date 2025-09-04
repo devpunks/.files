@@ -2962,7 +2962,7 @@ function scope () { set +o noclobber # TODO: Remove
     command find . -type f -iname '*.py' > $files
     echo ; echom "Scoping Python Files [$files]..."
 
-    cscope -b -q -U -f cscope.js.out $( cat $files )
+    cscope -b -q -U -f cscope.py.out $( cat $files )
 
   # starscope --verbose \
   #   --export cscope,cscope.rb.out \
