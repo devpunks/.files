@@ -1728,6 +1728,7 @@ function! g:NerdInit () abort
         \ 'Modified' : '📝',
   \ }
 
+  let g:NERDTreeWinPos='left'
   let g:NERDTreeStatusline='TODO: GitDiffs()'
   let g:NERDTreeIgnore=['\.sock$', 'my-pipe'] " ignored files
   let g:NERDTreeFileLines=1 " LOC number in files
