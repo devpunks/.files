@@ -2971,6 +2971,11 @@ function scope () { set +o noclobber # TODO: Remove
   # starscope --summary
   fi # Python
 
+  files=cscope.php.files
+  echo ; echom "TODO: Scoping PHP Files [$files]..."
+  # if [ -e Pipfile ] ; then # PHP -https://github.com/vim-php/phpctags
+  # fi # Python
+
   echo ; ls *scope*
   set -o noclobber
 } # scope
