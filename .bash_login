@@ -2988,7 +2988,7 @@ alias ctags='command ctags --recurse --verbose --totals=yes \
   --langmap=vim:+.vimrc \
   --langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout \
   --langmap=javascript:*.json,+.es --langmap=ruby:+.erb\(Gemfile\) \
-  --exclude={.git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile,bin,log,logs,node_modules,tmp,storage,vendor} \
+  --exclude={.bundle,.cache,.config,.git,.npm,.ssh,bin,log,logs,node_modules,tmp,storage,vendor} \
 ' # ctags
 
 function tag () {
