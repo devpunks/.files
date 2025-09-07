@@ -2984,7 +2984,8 @@ function scope () { set +o noclobber # TODO: Remove
 # https://gist.github.com/RockDeng110/d19d97534a34c971183327a11a466b91
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
 # alias ctags='clear && ctags -R --exclude@.gitignore'
-alias ctags='command ctags --recurse --verbose --totals=yes \
+alias ctags='command ctags --recurse --verbose 
+  --totals=yes \
   --langmap=vim:+.vimrc \
   --langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout \
   --langmap=javascript:*.json,+.es --langmap=ruby:+.erb\(Gemfile\) \
