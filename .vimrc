@@ -543,7 +543,8 @@ inoremap <Tab> <C-n>
 
 " https://vimhelp.org/terminal.txt.html
 if has('terminal')
-  set termwinkey=<Esc>
+  " set termwinkey=<Esc>
+  set termwinkey=<C-w>
   nnoremap <S-t> :terminal<CR>
 endif
 
