@@ -309,6 +309,7 @@ echo Cloning submodules...
 # https://github.com/Asheq/close-buffers.vim
 # https://github.com/preservim/vim-indent-guides
 # https://github.com/ntpeters/vim-better-whitespace
+# https://github.com/Raimondi/delimitMate # quotes, parenthesis, brackets
 
 # Telesense (auto completion) ---------
 # https://github.com/ctrlpvim/ctrlp.vim
