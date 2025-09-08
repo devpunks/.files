@@ -1352,6 +1352,28 @@ function g:Tag () abort
     \ 'Using tagfile' .. &tags
 endfunction " Tag
 
+" nnoremap <Space><Enter> :call g:CursorTag()<CR>
+function g:CursorTag () abort
+  let l:word = expand('<cword>')
+
+  if empty( l:word ) || &previewwindow | return | endif
+
+  try | exe 'ptag '..word
+  catch | return | endtry
+
+  echo 'Cursor Tag <cword>: '..word
+
+  " if ! &previewwindow |return | endif
+  " if has('folding') | .foldopen! | endif
+  call search('$', 'b') " previous EOL"
+  let word = substitute(word, '\\', '\\\\', '')
+  call search('\<\V'..l:word..'\>')
+
+  exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
+
+  wincmd P " Preview
+endfunction " g:CursorTag
+
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
