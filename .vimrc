@@ -1469,7 +1469,7 @@ function g:TagsBar () abort
 endfunction " g:TagsBar
 
 " autocmd FileDefaults CursorHold * ++nested call g:CursorTag()
-nnoremap <Space><Enter> :call g:CursorTag()<CR>
+" nnoremap <Space><Enter> :call g:CursorTag()<CR>
 function g:CursorTag () abort
   let l:word = expand('<cword>')
 
