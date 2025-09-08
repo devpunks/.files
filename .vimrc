@@ -859,6 +859,10 @@ function! s:space () abort
 endfunction " space
 command! Space call s:space ()
 
+function! s:enter () abort
+  echo 'Entering ( Not Yet Implemented. See :Enter command )'
+endfunction " enter
+command! Enter call s:enter ()
 
 " - https://github.com/alvan/vim-indexer
 " - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
