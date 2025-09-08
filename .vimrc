@@ -1321,10 +1321,6 @@ let &tags = findfile( 'tags', '.;' )
 echom 'Current Dir: ' .. getcwd()
 echom '(tags) definitions path: '.. &tags
 
-"   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
-" :h tag - <C-]> jump to & push tag
-" <C-t> pop tag (:pop)
-
 function g:Define (word) abort
 endfunction " Define
 
