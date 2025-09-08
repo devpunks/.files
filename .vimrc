@@ -478,7 +478,6 @@ nnoremap <silent><Del> x
 nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
 nnoremap <Space><Enter> :echo 'SPACE + ENTER'
 inoremap <Space><Enter> <C-o>:echo 'INSERT SPACE + ENTER'
-nnoremap <silent><Tab> :echo 'TAB'<CR>
 nnoremap <silent><S-Tab> :echo 'SHIFT + TAB'<CR>
 inoremap <Tab> <C-o>:echo 'INSERT TAB'
 inoremap <S-Tab> <C-o>:echo 'INSERT SHIFT + TAB'
