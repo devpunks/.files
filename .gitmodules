@@ -160,3 +160,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-javascript"]
 	path = .vim/pack/u0_a311/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/u0_a311/start/vim-markdown"]
+	path = .vim/pack/u0_a311/start/vim-markdown
+	url = https://github.com/preservim/vim-markdown.git
