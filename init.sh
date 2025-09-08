@@ -285,6 +285,9 @@ echo Cloning submodules...
 # https://github.com/obcat/vim-sclow
 # https://github.com/lornix/vim-scrollbar
 
+# https://github.com/preservim/nerdtree
+# https://github.com/Xuyuanp/nerdtree-git-plugin
+
 # https://github.com/lambdalisue/vim-fern
 # https://github.com/lambdalisue/vim-fern-bookmark
 # https://github.com/lambdalisue/vim-fern-git-status
