@@ -343,7 +343,7 @@ echo Cloning submodules...
 # https://github.com/rhysd/vim-lsp-ale
 # https://github.com/andreypopp/asyncomplete-ale.vim
 
-# Language Servers ------------------------
+# LS (Language Servers) ------------------------
 # https://github.com/bash-lsp/bash-language-server
 npm install -g bash-language-server
 
