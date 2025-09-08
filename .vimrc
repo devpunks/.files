@@ -1358,6 +1358,8 @@ function s:tag () abort
 
   echo 'Cursor Tag <cword>: ' .. l:word
   echo 'Using tags file: ' .. &tags
+
+  execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 endfunction " tag
 
 " nnoremap <Space><Enter> :call g:CursorTag()<CR>
