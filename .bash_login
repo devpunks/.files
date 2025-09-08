@@ -2921,6 +2921,45 @@ function play () { clear
   echo ; echo ▷ Playing: "$location"
 } # play
 
+# https://github.com/universal-ctags/ctags
+# https://gist.github.com/RockDeng110/d19d97534a34c971183327a11a466b91
+# ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
+# alias ctags='clear && ctags -R --exclude@.gitignore'
+alias ctags='command ctags --recurse --verbose \
+  --totals=yes \
+  --langmap=vim:+.vimrc \
+  --langmap=ruby:+.erb\(Gemfile\) \
+  --langmap=javascript:*.json,+.es \
+  --langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout \
+  --exclude={.bundle,.cache,.config,.git,.local,.npm,.ssh,bin,log,logs,node_modules,storage,tmp,vendor} \
+' # ctags
+
+function tag () {
+  let extension
+
+  echo && echo 'All Language Mappings:'
+  ctags --list-maps=all --list-kinds-full=all
+
+  echo "Creating global tags file (tags)"
+  ctags -f tags --languages=all
+
+  extension=js
+  echo "Creating Javascript Ctags file (${extension}.tags)"
+  # TODO: Use cscope.<extension>.files as input -L(list)
+  # ctags -L  cscope.js.files -f js.tags --languages=javascript
+  ctags -f ${extension}.tags --languages=javascript
+
+  extension=rb
+  echo "Creating Ruby Ctags file (${extension}.tags)"
+  # TODO: Use cscope.<extension>.files as input -L(list)
+  # ctags -L  cscope.rb.files -f rb.tags --languages=ruby
+  ctags -f ${extension}.tags --languages=ruby
+  echo "Creating Ruby tags file (tags.ruby)"
+  ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
+
+  ls *tags*
+} # tag
+
 # https://en.wikipedia.org/wiki/Cscope
 # cscope - https://cscope.sourceforge.net
 alias cscope='command cscope -v -R'
