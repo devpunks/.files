@@ -1427,7 +1427,7 @@ function g:TagsList () abort
   " .foldopen!
   wincmd p " Previous
 
-endfunction " g:TagsList
+endfunction " TagsList
 
 " -------------------------------------------------------------------------
 " TagBar - https://github.com/preservim/tagbar
