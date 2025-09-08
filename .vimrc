@@ -849,6 +849,12 @@ function Foo{g:shazam} () abort
   echo 'Shazzaaaam'
 endfunction
 
+function! s:tab () abort
+  echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
+endfunction " tab
+command! Tab call s:tab()
+
+
 " - https://github.com/alvan/vim-indexer
 " - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
 " - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
