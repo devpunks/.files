@@ -2949,8 +2949,8 @@ function tag () {
   echo && echo 'All Language Mappings:'
   ctags --list-maps=all --list-kinds-full=all
 
-# echo "Creating global tags file (tags)"
-# ctags -f tags --languages=all
+# echo "Creating project tags file (tags)"
+  ctags --languages=all -o tags
 
 # extension=js
 # echo "Creating Javascript Ctags file (${extension}.tags)"
