@@ -2935,7 +2935,16 @@ alias ctags='command ctags --recurse --verbose \
 ' # ctags
 
 function tag () {
-  let extension
+  local extension
+  local files=cscope.files
+
+  # if [ -e package.json ] ; then # Javascript
+  # files=cscope.js.files
+  # command find . -type f -iname '*.js' > $files
+  # echo ; echom "Scoping Javascript Files [$files]..."
+
+  # cscope -b -q -U -f cscope.js.out $( cat $files )
+
 
   echo && echo 'All Language Mappings:'
   ctags --list-maps=all --list-kinds-full=all
