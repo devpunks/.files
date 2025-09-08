@@ -1346,6 +1346,7 @@ function s:tag () abort
   " try | exe 'ptag '..word
   " catch | return | endtry
 
+  if len( list ) == 0 | echom '"'..l:word..'" Tag under cursor not found!' | endif
   if len( list ) == 0 | return | endif
   echo string( list )
 " call setqflist( list )
