@@ -1348,7 +1348,7 @@ function s:tag () abort
 
   if len( list ) == 0 | echom '"'..l:word..'" Tag under cursor not found!' | endif
   if len( list ) == 0 | return | endif
-  echo string( list )
+  echo 'The list: ' .. string( list )
 " call setqflist( list )
 " copen
 
