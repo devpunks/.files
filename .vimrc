@@ -1299,6 +1299,8 @@ endfunction " indentation
 "  :h ctags
 "  :h tselect
 "  :h tagstack
+"  <C-]> jump to & push tag
+"  <C-t> pop tag (:pop)
 "  - https://en.m.wikipedia.org/wiki/Ctags
 "  - https://github.com/universal-ctags/ctags
 "  - https://linuxhint.com/integrating_vim_ctags
