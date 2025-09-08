@@ -338,6 +338,7 @@ echo Cloning submodules...
 # https://github.com/thomasfaingnaert/vim-lsp-ultisnips
 # https://github.com/prabirshrestha/asyncomplete-lsp.vim
 #
+# https://github.com/neoclide/coc.nvim
 # https://github.com/dense-analysis/ale
 # https://github.com/andreypopp/asyncomplete-ale.vim
 # https://github.com/rhysd/vim-lsp-ale
