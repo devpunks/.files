@@ -1306,6 +1306,7 @@ endfunction " indentation
 "  - https://linuxhint.com/integrating_vim_ctags
 "  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
+"  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " -------------------------------------------------------------------------
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
