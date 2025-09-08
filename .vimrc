@@ -889,8 +889,12 @@ function! CursorCharacter () abort " DecimalToOctal(27)"
   " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
   let l:octal = printf( '|\0o%-6o', index )
 
-inoremap <expr> <C-d> Lookup()
+  " Join character to escape sequences
+  " - https://en.wikipedia.org/wiki/Escape_sequence
+  return character..join( [ decimal, hexadecimal, octal ], ' ' )
+endfunction " CursorCharacter
 
+inoremap <expr> <C-d> Lookup()
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
 function g:Lookup(...)  " abort
   let i = 0
