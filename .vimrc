@@ -2151,7 +2151,7 @@ endfunction
 " -------------------------------------------------------------------------
 " Vim-ruby - https://github.com/vim-ruby/vim-ruby
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:VimRuby()
+autocmd VimDefaults VimEnter * call g:VimRuby ()
 
 function g:VimRuby () abort
   if &rtp !~ 'vim-ruby' | return | endif
