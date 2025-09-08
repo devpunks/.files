@@ -311,7 +311,10 @@ echo Cloning submodules...
 # https://github.com/ntpeters/vim-better-whitespace
 # https://github.com/Raimondi/delimitMate # quotes, parenthesis, brackets
 
-# Telesense (auto completion) ---------
+# Telesense (auto completion) -----------------
+# https://github.com/yegappan/taglist
+# https://github.com/preservim/tagbar # See ctags
+# https://github.com/ludovicchabant/vim-gutentags # See ctags
 # https://github.com/ctrlpvim/ctrlp.vim
 # https://github.com/tacahiroy/ctrlp-funky
 # https://github.com/ivalkeen/vim-ctrlp-tjump
