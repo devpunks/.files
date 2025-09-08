@@ -157,3 +157,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-indexer"]
 	path = .vim/pack/u0_a311/start/vim-indexer
 	url = https://github.com/alvan/vim-indexer.git
+[submodule ".vim/pack/u0_a311/start/vim-javascript"]
+	path = .vim/pack/u0_a311/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
