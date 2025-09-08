@@ -341,7 +341,7 @@ echo Cloning submodules...
 # https://github.com/neoclide/coc.nvim
 # https://github.com/dense-analysis/ale
 # https://github.com/rhysd/vim-lsp-ale
-# https://github.com/neoclide/coc.nvim
+# https://github.com/andreypopp/asyncomplete-ale.vim
 
 # Language Servers ------------------------
 # https://github.com/bash-lsp/bash-language-server
