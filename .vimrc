@@ -1343,9 +1343,6 @@ function s:tag () abort
     \ })
   endfor
 
-  " try | execute 'ptag ' .. word
-  " catch | return | endtry
-
   if len( list ) == 0 | echom '"' .. l:word .. '" Tag under cursor not found!' | endif
   if len( list ) == 0 | return | endif
   echo 'The list: ' .. string( list )
