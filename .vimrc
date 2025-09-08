@@ -978,35 +978,6 @@ function! Browser () abort " Opening URL
 endfunction " Browser
 
 " -------------------------------------------------------------------------
-" CursorCharacter ()
-"   - :help ascii
-"   - https://stackoverflow.com/q/20357800
-"   - https://en.wikipedia.org/wiki/Unicode
-"   - https://geeksforgeeks.org/program-decimal-octal-conversion
-"   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
-" -------------------------------------------------------------------------
-function! CursorCharacter () abort " DecimalToOctal(27)"
-  let l:char = strpart( getline('.'), col('.')-1, 1, 1 )
-  let l:index = char2nr( char ) " char(acter) to number
-  let l:character = printf( '|%-2s', char )
-
-  " Formal Hexadecimal Unicode Notation (Code Point)
-  " - https://en.wikipedia.org/wiki/UTF-8
-  " - https://en.wikipedia.org/wiki/UTF-16
-  " - https://en.wikipedia.org/wiki/Hexadecimal
-  " - https://en.wikipedia.org/wiki/Percent-encoding (e.g. %20)
-  let l:hexadecimal = printf( '|U+%-7s' , printf( '%04X', index ) )
-  " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
-  let l:decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
-  " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
-  let l:octal = printf( '|\0o%-6o', index )
-
-  " Join character to escape sequences
-  " - https://en.wikipedia.org/wiki/Escape_sequence
-  return character..join( [ decimal, hexadecimal, octal ], ' ' )
-endfunction " CursorCharacter
-
-" -------------------------------------------------------------------------
 " GetColor (group, attribute)
 "   - https://reddit.com/r/neovim/comments/oxddk9
 " -------------------------------------------------------------------------
