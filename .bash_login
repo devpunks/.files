@@ -2928,6 +2928,7 @@ function play () { clear
 alias ctags='command ctags --recurse --verbose \
   --totals=yes \
   --langmap=vim:+.vimrc \
+  --langmap=javascript:+.es \
   --langmap=ruby:+.erb\(Gemfile\) \
   --langmap=javascript:*.json,+.es \
   --langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout \
