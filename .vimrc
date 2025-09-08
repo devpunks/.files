@@ -1356,10 +1356,9 @@ function s:tag () abort
   let g:ctrlp_default_input = l:word
   CtrlPTag
 
-  echo
-    \ 'Cursor Tag <cword>: ' .. l:word
-    \ 'Using tagfile' .. &tags
-endfunction " Tag
+  echo 'Cursor Tag <cword>: ' .. l:word
+  echo 'Using tags file: ' .. &tags
+endfunction " tag
 
 " nnoremap <Space><Enter> :call g:CursorTag()<CR>
 function g:CursorTag () abort
