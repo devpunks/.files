@@ -308,6 +308,7 @@ echo Cloning submodules...
 # https://github.com/vim-scripts/ZoomWin
 # https://github.com/tpope/vim-commentary
 # https://github.com/kshenoy/vim-signature
+# https://github.com/airblade/vim-gitgutter
 # https://github.com/Asheq/close-buffers.vim
 # https://github.com/preservim/vim-indent-guides
 # https://github.com/ntpeters/vim-better-whitespace
