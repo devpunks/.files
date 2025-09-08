@@ -1304,7 +1304,7 @@ endfunction " indentation
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 set tags= " Unset
-let tags = expand( '$HOME/tags' )
+let tags = expand( getcwd() .. '/tags' )
 if filereadable( tags ) | let &tags=tags | endif
 " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
 echo 'Current Dir: ' .. getcwd()
