@@ -298,6 +298,7 @@ echo Cloning submodules...
 # https://github.com/preservim/vim-markdown
 # https://github.com/hail2u/vim-css3-syntax
 # https://github.com/pangloss/vim-javascript
+# https://github.com/vim-ruby/vim-ruby
 # https://github.com/tpope/vim-rails
 # https://github.com/sunaku/vim-ruby-minitest
 # https://github.com/vim-test/vim-test
