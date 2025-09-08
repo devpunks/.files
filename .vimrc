@@ -865,16 +865,18 @@ function! s:enter () abort
 endfunction " enter
 command! Enter call s:enter ()
 
-" - https://github.com/alvan/vim-indexer
-" - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
-" - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
-" - https://andrewradev.com/2011/06/08/vim-and-ctags
-function Complete(token, command_line='', cursor_pos='0') " abort
-  if len(a:token) > 0
-    let prefix = a:token
-  else
-    let prefix = '.'
-  endif
+" -------------------------------------------------------------------------
+" CursorCharacter ()
+"   - :help ascii
+"   - https://stackoverflow.com/q/20357800
+"   - https://en.wikipedia.org/wiki/Unicode
+"   - https://geeksforgeeks.org/program-decimal-octal-conversion
+"   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
+" -------------------------------------------------------------------------
+function! CursorCharacter () abort " DecimalToOctal(27)"
+  let l:char = strpart( getline('.'), col('.')-1, 1, 1 )
+  let l:index = char2nr( char ) " char(acter) to number
+  let l:character = printf( '|%-2s', char )
 
   echo 'Shazaam Completion ('..l:prefix..'): ' .. a:token
 endfunction " Complete
