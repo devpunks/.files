@@ -1289,50 +1289,6 @@ function! g:Indentation() abort
 endfunction " indentation
 
 " -------------------------------------------------------------------------
-" Scopes :h cscope
-"   - https://cscope.sourceforge.net
-"   - https://en.wikipedia.org/wiki/Cscope
-"   - https://www.fsl.cs.sunysb.edu/~rick/cscope.html
-"   - https://stackoverflow.com/q/12243234/how-to-auto-load-cscope-out-in-vim
-"   - https://stackoverflow.com/q/934233/cscope-or-ctags-why-choose-one-over-the-other
-" -------------------------------------------------------------------------
-autocmd FileType ruby,python,javascript call g:Scope ()
-
-function g:Scope () abort
-  let l:command = 'cscope'
-  let l:suffix = &ignorecase ? '-C' : '' " Case sensitifity flag
-
-  " executable('scope')
-  call system( 'command -v ' .. l:command )
-  if v:shell_error | return | else | echom l:command .. ' Scoping...' | endif
-
-  set cscopeverbose " Database addition messages
-  set cscopepathcomp =2 " Path parts of db path
-  set cscopetagorder =0 "Search CScope database first
-
-  echo 'Current Dir: ' .. getcwd()
-  for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
-    let l:out = findfile( 'cscope.' .. extension .. '.out', '.;' )
-
-    if ! filereadable( l:out )  | continue | endif
-
-    echo '(scope) definitions path: '.. l:out
-
-    " -v -b -q -U -f cscope.js.out -R $( cat $files )
-    " cscope add '' .. l:out
-    silent! execute 'cscope add' l:out l:suffix
-    " TODO: Reconnect If mtime > last connection time
-    " https://github.com/ktchen14/cscope-auto/blob/master/autoload/cscope_auto.vim#L90
-    " :h getftime('file_location')
-    cscope reset
-    echo "\n"
-    cscope show
-    echo ''
-  endfor " extension
-endfunction " Scope
-command! Scope call Scope ()
-
-" -------------------------------------------------------------------------
 " Tags :h tags-and-searches (tagsrch.txt)
 "  :h tag <name>  " or from command line : /<name>
 "  :h tags
