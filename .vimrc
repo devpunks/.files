@@ -1379,7 +1379,7 @@ function g:CursorTag () abort
   let word = substitute(word, '\\', '\\\\', '')
   call search('\<\V'..l:word..'\>')
 
-  exe 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
+  execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
   " wincmd P " Preview
 endfunction " g:CursorTag
