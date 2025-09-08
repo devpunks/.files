@@ -857,7 +857,7 @@ command! Tab call s:tab ()
 function! s:space () abort
   echo 'Spacing ( Not Yet Implemented. See :Space command )'
 endfunction " space
-command! Space call s:enter ()
+command! Space call s:space ()
 
 
 " - https://github.com/alvan/vim-indexer
