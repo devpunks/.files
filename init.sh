@@ -300,6 +300,7 @@ echo Cloning submodules...
 # https://github.com/tpope/vim-rails
 # https://github.com/sunaku/vim-ruby-minitest
 # https://github.com/vim-test/vim-test
+# https://github.com/tpope/vim-endwise
 # https://github.com/alvan/vim-closetag
 # https://github.com/tpope/vim-surround
 # https://github.com/preservim/nerdtree
