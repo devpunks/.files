@@ -1635,13 +1635,6 @@ if &rtp !~ 'supertab' | return | endif
 " ' \ ..g:SuperTabContextDefaultCompletionType
 endfunction " Tab
 
-function! s:tab () abort
-  if &rtp !~ 'supertab' | return | endif
-
-  echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
-endfunction " tab
-command! Tab call s:tab()
-
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
