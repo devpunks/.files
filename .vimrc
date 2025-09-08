@@ -1308,8 +1308,8 @@ endfunction " indentation
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 set tags= " Unset
-let tags = expand( getcwd() .. '/tags' )
-if filereadable( tags ) | let &tags=tags | endif
+let &tags = findfile( 'tags', '.;' )
+"if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
 " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
 echom 'Current Dir: ' .. getcwd()
 echom '(tags) definitions path: '.. &tags
