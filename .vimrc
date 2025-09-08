@@ -1323,7 +1323,7 @@ endfunction " Define
 function g:Tag () abort
   let l:word = expand('<cword>')
 
-if empty( l:word ) || &previewwindow | return | endif
+  if empty( l:word ) || &previewwindow | return | endif
 
   let l:tags = taglist('^' .. l:word )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
