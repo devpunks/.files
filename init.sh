@@ -322,10 +322,6 @@ echo Cloning submodules...
 # https://github.com/honza/vim-snippets
 # https://github.com/alvan/vim-indexer
 # https://github.com/lifepillar/vim-mucomplete
-# https://github.com/yegappan/taglist
-# https://github.com/preservim/tagbar # See ctags
-# https://github.com/ludovicchabant/vim-gutentags # See ctags
-# https://github.com/sunaku/vim-ruby-minitest
 # https://github.com/prabirshrestha/async.vim
 # https://github.com/prabirshrestha/asyncomplete.vim
 # https://github.com/prabirshrestha/asyncomplete-file.vim
