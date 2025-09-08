@@ -1313,7 +1313,9 @@ let &tags = findfile( 'tags', '.;' )
 " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
 " set cpoptions+=d " Start from cwd
 " set tags +=./**/tags " cwd tags
-echom '(recursive tags) path(s): ' .. &tags
+
+echom 'Current Dir: ' .. getcwd()
+echom '(tags) definitions path: '.. &tags
 
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " :h tag - <C-]> jump to & push tag
