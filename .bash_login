@@ -2966,7 +2966,7 @@ function tag () {
 # echo "Creating Ruby tags file (tags.ruby)"
 # ripper-tags --recursive --verbose --debug-verbose --tag-file ./tags.ruby
 
-  ls *tags*
+  echo ; ls *tags* ; echo
 } # tag
 
 # https://en.wikipedia.org/wiki/Cscope
