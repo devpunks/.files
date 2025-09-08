@@ -1343,7 +1343,7 @@ function s:tag () abort
     \ })
   endfor
 
-  " try | exe 'ptag '..word
+  " try | execute 'ptag '..word
   " catch | return | endtry
 
   if len( list ) == 0 | echom '"'..l:word..'" Tag under cursor not found!' | endif
