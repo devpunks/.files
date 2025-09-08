@@ -1313,7 +1313,7 @@ echom 'Current Dir: ' .. getcwd()
 echom '(tags) definitions path: '.. &tags
 " set cpoptions+=d " Start from cwd
 " set tags +=./**/tags " cwd tags
-echo '(recursive tags) path(s): ' .. &tags
+echom '(recursive tags) path(s): ' .. &tags
 
 "   - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " :h tag - <C-]> jump to & push tag
