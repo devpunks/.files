@@ -1325,7 +1325,9 @@ echom '(tags) definitions path: '.. &tags
 function g:Define (word) abort
 endfunction " Define
 
-function g:Tag () abort
+nnoremap <Tab> :Tag<CR>
+command! Tag call s:tag ()
+function s:tag () abort
   let l:word = expand('<cword>')
 
   if empty( l:word ) || &previewwindow | return | endif
