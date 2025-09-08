@@ -320,8 +320,7 @@ echo Cloning submodules...
 # https://github.com/ivalkeen/vim-ctrlp-tjump
 # https://github.com/SirVer/ultisnips
 # https://github.com/honza/vim-snippets
-# https://github.com/Raimondi/delimitMate
-# https://github.com/jayli/vim-easycomplete (DO NOT USE)
+# https://github.com/alvan/vim-indexer
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/yegappan/taglist
 # https://github.com/preservim/tagbar # See ctags
