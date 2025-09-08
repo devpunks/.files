@@ -1354,7 +1354,7 @@ function s:tag () abort
   CtrlPTag
 
   execute 'ptag ' .. l:word
-  "execute 'pclose'
+  "pclose
 
   echo 'Cursor Tag <cword>: ' .. l:word
   echo 'Using tags file: ' .. &tags
