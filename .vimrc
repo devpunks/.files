@@ -1309,8 +1309,8 @@ set tags= " Unset
 let tags = expand( getcwd() .. '/tags' )
 if filereadable( tags ) | let &tags=tags | endif
 " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
-echo 'Current Dir: ' .. getcwd()
-echo '(tags) definitions path: '.. &tags
+echom 'Current Dir: ' .. getcwd()
+echom '(tags) definitions path: '.. &tags
 " set cpoptions+=d " Start from cwd
 " set tags +=./**/tags " cwd tags
 echo '(recursive tags) path(s): ' .. &tags
