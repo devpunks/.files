@@ -1311,6 +1311,7 @@ endfunction " indentation
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
+set tagstack
 set tags= " Unset
 let &tags = findfile( 'tags', '.;' )
 "if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
