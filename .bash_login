@@ -2952,7 +2952,7 @@ function tag () {
   ctags --list-maps=all --list-kinds-full=all
 
 # echo "Creating project tags file (tags)"
-  ctags --languages=all -o tags
+# ctags --languages=all -o tags
 
 # language=c
 
