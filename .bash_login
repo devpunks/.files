@@ -2935,7 +2935,7 @@ alias ctags='command ctags --recurse --verbose \
 ' # ctags
 
 function tag () {
-  local extension
+  local language
   local files=cscope.files
 
   # if [ -e package.json ] ; then # Javascript
