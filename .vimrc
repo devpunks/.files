@@ -230,6 +230,7 @@ endif
 set hidden
 set confirm "  on persistence
 set autowrite " on lost focus
+set nohidden " Unload buffer when abandoned
 set bufhidden=unload " [hide|unload|delete]
 
 set equalalways " on load
