@@ -2954,6 +2954,9 @@ function tag () {
 
 # language=c
 
+# language=sh
+
+# language=css
 # language=js
 # echo "Creating Javascript Ctags file (${language}.tags)"
 # # TODO: Use cscope.<language>.files as input -L(list)
