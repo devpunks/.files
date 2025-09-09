@@ -2946,6 +2946,7 @@ function tag () {
 
   # cscope -b -q -U -f cscope.js.out $( cat $files )
 
+  echo && echo 'Working Directory: ' $location
 
   echo && echo 'All Language Mappings:'
   ctags --list-maps=all --list-kinds-full=all
