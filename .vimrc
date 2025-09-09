@@ -1353,7 +1353,7 @@ function s:tag () abort
   let g:ctrlp_default_input = l:word
   CtrlPTag
 
-  execute 'ptag ' .. l:word
+  execute 'ptag! ' .. l:word
   "pclose
 
   echo 'Cursor Tag <cword>: ' .. l:word
