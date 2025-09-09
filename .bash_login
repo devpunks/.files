@@ -2955,6 +2955,7 @@ function tag () {
 # ctags --languages=all -o tags
 
 # language=c
+  ctags --languages=c -o c.tags
 
 # language=sh
 
