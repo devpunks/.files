@@ -2960,8 +2960,13 @@ function tag () {
 # echo "Creating project tags file (tags)"
 # ctags --languages=all -o tags
 
-# language=c
-  ctags --languages=c -o c.tags
+  language=c
+  echo ; echo "Tagging language: ${language}"
+  ctags --languages=$language -o c.tags
+
+  language=sh
+  echo ; echo "Tagging language: ${language}"
+  ctags --languages=$language -o {language}.tags
 
 # language=sh
 
