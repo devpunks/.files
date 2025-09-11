@@ -2926,6 +2926,7 @@ function play () { clear
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
 # alias ctags='clear && ctags -R --exclude@.gitignore'
 # --exclude-exception= - for files --exclude(ed)
+# --list-extras
 # --extras=+r - Include reference tags (like GNU tags global)
 # --fields=+r - Include r(eference) field for tag (like GNU tags global)
 alias ctags='command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
