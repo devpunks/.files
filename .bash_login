@@ -2927,6 +2927,7 @@ function play () { clear
 # alias ctags='clear && ctags -R --exclude@.gitignore'
 # --exclude-exception= - for files --exclude(ed)
 # --extras=+r - Include reference tags (like GNU tags global)
+# --fields=+r - Include r(eference) field for tag (like GNU tags global)
 alias ctags='command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
