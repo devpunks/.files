@@ -2928,6 +2928,7 @@ function play () { clear
 # --exclude-exception= - for files --exclude(ed)
 # --list-extras
 # --extras=+r - Include reference tags (like GNU tags global)
+# --list-fields
 # --fields=+r - Include r(eference) field for tag (like GNU tags global)
 alias ctags='command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
   --langmap=vim:+.vimrc \
