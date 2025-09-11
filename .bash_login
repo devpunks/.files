@@ -2962,6 +2962,7 @@ function tag () {
 
   language=c
   echo ; echo "Tagging language: ${language}"
+  command ctags --list-maps=${language} ; echo
   ctags --languages=${language} -o ${language}.tags
 
   language=sh
