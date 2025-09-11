@@ -2949,7 +2949,7 @@ function tag () {
   echo && echo 'Working Directory: ' $location
 
   echo && echo 'All Language Mappings:'
-  ctags --list-maps=all --list-kinds-full=all
+  ctags --list-maps=all --list-kinds-full
 
 # echo "Creating project tags file (tags)"
 # ctags --languages=all -o tags
