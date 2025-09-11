@@ -2930,6 +2930,7 @@ function play () { clear
 # --extras=+r - Include reference tags (like GNU tags global)
 # --list-fields
 # --fields=+r - Include r(eference) field for tag (like GNU tags global)
+# --list-roles
 alias ctags='command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
