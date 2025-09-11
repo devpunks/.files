@@ -2962,7 +2962,7 @@ function tag () {
 
   language=c
   echo ; echo "Tagging language: ${language}"
-  ctags --languages=$language -o c.tags
+  ctags --languages=${language} -o ${language}.tags
 
   language=sh
   echo ; echo "Tagging language: ${language}"
