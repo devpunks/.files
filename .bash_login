@@ -2983,7 +2983,15 @@ function tag () { clear
   command ctags --list-maps=${language}
   command ctags --list-fields=${language}
 
-# language=vim
+  language=js
+  echo ; echo "Tagging language: ${language}"
+  command ctags --list-maps=${language}
+  command ctags --list-fields=${language}
+
+  language=json
+  echo ; echo "Tagging language: ${language}"
+  command ctags --list-maps=${language}
+  command ctags --list-fields=${language}
 
 # language=php
 
