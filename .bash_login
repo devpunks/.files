@@ -2987,8 +2987,8 @@ function tag () { clear
 
   language=javascript
   echo ; echo "Tagging language: ${language}"
-  ctags --list-maps=${language}
-  ctags --list-kinds=${language}
+  ctags -o ${language}.tags --languages=${language} \
+    --regex-${language}='/("|#|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
 # language=php
 
