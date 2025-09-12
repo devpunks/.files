@@ -2991,7 +2991,7 @@ function tag () { clear
   language=json
   echo ; echo "Tagging language: ${language}"
   ctags --list-maps=${language}
-  ctags --list-fields=${language}
+  ctags --list-kinds=${language}
 
 # language=php
 
