@@ -2932,7 +2932,8 @@ function play () { clear
 # --fields=+r - Include r(eference) field for tag (like GNU tags global)
 # --list-kinds=<language> - List kinds of tags
 # --list-roles
-alias ctags='command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
+alias ctags="command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
+  --kinds-all=+S \
   --sort=foldcase \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
