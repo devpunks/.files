@@ -2969,7 +2969,9 @@ function tag () {
 
   language=sh
   echo ; echo "Tagging language: ${language}"
-  command ctags --list-maps=${language} ; echo
+  command ctags --list-maps=${language}
+  command ctags --list-kinds=${language}
+  command ctags --list-fields=${language} ; echo
   # https://vi.stackexchange.com/q/5619/generate-ctags-for-bash-variables
   ctags --languages=${language} -o ${language}.tags \
     --regex-${language}=/^[ \t]*(local|export|declare)?[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variables/ \
