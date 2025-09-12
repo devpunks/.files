@@ -2964,8 +2964,6 @@ function tag () { clear
 
   language=c
   echo ; echo "Tagging language: ${language}"
-  command ctags --list-maps=${language}
-  command ctags --list-fields=${language} ; echo
   ctags -o ${language}.tags --languages=${language} --kinds-${language}=+S \
     --regex-${language}='/("|#|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
