@@ -2978,8 +2978,6 @@ function tag () { clear
     --regex-${language}='/(local|export|declare)[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variable definitions/'
     # .bashrc #  .bash_login
 
-    return
-
 # language=sh
 
 # language=vim
