@@ -2978,7 +2978,10 @@ function tag () { clear
     --regex-${language}='/(local|export|declare)[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variable definitions/'
     # .bashrc #  .bash_login
 
-# language=js
+  language=js
+  echo ; echo "Tagging language: ${language}"
+  command ctags --list-maps=${language}
+  command ctags --list-fields=${language}
 
 # language=vim
 
