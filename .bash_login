@@ -2974,7 +2974,7 @@ function tag () { clear
   command ctags --list-maps=${language}
   # https://vi.stackexchange.com/q/5619/generate-ctags-for-bash-variables
   ctags -o ${language}.tags --languages=${language} --kinds-${language}=+S \
-    --regex-${language}='/(TODO|FIXME)/\1/T,Todo,TODO & FIXME messages/i' \
+    --regex-${language}='/("|#|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i' \
     --regex-${language}='/(local|export|declare)[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variable definitions/'
     # .bashrc #  .bash_login
 
