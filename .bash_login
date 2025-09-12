@@ -2940,12 +2940,7 @@ alias ctags="command ctags --recurse --verbose --guess-language-eagerly --totals
   --langmap=ruby:+.erb\(Gemfile\) \
   --langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout \
   --exclude={.bundle,.cache,.config,.local,.npm,.ssh,.vim,bin,log,logs,node_modules,storage,tmp,vendor} \
-' # ctags
-
-function tag () {
-  local language
-  local location=$( pwd )
-  local files=cscope.files
+" # ctags
 
   # if [ -e package.json ] ; then # Javascript
   # files=cscope.js.files
