@@ -2973,9 +2973,9 @@ function tag () { clear
   echo ; echo "Tagging language: ${language}"
   command ctags --list-maps=${language}
   # https://vi.stackexchange.com/q/5619/generate-ctags-for-bash-variables
-  ctags --languages=${language} -o ${language}.tags \
-    --regex-${language}='/^[ \t]*(local|export|declare)[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variable definitions/' \
-    --regex-${language}='/\#[ \t]*\(FIXME|TODO\)[ \t]*:?.*/\1/T,Todo,Todo messages/'
+  ctags -o ${language}.tags --languages=${language} --kinds-${language}=+S \
+    --regex-${language}='/(TODO|FIXME)/\1/T,Todo,TODO & FIXME messages/i' \
+    --regex-${language}='/(local|export|declare)[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variable definitions/'
     # .bashrc #  .bash_login
 
 # language=sh
