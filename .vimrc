@@ -123,7 +123,7 @@ set wrapscan " Search respects wrapping
 set hlsearch " result highlight grouping
 set incsearch " highlight search matches
 " TODO: Problematic for conditionals "A"=="a" vs "A"==?"a"
-" set smartcase " Capitalization case-sensitive search
+set smartcase " Capitalization case-sensitive search (overrides ignorecase)
 " https://vi.stackexchange.com/q/11236
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
 set ignorecase " Case in-sensitive search
