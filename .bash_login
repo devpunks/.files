@@ -2958,6 +2958,7 @@ function tag () { clear
   echo && echo 'Working Directory: ' $location
 
   echo && echo 'All Language Mappings:'
+  ctags --list-fields=${language} ; echo
 # echo "Creating project tags file (tags)"
 # ctags --languages=all -o tags
 
