@@ -2951,6 +2951,10 @@ function tag () { clear
 
   # cscope -b -q -U -f cscope.js.out $( cat $files )
 
+  local language
+  local location=$( pwd )
+  local files=cscope.files
+
   echo && echo 'Working Directory: ' $location
 
   echo && echo 'All Language Mappings:'
