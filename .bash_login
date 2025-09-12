@@ -2983,7 +2983,7 @@ function tag () { clear
   ctags --list-maps=${language}
   ctags --list-kinds=${language}
 
-  language=js
+  language=javascript
   echo ; echo "Tagging language: ${language}"
   ctags --list-maps=${language}
   ctags --list-kinds=${language}
