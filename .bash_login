@@ -2985,7 +2985,7 @@ function tag () { clear
   echo ; echo "Tagging language: ${language}"
   ctags -o ${language}.tags --languages=${language}
 
-  language=json
+  language=javascript
   echo ; echo "Tagging language: ${language}"
   ctags --list-maps=${language}
   ctags --list-kinds=${language}
