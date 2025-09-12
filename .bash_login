@@ -2980,8 +2980,8 @@ function tag () { clear
 
   language=vim
   echo ; echo "Tagging language: ${language}"
-  command ctags --list-maps=${language}
-  command ctags --list-fields=${language}
+  ctags --list-maps=${language}
+  ctags --list-fields=${language}
 
   language=js
   echo ; echo "Tagging language: ${language}"
