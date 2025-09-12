@@ -2980,6 +2980,8 @@ function tag () { clear
 
 # language=sh
 
+# language=js
+
 # language=vim
 
 # language=php
