@@ -2934,7 +2934,7 @@ function play () { clear
 # --list-roles
 # --sort=(yes|no|foldcase)
 alias ctags="command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
-  --sort=foldcase \
+  --sort=yes \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
   --langmap=ruby:+.erb\(Gemfile\) \
