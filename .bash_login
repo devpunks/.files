@@ -2942,6 +2942,8 @@ alias ctags="command ctags --recurse --verbose --guess-language-eagerly --totals
   --exclude={.bundle,.cache,.config,.local,.npm,.ssh,.vim,bin,log,logs,node_modules,storage,tmp,vendor} \
 " # ctags
 
+#  https://docs.ctags.io/en/latest/man-pages.html
+function tag () { clear
   # if [ -e package.json ] ; then # Javascript
   # files=cscope.js.files
   # command find . -type f -iname '*.js' > $files
