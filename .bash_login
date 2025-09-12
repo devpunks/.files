@@ -2965,7 +2965,7 @@ function tag () {
   command ctags --list-kinds=${language}
   command ctags --list-fields=${language} ; echo
   ctags --languages=${language} -o ${language}.tags \
-    --regex-${language}=/\/\/[ \t]*\(TODO\)[ \t]*:?.*/\1/T,Todo, Todo messages/ # /b BRE regex
+    --regex-${language}='/\/\/[ \t]*\(TODO\)[ \t]*:?.*/\1/T,Todo, Todo messages/' # /b BRE regex
 
   language=sh
   echo ; echo "Tagging language: ${language}"
