@@ -2973,7 +2973,7 @@ function tag () {
   # https://vi.stackexchange.com/q/5619/generate-ctags-for-bash-variables
   ctags --languages=${language} -o ${language}.tags \
     --regex-${language}=/^[ \t]*(local|export|declare)?[ \t]*([A-Za-z0-9_-]+)=/\2/v,variable,variables/ \
-    --regex-${language}=/\/\/[ \t]*\(FIXME|TODO\)[ \t]*:?.*/\1/T,Todo, Todo messages/ \
+    --regex-${language}=/\#[ \t]*\(FIXME|TODO\)[ \t]*:?.*/\1/T,Todo, Todo messages/ \
     .bashrc #  .bash_login
 
 # language=sh
