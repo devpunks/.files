@@ -1454,41 +1454,6 @@ augroup UserDefaults
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
-autocmd VimDefaults VimEnter * call g:CTags ()
-
-function g:CTags () abort
-  let l:tags = expand( &tags )
-
-  if ! filereadable(l:tags) | return | endif
-
-  echom 'Found Tags in' .. l:tags
-
-  set omnifunc=ccomplete#Complete " CTags Complete
-
-  if &rtp =~ 'gutentags'
-    let g:gutentags_trace = 1
-    let g:gutentags_ctags_extra_args = []
-  endif
-endfunction " g:CTags
-
-function g:TagsStatus (mods) " abort
-  let l:icon = ''
-
-  " echo 'shazam:'.. get(g:, 'gutentags_updated', '')
-
-  if(index(a:mods, 'ctags') >= 0)
-    let l:icon .= '🏷️'
-  endif
-
-  if(index(a:mods, 'cscope') >= 0)
-    let l:icon .= '🔖'
-  endif
-
-  " echo strftime("%T") .. 'The icons: ' .. l:icon .. '& mods: ' .. join(a:mods, ',')
-
-  return '[' .. l:icon .. ']'
-endfunction  " TagsStatus
-
 " -------------------------------------------------------------------------
 " vim-TagList - https://github.com/yegappan/taglist
 " -------------------------------------------------------------------------
