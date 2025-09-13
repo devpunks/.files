@@ -3024,6 +3024,12 @@ function tag () { clear
   ctags -o ${language}.tags --languages=${language} \
     --regex-${language}='/("|#|<!--|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
+  language=markdown
+  echo ; echo "Tagging language: ${language}"
+  ctags -o ${language}.tags --languages=${language} \
+    --regex-${language}='/("|#|<!--|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
+
+
 # https://github.com/sergioramos/jsctags
 # echo "Creating Javascript Ctags file (${language}.tags)"
 # TODO: Use cscope.<language>.files as input -L(list)
