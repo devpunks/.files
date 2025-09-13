@@ -2994,7 +2994,7 @@ function tag () { clear
   language=php
   echo ; echo "Tagging language: ${language}"
   ctags -o ${language}.tags --languages=${language} \
-    --regex-${language}='/("|#|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
+    --regex-${language}='/("|#|<!--|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
   language=python
   echo ; echo "Tagging language: ${language}"
