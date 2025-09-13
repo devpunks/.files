@@ -1406,6 +1406,8 @@ function s:tag () abort
 " let winid = win_getid()
 " let stack = gettagstack( winid )
 " let stack['items'] = [item]
+" call settagstack( winid, stack, 't' )
+
 
   if empty( l:word ) || &previewwindow | return | endif
 
