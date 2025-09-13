@@ -1309,6 +1309,12 @@ endfunction " indentation
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 "  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " -------------------------------------------------------------------------
+autocmd VimDefaults VimEnter * call g:Tag ()
+augroup FileDefaults
+  autocmd BufReadPost  * call g:Tags ()
+  autocmd BufWritePost * call Tags2 ()
+augroup END
+
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
