@@ -1309,6 +1309,13 @@ endfunction " indentation
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 "  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " -------------------------------------------------------------------------
+function TagFunc (pattern, flags, info) abort
+  echom 'Pattern: ' .. pattern
+  echom 'Flags: ' .. flags
+  echom 'Info: ' .. info
+endfunction
+set tagfunc=TagFunc
+
 autocmd VimDefaults VimEnter * call g:Tag ()
 augroup FileDefaults
   autocmd BufReadPost  * call g:Tags ()
