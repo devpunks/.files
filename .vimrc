@@ -1318,13 +1318,10 @@ augroup END
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
-set tagstack
-set tags= " Unset
-let &tags = findfile( 'tags', '.;' )
-"if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
-" \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
-" set cpoptions+=d " Start from cwd
-" set tags +=./**/tags " cwd tags
+function g:Tag () abort
+  set tagstack
+  set tags= " Unset
+  let &tags = findfile( 'tags', '.;' )
 
 echom 'Current Dir: ' .. getcwd()
 echom '(tags) definitions path: '.. &tags
