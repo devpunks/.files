@@ -2995,7 +2995,7 @@ function tag () { clear
 
 # language=python
 
-# language=ruby
+# language=ruby,rake,rspec
 
 # language=html
 
