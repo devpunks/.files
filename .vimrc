@@ -1323,8 +1323,75 @@ function g:Tag () abort
   set tags= " Unset
   let &tags = findfile( 'tags', '.;' )
 
-echom 'Current Dir: ' .. getcwd()
-echom '(tags) definitions path: '.. &tags
+  "if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
+  " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
+  " set cpoptions+=d " Start from cwd
+  " set tags +=./**/tags " cwd tags
+
+  set omnifunc=ccomplete#Complete " CTags Complete
+
+  echom 'Current Dir: ' .. getcwd()
+  echom '(tags) definitions path: '.. &tags
+endfunction " Tag
+
+function g:Tags () abort
+  let l:file = findfile ( &filetype .. '.tags', '.;' )
+  let l:languages = map ( systemlist ( 'ctags --list-languages' ),
+    \ { _, language -> tolower( language ) } )
+
+  echom 'tags before: ' .. &g:tags
+  echom 'Loading tags for ' .. expand ('%')
+
+  if index( l:languages, &filetype ) < 0 | return | endif
+   echo 'Found language: ' .. &filetype
+  if empty(l:file) | return | endif
+
+  echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
+
+  let &l:tags = l:file " l:(ocal)tags
+
+  echom 'global tags after: '
+  setglobal tags?
+  echom 'local tags after: '
+  setlocal tags?
+endfunction " Tags
+
+function g:Tags2 () abort
+  echom 'write tags : ' .. &tags
+endfunction
+
+function g:CTags () abort
+  let l:tags = expand( &tags )
+
+  if ! filereadable(l:tags) | return | endif
+
+  echom 'Found Tags in' .. l:tags
+
+  set omnifunc=ccomplete#Complete " CTags Complete
+
+  if &rtp =~ 'gutentags'
+    let g:gutentags_trace = 1
+    let g:gutentags_ctags_extra_args = []
+  endif
+endfunction " g:CTags
+
+function g:TagsStatus (mods) " abort
+  let l:icon = ''
+
+  " echo 'shazam:'.. get(g:, 'gutentags_updated', '')
+
+  if(index(a:mods, 'ctags') >= 0)
+    let l:icon .= '🏷️'
+  endif
+
+  if(index(a:mods, 'cscope') >= 0)
+    let l:icon .= '🔖'
+  endif
+
+  " echo strftime("%T") .. 'The icons: ' .. l:icon .. '& mods: ' .. join(a:mods, ',')
+
+  return '[' .. l:icon .. ']'
+endfunction  " TagsStatus
 
 function g:Define (word) abort
 endfunction " Define
