@@ -1328,7 +1328,7 @@ function g:Tag () abort
   " set cpoptions+=d " Start from cwd
   " set tags +=./**/tags " cwd tags
 
-  set omnifunc=ccomplete#Complete " CTags Complete
+  setlocal omnifunc=ccomplete#Complete " CTags Complete
 
   echom 'Current Dir: ' .. getcwd()
   echom '(tags) definitions path: '.. &tags
