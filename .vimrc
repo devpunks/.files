@@ -1407,6 +1407,7 @@ function s:tag () abort
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
 " let winid = win_getid()
 " let stack = gettagstack( winid )
+" let stack['items'] = [item]
 
   if empty( l:word ) || &previewwindow | return | endif
 
