@@ -1407,6 +1407,7 @@ command! Tag call s:tag ()
 function s:tag () abort
   let l:word = expand('<cword>')
 " let pos = [bufnr()] + getcurpos()[1:]
+" let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
 
   if empty( l:word ) || &previewwindow | return | endif
 
