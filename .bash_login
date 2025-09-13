@@ -2995,6 +2995,8 @@ function tag () { clear
 
 # language=python
 
+# language=ruby
+
 # language=html
 
 # language=css
