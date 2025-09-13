@@ -806,10 +806,10 @@ endfun
 "   - https://stackoverflow.com/q/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd FileType ruby,rake set omnifunc=rubycomplete#Complete
-  autocmd BufNewFile,BufReadPost *.erb setlocal filetype=eruby
-  autocmd BufNewFile,BufReadPost Gemfile setlocal filetype=ruby
-  autocmd BufNewFile,BufReadPost Rakefile,*.rake setlocal filetype=rake
+  autocmd BufNewFile,BufReadPost *.erb :setlocal filetype=eruby
+  autocmd BufNewFile,BufReadPost Gemfile :setlocal filetype=ruby
+  autocmd BufNewFile,BufReadPost Rakefile,*.rake :setlocal filetype=rake
+  autocmd FileType ruby,rake :setlocal omnifunc=rubycomplete#Complete
 augroup END
 
 let g:tagbar_type_ruby = {
