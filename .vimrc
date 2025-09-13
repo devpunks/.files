@@ -1436,18 +1436,10 @@ function s:tag () abort
   let word = substitute(l:word, '\\', '\\\\', '')
   call search('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move
 
-  echo 'Cursor Tag <cword>: '..word
-
-  " if ! &previewwindow |return | endif
-  " if has('folding') | .foldopen! | endif
-  call search('$', 'b') " previous EOL"
-  let word = substitute(word, '\\', '\\\\', '')
-  call search('\<\V'..l:word..'\>')
-
-  execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
-
-  " wincmd P " Preview
-endfunction " g:CursorTag
+  " let stack = gettagstack(1003)
+  " do something else
+  " call settagstack(1003, stack)
+endfunction " tag
 
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
