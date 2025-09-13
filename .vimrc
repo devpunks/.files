@@ -1335,7 +1335,6 @@ function g:Tag () abort
 endfunction " Tag
 
 function g:Tags () abort
-" let winid = win_getid()
 " let stack = gettagstack( winid )
 " let stack['items'] = [item]
 " call settagstack( winid, stack, 't' )
