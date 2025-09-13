@@ -3011,7 +3011,12 @@ function tag () { clear
   ctags -o ${language}.tags --languages=${language} \
     --regex-${language}='/("|#|<!--|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
-# language=html
+  language=html
+  echo ; echo "Tagging language: ${language}"
+  # --regex-html=/^<div[^>]*id="([^"]*)"/\1/d,div/
+  ctags -o ${language}.tags --languages=${language} \
+    --regex-${language}='/<title>(.+)<\/title>/\1/t,Title,Title of Page/i' \
+    --regex-${language}='/("|#|<!--|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
 # language=css,scss
 
