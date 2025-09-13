@@ -1336,9 +1336,6 @@ function g:Tag () abort
   "if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
   " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
   " set cpoptions+=d " Start from cwd
-  " set tags +=./**/tags " cwd tags
-
-  setlocal omnifunc=ccomplete#Complete " CTags Complete
 
   echom 'Current Dir: ' .. getcwd()
   echom '(tags) definitions path: '.. &tags
