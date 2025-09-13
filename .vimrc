@@ -1335,8 +1335,6 @@ function g:Tag () abort
 endfunction " Tag
 
 function g:Tags () abort
-" call settagstack( winid, stack, 't' )
-
   let l:file = findfile ( &filetype .. '.tags', '.;' )
   let l:languages = map ( systemlist ( 'ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
