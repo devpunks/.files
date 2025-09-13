@@ -1407,6 +1407,7 @@ nnoremap <Tab> :Tag<CR>
 command! Tag call s:tag ()
 function s:tag () abort
   let l:word = expand('<cword>')
+" let pos = [bufnr()] + getcurpos()[1:]
 
   if empty( l:word ) || &previewwindow | return | endif
 
