@@ -1331,6 +1331,8 @@ function g:Tag () abort
   set tags= " Unset
   let &tags = findfile( 'tags', '.;' )
 
+  setlocal omnifunc=ccomplete#Complete " CTags Complete
+
   "if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
   " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
   " set cpoptions+=d " Start from cwd
