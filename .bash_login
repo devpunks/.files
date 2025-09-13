@@ -2983,7 +2983,8 @@ function tag () { clear
 
   language=json
   echo ; echo "Tagging language: ${language}"
-  ctags -o ${language}.tags --languages=${language}
+  ctags -o ${language}.tags --languages=${language} \
+    --kinds-${language}=-z --kinds-${language}=-a # remove nulls and array values
 
   language=javascript
   echo ; echo "Tagging language: ${language}"
