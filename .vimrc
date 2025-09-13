@@ -1362,6 +1362,7 @@ function g:Tags () abort
   setglobal tags?
   echom 'local tags after: '
   setlocal tags?
+  echom 'Omni Completion: ' .. &omnifunc
 endfunction " Tags
 
 function g:Tags2 () abort
