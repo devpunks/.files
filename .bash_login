@@ -2698,6 +2698,7 @@ function extract () {
 # -------------------------------------------------------------------------
 function deny () { : deny; }
 function allow () { : allow; }
+function fetch () { : fetch; }
 function used () { : used; }
 function clean () { : clean; }
 function reboot () { : reboot; }
