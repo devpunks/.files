@@ -2023,7 +2023,7 @@ alias catnet='{
 alias header='curl --head'
 alias curl='command curl --verbose'
 alias cookies='header --cookie-jar ./.cookies'
-alias wget='command wget --verbose --continue --no-hsts --progress=bar' # resume downloads & prevent writing HSTs
+alias wget='command wget' # See ~/.wgetrc
 
 # Proxies -----------------------------------------------------------------
 # Disable curl --noproxy '*' ...
