@@ -2996,6 +2996,11 @@ function tag () { clear
   ctags -o ${language}.tags --languages=${language} \
     --regex-${language}='/("|#|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
 
+  language=python
+  echo ; echo "Tagging language: ${language}"
+  ctags -o ${language}.tags --languages=${language} \
+    --regex-${language}='/("|#|\/\/)[ \t]*(TODO|FIXME)/\2/T,Todo,TODO & FIXME messages/i'
+
 # language=python
 
 # language=ruby,rake,rspec
