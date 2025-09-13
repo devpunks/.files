@@ -2999,7 +2999,9 @@ function tag () { clear
 
 # language=html
 
-# language=css
+# language=css,scss
+
+# language=markdown
 
 # https://github.com/sergioramos/jsctags
 # echo "Creating Javascript Ctags file (${language}.tags)"
