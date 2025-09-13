@@ -1335,6 +1335,14 @@ function g:Tag () abort
 endfunction " Tag
 
 function g:Tags () abort
+" let tag = expand('<cword>')
+" let pos = [bufnr()] + getcurpos()[1:]
+" let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
+" let winid = win_getid()
+" let stack = gettagstack( winid )
+" let stack['items'] = [item]
+" call settagstack( winid, stack, 't' )
+
   let l:file = findfile ( &filetype .. '.tags', '.;' )
   let l:languages = map ( systemlist ( 'ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
