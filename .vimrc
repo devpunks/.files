@@ -1335,7 +1335,6 @@ function g:Tag () abort
 endfunction " Tag
 
 function g:Tags () abort
-" let pos = [bufnr()] + getcurpos()[1:]
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
 " let winid = win_getid()
 " let stack = gettagstack( winid )
