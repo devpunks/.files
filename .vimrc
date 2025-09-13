@@ -1432,16 +1432,9 @@ function s:tag () abort
 
   execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
-endfunction " tag
-
-" nnoremap <Space><Enter> :call g:CursorTag()<CR>
-function g:CursorTag () abort
-  let l:word = expand('<cword>')
-
-  if empty( l:word ) || &previewwindow | return | endif
-
-  try | exe 'ptag '..word
-  catch | return | endtry
+  call search('$', 'b') " previous EOL
+  let word = substitute(l:word, '\\', '\\\\', '')
+  call search('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move
 
   echo 'Cursor Tag <cword>: '..word
 
