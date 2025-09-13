@@ -1407,6 +1407,7 @@ function s:tag () abort
   let l:word = expand('<cword>')
 " let pos = [bufnr()] + getcurpos()[1:]
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
+" let winid = win_getid()
 
   if empty( l:word ) || &previewwindow | return | endif
 
