@@ -1349,6 +1349,7 @@ function g:Tag () abort
   echom '(tags) definitions path: '.. &tags
 endfunction " Tag
 
+command! Tags call Tags ()
 function g:Tags () abort
   let l:file = findfile ( &filetype .. '.tags', '.;' )
   let l:languages = map ( systemlist ( 'ctags --list-languages' ),
