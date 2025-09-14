@@ -1314,6 +1314,8 @@ function TagFunc (pattern, flags, info) abort
 " echom 'Flags: ' .. a:flags
 " echom 'Info: ' .. a:info
 
+  " Similar to `taglist` must return Dict { name:, filename:, cmd:, kind: }
+  " NOT ALLOWED TO CHANGE TAGSTACK
   let result = taglist ( a:pattern )
 
   return result
