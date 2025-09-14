@@ -1319,6 +1319,7 @@ function TagFunc (pattern, flags, info) abort
   let result = taglist ( a:pattern )
 
   return result
+  " return v:null " Perform standard tag lookup instead
 endfunction
 set tagfunc=TagFunc
 
