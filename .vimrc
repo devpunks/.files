@@ -1310,9 +1310,10 @@ endfunction " indentation
 "  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " -------------------------------------------------------------------------
 function TagFunc (pattern, flags, info) abort
-" echom 'Pattern: ' .. a:pattern
-" echom 'Flags: ' .. a:flags
-" echom 'Info: ' .. a:info
+  echom 'Pattern: ' .. a:pattern
+  echom 'Flags: ' .. empty(a:flags)
+  echom 'Info (buf_ffname): ' .. a:info['buf_ffname']
+" echom 'Info (user_data): ' .. a:info['user_data']
 
   " Similar to `taglist` must return Dict { name:, filename:, cmd:, kind: }
   " NOT ALLOWED TO CHANGE TAGSTACK
