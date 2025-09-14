@@ -1310,9 +1310,13 @@ endfunction " indentation
 "  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " -------------------------------------------------------------------------
 function TagFunc (pattern, flags, info) abort
-  echom 'Pattern: ' .. pattern
-  echom 'Flags: ' .. flags
-  echom 'Info: ' .. info
+" echom 'Pattern: ' .. a:pattern
+" echom 'Flags: ' .. a:flags
+" echom 'Info: ' .. a:info
+
+  let result = taglist ( a:pattern )
+
+  return result
 endfunction
 set tagfunc=TagFunc
 
