@@ -1370,7 +1370,7 @@ function g:Tags () abort
 
   echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
 
-  let &l:tags = l:file " l:(ocal)tags
+  let &l:tags = l:file " setlocal tags
 
   echom 'global tags after: '
   setglobal tags?
