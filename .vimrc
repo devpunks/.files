@@ -1558,6 +1558,7 @@ endfunction " g:TagsBar
 "   - https://stackoverflow.com/q/12243234/how-to-auto-load-cscope-out-in-vim
 "   - https://stackoverflow.com/q/934233/cscope-or-ctags-why-choose-one-over-the-other
 " -------------------------------------------------------------------------
+set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 autocmd FileType ruby,python,javascript call g:Scope ()
 
 function g:Scope () abort
