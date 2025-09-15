@@ -180,6 +180,7 @@ set completeopt+=menuone,noinsert,popup " noselect|noinsert for automatic comple
 
 " =========================================================================
 " {{{ Copy & 🍝Pasta
+"   :h clipboard
 " =========================================================================
 set selection=exclusive " No EOL CR/LF
 set pastetoggle=<Leader>p " Allow toggle of (paste) insert indentation
