@@ -174,7 +174,7 @@ set wildignore+=.DS_STORE,storage/,.cache/,.git/,.ssh/,.npm/,node_modules/
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
 set complete=.,w,b,u,i " -t - https://mail-archive.com/vim@vim.org/msg03963.html
 set completepopup+=align:item,border:on
-set completeopt+=menu,menuone,noinsert,popup " noselect|noinsert for automatic completion
+set completeopt+=menuone,noinsert,popup " noselect|noinsert for automatic completion
 
 " }}}
 
