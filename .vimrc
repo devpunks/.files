@@ -1317,6 +1317,9 @@ endfunction " indentation
 "  - https://vim.fandom.com/wiki/Browsing_programs_with_tags
 "  - https://vimways.org/2018/you-should-be-using-tags-in-vim
 "  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
+"  - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
+"  - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
+"  - https://andrewradev.com/2011/06/08/vim-and-ctags
 " -------------------------------------------------------------------------
 function TagFunc (pattern, flags, info) abort
   echom 'Pattern: ' .. a:pattern
