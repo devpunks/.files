@@ -1317,6 +1317,7 @@ endfunction " indentation
 "  - https://stackoverflow.com/q/17783539/tag-navigation-in-vim
 " -------------------------------------------------------------------------
 set tagfunc=TagFunc
+set tagcase=followscs " Follow smartcase & ignorecase
 function TagFunc (pattern, flags, info) abort
   echom 'Pattern: ' .. a:pattern
   echom 'Flags: ' .. empty(a:flags)
