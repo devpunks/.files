@@ -598,6 +598,7 @@ set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 
 " -------------------------------------------------------------------------
 " Omni-Complete
+"  - See $VIMRUNTIME/autoload/*
 "  - https://vim.fandom.com/wiki/Omni_completion
 "  - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
 " -------------------------------------------------------------------------
