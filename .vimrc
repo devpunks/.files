@@ -1343,11 +1343,9 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 function g:Tag () abort
   set tagstack
   set tags= " Unset
-  let &tags = findfile( 'tags', '.;' )
-
-  "if filereadable( tags ) | let &tags= expand( getcwd() .. '/tags' ) | endif
-  " \ .. ',' .. join( split( globpath('$HOME', '**/tags') ), ',' )
-  " set cpoptions+=d " Start from cwd
+  setlocal tagfunc=TagFunc
+  let &g:tags = findfile( 'tags', '.;' )
+  setlocal tagcase=followscs " Follow smartcase & ignorecase
 
   echom 'Current Dir: ' .. getcwd()
   echom '(tags) definitions path: '.. &tags
