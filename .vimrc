@@ -1348,7 +1348,7 @@ function g:Tag () abort
   setlocal tagcase=followscs " Follow smartcase & ignorecase
 
   echom 'Current Dir: ' .. getcwd()
-  echom '(tags) definitions path: '.. &tags
+  echom '(tags) definitions path: '.. &g:tags
 endfunction " Tag
 
 command! Tags call Tags ()
