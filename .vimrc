@@ -816,7 +816,7 @@ augroup FileDefaults
   autocmd BufNewFile,BufReadPost *.erb :setlocal filetype=eruby
   autocmd BufNewFile,BufReadPost Gemfile :setlocal filetype=ruby
   autocmd BufNewFile,BufReadPost Rakefile,*.rake :setlocal filetype=rake
-  autocmd FileType ruby,rake :setlocal omnifunc=rubycomplete#Complete
+  autocmd FileType ruby,rake setlocal omnifunc=rubycomplete#Complete
 augroup END
 
 let g:tagbar_type_ruby = {
