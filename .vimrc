@@ -958,10 +958,7 @@ endfunction " PopUpComplete
 " -------------------------------------------------------------------------
 " Complete () - 
 " -------------------------------------------------------------------------
-" - https://github.com/alvan/vim-indexer
-" - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
-" - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
-" - https://andrewradev.com/2011/06/08/vim-and-ctags
+set completefunc=Complete
 function Complete (token, command_line='', cursor_pos='0') " abort
   if len(a:token) > 0
     let prefix = a:token
