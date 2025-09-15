@@ -693,7 +693,7 @@ autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#Complete
 
 " -------------------------------------------------------------------------
 " XML
-"   - https://vimtricks.com/p/vim-autocomplete-html-tags
+"   - See $VIMRUNTIME/autoload/xmlcomplete.vim
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
