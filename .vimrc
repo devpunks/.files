@@ -960,6 +960,9 @@ endfunction " PopUpComplete
 " -------------------------------------------------------------------------
 set completefunc=Complete
 function Complete (token, command_line='', cursor_pos='0') " abort
+  echom 'Token: ' + a:token
+  echom 'Base: ' + a:command_line
+
   if len(a:token) > 0
     let prefix = a:token
   else
