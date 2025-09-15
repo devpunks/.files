@@ -691,6 +691,12 @@ let g:tagbar_type_markdown = {
 autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 
 " -------------------------------------------------------------------------
+" XML
+"   - https://vimtricks.com/p/vim-autocomplete-html-tags
+" -------------------------------------------------------------------------
+autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" -------------------------------------------------------------------------
 " CSS
 "   - https://simplified.guide/vim/auto-complete-css
 " -------------------------------------------------------------------------
