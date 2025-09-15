@@ -1376,6 +1376,7 @@ function g:Tags () abort
   echom 'local tags after: '
   setlocal tags?
   echom 'Omni Completion: ' .. &omnifunc
+  setlocal omnifunc=ccomplete#Complete " CTags Complete
 endfunction " Tags
 
 function g:Tags2 () abort
