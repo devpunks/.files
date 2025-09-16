@@ -1596,7 +1596,6 @@ function g:Scope () abort
     echo ''
   endfor " extension
 endfunction " Scope
-command! Scope call Scope ()
 
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
