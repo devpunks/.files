@@ -1636,7 +1636,7 @@ autocmd VimDefaults VimEnter * :Fuzzy
 function! s:find () abort
 endfunction " find
 
-command! Fuzzy call s:fuzzy()
+command! Fuzzy call s:fuzzy ()
 function! s:fuzzy () abort
   if &rtp !~ 'ctrlp.vim' | return | endif
 
