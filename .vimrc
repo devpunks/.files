@@ -1478,7 +1478,7 @@ endfunction " tag
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd BufReadPost * echo 'Loading gutentags for: ' .. expand('%')
-  autocmd BufWritePost * echo 'Saving gutentags for ' .. expand('%')
+  autocmd BufWritePost * echo 'Saving gutentags for: ' .. expand('%')
 augroup END
 
 augroup UserDefaults
