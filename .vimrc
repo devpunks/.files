@@ -1349,7 +1349,7 @@ function g:Tag () abort
   set tagstack
   set tags= " Unset
   setlocal tagfunc=TagFunc
-  let &g:tags = findfile( 'tags', '.;' )
+" let &g:tags = findfile( 'tags', '.;' )
   setlocal tagcase=followscs " Follow smartcase & ignorecase
 
   echom 'Current Dir: ' .. getcwd()
