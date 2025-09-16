@@ -860,6 +860,7 @@ function Foo{g:shazam} () abort
   echo 'Shazzaaaam'
 endfunction
 
+command! Tab call s:tab ()
 function! s:tab () abort
   echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
 endfunction " tab
