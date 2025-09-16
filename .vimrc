@@ -1683,7 +1683,6 @@ function! s:fuzzy () abort
     let g:ctrlp_funky_syntax_highlight = 1
   endif
 endfunction " fuzzy
-command! Fuzzy call s:fuzzy()
 
 " -------------------------------------------------------------------------
 " Supertab - https://github.com/ervandew/supertab
