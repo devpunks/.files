@@ -1477,7 +1477,7 @@ endfunction " tag
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd BufReadPost * echo 'Loading gutentags for ' .. expand('%')
+  autocmd BufReadPost * echo 'Loading gutentags for: ' .. expand('%')
   autocmd BufWritePost * echo 'Saving gutentags for ' .. expand('%')
 augroup END
 
