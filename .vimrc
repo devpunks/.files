@@ -874,7 +874,6 @@ command! Enter call s:enter ()
 function! s:enter () abort
   echo 'Entering ( Not Yet Implemented. See :Enter command )'
 endfunction " enter
-command! Enter call s:enter ()
 
 " -------------------------------------------------------------------------
 " CursorCharacter ()
