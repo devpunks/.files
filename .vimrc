@@ -602,7 +602,7 @@ set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 "  - https://vim.fandom.com/wiki/Omni_completion
 "  - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
 " -------------------------------------------------------------------------
-set omnifunc=syntaxcomplete#Complete " Default Completion
+autocmd FileDefaults VimEnter setlocal omnifunc=syntaxcomplete#Complete
 
 " -------------------------------------------------------------------------
 " Tar
