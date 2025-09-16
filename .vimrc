@@ -1074,7 +1074,7 @@ filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/fi
 "   - :h startify
 "   - :h startify-faq
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Start()
+autocmd VimDefaults VimEnter call g:Start()
 
 function! g:Start () abort
   echo 'Calling Startify'
