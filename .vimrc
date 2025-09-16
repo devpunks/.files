@@ -869,7 +869,6 @@ command! Space call s:space ()
 function! s:space () abort
   echo 'Spacing ( Not Yet Implemented. See :Space command )'
 endfunction " space
-command! Space call s:space ()
 
 function! s:enter () abort
   echo 'Entering ( Not Yet Implemented. See :Enter command )'
