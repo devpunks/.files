@@ -1598,7 +1598,7 @@ function g:Scope () abort
 endfunction " Scope
 
 " -------------------------------------------------------------------------
-" Moby Thesaurus - https://www.gutenberg.org/iles/3202/mthesaur.txt
+" Moby Thesaurus - https://gutenberg.org/iles/3202/mthesaur.txt
 " -------------------------------------------------------------------------
 nnoremap <leader>t g:Thesaurus()
 
