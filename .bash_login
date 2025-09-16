@@ -1111,38 +1111,6 @@ function digest () {
 
 } # digest
 
-function encode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
-  local -r file="$1"
-
-  echo ; echo 'Base32'
-  echo '(basenc --base32):'
-  basenc --base32 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
-  [ -e $( readlink -f "$file" ) ] && basenc --base32 $file > "${file}.base32"
-
-  echo ; echo 'Base64'
-  echo '(basenc --base64):'
-  basenc --base64 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
-  echo ; echo '(openssl enc --base64):'
-  openssl enc -base64 -in <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
-  [ -e $( readlink -f "$file" ) ] && basenc --base64 $file > "${file}.base64"
-
-} # encode
-
-function decode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
-  local -r file="$1"
-
-  echo ; echo 'Base32'
-  echo '(basenc --decode --base32):'
-  basenc --decode --base32 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
-
-  echo ; echo 'Base64'
-  echo '(basenc --decode --base64):'
-  basenc --decode --base64 <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
-  echo ; echo '(openssl enc -d --base64):'
-  openssl enc -d -base64 -in <( [ -e $( readlink -f "$file" ) ] && cat $file || printf "$file" )
-
-} # decode
-
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
 # https://antofthy.gitlab.io/info/crypto/encfs.txt
