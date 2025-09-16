@@ -1381,7 +1381,7 @@ function g:Tags () abort
 endfunction " Tags
 
 function g:Tags2 () abort
-  echom 'Saving write tags : ' .. &tags
+  echom 'Saving tags for : ' .. &tags
 endfunction
 
 function g:CTags () abort
