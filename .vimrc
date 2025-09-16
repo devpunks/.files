@@ -956,7 +956,7 @@ endfunction " PopUpComplete
 
 
 " -------------------------------------------------------------------------
-" Complete () - 
+" Complete () -
 " -------------------------------------------------------------------------
 set completefunc=Complete
 function Complete (token, command_line='', cursor_pos='0') " abort
