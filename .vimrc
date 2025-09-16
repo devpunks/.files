@@ -1391,8 +1391,6 @@ function g:CTags () abort
 
   echom 'Found Tags in' .. l:tags
 
-  set omnifunc=ccomplete#Complete " CTags Complete
-
   if &rtp =~ 'gutentags'
     let g:gutentags_trace = 1
     let g:gutentags_ctags_extra_args = []
