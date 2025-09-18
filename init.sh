@@ -183,6 +183,7 @@ pkg install php-apache-pgsql # PostgreSQL modules for PHP/Apache 2.0
 # https://stackoverflow.com/q/57538555
 # https://gist.github.com/lnfel/d84ead4b914fd3e4e7897537d8f61535
 # https://linkedin.com/pulse/installing-running-ruby-rails-7-android-antonio-nesic
+# $$$$ https://honeyryderchuck.gitlab.io/2022/10/03/how-to-bundle-production-mode-in-docker.html
 pkg install ruby # https://wiki.termux.com/wiki/Ruby
 pkg install libffi
 pkg install binutils
