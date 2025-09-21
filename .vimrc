@@ -1316,7 +1316,6 @@ function TagFunc (pattern, flags, info) abort
   " return v:null " Perform standard tag lookup instead
 endfunction
 
-autocmd VimDefaults VimEnter * call g:Tag ()
 augroup FileDefaults
   " autocmd BufNew  * " What to do when buffer is empty
   autocmd BufReadPost  * call g:Tags ()
