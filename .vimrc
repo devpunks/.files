@@ -1283,6 +1283,7 @@ endfunction " Tag
 
 command! Tags call Tags ()
 function g:Tags () abort
+  let l:tags = []
   let l:file = findfile ( &filetype .. '.tags', '.;' )
   let l:parent = findfile ( &filetype .. '.tags', '..;' )
   let l:git = trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
