@@ -1300,7 +1300,7 @@ function g:Tags () abort
 
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while !empty(l:file)
-    echom 'The Tag: ' .. fnamemodify( l:file, ':p')
+    echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
     call add( l:tags, fnamemodify ( l:file, ':p' ) )
     let l:path = fnamemodify(l:file, ':p:h:h')
     echom 'The Parent Path: ' .. l:path
