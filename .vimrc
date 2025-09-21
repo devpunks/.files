@@ -1331,7 +1331,8 @@ endfunction " Tag
 command! Tags call Tags ()
 function g:Tags () abort
   let l:file = findfile ( &filetype .. '.tags', '.;' )
-  let l:git = system('git rev-parse --show-top-level')
+  let l:parent = findfile ( &filetype .. '.tags', '..;' )
+  let l:git = trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
   let l:languages = map ( systemlist ( 'ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
 
