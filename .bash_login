@@ -2927,7 +2927,7 @@ function play () { clear
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
 # --tag-relative=never
 # https://github.com/vim/vim/issues/2221
-# https://sourceforge.net/p/ctags/mailman/message/29553275/
+# https://sourceforge.net/p/ctags/mailman/message/29553275
 # https://vi.stackexchange.com/q/13960/how-to-browse-tags-when-autochdir-is-set
 # --exclude-exception= - for files --exclude(ed)
 # --list-extras
