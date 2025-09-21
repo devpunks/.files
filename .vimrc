@@ -676,7 +676,7 @@ autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd BufNewFile,BufReadPost *.css,*.sss,*.sass,*.scss setlocal filetype=css
+  autocmd BufNewFile,BufReadPost *.sss,*.sass,*.scss setlocal filetype=css
   autocmd FIleReadPost *.css,*.sss,*.sass,*.scss call g:CSS()
 augroup END
 
