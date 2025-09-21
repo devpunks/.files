@@ -1345,6 +1345,7 @@ function g:Tags () abort
 
   echom 'GIT root path: '.. l:git
   echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
+  echom '(' .. &filetype .. ' parent tags) definitions path: '.. l:parent
 
   let &l:tags = l:file " setlocal tags
 
