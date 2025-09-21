@@ -1341,7 +1341,7 @@ function g:Tags () abort
 
   if index( l:languages, &filetype ) < 0 | return | endif
    echo 'Found language: ' .. &filetype
-  if empty(l:file) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
+  if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
 
   echom 'GIT root path: '.. l:git
   echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
