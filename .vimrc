@@ -1312,7 +1312,7 @@ function g:Tags () abort
   " - A matching global tag has been found.
   let &l:tags = join ( filter ( l:tags, { _, val -> ! empty (val) } ), ',' )
 
-  echom 'global tags after: '
+  echom 'Global tags (after): '
   setglobal tags?
   echom 'local tags after: '
   setlocal tags?
