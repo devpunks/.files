@@ -1326,14 +1326,6 @@ nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 function g:Tag () abort
-  set tagstack
-  set tags= " Unset
-  setlocal tagfunc=TagFunc
-" let &g:tags = findfile( 'tags', '.;' )
-  setlocal tagcase=followscs " Follow smartcase & ignorecase
-
-  echom 'Current Dir: ' .. getcwd()
-  echom '(tags) definitions path: '.. &g:tags
 endfunction " Tag
 
 command! Tags call Tags ()
