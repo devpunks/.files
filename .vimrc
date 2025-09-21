@@ -659,12 +659,6 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
-" HTML
-"   - https://vimtricks.com/p/vim-autocomplete-html-tags
-" -------------------------------------------------------------------------
-autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
-
-" -------------------------------------------------------------------------
 " XML
 "   - See $VIMRUNTIME/autoload/xmlcomplete.vim
 " -------------------------------------------------------------------------
