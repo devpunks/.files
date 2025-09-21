@@ -1343,6 +1343,7 @@ function g:Tags () abort
    echo 'Found language: ' .. &filetype
   if empty(l:file) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
 
+  echom 'GIT root path: '.. l:git
   echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
 
   let &l:tags = l:file " setlocal tags
