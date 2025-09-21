@@ -1293,6 +1293,9 @@ function g:Tags () abort
    echo 'Found language: ' .. &filetype
   if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
 
+  let l:tags = []
+  let l:file = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
+  let l:git = trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
   echom 'GIT root path: '.. l:git
 
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
