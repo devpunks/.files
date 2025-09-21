@@ -1297,8 +1297,6 @@ function g:Tags () abort
   if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
 
   echom 'GIT root path: '.. l:git
-  echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
-  echom '(' .. &filetype .. ' parent tags) definitions path: '.. l:parent
 
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while !empty(l:file)
