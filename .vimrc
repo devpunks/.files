@@ -1291,7 +1291,6 @@ function g:Tags () abort
 
   if index( l:languages, &filetype ) < 0 | return | endif
    echo 'Found language: ' .. &filetype
-  if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
 
   let l:tags = []
   let l:file = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
