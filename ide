@@ -79,7 +79,7 @@ tmux -S "$SOCKET" send-keys 'clear' Enter
 tmux -S "$SOCKET" select-pane -t 1
 sleep $DELAY
 
-tmux -S "$SOCKET" send-keys 'vi -S vim.session' Enter
+tmux -S "$SOCKET" send-keys 'vi -S vim.session -c "Startify"' Enter
 
 # STATS -------------------------------------------------------------------
 
