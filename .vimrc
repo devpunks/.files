@@ -1301,7 +1301,10 @@ function g:Tags () abort
   echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
   echom '(' .. &filetype .. ' parent tags) definitions path: '.. l:parent
 
-  let &l:tags = l:file " setlocal tags
+  " TODO: use `while` loop
+  call add( l:tags, l:file )
+  call add( l:tags, l:parent )
+  let &l:tags = join ( filter ( l:tags, { _, val -> ! empty (val) } ), ',' )
 
   echom 'global tags after: '
   setglobal tags?
