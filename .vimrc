@@ -665,6 +665,12 @@ augroup END
 autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " -------------------------------------------------------------------------
+" HTML
+"   - https://vimtricks.com/p/vim-autocomplete-html-tags
+" -------------------------------------------------------------------------
+autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
+
+" -------------------------------------------------------------------------
 " CSS
 "   - https://simplified.guide/vim/auto-complete-css
 " -------------------------------------------------------------------------
