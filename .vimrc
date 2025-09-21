@@ -1294,6 +1294,14 @@ endfunction " indentation
 "  - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
 "  - https://andrewradev.com/2011/06/08/vim-and-ctags
 " -------------------------------------------------------------------------
+  set tagstack
+  set tagfunc=TagFunc
+  let &g:tags = findfile( 'tags', '.;' )
+  set tagcase=followscs " Follow smartcase & ignorecase
+
+  echom 'Current Dir: ' .. getcwd()
+  echom '(tags) definitions path: '.. &g:tags
+
 function TagFunc (pattern, flags, info) abort
   echom 'Pattern: ' .. a:pattern
   echom 'Flags: ' .. empty(a:flags)
