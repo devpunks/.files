@@ -2925,7 +2925,6 @@ function play () { clear
 # https://github.com/universal-ctags/ctags
 # https://gist.github.com/RockDeng110/d19d97534a34c971183327a11a466b91
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
-# alias ctags='clear && ctags -R --exclude@.gitignore'
 # --tag-relative=never
 # https://github.com/vim/vim/issues/2221
 # https://vi.stackexchange.com/q/13960/how-to-browse-tags-when-autochdir-is-set
