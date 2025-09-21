@@ -1299,7 +1299,7 @@ function g:Tags () abort
   if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while !empty(l:file)
-    echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
+    echom '(' .. &filetype .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
     call add( l:tags, fnamemodify ( l:file, ':p' ) )
     let l:path = fnamemodify(l:file, ':p:h:h')
     echom 'The Parent Path: ' .. l:path
