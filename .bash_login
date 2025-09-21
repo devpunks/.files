@@ -2922,6 +2922,7 @@ function play () { clear
   echo ; echo ▷ Playing: "$location"
 } # play
 
+# --tag-relative=never
 # https://github.com/vim/vim/issues/2221
 # https://github.com/universal-ctags/ctags
 # https://gist.github.com/RockDeng110/d19d97534a34c971183327a11a466b91
