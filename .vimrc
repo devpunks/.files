@@ -1300,7 +1300,15 @@ function g:Tags () abort
   echom '(' .. &filetype .. ' tags) definitions path: '.. l:file
   echom '(' .. &filetype .. ' parent tags) definitions path: '.. l:parent
 
-  " TODO: use `while` loop
+  " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
+  while !empty(l:file)
+    echom 'The Tag: ' .. fnamemodify( l:file, ':p')
+    call add( l:tags, fnamemodify ( l:file, ':p' ) )
+    let l:path = fnamemodify(l:file, ':p:h:h')
+    echom 'The Parent Path: ' .. l:path
+    let l:file = findfile ( &filetype .. '.tags', l:path .. ';' )
+  endwhile
+
   " TODO: remove duplicates from parent in tagstack
   " The next file in the list is not used when:
   " - A matching static tag for the current buffer has been found.
