@@ -1302,6 +1302,10 @@ function g:Tags () abort
   echom '(' .. &filetype .. ' parent tags) definitions path: '.. l:parent
 
   " TODO: use `while` loop
+  " TODO: remove duplicates from parent in tagstack
+  " The next file in the list is not used when:
+  " - A matching static tag for the current buffer has been found.
+  " - A matching global tag has been found.
   call add( l:tags, l:file )
   call add( l:tags, l:parent )
   let &l:tags = join ( filter ( l:tags, { _, val -> ! empty (val) } ), ',' )
