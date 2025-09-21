@@ -1313,6 +1313,7 @@ function g:Tags () abort
 
   call add( l:tags, l:file )
   call add( l:tags, l:parent )
+
   let &l:tags = join ( filter ( l:tags, { _, val -> ! empty (val) } ), ',' )
 
   echom 'global tags after: '
