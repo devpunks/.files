@@ -1319,6 +1319,7 @@ function s:tag () abort
 
   return
 
+
   let l:word = expand('<cword>')
 " let pos = [bufnr()] + getcurpos()[1:]
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
