@@ -1429,7 +1429,7 @@ autocmd VimDefaults VimEnter * call g:TagList()
 " autocmd FileDefaults BufReadPost * call g:TagsList ()
 
 function g:TagList () abort
-  if &rtp !~ 'taglist' | return | endif
+  if &runtimepath !~ 'taglist' | return | endif
 
   let g:Tlist_Sort_Type = 'name'
   let g:Tlist_Use_SingleClick = 1
