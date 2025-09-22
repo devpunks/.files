@@ -1788,7 +1788,7 @@ autocmd VimDefaults VimEnter * call g:Fern()
 " autocmd FileDefaults FileType fern call g:FernDrawer()
 
 function! g:Fern () abort
-  if &rtp !~ 'vim-fern' | return | endif
+  if &runtimepath !~ 'vim-fern' | return | endif
 
   " [SHIFT]+[TAB] Opens Fern
 " nnoremap <S-Tab> :Fern -drawer -stay .
