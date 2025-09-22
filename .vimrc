@@ -1284,6 +1284,9 @@ endfunction " Tag
 
 command! Tag call s:tag ()
 function s:tag () abort
+  echom 'Called Tag'
+  return
+
   let l:word = expand('<cword>')
 " let pos = [bufnr()] + getcurpos()[1:]
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
