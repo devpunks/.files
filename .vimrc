@@ -670,7 +670,7 @@ autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 
-" Slim - https://github.com/slim-template/vim-slim/tree/master
+" Slim - https://github.com/slim-template/vim-slim
 autocmd FileDefaults BufNewFile,BufReadPost *.slim setlocal filetype=slim
 
 
