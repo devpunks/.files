@@ -1409,58 +1409,6 @@ endfunction  " TagsStatus
 function g:Define (word) abort
 endfunction " Define
 
-nnoremap <Tab> :Tag<CR>
-command! Tag call s:tag ()
-function s:tag () abort
-  let l:word = expand('<cword>')
-" let pos = [bufnr()] + getcurpos()[1:]
-" let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
-" let winid = win_getid()
-" let stack = gettagstack( winid )
-" let stack['items'] = [item]
-" call settagstack( winid, stack, 't' )
-
-
-  if empty( l:word ) || &previewwindow | return | endif
-
-  let l:tags = taglist('^' .. l:word )
-  " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
-
-  let list = []
-  for tag in l:tags
-    call add( list, {
-      \ 'pattern' : tag['cmd'],
-      \ 'filename' : tag['filename'],
-    \ })
-  endfor
-
-  if len( list ) == 0 | echom '"' .. l:word .. '" Tag under cursor not found!' | endif
-  if len( list ) == 0 | return | endif
-  echo 'The list: ' .. string ( list )
-" call setqflist( list )
-" copen
-
-  execute 'tselect' l:word
-  let g:ctrlp_default_input = l:word
-  CtrlPTag
-
-  execute 'ptag! ' .. l:word
-  "pclose
-
-  echo 'Cursor Tag <cword>: ' .. l:word
-  echo 'Using tags file: ' .. &tags
-
-  execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
-
-  call search('$', 'b') " previous EOL
-  let word = substitute(l:word, '\\', '\\\\', '')
-  call search('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move (\V ery nomagic)
-
-  " let stack = gettagstack(1003)
-  " do something else
-  " call settagstack(1003, stack)
-endfunction " tag
-
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
