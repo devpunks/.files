@@ -1280,7 +1280,41 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 command! Tag call s:tag ()
 function s:tag () abort
-  echom 'Called Tag'
+  let l:languages = map ( systemlist ( 'ctags --list-languages' ),
+    \ { _, language -> tolower( language ) } )
+
+  echom 'Global tags (before): ' .. &g:tags
+  echom 'Loading tags for ' .. expand ('%')
+
+  if index( l:languages, &filetype ) < 0 | return | endif
+   echo 'Found language: ' .. &filetype
+
+  let l:tags = []
+  let l:file = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
+  echom 'GIT root path: '
+    \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
+  if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
+  " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
+  while !empty(l:file)
+    echom '(' .. &filetype .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
+    call add( l:tags, fnamemodify ( l:file, ':p' ) )
+    let l:path = fnamemodify(l:file, ':p:h:h')
+    echom 'The Parent Path: ' .. l:path
+    let l:file = findfile ( &filetype .. '.tags', l:path .. ';' )
+  endwhile
+
+  " TODO: remove duplicates from parent in tagstack
+  " The next file in the list is not used when:
+  " - A matching static tag for the current buffer has been found.
+  " - A matching global tag has been found.
+  let &l:tags = join ( filter ( l:tags, { _, val -> ! empty (val) } ), ',' )
+
+  echom 'Global tags (after): '
+  setglobal tags?
+  echom 'Local tags (after): '
+  setlocal tags?
+  echom 'Omni Completion: ' .. &l:omnifunc
+
 
 
   return
