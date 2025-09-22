@@ -1577,7 +1577,7 @@ endfunction " find
 
 command! Fuzzy call s:fuzzy ()
 function! s:fuzzy () abort
-  if &rtp !~ 'ctrlp.vim' | return | endif
+  if &runtimepath !~ 'ctrlp.vim' | return | endif
 
   echo 'Mapping CtrlP Mixed Mode to f<Enter>'
   let g:ctrlp_map = 'f<Enter>'
