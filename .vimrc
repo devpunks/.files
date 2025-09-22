@@ -1220,7 +1220,7 @@ function! g:Indentation() abort
   autocmd FileDefaults BufLeave *
     \ if &runtimepath =~ 'vim-indent-guides' | :IndentGuidesEnable | endif
   autocmd FileDefaults BufEnter *
-    \ if &rtp =~ 'vim-indent-guides' | :IndentGuidesDisable | endif
+    \ if &runtimepath =~ 'vim-indent-guides' | :IndentGuidesDisable | endif
 
   highlight IndentGuidesOdd guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
   highlight IndentGuidesEven guifg=darkgrey guibg=NONE ctermfg=darkgrey ctermbg=NONE
