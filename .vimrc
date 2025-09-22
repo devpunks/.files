@@ -1873,7 +1873,7 @@ endfunction " CloseTags
 autocmd VimDefaults VimEnter * call g:AsyncompleteEmoji()
 
 function g:AsyncompleteEmoji () abort
-  if &rtp !~ 'asyncomplete-emoji' | return | endif
+  if &runtimepath !~ 'asyncomplete-emoji' | return | endif
 
   echo 'Loading asyncomplete-emoji'
 
@@ -1890,7 +1890,7 @@ endfunction " AsyncompleteEmoji
 autocmd VimDefaults VimEnter * call g:AsyncompleteBuffer()
 
 function g:AsyncompleteBuffer () abort
-  if &rtp !~ 'asyncomplete-buffer' | return | endif
+  if &runtimepath !~ 'asyncomplete-buffer' | return | endif
 
   echo 'Loading asyncomplete-buffer'
 
