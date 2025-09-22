@@ -1928,7 +1928,7 @@ endfunction " AsyncompleteFile
 autocmd VimDefaults VimEnter * call g:AsyncompleteTags()
 
 function g:AsyncompleteTags () abort
-  if &rtp !~ 'asyncomplete-tags' | return | endif
+  if &runtimepath !~ 'asyncomplete-tags' | return | endif
 
   echo 'Loading asyncomplete-tags'
 
