@@ -1252,8 +1252,8 @@ endfunction " indentation
   let &g:tags = findfile( 'tags', '.;' )
   set tagcase=followscs " Follow smartcase & ignorecase
 
-  echom 'Current Dir: ' .. getcwd()
-  echom '(tags) definitions path: '.. &g:tags
+  echom 'Current Dir: ' .. getcwd ()
+  echom '(tags) definitions path: '.. &l:tags
 
 function TagFunc (pattern, flags, info) abort
   echom 'Pattern: ' .. a:pattern
