@@ -1281,7 +1281,6 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 function g:Tag () abort
 endfunction " Tag
 
-nnoremap <Tab> :Tags<CR>
 command! Tag call s:tag ()
 function s:tag () abort
   let l:word = expand('<cword>')
