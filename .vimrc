@@ -1271,7 +1271,7 @@ endfunction
 
 augroup FileDefaults
   " autocmd BufNew  * " What to do when buffer is empty
-  autocmd FileType  * call g:Tags ()
+  autocmd FileType  * :Tag
   autocmd BufWritePost * call Tags2 ()
 augroup END
 
