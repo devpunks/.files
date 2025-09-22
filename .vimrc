@@ -2151,7 +2151,7 @@ endfunction
 autocmd VimDefaults VimEnter * call g:VimRuby ()
 
 function g:VimRuby () abort
-  if &rtp !~ 'vim-ruby' | return | endif
+  if &runtimepath !~ 'vim-ruby' | return | endif
 
   echo 'Vim Ruby Setup'
 
