@@ -2066,7 +2066,7 @@ augroup UserDefaults
 augroup END
 
 function g:Lint () abort
-  if &rtp !~ 'ale' | return | endif
+  if &runtimepath !~ 'ale' | return | endif
 
   echo 'Setting up Ale'
 
