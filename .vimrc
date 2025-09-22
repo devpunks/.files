@@ -408,7 +408,7 @@ set statusline+=%{%g:GitChanges()%}
 set statusline+=💻%Y
 
 " (Guten)Tags
-if &rtp =~ 'gutentag'
+if &runtimepath =~ 'gutentag'
   " set statusline+=%{get(g:, 'gutentags_updated', '')}
   set statusline+=%{gutentags#statusline_cb(function('TagsStatus'))}
 endif
