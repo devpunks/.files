@@ -1675,7 +1675,7 @@ endfunction " Search
 autocmd VimDefaults VimEnter * call g:Snippets ()
 
 function g:Snippets () abort
-  if &rtp !~ 'ultisnips' | return | endif
+  if &runtimepath !~ 'ultisnips' | return | endif
 
   echo 'Ultisnippets Initialization'
 
