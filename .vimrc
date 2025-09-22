@@ -987,7 +987,7 @@ endfunction " TabLine
 " }}}
 
 " =========================================================================
-" {{{ PLUGINS - check loaded with &rtp =~ 'plugin-name'
+" {{{ PLUGINS - check loaded with &runtimepath =~ 'plugin-name'
 " =========================================================================
 
 echo 'All Plugins'
