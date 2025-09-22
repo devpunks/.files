@@ -1280,6 +1280,7 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 command! Tag call Tag ()
 function g:Tag () abort
+  echom 'Called Tag'
 endfunction " Tag
 
 command! Tag call s:tag ()
