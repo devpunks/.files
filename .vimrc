@@ -1211,7 +1211,7 @@ endfunction " GitGutter
 autocmd VimDefaults VimEnter * call g:Indentation()
 
 function! g:Indentation() abort
-" if &rtp !~ 'vim-indent-guides' | return | endif
+" if &runtimepath !~ 'vim-indent-guides' | return | endif
 
   echo 'Loading indentation guides'
   let g:indent_guides_guide_size = 1
