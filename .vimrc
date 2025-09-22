@@ -1332,6 +1332,7 @@ function s:tag () abort
   " call settagstack(1003, stack)
 endfunction " tag
 
+nnoremap <Tab> :Tags<CR>
 command! Tags call Tags ()
 function g:Tags () abort
   let l:languages = map ( systemlist ( 'ctags --list-languages' ),
