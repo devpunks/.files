@@ -1253,7 +1253,7 @@ endfunction " indentation
   set tagcase=followscs " Follow smartcase & ignorecase
 
   echom 'Current Dir: ' .. getcwd ()
-  echom '(tags) definitions path: '.. &l:tags
+  echom '(tags) definitions path: '.. &g:tags
 
 function TagFunc (pattern, flags, info) abort
   echom 'Pattern: ' .. a:pattern
