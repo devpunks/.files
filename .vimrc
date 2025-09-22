@@ -1970,7 +1970,7 @@ augroup END
 autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for '..expand('%')
 
 function g:LSP () abort
-  if &rtp !~ 'vim-lsp' | return | endif
+  if &runtimepath !~ 'vim-lsp' | return | endif
 
   echo 'VIM LSP'
   call lsp#enable()
