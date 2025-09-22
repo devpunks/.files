@@ -1330,7 +1330,7 @@ function g:CTags () abort
 
   echom 'Found Tags in' .. l:tags
 
-  if &rtp =~ 'gutentags'
+  if &runtimepath =~ 'gutentags'
     let g:gutentags_trace = 1
     let g:gutentags_ctags_extra_args = []
   endif
