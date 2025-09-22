@@ -602,7 +602,7 @@ set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 "  - https://vim.fandom.com/wiki/Omni_completion
 "  - Defaults - https://github.com/vim/vim/tree/master/runtime/autoload
 " -------------------------------------------------------------------------
-autocmd FileDefaults VimEnter setlocal omnifunc=syntaxcomplete#Complete
+autocmd FileDefaults VimEnter * set omnifunc=syntaxcomplete#Complete
 
 " -------------------------------------------------------------------------
 " Tar
@@ -669,6 +669,9 @@ autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 "   - https://vimtricks.com/p/vim-autocomplete-html-tags
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
+
+autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+
 
 " -------------------------------------------------------------------------
 " CSS
