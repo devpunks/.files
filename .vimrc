@@ -1618,7 +1618,7 @@ function! s:fuzzy () abort
     vnoremap <C-]> :CtrlPtjumpVisual<CR>
   endif
 
-  if &rtp !~ 'vim-ctrlp-funky'
+  if &runtimepath !~ 'vim-ctrlp-funky'
     let g:ctrlp_funky_syntax_highlight = 1
   endif
 endfunction " fuzzy
