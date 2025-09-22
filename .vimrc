@@ -1278,6 +1278,7 @@ augroup END
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
+command! Tag call Tags ()
 function g:Tag () abort
 endfunction " Tag
 
