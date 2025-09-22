@@ -1004,7 +1004,7 @@ autocmd VimDefaults VimEnter call g:Start()
 
 function! g:Start () abort
   echo 'Calling Startify'
-  if &rtp !~ 'startify' | return | endif
+  if &runtimepath !~ 'startify' | return | endif
 
   let g:startify_padding_left = 5
   let g:startify_session_sort = 0
