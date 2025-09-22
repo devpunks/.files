@@ -407,7 +407,7 @@ set statusline+=%{%g:GitChanges()%}
 " file type
 set statusline+=💻%Y
 
-" (Guten)Tags
+" TODO: Remove (Guten)Tags dependency
 if &runtimepath =~ 'gutentag'
   " set statusline+=%{get(g:, 'gutentags_updated', '')}
   set statusline+=%{gutentags#statusline_cb(function('TagsStatus'))}
