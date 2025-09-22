@@ -1946,7 +1946,7 @@ endfunction " AsyncompleteTags
 autocmd VimDefaults VimEnter * call g:AsyncompleteUltisnips()
 
 function g:AsyncompleteUltisnips () abort
-  if &rtp !~ 'asyncomplete-ultisnips' | return | endif
+  if &runtimepath !~ 'asyncomplete-ultisnips' | return | endif
 
   echo 'Loading asyncomplete-ultisnips'
 
