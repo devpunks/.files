@@ -1316,7 +1316,6 @@ function s:tag () abort
   echom 'Omni Completion: ' .. &l:omnifunc
 
 
-
   return
 
 
