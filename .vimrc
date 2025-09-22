@@ -684,7 +684,7 @@ augroup FileDefaults
 augroup END
 
 function! g:CSS () abort
-  if &rtp !~ 'vim-css3-syntax' | return | endif
+  if &runtimepath !~ 'vim-css3-syntax' | return | endif
 
   highlight VendorPrefix guifg=#00ffff gui=bold
   match VendorPrefix /-\(moz\|webkit\|o\|ms\)-[a-zA-Z-]\+/
