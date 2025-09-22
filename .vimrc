@@ -2127,7 +2127,7 @@ endfunction " TestSetup
 autocmd VimDefaults VimEnter * call g:VimJavascript ()
 
 function g:VimJavascript () abort
-  if &rtp !~ 'vim-javascript' | return | endif
+  if &runtimepath !~ 'vim-javascript' | return | endif
 
   echo 'Vim Javascript Setup'
 
