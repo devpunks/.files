@@ -2088,7 +2088,7 @@ endfunction " Lint
 autocmd VimDefaults VimEnter * call g:TestSetup()
 
 function g:TestSetup () abort
-  if &rtp !~ 'vim-test' | return | endif
+  if &runtimepath !~ 'vim-test' | return | endif
 
   echo 'Vim Testing Setup'
 
