@@ -2039,7 +2039,7 @@ endfunction " on_lsp_buffer_enabled
 autocmd VimDefaults VimEnter * call g:LSPSettings()
 
 function g:LSPSettings () abort
-  if &rtp !~ 'vim-lsp-settings' | return | endif
+  if &runtimepath !~ 'vim-lsp-settings' | return | endif
 
   echo 'VIM LSP Settings'
 
