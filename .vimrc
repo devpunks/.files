@@ -673,7 +673,6 @@ autocmd FileDefaults FileType html,eruby setlocal omnifunc=htmlcomplete#Complete
 " Slim - https://github.com/slim-template/vim-slim
 autocmd FileDefaults BufNewFile,BufReadPost *.slim setlocal filetype=slim
 
-
 " -------------------------------------------------------------------------
 " CSS
 "   - https://simplified.guide/vim/auto-complete-css
