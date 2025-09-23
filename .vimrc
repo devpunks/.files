@@ -1332,6 +1332,7 @@ function s:tag () abort
   let l:tags = taglist('^' .. l:word )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
+
   return " -------------------------------------------------------------
 
 
