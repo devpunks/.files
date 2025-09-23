@@ -1350,8 +1350,6 @@ function s:tag () abort
 
   return " -------------------------------------------------------------
 
-" call setqflist( list )
-" copen
 
   execute 'tselect' l:word
   let g:ctrlp_default_input = l:word
