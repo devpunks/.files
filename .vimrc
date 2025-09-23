@@ -30,6 +30,7 @@
 "   - https://vim.rtorr.com/
 "   - https://devhints.io/vimscript
 " TERM - https://vimhelp.org/term.txt.html
+" Event order - https://vi.stackexchange.com/q/4493
 " Auto Commands - https://vimhelp.org/autocmd.txt.html
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
