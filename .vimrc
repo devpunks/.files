@@ -1327,7 +1327,6 @@ function s:tag () abort
 " let stack['items'] = [item]
 " call settagstack( winid, stack, 't' )
 
-  return " -------------------------------------------------------------
 
 
 
