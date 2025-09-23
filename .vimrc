@@ -1376,7 +1376,7 @@ endfunction " Tags
 function g:Tags2 () abort
   let l:command = '!ctags'
   let l:flags = ['--recursive']
-  echom 'Saving : ' .. expand('%')
+  echom 'Saving : ' .. expand('%:p')
   echom l:command .. join ( l:flags, ' ' )
   echom '🏷️Tags : ' .. &tags
 endfunction
