@@ -1347,7 +1347,6 @@ function s:tag () abort
 " call setqflist( list )
 " copen
 
-  return " -------------------------------------------------------------
 
 
 " call setqflist( list )
