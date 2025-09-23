@@ -1351,6 +1351,10 @@ function s:tag () abort
   let g:ctrlp_default_input = l:word
   CtrlPTag
 
+
+  return " -------------------------------------------------------------
+
+
   execute 'ptag! ' .. l:word
   "pclose
 
