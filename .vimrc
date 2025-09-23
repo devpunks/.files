@@ -1377,6 +1377,7 @@ function g:Tags2 () abort
   let l:command = '!ctags'
   let l:flags = ['--recursive']
   let l:tags = split ( &l:tags, ',' )[0]
+
   echom 'Saving : ' .. expand('%:p')
   echom l:command .. ' ' .. join ( l:flags, ' ' )
   echom '🏷️Tags : ' .. &l:tags
