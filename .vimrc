@@ -1359,7 +1359,7 @@ function s:tag () abort
   execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
   call search ('$', 'b') " previous EOL
-  let word = substitute(l:word, '\\', '\\\\', '')
+  let word = substitute (l:word, '\\', '\\\\', '')
   call search('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move (\V ery nomagic)
 
   " let stack = gettagstack(1003)
