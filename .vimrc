@@ -1380,7 +1380,7 @@ function g:Tags2 () abort
 
   echom 'Saving : ' .. expand('%:p')
   echom l:command .. ' ' .. join ( l:flags, ' ' )
-  echom '🏷️Tags : ' .. &l:tags
+  echom '🏷️Tags : ' .. l:tags
 endfunction
 
 function g:CTags () abort
