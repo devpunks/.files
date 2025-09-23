@@ -1354,11 +1354,11 @@ function s:tag () abort
   execute 'ptag! ' .. l:word
   "pclose
 
-  echo 'Cursor Tag <cword>: ' .. l:word
+  echo 'Tag <cword>: ' .. l:word
 
   execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
-  call search('$', 'b') " previous EOL
+  call search ('$', 'b') " previous EOL
   let word = substitute(l:word, '\\', '\\\\', '')
   call search('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move (\V ery nomagic)
 
