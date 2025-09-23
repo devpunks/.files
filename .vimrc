@@ -1360,7 +1360,7 @@ function s:tag () abort
 
   call search ('$', 'b') " previous EOL
   let word = substitute (l:word, '\\', '\\\\', '')
-  call search('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move (\V ery nomagic)
+  call search ('\<\V'..l:word..'\>', 'cnz') " Match cursor & do not move (\V ery nomagic)
 
   " let stack = gettagstack(1003)
   " do something else
