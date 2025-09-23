@@ -1375,7 +1375,7 @@ endfunction " Tags
 
 function g:Tags2 () abort
   echom 'Saving : ' .. expand('%')
-  echom 'Tags : ' .. &tags
+  echom '🏷️Tags : ' .. &tags
 endfunction
 
 function g:CTags () abort
