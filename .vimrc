@@ -980,6 +980,7 @@ function! TabLine () abort
     " Closing gliph
     let line ..= ( l:current ? ' ▼ ' : ' ' )
 
+    let line ..= ( l:current || l:tab == len ( l:tabs ) ? '|' : '' )
     let line ..= '%T' " Tab delineation
   endfor
 
