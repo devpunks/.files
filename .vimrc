@@ -1414,11 +1414,6 @@ endfunction " Define
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
-augroup FileDefaults
-  autocmd BufReadPost * echo 'Loading gutentags for: ' .. expand('%')
-  autocmd BufWritePost * echo 'Saving gutentags for: ' .. expand('%')
-augroup END
-
 augroup UserDefaults
   autocmd User GutentagsUpdated let g:gutentags_updated = 1
   autocmd User GutentagsUpdating let g:gutentags_updated = 0
