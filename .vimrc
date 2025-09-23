@@ -84,7 +84,7 @@ if executable( 'termux-info' ) | echom "TERMUX: " .. $TERMUX_VERSION | endif
 " {{{ SETTINGS
 " =========================================================================
 set shellcmdflag+=-i  " Make shell interactive
-let &shell = $SHELL..' --login' " Add login"
+let &shell = $SHELL..' --login' " Add login
 let $prefix = exists('$PREFIX') ? $PREFIX : '/usr' " Check for TERMUX $PREFIX
 
 " - https://gist.github.com/romainl/7e2b425a1706cd85f04a0bd8b3898805
