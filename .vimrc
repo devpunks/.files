@@ -1320,7 +1320,7 @@ function s:tag () abort
   echom 'Omni Completion: ' .. &l:omnifunc
 
 
-  return
+  return " -------------------------------------------------------------
 
 
   let l:word = expand('<cword>')
