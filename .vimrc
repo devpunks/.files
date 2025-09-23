@@ -1344,6 +1344,8 @@ function s:tag () abort
   if len( list ) == 0 | return | endif
   echo 'The list: ' .. string ( list )
 
+" call setqflist( list )
+" copen
 
   return " -------------------------------------------------------------
 
