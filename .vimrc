@@ -1374,6 +1374,7 @@ function g:Tags () abort
 endfunction " Tags
 
 function g:Tags2 () abort
+  let l:tags = &l:tags
   let l:command = '!ctags'
   let l:flags = ['--recursive']
   echom 'Saving : ' .. expand('%:p')
