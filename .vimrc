@@ -1320,10 +1320,6 @@ function s:tag () abort
   echom 'Omni Completion: ' .. &l:omnifunc
 
   let l:word = expand('<cword>')
-
-  return " -------------------------------------------------------------
-
-
 " let pos = [bufnr()] + getcurpos()[1:]
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
 " let winid = win_getid()
