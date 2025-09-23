@@ -1352,7 +1352,6 @@ function s:tag () abort
   CtrlPTag
 
 
-  return " -------------------------------------------------------------
 
 
   execute 'ptag! ' .. l:word
