@@ -1282,7 +1282,7 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 command! Tag call s:tag ()
 function s:tag () abort
-  let l:languages = map ( systemlist ( 'ctags --list-languages' ),
+  let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
 
   echom 'Global tags (before): ' .. &g:tags
