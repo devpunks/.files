@@ -105,8 +105,8 @@ highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
 
 " Tabs
 highlight! TabLineFill cterm=reverse ctermfg=NONE ctermbg=NONE
-highlight! TabLineSel cterm=bold,underline ctermfg=NONE ctermbg=NONE
-highlight! TabLine term=reverse,italic cterm=reverse,italic ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
+highlight! TabLineSel term=bold,underline cterm=bold,underline ctermfg=NONE ctermbg=NONE
+highlight! TabLine term=reverse,bold cterm=reverse,bold ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
 
 " Navigation
 highlight! Question cterm=standout ctermfg=NONE
