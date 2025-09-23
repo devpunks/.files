@@ -1379,7 +1379,7 @@ function g:Tags2 () abort
   let l:flags = ['--recursive']
   echom 'Saving : ' .. expand('%:p')
   echom l:command .. join ( l:flags, ' ' )
-  echom '🏷️Tags : ' .. &tags
+  echom '🏷️Tags : ' .. &l:tags
 endfunction
 
 function g:CTags () abort
