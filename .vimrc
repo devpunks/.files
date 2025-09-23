@@ -1328,6 +1328,7 @@ function s:tag () abort
 " call settagstack( winid, stack, 't' )
 
 
+  return " -------------------------------------------------------------
 
 
   if empty( l:word ) || &previewwindow | return | endif
