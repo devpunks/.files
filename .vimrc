@@ -1319,7 +1319,6 @@ function s:tag () abort
   setlocal tags?
   echom 'Omni Completion: ' .. &l:omnifunc
 
-
   let l:word = expand('<cword>')
 
   return " -------------------------------------------------------------
