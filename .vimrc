@@ -1352,7 +1352,6 @@ function s:tag () abort
   CtrlPTag
 
 
-
   execute 'ptag! ' .. l:word
   "pclose
 
