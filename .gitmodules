@@ -163,3 +163,6 @@
 [submodule ".vim/pack/u0_a311/start/vim-markdown"]
 	path = .vim/pack/u0_a311/start/vim-markdown
 	url = https://github.com/preservim/vim-markdown.git
+[submodule ".vim/pack/u0_a311/start/git-blame.vim"]
+	path = .vim/pack/u0_a311/start/git-blame.vim
+	url = https://github.com/zivyangll/git-blame.vim.git
