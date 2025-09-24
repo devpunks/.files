@@ -967,7 +967,7 @@ function! TabLine () abort
     " set tab page number (for mouse clicks)
     let line ..='%' .. ( l:tab ) .. 'T'
     let line ..= ( l:tab == tabpagenr() ? '%#TabLineSel#| ▼ ' : '%#TabLine#')
-    let line ..= ( l:tab == tabpagenr() || l:tab == tabpagenr() +1 ? '' : '| ' )
+    let line ..= ( l:tab == tabpagenr() || l:tab == tabpagenr() +1 ? ' ' : '| ' )
     let line ..= ( l:tab == tabpagenr() ? '✎' : '')
     let line ..= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
     let line ..= ( l:modified ? '➕' : '' )
