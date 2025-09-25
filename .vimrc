@@ -1140,7 +1140,7 @@ augroup END
 function g:GitBlame () abort
   let l:file = expand('%:p')
   echom l:file
-  echom system('git --no-pager blame "$(basename "' .. l:file .. '")" -L 3,+1 --porcelain')
+  echom system ( 'command git --no-pager blame "$(basename "' .. l:file .. '")" -L 3,+1 --porcelain' )
 endfunction " GitBlame
 
 function! g:GitFocus () abort
