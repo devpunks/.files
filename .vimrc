@@ -1045,7 +1045,7 @@ function! g:Start () abort
     \ { 'type': 'files',     'header': [ 'MRU' ]           },
     \ { 'type': 'sessions',  'header': [ 'Sessions' ]      },
     \ ]
-endfunction " g:Start
+endfunction " Start
 
 function! s:gitModified() abort
   let l:files = systemlist('git ls-files -m 2>/dev/null')
