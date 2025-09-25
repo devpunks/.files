@@ -1052,7 +1052,7 @@ function! s:gitModified() abort
 
   echo 'startify gitModified'
   return map( l:files, "{ 'line': v:val, 'path': v:val }")
-endfunction " s:gitModified
+endfunction " gitModified
 
 function! s:NerdtreeBookmarks() abort
   let l:bookmarks = systemlist( "cut -d' ' -f 2- ~/.NERDmarks")
