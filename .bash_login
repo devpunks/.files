@@ -723,6 +723,7 @@ alias nonce='{ printf `randchars` \
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
 alias donce="{
+  echo ; echo $(command date) ':' $( command date +%s%N )
   echo ; echo 'SHA512 SUM (sha512sum):'
   command date +%s%N | sha512sum | command cut -d' ' -f 1 ;
   echo ; echo 'SHA256 SUM (sha256sum):'
