@@ -403,7 +403,7 @@ set statusline+=%{(mode()=~#'^R')?'📃':''} " Replace
 
 set statusline+=%{(mode()=~#'^V')?'🔎':''} " Visual Line
 " https://gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
-set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔍':''} " Visual Block ()
+set statusline+=%{(mode()=~#'^[[:cntrl:]]')?'🔍':''} " Visual Block ()
 
 " full file name
 set statusline+=%-4.15F%m
