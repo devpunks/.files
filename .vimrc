@@ -999,7 +999,13 @@ endfunction " TabLine
 echo 'All Plugins'
 " scriptnames " List all loaded plugins
 
-filetype plugin indent on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
+
+
+" -------------------------------------------------------------------------
+" git-blame.vim - https://github.com/ziyangll/git-blame.vim
+" -------------------------------------------------------------------------
+autocmd VimDefaults CursorHold * :call gitblame#echo ()
 
 " -------------------------------------------------------------------------
 " Startify - https://github.com/mhinz/vim-startify
