@@ -396,11 +396,11 @@ set statusline=%#Statement# " initialize highlight group
 set statusline+=﹟%n\ 
 
 " mode
-set statusline+=%{(mode()=~'^c')?'💲':''} " Command
-set statusline+=%{(mode()=~'^i')?'📝':''} " Insert
-set statusline+=%{(mode()=~'^n')?'📄':''} " Normal
-set statusline+=%{(mode()=~'^R')?'📃':''} " Replace
-set statusline+=%{(mode()=~#'^v')?'🔍':''} " Visual
+set statusline+=%{(mode()=~#'^c')?'💲':''} " Command
+set statusline+=%{(mode()=~#'^i')?'📝':''} " Insert
+set statusline+=%{(mode()=~#'^n')?'📄':''} " Normal
+set statusline+=%{(mode()=~#'^R')?'📃':''} " Replace
+
 set statusline+=%{(mode()=~#'^V')?'🔎':''} " Visual Line
 " https://gnu.org/software/grep/manual/html_node/Character-Classes-and-Bracket-Expressions.html
 set statusline+=%{(mode()=~'^[[:cntrl:]]')?'🔍':''} " Visual Block ()
