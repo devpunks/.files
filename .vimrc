@@ -1005,7 +1005,8 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 " -------------------------------------------------------------------------
 " git-blame.vim - https://github.com/ziyangll/git-blame.vim
 " -------------------------------------------------------------------------
-autocmd VimDefaults CursorHold * :call gitblame#echo ()
+autocmd VimDefaults CursorHold *
+  \| if &rtp =~ 'git-blame' | :call gitblame#echo () | endif
 
 " -------------------------------------------------------------------------
 " Startify - https://github.com/mhinz/vim-startify
