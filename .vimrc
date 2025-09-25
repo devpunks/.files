@@ -1060,7 +1060,7 @@ function! s:NerdtreeBookmarks() abort
 
   echo 'startify NERDTreeBookmarks'
   return map( l:bookmarks, "{ 'line': v:val, 'path': v:val }")
-endfunction " s:NerdtreeBookmarks
+endfunction " NerdtreeBookmarks
 
 " -------------------------------------------------------------------------
 " OverflowMargin - http://blog.ezyang.com/2010/03/vim-textwidth
