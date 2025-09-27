@@ -2102,8 +2102,8 @@ endfunction " LSPSettings
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Lint()
 augroup UserDefaults
-  autocmd User AleFixPre echo 'ALE - Disable Syntax'
-  autocmd User AleFixPost echo 'ALE - Enable Syntax'
+  autocmd User AleFixPre echom 'ALE - Disable Syntax'
+  autocmd User AleFixPost echom 'ALE - Enable Syntax'
 augroup END
 
 function g:Lint () abort
