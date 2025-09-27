@@ -1122,7 +1122,7 @@ autocmd VimDefaults BufReadPost * call g:ScrollBar()
 function! g:ScrollBar() abort
   if get( g:, 'loaded_sclow', 0 ) != 1 | return | endif
 
-  echo 'Showing Scrollbar'
+  echom 'Showing Scrollbar'
 
   let g:scrollbar_thumb = '⬜'
   let g:sclow_sbar_text = '⬜'
