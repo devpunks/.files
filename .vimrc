@@ -1328,7 +1328,7 @@ function s:tag () abort
   echom 'Loading tags for ' .. expand ('%')
 
   if index( l:languages, &filetype ) < 0 | return | endif
-   echo 'Found language: ' .. &filetype
+   echom 'Found language: ' .. &filetype
 
   let l:tags = []
   let l:file = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
