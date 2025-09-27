@@ -1009,6 +1009,9 @@ autocmd VimDefaults CursorHold * :Blame
 
 :command! Blame echo s:blame()
 function s:blame () abort
+  let l:file = expand('%:p')
+
+  " Check if command exists
   call system( 'command -v git' )
   if v:shell_error | return | endif
 
