@@ -328,6 +328,7 @@ echo Cloning submodules...
 # https://github.com/alvan/vim-indexer
 # https://github.com/lifepillar/vim-mucomplete
 # https://github.com/prabirshrestha/async.vim
+# https://github.com/skywind3000/asyncrun.vim
 # https://github.com/prabirshrestha/asyncomplete.vim
 # https://github.com/prabirshrestha/asyncomplete-file.vim
 # https://github.com/prabirshrestha/asyncomplete-tags.vim
