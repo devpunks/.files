@@ -1254,7 +1254,7 @@ autocmd VimDefaults VimEnter * call g:Indentation()
 function! g:Indentation() abort
 " if &runtimepath !~ 'vim-indent-guides' | return | endif
 
-  echo 'Loading indentation guides'
+  echom 'Loading indentation guides'
   let g:indent_guides_guide_size = 1
   let g:indent_guides_auto_colors = 0
 
