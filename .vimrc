@@ -2109,7 +2109,7 @@ augroup END
 function g:Lint () abort
   if &runtimepath !~ 'ale' | return | endif
 
-  echo 'Setting up Ale'
+  echom 'Setting up Ale'
 
   let g:ale_linters = {
   \ 'sh': ['language_server'],
