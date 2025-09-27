@@ -144,7 +144,7 @@ export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manua
 # https://linuxquestions.org/q/slackware-14/the-ls_options-variable-4175464331/
 # https://linuxquestions.org/q/slackware-14/anyone-familiar-with-splitvt-4175464327/#post4963357
 export LS_OPTIONS='\
-  --inode --escape --almost-all --size \
+  --inode --escape --almost-all \
   --no-group --group-directories-first --hide-control-chars \
   --color=auto --hyperlink=auto --tabsize=0 --width=2 --format=vertical \
   --block-size=MiB --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
