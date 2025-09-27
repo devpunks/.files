@@ -1673,7 +1673,7 @@ autocmd UserDefaults CursorHoldI * :Tab
 function g:Tab () abort
 if &runtimepath !~ 'supertab' | return | endif
 
-" echo 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
+" echom 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
 " inoremap <Tab> <c-o>:echo 'SuperTAB Complete'<CR>
 " inoremap <S-Tab> <c-o>:echo 'SHIFT + SuperTAB Complete'<CR>
 
