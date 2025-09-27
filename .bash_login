@@ -642,6 +642,7 @@ function check () {
 # =========================================================================
 # {{{ Jobs
 # =========================================================================
+# https://unix.stackexchange.com/q/106847/what-does-aux-mean-in-ps-aux
 alias ps='command ps auxf' # https://tecmint.com/ps-command-examples-for-linux-process-monitoring
 # https://stackoverflow.com/q/35026395/bash-what-is-a-jobspec
 alias cron='man crontab ; man cronnext ; man crond ; ' # https://crontab.guru
