@@ -1005,8 +1005,32 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 " -------------------------------------------------------------------------
 " git-blame - https://git-scm.com/docs/git-blame
 " -------------------------------------------------------------------------
-autocmd VimDefaults CursorHold *
-  \| if &rtp =~ 'git-blame' | :call gitblame#echo () | endif
+autocmd VimDefaults CursorHold * :Blame
+
+:command! Blame echo s:blame()
+function s:blame () abort
+  call system( 'command -v git' )
+  if v:shell_error | return | endif
+
+  let l:file = expand('%:p')
+  let l:blame = split ( system ( 'command git --no-pager blame '
+    \ .. '"$(basename "' .. l:file .. '")" -L ' .. line ('.') .. ',+1 --porcelain' ), '\n' )
+
+  if blame[0] =~# '^0000\+' | return '⚠️ Not Committed Yet ⚠️' | endif
+
+  let l:hash = '#' .. matchstr ( blame[0], '^\^*\zs\S\+' )
+  let l:author = '👤' .. matchstr ( blame[1], '^author \zs.\+$' )
+  let l:author_mail = '📧' .. matchstr ( blame[2], '^author-mail \zs.\+$' )
+  let l:author_time = '🕓' .. strftime ( '%Y-%m-%d %X',
+    \ matchstr ( blame[3], '^author-time \zs.\+$' ) )
+
+  for line in l:blame
+    if line !~# '^summary' | continue | endif
+    let l:summary = '✒' .. matchstr ( line, '^summary \zs.\+$' )
+  endfor
+
+  return join ( [ l:hash[:7], l:author, l:author_mail, l:author_time, l:summary ], ' ' )
+endfunction " GitBlame
 
 " -------------------------------------------------------------------------
 " Startify - https://github.com/mhinz/vim-startify
