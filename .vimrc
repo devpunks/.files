@@ -1590,7 +1590,7 @@ function! g:Thesaurus () abort
 
   " https://github.com/vim/vim/issues/1611
   " https://thesynack.com/posts/vim-thesaurus
-  echom 'setting thesaurus to '..path
+  echom 'setting thesaurus to ' .. path
   set thesaurus=path " https://stackoverflow.com/q/33453468
 
   let s:saved_ut = &ut
