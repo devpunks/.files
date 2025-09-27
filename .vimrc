@@ -2223,7 +2223,7 @@ endfunction " g:VimRuby
 " =========================================================================
 if $TERM =~ '256color'
   " WARNING: ^[ must be entered as <c-v><c-[>
-  echo '$TERM is set to 256color'
+  echom '$TERM is set to 256color'
   let &t_so = '[7m' " smso (standout)
   let &t_ZH = '[3m' " sitm (enable italics)
   let &t_ZR = '[0m' " ritm (disable italics)
