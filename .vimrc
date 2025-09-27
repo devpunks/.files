@@ -1213,7 +1213,7 @@ endfunction " GitChanges
 function! g:GitGutter () abort
   if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
 
-  echo 'Git Gutter!'
+  echom 'Git Gutter!'
 
   GitGutterEnable
 
