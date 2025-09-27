@@ -1044,7 +1044,7 @@ endfunction " GitBlame
 autocmd VimDefaults VimEnter call g:Start()
 
 function! g:Start () abort
-  echo 'Calling Startify'
+  echom 'Calling Startify'
   if &runtimepath !~ 'startify' | return | endif
 
   let g:startify_padding_left = 5
