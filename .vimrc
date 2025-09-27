@@ -1299,7 +1299,7 @@ endfunction " indentation
 
 function TagFunc (pattern, flags, info) abort
   echom 'Pattern: ' .. a:pattern
-  echom 'Flags: ' .. empty (a:flags)
+  echom 'Flags: ' .. empty ( a:flags )
   echom 'Info (buf_ffname): ' .. a:info['buf_ffname']
 " echom 'Info (user_data): ' .. a:info['user_data']
 
