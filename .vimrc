@@ -1637,7 +1637,7 @@ function! s:fuzzy () abort
     \ = ['.git', 'node_modules', 'package.json', 'Gemfile', '.bashrc' ]
 
   let g:buftag_ctags_bin = split( system( 'type ctags' ) )[-1]
-  echo 'Setting CtrlP binary tags path to: ' .. g:buftag_ctags_bin
+  echom 'Setting CtrlP binary tags path to: ' .. g:buftag_ctags_bin
 
   let g:ctrlp_extensions += ['tag', 'buffertag']
 
