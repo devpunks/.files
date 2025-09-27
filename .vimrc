@@ -1682,7 +1682,7 @@ if &runtimepath !~ 'supertab' | return | endif
 " call SuperTabSetDefaultCompletionType( g:SuperTabDefaultCompletionType )
 " echom 'SuperTab default completion type (completefunc|omnifunc): '
 "   \ .. g:SuperTabDefaultCompletionType
-" echo 'SuperTab secondary completion type:'
+" echom 'SuperTab secondary completion type:'
 " ' \ ..g:SuperTabContextDefaultCompletionType
 endfunction " Tab
 
