@@ -1391,7 +1391,7 @@ function s:tag () abort
   execute 'ptag! ' .. l:word
   "pclose
 
-  echo 'Tag <cword>: ' .. l:word
+  echom 'Tag <cword>: ' .. l:word
 
   execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
