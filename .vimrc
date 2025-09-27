@@ -468,7 +468,7 @@ let g:mapleader = ','
 " let &t_TE = ''
 " let &t_TI = '[>4;2m'
 " let &t_TE = '[>4;m'
-echo 'modifyOtherKeys: t_TI='..&t_TI..' t_TI='..&t_TE
+echom 'modifyOtherKeys: t_TI='..&t_TI..' t_TI='..&t_TE
 
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
