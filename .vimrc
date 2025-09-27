@@ -1019,6 +1019,7 @@ function s:blame () abort
 
   let l:blame = split ( system ( 'command git --no-pager blame '
     \ .. '"$(basename "' .. l:file .. '")" -L ' .. line ('.') .. ',+1 --porcelain' ), '\n' )
+  if v:shell_error | return | endif
 
   if blame[0] =~# '^0000\+' | return '⚠️ Not Committed Yet ⚠️' | endif
 
