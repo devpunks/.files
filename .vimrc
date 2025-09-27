@@ -2302,7 +2302,7 @@ autocmd VimDefaults ColorScheme *
 "let &t_8b = '[48:2:%lu:%lu:%lum'
 
 " Interactive Status -----------------------------
-echo 'Setting StatusLine Color'
+echom 'Setting StatusLine Color'
 augroup Status
   autocmd InsertLeave * highlight! StatusLineNC term=NONE,bold cterm=NONE,bold gui=NONE,bold
   autocmd InsertLeave * highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
