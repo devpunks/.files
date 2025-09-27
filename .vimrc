@@ -1521,7 +1521,7 @@ function g:TagBar () abort
   let g:tagbar_ctags_bin = split( system( 'type ctags' ) )[-1]
   " Max 20% or 25 characters
   let g:tagbar_width = max([25, winwidth(0) / 4])
-  echo 'Setting TagBar binary tags path to' .. g:tagbar_ctags_bin
+  echom 'Setting TagBar binary tags path to' .. g:tagbar_ctags_bin
 endfunction " g:TagBar
 
 function g:TagsBar () abort
