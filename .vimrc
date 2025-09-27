@@ -1485,7 +1485,7 @@ endfunction " g:TagList
 function g:TagsList () abort
   if ! exists('g:loaded_taglist') | return | endif
 
-  echo 'Opening Tags List for ' .. expand('%')
+  echom 'Opening Tags List for ' .. expand('%')
   TlistOpen
   " .foldopen!
   wincmd p " Previous
