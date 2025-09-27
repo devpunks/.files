@@ -2008,7 +2008,7 @@ augroup UserDefaults
   autocmd User lsp_float_closed nunmap <buffer> <C-c>
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
-autocmd FileDefaults BufReadPost * echo 'Loading vim-lsp-server for '..expand('%')
+autocmd FileDefaults BufReadPost * echom 'Loading vim-lsp-server for '..expand('%')
 
 function g:LSP () abort
   if &runtimepath !~ 'vim-lsp' | return | endif
