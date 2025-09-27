@@ -1680,7 +1680,7 @@ if &runtimepath !~ 'supertab' | return | endif
 " let g:SuperTabDefaultCompletionType = 'context'
 " " fallback to SuperTabContextDefaultCompletionType = <C-p>
 " call SuperTabSetDefaultCompletionType( g:SuperTabDefaultCompletionType )
-" echo 'SuperTab default completion type (completefunc|omnifunc): '
+" echom 'SuperTab default completion type (completefunc|omnifunc): '
 "   \ .. g:SuperTabDefaultCompletionType
 " echo 'SuperTab secondary completion type:'
 " ' \ ..g:SuperTabContextDefaultCompletionType
