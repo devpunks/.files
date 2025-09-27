@@ -1953,7 +1953,7 @@ autocmd VimDefaults VimEnter * call g:AsyncompleteFile()
 function g:AsyncompleteFile () abort
   if &runtimepath !~ 'asyncomplete-file' | return | endif
 
-  echo 'Loading asyncomplete-file'
+  echom 'Loading asyncomplete-file'
 
   call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
     \ 'name': 'file',
