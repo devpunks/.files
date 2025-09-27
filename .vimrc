@@ -1654,7 +1654,7 @@ function! s:fuzzy () abort
   echom 'CtrlP tag extensions: ' .. string( g:ctrlp_extensions )
 
   if &runtimepath !~ 'vim-ctrlp-tjump'
-    echo 'CtrlP Mapping <C-]> (tjump) tag'
+    echom 'CtrlP Mapping <C-]> (tjump) tag'
     nnoremap <C-]> :CtrlPtjump<CR>
     vnoremap <C-]> :CtrlPtjumpVisual<CR>
   endif
