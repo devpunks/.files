@@ -1916,7 +1916,7 @@ autocmd VimDefaults VimEnter * call g:AsyncompleteEmoji()
 function g:AsyncompleteEmoji () abort
   if &runtimepath !~ 'asyncomplete-emoji' | return | endif
 
-  echo 'Loading asyncomplete-emoji'
+  echom 'Loading asyncomplete-emoji'
 
   call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
     \ 'name': 'emoji',
