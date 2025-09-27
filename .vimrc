@@ -1933,7 +1933,7 @@ autocmd VimDefaults VimEnter * call g:AsyncompleteBuffer()
 function g:AsyncompleteBuffer () abort
   if &runtimepath !~ 'asyncomplete-buffer' | return | endif
 
-  echo 'Loading asyncomplete-buffer'
+  echom 'Loading asyncomplete-buffer'
 
   call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
     \ 'name': 'buffer',
