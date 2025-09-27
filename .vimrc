@@ -1365,7 +1365,7 @@ function s:tag () abort
 " let stack['items'] = [item]
 " call settagstack( winid, stack, 't' )
 
-  if empty( l:word ) || &previewwindow | return | endif
+  if empty ( l:word ) || &previewwindow | return | endif
 
   let l:tags = taglist('^' .. l:word )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
