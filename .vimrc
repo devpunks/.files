@@ -1718,7 +1718,7 @@ autocmd VimDefaults VimEnter * call g:Snippets ()
 function g:Snippets () abort
   if &runtimepath !~ 'ultisnips' | return | endif
 
-  echo 'Ultisnippets Initialization'
+  echom 'Ultisnippets Initialization'
 
   " let g:UltiSnipsEditSplit = 'vertical'
   let g:UltiSnipsAutoTrigger = 0
