@@ -1035,7 +1035,7 @@ function s:blame () abort
   endfor
 
   return join ( [ l:hash[:7], l:author, l:author_mail, l:author_time, l:summary ], ' ' )
-endfunction " GitBlame
+endfunction " blame
 
 " -------------------------------------------------------------------------
 " Startify - https://github.com/mhinz/vim-startify
