@@ -1013,6 +1013,11 @@ endfunction
 
 :command! Blame echo s:blame()
 function s:blame () abort
+  let options = { 'foo' : 'bar' }
+
+  call timer_start(3000, {-> execute('call Baz()')})
+  return v:shell_error
+
   let l:file = expand('%:p')
 
   " Check if command exists
