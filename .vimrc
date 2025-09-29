@@ -1007,6 +1007,10 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 " -------------------------------------------------------------------------
 autocmd VimDefaults CursorHold * :Blame
 
+function Baz (...)
+  echom 'Baz'
+endfunction
+
 :command! Blame echo s:blame()
 function s:blame () abort
   let l:file = expand('%:p')
