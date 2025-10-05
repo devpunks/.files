@@ -2942,6 +2942,7 @@ function play () { clear
 # --sort=(yes|no|foldcase)
 alias ctags="command ctags --recurse --verbose --guess-language-eagerly --totals=yes \
   --sort=foldcase \
+  --fields=+lKnaS \
   --tag-relative=never \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
