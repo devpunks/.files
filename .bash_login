@@ -2951,6 +2951,7 @@ alias ctags="command ctags --recurse --verbose --guess-language-eagerly --totals
 " # ctags
 
 #  https://docs.ctags.io/en/latest/man-pages.html
+# https://medium.com/@linz07m/lesser-known-but-useful-universal-ctags-flags-with-examples-fbc0266f4dfe
 function tag () { clear
   # if [ -e package.json ] ; then # Javascript
   # files=cscope.js.files
