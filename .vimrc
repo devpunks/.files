@@ -1351,7 +1351,9 @@ function s:tag ( ... ) abort
   echom 'GIT root path: '
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
-  if l:bang | echom 'Writing tags for ' .. expand ( '%:p' ) | endif
+  if l:bang
+    echom 'Writing tags for ' .. expand ( '%:p' )
+  endif
 
   echom 'Loading tags for ' .. expand ( '%:p' )
 
