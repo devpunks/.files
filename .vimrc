@@ -1342,6 +1342,9 @@ function s:tag ( ... ) abort
   let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
 
+  echom 'Global tags (before): ' .. &g:tags
+  echo 'Type: ' .. l:type
+
   if l:bang | echom 'Writing tags for ' .. expand ( '%:p' ) | endif
 
   echom 'Loading tags for ' .. expand ( '%:p' )
