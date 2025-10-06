@@ -1422,7 +1422,7 @@ return
   " let stack = gettagstack(1003)
   " do something else
   " call settagstack(1003, stack)
-endfunction " Tags
+endfunction " tags
 
 function g:Tags2 () abort
   let l:command = '!ctags'
