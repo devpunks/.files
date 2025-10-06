@@ -166,6 +166,7 @@ source $VIMRUNTIME/menu.vim
 " - https://stackoverflow.com/q/9511253/how-to-effectively-use-vim-wildmenu
 set wildmenu
 set infercase
+set wildignorecase
 set wildchar=<Tab>
 set wildoptions=pum
 set wildcharm=<C-z> " macros
