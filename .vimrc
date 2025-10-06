@@ -1420,6 +1420,7 @@ endfunction " tag
 nnoremap <Space> :Tags<CR>
 command! -nargs=? Tags call s:tags ( <f-args> )
 function s:tags ( ... ) abort
+  " TODO:if it starts with `/` then use fuzzy select
   let l:expression= get( a:, 1, v:null )
   echom 'Shazaaaam ' .. (l:expression == v:null )
 endfunction " Tags
