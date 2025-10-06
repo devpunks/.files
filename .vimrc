@@ -1346,7 +1346,7 @@ function s:tag ( ... ) abort
   echom 'Global tags (before): ' .. &g:tags
 
   if index( l:languages, l:type ) < 0 | return | endif
-  echom 'Found language: ' .. l:type
+  echom 'Found CTags language: ' .. l:type
   echom 'GIT root path: '
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
