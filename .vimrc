@@ -1334,7 +1334,7 @@ augroup END
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
-command! -nargs=? -complete=filetype Tag call s:tag ( <f-args> )
+command! -bang -nargs=? -complete=filetype Tag call s:tag ( <f-args> )
 function s:tag ( ... ) abort
   let l:type= get( a:, 1, &l:filetype )
   let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
