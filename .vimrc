@@ -1347,6 +1347,7 @@ function s:tag ( ... ) abort
   if l:bang | echom 'Writing tags for ' .. expand ( '%:p' ) | endif
 
   echom 'Loading tags for ' .. expand ( '%:p' )
+  echo 'Type: ' .. l:type
   echom 'Global tags (before): ' .. &g:tags
 
   if index( l:languages, &filetype ) < 0 | return | endif
