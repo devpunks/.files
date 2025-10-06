@@ -1343,6 +1343,7 @@ function s:tag ( ... ) abort
     \ { _, language -> tolower( language ) } )
 
   echo 'Type: ' .. l:type
+  echom 'Global tags (before): ' .. &g:tags
 
   if l:bang | echom 'Writing tags for ' .. expand ( '%:p' ) | endif
 
