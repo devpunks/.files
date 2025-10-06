@@ -33,6 +33,7 @@
 " Event order - https://vi.stackexchange.com/q/4493
 " Auto Commands - https://vimhelp.org/autocmd.txt.html
 " Tutorial - http://learnvimscriptthehardway.stevelosh.com
+" https://w0rp.com/blog/post/vim-script-for-the-javascripter/
 " VIM9 Script - https://vimhelp.org/vim9.txt.html#Vim9-script
 " Idiomatic .vimrc - https://github.com/romainl/idiomatic-vimrc
 " Styleguide - https://google.github.io/styleguide/vimscriptguide.xml
