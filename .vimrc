@@ -1307,6 +1307,8 @@ endfunction " indentation
   echom '(tags) definitions path: '.. &g:tags
 
 function TagFunc ( pattern, flags, info ) abort
+  let l:insert = ( mode () == 'i'))
+
   echom 'Pattern: ' .. a:pattern
   echom 'Flags: ' .. empty ( a:flags )
   echom 'Info (buf_ffname): ' .. a:info['buf_ffname']
