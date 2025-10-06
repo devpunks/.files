@@ -1573,7 +1573,7 @@ autocmd FileType ruby,python,javascript call g:Scope ()
 command! -complete=cscope Scope call Scope ()
 function g:Scope () abort
   let l:command = 'cscope'
-  " TODO: FOllow tagcase
+  " TODO: Follow tagcase
   let l:suffix = &ignorecase ? '-C' : '' " Case sensitifity flag
 
   " executable('scope')
