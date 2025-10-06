@@ -1306,7 +1306,7 @@ endfunction " indentation
   echom 'Current Dir: ' .. getcwd ()
   echom '(tags) definitions path: '.. &g:tags
 
-function TagFunc (pattern, flags, info) abort
+function TagFunc ( pattern, flags, info ) abort
   echom 'Pattern: ' .. a:pattern
   echom 'Flags: ' .. empty ( a:flags )
   echom 'Info (buf_ffname): ' .. a:info['buf_ffname']
