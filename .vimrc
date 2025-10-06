@@ -1359,10 +1359,10 @@ function s:tag ( ... ) abort
   let l:file = findfile ( l:type .. '.tags', '.;' ) " see :h tag-option
   if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. l:type | return | endif
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
-  while ! empty ( l:type )
-    echom '(' .. &filetype .. ' tags) definitions path: '.. fnamemodify ( l:type, ':p' )
-    call add( l:tags, fnamemodify ( l:type, ':p' ) )
-    let l:path = fnamemodify ( l:type, ':p:h:h' )
+  while ! empty ( l:file )
+    echom '(' .. l:type .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
+    call add( l:tags, fnamemodify ( l:file, ':p' ) )
+    let l:path = fnamemodify ( l:file, ':p:h:h' )
     echom 'The Parent Path: ' .. l:path
     let l:type = findfile ( &filetype .. '.tags', l:path .. ';' )
   endwhile
