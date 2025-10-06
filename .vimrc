@@ -1366,9 +1366,6 @@ function s:tag ( ... ) abort
   echom 'Local tags (after): '
   setlocal tags?
   echom 'Omni Completion: ' .. &l:omnifunc
-
-  return
-
 endfunction " tag
 
 nnoremap <Space> :Tags<CR>
