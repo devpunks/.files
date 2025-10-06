@@ -1344,8 +1344,6 @@ function s:tag ( ... ) abort
 
   let l:tags = []
   let l:type = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
-  echom 'GIT root path: '
-    \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
   if empty ( l:type ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while !empty ( l:type )
