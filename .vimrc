@@ -1334,7 +1334,7 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 command! -nargs=? -complete=filetype Tag call s:tag ( <f-args> )
 function s:tag ( ... ) abort
-  let l:file= get( a:, 1, expand ( '%:p' ) )
+  let l:type= get( a:, 1, &l:filetype )
   let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
 
