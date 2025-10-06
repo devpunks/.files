@@ -1337,7 +1337,7 @@ function s:tag ( ... ) abort
 
   echom 'Arguments: ' .. l:file
   echom 'Global tags (before): ' .. &g:tags
-  echom 'Loading tags for ' .. expand ('%')
+  echom 'Loading tags for ' .. l:file
 
   if index( l:languages, &filetype ) < 0 | return | endif
    echom 'Found language: ' .. &filetype
