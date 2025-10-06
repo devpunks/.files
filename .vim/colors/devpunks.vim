@@ -79,7 +79,7 @@ highlight! PmenuSbar cterm=NONE ctermbg=NONE
 highlight! PmenuSel ctermfg=NONE ctermbg=NONE
 highlight! Pmenu cterm=standout ctermfg=NONE ctermbg=NONE
   highlight! link PmenuThumb Pmenu
-highlight! WildMenu cterm=standout ctermfg=NONE ctermbg=NONE
+highlight! WildMenu term=standout,underline cterm=standout,underline ctermfg=NONE ctermbg=NONE
 
 " Search
 highlight! Search term=standout cterm=standout ctermfg=NONE ctermbg=NONE
