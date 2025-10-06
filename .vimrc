@@ -1348,7 +1348,7 @@ function s:tag ( ... ) abort
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
   if empty ( l:type ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
-  while !empty ( l:file )
+  while !empty ( l:type )
     echom '(' .. &filetype .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
     call add( l:tags, fnamemodify ( l:file, ':p' ) )
     let l:path = fnamemodify ( l:type, ':p:h:h' )
