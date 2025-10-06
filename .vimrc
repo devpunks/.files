@@ -1356,8 +1356,8 @@ function s:tag ( ... ) abort
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
   let l:tags = []
-  let l:type = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
-  if empty ( l:type ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
+  let l:file = findfile ( l:type .. '.tags', '.;' ) " see :h tag-option
+  if empty ( l:file ) | echo '⚠️ Generate CTags for ⋙ ' .. l:type | return | endif
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while ! empty ( l:type )
     echom '(' .. &filetype .. ' tags) definitions path: '.. fnamemodify ( l:type, ':p' )
