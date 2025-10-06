@@ -169,7 +169,8 @@ set infercase
 set wildignorecase
 set wildchar=<Tab>
 set wildcharm=<C-z> " macros
-set wildmode=list:longest,full
+set wildmode=list:full
+set wildoptions=pum,tagfile
 set wildignore+=.DS_STORE,storage/,.cache/,.git/,.ssh/,.npm/,node_modules/
 
 " Completion / LSPs -------------------------------------------------------
