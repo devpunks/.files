@@ -1384,7 +1384,6 @@ function s:tags ( ... ) abort
 
 return
 
-
   if empty ( l:word ) || &previewwindow | return | endif
 
   let l:tags = taglist('^' .. l:word )
