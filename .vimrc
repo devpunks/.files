@@ -1369,6 +1369,15 @@ function s:tag ( ... ) abort
 
   return
 
+endfunction " tag
+
+nnoremap <Space> :Tags<CR>
+command! -nargs=? Tags call s:tags ( <f-args> )
+function s:tags ( ... ) abort
+  " TODO:if it starts with `/` then use fuzzy select
+  let l:expression= get( a:, 1, v:null )
+  echom 'Shazaaaam ' .. (l:expression == v:null ) .. ' ' .. l:expression
+
   let l:word = expand('<cword>')
 " let pos = [bufnr()] + getcurpos()[1:]
 " let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
