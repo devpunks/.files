@@ -1644,6 +1644,7 @@ autocmd VimDefaults VimEnter * :Fuzzy
 
 " :h finddir()
 " :h findfile()
+command! Find call s:find ( <args> )
 function! s:find () abort
 endfunction " find
 
