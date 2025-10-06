@@ -1345,10 +1345,6 @@ function s:tag ( ... ) abort
   echo 'Type: ' .. l:type
   echom 'Global tags (before): ' .. &g:tags
 
-  if l:bang | echom 'Writing tags for ' .. expand ( '%:p' ) | endif
-
-  echom 'Loading tags for ' .. expand ( '%:p' )
-
   if index( l:languages, l:type ) < 0 | return | endif
   echom 'Found language: ' .. l:type
   echom 'GIT root path: '
