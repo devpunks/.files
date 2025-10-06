@@ -1417,9 +1417,11 @@ function s:tag ( ... ) abort
   " call settagstack(1003, stack)
 endfunction " tag
 
-nnoremap <Tab> :Tags<CR>
-command! Tags call Tags ()
-function g:Tags () abort
+nnoremap <Space> :Tags<CR>
+command! -nargs=? Tags call s:tags ( <f-args> )
+function s:tags ( ... ) abort
+  let l:expression= get( a:, 1, v:null )
+  echom 'Shazaaaam ' .. (l:expression == v:null )
 endfunction " Tags
 
 function g:Tags2 () abort
