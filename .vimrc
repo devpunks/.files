@@ -1323,7 +1323,7 @@ endfunction
 augroup FileDefaults
   " autocmd BufNew  * " What to do when buffer is empty
   autocmd FileType  * :Tag
-  autocmd BufWritePost * call Tags2 ()
+  autocmd BufWritePost * call Tag ()
 augroup END
 
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
