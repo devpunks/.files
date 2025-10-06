@@ -2944,6 +2944,7 @@ alias ctags="command ctags --recurse --verbose --guess-language-eagerly \
   --totals=yes \
   --sort=foldcase \
   --tag-relative=never \
+  --fields=+lKnaS \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
   --langmap=ruby:+.erb\(Gemfile\) \
