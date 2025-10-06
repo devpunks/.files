@@ -1309,6 +1309,7 @@ endfunction " indentation
 function TagFunc ( pattern, flags, info ) abort
   let l:insert = ( mode () == 'i' )
 
+  echom 'Insert: ' .. l:insert
   echom 'Pattern: ' .. a:pattern
   echom 'Flags: ' .. empty ( a:flags )
   echom 'Info (buf_ffname): ' .. a:info['buf_ffname']
