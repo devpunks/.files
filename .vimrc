@@ -1340,7 +1340,7 @@ function s:tag ( ... ) abort
   echom 'Loading tags for ' .. l:file
 
   if index( l:languages, &filetype ) < 0 | return | endif
-   echom 'Found language: ' .. &filetype
+  echom 'Found language: ' .. &filetype
   echom 'GIT root path: '
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
