@@ -1724,7 +1724,7 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call Search()
+autocmd VimDefaults VimEnter * :Search
 
 function! g:Search () abort
   if &runtimepath !~ 'vim-mucomplete' | return | endif
