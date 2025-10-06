@@ -1385,6 +1385,7 @@ function s:tags ( ... ) abort
 " let stack['items'] = [item]
 " call settagstack( winid, stack, 't' )
 
+  execute 'tselect' l:expression
 return
 
   if empty ( l:word ) || &previewwindow | return | endif
