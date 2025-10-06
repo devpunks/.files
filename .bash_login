@@ -2943,7 +2943,6 @@ function play () { clear
 alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
   --totals=yes \
   --sort=foldcase \
-  --tag-relative=never \
   --fields=+lKnaS \
   --langmap=vim:+.vimrc \
   --langmap=javascript:+.es \
