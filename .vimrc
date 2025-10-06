@@ -1302,6 +1302,7 @@ endfunction " indentation
 "  - https://andrewradev.com/2011/06/08/vim-and-ctags
 " -------------------------------------------------------------------------
   set tagstack
+  set tagbsearch " disable if not sorted
   set tagfunc=TagFunc
   let &g:tags = findfile( 'tags', '.;' )
   set tagcase=followscs " Follow smartcase & ignorecase
