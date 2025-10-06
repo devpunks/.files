@@ -1329,8 +1329,10 @@ augroup END
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
-command! Tag call s:tag ()
-function s:tag () abort
+command! -nargs=? Tog call s:tag (<f-args>)
+command! -nargs=? Tag call s:tag ()
+function s:tag (...) abort
+  echom 'Arguments' .. join(a:000, ' ')
   let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
 
