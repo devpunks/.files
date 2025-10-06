@@ -1726,7 +1726,8 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * :Search
 
-function! g:Search () abort
+command! -nargs=1 Search call s:search ( <q-args> )
+function! s:search ( ... ) abort
   if &runtimepath !~ 'vim-mucomplete' | return | endif
 
   " set complete-=t " no tags
