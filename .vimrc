@@ -1354,6 +1354,14 @@ function s:tag ( ... ) abort
 
   if l:bang
     echom 'Writing tags for ' .. expand ( '%:p' )
+    let l:command = '!ctags'
+    let l:tags = split ( &l:tags, ',' )[0]
+
+    echom '🏷️Tags : ' .. l:tags
+
+    echo 'The command $ ' .. l:command
+
+    " silent !ctags -R
   endif
 
   echom 'Loading tags for ' .. expand ( '%:p' )
