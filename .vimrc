@@ -1341,6 +1341,8 @@ function s:tag ( ... ) abort
 
   if index( l:languages, &filetype ) < 0 | return | endif
    echom 'Found language: ' .. &filetype
+  echom 'GIT root path: '
+    \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
   let l:tags = []
   let l:type = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
