@@ -1478,9 +1478,6 @@ function g:TagsStatus (mods) " abort
   return '[' .. l:icon .. ']'
 endfunction  " TagsStatus
 
-function g:Define (word) abort
-endfunction " Define
-
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
