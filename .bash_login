@@ -2940,7 +2940,7 @@ function play () { clear
 # --list-kinds=<language> - List kinds of tags
 # --list-roles
 # --sort=(yes|no|foldcase)
-alias ctags="command ctags --recurse --verbose --guess-language-eagerly \
+alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
   --totals=yes \
   --sort=foldcase \
   --tag-relative=never \
