@@ -1364,7 +1364,7 @@ function s:tag ( ... ) abort
     call add( l:tags, fnamemodify ( l:file, ':p' ) )
     let l:path = fnamemodify ( l:file, ':p:h:h' )
     echom 'The Parent Path: ' .. l:path
-    let l:type = findfile ( &filetype .. '.tags', l:path .. ';' )
+    let l:file = findfile ( l:type .. '.tags', l:path .. ';' )
   endwhile
 
   " TODO: remove duplicates from parent in tagstack
