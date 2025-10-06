@@ -1354,7 +1354,7 @@ function s:tag ( ... ) abort
   echom 'Found language: ' .. l:type
   echom 'GIT root path: '
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
-return
+
   let l:tags = []
   let l:type = findfile ( &filetype .. '.tags', '.;' ) " see :h tag-option
   if empty ( l:type ) | echo '⚠️ Generate CTags for ⋙ ' .. &filetype | return | endif
