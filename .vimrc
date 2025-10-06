@@ -1744,7 +1744,7 @@ function! s:search ( ... ) abort
   let g:mucomplete#chains['html'] = chain
   let g:mucomplete#chains['css'] = g:mucomplete#chains['html']
   let g:mucomplete#chains['default'] = { 'default' : default }
-endfunction " Search
+endfunction " search
 
 " -------------------------------------------------------------------------
 " Ultisnips - https://github.com/SirVer/ultisnips
