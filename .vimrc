@@ -1351,7 +1351,7 @@ function s:tag ( ... ) abort
   while !empty ( l:file )
     echom '(' .. &filetype .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
     call add( l:tags, fnamemodify ( l:file, ':p' ) )
-    let l:path = fnamemodify(l:file, ':p:h:h')
+    let l:path = fnamemodify ( l:type, ':p:h:h' )
     echom 'The Parent Path: ' .. l:path
     let l:file = findfile ( &filetype .. '.tags', l:path .. ';' )
   endwhile
