@@ -1648,6 +1648,7 @@ command! -nargs=1 Find call s:find ( <q-args> )
 function! s:find ( ... ) abort
   let l:term = a:1
 
+  echom l:term
 endfunction " find
 
 command! Fuzzy call s:fuzzy ()
