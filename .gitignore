@@ -64,9 +64,9 @@ Library/
 Music/
 
 # node
-.npm
-.nvm
-node_modules
+.npm/
+.nvm/
+node_modules/
 .node_repl_history
 
 # ruby
