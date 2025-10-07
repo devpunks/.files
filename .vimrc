@@ -1395,12 +1395,11 @@ function s:tags ( ... ) abort
   let l:expression = get ( a:, 1, expand ( '<cword>' ) )
   echom 'Shazaaaam ' .. empty ( l:expression ) .. ' ' .. l:expression
 
-" let pos = [bufnr()] + getcurpos()[1:]
-" let item = {'bufnr': pos[0], 'from': pos, 'tagname': tag }
-" let winid = win_getid()
-" let stack = gettagstack( winid )
-" let stack['items'] = [item]
-" call settagstack( winid, stack, 't' )
+  let item = {'bufnr': bufnr(), 'from': getcurpos(), 'tagname': l:expression }
+  let winid = win_getid()
+  let stack = gettagstack( winid )
+  let stack['items'] = [item]
+  call settagstack( winid, stack, 't' )
 
   if empty ( l:expression ) || &previewwindow | return | endif
 
