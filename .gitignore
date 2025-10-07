@@ -73,7 +73,7 @@ node_modules/
 .gem/
 *.gem
 .rbenv
-.bundle
+.bundle/
 .irb_history
 Guardfile
 
