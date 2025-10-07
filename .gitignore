@@ -1,8 +1,14 @@
 # https://github.com/github/gitignore
 
 # configuration
-config
-.config
+config/
+.config/
+*.config
+
+# credentials
+.ssh/
+.gnupg/
+.cache/
 
 # dotfiles
 .ssh
