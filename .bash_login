@@ -2942,7 +2942,6 @@ function play () { clear
 # --sort=(yes|no|foldcase)
 alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
   --totals=yes \
-  --totals=yes \
   --sort=foldcase \
   --fields=+lKnaS \
   --tag-relative=never \
