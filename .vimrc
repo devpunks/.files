@@ -172,7 +172,7 @@ set wildchar=<Tab>
 set wildcharm=<C-z> " macros
 set wildmode=list:full
 set wildoptions=pum,tagfile
-set wildignore+=.DS_STORE,storage/,.cache/,.git/,.ssh/,.npm/,node_modules/
+set wildignore+=.DS_STORE,.git/,.bundle/,.cache/,.config/,.gem/,.local/,.npm/,.gnupg/,.ssh/,.vim/,bin/,downloads/,log/,logs/,node_modules/,storage/,tmp/,vendor/,images/
 
 " Completion / LSPs -------------------------------------------------------
 " https://linuxhandbook.com/vim-auto-complete
