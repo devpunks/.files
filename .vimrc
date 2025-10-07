@@ -1394,7 +1394,7 @@ nnoremap <Space> :Tags<CR>
 command! -complete=tag_listfiles -nargs=? Tags call s:tags ( <f-args> )
 function s:tags ( ... ) abort
   " TODO:if it starts with `/` then use fuzzy select
-  let l:expression= get ( a:, 1, expand ( '<cword>' ) )
+  let l:expression = get ( a:, 1, expand ( '<cword>' ) )
   echom 'Shazaaaam ' .. empty ( l:expression ) .. ' ' .. l:expression
 
 " let pos = [bufnr()] + getcurpos()[1:]
