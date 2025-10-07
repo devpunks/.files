@@ -10,7 +10,18 @@
 .bookmarks
 .NERDmarks
 
-# Notes
+# configuration
+config/
+.config/
+*.config
+
+# credentials
+.ssh/
+.gnupg/
+
+# miscellaneous
+.vim/
+.local/
 NOTES*
 
 # logs
