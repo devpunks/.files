@@ -39,6 +39,12 @@ logs
 # backups
 *.bak
 
+# binaries
+bin
+
+# temporary
+tmp
+
 # termux
 storage
 downloads
