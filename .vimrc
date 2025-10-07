@@ -1405,7 +1405,6 @@ function s:tags ( ... ) abort
 " call settagstack( winid, stack, 't' )
 
   execute 'tselect' l:expression
-return
 
   if empty ( l:word ) || &previewwindow | return | endif
 
