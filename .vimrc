@@ -1411,6 +1411,8 @@ function s:tags ( ... ) abort
   let l:tags = taglist ('^' .. l:word )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
+return
+
   let list = []
   for tag in l:tags
     call add( list, {
