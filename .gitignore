@@ -45,6 +45,7 @@ ctags
 
 # backups
 *.bak
+*.session
 .cache/
 
 # binaries
