@@ -1406,7 +1406,7 @@ function s:tags ( ... ) abort
 
   execute 'tselect' l:expression
 
-  if empty ( l:word ) || &previewwindow | return | endif
+  if empty ( l:expression ) || &previewwindow | return | endif
 
   let l:tags = taglist ( '^' .. l:word )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
