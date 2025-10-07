@@ -70,6 +70,9 @@ Music/
 node_modules/
 .node_repl_history
 
+# rails
+app/assets/images
+
 # ruby
 .gem/
 *.gem
