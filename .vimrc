@@ -1363,8 +1363,6 @@ function s:tag ( ... ) abort
     \]
     echo system ( 'source ~/.bash_login && type ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
-    let l:command = '!ctags'
-    let l:tags = split ( &l:tags, ',' )[0]
 
     echom '🏷️Tags : ' .. l:tags
 
