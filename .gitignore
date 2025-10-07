@@ -12,7 +12,6 @@ config/
 
 # dotfiles
 .gist
-.cache
 .less
 .lesskey
 .local
