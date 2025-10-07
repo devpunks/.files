@@ -37,8 +37,6 @@ ctags
 *cscope*
 
 # history
-log
-logs
 .bash_history
 .tmux_history
 
