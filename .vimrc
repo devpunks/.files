@@ -1322,8 +1322,8 @@ function TagFunc ( pattern, flags, info ) abort
   " NOT ALLOWED TO CHANGE TAGSTACK
 " let result = taglist ( a:pattern )
 
-  return result
-  " return v:null " Perform standard tag lookup instead
+" return result
+  return [] " Perform standard tag lookup instead
 endfunction
 
 augroup FileDefaults
