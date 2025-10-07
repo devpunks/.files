@@ -1405,7 +1405,7 @@ function s:tags ( ... ) abort
 
   execute 'tselect' l:expression
 
-  let l:tags = taglist ( '^' .. l:expression )
+" let l:tags = taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
 return
