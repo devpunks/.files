@@ -47,7 +47,7 @@ ctags
 *.bak
 
 # binaries
-bin
+bin/
 
 # temporary
 tmp
