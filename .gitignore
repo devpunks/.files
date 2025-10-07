@@ -8,7 +8,6 @@
 .less
 .lesskey
 .local
-.bundle
 .docker
 .eclipse
 .viminfo
