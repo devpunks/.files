@@ -2949,7 +2949,7 @@ alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
   --langmap=javascript:+.es \
   --langmap=ruby:+.erb\(Gemfile\) \
   --langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout \
-  --exclude={.git,.bundle,.cache,.config,.gem,.local,.npm,.gnupg,.ssh,.vim,bin,log,logs,node_modules,storage,tmp,vendor,images} \
+  --exclude={.git,.bundle,.cache,.config,.gem,.local,.npm,.gnupg,.ssh,.vim,bin,downloads,log,logs,node_modules,storage,tmp,vendor,images} \
 " # ctags
 
 #  https://docs.ctags.io/en/latest/man-pages.html
