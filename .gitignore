@@ -21,6 +21,12 @@ config
 # Notes
 NOTES*
 
+# logs
+log/
+*.log
+logs/
+*.logs
+
 # tags
 tags
 .tags
