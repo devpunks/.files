@@ -1367,6 +1367,10 @@ function s:tag ( ... ) abort
     let l:tags = split ( &l:tags, ',' )[0]
     echom '🏷️Tags : ' .. l:tags
 
+    let l:command = 'ctags ' .. join ( l:flags, ' ' )
+      \.. ' --languages=' .. l:type
+      \ .. ' -o ' .. l:tags
+      \ .. ' ' .. expand ( '%:p' )
     echo 'The command $ ' .. l:command
 
     " silent !ctags -R
