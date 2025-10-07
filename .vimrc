@@ -1375,7 +1375,6 @@ function s:tag ( ... ) abort
 
     call system ( l:command .. ' &' )
     echo v:shell_error
-    " silent !ctags -R
   endif
 
   echom 'Loading tags for ' .. expand ( '%:p' )
