@@ -67,6 +67,7 @@ node_modules
 .rbenv
 .bundle
 .irb_history
+Guardfile
 
 # python
 .python_history
