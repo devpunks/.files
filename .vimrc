@@ -1351,6 +1351,17 @@ function s:tag ( ... ) abort
     \ .. trim ( system ( 'GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
   if l:bang
+    let flags = [
+    \ '--verbose --append --recurse --guess-language-eagerly',
+    \ '--totals=yes --sort=foldcase --fields=+lknaS --tag-relative=never',
+    \ '--langmap=vim:+.vimrc',
+    \ '--langmap=javascript:+.es',
+    \ '--langmap=ruby:+.erb\(Gemfile\)',
+    \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
+    \ '--exclude={.bundle,.cache,.config,.local,.npm,.ssh,.vim,bin,log,logs,node_modules,storage,tmp,vendor}',
+    \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
+    \]
+    echo system ( 'source ~/.bash_login && type ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
     let l:command = '!ctags'
     let l:tags = split ( &l:tags, ',' )[0]
