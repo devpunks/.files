@@ -15,7 +15,6 @@ config/
 .gist
 .less
 .lesskey
-.local
 .docker
 .eclipse
 .viminfo
