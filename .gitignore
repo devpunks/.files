@@ -4,6 +4,7 @@
 .ssh
 .gnupg
 .gist
+.cache
 .less
 .lesskey
 .local
