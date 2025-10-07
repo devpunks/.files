@@ -57,11 +57,11 @@ storage/
 downloads/
 
 # OSX
-Applications
-Desktop
-Downloads
-Library
-Music
+Applications/
+Desktop/
+Downloads/
+Library/
+Music/
 
 # node
 .npm
