@@ -1,16 +1,5 @@
 # https://github.com/github/gitignore
 
-# configuration
-config/
-.config/
-*.config
-
-# credentials
-.ssh/
-.gnupg/
-.cache/
-.local/
-
 # dotfiles
 .gist
 .less
