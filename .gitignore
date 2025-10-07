@@ -56,5 +56,4 @@ node_modules
 .irb_history
 
 # python
-.cache
 .python_history
