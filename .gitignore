@@ -9,6 +9,7 @@ config/
 .ssh/
 .gnupg/
 .cache/
+.local/
 
 # dotfiles
 .gist
