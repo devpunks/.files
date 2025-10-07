@@ -52,6 +52,8 @@ node_modules
 # ruby
 .gem
 .rbenv
+.bundle
+.irb_history
 
 # python
 .cache
