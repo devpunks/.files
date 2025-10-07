@@ -1408,7 +1408,7 @@ function s:tags ( ... ) abort
 
   if empty ( l:expression ) || &previewwindow | return | endif
 
-  let l:tags = taglist ( '^' .. l:word )
+  let l:tags = taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
 return
