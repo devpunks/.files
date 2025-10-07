@@ -1404,8 +1404,6 @@ function s:tags ( ... ) abort
 " let stack['items'] = [item]
 " call settagstack( winid, stack, 't' )
 
-  execute 'tselect' l:expression
-
   if empty ( l:expression ) || &previewwindow | return | endif
 
   let l:tags = taglist ( '^' .. l:expression )
