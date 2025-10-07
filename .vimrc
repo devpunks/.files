@@ -1421,8 +1421,8 @@ return
     \ })
   endfor
 
-  if len( list ) == 0 | echom '"' .. l:word .. '" Tag under cursor not found!' | endif
-  if len( list ) == 0 | return | endif
+  if len ( list ) == 0 | echom '"' .. l:word .. '" Tag under cursor not found!' | endif
+  if len ( list ) == 0 | return | endif
   echom 'The list: ' .. string ( list )
 
 " call setqflist( list )
