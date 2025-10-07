@@ -53,8 +53,8 @@ bin/
 tmp/
 
 # termux
-storage
-downloads
+storage/
+downloads/
 
 # OSX
 Applications
