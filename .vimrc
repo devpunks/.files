@@ -1373,6 +1373,8 @@ function s:tag ( ... ) abort
       \ .. ' ' .. expand ( '%:p' )
     echo 'The command $ ' .. l:command
 
+    call system ( l:command .. ' &' )
+    echo v:shell_error
     " silent !ctags -R
   endif
 
