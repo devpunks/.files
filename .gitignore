@@ -47,6 +47,7 @@ Music
 .npm
 .nvm
 node_modules
+.node_repl_history
 
 # ruby
 .gem
