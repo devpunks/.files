@@ -1358,7 +1358,7 @@ function s:tag ( ... ) abort
     \ '--langmap=javascript:+.es',
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
-    \ '--exclude={.git,.bundle,.cache,.config,.local,.npm,.gnupg,.ssh,.vim,bin,log,logs,node_modules,storage,tmp,vendor,images}',
+    \ '--exclude={.git,.bundle,.cache,.config,.gem,.local,.npm,.gnupg,.ssh,.vim,bin,log,logs,node_modules,storage,tmp,vendor,images}',
     \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
     \]
     echo system ( 'command -v ctags' )
