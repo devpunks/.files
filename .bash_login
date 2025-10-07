@@ -3074,7 +3074,7 @@ function scope () { set +o noclobber # TODO: Remove
 
   # starscope --verbose \
   #   --export cscope,cscope.js.out \
-  #   --exclude ".git,.bundle,.cache,.config,.ssh,.npm,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets,app/javascript" \
+  #   --exclude ".git,.bundle,.cache,.config,.gnupg,.npm,.ssh,.vim,Gemfile*,bin,log,logs,node_modules,tmp,app/assets/images" \
   #   $( cat $file )
   # starscope --summary
   fi # Javascript
