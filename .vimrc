@@ -1424,6 +1424,7 @@ function s:tags ( ... ) abort
 " let l:tags = taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
+  echo l:tags
 return
 
   let list = []
