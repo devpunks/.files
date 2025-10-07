@@ -51,7 +51,6 @@ node_modules
 
 # ruby
 .gem
-.irb_history
 .rbenv
 
 # python
