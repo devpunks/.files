@@ -70,7 +70,8 @@ node_modules/
 .node_repl_history
 
 # ruby
-.gem
+.gem/
+*.gem
 .rbenv
 .bundle
 .irb_history
