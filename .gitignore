@@ -45,6 +45,7 @@ ctags
 
 # backups
 *.bak
+.cache/
 
 # binaries
 bin/
