@@ -1301,7 +1301,7 @@ endfunction " indentation
 "  - https://gist.github.com/olmokramer/20a3922f052b5c4e52a122e9a0ec8722
 "  - https://andrewradev.com/2011/06/08/vim-and-ctags
 "  - https://andrewradev.com/2011/10/15/vim-and-ctags-finding-tag-definitions
-"  - TODO: TAGSCOPE PLUGIN - https://stackoverflow.com/questions/7932694/lookup-a-specific-kind-of-tag-in-vim#comment81747695_7932694
+"  - TODO: TAGSCOPE PLUGIN - https://stackoverflow.com/q/7932694/lookup-a-specific-kind-of-tag-in-vim#comment81747695_7932694
 " -------------------------------------------------------------------------
   set tagstack
   set tagbsearch " disable if not sorted
