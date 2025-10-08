@@ -1288,6 +1288,7 @@ endfunction " indentation
 "  :h ctags
 "  :h tselect
 "  :h tagstack
+"  :h file-searching (for ;)
 "  <C-]> jump to & push tag
 "  <C-t> pop tag (:pop)
 "  - https://github.com/alvan/vim-indexer
