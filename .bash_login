@@ -724,8 +724,7 @@ alias nonce='{ printf `randchars` \
 }' # nonce
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
-alias donce='{
-  declare EPOCH=${EPOCHSECONDS}
+alias donce='{ declare EPOCH=${EPOCHSECONDS}
   echo ; echo $( command date -d "@${EPOCH}" ) ":" ${EPOCH}
   echo ; echo "SHA512256 SUM (shasum --algorithm 512256):"
   command date -d "@${EPOCH}" | shasum --algorithm 512256 | command cut -d" " -f 1 ;
