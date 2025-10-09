@@ -1008,7 +1008,7 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 " -------------------------------------------------------------------------
 " git-blame - https://git-scm.com/docs/git-blame
 " -------------------------------------------------------------------------
-autocmd VimDefaults CursorHold * :Blame
+" autocmd VimDefaults CursorHold * :Blame
 
 function Baz (...)
   echom 'Baz'
