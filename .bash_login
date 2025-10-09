@@ -747,7 +747,7 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   echo ; echo "OPENSSL BASE 64 (openssl base64):"
   command date -d "@${EPOCH}" | command openssl base64
   echo ; echo "BASE 64 (basenc --base64):"
-  command date -d "@${EPOCH}" | command basenc --base64;
+  command date -d "@${EPOCH}" | command basenc --base64
   echo ; echo "BASE 32 (base32):"
   command date -d "@${EPOCH}" | command base32;
   echo ; echo "BASE 32 (basenc --base32):"
