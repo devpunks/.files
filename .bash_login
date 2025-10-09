@@ -748,7 +748,7 @@ alias donce='{
   echo ; echo "OPENSSL BASE 64 (openssl base64):"
   command date +%s%N | command openssl base64;
   echo
-}" # donce
+}' # donce
 
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
 export SALT='12345678abcdefgh' # TODO: generate SALT
