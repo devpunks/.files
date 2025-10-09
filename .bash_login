@@ -733,7 +733,7 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   echo ; echo "SHA512 SUM (sha512sum):"
   command date -d "@${EPOCH}" | sha512sum | command cut -d" " -f 1
   echo ; echo "SHA384 SUM (sha384sum):"
-  command date -d "@${EPOCH}" | sha384sum | command cut -d" " -f 1 ;
+  command date -d "@${EPOCH}" | sha384sum | command cut -d" " -f 1
   echo ; echo "SHA256 SUM (sha256sum):"
   command date -d "@${EPOCH}" | sha256sum | command cut -d" " -f 1 ;
   echo ; echo "SHA224 SUM (sha224sum):"
