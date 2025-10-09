@@ -91,3 +91,6 @@ Guardfile
 
 # python
 .python_history
+
+# postgresql
+.psql_history
