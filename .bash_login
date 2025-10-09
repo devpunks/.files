@@ -749,7 +749,9 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   command date -d @"${EPOCH}" | md5sum | command cut -d" " -f 1
 
   echo ; echo "OPENSSL BASE 64 (openssl base64):"
-  command date -d "@${EPOCH}" | command openssl base64
+  command date -d @"${EPOCH}" | command openssl base64
+  echo ; echo "BASE 64 (base64):"
+  command date -d @"${EPOCH}" | command base64
   echo ; echo "BASE 64 (basenc --base64):"
   command date -d "@${EPOCH}" | command basenc --base64
   echo ; echo "BASE 32 (base32):"
