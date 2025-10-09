@@ -1737,7 +1737,7 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * :Search
+autocmd VimDefaults VimEnter * :Search ''
 
 command! -nargs=1 Search call s:search ( <q-args> )
 function! s:search ( ... ) abort
