@@ -721,6 +721,8 @@ function snowflake () {
 alias nonce='{ declare CHARS=$( randchars )
   echo ; echo "BASE 64 (basenc --base64):"
   printf ${CHARS} | head -c 16 | basenc --base64
+  echo ; echo "BASE 64 Encoded Nonce (base64):"
+  printf ${CHARS} | head -c 16 | base64
 }' # nonce
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
