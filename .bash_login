@@ -736,7 +736,7 @@ alias donce='{
   echo ; echo "SHA384 SUM (sha384sum):"
   command date -d "@${EPOCH}" | sha384sum | command cut -d" " -f 1 ;
   echo ; echo "SHA256 SUM (sha256sum):"
-  command date +%s%N | sha256sum | command cut -d" " -f 1 ;
+  command date -d "@${EPOCH}" | sha256sum | command cut -d" " -f 1 ;
   echo ; echo "SHA224 SUM (sha224sum):"
   command date +%s%N | sha224sum | command cut -d" " -f 1 ;
   echo ; echo "SHA1 SUM (sha1sum):"
