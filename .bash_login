@@ -727,6 +727,7 @@ alias nonce='{ declare CHARS=$( randchars | head -c 16 )
   echo ; echo "BASE 64 (basenc --base64):"
   printf "${CHARS}" | basenc --base64
 
+  unset CHARS ; echo "${CHARS}"
   declare CHARS=$( randchars | head -c 32 )
   echo ; echo "Random 32 Characters (256 bit): ${CHARS}"
   echo ; echo "BASE 64 Encoded Nonce (openssl enc -base64):"
