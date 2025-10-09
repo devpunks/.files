@@ -724,8 +724,8 @@ alias nonce='{ declare CHARS=$( randchars )
   echo ; echo "BASE 64 Encoded Nonce (base64):"
   printf "${CHARS}" | head -c 16 | base64
   echo ; echo "BASE 64 Encoded Nonce (openssl enc -base64):"
-  printf ${CHARS} | head -c 16 | openssl enc -base64
-  unset CHARS ; echo ${CHARS}
+  printf "${CHARS}" | head -c 16 | openssl enc -base64
+  unset CHARS ; echo "${CHARS}"
 }' # nonce
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
@@ -759,7 +759,7 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   command date -d "@${EPOCH}" | command basenc --base32
   echo ; echo "BASE 16 (basenc --base16):"
   command date -d "@${EPOCH}" | command basenc --base16
-  unset EPOCH ; echo ${EPOCH}
+  unset EPOCH ; echo "${EPOCH}"
 }' # donce
 
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
