@@ -1386,7 +1386,7 @@ function s:tag ( ... ) abort
   echom 'Loading tags for ' .. expand ( '%:p' )
 
   let l:tags = []
-  let l:file = findfile ( l:type .. '.tags', '.;' ) " see :h tag-option
+  let l:file = findfile ( l:type .. '.tags', expand('%:p:h') .. ';' .. l:root ) " see :h tag-option
   if empty ( l:file ) | echom '⚠️ Generate CTags for ⋙ ' .. l:type | return | endif
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while ! empty ( l:file )
