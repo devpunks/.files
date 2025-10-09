@@ -721,6 +721,10 @@ function snowflake () {
 alias nonce='{ declare CHARS=$( randchars )
   echo ; echo "BASE 64 Encoded Nonce (openssl enc -base64):"
   printf "${CHARS}" | head -c 16 | openssl enc -base64
+  echo ; echo "BASE 64 Encoded Nonce (base64):"
+  printf "${CHARS}" | head -c 16 | base64
+  echo ; echo "BASE 64 (basenc --base64):"
+  printf "${CHARS}" | head -c 16 | basenc --base64
   unset CHARS ; echo "${CHARS}"
 }' # nonce
 
