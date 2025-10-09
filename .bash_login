@@ -718,8 +718,7 @@ function snowflake () {
 # Initialization Vector is size of block (16bytes)
 # https://en.m.wikipedia.org/wiki/Initialization_vector
 # https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/nonce
-alias nonce='{
-  printf `randchars` | head -c 16 | base64
+alias nonce='{ declare CHARS=$( randchars )
 }' # nonce
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
