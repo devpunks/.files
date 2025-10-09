@@ -746,7 +746,7 @@ alias donce='{
   echo ; echo "BASE 64 (base64):"
   command date -d "@${EPOCH}" | command base64;
   echo ; echo "OPENSSL BASE 64 (openssl base64):"
-  command date +%s%N | command openssl base64;
+  command date -d "@${EPOCH}" | command openssl base64;
   echo
 }' # donce
 
