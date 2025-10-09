@@ -719,10 +719,6 @@ function snowflake () {
 # https://en.m.wikipedia.org/wiki/Initialization_vector
 # https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/nonce
 alias nonce='{ declare CHARS=$( randchars )
-  echo ; echo "BASE 64 (basenc --base64):"
-  printf "${CHARS}" | head -c 16 | basenc --base64
-  echo ; echo "BASE 64 Encoded Nonce (base64):"
-  printf "${CHARS}" | head -c 16 | base64
   echo ; echo "BASE 64 Encoded Nonce (openssl enc -base64):"
   printf "${CHARS}" | head -c 16 | openssl enc -base64
   unset CHARS ; echo "${CHARS}"
