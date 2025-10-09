@@ -85,7 +85,6 @@ app/assets/images
 vendor/
 *.gem
 .rbenv
-.bundle/
 .irb_history
 Guardfile
 vendor/
