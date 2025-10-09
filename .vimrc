@@ -1342,6 +1342,7 @@ function s:tag ( ... ) abort
   let l:type= get ( a:, 2, &l:filetype )
   let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
     \ { _, language -> tolower( language ) } )
+  let l:root = fnamemodify ( finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME ) ?? $HOME , ':p' )
 
   echom 'Type: ' .. l:type
   echom 'Global tags (before): ' .. &g:tags
