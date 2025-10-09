@@ -749,6 +749,8 @@ alias donce='{
   command date -d "@${EPOCH}" | command openssl base64;
   echo ; echo "BASE 32 (basenc --base32):"
   command date -d "@${EPOCH}" | command basenc --base32;
+  echo ; echo "BASE 16 (basenc --base16):"
+  command date -d "@${EPOCH}" | command basenc --base16;
   echo
 }' # donce
 
