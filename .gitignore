@@ -81,6 +81,8 @@ app/assets/images
 
 # ruby
 .gem/
+.bundle/
+vendor/
 *.gem
 .rbenv
 .bundle/
