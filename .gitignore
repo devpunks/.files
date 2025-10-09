@@ -88,7 +88,6 @@ vendor/
 .irb_history
 .guard_history
 Guardfile
-vendor/
 
 # python
 .python_history
