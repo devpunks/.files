@@ -771,6 +771,7 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   command date -d @"${EPOCH}" | command basenc --base32
   echo ; echo "BASE 16 (basenc --base16):"
   command date -d @"${EPOCH}" | command basenc --base16
+
   unset EPOCH ; echo "${EPOCH}"
 }' # donce
 
