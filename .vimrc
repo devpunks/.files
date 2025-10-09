@@ -1367,7 +1367,7 @@ function s:tag ( ... ) abort
     \ '--exclude={.git,.bundle,.cache,.config,.gem,.local,.npm,.gnupg,.ssh,.vim,bin,downloads,log,logs,node_modules,storage,tmp,vendor,images}',
     \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
     \]
-    echo system ( 'command -v ctags' )
+    echo 'CTags Executable: ' .. system ( 'command -v ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
 
     let l:tags = split ( &l:tags, ',' )[0]
