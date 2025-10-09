@@ -755,7 +755,7 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   echo ; echo "BASE 16 (basenc --base16):"
   command date -d "@${EPOCH}" | command basenc --base16
   unset EPOCH
-  echo
+  echo $EPOCH
 }' # donce
 
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
