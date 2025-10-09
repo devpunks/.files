@@ -732,7 +732,7 @@ alias nonce='{ declare CHARS=$( randchars )
 alias donce='{ declare EPOCH=${EPOCHSECONDS}
   echo ; echo $( command date -d "@${EPOCH}" ) ":" ${EPOCH}
   echo ; echo "SHA512256 SUM (shasum --algorithm 512256):"
-  command date -d "@${EPOCH}" | shasum --algorithm 512256 | command cut -d" " -f 1
+  command date -d @"${EPOCH}" | shasum --algorithm 512256 | command cut -d" " -f 1
   echo ; echo "SHA512224 SUM (shasum --algorithm 512224):"
   command date -d "@${EPOCH}" | shasum --algorithm 512224 | command cut -d" " -f 1
   echo ; echo "SHA512 SUM (sha512sum):"
