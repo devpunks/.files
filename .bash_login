@@ -724,15 +724,26 @@ alias nonce='{ printf `randchars` \
 }' # nonce
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
-alias donce="{
-  echo ; echo $(command date) ':' $( command date +%s%N )
-  echo ; echo 'SHA512 SUM (sha512sum):'
-  command date +%s%N | sha512sum | command cut -d' ' -f 1 ;
-  echo ; echo 'SHA256 SUM (sha256sum):'
-  command date +%s%N | sha256sum | command cut -d' ' -f 1 ;
-  echo ; echo 'MD5 SUM (md5sum):'
-  command date +%s%N | md5sum | command cut -d' ' -f 1 ;
-  echo ; echo 'BASE 64 (base64):'
+alias donce='{
+  declare EPOCH=${EPOCHSECONDS}
+  echo ; echo $( command date -d @"${EPOCH}" ) ":" ${EPOCH}
+  echo ; echo "SHA512256 SUM (shasum --algorithm 512256):"
+  command date +%s%N | shasum --algorithm 512256 | command cut -d" " -f 1 ;
+  echo ; echo "SHA512224 SUM (shasum --algorithm 512224):"
+  command date +%s%N | shasum --algorithm 512224 | command cut -d" " -f 1 ;
+  echo ; echo "SHA512 SUM (sha512sum):"
+  command date +%s%N | sha512sum | command cut -d" " -f 1 ;
+  echo ; echo "SHA384 SUM (sha384sum):"
+  command date +%s%N | sha384sum | command cut -d" " -f 1 ;
+  echo ; echo "SHA256 SUM (sha256sum):"
+  command date +%s%N | sha256sum | command cut -d" " -f 1 ;
+  echo ; echo "SHA224 SUM (sha224sum):"
+  command date +%s%N | sha224sum | command cut -d" " -f 1 ;
+  echo ; echo "SHA1 SUM (sha1sum):"
+  command date +%s%N | sha1sum | command cut -d" " -f 1 ;
+  echo ; echo "MD5 SUM (md5sum):"
+  command date +%s%N | md5sum | command cut -d" " -f 1 ;
+  echo ; echo "BASE 64 (base64):"
   command date +%s%N | command base64;
   echo ; echo 'OPENSSL BASE 64 (openssl base64):'
   command date +%s%N | command openssl base64;
