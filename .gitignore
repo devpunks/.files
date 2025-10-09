@@ -48,6 +48,7 @@ ctags
 *.bak
 *.session
 .cache/
+.Trash/
 
 # binaries
 bin/
