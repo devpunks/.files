@@ -718,8 +718,8 @@ function snowflake () {
 # Initialization Vector is size of block (16bytes)
 # https://en.m.wikipedia.org/wiki/Initialization_vector
 # https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/nonce
-alias nonce='{ declare CHARS=$( randchars )
-  echo ; echo Random Characters: ${CHARS}
+alias nonce='{ declare CHARS=$( randchars | head -c 16 )
+  echo ; echo "Random 16 Characters (128 bit): ${CHARS}"
   echo ; echo "BASE 64 Encoded Nonce (openssl enc -base64):"
   printf "${CHARS}" | head -c 16 | openssl enc -base64
   echo ; echo "BASE 64 Encoded Nonce (base64):"
