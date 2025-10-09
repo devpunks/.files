@@ -719,6 +719,8 @@ function snowflake () {
 # https://en.m.wikipedia.org/wiki/Initialization_vector
 # https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/nonce
 alias nonce='{ declare CHARS=$( randchars )
+  echo ; echo "BASE 64 (basenc --base64):"
+  printf ${CHARS} | head -c 16 | basenc --base64
 }' # nonce
 
 # Date nonce with epoch seconds & nanoseconds (billionths)
