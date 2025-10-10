@@ -1349,10 +1349,6 @@ function s:tag ( ... ) abort
 
   if l:nobang | return | endif
 
-  if index( l:languages, l:type ) < 0 | return | endif
-  echom 'Found CTags language: ' .. l:type
-
-  if l:bang
     let flags = [
     \ '--verbose --append --recurse --guess-language-eagerly',
     \ '--totals=yes --sort=foldcase --fields=+lknaS --tag-relative=never',
