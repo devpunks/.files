@@ -1318,7 +1318,8 @@ function TagFunc ( pattern, flags, info ) abort
   echom 'Insert: ' .. l:insert
   echom 'Pattern: ' .. a:pattern
   " NOT ALLOWED TO CHANGE TAGSTACK
-" let result = taglist ( a:pattern )
+  " let result = taglist ( a:pattern )
+  let l:result = [] " Perform standard tag lookup instead
 
 " return result
   return [] " Perform standard tag lookup instead
