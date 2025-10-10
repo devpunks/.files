@@ -1321,8 +1321,7 @@ function TagFunc ( pattern, flags, info ) abort
   " let result = taglist ( a:pattern )
   let l:result = [] " Perform standard tag lookup instead
 
-" return result
-  return [] " Perform standard tag lookup instead
+  return result
 endfunction
 
 augroup FileDefaults
