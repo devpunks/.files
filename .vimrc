@@ -1344,8 +1344,8 @@ function s:tag ( ... ) abort
     \ finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
 
-  echom 'Type: ' .. l:type
-  echom 'Global tags (before): ' .. &g:tags
+  function! s:write () closure
+    echo 'WHATT: ' .. l:nobang
 
   echom 'Root: ' .. l:root
   echom 'GIT root path: '
