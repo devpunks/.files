@@ -1348,7 +1348,7 @@ function s:tag ( ... ) abort
     \ ?? $HOME , ':p' )
 
   function! s:write () closure
-    echo 'WHATT: ' .. l:nobang
+    echo 'Bang: ' .. l:nobang
 
   if l:nobang | return | endif
 
