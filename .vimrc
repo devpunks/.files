@@ -1319,6 +1319,10 @@ function TagFunc ( pattern, flags, info ) abort
   echom 'Pattern: ' .. a:pattern
   " NOT ALLOWED TO CHANGE TAGSTACK
   let l:result = [] " Perform standard tag lookup instead
+  let l:results = taglist ( a:pattern )
+
+  echo 'Found ' .. len( l:results ) .. ' Results'
+  echo 'The Results: ' .. join ( results, ' ' )
 
   return result
 endfunction
