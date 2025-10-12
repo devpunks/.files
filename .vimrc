@@ -1322,7 +1322,7 @@ function TagFunc ( pattern, flags, info ) abort
   let l:results = taglist ( a:pattern )
 
   echo 'Found ' .. len( l:results ) .. ' Results'
-  echo 'The Results: ' .. join ( l:results, ' ' )
+  echo 'The Results: ' .. join ( l:results, ', ' )
 
   return l:result
 endfunction
