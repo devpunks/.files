@@ -1461,7 +1461,7 @@ function s:tags ( ... ) abort
   execute 'tselect' l:expression
 
 call setqflist ( l:stack['items'] )
-copen " Local QuickFix window
+copen 5 " Local QuickFix window
 
 return
 
