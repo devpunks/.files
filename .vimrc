@@ -1466,9 +1466,6 @@ function s:tags ( ... ) abort
   " Actually select from tags file
   execute 'tselect' l:expression
 
-call setqflist ( l:stack['items'] )
-copen l:height " Local QuickFix window
-
 return
 
   let list = []
