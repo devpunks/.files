@@ -1422,7 +1422,6 @@ nnoremap <Space> :Tags<CR>
 command! -complete=tag_listfiles -nargs=? Tags call s:tags ( <f-args> )
 function s:tags ( ... ) abort
   let l:height = 5
-  " TODO:if it starts with `/` then use fuzzy select
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
   let l:expression = trim  ( get ( a:, 1, expand ( '<cword>' ) ) )
