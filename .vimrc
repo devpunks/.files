@@ -1469,8 +1469,8 @@ function s:tags ( ... ) abort
   " Jump back up to source file
   " execute 'win_gotoid' l:winid
   " execute ':buffer'  bufnr ()
-  execute 'wincmd' 'k'
-  execute 'wincmd' 'k'
+  execute ':wincmd' 'k'
+  execute ':wincmd' 'k'
 
 return
 
