@@ -1429,7 +1429,7 @@ function s:tags ( ... ) abort
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
 
-  echo "The Items ".. stack['length'] .. ":\n"
+  echo "The Items ".. stack['curidx'] .. ' of ' .. stack['length'] .. ":\n"
   for  item in stack['items']
     echo item
     echo
