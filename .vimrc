@@ -1430,7 +1430,7 @@ function s:tags ( ... ) abort
   let l:stack = gettagstack ( l:winid )
 
   echo "The Items ".. len ( stack ['items'] ).. ":\n"
-  for  item in stack['items']
+  for  item in stack ['items']
     echo item
     echo
   endfor
