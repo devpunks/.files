@@ -1447,7 +1447,7 @@ function s:tags ( ... ) abort
 
   echo "\n"
   echo l:stack
-  echo "\n\n"
+  echo "\n"
 
   execute 'tselect' l:expression
 
