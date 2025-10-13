@@ -1454,6 +1454,8 @@ function s:tags ( ... ) abort
 
   " Local Fix (lopen)
 
+  " Fix (lopen)
+
 return
 
   let list = []
