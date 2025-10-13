@@ -1447,7 +1447,7 @@ function s:tags ( ... ) abort
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
   call setloclist ( l:winid, taglist ( '^' .. l:expression ) )
-  lopen 5 " Local QuickFix window
+  lopen l:height " Local QuickFix window
 
   " Fix (lopen) ===========================================================
 " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
