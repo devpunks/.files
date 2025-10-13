@@ -1450,6 +1450,8 @@ function s:tags ( ... ) abort
 
 return
 
+  execute 'tselect' l:expression
+
   let list = []
   for tag in l:tags
     call add( list, {
