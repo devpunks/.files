@@ -1429,7 +1429,7 @@ function s:tags ( ... ) abort
   let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': l:expression } ]
 
   echo "The Existing Items for \"" .. l:expression .. "\" "
-        \ "#" stack['curidx'] 'of' stack['length'] ":\n"
+        \ "#" stack[ 'curidx' ] 'of' stack[ 'length' ] ":\n"
   for  item in stack['items']
     echo item
     echo
