@@ -1460,6 +1460,9 @@ function s:tags ( ... ) abort
   " Actually select from tags file
   execute 'tselect' l:expression
 
+" call setqflist( list )
+" copen " Local QuickFix window
+
 return
 
   let list = []
