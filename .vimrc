@@ -1439,6 +1439,10 @@ function s:tags ( ... ) abort
 
   if empty ( l:expression ) || &previewwindow | return | endif
 
+  " Local Fix (lopen)
+
+  " Fix (lopen)
+
   execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
 " let l:tags = taglist ( '^' .. l:expression )
