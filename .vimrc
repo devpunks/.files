@@ -1425,9 +1425,13 @@ function s:tags ( ... ) abort
   let l:expression = get ( a:, 1, expand ( '<cword>' ) )
   echom 'Shazaaaam ' .. empty ( l:expression ) .. ' ' .. l:expression
 
-  let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': l:expression } ]
+  let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': 'hotdamn' .. l:expression } ]
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
+
+  echo 'The Items:\n'
+  echo l:stack['items']
+
   let l:stack['items'] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
@@ -1438,7 +1442,8 @@ function s:tags ( ... ) abort
 " let l:tags = taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
-  echo "\n\n" .. l:stack
+  echo "\n\n"
+  echo l:stack
 
 return
 
