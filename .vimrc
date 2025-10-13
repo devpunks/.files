@@ -1454,7 +1454,7 @@ return
   echom 'The list: ' .. string ( list )
 
 " call setqflist( list )
-" copen
+" copen " QuickFix window
 
   execute 'tselect' l:word
   let g:ctrlp_default_input = l:word
