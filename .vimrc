@@ -1449,7 +1449,7 @@ function s:tags ( ... ) abort
   lopen 5 " Local QuickFix window
 
   " Fix (lopen) ===========================================================
-  execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
+" execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
   echo "\nGlobal tag list:"
   echo l:stack
