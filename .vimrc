@@ -1467,7 +1467,10 @@ function s:tags ( ... ) abort
   execute 'tselect' l:expression
 
   " Jump back up to source file
-  execute l:winid .. 'wincmd' 'w'
+  " execute 'win_gotoid' l:winid
+  " execute ':buffer'  bufnr ()
+  execute 'wincmd' 'k'
+  execute 'wincmd' 'k'
 
 return
 
