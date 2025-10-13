@@ -1425,7 +1425,7 @@ function s:tags ( ... ) abort
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
   " TODO:if it starts with `/` then use fuzzy select
-  let l:expression = trim  ( get ( a:, 1, expand ( '<cword>' ) ) )
+  let l:expression = trim ( get ( a:, 1, expand ( '<cword>' ) ) )
   let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': 'hotdamn' .. l:expression } ]
 
   echo "The Items for \"" .. l:expression .. "\" "
