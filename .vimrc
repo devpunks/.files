@@ -1466,6 +1466,9 @@ function s:tags ( ... ) abort
   " Actually select from tags file
   execute 'tselect' l:expression
 
+  " Jump back up to source file
+  execute l:winid .. 'wincmd' 'w'
+
 return
 
   let list = []
