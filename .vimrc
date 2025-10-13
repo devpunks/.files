@@ -1445,7 +1445,8 @@ function s:tags ( ... ) abort
   echo taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
-  " Fix (lopen) ===========================================================
+" call setloclist( list )
+" lopen " Local QuickFix window
 
   execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
