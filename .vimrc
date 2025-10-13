@@ -1440,6 +1440,10 @@ function s:tags ( ... ) abort
   if empty ( l:expression ) || &previewwindow | return | endif
 
   " Local Fix (lopen)
+  echo "Local tag fix: "
+  " Use'^' for strict
+  echo taglist ( '^' .. l:expression )
+  " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
   " Fix (lopen)
 
