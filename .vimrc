@@ -1460,7 +1460,7 @@ function s:tags ( ... ) abort
   " Actually select from tags file
   execute 'tselect' l:expression
 
-call setqflist( l:stack['items'] )
+call setqflist ( l:stack['items'] )
 copen " Local QuickFix window
 
 return
