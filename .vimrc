@@ -1452,6 +1452,8 @@ function s:tags ( ... ) abort
 
   execute 'tselect' l:expression
 
+  " Local Fix (lopen)
+
 return
 
   let list = []
