@@ -1429,7 +1429,7 @@ function s:tags ( ... ) abort
   let l:stack = gettagstack ( l:winid )
 
   echom 'Shazaaaam ' .. empty ( l:expression ) .. ' ' .. l:expression
-  echo "The Items ".. stack['curidx'] .. ' of ' .. stack['length'] .. ":\n"
+  echo "The Items for "  .. stack['curidx'] .. ' of ' .. stack['length'] .. ":\n"
   for  item in stack['items']
     echo item
     echo
