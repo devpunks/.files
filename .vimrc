@@ -1449,9 +1449,6 @@ function s:tags ( ... ) abort
 
   execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
-" let l:tags = taglist ( '^' .. l:expression )
-  " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
-
   echo "\n"
   echo l:stack
   echo "\n"
