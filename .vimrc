@@ -1429,7 +1429,7 @@ function s:tags ( ... ) abort
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
   let l:stack['items'] = l:tags
-  call settagstack ( winid, stack, 't' )
+  call settagstack ( l:winid, stack, 't' )
 
   if empty ( l:expression ) || &previewwindow | return | endif
 
