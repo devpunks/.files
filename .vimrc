@@ -1305,7 +1305,7 @@ endfunction " indentation
 " -------------------------------------------------------------------------
   set tagstack
   set tagbsearch " disable if not sorted
-  set tagfunc=TagFunc
+  set tagfunc=  " TagFunc
   let &g:tags = findfile( 'tags', '.;' )
   set tagcase=followscs " Follow smartcase & ignorecase
 
