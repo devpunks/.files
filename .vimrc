@@ -1455,6 +1455,7 @@ function s:tags ( ... ) abort
 
   execute 'tags'
 
+  " Actually select from tags file
   execute 'tselect' l:expression
 
 return
