@@ -1448,6 +1448,7 @@ function s:tags ( ... ) abort
 " call setloclist( list )
 " lopen " Local QuickFix window
 
+  " Fix (lopen) ===========================================================
   execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
   echo "\nGlobal tag list:"
