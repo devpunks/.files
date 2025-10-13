@@ -1440,7 +1440,6 @@ function s:tags ( ... ) abort
 
   if empty ( l:expression ) || &previewwindow | return | endif
 
-  execute 'tselect' l:expression
   execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
 " let l:tags = taglist ( '^' .. l:expression )
