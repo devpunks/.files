@@ -1428,7 +1428,7 @@ function s:tags ( ... ) abort
   let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': l:expression } ]
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
-  let stack['items'] = l:tags
+  let l:stack['items'] = l:tags
   call settagstack ( winid, stack, 't' )
 
   if empty ( l:expression ) || &previewwindow | return | endif
