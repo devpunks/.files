@@ -1451,7 +1451,7 @@ function s:tags ( ... ) abort
   execute 'lopen' l:height
 
   " Fix (lopen) ===========================================================
-" execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
+  " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
   echo "\nGlobal tag list:"
   echo l:stack
