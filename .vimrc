@@ -1459,7 +1459,7 @@ function s:tags ( ... ) abort
 
   execute 'tags'
 
-  call setqflist ( l:stack['items'] )
+  call setqflist ( l:stack[ 'items' ] )
   " QuickFix window
   execute 'copen' l:height
 
