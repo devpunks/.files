@@ -1449,7 +1449,7 @@ function s:tags ( ... ) abort
 
   execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
-  echo "\n"
+  echo "\nGlobal tag list: "
   echo l:stack
   echo "\n"
 
