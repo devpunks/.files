@@ -1445,7 +1445,7 @@ function s:tags ( ... ) abort
   echo taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
-  call setloclist( taglist ( '^' .. l:expression ) )
+  call setloclist( l:winid, taglist ( '^' .. l:expression ) )
   lopen " Local QuickFix window
 
   " Fix (lopen) ===========================================================
