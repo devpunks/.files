@@ -1425,7 +1425,7 @@ function s:tags ( ... ) abort
   let l:expression = get ( a:, 1, expand ( '<cword>' ) )
   echom 'Shazaaaam ' .. empty ( l:expression ) .. ' ' .. l:expression
 
-  let l:tags = [{'bufnr': bufnr (), 'from': getcurpos (), 'tagname': 'hotdamn ' .. l:expression }]
+  let l:tags = [{'bufnr': bufnr (), 'from': getcurpos (), 'tagname': l:expression }]
   let winid = win_getid ()
   let stack = gettagstack ( winid )
   let stack['items'] = l:tags
