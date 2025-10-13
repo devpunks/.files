@@ -1426,6 +1426,7 @@ function s:tags ( ... ) abort
   let l:expression = trim  ( get ( a:, 1, expand ( '<cword>' ) ) )
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
+  let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': 'hotdamn' .. l:expression } ]
 
   echo "The Items for \"" .. l:expression .. "\" "
         \ "#" stack['curidx'] 'of' stack['length'] ":\n"
