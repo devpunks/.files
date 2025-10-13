@@ -1435,7 +1435,7 @@ function s:tags ( ... ) abort
     echo
   endfor
 
-  let l:stack ['items'] = l:tags
+  let l:stack['items'] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
   if empty ( l:expression ) || &previewwindow | return | endif
