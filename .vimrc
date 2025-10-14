@@ -1452,7 +1452,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:stack[ 'items' ] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
-  if empty ( l:expression ) || &previewwindow | return | endif
+  if empty ( a:expression ) || &previewwindow | return | endif
 
   " Local Fix (lopen)  ====================================================
   " Call :lvim(grep) pattern <git root>
