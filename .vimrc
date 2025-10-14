@@ -1465,6 +1465,7 @@ function s:tags ( ... ) abort
   execute 'tags'
 
   " QuickFix window
+  call setqflist ( l:stack[ 'items' ] )
   execute 'copen' l:height
   let w:quickfix_title = '🏷️' .. l:expression
 
