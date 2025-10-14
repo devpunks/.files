@@ -1481,7 +1481,8 @@ function s:tags ( ... ) abort
   " Jump back up to source file
   " execute 'win_gotoid' l:winid
   " execute ':buffer'  bufnr ()
-  execute l:winid .. 'wincmd' 'w'
+  let l:winnr = l:winid .. 'wincmd' 'w'
+  execute 'win_id2win' l:winnr
 
 return
 
