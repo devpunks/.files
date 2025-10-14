@@ -1480,7 +1480,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " QuickFix window
   call setqflist ( l:stack[ 'items' ] )
   execute 'copen' l:height
-  let w:quickfix_title = '🏷️' .. l:expression
+  let w:quickfix_title = '🏷️' .. a:expression
 
   " Select from tags file
   execute 'tselect' l:expression
