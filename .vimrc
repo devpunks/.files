@@ -247,7 +247,8 @@ set winminwidth=0 " minimum width
 set winminheight=0 " minimum height
 set history=1000 " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
-set splitbelow nosplitright " new buffer locations
+set switchbuf=usetab,newtab " split|vsplit|useopen|uselast
+set splitbelow nosplitright " Where to place new buffer location
 command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 
 " }}}
