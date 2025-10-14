@@ -1424,7 +1424,7 @@ endfunction " tag
 
 nnoremap <Space> :Tags<CR>
 command! -bang -nargs=? -complete=tag_listfiles Tags call s:tags ( <bang>0, <f-args> )
-function s:tags ( bang, ... ) abort
+function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   function! s:clear () closure
     echo 'Signature Bang: ' .. a:bang
   if !!! a:bang | return | endif
