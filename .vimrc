@@ -1436,7 +1436,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
   " TODO:if it starts with `/` then use fuzzy select
-  let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': l:expression } ]
+  let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': a:expression } ]
 
   call s:clear ()
 
