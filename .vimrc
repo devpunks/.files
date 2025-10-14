@@ -1472,7 +1472,7 @@ function s:tags ( ... ) abort
   execute 'copen' l:height
   let w:quickfix_title = '🏷️' .. l:expression
 
-  " Actually select from tags file
+  " Select from tags file
   execute 'tselect' l:expression
 
   " Preview window
