@@ -1531,8 +1531,6 @@ function g:CTags () abort
 
   if ! filereadable(l:tags) | return | endif
 
-  echom 'Found Tags in' .. l:tags
-
   if &runtimepath =~ 'gutentags'
     let g:gutentags_trace = 1
     let g:gutentags_ctags_extra_args = []
