@@ -1440,7 +1440,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
 
   call s:clear ()
 
-  echo "The Existing Items for \"" .. l:expression .. "\" "
+  echo "The Existing Items for \"" .. a:expression .. "\" "
         \ "#" stack[ 'curidx' ] 'of' stack[ 'length' ] ":\n"
   for  item in stack['items']
     echo item
