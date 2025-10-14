@@ -1450,7 +1450,7 @@ function s:tags ( ... ) abort
   call setloclist ( l:winid, taglist ( '^' .. l:expression ) )
   " Local QuickFix window
   execute 'lopen' l:height
-  let w:quickfix_title = '🏷️ ' .. l:expression
+  let w:quickfix_title = '🏷️' .. l:expression
 
   " Fix (lopen) ===========================================================
   " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
