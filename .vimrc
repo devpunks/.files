@@ -1544,7 +1544,6 @@ function g:TagsStatus (mods) " abort
   return '[' .. l:icon .. ']'
 endfunction  " TagsStatus
 
-
 " -------------------------------------------------------------------------
 " vim-TagList - https://github.com/yegappan/taglist
 " -------------------------------------------------------------------------
