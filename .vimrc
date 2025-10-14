@@ -251,6 +251,8 @@ set switchbuf=usetab,newtab " split|vsplit|useopen|uselast
 set splitbelow nosplitright " Where to place new buffer location
 command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 
+autocmd QuickFixCmdPre * echo 'Executing QuickFixCmdPre'
+
 " }}}
 
 " =========================================================================
