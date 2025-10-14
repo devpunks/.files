@@ -1466,6 +1466,9 @@ function s:tags ( ... ) abort
   " Actually select from tags file
   execute 'tselect' l:expression
 
+  " Preview window
+  execute 'ptag!' l:expression
+
   " Jump back up to source file
   " execute 'win_gotoid' l:winid
   " execute ':buffer'  bufnr ()
