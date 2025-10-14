@@ -1383,7 +1383,7 @@ function s:tag ( ... ) abort
     echo v:shell_error
   endfunction
 
-  call s:write()
+  call s:write ()
 
   echom 'Type: ' .. l:type
   echom 'Global tags (before): ' .. &g:tags
