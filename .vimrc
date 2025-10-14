@@ -1547,8 +1547,6 @@ endfunction  " TagsStatus
 " -------------------------------------------------------------------------
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
-augroup UserDefaults
-augroup END
 
 " -------------------------------------------------------------------------
 " vim-TagList - https://github.com/yegappan/taglist
