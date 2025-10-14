@@ -1529,8 +1529,6 @@ endfunction " tags
 function g:CTags () abort
   let l:tags = expand( &tags )
 
-  if ! filereadable(l:tags) | return | endif
-
 endfunction " g:CTags
 
 function g:TagsStatus (mods) " abort
