@@ -1548,7 +1548,6 @@ endfunction  " TagsStatus
 " vim-gutentags - https://github.com/ludovicchabant/vim-gutentags
 " -------------------------------------------------------------------------
 augroup UserDefaults
-  autocmd User GutentagsUpdated let g:gutentags_updated = 1
 augroup END
 
 " -------------------------------------------------------------------------
