@@ -1528,8 +1528,6 @@ endfunction " tags
 function g:TagsStatus (mods) " abort
   let l:icon = ''
 
-  " echom 'shazam:'.. get(g:, 'gutentags_updated', '')
-
   if(index(a:mods, 'ctags') >= 0)
     let l:icon .= '🏷️'
   endif
