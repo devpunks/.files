@@ -1464,6 +1464,7 @@ function s:tags ( ... ) abort
   call setqflist ( l:stack[ 'items' ] )
   " QuickFix window
   execute 'copen' l:height
+  let w:quickfix_title = 'Global Tag:' .. l:expression
 
   " Actually select from tags file
   execute 'tselect' l:expression
