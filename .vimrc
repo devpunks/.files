@@ -1445,6 +1445,7 @@ function s:tags ( ... ) abort
   if empty ( l:expression ) || &previewwindow | return | endif
 
   " Local Fix (lopen)  ====================================================
+  " Call :lvim(grep) pattern <git root>
   echo "Local tag list: "
   " Use'^' for strict
   echo taglist ( '^' .. l:expression )
