@@ -1018,7 +1018,7 @@ function Baz (...)
   echom 'Baz'
 endfunction
 
-:command! Blame echo s:blame()
+command! Blame echo s:blame()
 function s:blame () abort
   let options = { 'foo' : 'bar' }
 
