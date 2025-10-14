@@ -1455,7 +1455,7 @@ function s:tags ( ... ) abort
   execute 'lopen' l:height
   let w:quickfix_title = '🏷️' .. l:expression
 
-  " Fix (lopen) ===========================================================
+  " Fix (copen) ===========================================================
   " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
 
   echo "\nGlobal tag list:"
