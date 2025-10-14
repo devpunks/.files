@@ -2063,7 +2063,7 @@ alias catnet='{
 # Transmission ------------------------------------------------------------
 # Test server - https://httpbin.org
 alias header='curl --head'
-alias curl='command curl --verbose'
+alias curl='command curl --verbose' # https://everything.curl.dev
 alias cookies='header --cookie-jar ./.cookies'
 alias wget='command wget' # See ~/.wgetrc
 
