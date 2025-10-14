@@ -1496,11 +1496,6 @@ return
   let g:ctrlp_default_input = l:word
   CtrlPTag
 
-  execute 'ptag! ' .. l:word
-  "pclose
-
-  echom 'Tag <cword>: ' .. l:word
-
   execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
   call search ( '$', 'b' ) " previous EOL
