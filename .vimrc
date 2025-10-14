@@ -1427,6 +1427,7 @@ command! -bang -nargs=? -complete=tag_listfiles Tags call s:tags ( <bang>0, <f-a
 function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   function! s:clear () closure
     echo 'Signature Bang: ' .. a:bang
+    echo 'Expression: ' .. a:expression
   if !!! a:bang | return | endif
     call settagstack ( l:winid, { 'items': [] } )
   endfunction
