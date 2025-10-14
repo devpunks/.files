@@ -1423,8 +1423,14 @@ function s:tag ( ... ) abort
 endfunction " tag
 
 nnoremap <Space> :Tags<CR>
-command! -complete=tag_listfiles -nargs=? Tags call s:tags ( <f-args> )
-function s:tags ( ... ) abort
+command! -bang -nargs=? -complete=tag_listfiles Tags call s:tags ( <bang>0, <f-args> )
+function s:tags ( bang, ... ) abort
+  function! s:clear () closure
+    echo 'Signature Bang: ' .. a:bang
+  if !!! a:bang | return | endif
+    call settagstack ( l:winid, { 'items': [] } )
+  endfunction
+
   let l:height = 5
   let l:winid = win_getid ()
   let l:stack = gettagstack ( l:winid )
