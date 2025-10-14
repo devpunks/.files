@@ -1483,7 +1483,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let w:quickfix_title = '🏷️' .. a:expression
 
   " Select from tags file
-  execute 'tselect' l:expression
+  execute 'tselect' a:expression
 
   " Preview window
   execute 'ptag!' l:expression
