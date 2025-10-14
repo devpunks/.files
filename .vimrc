@@ -1446,6 +1446,7 @@ function s:tags ( ... ) abort
 
   " Local Fix (lopen)  ====================================================
   " Call :lvim(grep) pattern <git root>
+
   echo "Local tag list: "
   " Use'^' for strict
   echo taglist ( '^' .. l:expression )
