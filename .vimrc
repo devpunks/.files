@@ -1458,6 +1458,7 @@ function s:tags ( ... ) abort
 
   " Fix (copen) ===========================================================
   " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
+  " Call :vim(grep) pattern <git root>
 
   echo "\nGlobal tag list:"
   echo l:stack
