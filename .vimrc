@@ -1526,9 +1526,6 @@ return
   " call settagstack(1003, stack)
 endfunction " tags
 
-function g:CTags () abort
-endfunction " g:CTags
-
 function g:TagsStatus (mods) " abort
   let l:icon = ''
 
