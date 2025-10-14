@@ -1450,7 +1450,6 @@ function s:tags ( ... ) abort
   echo taglist ( '^' .. l:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
-  call setloclist ( l:winid, taglist ( '^' .. l:expression ) )
   " Local QuickFix window
   execute 'lopen' l:height
   let w:quickfix_title = '🏷️' .. l:expression
