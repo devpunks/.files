@@ -1465,7 +1465,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " Local QuickFix window
   call setloclist ( l:winid, taglist ( '^' .. a:expression ) )
   execute 'lopen' l:height
-  let w:quickfix_title = '🏷️' .. l:expression
+  let w:quickfix_title = '🏷️' .. a:expression
 
   " Fix (copen) ===========================================================
   " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
