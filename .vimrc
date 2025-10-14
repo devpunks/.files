@@ -1447,6 +1447,8 @@ function s:tags ( bang, ... ) abort
     echo
   endfor
 
+  return
+
   let l:stack[ 'items' ] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
