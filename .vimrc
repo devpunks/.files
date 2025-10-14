@@ -1486,7 +1486,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   execute 'tselect' a:expression
 
   " Preview window
-  execute 'ptag!' l:expression
+  execute 'ptag!' a:expression
 
   " Jump back up to source file
   " execute 'win_gotoid' l:winid
