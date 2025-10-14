@@ -1549,7 +1549,6 @@ endfunction  " TagsStatus
 " -------------------------------------------------------------------------
 augroup UserDefaults
   autocmd User GutentagsUpdated let g:gutentags_updated = 1
-  autocmd User GutentagsUpdating let g:gutentags_updated = 0
 augroup END
 
 " -------------------------------------------------------------------------
