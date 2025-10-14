@@ -1464,7 +1464,7 @@ function s:tags ( ... ) abort
   call setqflist ( l:stack[ 'items' ] )
   " QuickFix window
   execute 'copen' l:height
-  let w:quickfix_title = '🏷️ ' .. l:expression
+  let w:quickfix_title = '🏷️' .. l:expression
 
   " Actually select from tags file
   execute 'tselect' l:expression
