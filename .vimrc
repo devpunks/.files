@@ -1531,8 +1531,6 @@ function g:CTags () abort
 
   if ! filereadable(l:tags) | return | endif
 
-  if &runtimepath =~ 'gutentags'
-  endif
 endfunction " g:CTags
 
 function g:TagsStatus (mods) " abort
