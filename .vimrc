@@ -1459,7 +1459,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
 
   echo "Local tag list: "
   " Use'^' for strict
-  echo taglist ( '^' .. l:expression )
+  echo taglist ( '^' .. a:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
   " Local QuickFix window
