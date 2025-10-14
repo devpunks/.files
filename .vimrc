@@ -1477,6 +1477,7 @@ function s:tags ( ... ) abort
   " execute ':buffer'  bufnr ()
   execute ':wincmd' 'k'
   execute ':wincmd' 'k'
+  execute ':wincmd' 'k'
 
 return
 
