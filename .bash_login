@@ -2738,6 +2738,7 @@ function extract () {
 # =========================================================================
 # TODO: Implementation
 # -------------------------------------------------------------------------
+function used () { : used; }
 function deny () { : deny; }
 function allow () { : allow; }
 function fetch () { : fetch; }
