@@ -1438,6 +1438,8 @@ function s:tags ( bang, ... ) abort
   let l:expression = trim ( get ( a:, 2, expand ( '<cword>' ) ) )
   let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': l:expression } ]
 
+  call s:clear ()
+
   echo "The Existing Items for \"" .. l:expression .. "\" "
         \ "#" stack[ 'curidx' ] 'of' stack[ 'length' ] ":\n"
   for  item in stack['items']
