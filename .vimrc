@@ -1527,8 +1527,6 @@ return
 endfunction " tags
 
 function g:CTags () abort
-  let l:tags = expand( &tags )
-
 endfunction " g:CTags
 
 function g:TagsStatus (mods) " abort
