@@ -695,7 +695,8 @@ alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned)
 # - https://baeldung.com/linux/bash-generate-uuid
 # - https://man7.org/linux/man-pages/man1/uuidgen.1.html
 # - https://stackoverflow.com/q/20342058/which-uuid-version-to-use
-alias uuid='uuidgen --random' # cat /proc/sys/kernel/random/uuid
+alias uuid7='uuidgen --time'
+alias uuid='cat /proc/sys/kernel/random/uuid'
 alias toke='dd bs=256 count=1 status=none if=/dev/urandom | sha256sum | command cut -d " " -f1'
 alias token='dd bs=512 count=1 status=none if=/dev/urandom | sha512sum | command cut -d " " -f1'
 
