@@ -2001,7 +2001,7 @@ function trace () {
 function map () {
   local -r domain=${1:-localhost}
 
-  echo domain
+  echo $domain
 
   # port ranges
   #   - 0 - 1023 (Well-known)
