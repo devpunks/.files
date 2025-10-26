@@ -1433,6 +1433,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
     if !!! a:bang | return | endif
     call settagstack ( l:winid, { 'items': [] } )
   endfunction
+  call s:clear ()
 
   let l:stack = gettagstack ( l:winid )
   " TODO:if it starts with `/` then use fuzzy select
