@@ -1469,7 +1469,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " Use'^' for strict
   " echo taglist ( '^' .. a:expression )
   " echo join ( taglist ( a:expression ), "\n\n" )
-  echo join ( taglist ( '^' .. a:expression, l:file ), "\n\n" )
+  echo join ( l:tags, "\n\n" )
   " Kinds:
   " a - array, c - class, C - constant, f - function,
   " m - method (usually with class), T - TODO, v - variable
