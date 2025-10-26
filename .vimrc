@@ -1476,7 +1476,8 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " filter( l:tags, 'v:val["filename"] == l:file' )
 
   " Local QuickFix window
-  call setloclist ( l:winid, taglist ( '^' .. a:expression ) )
+  call setloclist ( l:winid, 
+    \ filter ( l:tags, 'v:val["filename"] == l:file' ) )
   execute 'lopen' l:height
   let w:quickfix_title = '🏷️' .. a:expression
 
