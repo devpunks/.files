@@ -1466,7 +1466,10 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
 
   echo "Local tag list: "
   " Use'^' for strict
-  echo taglist ( '^' .. a:expression )
+  " echo taglist ( '^' .. a:expression )
+  " echo join ( taglist ( a:expression ), "\n\n" )
+  echo join ( taglist ( '^' .. a:expression, l:file ), "\n\n" )
+  " Kinds: a - array, c - class, C - constant, f - function, T - TODO
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
   return
