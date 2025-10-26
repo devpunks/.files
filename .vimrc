@@ -1633,7 +1633,6 @@ function g:TagsBar () abort
   TagbarToggle
 endfunction " g:TagsBar
 
-" autocmd FileDefaults CursorHold * ++nested call g:CursorTag()
 " -------------------------------------------------------------------------
 " Scopes :h cscope
 "   - https://cscope.sourceforge.net
