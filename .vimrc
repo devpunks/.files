@@ -1439,7 +1439,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
     echo 'File:' .. l:file
     if !!! a:bang | return | endif
     call settagstack ( l:winid, { 'items': [] } )
-  endfunction
+  endfunction " s:clear
   call s:clear ()
 
   let l:stack = gettagstack ( l:winid )
