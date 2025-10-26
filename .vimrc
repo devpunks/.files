@@ -1470,7 +1470,6 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:list = filter( l:tags, 'v:val["filename"] == l:file' )
 
   echo "Local tag list: "
-  " Use'^' for strict
   " echo taglist ( '^' .. a:expression )
   " echo join ( taglist ( a:expression ), "\n\n" )
   echo join ( l:list, "\n\n" )
