@@ -1426,6 +1426,7 @@ command! -bang -nargs=? -complete=tag_listfiles Tags call s:tags ( <bang>0, <f-a
 function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:height = 5
   let l:winid = win_getid ()
+  let l:file = expand ('%:p')
 
   set iskeyword+=- " a-z,A-Z,48-57,_,.,-,>
 
