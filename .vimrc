@@ -1471,7 +1471,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   echo join ( taglist ( '^' .. a:expression, l:file ), "\n\n" )
   " Kinds:
   " a - array, c - class, C - constant, f - function,
-  " m - method (usually with class), T - TODO
+  " m - method (usually with class), T - TODO, v - variable
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
   return
