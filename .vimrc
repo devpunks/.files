@@ -1475,7 +1475,6 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " m - method (usually with class), T - TODO, v - variable
   " filter( l:tags, 'v:val["filename"] == l:file' )
 
-  return
   " Local QuickFix window
   call setloclist ( l:winid, taglist ( '^' .. a:expression ) )
   execute 'lopen' l:height
