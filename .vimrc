@@ -1427,6 +1427,11 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:height = 5
   let l:winid = win_getid ()
 
+  set iskeyword+=- " a-z,A-Z,48-57,_,.,-,>
+
+  if empty( a:expression ) | echo '' | return | endif
+  if !! a:expression =~ '^[a-zA-Z0-9_-]+$' | echo '' | return | endif
+
   function! s:clear () closure
     echo 'Signature Bang: ' .. a:bang
     echo 'Expression: ' .. a:expression
