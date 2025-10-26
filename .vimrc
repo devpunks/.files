@@ -1442,6 +1442,18 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   endfunction " s:clear
   call s:clear ()
 
+  function! s:itemize ( list = [] ) closure
+    let l:list = []
+
+    echo 'Itemizing List:'
+    for  item in a:list
+      echo item
+      echo
+    endfor
+
+    return l:list
+  endfunction " s:itemize
+
   let l:stack = gettagstack ( l:winid )
   " TODO:if it starts with `/` then use fuzzy select
   let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': a:expression } ]
