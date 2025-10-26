@@ -1463,6 +1463,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
 
   " Local Fix (lopen)  ====================================================
   " Call :lvim(grep) pattern <git root>
+  let l:tags = taglist ( '^' .. a:expression, l:file )
 
   echo "Local tag list: "
   " Use'^' for strict
