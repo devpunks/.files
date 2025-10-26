@@ -1466,6 +1466,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   echo taglist ( '^' .. a:expression )
   " let l:tags = filter( l:tags, 'v:val["kind"] == "f"' )
 
+  return
   " Local QuickFix window
   call setloclist ( l:winid, taglist ( '^' .. a:expression ) )
   execute 'lopen' l:height
