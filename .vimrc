@@ -1451,8 +1451,6 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
     echo
   endfor
 
-  return
-
   let l:stack[ 'items' ] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
