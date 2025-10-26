@@ -1454,6 +1454,9 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:stack[ 'items' ] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
+  echo join ( gettagstack ( l:winid ), "\n\n" )
+  return
+
   if empty ( a:expression ) || &previewwindow | return | endif
 
   " Local Fix (lopen)  ====================================================
