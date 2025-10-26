@@ -1447,7 +1447,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
 
     echo 'Itemizing List:'
     for  item in a:list
-      call add(l:list, { 'module': item['name'], 'bufnr': bufnr(), 'lnum': item['line'], 'col': 'column', 'vcol': v:true, 'nr': 'errornr', 'pattern': item['cmd'], 'text': item['language'], 'type': item['kind'] } )
+      call add(l:list, { 'module': item['filename'], 'bufnr': bufnr(), 'lnum': item['line'], 'col': 'column', 'vcol': v:true, 'nr': 'errornr', 'pattern': item['cmd'], 'text': item['cmd'], 'type': item['kind'] } )
     endfor
 
     return l:list
