@@ -1439,8 +1439,6 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " TODO:if it starts with `/` then use fuzzy select
   let l:tags = [ {'bufnr': bufnr (), 'from': getcurpos (), 'tagname': a:expression } ]
 
-  call s:clear ()
-
   echo "The Existing Items for \"" .. a:expression .. "\" "
         \ "#" stack[ 'curidx' ] 'of' stack[ 'length' ] ":\n"
   for  item in stack['items']
