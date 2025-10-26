@@ -1448,6 +1448,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
     echo 'Itemizing List:'
     for  item in a:list
       echo item
+      echo { 'module': 'name', 'bufnr': bufnr (), 'lnum': 'line', 'col': 'column', 'vcol': v:true, 'nr': 'errornr', 'pattern': 'cmd', 'text': 'language - kind', 'type': 'kind' }
       echo
     endfor
 
