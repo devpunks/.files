@@ -1328,7 +1328,7 @@ function TagFunc ( pattern, flags, info ) abort
   echo 'Found ' .. len( l:results ) .. ' Results'
   echo "The Results: \n" .. join ( l:results, "\n\n" )
 
-  return l:result
+  return l:results
 endfunction
 
 augroup FileDefaults
