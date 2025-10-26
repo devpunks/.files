@@ -1485,7 +1485,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   echo join ( l:list, "\n\n" )
 
   " Local QuickFix window
-  call setloclist ( l:winid, l:list )
+  call setloclist ( l:winid, s:itemize ( l:list ) )
   execute 'lopen' l:height
   let w:quickfix_title = '🏷️' .. a:expression
 
