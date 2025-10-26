@@ -1481,6 +1481,8 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   execute 'lopen' l:height
   let w:quickfix_title = '🏷️' .. a:expression
 
+  return
+
   " Fix (copen) ===========================================================
   " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
   " Call :vim(grep) pattern <git root>
