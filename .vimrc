@@ -1478,7 +1478,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " Kinds:
   " a - array, c - class, C - constant, f - function,
   " m - method (usually with class), T - TODO, v - variable
-  let l:list = filter( l:tags, 'v:val["filename"] == l:file' )
+  let l:list = filter( l:tags, 'v:val["filename"] == "' .. l:file ..'"' )
 
   echo "Local tag list: "
   echo join ( l:list, "\n\n" )
