@@ -1446,8 +1446,11 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
     let l:list = []
 
     echo 'Itemizing List:'
-    for  item in a:list
-      call add(l:list, { 'module': item['filename'], 'bufnr': bufnr(), 'lnum': item['line'], 'col': 'column', 'vcol': v:true, 'nr': 'errornr', 'pattern': item['cmd'], 'text': item['cmd'], 'type': item['kind'] } )
+    for item in a:list
+      let l:target = fnamemodify( item['filename'], ':t' )
+      call add(l:list, { 'module': item['name'] .. ' - '.. l:target,
+        \ 'bufnr': bufnr(), 'lnum': item['line'], 'col': 'column', 'vcol': v:true,
+        \ 'nr': 'errornr', 'pattern': item['cmd'], 'text': item['cmd'], 'type': item['kind'] } )
     endfor
 
     return l:list
