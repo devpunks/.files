@@ -1541,8 +1541,6 @@ return
 " copen " QuickFix window
 
   execute 'tselect' l:word
-  let g:ctrlp_default_input = l:word
-  CtrlPTag
 
   execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
 
