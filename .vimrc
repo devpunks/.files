@@ -1491,6 +1491,9 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   execute 'lopen' l:height
   let w:quickfix_title = '🏷️' .. a:expression
 
+  let g:ctrlp_default_input = a:expression
+  CtrlPTag
+
   return
 
   " Fix (copen) ===========================================================
