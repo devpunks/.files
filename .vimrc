@@ -1736,9 +1736,6 @@ function! s:fuzzy () abort
   let g:ctrlp_extensions = ['mixed']
   nnoremap f<Enter> :CtrlPMixed<CR>
 
-  echo 'Mapping CtrlP Tag Mode to f<Space>'
-  nnoremap f<Space> :CtrlPTag<CR>
-
   let g:ctrlp_regexp = 1 " <C-r>
   let g:ctrlp_show_hidden = 1
   let g:ctrlp_by_filename = 1 " <C-d>
