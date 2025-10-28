@@ -1447,7 +1447,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   function! s:itemize ( list = [] ) closure
     let l:list = []
 
-    echo 'Itemizing List:'
+    echo 'itemize() List:'
     for item in a:list
       let l:target = fnamemodify( item['filename'], ':t' )
       call add(l:list, { 'module': item['name'] .. ' - '.. l:target,
