@@ -1358,6 +1358,9 @@ function s:tag ( ... ) abort
 
   if l:nobang | return | endif
 
+     echo 'DA ROOT: ' l:root
+     echo 'Git Ignore: ' filereadable( l:root .. '.gitignore' )
+
     let flags = [
     \ '--verbose --append --recurse --guess-language-eagerly',
     \ '--totals=yes --sort=foldcase --fields=+lknaS --tag-relative=never',
