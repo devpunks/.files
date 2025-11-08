@@ -1343,6 +1343,8 @@ nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 function s:ignore ( file = '.gitignore' ) abort
+  echo 'Git Ignore: ' filereadable( l:root .. '.gitignore' )
+
   echo 'Ignoring' a:file
 endfunction
 
