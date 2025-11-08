@@ -2765,6 +2765,8 @@ function truncate () {
   echo 'Truncating' $file
 
   : > "$file"
+
+  cat /dev/null > "$file"
 }
 
 # -------------------------------------------------------------------------
