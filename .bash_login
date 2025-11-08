@@ -2762,7 +2762,6 @@ function truncate () {
 
   local file="$1"
 
-  : service;
   echo 'Truncating' $file
 }
 
