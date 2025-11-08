@@ -1391,6 +1391,8 @@ function s:tag ( ... ) abort
     echo v:shell_error
   endfunction
 
+  call s:ignore ()
+
   call s:write ()
 
   echom 'Type: ' .. l:type
