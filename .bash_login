@@ -2767,6 +2767,8 @@ function truncate () {
   : > "$file"
 
   cat /dev/null > "$file"
+
+  command echo -n > "$file"
 }
 
 # -------------------------------------------------------------------------
