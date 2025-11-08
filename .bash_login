@@ -2806,8 +2806,8 @@ function generate () { exist "$1" || return
 
   dd if=/dev/urandom of=$output bs=$size count=1
 
-  list $output
-  weigh $output
+  list "$output"
+  weigh "$output"
 } # generate
 
 function lint () { clear
