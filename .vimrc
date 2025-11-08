@@ -1358,7 +1358,6 @@ function s:ignore ( file = '.gitignore' ) abort
     echo 'Match:' match( line, '^[ \t]*#' )
   endfor
 
-  echo 'Ignoring' a:file
 endfunction
 
 command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
