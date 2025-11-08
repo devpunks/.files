@@ -2783,7 +2783,7 @@ function count () { exist "$1" || return
 
   local -r file=${1}
   local -r LINE=`wc --lines "$file" | command cut -d' ' -f 1`
-  local -r WORDS=`wc --words "$file" | command cut -d' ' -f 1`
+  local -r WORD=`wc --words "$file" | command cut -d' ' -f 1`
   local -r CHARS=`wc --chars "$file" | command cut -d' ' -f 1`
   local -r BYTES=`wc --bytes "$file" | command cut -d' ' -f 1`
 
