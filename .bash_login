@@ -2771,6 +2771,8 @@ function truncate () { exist "$1" || return
   cat /dev/null > "$file"
 
   command echo -n > "$file"
+
+  command truncate $size "$file"
 }
 
 # -------------------------------------------------------------------------
