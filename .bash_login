@@ -2757,9 +2757,7 @@ function bandwidth () { : bandwidth; }
 
 
 # https://phoenixnap.com/kb/linux-truncate-file
-function truncate () {
-  exist "$1" || return
-
+function truncate () { exist "$1" || return
   local file="$1"
 
   echo 'Truncating' $file
