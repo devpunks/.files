@@ -2787,7 +2787,7 @@ function count () { exist "$1" || return
   local -r CHAR=`wc --chars "$file" | command cut -d' ' -f 1`
   local -r BYTE=`wc --bytes "$file" | command cut -d' ' -f 1`
 
-  lines $file
+  lines "$file"
 
   echo printing
 
