@@ -2762,6 +2762,7 @@ function truncate () { exist "$1" || return
   local size="--size=${2:-0}" # Units (power of 1024) - K,M,G,T,P
 
   echo 'Truncating' $file
+  echo 'Size' $size
 
   > "$file"
 
