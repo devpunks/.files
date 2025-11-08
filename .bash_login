@@ -2756,6 +2756,7 @@ function aggregate () { : aggregate; }
 function bandwidth () { : bandwidth; }
 
 
+# https://phoenixnap.com/kb/linux-truncate-file
 function truncate () {
   exist "$1" || return
 
