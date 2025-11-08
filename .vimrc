@@ -1404,7 +1404,7 @@ function s:tag ( ... ) abort
     echo v:shell_error
   endfunction
 
-  call s:ignore ()
+  call s:ignore ( l:root .. '.gitignore' )
 
   call s:write ()
 
