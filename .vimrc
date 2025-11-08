@@ -1343,7 +1343,20 @@ nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 function s:ignore ( file = '.gitignore' ) abort
-  echo 'Git Ignore: ' filereadable( l:root .. '.gitignore' )
+  if !!! filereadable( a:file ) | return | endif
+  let l:exclusions = []
+
+  echo 'Git Ignore:' filereadable( a:file ) a:file
+
+  for line in readfile( a:file )
+    if strlen( line ) <= 1 || match( line, '^[ \t]*#' ) != -1
+      continue
+    endif
+
+    echom line
+    echo 'Length:' strlen( line )
+    echo 'Match:' match( line, '^[ \t]*#' )
+  endfor
 
   echo 'Ignoring' a:file
 endfunction
