@@ -2773,6 +2773,8 @@ function truncate () { exist "$1" || return
   command echo -n > "$file"
 
   command truncate $size "$file"
+
+  echo ; echo ; weigh "$file"
 }
 
 # -------------------------------------------------------------------------
