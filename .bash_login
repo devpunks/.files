@@ -2754,6 +2754,17 @@ function cumulate () { : cumulate; }
 function accumulate () { : accumulate; }
 function aggregate () { : aggregate; }
 function bandwidth () { : bandwidth; }
+
+
+function truncate () {
+  exist "$1" || return
+
+  local file="$1"
+
+  : service;
+  echo 'Truncating' $file
+}
+
 # -------------------------------------------------------------------------
 
 function count () {
