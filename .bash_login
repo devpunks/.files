@@ -2775,7 +2775,7 @@ function truncate () { exist "$1" || return
   command truncate $size "$file"
 
   echo ; weigh "$file"
-}
+} # truncate
 
 # -------------------------------------------------------------------------
 
