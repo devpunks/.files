@@ -2789,8 +2789,6 @@ function count () { exist "$1" || return
 
   lines "$file"
 
-  echo printing
-
   printf '\n%-10s %-10s %-10s %-10s' \
     'LINES' 'WORDS' 'CHARS' 'BYTES'
   printf '\n%-10s %-10s %-10s %-10s' \
