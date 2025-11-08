@@ -2763,6 +2763,7 @@ function truncate () {
   local file="$1"
 
   echo 'Truncating' $file
+
   : > "$file"
 }
 
