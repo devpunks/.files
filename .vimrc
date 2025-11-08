@@ -1342,6 +1342,10 @@ augroup END
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
+function s:ignore ( file = '.gitignore' ) abort
+  echo 'Ignoring' a:file
+endfunction
+
 command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
 function s:tag ( ... ) abort
   let l:nobang= !!! get ( a:, 1, v:false )
