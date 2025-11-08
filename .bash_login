@@ -2800,7 +2800,7 @@ function count () { exist "$1" || return
 } # count
 
 # https://blog.kubesimplify.com/the-complete-guide-to-the-dd-command-in-linux
-function generate () {
+function generate () { exist "$1" || return
   local -r size=${1}
   local -r output=${2}
 
