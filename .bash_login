@@ -2801,8 +2801,8 @@ function count () { exist "$1" || return
 
 # https://blog.kubesimplify.com/the-complete-guide-to-the-dd-command-in-linux
 function generate () { exist "$1" || return
-  local -r size=${1}
-  local -r output=${2}
+  local -r size="${1}"
+  local -r output="${2}"
 
   dd if=/dev/urandom of=$output bs=$size count=1
 
