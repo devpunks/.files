@@ -1422,7 +1422,7 @@ function s:tag ( ... ) abort
     let l:tags = '-'
     echom '🏷️Tags : ' .. l:tags
 
-    let l:command = 'ctags'
+    let l:command = 'ctags '
       \ .. ( l:flags + l:excludes )->join()
       \.. ' --languages=' .. l:type
       \ .. ' -o ' .. l:tags
