@@ -1408,6 +1408,8 @@ function s:tag ( ... ) abort
 
     echom 'Reading' l:tags 'for' expand ( '%:p' )
 
+    " let l:out = readfile( l:tags )->filter(' !!! match (v:val, "^!_TAG") ')->join("\n")
+    return readfile( l:tags )->filter('v:val !~ expand("%:p")')
   endfunction " read
 
   function! s:write () closure
