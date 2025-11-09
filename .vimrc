@@ -1450,8 +1450,8 @@ function s:tag ( ... ) abort
       \ ->filter( 'match(v:val, "^ctags: Warning")')
 
     echo v:shell_error
-    echo "\nTHE TAGS\n\n"
-    echo l:ts
+
+    call writefile ( a:tags + l:ts, l:tags )
   endfunction " write
 
   call s:read ()
