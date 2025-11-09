@@ -1405,9 +1405,10 @@ function s:tag ( ... ) abort
     let l:excludes = split ( &wildignore, ',' )
       \ ->map( '"--exclude=" ..  v:val' )
 
-    let l:flags = [
-    \ '--verbose --append --recurse --guess-language-eagerly',
-    \ '--totals=yes --sort=foldcase --fields=+lknaS --tag-relative=never',
+    " '--verbose', '--apend', '--totals=yes'
+    let l:flags = [ '--quiet', '--totals=no',
+    \ '--recurse --guess-language-eagerly',
+    \ '--sort=foldcase --fields=+lknaS --tag-relative=never',
     \ '--langmap=vim:+.vimrc',
     \ '--langmap=javascript:+.es',
     \ '--langmap=ruby:+.erb\(Gemfile\)',
