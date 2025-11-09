@@ -1363,6 +1363,10 @@ function s:ignore ( file = '.gitignore' ) abort
     endif
   endfor
 
+  echo "\nWildignores:\n" .. &l:wildignore
+  echo "\nExclusions:\n" .. join ( uniq ( l:exclusions ), ',' )
+  echo "\nAdditions:\n" .. join ( uniq ( l:additions ), ',' )
+
 endfunction
 
 command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
