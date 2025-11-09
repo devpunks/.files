@@ -204,13 +204,6 @@ function s:ignore ( file = '.gitignore' ) abort
     endif
   endfor
 
-  let &l:wildignore = l:exclusions ->uniq()
-    \ ->map( { _, path -> '**/' .. path } )
-    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
-    \ ->join( ',' )
-
-  echo "\nWildignores (local):\n" .. &l:wildignore
-
   echo "\nExceptions:\n" ..
     \ l:exceptions ->uniq()
     \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
