@@ -1393,7 +1393,7 @@ function s:tag ( ... ) abort
   let l:languages = systemlist ( 'command ctags --list-languages' )
     \ ->map( 'tolower( v:val )' )
   let l:root = fnamemodify (
-    \ finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME )
+    \ finddir ( '.git/..', expand ( '%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
 
   function! s:write () closure
