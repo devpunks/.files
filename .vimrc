@@ -1429,7 +1429,7 @@ function s:tag ( ... ) abort
 
     call system ( l:command .. ' &' )
     echo v:shell_error
-  endfunction
+  endfunction " write
 
   call s:write ()
 
