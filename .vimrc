@@ -1344,7 +1344,7 @@ nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
 function s:ignore ( file = '.gitignore' ) abort
   if !!! filereadable( a:file ) | return | endif
-  let l:additions = []
+  let l:exceptions = []
   let l:exclusions = []
 
   echo 'Git Ignore:' filereadable( a:file ) a:file
