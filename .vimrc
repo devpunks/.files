@@ -1453,6 +1453,7 @@ function s:tag ( ... ) abort
 
     echo v:shell_error
 
+    " TODO: Write file only when contents has changed
     call writefile ( a:tags + l:ts, l:tags )
   endfunction " write
 
