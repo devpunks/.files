@@ -1402,7 +1402,10 @@ function s:tag ( ... ) abort
 
     echo 'DA ROOT: ' l:root
 
-    let flags = [
+    let l:excludes = split ( &wildignore, ',' )
+      \ ->map( '"--exclude=" ..  v:val' )
+
+    let l:flags = [
     \ '--verbose --append --recurse --guess-language-eagerly',
     \ '--totals=yes --sort=foldcase --fields=+lknaS --tag-relative=never',
     \ '--langmap=vim:+.vimrc',
