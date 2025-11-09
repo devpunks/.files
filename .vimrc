@@ -1447,7 +1447,7 @@ function s:tag ( ... ) abort
     echo 'The command $ ' .. l:command
 
     let l:ts = systemlist ( l:command )
-      \ ->filter( 'match(v:val, "^ctags: Warning")')->join("\n")
+      \ ->filter( 'match(v:val, "^ctags: Warning")')
 
     echo v:shell_error
     echo "\nTHE TAGS\n\n"
