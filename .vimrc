@@ -1412,7 +1412,7 @@ function s:tag ( ... ) abort
   endfunction " read
 
   function! s:write () closure
-    echo 'Read Bang:' l:nobang
+    echo 'Write Bang:' l:nobang
 
   if l:nobang | return | endif
 
