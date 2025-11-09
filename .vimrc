@@ -171,6 +171,8 @@ set wildchar=<Tab>
 set wildcharm=<C-z> " macros
 set wildmode=list:full
 set wildoptions=pum,tagfile
+
+set wildignorecase
 set wildignore+=.DS_STORE,.git/,.bundle/,.cache/,.config/,.gem/,.local/,.npm/,.gnupg/,.ssh/,.vim/,bin/,downloads/,log/,logs/,node_modules/,storage/,tmp/,vendor/,images/
 
 " Completion / LSPs -------------------------------------------------------
