@@ -1413,7 +1413,7 @@ function s:tag ( ... ) abort
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
     \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'",
-    \ split ( &wildignore, ',' )->map( '"--exclude=" .. v:val' )->join( ' ' )
+    \ l:excludes->join()
     \]
     echo 'CTags Executable: ' .. system ( 'command -v ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
