@@ -216,6 +216,9 @@ function s:ignore ( file = '.gitignore' ) abort
     \ ->join( ',' )
 endfunction " ignore
 
+set wildignore=
+let &wildignore=s:ignore()
+
 " Completion / LSPs -------------------------------------------------------
 " https://linuxhandbook.com/vim-auto-complete
 " https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
