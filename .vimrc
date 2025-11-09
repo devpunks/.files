@@ -1441,7 +1441,7 @@ function s:tag ( ... ) abort
     let l:command = 'ctags '
       \ .. ( l:flags + l:excludes )->join()
       \.. ' --languages=' .. l:type
-      \ .. ' -o ' .. l:tags
+      \ .. ' -o ' .. '-'
       \ .. ' ' .. expand ( '%:p' )
     echo 'The command $ ' .. l:command
 
