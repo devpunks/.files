@@ -1417,7 +1417,8 @@ function s:tag ( ... ) abort
 
   if !!! l:bang | return | endif
 
-    echo 'DA ROOT: ' l:root
+    let l:tags = '-'
+    echom '🏷️Tags :' l:tags
 
     echo 'CTags Executable: ' .. system ( 'command -v ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
