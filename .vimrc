@@ -1376,7 +1376,7 @@ function s:ignore ( file = '.gitignore' ) abort
     \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
     \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
     \ ->join( ',' )
-endfunction
+endfunction " ignore
 
 command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
 function s:tag ( ... ) abort
