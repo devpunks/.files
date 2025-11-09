@@ -1412,8 +1412,8 @@ function s:tag ( ... ) abort
     return readfile( l:tags )->filter('v:val !~ expand("%:p")')
   endfunction " read
 
-  function! s:write () closure
-    echo 'Write Bang:' l:bang
+  function! s:write ( tags = [] ) closure
+    echom 'Write Bang:' l:bang
 
   if !!! l:bang | return | endif
 
