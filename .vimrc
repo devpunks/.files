@@ -1354,9 +1354,13 @@ function s:ignore ( file = '.gitignore' ) abort
       continue
     endif
 
-    echom line
-    echo 'Length:' strlen( line )
-    echo 'Match:' match( line, '^[ \t]*#' )
+    if match ( line, '^[ \t]*!' ) >= 0
+      call add ( l:additions, trim( line ) )
+    endif
+
+    if match ( line, '^[ \t]*!' ) < 0
+      call add ( l:exclusions, trim( line ) )
+    endif
   endfor
 
 endfunction
