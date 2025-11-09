@@ -1454,8 +1454,7 @@ function s:tag ( ... ) abort
     call writefile ( a:tags + l:ts, l:tags )
   endfunction " write
 
-  call s:read ()
-  call s:write ()
+  call s:write ( s:read () )
 
   echom 'Type: ' .. l:type
   echom 'Global tags (before): ' .. &g:tags
