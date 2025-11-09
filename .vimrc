@@ -1417,7 +1417,6 @@ function s:tag ( ... ) abort
 
   if !!! l:bang | return | endif
 
-    let l:tags = '-'
     echom '🏷️Tags :' l:tags
 
     echom 'DA ROOT: ' l:root
