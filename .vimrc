@@ -209,6 +209,11 @@ function s:ignore ( file = '.gitignore' ) abort
     \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
     \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
     \ ->join( ',' )
+
+  return l:exclusions ->uniq()
+    \ ->map( { _, path -> '**/' .. path } )
+    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
+    \ ->join( ',' )
 endfunction " ignore
 
 " Completion / LSPs -------------------------------------------------------
