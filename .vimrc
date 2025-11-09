@@ -1419,6 +1419,7 @@ function s:tag ( ... ) abort
     echom 'Writing tags for ' .. expand ( '%:p' )
 
     let l:tags = split ( &l:tags, ',' )[0]
+    let l:tags = '-'
     echom '🏷️Tags : ' .. l:tags
 
     let l:command = 'ctags'
