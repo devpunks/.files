@@ -173,7 +173,9 @@ set wildmode=list:full
 set wildoptions=pum,tagfile
 
 set wildignorecase
-set wildignore+=.DS_STORE,.git/,.bundle/,.cache/,.config/,.gem/,.local/,.npm/,.gnupg/,.ssh/,.vim/,bin/,downloads/,log/,logs/,node_modules/,storage/,tmp/,vendor/,images/
+" set wildignore+=.DS_STORE,.git/,.bundle/,.cache/,.config/,.gem/,.local/,.npm/,.gnupg/,.ssh/,.vim/,bin/,downloads/,log/,logs/,node_modules/,storage/,tmp/,vendor/,images/
+set wildignore=
+let &wildignore=s:ignore()
 
 function s:ignore ( file = '.gitignore' ) abort
   if !!! filereadable( a:file ) | return | endif
