@@ -181,7 +181,12 @@ function s:ignore ( file = '.gitignore' ) abort
   let l:exceptions = []
   let l:exclusions = []
 
-  echo 'Git Ignore:' a:file
+  let l:root = fnamemodify (
+    \ finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME )
+    \ ?? $HOME , ':p' )
+  let l:file = l:root .. a:file
+
+  if !!! filereadable( l:file ) | return | endif
 
   for line in readfile( a:file )
     if strlen ( trim ( line ) ) == 0 || match ( line, '^[ \t]*#' ) >= 0
