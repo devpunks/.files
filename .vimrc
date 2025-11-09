@@ -1400,6 +1400,13 @@ function s:tag ( ... ) abort
 
   if l:nobang | return | endif
 
+  endfunction " write
+
+  function! s:write () closure
+    echo 'Read Bang:' l:nobang
+
+  if l:nobang | return | endif
+
     echo 'DA ROOT: ' l:root
 
     let l:excludes = split ( &wildignore, ',' )
