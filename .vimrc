@@ -1405,7 +1405,11 @@ function s:tag ( ... ) abort
 
   if l:nobang | return | endif
 
-  endfunction " write
+    echo 'DA ROOT: ' l:root
+
+    echom 'Reading tags for ' .. expand ( '%:p' )
+
+  endfunction " read
 
   function! s:write () closure
     echo 'Read Bang:' l:nobang
