@@ -6,6 +6,7 @@
 # dotfiles
 .git/
 .gist
+  .gist
 .less
 .lesskey
 .docker
