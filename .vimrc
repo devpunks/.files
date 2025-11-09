@@ -1400,7 +1400,7 @@ function s:tag ( ... ) abort
 
 
   function! s:read () closure
-    echo 'Read Bang: ' l:bang
+    echom 'Read Bang: ' l:bang
 
   if !!! l:bang | return | endif
 
