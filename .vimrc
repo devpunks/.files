@@ -1424,8 +1424,8 @@ function s:tag ( ... ) abort
 
     echom 'DA ROOT: ' l:root
 
-    echom 'CTags Executable: ' .. system ( 'command -v ctags' )
-    echom 'Writing tags for ' .. expand ( '%:p' )
+    echom 'CTags Executable:' system ( 'command -v ctags' )
+    echom 'Writing tags for' expand ( '%:p' )
 
     let l:excludes = split ( &wildignore, ',' )
       \ ->map( '"--exclude=" ..  v:val' )
