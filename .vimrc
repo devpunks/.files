@@ -1406,7 +1406,7 @@ function s:tag ( ... ) abort
 
     echom 'DA ROOT: ' l:root
 
-    echom 'Reading tags for ' .. expand ( '%:p' )
+    echom 'Reading' l:tags 'for' expand ( '%:p' )
 
   endfunction " read
 
