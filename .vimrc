@@ -1404,7 +1404,7 @@ function s:tag ( ... ) abort
 
   if !!! l:bang | return | endif
 
-    echo 'DA ROOT: ' l:root
+    echom 'DA ROOT: ' l:root
 
     echom 'Reading tags for ' .. expand ( '%:p' )
 
