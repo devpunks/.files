@@ -1348,7 +1348,7 @@ function s:ignore ( file = '.gitignore' ) abort
   let l:exceptions = []
   let l:exclusions = []
 
-  echo 'Git Ignore:' filereadable( a:file ) a:file
+  echo 'Git Ignore:' a:file
 
   for line in readfile( a:file )
     if strlen ( trim ( line ) ) == 0 || match ( line, '^[ \t]*#' ) >= 0
