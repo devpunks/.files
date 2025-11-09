@@ -7,6 +7,11 @@
   /.git/
 /.git/
 .git/
+dist/
+.vim/
+.local/
+
+# dotfiles
 .gist
   .gist
 .less
