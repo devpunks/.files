@@ -1450,6 +1450,7 @@ function s:tag ( ... ) abort
     echo l:ts
   endfunction " write
 
+  call s:read ()
   call s:write ()
 
   echom 'Type: ' .. l:type
