@@ -62,6 +62,8 @@ bin/
 
 # temporary
 tmp/
+*.swp
+*.tmp
 
 # termux
 storage/
