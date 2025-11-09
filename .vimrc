@@ -1396,8 +1396,12 @@ function s:tag ( ... ) abort
     \ finddir ( '.git/..', expand ( '%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
 
-  function! s:write () closure
-    echo 'Bang: ' .. l:nobang
+  let l:tags = '-'
+  echom '🏷️Tags :' l:tags
+
+
+  function! s:read () closure
+    echo 'Read Bang: ' l:nobang
 
   if l:nobang | return | endif
 
