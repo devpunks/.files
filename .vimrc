@@ -1418,6 +1418,9 @@ function s:tag ( ... ) abort
 
     echo 'DA ROOT: ' l:root
 
+    echo 'CTags Executable: ' .. system ( 'command -v ctags' )
+    echom 'Writing tags for ' .. expand ( '%:p' )
+
     let l:excludes = split ( &wildignore, ',' )
       \ ->map( '"--exclude=" ..  v:val' )
 
