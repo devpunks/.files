@@ -1409,8 +1409,8 @@ function s:tag ( ... ) abort
     \ '--langmap=javascript:+.es',
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
-    \ '--exclude={.git,.bundle,.cache,.config,.gem,.local,.npm,.gnupg,.ssh,.vim,bin,downloads,log,logs,node_modules,storage,tmp,vendor,images}',
-    \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
+    \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'",
+    \ split ( &wildignore, ',' )->map( '"--exclude=" .. v:val' )->join( ' ' )
     \]
     echo 'CTags Executable: ' .. system ( 'command -v ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
