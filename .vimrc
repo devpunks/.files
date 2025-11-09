@@ -1429,7 +1429,9 @@ function s:tag ( ... ) abort
       \ .. ' ' .. expand ( '%:p' )
     echo 'The command $ ' .. l:command
 
-    call system ( l:command .. ' &' )
+    let l:ts = systemlist ( l:command )
+      \ ->filter( 'match(v:val, "^ctags: Warning")')->join("\n")
+
     echo v:shell_error
   endfunction " write
 
