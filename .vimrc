@@ -1434,12 +1434,6 @@ function s:tag ( ... ) abort
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
     \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
     \]
-    echo 'CTags Executable: ' .. system ( 'command -v ctags' )
-    echom 'Writing tags for ' .. expand ( '%:p' )
-
-    let l:tags = split ( &l:tags, ',' )[0]
-    let l:tags = '-'
-    echom '🏷️Tags : ' .. l:tags
 
     let l:command = 'ctags '
       \ .. ( l:flags + l:excludes )->join()
