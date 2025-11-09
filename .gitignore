@@ -1,4 +1,7 @@
-# https://github.com/github/gitignore
+    # https://github.com/github/gitignore
+!foo
+  !bar
+!bar
 
 # dotfiles
 .gist
