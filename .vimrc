@@ -178,8 +178,6 @@ set wildignore=
 let &wildignore=s:ignore()
 
 function s:ignore ( file = '.gitignore' ) abort
-  if !!! filereadable( a:file ) | return | endif
-
   let l:exceptions = []
   let l:exclusions = []
 
