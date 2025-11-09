@@ -4,6 +4,7 @@
 !bar
 
 # dotfiles
+.git/
 .gist
 .less
 .lesskey
