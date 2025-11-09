@@ -3,7 +3,9 @@
   !bar
 !bar
 
-# dotfiles
+# directories
+  /.git/
+/.git/
 .git/
 .gist
   .gist
