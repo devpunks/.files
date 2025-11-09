@@ -1414,7 +1414,7 @@ function s:tag ( ... ) abort
   function! s:write () closure
     echo 'Write Bang:' l:bang
 
-  if l:nobang | return | endif
+  if !!! l:bang | return | endif
 
     echo 'DA ROOT: ' l:root
 
