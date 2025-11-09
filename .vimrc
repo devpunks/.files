@@ -1368,6 +1368,13 @@ function s:ignore ( file = '.gitignore' ) abort
     \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
     \ ->join( ',' )
 
+  echo "\nWildignores (local):\n" .. &l:wildignore
+
+  echo "\nAdditions:\n" .. l:additions->uniq()->join( ',' )
+
+" let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
+"   \ { _, language -> tolower( language ) } )
+" return map( l:bookmarks, "{ 'line': v:val, 'path': v:val }")
 endfunction
 
 command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
