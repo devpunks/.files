@@ -35,8 +35,6 @@ config/
 .gnupg/
 
 # miscellaneous
-.vim/
-.local/
 NOTES*
 
 # logs
