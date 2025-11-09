@@ -188,7 +188,9 @@ function s:ignore ( file = '.gitignore' ) abort
 
   if !!! filereadable( l:file ) | return | endif
 
-  for line in readfile( a:file )
+  echo 'Git Ignore:' l:file
+
+  for line in readfile( l:file )
     if strlen ( trim ( line ) ) == 0 || match ( line, '^[ \t]*#' ) >= 0
       continue
     endif
