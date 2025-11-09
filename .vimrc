@@ -175,6 +175,42 @@ set wildoptions=pum,tagfile
 set wildignorecase
 set wildignore+=.DS_STORE,.git/,.bundle/,.cache/,.config/,.gem/,.local/,.npm/,.gnupg/,.ssh/,.vim/,bin/,downloads/,log/,logs/,node_modules/,storage/,tmp/,vendor/,images/
 
+function s:ignore ( file = '.gitignore' ) abort
+  if !!! filereadable( a:file ) | return | endif
+
+  let l:exceptions = []
+  let l:exclusions = []
+
+  echo 'Git Ignore:' a:file
+
+  for line in readfile( a:file )
+    if strlen ( trim ( line ) ) == 0 || match ( line, '^[ \t]*#' ) >= 0
+      continue
+    endif
+
+    if match ( line, '^[ \t]*!' ) >= 0
+      call add ( l:exceptions, trim( line ) )
+    endif
+
+    if match ( line, '^[ \t]*!' ) < 0
+      call add ( l:exclusions, trim( line ) )
+    endif
+  endfor
+
+  let &l:wildignore = l:exclusions ->uniq()
+    \ ->map( { _, path -> '**/' .. path } )
+    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
+    \ ->join( ',' )
+
+  echo "\nWildignores (local):\n" .. &l:wildignore
+
+  echo "\nExceptions:\n" ..
+    \ l:exceptions ->uniq()
+    \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
+    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
+    \ ->join( ',' )
+endfunction " ignore
+
 " Completion / LSPs -------------------------------------------------------
 " https://linuxhandbook.com/vim-auto-complete
 " https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
