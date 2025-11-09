@@ -12,6 +12,7 @@
 .docker
 .eclipse
 .viminfo
+.DS_STORE
 .bookmarks
 .NERDmarks
 .git-completion.bash
