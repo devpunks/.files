@@ -1403,7 +1403,7 @@ function s:tag ( ... ) abort
   function! s:read () closure
     echo 'Read Bang: ' l:bang
 
-  if l:nobang | return | endif
+  if !!! l:bang | return | endif
 
     echo 'DA ROOT: ' l:root
 
@@ -1412,7 +1412,7 @@ function s:tag ( ... ) abort
   endfunction " read
 
   function! s:write () closure
-    echo 'Write Bang:' l:nobang
+    echo 'Write Bang:' l:bang
 
   if l:nobang | return | endif
 
