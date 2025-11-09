@@ -1379,42 +1379,6 @@ augroup END
 nnoremap <C-/> :echo 'Next Tag :tnext'<CR>
 nnoremap <C-\> :echo 'Previous Tag :tprev'<CR>
 
-function s:ignore ( file = '.gitignore' ) abort
-  if !!! filereadable( a:file ) | return | endif
-
-  let l:exceptions = []
-  let l:exclusions = []
-
-  echo 'Git Ignore:' a:file
-
-  for line in readfile( a:file )
-    if strlen ( trim ( line ) ) == 0 || match ( line, '^[ \t]*#' ) >= 0
-      continue
-    endif
-
-    if match ( line, '^[ \t]*!' ) >= 0
-      call add ( l:exceptions, trim( line ) )
-    endif
-
-    if match ( line, '^[ \t]*!' ) < 0
-      call add ( l:exclusions, trim( line ) )
-    endif
-  endfor
-
-  let &l:wildignore = l:exclusions ->uniq()
-    \ ->map( { _, path -> '**/' .. path } )
-    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
-    \ ->join( ',' )
-
-  echo "\nWildignores (local):\n" .. &l:wildignore
-
-  echo "\nExceptions:\n" ..
-    \ l:exceptions ->uniq()
-    \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
-    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
-    \ ->join( ',' )
-endfunction " ignore
-
 command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
 function s:tag ( ... ) abort
   let l:nobang= !!! get ( a:, 1, v:false )
