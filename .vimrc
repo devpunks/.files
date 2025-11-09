@@ -1370,7 +1370,11 @@ function s:ignore ( file = '.gitignore' ) abort
 
   echo "\nWildignores (local):\n" .. &l:wildignore
 
-  echo "\nAdditions:\n" .. l:additions->uniq()->join( ',' )
+  echo "\nExceptions:\n" ..
+    \ l:exceptions ->uniq()
+    \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
+    \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
+    \ ->join( ',' )
 
 " let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
 "   \ { _, language -> tolower( language ) } )
