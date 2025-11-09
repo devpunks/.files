@@ -1433,6 +1433,8 @@ function s:tag ( ... ) abort
       \ ->filter( 'match(v:val, "^ctags: Warning")')->join("\n")
 
     echo v:shell_error
+    echo "\nTHE TAGS\n\n"
+    echo l:ts
   endfunction " write
 
   call s:write ()
