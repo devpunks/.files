@@ -1388,9 +1388,10 @@ command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
 function s:tag ( ... ) abort
   let l:nobang= !!! get ( a:, 1, v:false )
 
-  let l:type= get ( a:, 2, &l:filetype )
-  let l:languages = map ( systemlist ( 'command ctags --list-languages' ),
-    \ { _, language -> tolower( language ) } )
+  let l:type = get ( a:, 2, &l:filetype )
+  let l:tags = split ( &l:tags, ',' ) [ 0 ]
+  let l:languages = systemlist ( 'command ctags --list-languages' )
+    \ ->map( 'tolower( v:val )' )
   let l:root = fnamemodify (
     \ finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
