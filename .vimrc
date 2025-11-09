@@ -1396,7 +1396,6 @@ function s:tag ( ... ) abort
     \ finddir ( '.git/..', expand ( '%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
 
-  let l:tags = '-'
   echom '🏷️Tags :' l:tags
 
 
