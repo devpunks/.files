@@ -77,6 +77,9 @@ Movies/
 Public/
 Music/
 
+# multimedia
+images/
+
 # node
 .npm/
 .nvm/
