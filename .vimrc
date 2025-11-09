@@ -1420,7 +1420,9 @@ function s:tag ( ... ) abort
     let l:tags = '-'
     echom '🏷️Tags :' l:tags
 
-    echo 'CTags Executable: ' .. system ( 'command -v ctags' )
+    echom 'DA ROOT: ' l:root
+
+    echom 'CTags Executable: ' .. system ( 'command -v ctags' )
     echom 'Writing tags for ' .. expand ( '%:p' )
 
     let l:excludes = split ( &wildignore, ',' )
