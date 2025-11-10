@@ -1399,7 +1399,7 @@ function s:tag ( ... ) abort
     \ finddir ( '.git/..', expand ( '%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
 
-  echom '🏷️Tags :' l:tags
+  echom '🏷️Tags path:' l:path
 
 
   function! s:read () closure
