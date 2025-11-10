@@ -1421,12 +1421,9 @@ function s:tag ( ... ) abort
 
   if !!! l:bang | return | endif
 
-    echom '🏷️Tags :' l:tags
-
-    echom 'DA ROOT: ' l:root
-
-    echom 'CTags Executable:' system ( 'command -v ctags' )
-    echom 'Writing tags for' expand ( '%:p' )
+    let l:temp = tempname ()
+    let l:headers = []
+    let l:tags = a:tags
 
     let l:excludes = split ( &wildignore, ',' )
       \ ->map( '"--exclude=" ..  v:val' )
