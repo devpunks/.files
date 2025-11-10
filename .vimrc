@@ -1401,7 +1401,9 @@ function s:tag ( ... ) abort
   function! s:read ( file ) closure
     echom 'Read Bang: ' l:bang
 
-  if !!! l:bang | return | endif
+    if !!! l:bang | return [] | endif
+
+    if !!! filereadable ( a:file ) | return [] | endif
 
     echom 'Reading' a:file 'tags without' expand ( '%:p' )
 
