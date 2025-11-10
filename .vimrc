@@ -1492,6 +1492,10 @@ function s:tag ( ... ) abort
   echom 'paths:' l:paths
   let l:path = split ( &l:paths, ',' ) [ 0 ]
 
+  echom '🏷️Tags path:' l:path
+
+  call s:write ( s:read () )
+
   " TODO: remove duplicates from parent in tagstack
   " The next file in the list is not used when:
   " - A matching static tag for the current buffer has been found.
