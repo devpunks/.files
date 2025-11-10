@@ -1452,8 +1452,13 @@ function s:tag ( ... ) abort
     echom "\n\nWriting tags for" expand ( '%:p' )
     call system ( l:command )
 
-    let l:ts = systemlist ( l:command )
-      \ ->filter( 'match(v:val, "^ctags: Warning")')
+    for line in readfile( l:temp )
+      if line =~ '^!_TAG' | call add( l:headers, line ) | endif
+      if line =~ expand("%:p") | call add( l:tags, line ) | endif
+    endfor
+
+    echo "\n\nHEADERS\n\n"
+    echo l:headers
 
     echo v:shell_error
 
