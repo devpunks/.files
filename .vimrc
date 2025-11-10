@@ -1444,6 +1444,10 @@ function s:tag ( ... ) abort
       \.. ' --languages=' .. l:type
       \ .. ' -o ' .. l:temp
       \ .. ' ' .. expand ( '%:p' )
+
+    echom 'DA ROOT: ' l:root
+    echo 'The file:' l:temp
+    echom 'CTags Executable:' system ( 'command -v ctags' )
     echo 'The command $ ' .. l:command
 
     let l:ts = systemlist ( l:command )
