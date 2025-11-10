@@ -1490,7 +1490,16 @@ function s:tag ( ... ) abort
   " The next file in the list is not used when:
   " - A matching static tag for the current buffer has been found.
   " - A matching global tag has been found.
-  let &l:paths = l:lpaths>filter ( ' ! empty (val) ' )->join( ',' )
+  " l:paths = filter( l:paths, 'empty( v:val )' )
+  let l:path = l:paths[ 0 ]
+
+  echom 'paths:'
+  echom l:paths
+
+  echom '🏷️Tags path:' l:path
+  call s:write ( s:read ( l:path ) )
+
+  let &l:tags = l:paths->join( ',' )
 
   echom 'Global tags (after):'
   setglobal tags?
