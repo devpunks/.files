@@ -1449,6 +1449,8 @@ function s:tag ( ... ) abort
     echo 'The file:' l:temp
     echom 'CTags Executable:' system ( 'command -v ctags' )
     echo 'The command $ ' .. l:command
+    echom "\n\nWriting tags for" expand ( '%:p' )
+    call system ( l:command )
 
     let l:ts = systemlist ( l:command )
       \ ->filter( 'match(v:val, "^ctags: Warning")')
