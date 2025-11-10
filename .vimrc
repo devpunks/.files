@@ -1481,6 +1481,7 @@ function s:tag ( ... ) abort
   let l:paths = []
   let l:file = findfile ( l:type .. '.tags', expand('%:p:h') .. ';' .. l:root ) " see :h tag-option
   if empty ( l:file ) | echom '⚠️ Generate CTags for ⋙ ' .. l:type | return | endif
+
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while ! empty ( l:file )
     echom '(' .. l:type .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
