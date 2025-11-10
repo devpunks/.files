@@ -1500,7 +1500,7 @@ function s:tag ( ... ) abort
 
   echom 'Global tags (after):'
   setglobal tags?
-  echom 'Local tags (after): '
+  echom 'Local tags (after):'
   setlocal tags?
   echom 'Omni Completion: ' .. &l:omnifunc
 endfunction " tag
