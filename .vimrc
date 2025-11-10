@@ -1496,7 +1496,7 @@ function s:tag ( ... ) abort
   " The next file in the list is not used when:
   " - A matching static tag for the current buffer has been found.
   " - A matching global tag has been found.
-  let &l:tags = join ( filter ( l:tags, { _, val -> ! empty (val) } ), ',' )
+  let &l:tags = l:tags->filter ( ' ! empty (val) ' )->join( ',' )
 
   echom 'Global tags (after): '
   setglobal tags?
