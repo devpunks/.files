@@ -1460,7 +1460,8 @@ function s:tag ( ... ) abort
     echo "\n\nHEADERS\n\n"
     echo l:headers
 
-    echo v:shell_error
+    echo "\n\nTAGS\n\n"
+    echo l:tags
 
     " TODO: Write file only when contents has changed
     call writefile ( a:tags + l:ts, l:tags )
