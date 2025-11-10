@@ -1399,7 +1399,7 @@ function s:tag ( ... ) abort
     \ ?? $HOME , ':p' )
 
 
-  function! s:read () closure
+  function! s:read ( l:file ) closure
     echom 'Read Bang: ' l:bang
 
   if !!! l:bang | return | endif
