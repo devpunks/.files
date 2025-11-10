@@ -1455,12 +1455,6 @@ function s:tag ( ... ) abort
       if line =~ expand("%:p") | call add( l:tags, line ) | endif
     endfor
 
-    echo "\n\nHEADERS\n\n"
-    echo l:headers
-
-    echo "\n\nTAGS\n\n"
-    echo l:tags
-
     echom 'Writing 🏷️Tags to:' l:path
     " TODO: Write file only when contents has changed
     call writefile ( l:headers + l:tags, l:path )
