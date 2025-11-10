@@ -1411,6 +1411,7 @@ function s:tag ( ... ) abort
       \ ->filter( ' v:val =~ expand("%:p") ' )
   endfunction " read
 
+
   function! s:write ( tags = [] ) closure
     echom 'Write Bang:' l:bang
 
