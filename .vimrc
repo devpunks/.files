@@ -1486,6 +1486,10 @@ function s:tag ( ... ) abort
     let l:file = findfile ( l:type .. '.tags', l:parent .. ';' .. l:root )
   endwhile
 
+  return
+
+
+  echom 'paths:' l:paths
   let l:path = split ( &l:paths, ',' ) [ 0 ]
 
   " TODO: remove duplicates from parent in tagstack
