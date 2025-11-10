@@ -1463,6 +1463,7 @@ function s:tag ( ... ) abort
     echo "\n\nTAGS\n\n"
     echo l:tags
 
+    echom 'Writing 🏷️Tags to:' l:path
     " TODO: Write file only when contents has changed
     call writefile ( a:tags + l:ts, l:tags )
   endfunction " write
