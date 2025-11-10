@@ -1465,6 +1465,7 @@ function s:tag ( ... ) abort
 
   echom 'Found CTags language:' l:type
   echom 'Global tags (before):' &g:tags
+  echom 'Root:' l:root
   echom 'GIT root path: '
     \ .. trim ( system ( 'cd '.. getcwd() ..' && GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
