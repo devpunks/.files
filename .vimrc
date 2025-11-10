@@ -1466,6 +1466,8 @@ function s:tag ( ... ) abort
     \ ->index( l:type ) < 0
   \ | return | endif
 
+  echom 'Root:' l:root
+  echom 'GIT root path:' l:git
   echom 'Found CTags language:' l:type
   echom 'Global tags (before):' &g:tags
   echom 'Root:' l:root
