@@ -1440,7 +1440,6 @@ function s:tag ( ... ) abort
       \ .. ' -o ' .. l:temp
       \ .. ' ' .. expand ( '%:p' )
 
-    echom 'DA ROOT:' l:root
     echom 'tempfile:' l:temp
     echo 'CTags Executable:' system ( 'command -v ctags' )
     echom 'The command $' l:command
