@@ -1458,6 +1458,10 @@ function s:tag ( ... ) abort
     echom 'Writing 🏷️Tags to:' l:path
     " TODO: Write file only when contents has changed
     call writefile ( l:headers + l:tags, l:path )
+
+    echom 'deleting tempfile:' l:temp
+    call delete ( l:temp )
+    echom
   endfunction " write
 
   call s:write()
