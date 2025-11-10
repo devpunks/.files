@@ -1419,6 +1419,7 @@ function s:tag ( ... ) abort
 
     let l:headers = []
     let l:tags = a:tags
+    let l:temp = tempname ()
 
     let l:excludes = split ( &wildignore, ',' )
       \ ->map( '"--exclude=" ..  v:val' )
