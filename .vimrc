@@ -1498,7 +1498,7 @@ function s:tag ( ... ) abort
   " - A matching global tag has been found.
   let &l:tags = l:tags->filter ( ' ! empty (val) ' )->join( ',' )
 
-  echom 'Global tags (after): '
+  echom 'Global tags (after):'
   setglobal tags?
   echom 'Local tags (after): '
   setlocal tags?
