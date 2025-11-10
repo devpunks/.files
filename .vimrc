@@ -1406,9 +1406,7 @@ function s:tag ( ... ) abort
 
     echom 'Reading' a:file 'tags without' expand ( '%:p' )
 
-    echom 'Reading' l:path 'tags without' expand ( '%:p' )
-
-    return readfile( l:path )
+    return readfile( a:file )
       \ ->filter( ' v:val =~ "^!_TAG" ' )
       \ ->filter( ' v:val =~ expand("%:p") ' )
   endfunction " read
