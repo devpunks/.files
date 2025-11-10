@@ -1443,11 +1443,11 @@ function s:tag ( ... ) abort
       \ .. ' -o ' .. l:temp
       \ .. ' ' .. expand ( '%:p' )
 
-    echom 'DA ROOT: ' l:root
-    echo 'The file:' l:temp
-    echom 'CTags Executable:' system ( 'command -v ctags' )
-    echo 'The command $ ' .. l:command
-    echom "\n\nWriting tags for" expand ( '%:p' )
+    echom 'DA ROOT:' l:root
+    echom 'tempfile:' l:temp
+    echo 'CTags Executable:' system ( 'command -v ctags' )
+    echom 'The command $' l:command
+    echo "\nWriting tags for" expand ( '%:p' )
     call system ( l:command )
 
     for line in readfile( l:temp )
