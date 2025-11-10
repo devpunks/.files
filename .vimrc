@@ -1458,10 +1458,10 @@ function s:tag ( ... ) abort
   endfunction " write
 
 
-  echom 'Root:' l:root
-  echom 'Type:' l:type
-  if index( l:languages, l:type ) < 0 | return | endif
-  echom 'Found CTags language:' l:type
+  if systemlist ( 'command ctags --list-languages' )
+    \ ->map( ' tolower( v:val ) ' )
+    \ ->index( l:type  ) < 0
+  \ | return | endif
 
   echom 'Global tags (before):' &g:tags
   echom 'GIT root path: '
