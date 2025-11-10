@@ -1485,9 +1485,9 @@ function s:tag ( ... ) abort
   " TODO: Stop at project marker (i.e. .git, package.json, Gemfile)
   while ! empty ( l:file )
     echom '(' .. l:type .. ' tags) definitions path: '.. fnamemodify ( l:file, ':p' )
-    call add ( l:tags, fnamemodify ( l:file, ':p' ) )
-    let l:path = fnamemodify ( l:file, ':p:h:h' )
-    let l:file = findfile ( l:type .. '.tags', l:path .. ';' .. l:root )
+    call add ( l:paths, fnamemodify ( l:file, ':p' ) )
+    let l:parent = fnamemodify ( l:file, ':p:h:h' )
+    let l:file = findfile ( l:type .. '.tags', l:parent .. ';' .. l:root )
   endwhile
 
   " TODO: remove duplicates from parent in tagstack
