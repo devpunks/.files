@@ -1434,7 +1434,8 @@ function s:tag ( ... ) abort
     \ '--langmap=javascript:+.es',
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
-    \ "--regex-" .. l:type .. "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
+    \ '--totals=yes --sort=foldcase --tag-relative=never --fields=+lknaS',
+    \ "--regex-" . l:type . "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
     \]
 
     let l:command = 'ctags '
