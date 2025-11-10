@@ -1470,7 +1470,7 @@ function s:tag ( ... ) abort
   echom 'GIT root path: '
     \ .. trim ( system ( 'cd '.. getcwd() ..' && GIT_TRACE=0 git rev-parse --show-toplevel' ) )
 
-  echom 'Loading tags for ' .. expand ( '%:p' )
+  echom 'Loading tags for' expand ( '%:p' )
 
   let l:paths = []
   let l:file = findfile ( l:type .. '.tags', expand('%:p:h') .. ';' .. l:root ) " see :h tag-option
