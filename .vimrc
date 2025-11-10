@@ -1490,6 +1490,8 @@ function s:tag ( ... ) abort
     let l:file = findfile ( l:type .. '.tags', l:parent .. ';' .. l:root )
   endwhile
 
+  let l:path = split ( &l:paths, ',' ) [ 0 ]
+
   " TODO: remove duplicates from parent in tagstack
   " The next file in the list is not used when:
   " - A matching static tag for the current buffer has been found.
