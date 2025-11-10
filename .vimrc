@@ -1404,7 +1404,7 @@ function s:tag ( ... ) abort
 
   if !!! l:bang | return | endif
 
-    echom 'DA ROOT: ' l:root
+    echom 'Reading' a:file 'tags without' expand ( '%:p' )
 
     echom 'Reading' l:path 'tags without' expand ( '%:p' )
 
