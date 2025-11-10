@@ -1417,7 +1417,6 @@ function s:tag ( ... ) abort
 
   if !!! l:bang | return | endif
 
-    let l:temp = tempname ()
     let l:headers = []
     let l:tags = a:tags
 
