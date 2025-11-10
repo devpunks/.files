@@ -1422,7 +1422,7 @@ function s:tag ( ... ) abort
     let l:temp = tempname ()
 
     let l:excludes = split ( &wildignore, ',' )
-      \ ->map( '"--exclude=" ..  v:val' )
+      \ ->map( ' "--exclude=" ..  v:val ' )
 
     let l:flags = [ '--verbose --recurse --guess-language-eagerly',
     \ '--languages=' . l:type,
