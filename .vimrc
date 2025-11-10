@@ -1398,8 +1398,6 @@ function s:tag ( ... ) abort
     \ finddir ( '.git/..', expand ( '%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
 
-  echom '🏷️Tags path:' l:path
-
 
   function! s:read () closure
     echom 'Read Bang: ' l:bang
