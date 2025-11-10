@@ -1461,13 +1461,8 @@ function s:tag ( ... ) abort
   endfunction " write
 
 
-  echom 'Type: ' .. l:type
-  echom 'Global tags (before): ' .. &g:tags
-
-  echom 'Root: ' .. l:root
-  echom 'GIT root path: '
-    \ .. trim ( system ( 'cd '..getcwd()..' && GIT_TRACE=0 git rev-parse --show-toplevel' ) )
-
+  echom 'Root:' l:root
+  echom 'Type:' l:type
   if index( l:languages, l:type ) < 0 | return | endif
   echom 'Found CTags language: ' .. l:type
 
