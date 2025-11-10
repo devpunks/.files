@@ -1460,7 +1460,6 @@ function s:tag ( ... ) abort
     echom
   endfunction " write
 
-  call s:write ( s:read () )
 
   echom 'Type: ' .. l:type
   echom 'Global tags (before): ' .. &g:tags
