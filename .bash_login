@@ -2993,6 +2993,7 @@ function play () { clear
 # https://gist.github.com/RockDeng110/d19d97534a34c971183327a11a466b91
 # ctags Installation - https://gist.github.com/SofijaErkin/f9c5a930ba4bd7bae2d63dcf988f6f0e
 # https://github.com/vim/vim/issues/2221
+# https://docs.ctags.io/en/latest/optlib.html
 # https://docs.ctags.io/en/latest/output-tags.html
 # https://docs.ctags.io/en/latest/man/ctags-optlib.7.html
 # https://sourceforge.net/p/ctags/mailman/message/29553275
