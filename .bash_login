@@ -2997,7 +2997,6 @@ function play () { clear
 # https://docs.ctags.io/en/latest/man/ctags-optlib.7.html
 # https://sourceforge.net/p/ctags/mailman/message/29553275
 # https://vi.stackexchange.com/q/13960/how-to-browse-tags-when-autochdir-is-set
-# --exclude-exception= - for files --exclude(ed)
 # --list-extras
 # --extras=+r - Include r(eference) tags (like GNU tags global)
 # --list-fields
