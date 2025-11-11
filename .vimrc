@@ -1426,6 +1426,8 @@ function s:tag ( ... ) abort
     let l:excludes = split ( &wildignore, ',' )
       \ ->map( ' "--exclude=" ..  v:val ' )
 
+    " Adds (#) to search /#\1/
+    " '--regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/',
     let l:flags = [ '--verbose --recurse --guess-language-eagerly',
     \ '--languages=' . l:type,
     \ '--langmap=vim:+.vimrc',
