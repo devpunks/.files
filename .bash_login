@@ -3005,6 +3005,8 @@ function play () { clear
 # --list-roles
 # --sort=(yes|no|foldcase)
 alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
+  --extras=+r \
+  --fields=+r \
   --totals=yes \
   --sort=foldcase \
   --fields=+lKnaS \
