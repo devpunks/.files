@@ -1431,7 +1431,7 @@ function s:tag ( ... ) abort
     \ '--langmap=javascript:+.es',
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
-    \ '--totals=yes --sort=foldcase --tag-relative=never --fields=+lknaS',
+    \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS',
     \ "--regex-" . l:type . "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
     \]
 
