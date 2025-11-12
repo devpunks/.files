@@ -1440,6 +1440,7 @@ function s:tag ( ... ) abort
     \ '--regex-markdown=/^(#+[ \t]+.*)/\1/h,heading,headings/',
 
     \ '--langdef=dockerfile',
+    \ '--langmap=dockerfile:+(Dockerfile)',
 
     \ '--regex-html=/id=[\"]*([A-Za-z0-9_-]+)[\"]*/#\1/i,id,ids/',
     \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
