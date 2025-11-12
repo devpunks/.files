@@ -1439,8 +1439,7 @@ function s:tag ( ... ) abort
     \ '--langmap=markdown:.md\(README\)',
     \ '--regex-markdown=/^(#+[ \t]+.*)/\1/h,heading,headings/',
 
-    \ '--langdef=dockerfile',
-    \ '--langmap=dockerfile:+(Dockerfile)',
+    \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
 
     \ '--regex-html=/id=[\"]*([A-Za-z0-9_-]+)[\"]*/#\1/i,id,ids/',
     \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
