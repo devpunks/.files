@@ -1431,6 +1431,7 @@ function s:tag ( ... ) abort
     let l:flags = [ '--verbose --recurse --guess-language-eagerly',
     \ '--languages=' . l:type,
     \ '--langmap=vim:+.vimrc',
+
     \ '--langmap=javascript:+.es',
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=css:+.less.scss.sass.styl',
