@@ -1359,6 +1359,8 @@ endfunction " indentation
   let &g:tags = findfile( 'tags', '.;' )
   set tagcase=followscs " Follow smartcase & ignorecase
 
+  set iskeyword+=-,. " a-z,A-Z,48-57,_,.,-,>
+
   echom 'Current Dir: ' .. getcwd ()
   echom '(tags) definitions path: '.. &g:tags
 
