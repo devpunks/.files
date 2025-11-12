@@ -1539,9 +1539,6 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:winid = win_getid ()
   let l:file = expand ('%:p')
 
-  " TODO: set back after function run
-  set iskeyword+=-,. " a-z,A-Z,48-57,_,.,-,>
-
   if empty( a:expression ) | echo '' | return | endif
   if !!! ( a:expression =~ '^[a-zA-Z0-9_-]\+$' ) | echo '' | return | endif
 
