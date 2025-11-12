@@ -1424,7 +1424,7 @@ function s:tag ( ... ) abort
     let l:temp = tempname ()
 
     let l:excludes = split ( &wildignore, ',' )
-      \ ->map( ' "--exclude=" ..  v:val ' )
+      \ ->map( ' "--exclude=" .. v:val ' )
 
     " Adds (#) to search /#\1/
     " '--regex-css=/^[ \t]*#([A-Za-z0-9_-]+)/#\1/i,id,ids/',
