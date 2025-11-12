@@ -1449,11 +1449,6 @@ function s:tag ( ... ) abort
     \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[/1/a,array,arrays/",
     \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[\"\']/1/s,string,strings/",
 
-    \ '--langmap=ruby:+.erb\(Gemfile\)',
-
-    \ '--regex-html=/id=[\"]*([A-Za-z0-9_-]+)[\"]*/#\1/i,id,ids/',
-    \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
-
     \ '--langmap=css:+.less.scss.sass.styl',
     \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-])( |$)/#\1/i,id,ids/',
     \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-])( |$)/.\1/c,class,classes/',
