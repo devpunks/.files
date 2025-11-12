@@ -1459,7 +1459,7 @@ function s:tag ( ... ) abort
     \ '--regex-css=/^[ \t]*--([A-Za-z0-9_-]+)/--\1/v,variable,variables/',
     \ '--regex-css=/^[ \t]*@media\s+([ \t]*[A-Za-z0-9_-]+[ \t]*)/\1/m,media,medias/',
 
-    \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
+    \ '--regex-' . l:type . '=/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\',
 
     \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS',
 
