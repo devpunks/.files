@@ -1435,7 +1435,8 @@ function s:tag ( ... ) abort
     \ '--langmap=vim:+.vimrc',
 
     \ '--langmap=javascript:+.es',
-     \ '--regex-js=/([A-Za-z0-9._$]+)[ t]*[:=][ t]*{/1/,object/',
+    \ '--regex-js=/([A-Za-z0-9._$]+)[ t]*[:=][ t]*{/1/,object/',
+    \ '--regex-js=/([A-Za-z0-9._$()]+)[ t]*[:=][ t]*function[ t]*(/1/,function/',
 
     \ '--langmap=ruby:+.erb\(Gemfile\)',
 
