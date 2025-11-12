@@ -1353,7 +1353,6 @@ endfunction " indentation
 "  - TODO: TAGSCOPE PLUGIN - https://stackoverflow.com/q/7932694/lookup-a-specific-kind-of-tag-in-vim#comment81747695_7932694
 " -------------------------------------------------------------------------
   set tagstack
-
   set tagbsearch " disable if not sorted
   set tagfunc=TagFunc
   let &g:tags = findfile( 'tags', '.;' )
