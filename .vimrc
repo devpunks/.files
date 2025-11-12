@@ -1440,6 +1440,8 @@ function s:tag ( ... ) abort
     \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-])( |$)/#\1/i,id,ids/',
     \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-])( |$)/.\1/c,class,classes/',
     \ '--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/',
+    \ '--regex-css=/^[ \t]*@media\s+([ \t]*[A-Za-z0-9_-]+[ \t]*)/\1/m,media,medias/'
+
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
     \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS',
     \ "--regex-" . l:type . "='/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'"
