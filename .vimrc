@@ -1435,6 +1435,7 @@ function s:tag ( ... ) abort
     \ '--langmap=javascript:+.es',
 
     \ '--langmap=ruby:+.erb\(Gemfile\)',
+
     \ '--langmap=css:+.less.scss.sass.styl',
     \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-]+)/\1/i,id,ids/',
     \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-]+)/\1/c,class,classes/',
