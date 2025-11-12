@@ -1434,7 +1434,7 @@ function s:tag ( ... ) abort
     \ '--languages=' . l:type,
     \ '--langmap=vim:+.vimrc',
 
-     \ '--langmap=markdown:.md\(README\)',
+    \ '--langmap=markdown:.md\(README\)',
 
     \ '--langmap=javascript:+.es',
     \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*{/1/o,object,objects/",
