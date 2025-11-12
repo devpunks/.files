@@ -1435,10 +1435,10 @@ function s:tag ( ... ) abort
     \ '--langmap=vim:+.vimrc',
 
     \ '--langmap=javascript:+.es',
-    \ '--regex-js=/([A-Za-z0-9._$]+)[ t]*[:=][ t]*{/1/o,object,objects/',
-    \ '--regex-js=/([A-Za-z0-9._$()]+)[ t]*[:=][ t]*function[ t]*(/1/,f,function,functions/',
-    \ '--regex-js=/function[ t]+([A-Za-z0-9._$]+)[ t]*(([^)]))/1/f,function,functions/',
-    \ '--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[/1/a,array,arrays/',
+    \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*{/1/o,object,objects/",
+    \ "--regex-js=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*(/1/,f,function,functions/",
+    \ "--regex-js=/function[ \t]+([A-Za-z0-9._$]+)[ t]*(([^)]))/1/f,function,functions/",
+    \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[/1/a,array,arrays/",
     \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[\"\']/1/s,string,strings/",
 
     \ '--langmap=ruby:+.erb\(Gemfile\)',
