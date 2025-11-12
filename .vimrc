@@ -1439,8 +1439,9 @@ function s:tag ( ... ) abort
     \ '--langmap=css:+.less.scss.sass.styl',
     \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-])( |$)/#\1/i,id,ids/',
     \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-])( |$)/.\1/c,class,classes/',
-    \ '--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/',
-    \ '--regex-css=/^[ \t]*@media\s+([ \t]*[A-Za-z0-9_-]+[ \t]*)/\1/m,media,medias/'
+    \ '--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)[,{]/\1/t,tag,tags/',
+    \ '--regex-css=/^[ \t]*--([A-Za-z0-9_-]+)/--\1/v,variable,variables/',
+    \ '--regex-css=/^[ \t]*@media\s+([ \t]*[A-Za-z0-9_-]+[ \t]*)/\1/m,media,medias/',
 
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
 
