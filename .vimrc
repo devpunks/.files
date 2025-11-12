@@ -1461,7 +1461,9 @@ function s:tag ( ... ) abort
 
     \ '--regex-' . l:type . '=/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\',
 
-    \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS',
+    \ '--langdef=dockerfile',
+    \ '--langmap=dockerfile:+(Dockerfile)',
+    \ '--regex-dockerfile=/^(FROM|MAINTAINER|RUN|CMD|LABEL|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)/\1/d,dockerfile,dockerfiles/',
 
     \ '--regex-' . l:type . '=/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\'
     \]
