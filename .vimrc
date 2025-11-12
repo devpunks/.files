@@ -1437,7 +1437,8 @@ function s:tag ( ... ) abort
     \ '--langmap=javascript:+.es',
     \ '--regex-js=/([A-Za-z0-9._$]+)[ t]*[:=][ t]*{/1/,object/',
     \ '--regex-js=/([A-Za-z0-9._$()]+)[ t]*[:=][ t]*function[ t]*(/1/,function/',
-     \ '--regex-js=/function[ t]+([A-Za-z0-9._$]+)[ t]*(([^)]))/1/,function/',
+    \ '--regex-js=/function[ t]+([A-Za-z0-9._$]+)[ t]*(([^)]))/1/,function/',
+    \ '--regex-js=/([A-Za-z0-9._$]+)[ t]*[:=][ t]*[/1/,array/',
 
     \ '--langmap=ruby:+.erb\(Gemfile\)',
 
