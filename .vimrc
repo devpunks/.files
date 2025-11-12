@@ -1434,6 +1434,8 @@ function s:tag ( ... ) abort
     \ '--languages=' . l:type,
     \ '--langmap=vim:+.vimrc',
 
+    \ '--langmap=ruby:+.erb\(Gemfile\)',
+
     \ '--langmap=markdown:.md\(README\)',
 
     \ '--langmap=javascript:+.es',
