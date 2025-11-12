@@ -1447,9 +1447,6 @@ function s:tag ( ... ) abort
     \ '--regex-css=/^[ \t]*--([A-Za-z0-9_-]+)/--\1/v,variable,variables/',
     \ '--regex-css=/^[ \t]*@media\s+([ \t]*[A-Za-z0-9_-]+[ \t]*)/\1/m,media,medias/',
 
-    \ '--regex-html=/id=[\"]*([A-Za-z0-9_-]+)[\"]*/#\1/i,id,ids/',
-    \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
-
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
 
     \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS',
