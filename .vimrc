@@ -1433,6 +1433,7 @@ function s:tag ( ... ) abort
     \ '--langmap=vim:+.vimrc',
 
     \ '--langmap=javascript:+.es',
+
     \ '--langmap=ruby:+.erb\(Gemfile\)',
     \ '--langmap=css:+.less.scss.sass.styl',
     \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-]+)/\1/i,id,ids/',
