@@ -1437,8 +1437,8 @@ function s:tag ( ... ) abort
     \ '--langmap=ruby:+.erb\(Gemfile\)',
 
     \ '--langmap=css:+.less.scss.sass.styl',
-    \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-]+)/\1/i,id,ids/',
-    \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-]+)/\1/c,class,classes/',
+    \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-])( |$)/#\1/i,id,ids/',
+    \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-])( |$)/.\1/c,class,classes/',
     \ '--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)\{/\1/t,tag,tags/',
     \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
     \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS',
