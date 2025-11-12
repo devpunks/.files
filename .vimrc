@@ -1437,6 +1437,10 @@ function s:tag ( ... ) abort
     \ '--langmap=ruby:+.erb\(Gemfile\)',
 
     \ '--langmap=markdown:.md\(README\)',
+    \ '--regex-markdown=/^(#+[ \t]+.*)/\1/h,heading,headings/',
+
+    \ '--regex-html=/id=[\"]*([A-Za-z0-9_-]+)[\"]*/#\1/i,id,ids/',
+    \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
 
     \ '--langmap=javascript:+.es',
     \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*{/1/o,object,objects/",
