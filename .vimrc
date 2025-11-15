@@ -1919,6 +1919,9 @@ function! s:search ( ... ) abort
   echom 'Bang:' .. l:bang
   echom 'Args'
   echo a:000
+
+  let @/ = l:term
+
   return
 
   if &runtimepath !~ 'vim-mucomplete' | return | endif
