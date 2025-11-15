@@ -1917,7 +1917,7 @@ function! s:search ( ... ) abort
   let l:bang = get ( a:, 1, v:false )
 
   echom 'Bang:' .. l:bang
-  echo 'Args'
+  echom 'Args'
   echo a:000
   return
 
