@@ -1910,6 +1910,7 @@ function s:fuzz ( ... ) abort
 " echom a:2
 " echom a:3
 
+  return [ 'shaaa', 'zaaaaam' ]
 endfunction
 
 " command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
