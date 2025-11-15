@@ -1918,7 +1918,7 @@ function! s:search ( ... ) abort
 
   echom 'Bang:' .. l:bang
   echom 'Args'
-  echo a:000
+  echom a:000
 
   let @/ = l:term
 
