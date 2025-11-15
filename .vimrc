@@ -1904,7 +1904,7 @@ endfunction " Tab
 autocmd VimDefaults VimEnter * :Search ''
 
 function s:fuzz ( ... ) abort
-  let l:term = a:1
+  let l:term = get ( a:, 1, '<cword>' )
   echom 'This is the -complete=func' l:term
   echom a:000
 
