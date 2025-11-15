@@ -1904,11 +1904,9 @@ endfunction " Tab
 autocmd VimDefaults VimEnter * :Search ''
 
 function s:fuzz ( ... ) abort
-  echom 'This is the -complete=func'
+  let l:term = a:1
+  echom 'This is the -complete=func' l:term
   echom a:000
-" echom a:1
-" echom a:2
-" echom a:3
 
   return [ 'shaaa', 'zaaaaam' ]
 endfunction
