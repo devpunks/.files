@@ -1434,14 +1434,26 @@ function s:tag ( ... ) abort
     \ '--languages=' . l:type,
     \ '--langmap=vim:+.vimrc',
     \ '--regex-' . l:type . '=/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\',
-
-    \ '--langdef=dockerfile',
-    \ '--langmap=dockerfile:+(Dockerfile)',
-    \ '--regex-dockerfile=/^(FROM|MAINTAINER|RUN|CMD|LABEL|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)/\1/d,dockerfile,dockerfiles/',
-
-    \ '--extras=+r --totals=yes --sort=foldcase --tag-relative=never --fields=+r --fields=+lknaS'
+    \ '--totals=yes --sort=foldcase --tag-relative=never --extras=+r --fields=+r --fields=+lknaS'
     \]
 
+ "  \ '--langmap=ruby:+.erb\(Gemfile\)',
+ "  \ '--langmap=markdown:.md\(README\)',
+ "  \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
+ "  \ '--langmap=css:+.less.scss.sass.styl',
+ "  \ '--langmap=javascript:+.es',
+ "  \ '--langdef=dockerfile',
+ "  \ '--langmap=dockerfile:+\(Dockerfile\)',
+ "  \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-])( |$)/#\1/i,id,ids/',
+ "  \ '--regex-markdown=/^(#+[ \t]+.*)/\1/h,heading,headings/',
+ "  \ '--regex-html=/id="*([A-Za-z0-9_-]+)"*/#\1/i,id,ids/',
+ "  \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
+ "  \ '--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*{/1/o,object,objects/',
+ "  \ "--regex-js=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*(/1/,f,function,functions/",
+ "  \ "--regex-js=/function[ \t]+([A-Za-z0-9._$]+)[ t]*(([^)]))/1/f,function,functions/",
+ "  \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[/1/a,array,arrays/",
+ "  \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[\"\']/1/s,string,strings/",
+ "  \ '--regex-dockerfile=/^(FROM|MAINTAINER|RUN|CMD|LABEL|EXPOSE|ENV|ADD|COPY|ENTRYPOINT|VOLUME|USER|WORKDIR|ARG|ONBUILD|STOPSIGNAL|HEALTHCHECK|SHELL)/\1/d,dockerfile,dockerfiles/',
     let l:command = 'ctags '
       \ .. ( l:flags + l:excludes )->join()
       \ .. ' -o ' .. l:temp
