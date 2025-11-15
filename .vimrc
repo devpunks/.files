@@ -297,7 +297,7 @@ set splitbelow nosplitright " Where to place new buffer location
 command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
 
 autocmd QuickFixCmdPre * echom 'Executing QuickFixCmdPre'
-autocmd QuickFixCmdPost * echo 'Executing QuickFixCmdPost'
+autocmd QuickFixCmdPost * echom 'Executing QuickFixCmdPost'
 
 " }}}
 
