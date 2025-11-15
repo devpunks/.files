@@ -1916,7 +1916,7 @@ command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang
 function! s:search ( ... ) abort
   let l:bang = get ( a:, 1, v:false )
 
-  echo 'Bang:' .. l:bang
+  echom 'Bang:' .. l:bang
   echo 'Args'
   echo a:000
   return
