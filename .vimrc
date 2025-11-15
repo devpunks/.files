@@ -1433,32 +1433,6 @@ function s:tag ( ... ) abort
     let l:flags = [ '--verbose --recurse --guess-language-eagerly',
     \ '--languages=' . l:type,
     \ '--langmap=vim:+.vimrc',
-
-    \ '--langmap=ruby:+.erb\(Gemfile\)',
-
-    \ '--langmap=markdown:.md\(README\)',
-    \ '--regex-markdown=/^(#+[ \t]+.*)/\1/h,heading,headings/',
-
-    \ '--langmap=sh:+.bashrc.bash_login.bash_profile.bash_logout',
-
-    \ '--regex-html=/id=[\"]*([A-Za-z0-9_-]+)[\"]*/#\1/i,id,ids/',
-    \ '--regex-html=/class=[\"]*([A-Za-z0-9_-]+)[\"]*/.\1/c,class,classes/',
-
-    \ '--langmap=javascript:+.es',
-    \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*{/1/o,object,objects/",
-    \ "--regex-js=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*(/1/,f,function,functions/",
-    \ "--regex-js=/function[ \t]+([A-Za-z0-9._$]+)[ t]*(([^)]))/1/f,function,functions/",
-    \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[/1/a,array,arrays/",
-    \ "--regex-js=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*[\"\']/1/s,string,strings/",
-
-    \ '--langmap=css:+.less.scss.sass.styl',
-    \ '--regex-css=/^[ \t&]*#([A-Za-z0-9_-])( |$)/#\1/i,id,ids/',
-    \ '--regex-css=/^[ \t&]*\.([A-Za-z0-9_-])( |$)/.\1/c,class,classes/',
-    \ '--regex-css=/^[ \t]*(([A-Za-z0-9_-]+[ \t\n,]+)+)[,\{]/\1/t,tag,tags/',
-    \ '--regex-css=/^[ \t]*((.*,[ \t]*)([A-Za-z0-9_-]+))[ \t\n,]+[,|\{]/\3/t,tag,tags/',
-    \ '--regex-css=/^[ \t]*--([A-Za-z0-9_-]+)/--\1/v,variable,variables/',
-    \ '--regex-css=/^[ \t]*@media\s+([ \t]*[A-Za-z0-9_-]+[ \t]*)/\1/m,media,medias/',
-
     \ '--regex-' . l:type . '=/(\"|#|<!--|\\/\\/)[ \\t]*(TODO|FIXME)/\\2/T,Todo,TODO & FIXME messages/i\',
 
     \ '--langdef=dockerfile',
