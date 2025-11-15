@@ -1903,8 +1903,22 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * :Search ''
 
-command! -nargs=1 Search call s:search ( <q-args> )
+function s:fuzz ( ... ) abort
+  echom 'This is the -complete=func'
+  echom a:000
+
+endfunction
+
+" command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
+command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <f-args> )
 function! s:search ( ... ) abort
+  let l:bang = get ( a:, 1, v:false )
+
+  echo 'Bang:' .. l:bang
+  echo 'Args'
+  echo a:000
+  return
+
   if &runtimepath !~ 'vim-mucomplete' | return | endif
 
   " set complete-=t " no tags
