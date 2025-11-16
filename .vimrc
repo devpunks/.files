@@ -1793,8 +1793,8 @@ endfunction " g:TagsBar
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 autocmd FileType ruby,python,javascript :Scope
 
-command! -complete=cscope Scope call Scope ()
-function g:Scope () abort
+command! -nargs=? -complete=cscope Scope call s:scope ( <q-args> )
+function s:scope () abort
   let l:command = 'cscope'
   " TODO: Follow tagcase
   let l:suffix = &ignorecase ? '-C' : '' " Case sensitifity flag
