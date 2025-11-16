@@ -1924,6 +1924,7 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * :MuComplete
 
+function! g:MuComplete () abort
   if &runtimepath !~ 'vim-mucomplete' | return | endif
 
   " set complete-=t " no tags
