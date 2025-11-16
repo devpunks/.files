@@ -1103,6 +1103,8 @@ function s:git_link ( ... ) abort
   let:hash = system( 'git rev-parse HEAD 2>/dev/null' )
     \ ->substitute( '\n', '', '' )
 
+  if v:shell_error | return | endif
+
 endfunction " git_link
 
 " -------------------------------------------------------------------------
