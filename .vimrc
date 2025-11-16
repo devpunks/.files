@@ -1922,33 +1922,7 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-function s:fuzz ( ... ) abort
-  let l:term = get ( a:, 1, '<cword>' )
-  echom 'This is the -complete=func' l:term
-  echom a:000
-
-  return [ 'shaaa', 'zaaaaam' ]
-endfunction
-
-" :h finddir()
-" :h findfile()
-command! -nargs=1 Find call s:find ( <q-args> )
-function! s:find ( ... ) abort
-  let l:term = a:1
-
-  echom l:term
-  echom a:000
-endfunction " find
-
-set hlsearch
-command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <q-args> )
-function! s:search ( ... ) abort
-  let l:bang = get ( a:, 1, v:false )
-  let l:term = get ( a:, 2, expand ( '<cword>' ) )
-
-  let @/ = l:term
-
-  return
+autocmd VimDefaults VimEnter * :MuComplete
 
   if &runtimepath !~ 'vim-mucomplete' | return | endif
 
