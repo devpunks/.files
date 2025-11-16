@@ -867,7 +867,7 @@ endfunction " enter
 function! CursorCharacter () abort " DecimalToOctal(27)"
   let l:char = strpart( getline ('.'), col ('.') -1, 1, 1 )
   let l:index = char2nr( char ) " char(acter) to number
-  let l:character = printf( '|%-2s', char )
+  let l:character = printf ( '|%-2s', char )
 
   " Formal Hexadecimal Unicode Notation (Code Point)
   " - https://en.wikipedia.org/wiki/UTF-8
