@@ -1914,7 +1914,7 @@ set hlsearch
 command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <q-args> )
 function! s:search ( ... ) abort
   let l:bang = get ( a:, 1, v:false )
-  let l:term = get ( a:, 2, expand( '<cword>' ) )
+  let l:term = get ( a:, 2, expand ( '<cword>' ) )
 
   let @/ = l:term
 
