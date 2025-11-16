@@ -1791,7 +1791,7 @@ endfunction " g:TagsBar
 "   - https://stackoverflow.com/q/934233/cscope-or-ctags-why-choose-one-over-the-other
 " -------------------------------------------------------------------------
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
-autocmd FileType ruby,python,javascript call g:Scope ()
+autocmd FileType ruby,python,javascript :Scope
 
 command! -complete=cscope Scope call Scope ()
 function g:Scope () abort
