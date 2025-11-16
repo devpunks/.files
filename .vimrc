@@ -976,6 +976,10 @@ function! s:find ( ... ) abort
   echom a:000
 endfunction " find
 
+" -------------------------------------------------------------------------
+" Search ()
+"   - :help ascii
+" -------------------------------------------------------------------------
 set hlsearch
 command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <q-args> )
 function! s:search ( ... ) abort
