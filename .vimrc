@@ -1911,7 +1911,7 @@ function s:fuzz ( ... ) abort
   return [ 'shaaa', 'zaaaaam' ]
 endfunction
 
-" command! -bang -nargs=? -complete=filetype Tag call s:tag ( <bang>0, <f-args> )
+set hlsearch
 command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <f-args> )
 function! s:search ( ... ) abort
   let l:bang = get ( a:, 1, v:false )
