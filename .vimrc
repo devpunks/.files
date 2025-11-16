@@ -980,8 +980,6 @@ function! s:search ( ... ) abort
 
   let @/ = l:term
 
-  return
-
 endfunction " search
 
 " -------------------------------------------------------------------------
