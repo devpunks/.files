@@ -1826,7 +1826,7 @@ function s:scope () abort
     cscope show
     echo ''
   endfor " extension
-endfunction " Scope
+endfunction " scope
 
 " -------------------------------------------------------------------------
 " Moby Thesaurus - https://gutenberg.org/iles/3202/mthesaur.txt
