@@ -954,6 +954,10 @@ function Complete (token, command_line='', cursor_pos='0') " abort
   echom 'Shazaam Completion ('..l:prefix..'): ' .. a:token
 endfunction " Complete
 
+" -------------------------------------------------------------------------
+" Search ()
+"   - :help ascii
+" -------------------------------------------------------------------------
 function s:fuzz ( ... ) abort
   let l:term = get ( a:, 1, expand('<cword>') )
   echom 'This is the -complete=func' l:term
