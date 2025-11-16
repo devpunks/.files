@@ -1822,15 +1822,6 @@ endfunction " g:Thesaurus
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * :Fuzzy
 
-" :h finddir()
-" :h findfile()
-command! -nargs=1 Find call s:find ( <q-args> )
-function! s:find ( ... ) abort
-  let l:term = a:1
-
-  echom l:term
-endfunction " find
-
 command! Fuzzy call s:fuzzy ()
 function! s:fuzzy () abort
   if &runtimepath !~ 'ctrlp.vim' | return | endif
