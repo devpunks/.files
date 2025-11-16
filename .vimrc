@@ -1900,6 +1900,16 @@ function s:fuzz ( ... ) abort
   return [ 'shaaa', 'zaaaaam' ]
 endfunction
 
+" :h finddir()
+" :h findfile()
+command! -nargs=1 Find call s:find ( <q-args> )
+function! s:find ( ... ) abort
+  let l:term = a:1
+
+  echom l:term
+  echom a:000
+endfunction " find
+
 set hlsearch
 command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <f-args> )
 function! s:search ( ... ) abort
