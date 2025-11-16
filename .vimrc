@@ -882,7 +882,7 @@ function! CursorCharacter () abort " DecimalToOctal(27)"
 
   " Join character to escape sequences
   " - https://en.wikipedia.org/wiki/Escape_sequence
-  return character..join( [ decimal, hexadecimal, octal ], ' ' )
+  return character .. [ decimal, hexadecimal, octal ]->join( ' ' )
 endfunction " CursorCharacter
 
 inoremap <expr> <C-d> Lookup()
