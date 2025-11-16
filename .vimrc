@@ -885,6 +885,23 @@ function! CursorCharacter () abort " DecimalToOctal(27)
   return character .. [ decimal, hexadecimal, octal ]->join( ' ' )
 endfunction " CursorCharacter
 
+" -------------------------------------------------------------------------
+" PopUp () - https://vimhelp.org/popup.txt.html
+" -------------------------------------------------------------------------
+function! PopUp () abort
+  let l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
+
+  call popup_menu( l:choices
+    \, #{ highlight: 'WildMenu', borderhighlight: ['WildMenu'], border: [], borderchars: ['•']
+      \, padding: [1,1,0,1], close: 'button', scrollbar: 'TRUE', resize: 'FALSE', drag: 'TRUE', wrap: 'FALSE'
+      \, title: '• devPunks😈Studio •', filtermode: 'a', zindex: 1, pos: 'botleft', col: 'cursor+1', callback: 'PopUpComplete' })
+endfunction " PopUp
+
+function! PopUpComplete (id, result) abort
+  echo 'Hot Damn '..a:id..' '..a:result
+endfunction " PopUpComplete
+
+
 inoremap <expr> <C-d> Lookup()
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
 function g:Lookup(...)  " abort
