@@ -1793,7 +1793,7 @@ endfunction " g:TagsBar
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 autocmd FileType ruby,python,javascript :Scope
 
-command! -nargs=? -complete=cscope Scope call s:scope ( <q-args> )
+command! -bang -nargs=? -complete=cscope Scope call s:scope ( <bang>0, <q-args> )
 function s:scope () abort
   let l:command = 'cscope'
   " TODO: Follow tagcase
