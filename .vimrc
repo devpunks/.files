@@ -887,7 +887,7 @@ endfunction " CursorCharacter
 
 
 " -------------------------------------------------------------------------
-" PopUp () - https://vimhelp.org/popup.txt.html
+" Lookup () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
 function! PopUp () abort
   let l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
