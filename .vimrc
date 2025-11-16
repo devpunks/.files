@@ -885,7 +885,6 @@ function! CursorCharacter () abort " DecimalToOctal(27)
   return character .. [ decimal, hexadecimal, octal ]->join( ' ' )
 endfunction " CursorCharacter
 
-
 " -------------------------------------------------------------------------
 " Lookup () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
