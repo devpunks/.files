@@ -1892,8 +1892,6 @@ endfunction " Tab
 " -------------------------------------------------------------------------
 " Mμ Complete - https://github.com/lifepillar/vim-mucomplete
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * :Search ''
-
 function s:fuzz ( ... ) abort
   let l:term = get ( a:, 1, '<cword>' )
   echom 'This is the -complete=func' l:term
