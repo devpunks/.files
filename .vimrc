@@ -1122,6 +1122,7 @@ function s:git_link ( ... ) abort
     \ ->substitute( '^git@', 'https://', '' )
     \ ->substitute( '^git:', 'https://', '' )
     \ ->substitute( '.com:', '.com/', '' )
+    \ ->substitute( '\.git', '', '' )
     \ ->substitute( '\n', '', 'g' )
 
   echom 'The Hash: ' l:hash
