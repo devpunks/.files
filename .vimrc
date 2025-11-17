@@ -1110,7 +1110,7 @@ function s:git_link ( ... ) abort
     \ ->substitute( '\n', '', 'g' )->empty() | return | endif
 
   if !!! system ( 'git diff ' .. expand ( '%:p' ) )
-    \ ->substitute( '\n', '', '' )->empty() | return | endif
+    \ ->substitute( '\n', '', 'g' )->empty() | return | endif
 
   let l:root = system( 'git rev-parse --show-toplevel' )
     \ ->substitute( '\n', '', '' )
