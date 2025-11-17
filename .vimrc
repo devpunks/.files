@@ -1105,7 +1105,7 @@ function s:git_link ( start, end ) range " a:firstline a:lastline
   " Visual Line || Visual Block () || Line #
   " let l:line = ( mode () =~# '^V' || mode () =~# '^[[:cntrl:]]' )
   "   \ ?  '#L' .. line ( "'<" ) " Visual Start Line
-  "   \ .. '-L' .. line ( "'>" ) " Visual End Line
+  "   \ .. '-L' .. line ( "'>" ) " Visual Ene Line
   "   \ : '#L' .. line ( '.' ) " Default
   let l:line =
     \ '#L' .. get ( a:, 'start', line ( '.' ) ) ..
