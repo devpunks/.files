@@ -1132,6 +1132,7 @@ function s:git_link ( ... ) abort
   let l:url = l:remote .. '/tree/' .. l:hash .. l:path .. l:line
 
   echom 'The Hash:' l:hash
+  echom 'The Line:' l:line
   echom 'The Root:' l:root
   echom 'The Path:' l:path
   echom 'The Remote:' l:remote
