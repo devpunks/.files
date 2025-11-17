@@ -1110,18 +1110,21 @@ function s:git_link ( ... ) abort
     \ ->substitute( '\n', '', '' )->empty() | return | endif
 
   if !!! system ( 'git diff ' .. expand ( '%:p' ) )
-    \ ->substitute( '\n', '', '' )->empty()
-    echo 'Need to commit'
-  endif
+    \ ->substitute( '\n', '', '' )->empty() | return | endif
 
   let l:root = system( 'git rev-parse --show-toplevel' )
     \ ->substitute( '\n', '', '' )
   let l:path = expand( '%:p'  )->substitute( l:root, '', '' )
     \ ->substitute( '\n', '', '' )
 
+  let l:remote = system ( 'git config --get remote.origin.url' )
+    \ ->substitute( '.git' '', '' )
+    \ ->substitute( '\n', '', '' )
+
   echom 'The Hash: ' l:hash
   echom 'The Root: ' l:root
   echom 'The Path: ' l:path
+  echom 'The URL: ' l:remote
 
 endfunction " git_link
 
