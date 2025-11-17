@@ -972,13 +972,13 @@ endfunction
 function! Browser ( ... ) abort " Opening URL
   const url = get ( a:, 1, getline ('.')->matchstr( 'http[^ ]*' ) )
 
-  if ! empty ( url )
-    echom 'Opening URL:' url
-"   exec "!echo "..url
-    exec "!type ls && type grep"
-    exec "!type open"
-    exec 'open ' .. url
-  endif
+  if empty ( url ) | return | endif
+
+  echom 'Opening URL:' url
+  exec '!echo ' .. url
+  " exec '!type ls && type grep'
+  " exec '!type open'
+  system  ( 'open ' .. url )
 endfunction " Browser
 
 " -------------------------------------------------------------------------
