@@ -1095,8 +1095,6 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 " -------------------------------------------------------------------------
 " git_link - https://iautom8things/gitlink-vim
 " -------------------------------------------------------------------------
-" autocmd VimDefaults CursorHold * :Blame
-
 command! Link call s:git_link ()
 function s:git_link ( ... ) abort
   let l:line = line ( '.' )
