@@ -1100,8 +1100,8 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 " -------------------------------------------------------------------------
 " git_link - https://iautom8things/gitlink-vim
 " -------------------------------------------------------------------------
-command! Link call s:git_link ()
-function s:git_link ( ... ) abort
+command! -range Link call s:git_link ( <line1>, <line2> )
+function s:git_link ( start, end ) range " a:firstline a:lastline
   " Visual Line || Visual Block () || Line #
   let l:line = ( mode () =~# '^V' || mode () =~# '^[[:cntrl:]]' )
     \ ? '#L' .. line ( "'<" ) .. '-L' .. line ( "'>" ) : '#L' .. line ( '.' )
