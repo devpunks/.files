@@ -1106,7 +1106,7 @@ function s:git_link ( ... ) abort
   let l:line = '#L' .. ( mode () =~# '^V' || mode () =~# '^[[:cntrl:]]' )
     \ ? line ( "'<" ) .. '-L' .. line ( "'>" ) : line ( '.' )
   let l:hash = system( 'git rev-parse HEAD 2>/dev/null' )
-    \ ->substitute( '\n', '', 'g' )
+    \ ->substitute( '\n', '', 'g' ) " --abbrev-ref for short commit sha
 
   if v:shell_error | return | endif
 
