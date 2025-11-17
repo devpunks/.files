@@ -1102,7 +1102,7 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 command! Link call s:git_link ()
 function s:git_link ( ... ) abort
   let l:hash = system( 'git rev-parse HEAD 2>/dev/null' )
-    \ ->substitute( '\n', '', '' )
+    \ ->substitute( '\n', '', 'g' )
 
   if v:shell_error | return | endif
 
