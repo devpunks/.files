@@ -964,7 +964,7 @@ endfunction " Complete
 " -------------------------------------------------------------------------
 " :h finddir()
 " :h findfile()
-command! -nargs=1 Find call s:find ( <q-args> )
+command! -bang -nargs=1 -complete=file_in_path Find call s:find ( <bang>0, <q-args> )
 function! s:find ( ... ) abort
   let l:term = a:1
 
