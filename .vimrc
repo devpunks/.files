@@ -1118,7 +1118,9 @@ function s:git_link ( ... ) abort
     \ ->substitute( '\n', '', 'g' )
 
   let l:remote = system ( 'git config --get remote.origin.url' )
-    \ ->substitute( '\.git', '', '' )
+    \ ->substitute( '^ssh://', 'https://', '' )
+    \ ->substitute( '^git@', 'https://', '' )
+    \ ->substitute( '^git:', 'https://', '' )
     \ ->substitute( '.com:', '.com/', '' )
     \ ->substitute( '\n', '', 'g' )
 
