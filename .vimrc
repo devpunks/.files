@@ -1107,7 +1107,7 @@ function s:git_link ( ... ) abort
   if v:shell_error | return | endif
 
   if system ( 'git ls-files ' .. expand ( '%:p' ) )
-    \ ->substitute( '\n', '', '' )->empty() | return | endif
+    \ ->substitute( '\n', '', 'g' )->empty() | return | endif
 
   if !!! system ( 'git diff ' .. expand ( '%:p' ) )
     \ ->substitute( '\n', '', '' )->empty() | return | endif
