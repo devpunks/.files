@@ -1122,12 +1122,6 @@ function s:git_link ( ... ) abort
   echom 'The Root: ' l:root
   echom 'The Path: ' l:path
 
-  if strlen ( system ( 'git diff ' .. expand ( '%:p' ) ) )
-    echo 'Need to commit'
-  endif
-
-  if strlen ( system ( 'git ls-files ' .. expand ( '%:p' ) ) )
-
 endfunction " git_link
 
 " -------------------------------------------------------------------------
