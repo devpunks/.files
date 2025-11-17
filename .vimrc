@@ -962,14 +962,6 @@ endfunction " Complete
 " Find ()
 "   - :help ascii
 " -------------------------------------------------------------------------
-function s:fuzz ( ... ) abort
-  let l:term = get ( a:, 1, expand('<cword>') )
-  echom 'This is the -complete=func' l:term
-  echom a:000
-
-  return [ 'shaaa', 'zaaaaam' ]
-endfunction
-
 " :h finddir()
 " :h findfile()
 command! -nargs=1 Find call s:find ( <q-args> )
