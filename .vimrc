@@ -1119,7 +1119,7 @@ function s:git_link ( ... ) abort
 
   let l:remote = system ( 'git config --get remote.origin.url' )
     \ ->substitute( '\.git', '', '' )
-    \ ->substitute( '.com:', '', '' )
+    \ ->substitute( '.com:', '.com/', '' )
     \ ->substitute( '\n', '', 'g' )
 
   echom 'The Hash: ' l:hash
