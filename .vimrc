@@ -866,16 +866,11 @@ function Complete (token, command_line='', cursor_pos='0') " abort
   echom 'Token: ' + a:token
   echom 'Base: ' + a:command_line
 
-  " Formal Hexadecimal Unicode Notation (Code Point)
-  " - https://en.wikipedia.org/wiki/UTF-8
-  " - https://en.wikipedia.org/wiki/UTF-16
-  " - https://en.wikipedia.org/wiki/Hexadecimal
-  " - https://en.wikipedia.org/wiki/Percent-encoding (e.g. %20)
-  let l:hexadecimal = printf( '|U+%-7s' , printf( '%04X', index ) )
-  " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
-  let l:decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
-  " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
-  let l:octal = printf( '|\0o%-6o', index )
+  if len(a:token) > 0
+    let prefix = a:token
+  else
+    let prefix = '.'
+  endif
 
   " Join character to escape sequences
   " - https://en.wikipedia.org/wiki/Escape_sequence
