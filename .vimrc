@@ -1013,8 +1013,8 @@ endfunction " Browser
 " GetColor (group, attribute)
 "   - https://reddit.com/r/neovim/comments/oxddk9
 " -------------------------------------------------------------------------
-function! GetColor (group, attr) abort " GetColor('LineNr', 'bg#')"
-  let color = synIDattr( synIDtrans( hlID(a:group)), a:attr)
+function! GetColor ( group, attr ) abort " GetColor ( 'LineNr', 'bg#' )
+  let color = synIDattr ( synIDtrans ( hlID ( a:group ) ), a:attr )
 
   echom "THE COLOR".color
 
