@@ -969,7 +969,7 @@ endfunction
 " -------------------------------------------------------------------------
 " Browser ()
 " -------------------------------------------------------------------------
-function! Browser () abort " Opening URL
+function! Browser ( ... ) abort " Opening URL
   const url = get ( a:, 1, getline ('.')->matchstr( 'http[^ ]*' ) )
 
   if ! empty ( url )
