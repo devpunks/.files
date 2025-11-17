@@ -959,7 +959,7 @@ function Complete (token, command_line='', cursor_pos='0') " abort
 endfunction " Complete
 
 " -------------------------------------------------------------------------
-" Search ()
+" Find ()
 "   - :help ascii
 " -------------------------------------------------------------------------
 function s:fuzz ( ... ) abort
