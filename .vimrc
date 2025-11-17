@@ -1036,7 +1036,7 @@ endfunction " HighlightGroup
 " TabLine () :h(elp) setting-tablines
 " -------------------------------------------------------------------------
 function! TabLine () abort
-  if ! exists('+showtabline') | return '' | endif
+  if !!! exists ( '+showtabline' ) | return '' | endif
 
   " mouse
   let mouse="%{empty(&mouse)?'    ':'  🐭'}"
