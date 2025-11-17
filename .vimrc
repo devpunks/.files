@@ -859,12 +859,7 @@ function! s:enter () abort
 endfunction " enter
 
 " -------------------------------------------------------------------------
-" CursorCharacter ()
-"   - :help ascii
-"   - https://stackoverflow.com/q/20357800
-"   - https://en.wikipedia.org/wiki/Unicode
-"   - https://geeksforgeeks.org/program-decimal-octal-conversion
-"   - https://unicode.org/mail-arch/unicode-ml/y2005-m11/0060.html
+" Complete () -
 " -------------------------------------------------------------------------
 function! CursorCharacter () abort " DecimalToOctal(27)
   let l:char = strpart ( getline ( '.' ), col ( '.' ) -1, 1, 1 )
