@@ -1128,7 +1128,8 @@ function s:git_link ( ... ) abort
   echom 'The Hash: ' l:hash
   echom 'The Root: ' l:root
   echom 'The Path: ' l:path
-  echom 'The URL: ' l:remote
+  echom 'The Remote: ' l:remote
+  echom 'The URL: ' l:remote .. '/tree/' .. l:hash .. l:file .. '#L' ..  l:line
 
 endfunction " git_link
 
