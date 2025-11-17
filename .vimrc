@@ -861,10 +861,10 @@ endfunction " enter
 " -------------------------------------------------------------------------
 " Complete () -
 " -------------------------------------------------------------------------
-function! CursorCharacter () abort " DecimalToOctal(27)
-  let l:char = strpart ( getline ( '.' ), col ( '.' ) -1, 1, 1 )
-  let l:index = char2nr ( char ) " char(acter) to number
-  let l:character = printf ( '|%-2s', char )
+set completefunc=Complete
+function Complete (token, command_line='', cursor_pos='0') " abort
+  echom 'Token: ' + a:token
+  echom 'Base: ' + a:command_line
 
   " Formal Hexadecimal Unicode Notation (Code Point)
   " - https://en.wikipedia.org/wiki/UTF-8
