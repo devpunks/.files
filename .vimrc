@@ -970,6 +970,11 @@ endfunction
 " Browser ()
 " -------------------------------------------------------------------------
 function! Browser ( ... ) abort " Opening URL
+  const l:open = 'open ' " Default
+  " const l:open = 'xdg-open ' executable('xdg-open')
+  " const l:open = 'start ' has('win16') has('win32') has('win64')
+  " const l:open = 'open ' has('mac') has('macunix') has('gui_macvim')
+
   const url = get ( a:, 1, getline ('.')->matchstr( 'http[^ ]*' ) )
 
   if empty ( url ) | return | endif
