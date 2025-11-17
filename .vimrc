@@ -1119,7 +1119,7 @@ function s:git_link ( ... ) abort
     \ ->substitute( '^git@', 'https://', '' )
     \ ->substitute( '^git:', 'https://', '' )
     \ ->substitute( '.com:', '.com/', '' )
-    \ ->substitute( '\.git$', '', '' )
+    \ ->substitute( '\.git', '', '' )
     \ ->substitute( '\n', '', 'g' )
 
   let l:url = l:remote .. '/tree/' .. l:hash .. l:path .. '#L' ..  l:line
