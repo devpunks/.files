@@ -1115,7 +1115,7 @@ function s:git_link ( ... ) abort
   let l:root = system( 'git rev-parse --show-toplevel' )
     \ ->substitute( '\n', '', '' )
   let l:path = expand( '%:p'  )->substitute( l:root, '', '' )
-    \ ->substitute( '\n', '', '' )
+    \ ->substitute( '\n', '', 'g' )
 
   let l:remote = system ( 'git config --get remote.origin.url' )
     \ ->substitute( '\.git', '', '' )
