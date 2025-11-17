@@ -982,7 +982,7 @@ endfunction " find
 
 " -------------------------------------------------------------------------
 " Search ()
-"   - :help ascii
+"   - :help @/
 " -------------------------------------------------------------------------
 set hlsearch
 command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <q-args> )
