@@ -1485,7 +1485,7 @@ function s:tag ( ... ) abort
   let l:root = fnamemodify (
     \ finddir ( '.git/..', expand ( '%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
-  let l:git = system( 'cd '.. getcwd() ..' && GIT_TRACE=0 git rev-parse --show-toplevel' )
+  let l:git = system( 'cd '.. getcwd () ..' && GIT_TRACE=0 git rev-parse --show-toplevel' )
     \ ->trim()
 
 
