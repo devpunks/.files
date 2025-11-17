@@ -597,7 +597,7 @@ function search () { clear
   command find "$location" -type f -iname "*${term}*" \
     | lines
 
-  echo ; apropos ""$term" # man -k
+  echo ; apropos "$term" # man -k
 
   echo ; echo DONE!
 } # search
