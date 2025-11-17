@@ -872,10 +872,24 @@ function Complete (token, command_line='', cursor_pos='0') " abort
     let prefix = '.'
   endif
 
-  " Join character to escape sequences
-  " - https://en.wikipedia.org/wiki/Escape_sequence
-  return character .. [ decimal, hexadecimal, octal ]->join( ' ' )
-endfunction " CursorCharacter
+  return { 'words': [ {'word': 'fooooo', 'abbr':'fo', 'menu': 'foo', 'info': 'brown fox', 'kind': 'C', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': ''}, {'word': 'barrrrr', 'abbr':'ba', 'menu': 'bar', 'info': 'Lazy Dog', 'kind': 'v', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': ''} ], 'refresh': 'always'}
+  echom 'Shazaam Completion ('..l:prefix..'): ' .. a:token
+endfunction " Complete
+
+" -------------------------------------------------------------------------
+" Find ()
+"   - :help ascii
+" -------------------------------------------------------------------------
+" :h finddir()
+" :h findfile()
+command! -bang -nargs=1 -complete=file_in_path Find call s:find ( <bang>0, <q-args> )
+function! s:find ( ... ) abort
+  let l:bang = get ( a:, 1, v:false )
+  let l:term = a:2
+
+  echom l:term
+  echom a:000
+endfunction " find
 
 " -------------------------------------------------------------------------
 " Lookup () - https://vimhelp.org/popup.txt.html
