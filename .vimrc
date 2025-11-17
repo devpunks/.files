@@ -1129,7 +1129,7 @@ function s:git_link ( ... ) abort
     \ ->substitute( '\.git', '', '' )
     \ ->substitute( '\n', '', 'g' )
 
-  let l:url = l:remote .. '/tree/' .. l:hash .. l:path .. '#L' ..  l:line
+  let l:url = l:remote .. '/tree/' .. l:hash .. l:path .. l:line
 
   echom 'The Hash:' l:hash
   echom 'The Root:' l:root
