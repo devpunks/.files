@@ -2463,7 +2463,7 @@ endfunction " TestSetup
 
 
 " -------------------------------------------------------------------------
-" Vim-ruby - https://github.com/pangloss/vim-javascript
+" Vim-javascript - https://github.com/pangloss/vim-javascript
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:VimJavascript ()
 
