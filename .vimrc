@@ -1109,7 +1109,8 @@ function s:git_link ( ... ) abort
   if system ( 'git ls-files ' .. expand ( '%:p' ) )
     \ ->substitute( '\n', '', '' )->empty() | return | endif
 
-  if strlen ( system ( 'git diff ' .. expand ( '%:p' ) ) )
+  if !!! system ( 'git diff ' .. expand ( '%:p' ) )
+    \ ->substitute( '\n', '', '' )->empty()
     echo 'Need to commit'
   endif
 
