@@ -1137,6 +1137,8 @@ function s:git_link ( ... ) abort
   echom 'The Remote:' l:remote
   echom 'The URL:' l:url
 
+  return
+
   call Browser ( l:url )
 
 endfunction " git_link
