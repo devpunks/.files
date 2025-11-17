@@ -1044,7 +1044,7 @@ function! TabLine () abort
   let line = mouse " Initialize
   let line ..= ' devPunks😈studio %#TabLine#' " logo
 
-  let l:tabs = range( tabpagenr('$') )
+  let l:tabs = range ( tabpagenr ( '$' ) )
   for index in l:tabs
     let l:tab = index + 1
     let l:count = tabpagewinnr( tab,'$' )
