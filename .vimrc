@@ -1106,6 +1106,13 @@ function s:git_link ( ... ) abort
 
   if v:shell_error | return | endif
 
+  if system ( 'git ls-files ' .. expand ( '%:p' ) )
+    \ ->substitute( '\n', '', '' )->empty() | return | endif
+
+  if strlen ( system ( 'git diff ' .. expand ( '%:p' ) ) )
+    echo 'Need to commit'
+  endif
+
   let l:root = system( 'git rev-parse --show-toplevel' )
     \ ->substitute( '\n', '', '' )
   let l:path = expand( '%:p'  )->substitute( l:root, '', '' )
