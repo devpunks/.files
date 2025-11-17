@@ -975,7 +975,6 @@ function! Browser ( ... ) abort " Opening URL
   if empty ( url ) | return | endif
 
   echom 'Opening URL:' url
-  " exec '!type ls && type grep'
   " exec '!type open'
   call system  ( 'open ' .. url )
 endfunction " Browser
