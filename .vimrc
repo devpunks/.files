@@ -974,6 +974,8 @@ function! Browser ( ... ) abort " Opening URL
 
   echom 'Opening URL:' url
 
+  return
+
   if empty ( url ) | return | endif
 
   echom 'Opening URL:' url
