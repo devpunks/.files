@@ -1103,8 +1103,13 @@ filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.
 command! -range Link call s:git_link ( <line1>, <line2> )
 function s:git_link ( start, end ) range " a:firstline a:lastline
   " Visual Line || Visual Block () || Line #
-  let l:line = ( mode () =~# '^V' || mode () =~# '^[[:cntrl:]]' )
-    \ ? '#L' .. line ( "'<" ) .. '-L' .. line ( "'>" ) : '#L' .. line ( '.' )
+  " let l:line = ( mode () =~# '^V' || mode () =~# '^[[:cntrl:]]' )
+  "   \ ?  '#L' .. line ( "'<" ) " Visual Start Line
+  "   \ .. '-L' .. line ( "'>" ) " Visual End Line
+  "   \ : '#L' .. line ( '.' ) " Default
+  let l:line =
+    \ '#L' .. get ( a:, 'start', line ( '.' ) ) ..
+    \ '-L' .. get ( a:, 'end', line ('.' ) )
   let l:hash = system( 'git rev-parse HEAD 2>/dev/null' )
     \ ->substitute( '\n', '', 'g' ) " --abbrev-ref for short commit sha
 
