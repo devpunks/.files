@@ -978,7 +978,7 @@ function! Browser ( ... ) abort " Opening URL
   " exec '!echo ' .. url
   " exec '!type ls && type grep'
   " exec '!type open'
-  system  ( 'open ' .. url )
+  call system  ( 'open ' .. url )
 endfunction " Browser
 
 " -------------------------------------------------------------------------
