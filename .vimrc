@@ -980,7 +980,7 @@ function! Browser ( ... ) abort " Opening URL
   if empty ( url ) | return | endif
 
   echom 'Opening URL:' url
-  call system  ( 'open ' .. url )
+  call system  ( l:open .. url )
 
 endfunction " Browser
 
