@@ -976,6 +976,7 @@ function! Browser ( ... ) abort " Opening URL
 
   echom 'Opening URL:' url
   call system  ( 'open ' .. url )
+
 endfunction " Browser
 
 " -------------------------------------------------------------------------
