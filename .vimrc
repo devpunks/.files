@@ -2691,7 +2691,7 @@ syntax match Conceal 'struct ' conceal cchar=∏
 syntax match Conceal 'enum ' conceal cchar=∐
 
 syntax match Conceal ' exists ' conceal cchar=∃
-syntax match Conceal ' pow' conceal cchar=⌃
+syntax match Conceal ' pow ' conceal cchar=⌃
 syntax match Conceal /sum/ conceal cchar=∑
 syntax match Conceal /all/ conceal cchar=∀
 syntax match Conceal /any/ conceal cchar=∃
