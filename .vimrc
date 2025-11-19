@@ -2681,8 +2681,9 @@ syntax match Conceal ' elif ' conceal cchar=▹
 syntax match Conceal ' elseif ' conceal cchar=▹
 syntax match Conceal ' else if ' conceal cchar=▹
 syntax match Conceal ' endif ' conceal cchar=◂
-syntax match Conceal 'end' conceal cchar=Ⅎ
-syntax match Conceal 'endfunction' conceal cchar=Ⅎ
+syntax match Conceal '\<end\>' conceal cchar=Ⅎ
+syntax match Conceal '\<endfunction\>' conceal cchar=Ⅎ
+
 syntax match Conceal ' break' conceal cchar=◁
 syntax match Conceal ' return' conceal cchar=◀
 syntax match Conceal 'class ' conceal cchar=§
@@ -2696,10 +2697,10 @@ syntax match Conceal ' sum ' conceal cchar=∑
 syntax match Conceal ' all ' conceal cchar=∀
 syntax match Conceal ' any ' conceal cchar=∃
 syntax match Conceal ' union ' conceal cchar=⨄
-syntax match Conceal '\<\%(math\.\)\?sqrt\>' conceal cchar=√
-syntax match Conceal '\<\%(math\.\)\?pi\>' conceal cchar=π
-syntax match Conceal '\<\%(math\.\|\)ceil\>' conceal cchar=⌈
-syntax match Conceal '\<\%([mM]ath\.\|\)[fF]loor\>' conceal cchar=⌊
+syntax match Conceal '\<\%([mM]ath\.\)\?[sS]qrt\>' conceal cchar=√
+syntax match Conceal '\<\%([mM]ath\.\)\?[pP]i\>' conceal cchar=π
+syntax match Conceal '\<\%([mM]ath\.\)\?[cC]eil\>' conceal cchar=⌈
+syntax match Conceal '\<\%([mM]ath\.\)\?[fF]loor\>' conceal cchar=⌊
 
 " }}}
 
