@@ -2643,6 +2643,7 @@ syntax match Conceal '((' conceal cchar=⦅
 syntax match Conceal '))' conceal cchar=⦆
 syntax match Conceal '\[\[' conceal cchar=〚
 syntax match Conceal '\]\]' conceal cchar=〛
+
 syntax match Conceal 'true' conceal cchar=⊤
 syntax match Conceal 'false' conceal cchar=⊥
 syntax match Conceal 'assert' conceal cchar=‼
