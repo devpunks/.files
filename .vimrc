@@ -2653,8 +2653,7 @@ syntax match Conceal 'fn ' conceal cchar=𝑓
 syntax match Conceal 'def ' conceal cchar=𝑓
 syntax match Conceal 'function ' conceal cchar=𝑓
 syntax match Conceal 'lambda ' conceal cchar=λ
-syntax match Conceal /import/ conceal cchar=⬅
-syntax match Conceal '@import' conceal cchar=⬅
+syntax match Conceal 'import ' conceal cchar=⬅
 
 syntax match Conceal /bool/ conceal cchar=𝔹
 syntax match Conceal /char/ conceal cchar=∁
