@@ -2657,7 +2657,7 @@ syntax match Conceal 'import ' conceal cchar=⬅
 
 syntax match Conceal 'bool ' conceal cchar=𝔹
 syntax match Conceal 'char ' conceal cchar=∁
-syntax match Conceal /string/ conceal cchar=𝐒
+syntax match Conceal 'string ' conceal cchar=𝐒
 syntax match Conceal /unsigned/ conceal cchar=ℕ
 syntax match Conceal /int/ conceal cchar=ℤ
 syntax match Conceal /float/ conceal cchar=ℝ
