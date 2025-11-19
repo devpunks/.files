@@ -2692,6 +2692,8 @@ syntax match Conceal '\<enum\>' conceal cchar=∐
 
 syntax match Conceal '\<exists\>' conceal cchar=∃
 syntax match Conceal '\<union\>' conceal cchar=⨄
+syntax match Conceal '\<\%([mM]ath\.\)\?[pP]ow\>' conceal cchar=⌃
+syntax match Conceal '\<\%([mM]ath\.\)\?[sS]um\>' conceal cchar=∑
 syntax match Conceal '\<\%([mM]ath\.\)\?[sS]qrt\>' conceal cchar=√
 syntax match Conceal '\<\%([mM]ath\.\)\?[pP]i\>' conceal cchar=π
 syntax match Conceal '\<\%([mM]ath\.\)\?[cC]eil\>' conceal cchar=⌈
