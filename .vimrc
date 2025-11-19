@@ -2688,7 +2688,7 @@ syntax match Conceal ' return' conceal cchar=◀
 syntax match Conceal 'class ' conceal cchar=§
 syntax match Conceal 'unsafe ' conceal cchar=☡
 syntax match Conceal 'struct ' conceal cchar=∏
-syntax match Conceal /enum/ conceal cchar=∐
+syntax match Conceal 'enum ' conceal cchar=∐
 
 syntax match Conceal /exists/ conceal cchar=∃
 syntax match Conceal /pow/ conceal cchar=⌃
