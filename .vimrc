@@ -2617,6 +2617,7 @@ augroup END
 " =========================================================================
 set conceallevel=2
 syntax match Conceal 'U+' conceal cchar=⊎
+syntax match Conceal '*' conceal cchar=✖
 syntax match Conceal '=' conceal cchar=≝
 syntax match Conceal '!' conceal cchar=¬
 syntax match Conceal '(' conceal cchar=（
