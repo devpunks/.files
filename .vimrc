@@ -2655,15 +2655,15 @@ syntax match Conceal '\<function\>' conceal cchar=𝑓
 syntax match Conceal '\<lambda\>' conceal cchar=λ
 syntax match Conceal '\<import\>' conceal cchar=⬅
 
-syntax match Conceal 'bool ' conceal cchar=𝔹
-syntax match Conceal 'char ' conceal cchar=∁
-syntax match Conceal 'string ' conceal cchar=𝐒
-syntax match Conceal 'unsigned ' conceal cchar=ℕ
-syntax match Conceal 'int ' conceal cchar=ℤ
-syntax match Conceal 'float ' conceal cchar=ℝ
-syntax match Conceal 'complex ' conceal cchar=ℂ
-syntax match Conceal 'vector ' conceal cchar=V
-syntax match Conceal 'tensor ' conceal cchar=𝕋
+syntax match Conceal '\<bool\>' conceal cchar=𝔹
+syntax match Conceal '\<char\>' conceal cchar=∁
+syntax match Conceal '\<string\>' conceal cchar=𝐒
+syntax match Conceal '\<unsigned\>' conceal cchar=ℕ
+syntax match Conceal '\<int\>' conceal cchar=ℤ
+syntax match Conceal '\<float\>' conceal cchar=ℝ
+syntax match Conceal '\<complex\>' conceal cchar=ℂ
+syntax match Conceal '\<vector\>' conceal cchar=V
+syntax match Conceal '\<tensor\>' conceal cchar=𝕋
 
 syntax match Conceal '\<for\>' conceal cchar=∀
 syntax match Conceal '\<foreach\>' conceal cchar=∀
