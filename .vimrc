@@ -2645,9 +2645,11 @@ syntax match Conceal '))' conceal cchar=⦆
 syntax match Conceal '\[\[' conceal cchar=〚
 syntax match Conceal '\]\]' conceal cchar=〛
 
+syntax match Conceal '\<null\>' conceal cchar=ω
 syntax match Conceal '\<true\>' conceal cchar=⊤
 syntax match Conceal '\<false\>' conceal cchar=⊥
 syntax match Conceal '\<assert\>' conceal cchar=‼
+
 syntax match Conceal '\<BEGIN\>' conceal cchar=︷
 syntax match Conceal '\<END\>' conceal cchar=︸
 syntax match Conceal '\<fn\>' conceal cchar=𝑓
