@@ -2698,7 +2698,7 @@ syntax match Conceal ' any ' conceal cchar=∃
 syntax match Conceal ' union ' conceal cchar=⨄
 syntax match Conceal '\<\%(math\.\)\?sqrt\>' conceal cchar=√
 syntax match Conceal '\<\%(math\.\)\?pi\>' conceal cchar=π
-syntax match Conceal "\<\%(math\.\|\)ceil\>" conceal cchar=⌈
+syntax match Conceal '\<\%(math\.\|\)ceil\>' conceal cchar=⌈
 syntax match Conceal "\<\%(math\.\|\)floor\>" conceal cchar=⌊
 
 " }}}
