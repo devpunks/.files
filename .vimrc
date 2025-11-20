@@ -2702,7 +2702,6 @@ syntax match Conceal '\<\%([mM]ath\.\)\?[sS]um\>' conceal cchar=∑
 syntax match Conceal '\<\%([mM]ath\.\)\?[sS]qrt\>' conceal cchar=√
 syntax match Conceal '\<\%([mM]ath\.\)\?[cC]eil\>' conceal cchar=⌈
 syntax match Conceal '\<\%([mM]ath\.\)\?[fF]loor\>' conceal cchar=⌊
-syntax match Conceal '!=' conceal cchar=≠
 
 " }}}
 
