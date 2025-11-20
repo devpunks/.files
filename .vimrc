@@ -2669,6 +2669,7 @@ syntax match Conceal '\<unsigned\>' conceal cchar=ℕ
 syntax match Conceal '\<int\(eger\)\?\>' conceal cchar=ℤ
 syntax match Conceal '\<vector\>' conceal cchar=V
 syntax match Conceal '\<tensor\>' conceal cchar=𝕋
+
 syntax match Conceal '\<for\(each\)\?\>' conceal cchar=∀
 syntax match Conceal '\<of\>' conceal cchar=⊂
 syntax match Conceal '\<in\>' conceal cchar=∈
