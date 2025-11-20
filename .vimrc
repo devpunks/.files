@@ -2679,6 +2679,7 @@ syntax match Conceal '\<do\>' conceal cchar=🔁
 syntax match Conceal '\<loop\>' conceal cchar=🔄
 syntax match Conceal '\<while\>' conceal cchar=🔁
 syntax match Conceal '\<continue\>' conceal cchar=🔃
+
 syntax match Conceal '\<if\>' conceal cchar=▸
 syntax match Conceal '\<else\>' conceal cchar=▪
 syntax match Conceal '\<el\(se\)\?if\>' conceal cchar=▹
