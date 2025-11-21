@@ -2690,8 +2690,6 @@ syntax match Conceal '\<else if\>' conceal cchar=▹
 syntax match Conceal '\<endif\>' conceal cchar=◂
 syntax match Conceal '\<end\(function\)\?\>' conceal cchar=Ⅎ
 
-syntax match Conceal '\<break\>' conceal cchar=◁
-syntax match Conceal '\<return\>' conceal cchar=◀
 syntax match Conceal '\<class\>' conceal cchar=§
 syntax match Conceal '\<unsafe\>' conceal cchar=☡
 syntax match Conceal '\<struct\>' conceal cchar=∏
