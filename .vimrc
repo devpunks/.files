@@ -2694,7 +2694,6 @@ syntax match Conceal '\<class\>' conceal cchar=§
 syntax match Conceal '\<enum\>' conceal cchar=∐
 syntax match Conceal '\<struct\>' conceal cchar=∏
 syntax match Conceal '\<unsafe\>' conceal cchar=☡
-syntax match Conceal '\<private\>' conceal cchar=🕶
 syntax match Conceal '\<public\>' conceal cchar=👁️
 syntax match Conceal '\<protected\>' conceal cchar=👓
 
