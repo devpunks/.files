@@ -2691,7 +2691,7 @@ syntax match Conceal '\<endif\>' conceal cchar=◂
 syntax match Conceal '\<end\(function\)\?\>' conceal cchar=Ⅎ
 
 syntax match Conceal '\<class\>' conceal cchar=§
-syntax match Conceal '\<module\>' conceal cchar=§
+syntax match Conceal '\<module\>' conceal cchar=📦
 syntax match Conceal '\<enum\>' conceal cchar=∐
 syntax match Conceal '\<struct\>' conceal cchar=∏
 syntax match Conceal '\<unsafe\>' conceal cchar=☡
