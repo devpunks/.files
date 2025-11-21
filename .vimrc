@@ -1724,7 +1724,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
 
 return
 
-  let list = []
+  const list = []
   for tag in l:tags
     call add( list, {
       \ 'pattern' : tag['cmd'],
