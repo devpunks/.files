@@ -884,7 +884,7 @@ endfunction " Complete
 " :h findfile()
 command! -bang -nargs=1 -complete=file_in_path Find call s:find ( <bang>0, <q-args> )
 function! s:find ( ... ) abort
-  let l:bang = get ( a:, 1, v:false )
+  const l:bang = get ( a:, 1, v:false )
   let l:term = a:2
 
   echom l:term
