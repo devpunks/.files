@@ -1747,7 +1747,7 @@ return
   const word = substitute ( l:word, '\\', '\\\\', '' )
   call search ( '\<\V'..l:word..'\>', 'cnz' ) " Match cursor & do not move (\V ery nomagic)
 
-  " let stack = gettagstack(1003)
+  " const stack = gettagstack(1003)
   " do something else
   " call settagstack(1003, stack)
 endfunction " tags
