@@ -932,7 +932,7 @@ endfunction " Lookup
 " PopUp () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
 function! Popup () abort
-  let l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
+  const l:choices = [ 'Suggestion #1', 'Suggestion #2', 'Suggestion #3' ]
 
   call popup_menu( l:choices
     \, #{ highlight: 'WildMenu', borderhighlight: ['WildMenu'], border: [], borderchars: ['•']
