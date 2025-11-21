@@ -202,7 +202,7 @@ function s:ignore ( file = '.gitignore' ) abort
     endif
 
     if match ( line, '^[ \t]*!' ) < 0
-      call add ( l:exclusions, trim( line ) )
+      call add ( l:exclusions, trim ( line ) )
     endif
   endfor
 
