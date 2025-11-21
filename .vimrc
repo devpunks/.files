@@ -1864,7 +1864,7 @@ function s:scope () abort
 
   echo 'Current Dir: ' .. getcwd()
   for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
-    let l:out = findfile( 'cscope.' .. extension .. '.out', '.;' )
+    const l:out = findfile( 'cscope.' .. extension .. '.out', '.;' )
 
     if ! filereadable( l:out )  | continue | endif
 
