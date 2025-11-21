@@ -2692,6 +2692,8 @@ syntax match Conceal '\<end\(function\)\?\>' conceal cchar=Ⅎ
 
 syntax match Conceal '\<class\>' conceal cchar=§
 syntax match Conceal '\<enum\>' conceal cchar=∐
+syntax match Conceal '\<struct\>' conceal cchar=∏
+syntax match Conceal '\<unsafe\>' conceal cchar=☡
 
 syntax match Conceal '\<union\>' conceal cchar=⨄
 syntax match Conceal '\<exist\(s\)\?\>' conceal cchar=∃
