@@ -2660,7 +2660,7 @@ syntax match Conceal '\<assert\>' conceal cchar=‼
 syntax match Conceal '\<BEGIN\>' conceal cchar=︷
 syntax match Conceal '\<END\>' conceal cchar=︸
 syntax match Conceal '\<fn\>' conceal cchar=𝑓
-syntax match Conceal '\<def\>' conceal cchar=𝑓
+syntax match Conceal '\<def\(ine\)\?\>' conceal cchar=𝑓
 syntax match Conceal '\<[fF]unction\>' conceal cchar=𝑓
 
 syntax match Conceal '\<bool\>' conceal cchar=𝔹
