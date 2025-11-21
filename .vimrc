@@ -184,7 +184,7 @@ function s:ignore ( file = '.gitignore' ) abort
   const l:root = fnamemodify (
     \ finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
-  let l:file = l:root .. a:file
+  const l:file = l:root .. a:file
 
   echo 'Git Root:' l:root
 
