@@ -219,7 +219,7 @@ function s:ignore ( file = '.gitignore' ) abort
 endfunction " ignore
 
 set wildignore=
-let &g:wildignore=s:ignore()
+let &g:wildignore=s:ignore ()
 
 " Completion / LSPs -------------------------------------------------------
 " https://linuxhandbook.com/vim-auto-complete
