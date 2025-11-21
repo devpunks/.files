@@ -1719,7 +1719,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " Jump back up to source file
   " execute 'win_gotoid' l:winid
   " execute ':buffer'  bufnr ()
-  let l:winnr = l:winid .. 'wincmd' 'w'
+  const l:winnr = l:winid .. 'wincmd' 'w'
   execute 'win_id2win' l:winnr
 
 return
