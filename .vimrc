@@ -2036,7 +2036,7 @@ endfunction " Snippets
 function! g:ZoomDrawer () abort
   if ! exists('*ZoomWin') | return | endif
 
-  let l:open = g:NERDTree.IsOpen()
+  let l:open = g:NERDTree.IsOpen ()
   " TODO: Use tagbar#IsOpen()
   NERDTreeClose
   TagbarClose
