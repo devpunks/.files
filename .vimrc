@@ -198,7 +198,7 @@ function s:ignore ( file = '.gitignore' ) abort
     endif
 
     if match ( line, '^[ \t]*!' ) >= 0
-      call add ( l:exceptions, trim( line ) )
+      call add ( l:exceptions, trim ( line ) )
     endif
 
     if match ( line, '^[ \t]*!' ) < 0
