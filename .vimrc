@@ -2696,7 +2696,7 @@ syntax match Conceal '\<struct\>' conceal cchar=∏
 syntax match Conceal '\<unsafe\>' conceal cchar=☡
 syntax match Conceal '\<private\>' conceal cchar=🕶
 syntax match Conceal '\<public\>' conceal cchar=👓
-syntax match Conceal '\<public\>' conceal cchar=👓
+syntax match Conceal '\<protected\>' conceal cchar=👓
 
 syntax match Conceal '\<union\>' conceal cchar=⨄
 syntax match Conceal '\<exist\(s\)\?\>' conceal cchar=∃
