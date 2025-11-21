@@ -1004,7 +1004,7 @@ function! CursorCharacter () abort " DecimalToOctal(27)
   " - https://en.wikipedia.org/wiki/Percent-encoding (e.g. %20)
   const l:hexadecimal = printf ( '|U+%-7s' , printf( '%04X', index ) )
   " Formal Decimal HTML Entity (Code Point) - https://en.wikipedia.org/wiki/Code_point
-  const l:decimal = printf( '|&#%-7s', printf ( '%d;', index ) )
+  const l:decimal = printf ( '|&#%-7s', printf ( '%d;', index ) )
   " Octal (Code Point) - https://en.wikipedia.org/wiki/Numeric_character_reference
   const l:octal = printf( '|\0o%-6o', index )
 
