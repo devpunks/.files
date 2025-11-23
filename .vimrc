@@ -2653,6 +2653,7 @@ syntax match Conceal '\[\[' conceal cchar=〚
 syntax match Conceal '\]\]' conceal cchar=〛
 
 syntax match Conceal '\<\(null\|nil\)\>' conceal cchar=ω
+syntax match Conceal '\<undefined\>' conceal cchar=ω
 syntax match Conceal '\<true\>' conceal cchar=⊤
 syntax match Conceal '\<false\>' conceal cchar=⊥
 syntax match Conceal '\<assert\>' conceal cchar=‼
