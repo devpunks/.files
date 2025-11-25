@@ -2711,6 +2711,7 @@ syntax match Conceal '\<union\>' conceal cchar=⨄
 syntax match Conceal '\<exist\(s\)\?\>' conceal cchar=∃
 
 syntax match Conceal '1\.618[0-9]*' conceal cchar=Φ
+syntax match Conceal '1\.618[0-9]*' conceal cchar=Φ
 
 syntax match Conceal '\<\%([mM]ath\.\)\?[pP]i\>' conceal cchar=π
 syntax match Conceal '\<\%([mM]ath\.\)\?[pP]ow\>' conceal cchar=⌃
