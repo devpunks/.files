@@ -2690,7 +2690,7 @@ syntax match Conceal '\<return\>' conceal cchar=↩
 syntax match Conceal '\<continue\>' conceal cchar=🔃
 
 syntax match Conceal '\<match\>' conceal cchar=～
-syntax match Conceal '\<if\>' conceal cchar=▸
+syntax match Conceal '\<if\>' conceal cchar=⮕
 " https://en.wikipedia.org/wiki/Therefore_sign
 syntax match Conceal '\<then\>' conceal cchar=⇒
 syntax match Conceal '\<then\>' conceal cchar=⇒
