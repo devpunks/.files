@@ -2668,6 +2668,7 @@ syntax match Conceal '\<END\>' conceal cchar=︸
 syntax match Conceal '\<fn\>' conceal cchar=𝑓
 syntax match Conceal '\<def\(ine\)\?\>' conceal cchar=𝑓
 syntax match Conceal '\<[fF]unction\>' conceal cchar=𝑓
+syntax match Conceal '\<end\(function\)\?\>' conceal cchar=Ⅎ
 
 syntax match Conceal '\<bool\>' conceal cchar=𝔹
 syntax match Conceal '\<char\>' conceal cchar=∁
