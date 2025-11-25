@@ -2687,7 +2687,7 @@ syntax match Conceal '\<return\>' conceal cchar=↩
 syntax match Conceal '\<continue\>' conceal cchar=🔃
 
 syntax match Conceal '\<if\>' conceal cchar=▸
-syntax match Conceal '\<if\>' conceal cchar=▸
+syntax match Conceal '\<then\>' conceal cchar=▸
 syntax match Conceal '\<else\>' conceal cchar=▪
 syntax match Conceal '\<el\(se\)\?if\>' conceal cchar=▹
 syntax match Conceal '\<else if\>' conceal cchar=▹
