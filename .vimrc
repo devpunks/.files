@@ -2644,6 +2644,7 @@ syntax match Conceal '/=' conceal cchar=≠
 syntax match Conceal '<=' conceal cchar=≤
 syntax match Conceal '=>' conceal cchar=≥
 syntax match Conceal '=\~' conceal cchar=≈
+syntax match Conceal '!\~' conceal cchar=≈
 syntax match Conceal '>>' conceal cchar=⨠
 syntax match Conceal '<<' conceal cchar=≪
 syntax match Conceal '&&' conceal cchar=∧
