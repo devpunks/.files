@@ -2631,7 +2631,6 @@ syntax match Conceal '{' conceal cchar=⦃
 syntax match Conceal '}' conceal cchar=⦄
 syntax match Conceal ':' conceal cchar=：
 
-syntax match Conceal '\<match\>' conceal cchar=～
 syntax match Conceal '?' conceal cchar=❔
 syntax match Conceal '??' conceal cchar=❓
 syntax match Conceal '->' conceal cchar=➔
