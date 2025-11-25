@@ -2693,10 +2693,10 @@ syntax match Conceal '\<match\>' conceal cchar=～
 syntax match Conceal '\<if\>' conceal cchar=⮕
 " https://en.wikipedia.org/wiki/Therefore_sign
 syntax match Conceal '\<then\>' conceal cchar=⇒
-syntax match Conceal '\<then\>' conceal cchar=⇒
-syntax match Conceal '\<el\(se\)\?if\>' conceal cchar=▹
-syntax match Conceal '\<else if\>' conceal cchar=▹
-syntax match Conceal '\<endif\>' conceal cchar=◂
+syntax match Conceal '\<else\>' conceal cchar=⇶
+syntax match Conceal '\<el\(se\)\?if\>' conceal cchar=⇉
+syntax match Conceal '\<else if\>' conceal cchar=⇉
+syntax match Conceal '\<endif\>' conceal cchar=⇦
 syntax match Conceal '\<end\(function\)\?\>' conceal cchar=Ⅎ
 
 syntax match Conceal '\<class\>' conceal cchar=§
