@@ -302,7 +302,7 @@ command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffe
 " autocmd QuickFixCmdPost * echom 'Executing QuickFixCmdPost'
 
 autocmd VimDefaults BufWinEnter *
-      \ | if &l:buftype ==# 'help' | set number | endif
+  \ | if &l:buftype ==# 'help' | set number | endif
 
 " }}}
 
