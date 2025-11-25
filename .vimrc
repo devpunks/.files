@@ -2679,7 +2679,7 @@ syntax match Conceal '\<vector\>' conceal cchar=V
 syntax match Conceal '\<tensor\>' conceal cchar=𝕋
 
 syntax match Conceal '\<for\(each\)\?\>' conceal cchar=∀
-syntax match Conceal '\<of\>' conceal cchar=⊂
+syntax match Conceal '\<for \zsof\ze' conceal cchar=⊂
 syntax match Conceal '\<in\>' conceal cchar=∈
 syntax match Conceal '\<not in\>' conceal cchar=∉
 syntax match Conceal '\<from\>' conceal cchar=⫁
