@@ -1164,7 +1164,7 @@ function encrypt () {
   local -r digest='sha512'
   local -r pbkdf2='-pbkdf2'
   local -r file=$( readlink -f "${1}" )
-  local -r password="-pass pass:devpunks" # "-stdin"
+  local -r password="-pass pass:devpunks" # '-stdin'
 
   exist "$file"  || return $?
 
