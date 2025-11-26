@@ -2689,7 +2689,6 @@ syntax match Conceal '\<next\>' conceal cchar=🔂
 syntax match Conceal '\<break\>' conceal cchar=↪
 syntax match Conceal '\<return\>' conceal cchar=↩
 syntax match Conceal '\<continue\>' conceal cchar=🔃
-syntax match Conceal '\<continue\>' conceal cchar=🔃
 
 syntax match Conceal '\<match\>' conceal cchar=～
 syntax match Conceal '\<if\>' conceal cchar=⮕
