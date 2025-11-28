@@ -2583,7 +2583,7 @@ function compress () { clear
   exist "$source" || return $?
   exist "$destination" || mkdir "$destination"
 
-  echo Compressing "$destination"
+  echo 🗜 Compressing "$destination"
 } # compress
 
 function decompress () { clear
