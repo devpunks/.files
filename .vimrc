@@ -1705,9 +1705,9 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " execute 'lvimgrep' '/' .. l:expression .. '/j'  '%'
   " Call :vim(grep) pattern <git root>
 
-  echo "\nGlobal tag list:"
-  echo l:stack
-  echo "\n"
+  echom "\nGlobal tag list:"
+  echom l:stack
+  echom "\n"
 
   execute 'tags'
 
