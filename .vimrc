@@ -1158,7 +1158,7 @@ endfunction " git_link
 " -------------------------------------------------------------------------
 " autocmd VimDefaults CursorHold * :Blame
 
-function Baz (...)
+function Baz ( ... )
   echom 'Baz'
 endfunction
 
