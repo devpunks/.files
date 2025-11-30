@@ -850,7 +850,7 @@ endfunction " tab
 
 command! Space call s:space ()
 function! s:space () abort
-  echo 'Spacing ( Not Yet Implemented. See :Space command )'
+  echom 'Spacing ( Not Yet Implemented. See :Space command )'
 endfunction " space
 
 command! Enter call s:enter ()
