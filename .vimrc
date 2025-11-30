@@ -2101,8 +2101,8 @@ function! g:NerdInit () abort
 endfunction " NerdInit
 
 function! g:NerdDrawer () abort
-  if ! exists('g:NERDTree') | return | endif
-  if len( &buftype ) || index( g:blacklist, &filetype ) >= 0 || empty ( &filetype ) | return | endif
+  if !!! exists ( 'g:NERDTree' ) | return | endif
+  if len ( &buftype ) || index ( g:blacklist, &filetype ) >= 0 || empty ( &filetype ) | return | endif
 
   NERDTreeFind " Open Drawer & Find current
   if expand('%:t') =~ 'NERD_tree_tab' | wincmd p  |  endif
