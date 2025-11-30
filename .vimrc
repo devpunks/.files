@@ -890,7 +890,7 @@ function! s:find ( ... ) abort
   const l:bang = get ( a:, 1, v:false )
   const l:term = a:2
 
-  echom 'bang: ' l:bang
+  echom 'bang:' l:bang
 
   echom l:term
 endfunction " find
