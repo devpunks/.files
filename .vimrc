@@ -863,7 +863,7 @@ endfunction " enter
 " -------------------------------------------------------------------------
 set completefunc=Complete
 function Complete (token, command_line='', cursor_pos='0') " abort
-  echom 'Complete Function'
+  echom 'Complete():'
   echom 'Token: ' + a:token
   echom 'Base: ' + a:command_line
 
