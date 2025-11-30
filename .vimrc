@@ -962,7 +962,8 @@ function! s:search ( ... ) abort
 endfunction " search
 
 function s:fuzz ( ... ) abort
-  let l:term = get ( a:, 1, expand('<cword>') )
+  const l:term = get ( a:, 1, expand ( '<cword>' ) )
+
   echom 'This is the -complete=func' l:term
   echom a:000
 
