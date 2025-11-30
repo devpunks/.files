@@ -2312,7 +2312,7 @@ augroup UserDefaults
   autocmd User lsp_float_opened nmap <buffer><silent>
     \ <C-c> <Plug>(lsp-preview-closed)
   autocmd User lsp_float_closed nunmap <buffer> <C-c>
-  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled ()
 augroup END
 autocmd FileDefaults BufReadPost * echom 'Loading vim-lsp-server for '..expand('%')
 
