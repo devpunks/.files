@@ -1943,7 +1943,7 @@ function! s:fuzzy () abort
   let g:buftag_ctags_bin = split( system( 'type ctags' ) )[-1]
   echom 'Setting CtrlP binary tags path to:' g:buftag_ctags_bin
 
-  let g:ctrlp_extensions += ['tag', 'buffertag']
+  let g:ctrlp_extensions += [ 'tag', 'buffertag' ]
 
   let g:ctrlp_buftag_types = {
     \ 'erlang' :
