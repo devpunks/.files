@@ -254,7 +254,7 @@ endif
 
 " vnoremap <C-c> "*y<cr>
 " inoremap <C-v> “*p<cr>
-if has('unnamedplus') | set clipboard=unnamed,unnamedplus
+if has ( 'unnamedplus' ) | set clipboard=unnamed,unnamedplus
 else | set clipboard+=unnamed
 endif
 
