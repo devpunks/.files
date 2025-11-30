@@ -1064,7 +1064,7 @@ function! TabLine () abort
     let l:modified = getbufvar( l:index, '&mod' )
 
     " set tab page number (for mouse clicks)
-    let line ..='%' .. ( l:tab ) .. 'T'
+    let l:line ..='%' .. ( l:tab ) .. 'T'
     let line ..= ( l:tab == tabpagenr() ? '%#TabLineSel#| ▼ ' : '%#TabLine#')
     let line ..= ( l:tab == tabpagenr() || l:tab == tabpagenr() +1 ? ' ' : '| ' )
     let line ..= ( l:tab == tabpagenr() ? '✎' : '')
