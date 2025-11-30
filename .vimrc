@@ -2709,6 +2709,10 @@ syntax match Conceal '\<public\>' conceal cchar=👀
 syntax match Conceal '\<private\>' conceal cchar=🕶
 syntax match Conceal '\<protected\>' conceal cchar=👓
 
+syntax match Conceal "select \zs\*\ze" conceal cchar=✱
+syntax match Conceal '\<from\>' conceal cchar=⫁
+syntax match Conceal '\<in\>' conceal cchar=∈
+syntax match Conceal '\<not in\>' conceal cchar=∉
 syntax match Conceal '\<\cunion\>' conceal cchar=⨄
 syntax match Conceal '\<select\>' conceal cchar=σ
 
