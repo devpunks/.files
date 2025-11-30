@@ -2717,8 +2717,7 @@ syntax match Conceal '\<\cunion\>' conceal cchar=⨄
 syntax match Conceal '\<\cjoin\(s\)\?\>' conceal cchar=⨝
 syntax match Conceal /\cleft outer join/ conceal cchar=⟕
 syntax match Conceal /\cright outer join/ conceal cchar=⟖
-
-syntax match Conceal '\<exist\(s\)\?\>' conceal cchar=∃
+syntax match Conceal '\<\cexist\(s\)\?\>' conceal cchar=∃
 
 syntax match Conceal '1\.618[0-9]*' conceal cchar=Φ
 syntax match Conceal '2\.718[0-9]*' conceal cchar=e
