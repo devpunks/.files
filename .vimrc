@@ -1837,7 +1837,7 @@ endfunction " g:TagBar
 
 function g:TagsBar () abort
   if &runtimepath !~ 'tagbar' | return | endif
-  if len( &buftype ) || index( g:blacklist, &filetype ) >= 0 || empty ( &filetype ) | return | endif
+  if len ( &buftype ) || index ( g:blacklist, &filetype ) >= 0 || empty ( &filetype ) | return | endif
 
   TagbarToggle
 endfunction " g:TagsBar
