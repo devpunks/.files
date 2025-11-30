@@ -1076,7 +1076,7 @@ function! TabLine () abort
     let l:current = ( l:tab == tabpagenr() )
     " Close button
     " let line ..= '%=%999X%#TabLineSel#[X]' " Right justified on TabLine
-    let line ..= ( l:others && l:current ? '%' .. (l:tab) .. 'X ❌%X' : '' )
+    let l:line ..= ( l:others && l:current ? '%' .. (l:tab) .. 'X ❌%X' : '' )
     " Closing gliph
     let line ..= ( l:current ? ' ▼ ' : ' ' )
 
