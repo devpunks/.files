@@ -1593,7 +1593,7 @@ function s:tag ( ... ) abort
   echom 'Current File:' expand ( '%:p' )
 
   let l:paths = []
-  let l:file = findfile ( l:type .. '.tags', expand('%:p:h') .. ';' .. l:git )
+  let l:file = findfile ( l:type .. '.tags', expand ( '%:p:h' ) .. ';' .. l:git )
         \ ?? l:git .. '/' .. l:type .. '.tags'
   if empty ( l:file ) | echom '⚠️ Generate CTags for ⋙ ' .. l:type | return | endif
 
