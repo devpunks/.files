@@ -1581,7 +1581,7 @@ function s:tag ( ... ) abort
 
 
   if systemlist ( 'command ctags --list-languages' )
-    \ ->map( ' tolower( v:val ) ' )
+    \ ->map( ' tolower ( v:val ) ' )
     \ ->index( l:type ) < 0
   \ | return | endif
 
