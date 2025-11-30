@@ -1856,7 +1856,7 @@ autocmd FileType ruby,python,javascript :Scope
 command! -bang -nargs=? -complete=cscope Scope call s:scope ( <bang>0, <q-args> )
 function s:scope () abort
   const l:bang = get ( a:, 1, v:false )
-  let l:command = 'cscope'
+  const l:command = 'cscope'
   " TODO: Follow tagcase
   let l:suffix = &ignorecase ? '-C' : '' " Case sensitifity flag
 
