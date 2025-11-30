@@ -753,7 +753,7 @@ let g:tagbar_type_css = {
     \ 's:selectors',
     \ 'i:identities'
   \ ]
-\ } " g:tagbar_type_css
+\ } " tagbar_type_css
 
 " -------------------------------------------------------------------------
 " Go
