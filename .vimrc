@@ -1172,7 +1172,7 @@ function s:blame () abort
   let l:file = expand('%:p')
 
   " Check if command exists
-  call system( 'command -v git' )
+  call system ( 'command -v git' )
   if v:shell_error | return | endif
 
   if !filereadable(l:file) | return '' | endif
