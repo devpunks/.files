@@ -2711,6 +2711,7 @@ syntax match Conceal '\<protected\>' conceal cchar=👓
 
 syntax match Conceal "select \zs\*\ze" conceal cchar=✱
 syntax match Conceal '\<from\>' conceal cchar=⫁
+syntax match Conceal '\<\cwhere\>' conceal cchar=Θ
 syntax match Conceal '\<in\>' conceal cchar=∈
 syntax match Conceal '\<not in\>' conceal cchar=∉
 syntax match Conceal '\<\cunion\>' conceal cchar=⨄
