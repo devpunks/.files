@@ -2246,7 +2246,7 @@ function g:AsyncompleteBuffer () abort
     \ 'blocklist': [],
     \ 'allowlist': ['*'],
     \ 'config': { 'max_buffer_size': -1, },
-    \ 'completor': function('asyncomplete#sources#buffer#completor'),
+    \ 'completor': function ( 'asyncomplete#sources#buffer#completor' ),
     \ }))
 endfunction " AsyncompleteBuffer
 
