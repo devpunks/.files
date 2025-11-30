@@ -1048,7 +1048,7 @@ function! TabLine () abort
   if !!! exists ( '+showtabline' ) | return '' | endif
 
   " mouse
-  let mouse="%{ empty ( &mouse ) ? '    ' :  '  🐭' }"
+  let l:mouse="%{ empty ( &mouse ) ? '    ' :  '  🐭' }"
 
   let line = mouse " Initialize
   let line ..= ' devPunks😈studio %#TabLine#' " logo
