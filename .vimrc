@@ -1358,7 +1358,7 @@ function! g:GitDiffs () abort
 endfunction " GitDiffs
 
 function! g:GitChanges () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
+  if !!! has ( 'signs' ) || !!! exists ( 'g:loaded_gitgutter' ) | return '' | endif
 
   let [a,m,r] = GitGutterGetHunkSummary()
 
