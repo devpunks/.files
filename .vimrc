@@ -618,7 +618,7 @@ cnoremap <C-r> :source ~/.vimrc<CR>
 "   - Per type configuration - https://vimtricks.com/p/per-file-type-configs
 "   - autocommands - https://gist.github.com/romainl/6e4c15dfc4885cb4bd64688a71aa7063
 " =========================================================================
-let g:blacklist = [ 'nofile', 'help', 'startify' ]
+let g:blacklist = [ 'nofile', 'help', 'startify' ] " filetypes
 
 set autoread " re-read files
 set noautowrite " do not autowrite
