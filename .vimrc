@@ -2713,6 +2713,8 @@ syntax match Conceal '\<private\>' conceal cchar=🕶
 syntax match Conceal '\<protected\>' conceal cchar=👓
 
 syntax match Conceal '\<union\>' conceal cchar=⨄
+syntax match Conceal /\cleft outer join/ conceal cchar=⟕
+
 syntax match Conceal '\<exist\(s\)\?\>' conceal cchar=∃
 
 syntax match Conceal '1\.618[0-9]*' conceal cchar=Φ
