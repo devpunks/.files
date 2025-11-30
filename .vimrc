@@ -943,7 +943,7 @@ function! Popup () abort
       \, title: '• devPunks😈Studio •', filtermode: 'a', zindex: 1, pos: 'botleft', col: 'cursor+1', callback: 'PopUpComplete' })
 endfunction " Popup
 
-function! PopupComplete (id, result) abort
+function! PopupComplete ( id, result ) abort
   echo 'Hot Damn '..a:id..' '..a:result
 endfunction " PopupComplete
 
