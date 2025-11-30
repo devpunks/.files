@@ -897,7 +897,6 @@ endfunction " find
 " -------------------------------------------------------------------------
 " Lookup () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
-inoremap <expr> <C-d> Lookup()
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
 function g:Lookup(...)  " abort
   let i = 0
