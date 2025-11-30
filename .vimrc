@@ -1187,7 +1187,7 @@ function s:blame () abort
   let l:author = '👤' .. matchstr ( blame[ 1 ], '^author \zs.\+$' )
   let l:author_mail = '📧' .. matchstr ( blame[ 2 ], '^author-mail \zs.\+$' )
   let l:author_time = '🕓' .. strftime ( '%Y-%m-%d %X',
-    \ matchstr ( blame[3], '^author-time \zs.\+$' ) )
+    \ matchstr ( blame[ 3 ], '^author-time \zs.\+$' ) )
 
   for line in l:blame
     if line !~# '^summary' | continue | endif
