@@ -845,7 +845,7 @@ endfunction
 
 command! Tab call s:tab ()
 function! s:tab () abort
-  echo 'Tabbing ( Not Yet Implemented. See :Tab command )'
+  echom 'Tabbing ( Not Yet Implemented. See :Tab command )'
 endfunction " tab
 
 command! Space call s:space ()
