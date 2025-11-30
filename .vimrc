@@ -2406,7 +2406,7 @@ endfunction " LSPSettings
 " -------------------------------------------------------------------------
 " Ale - https://github.com/dense-analysis/ale
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Lint()
+autocmd VimDefaults VimEnter * call g:Lint ()
 augroup UserDefaults
   autocmd User AleFixPre echom 'ALE - Disable Syntax'
   autocmd User AleFixPost echom 'ALE - Enable Syntax'
