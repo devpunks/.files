@@ -1050,8 +1050,8 @@ function! TabLine () abort
   " mouse
   let l:mouse="%{ empty ( &mouse ) ? '    ' :  '  🐭' }"
 
-  let line = mouse " Initialize
-  let line ..= ' devPunks😈studio %#TabLine#' " logo
+  let l:line = l:mouse
+  let l:line ..= ' devPunks😈studio %#TabLine#' " logo
 
   let l:tabs = range ( tabpagenr ( '$' ) )
   for index in l:tabs
