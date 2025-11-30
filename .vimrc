@@ -890,7 +890,6 @@ function! s:find ( ... ) abort
   echom 'bang: ' l:bang
 
   echom l:term
-  echom a:000
 endfunction " find
 
 " -------------------------------------------------------------------------
