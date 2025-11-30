@@ -2320,7 +2320,7 @@ function g:LSP () abort
   if &runtimepath !~ 'vim-lsp' | return | endif
 
   echo 'VIM LSP'
-  call lsp#enable()
+  call lsp#enable ()
 
   let g:lsp_preview_float = 1
   let g:lsp_use_native_client = 1
