@@ -2383,7 +2383,7 @@ endfunction " on_lsp_buffer_enabled
 " -------------------------------------------------------------------------
 " Vim LSP Settings - https://github.com/mattn/vim-lsp-settings
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:LSPSettings()
+autocmd VimDefaults VimEnter * call g:LSPSettings ()
 
 function g:LSPSettings () abort
   if &runtimepath !~ 'vim-lsp-settings' | return | endif
