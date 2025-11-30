@@ -2040,7 +2040,7 @@ endfunction " Snippets
 " nnoremap <Enter> :call g:ZoomDrawer()<CR>
 
 function! g:ZoomDrawer () abort
-  if ! exists('*ZoomWin') | return | endif
+  if !!! exists ( '*ZoomWin' ) | return | endif
 
   let l:open = g:NERDTree.IsOpen ()
   " TODO: Use tagbar#IsOpen()
