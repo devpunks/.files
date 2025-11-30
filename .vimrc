@@ -1761,8 +1761,8 @@ endfunction " tags
 function g:TagsStatus ( mods ) " abort
   let l:icon = ''
 
-  if(index(a:mods, 'ctags') >= 0)
-    let l:icon .= '🏷️'
+  if ( index ( a:mods, 'ctags' ) >= 0 )
+    let l:icon ..= '🏷️'
   endif
 
   if(index(a:mods, 'cscope') >= 0)
