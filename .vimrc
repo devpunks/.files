@@ -788,7 +788,7 @@ augroup END
 autocmd FileDefaults BufReadPost * call s:DetectNode()
 
 function! s:DetectNode ()
-  if getline(1) !~ 'node' | return | endif
+  if getline ( 1 ) !~ 'node' | return | endif
 
   setlocal filetype=javascript
   setlocal omnifunc=javascriptcomplete#CompleteJS
