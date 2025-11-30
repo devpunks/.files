@@ -904,7 +904,7 @@ function g:Lookup ( ... ) " abort
   let l:tag  = 'module'
   let l:kinds  = [ 'f', 'function', 'method', 'F', 'singleton method' ]
 
-  echo 'argument count: ' .. argc()
+  echo 'argument count:' argc()
 
 " while i < argc()
     echo 'Argument (' .. 1 .. '): ' .. argv(0)
