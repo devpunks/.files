@@ -1464,7 +1464,7 @@ endfunction " indentation
   echom '(tags) definitions path: '.. &g:tags
 
 function TagFunc ( pattern, flags, info ) abort
-  echo 'TagFunc():'
+  echom 'TagFunc():'
 
   let l:insert = mode () == 'i'
 
