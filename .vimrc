@@ -1327,7 +1327,7 @@ augroup FileDefaults
 augroup END
 
 function! g:GitFocus () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
+  if ! has ( 'signs' ) || !!! exists ( 'g:loaded_gitgutter' ) | return '' | endif
 
   highlight! link GitGutterAdd DiffAdd
   highlight! link GitGutterChange DiffChange
