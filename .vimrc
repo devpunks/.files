@@ -142,7 +142,7 @@ set errorbells " Unset audio bell on errors
 "set belloff+=wildmode " Turn off insert completion bell
 " Set the window bell to flash
 set t_vb=
-if has("gui_running")
+if has ( 'gui_running' )
   set visualbell t_vb=|250f " Nf - where N = milliseconds
 elseif exists('$TMUX')
   set novisualbell " passthrough to TMUX
