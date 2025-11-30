@@ -1337,7 +1337,7 @@ function! g:GitFocus () abort
 endfunction " GitFocus
 
 function! g:GitBlur () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return '' | endif
+  if !!! has ( 'signs' ) || !!! exists ( 'g:loaded_gitgutter' ) | return '' | endif
 
   highlight link GitGutterAdd NONE
   highlight link GitGutterChange NONE
