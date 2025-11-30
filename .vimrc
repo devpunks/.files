@@ -1240,7 +1240,7 @@ function! s:gitModified () abort
   let l:files = systemlist ( 'git ls-files -m 2>/dev/null' )
 
   echo 'startify gitModified'
-  return map( l:files, "{ 'line': v:val, 'path': v:val }")
+  return map( l:files, "{ 'line': v:val, 'path': v:val }" )
 endfunction " gitModified
 
 function! s:NerdtreeBookmarks() abort
