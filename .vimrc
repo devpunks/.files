@@ -266,7 +266,7 @@ endif
 
 " Termux ------------------------------------------------------------------
 " https://ibnishak.github.io/blog/post/copy-to-termux-clip/
-if executable('termux-clipboard-set')
+if executable ( 'termux-clipboard-set' )
   echom 'Termux Copy & 🍝Pasta'
   " vnoremap <C-x> :!termux-clipboard-set<CR>
   " vnoremap <C-c> :w !termux-clipboard-set<CR><CR>
