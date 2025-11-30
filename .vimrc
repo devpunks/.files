@@ -1712,7 +1712,7 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   execute 'tags'
 
   " QuickFix window
-  call setqflist ( l:stack[ 'items' ] )
+  call setqflist ( l:stack [ 'items' ] )
   execute 'copen' l:height
   const w:quickfix_title = '🏷️' .. a:expression
 
