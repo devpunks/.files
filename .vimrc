@@ -1096,7 +1096,7 @@ endfunction " TabLine
 " {{{ PLUGINS - check loaded with &runtimepath =~ 'plugin-name'
 " =========================================================================
 
-echo 'All Plugins'
+echom 'All Plugins'
 " scriptnames " List all loaded plugins
 
 filetype plugin on " filetype - https://vimdoc.sourceforge.net/htmldoc/filetype.html
