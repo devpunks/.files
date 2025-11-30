@@ -2224,7 +2224,7 @@ function g:AsyncompleteEmoji () abort
 
   echom 'Loading asyncomplete-emoji'
 
-  call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
+  call asyncomplete#register_source ( asyncomplete#sources#emoji#get_source_options ({
     \ 'name': 'emoji',
     \ 'allowlist': ['*'],
     \ 'completor': function('asyncomplete#sources#emoji#completor'),
