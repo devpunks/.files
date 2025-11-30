@@ -1202,7 +1202,7 @@ endfunction " blame
 "   - :h startify
 "   - :h startify-faq
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter call g:Start()
+autocmd VimDefaults VimEnter call g:Start ()
 
 function! g:Start () abort
   echom 'Calling Startify'
