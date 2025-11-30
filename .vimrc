@@ -1248,7 +1248,7 @@ function! s:NerdtreeBookmarks() abort
   let l:bookmarks = bookmarks[0:-2] " Slice empty last line
 
   echo 'startify NERDTreeBookmarks'
-  return map( l:bookmarks, "{ 'line': v:val, 'path': v:val }")
+  return map ( l:bookmarks, "{ 'line': v:val, 'path': v:val }" )
 endfunction " NerdtreeBookmarks
 
 " -------------------------------------------------------------------------
