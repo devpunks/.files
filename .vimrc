@@ -944,7 +944,7 @@ function! Popup () abort
 endfunction " Popup
 
 function! PopupComplete ( id, result ) abort
-  echo 'Hot Damn '..a:id..' '..a:result
+  echo 'Hot Damn ' .. a:id .. ' ' .. a:result
 endfunction " PopupComplete
 
 " -------------------------------------------------------------------------
