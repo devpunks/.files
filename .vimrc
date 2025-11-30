@@ -1562,7 +1562,7 @@ function s:tag ( ... ) abort
     echom 'tempfile:' l:temp
     echom 'CTags Executable:' system ( 'command -v ctags' )
     echom 'The command $' l:command
-    echo "\nWriting tags for" expand ( '%:p' )
+    echom "\nWriting tags for" expand ( '%:p' )
     call system ( l:command )
 
     for line in readfile( l:temp )
