@@ -1954,8 +1954,8 @@ function! s:fuzzy () abort
     \ }
   \ }
 
-  echom 'CtrlP tag types: ' .. string( g:ctrlp_buftag_types )
-  echom 'CtrlP tag extensions: ' .. string( g:ctrlp_extensions )
+  echom 'CtrlP tag types:' string( g:ctrlp_buftag_types )
+  echom 'CtrlP tag extensions:' string( g:ctrlp_extensions )
 
   if &runtimepath !~ 'vim-ctrlp-tjump'
     echom 'CtrlP Mapping <C-]> (tjump) tag'
