@@ -1475,7 +1475,7 @@ function TagFunc ( pattern, flags, info ) abort
   let l:result = [] " Perform standard tag lookup instead
   let l:results = taglist ( a:pattern )
 
-  echom 'Found ' .. len( l:results ) .. ' Results'
+  echom 'Found' len ( l:results ) 'Results'
   echom "The Results: \n" .. join ( l:results, "\n\n" )
 
   return l:results
