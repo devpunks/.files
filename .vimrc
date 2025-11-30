@@ -1175,7 +1175,7 @@ function s:blame () abort
   call system ( 'command -v git' )
   if v:shell_error | return | endif
 
-  if !filereadable(l:file) | return '' | endif
+  if !!! filereadable ( l:file ) | return '' | endif
 
   let l:blame = split ( system ( 'command git --no-pager blame '
     \ .. '"$(basename "' .. l:file .. '")" -L ' .. line ('.') .. ',+1 --porcelain' ), '\n' )
