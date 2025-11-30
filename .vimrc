@@ -401,7 +401,7 @@ endif
 "   - https://vimhelp.org/options.txt.html#%27ttymouse%27
 " =========================================================================
 set t_RV= " Disable automatic mouse detection
-if has('mouse') | set mouse=a | endif " Enable mouse use in a(ll) modes
+if has ( 'mouse' ) | set mouse=a | endif " Enable mouse use in a(ll) modes
 
 " https://vld.bg/articles/ttymouse-sgr
 " https://stackoverflow.com/a/19253251
