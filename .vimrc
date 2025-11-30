@@ -1560,7 +1560,7 @@ function s:tag ( ... ) abort
       \ .. ' ' .. expand ( '%:p' )
 
     echom 'tempfile:' l:temp
-    echo 'CTags Executable:' system ( 'command -v ctags' )
+    echom 'CTags Executable:' system ( 'command -v ctags' )
     echom 'The command $' l:command
     echo "\nWriting tags for" expand ( '%:p' )
     call system ( l:command )
