@@ -1861,8 +1861,8 @@ function s:scope () abort
   const l:suffix = &g:ignorecase ? '-C' : '' " Case sensitifity flag
 
   " executable('scope')
-  call system( 'command -v ' .. l:command )
-  if v:shell_error | return | else | echom l:command .. ' Scoping...' | endif
+  call system ( 'command -v ' .. l:command )
+  if v:shell_error | return | else | echom l:command 'Scoping...' | endif
 
   set cscopeverbose " Database addition messages
   set cscopepathcomp =2 " Path parts of db path
