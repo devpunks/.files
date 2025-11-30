@@ -902,7 +902,7 @@ function g:Lookup ( ... ) " abort
   let i = 0
   let l:tags = []
   let l:tag  = 'module'
-  let l:kinds  = ['f', 'function', 'method', 'F', 'singleton method' ]
+  let l:kinds  = [ 'f', 'function', 'method', 'F', 'singleton method' ]
 
   echo 'Fooing'
   echo  'argument count: ' .. argc()
