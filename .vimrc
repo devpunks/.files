@@ -1244,7 +1244,7 @@ function! s:gitModified () abort
 endfunction " gitModified
 
 function! s:NerdtreeBookmarks() abort
-  let l:bookmarks = systemlist( "cut -d' ' -f 2- ~/.NERDmarks")
+  let l:bookmarks = systemlist ( "cut -d' ' -f 2- ~/.NERDmarks" )
   let l:bookmarks = bookmarks[0:-2] " Slice empty last line
 
   echo 'startify NERDTreeBookmarks'
