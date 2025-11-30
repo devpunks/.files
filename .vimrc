@@ -787,7 +787,7 @@ augroup END
 " -------------------------------------------------------------------------
 autocmd FileDefaults BufReadPost * call s:DetectNode()
 
-function! s:DetectNode()
+function! s:DetectNode ()
   if getline(1) !~ 'node' | return | endif
 
   setlocal filetype=javascript
