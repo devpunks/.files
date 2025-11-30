@@ -2390,7 +2390,7 @@ function g:LSPSettings () abort
 
   echo 'VIM LSP Settings'
 
-  let g:lsp_settings_servers_dir  = expand('$HOME/.vim/servers')
+  let g:lsp_settings_servers_dir  = expand ( '$HOME/.vim/servers' )
   let g:lsp_settings_root_markers = [
     \ '.git',
     \ 'Gemfile',
