@@ -62,7 +62,7 @@ set emoji encoding=UTF-8
 " https://stackoverflow.com/q/5845557
 " TODO: remove if &compatible | set nocompatible | endif
 
-if ! exists('g:pluginname_setting')
+if !!! exists ( 'g:pluginname_setting' )
   unlet! skip_defaults_vim
   let g:skip_defaults_vim=0
   source $VIMRUNTIME/defaults.vim
