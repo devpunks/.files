@@ -1070,7 +1070,7 @@ function! TabLine () abort
     let l:line ..= ( l:tab == tabpagenr() ? '✎' : '')
     let l:line ..= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
     let l:line ..= ( l:modified ? '➕' : '' )
-    let line ..= ( l:count > 1 ? ' ⊞'.l:count : '' )
+    let l:line ..= ( l:count > 1 ? ' ⊞'.l:count : '' )
 
     let l:others = ( len( l:tabs ) > 1 )
     let l:current = ( l:tab == tabpagenr() )
