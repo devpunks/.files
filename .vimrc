@@ -1372,7 +1372,7 @@ function! g:GitChanges () abort
 endfunction " GitChanges
 
 function! g:GitGutter () abort
-  if ! has('signs') || ! exists('g:loaded_gitgutter') | return | endif
+  if !!! has ( 'signs' ) || !!! exists ( 'g:loaded_gitgutter' ) | return | endif
 
   echom 'Git Gutter!'
 
