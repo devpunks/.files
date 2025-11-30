@@ -1858,7 +1858,7 @@ function s:scope () abort
   const l:bang = get ( a:, 1, v:false )
   const l:command = 'cscope'
   " TODO: Follow tagcase
-  let l:suffix = &ignorecase ? '-C' : '' " Case sensitifity flag
+  const l:suffix = &g:ignorecase ? '-C' : '' " Case sensitifity flag
 
   " executable('scope')
   call system( 'command -v ' .. l:command )
