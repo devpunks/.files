@@ -1633,7 +1633,7 @@ command! -bang -nargs=? -complete=tag_listfiles Tags call s:tags ( <bang>0, <f-a
 function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:height = 5
   let l:winid = win_getid ()
-  let l:file = expand ('%:p')
+  let l:file = expand ( '%:p' )
 
   if empty( a:expression ) | echo '' | return | endif
   if !!! ( a:expression =~ '^[a-zA-Z0-9_-]\+$' ) | echo '' | return | endif
