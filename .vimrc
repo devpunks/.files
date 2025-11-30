@@ -2340,7 +2340,7 @@ function g:LSP () abort
   let g:lsp_document_code_action_signs_hint = {'text': '🚀' }
 
   " if executable('bash-language-server')
-    autocmd User lsp_setup call lsp#register_server({
+    autocmd User lsp_setup call lsp#register_server ({
     \ 'allowlist': ['sh', 'bash'],
     \ 'name': 'bash-language-server',
     \ 'cmd': {server_info->['bash-language-server', 'start']},
@@ -2352,7 +2352,7 @@ function g:LSP () abort
 
   LspStatus
   LspStopServer
-  call lsp#disable() " TODO: REMOVE"
+  call lsp#disable () " TODO: REMOVE"
 
 endfunction " LSP
 
