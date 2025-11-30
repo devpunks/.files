@@ -1081,7 +1081,7 @@ function! TabLine () abort
     let l:line ..= ( l:current ? ' ▼ ' : ' ' )
 
     let l:line ..= ( l:current || l:tab == len ( l:tabs ) ? '|' : '' )
-    let line ..= '%T' " Tab delineation
+    let l:line ..= '%T' " Tab delineation
   endfor
 
   let line ..= '%<' " Overflow breakpoint
