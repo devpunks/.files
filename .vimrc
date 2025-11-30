@@ -1639,9 +1639,9 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   if !!! ( a:expression =~ '^[a-zA-Z0-9_-]\+$' ) | echo '' | return | endif
 
   function! s:clear () closure
-    echo 'Signature Bang:' a:bang
-    echo 'Expression: "' .. a:expression .. '"'
-    echo 'File:' l:file
+    echom 'Signature Bang:' a:bang
+    echom 'Expression: "' .. a:expression .. '"'
+    echom 'File:' l:file
     if !!! a:bang | return | endif
     call settagstack ( l:winid, { 'items': [] } )
   endfunction " s:clear
