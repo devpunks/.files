@@ -1068,7 +1068,7 @@ function! TabLine () abort
     let l:line ..= ( l:tab == tabpagenr() ? '%#TabLineSel#| ▼ ' : '%#TabLine#')
     let l:line ..= ( l:tab == tabpagenr() || l:tab == tabpagenr() +1 ? ' ' : '| ' )
     let l:line ..= ( l:tab == tabpagenr() ? '✎' : '')
-    let line ..= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
+    let l:line ..= ( l:name == '' ?  '[No Name]' : fnamemodify (l:name, ':t' ) )
     let line ..= ( l:modified ? '➕' : '' )
     let line ..= ( l:count > 1 ? ' ⊞'.l:count : '' )
 
