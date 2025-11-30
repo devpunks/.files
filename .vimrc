@@ -855,7 +855,7 @@ endfunction " space
 
 command! Enter call s:enter ()
 function! s:enter () abort
-  echo 'Entering ( Not Yet Implemented. See :Enter command )'
+  echom 'Entering ( Not Yet Implemented. See :Enter command )'
 endfunction " enter
 
 " -------------------------------------------------------------------------
