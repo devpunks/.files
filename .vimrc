@@ -918,8 +918,8 @@ function g:Lookup ( ... ) " abort
     endif
   endfor
 
-  echo 'Tags:' join ( tags, ', ' )
-  echo 'Git root:' system ( 'git rev-parse --show-toplevel' )
+  echom 'Tags:' join ( tags, ', ' )
+  echom 'Git root:' system ( 'git rev-parse --show-toplevel' )
 
   return
 
