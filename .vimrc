@@ -2307,7 +2307,7 @@ endfunction " AsyncompleteUltisnips
 " -------------------------------------------------------------------------
 " Vim LSP - https://github.com/prabirshrestha/vim-lsp
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:LSP()
+autocmd VimDefaults VimEnter * call g:LSP ()
 augroup UserDefaults
   autocmd User lsp_float_opened nmap <buffer><silent>
     \ <C-c> <Plug>(lsp-preview-closed)
