@@ -2043,7 +2043,7 @@ function! g:ZoomDrawer () abort
   if !!! exists ( '*ZoomWin' ) | return | endif
 
   let l:open = g:NERDTree.IsOpen ()
-  " TODO: Use tagbar#IsOpen()
+  " TODO: Use tagbar#IsOpen ()
   NERDTreeClose
   TagbarClose
   TlistClose
