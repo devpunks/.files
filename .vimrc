@@ -1840,7 +1840,7 @@ function g:TagsBar () abort
   if len ( &buftype ) || index ( g:blacklist, &filetype ) >= 0 || empty ( &filetype ) | return | endif
 
   TagbarToggle
-endfunction " g:TagsBar
+endfunction " TagsBar
 
 " -------------------------------------------------------------------------
 " Scopes :h cscope
