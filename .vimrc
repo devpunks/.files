@@ -2234,7 +2234,7 @@ endfunction " AsyncompleteEmoji
 " -------------------------------------------------------------------------
 " Asyncomplete Buffer - https://github.com/prabirshrestha/asyncomplete-buffer.vim
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:AsyncompleteBuffer()
+autocmd VimDefaults VimEnter * call g:AsyncompleteBuffer ()
 
 function g:AsyncompleteBuffer () abort
   if &runtimepath !~ 'asyncomplete-buffer' | return | endif
