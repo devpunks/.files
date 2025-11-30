@@ -1410,7 +1410,7 @@ endfunction " GitGutter
 " -------------------------------------------------------------------------
 " IndentGuides - https://github.com/preservim/vim-indent-guides
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:Indentation()
+autocmd VimDefaults VimEnter * call g:Indentation ()
 
 function! g:Indentation() abort
 " if &runtimepath !~ 'vim-indent-guides' | return | endif
