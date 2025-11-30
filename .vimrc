@@ -2300,7 +2300,7 @@ function g:AsyncompleteUltisnips () abort
   call asyncomplete#register_source ( asyncomplete#sources#ultisnips#get_source_options ({
     \ 'name': 'ultisnips',
     \ 'allowlist': ['*'],
-    \ 'completor': function('asyncomplete#sources#ultisnips#completor'),
+    \ 'completor': function ( 'asyncomplete#sources#ultisnips#completor' ),
     \ }))
 endfunction " AsyncompleteUltisnips
 
