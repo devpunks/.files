@@ -406,7 +406,7 @@ if has ( 'mouse' ) | set mouse=a | endif " Enable mouse use in a(ll) modes
 " https://vld.bg/articles/ttymouse-sgr
 " https://stackoverflow.com/a/19253251
 " https://stackoverflow.com/q/7000960/in-vim-why-doesnt-my-mouse-work-past-the-220th-column
-if has('mouse_sgr') | set ttymouse=sgr " Set sgr mouse
+if has ( 'mouse_sgr' ) | set ttymouse=sgr " Set sgr mouse
 else | set ttymouse=xterm2 " degrade to xterm2 mouse
 endif
 
