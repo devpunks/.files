@@ -144,7 +144,7 @@ set errorbells " Unset audio bell on errors
 set t_vb=
 if has ( 'gui_running' )
   set visualbell t_vb=|250f " Nf - where N = milliseconds
-elseif exists('$TMUX')
+elseif exists ( '$TMUX' )
   set novisualbell " passthrough to TMUX
 else
   " <N> - where N = milliseconds
