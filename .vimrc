@@ -2049,7 +2049,7 @@ function! g:ZoomDrawer () abort
   TlistClose
   ZoomWin
   " Open Drawer & focus on `p`revious buffer
-  if ( l:open ) | NERDTree | wincmd p | endif
+  if l:open | NERDTree | wincmd p | endif
   " const l:tagbar_open = bufwinnr( t:tagbar_buf_name) != -1
   "  if ( l:tagbar_open ) | TagbarOpen | wincmd p | endif
 endfunction " ZoomDrawer
@@ -2074,7 +2074,7 @@ autocmd VimDefaults VimEnter * call g:NerdInit ()
 autocmd FileDefaults BufReadPost * call g:NerdDrawer ()
 
 function! g:NerdInit () abort
-  if ! exists('g:NERDTree') | return | endif
+  if !!! exists ( 'g:NERDTree' ) | return | endif
 
   " nerdtree-git-plugin
   let g:NERDTreeGitStatusIndicatorMapCustom = {
