@@ -2713,6 +2713,7 @@ syntax match Conceal '\<private\>' conceal cchar=🕶
 syntax match Conceal '\<protected\>' conceal cchar=👓
 
 syntax match Conceal '\<union\>' conceal cchar=⨄
+syntax match Conceal /\cjoin\(s\)\?/ conceal cchar=⨝
 syntax match Conceal /\cleft outer join/ conceal cchar=⟕
 syntax match Conceal /\cright outer join/ conceal cchar=⟖
 
