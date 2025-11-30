@@ -1024,7 +1024,7 @@ endfunction " CursorCharacter
 function! GetColor ( group, attr ) abort " GetColor ( 'LineNr', 'bg#' )
   let color = synIDattr ( synIDtrans ( hlID ( a:group ) ), a:attr )
 
-  echom "THE COLOR".color
+  echom 'THE COLOR' color
 
   return color ? color : 'NONE'
 endfunction " GetColor
