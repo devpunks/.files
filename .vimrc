@@ -1758,7 +1758,7 @@ return
   " call settagstack(1003, stack)
 endfunction " tags
 
-function g:TagsStatus (mods) " abort
+function g:TagsStatus ( mods ) " abort
   let l:icon = ''
 
   if(index(a:mods, 'ctags') >= 0)
