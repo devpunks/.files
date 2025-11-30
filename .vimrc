@@ -923,9 +923,11 @@ function g:Lookup ( ... ) " abort
 
   return
 
-  call complete ( col ( '.' ), ['January', 'February', 'March',
-  \ 'April', 'May', 'June', 'July', 'August', 'September',
-  \ 'October', 'November', 'December'])
+  call complete ( col ( '.' ), [
+  \ 'January', 'February', 'March', 'April', 'May', 'June',
+  \ 'July', 'August', 'September', 'October', 'November', 'December'
+  \ ])
+
   return ''
 endfunction " Lookup
 
