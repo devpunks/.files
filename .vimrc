@@ -2356,7 +2356,7 @@ function g:LSP () abort
 
 endfunction " LSP
 
-function! s:on_lsp_buffer_enabled() abort
+function! s:on_lsp_buffer_enabled () abort
   echom 'LSP Buffer Enabled'
   if exists('+tagfunc') | setlocal tagfunc=lsp#tag#tagfunc | endif
 
