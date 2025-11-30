@@ -1015,7 +1015,7 @@ function! CursorCharacter () abort " DecimalToOctal(27)
 
   " Join character to escape sequences
   " - https://en.wikipedia.org/wiki/Escape_sequence
-  return character .. [ decimal, hexadecimal, octal ]->join( ' ' )
+  return character .. [ decimal, hexadecimal, octal ] ->join( ' ' )
 endfunction " CursorCharacter
 
 " -------------------------------------------------------------------------
