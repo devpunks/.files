@@ -188,7 +188,7 @@ function s:ignore ( file = '.gitignore' ) abort
 
   echom 'Git Root:' l:root
 
-  if !!! filereadable( l:file ) | return | endif
+  if !!! filereadable ( l:file ) | return | endif
 
   echo 'Git Ignore:' l:file
 
