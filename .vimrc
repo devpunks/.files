@@ -186,7 +186,7 @@ function s:ignore ( file = '.gitignore' ) abort
     \ ?? $HOME , ':p' )
   const l:file = l:root .. a:file
 
-  echo 'Git Root:' l:root
+  echom 'Git Root:' l:root
 
   if !!! filereadable( l:file ) | return | endif
 
