@@ -919,7 +919,7 @@ function g:Lookup ( ... ) " abort
   endfor
 
   echo 'Tags:' join ( tags, ', ' )
-  echo 'Git root: ' .. system('git rev-parse --show-toplevel')
+  echo 'Git root:' system ( 'git rev-parse --show-toplevel' )
 
   return
 
