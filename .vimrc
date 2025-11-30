@@ -2714,8 +2714,6 @@ syntax match Conceal '\<from\>' conceal cchar=⫁
 syntax match Conceal '\<in\>' conceal cchar=∈
 syntax match Conceal '\<not in\>' conceal cchar=∉
 syntax match Conceal '\<\cunion\>' conceal cchar=⨄
-syntax match Conceal '\<select\>' conceal cchar=σ
-
 syntax match Conceal '\<\cjoin\(s\)\?\>' conceal cchar=⨝
 syntax match Conceal /\cleft outer join/ conceal cchar=⟕
 syntax match Conceal /\cright outer join/ conceal cchar=⟖
