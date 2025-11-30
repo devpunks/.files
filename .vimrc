@@ -1468,7 +1468,7 @@ function TagFunc ( pattern, flags, info ) abort
 
   let l:insert = mode () == 'i'
 
-  echom 'Insert: ' .. l:insert
+  echom 'Insert:' l:insert
   echom 'Pattern: ' .. a:pattern
 
   " NOT ALLOWED TO CHANGE TAGSTACK
