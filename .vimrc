@@ -1078,7 +1078,7 @@ function! TabLine () abort
     " let line ..= '%=%999X%#TabLineSel#[X]' " Right justified on TabLine
     let l:line ..= ( l:others && l:current ? '%' .. (l:tab) .. 'X ❌%X' : '' )
     " Closing gliph
-    let line ..= ( l:current ? ' ▼ ' : ' ' )
+    let l:line ..= ( l:current ? ' ▼ ' : ' ' )
 
     let line ..= ( l:current || l:tab == len ( l:tabs ) ? '|' : '' )
     let line ..= '%T' " Tab delineation
