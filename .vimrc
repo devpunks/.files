@@ -1347,8 +1347,8 @@ function! g:GitBlur () abort
 endfunction " GitBlur
 
 function! g:GitDiffs () abort
-  let l:files = system('git diff --shortstat')
- :let l:summary = '%#Statement# '
+  let l:files = system ( 'git diff --shortstat' )
+  let l:summary = '%#Statement# '
 
  echom 'Buffer Name:'..bufname('')
   if true | let l:summary ..= printf( '%s', summary ) | endif
