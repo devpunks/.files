@@ -1747,7 +1747,7 @@ return
 
   execute 'tselect' l:word
 
-  execute 'match CurSearch "\%' .. line('.') .. 'l\%' .. col('.') .. 'c\k*"'
+  execute 'match CurSearch "\%' .. line ( '.' ) .. 'l\%' .. col ( '.' ) .. 'c\k*"'
 
   call search ( '$', 'b' ) " previous EOL
   const word = substitute ( l:word, '\\', '\\\\', '' )
