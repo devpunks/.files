@@ -1280,7 +1280,7 @@ endfunction " OverflowMargin
 " autocmd FileReadPost * call sclow#update()
 autocmd VimDefaults BufReadPost * call g:ScrollBar()
 
-function! g:ScrollBar() abort
+function! g:ScrollBar () abort
   if get( g:, 'loaded_sclow', 0 ) != 1 | return | endif
 
   echom 'Showing Scrollbar'
