@@ -1765,8 +1765,8 @@ function g:TagsStatus ( mods ) " abort
     let l:icon ..= '🏷️'
   endif
 
-  if(index(a:mods, 'cscope') >= 0)
-    let l:icon .= '🔖'
+  if (index ( a:mods, 'cscope' ) >= 0)
+    let l:icon ..= '🔖'
   endif
 
   " echom strftime("%T") .. 'The icons: ' .. l:icon .. '& mods: ' .. join(a:mods, ',')
