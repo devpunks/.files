@@ -1475,8 +1475,8 @@ function TagFunc ( pattern, flags, info ) abort
   let l:result = [] " Perform standard tag lookup instead
   let l:results = taglist ( a:pattern )
 
-  echo 'Found ' .. len( l:results ) .. ' Results'
-  echo "The Results: \n" .. join ( l:results, "\n\n" )
+  echom 'Found ' .. len( l:results ) .. ' Results'
+  echom "The Results: \n" .. join ( l:results, "\n\n" )
 
   return l:results
 endfunction
