@@ -912,9 +912,9 @@ function g:Lookup ( ... ) " abort
 " endwhile
 
 
-  for entry in taglist('^'..tag)
-    if index(['f'], entry.kind)  > 1
-      call add(tags, entry)
+  for entry in taglist ( '^' .. tag )
+    if index ( [ 'f' ], entry.kind ) > 1
+      call add ( tags, entry )
     endif
   endfor
 
