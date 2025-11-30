@@ -2279,7 +2279,7 @@ function g:AsyncompleteTags () abort
 
   echo 'Loading asyncomplete-tags'
 
-  call asyncomplete#register_source(asyncomplete#sources#tags#get_source_options({
+  call asyncomplete#register_source ( asyncomplete#sources#tags#get_source_options ({
     \ 'name': 'tags',
     \ 'allowlist': ['*'],
     \ 'config': { 'max_file_size': -1, },
@@ -2290,7 +2290,7 @@ endfunction " AsyncompleteTags
 " -------------------------------------------------------------------------
 " Asyncomplete Ultisnips - https://github.com/prabirshrestha/asyncomplete-ultisnips.vim
 " -------------------------------------------------------------------------
-autocmd VimDefaults VimEnter * call g:AsyncompleteUltisnips()
+autocmd VimDefaults VimEnter * call g:AsyncompleteUltisnips ()
 
 function g:AsyncompleteUltisnips () abort
   if &runtimepath !~ 'asyncomplete-ultisnips' | return | endif
