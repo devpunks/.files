@@ -2110,7 +2110,7 @@ function! g:NerdDrawer () abort
 endfunction " NerdDrawer
 
 function g:NerdToggle () abort
-  if exists(':TagbarToggle')
+  if exists ( ':TagbarToggle' )
     TagbarToggle
     TagbarTogglePause
   endif
