@@ -1872,7 +1872,7 @@ function s:scope () abort
   for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
     const l:out = findfile ( 'cscope.' .. extension .. '.out', '.;' )
 
-    if ! filereadable( l:out )  | continue | endif
+    if !!! filereadable ( l:out )  | continue | endif
 
     echom '(scope) definitions path: '.. l:out
 
