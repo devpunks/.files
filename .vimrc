@@ -840,7 +840,7 @@ let g:tagbar_type_ruby = {
 " =========================================================================
 let shazam='Bar'
 function Foo{g:shazam} () abort
-  echo 'Shazzaaaam'
+  echom 'Shazzaaaam'
 endfunction
 
 command! Tab call s:tab ()
