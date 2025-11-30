@@ -704,7 +704,7 @@ function g:CSV () abort
 
   echo 'loaded CSV (See https://github.com/chrisbra/csv.vim)'
   let g:csv_highlight_column = 'y'
-endfunction " g:CSV
+endfunction " CSV
 
 " -------------------------------------------------------------------------
 " Markdown
