@@ -1461,7 +1461,7 @@ endfunction " indentation
   set iskeyword+=-,. " a-z,A-Z,48-57,_,.,-,>
 
   echom 'Current Dir:' getcwd ()
-  echom '(tags) definitions path: '.. &g:tags
+  echom '(tags) definitions path:' &g:tags
 
 function TagFunc ( pattern, flags, info ) abort
   echom 'TagFunc():'
