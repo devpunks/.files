@@ -2358,7 +2358,7 @@ endfunction " LSP
 
 function! s:on_lsp_buffer_enabled () abort
   echom 'LSP Buffer Enabled'
-  if exists('+tagfunc') | setlocal tagfunc=lsp#tag#tagfunc | endif
+  if exists ( '+tagfunc' ) | setlocal tagfunc=lsp#tag#tagfunc | endif
 
   setlocal omnifunc=lsp#complete
 
