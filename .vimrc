@@ -1350,8 +1350,8 @@ function! g:GitDiffs () abort
   let l:files = system ( 'git diff --shortstat' )
   let l:summary = '%#Statement# '
 
- echom 'Buffer Name:'..bufname('')
-  if true | let l:summary ..= printf( '%s', summary ) | endif
+ echom 'Buffer Name:' bufname ( '' )
+  if true | let l:summary ..= printf ( '%s', summary ) | endif
   let l:summary ..= '%#Statement# '
 
   return l:summary
