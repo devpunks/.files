@@ -1185,7 +1185,7 @@ function s:blame () abort
 
   let l:hash = '#' .. matchstr ( blame[ 0 ], '^\^*\zs\S\+' )
   let l:author = '👤' .. matchstr ( blame[ 1 ], '^author \zs.\+$' )
-  let l:author_mail = '📧' .. matchstr ( blame[2], '^author-mail \zs.\+$' )
+  let l:author_mail = '📧' .. matchstr ( blame[ 2 ], '^author-mail \zs.\+$' )
   let l:author_time = '🕓' .. strftime ( '%Y-%m-%d %X',
     \ matchstr ( blame[3], '^author-time \zs.\+$' ) )
 
