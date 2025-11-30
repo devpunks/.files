@@ -1360,7 +1360,7 @@ endfunction " GitDiffs
 function! g:GitChanges () abort
   if !!! has ( 'signs' ) || !!! exists ( 'g:loaded_gitgutter' ) | return '' | endif
 
-  let [a,m,r] = GitGutterGetHunkSummary()
+  let [a,m,r] = GitGutterGetHunkSummary ()
 
   let l:summary = '%#Statement# '
   if r > 0 | let l:summary ..= printf( '%%#DiffDelete# ➖%d ', r ) | endif
