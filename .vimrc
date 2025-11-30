@@ -192,7 +192,7 @@ function s:ignore ( file = '.gitignore' ) abort
 
   echom 'Git Ignore:' l:file
 
-  for line in readfile( l:file )
+  for line in readfile ( l:file )
     if strlen ( trim ( line ) ) == 0 || match ( line, '^[ \t]*#' ) >= 0
       continue
     endif
