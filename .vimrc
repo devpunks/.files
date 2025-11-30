@@ -1479,7 +1479,7 @@ function TagFunc ( pattern, flags, info ) abort
   echom "The Results: \n" .. join ( l:results, "\n\n" )
 
   return l:results
-endfunction
+endfunction " TagFunc
 
 augroup FileDefaults
   " autocmd BufNew  * " What to do when buffer is empty
