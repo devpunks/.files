@@ -2418,7 +2418,7 @@ function g:Lint () abort
   echom 'Setting up Ale'
 
   let g:ale_linters = {
-  \ 'sh': ['language_server'],
+  \ 'sh': [ 'language_server' ],
   \ }
   let g:ale_fixers = {
     \ 'json': ['jq'],
