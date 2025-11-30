@@ -79,8 +79,8 @@ let &t_fd = '\<Esc>[?1004l' " disable focus-event tracking
 "  - https://superuser.com/q/935574/get-rid-of-null-character-in-vim-variable
 "  - https://til.hashrocket.com/posts/qll3kizlzj-check-that-an-executable-exists-on-the-path
 "  - Test executables - https://renenyffenegger.ch/notes/development/vim/script/vimscript/functions/executable
-echom "VIM: " .. v:version
-echom "BASH: " .. system( 'echo -n $BASH_VERSION' )
+echom 'VIM:' v:version
+echom 'BASH:' system ( 'echo -n $BASH_VERSION' )
 if exists( '$TMUX' ) | echom "TMUX: " .. system( 'echo -n $(tmux -V)' ) | endif
 if executable( 'termux-info' ) | echom "TERMUX: " .. $TERMUX_VERSION | endif
 
