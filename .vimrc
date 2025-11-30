@@ -899,7 +899,6 @@ endfunction " find
 " -------------------------------------------------------------------------
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
 function g:Lookup ( ... ) " abort
-  let i = 0
   let l:tags = []
   let l:tag  = 'module'
   let l:kinds  = [ 'f', 'function', 'method', 'F', 'singleton method' ]
