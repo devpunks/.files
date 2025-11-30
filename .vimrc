@@ -898,7 +898,7 @@ endfunction " find
 " Lookup () - https://vimhelp.org/popup.txt.html
 " -------------------------------------------------------------------------
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
-function g:Lookup(...)  " abort
+function g:Lookup ( ... )  " abort
   let i = 0
   let l:tags = []
   let l:tag  = 'module'
