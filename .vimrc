@@ -1264,7 +1264,7 @@ augroup END
 autocmd FileDefaults BufEnter * call OverflowMargin ()
 
 function OverflowMargin () abort
-  call clearmatches()
+  call clearmatches ()
 
   if ! &textwidth | return | endif
 
