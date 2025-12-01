@@ -869,7 +869,7 @@ endfunction " enter
 " Complete () -
 " -------------------------------------------------------------------------
 set completefunc=s:complete
-function s:complete ( token, command_line='', cursor_pos='0' ) " abort
+function s:complete ( token, command_line = '', cursor_pos = 0 ) " abort
   echom 'Complete():'
   echom 'Token: ' + a:token
   echom 'Base: ' + a:command_line
