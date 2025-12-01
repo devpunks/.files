@@ -931,7 +931,7 @@ function! s:find ( ... ) abort
 endfunction " find
 
 " -------------------------------------------------------------------------
-" Lookup () - https://vimhelp.org/popup.txt.html
+" Lookup () -
 " -------------------------------------------------------------------------
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
 function g:Lookup ( ... ) " abort
