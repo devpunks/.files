@@ -984,29 +984,6 @@ function! PopupComplete ( id, result ) abort
 endfunction " PopupComplete
 
 " -------------------------------------------------------------------------
-" Search ()
-"   - :help @/
-" -------------------------------------------------------------------------
-set hlsearch
-command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <q-args> )
-function! s:search ( ... ) abort
-  const l:bang = get ( a:, 1, v:false )
-  const l:term = get ( a:, 2, expand ( '<cword>' ) )
-
-  let @/ = l:term
-
-endfunction " search
-
-function s:fuzz ( ... ) abort
-  const l:term = get ( a:, 1, expand ( '<cword>' ) )
-
-  echom 'This is the -complete=func' l:term
-  echom a:000
-
-  return [ 'shaaa', 'zaaaaam' ]
-endfunction
-
-" -------------------------------------------------------------------------
 " Browser ()
 " -------------------------------------------------------------------------
 function! Browser ( ... ) abort " Opening URL
