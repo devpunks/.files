@@ -13,6 +13,7 @@ dist/
 .local/
 
 # dotfiles
+*.env*
 .gist
   .gist
 .less
