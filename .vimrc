@@ -1301,8 +1301,6 @@ endfunction " g:ScrollBar
 
 " -------------------------------------------------------------------------
 " Vim Signature - https://github.com/kshenoy/vim-signature
-"   :h mark
-"   :h marks
 " -------------------------------------------------------------------------
 autocmd VimDefaults ColorScheme * call g:Marks ()
 
