@@ -982,7 +982,7 @@ echo 'argument count:' argc ()
 endfunction " find
 
 " -------------------------------------------------------------------------
-" Lookup () -
+" Locate () - in files
 " -------------------------------------------------------------------------
 command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
 function g:Lookup ( ... ) " abort
