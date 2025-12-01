@@ -1436,6 +1436,8 @@ endfunction " indentation
 " Marks - https://vimhelp.org/motion.txt.html#mark-motions
 "   :h mark
 "   :h marks
+"   - https://vim.fandom.com/wiki/Using_marks
+"   - https://m.youtube.com/watch?v=ie97AjchXxY
 " -------------------------------------------------------------------------
 nnoremap <c-m> :marks<CR>
 
