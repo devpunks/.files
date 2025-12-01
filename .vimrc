@@ -789,8 +789,7 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
-" Nodejs
-"   - https://simplified.guide/vim/auto-complete-javascript
+" Nodejs - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
 autocmd FileDefaults BufReadPost * call s:DetectNode()
 
