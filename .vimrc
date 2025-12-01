@@ -771,8 +771,7 @@ let g:tagbar_type_css = {
 autocmd FileDefaults FileType go setlocal omnifunc=syntaxcomplete#Complete
 
 " -------------------------------------------------------------------------
-" PHP
-"   - https://simplified.guide/vim/auto-complete-php
+" PHP - https://simplified.guide/vim/auto-complete-php
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
