@@ -163,6 +163,15 @@ set title " Turn on title
 set titlelen=75 " Text length of title
 set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P" " Window Title String format
 
+" tabs
+set tabline=%!TabLine()
+set showtabline=2 " :help setting-tabline
+
+set tabpanel=%!TabPanel()
+function! TabPanel() abort
+return printf ( "📑%-2d📄 %%f", g:actual_curtabpage )
+endfunction
+<
 " Menus -------------------------------------------------------------------
 " :menu " :help menu
 let do_no_lazyload_menus = 1
