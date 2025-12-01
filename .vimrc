@@ -974,7 +974,11 @@ function! s:find ( ... ) abort
 echo 'argument count:' argc ()
   echom 'bang:' l:bang
 
-  echom l:term
+  let @/ = l:term
+
+  echom '"' .. l:term .. '"'
+
+  set showtabpanel=1 " show
 endfunction " find
 
 " -------------------------------------------------------------------------
