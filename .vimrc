@@ -167,6 +167,8 @@ set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P" " Window Title String format
 set tabline=%!TabLine()
 set showtabline=2 " :help setting-tabline
 
+set tabpanel=0 " hide
+set tabpanelopt=vert,columns:27,align:right
 set tabpanel=%!TabPanel()
 function! TabPanel() abort
 return printf ( "📑%-2d📄 %%f", g:actual_curtabpage )
