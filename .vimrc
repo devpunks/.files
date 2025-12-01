@@ -156,6 +156,9 @@ endif
 " http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#s3
 " $ echo -e "\033]2;Your New Title\007"
 " https://vim.fandom.com/wiki/Automatically_set_screen_title
+" set title
+" set t_ts=^[k
+" set t_fs=^[\\
 set title " Turn on title
 set titlelen=75 " Text length of title
 set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P" " Window Title String format
