@@ -776,8 +776,7 @@ autocmd FileDefaults FileType go setlocal omnifunc=syntaxcomplete#Complete
 autocmd FileDefaults FileType php setlocal omnifunc=phpcomplete#CompletePHP
 
 " -------------------------------------------------------------------------
-" Python
-"   - https://simplified.guide/vim/auto-complete-python
+" Python - https://simplified.guide/vim/auto-complete-python
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileType python setlocal omnifunc=python3complete#Complete
 
