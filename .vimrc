@@ -110,7 +110,7 @@ set updatetime=150 " (milliseconds)
 set timeout " on mappings
 set ttimeout " on keycodes
 set ttimeoutlen=-1  " mappings
-set timeoutlen=5000 " keykodes
+set timeoutlen=1000 " keykodes (milliseconds)
 
 " https://vim.fandom.com/wiki/Folding
 set foldenable
