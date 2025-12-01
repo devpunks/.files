@@ -1974,33 +1974,6 @@ function s:scope () abort
 endfunction " scope
 
 " -------------------------------------------------------------------------
-" Moby Thesaurus - https://gutenberg.org/iles/3202/mthesaur.txt
-" -------------------------------------------------------------------------
-nnoremap <leader>t g:Thesaurus()
-
-autocmd VimDefaults VimEnter * call g:Thesaurus()
-
-function! g:Thesaurus () abort
-  let l:path = expand ( '$HOME/mthesaur.txt' )
-  if !!! filereadable ( path ) | return | endif
-
-  " https://github.com/vim/vim/issues/1611
-  " https://thesynack.com/posts/vim-thesaurus
-  echom 'setting thesaurus to' path
-  set thesaurus=path " https://stackoverflow.com/q/33453468
-
-  let s:saved_ut = &ut
-  if &ut > 200 | let &ut = 200 | endif
-  augroup ThesaurusAuGroup
-    autocmd CursorHold,CursorHoldI <buffer>
-      \ let &ut = s:saved_ut |
-      \ set iskeyword-=32 |
-      \ autocmd! ThesaurusAuGroup
-  augroup END
-  return ":set iskeyword+=32\<cr>vaWovea\<c-x>\<c-t>"
-endfunction " g:Thesaurus
-
-" -------------------------------------------------------------------------
 " CtrlP - https://github.com/ctrlpvim/ctrlp.vim
 "  - https://github.com/tacahiroy/ctrlp-funky
 "  - https://github.com/ivalkeen/vim-ctrlp-tjump
