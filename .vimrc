@@ -801,8 +801,7 @@ function! s:DetectNode ()
 endfun
 
 " -------------------------------------------------------------------------
-" Ruby
-"   - https://stackoverflow.com/q/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
+" Ruby - https://stackoverflow.com/q/15720313/vim-omnicomplete-with-ruby-only-partially-works/22805517#22805517
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd BufNewFile,BufReadPost *.erb :setlocal filetype=eruby
