@@ -153,6 +153,8 @@ endif
 
 " Chrome ------------------------------------------------------------------
 " shell window title
+" http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#s3
+" $ echo -e "\033]2;Your New Title\007"
 " https://vim.fandom.com/wiki/Automatically_set_screen_title
 set title " Turn on title
 set titlelen=75 " Text length of title
