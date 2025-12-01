@@ -159,7 +159,7 @@ set showtabline=2 " :help setting-tabline
 " https://vim.fandom.com/wiki/Automatically_set_screen_title
 set title " Turn on title
 set titlelen=75 " Text length of title
-set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P"  " Window Title String format
+set titlestring="VIM SHELL TITLE %<%F%=%l/%L-%P" " Window Title String format
 
 " Menus -------------------------------------------------------------------
 " :menu " :help menu
