@@ -938,7 +938,8 @@ endfunction " Thesaurus
 set hlsearch
 command! -bang -nargs=? -complete=customlist,s:fuzz Search call s:search ( <bang>0, <f-args> )
 function! s:search ( ... ) abort
-  const l:bang = get ( a:, 1, v:false )
+  echom 'search ():'
+const l:bang = get ( a:, 1, v:false )
   const l:term = get ( a:, 2, expand ( '<cword>' ) )
 
   let @/ = l:term
