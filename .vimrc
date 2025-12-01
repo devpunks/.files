@@ -984,8 +984,23 @@ endfunction " find
 " -------------------------------------------------------------------------
 " Locate () - in files
 " -------------------------------------------------------------------------
-command -nargs=* -complete=custom,Complete Lookup call g:Lookup(<f-args>)
-function g:Lookup ( ... ) " abort
+command -bang -nargs=* -complete=file_in_path Locate call s:locate ( <bang>0, <f-args> )
+function s:locate ( ... ) " abort
+  echom 'locate ():'
+  const l:bang = get ( a:, 1, v:false )
+  const l:term = get ( a:, 2, expand ( '<cword>' ) )
+
+  echo 'argument count:' argc ()
+  echom 'bang:' l:bang
+
+  echom '"' .. l:term .. '"'
+endfunction " define
+
+" -------------------------------------------------------------------------
+" Lookup () - ??????
+" -------------------------------------------------------------------------
+command -bang -nargs=* -complete=custom,Complete Lookup call s:lookup ( <bang>0, <q-args> )
+function s:lookup ( ... ) " abort
   let l:tags = []
   let l:tag  = 'module'
   let l:kinds  = [ 'f', 'function', 'method', 'F', 'singleton method' ]
