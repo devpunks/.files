@@ -1433,6 +1433,13 @@ function! g:Indentation () abort
 endfunction " indentation
 
 " -------------------------------------------------------------------------
+" Marks - https://github.com/kshenoy/vim-signature
+"   :h mark
+"   :h marks
+" -------------------------------------------------------------------------
+nnoremap <c-m> :marks<CR>
+
+" -------------------------------------------------------------------------
 " Tags :h tags-and-searches (tagsrch.txt)
 "  :h tag <name>  " or from command line : /<name>
 "  :h tags
