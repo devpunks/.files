@@ -781,8 +781,7 @@ autocmd FileDefaults FileType php setlocal omnifunc=phpcomplete#CompletePHP
 autocmd FileDefaults FileType python setlocal omnifunc=python3complete#Complete
 
 " -------------------------------------------------------------------------
-" Javascript
-"   - https://simplified.guide/vim/auto-complete-javascript
+" Javascript - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
