@@ -871,8 +871,8 @@ endfunction " enter
 set completefunc=s:complete
 function s:complete ( token, command_line = '', cursor_pos = 0 ) " abort
   echom 'Complete():'
-  echom 'Token: ' + a:token
-  echom 'Base: ' + a:command_line
+  echom 'Token:' a:token
+  echom 'Base:'  a:command_line
   echom 'Cursor Position:' a:cursor_pos
 
   if len ( a:token ) > 0
