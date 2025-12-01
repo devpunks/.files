@@ -105,7 +105,7 @@ echom '(vi) PATH:' &path
 set nrformats+=alpha
 set nrformats-=octal
 
-set updatetime=150 " 150 Milliseconds
+set updatetime=150 " (milliseconds)
 " https://vimhelp.org/options.txt.html#%27timeout%27
 set timeout " on mappings
 set ttimeout " on keycodes
