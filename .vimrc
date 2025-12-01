@@ -947,6 +947,7 @@ const l:bang = get ( a:, 1, v:false )
 
   let @/ = l:term
 
+  echom '"' .. l:term .. '"'
 endfunction " search
 
 function s:fuzz ( ... ) abort
