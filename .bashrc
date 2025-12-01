@@ -73,6 +73,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $-
 #==========================================================================
 # {{{ Exports
 #==========================================================================
+# https://youtu.be/e9iSYCHslzg
 # https://unix.stackexchange.com/q/590788
 unset -v ENV BASH_ENV
 test -e $HOME/.env && export ENV=~/.env
