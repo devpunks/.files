@@ -969,7 +969,7 @@ command! -bang -nargs=* -complete=custom,Complete Find call s:find ( <bang>0, <f
 function! s:find ( ... ) abort
   echom 'find ():'
   const l:bang = get ( a:, 1, v:false )
-  const l:term = a:2
+  const l:term = get ( a:, 2, expand ( '<cword>' ) )
 
   echom 'bang:' l:bang
 
