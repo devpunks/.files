@@ -112,7 +112,7 @@ alias pop='command popd'
 alias push='command pushd'
 alias dirs='command dirs -p'
 alias bat='command bat \
-  --show-all --theme-dark OneHalfDark --italic-text always \
+  --theme-dark OneHalfDark --italic-text always \
   --set-terminal-title --nonprintable-notation caret --binary as-text \
   --style full,changes,grid,numbers,header,header-filename,header-filesize'
 alias most='command most +u -s -t2'
