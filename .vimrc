@@ -152,9 +152,6 @@ else
 endif
 
 " Chrome ------------------------------------------------------------------
-" tabs
-set tabline=%!TabLine()
-set showtabline=2 " :help setting-tabline
 " shell window title
 " https://vim.fandom.com/wiki/Automatically_set_screen_title
 set title " Turn on title
