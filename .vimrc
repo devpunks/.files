@@ -942,7 +942,7 @@ function g:Lookup ( ... ) " abort
   echo 'argument count:' argc ()
 
   let i = 0
-" while i < argc()
+" while i < argc ()
     echom 'Argument (' .. 1 .. '):' argv ( 0 )
 "   i=i+1
 " endwhile
