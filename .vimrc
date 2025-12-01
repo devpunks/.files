@@ -965,7 +965,7 @@ endfunction " fuzz
 " -------------------------------------------------------------------------
 " :h finddir()
 " :h findfile()
-command! -bang -nargs=1 -complete=file_in_path Find call s:find ( <bang>0, <q-args> )
+command! -bang -nargs=* -complete=custom,Complete Find call s:find ( <bang>0, <f-args> )
 function! s:find ( ... ) abort
   echom 'find():'
   const l:bang = get ( a:, 1, v:false )
