@@ -81,6 +81,7 @@ test ! -z $ENV && export BASH_ENV=$ENV
 export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
+export PG_CONFIG="${PREFIX}/bin/pg_config"
 
 # https://dev.gnupg.org/T3412
 # https://wiki.archlinux.org/title/GnuPG#pinentry
