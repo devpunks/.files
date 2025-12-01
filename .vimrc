@@ -904,7 +904,7 @@ function s:fuzz ( ... ) abort
   echom a:000
 
   return [ 'shaaa', 'zaaaaam' ]
-endfunction
+endfunction " fuzz
 
 " -------------------------------------------------------------------------
 " Find ()
