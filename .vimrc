@@ -1433,7 +1433,7 @@ function! g:Indentation () abort
 endfunction " indentation
 
 " -------------------------------------------------------------------------
-" Marks - https://github.com/kshenoy/vim-signature
+" Marks - https://vimhelp.org/motion.txt.html#mark-motions
 "   :h mark
 "   :h marks
 " -------------------------------------------------------------------------
