@@ -1546,7 +1546,7 @@ nnoremap <c-m> :marks<CR>
   set tagstack
   set tagbsearch " disable if not sorted
   set tagfunc=TagFunc
-  let &g:tags = findfile( 'tags', '.;' )
+  let &g:tags = findfile ( 'tags', '.;' )
   set tagcase=followscs " Follow smartcase & ignorecase
 
   set iskeyword+=-,. " a-z,A-Z,48-57,_,.,-,>
