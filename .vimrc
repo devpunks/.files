@@ -1555,7 +1555,12 @@ nnoremap <c-m> :marks<CR>
   echom '(tags) definitions path:' &g:tags
 
 function TagFunc ( pattern, flags, info ) abort
-  echom 'TagFunc():'
+  echom 'TagFunc ():'
+  let l:flag = get( {
+  \ 'c': 'Command Line',
+  \ 'i': 'Insert Mode',
+  \ 'r': 'Regex Pattern' }, a:flags,
+  \ 'Default Call Mode' )
 
   let l:insert = mode () == 'i'
 
