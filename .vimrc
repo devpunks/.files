@@ -1566,6 +1566,9 @@ function TagFunc ( pattern, flags, info ) abort
 
   echom 'Insert:' l:insert
   echom 'Pattern:' a:pattern
+  echom 'Flags:' a:flags
+  echom 'Flag:' l:flag
+  echom 'Info:' a:info
 
   " NOT ALLOWED TO CHANGE TAGSTACK
   let l:result = [] " Perform standard tag lookup instead
