@@ -889,7 +889,7 @@ function s:complete ( token, command_line = '', cursor_pos = 0 ) " abort
       \ { 'word': 'barrrrr', 'abbr':'ba', 'menu': 'bar', 'info': 'Lazy Dog',
         \ 'kind': 'v', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': '' }
     \ ] }
-endfunction " Complete
+endfunction " complete
 
 " -------------------------------------------------------------------------
 " Define () - current word
