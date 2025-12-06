@@ -856,7 +856,7 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 
   echo ; echo 'Base64'
   echo '(basenc --decode --base64):'
-  basenc --decode --base64 <( [ -f $( readlink -f "$file" ) ] && cat "$file" || printf "$file" )
+  basenc --decode --base64 <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
   echo ; echo '(openssl enc -d --base64):'
   openssl enc -d -base64 -in <( [ -f $( readlink -f "$file" ) ] && cat "$file" || printf "$file" )
 
