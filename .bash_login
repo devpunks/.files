@@ -825,7 +825,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 
   echo ; echo 'Base32'
   echo '(basenc --base32):'
-  basenc --base32 <( test -f $( readlink -f "$file" ) && cat $file || printf "$file" )
+  basenc --base32 <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
   test -f $( readlink -f "$file" ) \
     && echo "Writing to file: ${file}.base32" \
     && basenc --base32 "$file" > "${file}.base32"
