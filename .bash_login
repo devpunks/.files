@@ -820,7 +820,7 @@ function checksum () {
   echo
 } # checksum
 
-function encode () { # base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
+function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
   local -r file="$1"
 
   echo ; echo 'Base32'
