@@ -860,6 +860,9 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   echo ; echo '(openssl enc -d --base64):'
   openssl enc -d -base64 -in <( [ -f $( readlink -f "$file" ) ] && cat $file || printf "$file" )
 
+  echo ; echo 'Hexadecimal'
+  echo '(xxd -u -plain):'
+  xxd -r -p <( [ -f $( readlink -f "$file" ) ] && cat $file || printf "$file" )
 } # decode
 
 # https://antofthy.gitlab.io/info/crypto/cyphers.txt
