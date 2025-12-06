@@ -692,7 +692,7 @@ function slug () {
     | tr '[:upper:]' '[:lower:]' \
     | tr -dc '[:alnum:]-'
   echo
-}
+} # slug
 
 # https://geeksforgeeks.org/od-command-linux-example
 alias uid='od -vAn -N4 -tu4 < /dev/urandom' # 4byte u(nsigned)
