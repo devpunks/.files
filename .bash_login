@@ -849,7 +849,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
     && cat $file | xxd -plain | command sed 's/.\{2\}/& /g' > "${file}.hex"
 
   echo ; echo 'Binary'
-  echo '(xxd -b):'
+  echo '(xxd -bits):'
   test -f $( readlink -f "$file" ) \
     && ( cat "$file" || printf "$file" ) | xxd -b -groupsize 8
   # https://superuser.com/q/895368/how-do-i-dump-raw-binary-bits-from-a-file-without-line-numbers-and-ascii-inte
