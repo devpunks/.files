@@ -872,8 +872,8 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   openssl enc -d -base64 -in <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
 
   echo ; echo 'Hexadecimal'
-  echo '(xxd -r -plain):'
-  xxd -r -p <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
+  echo '(xxd -revert -plain):'
+  xxd -revert -plain <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
 
   echo ; echo 'Binary'
   echo '(xxd -r -plain):'
