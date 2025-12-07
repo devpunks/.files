@@ -841,7 +841,9 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 
   echo ; echo 'Hexadecimal'
   echo '(xxd -u -plain):'
-  xxd  <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
+  test -f $( readlink -f "$file" ) \
+    && cat "$file" || printf "$file" \
+    | xxd | sed 's/^.*: //'
   test -f $( readlink -f "$file" ) \
     && echo "Writing to file: ${file}.hex" \
     && cat $file | xxd -p > "${file}.hex"
