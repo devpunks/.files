@@ -879,7 +879,7 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
     tr -d ' ' < <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" ) \
       | fold -w 8 \
       | while read -r byte; do
-        # Convert binary byte to decimal, then to its ASCII character
+        # Convert binary byte to Decimal, then to ASCII
         printf "\\x$(printf "%x" $((2#$byte)))"
       done
   echo
