@@ -855,7 +855,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   # https://superuser.com/q/895368/how-do-i-dump-raw-binary-bits-from-a-file-without-line-numbers-and-ascii-inte
   test -f $( readlink -f "$file" ) \
     && echo "Writing to file: ${file}.bin" \
-    && cat $file | xxd -b | command awk '{print $2, $3, $4, $5, $6, $7}' > "${file}.bin"
+    && cat $file | xxd -bits | command awk '{print $2, $3, $4, $5, $6, $7}' > "${file}.bin"
 } # encode
 
 function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
