@@ -864,6 +864,7 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   echo '(xxd -r -plain):'
   xxd -r -p <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
   echo
+
   echo ; echo 'Hexadecimal'
   echo '(xxd -r -plain):'
   xxd -r -p <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
