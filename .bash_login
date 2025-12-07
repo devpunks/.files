@@ -842,7 +842,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   echo ; echo 'Hexadecimal'
   echo '(xxd -u -plain):'
   test -f $( readlink -f "$file" ) \
-    | xxd <( cat "$file" || printf "$file" )
+    && ( cat "$file" || printf "$file" ) | xxd
   test -f $( readlink -f "$file" ) \
     && echo "Writing to file: ${file}.hex" \
     && cat $file | xxd -p > "${file}.hex"
