@@ -135,6 +135,7 @@ set smartcase " Capitalization case-sensitive search (overrides ignorecase)
 " https://vi.stackexchange.com/q/11236
 " https://learnvimscriptthehardway.stevelosh.com/chapters/22.html
 set ignorecase " Case in-sensitive search
+set fileignorecase " for files & directories
 
 " Bells -------------------------------------------------------------------
 " Set termcap(ability) for visual bell
