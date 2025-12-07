@@ -848,7 +848,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
     && cat $file | xxd -p > "${file}.hex"
 
   echo ; echo 'Binary'
-  echo '(xxd -b -plain):'
+  echo '(xxd -b):'
   test -f $( readlink -f "$file" ) \
     && ( cat "$file" || printf "$file" ) | xxd -b
   test -f $( readlink -f "$file" ) \
