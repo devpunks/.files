@@ -845,6 +845,11 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   test -f $( readlink -f "$file" ) \
     && echo "Writing to file: ${file}.hex" \
     && cat $file | xxd -p > "${file}.hex"
+
+  echo ; echo 'Binary'
+  echo '(xxd -r -b -plain):'
+  xxd -r -p <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
+  echo
 } # encode
 
 function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
