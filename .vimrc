@@ -638,7 +638,7 @@ let g:blacklist = [ 'nofile', 'help', 'startify' ] " filetypes
 set autoread " re-read files
 set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
-set fileignorecase
+set nofixendofline " Disable <EOL> insertion
 
 " Indentation ------------------------------------
 set smarttab " 'tab' insertion
