@@ -368,7 +368,7 @@ function environment () {
     && echo '\n Gathering Termux Information. Please Wait...' \
     && echo "\nTERMUX: $( termux-info )"
 
-  echo "\n$PATH: $PATH\n"
+  echo "\n\$PATH: $PATH\n"
   echo "\n\$BASH: $BASH\n Options: $BASHOPTS"
   echo "\n\$SHELL: $SHELL\n Options: $SHELLOPTS"
   echo "\nTTY: $( tty )\n Lines: $LINES x Columns: $COLUMNS"
