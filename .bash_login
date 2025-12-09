@@ -1022,7 +1022,7 @@ function digest () {
   printf "SHA-1 (openssl dgst -sha1): %s\n" \
     $( openssl dgst -sha1 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA-1 (openssl sha1): %s\n" \
-    $( openssl sha1 <( printf "$phrase" ) | command cut -d ' ' -f2 )
+    $( openssl sha1 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA-1 (openssl sha1 -c): %s\n" \
     $( openssl sha1 -c <( printf "$phrase" ) | command cut -d ' ' -f2 )
   # https://en.m.wikipedia.org/wiki/HMAC
