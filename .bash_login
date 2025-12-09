@@ -3164,7 +3164,7 @@ function scope () { set +o noclobber # TODO: Remove
   if [ -e package.json ] ; then # Javascript
     files=cscope.js.files
     command find . -type f -iname '*.js' > $files
-    echo ; echom "Scoping Javascript Files [$files]..."
+    echo ; echo "Scoping Javascript Files [$files]..."
 
     cscope -b -q -U -f cscope.js.out $( cat $files )
 
