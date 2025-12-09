@@ -2182,7 +2182,7 @@ function dns () { clear
   printf \
     "\n \${PREFIX}/etc/hosts: \n %s \n" "$( cat ${PREFIX}/etc/hosts )"
   printf \
-    "\n \$HOSTFILE: $HOSTFILE \n %s \n" "$( cat "$HOSTFILE" )"
+    "\n \$HOSTFILE: $HOSTFILE \n %s \n" "$( cat $HOSTFILE )"
   printf \
     "\n ~/.ssh/known_hosts:\n %s \n" "$( cat ~/.ssh/known_hosts )"
 } # dns
