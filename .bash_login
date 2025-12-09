@@ -374,7 +374,7 @@ function environment () {
   echo "\nTTY: $( tty )\n Lines: $LINES x Columns: $COLUMNS"
 
   [ "$TMUX" ] \
-    && echo "\n$TMUX: $( tmux -V )"
+    && echo "\n\$TMUX: $( tmux -V )"
 } # environment
 
 function functions () {
