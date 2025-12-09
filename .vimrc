@@ -87,7 +87,7 @@ if executable ( 'termux-info' ) | echom 'TERMUX:' $TERMUX_VERSION | endif
 " =========================================================================
 " {{{ SETTINGS
 " =========================================================================
-set shellcmdflag=-c  " Make shell interactive
+set shellcmdflag=-c " Make shell interactive
 " TODO: Make shell -i(nteractive)
 "set shellcmdflag=-ic  " Make shell interactive
 let $GIT_TRACE = 0
