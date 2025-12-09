@@ -77,7 +77,7 @@ echo "SHELL OPTION FLAGS (see set --help) 👉" $-
 # https://unix.stackexchange.com/q/590788
 unset -v ENV BASH_ENV
 test -e $HOME/.env && export ENV=~/.env
-test !!! $ENV && export BASH_ENV=$ENV
+test $ENV && export BASH_ENV=$ENV
 
 export EDITOR=vi
 export PAGER=most
