@@ -3059,7 +3059,6 @@ alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
 # https://medium.com/@linz07m/lesser-known-but-useful-universal-ctags-flags-with-examples-fbc0266f4dfe
 function tag () { clear
   # if [ -e package.json ] ; then # Javascript
-  # files=cscope.js.files
   # command find . -type f -iname '*.js' > $files
   # echo ; echom "Scoping Javascript Files [$files]..."
 
