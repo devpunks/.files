@@ -3183,7 +3183,7 @@ function scope () { set +o noclobber # TODO: Remove
   if [ -e Gemfile ] ; then # Ruby - https://github.com/eapache/starscope
     files=cscope.rb.files
     command find . -type f -iname '*.rb' > $files
-    echo ; echom "Scoping Ruby Files [$files]..."
+    echo ; echo "Scoping Ruby Files [$files]..."
 
     cscope -b -q -U -f cscope.js.out $( cat $files )
 
