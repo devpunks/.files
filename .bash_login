@@ -1048,7 +1048,7 @@ function digest () {
   printf "SHA-224 (openssl dgst -sha224 -hmac): %s\n" \
     $( openssl dgst -sha224 -hmac $SALT <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA-224 (openssl sha224 -hmac): %s\n" \
-    $( openssl sha224 -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl sha224 -hmac $SALT <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA-224 (openssl sha224 -c -hmac): %s\n" \
     $( openssl sha224 -c -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
 
