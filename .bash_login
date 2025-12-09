@@ -3197,7 +3197,7 @@ function scope () { set +o noclobber # TODO: Remove
   if [ -e Pipfile ] ; then # Python - https://github.com/eapache/starscope
     files=cscope.py.files
     command find . -type f -iname '*.py' > $files
-    echo ; echom "Scoping Python Files [$files]..."
+    echo ; echo "Scoping Python Files [$files]..."
 
     cscope -b -q -U -f cscope.py.out $( cat $files )
 
