@@ -1060,7 +1060,7 @@ function digest () {
   printf "SHA-256 (openssl passwd -5 -salt): %s\n" \
     $( openssl passwd -5 -salt $SALT "$phrase" )
   printf "SHA-256 (openssl dgst -sha256): %s\n" \
-    $( openssl dgst -sha256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl dgst -sha256 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA-256 (openssl sha256): %s\n" \
     $( openssl sha256 <( printf "$phrase" ) | command cut -d' ' -f2 )
   printf "SHA-256 (openssl sha256 -c): %s\n" \
