@@ -1156,33 +1156,33 @@ function digest () {
   printf "SHA3-384 (openssl sha3-384): %s\n" \
     $( openssl sha3-384 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA3-384 (openssl sha3-384 -c): %s\n" \
-    $( openssl sha3-384 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl sha3-384 -c <( printf "$phrase" ) | command cut -d ' ' -f2 )
 
   echo ; echo SHA3/512
   printf "SHA3-384 (sha3sum -a 512): %s\n" \
-    $( printf "$phrase" | busybox sha3sum -a 512 | command cut -d' ' -f1 )
+    $( printf "$phrase" | busybox sha3sum -a 512 | command cut -d ' ' -f1 )
   printf "SHA3-512 (openssl dgst -sha3-512): %s\n" \
-    $( openssl dgst -sha3-512 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl dgst -sha3-512 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA3-512 (openssl sha3-512): %s\n" \
-    $( openssl sha3-512 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl sha3-512 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA3-512 (openssl sha3-512 -c): %s\n" \
-    $( openssl sha3-512 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl sha3-512 -c <( printf "$phrase" ) | command cut -d ' ' -f2 )
 
   echo ; echo SHAKE128
   printf "SHAKE128 (openssl dgst -shake128): %s\n" \
-    $( openssl dgst -shake128 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl dgst -shake128 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHAKE128 (openssl shake128): %s\n" \
-    $( openssl shake128 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl shake128 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHAKE128 (openssl shake128 -c): %s\n" \
-    $( openssl shake128 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl shake128 -c <( printf "$phrase" ) | command cut -d ' ' -f2 )
 
   echo ; echo SHAKE256
   printf "SHAKE256 (openssl dgst -shake256): %s\n" \
-    $( openssl dgst -shake256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl dgst -shake256 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHAKE256 (openssl shake256): %s\n" \
-    $( openssl shake256 <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl shake256 <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHAKE256 (openssl shake256 -c): %s\n" \
-    $( openssl shake256 -c <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl shake256 -c <( printf "$phrase" ) | command cut -d ' ' -f2 )
 
   echo
 
