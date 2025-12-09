@@ -195,7 +195,6 @@ set wildignorecase
 function s:ignore ( file = '.gitignore' ) abort
   let l:exceptions = []
   let l:exclusions = []
-
   const l:root = fnamemodify (
     \ finddir ( '.git/..', expand ('%:p:h' ) .. ';' .. $HOME )
     \ ?? $HOME , ':p' )
