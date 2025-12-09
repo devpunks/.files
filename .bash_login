@@ -2817,7 +2817,7 @@ function truncate () { exist "$1" || return
 function count () { exist "$1" || return
 
   local -r file=${1}
-  local -r LINE=`wc --lines "$file" | command cut -d' ' -f 1`
+  local -r LINE=`wc --lines "$file" | command cut -d ' ' -f 1`
   local -r WORD=`wc --words "$file" | command cut -d' ' -f 1`
   local -r CHAR=`wc --chars "$file" | command cut -d' ' -f 1`
   local -r BYTE=`wc --bytes "$file" | command cut -d' ' -f 1`
