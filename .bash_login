@@ -3058,7 +3058,6 @@ alias ctags="command ctags --verbose --recurse --guess-language-eagerly \
 #  https://docs.ctags.io/en/latest/man-pages.html
 # https://medium.com/@linz07m/lesser-known-but-useful-universal-ctags-flags-with-examples-fbc0266f4dfe
 function tag () { clear
-
   local language
   local location=$( pwd )
   local files=cscope.files
