@@ -1146,7 +1146,7 @@ function digest () {
   printf "SHA3-256 (openssl sha3-256): %s\n" \
     $( openssl sha3-256 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA3-256 (openssl sha3-256 -c): %s\n" \
-    $( openssl sha3-256 -c <( printf "$phrase" ) | command cut -d ' ' -f2 )
+    $( openssl sha3-256 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 )
 
   echo ; echo SHA3/384
   printf "SHA3-384 (sha3sum -a 384): %s\n" \
