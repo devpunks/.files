@@ -3062,7 +3062,7 @@ function tag () { clear
   local location=$( pwd )
   local files=cscope.files
 
-  echo && echo 'Working Directory: ' $location
+  echo ; echo 'Working Directory: ' $location
 
   echo && echo 'All Language Mappings:'
   command ctags --list-fields=all ; echo
