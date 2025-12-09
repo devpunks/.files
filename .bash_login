@@ -1109,7 +1109,7 @@ function digest () {
   printf "SHA-512 (openssl sha512 -hmac): %s\n" \
     $( openssl sha512 -hmac $SALT <( printf "$phrase" ) | command cut -d ' ' -f2 )
   printf "SHA-512 (openssl sha512 -c -hmac): %s\n" \
-    $( openssl sha512 -c -hmac $SALT <( printf "$phrase" ) | command cut -d' ' -f2 )
+    $( openssl sha512 -c -hmac $SALT <( printf "$phrase" ) | command cut -d ' ' -f2 )
 
   echo ; echo SHA512/224:
   printf "SHA512-224 (openssl dgst -sha512-224): %s\n" \
