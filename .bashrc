@@ -380,6 +380,7 @@ PS4='➕ ' # Verbose prompt tracing
 
 function prompts () {
   for (( i = 1 ; i <= SHLVL ; i++ )); do
+    # Using \$ (Backslash Dollar Sign) will convert to '#' in root mode
     printf '💲'
   done
 } && export -f prompts
