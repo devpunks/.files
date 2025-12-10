@@ -2900,6 +2900,7 @@ function debug () { clear
   pkg info gdb
 
   echo "🐛 debugging $location"
+  bash -x "$location" # run debug shell
 } # debug
 
 # https://en.wikipedia.org/wiki/FFmpeg
