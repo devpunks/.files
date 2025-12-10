@@ -27,6 +27,7 @@
 #  - https://stackoverflow.com/q/68155641/should-i-run-things-inside-a-docker-container-as-non-root-for-safety
 pkg upgrade && pkg update
 
+pkg install apt-file
 pkg install mount-utils
 pkg install bash-completion
 
