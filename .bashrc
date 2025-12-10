@@ -390,7 +390,7 @@ function prompts () {
     # Using \$ (Backslash Dollar Sign) will convert to '#' in root mode
     printf '💲'
   done
-} && export -f prompts
+} ; export -f prompts
 
 # https://baeldung.com/linux/status-codes
 function exitstatus () {
