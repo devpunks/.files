@@ -131,6 +131,7 @@ alias mv='command mv --verbose --interactive --no-clobber --strip-trailing-slash
 alias cut='command cut -d "," -f'
 alias copy='man scp; echo TODO: implement copy command for multiple destination types'
 alias zipper='man paste ; command paste' # https://geeksforgeeks.org/paste-command-in-linux-with-examples
+alias mapfile='command mapfile -t' # https://www.geeksforgeeks.org/linux-unix/mapfile-command-in-linux-with-examples
 
 alias fc="command fc -e $EDITOR -s" # https://geeksforgeeks.org/fc-command-linux-examples
 alias rm='echo 🛑 rm is disabled, use remove, delete, or destroy' # - https://en.wikipedia.org/wiki/Rm_(Unix)
