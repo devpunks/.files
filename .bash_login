@@ -805,7 +805,7 @@ alias binary='xxd -u -b'
 # https://en.wikipedia.org/wiki/Cyclic_redundancy_check
 # https://a2hosting.com/kb/developer-corner/linux/working-with-file-checksums
 function checksum () {
-  local -r hash='md5'
+  local -r -a hashes=( md5 sha1 sha224 sha256 sha384 sha512 b2 )
 # local -r hash='sha256'
 # local -r hash='sha512'
   local -r file=$( realpath "$1" )
