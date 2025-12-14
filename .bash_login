@@ -816,10 +816,11 @@ function checksum () {
   echo "CkSum (CRC Cyclic Redundancy Check):"
   cksum "$file"
 
-  echo; echo "Checksum ($hash):"
-  "${hash}sum" "$file" | tee "$file.$hash"
-  echo Created "${file}.${hash}"
-  echo
+  for hash in "${hashes[@]}"; do
+    echo; echo "Checksum ($hash):"
+    "${hash}sum" "$file" | tee "$file.$hash"
+    echo Created "${file}.${hash}"
+  done ; echo
 } # checksum
 
 function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
