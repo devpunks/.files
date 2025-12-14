@@ -400,7 +400,7 @@ function exitstatus () {
     echo " ✅ $status "
   [[ ${status} != 0 ]] && \
     echo " ❌ $status "
-} && export -f exitstatus
+} ; export -f exitstatus
 
 # }}}
 
