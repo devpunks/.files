@@ -173,7 +173,7 @@ set show-all-if-unmodified on
 set completion-map-case on
 # Case insensitive <Tab>-complete matches.
 set completion-ignore-case on
-# Maximum <Tab>-completion display results.
+# Maximum <Tab>-completion display results. (-1 for infinite)
 set completion-query-items 200
 # <Tab>-completion results in single column.
 set completion-display-width 3
