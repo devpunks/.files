@@ -601,7 +601,7 @@ function search () { clear
 
   echo ; echo Finding...
   command find "$location" -type f -iname "*${term}*" \
-    | files | lines
+    | file | lines
 
   echo ; apropos "$term" # man -k
 
