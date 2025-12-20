@@ -1090,7 +1090,7 @@ function digest () {
   printf "SHA-256 HMAC (openssl sha256 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha256 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
-  echo ; echo SHA-2/384
+  echo ; echo SHA-2/384 # https://stackoverflow.com/q/10061532/why-choose-sha512-over-sha384
   printf "SHA-384 (sha384sum): %s\n" \
     $( printf "$phrase" | sha384sum | command cut -d ' ' -f 1 )
   printf "SHA-384 (openssl sha384): %s\n" \
