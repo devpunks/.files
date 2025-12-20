@@ -1235,7 +1235,7 @@ function digest () {
   printf "SHAKE128 (openssl shake128): %s\n" \
     $( printf "$phrase" | openssl shake128 -xoflen $bytes | command cut -d ' ' -f 2 )
   printf "SHAKE128 (openssl dgst -shake128): %s\n" \
-    $( printf "$phrase" | openssl dgst -shake128 | command cut -d ' ' -f 2 )
+    $( printf "$phrase" | openssl dgst -shake128 -xoflen $bytes | command cut -d ' ' -f 2 )
   printf "SHAKE128 (openssl shake128 -c): %s\n" \
     $( printf "$phrase" | openssl shake128 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
   # https://en.m.wikipedia.org/wiki/HMAC
