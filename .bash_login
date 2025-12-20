@@ -1050,7 +1050,7 @@ function digest () {
 
   echo ; echo 'SHA-2 (Secure Hash Algorithm 2):' # https://en.wikipedia.org/wiki/SHA-2
 
-  echo ; echo SHA-2/224
+  echo ; echo SHA-2/224 # https://crypto.stackexchange.com/q/15151/sha-224-purpose
   printf "SHA-224 (sha224sum): %s\n" \
     $( printf "$phrase" | sha224sum | command cut -d ' ' -f 1 )
   printf "SHA-224 (openssl dgst -sha224): %s\n" \
