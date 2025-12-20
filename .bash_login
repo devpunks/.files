@@ -1198,7 +1198,7 @@ return
   printf "SHA3-384 (sha3sum -a 512): %s\n" \
     $( printf "$phrase" | busybox sha3sum -a 512 | command cut -d ' ' -f 1 )
   printf "SHA3-512 (openssl sha3-512): %s\n" \
-    $( printf "$phrase" | openssl sha3-512 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
+    $( printf "$phrase" | openssl sha3-512 | command cut -d ' ' -f 2 )
   printf "SHA3-512 (openssl dgst -sha3-512): %s\n" \
     $( printf "$phrase" | openssl dgst -sha3-512 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA3-512 (openssl sha3-512 -c): %s\n" \
