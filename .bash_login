@@ -1028,7 +1028,7 @@ function digest () {
   printf "SHA-1 (sha1sum): %s\n" \
     $( printf "$phrase" | sha1sum | command cut -d ' ' -f 1 )
   printf "SHA-1 (openssl dgst -sha1): %s\n" \
-    $( openssl dgst -sha1 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
+    $( printf "$phrase" | openssl dgst -sha1 | command cut -d ' ' -f 2 )
   printf "SHA-1 (openssl sha1): %s\n" \
     $( openssl sha1 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA-1 (openssl sha1 -c): %s\n" \
