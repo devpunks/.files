@@ -1177,8 +1177,6 @@ return
   echo ; echo SHA3/256:
   printf "SHA3-256 (sha3sum -a 256): %s\n" \
     $( printf "$phrase" | busybox sha3sum -a 256 | command cut -d ' ' -f 1 )
-  printf "SHA3-256 (openssl dgst -sha3-256): %s\n" \
-    $( openssl dgst -sha3-256 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA3-256 (openssl sha3-256): %s\n" \
     $( openssl sha3-256 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA3-256 (openssl sha3-256 -c): %s\n" \
