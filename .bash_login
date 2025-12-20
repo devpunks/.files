@@ -1425,6 +1425,13 @@ function keygen () {
   openssl pkey -in ${algorithm}-${bits}.key -text -pubout
 } # keygen
 
+# https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+function exchange () { # keys
+  local $shared
+
+  return $shared # secret
+} # exchange
+
 # https://antofthy.gitlab.io/info/crypto/public_keys_gpg.txt
 # https://gist.github.com/Killeroid/6361944d0694e474fb94cc42a3b119d1
 alias signatures='{
