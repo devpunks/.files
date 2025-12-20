@@ -1236,7 +1236,14 @@ function digest () {
   printf "SHAKE128 (openssl dgst -shake128): %s\n" \
     $( printf "$phrase" | openssl dgst -shake128 | command cut -d ' ' -f 2 )
   printf "SHAKE128 (openssl shake128 -c): %s\n" \
-    $( printf "$phrase" | openssl shake128 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
+    $( printf "$phrase" | openssl shake128 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
+  # https://en.m.wikipedia.org/wiki/HMAC
+  printf "SHAKE128  HMAC (openssl shake128 -hmac): %s\n" \
+    $( printf "$phrase" | openssl shake128 -hmac $KEY | command cut -d ' ' -f 2 )
+  printf "SHAKE128 HMAC (openssl dgst -shake128 -hmac): %s\n" \
+    $( printf "$phrase" | openssl dgst -shake128 -hmac $KEY | command cut -d ' ' -f 2 )
+  printf "SHAKE128 HMAC (openssl sha3ke128 -c -hmac): %s\n" \
+    $( printf "$phrase" | openssl shake128 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
   echo ; echo SHA3/SHAKE256
   printf "SHAKE256 (openssl shake256): %s\n" \
