@@ -976,6 +976,7 @@ function cipher () {
 } # cipher
 
 # https://linux.die.net/man/1/mkpasswd
+# https://csrc.nist.gov/projects/hash-functions
 function digest () {
   local phrase="${1}"
 
