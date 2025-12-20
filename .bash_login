@@ -1180,7 +1180,7 @@ return
   printf "SHA3-512 (openssl sha3-512 -c): %s\n" \
     $( openssl sha3-512 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 )
 
-  echo ; echo SHA-3/SHAKE (Secure Hash Algorithm-Keccak) # 
+  echo ; echo 'SHA-3/SHAKE (Secure Hash Algorithm-Keccak)' # 
 
   echo ; echo SHA3/SHAKE128
   printf "SHAKE128 (openssl dgst -shake128): %s\n" \
