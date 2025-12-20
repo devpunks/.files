@@ -978,6 +978,7 @@ function cipher () {
 # https://linux.die.net/man/1/mkpasswd
 # https://emn178.github.io/online-tools
 # https://csrc.nist.gov/projects/hash-functions
+# https://en.wikipedia.org/wiki/Merkle%E2%80%93Damg%C3%A5rd_construction
 function digest () {
   local \
     phrase="${1}" \
