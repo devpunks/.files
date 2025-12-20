@@ -1239,6 +1239,7 @@ function digest () {
   printf "SHAKE128 (openssl shake128 -c): %s\n" \
     $( printf "$phrase" | openssl shake128 -c -xoflen $bytes | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
+  bytes=64 # 512 bits
   echo ; echo SHA3/SHAKE256
   printf "SHAKE256 (openssl shake256): %s\n" \
     $( printf "$phrase" | openssl shake256 | command cut -d ' ' -f 2 )
