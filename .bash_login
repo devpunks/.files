@@ -1078,6 +1078,8 @@ function digest () {
     $( openssl passwd -5 -salt $SALT "$phrase" )
   printf "SHA-256 (openssl sha256): %s\n" \
     $( printf "$phrase" | openssl sha256 | command cut -d ' ' -f 2 )
+  printf "SHA-256 (openssl dgst -sha256): %s\n" \
+    $( printf "$phrase" | openssl dgst -sha256 | command cut -d ' ' -f 2 )
   printf "SHA-256 (openssl sha256 -c): %s\n" \
     $( printf "$phrase" | openssl sha256 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
   # https://en.m.wikipedia.org/wiki/HMAC
