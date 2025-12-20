@@ -544,6 +544,7 @@ function about () {
 
   exist "$location" || return $?
 
+  echo ; file "$@"
   echo ; df -a -h "$@"
   echo ; df -a -i "$@"
   echo ; stat "$@"
