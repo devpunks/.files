@@ -1085,7 +1085,7 @@ function digest () {
   printf "SHA-384 (sha384sum): %s\n" \
     $( printf "$phrase" | sha384sum | command cut -d ' ' -f 1 )
   printf "SHA-384 (openssl dgst -sha384): %s\n" \
-    $( openssl dgst -sha384 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
+    $( printf "$phrase" | openssl dgst -sha384 | command cut -d ' ' -f 2 )
   printf "SHA-384 (openssl sha384): %s\n" \
     $( openssl sha384 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA-384 (openssl sha384 -c): %s\n" \
