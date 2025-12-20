@@ -797,6 +797,9 @@ alias substitute='$( open https://en.wikipedia.org/wiki/Substitution_cipher )'
 # https://geeksforgeeks.org/linux-unix/od-command-linux-example
 alias octal='od'
 
+# https://linux.die.net/man/1/xxd
+alias hex='xxd -u'
+
 alias binary='xxd -u -b'
 
 # see check ()
