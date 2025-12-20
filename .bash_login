@@ -1099,6 +1099,8 @@ function digest () {
   # https://en.m.wikipedia.org/wiki/HMAC
   printf "SHA-384 HMAC (openssl sha384 -hmac): %s\n" \
     $( printf "$phrase" | openssl sha384 -hmac $KEY | command cut -d ' ' -f 2 )
+  printf "SHA-384 HMAC (openssl dgst -sha384 -hmac): %s\n" \
+    $( printf "$phrase" | openssl dgst -sha384 -hmac $KEY | command cut -d ' ' -f 2 )
   printf "SHA-384 HMAC (openssl sha384 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha384 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
