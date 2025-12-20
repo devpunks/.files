@@ -1011,7 +1011,7 @@ function digest () {
   printf "MD5 w/ SALT (shadow-style) (openssl passwd -1 -salt): %s\n" \
     $( openssl passwd -1 -salt ${SALT:0:8} "$phrase" )
   printf "MD5 (openssl dgst -md5): %s\n" \
-    $( openssl dgst -md5 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
+    $( printf "$phrase" | openssl dgst -md5 | command cut -d ' ' -f 2 )
   printf "MD5 (openssl md5): %s\n" \
     $( openssl md5 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "MD5 (openssl md5 -c): %s\n" \
