@@ -1242,7 +1242,7 @@ function digest () {
   bytes=64 # 512 bits
   echo ; echo SHA3/SHAKE256
   printf "SHAKE256 (openssl shake256): %s\n" \
-    $( printf "$phrase" | openssl shake256 | command cut -d ' ' -f 2 )
+    $( printf "$phrase" | openssl shake256 -xoflen $bytes | command cut -d ' ' -f 2 )
   printf "SHAKE256 (openssl dgst -shake256): %s\n" \
     $( printf "$phrase" | openssl dgst -shake256 | command cut -d ' ' -f 2 )
   printf "SHAKE256 (openssl shake256 -c): %s\n" \
