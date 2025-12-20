@@ -800,6 +800,7 @@ alias octal='od'
 # https://linux.die.net/man/1/xxd
 alias hex='xxd -u'
 
+# https://linux.die.net/man/1/xxd
 alias binary='xxd -u -b'
 
 # see check ()
