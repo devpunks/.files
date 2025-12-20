@@ -124,6 +124,8 @@ alias mkdir='command mkdir --verbose --parents --mode u=rwx,g=rx,o=' # 750
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
 # https://stackoverflow.com/q/4113986
+alias slink='ln --symbolic --no-dereference'
+alias link='command ln --verbose --interactive'
 alias pipe='command mkfifo' # https://fn.m.wikipedia.org/wiki/Named_pipe
 alias cp='command cp --verbose --interactive --no-clobber --recursive'
 alias ln='command ln --verbose --interactive --symbolic --no-dereference'
