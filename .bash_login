@@ -979,6 +979,7 @@ function cipher () {
 # https://emn178.github.io/online-tools
 # https://csrc.nist.gov/projects/hash-functions
 # https://en.wikipedia.org/wiki/Merkle%E2%80%93Damg%C3%A5rd_construction
+# (MD5,SHA1,SHA256,SHA512) https://en.wikipedia.org/wiki/Length_extension_attack
 function digest () {
   local \
     phrase="${1}" \
