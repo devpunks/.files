@@ -1030,6 +1030,7 @@ function digest () {
 
   echo ; echo 'SHA-1 (Secure Hash Algorithm 1):' # https://en.wikipedia.org/wiki/SHA-1
 
+  echo ; echo SHA-1
   printf "SHA-1 (sha1sum): %s\n" \
     $( printf "$phrase" | sha1sum | command cut -d ' ' -f 1 )
   printf "SHA-1 (openssl sha1): %s\n" \
