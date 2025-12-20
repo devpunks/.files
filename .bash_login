@@ -995,7 +995,7 @@ function digest () {
   printf "MD5 (openssl dgst -md5): %s\n" \
     $( printf "$phrase" | openssl dgst -md5 | command cut -d ' ' -f 2 )
   printf "MD5 (openssl md5 -c): %s\n" \
-    $( printf "$phrase"  | openssl md5 -c | command cut -d ' ' -f 2 )
+    $( printf "$phrase"  | openssl md5 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
   printf "MD5 (mkpasswd -m md5crypt): %s\n" \
     $( mkpasswd -m md5crypt "$phrase" )
   printf "MD5 w/ SALT (mkpasswd -m md5crypt -S): %s\n" \
