@@ -1021,12 +1021,12 @@ function digest () {
   printf "MD5 w/ SALT (shadow-style) (openssl passwd -1 -salt): %s\n" \
     $( openssl passwd -1 -salt ${SALT:0:8} "$phrase" )
   # https://en.m.wikipedia.org/wiki/HMAC
-  printf "MD5 HMAC w/ SALT (openssl dgst -md5 -hmac): %s\n" \
-    $( printf "$phrase" | openssl dgst -md5 -hmac ${SALT:0:8}| command cut -d ' ' -f 2 )
-  printf "MD5 HMAC w/ SALT (openssl md5 -hmac): %s\n" \
-    $( printf "$phrase" | openssl md5 -hmac ${SALT:0:8} | command cut -d ' ' -f 2 )
-  printf "MD5 HMAC w/ SALT (openssl md5 -c -hmac): %s\n" \
-    $( printf "$phrase" | openssl md5 -c -hmac ${SALT:0:8} | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
+  printf "MD5 HMAC (openssl md5 -hmac): %s\n" \
+    $( printf "$phrase" | openssl md5 -hmac $KEY | command cut -d ' ' -f 2 )
+  printf "MD5 HMAC (openssl dgst -md5 -hmac): %s\n" \
+    $( printf "$phrase" | openssl dgst -md5 -hmac $KEY | command cut -d ' ' -f 2 )
+  printf "MD5 HMAC (openssl md5 -c -hmac): %s\n" \
+    $( printf "$phrase" | openssl md5 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
   echo ; echo SHA-1: # https://en.wikipedia.org/wiki/SHA-1
 
