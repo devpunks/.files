@@ -1041,8 +1041,6 @@ function digest () {
   printf "SHA-1 (openssl sha256 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha256 -c -hmac $SALT | command cut -d ' ' -f 2 )
 
-return
-
   echo ; echo SHA-2: # https://en.wikipedia.org/wiki/SHA-2
 
   echo ; echo SHA2/224
