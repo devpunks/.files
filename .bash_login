@@ -1202,6 +1202,8 @@ function digest () {
   printf "SHA3-512 (openssl sha3-512 -c): %s\n" \
     $( printf "$phrase" | openssl sha3-512 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
+return
+
   echo ; echo 'SHA-3/SHAKE (Secure Hash Algorithm-Keccak)' # 
 
   echo ; echo SHA3/SHAKE128
