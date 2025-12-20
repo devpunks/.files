@@ -1668,6 +1668,7 @@ function certify () { clear # Certificate Authority
     -out "$domain.${algorithm}-${bits}.pfx"
 
 
+  # https://en.wikipedia.org/wiki/Digital_Signature_Algorithm
   echo ; echo "DSA (Digital Signature Algorithm) Certificates:"
   bits=2048
   algorithm=dsa
