@@ -1231,8 +1231,6 @@ function digest () {
   echo ; echo 'SHA-3/SHAKE (Secure Hash Algorithm-Keccak)' # 
 
   echo ; echo SHA3/SHAKE128
-  printf "SHAKE128 (openssl dgst -shake128): %s\n" \
-    $( openssl dgst -shake128 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHAKE128 (openssl shake128): %s\n" \
     $( openssl shake128 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHAKE128 (openssl shake128 -c): %s\n" \
