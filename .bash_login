@@ -1172,7 +1172,7 @@ return
   printf "SHA3-224 (openssl dgst -sha3-224): %s\n" \
     $( printf "$phrase" | openssl dgst -sha3-224 | command cut -d ' ' -f 2 )
   printf "SHA3-224 (openssl sha3-224 -c): %s\n" \
-    $( printf "$phrase" | openssl sha3-224 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
+    $( printf "$phrase" | openssl sha3-224 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
   echo ; echo SHA3/256:
   printf "SHA3-256 (sha3sum -a 256): %s\n" \
