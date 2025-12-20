@@ -987,7 +987,8 @@ function digest () {
   echo ; printf "DES: %s\n" \
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
-  echo  # https://en.m.wikipedia.org/wiki/MD5
+  echo ; echo MD5: # https://en.wikipedia.org/wiki/MD5
+
   printf "MD5 (md5sum): %s\n" \
     $( printf "$phrase" | md5sum | command cut -d ' ' -f 1 )
   printf "MD5 (openssl md5): %s\n" \
