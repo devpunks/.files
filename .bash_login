@@ -1137,7 +1137,8 @@ return
   printf "SHA512-256 (openssl sha512-256 -c): %s\n" \
     $( openssl sha512-256 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 )
 
-  # https://en.wikipedia.org/wiki/SHA-3
+  echo ; echo SHA-2: # https://en.wikipedia.org/wiki/SHA-3
+
   echo ; echo SHA3/224:
   printf "SHA3-224 (sha3sum -a 224): %s\n" \
     $( printf "$phrase" | busybox sha3sum -a 224 | command cut -d ' ' -f 1 )
