@@ -1192,7 +1192,7 @@ return
   printf "SHA3-384 (openssl dgst -sha3-384): %s\n" \
     $( openssl dgst -sha3-384 <( printf "$phrase" ) | command cut -d ' ' -f 2 )
   printf "SHA3-384 (openssl sha3-384 -c): %s\n" \
-    $( openssl sha3-384 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 )
+    $( openssl sha3-384 -c <( printf "$phrase" ) | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
   echo ; echo SHA3/512
   printf "SHA3-384 (sha3sum -a 512): %s\n" \
