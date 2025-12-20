@@ -1042,7 +1042,7 @@ function digest () {
   printf "SHA-1 HMAC w/ SALT  (openssl dgst -sha1 -hmac): %s\n" \
     $( printf "$phrase" | openssl dgst -sha1 -hmac $SALT | command cut -d ' ' -f 2 )
 
-  echo ; echo SHA-2 (Secure Hash Algorithm 2): # https://en.wikipedia.org/wiki/SHA-2
+  echo ; echo 'SHA-2 (Secure Hash Algorithm 2):' # https://en.wikipedia.org/wiki/SHA-2
 
   echo ; echo SHA-2/224
   printf "SHA-224 (sha224sum): %s\n" \
