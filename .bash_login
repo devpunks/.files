@@ -1160,8 +1160,6 @@ function digest () {
   printf "SHA-512-256 HMAC (openssl sha512-256 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha512-256 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
-return
-
   echo ; echo 'SHA-3 (Secure Hash Algorithm 3):' # https://en.wikipedia.org/wiki/SHA-3
 
   echo ; echo SHA3/224:
