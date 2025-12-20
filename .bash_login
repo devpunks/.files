@@ -1137,7 +1137,7 @@ function digest () {
   printf "SHA512-224 (openssl sha512-224 -c): %s\n" \
     $( printf "$phrase" | openssl sha512-224 -c | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
   # https://en.m.wikipedia.org/wiki/HMAC
-  printf "SHA-512-224 HMAC (openssl sha512 -hmac): %s\n" \
+  printf "SHA-512-224 HMAC (openssl sha512-224 -hmac): %s\n" \
     $( printf "$phrase" | openssl sha512 -hmac $KEY | command cut -d ' ' -f 2 )
   printf "SHA-512-224 HMAC (openssl dgst -sha512 -hmac): %s\n" \
     $( printf "$phrase" | openssl dgst -sha512 -hmac $KEY | command cut -d ' ' -f 2 )
