@@ -1101,7 +1101,7 @@ function digest () {
     $( printf "$phrase" | openssl dgst -sha384 -hmac $SALT | command cut -d ' ' -f 2 )
   printf "SHA-384 HMAC (openssl sha384 -hmac): %s\n" \
     $( printf "$phrase" | openssl sha384 -hmac $SALT | command cut -d ' ' -f 2 )
-  printf "SHA-384 (openssl sha384 -c -hmac): %s\n" \
+  printf "SHA-384 HMAC (openssl sha384 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha384 -c -hmac $SALT | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
   echo ; echo SHA-2/512: # https://en.wikipedia.org/wiki/SHA-512
