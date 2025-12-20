@@ -1082,7 +1082,7 @@ function digest () {
   printf "SHA-256 (openssl sha256 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha256 -c -hmac $SALT | command cut -d ' ' -f 2 )
 
-  echo ; echo SHA2/384
+  echo ; echo SHA-2/384
   printf "SHA-384 (sha384sum): %s\n" \
     $( printf "$phrase" | sha384sum | command cut -d ' ' -f 1 )
   printf "SHA-384 (openssl dgst -sha384): %s\n" \
