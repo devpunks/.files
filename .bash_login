@@ -1424,6 +1424,9 @@ function keygen () {
 } # keygen
 
 # https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+# https://encryptionconsulting.com/diffie-hellman-key-exchange-vs-rsa
+# https://geeksforgeeks.org/computer-networks/difference-between-diffie-hellman-and-rsa
+# https://crypto.stackexchange.com/q/59417/why-is-rsa-preferred-over-diffie-hellman-if-theyre-both-used-to-establish-share
 function exchange () { # keys
   local $shared
 
