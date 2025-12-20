@@ -1230,6 +1230,7 @@ function digest () {
 
   echo ; echo 'SHA-3/SHAKE (Secure Hash Algorithm-Keccak)' # 
 
+  local bytes=32 # 256 bits
   echo ; echo SHA3/SHAKE128
   printf "SHAKE128 (openssl shake128): %s\n" \
     $( printf "$phrase" | openssl shake128 | command cut -d ' ' -f 2 )
