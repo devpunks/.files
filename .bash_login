@@ -919,6 +919,7 @@ function bin2hex () { # convert string binary to hexidecimal
   echo ; echo
 } # bin2hex
 
+# -------------------------------------------------------------------------
 function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
   local -r file="$1"
 
