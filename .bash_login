@@ -587,6 +587,7 @@ function inspect () { clear
   printf '\nTODO: implement inspect ()'
 } # inspect
 
+# -------------------------------------------------------------------------
 function probe () { clear
   local -r location=$( realpath "${1:-.}" )
 
