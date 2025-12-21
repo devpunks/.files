@@ -240,6 +240,7 @@ function memory () { clear
   echo ; free ; echo
 }  # memory
 
+# -------------------------------------------------------------------------
 # - https://en.wikipedia.org/wiki/Device_file
 function devices () { clear
   local -r location="$1"
