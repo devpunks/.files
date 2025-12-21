@@ -1868,6 +1868,7 @@ function unlock () {
   flock -u "$lock"
 } # unlock
 
+# -------------------------------------------------------------------------
 # https://unix.stackexchange.com/q/302938/about-ulimit-setrlimit-and-cgroup
 function limit () { clear
   ulimit --help
