@@ -2964,7 +2964,6 @@ function dump () { clear
 
   man hexdump
 
-  echo "dumping $source"
   hexdump "$source"
 } # dump
 
