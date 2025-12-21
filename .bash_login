@@ -2834,14 +2834,6 @@ function unpack () { clear
 # echo ; command gunzip --verbose --test --list "$archive"
 } # unpack
 
-function extract () {
-  local -r archive=$( realpath "$1" )
-
-  exist "$archive" || return $?
-
-  check "$archive" && unpack "$archive"
-} # extract
-
 # }}}
 
 # =========================================================================
