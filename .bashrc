@@ -85,6 +85,7 @@ unset -v ENV BASH_ENV
 test -e $HOME/.env && export ENV=~/.env
 test $ENV && export BASH_ENV=$ENV
 
+# -------------------------------------------------------------------------
 export EDITOR=vi
 export PAGER=most
 export VISUAL=$EDITOR
