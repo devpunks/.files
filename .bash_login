@@ -2990,7 +2990,8 @@ function truncate () { exist "$1" || return
 } # truncate
 
 # -------------------------------------------------------------------------
-function count () { exist "$1" || return
+alias format='command numfmt --grouping'
+function count () { exist "$1" && test -f "$1" || return $?
 
   local -r file=${1}
   local -r LINE=`wc --lines "$file" | command cut -d ' ' -f 1`
