@@ -101,7 +101,7 @@ set path +=$HOME
 set path +=$prefix/include
 
 echom '(vi) PATH:' &path
-" increment formats - https://vimtricks.com/p/vimtrick-increment-numbers/
+" increment formats - https://vimtricks.com/p/vimtrick-increment-numbers
 set nrformats+=alpha
 set nrformats-=octal
 
