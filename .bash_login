@@ -360,6 +360,7 @@ function term () { clear
     && echo && Colors
 } # term
 
+# -------------------------------------------------------------------------
   # https://gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html
 function environment () {
   printf "\n👇Kernel👇 \n%s\n" "$( kernel )"
