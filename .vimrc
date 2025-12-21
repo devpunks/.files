@@ -295,7 +295,7 @@ endif
 " =========================================================================
 " {{{ BUFFERS
 " =========================================================================
-" set nohidden possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden/
+" set nohidden possibly overridden by ZoomWin https://vimtricks.com/p/what-is-set-hidden
 set hidden
 set confirm "  on persistence
 set autowrite " on lost focus
