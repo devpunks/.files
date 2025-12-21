@@ -132,6 +132,7 @@ export TIMEFORMAT=$'\n⌛real %3R seconds\tuser %3U\tsys %3S\tpcpu %P\n'
 export TZ='Etc/UTC' # https://gnu.org/software/libc/manual/html_node/TZ-Variable.html
 export CRON_TZ=${TZ} # https://devicetests.com/set-timezone-crontab
 
+# -------------------------------------------------------------------------
 unset PATH
 PATH="$HOME"
 [ -d "$HOME/bin" ] && PATH="${PATH}:${HOME}/bin"
