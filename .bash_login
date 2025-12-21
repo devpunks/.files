@@ -3093,6 +3093,7 @@ function pick () { # files
     -d /storage/emulated/0 -t '*/*'
 } # pick
 
+# -------------------------------------------------------------------------
 function play () { clear
   local -r location="$1"
 
