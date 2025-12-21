@@ -1917,6 +1917,7 @@ function permit () { clear
   about "$location"
 } # permit
 
+# -------------------------------------------------------------------------
 function restrict () { clear
   printf "\numask : %s %s\n\n" "$( umask )" "$( umask -S )"
 
