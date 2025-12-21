@@ -2783,6 +2783,7 @@ function expand () { clear
     | column --table
 } # expand
 
+# -------------------------------------------------------------------------
 # - https://ncompress.sourceforge.io
 function compress () { clear
   local -r operation
