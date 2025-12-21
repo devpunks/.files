@@ -1988,6 +1988,7 @@ function forkbomb () { clear #:(){ :|:& };:
   # forkbomb | forkbomb &
 } # forkbomb
 
+# -------------------------------------------------------------------------
 # - https://securitygate.io/blog/osi-model-fundamentals-cybersecurity-basics
 function attack () {
   # Unauthorized access
