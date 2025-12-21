@@ -1043,7 +1043,7 @@ alias digests='command openssl list -digest-commands' # -digest-algorithms
 function digest () {
   local \
     phrase="${1}" \
-    local KEY="${SALT:0:8}" # TODO: Use an actual key (w/ pepper?)
+     KEY="${SALT:0:8}" # TODO: Use an actual key (w/ pepper?)
 
   echo ; echo Digests: ; digests
 
