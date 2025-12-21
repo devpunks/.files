@@ -1012,7 +1012,7 @@ function cipher () {
   scrypt enc --passphrase env:SALT <( printf "$phrase" )
 
   # https://en.wikipedia.org/wiki/PBKDF2
-  echo ; echo ; echo "PBKDF2: "
+  echo ; echo ; echo "PBKDF2 ($length): "
   # need 600K iters. to be secure
   openssl kdf \
     -keylen $length \
