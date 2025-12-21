@@ -2771,6 +2771,7 @@ function shrink () { clear
   echo Shrinking: "$source"
 } # shrink
 
+# -------------------------------------------------------------------------
 function expand () { clear
   local -r source=$( realpath "$1" )
 
