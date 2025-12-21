@@ -2997,7 +2997,7 @@ function count () { exist "$1" || return
 
   printf '\n%-10s %-10s %-10s %-10s' \
     'LINES' 'WORDS' 'CHARS' 'BYTES'
-  printf '\n%-10s %-10s %-10s %-10s' \
+  printf '\n%-10d %-10d %-10d %-10d' \
     $LINE $WORD $CHAR $BYTE
 
   echo ; echo
