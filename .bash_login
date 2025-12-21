@@ -1491,6 +1491,7 @@ alias signatures='{
   echo ; command gpg --check-signatures
 }' # signatures
 
+# -------------------------------------------------------------------------
 # https://geeksforgeeks.org/computer-networks/rsa-and-digital-signatures
 # https://crypto.stackexchange.com/q/9896/how-does-rsa-signature-verification-work
 # https://crypto.stackexchange.com/q/59566/differences-between-dsa-and-rsa-algorithms
