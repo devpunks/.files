@@ -566,7 +566,7 @@ function about () { echo
   local location="${1}"
 
   # check if command
-  command hash "$location" && { man -k "$@" ; echo ; return ; }
+  command hash "$location" && { man "$@" ; apropos "$@" ; echo ; return ; }
 
   exist "$location" || return $?
 
