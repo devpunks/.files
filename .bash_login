@@ -190,6 +190,7 @@ function where () {
   command apropos "$term"
 } # where
 
+# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/ISO_8601
 # https://redhat.com/en/blog/formatting-date-command
 # https://cyberciti.biz/faq/linux-unix-formatting-dates-for-display
