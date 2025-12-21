@@ -2280,6 +2280,7 @@ alias proxyoff='{
   echo "PROXY OFF!\n http: ${http_proxy}\n https: ${https_proxy}"
 }' # proxyoff
 
+# -------------------------------------------------------------------------
 # SOCKS vs. HTTP - https://incogniton.com/socks-vs-http-proxy
 function proxy () { clear
   # https://tinyproxy.github.io
