@@ -2834,6 +2834,7 @@ function pack () { clear
     && command view "$file"
 } # pack
 
+# -------------------------------------------------------------------------
 function unpack () { clear
   local operation
   local -r archive="${1}"
