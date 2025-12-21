@@ -3066,7 +3066,9 @@ function compile () { clear
 # https://linux.die.net/man/1/hexedit
 alias hexedit='hexedit --color'
 # https://superuser.com/q/315120/hexdump-vs-xxd-format-difference
-alias hexdump='command hexdump --color=auto'
+alias hexdump="command hexdump --color=auto \
+  -e ' 4/1 \"%02x \" \" \" 4/1 \"%02x \" \" \" 4/1 \"%02x \" \" \" 4/1 \"%02x \" \" \" ' \
+  -e '\"\" ' " # Line delimeter
 function dump () { clear
   local -r source="${1}"
 
