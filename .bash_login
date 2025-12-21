@@ -2929,6 +2929,7 @@ function lint () { clear
   check .*rc
 } # lint
 
+# -------------------------------------------------------------------------
 alias make="command make -v; command make"
 # LLVM - https://llvm.org
 # - https://clang.llvm.org
