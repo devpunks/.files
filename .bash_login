@@ -2749,6 +2749,7 @@ function restore () { clear
   man dd
 } # restore
 
+# -------------------------------------------------------------------------
 function package () { clear
   local -r source=$( realpath "$1" )
   local -r destination="$1"
