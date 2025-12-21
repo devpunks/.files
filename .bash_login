@@ -1021,12 +1021,9 @@ function cipher () {
 
   # https://en.wikipedia.org/wiki/HKDF
   # https://rfc-editor.org/rfc/rfc5869.html
-  echo  "HKDF ($length): "
-  openssl kdf \
-    -keylen $length \
-    -kdfopt salt:"$SALT" \
-    -kdfopt key:"$phrase" \
-    -kdfopt digest:blake2b512 \
+  echo  "HKDF (BLAKE2b512 [$length]): "
+  openssl kdf -kdfopt digest:blake2b512 \
+   -kdfopt salt:"$SALT" -kdfopt key:"$phrase" -keylen $length \
   HKDF
 } # cipher
 
