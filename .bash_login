@@ -2677,6 +2677,7 @@ function log () { clear
   # svlogd -tt "$LOGDIR/sv/$service"
 } # log
 
+# -------------------------------------------------------------------------
 function err () {
   local source # --source IP | --unix SOCK
   local -r message="${1}"
