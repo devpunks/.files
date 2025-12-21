@@ -2666,6 +2666,7 @@ function tail () { clear
   echo "TODO: (multi)tail $files"
 } # tail
 
+# -------------------------------------------------------------------------
 function log () { clear
   local -r message="${1}"
   local source # --source IP | --unix SOCK
