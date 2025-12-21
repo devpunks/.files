@@ -91,6 +91,7 @@ export PAGER=most
 export VISUAL=$EDITOR
 export PG_CONFIG="${PREFIX}/bin/pg_config"
 
+# -------------------------------------------------------------------------
 # https://dev.gnupg.org/T3412
 # https://wiki.archlinux.org/title/GnuPG#pinentry
 # https://gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
