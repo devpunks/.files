@@ -3053,6 +3053,7 @@ function compile () { clear
 } # compile
 
 # -------------------------------------------------------------------------
+# https://linux.die.net/man/1/hexedit
 alias hexedit='hexedit --color'
 # https://superuser.com/q/315120/hexdump-vs-xxd-format-difference
 alias hexdump='command hexdump --color=auto'
