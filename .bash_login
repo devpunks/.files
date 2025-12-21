@@ -2663,7 +2663,7 @@ function package () { clear
   exist "$source" || return $?
 
   echo "📦 Packaging: $source"
-  echo "📦   Destination: $destination"
+  echo "📦 Destination: $destination"
 
   checksum "$destination"
 } # package
