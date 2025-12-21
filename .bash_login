@@ -3003,9 +3003,8 @@ function count () { exist "$1" && test -f "$1" || return $?
 
   printf '\n%-10s %-10s %-10s %-10s' \
     'LINES' 'WORDS' 'CHARS' 'BYTES'
-  printf '\n%-10d %-10d %-10d %-10d' \
-    $LINE $WORD $CHAR $BYTE
-
+  printf "\n%-10s %-10s %-10s %-10s" \
+    $( format $LINE ) $( format $WORD ) $( format $CHAR ) $( format $BYTE )
   echo ; echo
 } # count
 
