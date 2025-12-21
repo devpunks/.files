@@ -27,7 +27,7 @@
 "
 " Screencasts - http://vimcasts.org
 " Cheatsheets:
-"   - https://vim.rtorr.com/
+"   - https://vim.rtorr.com
 "   - https://devhints.io/vimscript
 " TERM - https://vimhelp.org/term.txt.html
 " Event order - https://vi.stackexchange.com/q/4493
