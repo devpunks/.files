@@ -2162,7 +2162,8 @@ function trip () {
   local -r services="${*:-nginx}"
   local -r path="${PREFIX}/var/service"
 
-  [ -z "$service" ] && service-daemon stop && return
+  test -z "$service" \
+    && service-daemon stop && return
 
   # man sv
   echo Check
