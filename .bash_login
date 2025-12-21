@@ -2188,6 +2188,7 @@ function trace () {
   echo ; echo TRACE NAME: ; command dig "$domain" +trace
 } # trace
 
+# -------------------------------------------------------------------------
 function map () {
   local -r domain=${1:-localhost}
 
