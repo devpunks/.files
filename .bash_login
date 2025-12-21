@@ -1854,6 +1854,7 @@ function lock () {
   flock "$lock" "$location"
 } # lock
 
+# -------------------------------------------------------------------------
 # - https://stackoverflow.com/q/67351646/what-does-flock-u-actually-do
 function unlock () {
   local -r lock="$( realpath "${1}.lock" )"
