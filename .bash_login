@@ -620,6 +620,7 @@ function weigh () {
   echo ; df -a -i "$location"
 } # weigh
 
+# -------------------------------------------------------------------------
 function search () { clear
   local -r term="$1"
   local -r location=$( realpath "${2:-.}" )
