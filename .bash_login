@@ -1796,7 +1796,7 @@ function extract () { # keys
 #   -inkey ${domain}.${algorithm}-${bits}.pem \
 #   -in ${domain}.${algorithm}-${bits}.cert \
 #   -out "$domain.${algorithm}-${bits}.pfx"
-
+: extract
 } # extract
 
 # }}}
