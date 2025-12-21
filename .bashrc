@@ -156,6 +156,7 @@ export CDPATH=".:${HOME}" # https://theunixschool.com/2012/04/what-is-cdpath.htm
 
 export GLOBIGNORE=. # see shopt -s dotglob - https://gnu.org/software/bash/manual/html_node/Filename-Expansion.html
 
+# -------------------------------------------------------------------------
 # TIME_STYLE [FORMAT,locale,iso,long-iso,full-iso]
 # SIZE -
 #   The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
