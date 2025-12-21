@@ -391,7 +391,6 @@ PS4='➕ ' # Verbose prompt tracing
 #  - https://tldp.org/LDP/abs/html/functions.html
 #  - https://cuddly-octo-palm-tree.com/posts/2021-10-31-better-bash-functions/
 #=========================================================================
-
 function prompts () {
   for (( i = 1 ; i <= SHLVL ; i++ )); do
     # Using \$ (Backslash Dollar Sign) will convert to '#' in root mode
