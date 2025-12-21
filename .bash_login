@@ -399,6 +399,7 @@ function environment () {
     && echo "\n\$TMUX: $( tmux -V )"
 } # environment
 
+# -------------------------------------------------------------------------
 function functions () {
   # set # shows all function definitions
 
