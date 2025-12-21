@@ -567,7 +567,7 @@ function about () {
 
   exist "$location" || return $?
 
-  command -v "$location" && { echo ; man -k "$@" ; }
+  command -v "$location" && { echo ; man -k "$@" ; return; }
   test -f "$location"  && { echo ; file "$@" ; }
   echo ; df -a -h "$@"
   echo ; df -a -i "$@"
