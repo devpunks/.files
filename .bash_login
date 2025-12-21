@@ -529,6 +529,7 @@ function git_submodule () { clear
   echo
 } # git_submodule
 
+# -------------------------------------------------------------------------
 # Linus - https://gcc.gnu.org/legacy-ml/gcc/2007-12/msg00165.html
 function git_clean () { clear
   # https://stackoverflow.com/q/5613345/how-to-shrink-the-git-folder
