@@ -311,7 +311,7 @@ set history=1000 " Increase undo limit
 set tabpagemax=50 " Maximum number of tab pages
 set switchbuf=usetab,newtab " split|vsplit|useopen|uselast
 set splitbelow nosplitright " Where to place new buffer location
-command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers/
+command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffers
 
 " autocmd QuickFixCmdPre * echom 'Executing QuickFixCmdPre'
 " autocmd QuickFixCmdPost * echom 'Executing QuickFixCmdPost'
