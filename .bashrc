@@ -287,7 +287,7 @@ set -o noclobber # Prevent redirection '>' from overwriting existing files
 
 # TODO: fix for macOS
 shopt -s extglob # Extended glob pattern matching
-shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell/
+shopt -s dirspell # https://linux.101hacks.com/cd-command/shopt-s-cdspell
 shopt -s direxpand # https://stackoverflow.com/q/6438341/what-does-shopt-s-dirspell-do
 
 shopt -s dotglob # https://unix.stackexchange.com/q/40662
