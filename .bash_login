@@ -903,6 +903,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
     && cat $file | xxd -bits | command awk '{print $2, $3, $4, $5, $6, $7}' > "${file}.bin"
 } # encode
 
+# -------------------------------------------------------------------------
 function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
   local -r file="$1"
 
