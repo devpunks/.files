@@ -181,6 +181,7 @@ export GREP_OPTIONS="--ignore-case --no-messages --line-number --with-filename \
   --exclude={.bash_history,tags,cscope.files} \
   --exclude-dir={.git,.bundle,.cache,.config,.gem,.local,.npm,.gnupg,.ssh,.vim,bin,downloads,log,logs,node_modules,storage,tmp,vendor,images}"
 
+# -------------------------------------------------------------------------
 # https://php.net/manual/en/function.curl-setopt.php
 # export CURLOPT_URL # URL
 # export CURLOPT_SSLCERT # client.pem file
