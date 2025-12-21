@@ -398,6 +398,7 @@ function prompts () {
   done
 } ; export -f prompts
 
+# -------------------------------------------------------------------------
 # https://baeldung.com/linux/status-codes
 function exitstatus () {
   local -r status=$?
