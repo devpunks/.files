@@ -264,6 +264,7 @@ function hold () {
   # nohup ./foo.sh > out.txt >2&1
 } # hold
 
+# -------------------------------------------------------------------------
 function recycle () { clear
   echo ♻ ♲ ♳ ♴ ♵ ♶ ♷ ♸ ♹ ♺ ♼ ♽
 
