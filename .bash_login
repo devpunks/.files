@@ -2807,6 +2807,7 @@ function decompress () { clear
   exist "$destination" || mkdir "$destination"
 } # decompress
 
+# -------------------------------------------------------------------------
 function pack () { clear
   local -r file=$( realpath "$1" )
   local -r contents=${@:2}
