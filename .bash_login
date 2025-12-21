@@ -3057,6 +3057,7 @@ function write () { clear
   figlet -c -w $COLUMNS "$message"
 } # write
 
+# -------------------------------------------------------------------------
 function stream () {
   local -r bytes="${1:-foo}"
   yes "$bytes"
