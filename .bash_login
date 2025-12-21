@@ -1971,6 +1971,8 @@ function authenticate () { clear
   local -r domain="localhost" # localhost default domain
   local -r port="${PORT:-80}" # PORT env variable default 80
   local -r uri="${domain}:${port}" # URI default to domain and port
+  # local -r auth='--header "Authorization: Bearer ${token}"' # (anyauth|digest|basic)
+  local -r auth='--basic' # (anyauth|digest|basic)
 
   echo uri: "$uri"
   echo auth: $auth
