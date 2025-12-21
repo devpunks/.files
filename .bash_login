@@ -933,7 +933,7 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
   echo ; echo '(openssl enc -d --base64):'
   openssl enc -d -base64 -in <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
 
-  echo ; echo 'Hexadecimal'
+  echo ; echo Hexadecimal
   echo '(xxd -revert -plain):'
   xxd -revert -plain <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
 
