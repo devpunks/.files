@@ -2857,7 +2857,7 @@ function allow () { : allow; }
 function fetch () { : fetch; }
 function clean () { : clean; }
 function reboot () { : reboot; }
-function ignored () { : Ignored; }
+function ignore () { : Ignore; }
 function restart () { : restart; }
 function refresh () { : refresh; }
 function forward () { : forward; }
