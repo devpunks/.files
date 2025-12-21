@@ -320,7 +320,7 @@ command! Flush :update | %bd | e# " https://vimtricks.com/p/closing-hidden-buffe
 
 " =========================================================================
 " {{{ VIEWS, SESSIONS, VIMINFO
-"   - https://vimtricks.com/p/saving-session-state/
+"   - https://vimtricks.com/p/saving-session-state
 "   - https://learnvim.irian.to/basics/views_sessions_viminfo
 " =========================================================================
 " disable sessions
