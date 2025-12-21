@@ -1511,6 +1511,7 @@ function sign () {
   openssl sha256 -sign "$pem" -out "${file}.signature" "$file"
 } # sign
 
+# -------------------------------------------------------------------------
 function verify () {
   local file="$( realpath $1 )"
   local pem="${HOME}/.ssh/privatekey.pem"
