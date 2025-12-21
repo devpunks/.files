@@ -689,6 +689,7 @@ alias cron='man crontab ; man cronnext ; man crond ; ' # https://crontab.guru
 alias job='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
 alias jobs='command jobs -l' # termux-job-scheduler - https://github.com/termux/termux-api/issues/282
 
+# -------------------------------------------------------------------------
 function work () {
   echo working
 } # jobs
