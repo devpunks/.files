@@ -923,7 +923,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
   local -r file="$1"
 
-  echo ; echo 'Base32'
+  echo ; echo Base32
   echo '(basenc --decode --base32):'
   basenc --decode --base32 <( test -f $( readlink -f "$file" ) && cat "$file" || printf "$file" )
 
