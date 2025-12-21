@@ -52,8 +52,7 @@
 # [[ -z "$PS1" ]] && exit # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 
 # STDOUT test
-test -t 1 \
-  && echo 'Is a TTY' \
+( test -t 1 && echo 'Is a TTY' ) \
   || echo 'Is a TTY'
 
 echo "SHELL OPTION FLAGS (see set --help) 👉" $-
