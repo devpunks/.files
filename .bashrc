@@ -364,7 +364,6 @@ export LESSKEY="" # https://man7.org/linux/man-pages/man1/lesskey.1.html
 #  - https://unix.stackexchange.com/q/611419/how-does-the-escape-character-work-in-bash-prompt
 #
 #=========================================================================
-
 tput smam # tput rmam to disable - http://heyrod.com/snippets/toggle-line-wrapping-in-terminal.html
 export PROMPT_DIRTRIM=3 # https://stackoverflow.com/qs/5687446
 
