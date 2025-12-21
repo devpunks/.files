@@ -965,6 +965,7 @@ alias ciphers='command openssl enc -list'
 # https://en.wikipedia.org/wiki/Cryptographic_hash_function
 # https://antofthy.gitlab.io/info/crypto/passwd_hashing.txt
 function cipher () {
+  local -r phrase="${1}"
   local length=32 # 24
   local memory=65536 # 64MiB
   local iterations=3
