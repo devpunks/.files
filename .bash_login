@@ -909,7 +909,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
     && echo "Writing to file: ${file}.hex" \
     && cat $file | xxd -plain | command sed 's/.\{2\}/& /g' > "${file}.hex"
 
-  echo ; echo 'Binary'
+  echo ; echo Binary
   echo '(xxd -bits):'
   test -f $( readlink -f "$file" ) \
     && ( cat "$file" || printf "$file" ) | xxd -bits
