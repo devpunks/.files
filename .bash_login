@@ -2868,6 +2868,7 @@ function accumulate () { : accumulate; }
 function aggregate () { : aggregate; }
 
 
+# -------------------------------------------------------------------------
 # https://phoenixnap.com/kb/linux-truncate-file
 function truncate () { exist "$1" || return
   local -r file="$1"
