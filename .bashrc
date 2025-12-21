@@ -412,7 +412,6 @@ function exitstatus () {
 # }}}
 
 # -------------------------------------------------------------------------
-echo 'devPunks😈studio .bashrc'
-echo
+echo 'devPunks😈studio .bashrc' ; echo
 
 # vim: foldmethod=marker
