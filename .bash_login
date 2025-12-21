@@ -1944,6 +1944,7 @@ function authorize () {
   echo "Authorizing: $user"
 } # authorize
 
+# -------------------------------------------------------------------------
 # JWT - https://datatracker.ietf.org/doc/html/rfc7519
 # BASIC - https://datatracker.ietf.org/doc/html/rfc7617
 # BEARER - https://datatracker.ietf.org/doc/html/rfc6750
