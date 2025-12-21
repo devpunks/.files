@@ -2796,6 +2796,7 @@ function compress () { clear
   echo 🗜 Compressing "$destination"
 } # compress
 
+# -------------------------------------------------------------------------
 function decompress () { clear
   local -r operation
   local -r source=$( realpath "$1" )
