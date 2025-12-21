@@ -2420,6 +2420,7 @@ function download () { clear
   curl --remote-name "$uri"
 } # download
 
+# -------------------------------------------------------------------------
 # cURL
 # - https://everything.curl.dev/usingcurl/uploads.html
 function upload () {
