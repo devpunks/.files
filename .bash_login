@@ -822,6 +822,7 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
   unset EPOCH ; echo "${EPOCH}"
 }' # donce
 
+# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/Salt_(cryptography)
 export SALT='12345678abcdefgh' # TODO: generate SALT
 
