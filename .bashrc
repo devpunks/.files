@@ -200,7 +200,6 @@ export GREP_OPTIONS="--ignore-case --no-messages --line-number --with-filename \
 #  - https://gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html
 #  - https://gnu.org/software/gettext/manual/html_node/Setting-the-POSIX-Locale.html
 #==========================================================================
-
 export LANG=en_US.UTF-8  # Locale override
 export LANGUAGE=en:fr:de # LC_MESSAGES Override
 export LC_ALL=$LANG
