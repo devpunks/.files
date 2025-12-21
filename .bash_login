@@ -2053,6 +2053,7 @@ function services () {
   echo ; tree -L 4 "${services}${service}"
 } # services
 
+# -------------------------------------------------------------------------
 function run () {
   local -r -i seconds=5
   local -r services="${*}"
