@@ -846,6 +846,17 @@ alias hex='xxd -u'
 alias binary='xxd -u -b'
 
 # -------------------------------------------------------------------------
+function bin2hex () { # convert string binary to hexidecimal
+  local input="$1"
+
+  echo ; echo BINARY: "$input"
+  echo ; echo "BASE^10: $((2#$input))"
+  echo ; printf 'HEXIDECIMAL: %x\n' $((2#$input))
+  echo ; printf 'HEXIDECIMAL: %s'  $( echo "obase=16; ibase=2;$input" | bc )
+  echo ; echo
+} # bin2hex
+
+# -------------------------------------------------------------------------
 # see check ()
 # https://en.wikipedia.org/wiki/Cyclic_code
 # https://en.wikipedia.org/wiki/Cyclic_redundancy_check
