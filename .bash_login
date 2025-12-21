@@ -640,6 +640,7 @@ function search () { clear
   echo ; echo DONE!
 } # search
 
+# -------------------------------------------------------------------------
 # Syntax checkers
 #   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
 function check () {
