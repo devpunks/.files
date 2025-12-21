@@ -3048,6 +3048,7 @@ function plot () { clear
   gnuplot --help
 } # plot
 
+# -------------------------------------------------------------------------
 function write () { clear
   local -r message="${1}"
 
