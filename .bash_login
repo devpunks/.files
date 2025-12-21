@@ -2911,6 +2911,7 @@ function count () { exist "$1" || return
   echo ; echo
 } # count
 
+# -------------------------------------------------------------------------
 # https://blog.kubesimplify.com/the-complete-guide-to-the-dd-command-in-linux
 function generate () { exist "$1" || return
   local -r size="${1}"
