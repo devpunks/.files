@@ -1530,6 +1530,7 @@ function verify () {
   echo "Cryptographically Verifying > $file with $pem ..."
 } # verify
 
+# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/X.509
 alias certificates='{
   # ssh-keygen -L # prints contents of certificate
