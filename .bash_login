@@ -915,7 +915,7 @@ function bin2hex () { # convert string binary to hexidecimal
   echo ; echo BINARY: "$input"
   echo ; echo "BASE^10: $((2#$input))"
   echo ; printf 'HEXIDECIMAL: %x\n' $((2#$input))
-  echo ; echo "obase=16;ibase=2;$input" | bc
+  echo ; printf 'HEXIDECIMAL: %s'  $( echo "obase=16; ibase=2;$input" | bc )
   echo ; echo
 } # bin2hex
 
