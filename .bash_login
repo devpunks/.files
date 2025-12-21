@@ -1952,7 +1952,7 @@ function restrict () { clear
 
 # -------------------------------------------------------------------------
 function authorize () {
-  local -r user=${1:-'Bob'}
+  local -r user=${1:-`whoami`}
 
   echo "Authorizing: $user"
 } # authorize
