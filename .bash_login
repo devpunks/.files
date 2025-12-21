@@ -141,6 +141,7 @@ alias rm='echo 🛑 rm is disabled, use remove, delete, or destroy' # - https://
 alias remove='trash' # See function trash ()
 alias delete='command rm --verbose --preserve-root --recursive --dir --interactive=once'
 
+# -------------------------------------------------------------------------
 # https://unix.stackexchange.com/q/90653
 alias sed='sed --regexp-extended'
 # https://unix.stackexchange.com/q/230952
