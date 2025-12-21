@@ -565,9 +565,12 @@ function exist () {
 function about () {
   local location="${1}"
 
+  # check if command
+  command -v "$location" \
+    && { echo ; man -k "$@" ; return; }
+
   exist "$location" || return $?
 
-  command -v "$location" && { echo ; man -k "$@" ; return; }
   test -f "$location"  && { echo ; file "$@" ; }
   echo ; df -a -h "$@"
   echo ; df -a -i "$@"
