@@ -1791,7 +1791,11 @@ function certify () { clear # Certificate Authority
 
 # -------------------------------------------------------------------------
 function extract () { # keys
-  local -r archive=$( realpath "$1" )
+# echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}-${bits}.pfx)..."
+# openssl pkcs12 -export -name 'PKCS Certificate Chain' \
+#   -inkey ${domain}.${algorithm}-${bits}.pem \
+#   -in ${domain}.${algorithm}-${bits}.cert \
+#   -out "$domain.${algorithm}-${bits}.pfx"
 
   exist "$archive" || return $?
 
