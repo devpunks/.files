@@ -900,7 +900,7 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
     && echo "Writing to file: ${file}.base64" \
     && basenc --base64 $file > "${file}.base64"
 
-  echo ; echo 'Hexadecimal'
+  echo ; echo Hexadecimal
   echo '(xxd -u -plain):'
   test -f $( readlink -f "$file" ) \
     && ( cat "$file" || printf "$file" ) | xxd
