@@ -2980,6 +2980,7 @@ function debug () { clear
   bash -x "$location" # run debug shell
 } # debug
 
+# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/FFmpeg
 function convert () { clear
   local -a files=${@}
