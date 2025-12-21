@@ -1350,6 +1350,7 @@ function encrypt () {
 
 } # encrypt
 
+# -------------------------------------------------------------------------
 # NMS (No More Secrets) - https://github.com/bartobri/no-more-secrets
 alias nms='command nms -a -c -f magenta'
 function decrypt () {
