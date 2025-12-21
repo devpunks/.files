@@ -3246,6 +3246,7 @@ function tag () { clear
   echo ; ls *tags* ; echo
 } # tag
 
+# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/Cscope
 # cscope - https://cscope.sourceforge.net
 alias cscope='command cscope -v -R'
