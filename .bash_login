@@ -108,6 +108,7 @@ alias progress='pv --progress --eta --timer'
 # https://github.com/powerline/fonts
 alias fonts='$HOME/.local/fonts/fonttable ; echo "\nSee ~/.local/fonts"'
 
+# -------------------------------------------------------------------------
 alias ..='command cd ..'
 alias pop='command popd'
 alias push='command pushd'
