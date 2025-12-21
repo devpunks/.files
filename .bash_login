@@ -2084,7 +2084,7 @@ function run () {
   echo ; tree "$PREFIX/etc/init.d"
   echo "$path" ; echo
 
-  [ -z "$services" ] \
+  test -z "$services" \
     && { service-daemon start ; return ; }
 
 
