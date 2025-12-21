@@ -1014,12 +1014,9 @@ function cipher () {
   # https://en.wikipedia.org/wiki/PBKDF2
   echo ; echo ; echo "PBKDF2 ($length): "
   # need 600K iters. to be secure
-  openssl kdf \
-    -keylen $length \
-    -kdfopt iter:600000 \
-    -kdfopt salt:"$SALT" \
-    -kdfopt digest:sha256 \
-    -kdfopt pass:"$phrase" \
+  openssl kdf -kdfopt digest:sha256 \
+    -keylen $length -kdfopt iter:600000 \
+    -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
   PBKDF2
 
   # https://en.wikipedia.org/wiki/HKDF
