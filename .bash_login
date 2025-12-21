@@ -204,6 +204,7 @@ alias now='command date --utc --iso-8601="ns"'
 alias day='echo ; command date +"%A 🗓 %Y-%m-%d" ; echo ; calendar'
 alias month='echo ; command date +"%B 🗓 %Y-%m-%d" ; echo ; calendar'
 alias year='echo ; command date +"%Y 🗓 %Y-%m-%d" ; echo ; calendar'
+# -------------------------------------------------------------------------
 # https://chrony-project.org
 function clock () {
   local -r LOG="${HOME}/chrony.log"
