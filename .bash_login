@@ -1882,6 +1882,7 @@ function limit () { clear
   echo TODO: 'limit' Implementation
 } # limit
 
+# -------------------------------------------------------------------------
 # - https://wiki.archlinux.org/title/Limits.conf
 # - https://namehero.com/blog/managing-linux-system-resources-with-the-ulimit-command
 function unlimit () { clear
