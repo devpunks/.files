@@ -1789,6 +1789,14 @@ function certify () { clear # Certificate Authority
 
 } # certify
 
+function extract () { # keys
+  local -r archive=$( realpath "$1" )
+
+  exist "$archive" || return $?
+
+  check "$archive" && unpack "$archive"
+} # extract
+
 # }}}
 
 # =========================================================================
