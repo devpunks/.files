@@ -2399,6 +2399,7 @@ function load () { clear
 # - https://everything.curl.dev/ftp/upload.html#uploading-with-ftp
 alias ftp='command ftp --version; ftp --verbose'
 
+# -------------------------------------------------------------------------
 # cURL
 function download () { clear
   local -r uri="$1"
