@@ -2999,7 +2999,7 @@ function count () { exist "$1" && test -f "$1" || return $?
   local -r CHAR=`wc --chars "$file" | command cut -d ' ' -f 1`
   local -r BYTE=`wc --bytes "$file" | command cut -d ' ' -f 1`
 
-  echo ; echo "$file -------------------------------"
+  echo "$file -------------------------------"
 
   printf '\n%-10s %-10s %-10s %-10s' \
     'LINES' 'WORDS' 'CHARS' 'BYTES'
