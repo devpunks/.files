@@ -2923,6 +2923,7 @@ function generate () { exist "$1" || return
   weigh "$output"
 } # generate
 
+# -------------------------------------------------------------------------
 function lint () { clear
   echo Linting...
   check .*rc
