@@ -124,6 +124,7 @@ alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
 alias mkdir='command mkdir --verbose --parents --mode u=rwx,g=rx,o=' # 750
 alias diff='command diff --color=auto' # - https://geeksforgeeks.org/diff-command-linux-examples
 
+# -------------------------------------------------------------------------
 # https://stackoverflow.com/q/4113986
 alias slink='link --symbolic --no-dereference'
 alias link='command ln --verbose --interactive'
