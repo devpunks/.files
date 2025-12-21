@@ -303,6 +303,7 @@ function trash () {
   tree -L 1 "$TMPDIR"
 } # trash
 
+# -------------------------------------------------------------------------
 # https://bash.cyberciti.biz/guide/Reset_command
 # https://bash.cyberciti.biz/guide/Console_management
 # https://invisible-island.net/ncurses/man/tput.1.html#h2-HISTORY
