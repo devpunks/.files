@@ -840,6 +840,7 @@ alias hex='xxd -u'
 # https://linux.die.net/man/1/xxd
 alias binary='xxd -u -b'
 
+# -------------------------------------------------------------------------
 # see check ()
 # https://en.wikipedia.org/wiki/Cyclic_code
 # https://en.wikipedia.org/wiki/Cyclic_redundancy_check
