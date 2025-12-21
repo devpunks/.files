@@ -170,6 +170,7 @@ export LS_OPTIONS='\
   --color=auto --hyperlink=auto --tabsize=0 --width=2 --format=vertical \
   --block-size=MiB --time-style=long-iso --indicator-style=classify --classify=auto --human-readable'
 
+# -------------------------------------------------------------------------
 # TODO: Deprecate
 #   - https://stackoverflow.com/q/31156517
 #   - https://stackoverflow.com/q/42138844/remove-line-number-option-from-grep#comment113769544_64338090
