@@ -407,6 +407,7 @@ function functions () {
   compgen -A function | sort | column --fillrows
 } # functions
 
+# -------------------------------------------------------------------------
 function variables () {
   echo '\n👇Shell Variables👇'
   help variables
