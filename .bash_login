@@ -2727,6 +2727,7 @@ function sync () {
   echo Synching source: "$source"
 } # sync
 
+# -------------------------------------------------------------------------
 # https://blog.kubesimplify.com/the-complete-guide-to-the-dd-command-in-linux
 function backup () { clear
   local -r source=$( realpath "$1" )
