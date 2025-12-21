@@ -756,6 +756,7 @@ function snowflake () {
   open https://en.wikipedia.org/wiki/Snowflake_ID
 } # snowflake
 
+# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/Cryptographic_nonce
 # https://crypto.stackexchange.com/q/50782
 # Initialization Vector is size of block (16bytes)
