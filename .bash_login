@@ -562,7 +562,7 @@ function exist () {
 
 # -------------------------------------------------------------------------
 # https://howtogeek.com/451022/how-to-use-the-stat-command-on-linux
-function about () {
+function about () { echo
   local location="${1}"
 
   # check if command
