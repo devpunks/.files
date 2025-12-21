@@ -30,7 +30,7 @@
 # ALIAS WITH PARAMETER - https://stackoverflow.com/a/7131683
 # Paste - https://geeksforgeeks.org/paste-command-in-linux-with-examples
 # Hyperlinks - https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda
-# Parameter Expansionn - https://www.howtogeek.com/bash-string-tricks-that-fix-common-scripting-headaches
+# Parameter Expansionn - https://howtogeek.com/bash-string-tricks-that-fix-common-scripting-headaches
 
 # =========================================================================
 # {{{ Bindings # see ~/.inputrc
