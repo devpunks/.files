@@ -36,7 +36,7 @@
 #     - https://askubuntu.com/q/26318
 #     - https://gnu.org/software/bash/manual/html_node/Bash-Variables.html
 #     - https://gnu.org/software/grep/manual/html_node/Environment-Variables.html
-#     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command/
+#     - https://cyberciti.biz/faq/linux-list-all-environment-variables-env-command
 #     - https://web.archive.org/web/20170713001430/http://sc.tamu.edu/help/general/unix/vars.html
 
 #   - Subshell Processes
