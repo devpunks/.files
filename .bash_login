@@ -277,6 +277,7 @@ function recycle () { clear
   mkdir -p $TMPDIR
 } # recycle
 
+# -------------------------------------------------------------------------
 # - https://en.wikipedia.org/wiki/Shred_(Unix)
 # - https://computerhope.com/unix/shred.htm
 # - https://geeksforgeeks.org/shred-command-in-linux-with-examples
