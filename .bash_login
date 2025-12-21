@@ -2346,6 +2346,7 @@ function dns () { clear
     "\n ~/.ssh/known_hosts:\n %s \n" "$( cat ~/.ssh/known_hosts )"
 } # dns
 
+# -------------------------------------------------------------------------
 # https://nginx.org/en/docs
 function balance () { clear
   nginx -V
