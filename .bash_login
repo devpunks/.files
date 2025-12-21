@@ -718,6 +718,7 @@ alias randchars='{
     | head -c 32 ;
 }' # randchars
 
+# -------------------------------------------------------------------------
 # https://developer.mozilla.org/en-US/docs/Glossary/Kebab_case
 # https://gnu.org/software/gawk/manual/html_node/Bracket-Expressions.html
 # https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html
