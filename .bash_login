@@ -2967,6 +2967,7 @@ function dump () { clear
   hexdump "$source"
 } # dump
 
+# -------------------------------------------------------------------------
 function debug () { clear
   local -r location="${1}"
 
