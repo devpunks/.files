@@ -219,6 +219,7 @@ function clock () {
   now # time
 } # clock
 
+# -------------------------------------------------------------------------
 function monitor () {
   open http://prometheus.io
 
