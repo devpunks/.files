@@ -972,7 +972,7 @@ function cipher () {
 
   echo ; echo Ciphers: ; ciphers
 
-  [ -z "$phrase" ] && return
+  test -z "$phrase" && return
 
   echo ; echo "KDF (Key Derivation Functions): "
 
