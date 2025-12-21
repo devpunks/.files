@@ -2843,7 +2843,15 @@ function unpack () { clear
 # =========================================================================
 # TODO: Implementation
 # -------------------------------------------------------------------------
-function used () { : used; }
+
+function extract () {
+  local -r archive=$( realpath "$1" )
+
+  exist "$archive" || return $?
+
+  check "$archive" && unpack "$archive"
+} # extract
+function use () { : use; }
 function deny () { : deny; }
 function allow () { : allow; }
 function fetch () { : fetch; }
