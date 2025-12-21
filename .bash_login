@@ -909,6 +909,16 @@ function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 } # encode
 
 # -------------------------------------------------------------------------
+function bin2hex () { # convert string binary to hexidecimal
+  local input="$1"
+
+  echo ; echo Binary: "$input"
+  echo ; echo "Base^10: $((2#input))"
+  # echo ; printf '%x\n' $((2#input))
+  echo ; echo "obase=16;ibase=2;$input" | bc
+  echo ; echo
+} # bin2hex
+
 function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
   local -r file="$1"
 
