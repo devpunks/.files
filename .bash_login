@@ -3080,6 +3080,7 @@ function open () { clear
   # am start -a android.intent.action.VIEW -d "$1" > /dev/null
 } # open
 
+# -------------------------------------------------------------------------
 function pick () { # files
   type am || return # short circuit
 
