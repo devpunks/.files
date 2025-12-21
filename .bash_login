@@ -864,6 +864,7 @@ function checksum () {
   done ; echo
 } # checksum
 
+# -------------------------------------------------------------------------
 function encode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex | base64 | base64url
   local -r file="$1"
 
