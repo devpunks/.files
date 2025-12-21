@@ -602,6 +602,7 @@ function probe () { clear
   weigh "$location"
 } # probe
 
+# -------------------------------------------------------------------------
 function weigh () {
   local -r location=$( realpath "${1:-.}" )
 
