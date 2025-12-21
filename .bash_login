@@ -2955,6 +2955,7 @@ function compile () { clear
   return $?
 } # compile
 
+# -------------------------------------------------------------------------
 alias hexdump='command hexdump --color=auto'
 function dump () { clear
   local -r source="${1}"
