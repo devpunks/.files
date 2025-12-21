@@ -280,7 +280,7 @@ endif
 " imap <C-v> <ESC>"+pa
 
 " Termux ------------------------------------------------------------------
-" https://ibnishak.github.io/blog/post/copy-to-termux-clip/
+" https://ibnishak.github.io/blog/post/copy-to-termux-clip
 if executable ( 'termux-clipboard-set' )
   echom 'Termux Copy & 🍝Pasta'
   " vnoremap <C-x> :!termux-clipboard-set<CR>
