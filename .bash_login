@@ -1937,6 +1937,7 @@ function restrict () { clear
   about "$location"
 } # restrict
 
+# -------------------------------------------------------------------------
 function authorize () {
   local -r user=${1:-'Bob'}
 
