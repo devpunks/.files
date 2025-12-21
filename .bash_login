@@ -1995,8 +1995,6 @@ function zipbomb () { clear
 # -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/Fork_bomb
 function forkbomb () { clear #:(){ :|:& };:
-  local -r destination=$( realpath "${1:-./bomb.zip}" )
-
   echo forkBomb
 
   # forkbomb | forkbomb &
