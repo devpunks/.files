@@ -576,6 +576,10 @@ function about () { echo
   echo ; df -a -h "$@"
   echo ; df -a -i "$@"
   echo ; stat "$@"
+  echo
+
+  ( test -d "$location" && branch "$@" ) \
+    || ( test -f "$location" && count "$@" )
 } # about
 
 # -------------------------------------------------------------------------
