@@ -1425,6 +1425,7 @@ alias keys='{ banner
   signatures
 }' # keys
 
+# -------------------------------------------------------------------------
 function keygen () {
   let algorithm bits
   let outform=PEM # PEM | DER
