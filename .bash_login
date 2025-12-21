@@ -969,7 +969,6 @@ function cipher () {
   local length=32 # 24
   local memory=65536 # 64MiB
   local iterations=3
-  local phrase="${1}"
 
   echo ; echo Ciphers: ; ciphers
 
