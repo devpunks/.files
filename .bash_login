@@ -1993,7 +1993,7 @@ function zipbomb () { clear
 } # zipbomb
 
 # -------------------------------------------------------------------------
- # https://en.wikipedia.org/wiki/Fork_bomb
+# https://en.wikipedia.org/wiki/Fork_bomb
 function forkbomb () { clear #:(){ :|:& };:
   local -r destination=$( realpath "${1:-./bomb.zip}" )
 
