@@ -2118,6 +2118,7 @@ function start () { clear
   --exec "$daemon" -- "$service"
 } # start
 
+# -------------------------------------------------------------------------
 function stop () {
   local -r retry='TERM/10/KILL/5'
   local -r service="$( realpath "$1" )"
