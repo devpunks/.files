@@ -577,6 +577,7 @@ function about () { echo
   echo ; stat "$@"
 } # about
 
+# -------------------------------------------------------------------------
 function inspect () { clear
   local -r file=$( realpath "$1" )
 
