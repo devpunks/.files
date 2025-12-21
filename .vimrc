@@ -342,7 +342,7 @@ set viminfofile=$HOME/.vim/.viminfo
 " =========================================================================
 " {{{ BACKUPS
 "   - https://groups.google.com/g/vim_use/c/K2Utwkh5f30?pli=1
-"   - https://alvinalexander.com/linux-unix/vi-vim-swap-backup-tilde-temporary-files-directory-move/
+"   - https://alvinalexander.com/linux-unix/vi-vim-swap-backup-tilde-temporary-files-directory-move
 " =========================================================================
 set backup " keep a backup file (nobackup for inverse)
 " Undo location
