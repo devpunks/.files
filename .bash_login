@@ -1675,7 +1675,6 @@ function certify () { clear # Certificate Authority
     -in ${domain}.ecc-${curve}.cert \
     -out "${domain}.ecc-${curve}.pfx"
 
-  algorithm=ed25519
   # https://blog.pinterjann.is/ed25519-certificates.html
   echo ; echo "ED25519 (Edwards 25519) Certificates:"
   echo ; echo "Generating ${algorithm} PKCS#8 Private Key ${domain}.${alrogrithm}.pem"
