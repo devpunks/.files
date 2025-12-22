@@ -1542,6 +1542,7 @@ function sign () {
 
 # -------------------------------------------------------------------------
 function verify () {
+  local outform=pem
   local file="$( realpath $1 )"
   local pem="${HOME}/.ssh/privatekey.pem"
 
