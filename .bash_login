@@ -1554,7 +1554,7 @@ function verify () {
   exist "${file}.signature" || return $?
 
   openssl req -in $certificate -verify -key $key
-  openssl rsa -in "$pem" -outform PEM -pubout -out "${pem}.pub"
+  openssl rsa -in "$pem" -outform ${outform^^} -pubout -out "${pem}.pub"
   openssl sha256 -verify "${pem}.pub" -signature "${file}.signature" "$file"
 
   echo "Cryptographically Verifying > $file with $pem ..."
