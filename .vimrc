@@ -2348,7 +2348,7 @@ autocmd VimDefaults VimEnter * call g:AsyncompleteTags ()
 function g:AsyncompleteTags () abort
   if &runtimepath !~ 'asyncomplete-tags' | return | endif
 
-  echo 'Loading asyncomplete-tags'
+  echom 'Loading asyncomplete-tags'
 
   call asyncomplete#register_source ( asyncomplete#sources#tags#get_source_options ({
     \ 'name': 'tags',
