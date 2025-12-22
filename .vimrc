@@ -2222,7 +2222,7 @@ function! g:Fern () abort
 endfunction " Fern
 
 function! g:FernDrawer () abort
-  echo 'Fern Drawer'
+  echom 'Fern Drawer'
   setlocal nonumber
   setlocal splitright
 
