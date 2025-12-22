@@ -1479,7 +1479,7 @@ function keygen () {
     -algorithm ${algorithm} -pkeyopt rsa_keygen_bits:${bits} \
     -outform $outform -out ${algorithm}-${bits}.key
 
-  echo "Extracting OpenSSL Public Key ${algorithm}-${bits}.pub (openssl pkey -in ${algorithm}-${bits}.key -pubout):"
+  echo "Extracting Public Key ${algorithm}-${bits}.pub (openssl pkey -in ${algorithm}-${bits}.key -pubout):"
   openssl pkey -in ${algorithm}-${bits}.key -pubout -out ${algorithm}-${bits}.pub
   openssl pkey -in ${algorithm}-${bits}.key -text -pubout
 
