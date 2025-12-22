@@ -1380,6 +1380,7 @@ function decrypt () {
 function passgen () { clear
   # Correct Horse Battery Staple - https://xkcd.com/936
   local password=${1:-`randchars`}
+  local domain=${2:-'devpunks.studio'}
 
   echo PASSWORD: $password
   echo DOMAIN: $pwd
