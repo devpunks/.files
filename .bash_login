@@ -1039,6 +1039,7 @@ function digest () {
     phrase="${1}" \
     KEY="${SALT:0:8}" # TODO: Use an actual key (w/ pepper?)
 
+  echo The Phrase $phrase
   echo ; echo Digests: ; digests
 
   test -z "$phrase" && return
@@ -1385,7 +1386,7 @@ function passgen () { clear
   echo PASSWORD: "$password"
   echo DOMAIN: $domain
 
-  digest $pwd
+  digest $password
   cipher $pwd
 } # passgen
 
