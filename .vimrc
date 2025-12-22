@@ -1012,7 +1012,7 @@ function s:lookup ( ... ) " abort
   let l:tag  = 'module'
   let l:kinds  = [ 'f', 'function', 'method', 'F', 'singleton method' ]
 
-  echo 'argument count:' argc ()
+  echom 'argument count:' argc ()
 
   let i = 0
 " while i < argc ()
