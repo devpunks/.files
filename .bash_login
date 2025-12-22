@@ -1833,7 +1833,7 @@ alias password='clear ; man -k passwd ; echo ; command passwd'
 
 # https://pypi.org/project/tsu
 # http://androidcentral.com/root
-alias su='command su ; tsu '
+alias su='command su ; tsu'
 
 # - https://en.wikipedia.org/wiki/Chown
 # - https://man7.org/linux/man-pages/man1/chown.1p.html
