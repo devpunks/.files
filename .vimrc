@@ -2390,7 +2390,7 @@ autocmd FileDefaults BufReadPost * echom 'Loading vim-lsp-server for' expand ( '
 function g:LSP () abort
   if &runtimepath !~ 'vim-lsp' | return | endif
 
-  echo 'VIM LSP'
+  echom 'VIM LSP'
   call lsp#enable ()
 
   let g:lsp_preview_float = 1
