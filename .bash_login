@@ -1681,7 +1681,7 @@ function certify () { clear # Certificate Authority
   openssl genpkey -algorithm ${algorithm} -outform $outform -out ${domain}.${algorithm}.pem
 
   echo ; echo "Generating ${algorithm} Public Key ${domain}.${algorithm}.pub"
-  openssl pkey -pubout -outform PEM \
+  openssl pkey -pubout -outform $outform \
     -in ${domain}.${algorithm}.pem -out ${domain}.${algorithm}.pub
 
   echo; echo "Generating $algorithm PKCS#10 CSR (Certificate Signing Request) ${domain}.${algorithm}.csr"
