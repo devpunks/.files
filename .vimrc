@@ -1981,7 +1981,7 @@ function s:scope () abort
     " https://github.com/ktchen14/cscope-auto/blob/master/autoload/cscope_auto.vim#L90
     " :h getftime('file_location')
     cscope reset
-    echo "\n"
+    echom "\n"
     cscope show
     echo ''
   endfor " extension
