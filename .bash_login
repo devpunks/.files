@@ -1546,7 +1546,7 @@ function verify () {
   local file="$( realpath $1 )"
   local pem="${HOME}/.ssh/privatekey.pem"
 
-  openssl rsa -in "$pem" -outform PEM -pubout -out "${pem}.pub"
+  openssl rsa -in "$pem" -outform ${outform^^} -pubout -out "${pem}.pub"
 
   exist "$pem" || return $?
   exist "$file" || return $?
