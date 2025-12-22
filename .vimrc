@@ -717,7 +717,7 @@ function g:CSV () abort
 
   ArrangeColumn
 
-  echo 'loaded CSV (See https://github.com/chrisbra/csv.vim)'
+  echom 'loaded CSV (See https://github.com/chrisbra/csv.vim)'
   let g:csv_highlight_column = 'y'
 endfunction " CSV
 
