@@ -2571,7 +2571,7 @@ autocmd VimDefaults VimEnter * call g:VimRuby ()
 function g:VimRuby () abort
   if &runtimepath !~ 'vim-ruby' | return | endif
 
-  echo 'Vim Ruby Setup'
+  echom 'Vim Ruby Setup'
 
   " Ruby Indent
   let g:ruby_indent_block_style = 'do'
