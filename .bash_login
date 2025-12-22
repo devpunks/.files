@@ -1450,6 +1450,8 @@ function keygen () {
   # https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
   # https://encryptionconsulting.com/diffie-hellman-key-exchange-vs-rsa
   # https://sandilands.info/sgordon/diffie-hellman-secret-key-exchange-with-openssl
+  algorithm=ed25519 ; echo ; echo "Generating OpenSSL Diffie-Hellman Params ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
+
   bits=2048
   echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-2048.params (openssl dhparam -dsaparam $bits):"
   openssl dhparam -dsaparam -out dh-dsa-${bits}.params $bits
