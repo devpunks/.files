@@ -136,7 +136,7 @@ PATH="$HOME"
 
 if [ -n "$PREFIX" ]; then # TERMUX
   unset LD_LIBRARY_PATH
-  echo "FOUND $PREFIX ON TERMUX"
+  echo "FOUND TERMUX \$PREFIX: $PREFIX"
   # https://askubuntu.com/q/386629
   PATH=".:${PATH}:${PREFIX}/bin"
   # https://wiki.termux.com/wiki/Differences_from_Linux
