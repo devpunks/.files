@@ -2189,7 +2189,7 @@ function g:NerdToggle () abort
     NERDTreeToggle
     if ! g:NERDTree.IsOpen() | return | endif
 
-    echo g:NERDTree.IsOpen ()
+    echom g:NERDTree.IsOpen ()
     NERDTreeFind " Open Drawer & Find current
     if expand ( '%:t' ) =~ 'Tagbar' | wincmd h | endif
     if expand ( '%:t' ) =~ 'NERD_tree_tab' | wincmd l | endif
