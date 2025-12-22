@@ -1623,6 +1623,9 @@ function certify () { clear # Certificate Authority
     -in ${domain}.ecc-${curve}.cert \
     -out "${domain}.ecc-${curve}.pfx"
 
+  return
+
+
   curve=secp384r1 # P-384
   echo ; echo "Generating ECC [${curve}] Private Key ${domain}.ecc-${curve}.pem"
   openssl ecparam -genkey -name ${curve} -out ${domain}.ecc-${curve}.pem
