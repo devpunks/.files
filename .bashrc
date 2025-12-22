@@ -255,6 +255,11 @@ if [[ "$( tic -V )" == *"ncurses"* ]]; then
   export COLUMNS=$( tput columns )
 
   # write tty terminal size
+
+# STDOUT test
+( test -t 1 && echo 'Is a TTY' ) \
+  || echo 'Is a TTY'
+
   printf "\n\n 💻 TTY SIZE: %s \n " \
     "$( stty size | tr ' ' 'x' )"
 
