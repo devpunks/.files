@@ -260,6 +260,11 @@ if [[ "$( tic -V )" == *"ncurses"* ]]; then
   shopt -s checkwinsize # https://reddit.com/r/bash/comments/88tt7i
 fi
 
+  # write tty terminal size
+# STDOUT test
+( test -t 1 && printf "\n 💻 TTY SIZE: %s \n " "$( stty size | tr ' ' 'x' )" )
+  || echo 'Is NOT a TTY'
+
 # }}}
 
 #==========================================================================
