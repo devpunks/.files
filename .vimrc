@@ -2547,7 +2547,7 @@ autocmd VimDefaults VimEnter * call g:VimJavascript ()
 function g:VimJavascript () abort
   if &runtimepath !~ 'vim-javascript' | return | endif
 
-  echo 'Vim Javascript Setup'
+  echom 'Vim Javascript Setup'
 
   let g:javascript_conceal_function             = 'ƒ'
   let g:javascript_conceal_null                 = 'ø'
