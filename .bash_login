@@ -1482,7 +1482,7 @@ function keygen () {
   echo ; echo "Generating ${algorithm} PKCS#8 ${bits}-bit Private Key ${algorithm}-${bits}.key"
   openssl genpkey \
     -algorithm ${algorithm} -pkeyopt rsa_keygen_bits:${bits} \
-    -outform PEM -out ${algorithm}-${bits}.key
+    -outform $outform -out ${algorithm}-${bits}.key
 
   echo "Extracting OpenSSL Public Key ${algorithm}-${bits}.pub (openssl pkey -in ${algorithm}-${bits}.key -pubout):"
   openssl pkey -in ${algorithm}-${bits}.key -pubout -out ${algorithm}-${bits}.pub
