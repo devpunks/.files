@@ -1579,6 +1579,7 @@ alias certificates='{
 # -------------------------------------------------------------------------
 # - https://superuser.com/q/1007842
 # - https://stackoverflow.com/q/10175812
+# - https://en.wikipedia.org/wiki/Chain_of_trust
 # - https://en.m.wikipedia.org/wiki/Public_key_certificate
 # - https://en.m.wikipedia.org/wiki/Transport_Layer_Security
 # - https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b
