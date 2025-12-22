@@ -1382,7 +1382,7 @@ function passgen () { clear
   local password="${1:-`randchars`}"
   local domain=${2:-'devpunks.studio'}
 
-  echo PASSWORD: $password
+  echo PASSWORD: "$password"
   echo DOMAIN: $domain
 
   digest $pwd
