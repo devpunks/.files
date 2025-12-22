@@ -1454,8 +1454,8 @@ function keygen () {
   algorithm=dh-dsa ; echo ; echo "Generating OpenSSL Diffie-Hellman Params"
 
   bits=2048
-  echo ; echo "Generating Diffie-Hellman dh-dsa-${bits}.params (openssl dhparam -dsaparam $bits):"
-  openssl dhparam -dsaparam -out dh-dsa-${bits}.params $bits
+  echo ; echo "Generating Diffie-Hellman ${algorithm}-${bits}.params"
+  openssl dhparam -dsaparam -out ${algorithm}-${bits}.params $bits
 
   bits=4096
   echo ; echo "Generating Diffie-Hellman dh-dsa-${bits}.params (openssl dhparam -dsaparam $bits):"
