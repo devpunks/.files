@@ -1587,7 +1587,7 @@ alias certificates='{
 # - https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b
 # - https://letsencrypt.org/docs/certificates-for-localhost/#making-and-trusting-your-own-certificates
 function certify () { clear # Certificate Authority
-  local algorithm bits curve
+  local algorithm bits curve outform=pem # PEM | DER
   local -r days=365
   local -r IP='127.0.0.1'
   local -r domain="${1:-devpunks.studio}"
