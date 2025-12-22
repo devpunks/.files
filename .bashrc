@@ -262,7 +262,7 @@ fi
 
   # write tty terminal size
 # STDOUT test
-( test -t 1 && printf "\n 💻 TTY SIZE: %s \n " "$( stty size | tr ' ' 'x' )" )
+( [ -t 1 ] && printf "\n 💻 TTY SIZE: %s\n" $( stty size | tr ' ' 'x' ) )
   || echo 'Is NOT a TTY'
 
 # }}}
