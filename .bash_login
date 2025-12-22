@@ -1451,7 +1451,7 @@ function keygen () {
   # https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
   # https://encryptionconsulting.com/diffie-hellman-key-exchange-vs-rsa
   # https://sandilands.info/sgordon/diffie-hellman-secret-key-exchange-with-openssl
-  algorithm=dh-dsa ; echo ; echo "Generating Diffie-Hellman Params"
+  algorithm=dh-dsa ; echo ; echo "Generating Diffie-Hellman [${algorithm}] Params"
 
   bits=2048
   echo ; echo "${algorithm}-${bits}.params"
