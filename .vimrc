@@ -997,7 +997,7 @@ function s:locate ( ... ) " abort
   const l:bang = get ( a:, 1, v:false )
   const l:term = get ( a:, 2, expand ( '<cword>' ) )
 
-  echo 'argument count:' argc ()
+  echom 'argument count:' argc ()
   echom 'bang:' l:bang
 
   echom '"' .. l:term .. '"'
