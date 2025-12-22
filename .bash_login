@@ -1383,7 +1383,7 @@ function passgen () { clear
   local domain=${2:-'devpunks.studio'}
 
   echo PASSWORD: $password
-  echo DOMAIN: $pwd
+  echo DOMAIN: $domain
 
   digest $pwd
   cipher $pwd
