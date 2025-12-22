@@ -1786,8 +1786,8 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   " m - method (usually with class), T - TODO, v - variable
   let l:list = filter ( l:tags, 'v:val["filename"] == "' .. l:file ..'"' )
 
-  echo "Local list: "
-  echo join ( l:list, "\n\n" )
+  echom "Local list: "
+  echom join ( l:list, "\n\n" )
 
   " Local QuickFix window
   call setloclist ( l:winid, s:itemize ( l:list ) )
