@@ -1465,9 +1465,7 @@ function keygen () {
   return
 
 
-  algorithm=rsa ; echo ; echo "Generating ${algorithm} PKCS#8 Keys"
-
-  algorithm=ed25519 ; echo ; echo "Generating Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
+  algorithm=ed25519 ; echo ; echo "Generating PKCS#11 [${algorithm^^}] [${outform^^}] Keys"
 
   bits=2048
   echo ; echo "Generating ${algorithm} PKCS#8 Private Key [${outform^^}] ${algorithm}.key"
