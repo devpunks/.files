@@ -1476,7 +1476,7 @@ function keygen () {
   openssl pkey -in ${algorithm}.key -text -pubout
 
 
-  algorithm=rsa ; echo ; echo "Generating ${algorithm} PKCS#8 Keys"
+  algorithm=rsa ; echo ; echo "Generating PKCS#8 [${algorithm^^}] Keys"
 
   bits=2048
   echo ; echo "Generating ${algorithm} PKCS#8 Private Key [${outform^^}] ${algorithm}-${bits}.key"
