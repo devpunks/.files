@@ -2366,7 +2366,7 @@ autocmd VimDefaults VimEnter * call g:AsyncompleteUltisnips ()
 function g:AsyncompleteUltisnips () abort
   if &runtimepath !~ 'asyncomplete-ultisnips' | return | endif
 
-  echo 'Loading asyncomplete-ultisnips'
+  echom 'Loading asyncomplete-ultisnips'
 
   call asyncomplete#register_source ( asyncomplete#sources#ultisnips#get_source_options ({
     \ 'name': 'ultisnips',
