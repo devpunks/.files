@@ -1453,7 +1453,7 @@ function keygen () {
   algorithm=ed25519 ; echo ; echo "Generating OpenSSL Diffie-Hellman Params ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
 
   bits=2048
-  echo ; echo "Creating OpenSSL Diffie Hellman dh-dsa-2048.params (openssl dhparam -dsaparam $bits):"
+  echo ; echo "Generating Diffie-Hellman dh-dsa-${bits}.params (openssl dhparam -dsaparam $bits):"
   openssl dhparam -dsaparam -out dh-dsa-${bits}.params $bits
 
   bits=4096
