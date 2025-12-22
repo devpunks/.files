@@ -1888,7 +1888,7 @@ function g:TagList () abort
   " let g:Tlist_File_Fold_Auto_Close = 1
   let g:Tlist_Ctags_Cmd = split( system( 'type ctags' ) )[-1]
 
-  echo 'Setting TagList binary tags path to: ' .. g:Tlist_Ctags_Cmd
+  echom 'Setting TagList binary tags path to: ' .. g:Tlist_Ctags_Cmd
 endfunction " g:TagList
 
 function g:TagsList () abort
