@@ -1379,7 +1379,7 @@ function decrypt () {
 # https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
 function passgen () { clear
   # Correct Horse Battery Staple - https://xkcd.com/936
-  local password=${1:-`randchars`}
+  local password="${1:-`randchars`}"
   local domain=${2:-'devpunks.studio'}
 
   echo PASSWORD: $password
