@@ -1966,7 +1966,7 @@ function s:scope () abort
   set cscopepathcomp =2 " Path parts of db path
   set cscopetagorder =0 "Search CScope database first
 
-  echo 'Current Dir:' getcwd ()
+  echom 'Current Dir:' getcwd ()
   for extension in [ 'js', 'py', 'rb' ] " Javascript, Python, Ruby
     const l:out = findfile ( 'cscope.' .. extension .. '.out', '.;' )
 
