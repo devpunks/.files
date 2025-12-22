@@ -1983,7 +1983,7 @@ function s:scope () abort
     cscope reset
     echom "\n"
     cscope show
-    echo ''
+    echom ''
   endfor " extension
 endfunction " scope
 
