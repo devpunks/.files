@@ -221,7 +221,7 @@ function s:ignore ( file = '.gitignore' ) abort
     endif
   endfor
 
-  echo "\nExceptions:\n" ..
+  echom "\nExceptions:\n" ..
     \ l:exceptions ->uniq()
     \ ->map( { _, path -> substitute ( path, '^!', '**/', '' ) } )
     \ ->map( { _, path -> substitute ( path, '^**\/\/', '', '' ) } )
