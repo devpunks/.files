@@ -2508,7 +2508,7 @@ autocmd VimDefaults VimEnter * call g:TestSetup()
 function g:TestSetup () abort
   if &runtimepath !~ 'vim-test' | return | endif
 
-  echo 'Vim Testing Setup'
+  echom 'Vim Testing Setup'
 
   let test#strategy = 'dispatch'
   let test#strategy = {
