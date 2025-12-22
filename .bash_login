@@ -1752,7 +1752,6 @@ function certify () { clear # Certificate Authority
   # https://en.wikipedia.org/wiki/Digital_Signature_Algorithm
   algorithm=dsa ; echo ; echo "DSA (Digital Signature Algorithm) Certificates:"
   bits=2048
-  algorithm=dsa
   echo ; echo "Generating ${algorithm} PKCS#8 ${bits}-bit Private Key ${domain}.${algorithm}-${bits}.pem"
   openssl gendsa -out ${domain}.${algorithm}-${bits}.pem <( openssl dsaparam ${bits} )
 
