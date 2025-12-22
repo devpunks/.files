@@ -1343,6 +1343,10 @@ function encrypt () {
   openssl enc $scheme -base64 $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes256.enc"
 
+
+  return
+
+
   echo ; echo 'GPG-AES-CFB (128|192|256)'
   local scheme='AES128'
   echo "GPG-${scheme}-CFB encrypt $file :"
