@@ -1462,6 +1462,11 @@ function keygen () {
   openssl dhparam -dsaparam -out dh-dsa-${bits}.params $bits
 
 
+  return
+
+
+  algorithm=rsa ; echo ; echo "Generating ${algorithm} PKCS#8 Keys"
+
   algorithm=ed25519 ; echo ; echo "Generating Key ${algorithm}.key (openssl genpkey -algorithm ${algorithm}):"
 
   bits=2048
