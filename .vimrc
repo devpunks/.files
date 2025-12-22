@@ -1773,8 +1773,8 @@ function s:tags ( bang, expression = expand ( '<cword>' ) ) abort
   let l:stack[ 'items' ] = l:tags
   call settagstack ( l:winid, l:stack, 't' )
 
-  echo "\n"
-  echo join ( gettagstack ( l:winid )['items'], "\n\n" )
+  echom "\n"
+  echom join ( gettagstack ( l:winid )['items'], "\n\n" )
 
   if empty ( a:expression ) || &previewwindow | return | endif
 
