@@ -1381,7 +1381,7 @@ function passgen () { clear
   # Correct Horse Battery Staple - https://xkcd.com/936
   local password=${1:-`randchars`}
 
-  echo PASSWORD: $pwd
+  echo PASSWORD: $password
   echo DOMAIN: $pwd
 
   digest $pwd
