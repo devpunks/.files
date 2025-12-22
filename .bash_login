@@ -1824,12 +1824,17 @@ function certify () { clear # Certificate Authority
 
 # -------------------------------------------------------------------------
 function extract () { # keys
-# echo; echo "Exporting PKCS#12 [${algorithm}-${bits}] chain ($domain.${algorithm}-${bits}.pfx)..."
-# openssl pkcs12 -export -name 'PKCS Certificate Chain' \
-#   -inkey ${domain}.${algorithm}-${bits}.pem \
-#   -in ${domain}.${algorithm}-${bits}.cert \
-#   -out "$domain.${algorithm}-${bits}.pfx"
-: extract
+  local certificate="$1"
+  local key="${certificate%.*}.key"
+
+  echo; echo "Extracting key [$key] from PKCS#12 chain [$certificate] ..."
+
+  openssl pkcs12 -in "$certificate" -nodes -nocerts -out "$key"
+
+  # openssl pkcs12 -export -name 'PKCS Certificate Chain' \
+  #   -inkey ${domain}.${algorithm}-${bits}.pem \
+  #   -in ${domain}.${algorithm}-${bits}.cert \
+  #   -out "$domain.${algorithm}-${bits}.pfx"
 } # extract
 
 # }}}
