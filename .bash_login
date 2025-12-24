@@ -416,7 +416,7 @@ function variables () {
 
   echo '\n👇Env Variables👇'
   # https://unix.stackexchange.com/q/123473
-  printenv | sort | column --fillrows # printenv | export -p
+  printenv | sort | columns # printenv | export -p
 
   echo '\n👇Exports👇'
   compgen -e | sort | column --fillrows
