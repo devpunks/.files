@@ -2828,7 +2828,7 @@ function expand () { clear
   echo Expanding "$source"
   command uncompress --verbose --list "$source" \
     | sed 's/date.*time/month day time/' \
-    | column --table
+    | columns
 } # expand
 
 # -------------------------------------------------------------------------
