@@ -406,7 +406,7 @@ function functions () {
   # set # shows all function definitions
 
   echo '\n👇Functions👇'
-  compgen -A function | sort | column --fillrows
+  compgen -A function | sort | columns
 } # functions
 
 # -------------------------------------------------------------------------
