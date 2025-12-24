@@ -384,7 +384,7 @@ function environment () {
   compgen -c | sort | columns
 
   echo '\n👇BusyBox👇'
-  type busybox && busybox --list | column --fillrows
+  type busybox && busybox --list | columns
 
   variables && functions # TODO: Fix output to 5000 LINES
 
