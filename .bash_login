@@ -119,7 +119,7 @@ alias bat='command bat \
   --set-terminal-title --nonprintable-notation caret --binary as-text \
   --style full,changes,grid,numbers,header,header-filename,header-filesize'
 alias most='command most +u -s -t2'
-alias mount='command mount | column -t'
+alias mount='command mount | columns'
 alias path='echo "\\nPATHS: \\n ${PATH//:/\\n} \\n"'
 alias libpath='echo "\\nLIBPATHS: \\n ${LD_LIBRARY_PATH//:/\\n} \\n"'
 alias mkdir='command mkdir --verbose --parents --mode u=rwx,g=rx,o=' # 750
