@@ -378,7 +378,7 @@ function environment () {
   enable -p | columns
 
   echo '\n👇Aliases👇'
-  compgen -a | sort | column --fillrows # alias -p
+  compgen -a | sort | columns # alias -p
 
   echo '\n👇Commands👇'
   compgen -c | sort | column --fillrows
