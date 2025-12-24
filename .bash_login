@@ -1338,6 +1338,7 @@ function encrypt () {
   openssl enc $scheme -base64 $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes128.enc"
 
+  echo ; echo 'AES-CFB (128|192|256)'
   return
 
 
