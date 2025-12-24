@@ -423,7 +423,7 @@ function variables () {
 
   echo '\n👇Declarations👇'
   declare -p | \
-    command cut -d ' ' -f 3 | sort | column -x
+    command cut -d ' ' -f 3 | sort | columns
 
   # TODO: refactor set (fix POSIX bug)
   #  - https://gnu.org/software/bash/manual/html_node/Bash-POSIX-Mode.html
