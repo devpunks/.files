@@ -381,7 +381,7 @@ function environment () {
   compgen -a | sort | columns # alias -p
 
   echo '\n👇Commands👇'
-  compgen -c | sort | column --fillrows
+  compgen -c | sort | columns
 
   echo '\n👇BusyBox👇'
   type busybox && busybox --list | column --fillrows
