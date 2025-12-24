@@ -1326,6 +1326,8 @@ function encrypt () {
   local -r file=$( readlink -f "${1}" )
   local -r password="-pass pass:devpunks" # '-stdin'
 
+  ciphers # list
+
   exist "$file"  || return $?
 
   echo ; echo 'AES (128|192|256)'
