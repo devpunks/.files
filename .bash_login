@@ -958,7 +958,12 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 # $6$ - SHA-512
 # https://en.wikipedia.org/wiki/Cipher
 # https://github.com/openssl/openssl/issues/18075
-alias ciphers='command openssl enc -list'
+alias ciphers='{
+  echo ; echo "Ciphers:" ; command openssl enc -ciphers | columns ;
+  echo ; echo "Commands:" ; openssl list -cipher-commands | columns ;
+  echo ; echo "Algorithms:" ; openssl list -cipher-algorithms | columns ;
+  echo ; echo ;
+}'
 # alias ciphers='command openssl list -cipher-commands' # -cipher-algorithms
 # https://datatracker.ietf.org/doc/html/rfc2104
 # https://asecuritysite.com/encryption/passes
