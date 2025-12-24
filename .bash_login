@@ -419,7 +419,7 @@ function variables () {
   printenv | sort | columns # printenv | export -p
 
   echo '\n👇Exports👇'
-  compgen -e | sort | column --fillrows
+  compgen -e | sort | columns
 
   echo '\n👇Declarations👇'
   declare -p | \
