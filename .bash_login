@@ -1326,7 +1326,7 @@ function encrypt () {
   local -r file=$( readlink -f "${1}" )
   local -r password="-pass pass:devpunks" # '-stdin'
 
-  ciphers # list ECB | CBC | OFB | CFB | CTR
+  ciphers # list ECB | CBC | CFB | OFB | CTR
 
   exist "$file"  || return $?
 
