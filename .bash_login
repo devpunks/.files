@@ -369,7 +369,7 @@ function environment () {
   printf "\n👇CPU👇 \n%s\n" "$( cpu )"
 
   printf '\n👇Reserved Words👇\n%s\n' \
-    "$( compgen -k | sort | column --fillrows )"
+    "$( compgen -k | sort | columns )"
 
   return
 
