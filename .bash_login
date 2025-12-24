@@ -1330,7 +1330,7 @@ function encrypt () {
 
   exist "$file"  || return $?
 
-  echo ; echo 'AES (128|192|256)'
+  echo ; echo 'AES-CBC (128|192|256)'
   local scheme='-aes-128-cbc'
   echo "${scheme^^} Encrypt $file :"
   openssl enc $scheme $salt $pbkdf2 -md $digest -iter $count $password \
