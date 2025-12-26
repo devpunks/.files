@@ -572,15 +572,16 @@ nnoremap <Space> :Space<CR>
 nnoremap <Enter> :Enter<CR>
 nnoremap <silent><Del> x
 nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
-nnoremap <Space><Enter> :echo 'SPACE + ENTER'
-inoremap <Space><Enter> <C-o>:echo 'INSERT SPACE + ENTER'
-nnoremap <Enter><Space> :echo 'ENTER + SPACE'
-nnoremap <silent><S-Tab> :echo 'SHIFT + TAB'<CR>
-inoremap <Tab> <C-o>:echo 'INSERT TAB'
-inoremap <S-Tab> <C-o>:echo 'INSERT SHIFT + TAB'
-nnoremap <Tab><Enter> :echo 'TAB + ENTER'<CR>
-inoremap <Tab><Enter> <C-o>:echo 'INSERT TAB + ENTER'
-nnoremap <Tab><Space> :echo 'TAB + SPACE'<CR>
+nnoremap <Space><Enter> :echom 'SPACE + ENTER'<CR>
+inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
+nnoremap <Enter><Space> :echom 'ENTER + SPACE'<CR>
+nnoremap <silent><S-Tab> :echom 'SHIFT + TAB'<CR>
+inoremap <Tab> <C-o>:echo 'INSERT TAB'<CR>
+inoremap <S-Tab> <C-o>:echom 'INSERT SHIFT + TAB'<CR>
+nnoremap <Tab><Enter> :echom 'TAB + ENTER'<CR>
+nnoremap <Enter><Tab> :echom 'ENTER + TAB'<CR>
+inoremap <Tab><Enter> <C-o>:echom 'INSERT TAB + ENTER'<CR>
+nnoremap <Tab><Space> :echom 'TAB + SPACE'<CR>
 " inoremap <Tab><Space> <C-o>:echo 'INSERT TAB + SPACE' " Hinders completion
 nnoremap <Space><Tab> :echo 'SPACE + TAB'<CR>
 inoremap <Space><Tab> <C-o>:echo 'INSERT SPACE + TAB'
