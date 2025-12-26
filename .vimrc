@@ -2039,7 +2039,6 @@ endfunction " fuzzy
 " Supertab - https://github.com/ervandew/supertab
 " -------------------------------------------------------------------------
 autocmd VimDefaults VimEnter * call g:Tab ()
-autocmd UserDefaults CursorHoldI * :Tab
 
 function g:Tab () abort
 if &runtimepath !~ 'supertab' | return | endif
