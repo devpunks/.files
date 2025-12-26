@@ -2041,7 +2041,7 @@ endfunction " fuzzy
 autocmd VimDefaults VimEnter * call g:Tab ()
 
 function g:Tab () abort
-if &runtimepath !~ 'supertab' | return | endif
+  if &runtimepath !~ 'supertab' | return | endif
 
 " echom 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
 " inoremap <Tab> <c-o>:echom 'SuperTAB Complete'<CR>
