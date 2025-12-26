@@ -589,9 +589,6 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
-" Find and open file under cursor
-nnoremap <C-w>o <c-w>f
-
 " Splits
 nnoremap _ :split<CR>
 nnoremap <Bar> :vsplit<CR>
