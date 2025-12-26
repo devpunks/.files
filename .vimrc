@@ -888,33 +888,6 @@ command! Enter call s:enter ()
 function! s:enter () abort
   echom 'Entering ( Not Yet Implemented. See :Enter command )'
 endfunction " enter
-
-" -------------------------------------------------------------------------
-" Complete () -
-" -------------------------------------------------------------------------
-set completefunc=s:complete
-function s:complete ( token, command_line = '', cursor_pos = 0 ) " abort
-  echom 'Complete():'
-  echom 'Token:' a:token
-  echom 'Base:'  a:command_line
-  echom 'Cursor Position:' a:cursor_pos
-
-  if len ( a:token ) > 0
-    let prefix = a:token
-  else
-    let prefix = '.'
-  endif
-
-  echom 'Shazaam Completion (' l:prefix '):' a:token
-
-  return { 'refresh': 'always', 'words': [
-      \ { 'word': 'fooooo', 'abbr':'fo', 'menu': 'foo', 'info': 'brown fox',
-        \ 'kind': 'C', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': '' },
-      \ { 'word': 'barrrrr', 'abbr':'ba', 'menu': 'bar', 'info': 'Lazy Dog',
-        \ 'kind': 'v', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': '' }
-    \ ] }
-endfunction " complete
-
 " -------------------------------------------------------------------------
 " Define () - current word
 "   - Dictionary
