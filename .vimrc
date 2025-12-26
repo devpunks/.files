@@ -2048,12 +2048,12 @@ function g:Tab () abort
   " inoremap <S-Tab> <c-o>:echom 'SHIFT + SuperTAB Complete'<CR>
 
 " let g:SuperTabDefaultCompletionType = 'context'
-" " fallback to SuperTabContextDefaultCompletionType = <C-p>
-" call SuperTabSetDefaultCompletionType( g:SuperTabDefaultCompletionType )
-" echom 'SuperTab default completion type (completefunc|omnifunc): '
-"   \ .. g:SuperTabDefaultCompletionType
-" echom 'SuperTab secondary completion type:'
-" ' \ ..g:SuperTabContextDefaultCompletionType
+  " " fallback to SuperTabContextDefaultCompletionType = <C-p>
+  " call SuperTabSetDefaultCompletionType( g:SuperTabDefaultCompletionType )
+  " echom 'SuperTab default completion type (completefunc|omnifunc): '
+  "   \ .. g:SuperTabDefaultCompletionType
+  " echom 'SuperTab secondary completion type:'
+  " ' \ ..g:SuperTabContextDefaultCompletionType
 endfunction " Tab
 
 " -------------------------------------------------------------------------
