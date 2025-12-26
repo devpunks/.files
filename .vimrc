@@ -244,6 +244,30 @@ set complete=.,t ".,w,b,u,i " -t - https://mail-archive.com/vim@vim.org/msg03963
 set completepopup+=align:item,border:on
 set completeopt+=menuone,noinsert,popup " noselect|noinsert for automatic completion
 
+" -------------------------------------------------------------------------
+" Complete () -
+" -------------------------------------------------------------------------
+set completefunc=s:complete
+command! -bang -nargs=* Complete call s:complete ( <q-args>, v:none, 0, <bang>0 )
+function s:complete ( token = '', command_line = '', cursor_pos = 0, bang = 0 ) " abort
+  let l:token =  trim ( a:token ?? expand ( '<cword>' ) ) ?? '.'
+
+  echom 'Complete():' .. join ( a:000, ',' )
+  echom 'Token: "' .. l:token .. '"'
+  echom 'Base:'  a:command_line
+  echom 'Cursor Position:' a:cursor_pos
+  echom 'Bang:' a:bang
+
+  echom 'Shazaam Completion (' l:token '):'
+
+  return { 'refresh': 'always', 'words': [
+      \ { 'word': 'fooooo', 'abbr':'fo', 'menu': 'foo', 'info': 'brown fox',
+        \ 'kind': 'C', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': '' },
+      \ { 'word': 'barrrrr', 'abbr':'ba', 'menu': 'bar', 'info': 'Lazy Dog',
+        \ 'kind': 'v', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': '' }
+    \ ] }
+endfunction " complete
+
 " }}}
 
 " =========================================================================
