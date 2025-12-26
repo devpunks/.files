@@ -567,7 +567,7 @@ nnoremap ; :
 nnoremap <S-f> /
 
 " :Bdelete menu<CR>
-nnoremap <silent><Tab> :Tab<CR>
+nnoremap <Tab> :Tab<CR>
 nnoremap <Space> :Space<CR>
 nnoremap <Enter> :Enter<CR>
 nnoremap <silent><Del> x
