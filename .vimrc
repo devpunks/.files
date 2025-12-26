@@ -1400,9 +1400,9 @@ endfunction " Marks
 " Vim (Git) Gutter - https://github.com/airblade/vim-gitgutter
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd BufReadPost * call g:GitGutter()
-  autocmd InsertEnter * call g:GitFocus()
-  autocmd InsertLeave * call g:GitBlur()
+  autocmd BufReadPost * call g:GitGutter ()
+  autocmd InsertEnter * call g:GitFocus ()
+  autocmd InsertLeave * call g:GitBlur ()
 augroup END
 
 function! g:GitFocus () abort
