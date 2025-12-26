@@ -2043,9 +2043,9 @@ autocmd VimDefaults VimEnter * call g:Tab ()
 function g:Tab () abort
   if &runtimepath !~ 'supertab' | return | endif
 
-" echom 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
-" inoremap <Tab> <c-o>:echom 'SuperTAB Complete'<CR>
-" inoremap <S-Tab> <c-o>:echom 'SHIFT + SuperTAB Complete'<CR>
+  " echom 'Mapping SuperTab insert mode to <Tab> & <S-Tab>'
+  " inoremap <Tab> <c-o>:echom 'SuperTAB Complete'<CR>
+  " inoremap <S-Tab> <c-o>:echom 'SHIFT + SuperTAB Complete'<CR>
 
 " let g:SuperTabDefaultCompletionType = 'context'
 " " fallback to SuperTabContextDefaultCompletionType = <C-p>
