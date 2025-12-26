@@ -873,6 +873,7 @@ function Foo{g:shazam} () abort
   echom 'Shazzaaaam'
 endfunction
 
+autocmd UserDefaults CursorHoldI * :Tab
 command! Tab call s:tab ()
 function! s:tab () abort
   echom 'Tabbing ( Not Yet Implemented. See :Tab command )'
