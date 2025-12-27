@@ -1288,7 +1288,9 @@ function digest () {
   printf "SHA-3-512 HMAC (openssl sha3-512 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha3-512 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
+  # Keccak - http://keccak.noekeon.org/Keccak-reference-3.0.pdf
   echo ; echo 'SHA-3/SHAKE (Secure Hash Algorithm-Keccak)' # https://crypto.stackexchange.com/q/19597
+
 
   local bytes=32 # 256 bits
   echo ; echo SHA3/SHAKE128
