@@ -1292,6 +1292,7 @@ function digest () {
   printf "SHA-3-512 HMAC (openssl sha3-512 -c -hmac): %s\n" \
     $( printf "$phrase" | openssl sha3-512 -c -hmac $KEY | command cut -d ' ' -f 2 | tr '[:lower:]' '[:upper:]' )
 
+  # https://keccak.team/sponge_duplex.html
   # Keccak - http://keccak.noekeon.org/Keccak-reference-3.0.pdf
   # Cryptographic Sponge Functions - https://keccak.team/files/CSF-0.1.pdf
   echo ; echo 'SHA-3/SHAKE (Secure Hash Algorithm-Keccak)' # https://crypto.stackexchange.com/q/19597
