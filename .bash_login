@@ -1052,6 +1052,10 @@ function digest () {
   echo ; printf "DES: %s\n" \
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
+  echo ; printf "TRIPLE DES: %s\n" \
+    $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
+
+
   echo ; echo MD5: # https://en.wikipedia.org/wiki/MD5
 
   printf "MD5 (md5sum): %s\n" \
