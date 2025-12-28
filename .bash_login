@@ -634,6 +634,7 @@ function weigh () {
 # =========================================================================
 # {{{ Contanierization (see Security Section)
 #   - https://containerd.io
+#   - https://docs.docker.com
 #   - https://en.wikipedia.org/wiki/LXC
 #   - https://redhat.com/en/blog/7-linux-namespaces
 #   - https://en.wikipedia.org/wiki/Linux_namespaces
