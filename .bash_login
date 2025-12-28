@@ -3041,6 +3041,8 @@ function clean () { : clean; }
 function reboot () { : reboot; }
 function ignore () { : Ignore; }
 function forward () { : forward; }
+function refresh () { : refresh; }
+function restart () { : restart; }
 function reverse () { : reverse; }
 function service () { : service; }
 function cumulate () { : cumulate; }
