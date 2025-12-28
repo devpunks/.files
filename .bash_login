@@ -2762,6 +2762,17 @@ function err () {
 } # err
 
 # -------------------------------------------------------------------------
+function err () {
+  local source # --source IP | --unix SOCK
+  local -r message="${1}"
+
+  # logger --id --ipv4 --stderr --tag "ERROR"
+  printf "\n$( command date) 🛑 %s\n" "${message}"
+
+  return 1
+} # err
+
+# -------------------------------------------------------------------------
 # - https://plesk.com/blog/featured/linux-logs-explained
 # - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
 # - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
