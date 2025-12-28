@@ -2286,6 +2286,7 @@ alias ip='command ip --color address |
 # Replacement for netstat --interfaces is ip -s link.
 #   - https://reddit.com/r/termux/comments/mdp0dq/comment/gsb0w5c
 # Common Ports - https://dev.to/nayetwolf/common-ports-and-protocols-2nb9
+#   - https://en.wikipedia.org/wiki/Port_knocking
 # alias ports="netstat --verbose --all --numeric --timers --tcp --udp --listening --programs --wide"
 alias ports='netstat --verbose --all --numeric --listening --programs --wide'
 
