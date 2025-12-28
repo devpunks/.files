@@ -635,6 +635,8 @@ function weigh () {
 # {{{ Contanierization (see Security Section)
 #   - https://containerd.io
 #   - https://en.wikipedia.org/wiki/LXC
+#   - https://redhat.com/en/blog/7-linux-namespaces
+#   - https://en.wikipedia.org/wiki/Linux_namespaces
 # =========================================================================
 # https://blog.nginx.org/blog/what-are-namespaces-cgroups-how-do-they-work
 alias namespace='{
