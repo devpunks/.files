@@ -3038,6 +3038,43 @@ function generate () { exist "$1" || return
 } # generate
 
 # -------------------------------------------------------------------------
+# Syntax checkers
+#   - https://github.com/vim-syntastic/syntastic/tree/master/syntax_checkers
+function check () {
+  echo Checking "$*"
+
+  for script in "$@"; do
+    echo ; echo " 🎯 $( realpath "$script" )"
+    exist "$( realpath "$script" )" || continue
+
+    case "$script" in
+      *.html )
+        command tidy "$script" ;;
+      *nginx.conf )
+        command nginx -T -c "$( realpath "$script" )" ;;
+      *lighttpd.conf )
+        command lighttpd -t -f "$( realpath "$script" )" ;;
+      *httpd.conf )
+        command apachectl configtest -f "$( realpath "$script" )" ;;
+      .bash* | *.sh )
+        command shellcheck --format=tty "$( realpath "$script" )" ;;
+      *.tar* )
+      ;;
+      * ) # Check integrity Attestation
+        ( echo && echo Checking sha512 \
+          && exist "${script}.sha512" && sha512sum --check "${script}.sha512" ) \
+        || ( echo && echo Checking sha256 \
+          && exist "${script}.sha256" && sha256sum --check "${script}.sha256" ) \
+        || ( echo && echo Checking MD5 \
+          && exist "${script}.md5" && md5sum --check "${script}.md5" ) \
+        || echo "  🛑 Cannot check ${script}"
+      ;;
+    esac # $script
+  done # for $script
+} # check
+
+
+# -------------------------------------------------------------------------
 function lint () { clear
   echo Linting...
   check .*rc
