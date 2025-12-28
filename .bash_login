@@ -2692,6 +2692,7 @@ alias tmux.config='{
 # {{{ Log(s)
 #   - fluentd
 #     - https://docs.fluentd.org
+#     - https://www.fluentd.org/plugins
 #     - https://en.wikipedia.org/wiki/Fluentd
 #
 #   - Syslog
