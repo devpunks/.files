@@ -619,10 +619,6 @@ cnoremap <C-o> :call Browser()<CR>
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
 
-" tabs
-nnoremap <silent> L :tabnext<CR>
-nnoremap <silent> H :tabprevious<CR>
-
 
 finish
 
