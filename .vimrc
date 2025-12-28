@@ -1451,6 +1451,8 @@ function! g:GitChanges () abort
 
   let l:summary = '%#Statement# '
   if a > 0 | let l:summary ..= printf ( '%%#DiffAdd# ➕%d '   , a ) | endif
+  if m > 0 | let l:summary ..= printf ( '%%#DiffChange# ～%d ', m ) | endif
+  if r > 0 | let l:summary ..= printf ( '%%#DiffDelete# ➖%d ', r ) | endif
   let l:summary ..= '%#Statement# '
 
   return l:summary
