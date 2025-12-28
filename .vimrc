@@ -591,8 +591,6 @@ nnoremap <Leader>/ :verbose map<CR>
 
 finish
 
-nnoremap <Leader>? :h index<CR>
-nnoremap <Leader>/ :verbose map<CR>
 
 " Splits
 nnoremap _ :split<CR>
