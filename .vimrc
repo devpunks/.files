@@ -608,7 +608,7 @@ inoremap <Space><Tab>   <C-o>:echom 'INSERT SPACE + TAB'<CR>
 inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
 inoremap <Enter><Space> <C-o>:echom 'INSERT ENTER + SPACE'<CR>
 
-nnoremap <Esc> :nohlsearch<CR>
+nnoremap <C-c> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
