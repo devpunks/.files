@@ -1318,6 +1318,7 @@ function encrypt () {
   local -r count=1000000
   local -r digest=sha512
   local -r pbkdf2=-pbkdf2
+  local -r encoding=-base64
   local -r file=$( readlink -f "${1}" )
   local -r password="-pass pass:devpunks" # '-stdin'
 
