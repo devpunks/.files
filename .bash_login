@@ -2368,7 +2368,7 @@ function proxy () { clear
 function dns () { clear
   local -r domain=${1:-localhost}
 
-  [ "$domain" != localhost ] \
+  test "$domain" != localhost \
     && whois "$domain"
 
   [ "$domain" != localhost ] && dig "$domain"
