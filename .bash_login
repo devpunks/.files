@@ -2306,8 +2306,8 @@ alias telnet='command telnet --login'
 # NetCat ------------------------------------------------------------------
 # - https://baeldung.com/linux/netcat-command
 alias catscan='
-  nc -z -v -w 1 localhost 1234 ;
-  nc -z -v -w 1 google.com 442-444 ;
+  command nc -z -v -w 1 localhost 1234 ;
+  command nc -z -v -w 1 google.com 442-444 ;
 ' # catscan
 
 alias catnet='{
