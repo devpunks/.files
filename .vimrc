@@ -491,6 +491,10 @@ set statusline=%#Statement# " initialize highlight group
 
 " buffer number
 set statusline+=﹟%n\ 
+" git changes
+set statusline+=%{%g:GitChanges()%}
+" file type
+set statusline+=💻%Y\ 
 
 " mode
 set statusline+=%{(mode()=~#'^c')?'💲':''} " Command
@@ -504,10 +508,6 @@ set statusline+=%{(mode()=~#'^[[:cntrl:]]')?'🔍':''} " Visual Block ()
 
 " full file name
 set statusline+=%-4.15F%m
-" git changes
-set statusline+=%{%g:GitChanges()%}
-" file type
-set statusline+=💻%Y
 
 " TODO: Remove (Guten)Tags dependency
 if &runtimepath =~ 'gutentag'
