@@ -630,6 +630,7 @@ nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
 
 " current buffer in new (t)ab
 nnoremap <Leader>t <C-w>t
+" TODO: Determine if the following two commands work
 " simulate break pane in TMUX
 nnoremap <C-w>t :tab split<CR>
 " All buffers into tabs
