@@ -2755,7 +2755,7 @@ function warn () {
   local source # --source IP | --unix SOCK
   local -r message="${1}"
 
-  # logger --id --ipv4 --stderr --tag "ERROR"
+  # logger --id --ipv4 --tag 'WARN'
   printf "\n$( command date) 🛑 %s\n" "${message}"
 
   return 1
