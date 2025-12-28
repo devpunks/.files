@@ -566,6 +566,15 @@ nnoremap ; :
 " Search (Find)
 nnoremap <S-f> /
 
+" <CTRL+h> Focus on pane to left
+nnoremap <C-h> <C-w>h
+" <CTRL+j> Focus on pane down
+nnoremap <C-j> <C-w>j
+" <CTRL+k> Focus on pane up
+nnoremap <C-k> <C-w>k
+" <CTRL+l> Focus on pane to right
+nnoremap <C-l> <C-w>l
+
 " :Bdelete menu<CR>
 nnoremap <Tab> :Tab<CR>
 nnoremap <Space> :Space<CR>
