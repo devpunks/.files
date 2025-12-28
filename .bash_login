@@ -2702,6 +2702,7 @@ alias tmux.config='{
 #   - Logger
 #     - https://man7.org/linux/man-pages/man1/logger.1.html
 #     - https://networkworld.com/article/965762/using-logger-on-linux.html
+#
 #   - fluentd
 #     - https://docs.fluentd.org
 #     - https://www.fluentd.org/plugins
