@@ -589,10 +589,6 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
-
-finish
-
-
 " Splits
 nnoremap _ :split<CR>
 nnoremap <Bar> :vsplit<CR>
