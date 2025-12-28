@@ -1608,7 +1608,7 @@ function certify () { clear # Certificate Authority
   openssl genrsa -out - # PKCS#7 (.p7b,.p7c)
 
   return
-
+	# openssl req -x509 -nodes -days 365 -newkey rsa:2048 -out cert.pem  -keyout private.key
 
   curve=prime256v1 # P-256
   # - https://wiki.openssl.org/index.php/Command_Line_Elliptic_Curve_Operations
