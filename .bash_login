@@ -2751,7 +2751,7 @@ function log () {
 } # log
 
 # -------------------------------------------------------------------------
-function err () {
+function warn () {
   local source # --source IP | --unix SOCK
   local -r message="${1}"
 
