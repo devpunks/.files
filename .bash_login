@@ -1349,6 +1349,10 @@ function encrypt () {
     < "$file" > "${file}.aes256.enc"
 
 
+  echo ; echo 'AES-CFB (128|192|256)'
+  return
+
+
   echo ; echo 'GPG-AES-CBC (128|192|256)'
 
   echo ; echo 'GPG-AES-CFB (128|192|256)'
