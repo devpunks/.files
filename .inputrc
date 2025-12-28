@@ -142,6 +142,7 @@ set mark-symlinked-directories on
 
 # disable bracketed paste mode
 # More info - https://cirw.in/blog/bracketed-paste
+# https://superuser.com/q/1532688/pasting-required-text-into-terminal-emulator-results-in-200required-text
 set enable-bracketed-paste off
 
 # }}}
