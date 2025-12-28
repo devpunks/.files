@@ -2074,6 +2074,7 @@ function attack () {
 #
 # RUNIT - (pkg install runit) http://smarden.org/runit
 #   - https://en.wikipedia.org/wiki/Runit
+#   - https://kchard.github.io/runit-quickstart
 #   - https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
 #
 # Systemctl -
