@@ -2748,6 +2748,8 @@ function log () {
   # logger --id --ipv4 --tag 'INFO'
   man svlogd
   # svlogd -tt "$LOGDIR/sv/$service"
+
+  printf "\n$( command date) 🛑 %s\n" "${message}"
 } # log
 
 # -------------------------------------------------------------------------
