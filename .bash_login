@@ -688,6 +688,9 @@ function work () {
 #   - https://madboa.com/geek/openssl
 #   - https://en.m.wikipedia.org/wiki/List_of_hash_functions
 #   - urandom vs random - https://thomas-huehn.com/myths-about-urandom
+#
+#   Pseudo-Random Function LCG (Linear Congruential Generator)
+#   Y = ( aX + b ) % m # https://en.wikipedia.org/wiki/Linear_congruential_generator
 # =========================================================================
 # https://stackoverflow.com/q/42004870
 # https://en.wikipedia.org/wiki/Random_number_generation
