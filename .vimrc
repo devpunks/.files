@@ -579,9 +579,10 @@ nnoremap <C-k> <C-w>k
 " <CTRL+l> Focus on pane to right
 nnoremap <C-l> <C-w>l
 
-" Splits
-nnoremap _ :split<CR>
-nnoremap <Bar> :vsplit<CR>
+" Equal sized panes
+nnoremap = <C-w>=
+" Maximize pane (tmux zoom)
+nnoremap <C-z> <C-w>_ \| <C-w>\|
 
 " :Bdelete menu<CR>
 nnoremap <Tab> :Tab<CR>
