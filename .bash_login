@@ -172,6 +172,7 @@ alias tree='command tree -ahACDF --du -L 2 --dirsfirst --gitignore -I ".git"'
 alias columns="tr '\0' '\n' | command column -s $'\n' --output-width \$COLUMNS" # --output-width 100 #TODO: delimit on NUL
 
 # -------------------------------------------------------------------------
+# https://geeksforgeeks.org/linux-unix/at-command-in-linux-with-examples
 alias queue='command man at' # https://en.wikipedia.org/wiki/At_(command)
 alias wait='command wait' # https://baeldung.com/linux/wait-command
 # https://tecmint.com/fswatch-monitors-files-and-directory-changes-modifications-in-linux
