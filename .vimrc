@@ -602,10 +602,6 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
-" Splits
-nnoremap _ :split<CR>
-nnoremap <Bar> :vsplit<CR>
-
 " Equal sized panes
 nnoremap = <C-w>=
 " Maximize pane (tmux zoom)
