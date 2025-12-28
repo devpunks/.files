@@ -608,10 +608,9 @@ nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
-" Equal sized panes
-nnoremap = <C-w>=
-" Maximize pane (tmux zoom)
-nnoremap <C-z> <C-w>_ \| <C-w>\|
+" tabs
+nnoremap <silent> L :tabnext<CR>
+nnoremap <silent> H :tabprevious<CR>
 
 " TODO: Prevent overriding <C-o> & C-t>
 "   - https://stackoverflow.com/q/27588664/difference-between-c-t-and-c-o-in-vim
