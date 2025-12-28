@@ -2736,6 +2736,7 @@ function tail () { clear
 } # tail
 
 # -------------------------------------------------------------------------
+# https://networkworld.com/article/965762/using-logger-on-linux.html
 function log () { clear
   local -r message="${1}"
   local source # --source IP | --unix SOCK
