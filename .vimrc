@@ -591,7 +591,6 @@ nnoremap <Enter> :Enter<CR>
 nnoremap <silent><Del> x
 nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
 nnoremap <Space><Enter> :echom 'SPACE + ENTER'<CR>
-inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
 nnoremap <Enter><Space> :echom 'ENTER + SPACE'<CR>
 nnoremap <silent><S-Tab> :echom 'SHIFT + TAB'<CR>
 inoremap <Tab> <C-o>:echom 'INSERT TAB'<CR>
