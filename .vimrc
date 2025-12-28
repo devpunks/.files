@@ -575,6 +575,10 @@ nnoremap <C-k> <C-w>k
 " <CTRL+l> Focus on pane to right
 nnoremap <C-l> <C-w>l
 
+" Splits
+nnoremap _ :split<CR>
+nnoremap <Bar> :vsplit<CR>
+
 " :Bdelete menu<CR>
 nnoremap <Tab> :Tab<CR>
 nnoremap <Space> :Space<CR>
