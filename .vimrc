@@ -628,10 +628,6 @@ cnoremap <C-o> :call Browser ()<CR>
 
 nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
 
-
-finish
-
-
 " current buffer in new (t)ab
 nnoremap <Leader>t <C-w>t
 " simulate break pane in TMUX
