@@ -696,7 +696,7 @@ function work () {
 # https://en.wikipedia.org/wiki/Random_number_generation
 alias rand='echo $RANDOM' # 16-bit ( deterministic 0-32,767 )
 # https://stackoverflow.com/q/65523749
-alias random='echo $SRANDOM' # 32-bit ( non-deterministic )
+alias random='echo $SRANDOM' # 32-bit ( non-deterministic 0-4,294,967,295 )
 
 # https://en.m.wikipedia.org/wiki/Prime_number
 alias prime='openssl prime -generate -bits 64'
