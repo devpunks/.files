@@ -609,6 +609,11 @@ cnoremap <C-o> :call Browser()<CR>
 nnoremap <silent> L :tabnext<CR>
 nnoremap <silent> H :tabprevious<CR>
 
+
+
+finish
+
+
 " current buffer in new (t)ab
 nnoremap <Leader>t <C-w>t
 " simulate break pane in TMUX
