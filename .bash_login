@@ -637,7 +637,13 @@ function weigh () {
 #   - https://en.wikipedia.org/wiki/LXC
 # =========================================================================
 # https://blog.nginx.org/blog/what-are-namespaces-cgroups-how-do-they-work
-alias namespace='{ man unshare ; id ; }'
+alias namespace='{
+  man unshare ;
+  man nsenter ;
+  echo 'User ID:' ;
+  printf "%s\n" $( id ) ;
+  echo
+}'
 
 # -------------------------------------------------------------------------
 
