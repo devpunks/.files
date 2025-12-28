@@ -3167,6 +3167,56 @@ ffmpeg -hide_banner -sample_fmts
 } # convert
 
 # -------------------------------------------------------------------------
+function search () { clear
+  local -r term="$1"
+  local -r location=$( realpath "${2:-.}" )
+
+  echo ; echo Searching... 🔎 "$term"
+  echo Location 👉 "$location"
+
+  echo ; echo Greping...
+  grep --devices=skip "$term" "$location"
+
+  echo ; echo Finding...
+  command find "$location" -type f -iname "*${term}*" \
+    -exec file {} \; | sort | lines
+
+  echo ; apropos "$term" # man -k
+
+  echo ; echo DONE!
+} # search
+
+# -------------------------------------------------------------------------
+alias sd='list /storage/E82D-4DB6'
+function open () { clear
+  local -r location="$1"
+  # apk
+  [ -f "$location" ] && [ -x "$location" ] && termux-open "$location"
+
+  # url
+  [[ "$location" == http* ]] && termux-open-url "$location"
+
+  # file
+  [ -f "$location" ] && termux-open "$location"
+
+  # android
+  # am start -a android.intent.action.VIEW -d "$1" > /dev/null
+} # open
+
+# -------------------------------------------------------------------------
+function pick () { # files
+  type am || return # short circuit
+
+  # File Picker
+  am start -a android.intent.action.VIEW \
+    -d "content://com.android.externalstorage.documents/root/primary"
+
+  # Termux file picker
+  am start -a android.intent.action.OPEN_DOCUMENT \
+    -d /storage/emulated/0 -t '*/*'
+} # pick
+
+# -------------------------------------------------------------------------
 # - LINKS - http://links.twibright.com
 # - LYNX - http://lynx.browser.org
 # See /usr/etc/lynx.cfg
