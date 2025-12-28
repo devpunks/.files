@@ -550,6 +550,7 @@ function git_clean () { clear
 
 # =========================================================================
 # {{{ iNodes
+#   - https://en.wikipedia.org/wiki/Inode
 #   - https://hadoop.apache.org/docs/r2.7.2/hadoop-project-dist/hadoop-hdfs/ExtendedAttributes.html
 # =========================================================================
 # https://en.wikipedia.org/wiki/File_(command)
