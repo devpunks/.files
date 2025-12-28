@@ -142,7 +142,7 @@ set mark-symlinked-directories on
 
 # disable bracketed paste mode
 # More info - https://cirw.in/blog/bracketed-paste
-set enable-bracketed-paste on
+set enable-bracketed-paste off
 
 # }}}
 
