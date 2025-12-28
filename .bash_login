@@ -2698,7 +2698,7 @@ alias tmux.config='{
 #     - https://stackify.com/syslog-101
 #     - https://en.wikipedia.org/wiki/Syslog
 #     - Syslog - https://datatracker.ietf.org/doc/html/rfc5424
-#     - Syslog - https://datatracker.ietf.org/doc/html/rfc5425
+#     - Syslog over UDP - https://datatracker.ietf.org/doc/html/rfc5425
 #     - Syslog over TLS - https://datatracker.ietf.org/doc/html/rfc5426
 #     - https://man7.org/linux/man-pages/man8/rsyslogd.8.html
 # ==========================================================================
