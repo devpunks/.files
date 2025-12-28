@@ -1450,10 +1450,14 @@ function! g:GitChanges () abort
   let [ a, m, r ] = GitGutterGetHunkSummary ()
 
   let l:summary = '%#Statement# '
-  if a | let l:summary ..= printf ( '%%#DiffAdd# ➕%d '   , a ) | endif
-  if m | let l:summary ..= printf ( '%%#DiffChange# ～%d ', m ) | endif
-  if r > 0 | let l:summary ..= printf ( '%%#DiffDelete# ➖%d ', r ) | endif
-  let l:summary ..= '%#Statement# '
+  \ .. ( a ? printf ( '%%#DiffAdd# ➕%d '    , a ) : '' )
+  \ .. ( m ? printf ( '%%#DiffChange# ➕%d ' , m ) : '' )
+  \ .. ( r ? printf ( '%%#DiffDelete# ➕%d ' , r ) : '' )
+  \ .. '%#Statement# '
+
+" if a | let l:summary ..= printf ( '%%#DiffAdd# ➕%d '   , a ) | endif
+" if m | let l:summary ..= printf ( '%%#DiffChange# ～%d ', m ) | endif
+" if r | let l:summary ..= printf ( '%%#DiffDelete# ➖%d ', r ) | endif
 
   return l:summary
 endfunction " GitChanges
