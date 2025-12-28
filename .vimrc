@@ -623,6 +623,8 @@ cnoremap <C-o> :call Browser()<CR>
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
 
+nnoremap <silent><Tab><Del> :Bwipeout menu<CR>
+
 
 finish
 
