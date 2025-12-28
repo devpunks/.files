@@ -622,7 +622,7 @@ nnoremap <silent> H :tabprevious<CR>
 " TODO: Prevent overriding <C-o> & C-t>
 "   - https://stackoverflow.com/q/27588664/difference-between-c-t-and-c-o-in-vim
 " Open Url on this line with the browser \w
-cnoremap <C-o> :call Browser()<CR>
+cnoremap <C-o> :call Browser ()<CR>
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
 
