@@ -632,7 +632,7 @@ function weigh () {
 # }}}
 
 # =========================================================================
-# {{{ Contanierization
+# {{{ Contanierization (see Security Section)
 #   - https://containerd.io
 #   - https://en.wikipedia.org/wiki/LXC
 # =========================================================================
