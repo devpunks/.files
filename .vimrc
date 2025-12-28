@@ -596,6 +596,15 @@ nnoremap <Tab><Space>   :echom 'TAB + SPACE'<CR>
 nnoremap <Space><Tab>   :echom 'SPACE + TAB'<CR>
 nnoremap <Space><Enter> :echom 'SPACE + ENTER'<CR>
 nnoremap <Enter><Space> :echom 'ENTER + SPACE'<CR>
+
+" TODO: don't clobber Tab
+" inoremap <Tab> <C-o>:echom 'INSERT TAB'<CR>
+" TODO: Hinders completion ???
+inoremap <S-Tab>        <C-o>:echom 'INSERT SHIFT + TAB'<CR>
+inoremap <Tab><Enter>   <C-o>:echom 'INSERT TAB + ENTER'<CR>
+inoremap <Enter><Tab>   <C-o>:echom 'INSERT ENTER + TAB'<CR>
+inoremap <Tab><Space>   <C-o>:echom 'INSERT TAB + SPACE'<CR>
+inoremap <Space><Tab>   <C-o>:echom 'INSERT SPACE + TAB'<CR>
 inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
 inoremap <Enter><Space> <C-o>:echom 'INSERT ENTER + SPACE'<CR>
 
