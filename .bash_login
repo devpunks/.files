@@ -2740,6 +2740,30 @@ function tail () { clear
 } # tail
 
 # -------------------------------------------------------------------------
+# - https://plesk.com/blog/featured/linux-logs-explained
+# - https://cyberciti.biz/tips/howto-linux-unix-write-to-syslog.html
+# - systemd Journal Fields - https://real-world-systems.com/docs/systemd.1.html#journal-fields
+function logs () {
+  command logcat -d # dump
+  command logcat --clear
+
+  printf "\n🌎Global logs :\n%s\n\n" "$( tree "$LOGDIR" )"
+
+  [ -d logs ] \
+    && printf "\n🏠Local logs :\n%s\n\n" "$( tree logs )"
+} # logs
+
+# -------------------------------------------------------------------------
+function rotate () {
+  local -r log=${1}
+
+  exist "$log" || return $?
+
+  echo ; command logrotate --verbose --log="$log" "$log"
+  echo ; echo ⥁ rotating log: "$log"
+} # rotate
+
+# -------------------------------------------------------------------------
 function log () {
   local -r message="${1}"
   local source # --source IP | --unix SOCK
