@@ -79,7 +79,7 @@ alias share='tree "$PREFIX/share"'
 alias cpu='
   echo ; echo ; command lscpu
   echo ; lscpu --caches --output-all
-  echo ; command grep ^proc /proc/cpuinfo
+  echo "\n\n CPU count: $( nproc ) \n\n"
   echo ; command lscpu --extended --all
   echo "\n\n CPU count: $( nproc ) \n"
 ' # cpu
