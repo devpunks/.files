@@ -1334,10 +1334,6 @@ function encrypt () {
   openssl enc $scheme $encoding $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes128.enc"
 
-  echo ; echo 'AES-CFB (128|192|256)'
-  return
-
-
   local scheme='-aes-192-cbc'
   echo "${scheme^^} Encrypt $file :"
   openssl enc $scheme $salt $pbkdf2 -md $digest -iter $count $password \
