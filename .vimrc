@@ -603,6 +603,7 @@ nnoremap <Tab><Space> :echom 'TAB + SPACE'<CR>
 " inoremap <Tab><Space> <C-o>:echo 'INSERT TAB + SPACE' " Hinders completion
 nnoremap <Space><Tab> :echom 'SPACE + TAB'<CR>
 inoremap <Space><Tab> <C-o>:echom 'INSERT SPACE + TAB'<CR>
+
 nnoremap <Esc> :nohlsearch<CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
