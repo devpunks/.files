@@ -636,6 +636,7 @@ function weigh () {
 #   - https://containerd.io
 #   - https://en.wikipedia.org/wiki/LXC
 # =========================================================================
+# https://blog.nginx.org/blog/what-are-namespaces-cgroups-how-do-they-work
 alias namespace='{ man unshare ; id ; }'
 
 # -------------------------------------------------------------------------
