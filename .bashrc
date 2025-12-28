@@ -297,6 +297,7 @@ shopt -s nullglob # expand glob to empty list
 shopt -s mailwarn # last access on login
 shopt -s xpg_echo # expand escapes in echo string
 shopt -s checkjobs # confirm job status list on exit
+shopt -s -o monitor # ensure job control monitoring
 shopt -s checkhash # command exists in hashtable first
 shopt -s nocaseglob # https://stackoverflow.com/q/25331100/bash-match-string-with-regex
 shopt -s nocasematch # https://baeldung.com/linux/shell-case-insensitive-matching
