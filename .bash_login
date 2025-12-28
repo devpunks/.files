@@ -2057,6 +2057,8 @@ function attack () {
 #   See $HOME/.termux/boot/README on Android
 #   - https://man7.org/linux/man-pages/man8/start-stop-daemon.8.html
 #
+# Systemd - https://github.com/systemd/systemd
+#   - https://en.wikipedia.org/wiki/Systemd
 # RUNIT - (pkg install runit) http://smarden.org/runit
 #   - https://en.wikipedia.org/wiki/Runit
 #   - https://antixforum.com/forums/topic/what-are-the-advantages-of-runit
