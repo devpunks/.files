@@ -629,15 +629,6 @@ nnoremap <C-w>t :tab split<CR>
 " All buffers into tabs
 nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
 
-" <CTRL+h> Focus on pane to left
-nnoremap <C-h> <C-w>h
-" <CTRL+j> Focus on pane down
-nnoremap <C-j> <C-w>j
-" <CTRL+k> Focus on pane up
-nnoremap <C-k> <C-w>k
-" <CTRL+l> Focus on pane to right
-nnoremap <C-l> <C-w>l
-
 " normal mode: save
 nnoremap <C-s> :update<CR> :echo 'Updated'<CR>
 " visual mode: escape to normal and update
