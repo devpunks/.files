@@ -2745,7 +2745,7 @@ function log () {
   local source # --source IP | --unix SOCK
 
   man logger
-  # logger --id --ipv4
+  # logger --id --ipv4 --tag 'INFO'
   man svlogd
   # svlogd -tt "$LOGDIR/sv/$service"
 } # log
