@@ -566,6 +566,10 @@ nnoremap ; :
 " Search (Find)
 nnoremap <S-f> /
 
+" Splits
+nnoremap _ :split<CR>
+nnoremap <Bar> :vsplit<CR>
+
 " <CTRL+h> Focus on pane to left
 nnoremap <C-h> <C-w>h
 " <CTRL+j> Focus on pane down
