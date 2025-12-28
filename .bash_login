@@ -2065,6 +2065,7 @@ function attack () {
 # Systemd - https://systemd.io
 #   - https://github.com/systemd/systemd
 #   - https://en.wikipedia.org/wiki/Systemd
+#   - https://medium.com/the-code-vault/systemd-simple-service-examples-ce586afeed27
 #
 # RUNIT - (pkg install runit) http://smarden.org/runit
 #   - https://en.wikipedia.org/wiki/Runit
