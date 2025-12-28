@@ -1726,6 +1726,7 @@ function certify () { clear # Certificate Authority
 
   # https://en.m.wikipedia.org/wiki/RSA_cryptosystem
   # https://en.wikipedia.org/wiki/Euclidean_algorithm
+  # https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
   algorithm=rsa ; echo ; echo "RSA (Rivest-Shamir-Adleman) Certificates:"
 
   bits=2048
