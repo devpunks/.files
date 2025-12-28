@@ -2070,6 +2070,7 @@ function attack () {
 #   - https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization
 #   - https://man7.org/linux/man-pages/man7/systemd.journal-fields.7.html
 #   - https://medium.com/the-code-vault/systemd-simple-service-examples-ce586afeed27
+#   - https://digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs
 #
 # RUNIT - (pkg install runit) http://smarden.org/runit
 #   - https://en.wikipedia.org/wiki/Runit
