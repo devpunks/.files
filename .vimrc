@@ -639,7 +639,7 @@ nnoremap <C-w>T :tabo<CR> :bufdo tab split<CR>
 " normal mode: save
 nnoremap <C-s> :update<CR> :echo 'Updated'<CR>
 " visual mode: escape to normal and update
-vnoremap <C-s> :update<CR>
+vnoremap <C-s> <C-c>:update<CR> :echo 'Updated'<CR>
 " insert mode: escape to normal and save
 inoremap <C-s> <Esc>:write<CR>a
 
