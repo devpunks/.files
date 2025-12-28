@@ -647,6 +647,7 @@ function weigh () {
 #   - https://en.wikipedia.org/wiki/Orchestration_(computing)
 #   - https://en.wikipedia.org/wiki/Containerization_(computing)
 #   - https://unix.stackexchange.com/q/604258/what-is-d-bus-practically-useful-for
+#   - https://dev.to/uendi_hoxha/dockerfile-best-practices-writing-efficient-and-secure-docker-images-58cn
 # =========================================================================
 # https://blog.nginx.org/blog/what-are-namespaces-cgroups-how-do-they-work
 alias namespace='{
