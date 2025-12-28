@@ -1430,6 +1430,7 @@ alias keys='{ banner
 }' # keys
 
 # -------------------------------------------------------------------------
+# https://brandonchecketts.com/archives/ssh-ed25519-key-best-practices-for-2025
 function keygen () {
   local algorithm bits outform=pem # PEM | DER
 # command ssh-keygen -t ed25519 -b 4096 -C "devPunks mobile key" ;
