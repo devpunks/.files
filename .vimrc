@@ -576,7 +576,7 @@ nnoremap <Space><Enter> :echom 'SPACE + ENTER'<CR>
 inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
 nnoremap <Enter><Space> :echom 'ENTER + SPACE'<CR>
 nnoremap <silent><S-Tab> :echom 'SHIFT + TAB'<CR>
-inoremap <Tab> <C-o>:echo 'INSERT TAB'<CR>
+inoremap <Tab> <C-o>:echom 'INSERT TAB'<CR>
 inoremap <S-Tab> <C-o>:echom 'INSERT SHIFT + TAB'<CR>
 nnoremap <Tab><Enter> :echom 'TAB + ENTER'<CR>
 nnoremap <Enter><Tab> :echom 'ENTER + TAB'<CR>

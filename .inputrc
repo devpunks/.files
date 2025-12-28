@@ -73,7 +73,6 @@ set keymap vi-insert
 
 # "RETURN": '\e\n'
 
-# "\C-v": ''
   "\C-a": beginning-of-line # Beginning of line
   "\C-e": end-of-line # End of line
 
@@ -144,6 +143,7 @@ set mark-symlinked-directories on
 # More info - https://cirw.in/blog/bracketed-paste
 # https://superuser.com/q/1532688/pasting-required-text-into-terminal-emulator-results-in-200required-text
 set enable-bracketed-paste off
+"\C-v": ""
 
 # }}}
 
