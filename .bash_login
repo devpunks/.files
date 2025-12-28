@@ -2691,7 +2691,6 @@ alias tmux.config='{
 # =========================================================================
 # {{{ Log(s)
 #   - Syslog
-#     - https://en.wikipedia.org/wiki/Syslog
 #     - https://stackify.com/syslog-101
 #     - https://datatracker.ietf.org/doc/html/rfc5424
 # ==========================================================================
