@@ -636,6 +636,8 @@ function weigh () {
 #   - https://containerd.io
 #   - https://docs.docker.com
 #   - https://en.wikipedia.org/wiki/LXC
+#   - https://en.wikipedia.org/wiki/OpenShift
+#   - https://en.wikipedia.org/wiki/Kubernetes
 #   - https://redhat.com/en/blog/7-linux-namespaces
 #   - https://en.wikipedia.org/wiki/Linux_namespaces
 #   - https://en.wikipedia.org/wiki/Orchestration_(computing)
