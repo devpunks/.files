@@ -2770,7 +2770,7 @@ function error () {
   printf "\n$( command date) 🛑 %s\n" "${message}"
 
   return 1
-} # err
+} # error
 
 # -------------------------------------------------------------------------
 # - https://plesk.com/blog/featured/linux-logs-explained
