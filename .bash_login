@@ -2759,7 +2759,7 @@ function warn () {
   printf "\n$( command date) 🛑 %s\n" "${message}"
 
   return 1
-} # err
+} # warn
 
 # -------------------------------------------------------------------------
 function err () {
