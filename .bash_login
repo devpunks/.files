@@ -1338,7 +1338,7 @@ function encrypt () {
   echo "${scheme^^} Encrypt $file :"
   openssl enc $scheme $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes192.bin"
-  openssl enc $scheme -base64 $salt $pbkdf2 -md $digest -iter $count $password \
+  openssl enc $scheme $encoding $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes192.enc"
 
   echo "${scheme^^} Encrypt $file :"
