@@ -1455,10 +1455,6 @@ function! g:GitChanges () abort
   \ .. ( r ? printf ( '%%#DiffDelete# ➕%d ' , r ) : '' )
   \ .. '%#Statement# '
 
-" if a | let l:summary ..= printf ( '%%#DiffAdd# ➕%d '   , a ) | endif
-" if m | let l:summary ..= printf ( '%%#DiffChange# ～%d ', m ) | endif
-" if r | let l:summary ..= printf ( '%%#DiffDelete# ➖%d ', r ) | endif
-
   return l:summary
 endfunction " GitChanges
 
