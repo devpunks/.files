@@ -2371,7 +2371,8 @@ function dns () { clear
   test "$domain" != localhost \
     && whois "$domain"
 
-  [ "$domain" != localhost ] && dig "$domain"
+  test "$domain" != localhost \
+    && dig "$domain"
 
   echo ; echo "ALL $domain"
   command host -v -R 3 -a "$domain"
