@@ -640,7 +640,7 @@ function weigh () {
 alias namespace='{
   man unshare ;
   man nsenter ;
-  echo 'User ID:' ;
+  echo User ID: ;
   printf "%s\n" $( id ) ;
   echo
 }'
