@@ -2740,7 +2740,7 @@ function tail () { clear
 } # tail
 
 # -------------------------------------------------------------------------
-function log () { clear
+function log () {
   local -r message="${1}"
   local source # --source IP | --unix SOCK
 
