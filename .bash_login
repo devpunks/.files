@@ -2759,8 +2759,6 @@ function warn () {
 
   # logger --id --ipv4 --tag 'WARN'
   printf "\n$( command date) 🛑 %s\n" "${message}"
-
-  return 1
 } # warn
 
 # -------------------------------------------------------------------------
