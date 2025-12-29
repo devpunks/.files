@@ -1023,7 +1023,7 @@ function derive () {
   echo ; echo "PBKDF2 ($length): "
   # need 600K iters. to be secure
   openssl kdf -kdfopt digest:sha256 \
-    -keylen $length -kdfopt iter:600000 \
+    -keylen $length -kdfopt iter:${iterations} \
     -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
   PBKDF2
 
