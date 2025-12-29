@@ -1066,7 +1066,6 @@ function derive () {
 # $sha1$ - B(lowfish)crypt
 # $5$ - SHA-256
 # $6$ - SHA-512
-# https://en.wikipedia.org/wiki/Cipher
 # https://github.com/openssl/openssl/issues/18075
 alias ciphers='{
   echo ; echo "Ciphers:" ; command openssl enc -ciphers | columns ;
