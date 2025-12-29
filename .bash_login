@@ -1058,6 +1058,7 @@ function derive () {
    -kdfopt salt:"$SALT" -kdfopt key:"$phrase" -keylen $length \
   HKDF
 
+  length=16
   digest=sha2-256 # TODO: Is it SHA256 or SHA2-256 ??
   # https://datatracker.ietf.org/doc/html/rfc5246#section-5
   # https://crypto.stackexchange.com/q/46549/tls-1-2-prf-with-hmac-sha256
