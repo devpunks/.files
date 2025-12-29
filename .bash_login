@@ -1059,7 +1059,7 @@ function derive () {
   echo ; echo  "HKDF ${digest^^} [$length]:"
   openssl kdf -kdfopt digest:${digest^^} \
    -kdfopt salt:"$SALT" -kdfopt key:"$phrase" -keylen $length \
-  HKDF
+  ${algorithm^^}
 
   length=16
   digest=sha2-256 # TODO: Is it SHA256 or SHA2-256 ??
