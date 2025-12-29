@@ -1012,7 +1012,7 @@ function derive () {
   scrypt enc --logN $memory -r $blocksize -p $parallelism --passphrase env:SALT <( printf "$phrase" )
 
   # https://en.wikipedia.org/wiki/PBKDF2
-  echo ; echo ; echo "PBKDF2 ($length): "
+  echo ; echo "PBKDF2 ($length): "
   # need 600K iters. to be secure
   openssl kdf -kdfopt digest:sha256 \
     -keylen $length -kdfopt iter:600000 \
