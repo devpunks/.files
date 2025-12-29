@@ -976,6 +976,7 @@ function derive () {
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
   # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
+  # https://medium.com/@sumanbhadrasuman/password-security-in-2025-why-argon2id-is-the-standard-you-should-use-7c0797349836
   echo ; echo "ARGON2i (argon2 -i): "
   printf "$phrase" | argon2 $SALT -i -t $iterations -k $memory -l $length
   echo "ARGON2i (openssl kdf ARGON2I): "
