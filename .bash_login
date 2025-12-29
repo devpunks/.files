@@ -1403,23 +1403,6 @@ function decrypt () {
 } # decrypt
 
 # -------------------------------------------------------------------------
-# https://grc.com/haystack.htm
-# https://antofthy.gitlab.io/info/crypto/passwd_generation.txt
-# https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
-function passgen () { clear
-  # Correct Horse Battery Staple - https://xkcd.com/936
-  local password="${1:-`randchars`}"
-  local domain=${2:-'devpunks.studio'}
-
-  echo PASSWORD: "$password"
-  echo DOMAIN: $domain
-
-  derive $password
-  cipher $password
-  digest $password
-} # passgen
-
-# -------------------------------------------------------------------------
 # https://antofthy.gitlab.io/info/crypto/passwd_obfuscation.txt
 # $$$ https://antofthy.gitlab.io/info/crypto/public_keys_openssl.txt
 # https://blog.oddbit.com/post/2011-05-08-converting-openssh-public-keys
