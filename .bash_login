@@ -1517,13 +1517,6 @@ function keygen () {
 } # keygen
 
 # -------------------------------------------------------------------------
-# https://en.wikipedia.org/wiki/Key_stretching
-function stretch () { #key
-  local -r phrase="${1}"
-
-} # stretch
-
-# -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 # https://encryptionconsulting.com/diffie-hellman-key-exchange-vs-rsa
 # https://geeksforgeeks.org/computer-networks/difference-between-diffie-hellman-and-rsa
