@@ -1069,6 +1069,7 @@ alias ciphers='{
   echo ; echo ;
 }' # ciphers
 
+# $1$ - MD5
 # $2a/b/x/y$ - B(lowfish)crypt
 # $sha1$ - B(lowfish)crypt
 # $5$ - SHA-256
