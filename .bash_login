@@ -1076,6 +1076,7 @@ alias ciphers='{
 }'
 
 # https://asecuritysite.com/encryption/passes
+# https://datatracker.ietf.org/doc/html/rfc2104
 # https://en.wikipedia.org/wiki/Key_derivation_function
 # https://en.wikipedia.org/wiki/Cryptographic_hash_function
 # https://antofthy.gitlab.io/info/crypto/passwd_hashing.txt
