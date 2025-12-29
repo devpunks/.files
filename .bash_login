@@ -968,6 +968,7 @@ function derive () {
   local memory=65536 # 64MiB
   local iterations=3
   local parallelism=1
+  local blocksize=512
 
   echo ; echo "KDF (Key Derivation Functions): "
 
