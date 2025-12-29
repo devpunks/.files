@@ -931,6 +931,23 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 } # decode
 
 # -------------------------------------------------------------------------
+# https://grc.com/haystack.htm
+# https://antofthy.gitlab.io/info/crypto/passwd_generation.txt
+# https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+function passgen () { clear
+  # Correct Horse Battery Staple - https://xkcd.com/936
+  local password="${1:-`randchars`}"
+  local domain=${2:-'devpunks.studio'}
+
+  echo PASSWORD: "$password"
+  echo DOMAIN: $domain
+
+  derive $password
+  cipher $password
+  digest $password
+} # passgen
+
+# -------------------------------------------------------------------------
 function derive () {
   : derive
 } # derive
