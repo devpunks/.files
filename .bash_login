@@ -1072,7 +1072,7 @@ alias ciphers='{
   echo ; echo "Commands:" ; openssl list -cipher-commands | columns ;
   echo ; echo "Algorithms:" ; openssl list -cipher-algorithms | columns ;
   echo ; echo ;
-}'
+}' # ciphers
 
 # https://asecuritysite.com/encryption/passes
 # https://datatracker.ietf.org/doc/html/rfc2104
