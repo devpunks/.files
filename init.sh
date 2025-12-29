@@ -75,7 +75,7 @@ pkg install shellcheck
 pkg install uuid-utils # uuidgen
 pkg install bash-completion
 
-# Dialog boxes
+# Graphics, Fonts, Dialog boxes
 pkg install whiptail # https://pagure.io/newt
 # pkg install dialog # https://invisible-island.net/dialog
 # pkg install expect
