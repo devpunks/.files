@@ -1001,7 +1001,6 @@ function derive () {
   echo ; echo "BCRYPT: $bcrypt"
   echo "BCRYPT SALT: ${bresult:0:22}"
   echo "BCRYPT HASH: ${bresult:22}"
-  echo "BCRYPT: $bcrypt"
 
   local blocksize=1024
   local parallelism=8 # cores
