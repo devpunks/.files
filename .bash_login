@@ -1003,7 +1003,7 @@ function derive () {
   # https://en.wikipedia.org/wiki/Bcrypt
   # https://en.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
-  local  bcrypt="$( htpasswd -nbBC 10 '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
+  local  bcrypt="$( htpasswd -nbBC $iterations '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
   local bresult=${bcrypt##*$}
   echo ; echo "BCRYPT: $bcrypt"
   echo "BCRYPT SALT: ${bresult:0:22}"
