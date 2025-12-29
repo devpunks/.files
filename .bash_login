@@ -999,6 +999,7 @@ function derive () {
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2ID
 
   length=72
+  local iterations=10
   # https://en.wikipedia.org/wiki/Bcrypt
   # https://en.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
