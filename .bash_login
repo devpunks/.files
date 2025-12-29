@@ -998,6 +998,7 @@ function derive () {
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
   local  bcrypt="$( htpasswd -nbBC 12 '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
   local bresult=${bcrypt##*$}
+  echo ; echo "BCRYPT: $bcrypt"
   echo "BCRYPT SALT: ${bresult:0:22}"
   echo "BCRYPT HASH: ${bresult:22}"
   echo "BCRYPT: $bcrypt"
