@@ -942,7 +942,7 @@ function passgen () { clear
   echo PASSWORD: "$password"
   echo DOMAIN: $domain
 
-  derive $password
+  derive "$password"
   cipher $password
   digest $password
 } # passgen
