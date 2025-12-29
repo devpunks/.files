@@ -2062,6 +2062,7 @@ function attack () {
   echo Birthday Attack # https://en.wikipedia.org/wiki/Birthday_attack
 
   echo Algorithmic # https://en.wikipedia.org/wiki/Algorithmic_complexity_attack
+  echo Smurf Attack # https://en.wikipedia.org/wiki/Smurf_attack
   echo Billion Laughs # https://en.wikipedia.org/wiki/Billion_laughs_attack
   echo Session Fixation # https://owasp.org/www-community/attacks/Session_fixation
   echo Shellshock Attack # https://en.wikipedia.org/wiki/Shellshock_(software_bug)
