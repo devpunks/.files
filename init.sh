@@ -74,7 +74,9 @@ pkg install multitail
 pkg install shellcheck
 pkg install uuid-utils # uuidgen
 pkg install bash-completion
-# pkg install expect
+
+# Dialog boxes
+pkg install whiptail # https://pagure.io/newt
 
 pkg install figlet
 pkg install barcode
