@@ -1058,6 +1058,9 @@ function derive () {
    -kdfopt salt:"$SALT" -kdfopt key:"$phrase" -keylen $length \
   HKDF
 
+  # https://datatracker.ietf.org/doc/html/rfc5246#section-5
+  echo ; echo  "TLS PRF ${digest^^} [$length]:"
+
 } # derive
 
 # -------------------------------------------------------------------------
