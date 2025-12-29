@@ -812,14 +812,6 @@ alias donce='{ declare EPOCH=${EPOCHSECONDS}
 }' # donce
 
 # -------------------------------------------------------------------------
-# https://en.wikipedia.org/wiki/Salt_(cryptography)
-export SALT='12345678abcdefgh' # TODO: generate SALT
-
-# https://geeksforgeeks.org/hash-command-in-linux-with-examples
-alias hash='hash --help; hash'
-
-alias substitute='$( open https://en.wikipedia.org/wiki/Substitution_cipher )'
-
 # https://geeksforgeeks.org/linux-unix/od-command-linux-example
 alias octal='od'
 
