@@ -1064,7 +1064,7 @@ function derive () {
   echo ; echo  "TLS1-PRF ${digest^^} [$length]:"
   openssl kdf -alg PBKDF2 -digest ${digest^^} \
     -keylen $length -iter ${iterations} \
-    -kdfopt salt:"$SALT" -pass "$phrase"
+    -kdfopt seed:"$SALT" -kdfopt key:"$phrase"
 
 } # derive
 
