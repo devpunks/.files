@@ -687,6 +687,7 @@ function work () {
 #   - https://antofthy.gitlab.io/info/crypto
 #   - https://madboa.com/geek/openssl
 #   - https://en.m.wikipedia.org/wiki/List_of_hash_functions
+#   - https://en.wikipedia.org/wiki/Pseudorandom_function_family
 #   - urandom vs random - https://thomas-huehn.com/myths-about-urandom
 #
 #   Pseudo-Random Function LCG (Linear Congruential Generator)
