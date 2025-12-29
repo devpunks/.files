@@ -1019,6 +1019,9 @@ function derive () {
   echo ; printf "SCRYPT: \n"
   scrypt enc --logN $memory -r $blocksize -p $parallelism --passphrase env:SALT <( printf "$phrase" )
 
+
+  echo ; echo "PBKDF2 [$length]:"
+
   length=72
   digest=sha1
   iterations=1300000 # 1.3M
