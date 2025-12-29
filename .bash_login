@@ -1000,7 +1000,9 @@ function derive () {
   echo "BCRYPT HASH: ${bresult:22}"
   echo "BCRYPT: $bcrypt"
 
-  local parallelism=10
+  local parallelism=8 # cores
+  local memory=12582912 # bytes (12MiB)
+
   # https://github.com/Tarsnap/scrypt
   # https://en.wikipedia.org/wiki/Scrypt
   # https://datatracker.ietf.org/doc/html/rfc7914
