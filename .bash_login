@@ -1024,10 +1024,11 @@ function derive () {
   iterations=1300000 # 1.3M
   # https://en.wikipedia.org/wiki/PBKDF2
   echo ; echo "PBKDF2-${digest^^} [$length]: "
-  openssl kdf -kdfopt digest:${digest^^} \
-    -keylen $length -kdfopt iter:${iterations} \
-    -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
-  PBKDF2
+  openssl kdf -alg PBKDF2 -digest ${digest^^} \
+    -keylen $length -iter ${iterations} \
+    -kdfopt salt:"$SALT" -pass "$phrase"
+
+  return
 
   digest=sha256
   iterations=600000 # 600K
