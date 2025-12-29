@@ -1041,7 +1041,7 @@ function derive () {
   openssl kdf -kdfopt digest:${digest^^} \
     -keylen $length -kdfopt iter:${iterations} \
     -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
-  PBKDF2
+  ${algorithm^^}
 
   digest=sha512
   iterations=210000 # 210K
