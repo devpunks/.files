@@ -931,6 +931,11 @@ function decode () { # xxd | hexdump | base2lsbf | base2msbf| base32 | base32hex
 } # decode
 
 # -------------------------------------------------------------------------
+function derive () {
+  : derive
+} # derive
+
+# -------------------------------------------------------------------------
 # https://antofthy.gitlab.io/info/crypto/cyphers.txt
 # $1$ - MD5
 # $2a/b/x/y$ - B(lowfish)crypt
