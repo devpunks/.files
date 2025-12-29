@@ -81,8 +81,6 @@ pkg install whiptail # https://pagure.io/newt
 pkg install figlet
 pkg install barcode
 pkg install cmatrix
-pkg install ncurses
-pkg install ncurses-utils
 pkg install busybox # http://busybox.net/downloads
 pkg install no-more-secrets # https://github.com/bartobri/no-more-secrets
 
