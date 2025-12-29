@@ -1000,6 +1000,7 @@ function derive () {
   echo "BCRYPT HASH: ${bresult:22}"
   echo "BCRYPT: $bcrypt"
 
+  local parallelism=10
   # https://github.com/Tarsnap/scrypt
   # https://en.wikipedia.org/wiki/Scrypt
   # https://datatracker.ietf.org/doc/html/rfc7914
