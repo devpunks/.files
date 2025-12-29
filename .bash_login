@@ -1308,11 +1308,6 @@ function digest () {
 } # digest
 
 # -------------------------------------------------------------------------
-function derive () {
-  : derive
-} # derive
-
-# -------------------------------------------------------------------------
 # https://gnupg.org
 # https://bashupload.com/how_to_encrypt_files
 # https://antofthy.gitlab.io/info/crypto/encfs.txt
