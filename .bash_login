@@ -949,6 +949,11 @@ function passgen () { clear
 
 # -------------------------------------------------------------------------
 function derive () {
+  local -r phrase="${1}"
+  local length=32 # 24
+  local memory=65536 # 64MiB
+  local iterations=3
+
   echo ; echo "KDF (Key Derivation Functions): "
 
   # https://rfc-editor.org/rfc/rfc9106
