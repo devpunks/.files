@@ -1051,7 +1051,7 @@ function derive () {
   digest=blake2b512
   # https://en.wikipedia.org/wiki/HKDF
   # https://rfc-editor.org/rfc/rfc5869.html
-  echo ; echo  "HKDF ${digest^^} [$length]: "
+  echo ; echo  "HKDF ${digest^^} [$length]:"
   openssl kdf -kdfopt digest:${digest^^} \
    -kdfopt salt:"$SALT" -kdfopt key:"$phrase" -keylen $length \
   HKDF
