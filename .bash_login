@@ -851,7 +851,7 @@ function stretch () { #key
 function pad () { #message
   local -r message="${1}"
 
-} # stretch
+} # pad
 
 # -------------------------------------------------------------------------
 # see check ()
