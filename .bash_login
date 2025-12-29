@@ -1397,7 +1397,7 @@ function passgen () { clear
   echo PASSWORD: "$password"
   echo DOMAIN: $domain
 
-  digest $password
+  derive $password
   cipher $password
 } # passgen
 
