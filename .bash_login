@@ -1039,6 +1039,7 @@ function derive () {
   PBKDF2
 
   digest=sha512
+  iterations=210000 # 210K
   # https://en.wikipedia.org/wiki/HKDF
   # https://rfc-editor.org/rfc/rfc5869.html
   echo ; echo  "HKDF (BLAKE2b512 [$length]): "
