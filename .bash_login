@@ -1053,6 +1053,7 @@ function derive () {
   ${algorithm^^}
 
   digest=blake2b512
+  algorithm=hkdf
   # https://en.wikipedia.org/wiki/HKDF
   # https://rfc-editor.org/rfc/rfc5869.html
   echo ; echo  "HKDF ${digest^^} [$length]:"
