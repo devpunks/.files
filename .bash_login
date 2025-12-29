@@ -1020,7 +1020,8 @@ function derive () {
   scrypt enc --logN $memory -r $blocksize -p $parallelism --passphrase env:SALT <( printf "$phrase" )
 
   length=72
-  iterations=600000
+  digest=sha256
+  iterations=600000 # need 600K iters. to be secure
   # https://en.wikipedia.org/wiki/PBKDF2
   echo ; echo "PBKDF2 ($length): "
   # need 600K iters. to be secure
