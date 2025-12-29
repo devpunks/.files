@@ -970,7 +970,6 @@ function derive () {
   local blocksize
   local iterations
   local parallelism
-  local digest
 
   echo ; echo "KDF (Key Derivation Functions): "
 
