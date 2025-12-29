@@ -968,6 +968,7 @@ function derive () {
   local digest
   local length
   local memory
+  local algorithm
   local blocksize
   local iterations
   local parallelism
