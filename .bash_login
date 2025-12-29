@@ -967,7 +967,7 @@ function derive () {
   local length
   local memory
   local iterations
-  local parallelism=1
+  local parallelism
   local blocksize=512
   local digest
 
