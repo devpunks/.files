@@ -1070,6 +1070,7 @@ alias ciphers='{
   echo ; echo ;
 }' # ciphers
 
+# $2a/b/x/y$ - B(lowfish)crypt
 # $sha1$ - B(lowfish)crypt
 # $5$ - SHA-256
 # $6$ - SHA-512
