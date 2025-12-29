@@ -998,6 +998,7 @@ function derive () {
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2ID
 
+  length=72
   # https://en.wikipedia.org/wiki/Bcrypt
   # https://en.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
