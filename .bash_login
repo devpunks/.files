@@ -975,6 +975,8 @@ function derive () {
 
   local length=32 # 24
   local memory=65536 # 64MiB
+  local iterations=3
+  local parallelism=1
   # https://rfc-editor.org/rfc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
