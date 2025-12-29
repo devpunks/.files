@@ -1021,7 +1021,7 @@ function derive () {
 
   length=72
   digest=sha1
-  iterations=600000 # need 600K iters. to be secure
+  iterations=1300000 # 1.3M
   # https://en.wikipedia.org/wiki/PBKDF2
   echo ; echo "PBKDF2-${digest^^} [$length]: "
   openssl kdf -kdfopt digest:${digest^^} \
