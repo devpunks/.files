@@ -1060,7 +1060,7 @@ function derive () {
 
   # https://datatracker.ietf.org/doc/html/rfc5246#section-5
   # https://crypto.stackexchange.com/q/46549/tls-1-2-prf-with-hmac-sha256
-  echo ; echo  "TLS PRF ${digest^^} [$length]:"
+  echo ; echo  "TLS1-PRF ${digest^^} [$length]:"
 
 } # derive
 
