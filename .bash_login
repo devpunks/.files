@@ -1515,6 +1515,7 @@ function stretch () { #key
   local -r phrase="${1}"
 
 } # stretch
+
 # -------------------------------------------------------------------------
 # https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
 # https://encryptionconsulting.com/diffie-hellman-key-exchange-vs-rsa
