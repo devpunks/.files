@@ -1061,7 +1061,6 @@ function derive () {
 
 # -------------------------------------------------------------------------
 # https://antofthy.gitlab.io/info/crypto/cyphers.txt
-# $1$ - MD5
 # https://github.com/openssl/openssl/issues/18075
 alias ciphers='{
   echo ; echo "Ciphers:" ; command openssl enc -ciphers | columns ;
