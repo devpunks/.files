@@ -847,6 +847,13 @@ function stretch () { #key
 } # stretch
 
 # -------------------------------------------------------------------------
+# https://en.wikipedia.org/wiki/Padding_(cryptography)
+function pad () { #message
+  local -r message="${1}"
+
+} # stretch
+
+# -------------------------------------------------------------------------
 # see check ()
 # https://en.wikipedia.org/wiki/Cyclic_code
 # https://en.wikipedia.org/wiki/Cyclic_redundancy_check
