@@ -1073,6 +1073,7 @@ alias ciphers='{
   echo ; echo ;
 }' # ciphers
 
+# $6$ - SHA-512
 # https://en.wikipedia.org/wiki/Cipher
 # https://asecuritysite.com/encryption/passes
 # https://datatracker.ietf.org/doc/html/rfc2104
