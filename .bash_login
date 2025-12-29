@@ -840,6 +840,13 @@ function bin2hex () { # convert string binary to hexidecimal
 } # bin2hex
 
 # -------------------------------------------------------------------------
+# https://en.wikipedia.org/wiki/Key_stretching
+function stretch () { #key
+  local -r phrase="${1}"
+
+} # stretch
+
+# -------------------------------------------------------------------------
 # see check ()
 # https://en.wikipedia.org/wiki/Cyclic_code
 # https://en.wikipedia.org/wiki/Cyclic_redundancy_check
