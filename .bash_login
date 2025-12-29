@@ -973,6 +973,7 @@ function derive () {
 
   echo ; echo "KDF (Key Derivation Functions): "
 
+  local length=32 # 24
   # https://rfc-editor.org/rfc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
