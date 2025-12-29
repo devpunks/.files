@@ -944,7 +944,7 @@ function passgen () { clear
 
   derive "$password"
   cipher "$password"
-  digest $password
+  digest "$password"
 } # passgen
 
 # -------------------------------------------------------------------------
