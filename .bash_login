@@ -2056,6 +2056,7 @@ function attack () {
 
   echo DoS # https://en.wikipedia.org/wiki/Denial-of-service_attack
   echo DDoS # https://aws.amazon.com/shield/ddos-attack-protection
+  echo ReDOS # https://en.wikipedia.org/wiki/ReDoS
   echo MitM # https://en.wikipedia.org/wiki/Man-in-the-middle_attack
   echo Birthday Attack # https://en.wikipedia.org/wiki/Birthday_attack
   echo Replay Attack # https://en.wikipedia.org/wiki/Replay_attack
