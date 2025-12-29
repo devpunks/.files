@@ -1032,7 +1032,7 @@ alias ciphers='{
 function cipher () {
   local -r phrase="${1}"
   local length=32 # 24
-  local memory=65536 # 64MiB
+  local memory
   local iterations
 
   echo ; echo Ciphers: ; ciphers
