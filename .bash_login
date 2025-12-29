@@ -1064,7 +1064,7 @@ function derive () {
   # https://crypto.stackexchange.com/q/46549/tls-1-2-prf-with-hmac-sha256
   echo ; echo  "TLS1-PRF ${digest^^} [$length]:"
   openssl kdf -alg TLS1-PRF -digest ${digest^^} \
-    $length -kdfopt seed:"$SALT" -kdfopt key:"$phrase" -keylen
+    -kdfopt seed:"$SALT" -kdfopt key:"$phrase" -keylen $length
 
 } # derive
 
