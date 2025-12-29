@@ -1047,8 +1047,7 @@ function derive () {
     -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
   PBKDF2
 
-  digest=sha512
-  iterations=210000 # 210K
+  digest=blake2b512
   # https://en.wikipedia.org/wiki/HKDF
   # https://rfc-editor.org/rfc/rfc5869.html
   echo ; echo  "HKDF (BLAKE2b512 [$length]): "
