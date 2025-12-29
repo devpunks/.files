@@ -1055,6 +1055,7 @@ function derive () {
   openssl kdf -kdfopt digest:${digest^^} \
    -kdfopt salt:"$SALT" -kdfopt key:"$phrase" -keylen $length \
   HKDF
+
 } # derive
 
 # -------------------------------------------------------------------------
