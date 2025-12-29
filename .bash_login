@@ -966,7 +966,7 @@ function derive () {
   local -r phrase="${1}"
   local length
   local memory
-  local iterations=3
+  local iterations
   local parallelism=1
   local blocksize=512
   local digest
