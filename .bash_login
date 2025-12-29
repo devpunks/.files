@@ -973,7 +973,7 @@ function derive () {
 
   echo ; echo "KDF (Key Derivation Functions): "
 
-  local length=32 # 24
+  length=32 # 24
   local memory=65536 # 64MiB
   local iterations=3
   local parallelism=1
