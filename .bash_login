@@ -1022,7 +1022,8 @@ function derive () {
   scrypt enc --logN $memory -r $blocksize -p $parallelism --passphrase env:SALT <( printf "$phrase" )
 
 
-  echo ; echo "PBKDF2 [$length]:"
+  algorithm=pbkdf2
+  echo ; echo "${algorithm^^} [$length]:"
 
   length=72
   digest=sha1
