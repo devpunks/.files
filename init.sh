@@ -77,6 +77,10 @@ pkg install bash-completion
 
 # Dialog boxes
 pkg install whiptail # https://pagure.io/newt
+# pkg install dialog # https://invisible-island.net/dialog
+# pkg install expect
+pkg install ncurses
+pkg install ncurses-utils
 
 pkg install figlet
 pkg install barcode
