@@ -1027,7 +1027,6 @@ function derive () {
 
   length=72
   digest=sha1
-  algorithm=pbkdf2
   iterations=1300000 # 1.3M
   # https://en.wikipedia.org/wiki/PBKDF2
   echo ; echo "PBKDF2-${digest^^} [$length]:"
