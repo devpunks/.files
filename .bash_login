@@ -1050,7 +1050,7 @@ function derive () {
   openssl kdf -kdfopt digest:${digest^^} \
     -keylen $length -kdfopt iter:${iterations} \
     -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
-  PBKDF2
+  ${algorithm^^}
 
   digest=blake2b512
   # https://en.wikipedia.org/wiki/HKDF
