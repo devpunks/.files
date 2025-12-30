@@ -982,7 +982,7 @@ function derive () {
   length=32 # 24
   memory=65536 # 64MiB
   iterations=3
-  parallelism=1
+  parallelism=8 # cores
   # https://rfc-editor.org/rfc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
