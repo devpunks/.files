@@ -1000,6 +1000,10 @@ function derive () {
   openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
     -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2ID
 
+
+  return
+
+
   length=72 # base64( hmac-sha384( data:$password, key:$PEPPER ) ), $SALT, $COST )
   iterations=10
   # https://en.wikipedia.org/wiki/Bcrypt
