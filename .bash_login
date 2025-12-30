@@ -1017,7 +1017,7 @@ function derive () {
 
   blocksize=1024
   iterations=8 # (8 * 128 = 1024)
-  local parallelism=8 # cores
+  parallelism=8 # cores
   memory=12582912 # bytes (12MiB)
   # https://github.com/Tarsnap/scrypt
   # https://en.wikipedia.org/wiki/Scrypt
