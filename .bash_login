@@ -976,7 +976,7 @@ function derive () {
   echo ; echo "KDF (Key Derivation Functions):"
 
   length=32 # 24
-  local memory=65536 # 64MiB
+  memory=65536 # 64MiB
   iterations=3
   parallelism=1
   # https://rfc-editor.org/rfc/rfc9106
