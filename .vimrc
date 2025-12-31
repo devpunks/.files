@@ -611,7 +611,8 @@ inoremap <Space><Tab>   <C-o>:echom 'INSERT SPACE + TAB'<CR>
 inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
 inoremap <Enter><Space> <C-o>:echom 'INSERT ENTER + SPACE'<CR>
 
-nnoremap <C-c> :nohlsearch<CR>
+nnoremap <C-c> :if v:hlsearch \| nohlsearch \| endif
+inoremap <expr> <S-Tab> pumvisible () ? '<C-p>' : ':echom "INSERT SHIFT + TAB"<CR>'
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
