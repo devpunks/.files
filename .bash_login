@@ -996,7 +996,7 @@ function derive () {
   iterations=3
   parallelism=8 # cores
   digest=argon2i
-  memory=65536KiB # 64MiB | 65536 KiB | 67108864 B
+  memory=65536KiB # 64MiB | 65536 KiB | 67108864 B (default 4Mib | 4096KiB |)4194304 B)
   # https://rfc-editor.org/rfc/rfc9106
   # https://github.com/openssl/openssl/pull/12256
   # https://crypto.stackexchange.com/questions/72416
