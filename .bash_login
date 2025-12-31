@@ -1004,10 +1004,9 @@ function derive () {
   # https://medium.com/@sumanbhadrasuman/password-security-in-2025-why-argon2id-is-the-standard-you-should-use-7c0797349836
   digest=argon2i
   echo ; echo "ARGON2i (argon2 -i): "
-  printf "$phrase" | argon2 $SALT -i -t $iterations -k $memory -l $length
-  echo "ARGON2i (openssl kdf ARGON2I): "
-  openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
-    -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2I
+  printf "$phrase" | argon2 -i $SALT -t $iterations -k $memory -p $parallelism -l $length
+  echo "${digest^^} (openssl kdf): "
+  openssl kdf -kdfopt pass:"$phrase" -kdfopt salt:$SALT -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism -keylen $length ${digest^^}
   echo ; echo "ARGON2d (argon2 -d): "
   printf "$phrase" | argon2 $SALT -d -t $iterations -k $memory -l $length
   echo "ARGON2d (openssl kdf ARGON2D): "
