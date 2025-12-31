@@ -1015,10 +1015,13 @@ return
 
   digest=argon2d
   echo ; echo "ARGON2d (argon2 -d): "
-  printf "$phrase" | argon2 $SALT -d -t $iterations -k $memory -l $length
-  echo "ARGON2d (openssl kdf ARGON2D): "
-  openssl kdf -keylen $length -kdfopt pass:"$phrase" -kdfopt salt:$SALT \
-    -kdfopt iter:$iterations -kdfopt memcost:$memory ARGON2D
+  printf "$phrase" | argon2 $SALT -d -l $length -t $iterations -k $memory -p $parallelism
+
+  echo "${digest^^} (openssl kdf): "
+  openssl kdf -kdfopt digest:${digest^^} -kdfopt pass:"$phrase" -kdfopt salt:$SALT -keylen $length \
+    -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism
+
+  digest=argon2id
   echo ; echo "ARGON2id (argon2 -id): "
   printf "$phrase" | argon2 $SALT -id -t $iterations -k $memory -l $length
   echo "ARGON2id (openssl kdf ARGON2ID): "
