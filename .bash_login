@@ -1011,6 +1011,7 @@ function derive () {
     -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism ${digest^^}
 
 
+return
 
   echo ; echo "ARGON2d (argon2 -d): "
   printf "$phrase" | argon2 $SALT -d -t $iterations -k $memory -l $length
