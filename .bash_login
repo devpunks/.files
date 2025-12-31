@@ -1159,6 +1159,11 @@ function digest () {
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
 
+  # MD2, MD4, MD5 = 16 OCTETS
+  echo ; echo TODO: MD2: # 
+
+  echo ; echo TODO: MD4: # 
+
   echo ; echo MD5: # https://en.wikipedia.org/wiki/MD5
 
   printf "MD5 (md5sum): %s\n" \
