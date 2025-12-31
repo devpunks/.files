@@ -694,7 +694,7 @@ function work () {
 #   Y = ( aX + b ) % m # https://en.wikipedia.org/wiki/Linear_congruential_generator
 #   PKCS#1 = RSA Cryptography Standard
 #   PKCS#3 = Diffie-Hellman Key Agreement Standard
-#   PKCS#5 = Password-based Encryption Standard
+#   PKCS#5 = Password-based Encryption Standard - https://rfc-editor.org/rfc/rfc2898
 #   PKCS#6 = Extended-Certificate Syntax Standard
 #   PKCS#7 = Cryptographic Message Syntax Standard
 #   PKCS#8 = Private-Key Information Syntax Standard
