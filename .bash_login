@@ -1013,6 +1013,7 @@ function derive () {
 
 return
 
+  digest=argon2d
   echo ; echo "ARGON2d (argon2 -d): "
   printf "$phrase" | argon2 $SALT -d -t $iterations -k $memory -l $length
   echo "ARGON2d (openssl kdf ARGON2D): "
