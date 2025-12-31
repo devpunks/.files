@@ -1027,9 +1027,6 @@ function derive () {
     -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism ${digest^^}
 
 
-  return
-
-
   length=72 # base64( hmac-sha384( data:$password, key:$PEPPER ) ), $SALT, $COST )
   iterations=10
   # https://en.wikipedia.org/wiki/Bcrypt
