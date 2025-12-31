@@ -1026,8 +1026,8 @@ return
   printf "$phrase" | argon2 $SALT -id -l $length -t $iterations -k $memory -p $parallelism
 
   echo "${digest^^} (openssl kdf): "
-  openssl kdf -kdfopt digest:${digest^^} -kdfopt pass:"$phrase" -kdfopt salt:$SALT -keylen $length \
-    -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism
+  printf "$phrase" | openssl kdf -kdfopt salt:$SALT -keylen $length \
+    -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism ${digest^^}
 
 
   return
