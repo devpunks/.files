@@ -993,7 +993,6 @@ function derive () {
   # Lower Memory (64 MiB): t=3 (time), p=4 (lanes), m=2^16 (64 MiB RAM) for Argon2id.
   # Strong Default (2 GiB): t=1 (time), p=4 (lanes/parallelism), m=2^21 (2 GiB RAM) for Argon2id.
   length=32 # 24
-  memory=65536KiB # 64MiB | 65536 KiB | 67108864 B
   iterations=3
   parallelism=8 # cores
   # https://rfc-editor.org/rfc/rfc9106
