@@ -403,7 +403,7 @@ function exitstatus () {
   local -r status=$?
 
   [[ $status == 0 ]] && \
-    echo " ✅ $status "
+    echo " ✅ ${PIPELINESTATUS[*]} "
   [[ ${status} != 0 ]] && \
     echo " ❌ $status "
 } ; export -f exitstatus
