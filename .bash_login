@@ -1091,6 +1091,11 @@ function derive () {
     -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
   ${algorithm^^}
 
+
+  return
+
+
+
   digest=blake2b512
   algorithm=hkdf
   # https://en.wikipedia.org/wiki/HKDF
