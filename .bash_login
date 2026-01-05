@@ -1058,8 +1058,9 @@ function derive () {
   # https://en.wikipedia.org/wiki/Scrypt
   # https://datatracker.ietf.org/doc/html/rfc7914
   echo ; printf "SCRYPT: \n"
-  scrypt enc --logN $memory -r $blocksize -p $parallelism --passphrase env:SALT <( printf "$phrase" )
-
+  scrypt enc --passphrase env:SALT \
+    --logN ${memory2%%.*} -r $iterations -p $parallelism \
+  <( printf "$phrase" )
 
   algorithm=pbkdf2
   echo ; echo "${algorithm^^} [$length]:"
