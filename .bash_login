@@ -1011,6 +1011,11 @@ function derive () {
   printf "$phrase" | openssl kdf -kdfopt salt:$SALT -keylen $length \
     -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism ${digest^^}
 
+
+  return
+
+
+
   digest=argon2d
   echo ; echo "ARGON2d (argon2 -d): "
   printf "$phrase" | argon2 $SALT -d -l $length -t $iterations -k $memory -p $parallelism
