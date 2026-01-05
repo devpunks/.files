@@ -1072,7 +1072,7 @@ function derive () {
   echo ; echo "${algorithm^^}-${digest^^} [$length]:"
   openssl kdf -digest ${digest^^} \
     -keylen $length -iter ${iterations} \
-    -kdfopt salt:"$SALT" -pass "$phrase"
+    -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" ${algorithm^^} 
 
 
   return
