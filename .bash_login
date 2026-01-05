@@ -1047,7 +1047,6 @@ function derive () {
   echo "BCRYPT SALT: ${bresult:0:22}"
   echo "BCRYPT HASH: ${bresult:22}"
 
-  blocksize=1024
   iterations=8 # (8 * 128 = 1024)
   parallelism=8 # cores
   memory=12582912 # bytes (12MiB)
