@@ -989,6 +989,14 @@ function derive () {
 
   echo ; echo "KDF (Key Derivation Functions):"
 
+  digest=blake2b512
+  digest=blake2s256
+  echo ; echo "${digest^^} (): "
+#  printf "$phrase" | argon2 $SALT -i -l $length -t $iterations -k $memory -p $parallelism
+
+  echo "${digest^^} (openssl kdf): "
+  printf "$phrase" | openssl kdf -keylen $length ${digest^^}
+
   # Key Derivation (3s, 2 cores): Argon2id, t=1, p=4, m=6 GiB
   # Server Authentication (0.5s, 4 cores): Argon2id, t=1, p=8, m=4 GiB.
   # Lower Memory (64 MiB): t=3 (time), p=4 (lanes), m=2^16 (64 MiB RAM) for Argon2id.
