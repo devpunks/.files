@@ -1074,10 +1074,6 @@ function derive () {
     -kdfopt salt:${SALT} -keylen $length \
     -kdfopt iter:${iterations} -kdfopt pass:"$phrase" ${algorithm^^}
 
-
-  return
-
-
   length=72
   digest=sha256
   iterations=600000 # 600K
