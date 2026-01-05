@@ -1049,7 +1049,11 @@ function derive () {
 
   iterations=8 # (8 * 128 = 1024)
   parallelism=8 # cores
-  memory=12582912 # bytes (12MiB)
+  # 1 MiB is equal to 2^{20} bytes.
+  # Therefore, 12 MiB is equal to 12 times 2^{20} bytes.
+  # Decimal power is 12 times 2^{20}\approximately 2^{23.58}
+  memory2=12 # $( echo "l(12582912) / l(2)" | bc -l )
+  memory=12582912 # bytes (12MiB) (2^{23.58})
   # https://github.com/Tarsnap/scrypt
   # https://en.wikipedia.org/wiki/Scrypt
   # https://datatracker.ietf.org/doc/html/rfc7914
