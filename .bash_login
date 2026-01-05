@@ -1063,7 +1063,7 @@ function derive () {
   <( printf "$phrase" )
 
   algorithm=pbkdf2
-  echo ; echo "${algorithm^^} [$length]:"
+  echo ; echo ; echo "${algorithm^^} [$length]:"
 
   length=72
   digest=sha1
