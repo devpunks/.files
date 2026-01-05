@@ -1012,7 +1012,7 @@ function derive () {
   # https://unix.stackexchange.com/q/574667/argon2-commands-in-the-terminal
   # https://medium.com/@sumanbhadrasuman/password-security-in-2025-why-argon2id-is-the-standard-you-should-use-7c0797349836
   digest=argon2i
-  echo ; echo "ARGON2i (argon2 -i): "
+  echo ; echo "${digest^^} (argon2 -i): "
   printf "$phrase" | argon2 $SALT -i -l $length -t $iterations -k $memory -p $parallelism
 
   echo "${digest^^} (openssl kdf): "
