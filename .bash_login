@@ -1028,7 +1028,7 @@ function derive () {
     -kdfopt iter:$iterations -kdfopt memcost:$memory -kdfopt lanes:$parallelism ${digest^^}
 
   digest=argon2id
-  echo ; echo "ARGON2id (argon2 -id): "
+  echo ; echo "${digest^^} (argon2 -id): "
   printf "$phrase" | argon2 $SALT -id -l $length -t $iterations -k $memory -p $parallelism
 
   echo "${digest^^} (openssl kdf): "
