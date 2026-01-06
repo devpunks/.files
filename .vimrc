@@ -604,12 +604,6 @@ nnoremap <Space><Tab>   :echom 'SPACE + TAB'<CR>
 nnoremap <Space><Enter> :echom 'SPACE + ENTER'<CR>
 nnoremap <Enter><Space> :echom 'ENTER + SPACE'<CR>
 
-
-
-finish
-
-
-
 " TODO: don't clobber Tab
 " inoremap <Tab> <C-o>:echom 'INSERT TAB'<CR>
 inoremap <Tab><Enter>   <C-o>:echom 'INSERT TAB + ENTER'<CR>
