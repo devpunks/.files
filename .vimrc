@@ -604,7 +604,7 @@ nnoremap <Enter><Space> :echom 'ENTER + SPACE'<CR>
 
 
 
-return
+finish
 
 
 
