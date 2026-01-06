@@ -568,8 +568,6 @@ echom 'modifyOtherKeys: t_TI='..&t_TI..' t_TI='..&t_TE
 " =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
-" Search (Find)
-nnoremap <S-f> /
 
 " Splits
 nnoremap _ :split<CR>
