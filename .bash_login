@@ -1075,7 +1075,7 @@ function derive () {
     -keylen $length -kdfopt iter:${iterations} ${algorithm^^}
 
   length=72
-  digest=sha256
+  digest=sha256 # https://en.wikipedia.org/wiki/SHA-256
   iterations=600000 # 600K
   echo ; echo "${algorithm^^}-${digest^^} [$length]:"
   openssl kdf -kdfopt digest:${digest^^} \
