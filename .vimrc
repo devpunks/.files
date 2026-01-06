@@ -570,7 +570,7 @@ echom 'modifyOtherKeys: t_TI='..&t_TI..' t_TI='..&t_TE
 nnoremap ; :
 
 " Splits
-nnoremap _ :split<CR>
+onoremap _ :split<CR>
 nnoremap <Bar> :vsplit<CR>
 
 " <CTRL+h> Focus on pane to left
