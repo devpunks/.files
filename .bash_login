@@ -1085,10 +1085,9 @@ function derive () {
   digest=sha512
   iterations=210000 # 210K
   echo ; echo "${algorithm^^}-${digest^^} [$length]:"
-  openssl kdf -kdfopt digest:${digest^^} \
-    -keylen $length -kdfopt iter:${iterations} \
-    -kdfopt salt:"$SALT" -kdfopt pass:"$phrase" \
-  ${algorithm^^}
+  openssl kdf -digest ${digest^^} \
+    -kdfopt pass:"$phrase" -kdfopt salt:${SALT} \
+    -keylen $length -kdfopt iter:${iterations} ${algorithm^^}
 
 
   return
