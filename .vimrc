@@ -558,7 +558,6 @@ set statusline+=\ 🎨\ %{get(g:,'colors_name','NONE')}\ 
 " - https://subscription.packtpub.com/book/data/9781789341096/3/ch03lvl1sec26/the-leader-key
 let g:mapleader = ','
 
-" =========================================================================
 " :h modifyOtherKeys
 " let &t_TI = ''
 " let &t_TE = ''
