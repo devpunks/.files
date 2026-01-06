@@ -565,6 +565,7 @@ let g:mapleader = ','
 " let &t_TE = '[>4;m'
 echom 'modifyOtherKeys: t_TI='..&t_TI..' t_TI='..&t_TE
 
+" =========================================================================
 " Map semi-colon to colon (no need to press <SHIFT>)
 nnoremap ; :
 " Search (Find)
