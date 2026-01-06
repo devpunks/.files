@@ -589,6 +589,8 @@ nnoremap <C-z> <C-w>_ \| <C-w>\|
 
 " :Bdelete menu<CR>
 nnoremap <Del>          x
+nnoremap <Del>          x
+
 nnoremap <Tab>          :Tab<CR>
 nnoremap <Space>        :Space<CR>
 nnoremap <Enter>        :Enter<CR>
