@@ -594,6 +594,8 @@ nnoremap <Del>          x
 nnoremap <Tab>          :Tab<CR>
 nnoremap <Space>        :Space<CR>
 nnoremap <Enter>        :Enter<CR>
+nnoremap <C-f>          :Search<CR>
+
 nnoremap <S-Tab>        :echom 'SHIFT + TAB'<CR>
 nnoremap <Tab><Enter>   :echom 'TAB + ENTER'<CR>
 nnoremap <Enter><Tab>   :echom 'ENTER + TAB'<CR>
