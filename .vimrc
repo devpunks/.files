@@ -621,13 +621,6 @@ nnoremap <Leader>/ :verbose map<CR>
 nnoremap <silent> L :tabnext<CR>
 nnoremap <silent> H :tabprevious<CR>
 
-
-
-
-finish
-
-
-
 " TODO: Prevent overriding <C-o> & C-t>
 "   - https://stackoverflow.com/q/27588664/difference-between-c-t-and-c-o-in-vim
 " Open Url on this line with the browser \w
