@@ -1085,7 +1085,7 @@ function! Browse ( ... ) abort " Opening URL
   echom 'Opening URL:' url
   call system ( l:open .. url )
 
-endfunction " Browser
+endfunction " Browse
 
 " -------------------------------------------------------------------------
 " CursorCharacter ()
