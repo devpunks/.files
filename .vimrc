@@ -1247,7 +1247,7 @@ function s:git_link ( start, end ) range " a:firstline a:lastline
   echom 'The Remote:' l:remote
   echom 'The URL:' l:url
 
-  call Browser ( l:url )
+  call Browse ( l:url )
 
 endfunction " git_link
 
