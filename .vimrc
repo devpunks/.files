@@ -1070,7 +1070,7 @@ function! PopupComplete ( id, result ) abort
 endfunction " PopupComplete
 
 " -------------------------------------------------------------------------
-" Browser ()
+" Browse ()
 " -------------------------------------------------------------------------
 function! Browser ( ... ) abort " Opening URL
   const l:open = 'open ' " Default
