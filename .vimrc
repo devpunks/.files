@@ -240,7 +240,7 @@ let &g:wildignore=s:ignore ()
 " (Insert) Tab complete
 inoremap <expr> <Tab> pumvisible () ? '<C-n>' : '<C-x><C-u>'
 inoremap <expr> <S-Tab> pumvisible () ? '<C-p>' : ':echom "INSERT SHIFT + TAB"<CR>'
-inoremap <expr> <M-Tab> pumvisible () ? ':echo 'Updated'<CR> :':echom "INSERT ALT + TAB"<CR>'
+inoremap <expr> <M-Tab> pumvisible () ? ':echo "PUM"<CR> :':echom "INSERT ALT + TAB"<CR>'
 
 " https://linuxhandbook.com/vim-auto-complete
 " https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
