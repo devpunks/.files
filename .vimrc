@@ -238,7 +238,6 @@ let &g:wildignore=s:ignore ()
 
 " Completion / LSPs -------------------------------------------------------
 " (Insert) Tab complete
-" TODO: change functionality to <C-n> when popup enabled
 inoremap <expr> <Tab> pumvisible () ? '<C-n>' : '<C-x><C-u>'
 inoremap <expr> <S-Tab> pumvisible () ? '<C-p>' : ':echom "INSERT SHIFT + TAB"<CR>'
 
@@ -624,7 +623,7 @@ nnoremap <silent> H :tabprevious<CR>
 " TODO: Prevent overriding <C-o> & C-t>
 "   - https://stackoverflow.com/q/27588664/difference-between-c-t-and-c-o-in-vim
 " Open Url on this line with the browser \w
-cnoremap <C-o> :call Browser ()<CR>
+cnoremap <C-o> :call Browse ()<CR>
 " tabs - https://gist.github.com/Starefossen/5957088
 " TODO: <C-t> conflicts with :tab pop
 
