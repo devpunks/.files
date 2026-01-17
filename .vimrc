@@ -1072,7 +1072,7 @@ endfunction " PopupComplete
 " -------------------------------------------------------------------------
 " Browse ()
 " -------------------------------------------------------------------------
-function! Browser ( ... ) abort " Opening URL
+function! Browse ( ... ) abort " Opening URL
   const l:open = 'open ' " Default
   " const l:open = 'xdg-open ' executable('xdg-open')
   " const l:open = 'start ' has('win16') has('win32') has('win64')
