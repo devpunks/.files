@@ -645,6 +645,13 @@ vnoremap <C-s> <C-c>:update<CR> :echo 'Updated'<CR>
 " insert mode: escape to normal and save
 inoremap <C-s> <C-o>:write<CR><C-o>:echo 'Updated'<CR>
 
+
+
+finish
+
+
+
+
 " https://vimhelp.org/terminal.txt.html
 if has ( 'terminal' )
   " set termwinkey=<Esc>
