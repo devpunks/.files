@@ -875,11 +875,6 @@ function Foo{g:shazam} () abort
   echom 'Shazzaaaam'
 endfunction
 
-
-
-finish
-
-
 autocmd UserDefaults CursorHoldI * :Tab
 command! Tab call s:tab ()
 function! s:tab () abort
