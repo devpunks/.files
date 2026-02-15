@@ -653,7 +653,7 @@ if has ( 'terminal' )
   nnoremap <S-t> :terminal<CR>
 
   " :h terminal
-  autocmd VimDefaults TerminalWinOpen :echo 'Terminal Window Open'
+  autocmd VimDefaults TerminalWinOpen echo 'Terminal Window Open'
   " setlocal bufhidden=hide
 endif
 
