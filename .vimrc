@@ -742,7 +742,7 @@ autocmd FileDefaults BufWritePost .tmux.conf
 " -------------------------------------------------------------------------
 " CSV - https://github.com/chrisbra/csv.vim
 " -------------------------------------------------------------------------
-autocmd FileDefaults BufReadPost,BufNewFile *.csv,*.dat call g:CSV ()
+autocmd FileDefaults BufNewFile,BufReadPost *.csv,*.dat call g:CSV ()
 
 function g:CSV () abort
   setfiletype csv
