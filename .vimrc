@@ -429,7 +429,7 @@ let &t_EI..="\e]12;green\x7" " NORMAL = green cursor
 autocmd VimDefaults VimLeave * silent !echo -ne '[0;0;0 q'
 
 " GUI CURSOR --------------------------------------------------------------
-if has('gui_running')
+if has ( 'gui_running' )
   set guioptions=egmrt " remove ugly toolbar :-)
   " https://vim.fandom.com/wiki/Configuring_the_cursor
   set guicursor=i:blinkwait90
