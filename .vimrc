@@ -712,12 +712,6 @@ set fileformats=unix,dos " set <LF> (unix) first, then try <CR><LF> (DOS)
 " -------------------------------------------------------------------------
 autocmd FileDefaults VimEnter * set omnifunc=syntaxcomplete#Complete
 
-
-
-  finish
-
-
-
 " -------------------------------------------------------------------------
 " Tar
 "   - https://vi.stackexchange.com/a/2224
