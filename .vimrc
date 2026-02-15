@@ -725,7 +725,7 @@ let g:loaded_zip = 1
 let g:loaded_zipPlugin = 1
 
 " -------------------------------------------------------------------------
-" .vimrc
+" .vimrc - https://vimhelp.org
 " -------------------------------------------------------------------------
 " Autoload .vimrc on write
 autocmd FileDefaults BufWritePost $MYVIMRC nested source $MYVIMRC
