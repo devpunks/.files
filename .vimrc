@@ -260,9 +260,6 @@ function! s:complete ( token = '', command = '', cursor = 0, bang = 0 ) " abort
 
   let l:token =  trim ( a:token ?? expand ( '<cword>' ) ) ?? '.'
 
-  echom 'Token: "' .. l:token .. '"'
-  echom 'Base:'  a:command_line
-  echom 'Cursor Position:' a:cursor_pos
   echom 'Bang:' a:bang
 
   echom 'Shazaam Completion (' l:token '):'
