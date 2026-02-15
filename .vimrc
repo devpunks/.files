@@ -747,7 +747,7 @@ autocmd FileDefaults BufReadPost,BufNewFile *.csv,*.dat call g:CSV ()
 function g:CSV () abort
   setfiletype csv
 
-" let b:csv_arrange_align = 'l*'
+" let l:csv_arrange_align = 'l*'
 
   ArrangeColumn
 
