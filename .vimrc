@@ -890,6 +890,13 @@ command! Enter call s:enter ()
 function! s:enter () abort
   echom 'Entering ( Not Yet Implemented. See :Enter command )'
 endfunction " enter
+
+
+
+finish
+
+
+
 " -------------------------------------------------------------------------
 " Define () - current word
 "   - Dictionary
