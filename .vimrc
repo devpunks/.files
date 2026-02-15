@@ -651,6 +651,8 @@ if has ( 'terminal' )
   " set termwinkey=<Esc> " TODO: fix ESC key in Termux
   set termwinkey=<C-w> " The key that starts a CTRL-W command in a terminal window.
   nnoremap <S-t> :terminal<CR>
+
+  autocmd TerminalWinOpen setlocal bufhidden=hide
 endif
 
 
