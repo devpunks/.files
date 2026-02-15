@@ -103,7 +103,7 @@ highlight! Folded term=bold cterm=bold,underline,italic ctermfg=NONE ctermbg=NON
 highlight! CursorColumn cterm=underline gui=underline ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
 highlight! ColorColumn term=strikethrough,italic cterm=strikethrough,italic ctermbg=NONE ctermfg=NONE gui=strikethrough,italic guifg=NONE guibg=NONE
 
-highlight! VertSplit cterm=NONE ctermfg=NONE
+highlight! VertSplit term=bold cterm=bold ctermfg=NONE
 highlight! StatusLineNC term=NONE,bold cterm=NONE,bold gui=NONE,bold
 highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
 
