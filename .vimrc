@@ -731,7 +731,7 @@ let g:loaded_zipPlugin = 1
 autocmd FileDefaults BufWritePost $MYVIMRC nested source $MYVIMRC
 
 " -------------------------------------------------------------------------
-" .tmux.conf
+" .tmux.conf - https://man7.org/linux/man-pages/man1/tmux.1.html
 " -------------------------------------------------------------------------
 " Autoload .tmux.conf on write
 autocmd FileDefaults BufWritePost .tmux.conf
