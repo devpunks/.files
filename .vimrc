@@ -760,8 +760,8 @@ endfunction " CSV
 "   - http://vimcasts.org/episodes/hard-wrapping-text
 " -------------------------------------------------------------------------
 augroup FileDefaults
-  autocmd BufReadPost *.md setlocal formatoptions-=t formatoptions+=n
-  autocmd BufReadPost README setlocal formatoptions-=t formatoptions+=n
+  autocmd BufNewFile,BufReadPost *.md setlocal formatoptions-=t formatoptions+=n
+  autocmd BufNewFile,BufReadPost README setlocal formatoptions-=t formatoptions+=n
 augroup END
 
 " -------------------------------------------------------------------------
