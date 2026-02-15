@@ -267,7 +267,8 @@ function! s:complete ( token = '', command_line = '', cursor_pos = 0, bang = 0 )
 
   echom 'Shazaam Completion (' l:token '):'
 
-  return type(l:token) == v:t_number ? l:token
+  return l:token =~# '^\d\+$'
+  \ ? l:token
   \ : { 'refresh': 'always', 'words': [
       \ { 'word': 'fooooo', 'abbr':'fo', 'menu': 'foo', 'info': 'brown fox',
         \ 'kind': 'C', 'icase': 0, 'equal': 0, 'dup':1, 'empty': 0, 'user_data': '' },
