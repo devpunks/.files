@@ -804,14 +804,11 @@ function! g:CSS () abort
     \ ]
   \ } " tagbar_type_css
 endfunction " g:CSS
-let g:tagbar_type_css = {
-\ 'ctagstype' : 'Css',
-  \ 'kinds' : [
-    \ 'c:classes',
-    \ 's:selectors',
-    \ 'i:identities'
-  \ ]
-\ } " tagbar_type_css
+
+
+
+finish
+
 
 " -------------------------------------------------------------------------
 " Go
