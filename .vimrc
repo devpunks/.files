@@ -652,7 +652,7 @@ if has ( 'terminal' )
   set termwinkey=<C-w> " The key that starts a CTRL-W command in a terminal window.
   nnoremap <S-t> :terminal<CR>
 
-  autocmd TerminalWinOpen setlocal bufhidden=hide
+  autocmd TerminalWinOpen :echo 'Terminal Window Open' " setlocal bufhidden=hide
 endif
 
 " Reload .vimrc configuration
