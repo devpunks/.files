@@ -719,8 +719,7 @@ let g:loaded_tar = 1
 let g:loaded_tarPlugin = 1
 
 " -------------------------------------------------------------------------
-" Zip
-"   - https://vi.stackexchange.com/q/2223/how-to-tell-vim-not-to-try-to-unzip-a-file
+" Zip - https://vi.stackexchange.com/q/2223/how-to-tell-vim-not-to-try-to-unzip-a-file
 " -------------------------------------------------------------------------
 let g:loaded_zip = 1
 let g:loaded_zipPlugin = 1
