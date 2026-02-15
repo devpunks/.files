@@ -676,12 +676,6 @@ set noautowrite " do not autowrite
 set noautowriteall " do not autowrite (all)
 set nofixendofline " Disable <EOL> insertion
 
-
-
-  finish
-
-
-
 " Indentation ------------------------------------
 set smarttab " 'tab' insertion
 set autoindent   " auto(matically smart)indent
