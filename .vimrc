@@ -787,6 +787,9 @@ augroup FileDefaults
 augroup END
 
 function! g:CSS () abort
+  highlight! VendorPrefix term=bold cterm=standout ctermfg=yellow gui=bold guifg=#ffff00
+  match VendorPrefix /-\(moz\|webkit\|o\|ms\)-/
+
   setlocal filetype=css
   echom "CSS FILE"
   if &runtimepath !~ 'vim-css3-syntax' | return | endif
