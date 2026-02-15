@@ -288,11 +288,8 @@ set selection=exclusive " No EOL CR/LF
 set pastetoggle=<Leader>p " Allow toggle of (paste) insert indentation
 set nopaste " non paste mode - https://vimtricks.com/p/vimtricks-avoid-paste-formatting
 
-if has ( 'clipboard_working' )
-  echom 'Copy & 🍝Pasta'
-else
-  echom '❌ NO Copy & 🍝Pasta'
-endif
+echom has ( 'clipboard_working' ) ?
+\ 'Copy & 🍝Pasta' : '❌ NO Copy & 🍝Pasta'
 
 " Clipboard Registers -----------------------------------------------------
 "   - https://stackoverflow.com/q/11489428
