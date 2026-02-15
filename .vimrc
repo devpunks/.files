@@ -756,8 +756,7 @@ function g:CSV () abort
 endfunction " CSV
 
 " -------------------------------------------------------------------------
-" Markdown
-"   - http://vimcasts.org/episodes/hard-wrapping-text
+" Markdown - http://vimcasts.org/episodes/hard-wrapping-text
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd BufNewFile,BufReadPost *.md setlocal formatoptions-=t formatoptions+=n
