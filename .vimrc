@@ -791,7 +791,7 @@ function! g:CSS () abort
   echom "CSS FILE"
   if &runtimepath !~ 'vim-css3-syntax' | return | endif
 
-  highlight VendorPrefix term=bold cterm=standout ctermfg=#00ffff gui=bold guifg=#00ffff
+  highlight! VendorPrefix term=bold cterm=standout ctermfg=#00ffff gui=bold guifg=#00ffff
   match VendorPrefix /-\(moz\|webkit\|o\|ms\)-[a-zA-Z-]\+/
 
   if &runtimepath !~ 'tagbar' | return | endif
