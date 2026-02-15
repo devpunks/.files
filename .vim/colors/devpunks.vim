@@ -57,7 +57,7 @@ let &t_Ds = "\e[4:5m" " UnderDashed
 " Base Default - https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
 highlight! Normal term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
 " Set message text to green and background to dark grey
-highlight MsgArea term=NONE cterm=NONE ctermfg=White ctermbg=236 gui=NONE guifg=#FFFFFF guibg=#303030
+highlight MsgArea term=NONE cterm=NONE ctermfg=white ctermbg=236 gui=NONE guifg=#FFFFFF guibg=#303030
 
 " Diff
 " highlight! DiffAdd    ctermfg=3
