@@ -783,8 +783,7 @@ autocmd FileDefaults BufNewFile,BufReadPost *.slim setlocal filetype=slim
 " -------------------------------------------------------------------------
 augroup FileDefaults
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-  autocmd BufNewFile,BufReadPost *.sss,*.sass,*.scss setlocal filetype=css
-  autocmd FIleReadPost *.css,*.sss,*.sass,*.scss call g:CSS ()
+  autocmd BufNewFile,BufReadPost,FileReadPost *.css *.sss,*.sass,*.scss call g:CSS()
 augroup END
 
 function! g:CSS () abort
