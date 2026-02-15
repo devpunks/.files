@@ -258,9 +258,9 @@ command! -bang -nargs=* Complete call s:complete ( <q-args>, v:none, 0, <bang>0 
 function! s:complete ( token = '', command_line = '', cursor_pos = 0, bang = 0 ) " abort
   echom 'Complete():' .. join ( a:000, ',' )
 
-" let l:token =  trim ( a:token ?? expand ( '<cword>' ) ) ?? '.'
-:
-" echom 'Token: "' .. l:token .. '"'
+  let l:token =  trim ( a:token ?? expand ( '<cword>' ) ) ?? '.'
+
+  echom 'Token: "' .. l:token .. '"'
   echom 'Base:'  a:command_line
   echom 'Cursor Position:' a:cursor_pos
   echom 'Bang:' a:bang
