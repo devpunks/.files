@@ -868,6 +868,11 @@ let g:tagbar_type_ruby = {
 
 " }}}
 
+
+
+finish
+
+
 " =========================================================================
 " {{{ FUNCTIONS
 "  - https://tecmint.com/bash-scripts-linux-sysadmin
