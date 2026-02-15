@@ -2638,7 +2638,7 @@ set textwidth=75 " wrap https://vimtricks.com/p/vim-line-length-marker
 set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
 set synmaxcol=256 " Prevent slow loading https://github.com/tpope/vim-sensible/issues/142
 
-" - Whitespace ------------------------------------------------------------
+" Whitespace --------------------------------------------------------------
 const s:TABSIZE=2
 set expandtab "turn tabs into (tabstop) spaces
 set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
