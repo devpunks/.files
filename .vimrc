@@ -661,12 +661,6 @@ endif
 " nnoremap <Leader>R :source ~/.vimrc
 cnoremap <C-r> :source ~/.vimrc<CR>
 
-
-
-finish
-
-
-
 " }}}
 
 " =========================================================================
