@@ -831,7 +831,7 @@ augroup END
 " -------------------------------------------------------------------------
 " Nodejs - https://simplified.guide/vim/auto-complete-javascript
 " -------------------------------------------------------------------------
-autocmd FileDefaults BufReadPost * call s:DetectNode()
+autocmd FileDefaults BufNewFile,BufReadPost * call s:DetectNode ()
 
 function! s:DetectNode ()
   if getline ( 1 ) !~ 'node' | return | endif
