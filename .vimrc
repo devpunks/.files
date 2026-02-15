@@ -678,6 +678,7 @@ set nofixendofline " Disable <EOL> insertion
 
 
 
+  finish
 
 
 set autoread " re-read files
