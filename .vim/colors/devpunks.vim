@@ -91,8 +91,8 @@ highlight! ModeMsg term=reverse,italic cterm=reverse,italic ctermfg=NONE ctermbg
   highlight! link MoreMsg ModeMsg
 
 " Gutter
-highlight! Cursor cterm=NONE ctermfg=NONE
-highlight! LineNr cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
+highlight! Cursor term=NONE cterm=NONE ctermfg=NONE
+highlight! LineNr term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
   highlight! link SignColumn LineNr
 highlight! CursorLine term=underline cterm=underline gui=underline ctermbg=NONE guibg=NONE
 highlight! CursorLineNr cterm=bold,reverse ctermfg=NONE gui=bold guifg=NONE
