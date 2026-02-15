@@ -87,7 +87,7 @@ highlight! WildMenu term=standout,underline cterm=standout,underline ctermfg=NON
 highlight! Search term=standout cterm=standout ctermfg=NONE ctermbg=NONE
   highlight! link IncSearch Search
 highlight! CurSearch term=standout,underline cterm=standout,underline ctermfg=NONE ctermbg=NONE
-highlight! ModeMsg cterm=reverse,italic ctermfg=NONE ctermbg=NONE
+highlight! ModeMsg term=reverse,italic cterm=reverse,italic ctermfg=NONE ctermbg=NONE gui=reverse,italic guibg=NONE guifg=NONE
   highlight! link MoreMsg ModeMsg
 
 " Gutter
