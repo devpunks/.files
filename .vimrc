@@ -2614,6 +2614,8 @@ if $TERM =~ '256color'
 endif
 
 syntax on " turns syntax highlighting on
+
+" Spelling ----------------------------------------------------------------
 set spelloptions = "camel"
 set spellsuggest = "fast"
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check
