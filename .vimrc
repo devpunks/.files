@@ -648,7 +648,7 @@ inoremap <C-s> <C-o>:write<CR><C-o>:echo 'Updated'<CR>
 
 " https://vimhelp.org/terminal.txt.html
 if has ( 'terminal' )
-  " set termwinkey=<Esc>
+  " set termwinkey=<Esc> " TODO: fix ESC key in Termux
   set termwinkey=<C-w> " The key that starts a CTRL-W command in a terminal window.
   nnoremap <S-t> :terminal<CR>
 endif
