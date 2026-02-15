@@ -68,8 +68,8 @@ highlight! DiffDelete term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=
 highlight! DiffText   term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=NONE
 
 " Error Warnings
-highlight! WarningMsg cterm=standout ctermfg=NONE
-highlight! Error  cterm=standout,bold,italic,underline  ctermbg=NONE ctermfg=NONE
+highlight! WarningMsg cterm=standout,italic ctermfg=NONE
+highlight! Error  cterm=standout,bold,underline  ctermbg=NONE ctermfg=NONE
   highlight! link ErrorMsg Error
 highlight SpellBad cterm=strikethrough ctermbg=NONE
   highlight! link SpellCap SpellBad
