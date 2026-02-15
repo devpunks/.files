@@ -879,7 +879,9 @@ endfunction
 
 command! Tab call s:tab ()
 function! s:tab () abort
-  echom 'Tabbing ( Not Yet Implemented. See :Tab command )'
+  echom 'Tabbbbbiiiiing'
+  " Call (User) completefunc
+  execute "normal! \<C-x>"
 endfunction " tab
 
 command! Space call s:space ()
