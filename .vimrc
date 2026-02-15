@@ -655,6 +655,10 @@ if has ( 'terminal' )
   autocmd TerminalWinOpen setlocal bufhidden=hide
 endif
 
+" Reload .vimrc configuration
+" nnoremap <Leader>R :source ~/.vimrc
+cnoremap <C-r> :source ~/.vimrc<CR>
+
 
 
 finish
