@@ -254,9 +254,9 @@ set completeopt+=menuone,noinsert,popup " noselect|noinsert for automatic comple
 " Complete () -
 " -------------------------------------------------------------------------
 set completefunc=s:complete
-command! -bang -nargs=* Complete call s:complete ( <q-args>, v:none, 0, <bang>0 )
-function! s:complete ( token = '', command_line = '', cursor_pos = 0, bang = 0 ) " abort
-  echom 'Complete():' .. join ( a:000, ',' )
+command! -bang -nargs=* Complete call s:complete ( <q-args>, v:none, v:none, <bang>0 )
+function! s:complete ( token = '', command = '', cursor = 0, bang = 0 ) " abort
+  echom 'complete ():' .. join ( a:000, ',' )
 
   let l:token =  trim ( a:token ?? expand ( '<cword>' ) ) ?? '.'
 
