@@ -681,10 +681,6 @@ set nofixendofline " Disable <EOL> insertion
   finish
 
 
-set autoread " re-read files
-set noautowrite " do not autowrite
-set noautowriteall " do not autowrite (all)
-set nofixendofline " Disable <EOL> insertion
 
 " Indentation ------------------------------------
 set smarttab " 'tab' insertion
