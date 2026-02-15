@@ -1368,7 +1368,7 @@ endfunction " OverflowMargin
 " Scrollbar - https://github.com/obcat/vim-sclow
 " -------------------------------------------------------------------------
 " autocmd FileReadPost * call sclow#update()
-autocmd VimDefaults BufReadPost * call g:ScrollBar()
+autocmd VimDefaults BufNewFile,BufReadPost * call g:ScrollBar ()
 
 function! g:ScrollBar () abort
   if get( g:, 'loaded_sclow', 0 ) != 1 | return | endif
