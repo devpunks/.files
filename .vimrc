@@ -790,7 +790,7 @@ augroup END
 function! g:CSS () abort
   if &runtimepath !~ 'vim-css3-syntax' | return | endif
 
-  highlight VendorPrefix guifg=#00ffff gui=bold
+  highlight VendorPrefix term=bold cterm=standout ctermfg=#00ffff gui=bold guifg=#00ffff
   match VendorPrefix /-\(moz\|webkit\|o\|ms\)-[a-zA-Z-]\+/
 endfunction " g:CSS
 let g:tagbar_type_css = {
