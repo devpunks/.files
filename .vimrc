@@ -861,7 +861,6 @@ let g:tagbar_type_ruby = {
   \ 'm:modules',
   \ 'c:classes',
   \ 'C:constants',
-  \ 'C:contexts',
   \ 'd:describes',
   \ 'F:singleton methods'
 \ ] } " g:tagbar_type_ruby
