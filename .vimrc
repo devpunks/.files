@@ -2620,7 +2620,17 @@ set spelloptions = "camel"
 set spellsuggest = "fast"
 set spell " Enable spellchecking - https://vimtricks.com/p/vim-spell-check
 
-" - Line Length -----------------------------------------------------------
+" Line Continuation -------------------------------------------------------
+" (NORMAL/VISUAL MODE)
+set whichwrap=h,l " 'h' & 'l' wrap EOL & BOL
+set whichwrap+=b,s " (b)ackspace & (s)pace wrap EOL & BOL
+" (NORMAL/VISUAL MODE)
+set whichwrap+=<,> " < left and right > arrow wrap to prev. and next line
+" (INSERT/REPLACE MODE)
+set whichwrap+=[,] " [ left and right ] arrow wrap to prev. and next line
+set backspace=indent,eol,nostop " Insert mode <BS> deletion
+
+" Line Length -------------------------------------------------------------
 set wrap " word
 set linebreak " Avoid mid-word line wrapping
 set showbreak=⥹ " Character used for wrapped line
