@@ -36,6 +36,7 @@ endif
 "let g:colors_name='devPunks😈Mono'
 let g:colors_name='devpunks'
 
+let &background='dark'
 if 'dark' == &background " Convert to ternary
   " Auto-Dark Mode https://arslan.io/2021/02/15/automatic-dark-mode-for-terminal-applications
   echom 'dark'
