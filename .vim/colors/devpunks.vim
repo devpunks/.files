@@ -90,6 +90,10 @@ highlight! CurSearch term=standout,underline cterm=standout,underline ctermfg=NO
 highlight! ModeMsg term=reverse,italic cterm=reverse,italic ctermfg=NONE ctermbg=NONE gui=reverse,italic guibg=NONE guifg=NONE
   highlight! link MoreMsg ModeMsg
 
+highlight! VertSplit term=bold cterm=bold ctermfg=NONE
+highlight! StatusLineNC term=NONE,bold cterm=NONE,bold gui=NONE,bold
+highlight! StatusLine term=reverse,bold cterm=reverse,bold gui=reverse,bold
+
 " Gutter
 highlight! Cursor term=NONE cterm=NONE ctermfg=NONE
 highlight! LineNr term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
