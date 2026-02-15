@@ -94,6 +94,8 @@ highlight! ModeMsg term=reverse,italic cterm=reverse,italic ctermfg=NONE ctermbg
 highlight! Cursor term=NONE cterm=NONE ctermfg=NONE
 highlight! LineNr term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
   highlight! link SignColumn LineNr
+highlight! LineNrAbove term=reverse cterm=reverse ctermfg=NONE guifg=NONE
+  highlight! link LineNrBelow LineNrAbove
 highlight! CursorLine term=underline cterm=underline gui=underline ctermbg=NONE guibg=NONE
 highlight! CursorLineNr cterm=bold,reverse ctermfg=NONE gui=bold guifg=NONE
 highlight! FoldColumn term=bold cterm=bold ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
