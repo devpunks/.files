@@ -755,11 +755,6 @@ function g:CSV () abort
   let g:csv_highlight_column = 'y'
 endfunction " CSV
 
-
-
-  finish
-
-
 " -------------------------------------------------------------------------
 " Markdown
 "   - http://vimcasts.org/episodes/hard-wrapping-text
