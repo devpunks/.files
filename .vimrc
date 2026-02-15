@@ -51,6 +51,7 @@ messages clear " Clear messages
 " Reset all autocommand groups
 augroup VimDefaults  | autocmd! | augroup END
 augroup FileDefaults | autocmd! | augroup END
+augroup UserDefaults | autocmd! | augroup END
 " -------------------------------------------------------------------------
 
 set encoding=UTF-8
