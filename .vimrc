@@ -851,17 +851,6 @@ augroup FileDefaults
 augroup END
 
 let g:tagbar_type_ruby = {
-\ 'kinds' : [
-  \ 'f:methods',
-  \ 'm:modules',
-  \ 'c:classes',
-  \ 'C:constants',
-  \ 'C:contexts',
-  \ 'd:describes',
-  \ 'F:singleton methods'
-\ ] } " g:tagbar_type_ruby
-
-let g:tagbar_type_ruby = {
 \ 'ctagsbin' : 'ripper-tags',
 \ 'ctagsargs'  : [ '-f', '-' ],
 \ 'scope2kind' : { 'class' : 'c' },
