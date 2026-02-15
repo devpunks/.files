@@ -267,6 +267,7 @@ function! s:complete ( token = '', command_line = '', cursor_pos = 0, bang = 0 )
 
   echom 'Shazaam Completion (' l:token '):'
 
+  " Check if token is a number
   return l:token =~# '^\d\+$'
   \ ? l:token
   \ : { 'refresh': 'always', 'words': [
