@@ -265,7 +265,7 @@ function! s:complete ( token = '', command_line = '', cursor_pos = 0, bang = 0 )
   echom 'Cursor Position:' a:cursor_pos
   echom 'Bang:' a:bang
 
-" echom 'Shazaam Completion (' l:token '):'
+  echom 'Shazaam Completion (' l:token '):'
 
   return type(l:token) == v:t_number ? l:token
   \ : { 'refresh': 'always', 'words': [
