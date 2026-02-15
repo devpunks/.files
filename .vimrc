@@ -764,11 +764,6 @@ augroup FileDefaults
   autocmd BufReadPost README setlocal formatoptions-=t formatoptions+=n
 augroup END
 
-
-
-  finish
-
-
 " -------------------------------------------------------------------------
 " XML
 "   - See $VIMRUNTIME/autoload/xmlcomplete.vim
