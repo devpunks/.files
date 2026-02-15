@@ -677,7 +677,6 @@ set noautowriteall " do not autowrite (all)
 set nofixendofline " Disable <EOL> insertion
 
 
-finish
 
 
 
