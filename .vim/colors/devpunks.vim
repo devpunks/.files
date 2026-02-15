@@ -62,9 +62,9 @@ highlight MsgArea term=NONE cterm=NONE ctermfg=White ctermbg=236 gui=NONE guifg=
 " highlight! DiffAdd    ctermfg=3
 " highlight! DiffDelete ctermfg=1
 " highlight! DiffChange ctermfg=2
-highlight! DiffAdd    term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=green
-highlight! DiffChange term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=yellow
-highlight! DiffDelete term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=red
+highlight! DiffAdd    term=reverse cterm=reverse ctermfg=green gui=reverse guifg=green
+highlight! DiffChange term=reverse cterm=reverse ctermfg=yellow gui=reverse guifg=yellow
+highlight! DiffDelete term=reverse cterm=reverse ctermfg=red gui=reverse guifg=red
 highlight! DiffText   term=reverse cterm=reverse ctermfg=NONE gui=reverse guifg=NONE
 
 " Error Warnings
