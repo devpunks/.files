@@ -616,7 +616,7 @@ inoremap <Space><Enter> <C-o>:echom 'INSERT SPACE + ENTER'<CR>
 inoremap <Enter><Space> <C-o>:echom 'INSERT ENTER + SPACE'<CR>
 
 " TODO: FIX ECHO MESSAGE PRINTING TO COMMAND LINE
-nnoremap <C-c> :if v:hlsearch \| nohlsearch \| endif
+nnoremap <silent> <C-c> :if v:hlsearch \| nohlsearch \| endif <CR>
 nnoremap <Leader>? :h index<CR>
 nnoremap <Leader>/ :verbose map<CR>
 
