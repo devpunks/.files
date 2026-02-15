@@ -792,6 +792,17 @@ function! g:CSS () abort
 
   highlight VendorPrefix term=bold cterm=standout ctermfg=#00ffff gui=bold guifg=#00ffff
   match VendorPrefix /-\(moz\|webkit\|o\|ms\)-[a-zA-Z-]\+/
+
+  if &runtimepath !~ 'tagbar' | return | endif
+
+  let g:tagbar_type_css = {
+  \ 'ctagstype' : 'Css',
+    \ 'kinds' : [
+      \ 'c:classes',
+      \ 's:selectors',
+      \ 'i:identities'
+    \ ]
+  \ } " tagbar_type_css
 endfunction " g:CSS
 let g:tagbar_type_css = {
 \ 'ctagstype' : 'Css',
