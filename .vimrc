@@ -739,6 +739,11 @@ autocmd FileDefaults BufWritePost .tmux.conf
   \| call system ( 'tmux source-file "$HOME/.tmux.conf"' )
   \| call system ( 'tmux display-message "Source file loaded! (#{config_files})"' )
 
+
+
+  finish
+
+
 " -------------------------------------------------------------------------
 " CSV - https://github.com/chrisbra/csv.vim
 " -------------------------------------------------------------------------
