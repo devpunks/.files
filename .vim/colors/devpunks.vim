@@ -97,7 +97,7 @@ highlight! LineNr term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE guifg=NONE
 highlight! LineNrAbove term=reverse cterm=reverse ctermfg=NONE guifg=NONE
   highlight! link LineNrBelow LineNrAbove
 highlight! CursorLine term=underline cterm=underline gui=underline ctermbg=NONE guibg=NONE
-highlight! CursorLineNr cterm=bold,reverse ctermfg=NONE gui=bold guifg=NONE
+highlight! CursorLineNr term=bold,reverse cterm=bold,reverse ctermfg=NONE gui=bold,reverse guifg=NONE
 highlight! FoldColumn term=bold cterm=bold ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
 highlight! Folded term=bold cterm=bold,underline,italic ctermfg=NONE ctermbg=NONE gui=bold guifg=NONE guibg=NONE
 highlight! CursorColumn cterm=underline gui=underline ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE
