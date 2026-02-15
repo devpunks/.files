@@ -791,7 +791,6 @@ function! g:CSS () abort
   match VendorPrefix /-\(moz\|webkit\|o\|ms\)-/
 
   setlocal filetype=css
-  echom "CSS FILE"
   if &runtimepath !~ 'vim-css3-syntax' | return | endif
 
   highlight! VendorPrefix term=bold cterm=standout ctermfg=#00ffff gui=bold guifg=#00ffff
