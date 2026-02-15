@@ -240,7 +240,7 @@ let &g:wildignore=s:ignore ()
 " Completion / LSPs -------------------------------------------------------
 " (Insert) Tab complete
 inoremap <expr> <Tab> pumvisible () ? '<C-n>' : '<C-x><C-u>'
-inoremap <expr> <S-Tab> pumvisible () ? '<C-p>' : ':echom "INSERT SHIFT + TAB"<CR>'
+inoremap <expr> <S-Tab> pumvisible () ? '<C-p>' : '<C-o>:echom "INSERT SHIFT + TAB"<CR>'
 inoremap <expr> <M-Tab> pumvisible () ? ':echo "PUM"<CR> :':echom "INSERT ALT + TAB"<CR>'
 
 " https://linuxhandbook.com/vim-auto-complete
