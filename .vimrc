@@ -764,8 +764,7 @@ augroup FileDefaults
 augroup END
 
 " -------------------------------------------------------------------------
-" XML
-"   - See $VIMRUNTIME/autoload/xmlcomplete.vim
+" XML - See $VIMRUNTIME/autoload/xmlcomplete.vim
 " -------------------------------------------------------------------------
 autocmd FileDefaults FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
