@@ -894,6 +894,12 @@ function! s:enter () abort
   echom 'Entering ( Not Yet Implemented. See :Enter command )'
 endfunction " enter
 
+autocmd UserDefaults CursorHoldI * :Idle
+command! Idle call s:idle ()
+function! s:idle () abort
+  echom 'Idling ( Not Yet Implemented. See :Idle command )'
+endfunction " idle
+
 
 
 finish
