@@ -671,6 +671,10 @@ cnoremap <C-r> :source ~/.vimrc<CR>
 " =========================================================================
 let g:blacklist = [ 'nofile', 'help', 'terminal', 'startify' ] " filetypes
 
+set autoread " re-read files
+set noautowrite " do not autowrite
+set noautowriteall " do not autowrite (all)
+set nofixendofline " Disable <EOL> insertion
 
 
 finish
