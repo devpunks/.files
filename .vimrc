@@ -649,8 +649,7 @@ inoremap <C-s> <C-o>:write<CR><C-o>:echo 'Updated'<CR>
 " https://vimhelp.org/terminal.txt.html
 if has ( 'terminal' )
   " set termwinkey=<Esc>
-  " The key that starts a CTRL-W command in a terminal window.
-  set termwinkey=<C-w>
+  set termwinkey=<C-w> " The key that starts a CTRL-W command in a terminal window.
   nnoremap <S-t> :terminal<CR>
 endif
 
