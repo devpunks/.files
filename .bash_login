@@ -2506,6 +2506,12 @@ function dns () { clear
   test "$domain" != localhost \
     && whois "$domain"
 
+  echo ; echo  "LOOKUP $domain"
+  # https://linux.die.net/man/1/nslookup
+  # https://phoenixnap.com/kb/nslookup-command
+  nslookup "$domain"
+  dig "$domain" any
+
   test "$domain" != localhost \
     && dig "$domain"
 
