@@ -2509,6 +2509,10 @@ function dns () { clear
   test "$domain" != localhost \
     && dig "$domain"
 
+
+  return
+
+
   echo ; echo "ALL $domain"
   command host -v -R 3 -a "$domain"
   # SOA (Start of Authority) Record(s) - https://en.wikipedia.org/wiki/SOA_record
