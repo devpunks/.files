@@ -1176,6 +1176,9 @@ function digest () {
   echo ; printf "DES: %s\n" \
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
+  echo ; printf "DES: %s\n" \
+    $( mkpasswd -m des -S ${SALT:0:2} "$phrase" )
+
   # TRIPLE-DES (112bit) TDEA (Triple Data Encryption Algorithm)
   # https://en.wikipedia.org/wiki/Data_Encryption_Standard
   echo ; printf "TRIPLE DES: %s\n" \
