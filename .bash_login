@@ -1466,7 +1466,7 @@ function encrypt () {
   local -r salt="-S ${SALT}" \
   count=1000000 \
   digest=sha512 \
-  local -r pbkdf2=-pbkdf2
+  pbkdf2=-pbkdf2 \
   local -r encoding=-base64
   local -r file=$( readlink -f "${1}" )
   local -r password="-pass pass:devpunks" # '-stdin'
