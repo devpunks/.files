@@ -1045,7 +1045,6 @@ function derive () {
   length=72 # base64( hmac-sha384( data:$password, key:$PEPPER ) ), $SALT, $COST )
   iterations=10
   # https://en.wikipedia.org/wiki/Bcrypt
-  # https://en.wikipedia.org/wiki/Blowfish_(cipher)
   # https://httpd.apache.org/docs/current/programs/htpasswd.html
   local  bcrypt="$( htpasswd -nbBC $iterations '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
   local bresult=${bcrypt##*$}
