@@ -1044,8 +1044,10 @@ function derive () {
   local  bcrypt="$( htpasswd -nbBC $iterations '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
   local bresult=${bcrypt##*$}
   echo ; echo "BCRYPT: $bcrypt"
-  echo "BCRYPT SALT: ${bresult:0:22}"
-  echo "BCRYPT HASH: ${bresult:22}"
+  echo "  BCRYPT ROUNDS: $iterations"
+  echo "  BCRYPT VERSION: ${bcrypt:1:2}"
+  echo "  BCRYPT SALT: ${bresult:0:22}"
+  echo "  BCRYPT HASH: ${bresult:22}"
 
   iterations=8 # (8 * 128 = 1024)
   parallelism=8 # cores
