@@ -1463,8 +1463,8 @@ function digest () {
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () {
-  local -r salt="-S ${SALT}"
-  local -r count=1000000
+  local -r salt="-S ${SALT}" \
+  count=1000000 \
   local -r digest=sha512
   local -r pbkdf2=-pbkdf2
   local -r encoding=-base64
