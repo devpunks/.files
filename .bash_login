@@ -1500,6 +1500,11 @@ function encrypt () {
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des3-ecb.enc"
 
 
+
+  return
+
+
+
   scheme='-aes-128-cbc'
   echo ; echo 'AES-CBC (128|192|256)'
   echo "${scheme^^} Encrypt $file :"
