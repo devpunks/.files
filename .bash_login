@@ -1046,7 +1046,7 @@ function derive () {
   echo ; echo "BCRYPT: $bcrypt"
   echo "  ROUNDS: $iterations"
   echo "  VERSION: ${bcrypt:1:2}"
-  echo "  BCRYPT SALT: ${bresult:0:22}"
+  echo "  SALT: ${bresult:0:22}"
   echo "  BCRYPT HASH: ${bresult:22}"
 
   iterations=8 # (8 * 128 = 1024)
