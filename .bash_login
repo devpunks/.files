@@ -1180,7 +1180,7 @@ function digest () {
   echo ; echo TODO: MD2: # https://en.wikipedia.org/wiki/MD2_(hash_function)
 
   # https://datatracker.ietf.org/doc/rfc1320
-  echo ; echo TODO: MD4: # https://en.wikipedia.org/wiki/MD3
+  echo ; echo TODO: MD4: # https://en.wikipedia.org/wiki/MD4
 
   # https://datatracker.ietf.org/doc/rfc1321
   echo ; echo MD5: # https://en.wikipedia.org/wiki/MD5
