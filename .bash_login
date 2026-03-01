@@ -1491,7 +1491,7 @@ function encrypt () { clear
     "(mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des3.enc"
   # mkpasswd -m des -S ${SALT:0:2} < "$file" > "${file}.3des.enc"
   scheme='-des3' # DES-EDE3-CBC (Encrypt/Decrypt/Encrypt)
-  echo "3DES (TRIPLE DEA Encrypt/Decrypt/Encrypt)" \
+  echo "3DES (TRIPLE DEA Encrypt/Decrypt/Encrypt) " \
     "(openssl enc $scheme) Encrypt ${file}.des3-cbc.enc"
   # openssl enc $scheme $salt -iter $count < "${file}" > "${file}.des3-cbc.bin"
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des3-cbc.enc"
