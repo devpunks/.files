@@ -1171,7 +1171,6 @@ function digest () {
 
   test -z "$phrase" && return
 
-
   # Ron Rivest Series - https://en.wikipedia.org/wiki/Ron_Rivest
   # MD2, MD4, MD5 = 16 OCTETS (512block -> 128bit)
   # https://datatracker.ietf.org/doc/rfc1319
