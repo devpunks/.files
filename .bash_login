@@ -1471,7 +1471,7 @@ function encrypt () {
     $( mkpasswd -m des -S ${SALT:0:2} "$phrase" )
 
   # TRIPLE-DES (112bit) TDEA (Triple Data Encryption Algorithm)
-  # https://en.wikipedia.org/wiki/Data_Encryption_Standard
+  # https://en.wikipedia.org/wiki/Triple_DES
   echo ; printf "TRIPLE DES: %s\n" \
     $( mkpasswd -m 3des -S ${SALT:0:2} "$phrase" )
 
