@@ -1510,7 +1510,6 @@ function encrypt () { clear
   echo ; echo 'AES-CBC (128|192|256)'
 
   scheme='-aes-128-cbc'
-  echo ; echo 'AES-CBC (128|192|256)'
   echo "${scheme^^} Encrypt $file :"
   openssl enc $scheme $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes128.bin"
