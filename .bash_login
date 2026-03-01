@@ -2506,10 +2506,12 @@ function proxy () { clear
 # - https://digitalocean.com/community/tutorials/how-to-retrieve-dns-information-using-dig
 # - https://forum.huawei.com/enterprise/intl/en/thread/difference-between-dig-and-nslookup/689608776220557312
 function dns () { clear
-  local -r domain=${1:-localhost}
-
-  test "$domain" != localhost \
-    && whois "$domain"
+  printf \
+    "\n \${PREFIX}/etc/hosts: \n %s \n" "$( cat ${PREFIX}/etc/hosts )"
+  printf \
+    "\n \$HOSTFILE: $HOSTFILE \n %s \n" "$( cat $HOSTFILE )"
+  printf \
+    "\n ~/.ssh/known_hosts:\n %s \n" "$( cat ~/.ssh/known_hosts )"
 
   echo ; echo  "LOOKUP $domain"
   # https://linux.die.net/man/1/nslookup
