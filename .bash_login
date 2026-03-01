@@ -1471,7 +1471,7 @@ function encrypt () {
   # DES (56bit) (Data Encryption Standard)
   # https://en.wikipedia.org/wiki/Data_Encryption_Standard
   scheme='des'
-  echo "DES (mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des.enc "
+  echo "DES (mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des.enc"
   mkpasswd -m des -S ${SALT:0:2} < "$file" > "${file}.des.enc"
   scheme='-des' // DES-CBC
   echo "DES (openssl enc $scheme) Encrypt ${file}.des-cbc.enc "
