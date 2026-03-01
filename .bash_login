@@ -1894,7 +1894,6 @@ function certify () { clear # Certificate Authority
   # ECC (Elliptic Curve Cryptography) - https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
 
 
-
   # https://en.m.wikipedia.org/wiki/RSA_cryptosystem
   # https://en.wikipedia.org/wiki/Euclidean_algorithm
   # https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
