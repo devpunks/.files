@@ -1526,8 +1526,9 @@ function encrypt () {
 # NMS (No More Secrets) - https://github.com/bartobri/no-more-secrets
 alias nms='command nms -a -c -f magenta'
 function decrypt () {
-  local -r file="${1}"
-  local -r output="${file%.*}"
+  local -r \
+    file="${1}" \
+    output="${file%.*}"
 
   echo GPG decrypt "$file" :
 
