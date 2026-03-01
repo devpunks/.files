@@ -1466,12 +1466,7 @@ function encrypt () {
 
   exist "$file"  || return $?
 
-  scheme='-des' // DES-CBC
-  scheme='-des-ede-ecb' // DES-EDE
-  scheme='-des3' // DES-EDE3-CBC
-  scheme='-des-ede3-ecb' // DES-EDE3
-  echo ; echo 'DES-CBC (DES|3DES)'
-  echo "${scheme^^} Encrypt $file :"
+  echo ; echo 'DES-CBC (DES|3DES) Data Encryption Standard'
 
   # DES (56bit) (Data Encryption Standard)
   # https://en.wikipedia.org/wiki/Data_Encryption_Standard
