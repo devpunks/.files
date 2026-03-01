@@ -1885,6 +1885,15 @@ function certify () { clear # Certificate Authority
     -out "${domain}.${algorithm}.pfx"
 
 
+  # Symetric Encryption
+  # Serpent - https://en.wikipedia.org/wiki/Serpent_(cipher)
+  # Camellia - https://en.wikipedia.org/wiki/Camellia_(cipher)
+  # Blowfish - https://en.wikipedia.org/wiki/Blowfish_(cipher)
+  # Twofish (Bruce Schneier) - https://en.wikipedia.org/wiki/Twofish
+  # DES, 3DES - https://en.wikipedia.org/wiki/Data_Encryption_Standard
+  # AES (Rijndael) - https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+  # IDEA (International Data Encryption Algorithm) - https://en.wikipedia.org/wiki/International_Data_Encryption_Algorithm
+
   # ASymetric Encryption
   # RSA (Rivest-Shamir-Adleman) - https://en.m.wikipedia.org/wiki/RSA_cryptosystem
   # DSA (Digital Signature Algorithm) - https://en.wikipedia.org/wiki/Digital_Signature_Algorithm
