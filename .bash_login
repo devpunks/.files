@@ -1451,7 +1451,7 @@ function digest () {
 # https://antofthy.gitlab.io/info/crypto/encfs.txt
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
 # https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
-function encrypt () {
+function encrypt () { clear
   local scheme
   local -r \
     count=1000000 \
