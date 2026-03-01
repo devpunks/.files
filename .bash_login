@@ -1468,7 +1468,7 @@ function encrypt () {
   digest=sha512 \
   pbkdf2=-pbkdf2 \
   encoding=-base64 \
-  local -r file=$( readlink -f "${1}" )
+  file=$( readlink -f "${1}" ) 
   local -r password="-pass pass:devpunks" # '-stdin'
 
   ciphers # list ECB | CBC | CFB | OFB | CTR
