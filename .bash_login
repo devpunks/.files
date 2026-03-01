@@ -1484,6 +1484,8 @@ function encrypt () { clear
 
   # TRIPLE-DES (112bit) TDEA (Triple Data Encryption Algorithm)
   # https://en.wikipedia.org/wiki/Triple_DES
+  # EEE (Encrypt,Encrypt,Encrypt)
+  # EDE (Encrypt,Decrypt,Encrypt)
   scheme='des' # TODO: 3des|des3
   echo "3DES (TRIPLE DEA)" \
     "(mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des3.enc"
