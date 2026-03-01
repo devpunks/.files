@@ -1137,6 +1137,7 @@ alias ciphers='{
 # $5$ - SHA-256
 # $6$ - SHA-512
 # https://en.wikipedia.org/wiki/Cipher
+# https://en.wikipedia.org/wiki/Block_cipher
 # https://asecuritysite.com/encryption/passes
 # https://datatracker.ietf.org/doc/html/rfc2104
 # https://en.wikipedia.org/wiki/Key_derivation_function
