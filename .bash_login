@@ -1466,7 +1466,7 @@ function encrypt () {
   exist "$file"  || return $?
 
   # DES (56bit) (Data Encryption Standard)
-  # https://en.wikipedia.org/wiki/Triple_DES
+  # https://en.wikipedia.org/wiki/Data_Encryption_Standard
   echo ; printf "DES: %s\n" \
     $( mkpasswd -m des -S ${SALT:0:2} "$phrase" )
 
