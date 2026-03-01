@@ -1174,6 +1174,7 @@ function digest () {
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
 
+  # Ron Rivest Series - https://en.wikipedia.org/wiki/Ron_Rivest
   # MD2, MD4, MD5 = 16 OCTETS (128bit)
   # https://datatracker.ietf.org/doc/rfc1319
   echo ; echo TODO: MD2: # https://en.wikipedia.org/wiki/MD2_(hash_function)
