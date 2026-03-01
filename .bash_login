@@ -1045,7 +1045,7 @@ function derive () {
   local bresult=${bcrypt##*$}
   echo ; echo "BCRYPT: $bcrypt"
   echo "  ROUNDS: $iterations"
-  echo "  BCRYPT VERSION: ${bcrypt:1:2}"
+  echo "  VERSION: ${bcrypt:1:2}"
   echo "  BCRYPT SALT: ${bresult:0:22}"
   echo "  BCRYPT HASH: ${bresult:22}"
 
