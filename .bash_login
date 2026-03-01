@@ -1163,6 +1163,8 @@ function digest () {
 
   test -z "$phrase" && return
 
+  # DES (56bit) (Data Encryption Standard)
+  # https://en.wikipedia.org/wiki/Triple_DES
   echo ; printf "DES: %s\n" \
     $( mkpasswd -m descrypt -S ${SALT:0:2} "$phrase" )
 
