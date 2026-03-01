@@ -1487,7 +1487,7 @@ function encrypt () { clear
   # EEE (Encrypt,Encrypt,Encrypt)
   # EDE (Encrypt,Decrypt,Encrypt)
   scheme='des' # TODO: 3des|des3
-  echo "3DES (TRIPLE DEA)" \
+  echo "3DES (TRIPLE DEA Encrypt/Encrypt/Encrypt)" \
     "(mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des3.enc"
   # mkpasswd -m des -S ${SALT:0:2} < "$file" > "${file}.3des.enc"
   scheme='-des3' # DES-EDE3-CBC (Encrypt/Decrypt/Encrypt)
