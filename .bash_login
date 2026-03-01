@@ -1171,6 +1171,7 @@ function digest () {
 
 
   # MD2, MD4, MD5 = 16 OCTETS (128bit)
+  # https://datatracker.ietf.org/doc/rfc1319
   echo ; echo TODO: MD2: # 
 
   # https://datatracker.ietf.org/doc/rfc1320
