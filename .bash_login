@@ -1047,7 +1047,7 @@ function derive () {
   echo "  ROUNDS: $iterations"
   echo "  VERSION: ${bcrypt:1:2}"
   echo "  SALT: ${bresult:0:22}"
-  echo "  BCRYPT HASH: ${bresult:22}"
+  echo "  HASH: ${bresult:22}"
 
   iterations=8 # (8 * 128 = 1024)
   parallelism=8 # cores
