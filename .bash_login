@@ -1461,7 +1461,7 @@ function encrypt () {
     file=$( readlink -f "${1}" ) \
     password='-pass pass:devpunks' # -stdin
 
-  ciphers # list ECB | CBC | CFB | OFB | CTR
+  ciphers # list DES | 3DES | ECB | CBC | CFB | OFB | CTR
 
   exist "$file"  || return $?
 
