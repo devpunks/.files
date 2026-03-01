@@ -1176,6 +1176,7 @@ function digest () {
   # https://datatracker.ietf.org/doc/rfc1320
   echo ; echo TODO: MD4: # 
 
+  # https://datatracker.ietf.org/doc/rfc1321
   echo ; echo MD5: # https://en.wikipedia.org/wiki/MD5
 
   printf "MD5 (md5sum): %s\n" \
