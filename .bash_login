@@ -977,6 +977,8 @@ function passgen () { clear
 } # passgen
 
 # -------------------------------------------------------------------------
+# US Secure Hash Algorithms (SHA and HMAC-SHA)
+#   - https://datatracker.ietf.org/doc/html/rfc4634
 # US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)
 #   - https://datatracker.ietf.org/doc/html/rfc6234
 # HMAC-based Extract-and-Expand Key Derivation Function (HKDF)
