@@ -1467,7 +1467,7 @@ function encrypt () { clear
 
   echo ; echo 'DES-CBC (DES|3DES) Data Encryption Standard'
 
-  # DES (56bit) (Data Encryption Standard)
+  # DES (64bit = 56bit phrase + 8bit parity) (Data Encryption Standard)
   # https://en.wikipedia.org/wiki/Data_Encryption_Standard
   scheme='des'
   echo "DES (mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des.enc"
