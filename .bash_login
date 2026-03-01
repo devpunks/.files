@@ -1522,7 +1522,7 @@ function encrypt () {
   echo "GPG-${scheme}-CFB encrypt $file :"
   gpg --sign -c -o "${file}.gpg192.enc" --cipher-algo=$scheme < "$file"
 
-  local scheme='AES256'
+  scheme='AES256'
   echo "GPG-${scheme}-CFB encrypt $file :"
   gpg --sign -c -o "${file}.gpg256.enc" --cipher-algo=$scheme < "$file"
 
