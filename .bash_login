@@ -1044,7 +1044,7 @@ function derive () {
   local  bcrypt="$( htpasswd -nbBC $iterations '' "$phrase" | tr -d ':' | sed 's/\$2[abxy]\$/$2a$/g' )"
   local bresult=${bcrypt##*$}
   echo ; echo "BCRYPT: $bcrypt"
-  echo "  BCRYPT ROUNDS: $iterations"
+  echo "  ROUNDS: $iterations"
   echo "  BCRYPT VERSION: ${bcrypt:1:2}"
   echo "  BCRYPT SALT: ${bresult:0:22}"
   echo "  BCRYPT HASH: ${bresult:22}"
