@@ -2513,11 +2513,7 @@ function dns () { clear
   printf \
     "\n ~/.ssh/known_hosts:\n %s \n" "$( cat ~/.ssh/known_hosts )"
 
-  echo ; echo  "LOOKUP $domain"
-  # https://linux.die.net/man/1/nslookup
-  # https://phoenixnap.com/kb/nslookup-command
-  nslookup "$domain"
-  dig "$domain" any
+  local -r domain=${1:-localhost}
 
   test "$domain" != localhost \
     && dig "$domain"
