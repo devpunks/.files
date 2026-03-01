@@ -1171,11 +1171,6 @@ function digest () {
 
   test -z "$phrase" && return
 
-  # TRIPLE-DES (112bit) TDEA (Triple Data Encryption Algorithm)
-  # https://en.wikipedia.org/wiki/Data_Encryption_Standard
-  echo ; printf "TRIPLE DES: %s\n" \
-    $( mkpasswd -m 3des -S ${SALT:0:2} "$phrase" )
-
 
   # Ron Rivest Series - https://en.wikipedia.org/wiki/Ron_Rivest
   # MD2, MD4, MD5 = 16 OCTETS (512block -> 128bit)
