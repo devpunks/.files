@@ -1164,7 +1164,7 @@ alias digests='command openssl list -digest-commands' # -digest-algorithms
 #   - (MD5,SHA1,SHA256,SHA512) https://en.wikipedia.org/wiki/Length_extension_attack
 function digest () {
   local \
-    phrase="${1}" \
+    -r phrase="${1}" \
     KEY="${SALT:0:8}" # TODO: Use an actual key (w/ pepper?)
 
   echo ; echo Digests: ; digests
