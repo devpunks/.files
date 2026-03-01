@@ -1495,7 +1495,7 @@ function encrypt () {
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des3-cbc.enc"
   scheme='-des-ede3-ecb' // DES-EDE3
   echo "3DES (TRIPLE DEA)" \
-    "(openssl enc $scheme) Encrypt ${file}.des3-ecb.enc " \
+    "(openssl enc $scheme) Encrypt ${file}.des3-ecb.enc "
   # openssl enc $scheme $salt -iter $count < "${file}" > "${file}.des3-ecb.bin"
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des3-ecb.enc"
 
