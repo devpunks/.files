@@ -979,6 +979,8 @@ function passgen () { clear
 # -------------------------------------------------------------------------
 # US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)
 #   - https://datatracker.ietf.org/doc/html/rfc6234
+# HMAC-based Extract-and-Expand Key Derivation Function (HKDF)
+#   - https://datatracker.ietf.org/doc/html/rfc5869
 function derive () {
   local -r phrase="${1}"
   local digest
