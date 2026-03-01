@@ -2521,8 +2521,8 @@ function dns () { clear
   echo ; echo "DIG $domain"
   dig $domain
 
-  return
-
+  echo ; echo "HOST $domain"
+  host -v $domain
 
   echo ; echo "ALL $domain"
   command host -v -R 3 -a "$domain"
