@@ -1450,7 +1450,6 @@ function digest () {
 # https://bashupload.com/how_to_encrypt_files
 # https://antofthy.gitlab.io/info/crypto/encfs.txt
 # https://antofthy.gitlab.io/info/crypto/file_encrypt.txt
-# https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
 function encrypt () { clear
   local scheme
   local -r \
