@@ -1492,7 +1492,7 @@ function encrypt () {
   openssl enc $scheme $encoding $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes128.enc"
 
-  local scheme='-aes-192-cbc'
+  scheme='-aes-192-cbc'
   echo "${scheme^^} Encrypt $file :"
   openssl enc $scheme $salt $pbkdf2 -md $digest -iter $count $password \
     < "$file" > "${file}.aes192.bin"
