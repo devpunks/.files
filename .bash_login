@@ -1514,7 +1514,7 @@ function encrypt () {
   echo ; echo 'GPG-AES-CBC (128|192|256)'
 
   echo ; echo 'GPG-AES-CFB (128|192|256)'
-  local scheme='AES128'
+  scheme='AES128'
   echo "GPG-${scheme}-CFB encrypt $file :"
   gpg --sign -c -o "${file}.gpg128.enc" --cipher-algo=$scheme < "$file"
 
