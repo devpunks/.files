@@ -2536,8 +2536,20 @@ function dns () { clear
   echo ; echo  "PING $domain"
   echo ; ping "$domain"
 
-  echo ; echo  "HOSTING"
-  echo Current Domain ⇋ "$( hostname --domain )"
+  echo ; echo "NAMESERVERS: $domain"
+  command host -C "$domain"
+
+  echo ; echo "A RECORD IP ADDRESSES: $domain"
+  host $domain
+  dig $domain +short
+
+  echo ; echo "NS LOOKUP $domain"
+  # https://linux.die.net/man/1/nslookup
+  # https://phoenixnap.com/kb/nslookup-command
+  nslookup $domain
+
+  echo ; echo  HOSTING
+  echo Current \$HOSTNAME ⇋ "$HOSTNAME"
   echo Current Host ⇋ "$( hostname --short )"
   echo Current IP ⇋ "$( hostname --ip-addresses )"
 
