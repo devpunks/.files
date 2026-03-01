@@ -2516,7 +2516,7 @@ function dns () { clear
   local -r domain=${1:-localhost}
 
   test "$domain" != localhost \
-    && dig "$domain"
+    && whois $domain
 
 
   return
