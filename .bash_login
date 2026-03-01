@@ -2518,6 +2518,8 @@ function dns () { clear
   test "$domain" != localhost \
     && whois $domain
 
+  echo ; echo "DIG $domain"
+  dig $domain
 
   return
 
