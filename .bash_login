@@ -2530,7 +2530,8 @@ function dns () { clear
   # command host -v -t SOA "$domain" # dig $domain MX
 
   echo ; echo  "TRACE $domain"
-  echo ; trace "$domain"
+  test "$domain" != localhost \
+    && trace "$domain"
 
   echo ; echo  "PING $domain"
   echo ; ping "$domain"
