@@ -1476,7 +1476,7 @@ function encrypt () {
   # DES (56bit) (Data Encryption Standard)
   # https://en.wikipedia.org/wiki/Data_Encryption_Standard
   echo ; printf "DES: %s\n" \
-    $( mkpasswd -m des -S ${SALT:0:2} "$phrase" )
+  $( mkpasswd -m des -S ${SALT:0:2} < "$file" )
 
   # TRIPLE-DES (112bit) TDEA (Triple Data Encryption Algorithm)
   # https://en.wikipedia.org/wiki/Triple_DES
