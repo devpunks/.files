@@ -1470,8 +1470,17 @@ function encrypt () {
 
   # DES (56bit) (Data Encryption Standard)
   # https://en.wikipedia.org/wiki/Data_Encryption_Standard
-  echo ; printf "DES: %s\n" \
-  $( mkpasswd -m des -S ${SALT:0:2} < "$file" )
+  scheme='des'
+  echo "DES (mkpasswd -m $scheme -S ${SALT:0:2}) Encrypt ${file}.des.enc "
+  mkpasswd -m des -S ${SALT:0:2} < "$file" > "${file}.des.enc"
+  scheme='-des' // DES-CBC
+  echo "DES (openssl enc $scheme) Encrypt ${file}.des-cbc.enc " \
+  # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}
+  # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des-cbc.enc"
+  scheme='-des-ede-ecb' // DES-EDE
+  echo "DES (openssl enc $scheme) Encrypt ${file}.des-ecb.enc " \
+  # openssl enc $scheme -in "${file}" -out "${file}.des-ecb.bin"
+  # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des-ecb.enc"
 
   # TRIPLE-DES (112bit) TDEA (Triple Data Encryption Algorithm)
   # https://en.wikipedia.org/wiki/Triple_DES
