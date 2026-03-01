@@ -1885,6 +1885,16 @@ function certify () { clear # Certificate Authority
     -in ${domain}.${algorithm}.cert \
     -out "${domain}.${algorithm}.pfx"
 
+
+  # ASymetric Encryption
+  # RSA (Rivest-Shamir-Adleman) - https://en.m.wikipedia.org/wiki/RSA_cryptosystem
+  # DSA (Digital Signature Algorithm) - https://en.wikipedia.org/wiki/Digital_Signature_Algorithm
+  # DH (Diffie-Hellman) - https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange
+  # El Gamal - https://en.wikipedia.org/wiki/ElGamal_encryption
+  # ECC (Elliptic Curve Cryptography) - https://en.wikipedia.org/wiki/Elliptic-curve_cryptography
+
+
+
   # https://en.m.wikipedia.org/wiki/RSA_cryptosystem
   # https://en.wikipedia.org/wiki/Euclidean_algorithm
   # https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
