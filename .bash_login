@@ -1477,7 +1477,7 @@ function encrypt () {
   echo "DES (openssl enc $scheme) Encrypt ${file}.des-cbc.enc"
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des-cbc.enc"
-  scheme='-des-ede-ecb' // DES-EDE
+  scheme='-des-ede-ecb' # DES-EDE
   echo "DES (openssl enc $scheme) Encrypt ${file}.des-ecb.enc"
   # openssl enc $scheme -in "${file}" -out "${file}.des-ecb.bin"
   # openssl enc $scheme $encoding $salt -iter $count < "${file}" > "${file}.des-ecb.enc"
