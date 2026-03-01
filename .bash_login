@@ -1505,6 +1505,9 @@ function encrypt () { clear
   return
 
 
+  # AES (128bit) (Advanced Encryption Standard)
+  # https://en.wikipedia.org/wiki/Advanced_Encryption_Standard
+  echo ; echo 'AES-CBC (128|192|256)'
 
   scheme='-aes-128-cbc'
   echo ; echo 'AES-CBC (128|192|256)'
