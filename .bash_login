@@ -1746,6 +1746,8 @@ function verify () {
   openssl sha256 -verify "${pem}.pub" -signature "${file}.signature" "$file"
 
   echo "Cryptographically Verifying > $file with $pem ..."
+
+  return 1
 } # verify
 
 # -------------------------------------------------------------------------
