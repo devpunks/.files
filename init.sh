@@ -70,6 +70,7 @@ pkg install ncdu
 pkg install htop
 pkg install which
 pkg install chrony
+pkg install getconf # https://linux.die.net/man/1/getconf
 pkg install multitail
 pkg install shellcheck
 pkg install uuid-utils # uuidgen
