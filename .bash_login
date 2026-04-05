@@ -1719,8 +1719,9 @@ function sign () {
 # openssl genrsa -aes256 -out "$pem" 2048
 # openssl rsa -in "${pem}" -out "${pem}.key"
 
-  exist "$pem" || return $?
-  exist "$file" || return $?
+  ( exist "$pem" && exist "$file" ) || return $?
+
+return
 
   echo "Cryptographically Signing > $file with PRIVATE $pem ..."
   # ssh-keygen -V # sign/verify certificate
