@@ -1713,7 +1713,7 @@ alias signatures='{
 # https://crypto.stackexchange.com/q/9896/how-does-rsa-signature-verification-work
 # https://crypto.stackexchange.com/q/59566/differences-between-dsa-and-rsa-algorithms
 function sign () {
-  local file="$( realpath $1 )"
+  local file="${1}"
   local pem="${HOME}/.ssh/privatekey.pem"
 
 # openssl genrsa -aes256 -out "$pem" 2048
