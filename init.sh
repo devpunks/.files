@@ -407,4 +407,7 @@ ffmpeg -version
 [[  $( uname-s ) =~ Linux ]]
   \ && pkg list --installed
 
+echo 'devPunks😈studio init.sh'
+echo
+
 # vim: foldmethod=marker
