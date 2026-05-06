@@ -29,6 +29,7 @@ pkg upgrade && pkg update
 
 pkg install apt-file
 pkg install util-linux # https://en.wikipedia.org/wiki/Util-linux
+pkg install pkg-config # https://en.m.wikipedia.org/wiki/Pkg-config
 pkg install mount-utils
 pkg install bash-completion
 
