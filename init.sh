@@ -404,7 +404,7 @@ ffmpeg -version
   \ && open 'https://github.com/thealpa/SaneSideButtons#automatic-launch'
 
 # List Installed Packages
-[[  $( uname-s ) =~ 'Linux' ]]
+[[  $( uname-s ) =~ Linux ]]
   \ && pkg list --installed
 
 # vim: foldmethod=marker
