@@ -74,6 +74,7 @@
 
 [status]
   aheadBehind = on
+  submoduleSummary = true
 
 [push]
   default = upstream
