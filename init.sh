@@ -367,9 +367,6 @@ npm install -g bash-language-server
 git submodule
 git submodule update --init --recursive
 
-echo 'devPunks😈studio init.sh'
-echo
-
 # }}}
 
 # {{{ Versioning ----------------------------------------------------------
