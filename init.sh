@@ -183,7 +183,6 @@ npm install -g npm@latest
 npm install -g blessed
 
 pkg install python
-pip install pytest
 pkg install python-pip
 pkg install python-numpy
 
