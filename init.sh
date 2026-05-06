@@ -228,7 +228,7 @@ PATH=$PATH gem install starscope # https://github.com/eapache/starscope
 # tags https://github.com/universal-ctags/ctags
 [[  $( uname -s ) =~ Darwin ]] \
   && pkg install universal-ctags
-[[  $( uname-s ) =~ Linux ]] \
+[[  $( uname -s ) =~ Linux ]] \
   && pkg install ctags
 # }}}
 
