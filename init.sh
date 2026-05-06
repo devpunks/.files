@@ -380,7 +380,7 @@ python --version
 
 go version
 
-gem help env
+gem environment
 gem --version
 ruby --version
 
