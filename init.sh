@@ -238,7 +238,7 @@ pkg install sqlite
 pkg install postgis
 pkg install postgresql
 pkg install unixodbc
-[[  $( uname-s ) =~ 'Darwin' ]] \
+[[  $( uname-s ) =~ Darwin ]] \
   && brew install libpq
 # TODO: Install pgvector - https://github.com/pgvector
 
