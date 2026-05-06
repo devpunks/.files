@@ -179,6 +179,7 @@ pkg install golang
 
 pkg install nodejs-lts
 npm install -g npm@latest
+npm install -g blessed
 
 pkg install python
 pip install pytest
