@@ -399,7 +399,7 @@ ffmpeg -version
   \ && brew services list
 
 # Enable Side Mouse Buttons
-[[  $( uname-s ) =~ 'Darwin' ]]
+[[  $( uname-s ) =~ Darwin ]]
   \ && brew install --cask sanesidebuttons
   \ && open 'https://github.com/thealpa/SaneSideButtons#automatic-launch'
 
