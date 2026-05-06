@@ -394,7 +394,7 @@ ffmpeg -version
 
 
 # Homebrew information
-[[  $( uname-s ) =~ 'Darwin' ]]
+[[  $( uname-s ) =~ Darwin ]]
   \ && brew config
   \ && brew services list
 
