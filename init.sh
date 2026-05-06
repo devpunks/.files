@@ -211,9 +211,6 @@ gem install libxml-ruby
 gem install pkg-config
 # RVM on termux - https://github.com/rvm/rvm/issues/4734
 pkg install build-essential # Ruby HEAVY!!!! (600+Mb)
-gem update --system && PATH=$PATH gem environment # Must set PATH to prevent Nil split error
-# https://github.com/termux/termux-packages/discussions/8583
-bundle config set force_ruby_platform true
 # https://github.com/sparklemotion/nokogiri/issues/1739
 # https://github.com/sparklemotion/nokogiri/issues/1884
 # https://nokogiri.org/tutorials/installing_nokogiri.html#termux
