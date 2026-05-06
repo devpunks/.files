@@ -64,7 +64,7 @@
   recurse = true
 
 [rerere]
-  enabled = 1
+  enabled = true
 
 [log]
   # [human|relative|local|default|iso|iso-strict|rfc|short|raw]
