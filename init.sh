@@ -226,7 +226,7 @@ pkg install cscope # https://cscope.sourceforge.net
 PATH=$PATH gem install starscope # https://github.com/eapache/starscope
 
 # tags https://github.com/universal-ctags/ctags
-[[  $( uname-s ) =~ Darwin ]] \
+[[  $( uname -s ) =~ Darwin ]] \
   && pkg install universal-ctags
 [[  $( uname-s ) =~ Linux ]] \
   && pkg install ctags
