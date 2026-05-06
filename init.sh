@@ -202,6 +202,9 @@ pkg install ruby # https://wiki.termux.com/wiki/Ruby
 pkg install libffi
 pkg install binutils
 pkg install gumbo-parser
+gem update --system && gem environment
+# https://github.com/termux/termux-packages/discussions/8583
+bundle config set force_ruby_platform true
 # https://github.com/termux/termux-packages/issues/1940
 pkg install libxml2 && gem install libxml-ruby
 # https://en.m.wikipedia.org/wiki/Pkg-config
