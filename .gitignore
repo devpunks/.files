@@ -41,7 +41,6 @@ NOTES*
 
 # logs
 log/
-*.log
 logs/
 *.logs
 
