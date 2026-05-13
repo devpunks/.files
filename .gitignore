@@ -42,6 +42,7 @@ NOTES*
 # logs
 log/
 logs/
+*.log
 *.logs
 
 # tags
