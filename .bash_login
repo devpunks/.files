@@ -458,7 +458,7 @@ alias gd='git diff'
 alias gg='git grep --break --heading'
 # https://aohorodnyk.com/post/2023-11-28-list-all-ignored-files-in-git
 alias gi='clear ; find "*" | git check-ignore --stdin --verbose' # ignored
-alias gl='GIT_PAGER=cat git log --since=1.week --show-signature --reverse --all'
+alias gl='git --no-pager log --since=1.week --show-signature --reverse --all'
 alias gll='git log -h; git log -L'
 alias gp='git push --verbose --recurse-submodules=on-demand ; git push --tags'
 alias gpu='git pull --verbose --prune --tags --rebase --no-recurse-submodules'
