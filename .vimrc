@@ -2655,14 +2655,14 @@ set wrapmargin=0 " Newline insert based on terminal width (0 = disabled)
 set synmaxcol=256 " Prevent slow loading https://github.com/tpope/vim-sensible/issues/142
 
 " Whitespace --------------------------------------------------------------
-const s:TABSIZE=2
+const s:TABSIZE=2 " http://vimcasts.org/episodes/tabs-and-spaces
 set expandtab "turn tabs into (tabstop) spaces
 set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
-let &tabstop=s:TABSIZE "set tab character to 2 characters
-let &shiftwidth=s:TABSIZE " Shift-indent size - http://vimcasts.org/episodes/tabs-and-spaces
-let &softtabstop=s:TABSIZE " https://vi.stackexchange.com/q/4244
-
-retab! " (Force!) update tab format
+let &tabstop=s:TABSIZE "tab character spacing
+let &shiftwidth=s:TABSIZE " normal mode Shift-indent size (for << and >> commands)
+let &softtabstop=s:TABSIZE " insert mode <TAB> & <BS> - https://vi.stackexchange.com/q/4244
+ 
+retab! " (Force!) update tab format - https://vim.fandom.com/wiki/Super_retab
 
 set list " show hidden characters & replacement characters
 set listchars=tab:▣□▢,extends:⇨,precedes:⇦,leadmultispace:\|\ \|\ ,multispace:\.,lead:·,space:╵,nbsp:■,trail:■,eol:↴
