@@ -900,6 +900,13 @@ endfunction " idle
 
 
 
+function! pusher ()
+  echo 'The Lineeeee: ' + v:lnum
+end
+
+set indentexpr=pusher()
+" set indentexpr=VimIndent()
+
 finish
 
 
