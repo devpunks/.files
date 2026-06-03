@@ -900,13 +900,18 @@ endfunction " idle
 
 
 
-function! pusher ()
-  echo 'The Lineeeee: ' + v:lnum
-end
+function! Pusher ( ... )
+  echom 'The Lineeeee: ' .. v:lnum
+  echom 'The Args: ' .. a:000->join(', ')
+  echom 'The Args Count: ' .. a:0
+echom 'Argument (' .. 1 .. '):' argv ( 0 )
+endfunction
+  " what
+" huh
+"
 
-set indentexpr=pusher()
+set indentexpr=Pusher()
 " set indentexpr=VimIndent()
-
 finish
 
 
