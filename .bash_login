@@ -451,8 +451,8 @@ alias eliza='why ; echo TODO: ELIZA implementation' # https://en.wikipedia.org/w
 # =========================================================================
 # {{{ Git Aliases
 # =========================================================================
-alias ga='git add -p'
-alias gb='git --paginate branch --vv'
+alias ga='git add --patch'
+alias gb='git --paginate branch -vv'
 alias gc='git commit --message '
 alias gd='git diff'
 alias gg='git grep --break --heading'
