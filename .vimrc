@@ -46,7 +46,7 @@
 " =========================================================================
 
 " -------------------------------------------------------------------------
-messages clear " Clear messages
+" messages clear " Clear messages
 " -------------------------------------------------------------------------
 " Reset all autocommand groups
 augroup VimDefaults  | autocmd! | augroup END
