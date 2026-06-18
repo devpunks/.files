@@ -310,6 +310,7 @@ echo Cloning submodules...
 # https://github.com/othree/html5.vim
 # https://github.com/preservim/vim-markdown
 # https://github.com/hail2u/vim-css3-syntax
+# https://github.com/ejholmes/vim-forcedotcom # APEX
 # https://github.com/pangloss/vim-javascript
 # https://github.com/vim-ruby/vim-ruby
 # https://github.com/tpope/vim-rails
