@@ -2661,7 +2661,7 @@ set shiftround " Rounds the indent spacing to the next multiple of shiftwidth
 let &tabstop=s:TABSIZE "tab character spacing
 let &shiftwidth=s:TABSIZE " normal mode Shift-indent size (for << and >> commands)
 let &softtabstop=s:TABSIZE " insert mode <TAB> & <BS> - https://vi.stackexchange.com/q/4244
- 
+
 retab! " (Force!) update tab format - https://vim.fandom.com/wiki/Super_retab
 
 set list " show hidden characters & replacement characters
