@@ -272,7 +272,7 @@ pkg install vlc
 pkg install pngquant # $$ https://pngquant.org
 pkg install optipng # TODO: (Deprecate in lieu of pngquant) - https://optipng.sourceforge.net
 pkg install jpegoptim # https://man.archlinux.org/man/extra/jpegoptim/jpegoptim.1.en
-pkg install libvips --fix-missing # https://github.com/libvips/libvips
+pkg install libvips --no-install-recommends --fix-missing # https://github.com/libvips/libvips
 pkg install ffmpeg
 pkg install graphviz
 pkg install asciinema
