@@ -269,6 +269,8 @@ pkg install texinfo
 # {{{ Multimedia ----------------------------------------------------------
 pkg install sox
 pkg install vlc
+pkg install optipng # https://optipng.sourceforge.net
+pkg install libvips --fix-missing # https://github.com/libvips/libvips
 pkg install ffmpeg
 pkg install graphviz
 pkg install asciinema
