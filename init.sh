@@ -270,6 +270,7 @@ pkg install texinfo
 pkg install sox
 pkg install vlc
 pkg install pngquant # $$ https://pngquant.org
+pkg install exiftool
 pkg install optipng # TODO: (Deprecate in lieu of pngquant) - https://optipng.sourceforge.net
 pkg install jpegoptim # https://man.archlinux.org/man/extra/jpegoptim/jpegoptim.1.en
 # --no-install-recommends disables installing ImageMagick
