@@ -51,8 +51,6 @@
 #==========================================================================
 # [[ -z "$PS1" ]] && exit # https://tldp.org/HOWTO/Bash-Prompt-HOWTO/setps.html
 
-echo "SHELL OPTION FLAGS (see set --help) 👉" $-
-
 # https://stackoverflow.com/q/42757236/what-does-mean-in-bash
 echo "SHELL OPTION FLAGS (see set --help) 👉" $-
 # [[ $- != *i* ]] # Check for interactive
