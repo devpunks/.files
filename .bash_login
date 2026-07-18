@@ -1199,7 +1199,6 @@ function digest () {
 
   # https://datatracker.ietf.org/doc/rfc1321
   echo ; echo MD5: # https://en.wikipedia.org/wiki/MD5
-
   printf "MD5 (md5sum): %s\n" \
     $( printf "$phrase" | md5sum | command cut -d ' ' -f 1 )
   printf "MD5 (openssl md5): %s\n" \
