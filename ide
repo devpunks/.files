@@ -118,6 +118,8 @@ tmux -S "$SOCKET" select-pane -t 2
 # Select Previous window again
 tmux -S "$SOCKET" previous-window
 
+# Aggressie resize for multiple terminals
+set-window-option -g aggressive-resize on
 # attach to new session
 # -vv tmux-client-PID.log & tmux-server-PID.log & tmux-out-PID.log
 tmux -S "$SOCKET" -vv -u2 attach -t $SESSION
