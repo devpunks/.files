@@ -117,6 +117,7 @@ pkg install logrotate
 # }}}
 
 # {{{ Security ------------------------------------------------------------
+pkg install pass # https://passwordstore.org
 pkg install tsu # https://pypi.org/project/tsu
 pkg install proot # https://wiki.termux.com/wiki/PRoot
 
