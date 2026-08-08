@@ -94,6 +94,17 @@ export PASSWORD_STORE_DIR=$( mkdir -p ~/.passwords 1>/dev/null && echo ~/.passwo
 # https://wiki.archlinux.org/title/GnuPG#pinentry
 # https://gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
 export GPG_TTY=$(tty) # https://github.com/keybase/keybase-issues/issues/2798
+
+# When `pass` is used, force GPG to bind to the current active terminal window
+gpg-connect-agent updatestartuptty /bye >/dev/null 2>&1
+
+export GPGID=$(
+  command gpg --list-secret-keys --with-colons 2>/dev/null \
+  | awk -F: '$1=="sec" {print $5}'
+) # $GPID
+
+# -------------------------------------------------------------------------
+# https://dev.gnupg.org/T3412
 export GIT_TRACE=1 # tracing
 export GIT_PAGER=$PAGER
 export GIT_EDITOR=$EDITOR
