@@ -85,7 +85,11 @@ export PAGER=most
 export VISUAL=$EDITOR
 export PG_CONFIG="${PREFIX}/bin/pg_config"
 
-# -------------------------------------------------------------------------
+# `pass`words
+# See `man pass`
+export PASSWORD_STORE_DIR=$( mkdir -p ~/.passwords 1>/dev/null && echo ~/.passwords )
+
+# GPG / GNUPG -------------------------------------------------------------
 # https://dev.gnupg.org/T3412
 # https://wiki.archlinux.org/title/GnuPG#pinentry
 # https://gnupg.org/documentation/manuals/gnupg/Invoking-GPG_002dAGENT.html
