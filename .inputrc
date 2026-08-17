@@ -49,7 +49,7 @@
 #       $if mode=emacs conditionals still match correctly.
 # =========================================================================
 
-# ── System defaults (must be first — system file uses $if mode=emacs) ──
+# ── Load system defaults (must be before set editing-mode) ──
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 # ── Editing mode (switch to vi) ──
