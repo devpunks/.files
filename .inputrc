@@ -235,7 +235,9 @@ TAB: complete
 # Ctrl+N — next command (search by prefix)
 "\C-n": history-search-forward
 
-# ── vi-command keymap ──
+# =========================================================================
+# {{{ Bindings — vi-command keymap
+# =========================================================================
 set keymap vi-command
 
 TAB: complete
