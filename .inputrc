@@ -216,6 +216,8 @@ TAB: complete
 
 # Ctrl+Left — move backward one word
 "\e[5D": backward-word
+
+# Ctrl+Right (alt seq) — move forward one word
 "\e[1;5C": forward-word
 "\e[1;5D": backward-word
 
