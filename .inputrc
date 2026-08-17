@@ -143,7 +143,8 @@ set menu-complete-display-prefix on
 
 # Fill completions left-to-right, then down
 set print-completions-horizontally on
-# Display ellipsis for long <Tab>-completion results.
+
+# Truncate long common prefix, showing last N chars
 set completion-prefix-display-length 5
 
 # }}}
