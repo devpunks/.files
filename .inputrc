@@ -352,6 +352,8 @@ TAB: complete
 
 # Ctrl+Right (alt seq) — move forward one word
 "\e[1;5C": forward-word
+
+# Ctrl+Left (alt seq) — move backward one word
 "\e[1;5D": backward-word
 
 "\e[A": history-search-backward
