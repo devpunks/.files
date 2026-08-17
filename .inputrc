@@ -290,6 +290,8 @@ TAB: complete
 
 # Up arrow — search history by typed prefix
 "\e[A": history-search-backward
+
+# Down arrow — search forward through history
 "\e[B": history-search-forward
 
 "\C-p": history-search-backward
