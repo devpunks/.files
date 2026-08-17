@@ -131,7 +131,7 @@ set completion-prefix-display-length 5
 # }}}
 
 # =========================================================================
-# {{{ Editing Mode
+# {{{ Mode Strings
 # - https://linuxgazette.net/137/anonymous.html
 # - https://stackoverflow.com/q/7888387
 # - https://unix.stackexchange.com/q/112406
