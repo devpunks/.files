@@ -113,7 +113,8 @@ set page-completions off
 
 # Include hidden files (dotfiles) in completions
 set match-hidden-files on
-# Case insensitive between hyphen and underscore (kebab and snake case)
+
+# Treat hyphen and underscore as equivalent for matching
 set completion-map-case on
 # Skip previously matched
 set skip-completed-text on
