@@ -161,6 +161,8 @@ set emacs-mode-string (emacs) \1\e[0m\e[5 q\2
 
 # Vi insert indicator + red underline cursor
 set vi-ins-mode-string  ➥【vi  】\1\e]12;red\a\e[3 q\2
+
+# Vi command indicator + blue block cursor + lock icon
 set vi-cmd-mode-string  ➥【vi🔏】\1\e]12;blue\a\e[2 q\2
 
 # }}}
