@@ -197,7 +197,6 @@ set completion-prefix-display-length 5
 # - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
 # =========================================================================
 # set keymap vi
-set keymap emacs
 set editing-mode vi
 #set editing-mode emacs
 
