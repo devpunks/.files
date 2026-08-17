@@ -49,7 +49,6 @@ $include /data/data/com.termux/files/usr/etc/inputrc
 
 # ── Use vi keybindings (Esc toggles insert/command mode) ──
 set editing-mode vi
-#set editing-mode emacs
 
 # =========================================================================
 # {{{ Global Options
