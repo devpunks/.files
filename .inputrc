@@ -110,7 +110,8 @@ set colored-stats on
 
 # Don't paginate — show all completion results at once
 set page-completions off
-# <Tab>-completion on (.)dot files.
+
+# Include hidden files (dotfiles) in completions
 set match-hidden-files on
 # Case insensitive between hyphen and underscore (kebab and snake case)
 set completion-map-case on
