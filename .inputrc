@@ -80,7 +80,8 @@ set visible-stats on
 
 # Number of history entries kept in memory
 set history-size 1000
-# [ audible (default)|visible|none ]
+
+# Flash screen on error instead of beeping
 set bell-style visible
 
 # Immediately add a trailing slash when autocompleting symlinks & directories
