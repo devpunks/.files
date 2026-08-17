@@ -139,10 +139,6 @@ set completion-prefix-display-length 5
 # - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
 # - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
 # =========================================================================
-# set keymap vi
-set editing-mode vi
-#set editing-mode emacs
-
 # PS1 prompt prefix
 set show-mode-in-prompt on
 
