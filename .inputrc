@@ -140,7 +140,8 @@ set completion-query-items 200
 
 # Show common prefix during menu-complete cycling
 set menu-complete-display-prefix on
-# Alphabetical horizontal search of completions.
+
+# Fill completions left-to-right, then down
 set print-completions-horizontally on
 # Display ellipsis for long <Tab>-completion results.
 set completion-prefix-display-length 5
