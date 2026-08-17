@@ -122,7 +122,8 @@ set skip-completed-text on
 
 # Show all matches immediately if ambiguous
 set show-all-if-ambiguous on
-# Case insensitive <Tab>-complete matches.
+
+# Ignore case when completing
 set completion-ignore-case on
 # All <Tab>-completion list matches.
 set show-all-if-unmodified on
