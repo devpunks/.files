@@ -225,6 +225,8 @@ TAB: complete
 
 # Up arrow — search history for lines matching what's typed
 "\e[A": history-search-backward
+
+# Down arrow — search forward through history
 "\e[B": history-search-forward
 
 # Ctrl+P / Ctrl+N — history search
