@@ -57,7 +57,7 @@ set editing-mode vi
 #set editing-mode emacs
 
 # =========================================================================
-# {{{ Options
+# {{{ Global Options
 # =========================================================================
 # milliseconds to wait for key sequence
 set keyseq-timeout 300
