@@ -150,6 +150,10 @@ set enable-bracketed-paste off
 # =========================================================================
 set blink-matching-paren on
 
+# Use `LS_COLORS` & readline-colored-completion-prefix
+set colored-completion-prefix on
+set colored-stats on
+
 # Be more intelligent when autocompleting by also looking at the text after
 # the cursor. For example, when the current line is "cd ~/src/mozil", and
 # the cursor is on the "z", pressing Tab will not autocomplete it to "cd
