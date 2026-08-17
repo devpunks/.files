@@ -48,9 +48,6 @@
 #       The $include MUST come before set editing-mode so the system's
 #       $if mode=emacs conditionals still match correctly.
 # =========================================================================
-# emacs mode
-# $if mode=emacs
-# $endif
 
 # Preserve system wide settings
 $include /data/data/com.termux/files/usr/etc/inputrc
