@@ -163,7 +163,7 @@ set vi-cmd-mode-string  ➥【vi🔏】\1\e]12;blue\a\e[2 q\2
 set keymap emacs
 
 # Tab / Reload / Clear
-"\t": complete
+TAB: complete
 "\C-x\C-r": re-read-init-file
 "\C-l": clear-screen
 "\C-x\C-l": clear-display
