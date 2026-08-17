@@ -356,6 +356,7 @@ TAB: complete
 # Ctrl+Left (alt seq) — move backward one word
 "\e[1;5D": backward-word
 
+# Up arrow — search history by typed prefix
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 
