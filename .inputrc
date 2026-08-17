@@ -229,7 +229,7 @@ TAB: complete
 # Down arrow — search forward through history
 "\e[B": history-search-forward
 
-# Ctrl+P / Ctrl+N — history search
+# Ctrl+P — previous command (search by prefix)
 "\C-p": history-search-backward
 "\C-n": history-search-forward
 
