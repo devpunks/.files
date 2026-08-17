@@ -77,6 +77,8 @@ set enable-keypad on
 
 # Show file type suffixes in completions: */@ (like ls -F)
 set visible-stats on
+
+# Number of history entries kept in memory
 set history-size 1000
 # [ audible (default)|visible|none ]
 set bell-style visible
