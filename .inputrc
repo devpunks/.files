@@ -115,7 +115,7 @@ set keymap vi-insert
 # {{{ Options
 # =========================================================================
 # milliseconds to wait for key sequence
-set keyseq-timeout 1000
+set keyseq-timeout 300
 
 # Allow UTF-8 input and output, instead of $'\0123\0456'
 set input-meta on
