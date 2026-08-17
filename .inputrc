@@ -49,7 +49,7 @@
 #       $if mode=emacs conditionals still match correctly.
 # =========================================================================
 
-# Preserve system wide settings
+# ── System defaults (must be first — system file uses $if mode=emacs) ──
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 # "TAB": menu-complete
