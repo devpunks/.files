@@ -125,7 +125,8 @@ set show-all-if-ambiguous on
 
 # Ignore case when completing
 set completion-ignore-case on
-# All <Tab>-completion list matches.
+
+# Show all matches even if prefix is unique
 set show-all-if-unmodified on
 # Show control characters
 set echo-control-characters on
