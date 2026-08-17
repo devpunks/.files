@@ -201,6 +201,8 @@ TAB: complete
 
 # End key — jump to end of line
 "\e[4~": end-of-line
+
+# Fn+End / variant — jump to end of line
 "\e[8~": end-of-line
 
 # Arrow keys — character movement
