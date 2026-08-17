@@ -263,6 +263,8 @@ TAB: complete
 
 # Delete key — delete char under cursor
 "\e[3~": delete-char
+
+# End key — jump to end of line
 "\e[4~": end-of-line
 "\e[8~": end-of-line
 
