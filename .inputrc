@@ -104,6 +104,8 @@ set blink-matching-paren on
 
 # Color the common prefix of tab completions
 set colored-completion-prefix on
+
+# Color filenames using LS_COLORS during completion
 set colored-stats on
 
 # Be more intelligent when autocompleting by also looking at the text after
