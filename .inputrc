@@ -119,7 +119,8 @@ set completion-map-case on
 
 # Don't replace text after cursor when completing
 set skip-completed-text on
-# All <Tab>-completion ambiguous matches.
+
+# Show all matches immediately if ambiguous
 set show-all-if-ambiguous on
 # Case insensitive <Tab>-complete matches.
 set completion-ignore-case on
