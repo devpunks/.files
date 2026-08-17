@@ -230,7 +230,7 @@ TAB: complete
 # ── vi-insert keymap ──
 set keymap vi-insert
 
-"\t": complete
+TAB: complete
 "\C-x\C-r": re-read-init-file
 "\C-l": clear-screen
 "\C-x\C-l": clear-display
