@@ -43,7 +43,6 @@
 #       Key bindings are KEYMAP-SPECIFIC — repeated in each section below.
 #       The $include MUST come before set editing-mode so the system's
 #       $if mode=emacs conditionals still match correctly.
-# =========================================================================
 
 # ── Load system defaults (must be before set editing-mode) ──
 $include /data/data/com.termux/files/usr/etc/inputrc
