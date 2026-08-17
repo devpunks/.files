@@ -55,7 +55,7 @@
 $include /data/data/com.termux/files/usr/etc/inputrc
 
 # "TAB": menu-complete
-"TAB": complete
+"\t": complete
 
 # reload .inputrc in all keymaps
 set keymap emacs
