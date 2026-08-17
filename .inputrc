@@ -108,11 +108,7 @@ set colored-completion-prefix on
 # Color filenames using LS_COLORS during completion
 set colored-stats on
 
-# Be more intelligent when autocompleting by also looking at the text after
-# the cursor. For example, when the current line is "cd ~/src/mozil", and
-# the cursor is on the "z", pressing Tab will not autocomplete it to "cd
-# ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the
-# Disable <Tab>-Autocompletion paging.
+# Don't paginate — show all completion results at once
 set page-completions off
 # <Tab>-completion on (.)dot files.
 set match-hidden-files on
