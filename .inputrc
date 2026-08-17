@@ -305,6 +305,7 @@ TAB: complete
 # =========================================================================
 set keymap vi-insert
 
+# Tab — complete current word
 TAB: complete
 "\C-x\C-r": re-read-init-file
 "\C-l": clear-screen
