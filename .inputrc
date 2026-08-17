@@ -192,6 +192,8 @@ TAB: complete
 
 # Home key — jump to start of line
 "\e[1~": beginning-of-line
+
+# Insert key — insert next key literally
 "\e[2~": quoted-insert
 "\e[3~": delete-char
 "\e[4~": end-of-line
