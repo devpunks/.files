@@ -90,9 +90,7 @@ set mark-directories on
 # Show trailing / on symlink-to-directory completions
 set mark-symlinked-directories on
 
-# disable bracketed paste mode
-# More info - https://cirw.in/blog/bracketed-paste
-# https://superuser.com/q/1532688/pasting-required-text-into-terminal-emulator-results-in-200required-text
+# Disable bracketed paste (avoids 200~ artifacts in Termux)
 set enable-bracketed-paste off
 
 # }}}
