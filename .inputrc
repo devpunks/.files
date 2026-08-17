@@ -74,7 +74,8 @@ set convert-meta off
 
 # Enable application keypad (terminal-specific arrow keys)
 set enable-keypad on
-# Show extra file information when completing, `ls -F` (e.g. *,/,@)
+
+# Show file type suffixes in completions: */@ (like ls -F)
 set visible-stats on
 set history-size 1000
 # [ audible (default)|visible|none ]
