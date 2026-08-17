@@ -155,4 +155,113 @@ set vi-cmd-mode-string  ➥【vi🔏】\1\e]12;blue\a\e[2 q\2
 
 # }}}
 
+# =========================================================================
+# {{{ Bindings
+#   - Default key bindings - https://stackoverflow.com/a/12009972
+#   - https://gnu.org/software/bash/manual/bash.html#Readline-Interaction
+# =========================================================================
+set keymap emacs
+
+# Tab / Reload / Clear
+"\t": complete
+"\C-x\C-r": re-read-init-file
+"\C-l": clear-screen
+"\C-x\C-l": clear-display
+
+# Line navigation
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+
+# Home / End / Delete / Insert
+"\e[1~": beginning-of-line
+"\e[2~": quoted-insert
+"\e[3~": delete-char
+"\e[4~": end-of-line
+"\e[8~": end-of-line
+
+# Arrow keys — character movement
+"\e[C": forward-char
+"\e[D": backward-char
+
+# Ctrl+Arrow keys — word movement
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+
+# Up / Down — history search by typed prefix
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# Ctrl+P / Ctrl+N — history search
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+
+# ── vi-command keymap ──
+set keymap vi-command
+
+"\t": complete
+"\C-x\C-r": re-read-init-file
+"\C-l": clear-screen
+"\C-x\C-l": clear-display
+
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+
+"\e[1~": beginning-of-line
+"\e[3~": delete-char
+"\e[4~": end-of-line
+"\e[8~": end-of-line
+
+"\e[C": forward-char
+"\e[D": backward-char
+
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+
+# ── vi-insert keymap ──
+set keymap vi-insert
+
+"\t": complete
+"\C-x\C-r": re-read-init-file
+"\C-l": clear-screen
+"\C-x\C-l": clear-display
+
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+
+"\e[1~": beginning-of-line
+"\e[2~": quoted-insert
+"\e[3~": delete-char
+"\e[4~": end-of-line
+"\e[8~": end-of-line
+
+"\e[C": forward-char
+"\e[D": backward-char
+
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+
+# vi-insert specific: quoted-insert on Ctrl+Q and Ctrl+V
+"\C-q": quoted-insert
+"\C-v": quoted-insert
+
+# }}}
+
 # vim: foldmethod=marker
