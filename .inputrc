@@ -116,7 +116,8 @@ set match-hidden-files on
 
 # Treat hyphen and underscore as equivalent for matching
 set completion-map-case on
-# Skip previously matched
+
+# Don't replace text after cursor when completing
 set skip-completed-text on
 # All <Tab>-completion ambiguous matches.
 set show-all-if-ambiguous on
