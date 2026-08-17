@@ -334,6 +334,8 @@ TAB: complete
 
 # End key — jump to end of line
 "\e[4~": end-of-line
+
+# Fn+End — jump to end of line
 "\e[8~": end-of-line
 
 "\e[C": forward-char
