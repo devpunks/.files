@@ -323,6 +323,7 @@ TAB: complete
 # Ctrl+E — jump to end of line
 "\C-e": end-of-line
 
+# Home key — jump to start of line
 "\e[1~": beginning-of-line
 "\e[2~": quoted-insert
 "\e[3~": delete-char
