@@ -252,6 +252,7 @@ TAB: complete
 # Ctrl+X Ctrl+L — clear display (wipes scrollback)
 "\C-x\C-l": clear-display
 
+# Ctrl+A — jump to start of line
 "\C-a": beginning-of-line
 "\C-e": end-of-line
 
