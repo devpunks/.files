@@ -164,6 +164,10 @@ set page-completions off
 set match-hidden-files on
 # Case insensitive between hyphen and underscore (kebab and snake case)
 set completion-map-case on
+# Skip previously matched
+set skip-completed-text on
+# All <Tab>-completion ambiguous matches.
+set show-all-if-ambiguous on
 # Case insensitive <Tab>-complete matches.
 set completion-ignore-case on
 # Maximum <Tab>-completion display results. (-1 for infinite)
