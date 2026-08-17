@@ -160,10 +160,6 @@ set colored-stats on
 # ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the
 # Disable <Tab>-Autocompletion paging.
 set page-completions off
-# Skip previously matched
-set skip-completed-text on
-# Show control characters
-set echo-control-characters on
 # <Tab>-completion on (.)dot files.
 set match-hidden-files on
 # All <Tab>-completion ambiguous matches.
