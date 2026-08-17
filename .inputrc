@@ -176,6 +176,8 @@ set show-all-if-unmodified on
 set echo-control-characters on
 # <Tab>-completion results in single column.
 set completion-display-width 3
+# Maximum <Tab>-completion display results. (-1 for infinite)
+set completion-query-items 200
 # Common prefix of completion list.
 set menu-complete-display-prefix on
 # Alphabetical horizontal search of completions.
