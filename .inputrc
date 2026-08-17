@@ -84,7 +84,7 @@ set history-size 1000
 # Flash screen on error instead of beeping
 set bell-style visible
 
-# Immediately add a trailing slash when autocompleting symlinks & directories
+# Show trailing / on directory completions
 set mark-directories on
 set mark-symlinked-directories on
 
