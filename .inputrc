@@ -248,6 +248,8 @@ TAB: complete
 
 # Ctrl+L — clear screen (keeps scrollback)
 "\C-l": clear-screen
+
+# Ctrl+X Ctrl+L — clear display (wipes scrollback)
 "\C-x\C-l": clear-display
 
 "\C-a": beginning-of-line
