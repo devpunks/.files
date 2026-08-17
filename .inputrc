@@ -294,6 +294,7 @@ TAB: complete
 # Down arrow — search forward through history
 "\e[B": history-search-forward
 
+# Ctrl+P — previous command (prefix search)
 "\C-p": history-search-backward
 "\C-n": history-search-forward
 
