@@ -151,12 +151,6 @@ set completion-prefix-display-length 5
 
 # =========================================================================
 # {{{ Mode Strings
-# - https://linuxgazette.net/137/anonymous.html
-# - https://stackoverflow.com/q/7888387
-# - https://unix.stackexchange.com/q/112406
-# - https://baeldung.com/linux/console-cursor-features
-# - https://catonmat.net/bash-vi-editing-mode-cheat-sheet
-# - https://catonmat.net/ftp/bash-vi-editing-mode-cheat-sheet.txt
 # =========================================================================
 # PS1 prompt prefix
 set show-mode-in-prompt on
