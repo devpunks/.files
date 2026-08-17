@@ -52,7 +52,7 @@
 # ── Load system defaults (must be before set editing-mode) ──
 $include /data/data/com.termux/files/usr/etc/inputrc
 
-# ── Editing mode (switch to vi) ──
+# ── Use vi keybindings (Esc toggles insert/command mode) ──
 set editing-mode vi
 #set editing-mode emacs
 
