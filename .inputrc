@@ -137,7 +137,8 @@ set completion-display-width 3
 
 # Max matches to show before prompting "Display all N?"
 set completion-query-items 200
-# Common prefix of completion list.
+
+# Show common prefix during menu-complete cycling
 set menu-complete-display-prefix on
 # Alphabetical horizontal search of completions.
 set print-completions-horizontally on
