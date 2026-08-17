@@ -231,6 +231,8 @@ TAB: complete
 
 # Ctrl+P — previous command (search by prefix)
 "\C-p": history-search-backward
+
+# Ctrl+N — next command (search by prefix)
 "\C-n": history-search-forward
 
 # ── vi-command keymap ──
