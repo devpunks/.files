@@ -205,7 +205,7 @@ TAB: complete
 # Fn+End / variant — jump to end of line
 "\e[8~": end-of-line
 
-# Arrow keys — character movement
+# Right arrow — move cursor forward one char
 "\e[C": forward-char
 "\e[D": backward-char
 
