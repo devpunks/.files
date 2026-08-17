@@ -300,7 +300,9 @@ TAB: complete
 # Ctrl+N — next command (prefix search)
 "\C-n": history-search-forward
 
-# ── vi-insert keymap ──
+# =========================================================================
+# {{{ Bindings — vi-insert keymap
+# =========================================================================
 set keymap vi-insert
 
 TAB: complete
