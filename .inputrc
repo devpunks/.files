@@ -162,10 +162,6 @@ set colored-stats on
 set page-completions off
 # <Tab>-completion on (.)dot files.
 set match-hidden-files on
-# All <Tab>-completion ambiguous matches.
-set show-all-if-ambiguous on
-# All <Tab>-completion list matches.
-set show-all-if-unmodified on
 # Case insensitive between hyphen and underscore (kebab and snake case)
 set completion-map-case on
 # Case insensitive <Tab>-complete matches.
