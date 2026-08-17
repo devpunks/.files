@@ -242,6 +242,8 @@ set keymap vi-command
 
 # Tab — complete current word
 TAB: complete
+
+# Ctrl+X Ctrl+R — reload this .inputrc file
 "\C-x\C-r": re-read-init-file
 "\C-l": clear-screen
 "\C-x\C-l": clear-display
