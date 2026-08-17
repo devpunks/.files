@@ -68,6 +68,8 @@ set input-meta on
 
 # Allow 8-bit / UTF-8 output
 set output-meta on
+
+# Don't strip high bit from meta characters
 set convert-meta off
 
 # arrow keys
