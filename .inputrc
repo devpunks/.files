@@ -67,6 +67,7 @@ set keymap vi-command
 set keymap vi-insert
 "\C-x\C-r": re-read-init-file
 "\C-q": quoted-insert
+"\C-v": quoted-insert
 
 # of all lines or `clear-screen` (scrolls below fold)
 "\C-l": clear-screen
