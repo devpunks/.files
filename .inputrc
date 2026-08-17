@@ -102,7 +102,7 @@ set enable-bracketed-paste off
 # Briefly highlight matching parenthesis when typing
 set blink-matching-paren on
 
-# Use `LS_COLORS` & readline-colored-completion-prefix
+# Color the common prefix of tab completions
 set colored-completion-prefix on
 set colored-stats on
 
