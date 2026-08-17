@@ -364,6 +364,8 @@ TAB: complete
 
 # Ctrl+P — previous command (prefix search)
 "\C-p": history-search-backward
+
+# Ctrl+N — next command (prefix search)
 "\C-n": history-search-forward
 
 # vi-insert specific: quoted-insert on Ctrl+Q and Ctrl+V
