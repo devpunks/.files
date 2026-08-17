@@ -65,6 +65,8 @@ set keyseq-timeout 300
 
 # Allow 8-bit / UTF-8 input (non-ASCII chars like →, «, ñ)
 set input-meta on
+
+# Allow 8-bit / UTF-8 output
 set output-meta on
 set convert-meta off
 
