@@ -131,7 +131,8 @@ set show-all-if-unmodified on
 
 # Show control characters as ^C, ^D, etc.
 set echo-control-characters on
-# <Tab>-completion results in single column.
+
+# Number of columns for completion display (3 = side-by-side)
 set completion-display-width 3
 # Maximum <Tab>-completion display results. (-1 for infinite)
 set completion-query-items 200
