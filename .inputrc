@@ -59,7 +59,8 @@ set editing-mode vi
 # =========================================================================
 # {{{ Global Options
 # =========================================================================
-# milliseconds to wait for key sequence
+
+# How long (ms) to wait for multi-key sequences like \C-x\C-r
 set keyseq-timeout 300
 
 # Allow UTF-8 input and output, instead of $'\0123\0456'
