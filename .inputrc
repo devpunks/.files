@@ -211,8 +211,8 @@ set show-mode-in-prompt on
 # 5 Bar (blinking) (xterm)
 # 6 Bar (steady) (xterm)
 set emacs-mode-string (emacs) \1\e[0m\e[5 q\2
-set vi-ins-mode-string  ➥【vi  】\1\e]12;red\x7\e[3 q\2
-set vi-cmd-mode-string  ➥【vi🔏】\1\e]12;blue\x7\e[2 q\2
+set vi-ins-mode-string  ➥【vi  】\1\e]12;red\a\e[3 q\2
+set vi-cmd-mode-string  ➥【vi🔏】\1\e]12;blue\a\e[2 q\2
 
 # }}}
 
