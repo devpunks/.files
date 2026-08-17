@@ -86,6 +86,8 @@ set bell-style visible
 
 # Show trailing / on directory completions
 set mark-directories on
+
+# Show trailing / on symlink-to-directory completions
 set mark-symlinked-directories on
 
 # disable bracketed paste mode
