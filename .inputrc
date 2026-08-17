@@ -344,6 +344,7 @@ TAB: complete
 # Left arrow — move cursor backward one char
 "\e[D": backward-char
 
+# Ctrl+Right — move forward one word
 "\e[5C": forward-word
 "\e[5D": backward-word
 "\e[1;5C": forward-word
