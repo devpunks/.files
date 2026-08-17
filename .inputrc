@@ -10,8 +10,6 @@
 #                   888
 #                   888
 #                   888
-# CtrlP -----------------------------------------------------
-#
 # -------------------------------------------------------------------------
 # Version: 0.1
 # File: .inputrc
@@ -370,6 +368,8 @@ TAB: complete
 
 # Ctrl+Q — insert next key literally (vi-style)
 "\C-q": quoted-insert
+
+# Ctrl+V — insert next key literally (emacs-style)
 "\C-v": quoted-insert
 
 # }}}
