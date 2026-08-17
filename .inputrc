@@ -128,7 +128,8 @@ set completion-ignore-case on
 
 # Show all matches even if prefix is unique
 set show-all-if-unmodified on
-# Show control characters
+
+# Show control characters as ^C, ^D, etc.
 set echo-control-characters on
 # <Tab>-completion results in single column.
 set completion-display-width 3
