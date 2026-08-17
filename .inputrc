@@ -134,7 +134,8 @@ set echo-control-characters on
 
 # Number of columns for completion display (3 = side-by-side)
 set completion-display-width 3
-# Maximum <Tab>-completion display results. (-1 for infinite)
+
+# Max matches to show before prompting "Display all N?"
 set completion-query-items 200
 # Common prefix of completion list.
 set menu-complete-display-prefix on
