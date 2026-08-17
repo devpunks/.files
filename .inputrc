@@ -63,7 +63,7 @@ set editing-mode vi
 # How long (ms) to wait for multi-key sequences like \C-x\C-r
 set keyseq-timeout 300
 
-# Allow UTF-8 input and output, instead of $'\0123\0456'
+# Allow 8-bit / UTF-8 input (non-ASCII chars like →, «, ñ)
 set input-meta on
 set output-meta on
 set convert-meta off
