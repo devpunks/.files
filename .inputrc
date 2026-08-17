@@ -98,6 +98,8 @@ set enable-bracketed-paste off
 # =========================================================================
 # {{{ Completion Options
 # =========================================================================
+
+# Briefly highlight matching parenthesis when typing
 set blink-matching-paren on
 
 # Use `LS_COLORS` & readline-colored-completion-prefix
