@@ -72,7 +72,7 @@ set output-meta on
 # Don't strip high bit from meta characters
 set convert-meta off
 
-# arrow keys
+# Enable application keypad (terminal-specific arrow keys)
 set enable-keypad on
 # Show extra file information when completing, `ls -F` (e.g. *,/,@)
 set visible-stats on
