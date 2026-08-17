@@ -152,7 +152,8 @@ set completion-prefix-display-length 5
 # =========================================================================
 # {{{ Mode Strings
 # =========================================================================
-# PS1 prompt prefix
+
+# Show current vi mode (insert/command) in the prompt
 set show-mode-in-prompt on
 
 # 0 Default
