@@ -124,10 +124,6 @@ set input-meta on
 set output-meta on
 set convert-meta off
 
-# Use `LS_COLORS` & readline-colored-completion-prefix
-set colored-completion-prefix on
-set colored-stats on
-
 # arrow keys
 set enable-keypad on
 # Show extra file information when completing, `ls -F` (e.g. *,/,@)
