@@ -295,7 +295,7 @@ TAB: complete
 "\C-n": history-search-forward
 
 # =========================================================================
-# {{{ Bindings — vi-insert keymap
+# ── vi-insert keymap ──
 # =========================================================================
 set keymap vi-insert
 
