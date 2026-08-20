@@ -2771,7 +2771,6 @@ function serve () { clear
 } # serve
 
 # GPG ---------------------------------------------------------------------
-alias ssh='man ssh ; command ssh' # -T
 # https://gnupg.org/documentation/manpage.html
 # https://gnupg.org/documentation/manuals/gnupg/GPG-Configuration.html
 # https://betterbugs.io/blog/fix-error-gpg-failed-to-sign-the-data-git
