@@ -230,7 +230,7 @@ TAB: complete
 "\C-n": history-search-forward
 
 # =========================================================================
-# {{{ Bindings — vi-command keymap
+# ── vi-command keymap ──
 # =========================================================================
 set keymap vi-command
 
