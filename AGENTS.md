@@ -24,6 +24,5 @@
 ## Patterns
 
 - `debug()` for diagnostic, `info()` for submission log
-- `return this;` from `weigh()` (returns `Submission`)
-- STAGING credentials active, PRODUCTION commented out
+- `document.VersionData = null;` after last use of VersionData, before next iteration
 - Direct fields over relationship traversals: `Opportunity__c` not `Opportunity__r.Id`
