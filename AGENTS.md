@@ -23,8 +23,6 @@
 
 ## Patterns
 
-- `weigh ( document );` at top of upload loop, not inline debug
-- `document.VersionData = null;` after last use of VersionData, before next iteration
 - `debug()` for diagnostic, `info()` for submission log
 - `return this;` from `weigh()` (returns `Submission`)
 - STAGING credentials active, PRODUCTION commented out
