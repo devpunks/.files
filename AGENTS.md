@@ -13,6 +13,7 @@
 
 - 75-char max line length
 - Single-line per-document SOQL queries
+- Leading commas for lists / maps: `, 'key' => value` (not trailing)
 - Annotations on their own line: `@isTest` then `static void test...`
 
 ## Method order (in base `Lender`)
