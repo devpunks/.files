@@ -4,6 +4,8 @@
 
 - Spaced slash in string output: ` / `
 - Space before and after brackets: ` [ ... ] `
+- Space before and after parentheses: ` ( ... ) `
+- Spaced parentheses in string output: ` ( 39 % ) `
 - Space before `()` on method calls: `.format ()`, `keySet ()`, `Limits.getHeapSize ()`
 - Space before `(` on constructors / type casts: `Decimal.valueOf ( ... )`, `new Map <String, String> {`
 - Spaced slash in string output: ` / `
