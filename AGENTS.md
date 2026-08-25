@@ -2,7 +2,7 @@
 
 ## Whitespace
 
-- Space before and after parentheses: ` ( ... ) `
+- Spaced slash in string output: ` / `
 - Space before and after brackets: ` [ ... ] `
 - Space before `()` on method calls: `.format ()`, `keySet ()`, `Limits.getHeapSize ()`
 - Space before `(` on constructors / type casts: `Decimal.valueOf ( ... )`, `new Map <String, String> {`
