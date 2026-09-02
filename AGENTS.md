@@ -15,6 +15,7 @@
 
 ## Formatting
 
+- No trailing whitespace
 - 75-char max line length
 - Single-line per-document SOQL queries
 - Leading commas for lists / maps: `, 'key' => value` (not trailing)
