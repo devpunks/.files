@@ -28,6 +28,12 @@
 
 `weigh` → `debug` → `info` → `warn` → `error` → `log`
 
+## Closing comments
+
+- Add `// ClassName` after class closing brace
+- Add `// methodName` after method closing brace
+- Add `// VARIABLE_NAME` after map/collection literal closing brace
+
 ## Patterns
 
 - `debug()` for diagnostic, `info()` for submission log
