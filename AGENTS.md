@@ -2,6 +2,7 @@
 
 ## Whitespace
 
+- Always use spaces, never tabs
 - Spaced slash in string output: ` / `
 - Space before and after brackets: ` [ ... ] `
 - Space before and after parentheses: ` ( ... ) `
