@@ -19,7 +19,6 @@
 - 75-char max line length
 - 2 spaces per indentation level
 - Single-line per-document SOQL queries
-- Leading commas for lists / maps: `, 'key' => value` (not trailing)
 - Annotations on their own line: `@isTest` then `static void test...`
 - 75-char max line length; break on `+` continuation, align continuation with `+`
 
